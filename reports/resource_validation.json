@@ -13,11 +13,12 @@
   "definition_tables": 21,
   "maps": 6,
   "scenarios": 61,
-  "raster_count": 1156,
+  "raster_count": 1176,
   "audio_count": 17,
   "font_count": 2,
   "review_states": {
-    "generated_pending_visual_review": 1156
+    "generated_pending_visual_review": 1156,
+    "generated_scoped_source_review_complete": 20
   },
   "manual_image_composition": false,
   "raster_images_modified": false,
@@ -11025,6 +11026,246 @@
       "source_matches": true,
       "alpha_zero_percent": 0,
       "review_state": "generated_pending_visual_review"
+    },
+    {
+      "id": "tile_ground_identity_alluvial_loam",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "cdf95ccb22b881db69f297cbdd72ca377303fd19a937d1a5bfe2d8882c6cb341",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_alpine_meadow",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "387773b73299b7dcc6cb37b1a4859d8a51c2717c5162f394a2536ba54478b365",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_alpine_scree",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "45143300fc6157f47d00c3745b49628e91cb9ffd647d66050fb55d7937e97693",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_alpine_steppe",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "928713986ed5a94e61b86f46bbae509ce5a82a83900bd1ca0191855c296d0825",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_boreal_litter",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "03baf84291b1d121dc47c7ff59c810e15e363293277125b64e3b6d57caf16589",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_conifer_litter",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "8121d946a39e24b8becad19584381f6970167095f0002a364d35c821933de440",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_desert_steppe",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "61cc86f30c9128a22db05df5f804f9831863569c8ac8435dc75d7aff952beeca",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_dry_steppe",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "19e9f59ad97e8f02c516c7a081fbf53020bb1d8211ee7ef83c0918e46aefff2e",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_dry_woodland_litter",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "f55573e0cf60e8e8fec383c4f5a247b42b37dfc49b5b27e1971788b76b73a705",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_dune_sand",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "5f414d331c5c7bdf767781425fa05904798b435a740774eaf7131ff725f4462f",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_flood_meadow",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "e5d9a9fed079616676c9c0e5dbc625bb8baa8971316e9f2f2312c04cdd0610f9",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_gravel_gobi",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a9ba8c696b5a6f5a382953fe76260477e136ba42d5c59c3c0d3108f3cbe9f354",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_saline_meadow",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "6972d1d38f9e15bd4c0ade55aca4c615d378120fff3a5a29c872a9e76c1384cc",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_savanna_red_soil",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c62945437d8dd5f39e9fde971231e97581d83bf670f86e77574f49addc4856a9",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_subtropical_humus",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "65255606daaedb5cff06f4896cb99d5e862fa67e1fbc2f9137661ac63f884129",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_temperate_litter",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c523b33dacc089ea504287523dbc44476e08445bf8f23dfb7c0bba9f8ba578a3",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_temperate_meadow",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "7a7e516f8702b5d4ab4769836c820a59225295854208c1dab8580284063947f8",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_tropical_moist_humus",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "085621f40136a5d23ff5b8e702bea830412a4508227a5a16a83dc05d274c8dcc",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_tundra_moss",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "2870f462187b0b7297192a363d84b05571a610115a710116df22b7f3188ff064",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_ground_identity_weathered_rock",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3e4e39e5d1437a494312c401216c0160607490e6dce02c3ff59efbbcd9bf5d79",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
     },
     {
       "id": "tile_ground_macro_alluvial_loam",

@@ -1,0 +1,107 @@
+{
+  "passed": true,
+  "version": "0.2.20",
+  "runtime_source_sha256": "61ae4e93e4efee62c86cc700374e06d079f04d5de61f1e1b634c2df60e732605",
+  "windows_exe_sha256": "5c47a61a84d72f2c71613e97cce6a2e426fa473d00489b4ac82dcf7c5496fdf0",
+  "created_at_utc": "2026-10-16T21:55:02.747679+00:00",
+  "scope": "Scoped agent inspection of eleven complete final EXE frames: all twenty material cards across three atlas pages and eight source-assigned historical-map views. Source-image inspection, numerical sampling and commercial art approval are separate.",
+  "images": [
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/atlas_0.png",
+      "sha256": "0374c02410489f06830a305ac029cf9880718c872b947de8980e21ab33612c6b",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/atlas_1.png",
+      "sha256": "0051fd8354a65bd94e4fada5f9838d5f273e456ca882f656c83b0ccadfa8e518",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/atlas_2.png",
+      "sha256": "966f633d3b2fd9570359b07116e249626105147870131ff26fc449237c010efd",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_meadow.png",
+      "sha256": "695e3bc37fad01c987ae1f15ae1b1939a02e5515bc7f8b9b996e749760b0b98c",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/map_dry_steppe.png",
+      "sha256": "28143084e298d23c9d2fbba6392049589558e080fd34039d7e447e18f4d95ce9",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/map_dune_sand.png",
+      "sha256": "8d65ec144145cd9c7252c9b8057a07ea4ad27d27dc2d75c4f0940a263fefdb23",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/map_gravel_gobi.png",
+      "sha256": "3fb561f570aca9f89492627528913cf16bdcfdf035f8d66cc6a5e8940ec1d526",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_litter.png",
+      "sha256": "077066396df3a8b505880bbc65451eb2e81be9a1a0b0e83410cc2c5da88e2a0b",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/map_conifer_litter.png",
+      "sha256": "849d9df3879dededc262f6f5743f09fbe3c96b90aeeedce140d27e814534caa8",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/map_saline_meadow.png",
+      "sha256": "b6a571667b60b6599653ab444e090d1a054a074c128d8df6b89e67a2f5f331f2",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/windows/map_weathered_rock.png",
+      "sha256": "b4d017249a595e10060b5f6ed53aafd66b3cac9e4cfb3476175f5169854d63c0",
+      "viewed_complete_native_frame": true
+    }
+  ],
+  "observations": [
+    "The three atlas pages visibly distinguish grass blades and straw, bare desert earth, sand ripple combs, gravel chips, pale salt crust, lichens/moss, fallen leaves/needles, moist humus and two rock families. All twenty displayed macrogrounds are the new active IDs.",
+    "Eight selected map cells were inspected with their normal HUD and terrain inspector. Sand ripples, mineral gravel, straw, broadleaf litter and needle strands show different structures; salt ground remains paler, and rock surfaces have plate-like grain.",
+    "The runtime source period is calibrated to 128 world units. Leaf/needle motifs are smaller than the rejected 384-period integration candidate; no source PNG was edited. Motifs still repeat in broad uniform regions.",
+    "Material/control transitions still expose polygons, large Asia cells retain coarse source footprints, several reduced humus/mineral textures remain subtle, and placed mountain miniatures and unit/city crowding still need refinement. This is not EW6 commercial parity or a year-specific historical land-cover survey."
+  ],
+  "source_images_modified": false,
+  "manual_compositing": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "physical_android_device_tested": false,
+  "all_twenty_material_cards_viewed": true,
+  "whole_atlas_pages_viewed": 3,
+  "representative_historical_map_views": 8,
+  "active_material_ids": [
+    "tile_ground_identity_alluvial_loam",
+    "tile_ground_identity_alpine_meadow",
+    "tile_ground_identity_alpine_scree",
+    "tile_ground_identity_alpine_steppe",
+    "tile_ground_identity_boreal_litter",
+    "tile_ground_identity_conifer_litter",
+    "tile_ground_identity_desert_steppe",
+    "tile_ground_identity_dry_steppe",
+    "tile_ground_identity_dry_woodland_litter",
+    "tile_ground_identity_dune_sand",
+    "tile_ground_identity_flood_meadow",
+    "tile_ground_identity_gravel_gobi",
+    "tile_ground_identity_saline_meadow",
+    "tile_ground_identity_savanna_red_soil",
+    "tile_ground_identity_subtropical_humus",
+    "tile_ground_identity_temperate_litter",
+    "tile_ground_identity_temperate_meadow",
+    "tile_ground_identity_tropical_moist_humus",
+    "tile_ground_identity_tundra_moss",
+    "tile_ground_identity_weathered_rock"
+  ],
+  "world_repeat_period": 128,
+  "remaining_visual_issues": [
+    "Large uniform regions still expose repeating motifs.",
+    "Polygonal material/control boundaries and coarse strategic cells remain.",
+    "Mountain-foot integration, dense formations and complete unit animation remain outside this material correction."
+  ]
+}

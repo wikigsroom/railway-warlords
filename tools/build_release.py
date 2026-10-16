@@ -81,6 +81,11 @@ def main():
         verified=code==0 and fresh and not errors and source_hash==source_digest()[0]
         results.append(dict(target=target,exit_code=code,path=str(out),exists=exists,fresh_artifact=fresh,log_errors=errors,export_verified=verified,runtime_source_sha256=source_hash,bytes=out.stat().st_size if exists else 0,sha256=hashlib.sha256(out.read_bytes()).hexdigest() if exists else None))
         print(f'{target}: exit={code}, fresh={fresh}, export_verified={verified}')
-    (P/'reports/export_results.json').write_text(json.dumps(results,indent=2),encoding='utf-8')
+    # Publish complete identity evidence atomically. Windows file watchers can
+    # hold the previous JSON open while the two lengthy exports are running.
+    results_path=P/'reports/export_results.json'
+    results_pending=results_path.with_suffix('.tmp')
+    results_pending.write_text(json.dumps(results,indent=2),encoding='utf-8')
+    results_pending.replace(results_path)
     raise SystemExit(0 if all(r['export_verified'] for r in results) else 1)
 if __name__=='__main__':main()

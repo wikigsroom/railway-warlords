@@ -1,173 +1,175 @@
 {
   "passed": true,
-  "version": "0.2.19",
+  "version": "0.2.20",
   "sources": 20,
   "source_route": "sub2-image-gen/gpt-image-2.5/high",
   "source_images_modified": false,
   "art_score": false,
   "geography_assignments_changed": false,
   "formal_art_approval": false,
+  "source_plan_file": "presentation/data/ground_identity_plan.json",
+  "stored_superseded_originals_verified": 20,
   "measurement_scope": "Analysis-only 128px luminance; no derived image written. Frequency is not an artistic-quality score.",
   "assets": [
     {
-      "id": "tile_ground_macro_temperate_meadow",
+      "id": "tile_ground_identity_temperate_meadow",
       "family": "temperate_meadow",
-      "source_sha256": "38a134ebb23cc8354db6a3ae4e7f07da1f327c2205133f8a5099edb9417cd448",
-      "prompt_sha256": "fe1bb98fb236d24f219df2acace5244d82344116d86179dee1cb4c60ea318e9b",
-      "import_sha256": "50764c54f66930857c4b66ccb5d7c457d252c9b423c340ecf42568d71c4bddf4",
-      "high_frequency_luma_mean_128": 4.8661
+      "source_sha256": "7a7e516f8702b5d4ab4769836c820a59225295854208c1dab8580284063947f8",
+      "prompt_sha256": "5ca427a20487c4edd90af41cbff83f582ba50c73ae43edb9cc74947b40692f58",
+      "import_sha256": "8a1507de806dc8ea1c68e190e5c5b0ee46a36c22f59954db4367c57f7ae8c12d",
+      "high_frequency_luma_mean_128": 8.5643
     },
     {
-      "id": "tile_ground_macro_dry_steppe",
+      "id": "tile_ground_identity_dry_steppe",
       "family": "dry_steppe",
-      "source_sha256": "4037ae0a58e36036184d84ce1dce8f45b3866aaf3ac85ffb4b50c92a4d6c85d2",
-      "prompt_sha256": "5ae98706ff34ab3de886269fc7920b25ef1df9b89ea0fa0879d5e3052b3e3b4d",
-      "import_sha256": "97be0cddd7a1dac471692a1d803e2e379221141c766c943acc2710055614e55f",
-      "high_frequency_luma_mean_128": 4.1994
+      "source_sha256": "19e9f59ad97e8f02c516c7a081fbf53020bb1d8211ee7ef83c0918e46aefff2e",
+      "prompt_sha256": "09b840b9ddb42d2ad30ed63a3905b9479eebaae5584ed2a7d1f3d7f87e1db62f",
+      "import_sha256": "c6863056264cebb2fe9b45d84a4910182a59de6b635d5d56dfe95bb6887361f8",
+      "high_frequency_luma_mean_128": 10.0217
     },
     {
-      "id": "tile_ground_macro_desert_steppe",
+      "id": "tile_ground_identity_desert_steppe",
       "family": "desert_steppe",
-      "source_sha256": "6c7c452a2c5653c86d5cad55a8d6dbe7f5f1ff183f1182b54607f9fde2d549ef",
-      "prompt_sha256": "cafffdb3bbe67ff7caae4f40ee7f2682fd922a603345907ee283358799425f85",
-      "import_sha256": "223be6ff206e392cda9af379a1558e8a2ba6397b9a3f88b774511c9af41e6d26",
-      "high_frequency_luma_mean_128": 2.5093
+      "source_sha256": "61cc86f30c9128a22db05df5f804f9831863569c8ac8435dc75d7aff952beeca",
+      "prompt_sha256": "2e6c73cf8a828b42b1d3b496b9a7e179ead3758312c4c5c6b613798ee141f029",
+      "import_sha256": "2795e6d0df46ecf96fe521c20b63c00d003ec14c2fd6d59fb848517ecb6c1697",
+      "high_frequency_luma_mean_128": 7.1906
     },
     {
-      "id": "tile_ground_macro_dune_sand",
+      "id": "tile_ground_identity_dune_sand",
       "family": "dune_sand",
-      "source_sha256": "2f06346dc11dc9f1b9399a3013c6d84415b9b4186eeada9937d5c60aefc02aaa",
-      "prompt_sha256": "4772dc8e55ca4a8a6e6dd8937ac29874a48fe9eb128fc4b9d93d137a4a08d70d",
-      "import_sha256": "fde9923561421408b912264b735f6acfda625cb8c2546837433130ac5c0697b2",
-      "high_frequency_luma_mean_128": 2.5108
+      "source_sha256": "5f414d331c5c7bdf767781425fa05904798b435a740774eaf7131ff725f4462f",
+      "prompt_sha256": "5f8d86b2e05837c1b2037480fb450dea838287e97867abb6776dd14a874cbab2",
+      "import_sha256": "0775f484e898387533cd94d2e575e05083a099a4f5e8703b9e8d7b4933bcbba5",
+      "high_frequency_luma_mean_128": 6.4884
     },
     {
-      "id": "tile_ground_macro_gravel_gobi",
+      "id": "tile_ground_identity_gravel_gobi",
       "family": "gravel_gobi",
-      "source_sha256": "b53fb6caecf1aed8b40d4f55b6d529917f55a135ccd5437394ddf9c620273620",
-      "prompt_sha256": "2a04f220070c1b2ecf740a06af44ae7342852109e1bf9a0e03a8caa1a1d5b27a",
-      "import_sha256": "2d2fa8d4dbe2c83fa12c502aedee8c2adcf4aa110352639ef2769949b6b47727",
-      "high_frequency_luma_mean_128": 3.8093
+      "source_sha256": "a9ba8c696b5a6f5a382953fe76260477e136ba42d5c59c3c0d3108f3cbe9f354",
+      "prompt_sha256": "50aac95e7c5feac1106e0b6527af7de8f7367178fede886677b7c8943fd7efca",
+      "import_sha256": "508297f26b72f70350d5d9de667de17597526f83b5c6f6840ac3ce28d11b20d7",
+      "high_frequency_luma_mean_128": 12.8848
     },
     {
-      "id": "tile_ground_macro_saline_meadow",
+      "id": "tile_ground_identity_saline_meadow",
       "family": "saline_meadow",
-      "source_sha256": "982061542380bfd699822055df3ef6b852b35b8726e8f3ffda1843c1ef469590",
-      "prompt_sha256": "0158fc4bd1cf1b86b4c8ec6180824061b4647365d14c6cb9023f977da7559a99",
-      "import_sha256": "e879f11e268bfc112e2d3ac7a5a28a21d7b487af6f25233a2578045dda2d331b",
-      "high_frequency_luma_mean_128": 4.886
+      "source_sha256": "6972d1d38f9e15bd4c0ade55aca4c615d378120fff3a5a29c872a9e76c1384cc",
+      "prompt_sha256": "9ed77922330de2923c7407ba3bf738d5feaecc069e7d53ce99dc5acc729bec48",
+      "import_sha256": "2d13121553390ea553dcfd9ecd630aaaa1755466a28fa63f21d22efe71db64f1",
+      "high_frequency_luma_mean_128": 12.4072
     },
     {
-      "id": "tile_ground_macro_alpine_meadow",
+      "id": "tile_ground_identity_alpine_meadow",
       "family": "alpine_meadow",
-      "source_sha256": "754fa72eae1c53e6d7322fa8b41ad029765018bd4ff45aabc20648836fd96b18",
-      "prompt_sha256": "ea858b0df0192ffb76574a6897d40c8fc715aea3cb1a120eac5d330d639db749",
-      "import_sha256": "3af1c4d1c14108573ffadd1419159866b8d55a7eb9fb6e0acb4beb449512b166",
-      "high_frequency_luma_mean_128": 3.3027
+      "source_sha256": "387773b73299b7dcc6cb37b1a4859d8a51c2717c5162f394a2536ba54478b365",
+      "prompt_sha256": "c1807298c71cdde6ad4f3ba21e94c02085b3ac20ca245e8856660d608691e9ea",
+      "import_sha256": "f36ef86afc5681e01564633305d6eee01321e86cfbf2710f063f52e02e0941fe",
+      "high_frequency_luma_mean_128": 9.9152
     },
     {
-      "id": "tile_ground_macro_alpine_steppe",
+      "id": "tile_ground_identity_alpine_steppe",
       "family": "alpine_steppe",
-      "source_sha256": "24e252d5d125066e39af8f7650f6d8e3057f357a23e11f69c564e17c2390d591",
-      "prompt_sha256": "14c30b38f5f0b5004f08fdfff9d5bc13852e5d88849f358ef2c7135e2fccb16c",
-      "import_sha256": "0284127fcb4fe7b4dd09db51bfc3d86133548b0e6717ac6722e33b55a8778d83",
-      "high_frequency_luma_mean_128": 4.3663
+      "source_sha256": "928713986ed5a94e61b86f46bbae509ce5a82a83900bd1ca0191855c296d0825",
+      "prompt_sha256": "aec45a3f6809096735d31d8a9effd532d2638de805aae838b78a368ba9380eb4",
+      "import_sha256": "62f192a8daebb2025369b6f1a59453ba6701774b30aba9c2dd2d4518f54ba0b9",
+      "high_frequency_luma_mean_128": 9.4401
     },
     {
-      "id": "tile_ground_macro_tundra_moss",
+      "id": "tile_ground_identity_tundra_moss",
       "family": "tundra_moss",
-      "source_sha256": "44c20cece5b209d0dbc60dde3ed853de62008e2642ea835fabc258715ea8d18c",
-      "prompt_sha256": "e6600f528383987ae4219e0f51193581a3dea1a6918c8ade4c903c71dbfc0861",
-      "import_sha256": "d19ec8590e55b28bac1c2ec05857f4560363c0f37df3632835238c364d80096f",
-      "high_frequency_luma_mean_128": 4.9287
+      "source_sha256": "2870f462187b0b7297192a363d84b05571a610115a710116df22b7f3188ff064",
+      "prompt_sha256": "583eab08e51262d089f5fc929f216b41e60f8845f5aed002cd2168acb3b69c20",
+      "import_sha256": "a83e65523439272edb438553356054f456b36d965a10a132f0b7f34a8eb32a63",
+      "high_frequency_luma_mean_128": 12.7441
     },
     {
-      "id": "tile_ground_macro_boreal_litter",
+      "id": "tile_ground_identity_boreal_litter",
       "family": "boreal_litter",
-      "source_sha256": "587d8f9684168b51f5e7053c94cbec7698de133b2936e35c1b5c7f3a98bd8bbe",
-      "prompt_sha256": "51e576a55a6ad748a2c93c5223b07ac8ffe6e28e61d359add1360c9ad987b1da",
-      "import_sha256": "6dcef5b34212655ed3e88c7974744221ecbc35ed51726d98681d0114b6ddccba",
-      "high_frequency_luma_mean_128": 4.1566
+      "source_sha256": "03baf84291b1d121dc47c7ff59c810e15e363293277125b64e3b6d57caf16589",
+      "prompt_sha256": "7bf3d41e9bb19e56018f790d7742fb13029f0b63d06ebb909188b18317453083",
+      "import_sha256": "c17a1206b23a47998260d31a93c77745b6e6c62020d1871cd42dac60826c6d15",
+      "high_frequency_luma_mean_128": 10.7559
     },
     {
-      "id": "tile_ground_macro_temperate_litter",
+      "id": "tile_ground_identity_temperate_litter",
       "family": "temperate_litter",
-      "source_sha256": "91ae908a1c07aa03ad7f7f5ee88fce549e3829ec42a73c7a1e8b875f27832e51",
-      "prompt_sha256": "be2dd678e048b943b271933c124398c2fafeec87a8964c9739968bc0acc07340",
-      "import_sha256": "719886a0b49094fef490bd6bd016097b1b901e778c78b1b6d428b90908514a6c",
-      "high_frequency_luma_mean_128": 3.9536
+      "source_sha256": "c523b33dacc089ea504287523dbc44476e08445bf8f23dfb7c0bba9f8ba578a3",
+      "prompt_sha256": "3f190a7119e4e95d895141d483e05575db016ef3fc7c60877aef4578effbef63",
+      "import_sha256": "1880f4a8818b67aba45a51a7189aaf53f817f410ac6d3c6d757c0285e0c6d58a",
+      "high_frequency_luma_mean_128": 13.0842
     },
     {
-      "id": "tile_ground_macro_conifer_litter",
+      "id": "tile_ground_identity_conifer_litter",
       "family": "conifer_litter",
-      "source_sha256": "cace4e800ffb9b0ef558011dbbd08aa4ca8b469adc0dc1a68ea2c2952d0b4628",
-      "prompt_sha256": "1713a887bdf2943e81486467c64537d79209603fd443cebc18c84e7c11b7ac45",
-      "import_sha256": "78899fd02b5b670bef2d5365d0b9e0afa4407b09ded165883a4907eb481b7dcd",
-      "high_frequency_luma_mean_128": 2.8981
+      "source_sha256": "8121d946a39e24b8becad19584381f6970167095f0002a364d35c821933de440",
+      "prompt_sha256": "f4f1bc55c3f817ab36ab2cf6a14c5c04f1990d3fcfdefad7a5bcc1d7bdd2cb9e",
+      "import_sha256": "93d83e6aa3a9ea0546950527679a3a034316990b5d4f4f15ed46c03260ef2740",
+      "high_frequency_luma_mean_128": 11.1547
     },
     {
-      "id": "tile_ground_macro_subtropical_humus",
+      "id": "tile_ground_identity_subtropical_humus",
       "family": "subtropical_humus",
-      "source_sha256": "88987287fe695e713d6f36779c11d123cd625086fe2a2b625d9c6e3a8e3ab1f1",
-      "prompt_sha256": "72748002ad13641ac4b01732628e520d55af9ad56e1dab365c9b8c44421f0bf4",
-      "import_sha256": "8c6a32d114cba6aa4117b5e2a3f1b14830ea0aff6a36d516f785068de4d0c914",
-      "high_frequency_luma_mean_128": 3.4074
+      "source_sha256": "65255606daaedb5cff06f4896cb99d5e862fa67e1fbc2f9137661ac63f884129",
+      "prompt_sha256": "47d30213507ad580b536e8a9bad6b012b166e0479886bc98b411529fef8ee4d6",
+      "import_sha256": "21b2456ecf950740f1465046390e56609f4a7313523ca5def93dbf068d8a5dd6",
+      "high_frequency_luma_mean_128": 10.8124
     },
     {
-      "id": "tile_ground_macro_tropical_moist_humus",
+      "id": "tile_ground_identity_tropical_moist_humus",
       "family": "tropical_moist_humus",
-      "source_sha256": "41db48010eda1edbc28c7a40671b5b7dbd6218d65e029f121c5fd019c89fab7b",
-      "prompt_sha256": "9570538656e004e777ec2f1d7be53a62e99df0c5ad178b9847dff2753e71bd54",
-      "import_sha256": "8b1b56ae481f7eb32e25d6b5066db42ae4186c8aa8ce96ea16aff59181637ad1",
-      "high_frequency_luma_mean_128": 3.8909
+      "source_sha256": "085621f40136a5d23ff5b8e702bea830412a4508227a5a16a83dc05d274c8dcc",
+      "prompt_sha256": "f4c9470a8ed3aba396c08d84c19ea64826c5af960dae98ad29007f53520196bf",
+      "import_sha256": "c64a6906a98e9d17ed49983e80905ceb46a0ab7249c3b0b9bcd14a608a4fc2d5",
+      "high_frequency_luma_mean_128": 7.927
     },
     {
-      "id": "tile_ground_macro_dry_woodland_litter",
+      "id": "tile_ground_identity_dry_woodland_litter",
       "family": "dry_woodland_litter",
-      "source_sha256": "d41b7712613766ca1843d8e51134d4f2c9f649f9fc2b8589bcfe02b631d50923",
-      "prompt_sha256": "99673700dead263d8a11d8952ae4e1739d9a4f7b3fb86998d4cecba366d0878b",
-      "import_sha256": "13da5ae08be1841ae4b357f568b80db99a570640b04b174ac507b08ba84c959e",
-      "high_frequency_luma_mean_128": 4.4724
+      "source_sha256": "f55573e0cf60e8e8fec383c4f5a247b42b37dfc49b5b27e1971788b76b73a705",
+      "prompt_sha256": "6b3be967f37a5503cd5dacffedc7d941765c0a4c521388427115d4c4f70cd558",
+      "import_sha256": "084b7b01dcdf6f60da91faf0de7fe6f4e78e4a8f8a1a1070d808073cab86f3dd",
+      "high_frequency_luma_mean_128": 12.5753
     },
     {
-      "id": "tile_ground_macro_savanna_red_soil",
+      "id": "tile_ground_identity_savanna_red_soil",
       "family": "savanna_red_soil",
-      "source_sha256": "8a0587eb49c414636a7875c0a7ddd120f528730ed1dd5b01948647fe56ea68ac",
-      "prompt_sha256": "afe67160f101bc547703be1de9bc3504f8893303c4ba2d3439cb8ff82277aaa9",
-      "import_sha256": "f21d5e45d2cbbb1d5a30f79274f08ed82ce1dc58582ba8b1a26bed7ea6a9263c",
-      "high_frequency_luma_mean_128": 4.2892
+      "source_sha256": "c62945437d8dd5f39e9fde971231e97581d83bf670f86e77574f49addc4856a9",
+      "prompt_sha256": "2e209fed85033ebd36a44372f9bcec94388fda15665d39d0499ecbbf7b8dae08",
+      "import_sha256": "370659e248db666c2e4dcd5b89e291484cd08ed176b39a5f6ab0b155637ec1f5",
+      "high_frequency_luma_mean_128": 6.5935
     },
     {
-      "id": "tile_ground_macro_flood_meadow",
+      "id": "tile_ground_identity_flood_meadow",
       "family": "flood_meadow",
-      "source_sha256": "b9e07fa9c2cfba4c159b38435678d253e01092ee5aa6f838e1d91ecd08c5050d",
-      "prompt_sha256": "dc9ea49d8327030217d0c49d993ef6f6fafba8febd13005cb971fc6ec9700786",
-      "import_sha256": "bd8f1260f6221b07470e682fafd30c352eb05ab160083e798d94520f42b193ce",
-      "high_frequency_luma_mean_128": 3.6563
+      "source_sha256": "e5d9a9fed079616676c9c0e5dbc625bb8baa8971316e9f2f2312c04cdd0610f9",
+      "prompt_sha256": "adb92f3c984264e264a35d38641028d4fee536c1110a28d82c37f860c7d8c962",
+      "import_sha256": "3e4a52e51b46f975ae5051ac3dc165c56be9e591e93d71c13785f7e4ec25533f",
+      "high_frequency_luma_mean_128": 10.7283
     },
     {
-      "id": "tile_ground_macro_alluvial_loam",
+      "id": "tile_ground_identity_alluvial_loam",
       "family": "alluvial_loam",
-      "source_sha256": "c512728717ff4c44867fc4b5af413d7592da87759a2b0ff8aed8dd4e5258797c",
-      "prompt_sha256": "c2e39ae7c4ad550d23f004e7ec32f0452c48741b76d60590cddb934e560f9520",
-      "import_sha256": "04c110fb335ef3339349709c72d10c7e2935e9b19cdada408a8c6e6eeba71c17",
-      "high_frequency_luma_mean_128": 3.1389
+      "source_sha256": "cdf95ccb22b881db69f297cbdd72ca377303fd19a937d1a5bfe2d8882c6cb341",
+      "prompt_sha256": "140ce0ab8415dd8714a9eb24fd456df417e87706c0f5506c78259bc6033ba1ed",
+      "import_sha256": "24b2f653d96ff32be02b1779c114f8ca929907e3a25be27df83ae821df1b9d40",
+      "high_frequency_luma_mean_128": 7.0365
     },
     {
-      "id": "tile_ground_macro_weathered_rock",
+      "id": "tile_ground_identity_weathered_rock",
       "family": "weathered_rock",
-      "source_sha256": "77e2d0299ae978c9cdf23a7d49b733e9ce401012ae636e0cd3a8a421a1f72923",
-      "prompt_sha256": "82e2baacb44bf4975a021e05d1569b9b9c2817f10abee0f9ec282711f7c219da",
-      "import_sha256": "123946fcf9b5b1038bde9a2e9e4b2a6bf94a4cd010e9a786b330b4c359c44556",
-      "high_frequency_luma_mean_128": 3.5256
+      "source_sha256": "3e4e39e5d1437a494312c401216c0160607490e6dce02c3ff59efbbcd9bf5d79",
+      "prompt_sha256": "3a65fa01b255b14450c56623bfb8760df433d02ab2cfa9e257d087d7ad6c0d4a",
+      "import_sha256": "d36777a0988c3a24409a19853f070154afc3f8d2d50d4ec9702e81fbfe8f7656",
+      "high_frequency_luma_mean_128": 8.3781
     },
     {
-      "id": "tile_ground_macro_alpine_scree",
+      "id": "tile_ground_identity_alpine_scree",
       "family": "alpine_scree",
-      "source_sha256": "887125ba33e4f6c84a03a3b5eece54ce2ba228f8b5ec39b43ac341364b52a560",
-      "prompt_sha256": "ef0cf44c23730822a2ede9d52a6b40c71abfbca9f96ed00a3c0f1c9c63337640",
-      "import_sha256": "7b333213549b4d20cea2a08112a2b0d90dee198b2ca5f4e59565ebce9b5b3f6b",
-      "high_frequency_luma_mean_128": 3.4565
+      "source_sha256": "45143300fc6157f47d00c3745b49628e91cb9ffd647d66050fb55d7937e97693",
+      "prompt_sha256": "3a566894a1493cf05f62e0f8a41cb7ae0e70fcdf6b87c49ca7759f27d9f370e9",
+      "import_sha256": "8beb8aac26ac8a874651a8e4ed91ac8802485aa8cb6657c0119dbccaacd27cca",
+      "high_frequency_luma_mean_128": 18.2148
     }
   ]
 }

@@ -13,7 +13,9 @@ class Fixture extends Node2D:
 		draw_set_transform(dimensions*.5-pan)
 		draw_rect(Rect2(pan-dimensions*.5,dimensions),Color("b4bd91"))
 		if reference!=null:
-			var scale=reference.get_width()/384.0
+			# Independent expected art calibration: a whole source repeats every
+			# 128 world units, rather than oversized leaf/needle motifs at 384.
+			var scale=reference.get_width()/128.0
 			draw_texture_rect_region(reference,Rect2(pan-dimensions*.5,dimensions),Rect2((pan-dimensions*.5)*scale,dimensions*scale),Color(1,1,1,.94))
 		else:
 			var ordered=batches.duplicate()

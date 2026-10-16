@@ -1,50 +1,50 @@
 {
   "passed": true,
-  "version": "0.2.19",
-  "runtime_source_sha256": "05223238dd872ef482cc166ac2b08fcaf3b5be84637fb3f3e5833e1fd9afa8a5",
-  "windows_exe_sha256": "9d415bffb98193086108cca8b8ccbcabd493a434840e51fecb8ecd5dc6b26f0c",
-  "created_at_utc": "2026-10-16T20:27:38.758509+00:00",
+  "version": "0.2.20",
+  "runtime_source_sha256": "61ae4e93e4efee62c86cc700374e06d079f04d5de61f1e1b634c2df60e732605",
+  "windows_exe_sha256": "5c47a61a84d72f2c71613e97cce6a2e426fa473d00489b4ac82dcf7c5496fdf0",
+  "created_at_utc": "2026-10-16T21:58:30.409260+00:00",
   "source_images_modified": false,
   "manual_compositing": false,
   "physical_android_device_tested": false,
   "formal_art_approval": false,
   "ew6_parity_claimed": false,
-  "scope": "Scoped visual review of five complete current exported historical-map viewports. Independent numerical shader verification is in relief_shade_native_evidence.json; these are actual game views, not synthetic fixtures.",
   "images": [
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/mountain.png",
-      "sha256": "839742edb001bf58d97607bf4c55ddb6364a498243d43388856184912663b88b",
+      "sha256": "8f5cfc16bbf2a5d16208ae57e0ed094c4a24a9ec38f3fbdf779a5a5de330a468",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/tributaries.png",
-      "sha256": "0d46d37759460d99155add0a7c17f866c7843cd2221bc91d9a61412f8fdf5a8c",
+      "sha256": "589f7567ac69626adad21d01aef174073bdc42f7cd16338b38ea34e6238f8223",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/yangtze.png",
-      "sha256": "feb6df1f2f2bce8705a46e5bc0752ad1d378f638a918d29c6a550c178fec60ba",
+      "sha256": "6eb073c6500021115424c7327c1be4a6c071d40e38ead6b7cf5044027257a999",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/nanjing.png",
-      "sha256": "d7d391c65bb79fcba3b1a3cadb74589046033bed938d28165a0861782984e1ba",
+      "sha256": "525058d16a898a043561978b4164a670c2eb3d5eee1988bcbe74a76ac9b9bc21",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/yangtze_x30.png",
-      "sha256": "2854c95afdcdfaf227162d1d1ac072656736b340b51e1de9a321118416d7b7b5",
+      "sha256": "dfd0eb8a23a5b97ff5eab4462e479abaa82d7aa7cc4df6f914c65ccaafec5068",
       "viewed_complete_native_frame": true
     }
   ],
+  "scope": "Scoped agent review of five complete final exported historical-map viewports. Independent numerical shader verification is in relief_shade_native_evidence.json; the current material identity review is separate.",
   "observations": [
-    "Inspected mountain and tributary views show continuous ground lighting with the normal HUD and source-derived scenery. Visible material/control polygons persist independently of this hillshade change.",
-    "Thin headwater banks are subdued and their source bends are retained. Main-channel Hankou/Nanjing ribbons remain connected at the inspected scale, including the mobile layout.",
-    "No claim is made that these five views validate every relief location, scale or artistic composition. Mountain miniatures and repetitive ground identities require further art work."
+    "The inspected mountain and tributary frames show continuous relief lighting beneath source-derived scenery and the normal HUD. The new litter fragments and jointed mineral texture retain their distinctions at the calibrated 128-unit repeat period.",
+    "Hankou and Nanjing retain connected channels and their existing tactical models. The desktop X30-layout Hankou frame keeps the same material and water-layer order.",
+    "Visible material/control polygons, placed miniature mountain silhouettes and dense near-view model overlap remain. The five inspected locations are a bounded visual review, not validation of all terrain composition."
   ],
   "remaining_visual_issues": [
     "Polygonal material and control-area transitions remain visible.",
     "Mountain silhouettes and spacing still read as placed miniatures.",
-    "Several regional base textures have insufficient structural distinction at gameplay scale."
+    "Uniform regional ground still repeats motifs, and some reduced humus/mineral variants remain subtle."
   ]
 }

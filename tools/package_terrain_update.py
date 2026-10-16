@@ -54,6 +54,8 @@ def main():
                 'terrain_surface_geography.json', 'terrain_surface_geography_audit.json',
                 'terrain_surface_asset_audit.json', 'terrain_surface_source_review.json',
                 'ground_macro_generation.json', 'ground_macro_asset_audit.json', 'ground_macro_source_review.json',
+                'ground_identity_generation.json', 'ground_identity_source_review.json', 'ground_identity_installation.json',
+                'ground_identity_native_review.json',
                 'terrain_surface_native_evidence.json', 'river_surface_native_review.json', 'apk_content_validation.json',
                 'control_land_clip_audit.json', 'control_land_native_evidence.json', 'control_land_native_review.json',
                 'ground_continuity_native_evidence.json', 'relief_shade_native_evidence.json',
@@ -219,12 +221,55 @@ def main():
     catalog = read(P / 'presentation/data/terrain_surface_catalog.json')
     require(len(catalog['types']) == 20 and len(catalog['records']) == 80, 'Twenty types and eighty originals required')
     provenance = read(P / 'docs/asset-provenance/index.json')
-    require(provenance['count'] == len(assets) == 1156, 'Current portable provenance is incomplete')
+    require(provenance['count'] == len(assets) == 1176, 'Current portable provenance is incomplete')
     require(len({r['source_sha256'] for r in catalog['records'].values()}) == 80, 'Duplicate new originals')
     macros=read(P/'presentation/data/ground_macro_catalog.json')
     require(set(macros['records']) == set(catalog['types']) and len({row['source_sha256'] for row in macros['records'].values()})==20,
             'Twenty matching continuous-ground originals required')
     require(read(P/'reports/ground_macro_source_review.json')['all_twenty_originals_viewed'], 'New ground visual review missing')
+    identity = read(P/'reports/ground_identity_generation.json')
+    identity_review = read(P/'reports/ground_identity_source_review.json')
+    installation = read(P/'reports/ground_identity_installation.json')
+    active_ids = {row['asset_id'] for row in macros['records'].values()}
+    retained_ids = set(macros['superseded_asset_ids'])
+    stored_map_ids = {row['id'] for row in assets if row['category'] in {'building','scenery','tile'}}
+    require(len(stored_map_ids) == 990 and len(stored_map_ids - retained_ids) == 970,
+            'Stored and active map inventory must match the registered assets')
+    require(identity['version'] == installation['version'] == identity_review['version'] == version
+            and identity['completed'] == identity['requested'] == 20
+            and identity['source_route'] == 'sub2-image-gen/gpt-image-2.5/high'
+            and identity['source_plan_sha256'] == macros['source_plan_sha256']
+                == sha(P / macros['source_plan_file'])
+            and {row['id'] for row in identity['assets']} == active_ids
+            and len({row['source_sha256'] for row in identity['assets']}) == 20,
+            'Twenty current independent Sub2 material originals required')
+    reviewed = {row['id']: row for row in identity_review['originals']}
+    require(identity_review['all_twenty_originals_viewed'] and set(reviewed) == active_ids,
+            'Complete individual source-image review required')
+    registered = {row['id']: row for row in assets}
+    for row in identity['assets']:
+        require(row['source_sha256'] == reviewed[row['id']]['sha256']
+                == registered[row['id']]['source_sha256']
+                == sha(P / registered[row['id']]['engine_path'].removeprefix('res://')),
+                'Material original changed: ' + row['id'])
+    require(len(retained_ids) == 20 and retained_ids.isdisjoint(active_ids)
+            and retained_ids <= set(registered) and macros['original_pngs_retained']
+            and installation['installed_new_originals'] == installation['active_macro_originals'] == 20
+            and installation['stored_superseded_originals'] == 20
+            and installation['geography_sha256'] == sha(P/'presentation/data/terrain_surface_regions.json')
+            and not installation['geography_assignments_changed']
+            and read(P/'reports/ground_macro_asset_audit.json')['stored_superseded_originals_verified'] == 20,
+            'Retained immutable originals and unchanged geographical assignments required')
+    material_review = read(P/'reports/ground_identity_native_review.json')
+    require(material_review['version'] == version and material_review['runtime_source_sha256'] == runtime
+            and material_review['windows_exe_sha256'] == native['windows_exe_sha256']
+            and set(material_review['active_material_ids']) == active_ids
+            and material_review['world_repeat_period'] == macros['world_repeat_period'] == 128
+            and material_review['all_twenty_material_cards_viewed'],
+            'Current material-card and historical-map inspection required')
+    for row in material_review['images']:
+        require(row['viewed_complete_native_frame'] and sha(P/row['file']) == row['sha256'],
+                'Reviewed material viewport changed')
     for row in provenance['assets']:
         require(sha(P / row['image']) == row['image_sha256'] and sha(P / row['prompt']) == row['prompt_sha256'],
                 'Portable image or prompt changed: ' + row['id'])
@@ -241,9 +286,11 @@ def main():
                    'apk_signature.log', 'apk_badging.log', 'apk_permissions.log', 'android_devices.log', 'desktop_benchmark.json'])
     summary = dict(passed=True, version=version, runtime_source_sha256=runtime, content_hash=fingerprint,
                    regression_groups=len(regression), regression_checks=sum(int(r['passed_checks']) for r in regression),
-                   terrain_types=20, detail_originals=80, macro_originals=20, new_independent_originals=0,
+                   terrain_types=20, detail_originals=80, macro_originals=20, new_independent_originals=20,
+                   stored_superseded_macro_originals=20, material_identity_revision=macros['material_identity_revision'],
+                   material_world_repeat_period=128, new_material_source_images_reviewed=20, native_material_cards_viewed=20,
                    river_replacement_reaches=31, source_linked_river_continuity_verified=True,
-                   total_rasters=len(assets), total_map_assets=970,
+                   total_rasters=len(assets), total_map_assets=len(stored_map_ids - retained_ids), total_stored_map_assets=len(stored_map_ids),
                    native_groups=len(native['groups']), native_captures=92,
                    coastal_control_land_clipped=True, source_lake_islands_preserved=True,
                    continuous_ground_nonoverlapping=True, exclusive_continental_control_fill=True,
@@ -273,7 +320,7 @@ def main():
 
 运行 RailwayWarlords.exe，无需安装 Godot。
 20 类地域地表各有 1 张连续底材与 4 张细节原图；说明书内可打开地形图鉴。
-本版高程光影连续取样，减少三角面拼块；细河增加低饱和水床与半透明岸带。总览/区域视角使用城市与部队图符，近景恢复完整素材。
+本版启用 20 张新生成的连续底材：草叶、针叶、砂纹、砾石、苔藓等具有独立形态。旧 20 张底材保留归档。沿用连续光影、分层细河岸带与按缩放切换的城市/部队图符。
 点选部队、选目标、再次点击确认；拖动平移、滚轮缩放、空格跳过战斗演出。
 本版为可玩测试交付，X30 真机与完整 AI 长局尚未在本轮复验。
 ''', encoding='utf-8')
@@ -305,7 +352,7 @@ def main():
         require(hashlib.sha256(archive.read(exe.name)).hexdigest() == sha(exe), 'Windows archive differs from tested EXE')
     require(sha(android) == sha(apk) and source_digest()[0] == runtime, 'Delivery identity changed')
     manifest = dict(version=version, created_at_utc=datetime.now(timezone.utc).isoformat(),
-                    release_kind='scoped_continuous_relief_and_layered_headwaters_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
+                    release_kind='scoped_material_identity_terrain_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
                     regression=regression, capacity=capacity, source_pngs_modified=False, manual_image_compositing=False,
                     source_image_location='game/railway_warlords/assets; byte-identical generated originals, portable prompt/provenance copies in docs',
                     original_production_tree_duplicated=False, old_releases_modified=False,
@@ -321,16 +368,17 @@ def main():
     shutil.copyfile(P / 'docs/34_连续地表混合与控制色去重.md', out / '连续地表混合与控制色去重.md')
     shutil.copyfile(P / 'docs/35_地图缩放层次与精确点选.md', out / '地图缩放层次与精确点选.md')
     shutil.copyfile(P / 'docs/36_连续高程光影与细河岸带.md', out / '连续高程光影与细河岸带.md')
+    shutil.copyfile(P / 'docs/37_二十类地表材质形态重制.md', out / '二十类地表材质形态重制.md')
     (out / '交付说明.md').write_text(f'''# 铁道烽烟 {version} · 地表与界面测试交付
 
 Windows：解压 RailwayWarlords-Windows-{version}.zip，运行 RailwayWarlords.exe。
 Android：安装 RailwayWarlords-{version}.apk，延续现有签名。目标样机 Motorola X30 尚未完成物理验收。
 Godot：解压工程 ZIP，用 Godot 4.7.2 打开 game/railway_warlords/project.godot。
 
-保留 20 类地域地表、80 张细节原图和 20 张连续底材，共 100 张专用地表原图；地图素材共 970 张，全部 PNG 共 1,156 张。本版未增加栅格原图。
-本版将既有源高程光照改为连续正权重取样，减少三角面拼块；没有添加DEM采样或改写源地形。细河增加低饱和水床与半透明岸带，所有细河先画岸带再画水面，源河段端点与既有60米显示约束保持。沿用按缩放切换的独立城市/编队图符和精确点选。
+20 类地域地表的连续底材已全部重制：新增 20 张独立 Sub2 原图，各具草叶、针叶、砂纹、砾石、盐壳或岩板等结构。与既有 80 张细节原图合计 100 张启用专用地表原图。旧 20 张连续底材保留原始字节、ID、提示词及来源，未重复计入新增量或启用量。全部 PNG 共 1,176 张；存储的地图素材 990 张，其中当前启用 970 张。
+新底材继续使用既有生态区、高程和河谷分配，不把示意材质当成逐年历史土地利用调查；规则地形仍为 12 类。沿用连续正权重高程光照及分层细河岸带，没有添加DEM采样或改写源地形。所有细河先画岸带再画水面，源河段端点与既有60米显示约束保持。沿用按缩放切换的独立城市/编队图符和精确点选。
 沿用上一轮的不重叠地表网格和三种相邻来源连续混合；各地图总览仍显示地域底材。亚洲控制区不再重复叠加城市影响色。44项原生材质夹具检查核对20种完整导入纹理、连续覆盖、绘制顺序和平移稳定性；夹具不冒充历史地图画面。
-沿用共享世界纹理的渐变主河水面；汉口、南京的31条替代主河使用既有60米有界显示圆角，上下游共用端点共享接头方向。河宽与岸带是制图符号，不是历史实测岸线。11项新增原生数值夹具核对GPU与独立16权重计算、三角方向和镜头平移；4张夹具画面单列，不作为实机地图画面。
+沿用共享世界纹理的渐变主河水面；汉口、南京的31条替代主河使用既有60米有界显示圆角，上下游共用端点共享接头方向。河宽与岸带是制图符号，不是历史实测岸线。另有11项原生数值夹具检查核对GPU与独立16权重计算、三角方向和镜头平移；4张夹具画面单列，不作为实机地图画面。
 沿用上一轮依据既有真实陆地裁切的亚洲战略层控制区：61个城市影响区和617个沿海控制格保留实际陆地部分，14个完全离岸候选格不绘制；主地图与缩略图共享裁切网格。里海水面扣除来源中独立的岛屿，保留真实湖中陆地。地理数据、历史归属和规则格未重写。
 说明书与地格详情均可进入交互地形图鉴。材质按生态区、高程与既有河谷选取；不宣称逐年历史土地利用复原。
 

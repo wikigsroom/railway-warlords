@@ -1,0 +1,374 @@
+{
+  "format": 1,
+  "version": "0.2.20",
+  "terrain_type_count": 20,
+  "requested_originals": 20,
+  "originals_per_type": 1,
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "runtime_installed": false,
+  "source_images_modified": false,
+  "manual_compositing": false,
+  "classification_scope": "Material-identity revision of twenty existing regional visual subtypes; no new rule terrain or geographical extent",
+  "assets": [
+    {
+      "id": "tile_ground_identity_temperate_meadow",
+      "category": "tile",
+      "family": "temperate_meadow",
+      "name": "温带草甸",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate grassland and forest-steppe ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nTEMPERATE MEADOW: fresh muted sage and olive grass dominated by clearly drawn tapering short green leaf blades in irregular interwoven fans. Medium curved blade groups have light tips and cool green root contact shade. About 70% grass and 30% quiet ochre loam gaps. Grass blades must be visible shaped strokes, not mottled green paint, moss islands or broad forest leaves. Green dominant, soft golden grass tips; no flowers."
+    },
+    {
+      "id": "tile_ground_identity_dry_steppe",
+      "category": "tile",
+      "family": "dry_steppe",
+      "name": "旱生草原",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate continental grassland ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nDRY STEPPE: broad straw-gold and pale khaki ground with clearly drawn long curved wiry dry grass fibres in loose sweeping tangles. Unequal fans of bleached straw with occasional faded olive blades, exposed compact pale tan earth between groups. About 55% pale dry fibres and 45% earth. Light, open and fibrous; no fresh green lawn, broad leaves, rock carpet or sand ripples."
+    },
+    {
+      "id": "tile_ground_identity_desert_steppe",
+      "category": "tile",
+      "family": "desert_steppe",
+      "name": "荒漠草原",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named desert-steppe and semi-desert ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nDESERT STEPPE: mostly open pale gray-taupe mineral soil, about 80% quiet exposed earth, with 20% irregular widely spaced short brittle straw-stubble groups and small flat embedded gray grit. Crisp tiny broken grass fans and shallow mineral streaks. Very sparse vegetation, dusty and open, not a continuous grass mat, lush green ground or dune field."
+    },
+    {
+      "id": "tile_ground_identity_dune_sand",
+      "category": "tile",
+      "family": "dune_sand",
+      "name": "风成沙地",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named sandy-desert ecological regions only",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nWIND-WORKED SAND: clean pale golden ochre sand shaped by several coherent sets of shallow flowing ripple combs. Long curved parallel ripple ridges break and merge naturally, clear lit upper-left lips and muted trough shade. Broad smooth sand sheets between ripple groups. Silky rather than gritty, no pebbles, plant fibres, mottled loam or raised dunes. Warm pale ochre dominant."
+    },
+    {
+      "id": "tile_ground_identity_gravel_gobi",
+      "category": "tile",
+      "family": "gravel_gobi",
+      "name": "戈壁砾地",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named stony and xeric-desert ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nGOBI DESERT PAVEMENT: clearly drawn unequal flat angular pebbles and slate chips in cool gray, dusty umber and pale limestone embedded in buff compact soil. About 55% small angular gravel groups and 45% exposed compact mineral ground. Readable separated triangular/trapezoidal chips 20-65 pixels across with shallow contact edges; no sand ripples, grass, moss, large boulders or rounded camouflage blobs."
+    },
+    {
+      "id": "tile_ground_identity_saline_meadow",
+      "category": "tile",
+      "family": "saline_meadow",
+      "name": "盐生草甸地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named saline meadow and salt-marsh ecological regions; no water extent inferred",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nSALINE MEADOW SURFACE: pale chalky gray-ivory silt with interrupted thin cream mineral-crust seams, flaky shallow crust edges and sparse desaturated gray-green sedge stubble. Roughly 65% pale mineral ground, 20% broken chalky crust structure and 15% low narrow sedge fibres. Distinct pale mineral identity, not an open salt lake, water or a surveyed salt boundary; no continuous polygon lattice."
+    },
+    {
+      "id": "tile_ground_identity_alpine_meadow",
+      "category": "tile",
+      "family": "alpine_meadow",
+      "name": "高山草甸",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine meadow ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nALPINE MEADOW: tight low cool jade-sage grass cushions made from visibly short dense radial leaf fans. Compact fine grass mats with velvety little moss and small exposed cool gray grit gaps. About 75% cool green low grass and 25% gray gritty soil. Short cushion fibres create clear fine structure; not tall warm straw, brown leaf litter or abstract circular blobs. No flowers or snow."
+    },
+    {
+      "id": "tile_ground_identity_alpine_steppe",
+      "category": "tile",
+      "family": "alpine_steppe",
+      "name": "高寒草原",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine steppe and alpine desert ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nCOLD ALPINE STEPPE: open pale slate-gray gritty soil threaded by sparse stiff silver-straw grass tufts and low wind-combed wiry fibres. About 65% exposed cool mineral ground and 35% bleached short grass, occasional flat gray chips. Cold gray and pale straw palette, visibly wiry not mossy or lush green, no warm red earth, snow, frost polygons or dunes."
+    },
+    {
+      "id": "tile_ground_identity_tundra_moss",
+      "category": "tile",
+      "family": "tundra_moss",
+      "name": "苔原地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tundra ecological regions; no seasonal ice or permafrost boundary inferred",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nTUNDRA MOSS AND LICHEN: shallow interlocking olive moss fibres and pale gray-green branching lichen crust lobes over dark muted peat. Recognizable soft frilled lichen edges with broken connected peat seams; no round evenly spaced islands. About 45% olive moss, 30% pale lichen and 25% peat. A low fibrous organic mat, not grass blades, pebbles, generic camouflage, snow, standing shrubs or water."
+    },
+    {
+      "id": "tile_ground_identity_boreal_litter",
+      "category": "tile",
+      "family": "boreal_litter",
+      "name": "寒带林带腐殖层",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "boreal ecological region ground reference, not an assertion of historical tree cover",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nBOREAL HUMUS: deep cool peat-brown forest-region earth with extensive low olive-green moss thread mats and small pale gray lichen flecks. Sparse rusty fallen needle fans and tiny bark flakes lie among moss seams. About 55% peat, 30% moss/lichen, 15% needles. Cool moss-rich and organic, distinctly different from a dry brown needle carpet. No large leaves, standing plants or snow."
+    },
+    {
+      "id": "tile_ground_identity_temperate_litter",
+      "category": "tile",
+      "family": "temperate_litter",
+      "name": "温带阔叶林带落叶层",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate mixed and broadleaf ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original opaque seamless repeating ground texture for a polished hand-painted historical hex strategy game. A single continuous flat top-down surface, edge to edge, no margin, panel, hex border, text, swatch sheet or collage. Illustrate a TEMPERATE BROADLEAF LITTER FLOOR with immediately recognizable material structure when reduced to 300 pixels. This is a representative cartographic ground pigment, not a surveyed historical forest extent. No trees, standing plants, terrain heights, buildings, roads, fields, water channels, pools or geographical boundaries.\n\nIdentity: a warm walnut-brown humus base with clearly drawn scattered curled oak-like and broad oval fallen leaves in copper, russet, ochre and faded parchment. Dry leaves have simple visible silhouettes, central veins and curled edges, with occasional thin broken twigs. Keep roughly 60 percent connected quiet exposed brown earth and 40 percent meaningful leaf groups. There must be recognizable individual leaf shapes, not grass, camouflage blotches, mossy noise or an abstract green-brown brush cloud. Arrange irregular groups of 3 to 7 leaves, varied open ground between groups, no evenly spaced spots, no repeated single emblem. Across a 1024 square, main leaves roughly 45 to 90 pixels long; secondary leaves 20 to 40 pixels. Their cartographic scale is deliberately enlarged for gameplay readability. Delicate shallow contact shade beneath curled leaf edges, subtle soft light from upper left, matte watercolor/gouache rendering with controlled ink-free edges. Warm deep brown ground, muted copper leaf accents, no dominant green. Medium value separation within the material; no black speckles, photographic grain, vignette, glossy highlights or long shadows. Clear readable illustrative marks, restrained historical board-game palette. All four edges seamlessly wrap. Do not copy any existing game's artwork.\n"
+    },
+    {
+      "id": "tile_ground_identity_conifer_litter",
+      "category": "tile",
+      "family": "conifer_litter",
+      "name": "针叶林带针叶层",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate or tropical conifer ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original opaque seamless repeating ground texture for a polished hand-painted historical hex strategy game. A single continuous flat top-down surface, edge to edge, no margin, panel, hex border, text, swatch sheet or collage. Illustrate a CONIFER NEEDLE LITTER FLOOR with immediately recognizable material structure when reduced to 300 pixels. This is a representative cartographic ground pigment, not a surveyed historical forest extent. No trees, standing plants, terrain heights, buildings, roads, fields, water channels, pools or geographical boundaries.\n\nIdentity: a cool deep peat-brown exposed earth base strewn with clearly recognizable fine elongated ochre and reddish-brown fallen pine needles in loose directional fans and small overlapping bundles. Add a few thin broken twig fragments and rare muted gray bark chips. No broad leaves and no dominant green grass or green moss. Keep approximately 55 percent connected quiet dark mineral-humus earth and 45 percent readable needle groups. Use curved slender needle strokes, irregular sparse fans of 5 to 12 needles and a few straight cross-layers, with varied open ground between groups. At 1024 square, dominant needles 45 to 100 pixels long and 3 to 7 pixels thick, occasional twigs 100 to 150 pixels long, needle groups 100 to 180 pixels wide. These cartographic marks are deliberately enlarged for gameplay readability. Warm amber needles against cool desaturated umber earth must stay structurally distinct from both grass blades and broadleaf litter. Hand-painted matte watercolor/gouache texture with shallow contact shadows and soft upper-left light. Controlled midrange values; no black holes, white sparks, sandpaper grain, photoreal noise, regular blobs, camouflage, large green patches, vignette or long shadows. No cone-shaped hills and no pine forest silhouettes. Clear readable illustrative marks, restrained historical board-game palette. All four edges seamlessly wrap. Do not copy any existing game's artwork.\n"
+    },
+    {
+      "id": "tile_ground_identity_subtropical_humus",
+      "category": "tile",
+      "family": "subtropical_humus",
+      "name": "亚热带林带湿润土",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-latitude Asian temperate broadleaf ecological region ground reference",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nHUMID SUBTROPICAL HUMUS: warm red-brown friable loam with clear soft terracotta earth crumbs, a few flattened dark olive broadleaf fragments and thin tan root-like organic fibres at ground level. About 65% exposed warm crumbly clay/loam, 20% muted leaf fragments and 15% fine organic fibres. Readable earthy clods and shallow contact relief; no grass carpet, broad bright autumn leaves, puddles or surveyed root system."
+    },
+    {
+      "id": "tile_ground_identity_tropical_moist_humus",
+      "category": "tile",
+      "family": "tropical_moist_humus",
+      "name": "热带湿润林带腐土",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical moist broadleaf ecological region ground reference; no historical jungle boundary inferred",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nTROPICAL MOIST HUMUS: deep warm umber organic earth with flattened decomposing broad oval leaf fragments in dark russet, charcoal-brown and muted olive. Fine tawny fibrous organic strands cross a few leaf groups, broad quiet dark humus between them. About 60% dark humus and 40% low flattened leaf/fibre groups. Rich dark matte organic floor, not orange autumn litter, bright grass, glossy mud, black speckle noise or standing roots."
+    },
+    {
+      "id": "tile_ground_identity_dry_woodland_litter",
+      "category": "tile",
+      "family": "dry_woodland_litter",
+      "name": "旱林灌丛带地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical dry broadleaf or Mediterranean woodland ecological region ground reference",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nDRY WOODLAND FLOOR: pale dusty beige calcareous earth with scattered small curled parchment-colored narrow fallen leaves, brittle tan twig slivers and sparse tiny chalk chips. About 70% open pale powdery ground, 30% light dry organic litter in irregular groups. Bleached cream and sandy tan dominate, visibly papery rather than green or dark moist brown. No dense grass, moist moss, tree shapes or large broad autumn leaves."
+    },
+    {
+      "id": "tile_ground_identity_savanna_red_soil",
+      "category": "tile",
+      "family": "savanna_red_soil",
+      "name": "热带草原地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical savanna and grassland ecological region ground reference; soil color is representative art",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nSAVANNA RED EARTH: clearly red-ochre and muted terracotta mineral clay with a few broad shallow irregular dry fracture seams, separated short bleached yellow straw fibres and low thin olive grass strokes. About 75% warm red clay and 25% dry grass/straw. Broad cohesive clay planes with occasional uneven broken edge, red dominant; no dense polygon lattice, brown autumn leaves, green lawn, termite mounds or actual mapped drought boundary."
+    },
+    {
+      "id": "tile_ground_identity_flood_meadow",
+      "category": "tile",
+      "family": "flood_meadow",
+      "name": "洪泛草甸地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named flooded grassland ecological region ground reference; not historical flooding or wetland extent",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nFLOOD-MEADOW GROUND: muted cool gray-green silty earth interwoven with clearly flattened narrow sedge blades and reed-like leaf ribbons. Unequal low parallel mats bend in shallow sweeping directions, pale dried-silt streaks between them. About 55% fine silt and 45% flattened fibrous vegetation. Broad low ribbons, not standing reeds, tall grass, regular farm lines, puddles or water channels; no assertion of historical flood extent."
+    },
+    {
+      "id": "tile_ground_identity_alluvial_loam",
+      "category": "tile",
+      "family": "alluvial_loam",
+      "name": "河谷冲积地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-relief named alluvial ecological regions close to an archived surveyed river",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nALLUVIAL SILT AND LOAM: warm pale buff to clay-brown fine sediment with broad interrupted irregular sediment striations, soft shallow earth clods and very sparse straw fragments. Clear smooth silt planes alternating with a few fine cohesive crumb groups. About 80% exposed calm sediment and 20% meaningful silt/clod structure. No mossy green blotches, grass carpet, leaf litter, regular cultivation furrows, water channels or mud-crack lattice."
+    },
+    {
+      "id": "tile_ground_identity_weathered_rock",
+      "category": "tile",
+      "family": "weathered_rock",
+      "name": "风化岩坡地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified hill and mountain cells; representative mineral grain, not a lithological survey",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nWEATHERED ROCK SURFACE: broad flat irregular gray-green and warm gray mineral slabs, shallow weathered fracture joints and thin subtle stratum bands. Unequal planar slabs 80-160 pixels across with small subdued olive earth pockets in the joints. About 75% coherent flat stone and 25% mineral/soil seams. Recognizable bedrock plates, not small gravel, isolated boulders, mossy camouflage or mountain miniatures. Representative mineral art, not a lithological map."
+    },
+    {
+      "id": "tile_ground_identity_alpine_scree",
+      "category": "tile",
+      "family": "alpine_scree",
+      "name": "峰岭碎岩地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified peak cells; representative rock fragment grain, not a mapped scree deposit",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "ONE original opaque seamless repeating ground material for a premium hand-painted historical strategy atlas. Exact top-down flat surface, all four edges wrap, continuous edge-to-edge pigment with no margins. This is a representative cartographic material, not a surveyed historical vegetation/soil extent. Use recognizable medium-sized material shapes that remain distinct after the entire image is reduced to 300 pixels. Across a 1024 square, primary meaningful marks are 40-110 pixels across, finer secondary marks support them. Broad connected ground between irregular groups; avoid uniform camouflage clouds, sponge blotches, sandpaper grain and evenly spaced emblems. Illustrative matte gouache/cartographic painting with restrained natural colors, moderate local value separation, shallow upper-left contact light, no black outlines, long cast shadows, vignette, wet glare or photographic micro-noise. Do not copy another game's art. No trees, standing bushes, cliffs, mountain silhouettes, snow, buildings, roads, fields, farm furrows, rivers, water channels, puddles, coastline, map divisions, borders, hexagons, grid, text, logo, frame, panels, collage or watermark. One full material, not a sheet of samples. Specific material identity follows:\nALPINE SCREE: dense unequal elongated angular slate-gray rock splinters and pale cold stone chips, roughly aligned in irregular short fans with tiny dark contacts between shards. Flat shallow talus-grain material; about 75% small angular chips 25-80 pixels long and 25% cool gritty mineral gaps. Cool silver/slate palette, no green moss, grass, brown forest litter, round pebbles, large raised boulders or snow. Not a surveyed scree extent."
+    }
+  ]
+}

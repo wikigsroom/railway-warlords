@@ -7,10 +7,12 @@ from package_delivery import read, require, sha
 
 
 def main():
-    plan=read(P/'presentation/data/ground_macro_plan.json')
     catalog=read(P/'presentation/data/ground_macro_catalog.json')
+    plan_path=P/catalog.get('source_plan_file','presentation/data/ground_macro_plan.json')
+    require(plan_path.resolve().is_relative_to(P.resolve()),'Plan must remain inside the project')
+    plan=read(plan_path)
     manifest={row['id']:row for row in read(P/'assets/manifest.json')['assets']}
-    require(catalog['source_plan_sha256']==sha(P/'presentation/data/ground_macro_plan.json'),'Immutable plan differs')
+    require(catalog['source_plan_sha256']==sha(plan_path),'Immutable plan differs')
     require(len(plan['assets'])==len(catalog['records'])==20,'Twenty types required')
     hashes=set();rows=[]
     for item in plan['assets']:
@@ -30,8 +32,17 @@ def main():
         require('process/size_limit=384' in imported and 'mipmaps/generate=true' in imported,'Wrong import budget')
         hashes.add(row['source_sha256']);rows.append(dict(id=item['id'],family=item['family'],source_sha256=sha(source),prompt_sha256=sha(prompt),import_sha256=sha(image.with_suffix('.png.import')),high_frequency_luma_mean_128=round(high_frequency,4)))
     require(len(hashes)==20,'Duplicate original bytes')
+    superseded=catalog.get('superseded_asset_ids',[])
+    require(len(superseded)==catalog.get('superseded_originals',0),'Superseded inventory differs')
+    require(not set(superseded)&{row['id'] for row in rows},'Active and superseded IDs overlap')
+    for asset_id in superseded:
+        old=manifest[asset_id]
+        require(sha(P/old['engine_path'].removeprefix('res://'))==sha(ROOT/old['source_file'])==old['source_sha256'],
+                'Previous immutable original differs: '+asset_id)
+
     report=dict(passed=True,version=current_version(),sources=20,source_route=plan['source_route'],source_images_modified=False,
         art_score=False,geography_assignments_changed=False,formal_art_approval=False,
+        source_plan_file=plan_path.relative_to(P).as_posix(),stored_superseded_originals_verified=len(superseded),
         measurement_scope='Analysis-only 128px luminance; no derived image written. Frequency is not an artistic-quality score.',assets=rows)
     (P/'reports/ground_macro_asset_audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(passed=True,sources=20,unique_hashes=len(hashes))),flush=True)

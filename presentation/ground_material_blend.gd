@@ -12,6 +12,7 @@ shader_type canvas_item;
 render_mode unshaded;
 uniform sampler2DArray ground_sources : source_color, repeat_enable, filter_linear_mipmap;
 uniform float ground_alpha = 0.94;
+uniform float ground_repeat_period = 128.0;
 uniform bool relief_enabled = false;
 uniform sampler2D relief_shades : repeat_disable, filter_linear;
 uniform vec2 relief_dimensions = vec2(1.0);
@@ -29,7 +30,7 @@ void vertex() {
     if (ground_mode > 0.5) {
         ground_layers = floor(COLOR.rgb * 255.0 + vec3(0.5));
         ground_weights = vec3(UV.x, -UV.y - 1024.0, 1.0 - UV.x + UV.y + 1024.0);
-        ground_uv = VERTEX / 384.0;
+        ground_uv = VERTEX / ground_repeat_period;
         ground_coverage = COLOR.a;
     }
 }
@@ -100,6 +101,7 @@ static func material(strategic: bool) -> ShaderMaterial:
 	var shader=Shader.new();shader.code=CODE
 	var result=ShaderMaterial.new();result.shader=shader
 	result.set_shader_parameter("ground_sources",source_array)
+	result.set_shader_parameter("ground_repeat_period",float(MapTerrainSurfaces.macro_data().get("world_repeat_period",128)))
 	result.set_shader_parameter("ground_alpha",MapTerrainSurfaces.alpha_for("temperate_meadow",strategic))
 	return result
 

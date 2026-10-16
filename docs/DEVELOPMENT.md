@@ -73,7 +73,7 @@ python tools/capture_terrain_update.py
 python tools/refresh_terrain_repository.py
 ```
 
-`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.19截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.20截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
 
 `prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 
@@ -104,3 +104,7 @@ The 0.2.18 symbol checks run the current Windows EXE in two desktop viewports, u
 本版连续光影专项：`python tools/verify_relief_shading.py`，要求当前Windows导出。11项检查、4张完整数值夹具视口单列记录；它们不是历史地图或手机验收。
 
 Current relief check: `python tools/verify_relief_shading.py`, after a verified Windows export. Eleven checks and four whole numerical fixture viewports are separate from historical-map and physical-device acceptance.
+
+0.2.20 连续底材生产入口是 `tools/generate_ground_identity.py`，完整提示词计划为 `presentation/data/ground_identity_plan.json`。仅通过指定Sub2路线生成；安装前要求20张完整原图的检查记录，安装时采用新ID并保留旧20张原图。已登记原图或提示词不一致时拒绝覆盖。独立克隆已带原图与便携提示词，游玩无需重新生成或连接网关。安装应先于导入、源码封存、回归与双端构建，避免构建中改变素材身份。完整范围见[37](37_二十类地表材质形态重制.md)。
+
+The 0.2.20 material producer uses the required Sub2 route and installs new IDs only after all twenty complete originals have a review record. It retains the previous twenty originals and rejects mismatched existing source bytes or prompts. Playing the clone needs neither regeneration nor gateway access. Complete installation and imports before freezing, testing and exporting the source.

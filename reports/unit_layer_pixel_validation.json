@@ -1,16 +1,16 @@
 {
   "passed": true,
-  "version": "0.2.19",
-  "runtime_source_sha256": "05223238dd872ef482cc166ac2b08fcaf3b5be84637fb3f3e5833e1fd9afa8a5",
+  "version": "0.2.20",
+  "runtime_source_sha256": "61ae4e93e4efee62c86cc700374e06d079f04d5de61f1e1b634c2df60e732605",
   "cases": [
     {
       "name": "campaign_static",
-      "mean_channel_difference_0_255": 0.00611963091563786,
+      "mean_channel_difference_0_255": 0.006050990226337449,
       "maximum_channel_difference": 2,
       "channels_over_three_ratio": 0.0,
       "native_images_sha256": [
-        "9105a2858549a3e731ad88449a4521eda672969ee09c730e6c353ba4f3eebb0c",
-        "cd8c2ea34a2cd0e3714838b17f45eed0c7c3b2a7a7cb65ab05263e641a5826d3"
+        "31a288d36b66054e4035436fc382c0f23eb5d4e4bb25f80187d8b14b99640b7e",
+        "90b774c454380d93acdb2ccf520a5234ad5c99d659e3c1df6c4818b282ff2d07"
       ],
       "unit_order_preserved": true,
       "state_and_rng_unchanged": true,
@@ -48,8 +48,8 @@
       "maximum_channel_difference": 1,
       "channels_over_three_ratio": 0.0,
       "native_images_sha256": [
-        "be0696b71fc89e2ee6ef6e454cc800f8ac78b53db4990c7857812301c183ebd0",
-        "6b50a8354a80c733a05194f09f9b236a4755577ef669e1b09ab8873ce206343f"
+        "d3267db6e99a4d715423353666f30cde87251a296fdde6875f6c1fad682a6ea5",
+        "a634301b91aff7df144e3aa9fbc8b57583691900b41b5a09c3e5a74363c7b8f6"
       ],
       "unit_order_preserved": true,
       "state_and_rng_unchanged": true,

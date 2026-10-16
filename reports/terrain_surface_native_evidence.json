@@ -1,9 +1,9 @@
 {
   "passed": true,
-  "version": "0.2.19",
-  "created_at_utc": "2026-10-16T20:24:24.049537+00:00",
-  "runtime_source_sha256": "05223238dd872ef482cc166ac2b08fcaf3b5be84637fb3f3e5833e1fd9afa8a5",
-  "windows_exe_sha256": "9d415bffb98193086108cca8b8ccbcabd493a434840e51fecb8ecd5dc6b26f0c",
+  "version": "0.2.20",
+  "created_at_utc": "2026-10-16T21:52:43.845116+00:00",
+  "runtime_source_sha256": "61ae4e93e4efee62c86cc700374e06d079f04d5de61f1e1b634c2df60e732605",
+  "windows_exe_sha256": "5c47a61a84d72f2c71613e97cce6a2e426fa473d00489b4ac82dcf7c5496fdf0",
   "source": "Verified Windows release EXE; normal controls and published scenario geography",
   "groups": [
     {
@@ -14,146 +14,146 @@
       "checks": 112,
       "passed": true,
       "report": "reports/screenshots/terrain_surfaces_native/windows/validation.json",
-      "report_sha256": "b87ce8e9873d53e66f4eaa19173167e135749dc7ec535939425386753ed02dbd",
-      "log": "reports/terrain_surfaces_native_windows_v0219.log",
+      "report_sha256": "730a43a9f16487838b1ad0b3620bc58f101e2b4a956b2200673e15bc72abe741",
+      "log": "reports/terrain_surfaces_native_windows_v0220.log",
       "captures": [
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/atlas_0.png",
-          "sha256": "ccac3bacc960d8ddcf846983d45234b921e7644efcdd147bbcfab96543f56de4",
+          "sha256": "0374c02410489f06830a305ac029cf9880718c872b947de8980e21ab33612c6b",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/atlas_0.json",
-          "metadata_sha256": "f36cb438d923b9f9e1aa9805eca8df1e81a1123a8e1da67f386fb38eae3d61ee"
+          "metadata_sha256": "e28bf9e350f5d81d92b374bb42bbba32720cc0367c7a52ea836587946f924203"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/atlas_1.png",
-          "sha256": "1daedb640ed5858739c29f5f7856c20cf991705f1b5eed56607da0fbba4dbbbc",
+          "sha256": "0051fd8354a65bd94e4fada5f9838d5f273e456ca882f656c83b0ccadfa8e518",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/atlas_1.json",
-          "metadata_sha256": "0270122885cbf9d36cd54dfeddd098d38a4d7ebf92186a396dfee88d517c3d11"
+          "metadata_sha256": "e1aa83f88707f3e1f8a108dd897ff7f70128f92f0e9f9a16b0ea6ae1efde8c3f"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/atlas_2.png",
-          "sha256": "cc8ac39482122d562452de17d50f2ccfcacfde6686306c772810e93c986da024",
+          "sha256": "966f633d3b2fd9570359b07116e249626105147870131ff26fc449237c010efd",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/atlas_2.json",
-          "metadata_sha256": "8fff8a3f934b3d1ea6248a49420998f684daf81902f454587be9684dc632c4d8"
+          "metadata_sha256": "68937b7ffb755a705287c92ea87f1a84407166010685a50999924f0f5bd2d037"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_meadow.png",
-          "sha256": "8b6e057f55f6953fa60006f8ddc7e13344b2bee9f8ec07242d5ca8df7f18a43d",
+          "sha256": "695e3bc37fad01c987ae1f15ae1b1939a02e5515bc7f8b9b996e749760b0b98c",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_meadow.json",
-          "metadata_sha256": "95291022ffa46a5e45adb86b448bd544eed560d367830532004bc4c4b4392c56"
+          "metadata_sha256": "31a43310630f2d647d369c96b7356ceb3a200081a30ea660b7501b18ddff9cd4"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_dry_steppe.png",
-          "sha256": "a1154d68c884694273df61fdfbd861ba19863453307b2f7eb37a6bb2820c538a",
+          "sha256": "28143084e298d23c9d2fbba6392049589558e080fd34039d7e447e18f4d95ce9",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_dry_steppe.json",
-          "metadata_sha256": "131e67e4e37c73d99134320c5ee020f51302062435652d5504e80c95f955ae1e"
+          "metadata_sha256": "0e407e41b72b7e37534a538614250481fc922d37ad8a5ca36f72f337dd1fccf3"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_desert_steppe.png",
-          "sha256": "b6e96fc5358d5925d0ee1f0bf19df2a7b4bcb9d451f9ffa58819370e896825b9",
+          "sha256": "20350d44f565dec0db7837cd685e3abaeabd9d76b8fedae30bc53194f2abd889",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_desert_steppe.json",
-          "metadata_sha256": "1eba5d7cd7fdeb3cbddd9bbcaf9ade20792df878e222943034699077dcef722f"
+          "metadata_sha256": "6489ee28b6c80fd59ccdf17db6afd480cfe255085188e9dc1d4a60ddfe5bd3eb"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_dune_sand.png",
-          "sha256": "c317114463621cd6335ddd5af809554a62971364ebfc0f1edd452b40f4228a56",
+          "sha256": "8d65ec144145cd9c7252c9b8057a07ea4ad27d27dc2d75c4f0940a263fefdb23",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_dune_sand.json",
-          "metadata_sha256": "511d11a399401dc1a8873a593c2c5e765c552a1b7ee1eb116342e625aaaf93cc"
+          "metadata_sha256": "bfc8333b7c22a7906a76a22a2a4e457560c93e1b4f22ad1587ee550300fa222b"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_gravel_gobi.png",
-          "sha256": "d2723b41151c5b30eaddd1e6831fa75fe50741e523a11102053c837be086a1c8",
+          "sha256": "3fb561f570aca9f89492627528913cf16bdcfdf035f8d66cc6a5e8940ec1d526",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_gravel_gobi.json",
-          "metadata_sha256": "64279be3933f40ae4fc562d25e9ff72ce2e1afe9316b9c79cd282380e4c82a1a"
+          "metadata_sha256": "de6133c495dd534c59f7bc52bb240d9aa37e0117efce151cf01de1d0f4fea89c"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_saline_meadow.png",
-          "sha256": "e864b0da79846d38d26ca871d101928f2e7e3756e8665920a299c1f1122f7fea",
+          "sha256": "b6a571667b60b6599653ab444e090d1a054a074c128d8df6b89e67a2f5f331f2",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_saline_meadow.json",
-          "metadata_sha256": "b776e0cc127a681299e3b614b3415c163865b01e66ca459cb239d0b7273077b5"
+          "metadata_sha256": "e8de3ffc0178bf56b4a0742d570aecd283a285c31d7986a5db2569ead26adfd9"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_alpine_meadow.png",
-          "sha256": "1321f3213ee75fb7e4a75c8dae359a61ab7f9621636e155cd2d80515f91086fe",
+          "sha256": "2a93bd952bb3ebbf4c9bbd9ff352ba88aeb22cf7366ece37b87a22c137f650e9",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_alpine_meadow.json",
-          "metadata_sha256": "83d27dfff028a1176f7ebc9eab9a55c90a090644007ea4bcfd4b7163615646f8"
+          "metadata_sha256": "8bf101f6e8b34764bdd78275fe2248a1a18fcf31063d2fbac962b110dd3a120d"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_alpine_steppe.png",
-          "sha256": "77ce46ab7b0596e90645ba0cb3d8186f176f97cae3f6977b717726abd73bf6ab",
+          "sha256": "4f0c4a48c5bb3f354871ba77c1526758d092b0d81dfabd9ef40f4b2834c60960",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_alpine_steppe.json",
-          "metadata_sha256": "239b8141d3c6111af8e0eb2691cd210086d1a439d6291c17148428330b5ba2fa"
+          "metadata_sha256": "75b78538849a7ab37f7ac909cf046c97453bff816e0f8916a746aa7835883a57"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_tundra_moss.png",
-          "sha256": "d5036ee21dcfae5c6f8a94a3d809d8ff0f78012ec474e355600a6516549f3b97",
+          "sha256": "dad15622a54aacda558766b025ba7af94dfad60f0f82c89e4b13a509ca7cd9f9",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_tundra_moss.json",
-          "metadata_sha256": "8344fcf2347df1ba947b4581e4ff961269c7b0453f9a8f0c2667480ddb7bbd2b"
+          "metadata_sha256": "10d1e54ae1f27eaa2f722f01017450f6e404bc0e4d97c7d566244e0e44dab647"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_boreal_litter.png",
-          "sha256": "16b4969d4c29b2617019ceb57be33d9bc6bc7ddbb0545c7793256b693a47600b",
+          "sha256": "dee8d35a03345f00c08a4223d2f773eae50d1cf30a5156fab0d4fadc5dc58d68",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_boreal_litter.json",
-          "metadata_sha256": "4bb0a0d428c2af3a1f76ed015800aa05c92d65ab3f7b79caaf3312cd444826b2"
+          "metadata_sha256": "818ce0bf242f5fca96be2a7bf9e4dd8981fbbcc8c0327db8792e4556c41e1321"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_litter.png",
-          "sha256": "44928d393104635d83dc90d7d3fb0fd70196aaf6ac929c46b6f35f0cc2be0af5",
+          "sha256": "077066396df3a8b505880bbc65451eb2e81be9a1a0b0e83410cc2c5da88e2a0b",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_litter.json",
-          "metadata_sha256": "6eb693aeeb0a72bb1f8e7e4ea6b5b5d6d2370883eedf2b56273a2346b52b08d5"
+          "metadata_sha256": "7f599eb2f364e5e5740a719b82cd6a14515c178d9e788f0bce713667b8d69f3a"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_conifer_litter.png",
-          "sha256": "f4e628c42626c4919beb86a6d376ccde73a61185cc353953998b073b838b2ee6",
+          "sha256": "849d9df3879dededc262f6f5743f09fbe3c96b90aeeedce140d27e814534caa8",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_conifer_litter.json",
-          "metadata_sha256": "ddbc1de1f55d0d6f8b42ae5aa9806474d4e0c2f282084dbf0f081bcd73765b00"
+          "metadata_sha256": "1355b280838746ab705dd076e1e3c830cdd0942c162e35cdc9c48606e97ff9b3"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_subtropical_humus.png",
-          "sha256": "6baa72a5a5b08a41c9aad9af2043f5cea9c570f9e1d10843f79e259703a0cfb9",
+          "sha256": "8e4460dc1aac926086e55711eed916b54bc53121d618e1c50d72a7561d5704af",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_subtropical_humus.json",
-          "metadata_sha256": "3234648237fad684d3706af15e154cc5fbe2f666eb4a3890707e60145c5166b1"
+          "metadata_sha256": "92aa5273e8eabf05dc1cf929ebd6ff4e06cf9cb1a33d4a334a432d88b6118c60"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_tropical_moist_humus.png",
-          "sha256": "a18e90ae93937e3a78946e6a333a88fd48b1918710b6b073f7e2871cd02b2301",
+          "sha256": "c833c267976459933e8966ea6c2601d06210130f9b106ae303a48c6b556d7d67",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_tropical_moist_humus.json",
-          "metadata_sha256": "1539c91fc69d52b9558414b35c420e8c4b9dc385fe641b531f1fb64f1e92cddb"
+          "metadata_sha256": "d5c1c2b4b23ad1f293f876e14a688c5915ede803d3991add31807c3ea118e539"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_dry_woodland_litter.png",
-          "sha256": "9af4e6b90d933f458d9b75f5c3eaf4625e615ceeeee530458b445d44157458be",
+          "sha256": "515d2122d59652d71796ac5d031d8996265827f150f1a6978ff6bf498ff61607",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_dry_woodland_litter.json",
-          "metadata_sha256": "760b665f2aef6c106358bdfc8fa43743551aec8e5923214efe98e433cec779ef"
+          "metadata_sha256": "bdf33baf732c106bf313e3757ccdc6c3d8342c25ad516ba6cc58fccc72c8db7d"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_savanna_red_soil.png",
-          "sha256": "22c6c4682f5f9df0e12657b2d8613d6832fb2577dcca15185cb3967bb35daca4",
+          "sha256": "1452ce6b7858ffab85aa313721efea66381f0fb877e7a982a67da713bc3a1b4b",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_savanna_red_soil.json",
-          "metadata_sha256": "e2c66fe26b7cf7a616f3285b3a8d3724e1f6b488590edc4b27d3d81d2cb6718d"
+          "metadata_sha256": "070dbee162faad0240f643ce61a23aab742a154f561634e14cb19e6b2401c947"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_flood_meadow.png",
-          "sha256": "7f23cd53ebd08f8250b49a9dd3498a8d1bd8ebcefe8ee5f61e97c9704dc4f0f3",
+          "sha256": "32d04bdbbb9dca27548124e0c8c1bf338a4d0f42a7c53c5a99516528addb3364",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_flood_meadow.json",
-          "metadata_sha256": "648caa8438ab9ce0817f527155936a5175ee6e8a35af2669603ba72397f4a8c7"
+          "metadata_sha256": "46ccec3093841bc44667fa52f7ca939c1764c406940c54cf4c49047658ce628b"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_alluvial_loam.png",
-          "sha256": "e2f6fe14ee6f382a85a5a808650c12c1da77d8ff34ff20b971659f8d2cdeae0e",
+          "sha256": "35f4639f1ae1d53a132d4381041613c895cc680da949cc71e55bc3fb4b2efff4",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_alluvial_loam.json",
-          "metadata_sha256": "a4f918b13aab4bb63423735b6672549728c4b3d0fda54312652cc57fc61f0733"
+          "metadata_sha256": "7dca6810b4f9383083f4e349e19c0e804975de49b19f43c2717afbdf3cc19335"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_weathered_rock.png",
-          "sha256": "e17ea13510da91bae75bd874c7b6e98bfdfedef55bd99d2d83522cba9ec6c5b3",
+          "sha256": "b4d017249a595e10060b5f6ed53aafd66b3cac9e4cfb3476175f5169854d63c0",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_weathered_rock.json",
-          "metadata_sha256": "abe99dbc97be1f2e197d0934ab51e661aa68271cc6590428bdc98a466da3745b"
+          "metadata_sha256": "868e6c0bba66566249f52c21c44e25b884c12f2a397709bf43d3d55af98b9163"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/windows/map_alpine_scree.png",
-          "sha256": "aaa02122986d64189317de3784a58e89db36d59ae6cab4b4d8c9bdd860c561ae",
+          "sha256": "926a0c3f6d293ee80394f94c3cc2a94cc150c149857781a27630df714c3f511d",
           "metadata": "reports/screenshots/terrain_surfaces_native/windows/map_alpine_scree.json",
-          "metadata_sha256": "988b3c232eb22d312dc5a6aa8b77641c234cd55ca989c39f9caac9dd0c7dc2cd"
+          "metadata_sha256": "863b25dec51000c3134c14451ba599d1c3bef55a00b4187d3f67b95660ed27b6"
         }
       ]
     },
@@ -165,146 +165,146 @@
       "checks": 112,
       "passed": true,
       "report": "reports/screenshots/terrain_surfaces_native/x30_layout/validation.json",
-      "report_sha256": "0360a2003968aaa48cfd06f90cb0d39bf44e6bd9571cfba3310d7175c3362c9d",
-      "log": "reports/terrain_surfaces_native_x30_layout_v0219.log",
+      "report_sha256": "ccc27765c2777d2ff2d4f5b09a225f89c2298ea4a6efd8521a54772647ff52de",
+      "log": "reports/terrain_surfaces_native_x30_layout_v0220.log",
       "captures": [
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/atlas_0.png",
-          "sha256": "de3a103bc0d95422c8a5aa7cd3ea3c8f045795e1b417efe94ecb8402977c0c30",
+          "sha256": "efe4170e62eb33fcff6d512591c41f82c65d23937d152fda42ecbfdf69f92061",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/atlas_0.json",
-          "metadata_sha256": "0ec72f96959bd310ec6051b55f5069149478da568ee12a7e253a823416258d0d"
+          "metadata_sha256": "b91d4b69bc3e722ecf88d74260c9b8ecb8707a60cb357f9db035eee8b6a2e9c0"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/atlas_1.png",
-          "sha256": "cbe5361f5536419a1c6aeda40a925e1caf44385841fb9ceacafd19547ec15a11",
+          "sha256": "277396e4b8cf2b9b72f5497f9cffcd1ca6fcc52936f5c611ecc12c36044875a9",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/atlas_1.json",
-          "metadata_sha256": "c5df3c61e879da6e467334933ea1e591b47eb1442c6163157dc4e3d4aceb9d51"
+          "metadata_sha256": "61cdcf3d0c8c1ef95d5c5fad1ba214f8c9908e35a88434e73d170cf062d8f999"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/atlas_2.png",
-          "sha256": "09c22e095e6f893ed54d9986f626fadbc419b87c236cf6b6cfc7d276cb831afb",
+          "sha256": "214638ad41cb528d19931d71606480452a7a80c5049e472958b0fcab5e65a2f7",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/atlas_2.json",
-          "metadata_sha256": "f430c84daf3d2b0d493b33d1cba8663978152095bf950bd965862fe492ee8708"
+          "metadata_sha256": "91aa2aa795402f7b376ef47b651a9e3947af4a1336791480717d18d9aacdd093"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_temperate_meadow.png",
-          "sha256": "a3dc8b0aaa8d709ca6ad330c0cdfc905742fbf4e659d37696c4a193323e78626",
+          "sha256": "452a4c128a2bb453b13bb2615c76a3b997e8504163e60f41df85557abf797648",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_temperate_meadow.json",
-          "metadata_sha256": "d32a5544e6e7f108c0bff9d3d745cd80ece46899965ddc66dc1a8c3d8086c282"
+          "metadata_sha256": "20f7749ef45768489f80bd3f4b408530072850a35d2584ecd03553e1555ed1f5"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_dry_steppe.png",
-          "sha256": "2cc0c585b556e2458efad6a0855aab480b7cc269046d9b3dda091956303911b4",
+          "sha256": "3bd7e53503d29122ac4b965c95b6fb823f6c630012d7a34d56911fbaedaa9d43",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_dry_steppe.json",
-          "metadata_sha256": "26780602c2dd705375c782837467720e0c9eea8c7aaad29cb091c54a13e49a67"
+          "metadata_sha256": "a7bd1cffbfe06a23dbdaba7e4281dd0c38f721ccde8445475d0058e9b7888f63"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_desert_steppe.png",
-          "sha256": "e545eb9558035a00c5404a58d889d082ad611849bcb87b15c0c38450efc32764",
+          "sha256": "40bf9e10c027beb7640e2da87060a175101b3a8a6bc832484ed0e4f53cd4d125",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_desert_steppe.json",
-          "metadata_sha256": "5a95d2416e589e23b8e78e056f0df4c0d7137c54861efd7f4855b317cecfa401"
+          "metadata_sha256": "49430971d48f51bb20de8d5b59d2e0d6d66ed9871457ee87488fdb1ce1d9f8f6"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_dune_sand.png",
-          "sha256": "e7e9fedc11becc281609d4047161c656b76fe2d4592494c98670f3fc302b40ee",
+          "sha256": "eea30b1291bd6eb4e2b6480a21fd6cd65489e03fb674ac4c54cb2a4a11d13fda",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_dune_sand.json",
-          "metadata_sha256": "dad08510f892b49d7249322a446ed6daa84aa9f65ea787a86aea503c1070d107"
+          "metadata_sha256": "a260611da072fac43b98f21fd03158db922687840b8c7e763787fc924d6d63dc"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_gravel_gobi.png",
-          "sha256": "8a76f7084634ff8f908f471d5304102b9464d9bf14f2ed7f555b61af6139b886",
+          "sha256": "2bccb6836954b9bae94197c5d14eb452d1ac56dbd2ba64068b8499d972f7766a",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_gravel_gobi.json",
-          "metadata_sha256": "303183b8ba2905c8f30786953031909973f2b1102a2b904ab7603119aab0a8c6"
+          "metadata_sha256": "038d2082c281fde93c88c2a4b53e78a184308ddba22a02c8188db0f6328e46f7"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_saline_meadow.png",
-          "sha256": "dc5dc79f5e81952853d7bea675910cf9c1d504d9b9ac529aeec193576b5802f3",
+          "sha256": "9d6a270494eff6b9498a9336dc217cbe5ccb38ff7652f052784c2b32a97c7777",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_saline_meadow.json",
-          "metadata_sha256": "9abcd4a42f6fc0abd611a0f96bc24f4946dfae18279008c67f03302433cefc79"
+          "metadata_sha256": "deb8086dd4986be49d79c680fe5eaa9ab0c21c7c40a0611581cfdd684a078d60"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_alpine_meadow.png",
-          "sha256": "585d1c8561ccee0d069a1ac4ffcef5de675f3e223767012b3868f03e0a5db6f5",
+          "sha256": "7b7862b5bb3ec13868495004bb4ccaaaf3808d17fe6e591edd93119f43d56c82",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_alpine_meadow.json",
-          "metadata_sha256": "9f484686e5e5d32e32b4bc23e66df6b26097cbe225d6efcaa6aef60922dcfd6d"
+          "metadata_sha256": "b9a7921132234313af3824fa46d620ed22275179eb47d9c16b6b4911bbd4ee77"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_alpine_steppe.png",
-          "sha256": "3411f23137e888394dc6f48b84ec0639a9c0e0f072dcec7c2f25e8a2bf8f05fc",
+          "sha256": "2a6c773c06952527e31b43570df48ff3aab54317ca2b6be0eb01148c53905a3c",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_alpine_steppe.json",
-          "metadata_sha256": "1f3e81a325223d4af41d297a3188c0eb0b09018f8cdb858014c7698104a440b9"
+          "metadata_sha256": "6f1f1459ea6044f3a7a5a388ee2370ccbab5474e9b5bf349c7da2db17e76ac72"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_tundra_moss.png",
-          "sha256": "56bda7dbb21a69577097bd781be13066ce9aabd010a780140c44d31007474777",
+          "sha256": "a794b1fddde8b1f3f791a75f0847758d2e14095528be763ebda141840b23b498",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_tundra_moss.json",
-          "metadata_sha256": "b91814959521663676ed7ee9ccf7a9c37996393f965cf1a24b6ac1173ffc9edb"
+          "metadata_sha256": "d140af6ca6e1f691ca4c2543f5d0ed4b6cdc13c4f33fb5442618ec95e64f0493"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_boreal_litter.png",
-          "sha256": "a9d9a6a22cafbb24765827a2c1f95fea854c9df23d60049b209ba4ee524c8694",
+          "sha256": "421eb04bff0f5985e36472368720efd94b6147534b8b5f4a4e029b8c5056182d",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_boreal_litter.json",
-          "metadata_sha256": "8c3505fa5507a9ff479d956c8374dd92bbec83636c0c116b78b5a5a38982084c"
+          "metadata_sha256": "3b0638b9fd23b0bc33c8b6c682d0ad12c85e7fc673163dc45664c9a2eea7d9e3"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_temperate_litter.png",
-          "sha256": "31ad137a8f21145615e85da460c1c4a7017594e25d0b422626d17990ffa153ab",
+          "sha256": "c3aa9bbad8f97f9e6fbbe17df7c1dee8d7f51d48099cfdf70dedd182d836a4a2",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_temperate_litter.json",
-          "metadata_sha256": "c6eb9b2be144c08e60a63add910ca7ad9b02bb81c13f1292ec3f7af869e68bbb"
+          "metadata_sha256": "acc338e98b3b0f34061fcb8427ecde6ca32e91ad155df395409b9c068454acea"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_conifer_litter.png",
-          "sha256": "0df7978e9513b44f71f31ac6a7da7229775e42517bc3d9e418a81a3b279b41af",
+          "sha256": "c0160dc5f0577a7672e1a6c0e267f8bcdfb542fdd6ec655767e711eb6111ad29",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_conifer_litter.json",
-          "metadata_sha256": "e9178569b291aa09c1a4d0213c842c3d3b566d71e7f961f8550a7f8e3e5abfaa"
+          "metadata_sha256": "03f0cd9a850a2af99481f0d690221949e002d54c055aeca02b4b96f183664e4e"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_subtropical_humus.png",
-          "sha256": "ada857be5f910ccbd4aa1a583644eafd41501b7b69d6dbcf3463672f3ff6ad69",
+          "sha256": "4d862e93b4e87b1995bef5bc89b6d3d32731139caf8435bb1cae8f9c6fbff612",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_subtropical_humus.json",
-          "metadata_sha256": "d41e4fd3c46001bdd8a18adc8a1f45ae1a237ec71fb915bdb580c47b68971d2a"
+          "metadata_sha256": "5cb4c3a585bb7f7e93efcc19fc320d4ac6188d187abad36437396d9fb2b4ace5"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_tropical_moist_humus.png",
-          "sha256": "6ab18fc6c6f37702d21571a9c2a433b87c4962aa569764f240ec0d8e0e7f95cf",
+          "sha256": "00ba0664071daeaa5e150c739bddd31c17e80e4fb9a5769a1227e824083621bd",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_tropical_moist_humus.json",
-          "metadata_sha256": "17e03b827fa101e27a4994b59591e290651ddb6d2b7d2c3a5857ffe1a351d02b"
+          "metadata_sha256": "1ca8e7cdfb4fd18785b5f8d76d572410ac1c088693dacaed64637ba31cbb0900"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_dry_woodland_litter.png",
-          "sha256": "ee43ce3be3ad2f583371b78afaf9c6674d68367aac81afe3f7aaeb9afebae2b5",
+          "sha256": "c1719ec7a2aaa70b832252a34eb1ee7d0f0d8975542a5920bb0b655f1959dd8c",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_dry_woodland_litter.json",
-          "metadata_sha256": "03fa16629439d4ee3d31e7e7245bf12c15a420f081974b059a1a26105eb06749"
+          "metadata_sha256": "12be88816e03eca6b5e978014267a5129969331db166b0ac9e01163f34ad89b4"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_savanna_red_soil.png",
-          "sha256": "77e9c22e02288a94935f883d253da56a31ba0dd5ca23ca9fef937dc2fdcd2d1b",
+          "sha256": "be7d085361ed3dfe2191a49439b54ee615081358aa87b8e32010268a2f6e6c5b",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_savanna_red_soil.json",
-          "metadata_sha256": "825c18fbb56c95b5cc3728217e832bd1e3b4ea4474ecc16c1fa046859f6678fa"
+          "metadata_sha256": "b5c54496b0b9a5ef6c383eb1c73b0934374139e802ff306a670db021bc16e4dc"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_flood_meadow.png",
-          "sha256": "6b37b16071ffa9f056092b8f64900ea110857fc5d88f1c7c34bedff94a3eeead",
+          "sha256": "79d6a5ea6ad0f326db865e07a4a90a69a5dabeccc954c6854330a6ffd944e20a",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_flood_meadow.json",
-          "metadata_sha256": "81effe18c7b4868a4ed92545dccfceb3a8e38a10a3164e9a6394ea1b75a410f6"
+          "metadata_sha256": "b0712884e1ac3eb7e7533fb86c483e02d58cdd8f22a7a47d99cd39615be4e98e"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_alluvial_loam.png",
-          "sha256": "8083e127b8e58beea2df3c1eacfed60d36b32a6306705be9795928cd050b6aa3",
+          "sha256": "6f64cc96e90ae226671b0bede27717b43bbb6c34bc4379dd1c175df9698237d5",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_alluvial_loam.json",
-          "metadata_sha256": "2b1a7fde59ae9313c7f2871288b3e0133cb7374017257dcb07241ce824d92d50"
+          "metadata_sha256": "99d8eb4ac998a8fe7caf3a99dde71088e5e35501b914d225f368afcb7a326186"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_weathered_rock.png",
-          "sha256": "f093a584be4146377c1128d847db906609455eda1abf6ed14b713ae2b9f07c31",
+          "sha256": "96cc6e790ae588a11ee7ab307f2e1be7e57d2068e6cf911cd2f900b0aa1c8472",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_weathered_rock.json",
-          "metadata_sha256": "5f5629dbe8eb481e6368c5c1c47b2b87b71b0cf4de9e1b15cc5822363803415b"
+          "metadata_sha256": "be8ac96879dfa88112b0032b449fcfcacd81e2a60c75a974776d4f72a9ab9ebf"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/x30_layout/map_alpine_scree.png",
-          "sha256": "193a3e34b4dbf4e43ecaa4fa0fc9049b2f1b53788281a445e62eba232666b10f",
+          "sha256": "71b282bc596a7f68787724e102858fd9dd9afe2fe0ff160ae88757e43ebc93fa",
           "metadata": "reports/screenshots/terrain_surfaces_native/x30_layout/map_alpine_scree.json",
-          "metadata_sha256": "2584a939598a0ee061c523a6f0b88aa470d622a6da6c022524cb4262bcbc8fc5"
+          "metadata_sha256": "3d04cc558bb2b14e8eab719cb37c83439f34f702d39cfb5069006bbc90c7a838"
         }
       ]
     },
@@ -316,86 +316,86 @@
       "checks": 66,
       "passed": true,
       "report": "reports/screenshots/war_room_native/windows/validation.json",
-      "report_sha256": "1f1066bc8557210bf753f9ecd20d1880a0723a44cc4844818f1321518fa74afc",
-      "log": "reports/war_room_native_windows_v0219.log",
+      "report_sha256": "5d77bb629b517d6371a418e84853a7e52837c26fca9681e7a3b6388f93a823ca",
+      "log": "reports/war_room_native_windows_v0220.log",
       "captures": [
         {
           "file": "reports/screenshots/war_room_native/windows/home.png",
           "sha256": "bf339310ee9b3483ac7797fa42fd6fc3def1d279ea74fe05f53264cf5201eb00",
           "metadata": "reports/screenshots/war_room_native/windows/home.json",
-          "metadata_sha256": "815f60640b6344e64e9bfef19ec9f15e2fd35a42298fd06d05eb20481d4224bb"
+          "metadata_sha256": "fe59969e1ca5032cb76f038fc429e29ea2e1c24af9e0980259ba1d08368082bc"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/campaign.png",
           "sha256": "64b613d47b066423523b088724ebea7b70891d14976b0c7576b14a8c05d88600",
           "metadata": "reports/screenshots/war_room_native/windows/campaign.json",
-          "metadata_sha256": "2a8d15eb0fa92ba7d2e4c2d769d131b4ff280535c3da4536c0da1e66fd83f7bb"
+          "metadata_sha256": "7cabd317f81d6c1017c001e8a970d84a4797b7589b8b5eec3354887047e84748"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/conquest.png",
           "sha256": "c1e4f5f68d8d5aa1e2a2d5a60f6d61d88dc1dfcc9d0640ab2df3a17761120a65",
           "metadata": "reports/screenshots/war_room_native/windows/conquest.json",
-          "metadata_sha256": "742cfc814db7ccc24fc3654ca65ff04e249a53d1ad5b73374bc0012383e41ec0"
+          "metadata_sha256": "2d3d2008ab614f264af05dbd6e9e2f53003b7c0272c76728f9811124a1f27034"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/legion.png",
           "sha256": "b7caf8b75def95fbd3bce81c48432af2baa76832aa8eedd567f1e8b6bac0cebf",
           "metadata": "reports/screenshots/war_room_native/windows/legion.json",
-          "metadata_sha256": "ad4db3034b772ecf67ce703c49f64bda396803481f6077237d28c64c2acef953"
+          "metadata_sha256": "fe6aeee1a33581c6f33d9efa1808787b27884b327719c630182dedf347dfeb87"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/opening_army.png",
-          "sha256": "dd8c8119849eea9d62e427782eb7769b72ad51066a3f53be46ccd97278411ea2",
+          "sha256": "8f5c598cca9635f5d4cec9e120557897f42bd53b5f64a2a2baad6c9947bbc52d",
           "metadata": "reports/screenshots/war_room_native/windows/opening_army.json",
-          "metadata_sha256": "7c4726c983e62eef2033f4b6480e17c689e93dffef0aebc5ab322eec4346a06b"
+          "metadata_sha256": "852d1d67450bf9fc55029245c02e0720c1d09d6252385aa09fb29d487e9eba53"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/recruit.png",
-          "sha256": "281a749a90be14a928483adb2d39c595315446999d99171eb15dca099848e031",
+          "sha256": "299390f21f1248a664f3a37a4fb7801c6aef76ca9715864b3bd78e4de00ad413",
           "metadata": "reports/screenshots/war_room_native/windows/recruit.json",
-          "metadata_sha256": "6a31a03f5d51c93fb506718152b8c054728907db18d33df74bf0944a6730b9dc"
+          "metadata_sha256": "294ad15680985a15b89abef40165757ce3d4a40f58c585ef5fedaa2376214578"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/buildings.png",
-          "sha256": "53bd7003a5004616ae808d2d188eff8cc1cfddf554fdcee67ec44425b9a7bbcd",
+          "sha256": "58e9dd957ffa9a5e2117c1fa17d51364718e543961b1a5000db74324d62feaae",
           "metadata": "reports/screenshots/war_room_native/windows/buildings.json",
-          "metadata_sha256": "463c51a955f5b63a9b5ba9f48a22dae3275a9f297809dd23d8edf5a3cd7acb60"
+          "metadata_sha256": "22670e15850defcc5b0e821d0a6ebc9e681c678f72ab2e86604f400d60749e23"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/diplomacy.png",
-          "sha256": "5b4b89a0d0d564af079670219538f4a18c6f062046f326ca8ca76678429b220c",
+          "sha256": "f721b59dcd827a0a8f48da6d1aa00c415dbfd736d82bfd403b3f8fbcda5438e9",
           "metadata": "reports/screenshots/war_room_native/windows/diplomacy.json",
-          "metadata_sha256": "dfbdcbc6ee3aeb45f2aa1a1c9ab84fd76054f434d3e07b11994f9c160ee6af49"
+          "metadata_sha256": "67e74631e61160337fbbec0496b73c80984a81a52601c03c83f0c72eadc9a927"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/assign_general.png",
-          "sha256": "7cc045f46e649b2f86b30ba5dde18fa3f988e79b0b0798b50af895933502ddda",
+          "sha256": "9e8c7d0778be5dd38c76e1e3d24dbd01e01e908ec2b9a733baeab0ee9addb20a",
           "metadata": "reports/screenshots/war_room_native/windows/assign_general.json",
-          "metadata_sha256": "545c7a0be7bb7d5c88a10d63fee13e31ee9ca06eccb34eb555ce0d31d39117da"
+          "metadata_sha256": "40cf73076addf39dcb9b21b6d196bd8c18018bc5856fb97272d938769dced2cb"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/headquarters.png",
           "sha256": "8a69b63f6015294a43d2049573f1ecb15b7a1ddd14aff8f61c105ae1b07eb710",
           "metadata": "reports/screenshots/war_room_native/windows/headquarters.json",
-          "metadata_sha256": "ae5251e44214decbc1db74af481932ecd504b40e43da46eddaa675dfe46f21eb"
+          "metadata_sha256": "91fee23944d037b52ec4429162740ecd7f83cb8fb14666ba7dd0771e72aad5e5"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/technology.png",
           "sha256": "57ee9ce4e7309803701df3d67ad5394ad5f0096f61397d2ea188fec684a54829",
           "metadata": "reports/screenshots/war_room_native/windows/technology.json",
-          "metadata_sha256": "d08cde009ab88502974f829a26541fd5d616eac273038d8a6c1be72995a95298"
+          "metadata_sha256": "70b144cac2b5024153b303d0290c674e5ac150bc43b4d566fab27bf483a14b1c"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/staff_research.png",
           "sha256": "1aaf9bd8162d00e40b3868e78f2f655f2da94d9c717b31dd786d4a4f68e29fc9",
           "metadata": "reports/screenshots/war_room_native/windows/staff_research.json",
-          "metadata_sha256": "375c5b0a766b99b7e28845dfdd3cf52d5b00eb33dd7fd763c72b55e592afd77f"
+          "metadata_sha256": "a14ffa74cf1f8a9942c75f9695cd698db6f1582300dc462cae7d08a739b8dc4b"
         },
         {
           "file": "reports/screenshots/war_room_native/windows/legion_deployment.png",
           "sha256": "0f149ac999539cdab8f7d611bd244248e5c6fb4c78ce29ef059dd81553bb253c",
           "metadata": "reports/screenshots/war_room_native/windows/legion_deployment.json",
-          "metadata_sha256": "8a1d957ee00c5cf881df61daebfcf635f42bfdb512bbb5f2c79a04ae29180545"
+          "metadata_sha256": "ef23fd4b4326379f02eaa800e788b23573cf94b35faa7f56a94c413de79e99c8"
         }
       ]
     },
@@ -407,86 +407,86 @@
       "checks": 80,
       "passed": true,
       "report": "reports/screenshots/war_room_native/x30_layout/validation.json",
-      "report_sha256": "052f23f996859e2ba9441fa823e8c17cbe48ee49347ed1f9b8a3db5016abe9c3",
-      "log": "reports/war_room_native_x30_layout_v0219.log",
+      "report_sha256": "288421fab92b9d5ff175e0af7a4722106e1e3e2055de2f3465e1a02a3b25a43a",
+      "log": "reports/war_room_native_x30_layout_v0220.log",
       "captures": [
         {
           "file": "reports/screenshots/war_room_native/x30_layout/home.png",
-          "sha256": "aa51cf9feb30ccb596110313834d6dca0f30089b4d94ffaeaa3e4fde3379a42e",
+          "sha256": "a9941a394d9c740b88ff9f28a38d050dcb58fce48048c194002b237de0c0a176",
           "metadata": "reports/screenshots/war_room_native/x30_layout/home.json",
-          "metadata_sha256": "e4016ee66b888eeec88e2cbbfa3482b6fc4b688c78bc1a36c6b5f76a942328f6"
+          "metadata_sha256": "c825d4acc6649c7e61c5ec3f40543e24ca47efad4ed230a6f950c42ffad68e46"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/campaign.png",
           "sha256": "725d3961e0d88d0619c32e715cfb73b6c6710cf640c7e76aec3ae7dcecc455e3",
           "metadata": "reports/screenshots/war_room_native/x30_layout/campaign.json",
-          "metadata_sha256": "21fc266f1e47e9b49356ad418aee26e25ec9ebe5fd9478bc1421ac221a053bb0"
+          "metadata_sha256": "d38c7d85eef1834e0dcc150a5162469c50f91ef125b2681c12fa823ced47ec7e"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/conquest.png",
           "sha256": "5adfc49e06883bce873f5649b67a7012c49bb4a6fa5c41a322bbffcfc11ab84c",
           "metadata": "reports/screenshots/war_room_native/x30_layout/conquest.json",
-          "metadata_sha256": "ffb79fa78f2ebd9829f5c9bebc3bceae1ab726810b0b3692b3368c233a1677ef"
+          "metadata_sha256": "e74a495208e281fb78d61857d5a0def724bb80b2cc18bd0555200033b74970cb"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/legion.png",
           "sha256": "3e29128cca9986e0655f18f66e430ed8c89718893afd93c07c6e2e881d9d51d9",
           "metadata": "reports/screenshots/war_room_native/x30_layout/legion.json",
-          "metadata_sha256": "b5db0db416634aa0b449575167787a7872fd887babbd5806363c3d7f10061096"
+          "metadata_sha256": "4b8a51d8d0c0d16d4af7bb0ef1b1aeaf22d6a0542ad4b0255c8d5d815e895bc7"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/opening_army.png",
-          "sha256": "a95e4435928e83211b8c0e923c1839c407d46221893e7867de1f453ba4ad74eb",
+          "sha256": "38470f7d30bbf357cb8f528cde66df9fd3d5f30074c16ee05f3e252b63294213",
           "metadata": "reports/screenshots/war_room_native/x30_layout/opening_army.json",
-          "metadata_sha256": "e4740f9e356f0c7fa52708eaa9b62284f4d3e7b5618d9a6a808408319131802f"
+          "metadata_sha256": "77dab8023da8acc0caaf73eb35449dd036bc6588f765f1054eed3fe10028cf2c"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/recruit.png",
-          "sha256": "33bf59977dc9d6422624b8e2e00ab95f20af76dfbf4ceac85e7fe6e4b45f9cce",
+          "sha256": "100ddf171868800e2709374797c7b295bc0fbdd191e9270a79a398939c9c6778",
           "metadata": "reports/screenshots/war_room_native/x30_layout/recruit.json",
-          "metadata_sha256": "cb6a83b28338adbcc03d8b6d68fc42ac96a7c3101bcf3b20aa43386a75ea4fa4"
+          "metadata_sha256": "8ca5a760ae36c3afe9e70fc22c153e089503fed5f7feae7e0ce6b3c828a79bfe"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/buildings.png",
-          "sha256": "553c7b7bfbce47a2e4725d39ab513725cb3f46b2064314e35cf197fe0ac3e023",
+          "sha256": "4bf2f856ddf13e718da000075564be09cd9ea444f668b11ea6b5c65cc3e55131",
           "metadata": "reports/screenshots/war_room_native/x30_layout/buildings.json",
-          "metadata_sha256": "8f6db4b2b918aac2ce4a51e72c617d6b687f81ffc11b71510d533371dd066f8c"
+          "metadata_sha256": "e0dcf5790f294af84f75bfa3c1e24d80edc90fa0990575c1a4de308f86822a69"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/diplomacy.png",
-          "sha256": "7b18c702f7046bfdb25a91110da028ecebe9cde815e552811d1f51d717f29227",
+          "sha256": "29a1397f117d134c0cf292920e0462bb45c368cc092884a67619d8c4ba6de507",
           "metadata": "reports/screenshots/war_room_native/x30_layout/diplomacy.json",
-          "metadata_sha256": "566d8bc9e91365770851f424d37c0ad85b5b54f11db1305f15f05e4045b10395"
+          "metadata_sha256": "c59faf75a101606451bbece5964b0eb84231a18081741da515e514c1087b9ad9"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/assign_general.png",
-          "sha256": "193c58ed1ac2eaefab7f255285421d3a4c1bbef7751ee27d2fed2b0358b6c56b",
+          "sha256": "b81b677d95dcd8ebff6fec0f987452dfcdf8f5682c389771a31b8cdf68e51d78",
           "metadata": "reports/screenshots/war_room_native/x30_layout/assign_general.json",
-          "metadata_sha256": "d6a4ee854854686a4c5d32820d0aa5e674b5da61a52713652cfbad3d4983a678"
+          "metadata_sha256": "4e32d724fc6a8bb37c5d31328213a1553630bb806609e81b5c19a967ff0834c0"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/headquarters.png",
           "sha256": "755eac3c402a69e124ce40666d18dad7be17686b531ccf94d62a8988b7aa41c4",
           "metadata": "reports/screenshots/war_room_native/x30_layout/headquarters.json",
-          "metadata_sha256": "2010d1b42a06284241561bd3c99cf97c83f487cfe760cf545b2675db628ab985"
+          "metadata_sha256": "22145fba88c46ea77ef43f77670c17db32fae08ce4bb32c890d535f2d2c67b63"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/technology.png",
           "sha256": "f3f2228121276f16255a286d751be2b3f652ffd945ec5452c1fcf91d7067ef13",
           "metadata": "reports/screenshots/war_room_native/x30_layout/technology.json",
-          "metadata_sha256": "3764d22210e5cf8fbe3d4a3fd5af60a372e3549bf79fc23a97937f508d2cb51b"
+          "metadata_sha256": "f87d84774fea28ed1544db8155469bc0f9e043f9901e17f713cba97d4445a77b"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/staff_research.png",
           "sha256": "658d11d4b20a40e230a90a756b19761e082ab1a4d89352624a00a2498a99b972",
           "metadata": "reports/screenshots/war_room_native/x30_layout/staff_research.json",
-          "metadata_sha256": "10f8d74a0d4f44103986be9b6279481d434cee8c255afc146ef76047a9f66b22"
+          "metadata_sha256": "f552567b67764500208968e1be7e0efbc421f6e45d7dc2773644c721aa70b3e9"
         },
         {
           "file": "reports/screenshots/war_room_native/x30_layout/legion_deployment.png",
           "sha256": "641afa30b52a99a90033e3969046b6839f6813131dc1ef477df806c905844751",
           "metadata": "reports/screenshots/war_room_native/x30_layout/legion_deployment.json",
-          "metadata_sha256": "f6a47465590d4929f610a37e63c41bdb2534e6580b14ffe2680a5a205323e2f6"
+          "metadata_sha256": "255d240577b3b27849f4f0f637b8557dbdeda5d51c1ceed46989e031f2d3efb6"
         }
       ]
     },
@@ -498,86 +498,86 @@
       "checks": 66,
       "passed": true,
       "report": "reports/screenshots/war_room_native/large_text/validation.json",
-      "report_sha256": "90865630fdb3c69b3713d399717ce7bb7c092a078f6b4d02b4556edcf033e87f",
-      "log": "reports/war_room_native_large_text_v0219.log",
+      "report_sha256": "4d0aaeef3560d1190d1e6e83493e8f478893d027977c3aad822bf3d0751bf8f1",
+      "log": "reports/war_room_native_large_text_v0220.log",
       "captures": [
         {
           "file": "reports/screenshots/war_room_native/large_text/home.png",
           "sha256": "1bac6a52a9d37ecd5827acc427bf5308ff1905b5a20d44a1e03d76bf3578020a",
           "metadata": "reports/screenshots/war_room_native/large_text/home.json",
-          "metadata_sha256": "235e84a73b2e85d9cccec9de13a7c27059d1b85052c97db63d20df7f39784a01"
+          "metadata_sha256": "a4f90f9acabd38d2c1dcc6e1fd582127b2254d905b9cd8eee7ba5197563c5e7a"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/campaign.png",
           "sha256": "824530d984289e079b89134d86e93f92f128baa73188c73e0c6c3c1219f57a5e",
           "metadata": "reports/screenshots/war_room_native/large_text/campaign.json",
-          "metadata_sha256": "897d8dd9a4c85a48a697c035853034da15cdc46499978bf4fd7fedd0a6f6c71d"
+          "metadata_sha256": "7e6c8e3500446307b0fd3d8e5452fa6c4b8e1c0439fd9a4e12265b2a6a10ff20"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/conquest.png",
           "sha256": "38f2d40c9797076e3a6f156e2241b62079145458cc9b969d73844da9e4538371",
           "metadata": "reports/screenshots/war_room_native/large_text/conquest.json",
-          "metadata_sha256": "8d7685006c84289aba5ab8a6ea735f8b9357295bbcc3cad79ead4138e04e6c68"
+          "metadata_sha256": "8424c2cf081e9e82b0eef31ba8cb00c00c52ffcdfa6789c39e3de2c6405baefd"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/legion.png",
           "sha256": "f7f39c4df22b522825e95e4b79de24116a946a1063d2df8227f38de3583fe5f2",
           "metadata": "reports/screenshots/war_room_native/large_text/legion.json",
-          "metadata_sha256": "e28c14fa716bf2be98cb03581d518fe2c689214f2c9fe28f9871b6ccc5054cac"
+          "metadata_sha256": "08750b1b65d0607515529b432136ba505652be1f46eeb9d79ac7bd95985d6931"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/opening_army.png",
-          "sha256": "4bb3d7802c5cc0b9969df89aee1e904bbc48912b30a17ea701e812639f2485d4",
+          "sha256": "dde1b514c4cde0d64881ddbd86ef88b38791b7e504981f6b42feb5a90953be8e",
           "metadata": "reports/screenshots/war_room_native/large_text/opening_army.json",
-          "metadata_sha256": "0bdd6e4f45d19fce61921092ca856dee349fc142ab1c2e79d8998b659e87de13"
+          "metadata_sha256": "3acf65d98d858861b4ab19995a46196d6069e130b2d8aaf97d4fe6f18af5b698"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/recruit.png",
-          "sha256": "88a550ce6aca98746c226b2266d4f9c184b6174bf7b9593d13464d39eea73540",
+          "sha256": "60d87f1f68b79b3d2619d3c05ade303db754e3355e92dce76c47ac8bb09de104",
           "metadata": "reports/screenshots/war_room_native/large_text/recruit.json",
-          "metadata_sha256": "32e57efd16cca2145de3636d18244fd76a71163f7e91150b76dbc5c53a17a37f"
+          "metadata_sha256": "f71d8ff35e32367449cc99777f80c49de292d2a2c8b9663081dbe936dd20c82c"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/buildings.png",
-          "sha256": "4d3d3fe4c6cd17ce298f3eaa89b3c0c093956588aa332514104a04fb673ccc81",
+          "sha256": "7af1908e3f3db46cdb61d6bff22f5d9457b1db1c9f8ed07a3960799268134c9b",
           "metadata": "reports/screenshots/war_room_native/large_text/buildings.json",
-          "metadata_sha256": "6e6f4291988152ed6e63817ab59621f1340b16515189859b09f616b5e82489fb"
+          "metadata_sha256": "0dad350372e43ecf66a6b9feb0db478f1eccef023e8dafdc7f8f0ddc9ec870f8"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/diplomacy.png",
-          "sha256": "8b7249105ec323fb414045d8412f567a2be2f3a13d3d0b4a43d8658d595ffa18",
+          "sha256": "89dfc42a6f4de9db05a679549797c3087c92f6a9a7d82521549c159e159bb13a",
           "metadata": "reports/screenshots/war_room_native/large_text/diplomacy.json",
-          "metadata_sha256": "3f84f68611b4520330db987cd958edd452b7afbfd8cfdc9d8e0b9892e1578f37"
+          "metadata_sha256": "b06b107742e6678ab58005501850025102c48c480b4110206a925206c84086de"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/assign_general.png",
-          "sha256": "1d6024efb0c79397af3ca6076a7edc59da48f79a90101ac8012cac91a213a741",
+          "sha256": "ff9dc85e218289cec863c4c3b25b9aaf6beb68f008bffe409c0a8d93f71aae4e",
           "metadata": "reports/screenshots/war_room_native/large_text/assign_general.json",
-          "metadata_sha256": "36ea6112eb597c64b07996fcf8f9dd209e6c276fb04937e9b980f4e5cbe65e87"
+          "metadata_sha256": "f91cb24421131de7197af49a9c48c1882bbb1dff300d5eaef65687fb5b71d18f"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/headquarters.png",
           "sha256": "9178b4f50042c3b07e46f392e9cba750352f7f0e1804be1f3b63d495ebee9dfe",
           "metadata": "reports/screenshots/war_room_native/large_text/headquarters.json",
-          "metadata_sha256": "05659e46a80f4693ae4ec7a72856a8e0c149e755850c6c360f35d669cf7ba8a7"
+          "metadata_sha256": "70ee8debae5295f4710409260690030f6c058d1435b8e8658c1a6396219c6456"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/technology.png",
           "sha256": "797c9f5a9e5446a62819063225af59aa78e4d23d6660f6b016b10f68e136f695",
           "metadata": "reports/screenshots/war_room_native/large_text/technology.json",
-          "metadata_sha256": "b8c36f9737cc502bbdc2e420ee872292ff9d51b6a1db44aaeab5aadce36739ec"
+          "metadata_sha256": "46c97366458f2055202b4ccdde1a8f623896c2b370e946db4d1dd981d7bb79b5"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/staff_research.png",
           "sha256": "0eacffab07e8607bfbdbc7165be6da0459c7e92d4b6aa12b27ef2db21be2cdb3",
           "metadata": "reports/screenshots/war_room_native/large_text/staff_research.json",
-          "metadata_sha256": "3aec0be732a7bf87432928c97be69bb7f4fae79ce06fe2c3a881873ae911bb01"
+          "metadata_sha256": "30291c139f0a655ee49263d3d1308be8157fe1e9a9ccd195e858d2023821dd59"
         },
         {
           "file": "reports/screenshots/war_room_native/large_text/legion_deployment.png",
           "sha256": "f8d5aab3c01cf0b886f2aafd39324fd536509fd89a950b400bd9d3c859d7e3d1",
           "metadata": "reports/screenshots/war_room_native/large_text/legion_deployment.json",
-          "metadata_sha256": "97f17ceb8b5e170af1ec79c1968f948a42bd05563285f037aadec663482f1aba"
+          "metadata_sha256": "e2e5613fe06fa9cdc45efa5145425ed141cfdafd459559dda5a3c659c914d989"
         }
       ]
     },
@@ -589,52 +589,52 @@
       "captures": [
         {
           "file": "reports/screenshots/terrain_surfaces_native/details/mountain.png",
-          "sha256": "839742edb001bf58d97607bf4c55ddb6364a498243d43388856184912663b88b",
+          "sha256": "8f5cfc16bbf2a5d16208ae57e0ed094c4a24a9ec38f3fbdf779a5a5de330a468",
           "resolution": "1920x1080",
           "metadata": "reports/screenshots/terrain_surfaces_native/details/mountain.json",
-          "metadata_sha256": "69dbe5614d423aad2e5bbeb5c5dea6cb385562bd9dfe8e06be15b245c1946cb4"
+          "metadata_sha256": "4a116f11b7951e6c2854bdd7c2c109441f966ae50050d5691eab0c7a087ee9fd"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/details/coast.png",
-          "sha256": "c8978cb19346d9647a91573f5a0b9a24860c019ae54068cdbfda1542637670f1",
+          "sha256": "37a70fc5f9498253366e7e5e68ce4abac5c202e19bbfb8da9af982c9e2b5b5a6",
           "resolution": "1920x1080",
           "metadata": "reports/screenshots/terrain_surfaces_native/details/coast.json",
-          "metadata_sha256": "9dca488d0697bb01888c07832389cfadbf42d132abe76bd2f128c48908e2ce61"
+          "metadata_sha256": "ed2d70298f7ccb748a1acb428c2cf3a4bb559c44e00b5ab1f58bf7e4e3441ce3"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/details/village.png",
-          "sha256": "00c9c6ce232df7e940e0cfbdef45763510c214f6a6fe266bf8e59bfa2a3555b9",
+          "sha256": "5d4dc93c91abb44025839b45f7dc375b504036218ef72c14ae7e6ab6197a626b",
           "resolution": "1920x1080",
           "metadata": "reports/screenshots/terrain_surfaces_native/details/village.json",
-          "metadata_sha256": "0c913d6152df6ad5f7a9d73eabb7b4dc1a0735cec7dbe1e8c5967a7e546b8045"
+          "metadata_sha256": "6a840de4c255c1555c01e9b2d7f141a8d5dff440c298ba753b108d8f0601fb73"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/details/tributaries.png",
-          "sha256": "0d46d37759460d99155add0a7c17f866c7843cd2221bc91d9a61412f8fdf5a8c",
+          "sha256": "589f7567ac69626adad21d01aef174073bdc42f7cd16338b38ea34e6238f8223",
           "resolution": "1920x1080",
           "metadata": "reports/screenshots/terrain_surfaces_native/details/tributaries.json",
-          "metadata_sha256": "860c688a497fe3e2277184d0fd77cc82994f820567511c4586c64415a934d881"
+          "metadata_sha256": "19451e97ff00005a5a9acb5505669a2e6774c52073b0ca6f955e0f5c18db3b3e"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/details/yangtze.png",
-          "sha256": "feb6df1f2f2bce8705a46e5bc0752ad1d378f638a918d29c6a550c178fec60ba",
+          "sha256": "6eb073c6500021115424c7327c1be4a6c071d40e38ead6b7cf5044027257a999",
           "resolution": "1920x1080",
           "metadata": "reports/screenshots/terrain_surfaces_native/details/yangtze.json",
-          "metadata_sha256": "1452bbc422fdcd1cd49687c2275455a73c929fe080a5549783369ef37c521bb6"
+          "metadata_sha256": "f84c1cb6b0bc3907a7d829f2a63ddf9b8973ae935b4f6a39605108c9a2b3dd8e"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/details/nanjing.png",
-          "sha256": "d7d391c65bb79fcba3b1a3cadb74589046033bed938d28165a0861782984e1ba",
+          "sha256": "525058d16a898a043561978b4164a670c2eb3d5eee1988bcbe74a76ac9b9bc21",
           "resolution": "1920x1080",
           "metadata": "reports/screenshots/terrain_surfaces_native/details/nanjing.json",
-          "metadata_sha256": "f6473ae469624056e6c116438a35bd4fa5c64f0bc1c3a0e3b736309edec507e8"
+          "metadata_sha256": "0da3155b34b4c6269ed02d17b9cc916328eb1cfb226ff9690f81e3e5cfc2eb62"
         },
         {
           "file": "reports/screenshots/terrain_surfaces_native/details/yangtze_x30.png",
-          "sha256": "2854c95afdcdfaf227162d1d1ac072656736b340b51e1de9a321118416d7b7b5",
+          "sha256": "dfd0eb8a23a5b97ff5eab4462e479abaa82d7aa7cc4df6f914c65ccaafec5068",
           "resolution": "2400x1080",
           "metadata": "reports/screenshots/terrain_surfaces_native/details/yangtze_x30.json",
-          "metadata_sha256": "b26554d48817abde171310f0531c4873b725f1a4dd8b6aecbaad05fb44403d7e"
+          "metadata_sha256": "d0236169ed29f1ccd5fa47e39559a785549ebe4e500a06dc85c16e7f965c5b16"
         }
       ]
     }
