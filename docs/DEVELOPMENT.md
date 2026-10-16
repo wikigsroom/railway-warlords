@@ -73,7 +73,7 @@ python tools/capture_terrain_update.py
 python tools/refresh_terrain_repository.py
 ```
 
-`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.17截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.18截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
 
 `prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 
@@ -96,3 +96,7 @@ Do not commit keys, passwords, gateway credentials or personal files. Retain thi
 Local Docker, WSL, VMs and emulators are prohibited. Close unused browser tabs after browser work.
 
 0.2.17连续材质原生复核：在当前双端导出后运行 `python tools/verify_ground_continuity.py`，使用最终Windows EXE比较20个完整导入源、相邻地格覆盖、三材质交界与平移相位；结果为独立渲染夹具证据，不能替代真实地图的人工画面检查。
+
+0.2.18 图符专项在当前双端导出后运行 `python tools/verify_map_symbols.py`。它直接运行 Windows EXE，在两种桌面视口中检查正式亚洲与山海关剧本的可见编队 ID、双向小幅跨阈值缩放、邻近城市的点选、选中对象恢复素材和完整状态/RNG 不变性，保存 32 张完整原生视口。
+
+The 0.2.18 symbol checks run the current Windows EXE in two desktop viewports, using published Asia and Shanhaiguan scenarios. They verify individual formation draw identities, small zoom crossings in both directions, precise selection near cities, selected-source restoration and unchanged state/RNG. The 32 whole native captures are not physical-phone or commercial-art approval.

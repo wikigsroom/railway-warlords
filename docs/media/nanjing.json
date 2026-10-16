@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.17",
+	"build_version": "0.2.18",
 	"city_labels": [
 		{
 			"city_id": "pukou",
@@ -49,7 +49,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 304,
 		"placed": 2,
-		"preparation_ms": 6.862,
+		"preparation_ms": 6.799,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 2,
 		"rule_cells_changed": false,
@@ -103,6 +103,47 @@
 				"2": 2
 			},
 			"width_is_symbolic": true
+		},
+		"map_symbols": {
+			"background_legacy_terrain_symbols": 0,
+			"background_painted_scenery": 9,
+			"city_counter_ids": [],
+			"city_detail_ids": [
+				"pukou",
+				"nanjing"
+			],
+			"detail_threshold": 0.56,
+			"place_counter_ids": [],
+			"place_detail_ids": [
+				"place_jiangpu"
+			],
+			"regional_threshold": 0.2,
+			"rule_positions_changed": false,
+			"scope": "Actual draw IDs in the unit layers, filtered to anchors in this viewport; HUD occlusion is not subtracted.",
+			"source_units_removed": false,
+			"unit_counter_ids": [],
+			"unit_counter_screen_size": [
+				15.0,
+				10.8000001907349
+			],
+			"unit_detail_ids": [
+				"u_00019",
+				"u_00018",
+				"u_00015",
+				"u_00012",
+				"u_00008",
+				"u_00006",
+				"u_00001",
+				"u_00005",
+				"u_00007",
+				"u_00009",
+				"u_00014",
+				"u_00004",
+				"u_00016",
+				"u_00002"
+			],
+			"units_aggregated": false,
+			"zoom_band": "detail"
 		},
 		"measurement_scope": "Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score.",
 		"nearest_repeated_source_distance_world": 771.375427246094,
@@ -265,13 +306,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 7,
-		"index_ms": 16.294,
+		"index_ms": 11.004,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 30.869,
+		"mesh_ms": 22.729,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 7,
-		"placement_ms": 2.127,
-		"preparation_ms": 49.289,
+		"placement_ms": 1.655,
+		"preparation_ms": 35.388,
 		"rules_map_mutated": false,
 		"source": "SRTM90m_v3_five_point_samples",
 		"source_meters_per_world_unit": 26.0416666666667,

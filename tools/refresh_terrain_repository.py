@@ -55,6 +55,10 @@ def media():
     require(coast_proof['passed'] and coast_proof['version'] == version and coast_proof['runtime_source_sha256'] == proof['runtime_source_sha256'],
             'Current native coastal-control proof required')
     coast = folder / 'control_land_native/windows'
+    symbols_proof = read(P / 'reports/map_symbol_native_evidence.json')
+    require(symbols_proof['passed'] and symbols_proof['version'] == version
+            and symbols_proof['runtime_source_sha256'] == proof['runtime_source_sha256'], 'Current symbol viewport proof required')
+    symbols = folder / 'map_symbols_native/windows'
     selected = {'menu.png': war / 'home.png', 'battlefield.png': folder / 'map_final_windows.png',
                 'mountains.png': details / 'mountain.png', 'coast.png': details / 'coast.png',
                 'tributaries.png': details / 'tributaries.png', 'sand.png': terrain / 'map_dune_sand.png',
@@ -62,7 +66,9 @@ def media():
                 'yangtze.png': details / 'yangtze.png', 'asia-overview.png': folder / 'asia_1840_overview.png',
                 'nanjing.png': details / 'nanjing.png', 'yangtze-x30.png': details / 'yangtze_x30.png',
                 'legion-deployment.png': war / 'legion_deployment.png',
-                'mobile-layout.png': folder / 'war_room_native/x30_layout/opening_army.png'}
+                'mobile-layout.png': folder / 'war_room_native/x30_layout/opening_army.png',
+                'map-regional-symbols.png': symbols / 'asia_1840_400.png',
+                'map-selected-formation.png': symbols / 'asia_1840_selected.png'}
     for name, case in [('bohai', 'tianjin'), ('japan', 'osaka'), ('caspian', 'baku'), ('singapore', 'singapore'), ('asia', 'overview')]:
         selected['control-' + name + '.png'] = coast / (case + '_control.png')
     selected['control-bohai-natural.png'] = coast / 'tianjin_natural.png'
@@ -103,6 +109,7 @@ def media():
     write(P / 'docs/media/manifest.json', dict(version=version, screenshots=rows, animations=animations,
           source_video=video, current_native_evidence='reports/terrain_surface_native_evidence.json',
           current_control_native_evidence='reports/control_land_native_evidence.json',
+          current_map_symbol_native_evidence='reports/map_symbol_native_evidence.json',
           notice='Current terrain/UI screenshots are native Windows captures. Battle GIFs and action stills preserve version 0.2.12. No physical Android acceptance.'))
     print(json.dumps(dict(screenshots=len(rows), current=len(selected), historical=len(rows)-len(selected),
                           historical_gifs=len(animations))), flush=True)

@@ -112,6 +112,7 @@ func _ready() -> void:
 	if "--terrain-surface-test" in args:TerrainSurfaceQA.run.call_deferred(self)
 	if "--control-land-test" in args:ControlLandQA.run.call_deferred(self)
 	if "--ground-continuity-test" in args:GroundContinuityQA.run.call_deferred(self)
+	if "--map-symbol-test" in args:MapSymbolQA.run.call_deferred(self)
 	if "--benchmark" in args:benchmark.call_deferred()
 	if "--capacity-benchmark" in args:CapacityBenchmark.run.call_deferred(self)
 	if "--unit-layer-test" in args:UnitLayerQA.run.call_deferred(self)

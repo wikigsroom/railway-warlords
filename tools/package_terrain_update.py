@@ -56,11 +56,23 @@ def main():
                 'ground_macro_generation.json', 'ground_macro_asset_audit.json', 'ground_macro_source_review.json',
                 'terrain_surface_native_evidence.json', 'river_surface_native_review.json', 'apk_content_validation.json',
                 'control_land_clip_audit.json', 'control_land_native_evidence.json', 'control_land_native_review.json',
-                'ground_continuity_native_evidence.json']
+                'ground_continuity_native_evidence.json', 'map_symbol_native_evidence.json', 'map_symbol_native_review.json',
+                'unit_layer_native.json', 'unit_layer_pixel_validation.json']
     for name in required:
         path = P / 'reports' / name
         require(read(path).get('passed') is True, 'Required evidence failed: ' + name)
         reports.add(path)
+    layers = read(P / 'reports/unit_layer_native.json')
+    pixels = read(P / 'reports/unit_layer_pixel_validation.json')
+    require(layers['version'] == pixels['version'] == version and layers['qa_save_isolated']
+            and pixels['runtime_source_sha256'] == runtime and len(layers['cases']) == len(pixels['cases']) == 4,
+            'Current native source-engine cache/direct comparison required')
+    for case, comparison in zip(layers['cases'], pixels['cases']):
+        paths = [P / case[key].removeprefix('res://') for key in ('cached', 'direct')]
+        require(case['name'] == comparison['name'] and comparison['passed']
+                and [sha(path) for path in paths] == comparison['native_images_sha256'],
+                'Native cache/direct viewport changed')
+    reports.add(P / 'reports/unit_layer_native.log')
     native = read(P / 'reports/terrain_surface_native_evidence.json')
     require(native['version'] == version and native['runtime_source_sha256'] == runtime and len(native['groups']) == 6,
             'Current complete native terrain/UI evidence required')
@@ -117,6 +129,28 @@ def main():
                     and read(metadata)['build_version'] == version, 'Coast viewport changed')
             captures.update([path, metadata])
     require(len(captures) == 112 * 2, 'Complete current 112-view terrain/UI/coast evidence required')
+    symbols = read(P / 'reports/map_symbol_native_evidence.json')
+    require(symbols['version'] == version and symbols['runtime_source_sha256'] == runtime
+            and symbols['windows_exe_sha256'] == native['windows_exe_sha256'] and len(symbols['groups']) == 2
+            and symbols['visible_formation_identity_verified'] and symbols['compact_counter_selection_verified']
+            and symbols['small_zoom_cache_crossings_verified'], 'Current native map-symbol proof required')
+    for group in symbols['groups']:
+        path = P / group['report']; log = P / group['log']
+        require(sha(path) == group['report_sha256'] and read(path)['passed']
+                and sha(log) == group['log_sha256'], 'Map-symbol evidence changed')
+        reports.update([path, log])
+        require(len(group['captures']) == 16 and group['checks'] == 110, 'Both full native symbol profiles required')
+        for row in group['captures']:
+            path = P / row['file']; metadata = P / row['metadata']
+            require(sha(path) == row['sha256'] and sha(metadata) == row['metadata_sha256']
+                    and read(metadata)['build_version'] == version, 'Native symbol frame changed')
+            captures.update([path, metadata])
+    require(len(captures) == 144 * 2, 'Current 144-view terrain/UI/coast/symbol evidence required')
+    symbols_review = read(P / 'reports/map_symbol_native_review.json')
+    require(symbols_review['version'] == version and symbols_review['runtime_source_sha256'] == runtime
+            and symbols_review['windows_exe_sha256'] == native['windows_exe_sha256'], 'Current symbol image review required')
+    for row in symbols_review['images']:
+        require(row['viewed_complete_native_frame'] and sha(P / row['file']) == row['sha256'], 'Reviewed symbol frame changed')
     ground = read(P / 'reports/ground_continuity_native_evidence.json')
     require(ground['version'] == version and ground['runtime_source_sha256'] == runtime
             and ground['windows_exe_sha256'] == native['windows_exe_sha256'] and ground['checks'] == 44
@@ -184,6 +218,9 @@ def main():
                    coastal_control_land_clipped=True, source_lake_islands_preserved=True,
                    continuous_ground_nonoverlapping=True, exclusive_continental_control_fill=True,
                    native_material_fixture_checks=ground['checks'],
+                   native_map_symbol_checks=symbols['checks'], map_symbol_native_captures=32,
+                   source_engine_cache_direct_native_pairs=4,
+                   visible_individual_formations_preserved=True, compact_counter_selection_verified=True,
                    control_native_groups=len(control['groups']), control_native_captures=20, total_native_captures=len(captures)//2,
                    current_native_capacity=True, full_ai_endurance_rerun=False,
                    physical_android_device_tested=False, formal_art_approval=False, ew6_parity_claimed=False)
@@ -204,7 +241,7 @@ def main():
 
 运行 RailwayWarlords.exe，无需安装 Godot。
 20 类地域地表各有 1 张连续底材与 4 张细节原图；说明书内可打开地形图鉴。
-本版连续混合相邻地表，减少蜂窝接缝；亚洲控制区使用单层半透明覆盖，保留真实岸线、岛屿和连续水纹。
+本版总览/区域视角使用清楚的城市与部队图符，近景恢复完整素材；选中和战斗对象优先显示完整模型。图符可直接点选，地理与编队数量不变。
 点选部队、选目标、再次点击确认；拖动平移、滚轮缩放、空格跳过战斗演出。
 本版为可玩测试交付，X30 真机与完整 AI 长局尚未在本轮复验。
 ''', encoding='utf-8')
@@ -236,7 +273,7 @@ def main():
         require(hashlib.sha256(archive.read(exe.name)).hexdigest() == sha(exe), 'Windows archive differs from tested EXE')
     require(sha(android) == sha(apk) and source_digest()[0] == runtime, 'Delivery identity changed')
     manifest = dict(version=version, created_at_utc=datetime.now(timezone.utc).isoformat(),
-                    release_kind='scoped_continuous_ground_and_exclusive_control_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
+                    release_kind='scoped_semantic_map_and_precise_selection_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
                     regression=regression, capacity=capacity, source_pngs_modified=False, manual_image_compositing=False,
                     source_image_location='game/railway_warlords/assets; byte-identical generated originals, portable prompt/provenance copies in docs',
                     original_production_tree_duplicated=False, old_releases_modified=False,
@@ -250,6 +287,7 @@ def main():
     shutil.copyfile(P / 'docs/32_真实河段连续水面.md', out / '真实河段连续水面.md')
     shutil.copyfile(P / 'docs/33_真实海岸与控制区裁切.md', out / '真实海岸与控制区裁切.md')
     shutil.copyfile(P / 'docs/34_连续地表混合与控制色去重.md', out / '连续地表混合与控制色去重.md')
+    shutil.copyfile(P / 'docs/35_地图缩放层次与精确点选.md', out / '地图缩放层次与精确点选.md')
     (out / '交付说明.md').write_text(f'''# 铁道烽烟 {version} · 地表与界面测试交付
 
 Windows：解压 RailwayWarlords-Windows-{version}.zip，运行 RailwayWarlords.exe。
@@ -257,12 +295,13 @@ Android：安装 RailwayWarlords-{version}.apk，延续现有签名。目标样�
 Godot：解压工程 ZIP，用 Godot 4.7.2 打开 game/railway_warlords/project.godot。
 
 保留 20 类地域地表、80 张细节原图和 20 张连续底材，共 100 张专用地表原图；地图素材共 970 张，全部 PNG 共 1,156 张。本版未增加栅格原图。
-本版将重复羽化材质改为不重叠的地表网格，三种相邻来源连续混合；各地图总览仍显示地域底材。亚洲控制区不再重复叠加城市影响色。44项原生材质夹具检查核对20种完整导入纹理、连续覆盖、绘制顺序和平移稳定性；夹具不冒充历史地图画面。
+本版按缩放切换城市与单个编队图符，近景恢复完整素材，选中或战斗对象优先显示完整模型；修正城市吸附抢走相邻部队点选的问题，跨缩放阈值及时更新缓存。没有减少或合并军队。手绘素材库可用时不再重复叠加旧地形线符。
+沿用上一轮的不重叠地表网格和三种相邻来源连续混合；各地图总览仍显示地域底材。亚洲控制区不再重复叠加城市影响色。44项原生材质夹具检查核对20种完整导入纹理、连续覆盖、绘制顺序和平移稳定性；夹具不冒充历史地图画面。
 沿用上一轮共享世界纹理的渐变主河水面；汉口、南京的31条替代主河使用既有60米有界显示圆角，上下游共用端点共享接头方向。细支流使用抗锯齿线，水陆纹理和地格规则保持来源约束。河宽是制图符号，不是历史实测岸线。
 沿用上一轮依据既有真实陆地裁切的亚洲战略层控制区：61个城市影响区和617个沿海控制格保留实际陆地部分，14个完全离岸候选格不绘制；主地图与缩略图共享裁切网格。里海水面扣除来源中独立的岛屿，保留真实湖中陆地。地理数据、历史归属和规则格未重写。
 说明书与地格详情均可进入交互地形图鉴。材质按生态区、高程与既有河谷选取；不宣称逐年历史土地利用复原。
 
-当前 {summary['regression_groups']} 组 / {summary['regression_checks']} 项回归通过；92张地表/UI及局部地图、20张海岸控制层开关截图，共112张原生画面、双桌面视口容量与APK载荷已绑定本次EXE/源码哈希。五处海岸/总览的主图和缩略图水面像素均经开关对照。
+当前 {summary['regression_groups']} 组 / {summary['regression_checks']} 项回归通过；92张地表/UI及局部地图、20张海岸控制层开关和32张缩放/点选专项截图，共144张原生画面、双桌面视口容量与APK载荷已绑定本次EXE/源码哈希。五处海岸/总览的主图和缩略图水面像素均经开关对照。地图图符专项通过{symbols['checks']}项原生检查。
 截图为 Windows 原生程序；README 的战斗 GIF 保留 0.2.12 原录像身份。本轮未重新宣称完整 AI 长局、正式美术/历史批准或《欧陆战争6》商业品质达标。
 
 工程内的 PNG 即原始生成字节，提示词与便携来源索引位于 docs；原始 GIS 归档随 design 保留。不包含引擎缓存、签名、素材网关凭据或重复原图树。

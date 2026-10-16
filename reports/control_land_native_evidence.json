@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "version": "0.2.17",
-  "runtime_source_sha256": "c729e9109a39f39060f44daef7844d5865b46c74ee52533e5996afadc64d6877",
-  "windows_exe_sha256": "2d9fb3c1fc71af16cfe832c760c248e0770699ced0c5076ef4936cc10c1d03df",
+  "version": "0.2.18",
+  "runtime_source_sha256": "da853f78a5689ce7235fd73b7ea1d4a04472180a494bba7b48a755ce6bc0729f",
+  "windows_exe_sha256": "d01a2a311a0fa78adfb350518319c0df4bf6102a55710a6ed22a79b8896f62e3",
   "clip_data_sha256": "d5c291280e7f10fa64346e917e533e3ca910a96a0cb952912cf2b81a5ba60f48",
   "groups": [
     {
@@ -11,7 +11,7 @@
       "ui_scale": "1.0",
       "checks": 42,
       "report": "reports/screenshots/control_land_native/windows/validation.json",
-      "report_sha256": "21627e63927a4e78a5880714bec528598560673936a46d5925cf45b4f322715a",
+      "report_sha256": "880621efbb3575c7f3b42076746663bbb99b7aa98cb46fdf9435545241e5f976",
       "log": "reports/control_land_windows.log",
       "cases": [
         {
@@ -4977,12 +4977,22 @@
             ],
             [
               [
-                973.217590332031,
-                638.3466796875
+                984.965270996094,
+                577.303955078125
               ],
               [
-                973.217590332031,
-                719.157409667969
+                984.965270996094,
+                488.114685058594
+              ]
+            ],
+            [
+              [
+                1055.45141601563,
+                658.694274902344
+              ],
+              [
+                1055.45141601563,
+                701.505004882813
               ]
             ],
             [
@@ -4992,7 +5002,7 @@
               ],
               [
                 1102.44213867188,
-                712.374877929688
+                748.374938964844
               ]
             ],
             [
@@ -5117,22 +5127,22 @@
             ],
             [
               [
-                1067.19909667969,
-                665.476806640625
-              ],
-              [
-                1067.19909667969,
-                746.287536621094
-              ]
-            ],
-            [
-              [
                 444.571838378906,
                 563.738891601563
               ],
               [
                 384.071899414063,
                 572.549621582031
+              ]
+            ],
+            [
+              [
+                926.226867675781,
+                679.041870117188
+              ],
+              [
+                926.226867675781,
+                721.852661132813
               ]
             ],
             [
@@ -5227,12 +5237,22 @@
             ],
             [
               [
-                973.217590332031,
-                638.3466796875
+                984.965270996094,
+                577.303955078125
               ],
               [
-                973.217590332031,
-                719.157409667969
+                984.965270996094,
+                488.114685058594
+              ]
+            ],
+            [
+              [
+                1055.45141601563,
+                658.694274902344
+              ],
+              [
+                1055.45141601563,
+                701.505004882813
               ]
             ],
             [
@@ -5242,7 +5262,7 @@
               ],
               [
                 1102.44213867188,
-                712.374877929688
+                748.374938964844
               ]
             ],
             [
@@ -5367,22 +5387,22 @@
             ],
             [
               [
-                1067.19909667969,
-                665.476806640625
-              ],
-              [
-                1067.19909667969,
-                746.287536621094
-              ]
-            ],
-            [
-              [
                 444.571838378906,
                 563.738891601563
               ],
               [
                 384.071899414063,
                 572.549621582031
+              ]
+            ],
+            [
+              [
+                926.226867675781,
+                679.041870117188
+              ],
+              [
+                926.226867675781,
+                721.852661132813
               ]
             ],
             [
@@ -5457,7 +5477,7 @@
             ]
           ],
           "water_max_channel_delta": 0.0,
-          "water_pixels": 503,
+          "water_pixels": 476,
           "water_samples": [
             {
               "city_id": "tianjin",
@@ -6667,61 +6687,61 @@
           "file": "reports/screenshots/control_land_native/windows/tianjin_natural.png",
           "sha256": "dbc8a074158edf4d9415fc679da830524dc3fe8851144aacecf9fdd611dc27ba",
           "metadata": "reports/screenshots/control_land_native/windows/tianjin_natural.json",
-          "metadata_sha256": "12dc67af41f72566fd31b36e663135d5c2d4d911c33e87a90503c83119b18857"
+          "metadata_sha256": "bf623ba92943233bb2d5129615f7963d546627a00bfd7323e0e535a63c27750a"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/tianjin_control.png",
           "sha256": "08f8583bf49dc46809f913fdde109915c2c9080c502c83c30b7a9d8069278fe6",
           "metadata": "reports/screenshots/control_land_native/windows/tianjin_control.json",
-          "metadata_sha256": "e00412d251a8f8cf4e6a2b09007064101125dc6fc2a8b4c960618c9a002d1ee5"
+          "metadata_sha256": "2db3c68f83aadadb2175ec6f335a530526065839301f469dfe2b1e0bad5d4804"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/osaka_natural.png",
           "sha256": "e72e54dd327c2f1c2296d0f91ddbe310ba69ce2592b3e495e9880d25586213e9",
           "metadata": "reports/screenshots/control_land_native/windows/osaka_natural.json",
-          "metadata_sha256": "2660a3a967565792efdd6a2bc46e98931dfbdd30b7ef8bf2094b8de73327284b"
+          "metadata_sha256": "289ee6373920e6bce9eaca3c8c795fa9e96c858a603c905e157363f53f8e79a5"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/osaka_control.png",
           "sha256": "3486c556fe472689b7ef8d6892faee79753902cc04e1273d5fd2ee0c2f96ce61",
           "metadata": "reports/screenshots/control_land_native/windows/osaka_control.json",
-          "metadata_sha256": "2253da7e2b865acfac1e8db860e0a5e821a0f51a45b5d306589cb8ecbc6e4787"
+          "metadata_sha256": "8d88cf4726754f6575e0621691f4b0afe15d9180ec19aff82633ad47aa76ab22"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/baku_natural.png",
           "sha256": "67337d5c84e5fac26abfda275989679022164f89a517058930bf1b37c68549d7",
           "metadata": "reports/screenshots/control_land_native/windows/baku_natural.json",
-          "metadata_sha256": "047d0bd0ea7f9bd535c85e33974a791a89253950d057155a28bbab48cb1a94d8"
+          "metadata_sha256": "91d5cb765afe65ac39a230ec5120590c558cc4ab06e92354d09fdc70af5faf74"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/baku_control.png",
           "sha256": "5d949bbb022778e9562f987b623c0fcb1f8bcf59a0c21c5a3c6285ede2be7cf9",
           "metadata": "reports/screenshots/control_land_native/windows/baku_control.json",
-          "metadata_sha256": "d45165347f857cd7092e5d4cfeaed21b37c7dba114c65c4d4f180a2e5511ea0a"
+          "metadata_sha256": "61496da0bff11b9df7df40806eba8e20932d9db366408d996098fa823ed13185"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/singapore_natural.png",
           "sha256": "2cd8675499afd18e469a66fc3cb3b9ed0f3c40a981f5e9b2efd275cea48646a8",
           "metadata": "reports/screenshots/control_land_native/windows/singapore_natural.json",
-          "metadata_sha256": "818037267f3b3611f83ba11f851341dd216bad27a8e2a9fd2f7a1610bda216e4"
+          "metadata_sha256": "751d5d97a2f16424eb9932fe3f9f2da8a2d2f230b6eb7fa9b38ccbedbcc5cc7c"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/singapore_control.png",
           "sha256": "2cc7d72c5df17146e7197bb37d258859864eb2814aa45e42a61b4e41e5b6b88b",
           "metadata": "reports/screenshots/control_land_native/windows/singapore_control.json",
-          "metadata_sha256": "4df384d5c34dd437c39403df0547d8eb556379950bdbce8cb740fb865da73d8b"
+          "metadata_sha256": "bbb039db4419f78cb6d6e19d6d588773b3fa4dbc1ce33e75cfb63ebafbbc497c"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/overview_natural.png",
-          "sha256": "2bd6f5fd8b17fe6e44ae93ffef8a37c6321a33cfd0092cfed7caba1b47b31a14",
+          "sha256": "a46a2b520961397dfe00df10ca95c6737de09e7b3cdfcd1c09eca1170cea50e3",
           "metadata": "reports/screenshots/control_land_native/windows/overview_natural.json",
-          "metadata_sha256": "e7290296d822cee45bbad86167925c782f479ada5ecd1ac152da1877ce684bc4"
+          "metadata_sha256": "a8ea2b207148ee13cc7064dde18bf958fe718c1ccee9c752eaa0a7363b90387c"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/overview_control.png",
-          "sha256": "3e5b61c0466de615387fe79d774c491844edb4478474c4ba9eb81bc39a386123",
+          "sha256": "3d7da59b8f66e61b20019d30596773e477ad6b9a913ab39ab95175ab5920ff4c",
           "metadata": "reports/screenshots/control_land_native/windows/overview_control.json",
-          "metadata_sha256": "8b8fb75bad4cc1c2edf6593eee7dc4fd8b6a35e7a26680c86e765a37c8f7af1f"
+          "metadata_sha256": "047805f3b0eeb9f3e76f327a4202ef760aad50cb27e3d51c542c62a67ba741d9"
         }
       ]
     },
@@ -6731,7 +6751,7 @@
       "ui_scale": "1.2",
       "checks": 42,
       "report": "reports/screenshots/control_land_native/x30_layout/validation.json",
-      "report_sha256": "534b60b19db720b5f8fdee30abb4bf1b552ce6836b87160801c405cd15c5a69f",
+      "report_sha256": "cf6c44e6d3e44518f8985b6378506757d45ad1a764f4ac54f43787b4d1dea21b",
       "log": "reports/control_land_x30_layout.log",
       "cases": [
         {
@@ -11629,6 +11649,16 @@
           "rendered_label_leaders": [
             [
               [
+                1268.55065917969,
+                482.348510742188
+              ],
+              [
+                1268.55065917969,
+                393.159240722656
+              ]
+            ],
+            [
+              [
                 904.372436523438,
                 543.391296386719
               ],
@@ -11669,16 +11699,6 @@
             ],
             [
               [
-                1327.2890625,
-                462.000946044922
-              ],
-              [
-                1327.2890625,
-                372.811706542969
-              ]
-            ],
-            [
-              [
                 1292.04602050781,
                 631.564147949219
               ],
@@ -11695,16 +11715,6 @@
               [
                 1186.31689453125,
                 795.852600097656
-              ]
-            ],
-            [
-              [
-                1174.56921386719,
-                346.697967529297
-              ],
-              [
-                1174.56921386719,
-                257.508728027344
               ]
             ],
             [
@@ -11774,7 +11784,7 @@
               ],
               [
                 1045.34460449219,
-                359.246643066406
+                565.246643066406
               ]
             ],
             [
@@ -11819,16 +11829,6 @@
             ],
             [
               [
-                1421.2705078125,
-                394.175659179688
-              ],
-              [
-                1470.2705078125,
-                402.986389160156
-              ]
-            ],
-            [
-              [
                 728.1572265625,
                 495.91357421875
               ],
@@ -11845,6 +11845,16 @@
               [
                 1198.06457519531,
                 881.501342773438
+              ]
+            ],
+            [
+              [
+                1268.55065917969,
+                482.348510742188
+              ],
+              [
+                1268.55065917969,
+                393.159240722656
               ]
             ],
             [
@@ -11899,16 +11909,6 @@
             ],
             [
               [
-                1327.2890625,
-                462.000946044922
-              ],
-              [
-                1327.2890625,
-                372.811706542969
-              ]
-            ],
-            [
-              [
                 1292.04602050781,
                 631.564147949219
               ],
@@ -11925,16 +11925,6 @@
               [
                 1186.31689453125,
                 795.852600097656
-              ]
-            ],
-            [
-              [
-                1174.56921386719,
-                346.697967529297
-              ],
-              [
-                1075.06921386719,
-                355.508728027344
               ]
             ],
             [
@@ -12045,16 +12035,6 @@
               [
                 563.175720214844,
                 572.549621582031
-              ]
-            ],
-            [
-              [
-                1421.2705078125,
-                394.175659179688
-              ],
-              [
-                1470.2705078125,
-                402.986389160156
               ]
             ],
             [
@@ -13299,61 +13279,61 @@
           "file": "reports/screenshots/control_land_native/x30_layout/tianjin_natural.png",
           "sha256": "621bd9d0ef4bbbc8c72f984e48ed25528cd70a5a18b43ec5377b79b6e02bdea4",
           "metadata": "reports/screenshots/control_land_native/x30_layout/tianjin_natural.json",
-          "metadata_sha256": "675037584091f6f8698c0772c8660c0b582b2b64d35dd32395e61f7fc56222c5"
+          "metadata_sha256": "6c974be5310ff95054f2d0e4e87b6d74aa191a7ae558b5499427d197b320f83b"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/tianjin_control.png",
           "sha256": "c45cf937f16bafddcc474107b37e7e80645313e518478eb3ed3f4518a3bebb3f",
           "metadata": "reports/screenshots/control_land_native/x30_layout/tianjin_control.json",
-          "metadata_sha256": "b9aaa257c380e99f95788d4205593a10f68b7fd4b6856dd38bb3b67b2b73bae4"
+          "metadata_sha256": "12c45d662890d7a0234742b08bc05c7529e2a8cd739b2fce89e52be0729af2cd"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/osaka_natural.png",
           "sha256": "e68fbeec5fbaedadd83496761ff0df0b5969f488b3e295208008c0723d008a08",
           "metadata": "reports/screenshots/control_land_native/x30_layout/osaka_natural.json",
-          "metadata_sha256": "0a614b4c070cbe0db6e9f088d4f8009f2e8a9b7784f8b954bce0784e7c25011e"
+          "metadata_sha256": "4542c273076dd5ee0904900ed7f61b18cbc376b81b011d95b8e3c3a595d1bbd7"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/osaka_control.png",
           "sha256": "5c85bb486e25e5387b5b0067cb220970558a65a3d5a4a9f050c11e3fe02bfb28",
           "metadata": "reports/screenshots/control_land_native/x30_layout/osaka_control.json",
-          "metadata_sha256": "4cc7fdb63aa4995ce189627bd484d13f2e40db7afa43c57722c51b955404b70f"
+          "metadata_sha256": "62d068ecee714a2d38b0b83daff23794a53fafa9f4651a0b8c6447e146778de4"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/baku_natural.png",
           "sha256": "5e5f03593187f6a1ca208e4eca7920ea8f8b64783c8034240b11b2ba82b109b0",
           "metadata": "reports/screenshots/control_land_native/x30_layout/baku_natural.json",
-          "metadata_sha256": "5e884f9fb5a59b55b886bf75741aa37a2ffa2e1fa3efc603f364a09d4472c1c7"
+          "metadata_sha256": "2b5d4b3b4ef374ad5d45f14591b0aca3366e35813b526ec455804eb187342d7d"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/baku_control.png",
           "sha256": "db76f4e3aab73988d0c8aa34f3fbde057d35025f6bbc7a5e3a7b70671347127b",
           "metadata": "reports/screenshots/control_land_native/x30_layout/baku_control.json",
-          "metadata_sha256": "4971eaa4fc8387a2e1685534f15eddeca98ef60f2fbc0c9e3f5c6b66f25d5e1d"
+          "metadata_sha256": "9ce5f8055784ca9cbb9e2ad3b6e2f08b1f43b138dcc18832c88673051b1c7015"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/singapore_natural.png",
           "sha256": "1ac39ac78e46a9ddd8ec6a8fff552a33734aea0097e6cc7bc56f5dcbb4e17bea",
           "metadata": "reports/screenshots/control_land_native/x30_layout/singapore_natural.json",
-          "metadata_sha256": "eb4b1fb91397ad16d12012f70ba02a7090ee0b1e896d0ca28fc30d48ce48a425"
+          "metadata_sha256": "fe913920082d3a78f55fd1c1313ce7c7ab58dc49eb96cb7a76c03886058f93a6"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/singapore_control.png",
           "sha256": "5b1fd340f7e0c99256a439cff65809d57a90ec2bf806acd3149ca8c41f7a8538",
           "metadata": "reports/screenshots/control_land_native/x30_layout/singapore_control.json",
-          "metadata_sha256": "3239878e3926cb59c16cf2b3ed1db88c2eca9b100a7080e85450ae972b67ece0"
+          "metadata_sha256": "9b991dd653ce8f29896818e22049a82fc5cf053be01bbfdc606d4567b76ba5c4"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/overview_natural.png",
-          "sha256": "f01acb6818e3bd9ab0212a0154c9098061789d0243a13d409b3913df59fbafbe",
+          "sha256": "af056e17a6491dc56a4e4c55975b13468b7e813f5c21bc67bea861fcd5f47b9a",
           "metadata": "reports/screenshots/control_land_native/x30_layout/overview_natural.json",
-          "metadata_sha256": "6e0355b4a7a790bba9980133cc1f92dacb50d53ac7520bbd205ca64c7760d66b"
+          "metadata_sha256": "6579ac031ca9f4c160b01442233c1a8ea80fc5a5ed5caf3e5be6949e34a2bfe3"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/overview_control.png",
-          "sha256": "e4a755fd3053ddc21677e0af64a815be1ad7d3508151c968b0d057c9f4ea1183",
+          "sha256": "74f1fe0b0af1aa24e7cb977949b862d5c98682fe03180c79450492fece636d04",
           "metadata": "reports/screenshots/control_land_native/x30_layout/overview_control.json",
-          "metadata_sha256": "b9883f1398f2a0ff196b04a5ab28f2c36a2fa0cac17e4d91ed4cd8cab661690c"
+          "metadata_sha256": "805a33f703e321072c83f549d1e6549ec700460a3fd2512e33d2ab9dc35c0e2e"
         }
       ]
     }

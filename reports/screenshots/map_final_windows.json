@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.17",
+	"build_version": "0.2.18",
 	"city_labels": [
 		{
 			"city_id": "jiumenkou",
@@ -50,7 +50,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1791.487,
+		"preparation_ms": 1132.247,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -109,6 +109,51 @@
 				"3": 6
 			},
 			"width_is_symbolic": true
+		},
+		"map_symbols": {
+			"background_legacy_terrain_symbols": 0,
+			"background_painted_scenery": 155,
+			"city_counter_ids": [],
+			"city_detail_ids": [
+				"shanhaiguan",
+				"jiumenkou"
+			],
+			"detail_threshold": 0.56,
+			"place_counter_ids": [],
+			"place_detail_ids": [
+				"place_beiyingzi",
+				"place_banchangyu",
+				"place_dongjiakou",
+				"place_chengziyu"
+			],
+			"regional_threshold": 0.2,
+			"rule_positions_changed": false,
+			"scope": "Actual draw IDs in the unit layers, filtered to anchors in this viewport; HUD occlusion is not subtracted.",
+			"source_units_removed": false,
+			"unit_counter_ids": [],
+			"unit_counter_screen_size": [
+				15.0,
+				10.8000001907349
+			],
+			"unit_detail_ids": [
+				"u_00013",
+				"u_00011",
+				"u_00004",
+				"u_00008",
+				"u_00002",
+				"u_00006",
+				"u_00001",
+				"u_00009",
+				"u_00007",
+				"u_00003",
+				"u_00010",
+				"u_00005",
+				"u_00031",
+				"u_00012",
+				"u_00014"
+			],
+			"units_aggregated": false,
+			"zoom_band": "detail"
 		},
 		"measurement_scope": "Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score.",
 		"nearest_repeated_source_distance_world": 296.695281982422,
@@ -314,13 +359,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 134.183,
+		"index_ms": 151.849,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2773.643,
+		"mesh_ms": 2655.695,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1807.566,
-		"preparation_ms": 4715.391,
+		"placement_ms": 1227.178,
+		"preparation_ms": 4034.721,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

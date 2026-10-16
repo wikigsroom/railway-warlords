@@ -4,14 +4,16 @@
 
 ## 截图 / Screenshots
 
-当前媒体目录有 43张完整PNG：41张来自0.2.17 Windows EXE，另外两张交战/航空画面保留 0.2.12 身份。当前92张地表/UI及20张海岸控制开关原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot 在实际程序中渲染控件、地图与独立美术资源。
+当前媒体目录有 45张完整PNG：43张来自0.2.18 Windows EXE，另外两张交战/航空画面保留 0.2.12 身份。当前92张地表/UI、20张海岸控制开关和32张图符专项原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot 在实际程序中渲染控件、地图与独立美术资源。
 
-The media folder contains 43 complete PNGs: 41 from the 0.2.17 Windows EXE and two preserved 0.2.12 combat/air-action stills. Selected current terrain/UI and export-validation viewports are copied byte for byte, without cropping, stitching, repainting or text overlays. Godot renders the real controls, maps and independent assets.
+The media folder contains 45 complete PNGs: 43 from the 0.2.18 Windows EXE and two preserved 0.2.12 combat/air-action stills. Selections from 92 terrain/UI, 20 coastal control-toggle and 32 symbol-check captures, plus export-validation viewports, are copied byte for byte, without cropping, stitching, repainting or text overlays. Godot renders the real controls, maps and independent assets.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
 | [menu.png](media/menu.png) | 当前主菜单 / Current main menu |
 | [battlefield.png](media/battlefield.png) | 战场 HUD / Battlefield HUD |
+| [map-regional-symbols.png](media/map-regional-symbols.png) | 亚洲区域图符与地表 / Regional Asia symbols and ground |
+| [map-selected-formation.png](media/map-selected-formation.png) | 区域点选恢复部队模型 / Selected formation restores its detailed model |
 | [mountains.png](media/mountains.png) | 燕山地形与村落 / Yanshan terrain and villages |
 | [coast.png](media/coast.png) | 渤海海岸 / Bohai coast |
 | [tributaries.png](media/tributaries.png) | 来源山谷支流 / Sourced valley tributaries |
@@ -38,7 +40,7 @@ The media folder contains 43 complete PNGs: 41 from the 0.2.17 Windows EXE and t
 
 截图 JSON 记录视口、版本、内容指纹等；实际地表/UI的共同证据见 `reports/terrain_surface_native_evidence.json`，旧战斗演示见 `reports/native_visual_evidence.json`。图鉴是游戏内真实控件，不是后期拼接图片。X30 尺寸截图来自 Windows，`physical_android_device_tested` 为 false。
 
-Associated JSON records viewport, version and content fingerprint. Current UI/terrain proof is `reports/terrain_surface_native_evidence.json`; older battle proof is `reports/native_visual_evidence.json`. The atlas is an actual in-game interface. X30-size screenshots are Windows captures with `physical_android_device_tested: false`.
+Associated JSON records viewport, version and content fingerprint. Current UI/terrain proof is `reports/terrain_surface_native_evidence.json`; symbol checks are in `reports/map_symbol_native_evidence.json`; older battle proof is `reports/native_visual_evidence.json`. The atlas is an actual in-game interface. X30-size screenshots are Windows captures with `physical_android_device_tested: false`.
 
 ## 录像与 GIF / Recording and GIFs
 

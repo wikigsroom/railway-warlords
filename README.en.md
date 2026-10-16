@@ -7,7 +7,7 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.17, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.18, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
@@ -53,7 +53,7 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Raster art | **1,156 PNGs**, including **970 map assets**, 64 cardinal-direction unit views and 16 ordinary-infantry action images |
 | Regional terrain | **20 types × (1 continuous ground + 4 detail originals) = 100 originals**; named cell details and an interactive atlas |
 | Audio and fonts | 14 procedural sound effects, 3 procedural music tracks and 2 Chinese fonts with OFL notices |
-| Current regression snapshot | **26 groups / 5,024 passing checks**, plus 224 native terrain checks, 212 UI action/layout checks and 84 coastal pixel/viewport checks; another 44 native material pixel checks |
+| Current regression snapshot | **26 groups / 5,024 passing checks**, plus 224 native terrain, 212 UI action/layout, 84 coastal pixel/viewport, 44 native material pixel and 220 map-symbol checks |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
 
 Runtime data lives in `content/`. Original designs and older versions retain their own status. Content counts do not establish complete art, historical, balance or device acceptance. See the [completion assessment](docs/23_当前完成度评估.md).
@@ -66,6 +66,16 @@ Runtime data lives in `content/`. Original designs and older versions retain the
 ![Native battlefield with objectives, terrain, formations, inspector and orders](docs/media/battlefield.png)
 
 *The resource/date bar sits above the map, objectives occupy the upper left, the inspector is on the right, and command previews and confirmations sit below.*
+
+### Regional view and selected formations
+
+Version 0.2.18 changes city and individual formation symbols with zoom. Regional counters leave more ground and river detail visible; close views restore the full buildings, unit sources and status. Selected or animated battle formations receive detailed models first. Every counter still represents its original formation, with unchanged deployment, count and geographic position.
+
+![Cities, formations and continuous ground in the regional Asia view](docs/media/map-regional-symbols.png)
+
+![Selecting a regional formation restores its detailed model](docs/media/map-selected-formation.png)
+
+Compact formations receive precise selection before the wider city snap radius. The old repeated terrain marks are omitted when the complete painted scenery bank is available. See [map zoom and precise selection](docs/35_地图缩放层次与精确点选.md) for behavior and verification scope.
 
 ### Native movement and combat
 
@@ -468,26 +478,27 @@ godot --headless --path . --script tests/surface_geography_test.gd
 godot --headless --path . --script tests/terrain_surfaces_test.gd
 ```
 
-Twenty-six groups / 5,024 checks cover rules, input, geography, progression, transactions, events, rendering, workers, scale, logistics, caches, settlements, snapshots, Asia, boundaries, facing, surfaces, the map bank, source-linked river continuity and coastal control geometry. The current EXE also passes 224 terrain checks over two viewports and 212 real UI action/layout checks over three viewports, plus 84 coastal checks over two viewports and 44 native material-fixture checks. The 92 terrain/UI images and 20 control-toggle images total 112 native captures. Older movement, action, replay and pixel evidence retains its original version identity.
+Twenty-six groups / 5,024 checks cover rules, input, geography, progression, transactions, events, rendering, workers, scale, logistics, caches, settlements, snapshots, Asia, boundaries, facing, surfaces, the map bank, source-linked river continuity and coastal control geometry. The current EXE also passes 224 terrain, 212 real UI action/layout, 84 coastal and 44 native material-fixture checks. Another 220 symbol checks cover individual formations, zoom crossings in both directions, selection near cities and unchanged state/RNG. The 92 terrain/UI, 20 control-toggle and 32 symbol images total 144 current EXE native captures. Older movement, action and command-replay evidence retains its original version identity.
 
 [Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current summary](reports/terrain_update_verification_summary.json)
 
-Current reports are original-workspace 0.2.17 snapshots, not a claim that another machine has rerun them. They do not replace manual gameplay, art, historical or device acceptance. Full AI endurance was not rerun for this map patch; older endurance results and recordings retain their version identity.
+Current reports are original-workspace 0.2.18 snapshots, not a claim that another machine has rerun them. They do not replace manual gameplay, art, historical or device acceptance. Full AI endurance was not rerun for this map patch; older endurance results and recordings retain their version identity.
 
-### Current version 0.2.17 desktop performance
+### Current version 0.2.18 desktop performance
 
 Current EXE on RTX 3060, 240 formations and 74,762 cells. Each viewport completed 60 seconds of sustained pan/zoom; other phases use fixed-frame samples. Both profiles use the desktop GPU.
 
 | Phase | 1920×1080 average FPS / P95 ms | 2400×1080 desktop mobile layout average FPS / P95 ms |
 | --- | ---: | ---: |
-| Static atlas | 369.3 / 3.68 | 332.8 / 4.34 |
-| Atlas pan | 154.2 / 8.75 | 138.9 / 10.19 |
-| Tactical selection | 81.6 / 37.86 | 66.6 / 41.13 |
-| Sustained pan/zoom | 191.9 / 6.60 | 177.6 / 7.89 |
-| Active combat | 142.0 / 7.53 | 128.2 / 9.17 |
+| Static atlas | 235.8 / 5.83 | 254.8 / 5.38 |
+| Atlas pan | 103.3 / 12.32 | 110.8 / 11.87 |
+| Tactical selection | 64.7 / 52.87 | 65.9 / 45.16 |
+| Sustained pan/zoom | 124.9 / 10.71 | 126.8 / 11.21 |
+| Active combat | 96.1 / 11.58 | 106.1 / 9.95 |
 
-Both viewports pass the existing 60 average FPS gate. Tactical P95 is about 37.9 / 41.1 ms, so frame-time spikes remain. These are not physical Motorola X30 results. See the [current Windows report](reports/capacity_windows_v0217.json) and [desktop mobile-layout report](reports/capacity_x30_v0217.json).
+Both viewports pass the existing 60 average FPS gate. Tactical P95 is about 52.9 / 45.2 ms, so frame-time spikes remain. These are not physical Motorola X30 results. See the [current Windows report](reports/capacity_windows_v0218.json) and [desktop mobile-layout report](reports/capacity_x30_v0218.json).
 
+The failed first full Windows run and concurrent GPU-load observations remain in the [environment and rerun record](reports/capacity_environment_v0218.json). No source, quality, formation-count or gate changes were made for the rerun; five-second diagnostic probes do not count as full acceptance.
 
 ### Historical version 0.2.15 desktop measurements
 
@@ -554,4 +565,4 @@ Detailed implementation chapters currently use Chinese; this English README cove
 | Verified scope | [Completion](docs/23_当前完成度评估.md), [validation](docs/05_测试与验收.md) |
 | Media and sources | [Screenshots/GIFs](docs/MEDIA.md), [provenance](docs/asset-provenance/index.json), [licensing](LICENSE-NOTICE.md) |
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.17 assessment and corresponding reports for current status.
+Older chapters preserve their version context. Use these READMEs, the 0.2.18 assessment and corresponding reports for current status.

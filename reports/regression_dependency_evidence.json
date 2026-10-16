@@ -1,14 +1,14 @@
 {
   "passed": true,
-  "game_version": "0.2.17",
-  "runtime_source_sha256": "c729e9109a39f39060f44daef7844d5865b46c74ee52533e5996afadc64d6877",
-  "created_at_utc": "2026-10-16T16:40:26.328150+00:00",
+  "game_version": "0.2.18",
+  "runtime_source_sha256": "da853f78a5689ce7235fd73b7ea1d4a04472180a494bba7b48a755ce6bc0729f",
+  "created_at_utc": "2026-10-16T18:29:44.139716+00:00",
   "scope": "Conservative global-class and explicit scene/script dependency closure, plus all content, schemas, fixtures and raster/font/audio bytes. Native exported screenshots and performance use the complete runtime separately.",
   "checks": [
     {
       "check": "run_tests",
       "passed": true,
-      "dependency_sha256_at_seal": "25af09918f1a173a8bd5c65366d0b1f4215eac71f317e3539f893a0d9f75e9a1",
+      "dependency_sha256_at_seal": "ea2b8809d00cb82986b6b49d7c2845f3ef5e963c8d467c0bd1dc6308fb0f7478",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -1333,14 +1333,14 @@
         "tests/run_tests.gd"
       ],
       "report": "rule_tests.json",
-      "report_sha256": "0eef5c9a7e6d5e2399c65c720fb82531fc8b28389cb89c26954ff6e651969b64",
-      "log": "run_tests_v0217.log",
+      "report_sha256": "c275717661fe14354b7c9cc7df0df5b916ecc1189b3a264a6fadc24da6d62b1b",
+      "log": "run_tests_v0218.log",
       "log_sha256": "d29f0b0bc26402b0fbbad4424f42124d77ede66c359883d3eb7173785408219f"
     },
     {
       "check": "acceptance_test",
       "passed": true,
-      "dependency_sha256_at_seal": "89815f5ab0539447c2a3131bdbe8daf61fe973a32757945aa6ee20326e7596e7",
+      "dependency_sha256_at_seal": "28cabc05f7d5310dde129a9e3f8c4c3af8d6bf02e6104d0aa6e4c684519cc05d",
       "dependencies": [
         "ai/ai_planner.gd",
         "assets/audio/music/battle.wav",
@@ -2665,14 +2665,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "acceptance_tests.json",
-      "report_sha256": "f518cbbc324f0a75edd389bc747cc1eef96b5b2e8e0926b75b030ca7e9fa1c9f",
-      "log": "acceptance_test_v0217.log",
+      "report_sha256": "4347bd8e2633376218e40fde91b095d2e5cc987d3cf026a1a705a20e532927ed",
+      "log": "acceptance_test_v0218.log",
       "log_sha256": "b403d43a2a5b0fd54612d077df5029bbdf719e6bd58801113767a54830fa6cdf"
     },
     {
       "check": "input_test",
       "passed": true,
-      "dependency_sha256_at_seal": "8ee011d79136a510789f50da9800df8b1a12e46c9bb9d80517b67c6d7867a472",
+      "dependency_sha256_at_seal": "391cf8219ce723830d7a64996eea6a4e507bdd2a653e5e76402bcea24cf35f8f",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_benchmark.gd",
@@ -2681,6 +2681,7 @@
         "app/ground_continuity_qa.gd",
         "app/main.gd",
         "app/main.tscn",
+        "app/map_symbol_qa.gd",
         "app/match_controller.gd",
         "app/prepared_sight_cache.gd",
         "app/responsiveness_qa.gd",
@@ -4017,6 +4018,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -4037,13 +4039,13 @@
       ],
       "report": "input_tests.json",
       "report_sha256": "17a28801d943ddc7023f7bd3f9c303394d76f53340c1862828eee5353393a4a6",
-      "log": "input_test_v0217.log",
+      "log": "input_test_v0218.log",
       "log_sha256": "9e06b7cb1c3e527a5cecdca2aa5f4d638381ff3ad914e306fcde82c391fe822a"
     },
     {
       "check": "geography_test",
       "passed": true,
-      "dependency_sha256_at_seal": "db825796c056e60b5aaec59186b9ae0522d9b3fe3c13da467de377753ba1ac9e",
+      "dependency_sha256_at_seal": "b59ed4824995d10d340298d8177ca302dfd477d1ce9006eb41edb618ede68ef0",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -5367,13 +5369,13 @@
       ],
       "report": "geography_tests.json",
       "report_sha256": "f34305ae67c360351befd623f0ad340a64cba1f1f71590e87b8ef3fd8035c61b",
-      "log": "geography_test_v0217.log",
+      "log": "geography_test_v0218.log",
       "log_sha256": "8eb0adc459a71e3d361c24bef99d2cca3c528434319c799730263c16f20e88e4"
     },
     {
       "check": "progression_test",
       "passed": true,
-      "dependency_sha256_at_seal": "7b3bb37a437004e78b7eb57fba98c63e859ae27bcdf205874b8c1a73031b89ae",
+      "dependency_sha256_at_seal": "bf9909aa43374a2af79e0706bcd5c78f06343cb9a5bdda8177c71e8e435f489f",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -6699,13 +6701,13 @@
       ],
       "report": "progression_tests.json",
       "report_sha256": "1115855097d7b72748b381626f45b5d5bca2da52f6f9952b8905c9383e8d3162",
-      "log": "progression_test_v0217.log",
+      "log": "progression_test_v0218.log",
       "log_sha256": "67734ecd9c8ac01810f00134624999c112316a12702279162544f265e5026d08"
     },
     {
       "check": "transaction_test",
       "passed": true,
-      "dependency_sha256_at_seal": "981a592c4f31ffe4a1f2cda3c1a4bd907c884f5682fb150f99ea4e1705cc6e35",
+      "dependency_sha256_at_seal": "30d97bd12d7e2f5d06e2f621f4d09f3b7df3c7a9efd05f2abef0d8339fb5baff",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -8029,14 +8031,14 @@
         "tests/transaction_test.gd"
       ],
       "report": "transaction_tests.json",
-      "report_sha256": "42db62247050dada6349a6d278877762a401ac65043603b3492274daf20a279f",
-      "log": "transaction_test_v0217.log",
-      "log_sha256": "47b626aaeb8bd8a1af7976bfae110b27c7ba7d02e858756461c51d9ef1fe14aa"
+      "report_sha256": "7a5c1f69b55c3682b6931c0dabc827b2a390f68ef5021626692c1333f48fc040",
+      "log": "transaction_test_v0218.log",
+      "log_sha256": "64bd89a0e41f8f736e1fadbd0b167e04165cab1345ab44094f8e21eee92c464a"
     },
     {
       "check": "strategic_history_test",
       "passed": true,
-      "dependency_sha256_at_seal": "c8e91d00ff2e0932a2e40381eb7adf78a8e795d1f9f7ef07ef36066f1af04657",
+      "dependency_sha256_at_seal": "c21e2fa76175e6990d1db06f1518702b3407a0d5c470d32166a7723c0dc52c13",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -9359,13 +9361,13 @@
       ],
       "report": "strategic_history_tests.json",
       "report_sha256": "7b75c58c6d588d23a372d7327ce17d91feea79914046fefa5ee579eb81567638",
-      "log": "strategic_history_test_v0217.log",
+      "log": "strategic_history_test_v0218.log",
       "log_sha256": "3b717158fffc52f8f526ed834372d8a74549759fdee40a1e9ccd4fd01ec33055"
     },
     {
       "check": "atlas_render_test",
       "passed": true,
-      "dependency_sha256_at_seal": "1aa4f36cfb74385c8b10dc5d38d50bc4846749f56d8d147595a6f2ccacc7ce1b",
+      "dependency_sha256_at_seal": "3c292f552bb597ff76cc9148f390205d178d15f193a3e47af55776b14881979b",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_benchmark.gd",
@@ -9374,6 +9376,7 @@
         "app/ground_continuity_qa.gd",
         "app/main.gd",
         "app/main.tscn",
+        "app/map_symbol_qa.gd",
         "app/match_controller.gd",
         "app/prepared_sight_cache.gd",
         "app/responsiveness_qa.gd",
@@ -10710,6 +10713,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -10729,14 +10733,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "atlas_render_tests.json",
-      "report_sha256": "98d3b6b149e6b9e03183c120a868361d7306acede5c92796baae24c569756da9",
-      "log": "atlas_render_test_v0217.log",
-      "log_sha256": "b0f23a253886b352f78e8498701f3528732a50c595d355359e931d08ad458976"
+      "report_sha256": "63d48e6a1ca8e198004bd7feb204ed5c4e975982d1456433b1e4a58e728e85ab",
+      "log": "atlas_render_test_v0218.log",
+      "log_sha256": "8e216a02fc61279c1e06f29422d9aa377d7f17be55072b695b877415f8681b6b"
     },
     {
       "check": "combat_presentation_test",
       "passed": true,
-      "dependency_sha256_at_seal": "b657f8c2c1ad329e55252eecfd85728ed05ec2dda3822c6585807c856e592ef6",
+      "dependency_sha256_at_seal": "956427b0ddf787ba6f715e4efdfe5bc57a4909f559168c930363170ea442e472",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/visual_playtest.gd",
@@ -12063,6 +12067,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -12080,14 +12085,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "combat_presentation_tests.json",
-      "report_sha256": "631ef4eb7de56d2504ad90d76916a1f4adacd165b6ad477deb9f6ecfa635a0c9",
-      "log": "combat_presentation_test_v0217.log",
+      "report_sha256": "853306de078074f8d7abb15e4384c0e01e02f4d1463a83e8049f547acf3c4e79",
+      "log": "combat_presentation_test_v0218.log",
       "log_sha256": "e0055fac0812adc348620afac75e92347c5f922c7dfb836ffa587e533f85c201"
     },
     {
       "check": "automation_test",
       "passed": true,
-      "dependency_sha256_at_seal": "c0f813c24fc385f2b15ff22ef56b8d17845904f112720ec657d2561389a5b61e",
+      "dependency_sha256_at_seal": "f45d3e60bca7383d6eb90bc39355f0ad7dbb424eacbcf1f6967fe77a18b3dbd4",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/match_controller.gd",
@@ -13419,14 +13424,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "automation_tests.json",
-      "report_sha256": "c14e6cf288a9c135c21d0d8630016fb8359c58bb89ee1e825e77b56af6959163",
-      "log": "automation_test_v0217.log",
+      "report_sha256": "631c634927f4cbabf20240dca758a35b71a6ccba770167a28c2e34b8086177a0",
+      "log": "automation_test_v0218.log",
       "log_sha256": "52d05dd79fa8c91dd8992acee109c87c53955754d233c36cbe109c40389a2051"
     },
     {
       "check": "rules_worker_test",
       "passed": true,
-      "dependency_sha256_at_seal": "e65c25087bf4af7b08c2c967ff22dd4fc92e4be0b801ccc16ac760dc9b1f6706",
+      "dependency_sha256_at_seal": "73ae5e1474317f43b85742ee0f792185a6e28df70cfa65405b9dba52d17dac5b",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_fixture.gd",
@@ -14759,14 +14764,14 @@
         "tests/rules_worker_test.gd"
       ],
       "report": "rules_worker_tests.json",
-      "report_sha256": "7e2c8c931ee7a42c60495881ffb00ac6e90172f9dab0110407a9faa5c8d86903",
-      "log": "rules_worker_test_v0217.log",
-      "log_sha256": "4f4dfb001a4cf047ae928a4d225467d697a8d4d37b2d26cc49b802bcecee663b"
+      "report_sha256": "59a49b45c8806dd1a8fde3c7abdc40f2cfef2b826ad1000d6a004bced87b225a",
+      "log": "rules_worker_test_v0218.log",
+      "log_sha256": "b2d6ce2657597bb50b8185b94cb9794f7fc0725c5f4bb6bc5a1fb45cf154af24"
     },
     {
       "check": "map_scale_test",
       "passed": true,
-      "dependency_sha256_at_seal": "4640d54351c6b05b103e50eccf45175b8b83e91c9f424bd42bd5d143e48e9f6c",
+      "dependency_sha256_at_seal": "fe741ce7d9f0292b19088142e70c5fe0e71c2453e0433f72e3d9abf1e78402cc",
       "dependencies": [
         "app/capacity_fixture.gd",
         "assets/audio/music/battle.wav",
@@ -16091,14 +16096,14 @@
         "tests/map_scale_test.gd"
       ],
       "report": "map_scale_tests.json",
-      "report_sha256": "3d019f00066753d8ffcc641b641f36030f697116ff5abf3d658e3403e1136f42",
-      "log": "map_scale_test_v0217.log",
-      "log_sha256": "064d0ffcfa3e687581b0c7475b91e5e99640edd4c2845786d7ae2a821e7ecbfa"
+      "report_sha256": "b90f1d4104a2dba0288dc87ac33ef7840e0db2562461289f57ca306324f709a6",
+      "log": "map_scale_test_v0218.log",
+      "log_sha256": "25852eeebcb5fdf3ed88f520c5e872f2cef81fcf41f0d690126d9c2fae298553"
     },
     {
       "check": "scaled_logistics_test",
       "passed": true,
-      "dependency_sha256_at_seal": "3dc9e4adf54e082db6f45d5532f55ad4b44c395bde2bed14ec28ed8dc42ebfda",
+      "dependency_sha256_at_seal": "590a86c50907bfcee18340d17ece2435966d6b48ac8a7f83b3b5072c25c6e836",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -17420,14 +17425,14 @@
         "tests/scaled_logistics_test.gd"
       ],
       "report": "scaled_logistics_tests.json",
-      "report_sha256": "dbe2967ba1a3297814525cd8034ec2e2deb3205eb0a0724f147b80174ec9728b",
-      "log": "scaled_logistics_test_v0217.log",
-      "log_sha256": "613272c2f3a0456b1064946f727e30b9a4becb4b7ccf5804af2a1324c5d4c82c"
+      "report_sha256": "943c9d508e4c74a546413dfd8bca2eafbe301dac9a667a8a1c464dc57e322ab7",
+      "log": "scaled_logistics_test_v0218.log",
+      "log_sha256": "786fbe9bc5cb72a08191eeedc57be2e286d637cdaede9e2404333de613919bfe"
     },
     {
       "check": "movement_cache_test",
       "passed": true,
-      "dependency_sha256_at_seal": "1a56900adac2a6e78589fde99cf097428f63779a2315e9658b541864256f148f",
+      "dependency_sha256_at_seal": "d6dc2513af731138ff35aef2422e6e62a7368a5651e85c99667cae18c8edb406",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -18749,14 +18754,14 @@
         "tests/movement_cache_test.gd"
       ],
       "report": "movement_cache_tests.json",
-      "report_sha256": "8cf973e5b6b5901fcf04d77adcdf03563fa44cd112c8fcec3d7189c383de65db",
-      "log": "movement_cache_test_v0217.log",
+      "report_sha256": "305df2df6371128b1527b34ba1f66cea7385145e508a8c162f636cbba09b9fcc",
+      "log": "movement_cache_test_v0218.log",
       "log_sha256": "487e556c83144cb722792724eb49fa5bbcb3f69209b50e9c49d2d40ec5c54a9b"
     },
     {
       "check": "historical_places_test",
       "passed": true,
-      "dependency_sha256_at_seal": "1fb1f81a6da473cddf9a921a771e3f2a3707900ff176c8283563844e3891be28",
+      "dependency_sha256_at_seal": "8b4b09b288fd1099955288246518afa94ffa4a542180f63eb7a99aff44a9e9bb",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_benchmark.gd",
@@ -18765,6 +18770,7 @@
         "app/ground_continuity_qa.gd",
         "app/main.gd",
         "app/main.tscn",
+        "app/map_symbol_qa.gd",
         "app/match_controller.gd",
         "app/prepared_sight_cache.gd",
         "app/responsiveness_qa.gd",
@@ -20101,6 +20107,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -20120,14 +20127,14 @@
         "tests/historical_places_test.gd"
       ],
       "report": "historical_places_tests.json",
-      "report_sha256": "6e846988cd31586a7b80b1bee1d427c780d3207ce640747c4c5d7e2df8e1e67a",
-      "log": "historical_places_test_v0217.log",
-      "log_sha256": "57a4a47a1a67492d6c43da7c5c0fae0b344fab5b45de5e9725e65bd56c6bf656"
+      "report_sha256": "afee3396c161347a1ef32ecf20aba3c56a547e1f4e35ed4c2cf5d6569d4c477c",
+      "log": "historical_places_test_v0218.log",
+      "log_sha256": "17c711fec3fe935d2286564b64200e839a965ac600eda746f0443affc9cd0b78"
     },
     {
       "check": "snapshot_optimization_test",
       "passed": true,
-      "dependency_sha256_at_seal": "04234e8d8a631a8ca2f2b91b0071dca95755fa586abade7c7de6e4d9537fe272",
+      "dependency_sha256_at_seal": "183fae1c0e0dc9ef13f9738fa5689c405352128b5a78a6e6a3f58b35faac42aa",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_fixture.gd",
@@ -21456,14 +21463,14 @@
         "tests/snapshot_optimization_test.gd"
       ],
       "report": "snapshot_optimization_tests.json",
-      "report_sha256": "ca522f2c0e2a0b89c8018e402d0eea8fe2c535afb046e2c18570bc23ff268e04",
-      "log": "snapshot_optimization_test_v0217.log",
+      "report_sha256": "1d2d13da29eb49c7c1d7494c64a94429e4f7ea180ec6a930cad3ae00770c6a68",
+      "log": "snapshot_optimization_test_v0218.log",
       "log_sha256": "b221118ea2c7e3a2be65eae3d8bc0f7ae9ab592a7d426900ba7d86d02942f5a4"
     },
     {
       "check": "asia_content_test",
       "passed": true,
-      "dependency_sha256_at_seal": "7ef263ad6d849e8c93a6f9eb641c6f03c88a8d55663011fd99a7c6e06a18e2aa",
+      "dependency_sha256_at_seal": "5aa50eca18e2b61774cb96f3c0b7a012ef45bd276390a2fa5f6088a97d866586",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -22786,13 +22793,13 @@
       ],
       "report": "asia_content_tests.json",
       "report_sha256": "eed8728abe1a4bb55ab749ff1342688fc6e501604509726c4899dca715ec76ba",
-      "log": "asia_content_test_v0217.log",
+      "log": "asia_content_test_v0218.log",
       "log_sha256": "7baf6e5920d6ed40763fd2615d253291b9547a3439ea345b33adf30ebcedbabd"
     },
     {
       "check": "map_detail_boundary_motion_test",
       "passed": true,
-      "dependency_sha256_at_seal": "2a67a807054289fe09c84346183d7e6961674d7c2c9699d7a4535c93c02ef1f9",
+      "dependency_sha256_at_seal": "fdc06d048e16b94954ab18ef09fbf1a4d801bfad2cd0fb109dcf45fd258bfc7d",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -24114,6 +24121,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -24131,14 +24139,14 @@
         "tests/map_detail_boundary_motion_test.gd"
       ],
       "report": "map_detail_boundary_motion_tests.json",
-      "report_sha256": "bf3654ad71139c112cab733a5d3f8f56ba42144f4d0530c103dbd08b6cb4f912",
-      "log": "map_detail_boundary_motion_test_v0217.log",
+      "report_sha256": "94cf990a8137433d58dff2b8449c2ea32b7c3857f7d4daaeb8172f57350d26f8",
+      "log": "map_detail_boundary_motion_test_v0218.log",
       "log_sha256": "89f1866afa6cafe3029cea4efaea1212be388ff829641e34fc116f2d29f66bce"
     },
     {
       "check": "facing_memory_test",
       "passed": true,
-      "dependency_sha256_at_seal": "ea53133e3ca9cb29f0c523d6e6b26b0f31cd2311df8ac77cfa85ea37eded69b8",
+      "dependency_sha256_at_seal": "2104e3e428f58b0181d69348d207c56a935c8a073fcf3935db3d46cc06884190",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/visual_playtest.gd",
@@ -25465,6 +25473,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -25482,14 +25491,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "facing_memory_tests.json",
-      "report_sha256": "f7a92a9b5ba89a9dc3f9a86f549c2ee77bc0cdf50706f5a20d27facff8754d1c",
-      "log": "facing_memory_test_v0217.log",
+      "report_sha256": "477f69c60cdfd8a2517cfd1d73335426cf004eb9e41349a406243638ec8d097c",
+      "log": "facing_memory_test_v0218.log",
       "log_sha256": "24ebcfca739154676d1f112c1c2fe05c9d55b94637231bf8f2b8cf65a798f610"
     },
     {
       "check": "relief_surface_test",
       "passed": true,
-      "dependency_sha256_at_seal": "bcf482652cb08e0b5409cdcb60d41d2e17bce0df6e256262e90f096ff44fa8df",
+      "dependency_sha256_at_seal": "87947864e6cb1c896a1631b3ee996d76500bab2dca4c2da5f7dd196de5273b08",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -26811,6 +26820,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -26828,14 +26838,14 @@
         "tests/relief_surface_test.gd"
       ],
       "report": "relief_surface_tests.json",
-      "report_sha256": "a6d14a4d4f01ed2bf2496fd55066d65ff95a847eda28bf252e7d45d3cc0c1808",
-      "log": "relief_surface_test_v0217.log",
-      "log_sha256": "1a76df10d455ca3a51baf9f84ce24a1a8859d68c6efede16d5183df7ab940fb4"
+      "report_sha256": "6594eb801a8e37c498852f0e846693791be6460aa83162ca918de949771999b5",
+      "log": "relief_surface_test_v0218.log",
+      "log_sha256": "fdd1820bd12942c0259cc13cf5a69b98f0b9d90128169d271e26513e0e8e6e9f"
     },
     {
       "check": "map_bank_test",
       "passed": true,
-      "dependency_sha256_at_seal": "dc4ca2ff7227b52edc939dca5afcc4e187c8504da27fcd4fcae21e7d6914afbb",
+      "dependency_sha256_at_seal": "7546c0bae9370aae9ac1f2b8976f3b3768e6767155c362de421adebce49d6b7e",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -28157,6 +28167,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -28174,14 +28185,14 @@
         "tests/map_bank_test.gd"
       ],
       "report": "map_bank_tests.json",
-      "report_sha256": "b8d9486cc44951ee828435673c96edc50641871894e2adfe62d364dca6830d77",
-      "log": "map_bank_test_v0217.log",
-      "log_sha256": "7af8650774c13fd8505bd7d733d4ae3d5093dff73c26b8e9b7c934783120de2f"
+      "report_sha256": "67c068864e053208fe9e165d3ecd7bc7e5f39b1a73d3993add3725a7ac4b2f7c",
+      "log": "map_bank_test_v0218.log",
+      "log_sha256": "ac48ec6fb9d999f487883b0b8d0de41c62b69d617a569696ee8b8f4bea63378c"
     },
     {
       "check": "surface_geography_test",
       "passed": true,
-      "dependency_sha256_at_seal": "1e5229129913d41dcb4915c794195f70fc36224feefa9d2def45b4f1c464c941",
+      "dependency_sha256_at_seal": "e18a994171976231765bdb3910033d2a1b690e9f8ea9810562b3e534a313ffd6",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -29503,6 +29514,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -29520,14 +29532,14 @@
         "tests/surface_geography_test.gd"
       ],
       "report": "surface_geography_tests.json",
-      "report_sha256": "04c0ac829c1621d60183a2c853ad2fad88d2847e7f7a08d2de874750526a94fd",
-      "log": "surface_geography_test_v0217.log",
-      "log_sha256": "4e5e5dff584cf0ebc29686fe9e4044ef1c2bdd1c212964ea919d457c71173fcc"
+      "report_sha256": "8db64ebdfd220dd6bf7a860f18deeb8ea3d72e569b7908523014dbcf0e5c296f",
+      "log": "surface_geography_test_v0218.log",
+      "log_sha256": "8f0727e4260554054670e6e97f03a5e6974a0c4b915f28b4ce63a05c63f51454"
     },
     {
       "check": "terrain_surfaces_test",
       "passed": true,
-      "dependency_sha256_at_seal": "c650d4a2ec50c6c8a185f4989b7490a1eb82fa5486015bd89bb4257fd9bc0f02",
+      "dependency_sha256_at_seal": "adca28939d340562576ea49ff444417e40c4c9d30328c4771407ea6b41604117",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -30849,6 +30861,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -30866,14 +30879,14 @@
         "tests/terrain_surfaces_test.gd"
       ],
       "report": "terrain_surfaces_tests.json",
-      "report_sha256": "75eea481f9d28ea2cbc0d1e50e516b507181eae7ebf91c964674963a860350a4",
-      "log": "terrain_surfaces_test_v0217.log",
+      "report_sha256": "1fa43bf487ec1b65ca4a2456ffd146f808946d7300f83fdd34b80fe614c57ba7",
+      "log": "terrain_surfaces_test_v0218.log",
       "log_sha256": "676d80abe3b233ac225ee73cb4cb27b906a6e39dc211ffce099595016db875b0"
     },
     {
       "check": "map_material_continuity_test",
       "passed": true,
-      "dependency_sha256_at_seal": "48db4597ea7efceda0fda255212ed9dcd2e405b6e4363dcc570194100fae40ae",
+      "dependency_sha256_at_seal": "17847ad8f067e16c797d312e431793740567f55db448fc56498eb6d4b565579a",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -32195,6 +32208,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -32212,14 +32226,14 @@
         "tests/map_material_continuity_test.gd"
       ],
       "report": "map_material_continuity_tests.json",
-      "report_sha256": "69eb76cc2cfa803bcd997056c07474845f561e54037b62a5feaab4b6d9b46bea",
-      "log": "map_material_continuity_test_v0217.log",
+      "report_sha256": "391818ca47ca27532e538a29c8d25687a4171b6f7566053727e5b9ced920f1ca",
+      "log": "map_material_continuity_test_v0218.log",
       "log_sha256": "8455ddfadf9928b49c5472c8795c52af964989380fb4ac480fecee1ef4e4065e"
     },
     {
       "check": "river_surface_test",
       "passed": true,
-      "dependency_sha256_at_seal": "fb53193d080030b0695f8cb3c47dd27042bf75ee02fe30418496b8b944539257",
+      "dependency_sha256_at_seal": "f748b1839ea2c54375276e244ca6fcf54ba57b7c3e7c2612cde9346f38d07082",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -33528,14 +33542,14 @@
         "tests/river_surface_test.gd"
       ],
       "report": "river_surface_tests.json",
-      "report_sha256": "3961fbc6372a5f4eca3832ef456ae0f2934ff017b863c6a0dfff2dd807dadd3b",
-      "log": "river_surface_test_v0217.log",
+      "report_sha256": "4761f45b6bd376d8af44d104c983621273635eb823e6fdd425867ad399100664",
+      "log": "river_surface_test_v0218.log",
       "log_sha256": "55edac77089550d097b69eb6782b1c76e472440c97fe4a40761116c19577a7a9"
     },
     {
       "check": "control_land_clip_test",
       "passed": true,
-      "dependency_sha256_at_seal": "4bd7650144050b897210f7741d3d9317018b568240c7482e621ad7f1b56ae2e9",
+      "dependency_sha256_at_seal": "a112b251dcad44b07cd64bb4b7fe5ef223606ba69758daed6d2b07338ca81e25",
       "dependencies": [
         "assets/audio/music/battle.wav",
         "assets/audio/music/campaign.wav",
@@ -34857,6 +34871,7 @@
         "presentation/map_details.gd",
         "presentation/map_hydrography.gd",
         "presentation/map_river_surface.gd",
+        "presentation/map_semantic_zoom.gd",
         "presentation/map_surface_regions.gd",
         "presentation/map_terrain_surfaces.gd",
         "presentation/map_view.gd",
@@ -34874,8 +34889,8 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "control_land_clip_tests.json",
-      "report_sha256": "e17c46987143e8451f4b512b5a230b08bd6ddd1ebeda3b5aa3ffa3c91e67f603",
-      "log": "control_land_clip_test_v0217.log",
+      "report_sha256": "f5648c5366447870f0c990f240200f07f3a693fba70f39a11e99f9dfa9780b90",
+      "log": "control_land_clip_test_v0218.log",
       "log_sha256": "ab88a222b6613c24884e1c94f50930c27cff4812086c472bae2a2424fa10f704"
     }
   ]

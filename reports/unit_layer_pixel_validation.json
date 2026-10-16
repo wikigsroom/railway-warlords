@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "version": "0.2.18",
+  "runtime_source_sha256": "da853f78a5689ce7235fd73b7ea1d4a04472180a494bba7b48a755ce6bc0729f",
+  "cases": [
+    {
+      "name": "campaign_static",
+      "mean_channel_difference_0_255": 0.006116255144032922,
+      "maximum_channel_difference": 2,
+      "channels_over_three_ratio": 0.0,
+      "native_images_sha256": [
+        "2c6f7c677705c8d624cce860f1ae4e10ac6d0fb90d6656d0e8b4bb16b265d19d",
+        "06e74ab1bdec8db31765cdf22712dce85359285b9b9e5abfb0204e9ed96ef5f7"
+      ],
+      "unit_order_preserved": true,
+      "state_and_rng_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "capacity_static",
+      "mean_channel_difference_0_255": 3.472222222222222e-05,
+      "maximum_channel_difference": 1,
+      "channels_over_three_ratio": 0.0,
+      "native_images_sha256": [
+        "ba282552831dd3977e8eb4c67f68e7366e185dbee1248026f841b6e023eb02ed",
+        "dc77f0c52d54dffc2fafad2c51190fb6b68c827dff13b881f9581e9796514ace"
+      ],
+      "unit_order_preserved": true,
+      "state_and_rng_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "capacity_attack_start",
+      "mean_channel_difference_0_255": 3.472222222222222e-05,
+      "maximum_channel_difference": 1,
+      "channels_over_three_ratio": 0.0,
+      "native_images_sha256": [
+        "6a09953ee444b4b52cdba3fc634aa0e83c6ac9454eda2d2578ef6549d7543f7c",
+        "1af9ae7f8f4adc0b998277ace471cf1b54f37e5253f0ce9705aedbf761d98a2f"
+      ],
+      "unit_order_preserved": true,
+      "state_and_rng_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "capacity_attack_hit",
+      "mean_channel_difference_0_255": 3.472222222222222e-05,
+      "maximum_channel_difference": 1,
+      "channels_over_three_ratio": 0.0,
+      "native_images_sha256": [
+        "7436dafe32e510735c48fdb19369f23b8a91f113344d4c714d72d99f40560d10",
+        "b71f2867d334bb97a39439e5fc9597bdc417edccf5a0d068860d1a199b8692fe"
+      ],
+      "unit_order_preserved": true,
+      "state_and_rng_unchanged": true,
+      "passed": true
+    }
+  ],
+  "measurement": "Identical paused native whole viewports, direct and cached. Small RGBA8 rounding/antialias differences allowed; no image crops, edits or composite files."
+}

@@ -1,0 +1,103 @@
+{
+  "version": "0.2.18",
+  "runtime_source_sha256": "da853f78a5689ce7235fd73b7ea1d4a04472180a494bba7b48a755ce6bc0729f",
+  "windows_exe_sha256": "d01a2a311a0fa78adfb350518319c0df4bf6102a55710a6ed22a79b8896f62e3",
+  "initial_full_windows_attempt_passed": false,
+  "initial_attempt_preserved": true,
+  "diagnostic_short_duration_seconds": 5,
+  "baseline_0217_summary_from_native_stdout": {
+    "stages": [
+      {
+        "fps": 373.093337589361,
+        "minimum_drawable": 240,
+        "p95": 3.65,
+        "stage": "atlas_static"
+      },
+      {
+        "fps": 159.294290892614,
+        "minimum_drawable": 240,
+        "p95": 7.67,
+        "stage": "atlas_pan"
+      },
+      {
+        "fps": 82.7738434654649,
+        "minimum_drawable": 217,
+        "p95": 39.135,
+        "stage": "tactical_select"
+      },
+      {
+        "fps": 135.328303065036,
+        "minimum_drawable": 240,
+        "p95": 12.223,
+        "stage": "sustained_pan_zoom"
+      },
+      {
+        "fps": 117.052539032145,
+        "minimum_drawable": 240,
+        "p95": 8.61,
+        "stage": "battle_active"
+      }
+    ],
+    "target": true
+  },
+  "current_0218_short_probe_passed": true,
+  "files": [
+    {
+      "file": "reports/capacity_environment_v0218/baseline_0217.log",
+      "sha256": "f7c021a6fe8989cc957b97d0f583d143399a4f06d3a23e6140836faf600f732c"
+    },
+    {
+      "file": "reports/capacity_environment_v0218/capacity_windows_v0218.json",
+      "sha256": "98ff5ed9bc4eacf1fe60957ce11dc3c14fc16d162b192b863822bb529e0595ef"
+    },
+    {
+      "file": "reports/capacity_environment_v0218/capacity_windows_v0218.log",
+      "sha256": "f2e1b786bb87c856b50ba381ab44a2d84d469d25d04afa09178f0eb4ba7340f6"
+    },
+    {
+      "file": "reports/capacity_environment_v0218/capacity_windows_v0218_stdout.log",
+      "sha256": "7017c965c58b26ba39e25421503d949d1d27314a1a36e7c1cd63121da4660929"
+    },
+    {
+      "file": "reports/capacity_environment_v0218/current_0218_probe.json",
+      "sha256": "8efbced8ce69420acbf878e5877fb5cf19c7055713457244070b8ff58d03f1ee"
+    },
+    {
+      "file": "reports/capacity_environment_v0218/current_0218_probe.log",
+      "sha256": "4ea12a8f94a3ea4f23306848615753bd96c7c418571f704b86437715ed03d887"
+    },
+    {
+      "file": "reports/capacity_environment_v0218/full_retry_2_gpu.csv",
+      "sha256": "89d6bf897b1622a3cf5b49bd92e6dccf193a2babc9967336b9082509cebb1fdf"
+    },
+    {
+      "file": "reports/capacity_environment_v0218/full_retry_2_run.json",
+      "sha256": "303e9dd4da21319ad71b0b73dbf2c644ba94ee046be7fbe1a990661965d538f8"
+    },
+    {
+      "file": "reports/capacity_environment_v0218/gpu-before-baseline.csv",
+      "sha256": "5e171b6bbbc77e7fff5adb6e9558b03c37cf4a74797fc67962e5da1b63a0a94f"
+    }
+  ],
+  "scope": "Preserved failed first full Windows run and short diagnostic comparison, with a subsequent complete two-profile 60-second passing rerun bound separately. Five-second probes are diagnostic only.",
+  "observed_external_gpu_utilization_percent_after_game_exit": 100,
+  "source_or_quality_settings_changed_for_diagnostic": false,
+  "other_user_processes_stopped": false,
+  "causation": "Concurrent external GPU work and variable load were observed. Its exact contribution to each frame was not isolated; diagnostic probes for both versions passed. Full current acceptance is recorded separately.",
+  "physical_android_device_tested": false,
+  "full_retry_2_completed": true,
+  "full_retry_2_passed": true,
+  "checked_at_utc": "2026-10-16T19:11:56.731177+00:00",
+  "final_accepted_sustained_duration_seconds": 60,
+  "final_report_identity_verified": true,
+  "final_acceptance_reports": [
+    {
+      "file": "reports/capacity_windows_v0218.json",
+      "sha256": "2cca1bfb1631a65f1222c565d567c0795a9112a94498af12995c2e47046625fe"
+    },
+    {
+      "file": "reports/capacity_x30_v0218.json",
+      "sha256": "d1be515ca5d1613cccdaa74b739c0df861d6761914ded88675ef92974d49777c"
+    }
+  ]
+}

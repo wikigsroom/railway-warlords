@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.17",
+	"build_version": "0.2.18",
 	"city_labels": [
 		{
 			"city_id": "tangshan",
@@ -38,7 +38,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1832.199,
+		"preparation_ms": 1184.27,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -88,6 +88,29 @@
 				"3": 1
 			},
 			"width_is_symbolic": true
+		},
+		"map_symbols": {
+			"background_legacy_terrain_symbols": 0,
+			"background_painted_scenery": 5,
+			"city_counter_ids": [],
+			"city_detail_ids": [],
+			"detail_threshold": 0.56,
+			"place_counter_ids": [],
+			"place_detail_ids": [
+				"tangshan"
+			],
+			"regional_threshold": 0.2,
+			"rule_positions_changed": false,
+			"scope": "Actual draw IDs in the unit layers, filtered to anchors in this viewport; HUD occlusion is not subtracted.",
+			"source_units_removed": false,
+			"unit_counter_ids": [],
+			"unit_counter_screen_size": [
+				15.0,
+				10.8000001907349
+			],
+			"unit_detail_ids": [],
+			"units_aggregated": false,
+			"zoom_band": "detail"
 		},
 		"measurement_scope": "Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score.",
 		"nearest_repeated_source_distance_world": null,
@@ -232,13 +255,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 140.873,
+		"index_ms": 125.029,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 3552.146,
+		"mesh_ms": 2766.811,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1936.632,
-		"preparation_ms": 5629.65,
+		"placement_ms": 1270.084,
+		"preparation_ms": 4161.923,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

@@ -119,6 +119,12 @@ var unit_actor_views: Array=[]
 var static_foreground_only=false
 var foreground_view: MapView
 var drawn_unit_count=0
+var drawn_unit_counter_ids: Array=[]
+var drawn_unit_detail_ids: Array=[]
+var drawn_city_counter_ids: Array=[]
+var drawn_city_detail_ids: Array=[]
+var drawn_place_counter_ids: Array=[]
+var drawn_place_detail_ids: Array=[]
 var live_actor_draw_count=0
 var unit_cache_enabled=true
 var ordered_unit_source: Array=[]
@@ -140,6 +146,7 @@ var profile_sort_usec=0
 var terrain_tile_draw_count=0
 var terrain_transition_draw_count=0
 var terrain_symbol_draw_count=0
+var terrain_scenery_draw_count=0
 var terrain_surface_variant_draw_count=0
 var ground_material_batches: Array=[]
 var city_control_fill_draw_count=0
@@ -524,7 +531,27 @@ func map_bank_capture_facts() -> Dictionary:
 	var water_renderer=backdrop_view if is_instance_valid(backdrop_view) and not static_only else self
 	hydro_facts["river_surface"]={"renderer":"source_centerline_gradient_ribbon","water_texture_id":MapRiverSurface.TEXTURE_ID,"world_texture_period":MapRiverSurface.TEXTURE_PERIOD,"drawn_watercourses":water_renderer.river_surface_draw_count,"drawn_gradient_ribbons":water_renderer.river_surface_draw_count-water_renderer.river_ink_draw_count,"drawn_antialiased_headwaters":water_renderer.river_ink_draw_count,"drawn_textured_ribbons":water_renderer.river_texture_draw_count,"primary_width_from_vertex_count":false,"measured_banks_claimed":false}
 	var subtype_facts=terrain_surface_capture_facts(view)
-	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals)+int(subtype_facts.macro_originals),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
+	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"map_symbols":map_symbol_capture_facts(),"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals)+int(subtype_facts.macro_originals),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
+
+func map_symbol_capture_facts() -> Dictionary:
+	var counters: Array=[];var details: Array=[]
+	if uses_unit_cache():
+		for index in range(unit_segments.size()):
+			counters.append_array(unit_layers[index].view.drawn_unit_counter_ids);details.append_array(unit_layers[index].view.drawn_unit_detail_ids)
+		for actor in unit_actor_views:
+			if actor.visible:counters.append_array(actor.drawn_unit_counter_ids);details.append_array(actor.drawn_unit_detail_ids)
+	else:
+		counters=drawn_unit_counter_ids.duplicate();details=drawn_unit_detail_ids.duplicate()
+	var source=playback.units if playback.active else state.units
+	var index: Dictionary={}
+	for unit in source:index[unit.id]=unit
+	var viewport=Rect2(Vector2.ZERO,size)
+	var visible=func(id):
+		if not index.has(id) or index[id].position==null:return false
+		var point=playback.position_of(index[id]) if playback.active else HexGrid.to_world(HexGrid.coordinate(index[id].position))
+		return viewport.has_point(world_to_screen(point))
+	counters=counters.filter(visible);details=details.filter(visible)
+	return {"zoom_band":MapSemanticZoom.band(zoom),"detail_threshold":MapSemanticZoom.DETAIL_ZOOM,"regional_threshold":MapSemanticZoom.REGIONAL_ZOOM,"unit_counter_ids":counters,"unit_detail_ids":details,"city_counter_ids":drawn_city_counter_ids.duplicate(),"city_detail_ids":drawn_city_detail_ids.duplicate(),"place_counter_ids":drawn_place_counter_ids.duplicate(),"place_detail_ids":drawn_place_detail_ids.duplicate(),"unit_counter_screen_size":[MapSemanticZoom.unit_size(zoom).x,MapSemanticZoom.unit_size(zoom).y],"background_legacy_terrain_symbols":backdrop_view.terrain_symbol_draw_count if backdrop_view!=null else terrain_symbol_draw_count,"background_painted_scenery":backdrop_view.terrain_scenery_draw_count if backdrop_view!=null else terrain_scenery_draw_count,"source_units_removed":false,"rule_positions_changed":false,"units_aggregated":false,"scope":"Actual draw IDs in the unit layers, filtered to anchors in this viewport; HUD occlusion is not subtracted."}
 
 func terrain_surface_capture_facts(view: Rect2) -> Dictionary:
 	var type_counts: Dictionary={};var source_counts: Dictionary={};var repeated=0;var pairs=0;var macro_sources: Dictionary={}
@@ -556,6 +583,19 @@ func place_at_screen(screen: Vector2) -> String:
 	return result
 
 func select_screen(screen: Vector2) -> void:
+	# Compact formations have precise geographic anchors. Resolve their visible
+	# counters before the wider city snap radius, which can otherwise swallow
+	# a neighbouring formation when several cells fit inside 22 screen pixels.
+	if zoom<MapSemanticZoom.DETAIL_ZOOM:
+		var best=minf(12.0,maxf(3.0,MapSemanticZoom.unit_size(zoom).x*.72))
+		var counter_hex: Variant=null
+		for unit in state.units:
+			if unit.position==null or not VisibilityRules.unit_visible(state,state.player_faction_id,unit):continue
+			var hex=HexGrid.coordinate(unit.position);var point=HexGrid.to_world(hex)
+			if MapSemanticZoom.detailed(zoom,unit.id==selected_unit_id) and not StateAccess.at(state,"cities",hex).is_empty():point+=Vector2(29,17)
+			var distance=world_to_screen(point).distance_to(screen)
+			if distance<best:best=distance;counter_hex=hex
+		if counter_hex!=null:hex_selected.emit(counter_hex);return
 	if selected_unit_id.is_empty():
 		var best=22.0;var city_hex: Variant=null
 		for city in state.cities+state.map.get("reference_pois",[]):
@@ -696,9 +736,13 @@ func _draw() -> void:
 		for h in command_preview.path:route.append(HexGrid.to_world(h))
 		if route.size()>1:draw_polyline(route,Color("ecdfb3"),5/zoom,true);draw_polyline(route,Color("3c8794"),2/zoom,true)
 	draw_places(view)
+	drawn_city_counter_ids=[];drawn_city_detail_ids=[]
 	for city in playback.cities if playback.active else state.cities:
 		var p=HexGrid.to_world(HexGrid.coordinate(city.position))
 		if not view.has_point(p):continue
+		if not MapSemanticZoom.detailed(zoom,city.id==selected_city_id):
+			draw_city_counter(p,city);drawn_city_counter_ids.append(city.id);continue
+		drawn_city_detail_ids.append(city.id)
 		var color=faction_color(city.owner_id)
 		var image: Texture2D
 		var bank_id=""
@@ -817,9 +861,53 @@ func draw_distance_scale() -> void:
 	draw_string(assets.font,start+Vector2(0,-8*s),text,HORIZONTAL_ALIGNMENT_LEFT,-1,int(16*s),ink)
 	draw_string(assets.font,box.position+Vector2(box.size.x-45*s,32*s),"北↑",HORIZONTAL_ALIGNMENT_LEFT,-1,int(14*s),ink)
 
+func draw_city_counter(point: Vector2, city: Dictionary) -> void:
+	var rank=HistoricalPlaces.importance(city,state.date)
+	var radius=MapSemanticZoom.city_radius(zoom,rank)
+	var color=faction_color(str(city.owner_id)) if city.has("owner_id") else Color("93836c")
+	draw_set_transform(world_to_screen(point).snapped(Vector2.ONE/64.0))
+	draw_circle(Vector2(0,1),radius+1.2,Color(.05,.10,.12,.28))
+	if rank>=5 and zoom>=MapSemanticZoom.REGIONAL_ZOOM:
+		var diamond=PackedVector2Array([Vector2(0,-radius-1),Vector2(radius+1,0),Vector2(0,radius+1),Vector2(-radius-1,0)])
+		draw_colored_polygon(diamond,Color("d5c493"))
+		draw_circle(Vector2.ZERO,radius-1.0,Color("25343a"))
+	else:
+		draw_circle(Vector2.ZERO,radius,Color("d5c493"));draw_circle(Vector2.ZERO,maxf(1.0,radius-.9),Color("25343a"))
+	draw_circle(Vector2.ZERO,maxf(.8,radius-2.0),color)
+	if (city.get("port",false) or HistoricalPlaces.kind(city,state.date)=="port") and radius>=4:
+		draw_line(Vector2(-radius*.65,radius+1.5),Vector2(radius*.65,radius+1.5),Color("d7eceb"),1.1,true)
+	elif radius>=4:
+		draw_line(Vector2(-2,-1),Vector2(0,-3),Color("eee9d3"),1.0,true);draw_line(Vector2(0,-3),Vector2(2,-1),Color("eee9d3"),1.0,true)
+	if city.id==selected_city_id or city.id==selected_place_id:draw_arc(Vector2.ZERO,radius+2,0,TAU,24,Color("eedda2"),1.2,true)
+	draw_set_transform(size*.5-camera*zoom,0,Vector2.ONE*zoom)
+
+func draw_unit_counter(point: Vector2, unit: Dictionary, color: Color, opacity: float) -> void:
+	var dimensions=MapSemanticZoom.unit_size(zoom)
+	var rect=Rect2(-dimensions*.5,dimensions)
+	var ink=Color("eee9d8") if color.get_luminance()<.43 else Color("14292e")
+	ink.a=opacity
+	draw_set_transform(world_to_screen(point).snapped(Vector2.ONE/64.0))
+	draw_rect(rect.grow(MapSemanticZoom.unit_border(zoom)),Color(.06,.12,.15,opacity*.94))
+	draw_rect(rect,Color(color,opacity))
+	if dimensions.x>=9.0:
+		var center=Vector2(0,-.5);var family=str(content.definition("units",unit.def_id).get("family","infantry"))
+		match family:
+			"cavalry":draw_line(center+Vector2(-2,2),center+Vector2(2,-2),ink,1.2,true)
+			"artillery","coastal":draw_circle(center,1.6,ink);draw_line(center,center+Vector2(3,-2),ink,1.0,true)
+			"rail":draw_line(center+Vector2(-3,-1),center+Vector2(3,-1),ink,1.0,true);draw_line(center+Vector2(-3,1),center+Vector2(3,1),ink,1.0,true)
+			"river","naval","water":draw_line(center+Vector2(-3,-1),center+Vector2(3,-1),ink,1.1,true);draw_line(center+Vector2(-2,1),center+Vector2(2,1),ink,1.1,true)
+			"motor":draw_rect(Rect2(center-Vector2(2,1.6),Vector2(4,3.2)),ink,false,1.0)
+			"air":draw_line(center+Vector2(0,-2.5),center+Vector2(0,2),ink,1.2,true);draw_line(center+Vector2(-3,0),center+Vector2(3,0),ink,1.0,true)
+			_:draw_line(center+Vector2(-2,-2),center+Vector2(2,2),ink,1.0,true);draw_line(center+Vector2(-2,2),center+Vector2(2,-2),ink,1.0,true)
+		if unit.general_id!=null:draw_circle(rect.position+Vector2(1.2,1.2),1.3,Color(1,.88,.55,opacity))
+	if dimensions.x>=5:
+		draw_rect(Rect2(Vector2(rect.position.x,rect.end.y-1),Vector2(dimensions.x*float(unit.hp)/unit.max_hp,1)),Color(.94,.94,.83,opacity))
+	if unit.id==selected_unit_id:draw_rect(rect.grow(1.5),Color(1,.85,.48,opacity),false,1.1)
+	draw_set_transform(size*.5-camera*zoom,0,Vector2.ONE*zoom)
+
 func draw_units(view: Rect2, actors: Variant = null) -> void:
 	var display_units=actors if actors!=null else (unit_source_override if static_units_only else ordered_units(playback.units if playback.active else state.units))
-	if actors==null:drawn_unit_count=0
+	if actors==null:drawn_unit_count=0;drawn_unit_counter_ids=[];drawn_unit_detail_ids=[]
 	for u in display_units:
 		# The previous unit finishes in its screen-anchor transform for the
 		# authored sprite and status bars.  Restore the shared world transform
@@ -833,7 +921,14 @@ func draw_units(view: Rect2, actors: Variant = null) -> void:
 		if not view.has_point(p):continue
 		var color=faction_color(u.owner_id)
 		var at_city=not StateAccess.at(state,"cities",HexGrid.coordinate(u.position)).is_empty() and (not playback.active or playback.current.kind not in ["move","rail"] or playback.current.unit_id!=u.id)
-		if at_city:p+=Vector2(29,17)
+		var active_actor=playback.active and playback.animated_unit_ids.has(u.id)
+		var detail=MapSemanticZoom.detailed(zoom,u.id==selected_unit_id or active_actor)
+		var opacity=playback.opacity_of(u) if playback.active else 1.0
+		if opacity<=0:continue
+		if at_city and detail:p+=Vector2(29,17)
+		if not detail:
+			draw_unit_counter(p,u,color,opacity);drawn_unit_counter_ids.append(u.id);drawn_unit_count+=1;continue
+		drawn_unit_detail_ids.append(u.id)
 		# Facing is visual state only. Movement turns the miniature toward the
 		# current segment; neither the saved formation nor its legal action changes.
 		var heading=Vector2.ZERO
@@ -851,8 +946,6 @@ func draw_units(view: Rect2, actors: Variant = null) -> void:
 		var orientation=unit_orientation(heading,str(u.get("facing","se")),u)
 		var pose=playback.pose_of(u) if playback.active else "idle"
 		var image=assets.unit_action_texture(u,orientation.asset,pose)
-		var opacity=playback.opacity_of(u) if playback.active else 1.0
-		if opacity<=0:continue
 		var motion=playback.motion_visual(u,content) if playback.active else {"offset":Vector2.ZERO,"rotation":0.0,"scale":1.0,"profile":"idle","phase":0.0}
 		# Build each actor around its screen anchor, avoiding large world-coordinate
 		# cancellation in GPU vertices on the fivefold atlas and cached viewports.
@@ -878,16 +971,6 @@ func draw_units(view: Rect2, actors: Variant = null) -> void:
 		draw_set_transform(screen_anchor,0,Vector2.ONE*zoom)
 		p=Vector2.ZERO
 		drawn_unit_count+=1
-		if zoom<.20:
-			# At country scale a miniature is only a few subpixels. Opaque,
-			# pixel-aligned counters preserve allegiance and health without
-			# aliasing tiny sprites into a transparent cached target.
-			draw_set_transform(screen_anchor.snapped(Vector2.ONE),0,Vector2.ONE)
-			draw_rect(Rect2(Vector2(-4,-4),Vector2(8,8)),Color("172731"))
-			draw_rect(Rect2(Vector2(-3,-3),Vector2(6,5)),color)
-			draw_rect(Rect2(Vector2(-3,2),Vector2(roundf(6.0*u.hp/u.max_hp),1)),Color("eef0e3"))
-			if u.id==selected_unit_id:draw_rect(Rect2(Vector2(-5,-5),Vector2(10,10)),Color("e1ba5c"),false,1)
-			continue
 		draw_ellipse_shadow(p+Vector2(0,12),opacity)
 		if zoom>=.20 and u.owner_id==state.player_faction_id and (u.ap_left>0 or u.attack_ready) and not playback.active and not unit_ready_hidden:draw_arc(p+Vector2(0,12),29,0,TAU,32,Color(.86,.96,1,.65),1.3/zoom,true)
 		var family=str(content.definition("units",u.def_id).get("family","infantry"))
@@ -1012,6 +1095,7 @@ func sync_foreground() -> void:
 	if foreground_view==null:return
 	foreground_view.size=size;foreground_view.state=state;foreground_view.camera=camera;foreground_view.zoom=zoom;foreground_view.label_scale=label_scale
 	foreground_view.selected_city_id=selected_city_id;foreground_view.pending_hex=pending_hex;foreground_view.effects=effects;foreground_view.pulse=pulse
+	foreground_view.selected_unit_id=selected_unit_id
 	foreground_view.selected_terrain_hex=selected_terrain_hex
 	foreground_view.playback=playback;foreground_view.visible_ids=visible_ids;foreground_view.queue_redraw()
 	foreground_view.cinema=cinema
@@ -1029,7 +1113,7 @@ func sync_unit_layer() -> bool:
 	var topology=[];unit_actors=[]
 	for i in range(sorted.size()):
 		if playback.active and playback.animated_unit_ids.has(sorted[i].id):topology.append([sorted[i].id,i]);unit_actors.append(sorted[i])
-	var signature=geography_key+"|"+str(state.state_version)+"|"+str(size)+"|"+selected_unit_id+"|"+str(show_supply)+"|"+str(playback.active)+"|"+str(topology)
+	var signature=geography_key+"|"+str(state.state_version)+"|"+str(size)+"|"+selected_unit_id+"|"+str(show_supply)+"|"+str(playback.active)+"|"+str(topology)+"|"+MapSemanticZoom.band(zoom)
 	var ratio=zoom/unit_zoom;var padding=(unit_dimensions*ratio-size)*.5;var displacement=(camera-unit_camera)*zoom
 	if signature==unit_signature and ratio>=.95 and ratio<=1.05 and absf(displacement.x)<=padding.x-24 and absf(displacement.y)<=padding.y-24:return false
 	unit_signature=signature;unit_camera=camera;unit_zoom=zoom;unit_dimensions=Vector2(ceili(size.x)+384,ceili(size.y)+384)
@@ -1118,6 +1202,7 @@ func sync_backdrop() -> bool:
 	return true
 
 func draw_static_atlas(view: Rect2) -> void:
+	terrain_scenery_draw_count=0
 	if territory_qa_mode:
 		draw_territory_qa_atlas(view)
 		return
@@ -1132,6 +1217,7 @@ func draw_static_atlas(view: Rect2) -> void:
 			var has_original=image!=null
 			if image==null:image=assets.texture("scenery","scenery_atlas_ridge_01" if feature.terrain_id in ["mountain","peak"] else "scenery_atlas_hill_01")
 			if image!=null:
+				terrain_scenery_draw_count+=1
 				# Preserve the painterly 2.5D source while letting the surveyed
 				# terrain mesh, cell texture and faction wash remain visible through
 				# the lower silhouette.  This is a presentation tint only.
@@ -1556,6 +1642,10 @@ func draw_cell_detail_symbols(view: Rect2) -> void:
 	# they add no forests, roads or settlements and disappear at tactical scale
 	# where the richer immutable scenery sprites take over.
 	terrain_symbol_draw_count=0
+	# The production bank now supplies the actual painted ground and scenery.
+	# Retain the old vector legend only as a missing-bank fallback; repeating it
+	# underneath the painted relief made the regional map look like debug data.
+	if MapArtBank.available():return
 	if not state.map.get("strategic_scale",false) or zoom<.18 or zoom>.54:return
 	var alpha=clampf((zoom-.18)/.22,0.0,1.0)*.48
 	if alpha<=0.01:return
@@ -1777,13 +1867,15 @@ func draw_control_legend() -> void:
 		draw_string(assets.font,at+Vector2(17,11)*s,name,HORIZONTAL_ALIGNMENT_LEFT,-1,int(14*s),Color("e8e7d5"))
 
 func draw_places(view: Rect2) -> void:
+	drawn_place_counter_ids=[];drawn_place_detail_ids=[]
 	if not show_places:return
 	for node in place_references:
 		if not view.has_point(node.at) or not map_place_visible(node):continue
 		var rank=HistoricalPlaces.importance(node,state.date)
-		if zoom<.20:
-			draw_circle(node.at,3.0/zoom,Color("796c51"));draw_arc(node.at,5.0/zoom,0,TAU,18,Color("eee0ba"),1.0/zoom,true)
+		if not MapSemanticZoom.detailed(zoom,node.id==selected_place_id):
+			draw_city_counter(node.at,node);drawn_place_counter_ids.append(node.id)
 		else:
+			drawn_place_detail_ids.append(node.id)
 			var bounds:Vector2=node.sprite_bounds
 			if node.sprite_on_land and node.has("bank_asset_id"):
 				var rectangle: Rect2=node.bank_texture_rect;rectangle.position+=node.at+Vector2(0,26)
@@ -1793,14 +1885,14 @@ func draw_places(view: Rect2) -> void:
 		if node.id==selected_place_id:draw_arc(node.at,30.0/zoom,0,TAU,40,Color("a77936"),2.0/zoom,true)
 
 func prepare_label_records() -> void:
-	var selection=selected_city_id+"|"+selected_place_id
+	var selection=selected_city_id+"|"+selected_place_id+"|"+selected_unit_id
 	if label_cache_revision==label_revision and is_same(label_cache_state,state) and label_cache_selection==selection:return
 	label_cache_revision=label_revision;label_cache_state=state;label_cache_selection=selection
 	label_unit_points=[]
 	for unit in state.units:
 		if unit.position==null or not VisibilityRules.unit_visible(state,state.player_faction_id,unit):continue
 		var hex=HexGrid.coordinate(unit.position)
-		label_unit_points.append({"position":HexGrid.to_world(hex),"in_city":not StateAccess.at(state,"cities",hex).is_empty()})
+		label_unit_points.append({"id":unit.id,"position":HexGrid.to_world(hex),"in_city":not StateAccess.at(state,"cities",hex).is_empty()})
 	var cities: Array=[]
 	for city in state.cities:cities.append({"node":city,"priority":city_label_priority(city)})
 	cities.sort_custom(func(a,b):return a.priority>b.priority if a.priority!=b.priority else a.node.id<b.node.id)
@@ -1821,7 +1913,7 @@ func place_label_layout(view: Rect2) -> Array:
 	for label in drawn_labels:occupied.append(label.rect)
 	for record in label_unit_points:
 		var at:Vector2=record.position
-		if view.has_point(at):occupied.append(Rect2(at+Vector2(-42,-52),Vector2(88,96)))
+		if view.has_point(at):occupied.append(unit_label_obstacle(record))
 	var screen_view=Rect2(camera-size/(2*zoom),size/zoom)
 	for node in label_place_nodes:
 		if not view.has_point(node.at) or not map_place_visible(node):continue
@@ -1848,14 +1940,21 @@ func draw_place_labels(view: Rect2) -> void:
 		draw_screen_label(label.text,rect.position+Vector2(5/zoom,17.5*label_scale/zoom),label.font_pixels,Color("233640"))
 	drawn_labels.append_array(labels)
 
+func unit_label_obstacle(record: Dictionary) -> Rect2:
+	var point: Vector2=record.position
+	if not MapSemanticZoom.detailed(zoom,str(record.id)==selected_unit_id):
+		var dimensions=(MapSemanticZoom.unit_size(zoom)+Vector2.ONE*5)/zoom
+		return Rect2(point-dimensions*.5,dimensions)
+	if record.in_city:point+=Vector2(29,17)
+	return Rect2(point+Vector2(-39,-48),Vector2(82,83))
+
 func city_label_layout(view: Rect2) -> Array:
 	prepare_label_records()
 	var labels: Array=[];var occupied: Array=label_overlay_obstacles()
 	for record in label_unit_points:
 		var point:Vector2=record.position
 		if not view.has_point(point):continue
-		if record.in_city:point+=Vector2(29,17)
-		occupied.append(Rect2(point+Vector2(-39,-48),Vector2(82,83)))
+		occupied.append(unit_label_obstacle(record))
 	var visible_rect=Rect2(camera-size/(2*zoom),size/zoom)
 	var font_pixels=ceili(18.0*label_scale);var font_size=ceili(float(font_pixels)/zoom)
 	for city in label_city_nodes:

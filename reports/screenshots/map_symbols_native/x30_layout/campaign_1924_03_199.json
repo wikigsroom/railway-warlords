@@ -1,0 +1,68 @@
+{
+	"build_version": "0.2.18",
+	"camera": [
+		17195.376953125,
+		8310.744140625
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"map_symbols": {
+		"background_legacy_terrain_symbols": 0,
+		"background_painted_scenery": 1290,
+		"city_counter_ids": [
+			"qinhuangdao",
+			"shanhaiguan"
+		],
+		"city_detail_ids": [],
+		"detail_threshold": 0.56,
+		"place_counter_ids": [
+			"place_funing",
+			"place_changli",
+			"place_lulong",
+			"place_qianan",
+			"place_sui_zhong",
+			"luanzhou",
+			"jiumenkou"
+		],
+		"place_detail_ids": [],
+		"regional_threshold": 0.2,
+		"rule_positions_changed": false,
+		"scope": "Actual draw IDs in the unit layers, filtered to anchors in this viewport; HUD occlusion is not subtracted.",
+		"source_units_removed": false,
+		"unit_counter_ids": [
+			"u_00013",
+			"u_00011",
+			"u_00023",
+			"u_00008",
+			"u_00004",
+			"u_00006",
+			"u_00002",
+			"u_00024",
+			"u_00031",
+			"u_00009",
+			"u_00001",
+			"u_00007",
+			"u_00003",
+			"u_00010",
+			"u_00005",
+			"u_00012",
+			"u_00014"
+		],
+		"unit_counter_screen_size": [
+			8.0,
+			5.76000022888184
+		],
+		"unit_detail_ids": [],
+		"units_aggregated": false,
+		"zoom_band": "overview"
+	},
+	"mobile_layout_profile": true,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"raw_godot_capture": true,
+	"scenario_id": "campaign_1924_03",
+	"surface": "map_symbols_campaign_1924_03_199",
+	"ui_scale": 1.2,
+	"viewport": "(2400.0, 1080.0)",
+	"window": "(2400, 1080)",
+	"zoom": 0.199
+}

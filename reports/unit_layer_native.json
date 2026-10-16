@@ -1,0 +1,102 @@
+{
+	"cases": [
+		{
+			"animated_units": [],
+			"cached": "res://reports/screenshots/unit_layers/campaign_static_cached.png",
+			"direct": "res://reports/screenshots/unit_layers/campaign_static_direct.png",
+			"drawable_units": 17,
+			"manual_compositing": false,
+			"map_screen_rect": [
+				0.0,
+				0.0,
+				1920.0,
+				1080.0
+			],
+			"name": "campaign_static",
+			"raw_native_viewport": true,
+			"runtime_render_path": "cached_segments",
+			"state_and_rng_unchanged": true,
+			"unit_count": 31,
+			"unit_order_preserved": true
+		},
+		{
+			"animated_units": [],
+			"cached": "res://reports/screenshots/unit_layers/capacity_static_cached.png",
+			"direct": "res://reports/screenshots/unit_layers/capacity_static_direct.png",
+			"drawable_units": 240,
+			"manual_compositing": false,
+			"map_screen_rect": [
+				0.0,
+				0.0,
+				1920.0,
+				1080.0
+			],
+			"name": "capacity_static",
+			"raw_native_viewport": true,
+			"runtime_render_path": "cached_segments",
+			"state_and_rng_unchanged": true,
+			"unit_count": 240,
+			"unit_order_preserved": true
+		},
+		{
+			"animated_units": [
+				"qa_capacity_122",
+				"qa_capacity_151"
+			],
+			"cached": "res://reports/screenshots/unit_layers/capacity_attack_start_cached.png",
+			"direct": "res://reports/screenshots/unit_layers/capacity_attack_start_direct.png",
+			"drawable_units": 240,
+			"manual_compositing": false,
+			"map_screen_rect": [
+				0.0,
+				0.0,
+				1920.0,
+				1080.0
+			],
+			"name": "capacity_attack_start",
+			"raw_native_viewport": true,
+			"runtime_render_path": "cached_segments",
+			"state_and_rng_unchanged": true,
+			"unit_count": 240,
+			"unit_order_preserved": true
+		},
+		{
+			"animated_units": [
+				"qa_capacity_122",
+				"qa_capacity_151"
+			],
+			"cached": "res://reports/screenshots/unit_layers/capacity_attack_hit_cached.png",
+			"direct": "res://reports/screenshots/unit_layers/capacity_attack_hit_direct.png",
+			"drawable_units": 240,
+			"manual_compositing": false,
+			"map_screen_rect": [
+				0.0,
+				0.0,
+				1920.0,
+				1080.0
+			],
+			"name": "capacity_attack_hit",
+			"raw_native_viewport": true,
+			"runtime_render_path": "cached_segments",
+			"state_and_rng_unchanged": true,
+			"unit_count": 240,
+			"unit_order_preserved": true
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"native_command": {
+		"actor_id": "fengtian",
+		"expected_version": 0,
+		"target_hex": {
+			"q": 226,
+			"r": -92
+		},
+		"type": "Attack",
+		"unit_id": "qa_capacity_122"
+	},
+	"passed": true,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"scope": "Raw whole-viewport captures of identical paused native scenes; cached and direct rendering; same unit order, state and RNG.",
+	"version": "0.2.18"
+}

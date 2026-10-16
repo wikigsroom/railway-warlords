@@ -1,10 +1,10 @@
 {
   "passed": true,
-  "version": "0.2.17",
-  "runtime_source_sha256": "c729e9109a39f39060f44daef7844d5865b46c74ee52533e5996afadc64d6877",
-  "windows_exe_sha256": "2d9fb3c1fc71af16cfe832c760c248e0770699ced0c5076ef4936cc10c1d03df",
-  "created_at_utc": "2026-10-16T17:08:42.726475+00:00",
-  "scope": "Scoped agent review of ten complete current native viewports for exclusive Asian control coverage, continuous regional grounds and retained source water. Pixel checks cover both desktop profiles and all five cases separately. Not a commercial art approval.",
+  "version": "0.2.18",
+  "runtime_source_sha256": "da853f78a5689ce7235fd73b7ea1d4a04472180a494bba7b48a755ce6bc0729f",
+  "windows_exe_sha256": "d01a2a311a0fa78adfb350518319c0df4bf6102a55710a6ed22a79b8896f62e3",
+  "created_at_utc": "2026-10-16T18:48:00.906058+00:00",
+  "scope": "Scoped agent review of ten complete current native viewports for retained continuous regional ground, exclusive Asian control coverage, source water and overview counters. Both desktop profiles and all five cases have separate pixel checks. Not commercial art approval.",
   "images": [
     {
       "file": "reports/screenshots/control_land_native/windows/tianjin_control.png",
@@ -38,7 +38,7 @@
     },
     {
       "file": "reports/screenshots/control_land_native/windows/overview_control.png",
-      "sha256": "3e5b61c0466de615387fe79d774c491844edb4478474c4ba9eb81bc39a386123",
+      "sha256": "3d7da59b8f66e61b20019d30596773e477ad6b9a913ab39ab95175ab5920ff4c",
       "viewed_complete_native_frame": true
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "file": "reports/screenshots/control_land_native/x30_layout/overview_control.png",
-      "sha256": "e4a755fd3053ddc21677e0af64a815be1ad7d3508151c968b0d057c9f4ea1183",
+      "sha256": "74f1fe0b0af1aa24e7cb977949b862d5c98682fe03180c79450492fece636d04",
       "viewed_complete_native_frame": true
     },
     {
@@ -68,11 +68,11 @@
     "Bohai and Japan control color ends at source land; inspected open sea retains its natural appearance.",
     "Caspian source islands remain land and surrounding water remains visible in both inspected layouts; Singapore islands remain separated by water.",
     "Both complete overview layouts retain regional ground color, the normal HUD and source-clipped minimap; no screenshot was cropped or retouched.",
-    "All ten measured cases have zero maximum channel delta on sampled unobstructed main-map and minimap water pixels, while land samples still change. Native command counters confirm zero city influence fills and a nonzero field fill."
+    "All ten measured cases remain within the two-channel-value tolerance on sampled unobstructed main-map and minimap water pixels, while land samples change. Native draw counters confirm zero city influence fills and nonzero field coverage."
   ],
   "remaining_visual_issues": [
     "Coarse source relief still creates visible triangular light facets; control-cell edges remain visible in places.",
-    "City, unit and label density is excessive around eastern China; strategic aggregation and label priorities need further work.",
+    "Overview and regional counters reduce symbol crowding, but full close-view cities, formations and labels remain dense around eastern China. Near-view composition and label priorities need further work.",
     "Source coastline angularity remains visible. The Caspian shoreline style differs from the exterior sea; narrow islands and protected coastal bands still use base-ground fallback.",
     "Location-specific ports, bridges and landmarks, complete unit animation cycles and physical Motorola X30 acceptance remain outstanding."
   ]

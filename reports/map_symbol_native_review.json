@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "version": "0.2.18",
+  "runtime_source_sha256": "da853f78a5689ce7235fd73b7ea1d4a04472180a494bba7b48a755ce6bc0729f",
+  "windows_exe_sha256": "d01a2a311a0fa78adfb350518319c0df4bf6102a55710a6ed22a79b8896f62e3",
+  "created_at_utc": "2026-10-16T18:21:24.311829+00:00",
+  "scope": "Scoped agent review of nine complete current native viewports, including overview, compact regional symbols, detailed restoration and selected formations in published Asia and Shanhaiguan scenarios. Not commercial art approval.",
+  "images": [
+    {
+      "file": "reports/screenshots/map_symbols_native/windows/asia_1840_140.png",
+      "sha256": "dc1058ecd98952e2feb765ab509a2795fb48d0b83cf6ba1f0ed9f90b47b0bf9e",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/map_symbols_native/windows/asia_1840_400.png",
+      "sha256": "29327704d42c1e942d27ffd51113826cd510dcb9613caef0f76ce0866a76361e",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/map_symbols_native/windows/asia_1840_selected.png",
+      "sha256": "cf7d800de80dd979e956ca76046a199649d7c3502eeee44ac9c508dcfa1a0c53",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_201.png",
+      "sha256": "88e69f622186e42371c924cde1a12274f813f224c1d573ad6c9aedb4cc7e8dcc",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_900.png",
+      "sha256": "1b26bbcfedb7aaf2630b8e6b1773464680ae4e3cb25cb56be2a21a19c6a5b9b1",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_400.png",
+      "sha256": "655fb4f972f5ece4c71d3a2e33ee74e6f4748756318f77e6283b2aae0075191b",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_561.png",
+      "sha256": "4b490fcabcb2b5837293f639c122a564a7b21877f637cbc32b013ec540b853f9",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_400.png",
+      "sha256": "725a32da3a45b5fd41f592c943f01bfb384797d8ed0af1f6871e0ee2211f3bb7",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_selected.png",
+      "sha256": "7e64ef77f5822541a4ab7d5ed3dbec95c1864a8f444c22e8efcdead575a83d95",
+      "viewed_complete_native_frame": true
+    }
+  ],
+  "source_images_modified": false,
+  "manual_compositing": false,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "observations": [
+    "Regional formations appear as separate faction counters, leaving more of the ground, rivers and settlements visible. They are not merged army clusters.",
+    "Selected regional formations regain the existing detailed unit source, legal movement preview and ordinary inspector. Close views restore existing unit and settlement art.",
+    "The old repeated vector terrain marks are absent while painted mountain and woodland scenery remains visible.",
+    "Both complete desktop viewport shapes retain the normal HUD. The 2400x1080 layout is not a physical phone capture."
+  ],
+  "remaining_visual_issues": [
+    "Coarse DEM light facets and repeated scenery placement still read as discrete shapes. Terrain-to-scenery and river-bank transitions need further art work.",
+    "Close Asian views still become dense when every full building and formation is restored. This patch improves regional symbols, not all near-view composition.",
+    "Local administrative/control boundaries remain visually distinct from the physical coastline.",
+    "The selected Lin Zexu inspector still uses an unillustrated portrait panel; only the existing roster portraits are available.",
+    "Location-specific bridges and ports, all-unit animation cycles, formal historical/art review and physical Motorola X30 acceptance remain outstanding."
+  ]
+}
