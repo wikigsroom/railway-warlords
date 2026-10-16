@@ -298,7 +298,12 @@ func prepare_geography() -> void:
 	var holes: Array=[]
 	for shape in land_shapes:holes.append_array(shape.holes)
 	var land=AtlasSurface.build(land_shapes.map(func(shape):return shape.exterior),768)
-	var water=AtlasSurface.build(holes,MapRiverSurface.TEXTURE_PERIOD)
+	var clipped=MapControlLandClip.for_map(state.map)
+	var water: Dictionary
+	if clipped.is_empty():water=AtlasSurface.build(holes,MapRiverSurface.TEXTURE_PERIOD)
+	else:
+		water={"mesh":MapControlLandClip.inland_water_mesh(clipped,MapRiverSurface.TEXTURE_PERIOD),"rings":holes.size(),
+			"triangles":MapControlLandClip.vertices(clipped.inland_water).size()/3,"errors":[]}
 	var extent=AtlasSurface.build([map_extent] if map_extent.size()>=3 else [],MapRiverSurface.TEXTURE_PERIOD)
 	land_surface=land.mesh;water_surface=water.mesh;extent_surface=extent.mesh
 	surface_diagnostics={"land_rings":land.rings,"land_triangles":land.triangles,"water_rings":water.rings,"errors":land.errors+water.errors+extent.errors}
@@ -1374,6 +1379,10 @@ func prepare_territory_field() -> void:
 	territory_field_signature=signature
 	territory_field_meshes.clear();territory_field_cells.clear();territory_field_borders.clear();territory_field_diagnostics={}
 	if state.is_empty() or not state.map.get("strategic_scale",false):return
+	var clipped=MapControlLandClip.for_map(state.map)
+	if clipped.is_empty():
+		territory_field_diagnostics={"enabled":false,"land_clipped":false,"reason":"missing_or_stale_source_land_clip"}
+		return
 	var sources: Array=[]
 	for city in state.cities:
 		var owner=str(city.get("owner_id",""))
@@ -1399,15 +1408,19 @@ func prepare_territory_field() -> void:
 			if score<nearest_score or (is_equal_approx(score,nearest_score) and source.id<str(nearest.get("id",""))):
 				nearest_score=score;nearest=source
 		if nearest.is_empty():skipped+=1;continue
+		var piece: Dictionary=clipped.field_clips.get(HexGrid.key(hex),{})
+		if not piece.is_empty() and MapControlLandClip.vertices(piece).is_empty():continue
 		var owner=str(nearest.owner);territory_field_cells[hex]=owner;assigned+=1
 		if not meshes.has(owner):meshes[owner]={"vertices":PackedVector3Array(),"cells":0}
-		var polygon=HexGrid.corners(HexGrid.to_world(hex),47.4)
 		var vertices: PackedVector3Array=meshes[owner].vertices
-		for index in range(6):
-			var next=(index+1)%6
-			vertices.append(Vector3(HexGrid.to_world(hex).x,HexGrid.to_world(hex).y,0))
-			vertices.append(Vector3(polygon[index].x,polygon[index].y,0))
-			vertices.append(Vector3(polygon[next].x,polygon[next].y,0))
+		if piece.is_empty():
+			var center=HexGrid.to_world(hex);var polygon=HexGrid.corners(center,float(clipped.field_radius))
+			for index in range(6):
+				var next=(index+1)%6
+				vertices.append(Vector3(center.x,center.y,0))
+				vertices.append(Vector3(polygon[index].x,polygon[index].y,0))
+				vertices.append(Vector3(polygon[next].x,polygon[next].y,0))
+		else:vertices.append_array(MapControlLandClip.vertices(piece))
 		meshes[owner].vertices=vertices;meshes[owner].cells=int(meshes[owner].cells)+1
 	for owner in meshes:
 		var arrays=[];arrays.resize(Mesh.ARRAY_MAX);arrays[Mesh.ARRAY_VERTEX]=meshes[owner].vertices
@@ -1421,8 +1434,13 @@ func prepare_territory_field() -> void:
 			var other_hex=hex+HexGrid.DIRECTIONS[direction_index];var other_owner=str(territory_field_cells.get(other_hex,""))
 			if other_owner.is_empty() or other_owner==owner:continue
 			var pair=[[0,1],[5,0],[4,5]][direction_index]
-			territory_field_borders.append({"a":corners[pair[0]],"b":corners[pair[1]],"owner":owner,"other":other_owner})
-	territory_field_diagnostics={"enabled":true,"cells_assigned":assigned,"cells_skipped":skipped,"owners":territory_field_meshes.size(),"border_segments":territory_field_borders.size(),"presentation_only":true,"source":"current_owned_real_city_nodes_voronoi"}
+			var piece: Dictionary=clipped.field_clips.get(HexGrid.key(hex),{})
+			if piece.is_empty():
+				territory_field_borders.append({"a":corners[pair[0]],"b":corners[pair[1]],"owner":owner,"other":other_owner})
+			else:
+				for segment in piece.edges[direction_index]:
+					territory_field_borders.append({"a":Vector2(segment[0][0],segment[0][1]),"b":Vector2(segment[1][0],segment[1][1]),"owner":owner,"other":other_owner})
+	territory_field_diagnostics={"enabled":true,"cells_assigned":assigned,"cells_skipped":skipped,"owners":territory_field_meshes.size(),"border_segments":territory_field_borders.size(),"presentation_only":true,"source":"current_owned_real_city_nodes_voronoi","land_clipped":true,"clip":MapControlLandClip.diagnostics(clipped),"minimap_reuses_same_meshes":true}
 
 func draw_territory_field(view: Rect2) -> void:
 	if territory_field_meshes.is_empty():return

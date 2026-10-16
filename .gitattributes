@@ -1,8 +1,2 @@
-# Byte-stable Godot sources, JSON, prompts and provenance hashes on Windows.
-* -text
-*.png binary
-*.gif binary
-*.mp4 binary
-*.wav binary
-*.otf binary
-*.ttf binary
+# The source-bound presentation vector has a reproducible byte identity.
+/presentation/data/control_land_clip.json text eol=lf

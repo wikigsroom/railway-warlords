@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.15",
+	"build_version": "0.2.16",
 	"city_labels": [
 		{
 			"city_id": "beijing",
@@ -279,6 +279,7 @@
 		}
 	],
 	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"control_land_clip": {},
 	"historical_places": {
 		"additional_markers": 67,
 		"control_overlay_visible": true,
@@ -341,7 +342,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 68713,
 		"placed": 2134,
-		"preparation_ms": 3619.22,
+		"preparation_ms": 3767.994,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1459,
 		"rule_cells_changed": false,
@@ -901,13 +902,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 240,
-		"index_ms": 206.229,
+		"index_ms": 239.787,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 6441.378,
+		"mesh_ms": 6603.554,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 9933,
-		"placement_ms": 4487.361,
-		"preparation_ms": 11134.968,
+		"placement_ms": 4798.904,
+		"preparation_ms": 11642.244,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 112.5,

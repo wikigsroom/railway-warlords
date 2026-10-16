@@ -14,6 +14,7 @@ PUBLIC_DOCS = ['README.md', 'README.en.md', 'LICENSE-NOTICE.md',
                'docs/30_二十类地域地表与纹理整改.md',
                'docs/31_连续地表与水系层次.md',
                'docs/32_真实河段连续水面.md',
+               'docs/33_真实海岸与控制区裁切.md',
                'docs/25_欧陆战争6地图资源差距评估.md',
                'docs/00_程序文档索引.md', 'docs/04_美术来源与审核.md',
                'docs/05_测试与验收.md', 'docs/06_双端构建与发布.md',
@@ -129,6 +130,15 @@ def main():
                 errors.append({'type': 'current_native_capture_changed', 'file': row['file']})
     if runtime != expected_runtime:
         errors.append({'type': 'runtime_changed_during_documentation'})
+    coast = read('reports/control_land_native_evidence.json')
+    if not coast['passed'] or coast['version'] != current_version() or coast['runtime_source_sha256'] != runtime or len(coast['groups']) != 2:
+        errors.append({'type': 'current_control_land_proof_incomplete'})
+    for group in coast['groups']:
+        if digest(P / group['report']) != group['report_sha256']:
+            errors.append({'type': 'control_land_report_changed', 'file': group['report']})
+        for row in group['captures']:
+            if digest(P / row['file']) != row['sha256'] or digest(P / row['metadata']) != row['metadata_sha256']:
+                errors.append({'type': 'control_land_capture_changed', 'file': row['file']})
     counts = {}
     for scenario in read('content/scenarios/catalog.json')['scenarios']:
         mode = read('content/scenarios/' + scenario + '.json')['mode']

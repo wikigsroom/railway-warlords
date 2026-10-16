@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.15",
+	"build_version": "0.2.16",
 	"city_labels": [
 		{
 			"city_id": "jiumenkou",
@@ -27,6 +27,7 @@
 		}
 	],
 	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"control_land_clip": {},
 	"historical_places": {
 		"additional_markers": 32,
 		"control_overlay_visible": true,
@@ -49,7 +50,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1217.75,
+		"preparation_ms": 1153.899,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -301,13 +302,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 168.615,
+		"index_ms": 174.636,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 3016.049,
+		"mesh_ms": 2665.973,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1194.726,
-		"preparation_ms": 4379.389,
+		"placement_ms": 1213.022,
+		"preparation_ms": 4053.63,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

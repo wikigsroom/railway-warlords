@@ -33,11 +33,11 @@ func _draw() -> void:
 			# The continental minimap follows the same real-city Voronoi control
 			# field as the main strategic view. Drawing the old tactical city rings
 			# here made the field look opaque and leaked rings across the coast.
-			for hex in map_view.territory_field_cells:
-				var owner=str(map_view.territory_field_cells[hex]);if owner.is_empty():continue
-				var center=HexGrid.to_world(hex);var polygon=HexGrid.corners(center,47.4)
+			# Reuse the actual land-clipped meshes, including lakes and islands.
+			# This also avoids thousands of per-hex draw calls on every frame.
+			for owner in map_view.territory_field_meshes:
 				var color=map_view.faction_color(owner);color.a=MapView.TERRITORY_FIELD_OPACITY
-				draw_colored_polygon(polygon,color)
+				draw_mesh(map_view.territory_field_meshes[owner],null,Transform2D.IDENTITY,color)
 		else:
 			for zone in map_view.places.zones:
 				var owner=map_view.places.owners.get(zone.city_id,"")

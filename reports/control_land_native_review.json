@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "version": "0.2.16",
+  "runtime_source_sha256": "3ceffd894d4dacfce4c1af38ae5baddfea2f0792a744e25e7713c798f8e5d4c2",
+  "windows_exe_sha256": "d47d0b68d7fccc50b5601b2e3fdf9c8b1fdc23df55c1e77f109565c8ed82758d",
+  "created_at_utc": "2026-10-16T15:06:14.854295+00:00",
+  "scope": "Scoped review of ten complete current native viewports for source-land control clipping and retained water appearance. Pixel checks cover both profiles and all five cases separately. Not a full art approval.",
+  "images": [
+    {
+      "file": "reports/screenshots/control_land_native/windows/tianjin_control.png",
+      "sha256": "6a334ed975132d87006df74d7d3a44fa99cdcf8239999522ef2a90fa1ffd0428",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/control_land_native/windows/tianjin_natural.png",
+      "sha256": "86173894a84acdabec7f38be0b80723acb91f4ee98ec8d9257750b27bbfa0a7b",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/control_land_native/windows/osaka_control.png",
+      "sha256": "f8aa4834c3bbd84d2562f96c32de4163917b05b947e39162956dce2ae56a9f40",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/control_land_native/windows/baku_control.png",
+      "sha256": "60ad1f7b4ef7802063d5752bf956a19a731732c26b06663a79f79cc387089b32",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/control_land_native/windows/baku_natural.png",
+      "sha256": "04710d515df20c3b9ce94557431ecadb484c31d101ca3de9ef46c378fd8c1dd2",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/control_land_native/windows/singapore_control.png",
+      "sha256": "58766d40c9f878fef090e59d30f2dd8646631a9e01578878c0aabcde7ba287a5",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/control_land_native/windows/overview_control.png",
+      "sha256": "39605b2bf61d60c2346467d5dd0108c7d55b9a72dd5586d28d741e8722a795bb",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/control_land_native/x30_layout/tianjin_control.png",
+      "sha256": "87791951bdf2ce049226e86d96a10288d7c75df18f49b047731e514e7c532c3a",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/control_land_native/x30_layout/overview_control.png",
+      "sha256": "9e1c8c2784155c74d18a98dfa040908ed20e21123f502e31916170241c664435",
+      "viewed_complete_native_frame": true
+    },
+    {
+      "file": "reports/screenshots/control_land_native/x30_layout/baku_control.png",
+      "sha256": "f576c33788c9380574b2e2e60e67eeb9e05a1e56c1a565286e2b17b909d74aa4",
+      "viewed_complete_native_frame": true
+    }
+  ],
+  "normal_shipping_renderer": true,
+  "source_images_modified": false,
+  "manual_compositing": false,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "observations": [
+    "Bohai and Japan control color ends at source land; inspected open sea remains the same appearance with the control layer on and off.",
+    "Caspian control color follows the inland water boundary and visible source islands remain land; water texture is retained in both inspected layouts.",
+    "Singapore and surrounding source islands remain separated by visible unpainted water.",
+    "Both complete overview layouts keep the normal HUD and source-clipped minimap; no screenshot was cropped or retouched.",
+    "All ten measured cases have zero maximum channel delta on the sampled unobstructed main-map and minimap water pixels; land samples still change."
+  ],
+  "remaining_visual_issues": [
+    "Continental ground and overlapping influence/control layers still produce conspicuous polygon and triangle patches. Regional transitions and the combination of the two ownership layers need further refinement.",
+    "City, unit and label density is excessive around eastern China. Strategic zoom requires clearer aggregation and label priorities.",
+    "Source coastline angularity remains visible; the Caspian shoreline styling is less consistent than the exterior sea coast. No unsupported geography was added.",
+    "Location-specific ports, bridges and landmarks, complete unit animation cycles and physical Motorola X30 acceptance remain outstanding."
+  ]
+}

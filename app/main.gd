@@ -110,6 +110,7 @@ func _ready() -> void:
 	if "--progression-ui-test" in args:progression_ui_smoke.call_deferred()
 	if "--war-room-test" in args:WarRoomQA.run.call_deferred(self)
 	if "--terrain-surface-test" in args:TerrainSurfaceQA.run.call_deferred(self)
+	if "--control-land-test" in args:ControlLandQA.run.call_deferred(self)
 	if "--benchmark" in args:benchmark.call_deferred()
 	if "--capacity-benchmark" in args:CapacityBenchmark.run.call_deferred(self)
 	if "--unit-layer-test" in args:UnitLayerQA.run.call_deferred(self)
@@ -1048,6 +1049,7 @@ func capture_frame() -> void:
 			var additional_markers=place_catalog.get(map_view.places.map_key,{}).get("markers",[]).size()
 			facts["historical_places"]={"additional_markers":additional_markers,"total_nodes":map_view.places.nodes.size(),"selected_id":selected_poi_id,"selected_kind":HistoricalPlaces.kind_label(map_view.places.index[selected_poi_id],match_controller.state.date) if map_view.places.index.has(selected_poi_id) else "","control_zones":map_view.places.zones.size(),"ownership":map_view.places.owners,"control_overlay_visible":map_view.show_control,"place_overlay_visible":map_view.show_places,"presentation_data_sha256":FileAccess.get_sha256("res://presentation/data/settlements_v023.json"),"historic_military_border_claimed":false}
 			facts["territory_field"]=map_view.territory_field_diagnostics
+			facts["control_land_clip"]=map_view.places.control_clip_diagnostics
 			# Capture evidence for the authored cardinal facing layer. This is a
 			# read-only presentation audit: it reports which immutable Sub2 source
 			# views are available and the final world heading used by each formation;

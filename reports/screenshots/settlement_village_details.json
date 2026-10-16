@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.15",
+	"build_version": "0.2.16",
 	"city_labels": [
 		{
 			"city_id": "shanhaiguan",
@@ -39,6 +39,7 @@
 		}
 	],
 	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"control_land_clip": {},
 	"historical_places": {
 		"additional_markers": 32,
 		"control_overlay_visible": true,
@@ -61,7 +62,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1178.058,
+		"preparation_ms": 1134.311,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -285,13 +286,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 122.082,
+		"index_ms": 132.731,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2540.287,
+		"mesh_ms": 3285.221,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1183.557,
-		"preparation_ms": 3845.925,
+		"placement_ms": 1155.427,
+		"preparation_ms": 4573.378,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

@@ -1,29 +1,19 @@
 {
   "passed": true,
-  "version": "0.2.15",
-  "runtime_source_sha256": "986ca6bd484076d52053b0cb3c4b12d91313d5299a8a6953ab342d3d05b055ec",
-  "windows_exe_sha256": "c138c6feac26e4176de55f0287cd3304fdf12e223847fd4148a74e7b39d51f4e",
-  "created_at_utc": "2026-10-16T13:31:32.686923+00:00",
-  "scope": "Scoped agent review of full native viewports for river continuity, headwater legibility, existing material variation and UI framing. Not a commercial art approval.",
+  "version": "0.2.16",
+  "runtime_source_sha256": "3ceffd894d4dacfce4c1af38ae5baddfea2f0792a744e25e7713c798f8e5d4c2",
+  "windows_exe_sha256": "d47d0b68d7fccc50b5601b2e3fdf9c8b1fdc23df55c1e77f109565c8ed82758d",
+  "created_at_utc": "2026-10-16T15:15:28.876971+00:00",
+  "scope": "Scoped agent review of nine complete current native viewports for retained river continuity, headwater legibility, representative regional materials and UI framing. Not a commercial art approval.",
   "images": [
     {
-      "file": "reports/screenshots/map_final_windows.png",
-      "sha256": "fa9a13676fe0f1bea04d62e0603cadd5b7643d2e6c4276e52d6aa9deb8ed2d2c",
-      "viewed_complete_native_frame": true
-    },
-    {
-      "file": "reports/screenshots/asia_1840_overview.png",
-      "sha256": "3f85592c6c33bb61408aafda84fd9d95e2752cc6194df75a1a99a7ec1e12305c",
-      "viewed_complete_native_frame": true
-    },
-    {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_dune_sand.png",
-      "sha256": "6bf257c7d19d47afabaed2e47084887963754464f7e439b2d7931496a5bffede",
+      "sha256": "a73865d72374793a83a0251b189bfed18f4e85c6d967f16cbb99ff2180fd7a95",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_litter.png",
-      "sha256": "a4f8ba884ea1f159ac0f637c35f337c8dbc3034574822fa660c6d9b01023bbde",
+      "sha256": "1bf0e7a686940a3168ea9d1a7de312b3a726eeabaf11c337d253966f82e1ec84",
       "viewed_complete_native_frame": true
     },
     {
@@ -37,13 +27,13 @@
       "viewed_complete_native_frame": true
     },
     {
-      "file": "reports/screenshots/terrain_surfaces_native/details/tributaries.png",
-      "sha256": "bf767f7523b8b9757deedf76c5dc88d902cdf6367d2d3a772ee57636f1d50060",
+      "file": "reports/screenshots/terrain_surfaces_native/details/coast.png",
+      "sha256": "87784575997ceb2917970e49bb1ec090cc234f32dad9bd0411037d6f8a9c13b2",
       "viewed_complete_native_frame": true
     },
     {
-      "file": "reports/screenshots/terrain_surfaces_native/details/coast.png",
-      "sha256": "87784575997ceb2917970e49bb1ec090cc234f32dad9bd0411037d6f8a9c13b2",
+      "file": "reports/screenshots/terrain_surfaces_native/details/tributaries.png",
+      "sha256": "bf767f7523b8b9757deedf76c5dc88d902cdf6367d2d3a772ee57636f1d50060",
       "viewed_complete_native_frame": true
     },
     {
@@ -68,16 +58,15 @@
   "formal_art_approval": false,
   "ew6_parity_claimed": false,
   "observations": [
-    "Hankou and Nanjing main channels have continuous visible water across inspected source-linked endpoints; the cut-off wedges seen in the second development preview are absent.",
-    "Source headwaters are continuous antialiased lines; the stippled subpixel triangle artifact from the first development preview is absent.",
-    "Native coast shows the existing water original at a shared world phase. Source coastline angularity remains visible at this tactical zoom.",
-    "Dune sand and leaf-litter ground retain different source textures; the atlas shows one macro original and four detail alternatives per regional type.",
-    "The 2400x1080 Hankou capture retains the mobile HUD and river surface inside the usable viewport."
+    "The inspected Hankou and Nanjing source-linked main channels retain a continuous visible water ribbon, including the mobile-layout Hankou frame.",
+    "The inspected Yanshan headwaters render as continuous thin lines rather than the earlier stippled subpixel-triangle artifact.",
+    "Dune sand, temperate litter and the first atlas page retain distinct source materials and the atlas exposes independent texture choices.",
+    "The inspected mountain, coast and river frames retain the complete normal HUD and native screenshot bytes; no unsupported river bends or islands were painted in."
   ],
   "remaining_visual_issues": [
-    "Asian strategic city-influence hexagons visibly extend across some coastlines onto water, notably around Japan and other coastal city nodes. HistoricalPlaces fallback zones need clipping to the archived land geometry; the rule grid and city ownership should remain unchanged.",
-    "Some tactical shore control borders do not exactly coincide with the physical coastline. Border display must distinguish administrative/control geometry from shore geometry.",
-    "Coarse source-supported river shapes remain angular; no unsupported bends, sandbars or tributaries were added.",
-    "Full region transitions, location-specific bridges and ports, all-unit animation cycles and physical Motorola X30 verification remain outstanding."
+    "Source-supported river and coastline geometry remains visibly angular at tactical zoom; primary ribbons still need more natural shore treatment within source constraints.",
+    "Local tactical administrative/control border strokes do not always visually coincide with the physical coastline; this release clips the Asian strategic control meshes, not all local boundary layers.",
+    "Continental ownership/terrain overlays still show large polygon and triangle patches; city and unit crowding reduces readability.",
+    "Full regional transition kits, location-specific ports and bridges, all-unit animation cycles and physical Motorola X30 verification remain outstanding."
   ]
 }

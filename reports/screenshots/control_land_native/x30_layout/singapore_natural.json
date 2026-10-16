@@ -1,0 +1,60 @@
+{
+	"build_version": "0.2.16",
+	"camera": [
+		4115.0302734375,
+		5024.97265625
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"control_enabled": false,
+	"control_land_clip": {
+		"city_zones": 81,
+		"clipped_city_zones": 61.0,
+		"eligible_field_cells": 3744.0,
+		"empty_field_cells": 14.0,
+		"enabled": true,
+		"historical_military_frontiers_claimed": false,
+		"inland_water_preserves_source_islands": true,
+		"land_clipped": true,
+		"partial_field_cells": 617.0,
+		"source": "existing_render_land_exteriors_minus_holes",
+		"source_land_holes": 1.0,
+		"source_land_polygons": 556.0,
+		"source_map_sha256": "268ab58f6d5bd40c8e88d151449bab27170ac5b5c61ceaa310d84b26334de0ae"
+	},
+	"mobile_layout_profile": true,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"raw_godot_capture": true,
+	"scenario_id": "asia_1840",
+	"surface": "source_land_control_singapore_natural",
+	"territory_field": {
+		"border_segments": 466,
+		"cells_assigned": 2681,
+		"cells_skipped": 1063,
+		"clip": {
+			"city_zones": 81,
+			"clipped_city_zones": 61.0,
+			"eligible_field_cells": 3744.0,
+			"empty_field_cells": 14.0,
+			"enabled": true,
+			"historical_military_frontiers_claimed": false,
+			"inland_water_preserves_source_islands": true,
+			"land_clipped": true,
+			"partial_field_cells": 617.0,
+			"source": "existing_render_land_exteriors_minus_holes",
+			"source_land_holes": 1.0,
+			"source_land_polygons": 556.0,
+			"source_map_sha256": "268ab58f6d5bd40c8e88d151449bab27170ac5b5c61ceaa310d84b26334de0ae"
+		},
+		"enabled": true,
+		"land_clipped": true,
+		"minimap_reuses_same_meshes": true,
+		"owners": 16,
+		"presentation_only": true,
+		"source": "current_owned_real_city_nodes_voronoi"
+	},
+	"ui_scale": 1.2,
+	"viewport": "(2400.0, 1080.0)",
+	"window": "(2400, 1080)",
+	"zoom": 0.66
+}

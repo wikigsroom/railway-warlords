@@ -51,6 +51,10 @@ def media():
     war = folder / 'war_room_native/windows'
     terrain = folder / 'terrain_surfaces_native/windows'
     details = folder / 'terrain_surfaces_native/details'
+    coast_proof = read(P / 'reports/control_land_native_evidence.json')
+    require(coast_proof['passed'] and coast_proof['version'] == version and coast_proof['runtime_source_sha256'] == proof['runtime_source_sha256'],
+            'Current native coastal-control proof required')
+    coast = folder / 'control_land_native/windows'
     selected = {'menu.png': war / 'home.png', 'battlefield.png': folder / 'map_final_windows.png',
                 'mountains.png': details / 'mountain.png', 'coast.png': details / 'coast.png',
                 'tributaries.png': details / 'tributaries.png', 'sand.png': terrain / 'map_dune_sand.png',
@@ -59,6 +63,11 @@ def media():
                 'nanjing.png': details / 'nanjing.png', 'yangtze-x30.png': details / 'yangtze_x30.png',
                 'legion-deployment.png': war / 'legion_deployment.png',
                 'mobile-layout.png': folder / 'war_room_native/x30_layout/opening_army.png'}
+    for name, case in [('bohai', 'tianjin'), ('japan', 'osaka'), ('caspian', 'baku'), ('singapore', 'singapore'), ('asia', 'overview')]:
+        selected['control-' + name + '.png'] = coast / (case + '_control.png')
+    selected['control-bohai-natural.png'] = coast / 'tianjin_natural.png'
+    selected['control-caspian-natural.png'] = coast / 'baku_natural.png'
+    selected['control-bohai-x30.png'] = folder / 'control_land_native/x30_layout/tianjin_control.png'
     for name, surface in [('campaign-browser', 'campaign'), ('conquest-browser', 'conquest'), ('legion-browser', 'legion'),
                           ('recruitment', 'recruit'), ('city-buildings', 'buildings'), ('diplomacy', 'diplomacy'),
                           ('assign-general', 'assign_general'), ('headquarters', 'headquarters'),
@@ -93,6 +102,7 @@ def media():
     video.setdefault('version', '0.2.12')
     write(P / 'docs/media/manifest.json', dict(version=version, screenshots=rows, animations=animations,
           source_video=video, current_native_evidence='reports/terrain_surface_native_evidence.json',
+          current_control_native_evidence='reports/control_land_native_evidence.json',
           notice='Current terrain/UI screenshots are native Windows captures. Battle GIFs and action stills preserve version 0.2.12. No physical Android acceptance.'))
     print(json.dumps(dict(screenshots=len(rows), current=len(selected), historical=len(rows)-len(selected),
                           historical_gifs=len(animations))), flush=True)

@@ -10,6 +10,7 @@ var zones: Array=[]
 var owners: Dictionary={}
 var owner_signature=""
 var map_key=""
+var control_clip_diagnostics: Dictionary={}
 
 static func data() -> Dictionary:
 	if catalog.is_empty():
@@ -40,7 +41,7 @@ static func visible_at(node: Dictionary, date: String, zoom: float, selected: St
 func prepare(map: Dictionary, date: String="1924-01-01") -> void:
 	map_key=map.get("fixture_source",{}).get("source_map_id",map.id)
 	if map_key=="qa_capacity_conquest":map_key="conquest_china"
-	nodes=[];index={};zones=[];owners={};owner_signature=""
+	nodes=[];index={};zones=[];owners={};owner_signature="";control_clip_diagnostics={}
 	var entry=data().get("maps",{}).get(map_key,{})
 	for record in entry.get("markers",[]):add_node(record)
 	for city in map.cities:
@@ -61,22 +62,12 @@ func prepare(map: Dictionary, date: String="1924-01-01") -> void:
 		zones.append({"city_id":record.city_id,"province":record.province,"mesh":mesh,"borders":record.borders.map(points_array),"bounds":Rect2(Vector2(bounds[0],bounds[1]),Vector2(bounds[2]-bounds[0],bounds[3]-bounds[1]))})
 	# The continental map does not pretend to have surveyed historical county
 	# polygons.  It still needs a readable ownership layer, so each real city
-	# receives a deterministic influence hex.  These are presentation zones only;
-	# the authoritative owner remains state.cities[].owner_id.
+	# receives a deterministic influence hex, intersected with source land and
+	# water holes. The authoritative owner remains state.cities[].owner_id.
 	if zones.is_empty() and map.id=="asia_strategic":
-		for city in map.cities:
-			var center=HexGrid.to_world(HexGrid.coordinate(city.position))
-			var radius=float(city.get("control_radius_hex",3))*HexGrid.RADIUS*1.38
-			var ring=PackedVector2Array()
-			for i in range(6):
-				var angle=PI/6.0+TAU*float(i)/6.0
-				ring.append(center+Vector2(cos(angle),sin(angle))*radius)
-			var vertices=PackedVector3Array()
-			for i in range(6):
-				vertices.append(Vector3(center.x,center.y,0));vertices.append(Vector3(ring[i].x,ring[i].y,0));var next=(i+1)%6;vertices.append(Vector3(ring[next].x,ring[next].y,0))
-			var arrays=[];arrays.resize(Mesh.ARRAY_MAX);arrays[Mesh.ARRAY_VERTEX]=vertices
-			var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
-			zones.append({"city_id":city.id,"province":city.get("reference_bloc","未核实"),"mesh":mesh,"borders":[ring],"bounds":Rect2(center-Vector2(radius,radius),Vector2(radius*2,radius*2))})
+		var clipped=MapControlLandClip.for_map(map)
+		zones=MapControlLandClip.city_zones(clipped)
+		control_clip_diagnostics=MapControlLandClip.diagnostics(clipped)
 
 func add_node(record: Dictionary) -> void:
 	var node=record.duplicate(true);node["at"]=Vector2(node.world[0],node.world[1])

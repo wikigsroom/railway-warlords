@@ -25,7 +25,8 @@ Godot discovers named script classes during import. Import before invoking a tes
 | GDScript 回归 / Rules | Godot + completed import | 直接运行 `tests/*.gd` / Run individual test scripts |
 | Python 数据／素材检查 / Data and art tools | Python + script-specific libraries | 部分工具为标准库，图片工具常用 Pillow / Many are stdlib-only; image tools use Pillow |
 | 地理资料重建 / Geography rebuild | Original datasets + native GIS Python environment | Uses NumPy, PyShp, Shapely, PyProj as required by each script |
-| PNG／GIF 资料整理 / README media | Python + FFmpeg; Pillow for inspection | `tools/prepare_repository_media.py` |
+| 控制区矢量编译 / Control clipping | Python + Shapely 2.2.0 / GEOS 3.14.1 | `tools/compile_control_land_clip.py --check`; 输入已在仓库 / Input is included |
+| 当前 README 媒体 / Current README media | Python + Pillow, current native EXE evidence | `tools/refresh_terrain_repository.py`; 复制原生图字节 / Copies native image bytes |
 | Windows 导出 / Windows export | Matching Godot templates | Preset: `Windows` |
 | Android 导出 / Android export | Matching templates, JDK 21, Android SDK, own keys | Preset: `Android`; physical-device testing |
 
@@ -52,9 +53,9 @@ godot --headless --path . --script tests/transaction_test.gd
 godot --headless --path . --script tests/asia_content_test.gd
 ```
 
-全部 25 组名称和通过范围见[测试与验收](05_测试与验收.md)，包含 `tests/terrain_surfaces_test.gd` 和新增 `tests/river_surface_test.gd`。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
+全部26组名称和通过范围见[测试与验收](05_测试与验收.md)，包含 `tests/terrain_surfaces_test.gd` 和`tests/river_surface_test.gd`及`tests/control_land_clip_test.gd`。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
 
-All 25 groups and their scope are in the validation chapter, including `tests/terrain_surfaces_test.gd` and `tests/river_surface_test.gd`. Selected reports preserve their original paths, timestamps and fingerprints as evidence, not as newly executed tests on the clone.
+All 26 groups and their scope are in the validation chapter, including `tests/terrain_surfaces_test.gd` `tests/river_surface_test.gd` and `tests/control_land_clip_test.gd`. Selected reports preserve their original paths, timestamps and fingerprints as evidence, not as newly executed tests on the clone.
 
 ## 文档和媒体维护 / Documentation maintenance
 
@@ -72,7 +73,7 @@ python tools/capture_terrain_update.py
 python tools/refresh_terrain_repository.py
 ```
 
-`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前 0.2.15 截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.16截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
 
 `prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 

@@ -54,7 +54,8 @@ def main():
                 'terrain_surface_geography.json', 'terrain_surface_geography_audit.json',
                 'terrain_surface_asset_audit.json', 'terrain_surface_source_review.json',
                 'ground_macro_generation.json', 'ground_macro_asset_audit.json', 'ground_macro_source_review.json',
-                'terrain_surface_native_evidence.json', 'river_surface_native_review.json', 'apk_content_validation.json']
+                'terrain_surface_native_evidence.json', 'river_surface_native_review.json', 'apk_content_validation.json',
+                'control_land_clip_audit.json', 'control_land_native_evidence.json', 'control_land_native_review.json']
     for name in required:
         path = P / 'reports' / name
         require(read(path).get('passed') is True, 'Required evidence failed: ' + name)
@@ -83,6 +84,38 @@ def main():
             require(read(metadata)['build_version'] == version, 'Old capture in current native proof')
             captures.update([path, metadata])
     require(len(captures) == 92 * 2, 'Complete current 92-view native evidence required')
+    control = read(P / 'reports/control_land_native_evidence.json')
+    clip_sha = sha(P / 'presentation/data/control_land_clip.json')
+    require(control['version'] == version and control['runtime_source_sha256'] == runtime
+            and control['windows_exe_sha256'] == native['windows_exe_sha256'] and control['clip_data_sha256'] == clip_sha
+            and len(control['groups']) == 2, 'Current normal-renderer coastal control evidence required')
+    clip_audit = read(P / 'reports/control_land_clip_audit.json')
+    clip_test = read(P / 'reports/control_land_clip_tests.json')
+    require(clip_audit['presentation_data_sha256'] == clip_sha and clip_audit['exact_triangle_coverage_verified']
+            and clip_audit['disjoint_islands_and_water_holes_verified'] and not clip_audit['source_maps_modified']
+            and clip_audit['clipped_city_zones'] == 61 and clip_audit['partial_field_cells'] == 617,
+            'Real-source coastal vector audit required')
+    require(clip_test['passed'] and clip_test['build_version'] == version and clip_test['timelines_checked'] == 7
+            and clip_test['presentation_data_sha256'] == clip_sha, 'Current seven-timeline coastal regression required')
+    review = read(P / 'reports/control_land_native_review.json')
+    require(review['version'] == version and review['runtime_source_sha256'] == runtime
+            and review['windows_exe_sha256'] == native['windows_exe_sha256'], 'Current native coastal image review required')
+    for row in review['images']:
+        require(sha(P / row['file']) == row['sha256'], 'Reviewed coastal viewport changed: ' + row['file'])
+    for group in control['groups']:
+        require(len(group['cases']) == 5 and len(group['captures']) == 10, 'Incomplete coast viewport set')
+        require(all(row['water_max_channel_delta'] <= 2 and row['minimap_water_max_channel_delta'] <= 2
+                    and row['water_pixels'] >= 9 and row['minimap_water_pixels'] >= 12 and row['land_changed_samples'] >= 3
+                    for row in group['cases']), 'Coast pixels changed on actual water or land wash disappeared')
+        report_path = P / group['report']
+        require(sha(report_path) == group['report_sha256'] and read(report_path)['passed'], 'Coast report changed')
+        reports.update([report_path, P / group['log']])
+        for row in group['captures']:
+            path = P / row['file']; metadata = P / row['metadata']
+            require(sha(path) == row['sha256'] and sha(metadata) == row['metadata_sha256']
+                    and read(metadata)['build_version'] == version, 'Coast viewport changed')
+            captures.update([path, metadata])
+    require(len(captures) == 112 * 2, 'Complete current 112-view terrain/UI/coast evidence required')
     details = next(group for group in native['groups'] if group['kind'] == 'details')
     detail_rows = {Path(row['file']).stem:row for row in details['captures']}
     for name in ['yangtze', 'nanjing', 'yangtze_x30']:
@@ -133,7 +166,9 @@ def main():
                    terrain_types=20, detail_originals=80, macro_originals=20, new_independent_originals=0,
                    river_replacement_reaches=31, source_linked_river_continuity_verified=True,
                    total_rasters=len(assets), total_map_assets=970,
-                   native_groups=len(native['groups']), native_captures=len(captures)//2,
+                   native_groups=len(native['groups']), native_captures=92,
+                   coastal_control_land_clipped=True, source_lake_islands_preserved=True,
+                   control_native_groups=len(control['groups']), control_native_captures=20, total_native_captures=len(captures)//2,
                    current_native_capacity=True, full_ai_endurance_rerun=False,
                    physical_android_device_tested=False, formal_art_approval=False, ew6_parity_claimed=False)
     write(P / 'reports/terrain_update_verification_summary.json', summary)
@@ -153,7 +188,7 @@ def main():
 
 运行 RailwayWarlords.exe，无需安装 Godot。
 20 类地域地表各有 1 张连续底材与 4 张细节原图；说明书内可打开地形图鉴。
-本版细化来源河段的连续水面、河岸和水纹，保留原始端点及规则地图。
+本版按真实陆地裁切亚洲控制区，主图与缩略图共享网格，保留真实湖中岛屿；沿用连续河面、河岸与水纹。
 点选部队、选目标、再次点击确认；拖动平移、滚轮缩放、空格跳过战斗演出。
 本版为可玩测试交付，X30 真机与完整 AI 长局尚未在本轮复验。
 ''', encoding='utf-8')
@@ -185,7 +220,7 @@ def main():
         require(hashlib.sha256(archive.read(exe.name)).hexdigest() == sha(exe), 'Windows archive differs from tested EXE')
     require(sha(android) == sha(apk) and source_digest()[0] == runtime, 'Delivery identity changed')
     manifest = dict(version=version, created_at_utc=datetime.now(timezone.utc).isoformat(),
-                    release_kind='scoped_regional_terrain_and_war_room_ui_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
+                    release_kind='scoped_source_clipped_terrain_and_war_room_ui_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
                     regression=regression, capacity=capacity, source_pngs_modified=False, manual_image_compositing=False,
                     source_image_location='game/railway_warlords/assets; byte-identical generated originals, portable prompt/provenance copies in docs',
                     original_production_tree_duplicated=False, old_releases_modified=False,
@@ -197,6 +232,7 @@ def main():
     shutil.copyfile(P / 'docs/30_二十类地域地表与纹理整改.md', out / '二十类地域地表与纹理整改.md')
     shutil.copyfile(P / 'docs/31_连续地表与水系层次.md', out / '连续地表与水系层次.md')
     shutil.copyfile(P / 'docs/32_真实河段连续水面.md', out / '真实河段连续水面.md')
+    shutil.copyfile(P / 'docs/33_真实海岸与控制区裁切.md', out / '真实海岸与控制区裁切.md')
     (out / '交付说明.md').write_text(f'''# 铁道烽烟 {version} · 地表与界面测试交付
 
 Windows：解压 RailwayWarlords-Windows-{version}.zip，运行 RailwayWarlords.exe。
@@ -204,10 +240,11 @@ Android：安装 RailwayWarlords-{version}.apk，延续现有签名。目标样�
 Godot：解压工程 ZIP，用 Godot 4.7.2 打开 game/railway_warlords/project.godot。
 
 保留 20 类地域地表、80 张细节原图和 20 张连续底材，共 100 张专用地表原图；地图素材共 970 张，全部 PNG 共 1,156 张。本版未增加栅格原图。
-本版将主河改为共享世界纹理的渐变水面；汉口、南京的31条替代主河使用既有60米有界显示圆角，上下游共用端点共享接头方向。细支流使用抗锯齿线，水陆纹理和地格规则保持来源约束。河宽是制图符号，不是历史实测岸线。
+沿用上一轮共享世界纹理的渐变主河水面；汉口、南京的31条替代主河使用既有60米有界显示圆角，上下游共用端点共享接头方向。细支流使用抗锯齿线，水陆纹理和地格规则保持来源约束。河宽是制图符号，不是历史实测岸线。
+本版重点按既有真实陆地裁切亚洲战略层控制区：61个城市影响区和617个沿海控制格保留实际陆地部分，14个完全离岸候选格不绘制；主地图与缩略图共享裁切网格。里海水面扣除来源中独立的岛屿，保留真实湖中陆地。地理数据、历史归属和规则格未重写。
 说明书与地格详情均可进入交互地形图鉴。材质按生态区、高程与既有河谷选取；不宣称逐年历史土地利用复原。
 
-当前 {summary['regression_groups']} 组 / {summary['regression_checks']} 项回归通过；85 张地表/UI及7张局部地图原生截图、双桌面视口容量与 APK 载荷已绑定本次 EXE/源码哈希。
+当前 {summary['regression_groups']} 组 / {summary['regression_checks']} 项回归通过；92张地表/UI及局部地图、20张海岸控制层开关截图，共112张原生画面、双桌面视口容量与APK载荷已绑定本次EXE/源码哈希。五处海岸/总览的主图和缩略图水面像素均经开关对照。
 截图为 Windows 原生程序；README 的战斗 GIF 保留 0.2.12 原录像身份。本轮未重新宣称完整 AI 长局、正式美术/历史批准或《欧陆战争6》商业品质达标。
 
 工程内的 PNG 即原始生成字节，提示词与便携来源索引位于 docs；原始 GIS 归档随 design 保留。不包含引擎缓存、签名、素材网关凭据或重复原图树。

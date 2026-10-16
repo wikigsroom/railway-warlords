@@ -1,0 +1,6850 @@
+{
+	"build_version": "0.2.16",
+	"captures": [
+		{
+			"control_enabled": false,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/tianjin_natural.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/tianjin_natural.png"
+		},
+		{
+			"control_enabled": true,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/tianjin_control.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/tianjin_control.png"
+		},
+		{
+			"control_enabled": false,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/osaka_natural.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/osaka_natural.png"
+		},
+		{
+			"control_enabled": true,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/osaka_control.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/osaka_control.png"
+		},
+		{
+			"control_enabled": false,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/baku_natural.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/baku_natural.png"
+		},
+		{
+			"control_enabled": true,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/baku_control.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/baku_control.png"
+		},
+		{
+			"control_enabled": false,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/singapore_natural.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/singapore_natural.png"
+		},
+		{
+			"control_enabled": true,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/singapore_control.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/singapore_control.png"
+		},
+		{
+			"control_enabled": false,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/overview_natural.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/overview_natural.png"
+		},
+		{
+			"control_enabled": true,
+			"metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/overview_control.json",
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\control_land_native\\windows/overview_control.png"
+		}
+	],
+	"cases": [
+		{
+			"id": "tianjin",
+			"land_changed_samples": 24,
+			"minimap_water_max_channel_delta": 0.0,
+			"minimap_water_pixels": 25,
+			"rendered_label_leaders": [
+				[
+					[
+						478.319854736328,
+						652.178405761719
+					],
+					[
+						478.319854736328,
+						721.818420410156
+					]
+				],
+				[
+					[
+						1191.11987304688,
+						514.999938964844
+					],
+					[
+						1248.11999511719,
+						550.639892578125
+					]
+				],
+				[
+					[
+						573.35986328125,
+						158.335968017578
+					],
+					[
+						573.35986328125,
+						227.975952148438
+					]
+				],
+				[
+					[
+						620.8798828125,
+						734.4853515625
+					],
+					[
+						620.8798828125,
+						804.125366210938
+					]
+				],
+				[
+					[
+						1476.23999023438,
+						734.4853515625
+					],
+					[
+						1433.73986816406,
+						770.125366210938
+					]
+				],
+				[
+					[
+						1048.55993652344,
+						597.306884765625
+					],
+					[
+						1048.55993652344,
+						704.946838378906
+					]
+				],
+				[
+					[
+						1381.19995117188,
+						734.4853515625
+					],
+					[
+						1381.19995117188,
+						804.125366210938
+					]
+				],
+				[
+					[
+						1476.23999023438,
+						130.900299072266
+					],
+					[
+						1433.73986816406,
+						166.540222167969
+					]
+				],
+				[
+					[
+						1001.03985595703,
+						624.74267578125
+					],
+					[
+						1001.03985595703,
+						732.382568359375
+					]
+				],
+				[
+					[
+						810.959838867188,
+						569.871276855469
+					],
+					[
+						810.959838867188,
+						639.511291503906
+					]
+				],
+				[
+					[
+						1048.55993652344,
+						487.564147949219
+					],
+					[
+						1048.55993652344,
+						557.204162597656
+					]
+				],
+				[
+					[
+						430.799865722656,
+						624.74267578125
+					],
+					[
+						430.799865722656,
+						694.382629394531
+					]
+				],
+				[
+					[
+						478.319854736328,
+						652.178405761719
+					],
+					[
+						478.319854736328,
+						721.818420410156
+					]
+				],
+				[
+					[
+						1191.11987304688,
+						514.999938964844
+					],
+					[
+						1248.11999511719,
+						550.639892578125
+					]
+				],
+				[
+					[
+						573.35986328125,
+						158.335968017578
+					],
+					[
+						573.35986328125,
+						227.975952148438
+					]
+				],
+				[
+					[
+						620.8798828125,
+						734.4853515625
+					],
+					[
+						620.8798828125,
+						804.125366210938
+					]
+				],
+				[
+					[
+						1476.23999023438,
+						734.4853515625
+					],
+					[
+						1433.73986816406,
+						770.125366210938
+					]
+				],
+				[
+					[
+						1048.55993652344,
+						597.306884765625
+					],
+					[
+						1048.55993652344,
+						704.946838378906
+					]
+				],
+				[
+					[
+						1381.19995117188,
+						734.4853515625
+					],
+					[
+						1381.19995117188,
+						804.125366210938
+					]
+				],
+				[
+					[
+						1476.23999023438,
+						130.900299072266
+					],
+					[
+						1433.73986816406,
+						166.540222167969
+					]
+				],
+				[
+					[
+						1001.03985595703,
+						624.74267578125
+					],
+					[
+						1001.03985595703,
+						732.382568359375
+					]
+				],
+				[
+					[
+						810.959838867188,
+						569.871276855469
+					],
+					[
+						810.959838867188,
+						639.511291503906
+					]
+				],
+				[
+					[
+						1048.55993652344,
+						487.564147949219
+					],
+					[
+						1048.55993652344,
+						557.204162597656
+					]
+				],
+				[
+					[
+						430.799865722656,
+						624.74267578125
+					],
+					[
+						430.799865722656,
+						694.382629394531
+					]
+				]
+			],
+			"water_max_channel_delta": 0.0,
+			"water_pixels": 354,
+			"water_samples": [
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1074,
+						611
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1074,
+						613
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1074,
+						615
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1076,
+						611
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1076,
+						613
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1076,
+						615
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1078,
+						611
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1078,
+						613
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1078,
+						615
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1122,
+						638
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1122,
+						640
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1122,
+						642
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1124,
+						638
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1124,
+						640
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1124,
+						642
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1126,
+						638
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1126,
+						640
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1126,
+						642
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1079,
+						577
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1079,
+						579
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1079,
+						581
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1081,
+						577
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1081,
+						579
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1081,
+						581
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1083,
+						577
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1083,
+						579
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1083,
+						581
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						957,
+						526
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						957,
+						528
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						957,
+						530
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						959,
+						526
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						959,
+						528
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						959,
+						530
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						961,
+						526
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						961,
+						528
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						961,
+						530
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						935,
+						543
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						935,
+						545
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						935,
+						547
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						937,
+						543
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						937,
+						545
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						937,
+						547
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						939,
+						543
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						939,
+						545
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						939,
+						547
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						981,
+						538
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						981,
+						540
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						981,
+						542
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						983,
+						538
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						983,
+						540
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						983,
+						542
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						985,
+						538
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						985,
+						540
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						985,
+						542
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1011,
+						671
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1011,
+						673
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1011,
+						675
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1013,
+						671
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1013,
+						673
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1013,
+						675
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1015,
+						671
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1015,
+						673
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1015,
+						675
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1144,
+						706
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1144,
+						708
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1144,
+						710
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1146,
+						706
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1146,
+						708
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1146,
+						710
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1148,
+						706
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1148,
+						708
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1148,
+						710
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1080,
+						619
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1080,
+						621
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1080,
+						623
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1082,
+						619
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1082,
+						621
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1082,
+						623
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1084,
+						619
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1084,
+						621
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1084,
+						623
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1134,
+						854
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1134,
+						856
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1134,
+						858
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1136,
+						854
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1136,
+						856
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1136,
+						858
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1138,
+						854
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1138,
+						856
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1138,
+						858
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1105,
+						837
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1105,
+						839
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1105,
+						841
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1107,
+						837
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1107,
+						839
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1107,
+						841
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1109,
+						837
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1109,
+						839
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1109,
+						841
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						970,
+						574
+					],
+					"world": [
+						4780.91813893455,
+						2712.49131328596
+					]
+				}
+			]
+		},
+		{
+			"id": "osaka",
+			"land_changed_samples": 24,
+			"minimap_water_max_channel_delta": 0.0,
+			"minimap_water_pixels": 25,
+			"rendered_label_leaders": [
+				[
+					[
+						620.8798828125,
+						295.514465332031
+					],
+					[
+						677.880004882813,
+						331.154479980469
+					]
+				],
+				[
+					[
+						478.319854736328,
+						377.821411132813
+					],
+					[
+						478.319854736328,
+						485.461364746094
+					]
+				],
+				[
+					[
+						430.799865722656,
+						405.257202148438
+					],
+					[
+						430.799865722656,
+						512.897155761719
+					]
+				],
+				[
+					[
+						240.719848632813,
+						350.385833740234
+					],
+					[
+						240.719848632813,
+						420.025817871094
+					]
+				],
+				[
+					[
+						478.319854736328,
+						268.078704833984
+					],
+					[
+						478.319854736328,
+						337.718688964844
+					]
+				],
+				[
+					[
+						335.759887695313,
+						569.871276855469
+					],
+					[
+						335.759887695313,
+						713.511352539063
+					]
+				],
+				[
+					[
+						620.8798828125,
+						295.514465332031
+					],
+					[
+						677.880004882813,
+						331.154479980469
+					]
+				],
+				[
+					[
+						1096.07983398438,
+						130.900360107422
+					],
+					[
+						1096.07983398438,
+						274.540435791016
+					]
+				],
+				[
+					[
+						478.319854736328,
+						377.821411132813
+					],
+					[
+						478.319854736328,
+						485.461364746094
+					]
+				],
+				[
+					[
+						430.799865722656,
+						405.257202148438
+					],
+					[
+						430.799865722656,
+						512.897155761719
+					]
+				],
+				[
+					[
+						240.719848632813,
+						350.385833740234
+					],
+					[
+						240.719848632813,
+						420.025817871094
+					]
+				],
+				[
+					[
+						478.319854736328,
+						268.078704833984
+					],
+					[
+						478.319854736328,
+						337.718688964844
+					]
+				],
+				[
+					[
+						810.959838867188,
+						130.900360107422
+					],
+					[
+						810.959838867188,
+						274.540435791016
+					]
+				],
+				[
+					[
+						335.759887695313,
+						569.871276855469
+					],
+					[
+						335.759887695313,
+						713.511352539063
+					]
+				]
+			],
+			"water_max_channel_delta": 0.0,
+			"water_pixels": 516,
+			"water_samples": [
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						504,
+						391
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						504,
+						393
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						504,
+						395
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						506,
+						391
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						506,
+						393
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						506,
+						395
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						508,
+						391
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						508,
+						393
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "beijing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						508,
+						395
+					],
+					"world": [
+						4938.42541102088,
+						2768.06280166249
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						551,
+						419
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						551,
+						421
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						551,
+						423
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						553,
+						419
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						553,
+						421
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						553,
+						423
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						555,
+						419
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						555,
+						421
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						555,
+						423
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						509,
+						357
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						509,
+						359
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						509,
+						361
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						511,
+						357
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						511,
+						359
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						511,
+						361
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						513,
+						357
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						513,
+						359
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						513,
+						361
+					],
+					"world": [
+						4946.51083474371,
+						2716.55
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						387,
+						306
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						387,
+						308
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						387,
+						310
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						389,
+						306
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						389,
+						308
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						389,
+						310
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						391,
+						306
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						391,
+						308
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "baoding",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						391,
+						310
+					],
+					"world": [
+						4760.77604549336,
+						2638.585
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						365,
+						323
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						365,
+						325
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						365,
+						327
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						367,
+						323
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						367,
+						325
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						367,
+						327
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						369,
+						323
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						369,
+						325
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "shijiazhuang",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						369,
+						327
+					],
+					"world": [
+						4727.80354549336,
+						2664.45
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						411,
+						318
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						411,
+						320
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						411,
+						322
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						413,
+						318
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						413,
+						320
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						413,
+						322
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						415,
+						318
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						415,
+						320
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						415,
+						322
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						440,
+						451
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						440,
+						453
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						440,
+						455
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						442,
+						451
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						442,
+						453
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						442,
+						455
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						444,
+						451
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						444,
+						453
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						444,
+						455
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						574,
+						487
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						574,
+						489
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						574,
+						491
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						576,
+						487
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						576,
+						489
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						576,
+						491
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						578,
+						487
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						578,
+						489
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						578,
+						491
+					],
+					"world": [
+						5044.28360734726,
+						2912.31849857075
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						509,
+						399
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						509,
+						401
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						509,
+						403
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						511,
+						399
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						511,
+						401
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						511,
+						403
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						513,
+						399
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						513,
+						401
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "qingdao",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						513,
+						403
+					],
+					"world": [
+						4947.02294480686,
+						2779.62
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						563,
+						635
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						563,
+						637
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						563,
+						639
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						565,
+						635
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						565,
+						637
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						565,
+						639
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						567,
+						635
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						567,
+						637
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						567,
+						639
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						646,
+						748
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						646,
+						750
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						646,
+						752
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						648,
+						748
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						648,
+						750
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						648,
+						752
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						650,
+						748
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						650,
+						750
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						650,
+						752
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						428,
+						874
+					],
+					"world": [
+						4824.0,
+						3499.23385362398
+					]
+				}
+			]
+		},
+		{
+			"id": "baku",
+			"land_changed_samples": 24,
+			"minimap_water_max_channel_delta": 0.0,
+			"minimap_water_pixels": 25,
+			"rendered_label_leaders": [
+				[
+					[
+						1476.23999023438,
+						569.871276855469
+					],
+					[
+						1427.23999023438,
+						605.511291503906
+					]
+				],
+				[
+					[
+						1476.23999023438,
+						569.871276855469
+					],
+					[
+						1427.23999023438,
+						605.511291503906
+					]
+				]
+			],
+			"water_max_channel_delta": 0.0,
+			"water_pixels": 144,
+			"water_samples": [
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						904,
+						345
+					],
+					"world": [
+						1368.0,
+						2281.36078228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						904,
+						347
+					],
+					"world": [
+						1368.0,
+						2281.36078228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						904,
+						349
+					],
+					"world": [
+						1368.0,
+						2281.36078228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						906,
+						345
+					],
+					"world": [
+						1368.0,
+						2281.36078228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						906,
+						347
+					],
+					"world": [
+						1368.0,
+						2281.36078228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						906,
+						349
+					],
+					"world": [
+						1368.0,
+						2281.36078228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						908,
+						345
+					],
+					"world": [
+						1368.0,
+						2281.36078228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						908,
+						347
+					],
+					"world": [
+						1368.0,
+						2281.36078228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						908,
+						349
+					],
+					"world": [
+						1368.0,
+						2281.36078228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						988,
+						495
+					],
+					"world": [
+						1496.04744453177,
+						2509.03967429713
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						988,
+						497
+					],
+					"world": [
+						1496.04744453177,
+						2509.03967429713
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						988,
+						499
+					],
+					"world": [
+						1496.04744453177,
+						2509.03967429713
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						990,
+						495
+					],
+					"world": [
+						1496.04744453177,
+						2509.03967429713
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						990,
+						497
+					],
+					"world": [
+						1496.04744453177,
+						2509.03967429713
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						990,
+						499
+					],
+					"world": [
+						1496.04744453177,
+						2509.03967429713
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						992,
+						495
+					],
+					"world": [
+						1496.04744453177,
+						2509.03967429713
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						992,
+						497
+					],
+					"world": [
+						1496.04744453177,
+						2509.03967429713
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						992,
+						499
+					],
+					"world": [
+						1496.04744453177,
+						2509.03967429713
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1049,
+						596
+					],
+					"world": [
+						1588.28360734726,
+						2662.90318228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1049,
+						598
+					],
+					"world": [
+						1588.28360734726,
+						2662.90318228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1049,
+						600
+					],
+					"world": [
+						1588.28360734726,
+						2662.90318228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1051,
+						596
+					],
+					"world": [
+						1588.28360734726,
+						2662.90318228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1051,
+						598
+					],
+					"world": [
+						1588.28360734726,
+						2662.90318228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1051,
+						600
+					],
+					"world": [
+						1588.28360734726,
+						2662.90318228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1053,
+						596
+					],
+					"world": [
+						1588.28360734726,
+						2662.90318228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1053,
+						598
+					],
+					"world": [
+						1588.28360734726,
+						2662.90318228084
+					]
+				},
+				{
+					"city_id": "baku",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1053,
+						600
+					],
+					"world": [
+						1588.28360734726,
+						2662.90318228084
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						919,
+						413
+					],
+					"world": [
+						1391.97354549336,
+						2384.265
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						919,
+						415
+					],
+					"world": [
+						1391.97354549336,
+						2384.265
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						919,
+						417
+					],
+					"world": [
+						1391.97354549336,
+						2384.265
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						921,
+						413
+					],
+					"world": [
+						1391.97354549336,
+						2384.265
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						921,
+						415
+					],
+					"world": [
+						1391.97354549336,
+						2384.265
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						921,
+						417
+					],
+					"world": [
+						1391.97354549336,
+						2384.265
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						923,
+						413
+					],
+					"world": [
+						1391.97354549336,
+						2384.265
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						923,
+						415
+					],
+					"world": [
+						1391.97354549336,
+						2384.265
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						923,
+						417
+					],
+					"world": [
+						1391.97354549336,
+						2384.265
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						954,
+						374
+					],
+					"world": [
+						1444.28360734726,
+						2325.40314351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						954,
+						376
+					],
+					"world": [
+						1444.28360734726,
+						2325.40314351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						954,
+						378
+					],
+					"world": [
+						1444.28360734726,
+						2325.40314351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						956,
+						374
+					],
+					"world": [
+						1444.28360734726,
+						2325.40314351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						956,
+						376
+					],
+					"world": [
+						1444.28360734726,
+						2325.40314351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						956,
+						378
+					],
+					"world": [
+						1444.28360734726,
+						2325.40314351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						958,
+						374
+					],
+					"world": [
+						1444.28360734726,
+						2325.40314351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						958,
+						376
+					],
+					"world": [
+						1444.28360734726,
+						2325.40314351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						958,
+						378
+					],
+					"world": [
+						1444.28360734726,
+						2325.40314351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						954,
+						542
+					],
+					"world": [
+						1444.28360734726,
+						2579.76474351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						954,
+						544
+					],
+					"world": [
+						1444.28360734726,
+						2579.76474351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						954,
+						546
+					],
+					"world": [
+						1444.28360734726,
+						2579.76474351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						956,
+						542
+					],
+					"world": [
+						1444.28360734726,
+						2579.76474351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						956,
+						544
+					],
+					"world": [
+						1444.28360734726,
+						2579.76474351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						956,
+						546
+					],
+					"world": [
+						1444.28360734726,
+						2579.76474351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						958,
+						542
+					],
+					"world": [
+						1444.28360734726,
+						2579.76474351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						958,
+						544
+					],
+					"world": [
+						1444.28360734726,
+						2579.76474351753
+					]
+				},
+				{
+					"city_id": "tbilisi",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						958,
+						546
+					],
+					"world": [
+						1444.28360734726,
+						2579.76474351753
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						982,
+						571
+					],
+					"world": [
+						1487.12282274626,
+						2625.1
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						982,
+						573
+					],
+					"world": [
+						1487.12282274626,
+						2625.1
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						982,
+						575
+					],
+					"world": [
+						1487.12282274626,
+						2625.1
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						984,
+						571
+					],
+					"world": [
+						1487.12282274626,
+						2625.1
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						984,
+						573
+					],
+					"world": [
+						1487.12282274626,
+						2625.1
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						984,
+						575
+					],
+					"world": [
+						1487.12282274626,
+						2625.1
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						986,
+						571
+					],
+					"world": [
+						1487.12282274626,
+						2625.1
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						986,
+						573
+					],
+					"world": [
+						1487.12282274626,
+						2625.1
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						986,
+						575
+					],
+					"world": [
+						1487.12282274626,
+						2625.1
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						999,
+						480
+					],
+					"world": [
+						1512.0,
+						2486.73373733406
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						999,
+						482
+					],
+					"world": [
+						1512.0,
+						2486.73373733406
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						999,
+						484
+					],
+					"world": [
+						1512.0,
+						2486.73373733406
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1001,
+						480
+					],
+					"world": [
+						1512.0,
+						2486.73373733406
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1001,
+						482
+					],
+					"world": [
+						1512.0,
+						2486.73373733406
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1001,
+						484
+					],
+					"world": [
+						1512.0,
+						2486.73373733406
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1003,
+						480
+					],
+					"world": [
+						1512.0,
+						2486.73373733406
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1003,
+						482
+					],
+					"world": [
+						1512.0,
+						2486.73373733406
+					]
+				},
+				{
+					"city_id": "tehran",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1003,
+						484
+					],
+					"world": [
+						1512.0,
+						2486.73373733406
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						968,
+						558
+					],
+					"world": [
+						1465.81854549336,
+						2604.35
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						968,
+						560
+					],
+					"world": [
+						1465.81854549336,
+						2604.35
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						968,
+						562
+					],
+					"world": [
+						1465.81854549336,
+						2604.35
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						970,
+						558
+					],
+					"world": [
+						1465.81854549336,
+						2604.35
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						970,
+						560
+					],
+					"world": [
+						1465.81854549336,
+						2604.35
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						970,
+						562
+					],
+					"world": [
+						1465.81854549336,
+						2604.35
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						972,
+						558
+					],
+					"world": [
+						1465.81854549336,
+						2604.35
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						972,
+						560
+					],
+					"world": [
+						1465.81854549336,
+						2604.35
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						972,
+						562
+					],
+					"world": [
+						1465.81854549336,
+						2604.35
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1001,
+						511
+					],
+					"world": [
+						1516.28360734726,
+						2533.2492404258
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1001,
+						513
+					],
+					"world": [
+						1516.28360734726,
+						2533.2492404258
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1001,
+						515
+					],
+					"world": [
+						1516.28360734726,
+						2533.2492404258
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1003,
+						511
+					],
+					"world": [
+						1516.28360734726,
+						2533.2492404258
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1003,
+						513
+					],
+					"world": [
+						1516.28360734726,
+						2533.2492404258
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1003,
+						515
+					],
+					"world": [
+						1516.28360734726,
+						2533.2492404258
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1005,
+						511
+					],
+					"world": [
+						1516.28360734726,
+						2533.2492404258
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1005,
+						513
+					],
+					"world": [
+						1516.28360734726,
+						2533.2492404258
+					]
+				},
+				{
+					"city_id": "tabriz",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1005,
+						515
+					],
+					"world": [
+						1516.28360734726,
+						2533.2492404258
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						333,
+						764
+					],
+					"world": [
+						504.0,
+						2917.26478228084
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						333,
+						766
+					],
+					"world": [
+						504.0,
+						2917.26478228084
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						333,
+						768
+					],
+					"world": [
+						504.0,
+						2917.26478228084
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						335,
+						764
+					],
+					"world": [
+						504.0,
+						2917.26478228084
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						335,
+						766
+					],
+					"world": [
+						504.0,
+						2917.26478228084
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						335,
+						768
+					],
+					"world": [
+						504.0,
+						2917.26478228084
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						337,
+						764
+					],
+					"world": [
+						504.0,
+						2917.26478228084
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						337,
+						766
+					],
+					"world": [
+						504.0,
+						2917.26478228084
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						337,
+						768
+					],
+					"world": [
+						504.0,
+						2917.26478228084
+					]
+				},
+				{
+					"city_id": "istanbul",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						551,
+						387
+					],
+					"world": [
+						834.425411020884,
+						2344.95118228084
+					]
+				}
+			]
+		},
+		{
+			"id": "singapore",
+			"land_changed_samples": 24,
+			"minimap_water_max_channel_delta": 0.0,
+			"minimap_water_pixels": 25,
+			"rendered_label_leaders": [
+				[
+					[
+						810.959838867188,
+						21.1577758789063
+					],
+					[
+						810.959838867188,
+						128.797760009766
+					]
+				],
+				[
+					[
+						1428.71997070313,
+						-6.2779541015625
+					],
+					[
+						1428.71997070313,
+						137.361968994141
+					]
+				],
+				[
+					[
+						1001.03985595703,
+						899.099609375
+					],
+					[
+						1001.03985595703,
+						836.739624023438
+					]
+				],
+				[
+					[
+						1191.11987304688,
+						899.099609375
+					],
+					[
+						1191.11987304688,
+						836.739624023438
+					]
+				],
+				[
+					[
+						953.519897460938,
+						158.335968017578
+					],
+					[
+						953.519897460938,
+						265.975921630859
+					]
+				],
+				[
+					[
+						1428.71997070313,
+						-6.2779541015625
+					],
+					[
+						1428.71997070313,
+						137.361968994141
+					]
+				],
+				[
+					[
+						1001.03985595703,
+						899.099609375
+					],
+					[
+						1001.03985595703,
+						836.739624023438
+					]
+				],
+				[
+					[
+						1191.11987304688,
+						899.099609375
+					],
+					[
+						1191.11987304688,
+						836.739624023438
+					]
+				]
+			],
+			"water_max_channel_delta": 0.0,
+			"water_pixels": 66,
+			"water_samples": [
+				{
+					"city_id": "saigon",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						999,
+						296
+					],
+					"world": [
+						4176.0,
+						4660.69885445522
+					]
+				},
+				{
+					"city_id": "saigon",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						999,
+						298
+					],
+					"world": [
+						4176.0,
+						4660.69885445522
+					]
+				},
+				{
+					"city_id": "saigon",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						999,
+						300
+					],
+					"world": [
+						4176.0,
+						4660.69885445522
+					]
+				},
+				{
+					"city_id": "saigon",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1001,
+						296
+					],
+					"world": [
+						4176.0,
+						4660.69885445522
+					]
+				},
+				{
+					"city_id": "saigon",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1001,
+						298
+					],
+					"world": [
+						4176.0,
+						4660.69885445522
+					]
+				},
+				{
+					"city_id": "saigon",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1001,
+						300
+					],
+					"world": [
+						4176.0,
+						4660.69885445522
+					]
+				},
+				{
+					"city_id": "saigon",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1003,
+						296
+					],
+					"world": [
+						4176.0,
+						4660.69885445522
+					]
+				},
+				{
+					"city_id": "saigon",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1003,
+						298
+					],
+					"world": [
+						4176.0,
+						4660.69885445522
+					]
+				},
+				{
+					"city_id": "saigon",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1003,
+						300
+					],
+					"world": [
+						4176.0,
+						4660.69885445522
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1096,
+						244
+					],
+					"world": [
+						4324.28360734726,
+						4575.08727383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1098,
+						244
+					],
+					"world": [
+						4324.28360734726,
+						4575.08727383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1100,
+						244
+					],
+					"world": [
+						4324.28360734726,
+						4575.08727383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						951,
+						324
+					],
+					"world": [
+						4104.0,
+						4702.26807383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						951,
+						326
+					],
+					"world": [
+						4104.0,
+						4702.26807383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						951,
+						328
+					],
+					"world": [
+						4104.0,
+						4702.26807383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						953,
+						324
+					],
+					"world": [
+						4104.0,
+						4702.26807383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						953,
+						326
+					],
+					"world": [
+						4104.0,
+						4702.26807383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						953,
+						328
+					],
+					"world": [
+						4104.0,
+						4702.26807383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						955,
+						324
+					],
+					"world": [
+						4104.0,
+						4702.26807383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						955,
+						326
+					],
+					"world": [
+						4104.0,
+						4702.26807383688
+					]
+				},
+				{
+					"city_id": "phnom_penh",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						955,
+						328
+					],
+					"world": [
+						4104.0,
+						4702.26807383688
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						903,
+						345
+					],
+					"world": [
+						4032.0,
+						4733.94472579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						903,
+						347
+					],
+					"world": [
+						4032.0,
+						4733.94472579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						903,
+						349
+					],
+					"world": [
+						4032.0,
+						4733.94472579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						905,
+						345
+					],
+					"world": [
+						4032.0,
+						4733.94472579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						905,
+						347
+					],
+					"world": [
+						4032.0,
+						4733.94472579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						905,
+						349
+					],
+					"world": [
+						4032.0,
+						4733.94472579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						907,
+						345
+					],
+					"world": [
+						4032.0,
+						4733.94472579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						907,
+						347
+					],
+					"world": [
+						4032.0,
+						4733.94472579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						907,
+						349
+					],
+					"world": [
+						4032.0,
+						4733.94472579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						979,
+						508
+					],
+					"world": [
+						4147.03566244055,
+						4981.46
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						979,
+						510
+					],
+					"world": [
+						4147.03566244055,
+						4981.46
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						979,
+						512
+					],
+					"world": [
+						4147.03566244055,
+						4981.46
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						981,
+						508
+					],
+					"world": [
+						4147.03566244055,
+						4981.46
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						981,
+						510
+					],
+					"world": [
+						4147.03566244055,
+						4981.46
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						981,
+						512
+					],
+					"world": [
+						4147.03566244055,
+						4981.46
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						983,
+						508
+					],
+					"world": [
+						4147.03566244055,
+						4981.46
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						983,
+						510
+					],
+					"world": [
+						4147.03566244055,
+						4981.46
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						983,
+						512
+					],
+					"world": [
+						4147.03566244055,
+						4981.46
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						758,
+						429
+					],
+					"world": [
+						3811.71639265274,
+						4861.12552579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						758,
+						431
+					],
+					"world": [
+						3811.71639265274,
+						4861.12552579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						758,
+						433
+					],
+					"world": [
+						3811.71639265274,
+						4861.12552579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						760,
+						429
+					],
+					"world": [
+						3811.71639265274,
+						4861.12552579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						760,
+						431
+					],
+					"world": [
+						3811.71639265274,
+						4861.12552579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						760,
+						433
+					],
+					"world": [
+						3811.71639265274,
+						4861.12552579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						762,
+						429
+					],
+					"world": [
+						3811.71639265274,
+						4861.12552579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						762,
+						431
+					],
+					"world": [
+						3811.71639265274,
+						4861.12552579837
+					]
+				},
+				{
+					"city_id": "singapore",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						762,
+						433
+					],
+					"world": [
+						3811.71639265274,
+						4861.12552579837
+					]
+				},
+				{
+					"city_id": "batavia",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1144,
+						813
+					],
+					"world": [
+						4396.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "batavia",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1144,
+						815
+					],
+					"world": [
+						4396.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "batavia",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1144,
+						817
+					],
+					"world": [
+						4396.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "batavia",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1146,
+						813
+					],
+					"world": [
+						4396.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "batavia",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1146,
+						815
+					],
+					"world": [
+						4396.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "batavia",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1146,
+						817
+					],
+					"world": [
+						4396.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "batavia",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1148,
+						813
+					],
+					"world": [
+						4396.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "batavia",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1148,
+						815
+					],
+					"world": [
+						4396.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "batavia",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1148,
+						817
+					],
+					"world": [
+						4396.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "surabaya",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1334,
+						813
+					],
+					"world": [
+						4684.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "surabaya",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1334,
+						815
+					],
+					"world": [
+						4684.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "surabaya",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1334,
+						817
+					],
+					"world": [
+						4684.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "surabaya",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1336,
+						813
+					],
+					"world": [
+						4684.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "surabaya",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1336,
+						815
+					],
+					"world": [
+						4684.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "surabaya",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1336,
+						817
+					],
+					"world": [
+						4684.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "surabaya",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1338,
+						813
+					],
+					"world": [
+						4684.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "surabaya",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1338,
+						815
+					],
+					"world": [
+						4684.28360734726,
+						5443.09459714151
+					]
+				},
+				{
+					"city_id": "surabaya",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1338,
+						817
+					],
+					"world": [
+						4684.28360734726,
+						5443.09459714151
+					]
+				}
+			]
+		},
+		{
+			"id": "overview",
+			"land_changed_samples": 24,
+			"minimap_water_max_channel_delta": 0.0,
+			"minimap_water_pixels": 25,
+			"rendered_label_leaders": [
+				[
+					[
+						1078.94677734375,
+						482.348510742188
+					],
+					[
+						1078.94677734375,
+						393.159240722656
+					]
+				],
+				[
+					[
+						515.057983398438,
+						550.173828125
+					],
+					[
+						515.057983398438,
+						592.984619140625
+					]
+				],
+				[
+					[
+						973.217590332031,
+						638.3466796875
+					],
+					[
+						973.217590332031,
+						719.157409667969
+					]
+				],
+				[
+					[
+						1102.44213867188,
+						631.564147949219
+					],
+					[
+						1102.44213867188,
+						712.374877929688
+					]
+				],
+				[
+					[
+						996.712951660156,
+						679.041870117188
+					],
+					[
+						996.712951660156,
+						795.852600097656
+					]
+				],
+				[
+					[
+						984.965270996094,
+						523.043701171875
+					],
+					[
+						984.965270996094,
+						433.854461669922
+					]
+				],
+				[
+					[
+						879.236083984375,
+						597.651489257813
+					],
+					[
+						879.236083984375,
+						640.462280273438
+					]
+				],
+				[
+					[
+						996.712951660156,
+						787.562255859375
+					],
+					[
+						996.712951660156,
+						830.372985839844
+					]
+				],
+				[
+					[
+						1161.18054199219,
+						489.131042480469
+					],
+					[
+						1218.18054199219,
+						497.941833496094
+					]
+				],
+				[
+					[
+						714.7685546875,
+						475.566009521484
+					],
+					[
+						714.7685546875,
+						518.376770019531
+					]
+				],
+				[
+					[
+						526.8056640625,
+						462.000946044922
+					],
+					[
+						526.8056640625,
+						372.811706542969
+					]
+				],
+				[
+					[
+						1008.46063232422,
+						400.958190917969
+					],
+					[
+						1008.46063232422,
+						311.768920898438
+					]
+				],
+				[
+					[
+						855.74072265625,
+						448.435913085938
+					],
+					[
+						855.74072265625,
+						491.246673583984
+					]
+				],
+				[
+					[
+						1161.18054199219,
+						421.305786132813
+					],
+					[
+						1161.18054199219,
+						332.116546630859
+					]
+				],
+				[
+					[
+						1231.66662597656,
+						543.391296386719
+					],
+					[
+						1231.66662597656,
+						586.202026367188
+					]
+				],
+				[
+					[
+						1208.17126464844,
+						543.391296386719
+					],
+					[
+						1165.67114257813,
+						552.202026367188
+					]
+				],
+				[
+					[
+						1067.19909667969,
+						665.476806640625
+					],
+					[
+						1067.19909667969,
+						746.287536621094
+					]
+				],
+				[
+					[
+						444.571838378906,
+						563.738891601563
+					],
+					[
+						384.071899414063,
+						572.549621582031
+					]
+				],
+				[
+					[
+						538.553344726563,
+						495.91357421875
+					],
+					[
+						538.553344726563,
+						406.724304199219
+					]
+				],
+				[
+					[
+						1114.18981933594,
+						746.867126464844
+					],
+					[
+						1114.18981933594,
+						789.677856445313
+					]
+				],
+				[
+					[
+						1008.46063232422,
+						970.690551757813
+					],
+					[
+						1008.46063232422,
+						881.501342773438
+					]
+				],
+				[
+					[
+						1184.67590332031,
+						529.826232910156
+					],
+					[
+						1184.67590332031,
+						646.636962890625
+					]
+				],
+				[
+					[
+						984.965270996094,
+						875.735107421875
+					],
+					[
+						984.965270996094,
+						918.545837402344
+					]
+				],
+				[
+					[
+						1208.17126464844,
+						448.435913085938
+					],
+					[
+						1208.17126464844,
+						359.246643066406
+					]
+				],
+				[
+					[
+						1266.90966796875,
+						509.478607177734
+					],
+					[
+						1266.90966796875,
+						626.289367675781
+					]
+				],
+				[
+					[
+						1078.94677734375,
+						482.348510742188
+					],
+					[
+						1078.94677734375,
+						393.159240722656
+					]
+				],
+				[
+					[
+						515.057983398438,
+						550.173828125
+					],
+					[
+						515.057983398438,
+						592.984619140625
+					]
+				],
+				[
+					[
+						973.217590332031,
+						638.3466796875
+					],
+					[
+						973.217590332031,
+						719.157409667969
+					]
+				],
+				[
+					[
+						1102.44213867188,
+						631.564147949219
+					],
+					[
+						1102.44213867188,
+						712.374877929688
+					]
+				],
+				[
+					[
+						996.712951660156,
+						679.041870117188
+					],
+					[
+						996.712951660156,
+						795.852600097656
+					]
+				],
+				[
+					[
+						984.965270996094,
+						523.043701171875
+					],
+					[
+						984.965270996094,
+						433.854461669922
+					]
+				],
+				[
+					[
+						879.236083984375,
+						597.651489257813
+					],
+					[
+						879.236083984375,
+						640.462280273438
+					]
+				],
+				[
+					[
+						996.712951660156,
+						787.562255859375
+					],
+					[
+						996.712951660156,
+						830.372985839844
+					]
+				],
+				[
+					[
+						1161.18054199219,
+						489.131042480469
+					],
+					[
+						1218.18054199219,
+						497.941833496094
+					]
+				],
+				[
+					[
+						714.7685546875,
+						475.566009521484
+					],
+					[
+						714.7685546875,
+						518.376770019531
+					]
+				],
+				[
+					[
+						526.8056640625,
+						462.000946044922
+					],
+					[
+						526.8056640625,
+						372.811706542969
+					]
+				],
+				[
+					[
+						1008.46063232422,
+						400.958190917969
+					],
+					[
+						1008.46063232422,
+						311.768920898438
+					]
+				],
+				[
+					[
+						855.74072265625,
+						448.435913085938
+					],
+					[
+						855.74072265625,
+						491.246673583984
+					]
+				],
+				[
+					[
+						1161.18054199219,
+						421.305786132813
+					],
+					[
+						1161.18054199219,
+						332.116546630859
+					]
+				],
+				[
+					[
+						1231.66662597656,
+						543.391296386719
+					],
+					[
+						1231.66662597656,
+						586.202026367188
+					]
+				],
+				[
+					[
+						1208.17126464844,
+						543.391296386719
+					],
+					[
+						1165.67114257813,
+						552.202026367188
+					]
+				],
+				[
+					[
+						1067.19909667969,
+						665.476806640625
+					],
+					[
+						1067.19909667969,
+						746.287536621094
+					]
+				],
+				[
+					[
+						444.571838378906,
+						563.738891601563
+					],
+					[
+						384.071899414063,
+						572.549621582031
+					]
+				],
+				[
+					[
+						538.553344726563,
+						495.91357421875
+					],
+					[
+						538.553344726563,
+						406.724304199219
+					]
+				],
+				[
+					[
+						1114.18981933594,
+						746.867126464844
+					],
+					[
+						1114.18981933594,
+						789.677856445313
+					]
+				],
+				[
+					[
+						1008.46063232422,
+						970.690551757813
+					],
+					[
+						1008.46063232422,
+						881.501342773438
+					]
+				],
+				[
+					[
+						1184.67590332031,
+						529.826232910156
+					],
+					[
+						1184.67590332031,
+						646.636962890625
+					]
+				],
+				[
+					[
+						984.965270996094,
+						875.735107421875
+					],
+					[
+						984.965270996094,
+						918.545837402344
+					]
+				],
+				[
+					[
+						1208.17126464844,
+						448.435913085938
+					],
+					[
+						1208.17126464844,
+						359.246643066406
+					]
+				],
+				[
+					[
+						1266.90966796875,
+						509.478607177734
+					],
+					[
+						1266.90966796875,
+						626.289367675781
+					]
+				]
+			],
+			"water_max_channel_delta": 0.0,
+			"water_pixels": 503,
+			"water_samples": [
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1142,
+						518
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1142,
+						520
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1142,
+						522
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1144,
+						518
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1144,
+						520
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1144,
+						522
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1146,
+						518
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1146,
+						520
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "tianjin",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1146,
+						522
+					],
+					"world": [
+						5010.42541102088,
+						2809.63202104414
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1107,
+						493
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1107,
+						495
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1107,
+						497
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1109,
+						493
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1109,
+						495
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1109,
+						497
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1111,
+						493
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1111,
+						495
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1111,
+						497
+					],
+					"world": [
+						4797.72593391226,
+						2656.75384928538
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1115,
+						526
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1115,
+						528
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1115,
+						530
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1117,
+						526
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1117,
+						528
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1117,
+						530
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1119,
+						526
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1119,
+						528
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "jinan",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1119,
+						530
+					],
+					"world": [
+						4842.20354549336,
+						2858.88
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1145,
+						571
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1145,
+						573
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1145,
+						575
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1147,
+						571
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1147,
+						573
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1147,
+						575
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1149,
+						571
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1149,
+						573
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1149,
+						575
+					],
+					"world": [
+						5028.64406824004,
+						3136.685
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1166,
+						599
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1166,
+						601
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1166,
+						603
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1168,
+						599
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1168,
+						601
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1168,
+						603
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1170,
+						599
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1170,
+						601
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "shanghai",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1170,
+						603
+					],
+					"world": [
+						5154.42541102088,
+						3308.46265362398
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1154,
+						592
+					],
+					"world": [
+						5082.42541102088,
+						3266.89343424233
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1154,
+						594
+					],
+					"world": [
+						5082.42541102088,
+						3266.89343424233
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1154,
+						596
+					],
+					"world": [
+						5082.42541102088,
+						3266.89343424233
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1156,
+						592
+					],
+					"world": [
+						5082.42541102088,
+						3266.89343424233
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1156,
+						594
+					],
+					"world": [
+						5082.42541102088,
+						3266.89343424233
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1156,
+						596
+					],
+					"world": [
+						5082.42541102088,
+						3266.89343424233
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1158,
+						592
+					],
+					"world": [
+						5082.42541102088,
+						3266.89343424233
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1158,
+						594
+					],
+					"world": [
+						5082.42541102088,
+						3266.89343424233
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1158,
+						596
+					],
+					"world": [
+						5082.42541102088,
+						3266.89343424233
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1138,
+						571
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1140,
+						571
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "nanjing",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1142,
+						571
+					],
+					"world": [
+						4984.72021918344,
+						3110.93
+					]
+				},
+				{
+					"city_id": "suzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1139,
+						572
+					],
+					"world": [
+						4989.21270551044,
+						3129.93861486067
+					]
+				},
+				{
+					"city_id": "suzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1139,
+						574
+					],
+					"world": [
+						4989.21270551044,
+						3129.93861486067
+					]
+				},
+				{
+					"city_id": "suzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1141,
+						572
+					],
+					"world": [
+						4989.21270551044,
+						3129.93861486067
+					]
+				},
+				{
+					"city_id": "suzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1141,
+						574
+					],
+					"world": [
+						4989.21270551044,
+						3129.93861486067
+					]
+				},
+				{
+					"city_id": "suzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1143,
+						572
+					],
+					"world": [
+						4989.21270551044,
+						3129.93861486067
+					]
+				},
+				{
+					"city_id": "suzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1143,
+						574
+					],
+					"world": [
+						4989.21270551044,
+						3129.93861486067
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1148,
+						602
+					],
+					"world": [
+						5044.28360734726,
+						3328.01069238729
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1148,
+						604
+					],
+					"world": [
+						5044.28360734726,
+						3328.01069238729
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1148,
+						606
+					],
+					"world": [
+						5044.28360734726,
+						3328.01069238729
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1150,
+						602
+					],
+					"world": [
+						5044.28360734726,
+						3328.01069238729
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1150,
+						604
+					],
+					"world": [
+						5044.28360734726,
+						3328.01069238729
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1150,
+						606
+					],
+					"world": [
+						5044.28360734726,
+						3328.01069238729
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1152,
+						602
+					],
+					"world": [
+						5044.28360734726,
+						3328.01069238729
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1152,
+						604
+					],
+					"world": [
+						5044.28360734726,
+						3328.01069238729
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1152,
+						606
+					],
+					"world": [
+						5044.28360734726,
+						3328.01069238729
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1137,
+						582
+					],
+					"world": [
+						4982.08066618302,
+						3200.63
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1137,
+						584
+					],
+					"world": [
+						4982.08066618302,
+						3200.63
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1137,
+						586
+					],
+					"world": [
+						4982.08066618302,
+						3200.63
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1139,
+						582
+					],
+					"world": [
+						4982.08066618302,
+						3200.63
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1139,
+						584
+					],
+					"world": [
+						4982.08066618302,
+						3200.63
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1139,
+						586
+					],
+					"world": [
+						4982.08066618302,
+						3200.63
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1141,
+						582
+					],
+					"world": [
+						4982.08066618302,
+						3200.63
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1141,
+						584
+					],
+					"world": [
+						4982.08066618302,
+						3200.63
+					]
+				},
+				{
+					"city_id": "hangzhou",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1141,
+						586
+					],
+					"world": [
+						4982.08066618302,
+						3200.63
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1139,
+						611
+					],
+					"world": [
+						4989.21270551044,
+						3379.35393115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1139,
+						613
+					],
+					"world": [
+						4989.21270551044,
+						3379.35393115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1139,
+						615
+					],
+					"world": [
+						4989.21270551044,
+						3379.35393115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1141,
+						611
+					],
+					"world": [
+						4989.21270551044,
+						3379.35393115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1141,
+						613
+					],
+					"world": [
+						4989.21270551044,
+						3379.35393115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1141,
+						615
+					],
+					"world": [
+						4989.21270551044,
+						3379.35393115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1143,
+						611
+					],
+					"world": [
+						4989.21270551044,
+						3379.35393115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1143,
+						613
+					],
+					"world": [
+						4989.21270551044,
+						3379.35393115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1143,
+						615
+					],
+					"world": [
+						4989.21270551044,
+						3379.35393115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1139,
+						580
+					],
+					"world": [
+						4989.21270551044,
+						3188.58273115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1141,
+						580
+					],
+					"world": [
+						4989.21270551044,
+						3188.58273115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1143,
+						580
+					],
+					"world": [
+						4989.21270551044,
+						3188.58273115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1143,
+						582
+					],
+					"world": [
+						4989.21270551044,
+						3188.58273115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1143,
+						584
+					],
+					"world": [
+						4989.21270551044,
+						3188.58273115059
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1130,
+						598
+					],
+					"world": [
+						4935.73078412002,
+						3299.595
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1130,
+						600
+					],
+					"world": [
+						4935.73078412002,
+						3299.595
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1130,
+						602
+					],
+					"world": [
+						4935.73078412002,
+						3299.595
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1132,
+						598
+					],
+					"world": [
+						4935.73078412002,
+						3299.595
+					]
+				},
+				{
+					"city_id": "ningbo",
+					"max_channel_delta": 0.0,
+					"pixel": [
+						1132,
+						600
+					],
+					"world": [
+						4935.73078412002,
+						3299.595
+					]
+				}
+			]
+		}
+	],
+	"checks": [
+		{
+			"name": "shipping_map_uses_source_bound_land_clipping",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:tianjin_natural",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:tianjin_control",
+			"passed": true
+		},
+		{
+			"name": "source_water_pixels_are_visible_and_sampled:tianjin",
+			"passed": true
+		},
+		{
+			"name": "control_toggle_does_not_recolor_source_water_pixels:tianjin",
+			"passed": true
+		},
+		{
+			"name": "land_ownership_wash_still_changes_actual_pixels:tianjin",
+			"passed": true
+		},
+		{
+			"name": "minimap_source_water_is_sampled:tianjin",
+			"passed": true
+		},
+		{
+			"name": "minimap_control_toggle_does_not_recolor_source_water:tianjin",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:osaka_natural",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:osaka_control",
+			"passed": true
+		},
+		{
+			"name": "source_water_pixels_are_visible_and_sampled:osaka",
+			"passed": true
+		},
+		{
+			"name": "control_toggle_does_not_recolor_source_water_pixels:osaka",
+			"passed": true
+		},
+		{
+			"name": "land_ownership_wash_still_changes_actual_pixels:osaka",
+			"passed": true
+		},
+		{
+			"name": "minimap_source_water_is_sampled:osaka",
+			"passed": true
+		},
+		{
+			"name": "minimap_control_toggle_does_not_recolor_source_water:osaka",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:baku_natural",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:baku_control",
+			"passed": true
+		},
+		{
+			"name": "source_water_pixels_are_visible_and_sampled:baku",
+			"passed": true
+		},
+		{
+			"name": "control_toggle_does_not_recolor_source_water_pixels:baku",
+			"passed": true
+		},
+		{
+			"name": "land_ownership_wash_still_changes_actual_pixels:baku",
+			"passed": true
+		},
+		{
+			"name": "minimap_source_water_is_sampled:baku",
+			"passed": true
+		},
+		{
+			"name": "minimap_control_toggle_does_not_recolor_source_water:baku",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:singapore_natural",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:singapore_control",
+			"passed": true
+		},
+		{
+			"name": "source_water_pixels_are_visible_and_sampled:singapore",
+			"passed": true
+		},
+		{
+			"name": "control_toggle_does_not_recolor_source_water_pixels:singapore",
+			"passed": true
+		},
+		{
+			"name": "land_ownership_wash_still_changes_actual_pixels:singapore",
+			"passed": true
+		},
+		{
+			"name": "minimap_source_water_is_sampled:singapore",
+			"passed": true
+		},
+		{
+			"name": "minimap_control_toggle_does_not_recolor_source_water:singapore",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:overview_natural",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture:overview_control",
+			"passed": true
+		},
+		{
+			"name": "source_water_pixels_are_visible_and_sampled:overview",
+			"passed": true
+		},
+		{
+			"name": "control_toggle_does_not_recolor_source_water_pixels:overview",
+			"passed": true
+		},
+		{
+			"name": "land_ownership_wash_still_changes_actual_pixels:overview",
+			"passed": true
+		},
+		{
+			"name": "minimap_source_water_is_sampled:overview",
+			"passed": true
+		},
+		{
+			"name": "minimap_control_toggle_does_not_recolor_source_water:overview",
+			"passed": true
+		},
+		{
+			"name": "native_camera_and_control_toggles_preserve_all_rules_and_random_state",
+			"passed": true
+		}
+	],
+	"clip_data_sha256": "d5c291280e7f10fa64346e917e533e3ca910a96a0cb952912cf2b81a5ba60f48",
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"ew6_parity_claimed": false,
+	"failures": [],
+	"normal_shipping_renderer": true,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"resolution": "(1920.0, 1080.0)",
+	"source_map_sha256": "268ab58f6d5bd40c8e88d151449bab27170ac5b5c61ceaa310d84b26334de0ae",
+	"source_water_witnesses": 165
+}
