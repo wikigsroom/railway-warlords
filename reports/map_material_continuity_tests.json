@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.16",
+	"build_version": "0.2.17",
 	"checks": [
 		{
 			"name": "existing_twenty_types_eighty_details_retained",
@@ -98,7 +98,7 @@
 			"passed": true
 		},
 		{
-			"name": "drawn_mesh_uvs_share_world_phase_across_positive_and_negative_hexes",
+			"name": "source_blend_weights_form_a_partition_for_positive_and_negative_hexes",
 			"passed": true
 		},
 		{
@@ -107,6 +107,46 @@
 		},
 		{
 			"name": "all_continuous_ground_draws_before_fine_originals",
+			"passed": true
+		},
+		{
+			"name": "continuous_mesh_area_equals_exact_hex_partition_without_overlapping_apertures",
+			"passed": true
+		},
+		{
+			"name": "continuous_ground_stays_inside_the_reserved_source_land_footprint",
+			"passed": true
+		},
+		{
+			"name": "overview_retains_continuous_geographic_materials_without_fine_cell_overlays",
+			"passed": true
+		},
+		{
+			"name": "interior_regions_have_constant_opacity_including_material_boundaries",
+			"passed": true
+		},
+		{
+			"name": "source_cell_centres_keep_their_registered_material_identity",
+			"passed": true
+		},
+		{
+			"name": "repeated_view_preparation_preserves_world_anchored_vertices_weights_and_source_ids",
+			"passed": true
+		},
+		{
+			"name": "continental_cache_covers_every_registered_cell_and_retains_both_source_types",
+			"passed": true
+		},
+		{
+			"name": "panning_and_selection_reuse_identical_ground_mesh_resources",
+			"passed": true
+		},
+		{
+			"name": "offscreen_chunk_bounds_cull_ground_without_rebuilding_it",
+			"passed": true
+		},
+		{
+			"name": "wide_map_submission_preserves_visible_source_cells_without_drawing_the_entire_map",
 			"passed": true
 		},
 		{
@@ -120,6 +160,6 @@
 	],
 	"failures": [],
 	"formal_art_approval": false,
-	"macro_vertices_checked": 270,
+	"macro_vertices_checked": 180,
 	"passed": true
 }

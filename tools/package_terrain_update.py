@@ -55,7 +55,8 @@ def main():
                 'terrain_surface_asset_audit.json', 'terrain_surface_source_review.json',
                 'ground_macro_generation.json', 'ground_macro_asset_audit.json', 'ground_macro_source_review.json',
                 'terrain_surface_native_evidence.json', 'river_surface_native_review.json', 'apk_content_validation.json',
-                'control_land_clip_audit.json', 'control_land_native_evidence.json', 'control_land_native_review.json']
+                'control_land_clip_audit.json', 'control_land_native_evidence.json', 'control_land_native_review.json',
+                'ground_continuity_native_evidence.json']
     for name in required:
         path = P / 'reports' / name
         require(read(path).get('passed') is True, 'Required evidence failed: ' + name)
@@ -116,6 +117,19 @@ def main():
                     and read(metadata)['build_version'] == version, 'Coast viewport changed')
             captures.update([path, metadata])
     require(len(captures) == 112 * 2, 'Complete current 112-view terrain/UI/coast evidence required')
+    ground = read(P / 'reports/ground_continuity_native_evidence.json')
+    require(ground['version'] == version and ground['runtime_source_sha256'] == runtime
+            and ground['windows_exe_sha256'] == native['windows_exe_sha256'] and ground['checks'] == 44
+            and ground['twenty_whole_originals_verified'] and ground['same_family_coverage_verified']
+            and ground['three_material_draw_order_verified'] and ground['world_phase_verified'],
+            'Current complete native continuous-ground fixture proof required')
+    for name, key in [('report', 'report_sha256'), ('log', 'log_sha256')]:
+        path = P / ground[name]
+        require(sha(path) == ground[key], 'Native material proof changed')
+        reports.add(path)
+    require(all(row['city_influence_fill_draws'] == 0 and row['field_fill_batches'] > 0
+                and row['continuous_ground_shader_active'] for group in control['groups'] for row in group['cases']),
+            'Continental controls must not stack city-influence fills over the field')
     details = next(group for group in native['groups'] if group['kind'] == 'details')
     detail_rows = {Path(row['file']).stem:row for row in details['captures']}
     for name in ['yangtze', 'nanjing', 'yangtze_x30']:
@@ -168,6 +182,8 @@ def main():
                    total_rasters=len(assets), total_map_assets=970,
                    native_groups=len(native['groups']), native_captures=92,
                    coastal_control_land_clipped=True, source_lake_islands_preserved=True,
+                   continuous_ground_nonoverlapping=True, exclusive_continental_control_fill=True,
+                   native_material_fixture_checks=ground['checks'],
                    control_native_groups=len(control['groups']), control_native_captures=20, total_native_captures=len(captures)//2,
                    current_native_capacity=True, full_ai_endurance_rerun=False,
                    physical_android_device_tested=False, formal_art_approval=False, ew6_parity_claimed=False)
@@ -188,7 +204,7 @@ def main():
 
 运行 RailwayWarlords.exe，无需安装 Godot。
 20 类地域地表各有 1 张连续底材与 4 张细节原图；说明书内可打开地形图鉴。
-本版按真实陆地裁切亚洲控制区，主图与缩略图共享网格，保留真实湖中岛屿；沿用连续河面、河岸与水纹。
+本版连续混合相邻地表，减少蜂窝接缝；亚洲控制区使用单层半透明覆盖，保留真实岸线、岛屿和连续水纹。
 点选部队、选目标、再次点击确认；拖动平移、滚轮缩放、空格跳过战斗演出。
 本版为可玩测试交付，X30 真机与完整 AI 长局尚未在本轮复验。
 ''', encoding='utf-8')
@@ -220,7 +236,7 @@ def main():
         require(hashlib.sha256(archive.read(exe.name)).hexdigest() == sha(exe), 'Windows archive differs from tested EXE')
     require(sha(android) == sha(apk) and source_digest()[0] == runtime, 'Delivery identity changed')
     manifest = dict(version=version, created_at_utc=datetime.now(timezone.utc).isoformat(),
-                    release_kind='scoped_source_clipped_terrain_and_war_room_ui_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
+                    release_kind='scoped_continuous_ground_and_exclusive_control_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
                     regression=regression, capacity=capacity, source_pngs_modified=False, manual_image_compositing=False,
                     source_image_location='game/railway_warlords/assets; byte-identical generated originals, portable prompt/provenance copies in docs',
                     original_production_tree_duplicated=False, old_releases_modified=False,
@@ -233,6 +249,7 @@ def main():
     shutil.copyfile(P / 'docs/31_连续地表与水系层次.md', out / '连续地表与水系层次.md')
     shutil.copyfile(P / 'docs/32_真实河段连续水面.md', out / '真实河段连续水面.md')
     shutil.copyfile(P / 'docs/33_真实海岸与控制区裁切.md', out / '真实海岸与控制区裁切.md')
+    shutil.copyfile(P / 'docs/34_连续地表混合与控制色去重.md', out / '连续地表混合与控制色去重.md')
     (out / '交付说明.md').write_text(f'''# 铁道烽烟 {version} · 地表与界面测试交付
 
 Windows：解压 RailwayWarlords-Windows-{version}.zip，运行 RailwayWarlords.exe。
@@ -240,8 +257,9 @@ Android：安装 RailwayWarlords-{version}.apk，延续现有签名。目标样�
 Godot：解压工程 ZIP，用 Godot 4.7.2 打开 game/railway_warlords/project.godot。
 
 保留 20 类地域地表、80 张细节原图和 20 张连续底材，共 100 张专用地表原图；地图素材共 970 张，全部 PNG 共 1,156 张。本版未增加栅格原图。
+本版将重复羽化材质改为不重叠的地表网格，三种相邻来源连续混合；各地图总览仍显示地域底材。亚洲控制区不再重复叠加城市影响色。44项原生材质夹具检查核对20种完整导入纹理、连续覆盖、绘制顺序和平移稳定性；夹具不冒充历史地图画面。
 沿用上一轮共享世界纹理的渐变主河水面；汉口、南京的31条替代主河使用既有60米有界显示圆角，上下游共用端点共享接头方向。细支流使用抗锯齿线，水陆纹理和地格规则保持来源约束。河宽是制图符号，不是历史实测岸线。
-本版重点按既有真实陆地裁切亚洲战略层控制区：61个城市影响区和617个沿海控制格保留实际陆地部分，14个完全离岸候选格不绘制；主地图与缩略图共享裁切网格。里海水面扣除来源中独立的岛屿，保留真实湖中陆地。地理数据、历史归属和规则格未重写。
+沿用上一轮依据既有真实陆地裁切的亚洲战略层控制区：61个城市影响区和617个沿海控制格保留实际陆地部分，14个完全离岸候选格不绘制；主地图与缩略图共享裁切网格。里海水面扣除来源中独立的岛屿，保留真实湖中陆地。地理数据、历史归属和规则格未重写。
 说明书与地格详情均可进入交互地形图鉴。材质按生态区、高程与既有河谷选取；不宣称逐年历史土地利用复原。
 
 当前 {summary['regression_groups']} 组 / {summary['regression_checks']} 项回归通过；92张地表/UI及局部地图、20张海岸控制层开关截图，共112张原生画面、双桌面视口容量与APK载荷已绑定本次EXE/源码哈希。五处海岸/总览的主图和缩略图水面像素均经开关对照。

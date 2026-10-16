@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.16",
+	"build_version": "0.2.17",
 	"captures": [
 		{
 			"control_enabled": false,
@@ -54,6 +54,9 @@
 	],
 	"cases": [
 		{
+			"city_influence_fill_draws": 0,
+			"continuous_ground_shader_active": true,
+			"field_fill_batches": 16,
 			"id": "tianjin",
 			"land_changed_samples": 24,
 			"minimap_water_max_channel_delta": 0.0,
@@ -1486,6 +1489,9 @@
 			]
 		},
 		{
+			"city_influence_fill_draws": 0,
+			"continuous_ground_shader_active": true,
+			"field_fill_batches": 16,
 			"id": "osaka",
 			"land_changed_samples": 24,
 			"minimap_water_max_channel_delta": 0.0,
@@ -2898,6 +2904,9 @@
 			]
 		},
 		{
+			"city_influence_fill_draws": 0,
+			"continuous_ground_shader_active": true,
+			"field_fill_batches": 16,
 			"id": "baku",
 			"land_changed_samples": 24,
 			"minimap_water_max_channel_delta": 0.0,
@@ -4170,6 +4179,9 @@
 			]
 		},
 		{
+			"city_influence_fill_draws": 0,
+			"continuous_ground_shader_active": true,
+			"field_fill_batches": 16,
 			"id": "singapore",
 			"land_changed_samples": 24,
 			"minimap_water_max_channel_delta": 0.0,
@@ -4926,6 +4938,9 @@
 			]
 		},
 		{
+			"city_influence_fill_draws": 0,
+			"continuous_ground_shader_active": true,
+			"field_fill_batches": 16,
 			"id": "overview",
 			"land_changed_samples": 24,
 			"minimap_water_max_channel_delta": 0.0,
@@ -6624,6 +6639,10 @@
 			"passed": true
 		},
 		{
+			"name": "shipping_continental_renderer_uses_one_control_coverage_layer:tianjin",
+			"passed": true
+		},
+		{
 			"name": "minimap_source_water_is_sampled:tianjin",
 			"passed": true
 		},
@@ -6649,6 +6668,10 @@
 		},
 		{
 			"name": "land_ownership_wash_still_changes_actual_pixels:osaka",
+			"passed": true
+		},
+		{
+			"name": "shipping_continental_renderer_uses_one_control_coverage_layer:osaka",
 			"passed": true
 		},
 		{
@@ -6680,6 +6703,10 @@
 			"passed": true
 		},
 		{
+			"name": "shipping_continental_renderer_uses_one_control_coverage_layer:baku",
+			"passed": true
+		},
+		{
 			"name": "minimap_source_water_is_sampled:baku",
 			"passed": true
 		},
@@ -6708,6 +6735,10 @@
 			"passed": true
 		},
 		{
+			"name": "shipping_continental_renderer_uses_one_control_coverage_layer:singapore",
+			"passed": true
+		},
+		{
 			"name": "minimap_source_water_is_sampled:singapore",
 			"passed": true
 		},
@@ -6733,6 +6764,10 @@
 		},
 		{
 			"name": "land_ownership_wash_still_changes_actual_pixels:overview",
+			"passed": true
+		},
+		{
+			"name": "shipping_continental_renderer_uses_one_control_coverage_layer:overview",
 			"passed": true
 		},
 		{

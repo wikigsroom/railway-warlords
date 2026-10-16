@@ -84,6 +84,7 @@ func compare(natural: Image, controlled: Image, blocked: Array, id: String, sour
 			if land_changed>=24:break
 		if land_changed>=24:break
 	check(land_changed>=3,"land_ownership_wash_still_changes_actual_pixels:"+id)
+	check(view.backdrop_view.city_control_fill_draw_count==0 and view.backdrop_view.territory_field_fill_draw_count>0,"shipping_continental_renderer_uses_one_control_coverage_layer:"+id)
 	var minimap_count=0;var minimap_maximum=0.0;var mini=view.minimap
 	var factor=minf((mini.size.x-16)/mini.extent.x,(mini.size.y-16)/mini.extent.y)
 	var mini_clear=mini.get_global_rect().grow(-9);var mini_used: Dictionary={}
@@ -96,6 +97,8 @@ func compare(natural: Image, controlled: Image, blocked: Array, id: String, sour
 	check(minimap_maximum<=2.0,"minimap_control_toggle_does_not_recolor_source_water:"+id)
 	cases.append({"id":id,"water_pixels":count,"water_max_channel_delta":maximum,"land_changed_samples":land_changed,
 		"minimap_water_pixels":minimap_count,"minimap_water_max_channel_delta":minimap_maximum,"water_samples":records,
+		"city_influence_fill_draws":view.backdrop_view.city_control_fill_draw_count,"field_fill_batches":view.backdrop_view.territory_field_fill_draw_count,
+		"continuous_ground_shader_active":view.backdrop_view.material!=null,
 		"rendered_label_leaders":label_leaders.map(func(segment):return [[segment[0].x,segment[0].y],[segment[1].x,segment[1].y]])})
 
 func execute() -> void:

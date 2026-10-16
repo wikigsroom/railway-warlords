@@ -1,20 +1,23 @@
 {
   "passed": true,
-  "version": "0.2.16",
-  "runtime_source_sha256": "3ceffd894d4dacfce4c1af38ae5baddfea2f0792a744e25e7713c798f8e5d4c2",
-  "windows_exe_sha256": "d47d0b68d7fccc50b5601b2e3fdf9c8b1fdc23df55c1e77f109565c8ed82758d",
+  "version": "0.2.17",
+  "runtime_source_sha256": "c729e9109a39f39060f44daef7844d5865b46c74ee52533e5996afadc64d6877",
+  "windows_exe_sha256": "2d9fb3c1fc71af16cfe832c760c248e0770699ced0c5076ef4936cc10c1d03df",
   "clip_data_sha256": "d5c291280e7f10fa64346e917e533e3ca910a96a0cb952912cf2b81a5ba60f48",
   "groups": [
     {
       "profile": "windows",
       "resolution": "1920x1080",
       "ui_scale": "1.0",
-      "checks": 37,
+      "checks": 42,
       "report": "reports/screenshots/control_land_native/windows/validation.json",
-      "report_sha256": "bc6c7b72525d71a1b3650a9751b5304076539e2ad7bbd4efafdb6a00f9378742",
+      "report_sha256": "21627e63927a4e78a5880714bec528598560673936a46d5925cf45b4f322715a",
       "log": "reports/control_land_windows.log",
       "cases": [
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "tianjin",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -1467,6 +1470,9 @@
           ]
         },
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "osaka",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -2819,6 +2825,9 @@
           ]
         },
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "baku",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -4051,6 +4060,9 @@
           ]
         },
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "singapore",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -4935,6 +4947,9 @@
           ]
         },
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "overview",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -6650,63 +6665,63 @@
       "captures": [
         {
           "file": "reports/screenshots/control_land_native/windows/tianjin_natural.png",
-          "sha256": "86173894a84acdabec7f38be0b80723acb91f4ee98ec8d9257750b27bbfa0a7b",
+          "sha256": "dbc8a074158edf4d9415fc679da830524dc3fe8851144aacecf9fdd611dc27ba",
           "metadata": "reports/screenshots/control_land_native/windows/tianjin_natural.json",
-          "metadata_sha256": "218edce297fa8f002836791626702b8a62c61223604536bcff76b60000b1e507"
+          "metadata_sha256": "12dc67af41f72566fd31b36e663135d5c2d4d911c33e87a90503c83119b18857"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/tianjin_control.png",
-          "sha256": "6a334ed975132d87006df74d7d3a44fa99cdcf8239999522ef2a90fa1ffd0428",
+          "sha256": "08f8583bf49dc46809f913fdde109915c2c9080c502c83c30b7a9d8069278fe6",
           "metadata": "reports/screenshots/control_land_native/windows/tianjin_control.json",
-          "metadata_sha256": "a025d1302d983133c29edcd3497380d90b468d7c7bdd724cf8a35ea85f2ae175"
+          "metadata_sha256": "e00412d251a8f8cf4e6a2b09007064101125dc6fc2a8b4c960618c9a002d1ee5"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/osaka_natural.png",
-          "sha256": "56d94397b7d0f626bd3d282c90a9e7ad06e136780676c3ff188c119cd505c453",
+          "sha256": "e72e54dd327c2f1c2296d0f91ddbe310ba69ce2592b3e495e9880d25586213e9",
           "metadata": "reports/screenshots/control_land_native/windows/osaka_natural.json",
-          "metadata_sha256": "9399313f67d2db301c11a6945e9eb44ff2d0cbaf0bf1fafd88258e5d32386170"
+          "metadata_sha256": "2660a3a967565792efdd6a2bc46e98931dfbdd30b7ef8bf2094b8de73327284b"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/osaka_control.png",
-          "sha256": "f8aa4834c3bbd84d2562f96c32de4163917b05b947e39162956dce2ae56a9f40",
+          "sha256": "3486c556fe472689b7ef8d6892faee79753902cc04e1273d5fd2ee0c2f96ce61",
           "metadata": "reports/screenshots/control_land_native/windows/osaka_control.json",
-          "metadata_sha256": "6e9c7843e78748c74c07b0121793ddcba31241e1bd39b1126b313fa5778809e5"
+          "metadata_sha256": "2253da7e2b865acfac1e8db860e0a5e821a0f51a45b5d306589cb8ecbc6e4787"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/baku_natural.png",
-          "sha256": "04710d515df20c3b9ce94557431ecadb484c31d101ca3de9ef46c378fd8c1dd2",
+          "sha256": "67337d5c84e5fac26abfda275989679022164f89a517058930bf1b37c68549d7",
           "metadata": "reports/screenshots/control_land_native/windows/baku_natural.json",
-          "metadata_sha256": "c14fe5bf8ca2cc409d24a0f17ca2f59f168e6b899d848a1ecd022564a424c156"
+          "metadata_sha256": "047d0bd0ea7f9bd535c85e33974a791a89253950d057155a28bbab48cb1a94d8"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/baku_control.png",
-          "sha256": "60ad1f7b4ef7802063d5752bf956a19a731732c26b06663a79f79cc387089b32",
+          "sha256": "5d949bbb022778e9562f987b623c0fcb1f8bcf59a0c21c5a3c6285ede2be7cf9",
           "metadata": "reports/screenshots/control_land_native/windows/baku_control.json",
-          "metadata_sha256": "9d8626c503e3be6218feb268db6d7c49beb50c752853a9688261c8ab46042f7e"
+          "metadata_sha256": "d45165347f857cd7092e5d4cfeaed21b37c7dba114c65c4d4f180a2e5511ea0a"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/singapore_natural.png",
-          "sha256": "3ea21ec93fbc1f79cd7f51acd9cb3056fd7f17c41b01dbb690cddb1ae621e7bf",
+          "sha256": "2cd8675499afd18e469a66fc3cb3b9ed0f3c40a981f5e9b2efd275cea48646a8",
           "metadata": "reports/screenshots/control_land_native/windows/singapore_natural.json",
-          "metadata_sha256": "83dc9712966835b6c593fb6b03e5c9268bfde8a3695bb67d5f6827c4370babf2"
+          "metadata_sha256": "818037267f3b3611f83ba11f851341dd216bad27a8e2a9fd2f7a1610bda216e4"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/singapore_control.png",
-          "sha256": "58766d40c9f878fef090e59d30f2dd8646631a9e01578878c0aabcde7ba287a5",
+          "sha256": "2cc7d72c5df17146e7197bb37d258859864eb2814aa45e42a61b4e41e5b6b88b",
           "metadata": "reports/screenshots/control_land_native/windows/singapore_control.json",
-          "metadata_sha256": "c909849d26f25f1234ab5811d77297438ee3f4028ae24c98c043701093b72614"
+          "metadata_sha256": "4df384d5c34dd437c39403df0547d8eb556379950bdbce8cb740fb865da73d8b"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/overview_natural.png",
-          "sha256": "b7d081774e441439b1170fbb09ee4d6347fb31bfc5d7765978cca413158c1d72",
+          "sha256": "2bd6f5fd8b17fe6e44ae93ffef8a37c6321a33cfd0092cfed7caba1b47b31a14",
           "metadata": "reports/screenshots/control_land_native/windows/overview_natural.json",
-          "metadata_sha256": "6cf96d67d32b9fa9b87209667185258ec2e8c797e089d8d97a3a3ab058682078"
+          "metadata_sha256": "e7290296d822cee45bbad86167925c782f479ada5ecd1ac152da1877ce684bc4"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/overview_control.png",
-          "sha256": "39605b2bf61d60c2346467d5dd0108c7d55b9a72dd5586d28d741e8722a795bb",
+          "sha256": "3e5b61c0466de615387fe79d774c491844edb4478474c4ba9eb81bc39a386123",
           "metadata": "reports/screenshots/control_land_native/windows/overview_control.json",
-          "metadata_sha256": "007b3e98dd4c7a46022701e54048bfd60b1019681fdb4ad51ec4e4acbd69d827"
+          "metadata_sha256": "8b8fb75bad4cc1c2edf6593eee7dc4fd8b6a35e7a26680c86e765a37c8f7af1f"
         }
       ]
     },
@@ -6714,12 +6729,15 @@
       "profile": "x30_layout",
       "resolution": "2400x1080",
       "ui_scale": "1.2",
-      "checks": 37,
+      "checks": 42,
       "report": "reports/screenshots/control_land_native/x30_layout/validation.json",
-      "report_sha256": "225ddef8b392adcc85bece15fa28efb7cba6a66f8679c76200083df16300af08",
+      "report_sha256": "534b60b19db720b5f8fdee30abb4bf1b552ce6836b87160801c405cd15c5a69f",
       "log": "reports/control_land_x30_layout.log",
       "cases": [
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "tianjin",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -8152,6 +8170,9 @@
           ]
         },
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "osaka",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -9564,6 +9585,9 @@
           ]
         },
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "baku",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -10836,6 +10860,9 @@
           ]
         },
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "singapore",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -11592,6 +11619,9 @@
           ]
         },
         {
+          "city_influence_fill_draws": 0,
+          "continuous_ground_shader_active": true,
+          "field_fill_batches": 16,
           "id": "overview",
           "land_changed_samples": 24,
           "minimap_water_max_channel_delta": 0.0,
@@ -13267,63 +13297,63 @@
       "captures": [
         {
           "file": "reports/screenshots/control_land_native/x30_layout/tianjin_natural.png",
-          "sha256": "0c9d359028eec82388f0551f9a884820d2ab0aec264fa6869e1afde8392ffb3b",
+          "sha256": "621bd9d0ef4bbbc8c72f984e48ed25528cd70a5a18b43ec5377b79b6e02bdea4",
           "metadata": "reports/screenshots/control_land_native/x30_layout/tianjin_natural.json",
-          "metadata_sha256": "bec41a2f6b338ee46b21edc1f368bf241adc8ee05949b82131a77080acba93a4"
+          "metadata_sha256": "675037584091f6f8698c0772c8660c0b582b2b64d35dd32395e61f7fc56222c5"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/tianjin_control.png",
-          "sha256": "87791951bdf2ce049226e86d96a10288d7c75df18f49b047731e514e7c532c3a",
+          "sha256": "c45cf937f16bafddcc474107b37e7e80645313e518478eb3ed3f4518a3bebb3f",
           "metadata": "reports/screenshots/control_land_native/x30_layout/tianjin_control.json",
-          "metadata_sha256": "0558d70141d3b74392bb1780977249cbd7fad47d623e7f8e15e983a393dfa4c3"
+          "metadata_sha256": "b9aaa257c380e99f95788d4205593a10f68b7fd4b6856dd38bb3b67b2b73bae4"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/osaka_natural.png",
-          "sha256": "95731542df3914b5c6e5af146bc42e1b9dd9a1f7e90d6c027ee6831d4274526a",
+          "sha256": "e68fbeec5fbaedadd83496761ff0df0b5969f488b3e295208008c0723d008a08",
           "metadata": "reports/screenshots/control_land_native/x30_layout/osaka_natural.json",
-          "metadata_sha256": "b8b12d001fd297403b4a71354c454fb0c13eae6f3415d16448fc3729f1a698f8"
+          "metadata_sha256": "0a614b4c070cbe0db6e9f088d4f8009f2e8a9b7784f8b954bce0784e7c25011e"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/osaka_control.png",
-          "sha256": "a73f394715e2487c7fa0523dc9dbc010ef53517c333464b02c867a5622773454",
+          "sha256": "5c85bb486e25e5387b5b0067cb220970558a65a3d5a4a9f050c11e3fe02bfb28",
           "metadata": "reports/screenshots/control_land_native/x30_layout/osaka_control.json",
-          "metadata_sha256": "d2b8cc442532a9364f2cf620a6c4346d526362ff0aeae0dd4c498477b55d0942"
+          "metadata_sha256": "4cc7fdb63aa4995ce189627bd484d13f2e40db7afa43c57722c51b955404b70f"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/baku_natural.png",
-          "sha256": "bf190302ad09565a79743bf460e59469fd28266293a035229e84aa1763ef7332",
+          "sha256": "5e5f03593187f6a1ca208e4eca7920ea8f8b64783c8034240b11b2ba82b109b0",
           "metadata": "reports/screenshots/control_land_native/x30_layout/baku_natural.json",
-          "metadata_sha256": "1718efa6334e452bfedfc66bec23d192796474868ea74f3d681a7b0d84caa7b7"
+          "metadata_sha256": "5e884f9fb5a59b55b886bf75741aa37a2ffa2e1fa3efc603f364a09d4472c1c7"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/baku_control.png",
-          "sha256": "f576c33788c9380574b2e2e60e67eeb9e05a1e56c1a565286e2b17b909d74aa4",
+          "sha256": "db76f4e3aab73988d0c8aa34f3fbde057d35025f6bbc7a5e3a7b70671347127b",
           "metadata": "reports/screenshots/control_land_native/x30_layout/baku_control.json",
-          "metadata_sha256": "edecf6c0e618a8559c28b778ef1aeaee6364eea56c10b9de852f69c5efd25130"
+          "metadata_sha256": "4971eaa4fc8387a2e1685534f15eddeca98ef60f2fbc0c9e3f5c6b66f25d5e1d"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/singapore_natural.png",
-          "sha256": "fa99fc8ac7a79b106896efba817fe4e81410e1f6aa9299900882e1df1a7013b2",
+          "sha256": "1ac39ac78e46a9ddd8ec6a8fff552a33734aea0097e6cc7bc56f5dcbb4e17bea",
           "metadata": "reports/screenshots/control_land_native/x30_layout/singapore_natural.json",
-          "metadata_sha256": "7fed72430441e1ceddd69a83432dfc7d62e6123c53196f46fa45e761660d1994"
+          "metadata_sha256": "eb4b1fb91397ad16d12012f70ba02a7090ee0b1e896d0ca28fc30d48ce48a425"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/singapore_control.png",
-          "sha256": "2a5d38f7d43bcfef01d2348067f137cba608f7a2980426fc077a0a5af1f53b6c",
+          "sha256": "5b1fd340f7e0c99256a439cff65809d57a90ec2bf806acd3149ca8c41f7a8538",
           "metadata": "reports/screenshots/control_land_native/x30_layout/singapore_control.json",
-          "metadata_sha256": "514efa6484eb7c3c6013898a94855de5a08779e390429d6be0d1b10a82642e3a"
+          "metadata_sha256": "3239878e3926cb59c16cf2b3ed1db88c2eca9b100a7080e85450ae972b67ece0"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/overview_natural.png",
-          "sha256": "4f859a0dacb91ef7937fe077678dde5400067d1880fb5cb2ebed39facbf25d95",
+          "sha256": "f01acb6818e3bd9ab0212a0154c9098061789d0243a13d409b3913df59fbafbe",
           "metadata": "reports/screenshots/control_land_native/x30_layout/overview_natural.json",
-          "metadata_sha256": "9fe20144fb1417c969f1741ec59f5815686b3e3d95dad64f2f72898729fad9ed"
+          "metadata_sha256": "6e0355b4a7a790bba9980133cc1f92dacb50d53ac7520bbd205ca64c7760d66b"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/overview_control.png",
-          "sha256": "9e1c8c2784155c74d18a98dfa040908ed20e21123f502e31916170241c664435",
+          "sha256": "e4a755fd3053ddc21677e0af64a815be1ad7d3508151c968b0d057c9f4ea1183",
           "metadata": "reports/screenshots/control_land_native/x30_layout/overview_control.json",
-          "metadata_sha256": "79dc61c8a91cd07e6b60f1717a7cf7742ffb84e4135dca64ccd37564a4f99cf4"
+          "metadata_sha256": "b9883f1398f2a0ff196b04a5ab28f2c36a2fa0cac17e4d91ed4cd8cab661690c"
         }
       ]
     }

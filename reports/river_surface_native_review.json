@@ -1,19 +1,19 @@
 {
   "passed": true,
-  "version": "0.2.16",
-  "runtime_source_sha256": "3ceffd894d4dacfce4c1af38ae5baddfea2f0792a744e25e7713c798f8e5d4c2",
-  "windows_exe_sha256": "d47d0b68d7fccc50b5601b2e3fdf9c8b1fdc23df55c1e77f109565c8ed82758d",
-  "created_at_utc": "2026-10-16T15:15:28.876971+00:00",
-  "scope": "Scoped agent review of nine complete current native viewports for retained river continuity, headwater legibility, representative regional materials and UI framing. Not a commercial art approval.",
+  "version": "0.2.17",
+  "runtime_source_sha256": "c729e9109a39f39060f44daef7844d5865b46c74ee52533e5996afadc64d6877",
+  "windows_exe_sha256": "2d9fb3c1fc71af16cfe832c760c248e0770699ced0c5076ef4936cc10c1d03df",
+  "created_at_utc": "2026-10-16T17:08:42.841030+00:00",
+  "scope": "Scoped agent review of nine complete current native viewports for continuous regional materials, retained source river continuity, headwater legibility and UI framing. Not a commercial art approval.",
   "images": [
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_dune_sand.png",
-      "sha256": "a73865d72374793a83a0251b189bfed18f4e85c6d967f16cbb99ff2180fd7a95",
+      "sha256": "1644376f0bad8fb4f7497776361c6118b21caa397575562651097501cc700045",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_litter.png",
-      "sha256": "1bf0e7a686940a3168ea9d1a7de312b3a726eeabaf11c337d253966f82e1ec84",
+      "sha256": "3b65dc45eeef8a1ce76b8e5bb5f3f73b68e899f2ec994b89f2b382b7508e7208",
       "viewed_complete_native_frame": true
     },
     {
@@ -23,32 +23,32 @@
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/mountain.png",
-      "sha256": "0c4c270f08ff0d4c064bf03d76361970ee7553e9915660d2cdf227bfc7cdb021",
+      "sha256": "b61c11bd7be89742fbbdb841915b996093bf25e996dcb2ccae256a93ed333e37",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/coast.png",
-      "sha256": "87784575997ceb2917970e49bb1ec090cc234f32dad9bd0411037d6f8a9c13b2",
+      "sha256": "f9bd142b12827c9fee538c3ba40a866fd49cfa19938466051808fe090b7a2a18",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/tributaries.png",
-      "sha256": "bf767f7523b8b9757deedf76c5dc88d902cdf6367d2d3a772ee57636f1d50060",
+      "sha256": "5ab51c300b286cf77f1e11c962025e86b1e7a7a2fd6a2ba8158793cdeaf63022",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/yangtze.png",
-      "sha256": "d4a42c7b017f6eafef0e68e1c904d1ae9941e5b8800985e8263e985fa3b02a1d",
+      "sha256": "3a21fc3a95b4586463d064d410a0843ec0fb93cde59eb272980d95149a348cdd",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/nanjing.png",
-      "sha256": "f177225badaf668b57f7b08d47fec51501e75245481b08b183b55bdb020658c7",
+      "sha256": "ad744f84ec6ec884cb0a0b1f2f2bde69ac7f0cd50a50c3aa2d1873f9ed5f3d1a",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/yangtze_x30.png",
-      "sha256": "ea7427f12cdbe66ae47e0b03d7dd569d7094728dcc86bf010bd359c099aef0b8",
+      "sha256": "9bc5278177bd6b1f4b7343c9a83629f7dcaf064c2a9a5b33577c85ad91c3716a",
       "viewed_complete_native_frame": true
     }
   ],
@@ -58,15 +58,16 @@
   "formal_art_approval": false,
   "ew6_parity_claimed": false,
   "observations": [
-    "The inspected Hankou and Nanjing source-linked main channels retain a continuous visible water ribbon, including the mobile-layout Hankou frame.",
-    "The inspected Yanshan headwaters render as continuous thin lines rather than the earlier stippled subpixel-triangle artifact.",
-    "Dune sand, temperate litter and the first atlas page retain distinct source materials and the atlas exposes independent texture choices.",
-    "The inspected mountain, coast and river frames retain the complete normal HUD and native screenshot bytes; no unsupported river bends or islands were painted in."
+    "Dune sand has a directional ochre surface, while the northeastern litter ground is mottled and earth-toned. The inspected atlas page exposes separate full-source material choices.",
+    "The inspected Yanshan mountain and headwater views retain continuous ground underneath scenery without the previous repeated per-cell feathering patches.",
+    "The inspected Hankou and Nanjing source-linked main channels retain a visible continuous water ribbon, including the mobile-layout Hankou frame.",
+    "The inspected Yanshan headwaters remain continuous thin lines; bends still show the coarseness of source geometry.",
+    "All nine inspected frames preserve the complete normal native viewport and HUD. No river bends, islands or source images were repainted or composited."
   ],
   "remaining_visual_issues": [
-    "Source-supported river and coastline geometry remains visibly angular at tactical zoom; primary ribbons still need more natural shore treatment within source constraints.",
-    "Local tactical administrative/control border strokes do not always visually coincide with the physical coastline; this release clips the Asian strategic control meshes, not all local boundary layers.",
-    "Continental ownership/terrain overlays still show large polygon and triangle patches; city and unit crowding reduces readability.",
+    "Source-supported river and coastline geometry remains visibly angular at tactical zoom; continuous ribbons still need finer shore transitions within source constraints.",
+    "Local tactical administrative and control borders do not always coincide visually with the physical coastline. The exclusive field wash applies to the Asian strategic map.",
+    "Coarse relief light facets, repeated scenery silhouettes and dense units and labels remain visible. Map boundaries expose the finite source extent.",
     "Full regional transition kits, location-specific ports and bridges, all-unit animation cycles and physical Motorola X30 verification remain outstanding."
   ]
 }

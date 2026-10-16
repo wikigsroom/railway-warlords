@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.16",
+	"build_version": "0.2.17",
 	"city_labels": [
 		{
 			"city_id": "tangshan",
@@ -38,7 +38,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1136.259,
+		"preparation_ms": 1832.199,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -137,6 +137,18 @@
 			"active": true,
 			"blend_inner_ratio": 0.7,
 			"checked_adjacent_pairs": 1294,
+			"continuous_ground": {
+				"active": true,
+				"city_influence_fill_draws": 0,
+				"field_fill_batches": 0,
+				"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+				"source_images_modified": false,
+				"source_layers": 20,
+				"whole_original_dimensions": [
+					1254,
+					1254
+				]
+			},
 			"fine_detail_alpha": 0.22,
 			"ground_alpha": 0.94,
 			"independent_originals": 80,
@@ -195,7 +207,7 @@
 		"terrain_feature_sprite_draw_count": 0,
 		"terrain_layer_visible": true,
 		"terrain_micro_symbol_draw_count": 0,
-		"terrain_surface_variant_draw_count": 987,
+		"terrain_surface_variant_draw_count": 3011,
 		"terrain_symbol_draw_count": 0,
 		"terrain_tile_draw_count": 6,
 		"territory_field_opacity": 0.21
@@ -220,13 +232,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 169.959,
+		"index_ms": 140.873,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2609.708,
+		"mesh_ms": 3552.146,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1157.354,
-		"preparation_ms": 3937.021,
+		"placement_ms": 1936.632,
+		"preparation_ms": 5629.65,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

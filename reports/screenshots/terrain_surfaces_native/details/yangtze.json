@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.16",
+	"build_version": "0.2.17",
 	"city_labels": [
 		{
 			"city_id": "wuchang",
@@ -62,7 +62,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 259,
 		"placed": 1,
-		"preparation_ms": 5.143,
+		"preparation_ms": 5.514,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 3,
 		"rule_cells_changed": false,
@@ -157,6 +157,18 @@
 			"active": true,
 			"blend_inner_ratio": 0.7,
 			"checked_adjacent_pairs": 505,
+			"continuous_ground": {
+				"active": true,
+				"city_influence_fill_draws": 3,
+				"field_fill_batches": 0,
+				"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+				"source_images_modified": false,
+				"source_layers": 20,
+				"whole_original_dimensions": [
+					1254,
+					1254
+				]
+			},
 			"fine_detail_alpha": 0.22,
 			"ground_alpha": 0.94,
 			"independent_originals": 80,
@@ -231,13 +243,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 0,
-		"index_ms": 10.786,
+		"index_ms": 11.677,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 24.409,
+		"mesh_ms": 19.809,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 0,
-		"placement_ms": 1.066,
-		"preparation_ms": 36.261,
+		"placement_ms": 1.071,
+		"preparation_ms": 32.556,
 		"rules_map_mutated": false,
 		"source": "SRTM90m_v3_five_point_samples",
 		"source_meters_per_world_unit": 26.0416666666667,

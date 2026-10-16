@@ -59,6 +59,10 @@ def main():
             path = P / row['path'].removeprefix('res://')
             metadata = path.with_suffix('.json')
             meta = read(metadata)
+            if kind == 'terrain' and 'map_selection' in row:
+                ground = row['map_selection']['terrain_surface_extension']['continuous_ground']
+                require(ground['active'] and ground['source_layers'] == 20,
+                        'Shipping continuous-ground shader unavailable: ' + path.name)
             require(meta['build_version'] == version and meta['raw_godot_capture'] and path.stat().st_mtime >= started - 2,
                     'Current raw Godot capture required: ' + path.name)
             with Image.open(path) as im:

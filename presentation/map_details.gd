@@ -11,11 +11,23 @@ var diagnostics: Dictionary={}
 var overhang=220.0
 var surface_template: Dictionary={}
 var surface_color_templates: Dictionary={}
+var blend_material: ShaderMaterial
+var blend_material_prepared=false
+var continuous_templates: Array=[]
+var continuous_vertices=PackedVector3Array()
+var continuous_uvs=PackedVector2Array()
+var continuous_color_templates: Dictionary={}
+var macro_chunks: Dictionary={}
+var macro_chunk_meshes: Dictionary={}
+var macro_index_prepared=false
+const MACRO_CHUNK_SIZE=16
 const SURFACE_BLEND_RADIUS=64.0
 const SURFACE_BLEND_INNER=.70
 
 func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array, rivers: Array) -> void:
 	features=[];buckets={};surfaces={};surface_families={};diagnostics={"active":false}
+	blend_material=null;blend_material_prepared=false
+	macro_chunks.clear();macro_chunk_meshes.clear();macro_index_prepared=false
 	if not MapArtBank.available():return
 	var started=Time.get_ticks_usec();var candidates: Array=[];var materials: Array=[]
 	for h in cells:
@@ -131,7 +143,7 @@ func visible_features(view: Rect2, zoom: float) -> Array:
 	for index in indices:result.append(features[index])
 	return result
 
-func surface_meshes(entries: Array, strategic: bool, limit: int=1900) -> Dictionary:
+func surface_meshes(entries: Array, strategic: bool, limit: int=1900, continuous: bool=true, fine_details: bool=true, include_macros: bool=true) -> Dictionary:
 	# Batch feathered hex materials by immutable source texture. This is native
 	# mesh drawing, not a generated-image composite or a stored raster atlas.
 	prepare_surface_template()
@@ -147,19 +159,22 @@ func surface_meshes(entries: Array, strategic: bool, limit: int=1900) -> Diction
 			alpha=float({"meadow":.56,"dry_grass":.58,"rocky_ground":.38,"woodland_floor":.60,"wetland_ground":.66,"sea_water":.10,"sandy_ground":.74,"arid_gravel":.68,"alluvial_soil":.58}.get(family,.0))
 			if strategic:alpha*=.86
 		if not groups.has(id):groups[id]={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
-		if not macro_id.is_empty() and not macro_groups.has(macro_id):macro_groups[macro_id]={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
+		if include_macros and not macro_id.is_empty() and not macro_groups.has(macro_id):macro_groups[macro_id]={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
 		var group: Dictionary=groups[id];var center=HexGrid.to_world(entry.hex)
 		# Transform and append whole packed arrays in native code. Rebuilding
 		# 54 vertices twice in GDScript for every visible cell stalled selection.
 		# Geometry, source UVs and feather weights retain the same layout.
 		var vertices: PackedVector3Array=Transform3D(Basis.IDENTITY,Vector3(center.x,center.y,0))*surface_template.vertices
-		group.vertices.append_array(vertices)
-		group.colors.append_array(surface_colors(alpha if macro_id.is_empty() else MapTerrainSurfaces.detail_alpha(strategic)))
-		group.uvs.append_array(surface_template.detail_uvs)
-		if not macro_id.is_empty():
+		if fine_details or macro_id.is_empty():
+			group.vertices.append_array(vertices)
+			group.colors.append_array(surface_colors(alpha if macro_id.is_empty() else MapTerrainSurfaces.detail_alpha(strategic)))
+			group.uvs.append_array(surface_template.detail_uvs)
+		if include_macros and not macro_id.is_empty():
 			var macro: Dictionary=macro_groups[macro_id]
-			macro.vertices.append_array(vertices);macro.colors.append_array(surface_colors(alpha))
-			macro.uvs.append_array(Transform2D(0.0,MapTerrainSurfaces.macro_uv(center))*surface_template.macro_uvs)
+			if continuous:append_continuous_ground(macro,entry.hex,family)
+			else:
+				macro.vertices.append_array(vertices);macro.colors.append_array(surface_colors(alpha))
+				macro.uvs.append_array(Transform2D(0.0,MapTerrainSurfaces.macro_uv(center))*surface_template.macro_uvs)
 		count+=1
 	var result: Array=[]
 	# Overlapping materials must keep their blend order while panning.
@@ -170,10 +185,69 @@ func surface_meshes(entries: Array, strategic: bool, limit: int=1900) -> Diction
 		var source_ids=layer.keys();source_ids.sort()
 		for id in source_ids:
 			var group: Dictionary=layer[id];var arrays=[];arrays.resize(Mesh.ARRAY_MAX)
+			if group.vertices.is_empty():continue
 			arrays[Mesh.ARRAY_VERTEX]=group.vertices;arrays[Mesh.ARRAY_COLOR]=group.colors;arrays[Mesh.ARRAY_TEX_UV]=group.uvs
 			var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
-			result.append({"asset_id":id,"mesh":mesh,"layer":"macro" if layer_index==0 else "detail"})
-	return {"count":count,"batches":result,"macro_materials":macro_groups.size()}
+			result.append({"asset_id":id,"mesh":mesh,"layer":"macro" if layer_index==0 else "detail","continuous":continuous and layer_index==0})
+	return {"count":count,"batches":result,"macro_materials":macro_groups.size(),"continuous":continuous}
+
+func continuous_macro_meshes(view: Rect2) -> Dictionary:
+	# World-fixed chunks retain the exact same material triangles at every zoom.
+	# Selection/panning only submits intersecting cached meshes; the 74k-cell
+	# map does not walk or rebuild all ground assignments during an atlas pan.
+	if not macro_index_prepared:
+		macro_index_prepared=true
+		for key in surfaces:
+			var family=str(surface_families.get(key,""))
+			if MapTerrainSurfaces.macro_id(family).is_empty():continue
+			var hex=HexGrid.from_key(key);var chunk=Vector2i(floori(float(hex.x)/MACRO_CHUNK_SIZE),floori(float(hex.y)/MACRO_CHUNK_SIZE))
+			var center=HexGrid.to_world(hex);var bounds=Rect2(center-Vector2.ONE*HexGrid.RADIUS,Vector2.ONE*HexGrid.RADIUS*2)
+			if not macro_chunks.has(chunk):macro_chunks[chunk]={"hexes":[],"bounds":bounds,"sources":{}}
+			macro_chunks[chunk].hexes.append(hex);macro_chunks[chunk].bounds=macro_chunks[chunk].bounds.merge(bounds)
+			macro_chunks[chunk].sources[MapTerrainSurfaces.macro_id(family)]=true
+	var batches: Array=[];var sources: Dictionary={};var count=0;var created=0
+	for chunk in macro_chunks:
+		var row: Dictionary=macro_chunks[chunk]
+		if not view.intersects(row.bounds):continue
+		if not macro_chunk_meshes.has(chunk):
+			var group={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
+			for hex in row.hexes:append_continuous_ground(group,hex,str(surface_families[HexGrid.key(hex)]))
+			var arrays=[];arrays.resize(Mesh.ARRAY_MAX)
+			arrays[Mesh.ARRAY_VERTEX]=group.vertices;arrays[Mesh.ARRAY_COLOR]=group.colors;arrays[Mesh.ARRAY_TEX_UV]=group.uvs
+			var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
+			macro_chunk_meshes[chunk]={"asset_id":row.sources.keys()[0],"mesh":mesh,"layer":"macro","continuous":true,"source_asset_ids":row.sources.keys()};created+=1
+		batches.append(macro_chunk_meshes[chunk]);sources.merge(row.sources);count+=row.hexes.size()
+	return {"count":count,"batches":batches,"macro_materials":sources.size(),"chunks_created":created,"chunks_submitted":batches.size(),"chunks_cached":macro_chunk_meshes.size()}
+
+func ground_material(strategic: bool) -> ShaderMaterial:
+	if not blend_material_prepared:
+		blend_material_prepared=true;blend_material=GroundMaterialBlend.material(strategic)
+	return blend_material
+
+func append_continuous_ground(group: Dictionary, hex: Vector2i, family: String) -> void:
+	# The six source-centre triangles partition the hex exactly. Adjacent hexes
+	# sample the same three originals with the same barycentric weights, so a
+	# same-family region has constant opacity instead of overlapping apertures.
+	if continuous_templates.is_empty():
+		for direction in range(6):
+			var a=HexGrid.to_world(HexGrid.DIRECTIONS[direction]);var b=HexGrid.to_world(HexGrid.DIRECTIONS[(direction+1)%6])
+			var corner=(a+b)/3.0
+			continuous_templates.append(PackedVector3Array([Vector3.ZERO,Vector3(a.x*.5,a.y*.5,0),Vector3(corner.x,corner.y,0),Vector3.ZERO,Vector3(corner.x,corner.y,0),Vector3(b.x*.5,b.y*.5,0)]))
+			continuous_vertices.append_array(continuous_templates[-1])
+			continuous_uvs.append_array(PackedVector2Array([GroundMaterialBlend.weights(1,0),GroundMaterialBlend.weights(.5,.5),GroundMaterialBlend.weights(1.0/3.0,1.0/3.0),GroundMaterialBlend.weights(1,0),GroundMaterialBlend.weights(1.0/3.0,1.0/3.0),GroundMaterialBlend.weights(.5,0)]))
+	var layer_ids=GroundMaterialBlend.source_layers();var first=int(layer_ids[family]);var center=HexGrid.to_world(hex)
+	group.vertices.append_array(Transform3D(Basis.IDENTITY,Vector3(center.x,center.y,0))*continuous_vertices)
+	group.uvs.append_array(continuous_uvs)
+	var nearby: Array=[]
+	for direction in HexGrid.DIRECTIONS:nearby.append(int(layer_ids.get(str(surface_families.get(HexGrid.key(hex+direction),"")),-1)))
+	for direction in range(6):
+		var a=int(nearby[direction]);var b=int(nearby[(direction+1)%6]);var signature=Vector3i(first,a,b)
+		if not continuous_color_templates.has(signature):
+			var pigment=Color(first/255.0,(first if a<0 else a)/255.0,(first if b<0 else b)/255.0,1)
+			var corner_coverage=(1.0+float(a>=0)+float(b>=0))/3.0;var colors=PackedColorArray()
+			for coverage in [1.0,(1.0+float(a>=0))*.5,corner_coverage,1.0,corner_coverage,(1.0+float(b>=0))*.5]:colors.append(Color(pigment,coverage))
+			continuous_color_templates[signature]=colors
+		group.colors.append_array(continuous_color_templates[signature])
 
 func prepare_surface_template() -> void:
 	if not surface_template.is_empty():return

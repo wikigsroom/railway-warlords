@@ -14,9 +14,8 @@ const TERRITORY_COLORS={"zhili":Color("6199d0"),"fengtian":Color("dc826c"),"anhu
 # readable beneath the current-owner tint. Borders and the legend carry the
 # stronger faction cue; the fill itself is intentionally translucent.
 const TERRITORY_OPACITY=.26
-# The broad field is a second, quieter layer below the authored city influence
-# polygons.  EW6 keeps the landscape visible through political control; the
-# field therefore never replaces the surveyed land, river or relief colours.
+# Continental and local control use mutually exclusive coverage layers. The
+# broad field keeps the landscape visible without stacking city influences.
 const TERRITORY_FIELD_OPACITY=.21
 const TERRITORY_FIELD_BORDER_OPACITY=.42
 var content: ContentRegistry
@@ -143,6 +142,8 @@ var terrain_transition_draw_count=0
 var terrain_symbol_draw_count=0
 var terrain_surface_variant_draw_count=0
 var ground_material_batches: Array=[]
+var city_control_fill_draw_count=0
+var territory_field_fill_draw_count=0
 var terrain_depth_draw_count=0
 var terrain_cell_river_draw_count=0
 var terrain_micro_symbol_draw_count=0
@@ -539,7 +540,11 @@ func terrain_surface_capture_facts(view: Rect2) -> Dictionary:
 			if not other.begins_with("tile_surface_"):continue
 			pairs+=1
 			if id==other:repeated+=1
-	return {"active":MapTerrainSurfaces.available(),"registered_types":MapTerrainSurfaces.data().get("types",{}).size(),"independent_originals":MapTerrainSurfaces.data().get("records",{}).size(),"macro_originals":MapTerrainSurfaces.macro_data().get("records",{}).size(),"visible_macro_sources":macro_sources.keys(),"macro_repeat_world_units":MapTerrainSurfaces.macro_data().get("world_repeat_period",0),"fine_detail_alpha":MapTerrainSurfaces.detail_alpha(bool(state.map.get("strategic_scale",false))),"visible_types":type_counts,"source_use_counts":source_counts,"checked_adjacent_pairs":pairs,"same_original_on_adjacent_cells":repeated,"ground_alpha":MapTerrainSurfaces.alpha_for("temperate_meadow",bool(state.map.get("strategic_scale",false))),"blend_inner_ratio":MapDetails.SURFACE_BLEND_INNER,"rule_geometry_changed":false}
+	return {"active":MapTerrainSurfaces.available(),"registered_types":MapTerrainSurfaces.data().get("types",{}).size(),"independent_originals":MapTerrainSurfaces.data().get("records",{}).size(),"macro_originals":MapTerrainSurfaces.macro_data().get("records",{}).size(),"visible_macro_sources":macro_sources.keys(),"macro_repeat_world_units":MapTerrainSurfaces.macro_data().get("world_repeat_period",0),"fine_detail_alpha":MapTerrainSurfaces.detail_alpha(bool(state.map.get("strategic_scale",false))),"visible_types":type_counts,"source_use_counts":source_counts,"checked_adjacent_pairs":pairs,"same_original_on_adjacent_cells":repeated,"ground_alpha":MapTerrainSurfaces.alpha_for("temperate_meadow",bool(state.map.get("strategic_scale",false))),"blend_inner_ratio":MapDetails.SURFACE_BLEND_INNER,"continuous_ground":continuous_ground_facts(),"rule_geometry_changed":false}
+
+func continuous_ground_facts() -> Dictionary:
+	var renderer=backdrop_view if is_instance_valid(backdrop_view) and not static_only else self
+	return {"active":renderer.material!=null,"source_layers":GroundMaterialBlend.source_layers().size(),"whole_original_dimensions":[1254,1254],"macro_coverage":"nonoverlapping_hex_partition_with_three_source_blending","source_images_modified":false,"city_influence_fill_draws":renderer.city_control_fill_draw_count,"field_fill_batches":renderer.territory_field_fill_draw_count}
 
 func place_at_screen(screen: Vector2) -> String:
 	if not show_places or not selected_unit_id.is_empty():return ""
@@ -1291,6 +1296,7 @@ func draw_playback(view: Rect2) -> void:
 		if action.event.type=="UnitPromoted":map_name("晋为"+action.event.name,position+Vector2(0,-55-p*18),22,Color("cfad6e"),sin(p*PI))
 
 func draw_landscape(view: Rect2) -> void:
+	city_control_fill_draw_count=0;territory_field_fill_draw_count=0
 	river_surface_draw_count=0;river_texture_draw_count=0;river_ink_draw_count=0
 	water_source_texture=assets.texture("tile",MapRiverSurface.TEXTURE_ID)
 	var sea=water_source_texture;var plain=assets.texture("tile","tile_plain_01")
@@ -1449,6 +1455,7 @@ func draw_territory_field(view: Rect2) -> void:
 	for owner in territory_field_meshes:
 		var color=faction_color(str(owner));color.a=alpha
 		draw_mesh(territory_field_meshes[owner],null,Transform2D.IDENTITY,color)
+		territory_field_fill_draw_count+=1
 	if zoom<.12:return
 	for border in territory_field_borders:
 		var owner_color=faction_color(str(border.owner));var other_color=faction_color(str(border.other))
@@ -1485,19 +1492,31 @@ func draw_cell_surface_variants(view: Rect2) -> void:
 	# ownership remains its own translucent layer above the ground.
 	terrain_surface_variant_draw_count=0
 	var strategic=state.map.get("strategic_scale",false)
-	var threshold=.20 if strategic else .28
+	var threshold=.10
 	if zoom<threshold:return
 	if MapArtBank.available():
-		var batches=map_details.surface_meshes(visible_terrain_entries(view),strategic,12000)
+		var ground=map_details.ground_material(strategic)
+		material=ground
+		var fine_details=zoom>=(.20 if strategic else .28)
+		if ground==null and not fine_details:return
+		var entries=visible_terrain_entries(view) if fine_details else []
+		var batches=map_details.surface_meshes(entries,strategic,12000,ground!=null,true,ground==null)
 		# Canvas drawing keeps mesh RIDs. Keep the owning resources alive for
 		# the entire cached draw, including textures evicted from the asset LRU.
-		ground_material_batches=batches.batches
+		ground_material_batches=[]
+		var macro_count=0
+		if ground!=null:
+			var chunks=map_details.continuous_macro_meshes(view);macro_count=chunks.count
+			ground_material_batches.append_array(chunks.batches)
+		ground_material_batches.append_array(batches.batches)
 		for batch in ground_material_batches:
-			var material=assets.texture("tile",batch.asset_id)
-			if material!=null:
-				batch["texture"]=material
-				draw_mesh(batch.mesh,material)
-		terrain_surface_variant_draw_count=batches.count
+			if batch.get("continuous",false):draw_mesh(batch.mesh,null)
+			else:
+				var source_texture=assets.texture("tile",batch.asset_id)
+				if source_texture!=null:
+					batch["texture"]=source_texture
+					draw_mesh(batch.mesh,source_texture)
+		terrain_surface_variant_draw_count=maxi(batches.count,macro_count)
 		return
 	var texture=assets.texture("tile","tile_plain_02")
 	if texture==null:return
@@ -1687,6 +1706,10 @@ func draw_screen_label(text: String, baseline: Vector2, pixels: int, color: Colo
 	draw_set_transform(size*.5-camera*zoom,0,Vector2.ONE*zoom)
 
 func draw_control_zones(view: Rect2, foreground: bool=false) -> void:
+	# Continental control already has one disjoint, source-clipped field. City
+	# influence polygons overlap it and each other; another translucent pass
+	# compounds the wash and creates dark patches unrelated to terrain/ownership.
+	if state.map.get("strategic_scale",false):return
 	for zone in places.zones:
 		var owner=places.owners.get(zone.city_id,"")
 		if owner.is_empty() or not view.intersects(zone.bounds):continue
@@ -1694,7 +1717,8 @@ func draw_control_zones(view: Rect2, foreground: bool=false) -> void:
 		# The backdrop owns the single translucent fill pass. The foreground pass
 		# only inks the surveyed influence edge; drawing the mesh twice made the
 		# nominal alpha look opaque on dense city clusters.
-		if not foreground:draw_mesh(zone.mesh,null,Transform2D.IDENTITY,color)
+		if not foreground:
+			draw_mesh(zone.mesh,null,Transform2D.IDENTITY,color);city_control_fill_draw_count+=1
 		# Borders remain readable at tactical zoom as well as the country overview.
 		# These are city influence areas clipped to surveyed period provinces; they
 		# do not claim to be surveyed historical county or military frontiers.
