@@ -1,0 +1,70 @@
+[
+  {
+    "id": "easy",
+    "candidate_limit_per_unit": 6,
+    "lookahead_commands": 1,
+    "enemy_stat_bonus_permille": 0,
+    "score_weights": {
+      "objective": 4,
+      "net_damage": 2,
+      "kill": 35,
+      "capture_station": 60,
+      "cut_supply": 40,
+      "expose_general": -80,
+      "abandon_capital": -100
+    },
+    "style": "cautious",
+    "uses_hidden_information": false
+  },
+  {
+    "id": "normal",
+    "candidate_limit_per_unit": 12,
+    "lookahead_commands": 2,
+    "enemy_stat_bonus_permille": 0,
+    "score_weights": {
+      "objective": 4,
+      "net_damage": 2,
+      "kill": 35,
+      "capture_station": 60,
+      "cut_supply": 40,
+      "expose_general": -80,
+      "abandon_capital": -100
+    },
+    "style": "combined_arms",
+    "uses_hidden_information": false
+  },
+  {
+    "id": "hard",
+    "candidate_limit_per_unit": 18,
+    "lookahead_commands": 2,
+    "enemy_stat_bonus_permille": 100,
+    "score_weights": {
+      "objective": 4,
+      "net_damage": 2,
+      "kill": 35,
+      "capture_station": 65,
+      "cut_supply": 45,
+      "expose_general": -90,
+      "abandon_capital": -100
+    },
+    "style": "combined_arms_with_logistics",
+    "uses_hidden_information": false
+  },
+  {
+    "id": "challenge",
+    "candidate_limit_per_unit": 18,
+    "lookahead_commands": 2,
+    "enemy_stat_bonus_permille": 0,
+    "score_weights": {
+      "objective": 4,
+      "net_damage": 2,
+      "kill": 35,
+      "capture_station": 65,
+      "cut_supply": 45,
+      "expose_general": -90,
+      "abandon_capital": -100
+    },
+    "style": "authored_normalized",
+    "uses_hidden_information": false
+  }
+]

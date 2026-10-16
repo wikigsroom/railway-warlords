@@ -1,0 +1,28 @@
+{
+  "design_version": "1.0",
+  "baseline_status": "designed_not_playtested",
+  "tables": [
+    "rules",
+    "units",
+    "counter_matrix",
+    "terrains",
+    "buildings",
+    "city_levels",
+    "skills",
+    "generals",
+    "technologies",
+    "elite_variants",
+    "medals",
+    "scenarios",
+    "factions",
+    "missions",
+    "challenges",
+    "sources",
+    "ai_profiles",
+    "reward_rules",
+    "effects",
+    "statuses",
+    "achievements"
+  ],
+  "authority": "JSON numbers are authoritative; prose explains rules; historical scenario deployments need separate authored release audit"
+}

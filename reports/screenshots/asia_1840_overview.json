@@ -1,0 +1,3075 @@
+{
+	"build_version": "0.2.12",
+	"city_labels": [
+		{
+			"city_id": "bangkok",
+			"font_pixels": 18,
+			"screen_rect": [
+				914.873840332031,
+				750.46044921875,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "曼谷 · 首都"
+		},
+		{
+			"city_id": "beijing",
+			"font_pixels": 18,
+			"screen_rect": [
+				1032.35070800781,
+				381.159271240234,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "北京 · 首都"
+		},
+		{
+			"city_id": "istanbul",
+			"font_pixels": 18,
+			"screen_rect": [
+				335.732727050781,
+				472.376770019531,
+				155.999995819832,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "君士坦丁堡 · 首都"
+		},
+		{
+			"city_id": "moscow",
+			"font_pixels": 18,
+			"screen_rect": [
+				412.471130371094,
+				316.378631591797,
+				120.000000614731,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "莫斯科 · 首都"
+		},
+		{
+			"city_id": "petrograd",
+			"font_pixels": 18,
+			"screen_rect": [
+				344.732788085938,
+				268.900909423828,
+				138.000003196599,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "彼得格勒 · 首都"
+		},
+		{
+			"city_id": "tehran",
+			"font_pixels": 18,
+			"screen_rect": [
+				518.200317382813,
+				526.636962890625,
+				120.000000614731,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "德黑兰 · 首都"
+		},
+		{
+			"city_id": "tokyo",
+			"font_pixels": 18,
+			"screen_rect": [
+				1220.31359863281,
+				519.8544921875,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "东京 · 首都"
+		},
+		{
+			"city_id": "kabul",
+			"font_pixels": 18,
+			"screen_rect": [
+				659.172485351563,
+				540.202026367188,
+				120.000000614731,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "喀布尔 · 首都"
+		},
+		{
+			"city_id": "baghdad",
+			"font_pixels": 18,
+			"screen_rect": [
+				459.4619140625,
+				580.984619140625,
+				120.000000614731,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "巴格达 · 省城"
+		},
+		{
+			"city_id": "calcutta",
+			"font_pixels": 18,
+			"screen_rect": [
+				802.892395019531,
+				655.505004882813,
+				138.000003196599,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "加尔各答 · 省城"
+		},
+		{
+			"city_id": "delhi",
+			"font_pixels": 18,
+			"screen_rect": [
+				726.910888671875,
+				601.244812011719,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "德里 · 省城"
+		},
+		{
+			"city_id": "kunming",
+			"font_pixels": 18,
+			"screen_rect": [
+				926.621520996094,
+				707.157409667969,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "昆明 · 省城"
+		},
+		{
+			"city_id": "fuzhou",
+			"font_pixels": 18,
+			"screen_rect": [
+				1055.84606933594,
+				700.374938964844,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "福州 · 省城"
+		},
+		{
+			"city_id": "hanoi",
+			"font_pixels": 18,
+			"screen_rect": [
+				950.116882324219,
+				783.852600097656,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "河内 · 省城"
+		},
+		{
+			"city_id": "irkutsk",
+			"font_pixels": 18,
+			"screen_rect": [
+				911.369201660156,
+				343.508728027344,
+				155.999995819832,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "伊尔库茨克 · 省城"
+		},
+		{
+			"city_id": "lanzhou",
+			"font_pixels": 18,
+			"screen_rect": [
+				938.369201660156,
+				421.854461669922,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "兰州 · 省城"
+		},
+		{
+			"city_id": "lhasa",
+			"font_pixels": 18,
+			"screen_rect": [
+				832.640075683594,
+				628.462280273438,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "拉萨 · 省城"
+		},
+		{
+			"city_id": "phnom_penh",
+			"font_pixels": 18,
+			"screen_rect": [
+				950.116882324219,
+				818.372985839844,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "金边 · 省城"
+		},
+		{
+			"city_id": "pyongyang",
+			"font_pixels": 18,
+			"screen_rect": [
+				1171.58447265625,
+				485.941833496094,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "平壤 · 省城"
+		},
+		{
+			"city_id": "sapporo",
+			"font_pixels": 18,
+			"screen_rect": [
+				1232.06127929688,
+				445.246673583984,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "札幌 · 省城"
+		},
+		{
+			"city_id": "tashkent",
+			"font_pixels": 18,
+			"screen_rect": [
+				659.172485351563,
+				506.376770019531,
+				120.000000614731,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "塔什干 · 省城"
+		},
+		{
+			"city_id": "tbilisi",
+			"font_pixels": 18,
+			"screen_rect": [
+				462.209594726563,
+				360.811706542969,
+				138.000003196599,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "第比利斯 · 省城"
+		},
+		{
+			"city_id": "ulaanbaatar",
+			"font_pixels": 18,
+			"screen_rect": [
+				961.864562988281,
+				299.768951416016,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "库伦 · 省城"
+		},
+		{
+			"city_id": "urumqi",
+			"font_pixels": 18,
+			"screen_rect": [
+				809.144714355469,
+				479.246673583984,
+				101.999998032862,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "迪化 · 省城"
+		},
+		{
+			"city_id": "harbin",
+			"font_pixels": 18,
+			"screen_rect": [
+				1120.08447265625,
+				320.116546630859,
+				90.9999992213414,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "哈尔滨 ★"
+		},
+		{
+			"city_id": "osaka",
+			"font_pixels": 18,
+			"screen_rect": [
+				1199.57055664063,
+				574.202026367188,
+				73.0000016187904,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "大阪 ★"
+		},
+		{
+			"city_id": "hiroshima",
+			"font_pixels": 18,
+			"screen_rect": [
+				1133.5751953125,
+				540.202026367188,
+				73.0000016187904,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "广岛 ★"
+		},
+		{
+			"city_id": "hong_kong",
+			"font_pixels": 18,
+			"screen_rect": [
+				1035.10302734375,
+				734.287536621094,
+				73.0000016187904,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "香港 ★"
+		},
+		{
+			"city_id": "jerusalem",
+			"font_pixels": 18,
+			"screen_rect": [
+				333.975830078125,
+				560.549621582031,
+				109.00000180321,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "耶路撒冷 ★"
+		},
+		{
+			"city_id": "khabarovsk",
+			"font_pixels": 18,
+			"screen_rect": [
+				1199.57055664063,
+				390.986389160156,
+				73.0000016187904,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "伯力 ★"
+		},
+		{
+			"city_id": "tabriz",
+			"font_pixels": 18,
+			"screen_rect": [
+				488.457244873047,
+				394.724304199219,
+				109.00000180321,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "大不里士 ★"
+		},
+		{
+			"city_id": "bombay",
+			"font_pixels": 18,
+			"screen_rect": [
+				717.91552734375,
+				709.765258789063,
+				73.0000016187904,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "孟买 ★"
+		},
+		{
+			"city_id": "manila",
+			"font_pixels": 18,
+			"screen_rect": [
+				1073.09375,
+				777.677856445313,
+				90.9999992213414,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "马尼拉 ★"
+		},
+		{
+			"city_id": "baku",
+			"font_pixels": 18,
+			"screen_rect": [
+				518.204956054688,
+				472.376770019531,
+				73.0000016187904,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "巴库 ★"
+		},
+		{
+			"city_id": "batavia",
+			"font_pixels": 18,
+			"screen_rect": [
+				958.364562988281,
+				869.501342773438,
+				109.00000180321,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "巴达维亚 ★"
+		},
+		{
+			"city_id": "busan",
+			"font_pixels": 18,
+			"screen_rect": [
+				1152.57983398438,
+				634.636962890625,
+				73.0000016187904,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "釜山 ★"
+		},
+		{
+			"city_id": "madras",
+			"font_pixels": 18,
+			"screen_rect": [
+				746.90625,
+				764.025451660156,
+				109.00000180321,
+				24.0000001229461
+			],
+			"shifted": false,
+			"text": "马德拉斯 ★"
+		},
+		{
+			"city_id": "singapore",
+			"font_pixels": 18,
+			"screen_rect": [
+				943.869201660156,
+				906.545837402344,
+				90.9999992213414,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "新加坡 ★"
+		},
+		{
+			"city_id": "vladivostok",
+			"font_pixels": 18,
+			"screen_rect": [
+				1167.0751953125,
+				347.246643066406,
+				90.9999992213414,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "海参崴 ★"
+		},
+		{
+			"city_id": "yokohama",
+			"font_pixels": 18,
+			"screen_rect": [
+				1234.81359863281,
+				614.289367675781,
+				73.0000016187904,
+				24.0000001229461
+			],
+			"shifted": true,
+			"text": "横滨 ★"
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"historical_places": {
+		"additional_markers": 0,
+		"control_overlay_visible": true,
+		"control_zones": 81,
+		"historic_military_border_claimed": false,
+		"ownership": {
+			"baghdad": "ottoman",
+			"baku": "russian_empire",
+			"bangkok": "siam",
+			"baoding": "qing",
+			"batavia": "netherlands",
+			"beijing": "qing",
+			"bengbu": "qing",
+			"bombay": "british_india",
+			"busan": "korea",
+			"calcutta": "british_india",
+			"changchun": "qing",
+			"changsha": "qing",
+			"chengdu": "qing",
+			"chongqing": "qing",
+			"dalian": "qing",
+			"delhi": "british_india",
+			"fuzhou": "qing",
+			"guangzhou": "qing",
+			"guilin": "qing",
+			"guiyang": "qing",
+			"haiphong": "nguyen_dynasty",
+			"hangzhou": "qing",
+			"hankou": "qing",
+			"hanoi": "nguyen_dynasty",
+			"harbin": "qing",
+			"hiroshima": "japan",
+			"hong_kong": "qing",
+			"irkutsk": "russian_empire",
+			"istanbul": "ottoman",
+			"jerusalem": "ottoman",
+			"jinan": "qing",
+			"kabul": "afghanistan",
+			"kashgar": "qing",
+			"khabarovsk": "russian_empire",
+			"kunming": "qing",
+			"lahore": "sikh_empire",
+			"lanzhou": "qing",
+			"lhasa": "qing",
+			"macau": "portugal",
+			"madras": "british_india",
+			"mandalay": "burmese_kingdom",
+			"manila": "spain",
+			"moscow": "russian_empire",
+			"mukden": "qing",
+			"nanchang": "qing",
+			"nanjing": "qing",
+			"nanning": "qing",
+			"ningbo": "qing",
+			"osaka": "japan",
+			"petrograd": "russian_empire",
+			"phnom_penh": "siam",
+			"port_arthur": "qing",
+			"pyongyang": "korea",
+			"qingdao": "qing",
+			"rangoon": "burmese_kingdom",
+			"saigon": "nguyen_dynasty",
+			"samarkand": "russian_empire",
+			"sapporo": "japan",
+			"seoul": "korea",
+			"shanghai": "qing",
+			"shantou": "qing",
+			"shijiazhuang": "qing",
+			"singapore": "british_empire",
+			"surabaya": "netherlands",
+			"suzhou": "qing",
+			"tabriz": "qajar_persia",
+			"taipei": "qing",
+			"tashkent": "russian_empire",
+			"tbilisi": "russian_empire",
+			"tehran": "qajar_persia",
+			"tianjin": "qing",
+			"tokyo": "japan",
+			"ulaanbaatar": "qing",
+			"urumqi": "qing",
+			"vladivostok": "russian_empire",
+			"wuchang": "qing",
+			"xian": "qing",
+			"xining": "qing",
+			"xuzhou": "qing",
+			"yichang": "qing",
+			"yokohama": "japan"
+		},
+		"place_overlay_visible": true,
+		"presentation_data_sha256": "66fea55f568ade8f7cd9019c153f8d0dca736deac78c9ee9c9e2c9a5051bdc10",
+		"selected_id": "",
+		"selected_kind": "",
+		"total_nodes": 81
+	},
+	"map_bank": {
+		"active": true,
+		"full_source_rectangles_reserved": true,
+		"invented_waterways": 0,
+		"material_assignments": 5379,
+		"placed": 112,
+		"preparation_ms": 940.019,
+		"random_stream_used": false,
+		"rejected_for_source_geography": 755,
+		"rule_cells_changed": false,
+		"source_cells": 7668,
+		"source_images_modified": false,
+		"unique_originals": 51
+	},
+	"map_bank_visible": {
+		"active": true,
+		"camera": [
+			3852.0,
+			2930.6298828125
+		],
+		"catalog_additional_sources": 796,
+		"catalog_map_assets": 870.0,
+		"distinct_scenery_originals_intersecting_view": 103,
+		"distinct_surface_originals_in_view": 156,
+		"families": {
+			"foothill_ew": 116,
+			"foothill_ns": 67,
+			"peak_ew": 1,
+			"peak_ns": 1,
+			"ridge_ew": 28,
+			"ridge_ns": 7
+		},
+		"hydrography": {
+			"display_corner_rounding_max_deviation_metres": 0.0,
+			"fine_source_id": "",
+			"fine_source_sha256": "",
+			"flat_lowland_model_branches_excluded": true,
+			"historical_channel_survey": false,
+			"major_presentation_replacements": 0,
+			"rule_geometry_modified": false,
+			"source_endpoints_preserved": true,
+			"source_fine_reaches": 0,
+			"source_map_id": "asia_strategic",
+			"visible_detail_segments": 0,
+			"visible_existing_detail_reaches": 0,
+			"visible_fine_reaches": 0,
+			"visible_fine_stream_orders": {},
+			"width_is_symbolic": true
+		},
+		"measurement_scope": "Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score.",
+		"nearest_repeated_source_distance_world": 309.082702636719,
+		"same_source_pairs_under_250_world_units": 0,
+		"scenery_instances_intersecting_view": 220,
+		"settlement_sources": {
+			"baghdad": "building_bank_capital_west_central_asia_001",
+			"bangkok": "building_bank_capital_southeast_asia_001",
+			"baoding": "building_bank_capital_north_china_002",
+			"batavia": "building_bank_dock_southeast_asia_001",
+			"beijing": "building_bank_capital_north_china_003",
+			"bengbu": "building_bank_county_south_china_001",
+			"calcutta": "building_bank_capital_south_asia_001",
+			"changchun": "building_bank_station_north_china_003",
+			"changsha": "building_bank_capital_south_china_001",
+			"chengdu": "building_bank_capital_south_china_001",
+			"chongqing": "building_bank_county_south_china_002",
+			"dalian": "building_bank_station_north_china_004",
+			"delhi": "building_bank_capital_south_asia_001",
+			"fuzhou": "building_bank_capital_south_china_001",
+			"guangzhou": "building_bank_capital_south_china_001",
+			"guilin": "building_bank_capital_south_china_001",
+			"guiyang": "building_bank_capital_south_china_001",
+			"haiphong": "building_bank_dock_southeast_asia_001",
+			"hangzhou": "building_bank_capital_south_china_001",
+			"hankou": "building_bank_station_south_china_001",
+			"hanoi": "building_bank_capital_southeast_asia_001",
+			"harbin": "building_bank_station_north_china_006",
+			"hiroshima": "building_bank_station_japan_001",
+			"irkutsk": "building_bank_capital_north_eurasia_001",
+			"jinan": "building_bank_capital_north_china_004",
+			"kabul": "building_bank_capital_west_central_asia_001",
+			"kashgar": "building_bank_market_west_central_asia_002",
+			"khabarovsk": "building_bank_station_north_eurasia_001",
+			"kunming": "building_bank_capital_south_china_001",
+			"lahore": "building_bank_county_south_asia_002",
+			"lanzhou": "building_bank_capital_north_china_003",
+			"manila": "building_bank_dock_southeast_asia_001",
+			"moscow": "building_bank_capital_north_eurasia_001",
+			"mukden": "building_bank_capital_north_china_005",
+			"nanchang": "building_bank_capital_south_china_001",
+			"nanjing": "building_bank_capital_south_china_001",
+			"nanning": "building_bank_capital_south_china_001",
+			"ningbo": "building_bank_dock_south_china_001",
+			"osaka": "building_bank_station_japan_001",
+			"petrograd": "building_bank_capital_north_eurasia_001",
+			"phnom_penh": "building_bank_capital_southeast_asia_001",
+			"port_arthur": "building_bank_dock_north_china_003",
+			"pyongyang": "building_bank_capital_korea_001",
+			"qingdao": "building_bank_dock_north_china_005",
+			"rangoon": "building_bank_dock_southeast_asia_001",
+			"saigon": "building_bank_dock_southeast_asia_001",
+			"samarkand": "building_bank_county_west_central_asia_001",
+			"sapporo": "building_bank_capital_japan_001",
+			"seoul": "building_bank_capital_korea_001",
+			"shanghai": "building_bank_station_south_china_001",
+			"shantou": "building_bank_dock_south_china_001",
+			"shijiazhuang": "building_bank_station_north_china_005",
+			"singapore": "building_bank_dock_southeast_asia_001",
+			"surabaya": "building_bank_dock_southeast_asia_001",
+			"suzhou": "building_bank_county_south_china_002",
+			"taipei": "building_bank_capital_south_china_001",
+			"tashkent": "building_bank_capital_west_central_asia_001",
+			"tehran": "building_bank_capital_west_central_asia_001",
+			"tianjin": "building_bank_capital_north_china_006",
+			"tokyo": "building_bank_capital_japan_001",
+			"wuchang": "building_bank_capital_south_china_001",
+			"xian": "building_bank_capital_north_china_006",
+			"xining": "building_bank_county_north_china_007",
+			"xuzhou": "building_bank_county_north_china_009",
+			"yichang": "building_bank_station_south_china_001",
+			"yokohama": "building_bank_dock_japan_001"
+		},
+		"source_images_modified": false,
+		"source_use_counts": {
+			"scenery_bank_foothill_ew_002": 3,
+			"scenery_bank_foothill_ew_004": 1,
+			"scenery_bank_foothill_ew_005": 3,
+			"scenery_bank_foothill_ew_006": 5,
+			"scenery_bank_foothill_ew_007": 4,
+			"scenery_bank_foothill_ew_008": 3,
+			"scenery_bank_foothill_ew_009": 5,
+			"scenery_bank_foothill_ew_010": 5,
+			"scenery_bank_foothill_ew_011": 2,
+			"scenery_bank_foothill_ew_012": 4,
+			"scenery_bank_foothill_ew_013": 1,
+			"scenery_bank_foothill_ew_014": 1,
+			"scenery_bank_foothill_ew_015": 1,
+			"scenery_bank_foothill_ew_016": 7,
+			"scenery_bank_foothill_ew_018": 2,
+			"scenery_bank_foothill_ew_020": 4,
+			"scenery_bank_foothill_ew_021": 4,
+			"scenery_bank_foothill_ew_022": 1,
+			"scenery_bank_foothill_ew_023": 3,
+			"scenery_bank_foothill_ew_024": 3,
+			"scenery_bank_foothill_ew_025": 2,
+			"scenery_bank_foothill_ew_026": 4,
+			"scenery_bank_foothill_ew_027": 6,
+			"scenery_bank_foothill_ew_028": 2,
+			"scenery_bank_foothill_ew_029": 1,
+			"scenery_bank_foothill_ew_030": 3,
+			"scenery_bank_foothill_ew_033": 1,
+			"scenery_bank_foothill_ew_035": 3,
+			"scenery_bank_foothill_ew_036": 3,
+			"scenery_bank_foothill_ew_037": 2,
+			"scenery_bank_foothill_ew_038": 2,
+			"scenery_bank_foothill_ew_039": 4,
+			"scenery_bank_foothill_ew_040": 3,
+			"scenery_bank_foothill_ew_041": 2,
+			"scenery_bank_foothill_ew_042": 3,
+			"scenery_bank_foothill_ew_043": 3,
+			"scenery_bank_foothill_ew_044": 4,
+			"scenery_bank_foothill_ew_045": 2,
+			"scenery_bank_foothill_ew_046": 2,
+			"scenery_bank_foothill_ew_047": 1,
+			"scenery_bank_foothill_ew_048": 1,
+			"scenery_bank_foothill_ns_001": 2,
+			"scenery_bank_foothill_ns_002": 1,
+			"scenery_bank_foothill_ns_005": 3,
+			"scenery_bank_foothill_ns_008": 3,
+			"scenery_bank_foothill_ns_009": 1,
+			"scenery_bank_foothill_ns_011": 2,
+			"scenery_bank_foothill_ns_013": 1,
+			"scenery_bank_foothill_ns_014": 4,
+			"scenery_bank_foothill_ns_015": 1,
+			"scenery_bank_foothill_ns_016": 3,
+			"scenery_bank_foothill_ns_020": 1,
+			"scenery_bank_foothill_ns_021": 1,
+			"scenery_bank_foothill_ns_022": 2,
+			"scenery_bank_foothill_ns_026": 1,
+			"scenery_bank_foothill_ns_027": 3,
+			"scenery_bank_foothill_ns_028": 3,
+			"scenery_bank_foothill_ns_029": 5,
+			"scenery_bank_foothill_ns_030": 2,
+			"scenery_bank_foothill_ns_031": 2,
+			"scenery_bank_foothill_ns_032": 2,
+			"scenery_bank_foothill_ns_033": 3,
+			"scenery_bank_foothill_ns_034": 1,
+			"scenery_bank_foothill_ns_036": 1,
+			"scenery_bank_foothill_ns_039": 1,
+			"scenery_bank_foothill_ns_040": 2,
+			"scenery_bank_foothill_ns_041": 2,
+			"scenery_bank_foothill_ns_043": 2,
+			"scenery_bank_foothill_ns_044": 2,
+			"scenery_bank_foothill_ns_045": 2,
+			"scenery_bank_foothill_ns_046": 2,
+			"scenery_bank_foothill_ns_047": 5,
+			"scenery_bank_foothill_ns_048": 1,
+			"scenery_bank_peak_ew_016": 1,
+			"scenery_bank_peak_ns_013": 1,
+			"scenery_bank_ridge_ew_002": 1,
+			"scenery_bank_ridge_ew_003": 3,
+			"scenery_bank_ridge_ew_004": 1,
+			"scenery_bank_ridge_ew_005": 2,
+			"scenery_bank_ridge_ew_006": 1,
+			"scenery_bank_ridge_ew_008": 1,
+			"scenery_bank_ridge_ew_012": 1,
+			"scenery_bank_ridge_ew_014": 1,
+			"scenery_bank_ridge_ew_017": 1,
+			"scenery_bank_ridge_ew_019": 1,
+			"scenery_bank_ridge_ew_023": 2,
+			"scenery_bank_ridge_ew_025": 1,
+			"scenery_bank_ridge_ew_028": 1,
+			"scenery_bank_ridge_ew_031": 1,
+			"scenery_bank_ridge_ew_033": 1,
+			"scenery_bank_ridge_ew_034": 2,
+			"scenery_bank_ridge_ew_035": 1,
+			"scenery_bank_ridge_ew_037": 2,
+			"scenery_bank_ridge_ew_039": 1,
+			"scenery_bank_ridge_ew_041": 1,
+			"scenery_bank_ridge_ew_048": 2,
+			"scenery_bank_ridge_ns_005": 1,
+			"scenery_bank_ridge_ns_008": 1,
+			"scenery_bank_ridge_ns_016": 1,
+			"scenery_bank_ridge_ns_026": 1,
+			"scenery_bank_ridge_ns_027": 1,
+			"scenery_bank_ridge_ns_030": 1,
+			"scenery_bank_ridge_ns_041": 1
+		},
+		"surface_geography": {
+			"families": {
+				"alluvial_soil": 20,
+				"arid_gravel": 293,
+				"dry_grass": 146,
+				"sandy_ground": 47,
+				"wetland_ground": 5
+			},
+			"historical_landuse_survey": false,
+			"material_assignments": 511,
+			"rule_maps_modified": false,
+			"source_id": "resolve_ecoregions_2017",
+			"source_scope": "biogeographic_ground_material_reference",
+			"source_year": 2017.0,
+			"water_or_forest_added": false
+		},
+		"surface_material_families_in_view": {
+			"alluvial_soil": 15,
+			"arid_gravel": 255,
+			"dry_grass": 131,
+			"meadow": 965,
+			"rocky_ground": 1076,
+			"sandy_ground": 45,
+			"sea_water": 2750,
+			"wetland_ground": 2,
+			"woodland_floor": 140
+		},
+		"zoom": 0.163162265578665
+	},
+	"map_detail": {
+		"cell_river_segments": 0,
+		"coast_lines": 556,
+		"control_layer_visible": true,
+		"crossing_markers": 0,
+		"detail_hydrography_lines": 694,
+		"historical_landcover_features": 8,
+		"historical_landcover_patch_cells": 0,
+		"presentation_terrain_counts": {
+			"city": 81,
+			"forest": 154,
+			"hill": 1032,
+			"mountain": 443,
+			"peak": 33,
+			"plain": 1757,
+			"river": 154,
+			"road": 90,
+			"sea": 3924
+		},
+		"rail_edges": 22,
+		"river_lines": 258,
+		"tactical_zone_opacity": 0.26,
+		"terrain_cell_counts": {
+			"city": 81,
+			"hill": 1115,
+			"mountain": 456,
+			"peak": 33,
+			"plain": 1815,
+			"river": 154,
+			"road": 90,
+			"sea": 3924
+		},
+		"terrain_depth_draw_count": 0,
+		"terrain_feature_sprite_draw_count": 0,
+		"terrain_layer_visible": true,
+		"terrain_micro_symbol_draw_count": 0,
+		"terrain_surface_variant_draw_count": 0,
+		"terrain_symbol_draw_count": 0,
+		"terrain_tile_draw_count": 0,
+		"territory_field_opacity": 0.21
+	},
+	"map_zoom": 0.163162265578665,
+	"mobile_layout_profile": false,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"raw_godot_capture": true,
+	"relief": {
+		"contour_segments": 0,
+		"crest_axis_from_source_neighbours": true,
+		"eligible_features": 291,
+		"families": {
+			"foothill_ew": 116,
+			"foothill_ns": 67,
+			"peak_ew": 1,
+			"peak_ns": 1,
+			"ridge_ew": 28,
+			"ridge_ns": 7
+		},
+		"generated_continental_contours": false,
+		"geographic_gradient_in_meters": true,
+		"height_exaggeration_display_only": 6.0,
+		"historical_vegetation_claimed": false,
+		"independent_relief_originals_used": 103,
+		"index_ms": 81.963,
+		"lighting": "continuous_source_height_normals",
+		"mesh_ms": 224.0,
+		"nearby_variant_exclusion_world": 270.0,
+		"placed_features": 220,
+		"placement_ms": 333.083,
+		"preparation_ms": 639.046,
+		"rules_map_mutated": false,
+		"source": "Tilezen_TerrainTiles_geotiff_nine_point_100km",
+		"source_meters_per_world_unit": 3125.0,
+		"strategic_category_relief": false,
+		"triangles": 5506
+	},
+	"safe_insets": "(0.0, 0.0, 0.0, 0.0)",
+	"scenario_id": "asia_1840",
+	"territory_field": {
+		"border_segments": 464,
+		"cells_assigned": 2681,
+		"cells_skipped": 1063,
+		"enabled": true,
+		"owners": 16,
+		"presentation_only": true,
+		"source": "current_owned_real_city_nodes_voronoi"
+	},
+	"ui_scale": 1.0,
+	"unit_facing": {
+		"compact_idle_chevrons": true,
+		"directional_source_families": 3,
+		"directional_source_views": 12,
+		"records": [
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00001"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00002"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00003"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00004"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00005"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00006"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00007"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00008"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00009"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00010"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00011"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00012"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00013"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00014"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00015"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00016"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00017"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00018"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00019"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00020"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00021"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00022"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00023"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00024"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00025"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00026"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00027"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00028"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00029"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00030"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00031"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00032"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00033"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00034"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00035"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00036"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00037"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00038"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00039"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00040"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00041"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00042"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00043"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00044"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00045"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00046"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00047"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00048"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00049"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00050"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00051"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00052"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00053"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00054"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00055"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00056"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00057"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00058"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00059"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00060"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00061"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00062"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00063"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00064"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00065"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00066"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00067"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00068"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00069"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00070"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00071"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00072"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00073"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00074"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00075"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00076"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00077"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00078"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00079"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00080"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00081"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00082"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00083"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00084"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00085"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00086"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00087"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00088"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00089"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00090"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00091"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00092"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00093"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00094"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00095"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00096"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00097"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00098"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00099"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00100"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00101"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00102"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00103"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00104"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00105"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00106"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00107"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00108"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00109"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00110"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00111"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00112"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00113"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00114"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00115"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00116"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00117"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00118"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00119"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00120"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00121"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00122"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00123"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00124"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00125"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00126"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00127"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00128"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00129"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00130"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00131"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00132"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00133"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00134"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00135"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00136"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00137"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00138"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00139"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00140"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00141"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00142"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00143"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00144"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00145"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00146"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00147"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00148"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00149"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00150"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00151"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00152"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00153"
+			}
+		]
+	},
+	"viewport": "(1920.0, 1080.0)",
+	"window": "(1920, 1080)"
+}

@@ -1,0 +1,328 @@
+{
+	"build_version": "0.2.12",
+	"checks": [
+		{
+			"name": "legal_rifle_against_rifle_contact_in_unmodified_published_campaign",
+			"passed": true
+		},
+		{
+			"name": "native_player_attack_committed",
+			"passed": true
+		},
+		{
+			"name": "ready_uses_real_directional_source_ids",
+			"passed": true
+		},
+		{
+			"name": "fire_uses_real_directional_source_ids",
+			"passed": true
+		},
+		{
+			"name": "attacker_changes_pose_before_impact",
+			"passed": true
+		},
+		{
+			"name": "hit_uses_real_directional_source_ids",
+			"passed": true
+		},
+		{
+			"name": "defender_changes_pose_at_impact",
+			"passed": true
+		},
+		{
+			"name": "native_pose_changes_preserve_complete_command_replay_and_rng",
+			"passed": true
+		}
+	],
+	"commands": [
+		{
+			"actor_id": "zhili",
+			"expected_version": 0,
+			"target_hex": {
+				"q": 236,
+				"r": -18
+			},
+			"type": "Move",
+			"unit_id": "u_00007"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 1,
+			"target_hex": {
+				"q": 235,
+				"r": -20
+			},
+			"type": "Move",
+			"unit_id": "u_00001"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 2,
+			"target_hex": {
+				"q": 235,
+				"r": -17
+			},
+			"type": "Move",
+			"unit_id": "u_00014"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 3,
+			"target_hex": {
+				"q": 234,
+				"r": -20
+			},
+			"type": "Move",
+			"unit_id": "u_00002"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 4,
+			"target_hex": {
+				"q": 234,
+				"r": -16
+			},
+			"type": "Move",
+			"unit_id": "u_00012"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 5,
+			"type": "EndPhase"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 6,
+			"target_hex": {
+				"q": 235,
+				"r": -20
+			},
+			"target_id": "u_00001",
+			"type": "ActivateSkill",
+			"unit_id": "u_00022"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 7,
+			"target_hex": {
+				"q": 236,
+				"r": -20
+			},
+			"type": "Move",
+			"unit_id": "u_00015"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 8,
+			"target_hex": {
+				"q": 235,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00015"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 9,
+			"target_hex": {
+				"q": 236,
+				"r": -19
+			},
+			"type": "Move",
+			"unit_id": "u_00016"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 10,
+			"target_hex": {
+				"q": 235,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00016"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 11,
+			"target_hex": {
+				"q": 236,
+				"r": -21
+			},
+			"type": "Move",
+			"unit_id": "u_00017"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 12,
+			"target_hex": {
+				"q": 235,
+				"r": -20
+			},
+			"type": "Attack",
+			"unit_id": "u_00017"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 13,
+			"target_hex": {
+				"q": 238,
+				"r": -22
+			},
+			"type": "Move",
+			"unit_id": "u_00018"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 14,
+			"target_hex": {
+				"q": 237,
+				"r": -19
+			},
+			"type": "Move",
+			"unit_id": "u_00019"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 15,
+			"target_hex": {
+				"q": 236,
+				"r": -18
+			},
+			"type": "Attack",
+			"unit_id": "u_00019"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 16,
+			"target_hex": {
+				"q": 235,
+				"r": -21
+			},
+			"type": "Move",
+			"unit_id": "u_00020"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 17,
+			"target_hex": {
+				"q": 235,
+				"r": -20
+			},
+			"type": "Attack",
+			"unit_id": "u_00020"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 18,
+			"target_hex": {
+				"q": 239,
+				"r": -21
+			},
+			"type": "Move",
+			"unit_id": "u_00021"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 19,
+			"target_hex": {
+				"q": 235,
+				"r": -20
+			},
+			"type": "Move",
+			"unit_id": "u_00023"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 20,
+			"target_hex": {
+				"q": 235,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00023"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 21,
+			"target_hex": {
+				"q": 237,
+				"r": -21
+			},
+			"type": "Move",
+			"unit_id": "u_00025"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 22,
+			"target_hex": {
+				"q": 236,
+				"r": -22
+			},
+			"type": "Move",
+			"unit_id": "u_00027"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 23,
+			"target_hex": {
+				"q": 238,
+				"r": -21
+			},
+			"type": "Move",
+			"unit_id": "u_00029"
+		},
+		{
+			"actor_id": "fengtian",
+			"city_id": "jinzhou",
+			"def_id": "rifle",
+			"expected_version": 24,
+			"stack": 1,
+			"type": "Recruit"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 25,
+			"type": "EndPhase"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 26,
+			"target_hex": {
+				"q": 236,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00007"
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"failures": [],
+	"manual_compositing": false,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"published_deployment_unchanged": true,
+	"raw_godot_capture": true,
+	"sources": [
+		{
+			"attacker_asset": "unit_rifle_n",
+			"attacker_pose": "idle",
+			"defender_asset": "unit_rifle_s",
+			"defender_pose": "idle",
+			"stage": "ready"
+		},
+		{
+			"attacker_asset": "unit_rifle_n_fire",
+			"attacker_pose": "fire",
+			"defender_asset": "unit_rifle_s",
+			"defender_pose": "idle",
+			"stage": "fire"
+		},
+		{
+			"attacker_asset": "unit_rifle_n",
+			"attacker_pose": "idle",
+			"defender_asset": "unit_rifle_s_hit",
+			"defender_pose": "hit",
+			"stage": "hit"
+		}
+	]
+}

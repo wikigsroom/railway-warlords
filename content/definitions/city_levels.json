@@ -1,0 +1,44 @@
+[
+  {
+    "level": 1,
+    "income": {
+      "cash": 12,
+      "food": 12,
+      "arms": 6
+    },
+    "recruit_reserve_cap": 80,
+    "recruit_reserve_regen": 12,
+    "fort_hp": 100,
+    "upgrade_cost_cash": 0,
+    "upgrade_cost_arms": 0,
+    "upgrade_turns": 0
+  },
+  {
+    "level": 2,
+    "income": {
+      "cash": 20,
+      "food": 18,
+      "arms": 10
+    },
+    "recruit_reserve_cap": 140,
+    "recruit_reserve_regen": 16,
+    "fort_hp": 180,
+    "upgrade_cost_cash": 220,
+    "upgrade_cost_arms": 60,
+    "upgrade_turns": 2
+  },
+  {
+    "level": 3,
+    "income": {
+      "cash": 30,
+      "food": 24,
+      "arms": 14
+    },
+    "recruit_reserve_cap": 200,
+    "recruit_reserve_regen": 20,
+    "fort_hp": 260,
+    "upgrade_cost_cash": 360,
+    "upgrade_cost_arms": 110,
+    "upgrade_turns": 3
+  }
+]

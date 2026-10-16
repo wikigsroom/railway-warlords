@@ -1,0 +1,259 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-16T01:52:06.457735+00:00",
+  "build_version": "0.2.12",
+  "content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+  "runtime_source_sha256": "8a763cfc5ab4f34259511fb38c82893b07a87c897c8103649a1e76c874d35488",
+  "capture_method": "Godot MovieWriter / direct native viewport PNG",
+  "video": {
+    "file": "reports/atlas_v2_native_final.mp4",
+    "sha256": "b47451a6c715a332307fdb170468dcbfe13b4f599ea7a45f743dc7ca7a83c66e",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1440,
+          "height": 810,
+          "r_frame_rate": "30/1",
+          "duration": "26.200000"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "duration": "26.200000"
+        }
+      ],
+      "format": {
+        "duration": "26.200000",
+        "size": "4360794"
+      }
+    }
+  },
+  "captures": [
+    {
+      "file": "reports/screenshots/visual_playtest/01_command_preview.png",
+      "dimensions": [
+        1440,
+        810
+      ],
+      "sha256": "e98a8236de76940b3760226b7c5ffc5ce1bae8e2a5ecab99c25c3e4c2f70d275",
+      "raw_godot_viewport": true
+    },
+    {
+      "file": "reports/screenshots/visual_playtest/02_marching.png",
+      "dimensions": [
+        1440,
+        810
+      ],
+      "sha256": "b4000598da89eb236ccad7c2420095c8ab1de16e6a37df69a30927343aa45de9",
+      "raw_godot_viewport": true
+    },
+    {
+      "file": "reports/screenshots/visual_playtest/03_dice_rolling.png",
+      "dimensions": [
+        1440,
+        810
+      ],
+      "sha256": "60f20d0650d9b7be827250967f60351e70e8994823e7c7dd69aa3b622db657a5",
+      "raw_godot_viewport": true
+    },
+    {
+      "file": "reports/screenshots/visual_playtest/04_impact.png",
+      "dimensions": [
+        1440,
+        810
+      ],
+      "sha256": "3f147f07dd0b48ba453eb755335df7c55c6e6354e49d413c47565201cff2d4df",
+      "raw_godot_viewport": true
+    },
+    {
+      "file": "reports/screenshots/visual_playtest/05_battle_complete.png",
+      "dimensions": [
+        1440,
+        810
+      ],
+      "sha256": "602d4c92ed1f63ed61e4b979e0f765349b9a0fe4b30d39a2e71791771a010f88",
+      "raw_godot_viewport": true
+    },
+    {
+      "file": "reports/screenshots/visual_playtest/06_air_recon.png",
+      "dimensions": [
+        1440,
+        810
+      ],
+      "sha256": "222d44616c8d66dfcc7efba02e0989d0915033e2e7ccbae4797a880d33525dcf",
+      "raw_godot_viewport": true
+    },
+    {
+      "file": "reports/screenshots/visual_playtest/07_air_bomb.png",
+      "dimensions": [
+        1440,
+        810
+      ],
+      "sha256": "1c21d274ddda1dcee0c88f5fb13a780455f3a18c4a4da0aac26853fec6614b81",
+      "raw_godot_viewport": true
+    }
+  ],
+  "fivefold_map_captures": [
+    {
+      "file": "reports/screenshots/map_bohai_coast.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "9c861fcbe6dc0d1253269b08ac55cb4aae5a0977047868b29533930d40bf99e9",
+      "metadata_sha256": "aa15333a7b3408129923bcd717e51debddeba4b1a89b8634038f6488090b6720",
+      "raw_godot_viewport": true,
+      "scenario_id": "campaign_1924_03",
+      "map_zoom": 0.76
+    },
+    {
+      "file": "reports/screenshots/map_jingfeng_overview.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "c2dc74386f77c58c8b4046710f2c415989d072445b2f7047b96cc3d1210e342b",
+      "metadata_sha256": "500e797f38d24d41a184bd89c87ed2639aa4221b1a3c4f651b918a95a51b1bf4",
+      "raw_godot_viewport": true,
+      "scenario_id": "campaign_1924_03",
+      "map_zoom": 0.0643602552042205
+    },
+    {
+      "file": "reports/screenshots/settlements_country.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "043cfced04f63aace098427196e15806f097f97a4b3a2c85738c5eeec49834e4",
+      "metadata_sha256": "433177d39799e6b889928a6e500046843252b54b736af8f069fd1e4e88f7eaf1",
+      "raw_godot_viewport": true,
+      "scenario_id": "conq_1924",
+      "map_zoom": 0.0446823365138469
+    },
+    {
+      "file": "reports/screenshots/settlement_village_details.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "a781c8eed1bf0bba01cdc1e3f7044f84e006daec840b091e0c6e4daf8d156762",
+      "metadata_sha256": "90b8bf20b2fc8bba337d35dfacee3ef040c9818afef5c67ed6b7dd0cc343d82e",
+      "raw_godot_viewport": true,
+      "scenario_id": "campaign_1924_03",
+      "map_zoom": 0.76
+    },
+    {
+      "file": "reports/screenshots/settlement_county_details.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "32183ecb439b794d8dc38367566a78f05e261a4dec2aaae84b9d5cfd15d44aaa",
+      "metadata_sha256": "086da5c1e5c9ca3b5445472fe60ff9d2283584c7635d3547edc462959bcd2aca",
+      "raw_godot_viewport": true,
+      "scenario_id": "campaign_1924_03",
+      "map_zoom": 0.76
+    },
+    {
+      "file": "reports/screenshots/settlement_market_details.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "bbff1fa3092ad629676a6a5899c05b9c9a276e4e10a9ebc89a631b44eb001e84",
+      "metadata_sha256": "a3d53e596fb4ebfdc2a4c88a9ec6b03b24d1f7c904d864a4cae310e6a7115ebd",
+      "raw_godot_viewport": true,
+      "scenario_id": "campaign_1924_03",
+      "map_zoom": 0.76
+    },
+    {
+      "file": "reports/screenshots/settlement_capital_details.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "8b659e52cf81142dee2644e16c03d3f2ea3bb2d2bc69b1e69f3ab75f326d0b1f",
+      "metadata_sha256": "7d5f52aeab3cf19147cf38529cae0a04cc5a05c247c7b7ccdf067b7371a07b4b",
+      "raw_godot_viewport": true,
+      "scenario_id": "conq_1924",
+      "map_zoom": 0.65
+    },
+    {
+      "file": "reports/screenshots/settlement_village_x30.png",
+      "dimensions": [
+        2400,
+        1080
+      ],
+      "sha256": "a443f93abe956047a520d1fd7308ee0f42fda1a8f47069cd043a7714fec88699",
+      "metadata_sha256": "88421e5c7c760add861a856796c65cafd70eda572b1f9eff68aed9e43901f0cf",
+      "raw_godot_viewport": true,
+      "scenario_id": "campaign_1924_03",
+      "map_zoom": 0.76
+    }
+  ],
+  "command_replay_same_final_state": true,
+  "territory_color_evidence": {
+    "file": "territory_visual_tests.json",
+    "sha256": "30619a0b29ea2b0f3140260bded01f45672468381bc347a064fd74f605de171e",
+    "factions_measured": 8,
+    "state_and_random_stream_unchanged": true,
+    "captures": [
+      {
+        "file": "reports/screenshots/territory/01_natural_map.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "3b89a0727d6ac0398861ea49b942daa157c457fe09b03a040b1a6029470c6370",
+        "raw_godot_viewport": true
+      },
+      {
+        "file": "reports/screenshots/territory/02_occupied_regions.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "bdc218ddb748a8806a32ae398a38c0c5279bac227b16fe57c58df193821aec60",
+        "raw_godot_viewport": true
+      },
+      {
+        "file": "reports/screenshots/territory/03_tactical_control.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "b256693fffc96d7472f7b1b440f2bfdcd2d83c568b2ef469090b277144b4cf10",
+        "raw_godot_viewport": true
+      },
+      {
+        "file": "reports/screenshots/territory/04_two_faction_frontier.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "e6be5a80be08f0510d0d088187aa9a509b0ad1d82389d9c047d946f80e4fb97f",
+        "raw_godot_viewport": true
+      },
+      {
+        "file": "reports/screenshots/territory/05_pause_overlay.png",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "sha256": "d2e6f86027903859a03ee7298c2249483e0b5834acd77dbf2e205067e084c3a8",
+        "raw_godot_viewport": true
+      }
+    ]
+  },
+  "visual_commands": 28,
+  "dice_stream_draws": 18,
+  "manual_image_compositing": false,
+  "physical_android_device_tested": false
+}

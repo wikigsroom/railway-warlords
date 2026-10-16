@@ -1,0 +1,26 @@
+{
+  "version": "0.2.3",
+  "source_archive": "output/releases/railway-warlords-0.2.3/RailwayWarlords-Godot-0.2.3.zip",
+  "source_archive_sha256": "8f59f174399e6de893f30ee715b080d4d838828d32bb63a0d1df72f645d5d944",
+  "references": [
+    {
+      "original": "game/railway_warlords/domain/state_access.gd",
+      "original_sha256": "005b32f047cef2c199563f53dc1ed7c8ffded3d62dfa335df9ab79d24f22b329",
+      "fixture": "tests/fixtures/reference_access_v023.gd",
+      "reference_sha256": "45bb2a0075c3c2bbdac8f6e88f45414e30fe137eceebf2a0c1d07fedbf1d2b47",
+      "change": "Unique class name and isolated private derived-index namespace. All archived rule/snapshot operations unchanged."
+    },
+    {
+      "original": "game/railway_warlords/domain/command_kernel.gd",
+      "original_sha256": "f86c7b510c2ebba48b9b2d8d94a4ee4f53171a1f73a0dd63a1a6d7d775e86e21",
+      "fixture": "tests/fixtures/reference_kernel_v023.gd",
+      "reference_sha256": "b12a10aca13339591436c4a312f8ac69f5165a11a028fd88cccaa64a2cb40e96",
+      "change": "Unique class name; kernel StateAccess references point to preserved original snapshot access implementation."
+    }
+  ],
+  "cache_namespace": {
+    "fixture": "tests/fixtures/reference_cache_v023.gd",
+    "sha256": "808cfa9f399006d0eed8668b8cbe528f434ecec33b607902d87f38514d31820f",
+    "reason": "Prevent old string-coordinate indexes and current vector-coordinate indexes from interfering in paired tests."
+  }
+}

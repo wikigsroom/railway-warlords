@@ -1,0 +1,503 @@
+<!-- repository-readme: maintained in Chinese and English -->
+# Railway Warlords
+
+**铁道烽烟：军阀时代 · A hex-based, turn-based strategy game set in modern Chinese and Asian theaters**
+
+[中文](README.md) · [English](README.en.md) · [All scenarios](docs/SCENARIO_INDEX.md) · [Documentation](docs/00_程序文档索引.md) · [Completion assessment](docs/23_当前完成度评估.md)
+
+Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
+
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.12, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+
+European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
+
+![Main menu captured from the current native Windows executable](docs/media/menu.png)
+
+*A complete native viewport capture. PNG screenshots below have no montage, repainting or promotional overlays.*
+
+<a id="contents"></a>
+## Contents
+
+- [Version and content](#status)
+- [Gameplay screenshots and GIFs](#screenshots)
+- [Menus and battlefield UI](#menus)
+- [Getting started and controls](#play)
+- [Turns, combat and victory](#combat)
+- [Units, generals and progression](#army)
+- [Cities, economy, logistics and diplomacy](#economy)
+- [Geography, terrain and historical scope](#geography)
+- [Scenarios and timelines](#content)
+- [Saves and settings](#saves)
+- [Running and exporting the source](#development)
+- [Architecture, validation and performance](#engineering)
+- [Artwork, media and licensing](#assets)
+- [Known limitations and next steps](#limits)
+- [Documentation guide](#docs)
+
+<a id="status"></a>
+## Version and content
+
+Counts come from current runtime data, excluding unimplemented plans and duplicate historical inventories. Runtime compatibility is **schema 2 / ruleset 9**.
+
+| Content | Implemented scope |
+| --- | --- |
+| Campaigns | **39**: 18 warlord missions across 1920 / 1922 / 1924, plus 21 Asian timeline missions |
+| Conquest / free world | **10 starting scenarios**: 3 warlord conquests and 7 Asian starting points |
+| Legion challenges | **12** budget-based tactical exercises with standardized progression |
+| Total scenarios | **61**; names, dates, maps and round limits are in the [scenario index](docs/SCENARIO_INDEX.md) |
+| Maps | **6**: Beijing–Tianjin, Beijing–Fengtian, eastern China, Hankou, Nanjing–Pukou and strategic Asia |
+| Units | **13 base definitions and 3 elite variants**, restricted by era and scenario |
+| Factions and generals | **47 faction definitions and 29 general definitions**; availability is scenario-specific |
+| Progression | **28 technologies, 9 passive skills, 9 active skills and 24 achievements** |
+| Facilities | **12 types** covering recruitment, transport, supply, medicine, defense, communications and trade |
+| Raster art | **1,056 PNGs**, including **870 map assets**, 64 cardinal-direction unit views and 16 ordinary-infantry action images |
+| Audio and fonts | 14 procedural sound effects, 3 procedural music tracks and 2 Chinese fonts with OFL notices |
+| Current regression snapshot | **22 groups / 4,741 passing checks**, plus native HUD, facing, action and pixel checks |
+| Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
+
+Runtime data lives in `content/`. Original designs and older versions retain their own status. Content counts do not establish complete art, historical, balance or device acceptance. See the [completion assessment](docs/23_当前完成度评估.md).
+
+<a id="screenshots"></a>
+## Gameplay screenshots and GIFs
+
+### Battlefield layout
+
+![Native battlefield with objectives, terrain, formations, inspector and orders](docs/media/battlefield.png)
+
+*The resource/date bar sits above the map, objectives occupy the upper left, the inspector is on the right, and command previews and confirmations sit below.*
+
+### Native movement and combat
+
+![Movement and combat from the native campaign recording](docs/media/movement.gif)
+
+*Movement excerpt: 0.5–7.5 seconds, 12 FPS, full frame resized to 960×540, normal speed, looping.*
+
+![Battle window, random dice and hit reactions from native gameplay](docs/media/combat.gif)
+
+*Combat excerpt: 15–23 seconds. Dice, attacks and hits follow real committed commands. GIFs have no audio.*
+
+[Full 26.2-second native MP4 with audio](reports/atlas_v2_native_final.mp4) · [Sources, SHA-256 and conversion parameters](docs/media/manifest.json)
+
+Godot MovieWriter produced the recording. A controlled native demonstration submits legal commands, including AI turns, on an unchanged published campaign deployment. Replay was checked against the same final state and random stream. This is a functional gameplay demonstration rather than a claimed manual playthrough.
+
+### Terrain detail
+
+![Yanshan relief, varied settlements and textured ground](docs/media/mountains.png)
+
+*Hills, mountains, villages and ground around Yanshan. Translucent faction control preserves the underlying terrain.*
+
+![Source-derived tributaries and textured cells](docs/media/tributaries.png)
+
+*Tributaries use scale-dependent display. Fine visual waterways remain distinct from rule-level rivers and crossings.*
+
+<details>
+<summary>More full native screenshots: coast, sand, gravel, wet soil, Yangtze, deployment and mobile layout</summary>
+
+![Bohai coast and Shanhaiguan](docs/media/coast.png)
+
+![Sandy ground in the Taklamakan region](docs/media/sand.png)
+
+![Gravel ground in the Gobi region](docs/media/gravel.png)
+
+![Wet ground near the Bohai coast](docs/media/wet-soil.png)
+
+![Yangtze and alluvium near Hankou](docs/media/yangtze.png)
+
+![Strategic Asia](docs/media/asia-overview.png)
+
+![Legion budget and deployment UI](docs/media/legion-deployment.png)
+
+![2400×1080 mobile layout exercised on Windows](docs/media/mobile-layout.png)
+
+The final image is a **Windows desktop test of the 2400×1080 mobile UI**. It is not a physical Motorola X30 capture and does not establish phone frame rate, touch behavior or thermals.
+
+</details>
+
+<a id="menus"></a>
+## Menus and battlefield UI
+
+This diagram shows implemented navigation. Screenshots show the actual visual design.
+
+```mermaid
+flowchart TD
+    Home[Main menu] --> Campaign[Campaign archive]
+    Home --> World[Conquest and free world]
+    Home --> Legion[Legion challenges]
+    Campaign --> Mission[Mission and difficulty]
+    World --> Faction[Starting point, faction and difficulty]
+    Legion --> Draft[Budget, formations, elites and generals]
+    Mission --> Battle[Battlefield]
+    Faction --> Battle
+    Draft --> Battle
+    Home --> HQ[Headquarters: generals, research, skills and medals]
+    Home --> Records[Battle records, achievements and local scores]
+    Home --> Saves[Load game]
+    Home --> Manual[Field manual]
+    Home --> Settings[Settings]
+    Battle --> Pause[Pause, save and settings]
+    Battle --> Result[Outcome, stars and rewards]
+    Result --> Home
+```
+
+| Area | Function |
+| --- | --- |
+| Top bar | Cash, food, arms, fuel, silver, date, round and acting faction |
+| Objective card | Current goals, progress, round conditions and briefing |
+| Central map | Select hexes, formations, cities and places; inspect movement and targets |
+| Right inspector | Strength, AP, range, ammunition, morale, suppression, experience, supply and orders |
+| Layer tools | Control, terrain, names, place inspection, railways, supply and overview |
+| Lower-left minimap | Position and click-to-center navigation |
+| Bottom command bar | Preview, confirm, cancel, auto-play, end phase and skip presentation |
+| Battle window | Combatants, dice, attacks, hits and counters; optional and skippable |
+
+The main-menu campaign subtitle still says “18 missions.” The actual list contains **39 campaigns**, as recorded in JSON and the index. Updating that older label remains a follow-up.
+
+<a id="play"></a>
+## Getting started and controls
+
+| Platform | Method | Scope |
+| --- | --- | --- |
+| Windows | Run exported `build/windows/RailwayWarlords.exe` | Native x86_64, embedded resources; players need neither Godot nor Python |
+| Android | Install your exported `build/android/RailwayWarlords.apk` | Landscape, ARM64 / ARMv7, Android 7.0 / API 24 minimum; validated package targets SDK 36 |
+| Godot editor | Import root `project.godot`, wait for import, press **F5** | Godot 4.7.2, Compatibility renderer |
+
+Git includes complete source and runtime assets. Binaries, caches and private signing material are excluded. Original art occupies about 1.9 GiB; allow time for clone/import and several GB of free disk space. Existing local 0.2.12 delivery packages remain separate.
+
+### First battle
+
+1. Open Campaign, choose an unlocked opening mission and read victory/failure conditions.
+2. Select artillery and an enemy target, inspect damage/counterattack previews, then confirm.
+3. Break defenses and remove the garrison. Move an occupation-capable formation into the city; artillery cannot capture.
+4. Watch food, ammunition, supply and morale. Use production, rail transport and engineers to sustain the front.
+5. End your phase and observe AI actions under the same rules. Outcomes award stars and progression.
+6. Configure generals, technology and skills in Headquarters for the next match; ongoing matches retain their starting snapshots.
+
+### Controls
+
+| Action | Windows | Android |
+| --- | --- | --- |
+| Select unit / city / hex | Click | Tap |
+| Pan | Drag | One-finger drag |
+| Zoom | Mouse wheel | Pinch |
+| Commit order | Select target, then confirm; repeat selection is supported | Confirm / repeat selection |
+| Next ready formation | `Tab` | UI button |
+| End phase | `Space` while idle, then confirm | End-phase button |
+| Skip presentation | `Space` during playback | Skip button |
+| Cancel / pause | `Esc` | Cancel / pause UI |
+| Rail destinations | `R` with a unit selected | Unit orders |
+| General assignment | `G` with a unit selected | General UI |
+| Supply overlay | `F` | Supply button |
+| Strategic overview | `M` | Overview button |
+
+<a id="combat"></a>
+## Turns, combat and victory
+
+```mermaid
+flowchart LR
+    A[Income, supply and phase events] --> B[Inspect objectives and intelligence]
+    B --> C[Move, attack, skills and production]
+    C --> D[Validate and resolve atomically]
+    D --> E[Movement, combat and feedback]
+    E --> C
+    C --> F[End player phase]
+    F --> G[AI acts under the same rules]
+    G --> H[Objectives and outcome]
+    H --> A
+```
+
+- **Movement:** weighted hex paths consider terrain, zones of control, visibility, bridges, crossings and transport. Movement can be split; hidden contacts use encounter rules.
+- **Attacks:** one main attack per formation per phase, spending ammunition and remaining AP. Range, counters, terrain, strength, morale, suppression, generals and research influence results.
+- **Counterattacks:** use post-hit strength and suppression. Ordinary units have a per-round allowance; machine guns gain additional capability. Range and defense restrictions apply.
+- **Cities:** walls and garrisons have separate health. Breaching does not transfer ownership; eligible formations must occupy.
+- **Dice:** previews are read-only and do not advance randomness. Combat records attack/defense dice, modifiers, damage and counters. The random stream is saved and replayable.
+- **Visibility:** terrain sight, exploration, reconnaissance, last-known contacts and allied sharing govern intelligence. AI uses visible information and the same command interface.
+- **Presentation:** movement, persistent heading, projectiles, muzzle effects, hits, floating values, defeats, occupation, air support and dice follow actual state events.
+
+Objectives include capture, continuous defense, elimination of a target formation, commander capture/defeat, escort, survival and repairs. Protected-unit losses and general injuries can take failure priority. Scenario thresholds and losses determine stars.
+
+Conquest/free world evaluate strategic nodes, faction survival and alliances, with scenario scoring at the round limit. Warlord conquests generally use 80 rounds; Asian free worlds use 180. The game calendar is not a daily historical chronology.
+
+Difficulty includes ordinary progression, hard and standardized challenge. The current hard setting advertises +10% enemy attack. Legion uses normalized progression; deployment budgets and in-match city funds are separate.
+
+<a id="army"></a>
+## Units, generals and progression
+
+| Base unit | Role and restrictions |
+| --- | --- |
+| Local garrison | Low-cost defense, line coverage and occupation |
+| Rifle regiment | Main infantry for capture, defense and combined attacks |
+| Assault battalion | Breakthrough and close assault, era-restricted |
+| Machine-gun battalion | Suppression, defensive positions and counterattacks |
+| Cavalry regiment | Mobility, flanking, pursuit and occupation |
+| Engineer battalion | Rail repairs, engineering and occupation |
+| Field artillery | Ranged suppression and breaching; cannot capture |
+| Heavy artillery | Heavy ranged fire requiring production and supply |
+| Armored cars | Mobility and occupation, constrained by era, terrain and supply |
+| Armored train | Rail-based firepower on usable track |
+| River gunboat | Inland support and escort |
+| Transport ship | Port loading and disembarkation; needs land troops for occupation |
+| Coastal gunship | Coastal support and shore bombardment |
+
+Health, attack, defense, AP, range, costs and earliest eras are in the [unit reference](docs/UNIT_REFERENCE.md). [units.json](content/definitions/units.json) is authoritative. A `stack` is a game formation layer, not an archival battalion, regiment or brigade. Scenario whitelists also restrict recruitment.
+
+The 29 general definitions include Wu Peifu, Zhang Zuolin, Feng Yuxiang, Yan Xishan, Lin Zexu, Hong Xiuquan, Zeng Guofan, Sun Yat-sen, Chiang Kai-shek and Li Zongren. Presence, affiliation and deployability are scenario-specific. Ratings are gameplay values; portraits and historical affiliations require separate review.
+
+Headquarters manages generals, ranks, active/passive skills, medals, research and elites. Units gain in-match experience. Long-term progression is frozen into a starting snapshot; later profile upgrades do not change an ongoing match. A reward ledger prevents duplicate grants.
+
+Three elites cover assault infantry, cavalry and artillery, with chapter and research gates. Eighteen skills cover bombardment, assault, cavalry maneuvers, emergency rations, rail priority, reconnaissance, entrenchment, field repair and coordinated fire.
+
+<a id="economy"></a>
+## Cities, economy, logistics and diplomacy
+
+| Resource / indicator | Gameplay role |
+| --- | --- |
+| Cash | Recruitment, wages, buildings, repairs and some diplomacy |
+| Food | Sustaining formations and operations |
+| Arms | Recruitment, reinforcement, ammunition and repairs |
+| Fuel | Transport/mobility pressure; early-era quantities are abstractions |
+| Silver | Trade, diplomacy and reserves |
+| Recruits | City recruitment and reinforcement capacity |
+| Morale / suppression | Supply condition, incoming fire and fighting capability |
+| War exhaustion / legitimacy | Income and long-term war pressure |
+| Colonial influence | Abstract port, trade and diplomatic influence |
+
+**Cities** track level, walls, recruits, garrisons and queues. Twelve facilities cover barracks, machine-gun workshops, arsenals, stations, ports, airfields, depots, hospitals, fortifications, telegraphs, markets and granaries. Ordinary facilities use four slots; fortifications are separate. Demolition frees capacity. Completed production waits if deployment is blocked.
+
+**Railways** check both faction capacity and every route segment. Enemy control, damage and passage rights affect transport. Engineers repair over phases; leaving pauses work. Track supports movement and supply, and armored trains need usable lines.
+
+**Supply** follows city, road, rail and river/sea networks. Disruption and permissions affect supply state, then movement, firepower, ammunition and morale. Sustained starvation can cause losses. Loading/unloading obeys port, action and destination restrictions.
+
+**Air support** uses permitted airfields and validates sorties, range, resources, ammunition and weather for reconnaissance and bombing.
+
+**Diplomacy** supports war, truces, alliances, passage, supply rights, aid and trade. Alliances do not automatically transfer cities; shared victory follows relationships. Players can change events after a geographically grounded starting point.
+
+These systems form an economy–production–transport–combat loop. Resources and political/fiscal indicators are balance abstractions, not historical statistics. The game does not claim Europa Universalis-level state-management depth. See [economy and army systems](docs/21_经济物资士气与多元军队.md).
+
+<a id="geography"></a>
+## Geography, terrain and historical scope
+
+| Map | Total cells | City nodes | Purpose |
+| --- | ---: | ---: | --- |
+| Beijing–Tianjin `jingjin` | 26,195 | 11 | Beijing, Tianjin and northern local theaters |
+| Beijing–Fengtian `jingfeng` | 65,726 | 15 | Railway, Shanhaiguan and Bohai |
+| Eastern China `conquest_china` | 74,762 | 55 | Warlord conquest |
+| Hankou `hankou` | 400 | 3 | River defense and escort training |
+| Nanjing–Pukou `ningpu` | 440 | 2 | Transport, loading and landing exercises |
+| Asia `asia_strategic` | 7,668 | 81 | Continental strategy and related missions |
+
+Totals include water and restricted cells, not only deployable land. Beijing–Tianjin, Beijing–Fengtian and eastern China were expanded fivefold along each dimension while retaining the **48-pixel operational hex radius**. Asia spans **20°E–180°E, 10°S–80°N** at continental scale. It is not village-level coverage of the continent, and detail density varies.
+
+- **Coasts/major rivers:** Natural Earth geometry, real city coordinates and dated railway references.
+- **Fine waterways:** 24,268 fine reaches plus 31 replacement display reaches, totaling 24,299 tactical records. Asia separately retains 694 sourced detail reaches. Scale-dependent display does not claim every creek.
+- **Relief:** attributed Tilezen/SRTM and other elevation. Asia uses 54 raw GeoTIFFs and 33,696 registered samples; nominal hex radius is 150 km with 100 km sampling support.
+- **Ground:** meadow, dry grass, rocky soil, woodland floor, wet soil, water, sand, gravel and alluvium selected through source regions, relief and geography.
+- **Scenery:** tree canopies, hills, ridges, peaks, banks, outcrops, reeds and regional buildings with anchors, slope direction and spatial repetition constraints.
+- **Settlements:** capitals, provincial/county seats, towns and villages; 67 additional source-linked markers, zoom-dependent visibility and administrative notes.
+- **Control:** translucent tint preserves terrain, approximately 0.21 strategic / 0.26 tactical opacity. It follows in-game node ownership, not surveyed historical military boundaries.
+
+The map library grew from 74 to **870 assets, about 11.76×**. The 796 new originals include **176 ground materials, 480 scenery assets and 140 buildings**. Display scaling, mirroring and tint variants are not counted as independent originals.
+
+Physical geography, dated administrative sources, people and OOB are tracked separately. Modern potential ecoregions guide representative materials, not annual historical forest/wetland/land-use maps. Modern waterways do not automatically establish historic channels. Generated buildings are regional symbols, not reconstructions of named streets.
+
+Asian local missions currently use coarse strategic nodes, with some places mapped to nearby nodes. Strength, stacks, income, weather, deployments and objectives are authored game data. Dates, people, equipment, OOB and initial control remain subject to item-level review. See [historical data](docs/19_亚洲全境时间线与史实数据.md), [geographic rationale](docs/07_历史地理与地图美术.md) and [surfaces/waterways](docs/29_地表材质与细水系.md).
+
+<a id="content"></a>
+## Scenarios and timelines
+
+**Warlord theaters:** 18 original missions form 1920, 1922 and 1924 groups with corresponding eastern-China conquests. Cities, railways, supply and military groups are central. The 1924 conquest has a date-triggered Beijing coup and Guominjun state changes; subsequent outcomes follow gameplay.
+
+| Asian start | Current themes | Interpretation |
+| --- | --- | --- |
+| 1840 | Qing, British and other Asian powers; Opium War group | Missions extend into 1841/1842; the group label is not each mission's date |
+| 1860 | Anglo-French war, northern routes and Taiping themes | Conflicts, regions and relationships are recorded separately |
+| 1890 | Pre-Sino-Japanese War setting and 1894/1895 missions | Not the Boxer movement date; no complete separate Russo-Japanese War group yet |
+| 1900 | Dagu, Tianjin, Beijing and Eight-Nation Alliance themes | Historical force phases are not interchangeable with game formations |
+| 1917 | Constitutional Protection, Beijing politics and Russian power changes | Some labels and registered dates still need review |
+| 1927 | Northern Expedition, Wuhan, Shanghai and Jiangxi themes | Event subjects, operation dates and objectives are reviewed separately |
+| 1940 | Chinese transport fronts, Hubei and Indochina | Equipment, people and deployments retain separate approval status |
+
+Each Asian start has one free world and three missions: **7 starts and 21 missions**. A mission's `province_scope` has at most three provincial/regional entries; this is authoring scope, not a claim that all historical Asian provincial borders have been drawn. Thirty OOB entries retain strength ranges and source status; unverified squads and officers are not invented.
+
+Twelve legion exercises teach combined attacks, suppression, engineering, supply, rail, reconnaissance, river defense and cross-river transport. They are explicitly exercises. The [61-scenario index](docs/SCENARIO_INDEX.md) lists every current name, date, map and limit.
+
+<a id="saves"></a>
+## Saves and settings
+
+- **Saving:** five manual slots, three rotating autosaves and Android background saving. Backup recovery handles corruption; incompatible content/rule fingerprints are rejected explicitly.
+- **Versions:** relief corrections changed this version's content fingerprint. Continue older in-progress matches with their corresponding build. Profiles are separate; universal cross-version compatibility is not promised.
+- **Pause:** dialogs stop AI submission. Background results are validated against match identity/version to prevent stale commits.
+- **Settings:** music, effects, volume, grid, playback speed, battle window, reduced shake and 100% / 120% / 150% text.
+- **Mobile:** landscape, larger controls, safe areas, dragging and pinch. Motorola X30 is the target phone, with physical acceptance pending.
+- **Storage:** Windows Godot `user://`, usually `%APPDATA%/Godot/app_userdata/铁道烽烟：军阀时代/`; Android private app storage. Achievements and rankings are local.
+- **Networking:** no multiplayer or online rankings. APK requests no network, camera, microphone or external-storage permissions.
+
+<a id="development"></a>
+## Running and exporting the source
+
+### Clone and run
+
+Use native Windows tools. Local Docker, WSL, VMs and Android emulators are prohibited by project rules.
+
+```powershell
+git clone git@github.com:wikigsroom/railway-warlords.git
+Set-Location railway-warlords
+
+# Put native Godot 4.7.2 console on PATH as godot, or use its full path.
+godot --headless --path . --editor --import --quit
+godot --path . --editor
+# Run directly:
+godot --path .
+```
+
+Git LFS is unnecessary. Original PNG bytes and `*.import` settings are tracked; `.godot/` is regenerated. Running the core game requires neither Python nor the generation gateway/private workstation configuration.
+
+### Windows
+
+Install the **official export templates matching Godot 4.7.2 exactly**. The `Windows` preset uses x86_64, Compatibility rendering and embedded PCK.
+
+```powershell
+New-Item -ItemType Directory -Force build/windows | Out-Null
+godot --headless --path . --export-release "Windows" "build/windows/RailwayWarlords.exe"
+```
+
+Commercial code signing is not configured; use your own signing process for production.
+
+### Android
+
+Configure native **JDK 21, Android SDK** and matching templates in Godot editor settings. The validated APK is **minSDK 24 / targetSDK 36**, with ARM64/ARMv7 enabled and x86 emulator targets disabled.
+
+```powershell
+New-Item -ItemType Directory -Force build/android | Out-Null
+godot --headless --path . --export-debug "Android" "build/android/RailwayWarlords-debug.apk"
+adb install -r build/android/RailwayWarlords-debug.apk
+adb shell monkey -p org.railwaywarlords.game -c android.intent.category.LAUNCHER 1
+```
+
+Configure your own release keystore, alias and password through Godot private credentials or environment variables, outside tracked files, then export:
+
+```powershell
+godot --headless --path . --export-release "Android" "build/android/RailwayWarlords.apk"
+```
+
+App ID is `org.railwaywarlords.game`, current versionCode 17. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
+
+### Automation scope
+
+`tools/` includes build, regression, geography, asset, recording and delivery-review helpers. Some retain the original layout:
+
+```text
+workspace/
+├── .toolchain/              # Native engine and private signing setup
+├── design/铁道烽烟/          # Original design and registries
+├── output/                  # Originals, raw geographic archives and older deliveries
+└── game/railway_warlords/    # Original location of this repository
+```
+
+External archives are not part of a standalone clone. Helpers such as `build_release.py` contain machine paths and require configuration; raw geographic reconstruction needs the original datasets. The Godot commands above run/export a standalone clone using included compiled geography and full runtime art. See [development notes](docs/DEVELOPMENT.md).
+
+<a id="engineering"></a>
+## Architecture, validation and performance
+
+```text
+.
+├── project.godot / export_presets.cfg
+├── app/              # Menus, HUD, match controller and native QA
+├── domain/           # Commands, combat, movement, economy, logistics and outcomes
+├── ai/               # Planning through the shared command interface
+├── content/          # Definitions, maps, scenarios and fingerprints
+├── presentation/     # Hex map, surfaces, hydrography, sprites, animation and camera
+├── persistence/      # Match/profile storage, backups and atomic saves
+├── audio/            # Audio events and procedural audio
+├── assets/           # Original images, audio, fonts, imports and provenance
+├── schemas/          # Data contracts
+├── tests/            # Rules, transactions, geography, input and presentation
+├── tools/            # Native compilation, validation and media preparation
+├── reports/          # Selected validation snapshots and native recording
+└── docs/             # Documentation, media, provenance and prompts
+```
+
+UI and AI submit commands; previews are read-only. `CommandKernel` validates version, actor, target, costs and legality, resolves atomically, and returns state/events. Rules, AI and save I/O use a serial native worker queue. The main thread validates match identity/version before applying results while map navigation remains independent. See [modules](docs/02_架构与模块.md).
+
+### Validation
+
+```powershell
+godot --headless --path . --script tests/run_tests.gd
+godot --headless --path . --script tests/acceptance_test.gd
+godot --headless --path . --script tests/transaction_test.gd
+godot --headless --path . --script tests/asia_content_test.gd
+godot --headless --path . --script tests/map_bank_test.gd
+godot --headless --path . --script tests/surface_geography_test.gd
+```
+
+Twenty-two groups / 4,741 checks cover rules, input, geography, progression, transactions, events, rendering, workers, scale, logistics, caches, settlements, snapshots, Asia, boundaries, facing, surfaces and the map bank. Additional checks cover 84 HUD assertions over three viewports, legal cardinal movement/idle facing, infantry actions, command replay and cached/direct rendering pixels.
+
+[Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current summary](reports/visual_update_verification_summary.json)
+
+Reports are original-workspace 0.2.12 snapshots, not a claim that another machine has rerun them. They do not replace manual gameplay, art, historical or device acceptance. Full AI endurance was not rerun for this map patch; older results retain their version identity.
+
+### Desktop measurements
+
+RTX 3060, VSync disabled, maximum load including 240 formations. Sustained pan/zoom ran 60 seconds per profile; other phases use fixed-frame samples. Both columns come from the native Windows executable.
+
+| Phase | 1920×1080 average FPS / P95 ms | 2400×1080 desktop mobile layout average FPS / P95 ms |
+| --- | ---: | ---: |
+| Static atlas | 389.9 / 3.46 | 418.9 / 3.01 |
+| Atlas pan | 160.0 / 8.20 | 169.0 / 7.61 |
+| Tactical selection | 63.9 / 45.16 | 74.0 / 37.08 |
+| Sustained pan/zoom | 170.8 / 7.90 | 175.3 / 7.17 |
+| Active combat | 129.5 / 8.19 | 123.8 / 8.81 |
+
+Tactical selection still has frame-time spikes; averages do not establish stable individual frames. These are not physical X30 results. See [capacity and rendering equivalence](docs/12_容量性能与渲染等价.md).
+
+<a id="assets"></a>
+## Artwork, media and licensing
+
+All 1,056 runtime PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
+
+- [Runtime manifest](assets/manifest.json): original workspace sources, models, dimensions and hashes.
+- [Portable provenance](docs/asset-provenance/index.json): repository-relative images/prompts and SHA-256.
+- [Prompt directory](docs/asset-prompts/): 1,056 prompts; gateway configuration and credentials are excluded.
+- [Media guide](docs/MEDIA.md): native screenshots, recording, GIF conversion and evidence scope.
+- [Map expansion](docs/28_地图素材扩充与去重.md), [ground and rivers](docs/29_地表材质与细水系.md): selection and source precision.
+
+Engine, fonts and geographic data retain individual terms. Natural Earth, HydroRIVERS/HydroSHEDS, ecoregion, elevation and other notices live in [assets/legal](assets/legal/); font terms are `assets/font/OFL*.txt`. HydroSHEDS is not public domain merely because the source is published.
+
+**No blanket open-source license has yet been selected for all original code/art.** Publishing source does not automatically grant MIT/Apache-style rights. See [license status](LICENSE-NOTICE.md). Reference-game names describe comparisons and imply no affiliation or authorization.
+
+<a id="limits"></a>
+## Known limitations and next steps
+
+| Current boundary | Follow-up |
+| --- | --- |
+| Expanded map library without full commercial art sign-off | Edge kits, seasons, unique relief, streets, bridges and ports |
+| Cardinal unit views; fuller actions mainly for ordinary infantry | Other unit cycles, reloads, deaths and more headings |
+| Continental Asia with coarse local mission nodes | Detailed theaters, dated provincial borders and bespoke deployments |
+| Historical evidence separated from gameplay data | Item-level dates, labels, people, equipment, OOB and control review |
+| Playable loop without all-mission manual balancing | Victory paths, weaker factions, economy pacing and difficulty |
+| Desktop X30-size layout checks | Physical X30 install, touch, GPU, thermals, battery and endurance |
+| Tactical selection frame-time spikes | Reduce selection, preview and submission peaks |
+| Chinese UI and some older labels | Copy cleanup, English localization and onboarding |
+| External archives/machine paths in helpers | Parameterized toolchain and data reconstruction |
+
+Pending work is not counted as completed. Full-release gates, scoped test deliveries and older-version status remain separate.
+
+<a id="docs"></a>
+## Documentation guide
+
+Detailed implementation chapters currently use Chinese; this English README covers the same current features and delivery scope.
+
+| Topic | Documents |
+| --- | --- |
+| Getting started | [Index](docs/00_程序文档索引.md), [controls](docs/01_运行与操作.md) |
+| Content and values | [Scenarios](docs/SCENARIO_INDEX.md), [units](docs/UNIT_REFERENCE.md) |
+| Development | [Standalone setup](docs/DEVELOPMENT.md), [platform exports](docs/06_双端构建与发布.md) |
+| Implementation | [Architecture](docs/02_架构与模块.md), [background rules](docs/13_后台规则与响应性.md) |
+| Maps | [Geography](docs/07_历史地理与地图美术.md), [fivefold scale](docs/14_地图比例与五倍格网.md), [places](docs/15_历史聚落与势力地图.md) |
+| Asia | [Historical sources](docs/19_亚洲全境时间线与史实数据.md), [campaign/free world](docs/20_亚洲战役系统与自由世界.md) |
+| Economy/progression | [Resources and morale](docs/21_经济物资士气与多元军队.md), [profile transactions](docs/08_养成与事务回归.md) |
+| Visual references | [EW6 direction](docs/16_欧陆战争6对标与美术改版.md), [map gaps](docs/25_欧陆战争6地图资源差距评估.md), [UI structure](docs/26_欧陆战争6_UI结构与视觉对标.md) |
+| Current art | [Actions](docs/27_动作关键帧与地格详情.md), [asset bank](docs/28_地图素材扩充与去重.md), [surfaces/rivers](docs/29_地表材质与细水系.md) |
+| Verified scope | [Completion](docs/23_当前完成度评估.md), [validation](docs/05_测试与验收.md) |
+| Media and sources | [Screenshots/GIFs](docs/MEDIA.md), [provenance](docs/asset-provenance/index.json), [licensing](LICENSE-NOTICE.md) |
+
+Older chapters preserve their version context. Use these READMEs, the 0.2.12 assessment and corresponding reports for current status.

@@ -1,0 +1,184 @@
+{
+  "design_version": "1.0",
+  "ruleset_version": 1,
+  "arithmetic": "integer rational; final round half up",
+  "combat": {
+    "base_damage_permille": 1200,
+    "stack_attack_increment_permille": 350,
+    "attack_bonus_cap_min": -300,
+    "attack_bonus_cap_max": 400,
+    "health_base_permille": 600,
+    "health_scaled_permille": 400,
+    "supply_permille": {
+      "FULL": 1000,
+      "LOW": 850,
+      "NONE": 700
+    },
+    "morale_base_permille": 850,
+    "morale_per_point_permille": 3,
+    "initial_morale": 50,
+    "defense_divisor": 80,
+    "defense_cap": 100,
+    "counter_permille": 500,
+    "counter_per_round": 1,
+    "machine_gun_counter_per_round": 2,
+    "fort_defense": 30,
+    "garrison_collateral_permille": 150,
+    "suppression_thresholds": [
+      30,
+      60,
+      90
+    ],
+    "suppression_attack_penalties_permille": [
+      0,
+      -100,
+      -250,
+      -300
+    ],
+    "suppression_ap_penalties": [
+      0,
+      0,
+      1,
+      2
+    ],
+    "suppression_recover": 25,
+    "full_supply_extra_recover": 10,
+    "counter_damage_uses_post_hit_suppression": true
+  },
+  "logistics": {
+    "ground_supply_cost_radius": 6,
+    "food_reserve_cap": 3,
+    "ammo_cap": 4,
+    "attrition_permille": 80,
+    "attrition_from_unsupplied_own_phase": 2,
+    "rail_station_capacity": 2,
+    "rail_hub_capacity": 3,
+    "rail_pool_cap": 12,
+    "rail_edge_capacity": 3,
+    "rail_bridge_capacity": 2,
+    "rail_max_edges": 12,
+    "transport_cargo_stack_cap": 3,
+    "airfield_sorties": 2,
+    "air_faction_sortie_cap": 5,
+    "recon_cost": {
+      "cash": 30,
+      "arms": 8
+    },
+    "bomb_cost": {
+      "cash": 55,
+      "arms": 18
+    },
+    "bomb_base_damage": 28,
+    "bomb_suppression": 20,
+    "bomb_fort_permille": 600,
+    "cargo_survival_permille": 500,
+    "cargo_survival_cap_permille": 700,
+    "recon_radius": 2,
+    "rain_offroad_ap_extra": 1,
+    "snow_food_extra_per_stack": 1
+  },
+  "economy": {
+    "city_slots": 4,
+    "recruit_queue_cap": 3,
+    "construction_queue_cap": 1,
+    "reserve_cost_per_stack": 10,
+    "capture_stability": 40,
+    "stability_recovery": 10,
+    "capture_reserve_keep_permille": 400,
+    "recruit_cancel_refund_permille": 750,
+    "ready_cancel_refund_permille": 500,
+    "reinforce_hp_permille": 250,
+    "reinforce_price_permille": 700,
+    "trade_food_cash_ratio": 4,
+    "trade_arms_cash_ratio": 6,
+    "trade_sale_permille": 500,
+    "trade_orders_per_phase": 2,
+    "trade_max_resource_per_order": 40,
+    "building_upgrade_cost_permille": 1500,
+    "building_upgrade_extra_phases": 1,
+    "hospital_hp_recovery_per_level": 5,
+    "hospital_recovery_fraction_cap_permille": 100,
+    "fort_repair_cash_per_20_hp": 12,
+    "fort_repair_arms_per_20_hp": 6,
+    "fort_bonus_hp_per_level": 40,
+    "fort_hp_cap": 340,
+    "salary_morale_penalty": 5,
+    "rail_repair_cost": {
+      "cash": 50,
+      "arms": 20,
+      "own_phases": 1
+    },
+    "bridge_repair_cost": {
+      "cash": 100,
+      "arms": 40,
+      "own_phases": 2
+    },
+    "salary_income_permille": 750
+  },
+  "progression": {
+    "command_base": 3,
+    "command_cap": 5,
+    "general_star_attack_permille": 20,
+    "general_rank_hp_permille": 30,
+    "general_rank_max": 6,
+    "general_skill_rank_max": 3,
+    "general_rank_cost_merit": [
+      80,
+      140,
+      220,
+      320,
+      440,
+      580
+    ],
+    "general_rank_xp": [
+      100,
+      220,
+      380,
+      580,
+      820,
+      1100
+    ],
+    "general_defense_bonus_cap": 8,
+    "medal_slots": 2,
+    "medal_family_duplicate_allowed": false,
+    "tech_ranks": 3,
+    "ap_cap": 8,
+    "upkeep_reduction_cap_permille": 300,
+    "tech_attack_bonus_cap_permille": 150,
+    "fort_bonus_cap_permille": 2400,
+    "command_telegraph_bonus_cap": 1,
+    "skill_upgrade_cost_merit": [
+      60,
+      120
+    ],
+    "skill_upgrade_cost_xp": [
+      120,
+      240
+    ]
+  },
+  "scenario": {
+    "conquest_round_limit": 80,
+    "conquest_days_per_round": 7,
+    "campaign_days_per_round": 1,
+    "ranked_uses_normalized_profile": true
+  },
+  "performance_targets": {
+    "map_cells": 4096,
+    "active_formations": 240,
+    "desktop_fps": 60,
+    "ai_phase_ms_p95": 5000,
+    "command_preview_ms_p95": 50,
+    "save_load_ms_p95": 1000
+  },
+  "victory": {
+    "effective_counterattack_min_hp_permille": 250,
+    "counterattack_max_movement_phases": 3,
+    "score_key_city": 100,
+    "score_income_cash": 2,
+    "score_income_food": 1,
+    "score_income_arms": 2,
+    "score_surviving_hp_divisor": 10,
+    "tie_break": "key_cities_then_total_hp_then_faction_id_ascii",
+    "failure_before_success": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "build_version": "0.2.12",
+  "runtime_source_sha256": "8a763cfc5ab4f34259511fb38c82893b07a87c897c8103649a1e76c874d35488",
+  "cases": [
+    {
+      "name": "1920x1080_100",
+      "report": "reports/hud_native_1920x1080_100.json",
+      "checks": 28,
+      "viewport": [
+        1920.0,
+        1080.0
+      ],
+      "physical_android_device_tested": false
+    },
+    {
+      "name": "2400x1080_120_mobile",
+      "report": "reports/hud_native_2400x1080_120_mobile.json",
+      "checks": 28,
+      "viewport": [
+        2400.0,
+        1080.0
+      ],
+      "physical_android_device_tested": false
+    },
+    {
+      "name": "1280x720_150",
+      "report": "reports/hud_native_1280x720_150.json",
+      "checks": 28,
+      "viewport": [
+        1280.0,
+        720.0
+      ],
+      "physical_android_device_tested": false
+    }
+  ],
+  "checks": 84,
+  "manual_compositing": false,
+  "physical_android_device_tested": false
+}

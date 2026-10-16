@@ -1,0 +1,50 @@
+[
+  {
+    "id": "marksmanship",
+    "name": "射术章",
+    "effect": "attack_bonus",
+    "values_permille": [
+      30,
+      45,
+      60
+    ],
+    "scope": "eligible_weapon",
+    "cost_merit": [
+      80,
+      140,
+      220
+    ]
+  },
+  {
+    "id": "steadfast",
+    "name": "坚守章",
+    "effect": "defense_flat",
+    "values": [
+      2,
+      3,
+      4
+    ],
+    "scope": "all",
+    "cost_merit": [
+      80,
+      140,
+      220
+    ]
+  },
+  {
+    "id": "logistics_medal",
+    "name": "勤务章",
+    "effect": "food_upkeep_reduction",
+    "values_permille": [
+      30,
+      50,
+      70
+    ],
+    "scope": "all",
+    "cost_merit": [
+      80,
+      140,
+      220
+    ]
+  }
+]

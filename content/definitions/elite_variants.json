@@ -1,0 +1,44 @@
+[
+  {
+    "id": "elite_assault",
+    "name": "突击教导队",
+    "base_unit": "assault",
+    "hp_bonus": 10,
+    "attack_bonus": 6,
+    "defense_bonus": 2,
+    "cost_multiplier_permille": 1500,
+    "upkeep_multiplier_permille": 1300,
+    "max_stack": 2,
+    "per_faction_cap": 2,
+    "required_tech": "assault_drill",
+    "required_rank": 2
+  },
+  {
+    "id": "elite_cavalry",
+    "name": "骑兵先锋队",
+    "base_unit": "cavalry",
+    "hp_bonus": 10,
+    "attack_bonus": 5,
+    "defense_bonus": 2,
+    "cost_multiplier_permille": 1500,
+    "upkeep_multiplier_permille": 1300,
+    "max_stack": 2,
+    "per_faction_cap": 2,
+    "required_tech": "cav_charge",
+    "required_rank": 2
+  },
+  {
+    "id": "elite_artillery",
+    "name": "炮兵教导队",
+    "base_unit": "field_artillery",
+    "hp_bonus": 10,
+    "attack_bonus": 6,
+    "defense_bonus": 2,
+    "cost_multiplier_permille": 1500,
+    "upkeep_multiplier_permille": 1300,
+    "max_stack": 2,
+    "per_faction_cap": 2,
+    "required_tech": "gun_accuracy",
+    "required_rank": 2
+  }
+]

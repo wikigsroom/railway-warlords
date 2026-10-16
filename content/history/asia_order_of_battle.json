@@ -1,0 +1,695 @@
+{
+  "schema_version": "asia-oob-1",
+  "status": "historical_reference_plus_game_mapping",
+  "unit_mapping_note": "game_unit_mapping maps a documented historical formation to existing Godot unit classes; it does not claim one game stack equals one historical battalion.",
+  "formations": [
+    {
+      "id": "qing_green_standard_coastal_1840",
+      "name_zh": "清军绿营沿海营汛",
+      "name_en": "Qing Green Standard coastal garrisons",
+      "era": "1840",
+      "side": "qing",
+      "commander": "lin_zexu",
+      "theater": "广东—浙江沿海",
+      "formation_level": "regional_garrison",
+      "strength_min": 20000,
+      "strength_max": 40000,
+      "strength_unit": "troops",
+      "strength_status": "theatre_range_verify_before_release",
+      "game_unit_mapping": [
+        "militia",
+        "rifle",
+        "field_artillery"
+      ],
+      "source_ids": [
+        "nam_first_china_war",
+        "state_china_milestone"
+      ]
+    },
+    {
+      "id": "british_expeditionary_force_1840",
+      "name_zh": "英军中国远征军",
+      "name_en": "British expeditionary force in China",
+      "era": "1840",
+      "side": "british_empire",
+      "commander": "unknown_british_commander_1840",
+      "theater": "广东—浙江—江苏沿海",
+      "formation_level": "expeditionary_force",
+      "strength_min": 5000,
+      "strength_max": 20000,
+      "strength_unit": "troops",
+      "strength_status": "range_from_expedition_and_garrison_accounts",
+      "game_unit_mapping": [
+        "rifle",
+        "field_artillery",
+        "coastal_gunship"
+      ],
+      "source_ids": [
+        "nam_first_china_war"
+      ]
+    },
+    {
+      "id": "royal_marines_first_china_war",
+      "name_zh": "皇家海军陆战队与舰队分遣队",
+      "name_en": "Royal Marines and naval detachments, First China War",
+      "era": "1840",
+      "side": "british_empire",
+      "commander": "unknown_british_commander_1840",
+      "theater": "舟山群岛与长江口",
+      "formation_level": "naval_detachment",
+      "strength_min": 1000,
+      "strength_max": 5000,
+      "strength_unit": "troops",
+      "strength_status": "range_verify_before_release",
+      "game_unit_mapping": [
+        "rifle",
+        "coastal_gunship",
+        "transport_ship"
+      ],
+      "source_ids": [
+        "nam_first_china_war"
+      ]
+    },
+    {
+      "id": "xiang_army_1860",
+      "name_zh": "湘军",
+      "name_en": "Xiang Army",
+      "era": "1860",
+      "side": "qing",
+      "commander": "zeng_guofan",
+      "theater": "湖南—安徽—江苏",
+      "formation_level": "provincial_army",
+      "strength_min": 30000,
+      "strength_max": 80000,
+      "strength_unit": "troops",
+      "strength_status": "campaign_range_not_single_battle_order",
+      "game_unit_mapping": [
+        "rifle",
+        "assault",
+        "field_artillery",
+        "engineer"
+      ],
+      "source_ids": [
+        "columbia_taiping"
+      ]
+    },
+    {
+      "id": "taiping_heavenly_kingdom_field_army",
+      "name_zh": "太平天国主力军",
+      "name_en": "Taiping Heavenly Kingdom field armies",
+      "era": "1860",
+      "side": "taiping",
+      "commander": "hong_xiuquan",
+      "theater": "天京—江浙—安徽",
+      "formation_level": "field_army",
+      "strength_min": 50000,
+      "strength_max": 200000,
+      "strength_unit": "troops",
+      "strength_status": "wide_range_because_sources_count_garrison_and_field_army_differ",
+      "game_unit_mapping": [
+        "assault",
+        "rifle",
+        "cavalry",
+        "field_artillery"
+      ],
+      "source_ids": [
+        "columbia_taiping"
+      ]
+    },
+    {
+      "id": "anglo_french_expedition_1860",
+      "name_zh": "英法联军1860远征军",
+      "name_en": "Anglo-French expeditionary force, 1860",
+      "era": "1860",
+      "side": "eight_nation",
+      "commander": "unknown_coalition_commander_1860",
+      "theater": "大沽—天津—北京",
+      "formation_level": "coalition_expedition",
+      "strength_min": 18000,
+      "strength_max": 30000,
+      "strength_unit": "troops",
+      "strength_status": "range_from_campaign_accounts",
+      "game_unit_mapping": [
+        "rifle",
+        "field_artillery",
+        "engineer",
+        "coastal_gunship"
+      ],
+      "source_ids": [
+        "nam_first_china_war"
+      ]
+    },
+    {
+      "id": "beiyang_fleet_1890",
+      "name_zh": "北洋水师",
+      "name_en": "Beiyang Fleet",
+      "era": "1890",
+      "side": "qing",
+      "commander": "li_hongzhang",
+      "theater": "渤海—黄海",
+      "formation_level": "fleet",
+      "strength_min": 40,
+      "strength_max": 80,
+      "strength_unit": "ships_and_support_vessels",
+      "strength_status": "ship_count_definition_varies; verify_each_ship_roster",
+      "game_unit_mapping": [
+        "coastal_gunship",
+        "transport_ship"
+      ],
+      "source_ids": [
+        "ndl_russo_japanese"
+      ]
+    },
+    {
+      "id": "imperial_japanese_army_5th_division_1894",
+      "name_zh": "日本陆军第五师团",
+      "name_en": "Imperial Japanese Army 5th Division",
+      "era": "1890",
+      "side": "japan",
+      "commander": "unknown_5th_division_commander_1894",
+      "theater": "朝鲜—辽东",
+      "formation_level": "division",
+      "strength_min": 10000,
+      "strength_max": 20000,
+      "strength_unit": "troops",
+      "strength_status": "division_estimate_range",
+      "game_unit_mapping": [
+        "rifle",
+        "field_artillery",
+        "engineer"
+      ],
+      "source_ids": [
+        "ndl_russo_japanese"
+      ]
+    },
+    {
+      "id": "japanese_5th_division_boxer_1900",
+      "name_zh": "日本陆军第五师团1900远征分遣",
+      "name_en": "Japanese 5th Division detachment, Boxer campaign",
+      "era": "1900",
+      "side": "japan",
+      "commander": "unknown_japanese_commander_1900",
+      "theater": "天津—北京",
+      "formation_level": "division_detachment",
+      "strength_min": 5000,
+      "strength_max": 15000,
+      "strength_unit": "troops",
+      "strength_status": "range_from_allied_expedition_accounts",
+      "game_unit_mapping": [
+        "rifle",
+        "field_artillery",
+        "engineer"
+      ],
+      "source_ids": [
+        "nam_boxer"
+      ]
+    },
+    {
+      "id": "british_indian_contingent_boxer_1900",
+      "name_zh": "英属印度远征分遣队",
+      "name_en": "British Indian contingent, Boxer campaign",
+      "era": "1900",
+      "side": "british_india",
+      "commander": "unknown_british_commander_1900",
+      "theater": "天津—北京",
+      "formation_level": "expeditionary_contingent",
+      "strength_min": 2000,
+      "strength_max": 10000,
+      "strength_unit": "troops",
+      "strength_status": "range_from_allied_expedition_accounts",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery"
+      ],
+      "source_ids": [
+        "nam_boxer"
+      ]
+    },
+    {
+      "id": "russian_far_east_force_1900",
+      "name_zh": "俄国远东野战部队",
+      "name_en": "Russian Far East field forces",
+      "era": "1900",
+      "side": "russian_empire",
+      "commander": "nicholas_ii",
+      "theater": "海参崴—满洲",
+      "formation_level": "regional_force",
+      "strength_min": 10000,
+      "strength_max": 50000,
+      "strength_unit": "troops",
+      "strength_status": "wide_range_includes_reinforcement_and_rail_guard_units",
+      "game_unit_mapping": [
+        "rifle",
+        "cavalry",
+        "field_artillery",
+        "armored_train"
+      ],
+      "source_ids": [
+        "nam_boxer",
+        "ndl_russo_japanese"
+      ]
+    },
+    {
+      "id": "eight_nation_relief_force_1900",
+      "name_zh": "八国联军解救北京使馆远征军",
+      "name_en": "Eight-Nation Allied relief force",
+      "era": "1900",
+      "side": "eight_nation",
+      "commander": "waldersee",
+      "theater": "大沽—天津—北京",
+      "formation_level": "coalition_force",
+      "strength_min": 20000,
+      "strength_max": 55000,
+      "strength_unit": "troops",
+      "strength_status": "range_changes_between_relief_column_and_later_occupation",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "engineer",
+        "coastal_gunship"
+      ],
+      "source_ids": [
+        "nam_boxer"
+      ]
+    },
+    {
+      "id": "護法軍_southwest_1917",
+      "name_zh": "护法军（西南军政力量）",
+      "name_en": "Constitutional Protection Movement forces",
+      "era": "1917",
+      "side": "guangzhou_government",
+      "commander": "sun_yat_sen",
+      "theater": "广东—广西—云南",
+      "formation_level": "political_military_coalition",
+      "strength_min": 20000,
+      "strength_max": 80000,
+      "strength_unit": "troops",
+      "strength_status": "range_verify_by_faction_and_month",
+      "game_unit_mapping": [
+        "rifle",
+        "cavalry",
+        "field_artillery"
+      ],
+      "source_ids": [
+        "uh_northern_expedition"
+      ]
+    },
+    {
+      "id": "beiyang_army_1917",
+      "name_zh": "北洋军政系统部队",
+      "name_en": "Beiyang military forces",
+      "era": "1917",
+      "side": "beiyang_gov",
+      "commander": "duan_qirui",
+      "theater": "直隶—北京—长江沿线",
+      "formation_level": "political_military_system",
+      "strength_min": 50000,
+      "strength_max": 200000,
+      "strength_unit": "troops",
+      "strength_status": "wide_range; do_not_treat_as_single_field_army",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "armored_train"
+      ],
+      "source_ids": [
+        "uh_northern_expedition"
+      ]
+    },
+    {
+      "id": "russian_red_guard_1917",
+      "name_zh": "布尔什维克赤卫队与苏维埃武装",
+      "name_en": "Bolshevik Red Guards and Soviet forces",
+      "era": "1917",
+      "side": "bolsheviks",
+      "commander": "unknown_bolshevik_command",
+      "theater": "彼得格勒—莫斯科—突厥斯坦",
+      "formation_level": "revolutionary_forces",
+      "strength_min": 10000,
+      "strength_max": 100000,
+      "strength_unit": "troops_and_militia",
+      "strength_status": "wide_range_by_city_and_month",
+      "game_unit_mapping": [
+        "militia",
+        "rifle",
+        "assault",
+        "machine_gun"
+      ],
+      "source_ids": [
+        "ushmm_russian_1917",
+        "uk_na_russian_1917"
+      ]
+    },
+    {
+      "id": "nra_first_army_1927",
+      "name_zh": "国民革命军第一军",
+      "name_en": "National Revolutionary Army 1st Army",
+      "era": "1927",
+      "side": "kmt",
+      "commander": "chiang_kai_shek",
+      "theater": "江西—江苏—上海",
+      "formation_level": "army",
+      "strength_min": 20000,
+      "strength_max": 40000,
+      "strength_unit": "troops",
+      "strength_status": "campaign_order_range",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "engineer"
+      ],
+      "source_ids": [
+        "uh_northern_expedition"
+      ]
+    },
+    {
+      "id": "nra_fourth_army_1927",
+      "name_zh": "国民革命军第四军",
+      "name_en": "National Revolutionary Army 4th Army",
+      "era": "1927",
+      "side": "kmt",
+      "commander": "unknown_nra_4th_army_commander",
+      "theater": "湖北—湖南",
+      "formation_level": "army",
+      "strength_min": 20000,
+      "strength_max": 50000,
+      "strength_unit": "troops",
+      "strength_status": "campaign_order_range",
+      "game_unit_mapping": [
+        "rifle",
+        "assault",
+        "field_artillery",
+        "cavalry"
+      ],
+      "source_ids": [
+        "uh_northern_expedition"
+      ]
+    },
+    {
+      "id": "fengtian_army_1927",
+      "name_zh": "奉系东北军主力",
+      "name_en": "Fengtian Army main forces",
+      "era": "1927",
+      "side": "fengtian",
+      "commander": "zhang_zuolin",
+      "theater": "奉天—直隶—京津",
+      "formation_level": "army_group",
+      "strength_min": 100000,
+      "strength_max": 300000,
+      "strength_unit": "troops",
+      "strength_status": "wide_range_by_front_and_mobilization",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "cavalry",
+        "armored_train"
+      ],
+      "source_ids": [
+        "uh_northern_expedition"
+      ]
+    },
+    {
+      "id": "shanxi_army_1927",
+      "name_zh": "晋绥军",
+      "name_en": "Shanxi Army",
+      "era": "1927",
+      "side": "shanxi",
+      "commander": "yan_xishan",
+      "theater": "山西—绥远",
+      "formation_level": "provincial_army",
+      "strength_min": 30000,
+      "strength_max": 80000,
+      "strength_unit": "troops",
+      "strength_status": "range_verify_before_release",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "cavalry"
+      ],
+      "source_ids": [
+        "uh_northern_expedition"
+      ]
+    },
+    {
+      "id": "nra_18th_group_army_1940",
+      "name_zh": "国民革命军第十八集团军",
+      "name_en": "Eighteenth Group Army (Eighth Route Army)",
+      "era": "1940",
+      "side": "ccp",
+      "commander": "mao_zedong",
+      "theater": "华北敌后战区",
+      "formation_level": "group_army",
+      "strength_min": 200000,
+      "strength_max": 500000,
+      "strength_unit": "troops_and_local_forces",
+      "strength_status": "range_includes_local_militia; verify_theatre_definition",
+      "game_unit_mapping": [
+        "rifle",
+        "militia",
+        "engineer",
+        "cavalry"
+      ],
+      "source_ids": [
+        "nww2_china"
+      ]
+    },
+    {
+      "id": "nra_9th_theater_1940",
+      "name_zh": "国民革命军第九战区",
+      "name_en": "NRA Ninth War Area",
+      "era": "1940",
+      "side": "kmt",
+      "commander": "chiang_kai_shek",
+      "theater": "湖南—湖北—江西",
+      "formation_level": "war_area",
+      "strength_min": 300000,
+      "strength_max": 700000,
+      "strength_unit": "troops",
+      "strength_status": "war_area_range_not_single_order_of_battle",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "engineer",
+        "armored_train"
+      ],
+      "source_ids": [
+        "nww2_china"
+      ]
+    },
+    {
+      "id": "japanese_11th_army_1940",
+      "name_zh": "日本陆军第十一军",
+      "name_en": "Imperial Japanese Army 11th Army",
+      "era": "1940",
+      "side": "japan",
+      "commander": "unknown_11th_army_commander_1940",
+      "theater": "武汉—湖南—鄂西",
+      "formation_level": "army",
+      "strength_min": 80000,
+      "strength_max": 250000,
+      "strength_unit": "troops",
+      "strength_status": "campaign_range",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "engineer",
+        "armored_car"
+      ],
+      "source_ids": [
+        "nww2_china"
+      ]
+    },
+    {
+      "id": "japanese_china_expeditionary_force_1940",
+      "name_zh": "日本中国派遣军",
+      "name_en": "China Expeditionary Army",
+      "era": "1940",
+      "side": "japanese_occupied",
+      "commander": "unknown_china_expeditionary_commander_1940",
+      "theater": "中国战区",
+      "formation_level": "theatre_command",
+      "strength_min": 500000,
+      "strength_max": 1000000,
+      "strength_unit": "troops",
+      "strength_status": "theatre_range; includes multiple armies and occupation duties",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "armored_car",
+        "armored_train"
+      ],
+      "source_ids": [
+        "nww2_china",
+        "nww2_asia"
+      ]
+    },
+    {
+      "id": "japanese_kwantung_army_1940",
+      "name_zh": "关东军",
+      "name_en": "Kwantung Army",
+      "era": "1940",
+      "side": "japanese_occupied",
+      "commander": "unknown_kwantung_army_commander_1940",
+      "theater": "满洲—朝鲜北部",
+      "formation_level": "army_group",
+      "strength_min": 300000,
+      "strength_max": 700000,
+      "strength_unit": "troops",
+      "strength_status": "range_by_year_and_included_garrison",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "armored_car",
+        "armored_train"
+      ],
+      "source_ids": [
+        "nww2_asia"
+      ]
+    },
+    {
+      "id": "british_indian_army_1940",
+      "name_zh": "英属印度军政部队",
+      "name_en": "British Indian Army forces",
+      "era": "1940",
+      "side": "british_india",
+      "commander": "unknown_british_indian_commander_1940",
+      "theater": "印度—缅甸交通线",
+      "formation_level": "colonial_army_system",
+      "strength_min": 100000,
+      "strength_max": 300000,
+      "strength_unit": "troops",
+      "strength_status": "range_for_1940_theatre_context",
+      "game_unit_mapping": [
+        "rifle",
+        "machine_gun",
+        "field_artillery",
+        "engineer"
+      ],
+      "source_ids": [
+        "nww2_asia"
+      ]
+    },
+    {
+      "id": "sikh_khalsa_army_1840s",
+      "name_zh": "锡克帝国卡尔萨军",
+      "name_en": "Khalsa Army of the Sikh Empire",
+      "era": "1840s",
+      "side": "sikh_empire",
+      "commander": "unknown_sikh_commander_1848",
+      "theater": "旁遮普—拉合尔",
+      "formation_level": "regional_army",
+      "strength_min": 35000,
+      "strength_max": 60000,
+      "strength_unit": "troops",
+      "strength_status": "range_from_second_sikh_war_reference; not an 1840 literal order of battle",
+      "game_unit_mapping": [
+        "rifle",
+        "cavalry",
+        "field_artillery"
+      ],
+      "source_ids": [
+        "nam_second_sikh_war"
+      ]
+    },
+    {
+      "id": "burmese_royal_army_1860",
+      "name_zh": "贡榜王朝上缅甸王军",
+      "name_en": "Burmese royal forces in Upper Burma",
+      "era": "1860",
+      "side": "burmese_kingdom",
+      "commander": "unknown_burmese_commander_1860",
+      "theater": "曼德勒—上缅甸",
+      "formation_level": "regional_army",
+      "strength_min": 10000,
+      "strength_max": 30000,
+      "strength_unit": "troops",
+      "strength_status": "theatre_range; upper/lower Burma split is date-sensitive",
+      "game_unit_mapping": [
+        "militia",
+        "rifle",
+        "field_artillery"
+      ],
+      "source_ids": [
+        "nam_burma_timeline"
+      ]
+    },
+    {
+      "id": "british_lower_burma_field_force_1860",
+      "name_zh": "英属印度下缅甸驻军",
+      "name_en": "British Indian garrison in Lower Burma",
+      "era": "1860",
+      "side": "british_india",
+      "commander": "unknown_british_commander_burma_1860",
+      "theater": "仰光—伊洛瓦底江下游",
+      "formation_level": "colonial_garrison",
+      "strength_min": 5000,
+      "strength_max": 15000,
+      "strength_unit": "troops",
+      "strength_status": "range_after_1852_annexation",
+      "game_unit_mapping": [
+        "rifle",
+        "field_artillery",
+        "coastal_gunship"
+      ],
+      "source_ids": [
+        "nam_burma_timeline"
+      ]
+    },
+    {
+      "id": "french_cochinchina_expedition_1860",
+      "name_zh": "法西联军南圻远征队",
+      "name_en": "Franco-Spanish expedition in Cochinchina",
+      "era": "1860",
+      "side": "french_empire",
+      "commander": "unknown_french_commander_1860",
+      "theater": "西贡—南圻",
+      "formation_level": "expeditionary_force",
+      "strength_min": 3000,
+      "strength_max": 12000,
+      "strength_unit": "troops",
+      "strength_status": "range_by_phase; French and Spanish contingents combined",
+      "game_unit_mapping": [
+        "rifle",
+        "field_artillery",
+        "coastal_gunship"
+      ],
+      "source_ids": [
+        "loc_vietnam_study"
+      ]
+    },
+    {
+      "id": "french_tonkin_force_1890",
+      "name_zh": "法军北圻远征部队",
+      "name_en": "French Tonkin expeditionary forces",
+      "era": "1890",
+      "side": "french_empire",
+      "commander": "unknown_french_commander_1883",
+      "theater": "北圻—河内—海防",
+      "formation_level": "colonial_expeditionary_force",
+      "strength_min": 8000,
+      "strength_max": 25000,
+      "strength_unit": "troops",
+      "strength_status": "range_from_1883-86_campaign_context",
+      "game_unit_mapping": [
+        "rifle",
+        "field_artillery",
+        "engineer",
+        "coastal_gunship"
+      ],
+      "source_ids": [
+        "loc_tonkin_campaign",
+        "loc_vietnam_study"
+      ]
+    }
+  ]
+}

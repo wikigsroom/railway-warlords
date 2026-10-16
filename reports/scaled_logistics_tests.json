@@ -1,0 +1,176 @@
+{
+	"checks": [
+		{
+			"name": "current_large_geography_loaded",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_intact_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_intact_naval_port_components_match_archived_rules",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_intact_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_blocked_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_blocked_naval_port_components_match_archived_rules",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_blocked_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_intact_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_intact_naval_port_components_match_archived_rules",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_intact_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_blocked_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_blocked_naval_port_components_match_archived_rules",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_blocked_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "legion_07_intact_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "legion_07_intact_naval_port_components_match_archived_rules",
+			"passed": true
+		},
+		{
+			"name": "legion_07_intact_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "legion_07_blocked_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "legion_07_blocked_naval_port_components_match_archived_rules",
+			"passed": true
+		},
+		{
+			"name": "legion_07_blocked_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "legion_08_intact_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "legion_08_intact_naval_port_components_match_archived_rules",
+			"passed": true
+		},
+		{
+			"name": "legion_08_intact_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "legion_08_blocked_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "legion_08_blocked_naval_port_components_match_archived_rules",
+			"passed": true
+		},
+		{
+			"name": "legion_08_blocked_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"failures": [],
+	"game_version": "0.2.12",
+	"measurements": [
+		{
+			"archived_search_ms": 5259.803,
+			"cells": 74762,
+			"current_search_ms": 510.768,
+			"mode": "intact",
+			"reachable_cells": 4103,
+			"scenario": "conq_1924"
+		},
+		{
+			"archived_search_ms": 5701.022,
+			"cells": 74762,
+			"current_search_ms": 530.031,
+			"mode": "blocked",
+			"reachable_cells": 4103,
+			"scenario": "conq_1924"
+		},
+		{
+			"archived_search_ms": 2926.492,
+			"cells": 65726,
+			"current_search_ms": 375.584,
+			"mode": "intact",
+			"reachable_cells": 3162,
+			"scenario": "campaign_1924_02"
+		},
+		{
+			"archived_search_ms": 2288.881,
+			"cells": 65726,
+			"current_search_ms": 404.324,
+			"mode": "blocked",
+			"reachable_cells": 2670,
+			"scenario": "campaign_1924_02"
+		},
+		{
+			"archived_search_ms": 14.4,
+			"cells": 400,
+			"current_search_ms": 15.54,
+			"mode": "intact",
+			"reachable_cells": 47,
+			"scenario": "legion_07"
+		},
+		{
+			"archived_search_ms": 0.239,
+			"cells": 400,
+			"current_search_ms": 0.166,
+			"mode": "blocked",
+			"reachable_cells": 1,
+			"scenario": "legion_07"
+		},
+		{
+			"archived_search_ms": 9.571,
+			"cells": 440,
+			"current_search_ms": 8.893,
+			"mode": "intact",
+			"reachable_cells": 63,
+			"scenario": "legion_08"
+		},
+		{
+			"archived_search_ms": 3.695,
+			"cells": 440,
+			"current_search_ms": 3.502,
+			"mode": "blocked",
+			"reachable_cells": 20,
+			"scenario": "legion_08"
+		}
+	],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"reference_version": "0.2.2"
+}

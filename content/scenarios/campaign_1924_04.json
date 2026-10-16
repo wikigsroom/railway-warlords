@@ -1,0 +1,42 @@
+{
+  "id": "campaign_1924_04",
+  "name": "滦州铁路",
+  "mode": "campaign",
+  "map_id": "jingfeng",
+  "anchor_date": "1924-09-15",
+  "days_per_round": 1,
+  "round_limit": 20,
+  "player_default": "zhili",
+  "faction_roster": [
+    "zhili",
+    "fengtian"
+  ],
+  "target_city_id": "luanzhou",
+  "objective_type": "repair",
+  "objective_count": 1,
+  "general_slots": 3,
+  "starting_resources": {
+    "cash": 690,
+    "food": 490,
+    "arms": 340
+  },
+  "player_formations": 14,
+  "enemy_formations": 16,
+  "full_visibility": false,
+  "unlock_after": [
+    "campaign_1924_03"
+  ],
+  "stars": {
+    "victory": true,
+    "rounds_at_most": 17,
+    "loss_ratio_permille_at_most": 300
+  },
+  "historical_status": "historical_theater_with_authored_tactical_deployment",
+  "source_ids": [
+    "coup_1924",
+    "ruc_1924"
+  ],
+  "deployment_note": "城市、地形和铁路依现实地理抽象；编队数量、交战位置和关卡目标为游戏设计，不宣称复原战斗序列。",
+  "events": [],
+  "calendar_status": "simulation_calendar_not_daily_battle_reconstruction"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "campaign_1922_03",
+  "name": "马厂战线",
+  "mode": "campaign",
+  "map_id": "jingjin",
+  "anchor_date": "1922-04-29",
+  "days_per_round": 1,
+  "round_limit": 16,
+  "player_default": "zhili",
+  "faction_roster": [
+    "zhili",
+    "fengtian"
+  ],
+  "target_city_id": "machang",
+  "objective_type": "hold",
+  "objective_count": 3,
+  "general_slots": 3,
+  "starting_resources": {
+    "cash": 630,
+    "food": 455,
+    "arms": 310
+  },
+  "player_formations": 14,
+  "enemy_formations": 16,
+  "full_visibility": false,
+  "unlock_after": [
+    "campaign_1922_02"
+  ],
+  "stars": {
+    "victory": true,
+    "rounds_at_most": 13,
+    "loss_ratio_permille_at_most": 300
+  },
+  "historical_status": "historical_theater_with_authored_tactical_deployment",
+  "source_ids": [
+    "history_overview"
+  ],
+  "deployment_note": "城市、地形和铁路依现实地理抽象；编队数量、交战位置和关卡目标为游戏设计，不宣称复原战斗序列。",
+  "events": [],
+  "calendar_status": "simulation_calendar_not_daily_battle_reconstruction"
+}

@@ -1,0 +1,48 @@
+{
+	"checks": [
+		{
+			"name": "detailed_forest_overrides_natural_plain",
+			"passed": true
+		},
+		{
+			"name": "city_feature_is_preserved",
+			"passed": true
+		},
+		{
+			"name": "natural_mountain_fallback",
+			"passed": true
+		},
+		{
+			"name": "sea_is_continuous_surface",
+			"passed": true
+		},
+		{
+			"name": "tile_variant_is_deterministic",
+			"passed": true
+		},
+		{
+			"name": "plain_uses_continuous_surface",
+			"passed": true
+		},
+		{
+			"name": "strategic_detail_strength_scales_with_zoom",
+			"passed": true
+		},
+		{
+			"name": "sea_tile_is_not_repeated_over_water_mesh",
+			"passed": true
+		},
+		{
+			"name": "overview_relief_sampling_is_deterministic",
+			"passed": true
+		},
+		{
+			"name": "overview_keeps_city_features",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"game_version": "0.2.11",
+	"passed": true,
+	"scope": "Deterministic per-cell terrain texture resolution and zoom-aware blending."
+}

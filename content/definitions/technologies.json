@@ -1,0 +1,695 @@
+[
+  {
+    "id": "rifle_drill",
+    "name": "步枪训练",
+    "branch": "infantry",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "attack_bonus",
+    "effect_by_rank": [
+      50,
+      100,
+      150
+    ],
+    "prerequisite": [],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_infantry_or_engineer"
+  },
+  {
+    "id": "inf_cover",
+    "name": "散兵掩护",
+    "branch": "infantry",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "defense_flat",
+    "effect_by_rank": [
+      3,
+      6,
+      9
+    ],
+    "prerequisite": [
+      {
+        "id": "rifle_drill",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_infantry_or_engineer"
+  },
+  {
+    "id": "assault_drill",
+    "name": "突击训练",
+    "branch": "infantry",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "suppression_flat",
+    "effect_by_rank": [
+      3,
+      6,
+      9
+    ],
+    "prerequisite": [
+      {
+        "id": "inf_cover",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_infantry_or_engineer"
+  },
+  {
+    "id": "inf_mobilize",
+    "name": "步军动员",
+    "branch": "infantry",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "recruit_cost_reduction",
+    "effect_by_rank": [
+      30,
+      60,
+      90
+    ],
+    "prerequisite": [
+      {
+        "id": "assault_drill",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_infantry_or_engineer"
+  },
+  {
+    "id": "gun_accuracy",
+    "name": "炮术训练",
+    "branch": "artillery",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "attack_bonus",
+    "effect_by_rank": [
+      50,
+      100,
+      150
+    ],
+    "prerequisite": [],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_artillery"
+  },
+  {
+    "id": "siege_drill",
+    "name": "攻坚教范",
+    "branch": "artillery",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "fort_bonus",
+    "effect_by_rank": [
+      60,
+      120,
+      180
+    ],
+    "prerequisite": [
+      {
+        "id": "gun_accuracy",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_artillery"
+  },
+  {
+    "id": "gun_supply",
+    "name": "炮弹储备",
+    "branch": "artillery",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "ammo_refill_reduction",
+    "effect_by_rank": [
+      30,
+      60,
+      90
+    ],
+    "prerequisite": [
+      {
+        "id": "siege_drill",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_artillery"
+  },
+  {
+    "id": "gun_traction",
+    "name": "牵引编组",
+    "branch": "artillery",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "ap_flat",
+    "effect_by_rank": [
+      0,
+      0,
+      1
+    ],
+    "prerequisite": [
+      {
+        "id": "gun_supply",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_artillery"
+  },
+  {
+    "id": "cav_charge",
+    "name": "骑军冲击",
+    "branch": "cavalry",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "attack_bonus",
+    "effect_by_rank": [
+      40,
+      80,
+      120
+    ],
+    "prerequisite": [],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_cavalry"
+  },
+  {
+    "id": "cav_scout",
+    "name": "骑兵侦察",
+    "branch": "cavalry",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "vision_flat",
+    "effect_by_rank": [
+      0,
+      0,
+      1
+    ],
+    "prerequisite": [
+      {
+        "id": "cav_charge",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_cavalry"
+  },
+  {
+    "id": "horse_care",
+    "name": "军马养护",
+    "branch": "cavalry",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "food_upkeep_reduction",
+    "effect_by_rank": [
+      30,
+      60,
+      90
+    ],
+    "prerequisite": [
+      {
+        "id": "cav_scout",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_cavalry"
+  },
+  {
+    "id": "cav_withdraw",
+    "name": "骑军收拢",
+    "branch": "cavalry",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "defense_flat",
+    "effect_by_rank": [
+      2,
+      4,
+      6
+    ],
+    "prerequisite": [
+      {
+        "id": "horse_care",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "family_cavalry"
+  },
+  {
+    "id": "rail_dispatch",
+    "name": "列车调度",
+    "branch": "logistics",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "transport_pool_flat",
+    "effect_by_rank": [
+      1,
+      2,
+      3
+    ],
+    "prerequisite": [],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "all_friendly_formations_or_faction_pool_as_effect_requires"
+  },
+  {
+    "id": "rail_repair",
+    "name": "线路抢修",
+    "branch": "logistics",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "repair_cost_reduction",
+    "effect_by_rank": [
+      50,
+      100,
+      150
+    ],
+    "prerequisite": [
+      {
+        "id": "rail_dispatch",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "all_friendly_formations_or_faction_pool_as_effect_requires"
+  },
+  {
+    "id": "food_storage",
+    "name": "军粮储备",
+    "branch": "logistics",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "reserve_cap_flat",
+    "effect_by_rank": [
+      0,
+      0,
+      1
+    ],
+    "prerequisite": [
+      {
+        "id": "rail_repair",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "all_friendly_formations_or_faction_pool_as_effect_requires"
+  },
+  {
+    "id": "field_medicine",
+    "name": "战地救护",
+    "branch": "logistics",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "reinforce_efficiency_bonus",
+    "effect_by_rank": [
+      50,
+      100,
+      150
+    ],
+    "prerequisite": [
+      {
+        "id": "food_storage",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "all_friendly_formations_or_faction_pool_as_effect_requires"
+  },
+  {
+    "id": "nav_gunnery",
+    "name": "舰炮射术",
+    "branch": "navy",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "attack_bonus",
+    "effect_by_rank": [
+      40,
+      80,
+      120
+    ],
+    "prerequisite": [],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": true,
+    "effect_scope": "family_naval"
+  },
+  {
+    "id": "nav_armor",
+    "name": "舰体防护",
+    "branch": "navy",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "defense_flat",
+    "effect_by_rank": [
+      2,
+      4,
+      6
+    ],
+    "prerequisite": [
+      {
+        "id": "nav_gunnery",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": true,
+    "effect_scope": "family_naval"
+  },
+  {
+    "id": "nav_convoy",
+    "name": "船队护航",
+    "branch": "navy",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "cargo_survival_bonus",
+    "effect_by_rank": [
+      50,
+      100,
+      150
+    ],
+    "prerequisite": [
+      {
+        "id": "nav_armor",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": true,
+    "effect_scope": "family_naval"
+  },
+  {
+    "id": "nav_coal",
+    "name": "煤水整备",
+    "branch": "navy",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "upkeep_cash_reduction",
+    "effect_by_rank": [
+      30,
+      60,
+      90
+    ],
+    "prerequisite": [
+      {
+        "id": "nav_convoy",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": true,
+    "effect_scope": "family_naval"
+  },
+  {
+    "id": "air_scout",
+    "name": "航空侦察",
+    "branch": "aviation",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "reveal_radius_flat",
+    "effect_by_rank": [
+      0,
+      0,
+      1
+    ],
+    "prerequisite": [],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": true,
+    "effect_scope": "friendly_whitelisted_airfield"
+  },
+  {
+    "id": "air_bombing",
+    "name": "轻型轰炸",
+    "branch": "aviation",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "support_damage_bonus",
+    "effect_by_rank": [
+      40,
+      80,
+      120
+    ],
+    "prerequisite": [
+      {
+        "id": "air_scout",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": true,
+    "effect_scope": "friendly_whitelisted_airfield"
+  },
+  {
+    "id": "air_maintenance",
+    "name": "飞机整备",
+    "branch": "aviation",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "support_cost_reduction",
+    "effect_by_rank": [
+      30,
+      60,
+      90
+    ],
+    "prerequisite": [
+      {
+        "id": "air_bombing",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": true,
+    "effect_scope": "friendly_whitelisted_airfield"
+  },
+  {
+    "id": "air_dispatch",
+    "name": "机场调度",
+    "branch": "aviation",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "sortie_cap_flat",
+    "effect_by_rank": [
+      0,
+      0,
+      1
+    ],
+    "prerequisite": [
+      {
+        "id": "air_maintenance",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": true,
+    "effect_scope": "friendly_whitelisted_airfield"
+  },
+  {
+    "id": "staff_signal",
+    "name": "电报协同",
+    "branch": "staff",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "command_pool_flat",
+    "effect_by_rank": [
+      0,
+      0,
+      1
+    ],
+    "prerequisite": [],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "faction"
+  },
+  {
+    "id": "staff_drill",
+    "name": "参谋训练",
+    "branch": "staff",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "morale_recovery_flat",
+    "effect_by_rank": [
+      1,
+      2,
+      3
+    ],
+    "prerequisite": [
+      {
+        "id": "staff_signal",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "faction"
+  },
+  {
+    "id": "staff_mobilize",
+    "name": "军校组织",
+    "branch": "staff",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "general_xp_bonus",
+    "effect_by_rank": [
+      50,
+      100,
+      150
+    ],
+    "prerequisite": [
+      {
+        "id": "staff_drill",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "faction"
+  },
+  {
+    "id": "staff_trade",
+    "name": "军需贸易",
+    "branch": "staff",
+    "max_rank": 3,
+    "cost_research_by_rank": [
+      30,
+      60,
+      100
+    ],
+    "effect": "trade_cost_reduction",
+    "effect_by_rank": [
+      30,
+      60,
+      90
+    ],
+    "prerequisite": [
+      {
+        "id": "staff_mobilize",
+        "rank": 1
+      }
+    ],
+    "era_min": 1920,
+    "scenario_equipment_whitelist_required": false,
+    "effect_scope": "faction"
+  }
+]

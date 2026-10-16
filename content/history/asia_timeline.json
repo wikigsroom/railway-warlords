@@ -1,0 +1,1139 @@
+{
+  "schema_version": "asia-history-1",
+  "status": "historical_reference_plus_player_branching",
+  "source_policy": "Every event, person, or formation must carry source_ids; uncertain strengths are ranges with explicit numeric_status. Modern physical map data never becomes a historic political border.",
+  "sources": [
+    {
+      "id": "nam_first_china_war",
+      "title": "National Army Museum: First China War 1839–1842",
+      "url": "https://www.nam.ac.uk/explore/first-china-war-1839-1842",
+      "use": "第一鸦片战争日期、远征与战区背景",
+      "source_status": "secondary_institutional_summary"
+    },
+    {
+      "id": "state_china_milestone",
+      "title": "U.S. Department of State, Office of the Historian: China milestones",
+      "url": "https://history.state.gov/milestones/1830-1860/china-1",
+      "use": "鸦片战争及条约外交时间锚点",
+      "source_status": "government_reference"
+    },
+    {
+      "id": "columbia_taiping",
+      "title": "Columbia University Asia for Educators: Taiping Rebellion",
+      "url": "https://afe.easia.columbia.edu/special/china_1750_taiping.htm",
+      "use": "太平天国起止年代、政权与战争背景",
+      "source_status": "academic_education"
+    },
+    {
+      "id": "nam_boxer",
+      "title": "National Army Museum: Boxer Rebellion",
+      "url": "https://www.nam.ac.uk/explore/boxer-rebellion",
+      "use": "义和团运动、八国联军和华北战区",
+      "source_status": "secondary_institutional_summary"
+    },
+    {
+      "id": "ndl_russo_japanese",
+      "title": "National Diet Library: Modern Japan in archives",
+      "url": "https://www.ndl.go.jp/modern/e/cha2/description26.html",
+      "use": "日俄战争的日期、参战国和日本近代军政背景",
+      "source_status": "national_library_reference"
+    },
+    {
+      "id": "uh_northern_expedition",
+      "title": "University of Hawaiʻi Press: The Northern Expedition",
+      "url": "https://manifold.uhpress.hawaii.edu/projects/the-northern-expedition",
+      "use": "北伐路线、阶段与军政主体",
+      "source_status": "academic_monograph"
+    },
+    {
+      "id": "nww2_china",
+      "title": "National WWII Museum: Liberation of China and the Pacific",
+      "url": "https://www.nationalww2museum.org/war/articles/liberation-china-and-pacific",
+      "use": "1940中日战争及亚洲战区背景",
+      "source_status": "museum_reference"
+    },
+    {
+      "id": "nww2_asia",
+      "title": "National WWII Museum: Asia-Pacific War",
+      "url": "https://www.nationalww2museum.org/war/articles/asia-pacific-war-1945",
+      "use": "日本帝国、殖民地与太平洋战区关系",
+      "source_status": "museum_reference"
+    },
+    {
+      "id": "ushmm_russian_1917",
+      "title": "United States Holocaust Memorial Museum: Russian Revolution 1917",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/the-russian-revolution-1917",
+      "use": "1917俄国革命事件与政权转换",
+      "source_status": "museum_reference"
+    },
+    {
+      "id": "uk_na_russian_1917",
+      "title": "UK National Archives: Russian Revolution 1917",
+      "url": "https://www.nationalarchives.gov.uk/education/students/videos/spotlight-on/spotlight-on-russian-revolution/",
+      "use": "1917时间线与人物背景",
+      "source_status": "national_archive_reference"
+    },
+    {
+      "id": "iranica_1917",
+      "title": "Encyclopaedia Iranica: Persia chronology",
+      "url": "https://www.iranicaonline.org/articles/chronology-of-iranian-history",
+      "use": "1917波斯与中亚外交环境",
+      "source_status": "academic_reference"
+    },
+    {
+      "id": "qdl_persia_1917",
+      "title": "Qatar Digital Library: Persia 1917 record",
+      "url": "https://www.qdl.qa/en/archive/81055/vdc_100023525447.0x000001",
+      "use": "1917波斯战区档案线索",
+      "source_status": "archive_catalogue"
+    },
+    {
+      "id": "rail_network_dates",
+      "title": "Project railway source register",
+      "url": "../../../design/铁道烽烟/data/sources.json",
+      "use": "战略铁路走廊年代，不等同于完整实测铁路GIS",
+      "source_status": "project_source_register"
+    },
+    {
+      "id": "natural_earth_land_50m",
+      "title": "Natural Earth 1:50m Land",
+      "url": "https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-land/",
+      "use": "亚洲物理陆地与海岸轮廓；不作为历史政治边界",
+      "source_status": "public_domain_physical_reference"
+    },
+    {
+      "id": "geonames_city_coordinates",
+      "title": "GeoNames cities15000 / project coordinate register",
+      "url": "https://download.geonames.org/export/dump/cities15000.zip",
+      "use": "城市经纬度与现代/历史名称对照；城市影响范围为游戏抽象",
+      "source_status": "gazetteer_reference"
+    },
+    {
+      "id": "nam_second_sikh_war",
+      "title": "National Army Museum: Second Sikh War",
+      "url": "https://www.nam.ac.uk/explore/second-sikh-war",
+      "use": "1848-49旁遮普战争、英属印度吞并旁遮普的时间和地理背景",
+      "source_status": "secondary_institutional_summary"
+    },
+    {
+      "id": "nam_burma_timeline",
+      "title": "National Army Museum: A timeline of Burma and the Army",
+      "url": "https://www.nam.ac.uk/explore/timeline-burma-army",
+      "use": "1852-53下缅甸吞并、1885-86上缅甸占领及缅甸行政时间锚",
+      "source_status": "secondary_institutional_summary"
+    },
+    {
+      "id": "loc_vietnam_study",
+      "title": "Library of Congress: Vietnam country study",
+      "url": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/vi/vietnamcountryst00cima_0/vietnamcountryst00cima_0.pdf",
+      "use": "1858-59法国进攻岘港/西贡及后续印度支那殖民背景",
+      "source_status": "government_reference"
+    },
+    {
+      "id": "loc_tonkin_campaign",
+      "title": "Library of Congress: A Campaign in Tonkin",
+      "url": "https://www.loc.gov/resource/gdcwdl.wdl_14377/?sp=1&st=list",
+      "use": "1883-86北圻战役和法国保护国建立的地理背景",
+      "source_status": "library_primary_collection"
+    }
+  ],
+  "political_figures": [
+    {
+      "id": "daoguang",
+      "name_zh": "道光帝",
+      "name_en": "Daoguang Emperor",
+      "periods": [
+        "1840"
+      ],
+      "role": "清宣宗；鸦片战争时期皇帝",
+      "background": "清帝国中央决策者；具体战场命令需按事件来源核验",
+      "source_ids": [
+        "state_china_milestone"
+      ]
+    },
+    {
+      "id": "lin_zexu",
+      "name_zh": "林则徐",
+      "name_en": "Lin Zexu",
+      "periods": [
+        "1840"
+      ],
+      "role": "钦差大臣、禁烟与海防主持者",
+      "background": "1839年在广东查禁鸦片；其职务和区域责任必须与1840事件日期区分",
+      "source_ids": [
+        "state_china_milestone"
+      ]
+    },
+    {
+      "id": "xianfeng",
+      "name_zh": "咸丰帝",
+      "name_en": "Xianfeng Emperor",
+      "periods": [
+        "1860"
+      ],
+      "role": "清文宗；第二次鸦片战争与太平天国后期时期皇帝",
+      "background": "1860年英法联军进军北京，清廷进入危机期",
+      "source_ids": [
+        "nam_first_china_war",
+        "columbia_taiping"
+      ]
+    },
+    {
+      "id": "hong_xiuquan",
+      "name_zh": "洪秀全",
+      "name_en": "Hong Xiuquan",
+      "periods": [
+        "1860"
+      ],
+      "role": "太平天国天王",
+      "background": "太平天国最高政治宗教领袖；天京为其政权核心",
+      "source_ids": [
+        "columbia_taiping"
+      ]
+    },
+    {
+      "id": "zeng_guofan",
+      "name_zh": "曾国藩",
+      "name_en": "Zeng Guofan",
+      "periods": [
+        "1860"
+      ],
+      "role": "湘军创建者与清方重臣",
+      "background": "湘军编练与围攻天京是太平天国后期战局关键",
+      "source_ids": [
+        "columbia_taiping"
+      ]
+    },
+    {
+      "id": "li_hongzhang",
+      "name_zh": "李鸿章",
+      "name_en": "Li Hongzhang",
+      "periods": [
+        "1860",
+        "1890",
+        "1900"
+      ],
+      "role": "淮军统帅、晚清外交与洋务重臣",
+      "background": "编练淮军并参与晚清外交；不同战役须按日期登记",
+      "source_ids": [
+        "state_china_milestone",
+        "nam_boxer"
+      ]
+    },
+    {
+      "id": "yamagata_aritomo",
+      "name_zh": "山县有朋",
+      "name_en": "Yamagata Aritomo",
+      "periods": [
+        "1890",
+        "1900"
+      ],
+      "role": "日本陆军元老、政治家",
+      "background": "日本近代陆军体制的重要政治军事人物",
+      "source_ids": [
+        "ndl_russo_japanese"
+      ]
+    },
+    {
+      "id": "ito_hirobumi",
+      "name_zh": "伊藤博文",
+      "name_en": "Itō Hirobumi",
+      "periods": [
+        "1890"
+      ],
+      "role": "日本政治家、内阁总理大臣",
+      "background": "甲午战争前后日本政军外交背景人物，不直接当作战场单位",
+      "source_ids": [
+        "ndl_russo_japanese"
+      ]
+    },
+    {
+      "id": "waldersee",
+      "name_zh": "瓦德西",
+      "name_en": "Alfred von Waldersee",
+      "periods": [
+        "1900"
+      ],
+      "role": "八国联军后期联军总司令",
+      "background": "联军统帅职务与到任日期要和1900年早期天津战斗区分",
+      "source_ids": [
+        "nam_boxer"
+      ]
+    },
+    {
+      "id": "nicholas_ii",
+      "name_zh": "尼古拉二世",
+      "name_en": "Nicholas II",
+      "periods": [
+        "1900",
+        "1917"
+      ],
+      "role": "俄罗斯帝国皇帝",
+      "background": "1900年俄军远东行动与1917年革命前国家元首",
+      "source_ids": [
+        "ndl_russo_japanese",
+        "ushmm_russian_1917"
+      ]
+    },
+    {
+      "id": "sun_yat_sen",
+      "name_zh": "孙中山",
+      "name_en": "Sun Yat-sen",
+      "periods": [
+        "1917",
+        "1927"
+      ],
+      "role": "护法运动与国民革命政治领袖",
+      "background": "1917年护法运动相关南方政权，1927年北伐政治领导层",
+      "source_ids": [
+        "uh_northern_expedition"
+      ]
+    },
+    {
+      "id": "duan_qirui",
+      "name_zh": "段祺瑞",
+      "name_en": "Duan Qirui",
+      "periods": [
+        "1917",
+        "1927"
+      ],
+      "role": "北洋政府军政人物",
+      "background": "1917年北京政府与参战/军政争论的重要人物",
+      "source_ids": [
+        "ushmm_russian_1917"
+      ]
+    },
+    {
+      "id": "chiang_kai_shek",
+      "name_zh": "蒋介石",
+      "name_en": "Chiang Kai-shek",
+      "periods": [
+        "1927",
+        "1940"
+      ],
+      "role": "国民革命军与国民政府军事领袖",
+      "background": "1927北伐及1940抗日战争国民政府军事核心",
+      "source_ids": [
+        "uh_northern_expedition",
+        "nww2_china"
+      ]
+    },
+    {
+      "id": "zhang_zuolin",
+      "name_zh": "张作霖",
+      "name_en": "Zhang Zuolin",
+      "periods": [
+        "1927"
+      ],
+      "role": "奉系领袖、东北军政首脑",
+      "background": "奉天/东北军政集团核心",
+      "source_ids": [
+        "uh_northern_expedition"
+      ]
+    },
+    {
+      "id": "zhang_xueliang",
+      "name_zh": "张学良",
+      "name_en": "Zhang Xueliang",
+      "periods": [
+        "1927",
+        "1940"
+      ],
+      "role": "奉系后期与东北军将领",
+      "background": "1928后东北易帜背景人物；1940时间线需按国军身份与战区标注",
+      "source_ids": [
+        "uh_northern_expedition",
+        "nww2_china"
+      ]
+    },
+    {
+      "id": "mao_zedong",
+      "name_zh": "毛泽东",
+      "name_en": "Mao Zedong",
+      "periods": [
+        "1927",
+        "1940"
+      ],
+      "role": "中国共产党与红军政治军事领导人",
+      "background": "1927后革命根据地、1940敌后战场核心人物",
+      "source_ids": [
+        "nww2_china"
+      ]
+    },
+    {
+      "id": "tojo_hideki",
+      "name_zh": "东条英机",
+      "name_en": "Tōjō Hideki",
+      "periods": [
+        "1940"
+      ],
+      "role": "日本陆军与内阁政治人物",
+      "background": "1940日本帝国战争体制背景人物；不自动替代战区司令",
+      "source_ids": [
+        "nww2_asia"
+      ]
+    }
+  ],
+  "timelines": [
+    {
+      "id": "asia_1840",
+      "anchor_date": "1840-07-05",
+      "era": "晚清第一次鸦片战争前期",
+      "title": "1840：第一次鸦片战争与亚洲帝国秩序",
+      "calendar_status": "historical_anchor_date",
+      "conflicts": [
+        {
+          "id": "first_opium_war",
+          "name": "第一次鸦片战争",
+          "date_start": "1839-09-04",
+          "date_end": "1842-08-29",
+          "province_scope": [
+            "浙江省",
+            "广东省",
+            "江苏省"
+          ],
+          "participants": [
+            "qing",
+            "british_empire",
+            "british_india"
+          ],
+          "commanders": [
+            "lin_zexu"
+          ],
+          "objective_types": [
+            "capture_city",
+            "destroy_formation",
+            "force_treaty"
+          ],
+          "numeric_status": "campaign force estimates vary by garrison and expedition accounting; use ranges in order_of_battle",
+          "source_ids": [
+            "nam_first_china_war",
+            "state_china_milestone"
+          ]
+        },
+        {
+          "id": "central_asia_great_game_1840",
+          "name": "中亚与波斯外交竞争背景",
+          "date_start": "1840-01-01",
+          "date_end": "1840-12-31",
+          "province_scope": [
+            "波斯北部",
+            "阿富汗西部"
+          ],
+          "participants": [
+            "russian_empire",
+            "qajar_persia",
+            "afghanistan",
+            "british_india"
+          ],
+          "commanders": [],
+          "objective_types": [
+            "diplomacy",
+            "hold_city"
+          ],
+          "numeric_status": "background_theater; no invented battle strength",
+          "source_ids": [
+            "iranica_1917"
+          ]
+        }
+      ],
+      "political_figures": [
+        "daoguang",
+        "lin_zexu"
+      ],
+      "factions": [
+        "qing",
+        "british_empire",
+        "british_india",
+        "russian_empire",
+        "qajar_persia",
+        "afghanistan",
+        "ottoman",
+        "japan",
+        "korea",
+        "siam",
+        "netherlands",
+        "spain"
+      ],
+      "geography_notes": [
+        "清帝国、俄国、奥斯曼、波斯、阿富汗、英属印度、日本、朝鲜、暹罗和殖民港口以真实城市点表示；政治边界不由现代底图推断。",
+        "1840 control corrections: Hong Kong/Shanghai/Ningbo/Qingdao/Taipei remain Qing; Macau is Portuguese; Rangoon/Mandalay are Konbaung; Lahore is Sikh; French Indochina does not yet exist."
+      ],
+      "source_ids": [
+        "nam_first_china_war",
+        "state_china_milestone",
+        "natural_earth_land_50m"
+      ]
+    },
+    {
+      "id": "asia_1860",
+      "anchor_date": "1860-08-21",
+      "era": "晚清第二次鸦片战争与太平天国后期",
+      "title": "1860：大沽—北京战线与太平天国后期",
+      "calendar_status": "historical_anchor_date",
+      "conflicts": [
+        {
+          "id": "second_opium_war_1860",
+          "name": "第二次鸦片战争1860战役",
+          "date_start": "1856-10-08",
+          "date_end": "1860-10-24",
+          "province_scope": [
+            "直隶省",
+            "山东省",
+            "江苏省"
+          ],
+          "participants": [
+            "qing",
+            "british_empire",
+            "french_empire"
+          ],
+          "commanders": [
+            "xianfeng"
+          ],
+          "objective_types": [
+            "capture_city",
+            "force_treaty",
+            "destroy_formation"
+          ],
+          "numeric_status": "coalition and Qing force counts are theatre estimates; use range records",
+          "source_ids": [
+            "nam_first_china_war",
+            "state_china_milestone"
+          ]
+        },
+        {
+          "id": "taiping_late_war",
+          "name": "太平天国后期战争",
+          "date_start": "1851-01-01",
+          "date_end": "1864-07-19",
+          "province_scope": [
+            "江苏省",
+            "浙江省",
+            "安徽省"
+          ],
+          "participants": [
+            "qing",
+            "taiping"
+          ],
+          "commanders": [
+            "hong_xiuquan",
+            "zeng_guofan"
+          ],
+          "objective_types": [
+            "capture_city",
+            "destroy_formation",
+            "capture_commander"
+          ],
+          "numeric_status": "city sieges and regional army strengths vary across sources",
+          "source_ids": [
+            "columbia_taiping"
+          ]
+        },
+        {
+          "id": "sino_french_southern_vietnam_1860",
+          "name": "法军占领西贡后的南圻战局",
+          "date_start": "1858-09-01",
+          "date_end": "1862-06-05",
+          "province_scope": [
+            "嘉定省",
+            "边和省",
+            "定祥省"
+          ],
+          "participants": [
+            "nguyen_dynasty",
+            "french_empire",
+            "spain"
+          ],
+          "commanders": [
+            "unknown_french_commander_1860"
+          ],
+          "objective_types": [
+            "capture_city",
+            "force_treaty",
+            "protect_supply_line"
+          ],
+          "numeric_status": "法国与西班牙远征军及阮朝兵力按战役阶段记录；不把后来的法属印度支那边界倒推到1860",
+          "source_ids": [
+            "loc_vietnam_study"
+          ]
+        }
+      ],
+      "political_figures": [
+        "xianfeng",
+        "hong_xiuquan",
+        "zeng_guofan",
+        "li_hongzhang"
+      ],
+      "factions": [
+        "qing",
+        "taiping",
+        "british_empire",
+        "french_empire",
+        "russian_empire",
+        "japan",
+        "korea",
+        "qajar_persia",
+        "ottoman",
+        "afghanistan",
+        "siam",
+        "british_india",
+        "netherlands",
+        "nguyen_dynasty",
+        "spain"
+      ],
+      "geography_notes": [
+        "1860锚点不把甲午战争或日俄战争提前写入；1894–95与1904–05作为后续时间线事件。",
+        "1860 control corrections: Saigon is French after 1859, Rangoon is British after 1852, Mandalay remains Konbaung, and Taipei remains Qing; later colonial borders are not backdated."
+      ],
+      "source_ids": [
+        "columbia_taiping",
+        "nam_first_china_war",
+        "natural_earth_land_50m",
+        "loc_vietnam_study"
+      ]
+    },
+    {
+      "id": "asia_1890",
+      "anchor_date": "1890-01-01",
+      "era": "甲午战争前的帝国竞争与殖民扩张",
+      "title": "1890：甲午战争前夜与亚洲殖民势力",
+      "calendar_status": "pre_crisis_anchor",
+      "conflicts": [
+        {
+          "id": "sino_japanese_1894",
+          "name": "甲午战争（链接事件，发生于锚点之后）",
+          "date_start": "1894-08-01",
+          "date_end": "1895-04-17",
+          "province_scope": [
+            "辽东省",
+            "山东省",
+            "直隶省"
+          ],
+          "participants": [
+            "qing",
+            "japan",
+            "korea"
+          ],
+          "commanders": [
+            "li_hongzhang"
+          ],
+          "objective_types": [
+            "destroy_formation",
+            "capture_port",
+            "force_treaty"
+          ],
+          "numeric_status": "linked_future_event; not active on 1890-01-01 start",
+          "source_ids": [
+            "ndl_russo_japanese"
+          ]
+        },
+        {
+          "id": "boxer_precursor",
+          "name": "华北反洋教与义和团前史",
+          "date_start": "1890-01-01",
+          "date_end": "1900-05-31",
+          "province_scope": [
+            "山东省",
+            "直隶省",
+            "河南省"
+          ],
+          "participants": [
+            "qing",
+            "boxers",
+            "british_empire",
+            "french_empire"
+          ],
+          "commanders": [
+            "li_hongzhang"
+          ],
+          "objective_types": [
+            "protect_city",
+            "suppress_rebellion",
+            "diplomacy"
+          ],
+          "numeric_status": "pre-1900 social/political background; exact membership counts not fixed",
+          "source_ids": [
+            "nam_boxer"
+          ]
+        },
+        {
+          "id": "burma_upper_annexation_aftermath_1890",
+          "name": "上缅甸并入英属印度后的边疆战事",
+          "date_start": "1885-11-11",
+          "date_end": "1890-12-31",
+          "province_scope": [
+            "上缅甸",
+            "曼德勒省"
+          ],
+          "participants": [
+            "british_india",
+            "burmese_kingdom"
+          ],
+          "commanders": [
+            "unknown_british_commander_1885"
+          ],
+          "objective_types": [
+            "capture_city",
+            "destroy_formation",
+            "secure_rail_corridor"
+          ],
+          "numeric_status": "1886年并入后仍有地方抵抗；任务只抽象曼德勒—伊洛瓦底江节点",
+          "source_ids": [
+            "nam_burma_timeline"
+          ]
+        },
+        {
+          "id": "french_tonkin_protectorate_1890",
+          "name": "北圻保护国与印度支那殖民整合",
+          "date_start": "1883-08-25",
+          "date_end": "1890-12-31",
+          "province_scope": [
+            "北圻",
+            "安南",
+            "柬埔寨"
+          ],
+          "participants": [
+            "french_empire",
+            "nguyen_dynasty",
+            "siam"
+          ],
+          "commanders": [
+            "unknown_french_commander_1883"
+          ],
+          "objective_types": [
+            "capture_city",
+            "force_treaty",
+            "secure_supply_line"
+          ],
+          "numeric_status": "1887年法属印度支那成立；政治保护国与殖民直辖区不同，地图仅使用城市节点",
+          "source_ids": [
+            "loc_vietnam_study",
+            "loc_tonkin_campaign"
+          ]
+        }
+      ],
+      "political_figures": [
+        "li_hongzhang",
+        "yamagata_aritomo",
+        "ito_hirobumi"
+      ],
+      "factions": [
+        "qing",
+        "japan",
+        "russian_empire",
+        "british_empire",
+        "british_india",
+        "french_empire",
+        "french_indochina",
+        "ottoman",
+        "qajar_persia",
+        "siam",
+        "korea",
+        "netherlands",
+        "spain",
+        "burmese_kingdom",
+        "nguyen_dynasty"
+      ],
+      "geography_notes": [
+        "1890是危机前开局；1900义和团和八国联军以1900时间线启用，不能把1890开局直接标作1900战争。",
+        "1890 control corrections: Taiwan remains Qing until 1895; French control covers the Indochina colonial nodes, while Burma and Punjab are British India."
+      ],
+      "source_ids": [
+        "ndl_russo_japanese",
+        "nam_boxer",
+        "natural_earth_land_50m",
+        "nam_burma_timeline",
+        "loc_vietnam_study",
+        "loc_tonkin_campaign"
+      ]
+    },
+    {
+      "id": "asia_1900",
+      "anchor_date": "1900-06-17",
+      "era": "义和团运动与八国联军",
+      "title": "1900：大沽、天津与北京战区",
+      "calendar_status": "historical_anchor_date",
+      "conflicts": [
+        {
+          "id": "boxer_rebellion_1900",
+          "name": "义和团运动与八国联军干涉",
+          "date_start": "1899-10-01",
+          "date_end": "1901-09-07",
+          "province_scope": [
+            "直隶省",
+            "山东省",
+            "山西省"
+          ],
+          "participants": [
+            "qing",
+            "boxers",
+            "eight_nation",
+            "japan",
+            "british_empire",
+            "french_empire",
+            "russian_empire",
+            "germany",
+            "usa",
+            "italy"
+          ],
+          "commanders": [
+            "waldersee",
+            "li_hongzhang"
+          ],
+          "objective_types": [
+            "capture_city",
+            "relieve_legation",
+            "destroy_formation",
+            "capture_commander"
+          ],
+          "numeric_status": "force estimates depend on whether garrisons, relief column, and later occupation are counted; ranges only",
+          "source_ids": [
+            "nam_boxer"
+          ],
+          "geography_note": "义和团活动与联军推进以山东、直隶、山西相关战区表示；北京/天津是直隶战区内的城市目标。"
+        },
+        {
+          "id": "russian_manchuria_occupation_1900",
+          "name": "义和团战争期间的俄军满洲占领",
+          "date_start": "1900-06-24",
+          "date_end": "1900-12-31",
+          "province_scope": [
+            "奉天省",
+            "吉林省",
+            "黑龙江省"
+          ],
+          "participants": [
+            "russian_empire",
+            "qing",
+            "eight_nation"
+          ],
+          "commanders": [
+            "unknown_russian_far_east_commander_1900"
+          ],
+          "objective_types": [
+            "capture_city",
+            "secure_rail_corridor",
+            "force_treaty"
+          ],
+          "numeric_status": "占领随月份和铁路节点变化；港口租借、军队占领和清政府名义主权分开记录",
+          "source_ids": [
+            "nam_boxer",
+            "ndl_russo_japanese"
+          ]
+        }
+      ],
+      "political_figures": [
+        "li_hongzhang",
+        "waldersee",
+        "nicholas_ii"
+      ],
+      "factions": [
+        "qing",
+        "boxers",
+        "eight_nation",
+        "japan",
+        "british_empire",
+        "french_empire",
+        "russian_empire",
+        "germany",
+        "usa",
+        "italy",
+        "british_india"
+      ],
+      "geography_notes": [
+        "八国联军是联合远征阵营；各国编制仍在order_of_battle分开记录。天津、北京、大沽和山海关使用真实城市/港口点。",
+        "1900 control corrections: Qingdao is German Kiautschou, Port Arthur/Dalian are Russian leased/occupied nodes, Manila is American, Macau Portuguese; Beijing/Tianjin and the legation relief are represented as coalition footholds."
+      ],
+      "source_ids": [
+        "nam_boxer",
+        "natural_earth_land_50m",
+        "ndl_russo_japanese"
+      ]
+    },
+    {
+      "id": "asia_1917",
+      "anchor_date": "1917-06-16",
+      "era": "护法运动、俄国革命与大战末期亚洲",
+      "title": "1917：护法运动与俄国革命的亚洲联动",
+      "calendar_status": "historical_anchor_date",
+      "conflicts": [
+        {
+          "id": "constitutional_protection_1917",
+          "name": "护法运动",
+          "date_start": "1917-06-16",
+          "date_end": "1922-06-16",
+          "province_scope": [
+            "广东省",
+            "广西省",
+            "云南省"
+          ],
+          "participants": [
+            "guangzhou_government",
+            "beiyang_gov"
+          ],
+          "commanders": [
+            "sun_yat_sen"
+          ],
+          "objective_types": [
+            "hold_city",
+            "capture_commander",
+            "diplomacy"
+          ],
+          "numeric_status": "南方军政力量因时期变化而变动；采用编制范围并标注待核",
+          "source_ids": [
+            "uh_northern_expedition"
+          ]
+        },
+        {
+          "id": "russian_revolution_1917",
+          "name": "俄国二月革命与十月革命",
+          "date_start": "1917-03-08",
+          "date_end": "1917-11-07",
+          "province_scope": [
+            "彼得格勒省",
+            "莫斯科省",
+            "突厥斯坦地区"
+          ],
+          "participants": [
+            "russian_provisional",
+            "bolsheviks",
+            "russian_empire"
+          ],
+          "commanders": [
+            "nicholas_ii"
+          ],
+          "objective_types": [
+            "capture_city",
+            "change_regime",
+            "diplomacy"
+          ],
+          "numeric_status": "革命政权转换；战斗编制不以单一精确总数表示",
+          "source_ids": [
+            "ushmm_russian_1917",
+            "uk_na_russian_1917"
+          ]
+        },
+        {
+          "id": "persia_1917",
+          "name": "波斯与中亚战区背景",
+          "date_start": "1917-01-01",
+          "date_end": "1917-12-31",
+          "province_scope": [
+            "阿塞拜疆省",
+            "呼罗珊省",
+            "巴格达省"
+          ],
+          "participants": [
+            "qajar_persia",
+            "ottoman",
+            "russian_provisional",
+            "british_india"
+          ],
+          "commanders": [],
+          "objective_types": [
+            "diplomacy",
+            "hold_city"
+          ],
+          "numeric_status": "档案目录与学术年表背景；战斗数字需逐案补证",
+          "source_ids": [
+            "iranica_1917",
+            "qdl_persia_1917"
+          ]
+        }
+      ],
+      "political_figures": [
+        "sun_yat_sen",
+        "duan_qirui",
+        "nicholas_ii"
+      ],
+      "factions": [
+        "beiyang_gov",
+        "guangzhou_government",
+        "russian_provisional",
+        "bolsheviks",
+        "russian_empire",
+        "japan",
+        "british_empire",
+        "british_india",
+        "ottoman",
+        "qajar_persia",
+        "afghanistan",
+        "mongolia",
+        "tibet",
+        "netherlands"
+      ],
+      "geography_notes": [
+        "1917中国护法运动与俄国革命不是同一战役；自由世界模式允许外交与军政走向分叉。"
+      ],
+      "source_ids": [
+        "uh_northern_expedition",
+        "ushmm_russian_1917",
+        "iranica_1917",
+        "qdl_persia_1917"
+      ]
+    },
+    {
+      "id": "asia_1927",
+      "anchor_date": "1927-04-12",
+      "era": "北伐与军阀割据",
+      "title": "1927：北伐转折与多方军政竞争",
+      "calendar_status": "historical_anchor_date",
+      "conflicts": [
+        {
+          "id": "northern_expedition_1927",
+          "name": "北伐战争中段",
+          "date_start": "1926-07-09",
+          "date_end": "1928-06-08",
+          "province_scope": [
+            "湖北省",
+            "江西省",
+            "江苏省"
+          ],
+          "participants": [
+            "kmt",
+            "zhili",
+            "fengtian",
+            "guominjun",
+            "shanxi"
+          ],
+          "commanders": [
+            "chiang_kai_shek",
+            "zhang_zuolin"
+          ],
+          "objective_types": [
+            "capture_city",
+            "destroy_formation",
+            "capture_commander"
+          ],
+          "numeric_status": "各路军兵力按阶段、建制和有效战斗人数分列范围",
+          "source_ids": [
+            "uh_northern_expedition"
+          ]
+        }
+      ],
+      "political_figures": [
+        "sun_yat_sen",
+        "chiang_kai_shek",
+        "zhang_zuolin",
+        "zhang_xueliang"
+      ],
+      "factions": [
+        "kmt",
+        "ccp",
+        "fengtian",
+        "zhili",
+        "shanxi",
+        "guominjun",
+        "sichuan",
+        "yunnan",
+        "japan",
+        "soviet",
+        "british_empire",
+        "french_indochina"
+      ],
+      "geography_notes": [
+        "省级战役默认不跨越三个当时省级区域；跨区战争拆为连续任务节点。1927地图只把军政集团作为有来源的开局部署。"
+      ],
+      "source_ids": [
+        "uh_northern_expedition",
+        "natural_earth_land_50m"
+      ]
+    },
+    {
+      "id": "asia_1940",
+      "anchor_date": "1940-01-01",
+      "era": "第二次中日战争与亚洲殖民体系危机",
+      "title": "1940：中日战争与东南亚殖民战区",
+      "calendar_status": "historical_anchor_date",
+      "conflicts": [
+        {
+          "id": "second_sino_japanese_war_1940",
+          "name": "第二次中日战争1940战区",
+          "date_start": "1937-07-07",
+          "date_end": "1945-09-02",
+          "province_scope": [
+            "湖南省",
+            "湖北省",
+            "四川省"
+          ],
+          "participants": [
+            "kmt",
+            "ccp",
+            "japan",
+            "japanese_occupied"
+          ],
+          "commanders": [
+            "chiang_kai_shek",
+            "mao_zedong"
+          ],
+          "objective_types": [
+            "hold_city",
+            "destroy_formation",
+            "protect_supply_line"
+          ],
+          "numeric_status": "战区集团军规模和伤亡均按来源范围登记，不使用未经核实的单点数字",
+          "source_ids": [
+            "nww2_china"
+          ]
+        },
+        {
+          "id": "indochina_1940",
+          "name": "日本进入法属印度支那北部",
+          "date_start": "1940-09-22",
+          "date_end": "1940-09-26",
+          "province_scope": [
+            "东京（印度支那）",
+            "老挝",
+            "北圻"
+          ],
+          "participants": [
+            "japan",
+            "vichy_france",
+            "thailand"
+          ],
+          "commanders": [
+            "tojo_hideki"
+          ],
+          "objective_types": [
+            "capture_port",
+            "force_treaty",
+            "diplomacy"
+          ],
+          "numeric_status": "以事件规模范围登记；不把1941太平洋战争提前到1940年1月",
+          "source_ids": [
+            "nww2_asia"
+          ]
+        }
+      ],
+      "political_figures": [
+        "chiang_kai_shek",
+        "mao_zedong",
+        "zhang_xueliang",
+        "tojo_hideki"
+      ],
+      "factions": [
+        "kmt",
+        "ccp",
+        "japan",
+        "japanese_occupied",
+        "soviet",
+        "british_empire",
+        "british_india",
+        "vichy_france",
+        "thailand",
+        "netherlands",
+        "usa",
+        "tibet",
+        "mongolia"
+      ],
+      "geography_notes": [
+        "1940自由世界包括国民政府、共产党、日本、占领区、苏联与殖民体系；日本占领区作为战区控制阵营，不能被误读为独立国家。"
+      ],
+      "source_ids": [
+        "nww2_china",
+        "nww2_asia",
+        "natural_earth_land_50m"
+      ]
+    }
+  ]
+}

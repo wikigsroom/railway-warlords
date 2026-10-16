@@ -1,0 +1,73 @@
+{
+  "id": "campaign_1924_05",
+  "name": "北京政变",
+  "mode": "campaign",
+  "map_id": "jingjin",
+  "anchor_date": "1924-10-19",
+  "days_per_round": 1,
+  "round_limit": 22,
+  "player_default": "zhili",
+  "faction_roster": [
+    "zhili",
+    "fengtian"
+  ],
+  "target_city_id": "beijing",
+  "objective_type": "survive",
+  "objective_count": 1,
+  "general_slots": 3,
+  "starting_resources": {
+    "cash": 750,
+    "food": 525,
+    "arms": 370
+  },
+  "player_formations": 14,
+  "enemy_formations": 16,
+  "full_visibility": false,
+  "unlock_after": [
+    "campaign_1924_04"
+  ],
+  "stars": {
+    "victory": true,
+    "rounds_at_most": 19,
+    "loss_ratio_permille_at_most": 300
+  },
+  "historical_status": "historical_theater_with_authored_tactical_deployment",
+  "source_ids": [
+    "coup_1924",
+    "ruc_1924"
+  ],
+  "deployment_note": "城市、地形和铁路依现实地理抽象；编队数量、交战位置和关卡目标为游戏设计，不宣称复原战斗序列。",
+  "events": [
+    {
+      "id": "beijing_coup",
+      "date": "1924-10-23",
+      "type": "coup",
+      "new_owner": "guominjun",
+      "source_owner": "zhili",
+      "actor_id": "feng_yuxiang",
+      "city_id": "beijing",
+      "designation_date": "1924-10-25",
+      "designation_source_ids": [
+        "nxtzb_guominjun_1924"
+      ],
+      "forecast_date": "1924-10-21",
+      "name": "北京政变",
+      "description": "史实：1924年10月23日冯玉祥发动北京政变；25日议决改组国民军。局内按人物、编队和北京控制权检查事件条件，不生成或传送部队恢复历史结果。",
+      "source_ids": [
+        "coup_1924",
+        "ruc_1924",
+        "gz_beijing_coup_1924"
+      ],
+      "new_faction_resources": {
+        "cash": 400,
+        "food": 300,
+        "arms": 160
+      },
+      "resource_basis": "沿用初版事件的游戏军需配置，不声称史实库存。",
+      "trigger_policy": "fixed_campaign_calendar",
+      "round": 5,
+      "forecast_round": 3
+    }
+  ],
+  "calendar_status": "simulation_calendar_not_daily_battle_reconstruction"
+}

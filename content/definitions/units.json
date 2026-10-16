@@ -1,0 +1,501 @@
+[
+  {
+    "id": "militia",
+    "name": "地方守备队",
+    "family": "infantry",
+    "hp": 85,
+    "attack": 24,
+    "defense": 16,
+    "ap": 3,
+    "range_min": 1,
+    "range_max": 1,
+    "cost": {
+      "cash": 45,
+      "food": 5,
+      "arms": 12
+    },
+    "build_turns": 1,
+    "upkeep": {
+      "cash": 2,
+      "food": 3
+    },
+    "suppression": 8,
+    "facility": "barracks",
+    "can_occupy": true,
+    "max_stack": 3,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 2,
+    "transport_extra": 0,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "foot",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1840
+  },
+  {
+    "id": "rifle",
+    "name": "步兵团",
+    "family": "infantry",
+    "hp": 100,
+    "attack": 34,
+    "defense": 20,
+    "ap": 4,
+    "range_min": 1,
+    "range_max": 1,
+    "cost": {
+      "cash": 80,
+      "food": 8,
+      "arms": 20
+    },
+    "build_turns": 1,
+    "upkeep": {
+      "cash": 4,
+      "food": 4
+    },
+    "suppression": 10,
+    "facility": "barracks",
+    "can_occupy": true,
+    "max_stack": 3,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 2,
+    "transport_extra": 0,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "foot",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1840
+  },
+  {
+    "id": "assault",
+    "name": "突击营",
+    "family": "infantry",
+    "hp": 110,
+    "attack": 40,
+    "defense": 24,
+    "ap": 4,
+    "range_min": 1,
+    "range_max": 1,
+    "cost": {
+      "cash": 125,
+      "food": 12,
+      "arms": 40
+    },
+    "build_turns": 2,
+    "upkeep": {
+      "cash": 5,
+      "food": 5
+    },
+    "suppression": 15,
+    "facility": "barracks_2",
+    "can_occupy": true,
+    "max_stack": 3,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 2,
+    "transport_extra": 0,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "foot",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1917
+  },
+  {
+    "id": "machine_gun",
+    "name": "机枪营",
+    "family": "infantry",
+    "hp": 100,
+    "attack": 31,
+    "defense": 22,
+    "ap": 3,
+    "range_min": 1,
+    "range_max": 1,
+    "cost": {
+      "cash": 110,
+      "food": 10,
+      "arms": 35
+    },
+    "build_turns": 1,
+    "upkeep": {
+      "cash": 5,
+      "food": 4
+    },
+    "suppression": 30,
+    "facility": "workshop",
+    "can_occupy": true,
+    "max_stack": 3,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 2,
+    "transport_extra": 0,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "foot",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1890
+  },
+  {
+    "id": "cavalry",
+    "name": "骑兵团",
+    "family": "cavalry",
+    "hp": 105,
+    "attack": 35,
+    "defense": 20,
+    "ap": 6,
+    "range_min": 1,
+    "range_max": 1,
+    "cost": {
+      "cash": 115,
+      "food": 15,
+      "arms": 25
+    },
+    "build_turns": 1,
+    "upkeep": {
+      "cash": 5,
+      "food": 6
+    },
+    "suppression": 10,
+    "facility": "barracks",
+    "can_occupy": true,
+    "max_stack": 3,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 2,
+    "transport_extra": 0,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "cavalry",
+    "target_domains": [
+      "land"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1840
+  },
+  {
+    "id": "engineer",
+    "name": "工兵营",
+    "family": "infantry",
+    "hp": 100,
+    "attack": 22,
+    "defense": 20,
+    "ap": 4,
+    "range_min": 1,
+    "range_max": 1,
+    "cost": {
+      "cash": 90,
+      "food": 8,
+      "arms": 25
+    },
+    "build_turns": 1,
+    "upkeep": {
+      "cash": 4,
+      "food": 4
+    },
+    "suppression": 8,
+    "facility": "workshop",
+    "can_occupy": true,
+    "max_stack": 3,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 2,
+    "transport_extra": 0,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "foot",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1840
+  },
+  {
+    "id": "field_artillery",
+    "name": "野战炮营",
+    "family": "artillery",
+    "hp": 90,
+    "attack": 48,
+    "defense": 14,
+    "ap": 3,
+    "range_min": 2,
+    "range_max": 2,
+    "cost": {
+      "cash": 150,
+      "food": 10,
+      "arms": 55
+    },
+    "build_turns": 2,
+    "upkeep": {
+      "cash": 6,
+      "food": 4
+    },
+    "suppression": 20,
+    "facility": "arsenal",
+    "can_occupy": false,
+    "max_stack": 3,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 4,
+    "transport_extra": 1,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "foot",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1840
+  },
+  {
+    "id": "heavy_artillery",
+    "name": "重炮营",
+    "family": "artillery",
+    "hp": 95,
+    "attack": 62,
+    "defense": 15,
+    "ap": 2,
+    "range_min": 2,
+    "range_max": 3,
+    "cost": {
+      "cash": 240,
+      "food": 15,
+      "arms": 90
+    },
+    "build_turns": 3,
+    "upkeep": {
+      "cash": 9,
+      "food": 5
+    },
+    "suppression": 25,
+    "facility": "arsenal_2",
+    "can_occupy": false,
+    "max_stack": 2,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 5,
+    "transport_extra": 1,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "foot",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1900
+  },
+  {
+    "id": "armored_car",
+    "name": "装甲汽车队",
+    "family": "motor",
+    "hp": 115,
+    "attack": 42,
+    "defense": 30,
+    "ap": 6,
+    "range_min": 1,
+    "range_max": 1,
+    "cost": {
+      "cash": 200,
+      "food": 15,
+      "arms": 80
+    },
+    "build_turns": 2,
+    "upkeep": {
+      "cash": 8,
+      "food": 5
+    },
+    "suppression": 20,
+    "facility": "arsenal_2",
+    "can_occupy": true,
+    "max_stack": 2,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 3,
+    "transport_extra": 1,
+    "per_faction_cap": 4,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "motor",
+    "target_domains": [
+      "land"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1917
+  },
+  {
+    "id": "armored_train",
+    "name": "装甲列车",
+    "family": "rail",
+    "hp": 160,
+    "attack": 56,
+    "defense": 36,
+    "ap": 6,
+    "range_min": 1,
+    "range_max": 2,
+    "cost": {
+      "cash": 300,
+      "food": 20,
+      "arms": 130
+    },
+    "build_turns": 3,
+    "upkeep": {
+      "cash": 12,
+      "food": 7
+    },
+    "suppression": 25,
+    "facility": "station_2",
+    "can_occupy": false,
+    "max_stack": 1,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 4,
+    "transport_extra": 0,
+    "per_faction_cap": 2,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "rail",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": false,
+    "historical_era_min": 1900
+  },
+  {
+    "id": "river_gunboat",
+    "name": "江防炮艇",
+    "family": "river",
+    "hp": 120,
+    "attack": 40,
+    "defense": 24,
+    "ap": 5,
+    "range_min": 1,
+    "range_max": 2,
+    "cost": {
+      "cash": 180,
+      "food": 10,
+      "arms": 65
+    },
+    "build_turns": 2,
+    "upkeep": {
+      "cash": 7,
+      "food": 4
+    },
+    "suppression": 18,
+    "facility": "port",
+    "can_occupy": false,
+    "max_stack": 2,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 3,
+    "transport_extra": 0,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "river",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": true,
+    "historical_era_min": 1860
+  },
+  {
+    "id": "transport_ship",
+    "name": "运输船",
+    "family": "water",
+    "hp": 95,
+    "attack": 0,
+    "defense": 12,
+    "ap": 5,
+    "range_min": 0,
+    "range_max": 0,
+    "cost": {
+      "cash": 120,
+      "food": 10,
+      "arms": 30
+    },
+    "build_turns": 1,
+    "upkeep": {
+      "cash": 4,
+      "food": 4
+    },
+    "suppression": 0,
+    "facility": "port",
+    "can_occupy": false,
+    "max_stack": 1,
+    "ammo_capacity": 0,
+    "ammo_refill_arms": 0,
+    "transport_extra": 0,
+    "per_faction_cap": 0,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "water",
+    "target_domains": [],
+    "shore_target_required": false,
+    "historical_era_min": 1840
+  },
+  {
+    "id": "coastal_gunship",
+    "name": "沿海炮舰",
+    "family": "coastal",
+    "hp": 150,
+    "attack": 50,
+    "defense": 30,
+    "ap": 4,
+    "range_min": 1,
+    "range_max": 2,
+    "cost": {
+      "cash": 260,
+      "food": 15,
+      "arms": 100
+    },
+    "build_turns": 3,
+    "upkeep": {
+      "cash": 10,
+      "food": 5
+    },
+    "suppression": 22,
+    "facility": "port_2",
+    "can_occupy": false,
+    "max_stack": 2,
+    "ammo_capacity": 4,
+    "ammo_refill_arms": 4,
+    "transport_extra": 0,
+    "per_faction_cap": 3,
+    "era_min": 1920,
+    "historical_distribution": "scenario_whitelist_required",
+    "movement_profile": "sea",
+    "target_domains": [
+      "land",
+      "river",
+      "sea"
+    ],
+    "shore_target_required": true,
+    "historical_era_min": 1840
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "source_archive_sha256": "0d456890f3c7951c04223be3c0d43cc03ebd379d87a82150dd86cbf9ae8fd513",
+  "references": [
+    {
+      "original": "ai/ai_planner.gd",
+      "original_sha256": "bb5fb6a7b829aea99d3197963a09d6434df381dae22e533b0b7b59e84363d589",
+      "fixture": "tests/fixtures/reference_ai_planner_v020.gd",
+      "change": "Unique class_name only; implementation unchanged"
+    },
+    {
+      "original": "domain/movement_rules.gd",
+      "original_sha256": "7b7c997af5d93d83c8104c8c98b9b885f0507e2044428da36c56c1ea4cbc265a",
+      "fixture": "tests/fixtures/reference_movement_rules_v020.gd",
+      "change": "Unique class_name only; implementation unchanged"
+    }
+  ]
+}

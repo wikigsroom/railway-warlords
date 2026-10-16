@@ -1,0 +1,59 @@
+{
+  "id": "campaign_1924_03",
+  "name": "山海关攻守",
+  "mode": "campaign",
+  "map_id": "jingfeng",
+  "anchor_date": "1924-10-06",
+  "days_per_round": 1,
+  "round_limit": 18,
+  "player_default": "zhili",
+  "faction_roster": [
+    "zhili",
+    "fengtian"
+  ],
+  "target_city_id": "shanhaiguan",
+  "objective_type": "hold",
+  "objective_count": 3,
+  "general_slots": 3,
+  "starting_resources": {
+    "cash": 630,
+    "food": 455,
+    "arms": 310
+  },
+  "player_formations": 14,
+  "enemy_formations": 16,
+  "full_visibility": false,
+  "unlock_after": [
+    "campaign_1924_02"
+  ],
+  "stars": {
+    "victory": true,
+    "rounds_at_most": 15,
+    "loss_ratio_permille_at_most": 300
+  },
+  "historical_status": "historical_theater_with_authored_tactical_deployment",
+  "source_ids": [
+    "coup_1924",
+    "ruc_1924",
+    "bkzx_shanhaiguan_1924"
+  ],
+  "deployment_note": "直军控制山海关、秦皇岛，奉军以后方锦州为基地从关外进攻。原“直军夺取奉军山海关”目标已纠正为防守；具体编队和格位为战术抽象。",
+  "events": [],
+  "calendar_status": "simulation_calendar_not_daily_battle_reconstruction",
+  "base_city_id": "qinhuangdao",
+  "enemy_base_city_id": "jinzhou",
+  "initial_city_owners": {
+    "qinhuangdao": "zhili",
+    "shanhaiguan": "zhili",
+    "jinzhou": "fengtian"
+  },
+  "friend_start_offset": {
+    "q": -4,
+    "r": 2
+  },
+  "enemy_start_offset": {
+    "q": 4,
+    "r": -3
+  },
+  "historical_date_basis": "与九门口攻击关共用有记载的1924年10月6日窗口；山海关由直军防御，奉军从关外进攻。三阶段坚守是关卡目标，不声称实际坚守天数。"
+}

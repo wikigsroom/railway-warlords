@@ -1,0 +1,414 @@
+[
+  {
+    "id": "zhili",
+    "name": "直系",
+    "historical_role_1924": "北方及华中主要军事集团",
+    "availability": "scenario_explicit_roster",
+    "color": "#41677F",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "fengtian",
+    "name": "奉系",
+    "historical_role_1924": "东北主要军事集团",
+    "availability": "scenario_explicit_roster",
+    "color": "#8E3D36",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "jiangsu",
+    "name": "江苏军政集团",
+    "historical_role_1924": "齐燮元部",
+    "availability": "scenario_explicit_roster",
+    "color": "#85664C",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "zhejiang",
+    "name": "浙江军政集团",
+    "historical_role_1924": "卢永祥部",
+    "availability": "scenario_explicit_roster",
+    "color": "#697754",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "shanxi",
+    "name": "晋系",
+    "historical_role_1924": "阎锡山部",
+    "availability": "scenario_explicit_roster",
+    "color": "#9A804A",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "yunnan",
+    "name": "滇系",
+    "historical_role_1924": "唐继尧部",
+    "availability": "scenario_explicit_roster",
+    "color": "#617A62",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "guangdong",
+    "name": "广州政权",
+    "historical_role_1924": "南方革命政权及所属军事力量",
+    "availability": "scenario_explicit_roster",
+    "color": "#A56D3C",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "dongjiang",
+    "name": "东江军政集团",
+    "historical_role_1924": "陈炯明部",
+    "availability": "scenario_explicit_roster",
+    "color": "#776182",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "sichuan",
+    "name": "四川地方军政集团",
+    "historical_role_1924": "需按战区拆分实际控制者",
+    "availability": "scenario_explicit_roster",
+    "color": "#6B7168",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "anhui",
+    "name": "皖系",
+    "historical_role_1924": "仅按年代包配置有效部署",
+    "availability": "scenario_explicit_roster",
+    "color": "#635A50",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "guominjun",
+    "name": "国民军",
+    "historical_role_1924": "北京政变后依日期事件建立",
+    "availability": "scenario_explicit_roster",
+    "color": "#487277",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag"
+  },
+  {
+    "id": "qing",
+    "name": "清帝国",
+    "historical_role": "19世纪东亚宗主帝国；时间锚点按条约、战事与地方控制另行处理",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#4c6675",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "british_empire",
+    "name": "大英帝国",
+    "historical_role": "亚洲殖民与海上势力；印度、缅甸、马来亚节点按时间线分开登记",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#b26b4b",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "british_india",
+    "name": "英属印度",
+    "historical_role": "英属印度政府与印度殖民军政体系",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#a36b50",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "french_empire",
+    "name": "法兰西殖民帝国",
+    "historical_role": "印度支那与远征军节点",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#6b6fa3",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "russian_empire",
+    "name": "俄罗斯帝国",
+    "historical_role": "1840–1917俄国帝国及远东、中亚势力",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#6e7e9b",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "soviet",
+    "name": "苏维埃俄国/苏联",
+    "historical_role": "1917后俄国革命政权；时代区分见时间线",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#a64c48",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "japan",
+    "name": "日本帝国",
+    "historical_role": "明治至昭和时期日本国家与帝国军政",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#b7534b",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "korea",
+    "name": "朝鲜王朝/大韩帝国",
+    "historical_role": "时间线按1897年国号变化与1910年吞并标注",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#887c62",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "ottoman",
+    "name": "奥斯曼帝国",
+    "historical_role": "西亚与两河流域的帝国政权",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#80676e",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "qajar_persia",
+    "name": "卡扎尔波斯",
+    "historical_role": "1840–1925卡扎尔王朝波斯",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#92704f",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "afghanistan",
+    "name": "阿富汗酋长国/王国",
+    "historical_role": "19世纪至20世纪初阿富汗国家政权",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#6e7c58",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "siam",
+    "name": "暹罗",
+    "historical_role": "未被欧洲正式殖民的东南亚王国",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#7c8e5d",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "netherlands",
+    "name": "荷兰殖民政府",
+    "historical_role": "荷属东印度殖民节点",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#9a6c61",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "spain",
+    "name": "西班牙殖民政府",
+    "historical_role": "1840–1898菲律宾殖民节点；1898后变化见时间线",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#a77a54",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "taiping",
+    "name": "太平天国",
+    "historical_role": "1851–1864太平天国政权；仅在对应事件时间段启用",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#6b5591",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "boxers",
+    "name": "义和团运动",
+    "historical_role": "1900年义和团组织及地方团练的事件阵营抽象",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#9d5a3c",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "eight_nation",
+    "name": "八国联军联合远征",
+    "historical_role": "1900年联合远征的多国协同阵营；不是单一历史国家",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#536f8a",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "beiyang_gov",
+    "name": "北京政府/北洋军政",
+    "historical_role": "1912–1928北京政府及其军政体系",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#536d7f",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "guangzhou_government",
+    "name": "广州护法政府",
+    "historical_role": "1917–1922护法运动相关南方政权",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#8f6b4a",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "russian_provisional",
+    "name": "俄国临时政府",
+    "historical_role": "1917年二月革命后临时政府",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#7c8d9c",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "bolsheviks",
+    "name": "布尔什维克/苏维埃",
+    "historical_role": "1917革命及内战早期政治军事力量",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#a54d52",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "mongolia",
+    "name": "蒙古自治/博克多汗国",
+    "historical_role": "1911后蒙古政权；受中俄关系影响",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#887253",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "tibet",
+    "name": "西藏地方政府",
+    "historical_role": "20世纪前期的地方政权节点",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#7b8064",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "kmt",
+    "name": "中国国民党/国民政府",
+    "historical_role": "1927与1940国民政府主力阵营",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#4c6fa1",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "ccp",
+    "name": "中国共产党/红军",
+    "historical_role": "1927与1940革命根据地阵营",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#a3544c",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "japanese_occupied",
+    "name": "日本占领区政权",
+    "historical_role": "1940占领区的战区控制抽象；不等同于正式国家",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#98524a",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "vichy_france",
+    "name": "维希法国殖民当局",
+    "historical_role": "1940印度支那殖民当局的时间线阵营",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#6f7090",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "thailand",
+    "name": "泰国",
+    "historical_role": "1940暹罗改名后的国家政权",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#718a5c",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "french_indochina",
+    "name": "法属印度支那",
+    "historical_role": "1890–1940殖民地政府节点",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#6c6c95",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "usa",
+    "name": "美国",
+    "historical_role": "1900八国联军与1940太平洋前夜亚洲殖民秩序中的美国节点",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#6d83a4",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only"
+  },
+  {
+    "id": "portugal",
+    "name": "葡萄牙殖民政府",
+    "historical_role": "澳门殖民节点；按时代与条约状态处理",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#8c6d77",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only"
+  },
+  {
+    "id": "germany",
+    "name": "德意志帝国",
+    "historical_role": "1900八国联军、胶州湾租借背景",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#55636f",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only"
+  },
+  {
+    "id": "italy",
+    "name": "意大利王国",
+    "historical_role": "1900八国联军成员",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#71866c",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only"
+  },
+  {
+    "id": "nguyen_dynasty",
+    "name": "阮朝大南",
+    "historical_role": "1840/1860越南阮朝的本土政权节点；1860西贡已受法国控制的城市例外写入场景数据",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#786b52",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "burmese_kingdom",
+    "name": "贡榜王朝缅甸",
+    "historical_role": "1840缅甸王国与1860上缅甸节点；下缅甸在1852后按英国控制处理",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#7a7654",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  },
+  {
+    "id": "sikh_empire",
+    "name": "锡克帝国",
+    "historical_role": "1840旁遮普的拉合尔政权；1849并入英属印度后退出时间线控制",
+    "availability": "asia_timeline_explicit_roster",
+    "color": "#a17b4f",
+    "flag_rule": "game_command_marker_not_claim_of_unique_historical_national_flag",
+    "historical_control_status": "scenario_starting_control_only; see content/history/asia_timeline.json"
+  }
+]

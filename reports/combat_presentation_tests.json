@@ -1,0 +1,235 @@
+{
+	"build_version": "0.2.12",
+	"checks": [
+		{
+			"name": "published_content_loads",
+			"passed": true
+		},
+		{
+			"name": "repeated_previews_preserve_entire_state_and_random_stream",
+			"passed": true
+		},
+		{
+			"name": "attack_transaction_preserves_input_snapshot",
+			"passed": true
+		},
+		{
+			"name": "primary_and_counter_use_separate_pairs_of_persisted_dice",
+			"passed": true
+		},
+		{
+			"name": "recorded_faces_and_modifiers_within_advertised_bounds",
+			"passed": true
+		},
+		{
+			"name": "different_rolls_change_real_damage_inside_preview_ranges",
+			"passed": true
+		},
+		{
+			"name": "stale_and_friendly_fire_commands_do_not_draw_random_numbers",
+			"passed": true
+		},
+		{
+			"name": "committed_dice_state_saves_with_checksum",
+			"passed": true
+		},
+		{
+			"name": "save_load_replays_next_battle_to_identical_complete_state",
+			"passed": true
+		},
+		{
+			"name": "checksummed_but_invalid_random_stream_is_rejected",
+			"passed": true
+		},
+		{
+			"name": "destroyed_defender_never_counterfires_or_draws_counter_dice",
+			"passed": true
+		},
+		{
+			"name": "fatal_hits_keep_position_for_visible_destruction",
+			"passed": true
+		},
+		{
+			"name": "surviving_formation_earns_attack_and_kill_experience_and_promotes",
+			"passed": true
+		},
+		{
+			"name": "veterancy_bonus_applies_only_to_committed_surviving_formation",
+			"passed": true
+		},
+		{
+			"name": "animation_starts_with_pre_hit_visual_health",
+			"passed": true
+		},
+		{
+			"name": "health_does_not_change_while_dice_are_rolling",
+			"passed": true
+		},
+		{
+			"name": "visual_health_changes_at_projectile_impact",
+			"passed": true
+		},
+		{
+			"name": "skipping_animation_keeps_committed_damage_and_random_state",
+			"passed": true
+		},
+		{
+			"name": "destroyed_unit_fades_after_actual_hit",
+			"passed": true
+		},
+		{
+			"name": "movement_events_contain_actual_traversed_path",
+			"passed": true
+		},
+		{
+			"name": "completed_move_persists_world_facing_for_idle_unit",
+			"passed": true
+		},
+		{
+			"name": "cardinal_heading_rotates_immutable_sub2_source_view",
+			"passed": true
+		},
+		{
+			"name": "authored_cardinal_source_remains_upright_n",
+			"passed": true
+		},
+		{
+			"name": "authored_cardinal_source_remains_upright_e",
+			"passed": true
+		},
+		{
+			"name": "authored_cardinal_source_remains_upright_s",
+			"passed": true
+		},
+		{
+			"name": "authored_cardinal_source_remains_upright_w",
+			"passed": true
+		},
+		{
+			"name": "saved_committed_move_log_restores_last_world_heading",
+			"passed": true
+		},
+		{
+			"name": "attacker_and_hit_target_face_each_other",
+			"passed": true
+		},
+		{
+			"name": "heading_updates_preserve_rules_and_random_state",
+			"passed": true
+		},
+		{
+			"name": "marching_interpolates_between_hexes_instead_of_teleporting",
+			"passed": true
+		},
+		{
+			"name": "double_speed_and_reduced_motion_preserve_hit_timing_without_camera_or_unit_shake",
+			"passed": true
+		},
+		{
+			"name": "air_bomb_has_one_flight_and_correlated_impact_without_duplicate_explosions",
+			"passed": true
+		},
+		{
+			"name": "air_damage_is_applied_visually_at_impact",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_n_idle_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_n_march_a_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_n_march_b_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_n_fire_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_n_hit_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_e_idle_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_e_march_a_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_e_march_b_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_e_fire_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_e_hit_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_s_idle_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_s_march_a_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_s_march_b_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_s_fire_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_s_hit_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_w_idle_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_w_march_a_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_w_march_b_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_w_fire_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "independent_whole_w_hit_source_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "northbound_ship_source_is_not_rotated_again_by_heading",
+			"passed": true
+		},
+		{
+			"name": "attack_uses_authored_shooting_pose_during_projectile_phase",
+			"passed": true
+		},
+		{
+			"name": "defender_uses_authored_hit_pose_after_impact",
+			"passed": true
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"failed": 0,
+	"failures": [],
+	"passed": 56,
+	"ruleset_version": 9,
+	"scope": "Synthetic QA arena; actual published scenario replay is separately verified by VisualPlaytest."
+}

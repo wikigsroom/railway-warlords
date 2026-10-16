@@ -1,0 +1,80 @@
+{
+  "id": "campaign_1860_02",
+  "name": "通州—北京通道 · 1860",
+  "anchor_date": "1860-09-21",
+  "mode": "campaign",
+  "play_mode": "historical_campaign",
+  "days_per_round": 7,
+  "round_limit": 28,
+  "content_status": "historical_reference_plus_player_branching",
+  "major_conflict": "通州—北京通道",
+  "source_ids": [
+    "asia_timeline",
+    "nam_first_china_war"
+  ],
+  "map_id": "asia_strategic",
+  "player_default": "qing",
+  "faction_roster": [
+    "qing",
+    "british_empire",
+    "french_empire"
+  ],
+  "general_slots": 4,
+  "starting_resources": {
+    "cash": 900,
+    "food": 600,
+    "arms": 440,
+    "fuel": 180,
+    "silver": 100
+  },
+  "full_visibility": false,
+  "objective_type": "hold",
+  "objective_count": 1,
+  "player_formations": 8,
+  "enemy_formations": 8,
+  "target_city_id": "beijing",
+  "historical_status": "mission_scope_capped_at_three_period_provinces",
+  "historical_event_id": "second_opium_war_1860",
+  "province_scope": [
+    "直隶省"
+  ],
+  "objective_design": {
+    "success": [
+      "hold_strategic_city",
+      "repel_relief_or_restoration_force"
+    ],
+    "failure": [
+      "lose_player_force",
+      "round_limit_reached"
+    ],
+    "target_place_historical_name": "beijing"
+  },
+  "initial_city_owners": {
+    "beijing": "qing"
+  },
+  "initial_wars": [
+    [
+      "qing",
+      "british_empire"
+    ],
+    [
+      "qing",
+      "french_empire"
+    ]
+  ],
+  "initial_relations": [],
+  "events": [],
+  "weak_faction_ids": [],
+  "deployment_note": "Real city coordinate with authored tactical hex deployment; no claim that each stack equals a literal historical battalion.",
+  "equipment_whitelist": [
+    "militia",
+    "rifle",
+    "cavalry",
+    "engineer",
+    "field_artillery",
+    "coastal_gunship",
+    "transport_ship",
+    "river_gunboat"
+  ],
+  "equipment_status": "period_gate_for_game_classes; historical names and unit strengths remain source-tagged in asia_order_of_battle.json"
+}

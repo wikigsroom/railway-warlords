@@ -1,0 +1,66 @@
+{
+  "id": "campaign_1840_03",
+  "name": "南京条约前的江宁战局 · 1840",
+  "anchor_date": "1842-08-29",
+  "mode": "campaign",
+  "play_mode": "historical_campaign",
+  "days_per_round": 7,
+  "round_limit": 28,
+  "content_status": "historical_reference_plus_player_branching",
+  "major_conflict": "南京条约前的江宁战局",
+  "source_ids": [
+    "asia_timeline",
+    "state_china_milestone"
+  ],
+  "map_id": "asia_strategic",
+  "player_default": "qing",
+  "faction_roster": [
+    "qing",
+    "british_empire"
+  ],
+  "general_slots": 4,
+  "starting_resources": {
+    "cash": 900,
+    "food": 600,
+    "arms": 440,
+    "fuel": 180,
+    "silver": 100
+  },
+  "full_visibility": false,
+  "objective_type": "capture",
+  "objective_count": 1,
+  "player_formations": 8,
+  "enemy_formations": 8,
+  "target_city_id": "nanjing",
+  "historical_status": "mission_scope_capped_at_three_period_provinces",
+  "historical_event_id": "first_opium_war",
+  "province_scope": [
+    "江苏省"
+  ],
+  "objective_design": {
+    "success": [
+      "destroy_named_formation",
+      "capture_or_hold_strategic_city",
+      "capture_named_commander_if_present"
+    ],
+    "failure": [
+      "lose_player_force",
+      "round_limit_reached"
+    ],
+    "target_place_historical_name": "nanjing"
+  },
+  "initial_city_owners": {
+    "nanjing": "british_empire",
+    "beijing": "qing"
+  },
+  "initial_wars": [
+    [
+      "qing",
+      "british_empire"
+    ]
+  ],
+  "initial_relations": [],
+  "events": [],
+  "weak_faction_ids": [],
+  "deployment_note": "Real city coordinate with authored tactical hex deployment; no claim that each stack equals a literal historical battalion."
+}

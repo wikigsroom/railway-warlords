@@ -1,0 +1,650 @@
+[
+  {
+    "id": "barracks",
+    "name": "兵营",
+    "cost_cash": 80,
+    "cost_arms": 20,
+    "build_turns": 1,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 0,
+    "income_arms": 0,
+    "slot_cost": 1,
+    "placement_constraint": "controlled_city",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 80,
+          "food": 0,
+          "arms": 20
+        },
+        "build_own_phases": 1,
+        "min_city_level": 1,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 120,
+          "food": 0,
+          "arms": 30
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "train_facility_level": [
+        1,
+        2
+      ]
+    },
+    "capture_damage_levels": 0
+  },
+  {
+    "id": "workshop",
+    "name": "机枪工场",
+    "cost_cash": 100,
+    "cost_arms": 35,
+    "build_turns": 1,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 0,
+    "income_arms": 2,
+    "slot_cost": 1,
+    "placement_constraint": "controlled_city",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 100,
+          "food": 0,
+          "arms": 35
+        },
+        "build_own_phases": 1,
+        "min_city_level": 1,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 2
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 150,
+          "food": 0,
+          "arms": 53
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 4
+        }
+      }
+    ],
+    "effects_by_level": {
+      "train_facility_level": [
+        1,
+        2
+      ]
+    },
+    "capture_damage_levels": 0
+  },
+  {
+    "id": "arsenal",
+    "name": "军工厂",
+    "cost_cash": 150,
+    "cost_arms": 60,
+    "build_turns": 2,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 0,
+    "income_arms": 8,
+    "slot_cost": 1,
+    "placement_constraint": "controlled_city",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 150,
+          "food": 0,
+          "arms": 60
+        },
+        "build_own_phases": 2,
+        "min_city_level": 1,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 8
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 225,
+          "food": 0,
+          "arms": 90
+        },
+        "build_own_phases": 3,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 16
+        }
+      }
+    ],
+    "effects_by_level": {
+      "train_facility_level": [
+        1,
+        2
+      ]
+    },
+    "capture_damage_levels": 1
+  },
+  {
+    "id": "station",
+    "name": "车站整备",
+    "cost_cash": 100,
+    "cost_arms": 40,
+    "build_turns": 1,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 0,
+    "income_arms": 0,
+    "slot_cost": 1,
+    "placement_constraint": "existing_rail_node",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 100,
+          "food": 0,
+          "arms": 40
+        },
+        "build_own_phases": 1,
+        "min_city_level": 1,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 150,
+          "food": 0,
+          "arms": 60
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "transport_points": [
+        2,
+        3
+      ]
+    },
+    "capture_damage_levels": 1
+  },
+  {
+    "id": "port",
+    "name": "港口整备",
+    "cost_cash": 120,
+    "cost_arms": 45,
+    "build_turns": 2,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 4,
+    "income_food": 0,
+    "income_arms": 0,
+    "slot_cost": 1,
+    "placement_constraint": "historical_coast_or_navigable_river",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 120,
+          "food": 0,
+          "arms": 45
+        },
+        "build_own_phases": 2,
+        "min_city_level": 1,
+        "income": {
+          "cash": 4,
+          "food": 0,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 180,
+          "food": 0,
+          "arms": 68
+        },
+        "build_own_phases": 3,
+        "min_city_level": 2,
+        "income": {
+          "cash": 8,
+          "food": 0,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "train_facility_level": [
+        1,
+        2
+      ],
+      "trade_enabled": [
+        1,
+        1
+      ]
+    },
+    "capture_damage_levels": 0
+  },
+  {
+    "id": "airfield",
+    "name": "机场",
+    "cost_cash": 180,
+    "cost_arms": 65,
+    "build_turns": 2,
+    "min_city_level": 2,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 0,
+    "income_arms": 0,
+    "slot_cost": 1,
+    "placement_constraint": "plain_and_scenario_whitelist",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 180,
+          "food": 0,
+          "arms": 65
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 270,
+          "food": 0,
+          "arms": 98
+        },
+        "build_own_phases": 3,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "sorties": [
+        2,
+        3
+      ]
+    },
+    "capture_damage_levels": 0
+  },
+  {
+    "id": "supply_depot",
+    "name": "军需站",
+    "cost_cash": 90,
+    "cost_arms": 30,
+    "build_turns": 1,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 8,
+    "income_arms": 0,
+    "slot_cost": 1,
+    "placement_constraint": "controlled_city",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 90,
+          "food": 0,
+          "arms": 30
+        },
+        "build_own_phases": 1,
+        "min_city_level": 1,
+        "income": {
+          "cash": 0,
+          "food": 8,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 135,
+          "food": 0,
+          "arms": 45
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 16,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "stability_recovery_extra": [
+        5,
+        5
+      ],
+      "supply_source": [
+        1,
+        1
+      ]
+    },
+    "capture_damage_levels": 0
+  },
+  {
+    "id": "hospital",
+    "name": "野战医院",
+    "cost_cash": 110,
+    "cost_arms": 35,
+    "build_turns": 1,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 0,
+    "income_arms": 0,
+    "slot_cost": 1,
+    "placement_constraint": "controlled_city",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 110,
+          "food": 0,
+          "arms": 35
+        },
+        "build_own_phases": 1,
+        "min_city_level": 1,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 165,
+          "food": 0,
+          "arms": 53
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "phase_start_heal_flat": [
+        5,
+        10
+      ],
+      "heal_max_hp_fraction_permille": [
+        100,
+        100
+      ]
+    },
+    "capture_damage_levels": 0
+  },
+  {
+    "id": "fortification",
+    "name": "城防工事",
+    "cost_cash": 80,
+    "cost_arms": 35,
+    "build_turns": 1,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 0,
+    "income_arms": 0,
+    "slot_cost": 0,
+    "placement_constraint": "controlled_city",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 80,
+          "food": 0,
+          "arms": 35
+        },
+        "build_own_phases": 1,
+        "min_city_level": 1,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 120,
+          "food": 0,
+          "arms": 53
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "fort_max_hp_bonus": [
+        40,
+        80
+      ]
+    },
+    "capture_damage_levels": 0
+  },
+  {
+    "id": "telegraph",
+    "name": "电报站",
+    "cost_cash": 75,
+    "cost_arms": 25,
+    "build_turns": 1,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 0,
+    "income_arms": 0,
+    "slot_cost": 1,
+    "placement_constraint": "controlled_city",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 75,
+          "food": 0,
+          "arms": 25
+        },
+        "build_own_phases": 1,
+        "min_city_level": 1,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 113,
+          "food": 0,
+          "arms": 38
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 0,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "faction_command_pool_bonus": [
+        1,
+        1
+      ]
+    },
+    "capture_damage_levels": 0
+  },
+  {
+    "id": "market",
+    "name": "贸易站",
+    "cost_cash": 100,
+    "cost_arms": 20,
+    "build_turns": 1,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 8,
+    "income_food": 0,
+    "income_arms": 0,
+    "slot_cost": 1,
+    "placement_constraint": "controlled_city",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 100,
+          "food": 0,
+          "arms": 20
+        },
+        "build_own_phases": 1,
+        "min_city_level": 1,
+        "income": {
+          "cash": 8,
+          "food": 0,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 150,
+          "food": 0,
+          "arms": 30
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 16,
+          "food": 0,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "trade_enabled": [
+        1,
+        1
+      ]
+    },
+    "capture_damage_levels": 0
+  },
+  {
+    "id": "granary",
+    "name": "粮仓",
+    "cost_cash": 90,
+    "cost_arms": 15,
+    "build_turns": 1,
+    "min_city_level": 1,
+    "max_level": 2,
+    "income_cash": 0,
+    "income_food": 12,
+    "income_arms": 0,
+    "slot_cost": 1,
+    "placement_constraint": "controlled_city",
+    "level_definitions": [
+      {
+        "level": 1,
+        "cost": {
+          "cash": 90,
+          "food": 0,
+          "arms": 15
+        },
+        "build_own_phases": 1,
+        "min_city_level": 1,
+        "income": {
+          "cash": 0,
+          "food": 12,
+          "arms": 0
+        }
+      },
+      {
+        "level": 2,
+        "cost": {
+          "cash": 135,
+          "food": 0,
+          "arms": 23
+        },
+        "build_own_phases": 2,
+        "min_city_level": 2,
+        "income": {
+          "cash": 0,
+          "food": 24,
+          "arms": 0
+        }
+      }
+    ],
+    "effects_by_level": {
+      "local_reserve_regen_extra": [
+        2,
+        4
+      ]
+    },
+    "capture_damage_levels": 0
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "id": "campaign_1927_02",
+  "name": "上海战区 · 1927",
+  "anchor_date": "1927-04-12",
+  "mode": "campaign",
+  "play_mode": "historical_campaign",
+  "days_per_round": 7,
+  "round_limit": 28,
+  "content_status": "historical_reference_plus_player_branching",
+  "major_conflict": "上海战区",
+  "source_ids": [
+    "asia_timeline",
+    "uh_northern_expedition"
+  ],
+  "map_id": "asia_strategic",
+  "player_default": "kmt",
+  "faction_roster": [
+    "kmt",
+    "fengtian",
+    "zhili"
+  ],
+  "general_slots": 4,
+  "starting_resources": {
+    "cash": 900,
+    "food": 600,
+    "arms": 440,
+    "fuel": 180,
+    "silver": 100
+  },
+  "full_visibility": false,
+  "objective_type": "capture",
+  "objective_count": 1,
+  "player_formations": 8,
+  "enemy_formations": 8,
+  "target_city_id": "shanghai",
+  "historical_status": "mission_scope_capped_at_three_period_provinces",
+  "historical_event_id": "northern_expedition_1927",
+  "province_scope": [
+    "江苏省"
+  ],
+  "objective_design": {
+    "success": [
+      "destroy_named_formation",
+      "capture_or_hold_strategic_city",
+      "capture_named_commander_if_present"
+    ],
+    "failure": [
+      "lose_player_force",
+      "round_limit_reached"
+    ],
+    "target_place_historical_name": "shanghai"
+  },
+  "initial_city_owners": {
+    "shanghai": "fengtian",
+    "beijing": "kmt"
+  },
+  "initial_wars": [
+    [
+      "kmt",
+      "fengtian"
+    ],
+    [
+      "kmt",
+      "zhili"
+    ]
+  ],
+  "initial_relations": [],
+  "events": [],
+  "weak_faction_ids": [],
+  "deployment_note": "Real city coordinate with authored tactical hex deployment; no claim that each stack equals a literal historical battalion.",
+  "equipment_whitelist": [
+    "militia",
+    "rifle",
+    "cavalry",
+    "engineer",
+    "field_artillery",
+    "coastal_gunship",
+    "transport_ship",
+    "river_gunboat",
+    "machine_gun",
+    "heavy_artillery",
+    "armored_train",
+    "assault",
+    "armored_car"
+  ],
+  "equipment_status": "period_gate_for_game_classes; historical names and unit strengths remain source-tagged in asia_order_of_battle.json"
+}

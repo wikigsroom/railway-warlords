@@ -1,0 +1,85 @@
+{
+  "id": "campaign_1900_01",
+  "name": "大沽口炮台 · 1900",
+  "anchor_date": "1900-06-17",
+  "mode": "campaign",
+  "play_mode": "historical_campaign",
+  "days_per_round": 7,
+  "round_limit": 28,
+  "content_status": "historical_reference_plus_player_branching",
+  "major_conflict": "大沽口炮台",
+  "source_ids": [
+    "asia_timeline",
+    "nam_boxer"
+  ],
+  "map_id": "asia_strategic",
+  "player_default": "eight_nation",
+  "faction_roster": [
+    "eight_nation",
+    "qing",
+    "boxers"
+  ],
+  "general_slots": 4,
+  "starting_resources": {
+    "cash": 900,
+    "food": 600,
+    "arms": 440,
+    "fuel": 180,
+    "silver": 100
+  },
+  "full_visibility": false,
+  "objective_type": "capture",
+  "objective_count": 1,
+  "player_formations": 8,
+  "enemy_formations": 8,
+  "target_city_id": "tianjin",
+  "historical_status": "mission_scope_capped_at_three_period_provinces",
+  "historical_event_id": "boxer_rebellion_1900",
+  "province_scope": [
+    "直隶省"
+  ],
+  "objective_design": {
+    "success": [
+      "destroy_named_formation",
+      "capture_or_hold_strategic_city",
+      "capture_named_commander_if_present"
+    ],
+    "failure": [
+      "lose_player_force",
+      "round_limit_reached"
+    ],
+    "target_place_historical_name": "tianjin"
+  },
+  "initial_city_owners": {
+    "tianjin": "qing",
+    "beijing": "eight_nation"
+  },
+  "initial_wars": [
+    [
+      "eight_nation",
+      "qing"
+    ],
+    [
+      "eight_nation",
+      "boxers"
+    ]
+  ],
+  "initial_relations": [],
+  "events": [],
+  "weak_faction_ids": [],
+  "deployment_note": "Real city coordinate with authored tactical hex deployment; no claim that each stack equals a literal historical battalion.",
+  "equipment_whitelist": [
+    "militia",
+    "rifle",
+    "cavalry",
+    "engineer",
+    "field_artillery",
+    "coastal_gunship",
+    "transport_ship",
+    "river_gunboat",
+    "machine_gun",
+    "heavy_artillery",
+    "armored_train"
+  ],
+  "equipment_status": "period_gate_for_game_classes; historical names and unit strengths remain source-tagged in asia_order_of_battle.json"
+}

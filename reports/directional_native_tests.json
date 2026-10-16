@@ -1,0 +1,112 @@
+{
+	"build_version": "0.2.12",
+	"cases": [
+		{
+			"asset": "unit_rifle_n",
+			"command": {
+				"actor_id": "zhili",
+				"expected_version": 0,
+				"target_hex": {
+					"q": 65,
+					"r": 21
+				},
+				"type": "Move",
+				"unit_id": "u_00001"
+			},
+			"direction": "n",
+			"heading": [
+				0.0,
+				-1.0
+			],
+			"idle_heading_retained": true,
+			"legal_command_replay_equal": true,
+			"moving_captured": true,
+			"passed": true,
+			"raster_rotation": 0.0,
+			"scenario_id": "campaign_1920_01",
+			"unit_id": "u_00001"
+		},
+		{
+			"asset": "unit_rifle_e",
+			"command": {
+				"actor_id": "zhili",
+				"expected_version": 0,
+				"target_hex": {
+					"q": 66,
+					"r": 23
+				},
+				"type": "Move",
+				"unit_id": "u_00001"
+			},
+			"direction": "e",
+			"heading": [
+				0.866027355194092,
+				0.499996662139893
+			],
+			"idle_heading_retained": true,
+			"legal_command_replay_equal": true,
+			"moving_captured": true,
+			"passed": true,
+			"raster_rotation": 0.0,
+			"scenario_id": "campaign_1920_01",
+			"unit_id": "u_00001"
+		},
+		{
+			"asset": "unit_rifle_s",
+			"command": {
+				"actor_id": "zhili",
+				"expected_version": 0,
+				"target_hex": {
+					"q": 65,
+					"r": 24
+				},
+				"type": "Move",
+				"unit_id": "u_00001"
+			},
+			"direction": "s",
+			"heading": [
+				0.0,
+				1.0
+			],
+			"idle_heading_retained": true,
+			"legal_command_replay_equal": true,
+			"moving_captured": true,
+			"passed": true,
+			"raster_rotation": 0.0,
+			"scenario_id": "campaign_1920_01",
+			"unit_id": "u_00001"
+		},
+		{
+			"asset": "unit_rifle_w",
+			"command": {
+				"actor_id": "zhili",
+				"expected_version": 0,
+				"target_hex": {
+					"q": 63,
+					"r": 21
+				},
+				"type": "Move",
+				"unit_id": "u_00001"
+			},
+			"direction": "w",
+			"heading": [
+				-0.866024792194366,
+				-0.500001072883606
+			],
+			"idle_heading_retained": true,
+			"legal_command_replay_equal": true,
+			"moving_captured": true,
+			"passed": true,
+			"raster_rotation": 0.0,
+			"scenario_id": "campaign_1920_01",
+			"unit_id": "u_00001"
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"failures": [],
+	"image_compositing": false,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"raw_godot_viewport": true,
+	"unmodified_published_deployment": true
+}

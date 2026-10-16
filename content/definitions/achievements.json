@@ -1,0 +1,338 @@
+[
+  {
+    "id": "achievement_campaign_01",
+    "name": "第一份战报",
+    "category": "campaign",
+    "criterion": {
+      "metric": "first_campaign_win",
+      "operator": "gte",
+      "value": 1
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_campaign_02",
+    "name": "直皖战区结业",
+    "category": "campaign",
+    "criterion": {
+      "metric": "chapter_1_complete",
+      "operator": "gte",
+      "value": 6
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_campaign_03",
+    "name": "直奉战区结业",
+    "category": "campaign",
+    "criterion": {
+      "metric": "chapter_2_complete",
+      "operator": "gte",
+      "value": 6
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_campaign_04",
+    "name": "京奉战区结业",
+    "category": "campaign",
+    "criterion": {
+      "metric": "chapter_3_complete",
+      "operator": "gte",
+      "value": 6
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_campaign_05",
+    "name": "周密部署",
+    "category": "campaign",
+    "criterion": {
+      "metric": "campaign_three_star_wins",
+      "operator": "gte",
+      "value": 6
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_campaign_06",
+    "name": "战役通览",
+    "category": "campaign",
+    "criterion": {
+      "metric": "campaign_all_normal_wins",
+      "operator": "gte",
+      "value": 18
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_conquest_01",
+    "name": "战线贯通",
+    "category": "conquest",
+    "criterion": {
+      "metric": "first_conquest_win",
+      "operator": "gte",
+      "value": 1
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_conquest_02",
+    "name": "直皖棋局",
+    "category": "conquest",
+    "criterion": {
+      "metric": "conquest_1920_wins",
+      "operator": "gte",
+      "value": 1
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_conquest_03",
+    "name": "第一次直奉棋局",
+    "category": "conquest",
+    "criterion": {
+      "metric": "conquest_1922_wins",
+      "operator": "gte",
+      "value": 1
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_conquest_04",
+    "name": "军阀角逐",
+    "category": "conquest",
+    "criterion": {
+      "metric": "conquest_1924_wins",
+      "operator": "gte",
+      "value": 1
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_conquest_05",
+    "name": "以弱制强",
+    "category": "conquest",
+    "criterion": {
+      "metric": "distinct_weak_faction_conquest_wins",
+      "operator": "gte",
+      "value": 2
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_conquest_06",
+    "name": "同等军令",
+    "category": "conquest",
+    "criterion": {
+      "metric": "normalized_conquest_wins",
+      "operator": "gte",
+      "value": 3
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_tactics_01",
+    "name": "压制突入",
+    "category": "tactics",
+    "criterion": {
+      "metric": "suppressed_target_capture_city",
+      "operator": "gte",
+      "value": 1
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_tactics_02",
+    "name": "侧翼穿插",
+    "category": "tactics",
+    "criterion": {
+      "metric": "cavalry_destroyed_artillery",
+      "operator": "gte",
+      "value": 3
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_tactics_03",
+    "name": "破防夺城",
+    "category": "tactics",
+    "criterion": {
+      "metric": "fort_breach_then_occupation",
+      "operator": "gte",
+      "value": 3
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_tactics_04",
+    "name": "观测协同",
+    "category": "tactics",
+    "criterion": {
+      "metric": "protected_observer_artillery_hits",
+      "operator": "gte",
+      "value": 10
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_tactics_05",
+    "name": "江岸协同",
+    "category": "tactics",
+    "criterion": {
+      "metric": "naval_shore_support_then_capture",
+      "operator": "gte",
+      "value": 2
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_tactics_06",
+    "name": "协同军令",
+    "category": "tactics",
+    "criterion": {
+      "metric": "general_active_skill_uses",
+      "operator": "gte",
+      "value": 20
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_logistics_01",
+    "name": "沿线投送",
+    "category": "logistics",
+    "criterion": {
+      "metric": "rail_transfers_successful",
+      "operator": "gte",
+      "value": 10
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_logistics_02",
+    "name": "抢通桥梁",
+    "category": "logistics",
+    "criterion": {
+      "metric": "bridges_repaired",
+      "operator": "gte",
+      "value": 3
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_logistics_03",
+    "name": "断线见效",
+    "category": "logistics",
+    "criterion": {
+      "metric": "rail_cut_changed_enemy_supply",
+      "operator": "gte",
+      "value": 3
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_logistics_04",
+    "name": "重接给养",
+    "category": "logistics",
+    "criterion": {
+      "metric": "formations_restored_from_none",
+      "operator": "gte",
+      "value": 10
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_logistics_05",
+    "name": "两岸接应",
+    "category": "logistics",
+    "criterion": {
+      "metric": "safe_transport_disembark",
+      "operator": "gte",
+      "value": 5
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  },
+  {
+    "id": "achievement_logistics_06",
+    "name": "军校后勤结业",
+    "category": "logistics",
+    "criterion": {
+      "metric": "legion_challenges_won",
+      "operator": "gte",
+      "value": 12
+    },
+    "scope": "profile_cumulative_verified_match_events",
+    "reward_merit": 20,
+    "repeatable": false,
+    "excluded": "friendly_fire_surrender_replayed_commands_debug_matches"
+  }
+]

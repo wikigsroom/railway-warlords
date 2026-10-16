@@ -1,0 +1,75 @@
+[
+  {
+    "id": "entrenched",
+    "stack_policy": "max_same_family",
+    "applied_on": "own_phase_start_if_no_move_or_attack_since_last_own_start",
+    "expires_on": "next_move_attack_transfer_or_embark",
+    "effect": "defense_flat",
+    "base_value": 4,
+    "cap": 8
+  },
+  {
+    "id": "fortified_order",
+    "stack_policy": "max_with_entrenched",
+    "applied_on": "entrench_order",
+    "expires_on": "next_caster_owner_phase_start",
+    "effect": "defense_flat",
+    "base_value": 8,
+    "cap": 12
+  },
+  {
+    "id": "rail_priority_order",
+    "stack_policy": "max_single_use",
+    "applied_on": "rail_priority",
+    "expires_on": "next_transport_or_next_caster_owner_phase_start",
+    "effect": "transport_cost_reduction",
+    "base_value": 1,
+    "cap": 1
+  },
+  {
+    "id": "temporary_recon",
+    "stack_policy": "union_visible_cells",
+    "applied_on": "recon_order_or_air_recon",
+    "expires_on": "next_caster_owner_phase_start",
+    "effect": "reveal_radius",
+    "base_value": 2,
+    "cap": 3
+  },
+  {
+    "id": "unpaid_salary",
+    "stack_policy": "replace",
+    "applied_on": "cash_upkeep_payment_failed",
+    "expires_on": "next_successful_own_upkeep_payment",
+    "effect": "none",
+    "base_value": -5,
+    "cap": 0,
+    "on_apply_morale_delta": -5
+  },
+  {
+    "id": "convalescent_general",
+    "stack_policy": "replace",
+    "applied_on": "general_formation_defeated",
+    "expires_on": "match_end",
+    "effect": "none",
+    "base_value": 0,
+    "cap": 0
+  },
+  {
+    "id": "general_transfer_cooldown",
+    "stack_policy": "replace",
+    "applied_on": "unassign_general",
+    "expires_on": "one_next_owner_phase_start",
+    "effect": "none",
+    "base_value": 1,
+    "cap": 1
+  },
+  {
+    "id": "transported_this_phase",
+    "stack_policy": "replace",
+    "applied_on": "rail_transfer_completed",
+    "expires_on": "next_owner_phase_start",
+    "effect": "none",
+    "base_value": 1,
+    "cap": 1
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "id": "asia_1840",
+  "name": "1840 · 鸦片战争与亚洲帝国",
+  "anchor_date": "1840-07-05",
+  "mode": "conquest",
+  "play_mode": "free_world",
+  "days_per_round": 30,
+  "round_limit": 180,
+  "content_status": "historical_reference_plus_player_branching",
+  "major_conflict": "清帝国在第一次鸦片战争与亚洲帝国竞争中的全境战略开局",
+  "source_ids": [
+    "asia_timeline",
+    "natural_earth_land_50m"
+  ],
+  "map_id": "asia_strategic",
+  "player_default": "qing",
+  "faction_roster": [
+    "qing",
+    "british_empire",
+    "british_india",
+    "russian_empire",
+    "qajar_persia",
+    "afghanistan",
+    "ottoman",
+    "japan",
+    "korea",
+    "siam",
+    "netherlands",
+    "spain",
+    "french_empire",
+    "nguyen_dynasty",
+    "burmese_kingdom",
+    "sikh_empire",
+    "portugal"
+  ],
+  "general_slots": 8,
+  "starting_resources": {
+    "cash": 1800,
+    "food": 1200,
+    "arms": 900,
+    "fuel": 420,
+    "silver": 320
+  },
+  "full_visibility": false,
+  "objective_type": "unify",
+  "objective_count": 1,
+  "player_formations": 0,
+  "enemy_formations": 0,
+  "target_city_id": "beijing",
+  "historical_status": "historical_starting_deployment_plus_free_world_branching",
+  "timeline_id": "asia_1840",
+  "free_world_rules": {
+    "diplomacy": true,
+    "war_declaration": true,
+    "truce": true,
+    "aid": true,
+    "trade": true,
+    "player_may_break_history": true,
+    "starting_control_is_scenario_data": true
+  },
+  "initial_wars": [
+    [
+      "qing",
+      "british_empire"
+    ],
+    [
+      "qing",
+      "british_india"
+    ]
+  ],
+  "initial_relations": [],
+  "events": [],
+  "weak_faction_ids": [],
+  "weak_faction_tag_basis": "Asia roster uses source-tagged faction definitions; no automatic historical strength handicap.",
+  "equipment_whitelist": [
+    "militia",
+    "rifle",
+    "cavalry",
+    "engineer",
+    "field_artillery",
+    "coastal_gunship",
+    "transport_ship"
+  ],
+  "equipment_status": "period_gate_for_game_classes; historical names and unit strengths remain source-tagged in asia_order_of_battle.json"
+}

@@ -1,0 +1,207 @@
+{
+	"checks": [
+		"content_loaded",
+		"active_skill_exec_barrage",
+		"active_skill_cost_barrage",
+		"active_skill_repeat_rejected_barrage",
+		"active_skill_exec_assault_order",
+		"active_skill_cost_assault_order",
+		"active_skill_repeat_rejected_assault_order",
+		"active_skill_exec_cavalry_sweep",
+		"active_skill_cost_cavalry_sweep",
+		"active_skill_repeat_rejected_cavalry_sweep",
+		"active_skill_exec_ration_order",
+		"active_skill_cost_ration_order",
+		"active_skill_repeat_rejected_ration_order",
+		"active_skill_exec_rail_priority",
+		"active_skill_cost_rail_priority",
+		"active_skill_repeat_rejected_rail_priority",
+		"active_skill_exec_recon_order",
+		"active_skill_cost_recon_order",
+		"active_skill_repeat_rejected_recon_order",
+		"active_skill_exec_entrench_order",
+		"active_skill_cost_entrench_order",
+		"active_skill_repeat_rejected_entrench_order",
+		"active_skill_exec_field_repair",
+		"active_skill_cost_field_repair",
+		"active_skill_repeat_rejected_field_repair",
+		"active_skill_exec_coordinated_fire",
+		"active_skill_cost_coordinated_fire",
+		"active_skill_repeat_rejected_coordinated_fire",
+		"blocked_deployment_preserves_queue_and_units",
+		"ready_queue_deploys_after_space_reopens",
+		"friendly_transit_cannot_capture_and_stop_on_occupied_flag",
+		"technology_combat_hard_caps",
+		"cost_discount_30percent_and_nonzero_floor",
+		"all_technology_ap_cap",
+		"port_embark_legal",
+		"embark_terminates_both_actors",
+		"same_phase_cargo_chain_rejected",
+		"next_phase_controlled_port_unload",
+		"ship_sink_sorted_nonoverlapping_50percent_evacuations",
+		"ship_sink_no_legal_shore_defeats_cargo",
+		"navigable_water_continues_under_rail_bridge",
+		"rain_grounding_bomber",
+		"air_bomb_damages_without_capture",
+		"unlisted_airfield_cannot_fly",
+		"profile_freezes_at_match_start",
+		"summer_no_snow_winter_north_snow",
+		"date_driven_coup_transfers_city_and_diplomacy",
+		"historical_event_fires_once",
+		"real_port_water_neighbors_legion_07",
+		"real_port_water_neighbors_legion_08",
+		"opposite_bank_ports_and_loaded_transport",
+		"cross_river_transport_starts_away_from_destination",
+		"cross_river_training_cannot_instantly_win_before_sailing",
+		"save_load_same_command_replay_00",
+		"save_load_same_command_replay_01",
+		"save_load_same_command_replay_02",
+		"save_load_same_command_replay_03",
+		"save_load_same_command_replay_04",
+		"save_load_same_command_replay_05",
+		"save_load_same_command_replay_06",
+		"save_load_same_command_replay_07",
+		"save_load_same_command_replay_08",
+		"save_load_same_command_replay_09",
+		"save_load_same_command_replay_10",
+		"save_load_same_command_replay_11",
+		"save_load_same_command_replay_12",
+		"save_load_same_command_replay_13",
+		"save_load_same_command_replay_14",
+		"save_load_same_command_replay_15",
+		"save_load_same_command_replay_16",
+		"save_load_same_command_replay_17",
+		"save_load_same_command_replay_18",
+		"save_load_same_command_replay_19",
+		"wrong_content_hash_preserves_save_and_rejects_load"
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"failed": 0,
+	"failures": [],
+	"passed": 74,
+	"replay_cases": 20,
+	"sampled_phases": [
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 1
+		},
+		{
+			"owner_id": "anhui",
+			"phase_index": 1,
+			"round": 2
+		},
+		{
+			"owner_id": "anhui",
+			"phase_index": 1,
+			"round": 3
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 4
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 5
+		},
+		{
+			"owner_id": "anhui",
+			"phase_index": 1,
+			"round": 6
+		},
+		{
+			"owner_id": "anhui",
+			"phase_index": 1,
+			"round": 7
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 9
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 10
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 1
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 2
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 3
+		},
+		{
+			"owner_id": "anhui",
+			"phase_index": 1,
+			"round": 3
+		},
+		{
+			"owner_id": "anhui",
+			"phase_index": 1,
+			"round": 4
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 5
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 6
+		},
+		{
+			"owner_id": "anhui",
+			"phase_index": 1,
+			"round": 7
+		},
+		{
+			"owner_id": "anhui",
+			"phase_index": 1,
+			"round": 8
+		},
+		{
+			"owner_id": "zhili",
+			"phase_index": 0,
+			"round": 9
+		},
+		{
+			"owner_id": "anhui",
+			"phase_index": 1,
+			"round": 9
+		}
+	],
+	"save_load_replay_total_ms": [
+		1689.786,
+		1878.322,
+		2145.302,
+		1889.654,
+		2056.149,
+		2720.043,
+		2374.935,
+		1928.374,
+		1871.363,
+		1692.644,
+		1705.901,
+		1708.857,
+		1641.842,
+		1637.411,
+		1652.75,
+		1707.857,
+		1662.687,
+		1788.742,
+		1696.074,
+		1798.157
+	]
+}

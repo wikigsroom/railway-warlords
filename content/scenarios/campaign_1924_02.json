@@ -1,0 +1,53 @@
+{
+  "id": "campaign_1924_02",
+  "name": "九门口山地",
+  "mode": "campaign",
+  "map_id": "jingfeng",
+  "anchor_date": "1924-10-06",
+  "days_per_round": 1,
+  "round_limit": 16,
+  "player_default": "fengtian",
+  "faction_roster": [
+    "fengtian",
+    "zhili"
+  ],
+  "target_city_id": "jiumenkou",
+  "objective_type": "hold",
+  "objective_count": 3,
+  "general_slots": 3,
+  "starting_resources": {
+    "cash": 570,
+    "food": 420,
+    "arms": 280
+  },
+  "player_formations": 14,
+  "enemy_formations": 16,
+  "full_visibility": false,
+  "unlock_after": [
+    "campaign_1924_01"
+  ],
+  "stars": {
+    "victory": true,
+    "rounds_at_most": 13,
+    "loss_ratio_permille_at_most": 300
+  },
+  "historical_status": "historical_theater_with_authored_tactical_deployment",
+  "source_ids": [
+    "coup_1924",
+    "ruc_1924",
+    "bkzx_shanhaiguan_1924"
+  ],
+  "deployment_note": "九门口、山海关起局由直军防守；奉军从关外东侧进入，锦州作后方，不将秦皇岛配置为奉军基地。编队数量与具体格位为游戏战术抽象，不宣称复原实际战斗序列。",
+  "events": [],
+  "calendar_status": "simulation_calendar_not_daily_battle_reconstruction",
+  "historical_date_basis": "以1924年10月6日奉军攻击九门口的记载作为本关时间起点；不把游戏回合解释成逐日战斗记录。",
+  "base_city_id": "jinzhou",
+  "friend_start_offset": {
+    "q": 4,
+    "r": -3
+  },
+  "enemy_start_offset": {
+    "q": -2,
+    "r": 1
+  }
+}

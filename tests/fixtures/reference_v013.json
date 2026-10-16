@@ -1,0 +1,18 @@
+{
+  "version": "0.1.3",
+  "source_archive_sha256": "eb2d863785ccda23b492d176056007043024e428c48fb20a8dcd3a07c8a12c72",
+  "references": [
+    {
+      "original": "domain/visibility_rules.gd",
+      "original_sha256": "cb93f618824ccd2abd4128f2048590d05481d0a64b53e854f0f6e862953f97d4",
+      "fixture": "tests/fixtures/reference_visibility_rules_v013.gd",
+      "change": "Unique class_name only; implementation unchanged"
+    },
+    {
+      "original": "ai/ai_planner.gd",
+      "original_sha256": "72ab55e869fc2de8b942d9109cb284cb7a1eb18304fe862f7575c9ae550b0471",
+      "fixture": "tests/fixtures/reference_ai_planner_v013.gd",
+      "change": "Unique class_name only; implementation unchanged"
+    }
+  ]
+}

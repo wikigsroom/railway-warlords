@@ -1,0 +1,140 @@
+{
+  "version": "0.2.12",
+  "groups": [
+    {
+      "group": "run_tests",
+      "checks": 102,
+      "passed": true,
+      "report": "rule_tests.json"
+    },
+    {
+      "group": "acceptance_test",
+      "checks": 74,
+      "passed": true,
+      "report": "acceptance_tests.json"
+    },
+    {
+      "group": "input_test",
+      "checks": 11,
+      "passed": true,
+      "report": "input_tests.json"
+    },
+    {
+      "group": "geography_test",
+      "checks": 95,
+      "passed": true,
+      "report": "geography_tests.json"
+    },
+    {
+      "group": "progression_test",
+      "checks": 243,
+      "passed": true,
+      "report": "progression_tests.json"
+    },
+    {
+      "group": "transaction_test",
+      "checks": 13,
+      "passed": true,
+      "report": "transaction_tests.json"
+    },
+    {
+      "group": "strategic_history_test",
+      "checks": 46,
+      "passed": true,
+      "report": "strategic_history_tests.json"
+    },
+    {
+      "group": "atlas_render_test",
+      "checks": 66,
+      "passed": true,
+      "report": "atlas_render_tests.json"
+    },
+    {
+      "group": "combat_presentation_test",
+      "checks": 56,
+      "passed": true,
+      "report": "combat_presentation_tests.json"
+    },
+    {
+      "group": "automation_test",
+      "checks": 8,
+      "passed": true,
+      "report": "automation_tests.json"
+    },
+    {
+      "group": "rules_worker_test",
+      "checks": 360,
+      "passed": true,
+      "report": "rules_worker_tests.json"
+    },
+    {
+      "group": "map_scale_test",
+      "checks": 64,
+      "passed": true,
+      "report": "map_scale_tests.json"
+    },
+    {
+      "group": "scaled_logistics_test",
+      "checks": 25,
+      "passed": true,
+      "report": "scaled_logistics_tests.json"
+    },
+    {
+      "group": "movement_cache_test",
+      "checks": 13,
+      "passed": true,
+      "report": "movement_cache_tests.json"
+    },
+    {
+      "group": "historical_places_test",
+      "checks": 18,
+      "passed": true,
+      "report": "historical_places_tests.json"
+    },
+    {
+      "group": "snapshot_optimization_test",
+      "checks": 2023,
+      "passed": true,
+      "report": "snapshot_optimization_tests.json"
+    },
+    {
+      "group": "asia_content_test",
+      "checks": 1400,
+      "passed": true,
+      "report": "asia_content_tests.json"
+    },
+    {
+      "group": "map_detail_boundary_motion_test",
+      "checks": 23,
+      "passed": true,
+      "report": "map_detail_boundary_motion_tests.json"
+    },
+    {
+      "group": "facing_memory_test",
+      "checks": 15,
+      "passed": true,
+      "report": "facing_memory_tests.json"
+    },
+    {
+      "group": "relief_surface_test",
+      "checks": 16,
+      "passed": true,
+      "report": "relief_surface_tests.json"
+    },
+    {
+      "group": "map_bank_test",
+      "checks": 31,
+      "passed": true,
+      "report": "map_bank_tests.json"
+    },
+    {
+      "group": "surface_geography_test",
+      "checks": 39,
+      "passed": true,
+      "report": "surface_geography_tests.json"
+    }
+  ],
+  "all_groups_passed": true,
+  "current_native_capacity_profiles_passed": true,
+  "raster_sources": 1056
+}

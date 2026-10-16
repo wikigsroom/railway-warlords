@@ -1,0 +1,101 @@
+{
+  "id": "asia_1927",
+  "name": "1927 · 北伐与军阀",
+  "anchor_date": "1927-04-12",
+  "mode": "conquest",
+  "play_mode": "free_world",
+  "days_per_round": 30,
+  "round_limit": 180,
+  "content_status": "historical_reference_plus_player_branching",
+  "major_conflict": "北伐中段，多军政集团争夺铁路、城市与省级战区",
+  "source_ids": [
+    "asia_timeline",
+    "natural_earth_land_50m"
+  ],
+  "map_id": "asia_strategic",
+  "player_default": "kmt",
+  "faction_roster": [
+    "kmt",
+    "ccp",
+    "fengtian",
+    "zhili",
+    "shanxi",
+    "guominjun",
+    "sichuan",
+    "yunnan",
+    "japan",
+    "soviet",
+    "british_empire",
+    "french_indochina",
+    "korea",
+    "afghanistan",
+    "british_india",
+    "french_empire",
+    "netherlands",
+    "ottoman",
+    "qajar_persia",
+    "siam",
+    "spain",
+    "usa",
+    "portugal"
+  ],
+  "general_slots": 8,
+  "starting_resources": {
+    "cash": 1800,
+    "food": 1200,
+    "arms": 900,
+    "fuel": 420,
+    "silver": 320
+  },
+  "full_visibility": false,
+  "objective_type": "unify",
+  "objective_count": 1,
+  "player_formations": 0,
+  "enemy_formations": 0,
+  "target_city_id": "beijing",
+  "historical_status": "historical_starting_deployment_plus_free_world_branching",
+  "timeline_id": "asia_1927",
+  "free_world_rules": {
+    "diplomacy": true,
+    "war_declaration": true,
+    "truce": true,
+    "aid": true,
+    "trade": true,
+    "player_may_break_history": true,
+    "starting_control_is_scenario_data": true
+  },
+  "initial_wars": [
+    [
+      "kmt",
+      "fengtian"
+    ],
+    [
+      "kmt",
+      "zhili"
+    ],
+    [
+      "kmt",
+      "guominjun"
+    ]
+  ],
+  "initial_relations": [],
+  "events": [],
+  "weak_faction_ids": [],
+  "weak_faction_tag_basis": "Asia roster uses source-tagged faction definitions; no automatic historical strength handicap.",
+  "equipment_whitelist": [
+    "militia",
+    "rifle",
+    "cavalry",
+    "engineer",
+    "field_artillery",
+    "coastal_gunship",
+    "transport_ship",
+    "river_gunboat",
+    "machine_gun",
+    "heavy_artillery",
+    "armored_train",
+    "assault",
+    "armored_car"
+  ],
+  "equipment_status": "period_gate_for_game_classes; historical names and unit strengths remain source-tagged in asia_order_of_battle.json"
+}

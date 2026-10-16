@@ -1,0 +1,853 @@
+{
+	"build_version": "0.2.12",
+	"city_labels": [
+		{
+			"city_id": "shanhaiguan",
+			"font_pixels": 18,
+			"screen_rect": [
+				1155.46484375,
+				609.619689941406,
+				91.0000034594362,
+				23.9999996605226
+			],
+			"shifted": true,
+			"text": "山海关 ★"
+		},
+		{
+			"city_id": "beijing",
+			"font_pixels": 17,
+			"screen_rect": [
+				266.557800292969,
+				601.415405273438,
+				93.0000031037932,
+				22.9999998383441
+			],
+			"shifted": false,
+			"text": "北京 · 首都"
+		},
+		{
+			"city_id": "tianjin",
+			"font_pixels": 17,
+			"screen_rect": [
+				471.613433837891,
+				887.444580078125,
+				93.0000031037932,
+				22.9999998383441
+			],
+			"shifted": false,
+			"text": "天津 · 省城"
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"historical_places": {
+		"additional_markers": 32,
+		"control_overlay_visible": true,
+		"control_zones": 15,
+		"historic_military_border_claimed": false,
+		"ownership": {
+			"jinzhou": "fengtian",
+			"qinhuangdao": "zhili",
+			"shanhaiguan": "zhili"
+		},
+		"place_overlay_visible": true,
+		"presentation_data_sha256": "66fea55f568ade8f7cd9019c153f8d0dca736deac78c9ee9c9e2c9a5051bdc10",
+		"selected_id": "",
+		"selected_kind": "",
+		"total_nodes": 47
+	},
+	"map_bank": {
+		"active": true,
+		"full_source_rectangles_reserved": true,
+		"invented_waterways": 0,
+		"material_assignments": 61335,
+		"placed": 1235,
+		"preparation_ms": 1688.953,
+		"random_stream_used": false,
+		"rejected_for_source_geography": 1602,
+		"rule_cells_changed": false,
+		"source_cells": 65726,
+		"source_images_modified": false,
+		"unique_originals": 52
+	},
+	"map_bank_visible": {
+		"active": true,
+		"camera": [
+			13176.0,
+			7503.244140625
+		],
+		"catalog_additional_sources": 796,
+		"catalog_map_assets": 870.0,
+		"distinct_scenery_originals_intersecting_view": 191,
+		"distinct_surface_originals_in_view": 119,
+		"families": {
+			"foothill_ew": 3596,
+			"foothill_ns": 2044,
+			"ridge_ew": 337,
+			"ridge_ns": 177
+		},
+		"hydrography": {
+			"display_corner_rounding_max_deviation_metres": 60.0,
+			"fine_source_id": "hydrorivers_v10_as",
+			"fine_source_sha256": "827e03a8e419b9578d5f246bcce1c93de1a0bd561a9f572fe84606c5d36d31fa",
+			"flat_lowland_model_branches_excluded": true,
+			"historical_channel_survey": false,
+			"major_presentation_replacements": 0,
+			"rule_geometry_modified": false,
+			"source_endpoints_preserved": true,
+			"source_fine_reaches": 2921,
+			"source_map_id": "jingfeng",
+			"visible_detail_segments": 0,
+			"visible_existing_detail_reaches": 0,
+			"visible_fine_reaches": 0,
+			"visible_fine_stream_orders": {},
+			"width_is_symbolic": true
+		},
+		"measurement_scope": "Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score.",
+		"nearest_repeated_source_distance_world": 282.169860839844,
+		"same_source_pairs_under_250_world_units": 0,
+		"scenery_instances_intersecting_view": 6154,
+		"settlement_sources": {
+			"beijing": "building_bank_capital_north_china_003",
+			"jinzhou": "building_bank_station_north_china_003",
+			"qinhuangdao": "building_bank_station_north_china_009",
+			"tianjin": "building_bank_capital_north_china_005"
+		},
+		"source_images_modified": false,
+		"source_use_counts": {
+			"scenery_bank_foothill_ew_001": 78,
+			"scenery_bank_foothill_ew_002": 82,
+			"scenery_bank_foothill_ew_003": 69,
+			"scenery_bank_foothill_ew_004": 76,
+			"scenery_bank_foothill_ew_005": 61,
+			"scenery_bank_foothill_ew_006": 47,
+			"scenery_bank_foothill_ew_007": 81,
+			"scenery_bank_foothill_ew_008": 69,
+			"scenery_bank_foothill_ew_009": 73,
+			"scenery_bank_foothill_ew_010": 97,
+			"scenery_bank_foothill_ew_011": 85,
+			"scenery_bank_foothill_ew_012": 71,
+			"scenery_bank_foothill_ew_013": 90,
+			"scenery_bank_foothill_ew_014": 71,
+			"scenery_bank_foothill_ew_015": 72,
+			"scenery_bank_foothill_ew_016": 84,
+			"scenery_bank_foothill_ew_017": 71,
+			"scenery_bank_foothill_ew_018": 66,
+			"scenery_bank_foothill_ew_019": 76,
+			"scenery_bank_foothill_ew_020": 58,
+			"scenery_bank_foothill_ew_021": 46,
+			"scenery_bank_foothill_ew_022": 68,
+			"scenery_bank_foothill_ew_023": 63,
+			"scenery_bank_foothill_ew_024": 89,
+			"scenery_bank_foothill_ew_025": 92,
+			"scenery_bank_foothill_ew_026": 76,
+			"scenery_bank_foothill_ew_027": 78,
+			"scenery_bank_foothill_ew_028": 95,
+			"scenery_bank_foothill_ew_029": 82,
+			"scenery_bank_foothill_ew_030": 100,
+			"scenery_bank_foothill_ew_031": 84,
+			"scenery_bank_foothill_ew_032": 77,
+			"scenery_bank_foothill_ew_033": 60,
+			"scenery_bank_foothill_ew_034": 60,
+			"scenery_bank_foothill_ew_035": 56,
+			"scenery_bank_foothill_ew_036": 68,
+			"scenery_bank_foothill_ew_037": 66,
+			"scenery_bank_foothill_ew_038": 68,
+			"scenery_bank_foothill_ew_039": 66,
+			"scenery_bank_foothill_ew_040": 94,
+			"scenery_bank_foothill_ew_041": 71,
+			"scenery_bank_foothill_ew_042": 85,
+			"scenery_bank_foothill_ew_043": 90,
+			"scenery_bank_foothill_ew_044": 87,
+			"scenery_bank_foothill_ew_045": 76,
+			"scenery_bank_foothill_ew_046": 73,
+			"scenery_bank_foothill_ew_047": 69,
+			"scenery_bank_foothill_ew_048": 80,
+			"scenery_bank_foothill_ns_001": 55,
+			"scenery_bank_foothill_ns_002": 49,
+			"scenery_bank_foothill_ns_003": 50,
+			"scenery_bank_foothill_ns_004": 36,
+			"scenery_bank_foothill_ns_005": 53,
+			"scenery_bank_foothill_ns_006": 38,
+			"scenery_bank_foothill_ns_007": 30,
+			"scenery_bank_foothill_ns_008": 45,
+			"scenery_bank_foothill_ns_009": 29,
+			"scenery_bank_foothill_ns_010": 43,
+			"scenery_bank_foothill_ns_011": 36,
+			"scenery_bank_foothill_ns_012": 43,
+			"scenery_bank_foothill_ns_013": 45,
+			"scenery_bank_foothill_ns_014": 40,
+			"scenery_bank_foothill_ns_015": 38,
+			"scenery_bank_foothill_ns_016": 55,
+			"scenery_bank_foothill_ns_017": 41,
+			"scenery_bank_foothill_ns_018": 39,
+			"scenery_bank_foothill_ns_019": 44,
+			"scenery_bank_foothill_ns_020": 35,
+			"scenery_bank_foothill_ns_021": 32,
+			"scenery_bank_foothill_ns_022": 54,
+			"scenery_bank_foothill_ns_023": 47,
+			"scenery_bank_foothill_ns_024": 46,
+			"scenery_bank_foothill_ns_025": 49,
+			"scenery_bank_foothill_ns_026": 38,
+			"scenery_bank_foothill_ns_027": 38,
+			"scenery_bank_foothill_ns_028": 41,
+			"scenery_bank_foothill_ns_029": 39,
+			"scenery_bank_foothill_ns_030": 39,
+			"scenery_bank_foothill_ns_031": 48,
+			"scenery_bank_foothill_ns_032": 40,
+			"scenery_bank_foothill_ns_033": 42,
+			"scenery_bank_foothill_ns_034": 50,
+			"scenery_bank_foothill_ns_035": 32,
+			"scenery_bank_foothill_ns_036": 54,
+			"scenery_bank_foothill_ns_037": 34,
+			"scenery_bank_foothill_ns_038": 52,
+			"scenery_bank_foothill_ns_039": 39,
+			"scenery_bank_foothill_ns_040": 39,
+			"scenery_bank_foothill_ns_041": 47,
+			"scenery_bank_foothill_ns_042": 42,
+			"scenery_bank_foothill_ns_043": 29,
+			"scenery_bank_foothill_ns_044": 40,
+			"scenery_bank_foothill_ns_045": 37,
+			"scenery_bank_foothill_ns_046": 57,
+			"scenery_bank_foothill_ns_047": 50,
+			"scenery_bank_foothill_ns_048": 45,
+			"scenery_bank_ridge_ew_001": 11,
+			"scenery_bank_ridge_ew_002": 9,
+			"scenery_bank_ridge_ew_003": 6,
+			"scenery_bank_ridge_ew_004": 11,
+			"scenery_bank_ridge_ew_005": 10,
+			"scenery_bank_ridge_ew_006": 6,
+			"scenery_bank_ridge_ew_007": 7,
+			"scenery_bank_ridge_ew_008": 5,
+			"scenery_bank_ridge_ew_009": 5,
+			"scenery_bank_ridge_ew_010": 6,
+			"scenery_bank_ridge_ew_011": 7,
+			"scenery_bank_ridge_ew_012": 5,
+			"scenery_bank_ridge_ew_013": 5,
+			"scenery_bank_ridge_ew_014": 8,
+			"scenery_bank_ridge_ew_015": 5,
+			"scenery_bank_ridge_ew_016": 7,
+			"scenery_bank_ridge_ew_017": 11,
+			"scenery_bank_ridge_ew_018": 7,
+			"scenery_bank_ridge_ew_019": 4,
+			"scenery_bank_ridge_ew_020": 10,
+			"scenery_bank_ridge_ew_021": 8,
+			"scenery_bank_ridge_ew_022": 12,
+			"scenery_bank_ridge_ew_023": 5,
+			"scenery_bank_ridge_ew_024": 7,
+			"scenery_bank_ridge_ew_025": 7,
+			"scenery_bank_ridge_ew_026": 6,
+			"scenery_bank_ridge_ew_027": 1,
+			"scenery_bank_ridge_ew_028": 8,
+			"scenery_bank_ridge_ew_029": 3,
+			"scenery_bank_ridge_ew_030": 7,
+			"scenery_bank_ridge_ew_031": 6,
+			"scenery_bank_ridge_ew_032": 7,
+			"scenery_bank_ridge_ew_033": 9,
+			"scenery_bank_ridge_ew_034": 4,
+			"scenery_bank_ridge_ew_035": 1,
+			"scenery_bank_ridge_ew_036": 8,
+			"scenery_bank_ridge_ew_037": 12,
+			"scenery_bank_ridge_ew_038": 12,
+			"scenery_bank_ridge_ew_039": 3,
+			"scenery_bank_ridge_ew_040": 8,
+			"scenery_bank_ridge_ew_041": 12,
+			"scenery_bank_ridge_ew_042": 4,
+			"scenery_bank_ridge_ew_043": 10,
+			"scenery_bank_ridge_ew_044": 3,
+			"scenery_bank_ridge_ew_045": 8,
+			"scenery_bank_ridge_ew_046": 7,
+			"scenery_bank_ridge_ew_047": 6,
+			"scenery_bank_ridge_ew_048": 8,
+			"scenery_bank_ridge_ns_001": 4,
+			"scenery_bank_ridge_ns_002": 2,
+			"scenery_bank_ridge_ns_003": 1,
+			"scenery_bank_ridge_ns_004": 3,
+			"scenery_bank_ridge_ns_005": 1,
+			"scenery_bank_ridge_ns_006": 2,
+			"scenery_bank_ridge_ns_007": 2,
+			"scenery_bank_ridge_ns_008": 2,
+			"scenery_bank_ridge_ns_009": 6,
+			"scenery_bank_ridge_ns_010": 9,
+			"scenery_bank_ridge_ns_011": 5,
+			"scenery_bank_ridge_ns_012": 2,
+			"scenery_bank_ridge_ns_013": 6,
+			"scenery_bank_ridge_ns_015": 4,
+			"scenery_bank_ridge_ns_016": 5,
+			"scenery_bank_ridge_ns_017": 4,
+			"scenery_bank_ridge_ns_018": 3,
+			"scenery_bank_ridge_ns_019": 1,
+			"scenery_bank_ridge_ns_020": 1,
+			"scenery_bank_ridge_ns_021": 4,
+			"scenery_bank_ridge_ns_022": 6,
+			"scenery_bank_ridge_ns_023": 5,
+			"scenery_bank_ridge_ns_024": 5,
+			"scenery_bank_ridge_ns_025": 6,
+			"scenery_bank_ridge_ns_026": 6,
+			"scenery_bank_ridge_ns_027": 5,
+			"scenery_bank_ridge_ns_028": 5,
+			"scenery_bank_ridge_ns_029": 4,
+			"scenery_bank_ridge_ns_030": 4,
+			"scenery_bank_ridge_ns_031": 1,
+			"scenery_bank_ridge_ns_032": 4,
+			"scenery_bank_ridge_ns_033": 5,
+			"scenery_bank_ridge_ns_034": 1,
+			"scenery_bank_ridge_ns_035": 3,
+			"scenery_bank_ridge_ns_036": 6,
+			"scenery_bank_ridge_ns_037": 4,
+			"scenery_bank_ridge_ns_038": 1,
+			"scenery_bank_ridge_ns_039": 3,
+			"scenery_bank_ridge_ns_040": 4,
+			"scenery_bank_ridge_ns_041": 7,
+			"scenery_bank_ridge_ns_042": 6,
+			"scenery_bank_ridge_ns_043": 3,
+			"scenery_bank_ridge_ns_044": 2,
+			"scenery_bank_ridge_ns_045": 6,
+			"scenery_bank_ridge_ns_046": 5,
+			"scenery_bank_ridge_ns_047": 2,
+			"scenery_bank_ridge_ns_048": 1
+		},
+		"surface_geography": {
+			"families": {
+				"alluvial_soil": 17602,
+				"dry_grass": 57,
+				"wetland_ground": 1160
+			},
+			"historical_landuse_survey": false,
+			"material_assignments": 18819,
+			"rule_maps_modified": false,
+			"source_id": "resolve_ecoregions_2017",
+			"source_scope": "biogeographic_ground_material_reference",
+			"source_year": 2017.0,
+			"water_or_forest_added": false
+		},
+		"surface_material_families_in_view": {
+			"alluvial_soil": 16898,
+			"dry_grass": 47,
+			"meadow": 9531,
+			"rocky_ground": 16820,
+			"sea_water": 16951,
+			"wetland_ground": 1088
+		},
+		"zoom": 0.0643602552042205
+	},
+	"map_detail": {
+		"cell_river_segments": 0,
+		"coast_lines": 11,
+		"control_layer_visible": true,
+		"crossing_markers": 4,
+		"detail_hydrography_lines": 2924,
+		"historical_landcover_features": 0,
+		"historical_landcover_patch_cells": 0,
+		"presentation_terrain_counts": {
+			"city": 15,
+			"ford": 2,
+			"hill": 16229,
+			"mountain": 1358,
+			"plain": 29550,
+			"river": 356,
+			"road": 369,
+			"sea": 17847
+		},
+		"rail_edges": 10,
+		"river_lines": 2,
+		"tactical_zone_opacity": 0.26,
+		"terrain_cell_counts": {
+			"city": 15,
+			"ford": 2,
+			"hill": 16229,
+			"mountain": 1358,
+			"plain": 29550,
+			"river": 356,
+			"road": 369,
+			"sea": 17847
+		},
+		"terrain_depth_draw_count": 0,
+		"terrain_feature_sprite_draw_count": 0,
+		"terrain_layer_visible": true,
+		"terrain_micro_symbol_draw_count": 0,
+		"terrain_surface_variant_draw_count": 0,
+		"terrain_symbol_draw_count": 0,
+		"terrain_tile_draw_count": 0,
+		"territory_field_opacity": 0.21
+	},
+	"map_zoom": 0.0643602552042205,
+	"mobile_layout_profile": false,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"raw_godot_capture": true,
+	"relief": {
+		"contour_segments": 30166,
+		"crest_axis_from_source_neighbours": true,
+		"eligible_features": 7326,
+		"families": {
+			"foothill_ew": 3596,
+			"foothill_ns": 2044,
+			"ridge_ew": 337,
+			"ridge_ns": 177
+		},
+		"generated_continental_contours": false,
+		"geographic_gradient_in_meters": false,
+		"height_exaggeration_display_only": 6.0,
+		"historical_vegetation_claimed": false,
+		"independent_relief_originals_used": 191,
+		"index_ms": 116.373,
+		"lighting": "continuous_source_height_normals",
+		"mesh_ms": 2453.878,
+		"nearby_variant_exclusion_world": 270.0,
+		"placed_features": 6154,
+		"placement_ms": 1102.113,
+		"preparation_ms": 3672.364,
+		"rules_map_mutated": false,
+		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
+		"source_meters_per_world_unit": 20.8333333333333,
+		"strategic_category_relief": false,
+		"triangles": 89939
+	},
+	"safe_insets": "(0.0, 0.0, 0.0, 0.0)",
+	"scenario_id": "campaign_1924_03",
+	"territory_field": {},
+	"ui_scale": 1.0,
+	"unit_facing": {
+		"compact_idle_chevrons": true,
+		"directional_source_families": 6,
+		"directional_source_views": 24,
+		"records": [
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00001"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00002"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00003"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00004"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "engineer",
+				"unit_id": "u_00005"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "cavalry",
+				"unit_id": "u_00006"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00007"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00008"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00009"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00010"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "cavalry",
+				"unit_id": "u_00011"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00012"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "engineer",
+				"unit_id": "u_00013"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00014"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00015"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00016"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00017"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00018"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "engineer",
+				"unit_id": "u_00019"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "cavalry",
+				"unit_id": "u_00020"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00021"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00022"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00023"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00024"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "cavalry",
+				"unit_id": "u_00025"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00026"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "engineer",
+				"unit_id": "u_00027"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00028"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00029"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00030"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00031"
+			}
+		]
+	},
+	"viewport": "(1920.0, 1080.0)",
+	"window": "(1920, 1080)"
+}

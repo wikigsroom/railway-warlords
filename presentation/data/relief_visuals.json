@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "alpha_threshold_for_measurement": 16,
+  "source_pngs_modified": false,
+  "full_texture_draw": true,
+  "records": {
+    "scenery_ridge_spine_ns": {
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_bounds": [
+        209,
+        95,
+        1084,
+        1059
+      ],
+      "source_sha256": "dd8b18257a7113cf18771464ec11f255c4cc4dd9e87d69da5376a01c2a7d4f95"
+    },
+    "scenery_ridge_spine_ew": {
+      "dimensions": [
+        1659,
+        948
+      ],
+      "alpha_bounds": [
+        43,
+        118,
+        1624,
+        837
+      ],
+      "source_sha256": "f79d1b3935f9969d18f4d0884276372ecde7c4872db3c862db5647e39db98955"
+    },
+    "scenery_foothill_ew": {
+      "dimensions": [
+        1635,
+        962
+      ],
+      "alpha_bounds": [
+        79,
+        276,
+        1558,
+        722
+      ],
+      "source_sha256": "ac1562768867de602ed2caed9f25eec218aee7370ccd915b532ef0d9af10d367"
+    },
+    "scenery_foothill_ns": {
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_bounds": [
+        78,
+        155,
+        1191,
+        1113
+      ],
+      "source_sha256": "4b6fe16a1c83803db9cd5bc5fbad90c581b133fc8c4e7441cd49807c09a268c6"
+    }
+  }
+}

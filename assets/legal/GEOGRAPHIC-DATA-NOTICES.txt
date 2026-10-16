@@ -1,0 +1,50 @@
+Geographic presentation data notices
+
+RESOLVE Ecoregions 2017 — Dinerstein et al. (2017).
+Source: https://ecoregions.world/
+Publication: https://doi.org/10.1093/biosci/bix014
+License: Creative Commons Attribution 4.0 International.
+License text: https://creativecommons.org/licenses/by/4.0/legalcode
+Changes: selected source region membership is converted into representative
+ground-material references for game control cells. This is not dated land-use,
+soil, actual forest or historical wetland mapping. No endorsement is implied.
+
+HydroRIVERS v1 — Lehner, B.; Grill, G. (2013).
+Global river hydrography and network routing: baseline data and new approaches
+to study the world's large river systems. Hydrological Processes 27:2171-2186.
+https://doi.org/10.1002/hyp.9740
+Data and license: https://www.hydrosheds.org/products/hydrorivers
+Underlying HydroSHEDS license applies; see HYDROSHEDS-V1-LICENSE.txt.
+The original technical documents are retained in the Godot source package.
+The geographic data remain subject to that license. Use of this included data
+is governed by its terms; no separate right to redistribute it as a standalone
+product, sublicense it, decompile, reverse engineer or disassemble it is granted
+except as expressly authorized by the source license or applicable law.
+Changes: selected clipped and simplified source river reaches are displayed as
+physical geographic reference lines, not historically surveyed channel widths,
+complete creeks, artificial canals or historical military crossing points.
+
+Required HydroSHEDS attribution:
+This product Railway Warlords incorporates data from the HydroSHEDS version 1
+database which is © World Wildlife Fund, Inc. (2006-2022) and has been used herein
+under license. WWF has not evaluated the data as altered and incorporated within
+Railway Warlords, and therefore gives no warranty regarding its accuracy,
+completeness, currency or suitability for any particular purpose. Portions of the
+HydroSHEDS v1 database incorporate data which are the intellectual property rights
+of © USGS (2006-2008), NASA (2000-2005), ESRI (1992-1998), CIAT (2004-2006),
+UNEP-WCMC (1993), WWF (2004), Commonwealth of Australia (2007), and Her Royal
+Majesty and the British Crown and are used under license. The HydroSHEDS v1
+database and more information are available at https://www.hydrosheds.org.
+Lehner, B., Verdin, K., Jarvis, A. (2008): New global hydrography derived from
+spaceborne elevation data. Eos, Transactions, AGU, 89(10): 93-94.
+
+Elevation: Mapzen / Tilezen Terrain Tiles.
+https://registry.opendata.aws/terrain-tiles/
+https://github.com/tilezen/joerd/blob/master/docs/attribution.md
+Underlying global sources include USGS SRTM, GMTED2010 and NOAA ETOPO1.
+Changes: nine registered elevation samples over a 100 km square per continental
+control cell; bilinear interpolation; derived coarse physical relief categories.
+Original scientific GeoTIFF bytes are preserved. They are not game-art textures.
+
+Natural Earth land and river geometry: public domain.
+https://www.naturalearthdata.com/about/terms-of-use/

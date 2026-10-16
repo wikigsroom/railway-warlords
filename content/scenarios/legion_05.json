@@ -1,0 +1,40 @@
+{
+  "id": "legion_05",
+  "name": "修桥竞速",
+  "map_region": "滦河沿线",
+  "scenario_reference": "conq_1924",
+  "content_kind": "military_training_not_claimed_historical_battle",
+  "focus": "repair_rail",
+  "deployment_cash_budget": 700,
+  "general_slots": 2,
+  "elite_slots": 1,
+  "round_limit": 17,
+  "profile_normalized": true,
+  "first_win_merit": 100,
+  "first_win_research": 50,
+  "release_verified": false,
+  "mode": "legion",
+  "map_id": "jingfeng",
+  "anchor_date": "1924-09-15",
+  "days_per_round": 1,
+  "player_default": "zhili",
+  "faction_roster": [
+    "zhili",
+    "fengtian"
+  ],
+  "target_city_id": "shanhaiguan",
+  "objective_type": "repair",
+  "objective_count": 1,
+  "starting_resources": {
+    "cash": 700,
+    "food": 360,
+    "arms": 220
+  },
+  "player_formations": 11,
+  "enemy_formations": 12,
+  "full_visibility": false,
+  "events": [],
+  "historical_status": "declared_military_training_on_real_geography",
+  "deployment_note": "军团训练题，不对应史实战役。",
+  "unlock_after": []
+}

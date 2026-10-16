@@ -1,0 +1,41 @@
+{
+	"build_version": "0.2.12",
+	"checks": [
+		{
+			"name": "current_content_loads",
+			"passed": true
+		},
+		{
+			"name": "documented_defense_starts",
+			"passed": true
+		},
+		{
+			"name": "automatic_player_issues_one_legal_command_then_waits_for_its_presentation",
+			"passed": true
+		},
+		{
+			"name": "stop_button_cancels_further_planning_without_undoing_committed_command",
+			"passed": true
+		},
+		{
+			"name": "manual_order_blocked_until_presentation_finishes",
+			"passed": true
+		},
+		{
+			"name": "pause_panel_prevents_automatic_commands",
+			"passed": true
+		},
+		{
+			"name": "loading_resets_presentation_and_invalidates_previous_automatic_coroutine",
+			"passed": true
+		},
+		{
+			"name": "abandoning_does_not_leave_a_ghost_planner_running",
+			"passed": true
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"failed": 0,
+	"failures": [],
+	"passed": 8
+}

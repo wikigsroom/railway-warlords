@@ -1,0 +1,89 @@
+# 独立仓库开发 / Standalone development
+
+[中文入口](../README.md#development) · [English entry](../README.en.md#development)
+
+## 运行所需 / Required to run
+
+游戏使用 Godot 4.7.2、GDScript 与 Compatibility 渲染器。完整运行资源和编译后地图位于本仓库。通过 Godot 项目管理器导入 `project.godot` 后运行；不需素材网关、Python、Android SDK 或原电脑的 `.toolchain`。
+
+The game uses Godot 4.7.2, GDScript and Compatibility rendering. All runtime assets and compiled geography are included. Import `project.godot` in the project manager. Running the desktop project does not need Python, the image gateway, Android SDK or the original `.toolchain`.
+
+```powershell
+godot --headless --path . --editor --import --quit
+godot --path .
+```
+
+Godot 依靠 `.godot/global_script_class_cache.cfg` 识别 `class_name`；先导入再直接运行测试脚本。缓存不进入 Git。导入参数 `*.import` 和稳定资源 ID `*.uid` 保留在 Git。
+
+Godot discovers named script classes during import. Import before invoking a test script directly. Cache files are excluded; `*.import` settings and `*.uid` resource IDs stay tracked.
+
+## 工具层级 / Tool tiers
+
+| 层级 / Tier | 依赖 / Requirements | 范围 / Scope |
+| --- | --- | --- |
+| 游戏运行 / Game runtime | Godot 4.7.2 | 不需要 Python / No Python required |
+| GDScript 回归 / Rules | Godot + completed import | 直接运行 `tests/*.gd` / Run individual test scripts |
+| Python 数据／素材检查 / Data and art tools | Python + script-specific libraries | 部分工具为标准库，图片工具常用 Pillow / Many are stdlib-only; image tools use Pillow |
+| 地理资料重建 / Geography rebuild | Original datasets + native GIS Python environment | Uses NumPy, PyShp, Shapely, PyProj as required by each script |
+| PNG／GIF 资料整理 / README media | Python + FFmpeg; Pillow for inspection | `tools/prepare_repository_media.py` |
+| Windows 导出 / Windows export | Matching Godot templates | Preset: `Windows` |
+| Android 导出 / Android export | Matching templates, JDK 21, Android SDK, own keys | Preset: `Android`; physical-device testing |
+
+原工作区部分资料处理使用单独的本机 Python 环境；本机默认 Python 的已安装包不等同于所有地理重建依赖已齐。按具体脚本导入项配置自己的环境，不将原电脑路径当成通用安装器。
+
+Some original data processing uses a separate native Python environment. Packages installed in the default interpreter do not establish that all GIS dependencies are present. Configure the environment required by each script; workstation paths are not a universal installer.
+
+## 原工作区与独立克隆 / Workspace and clone
+
+`tools/build_release.py` 和多项归档／生成助手仍通过 `P.parents[1]` 查找原工作区，并含原电脑的 Godot、Java 或 SDK 路径。独立克隆的用户先使用 README 的原生 Godot 导出命令。需要这些助手时，先把引擎、SDK、私有签名和外部资料路径改为自己的配置。
+
+`build_release.py` and several archival/generation helpers retain `P.parents[1]` workspace assumptions and original Godot/Java/SDK paths. For a standalone clone, use the native Godot commands in the README. Configure these helpers before using them on another workstation.
+
+不包含在 Git 的原档案包括：原始地理 Shapefile／GeoTIFF、设计与历史交付 ZIP、原工作区生成任务日志、引擎程序、SDK、个人存档和私有凭据。它们仍保留在原工作区。运行 PNG 本身就是字节相同的生成原图，提示词在本仓库 `docs/asset-prompts/`，无需为每张图再复制一个同样的 `source.png`。
+
+Excluded archives include raw geographic Shapefiles/GeoTIFFs, design/release ZIPs, original generation logs, engine binaries, SDKs, personal saves and credentials. They remain in the original workspace. Runtime PNGs are byte-identical generated originals; prompts live in `docs/asset-prompts/`, avoiding a second duplicate image tree.
+
+## 原生验证 / Native verification
+
+```powershell
+godot --headless --path . --script tests/run_tests.gd
+godot --headless --path . --script tests/acceptance_test.gd
+godot --headless --path . --script tests/transaction_test.gd
+godot --headless --path . --script tests/asia_content_test.gd
+```
+
+全部 22 组名称和历史通过数见[测试与验收](05_测试与验收.md)。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
+
+All 22 groups and prior counts are in the validation chapter. Selected reports preserve their original paths, timestamps and fingerprints as historical evidence, not as newly executed tests on the clone.
+
+## 文档和媒体维护 / Documentation maintenance
+
+中文与英文入口人工同步维护，当前状态生成工具不会覆盖双语 README。菜单示意用 Mermaid，不生成伪 UI 图；PNG 使用完整原生视口。GIF 从原生 MP4 连续时间段直接转换，保留正常速度、完整画幅和来源记录。
+
+The two READMEs are maintained together and protected from status-generator overwrites. Navigation diagrams use Mermaid. Screenshots remain full native viewports. GIFs convert continuous native MP4 excerpts at normal speed, retaining the complete frame and provenance.
+
+```powershell
+# 已有图片、提示词和录像时，重新整理仓库文档素材：
+# Rebuild documentation media from existing sources:
+python tools/prepare_repository_media.py --workspace E:/dev/vibe-game/世界征服者类
+# 已转换 GIF 时，只核对／整理其他资料：
+python tools/prepare_repository_media.py --skip-gifs
+```
+
+独立克隆内已有提示词副本；外部原始提示词目录可用时会核对并复制，不可用时核对仓库副本。重新捕获主菜单需使用原生导出或编辑器运行：
+
+Existing portable prompts work without the original workspace. When the original prompt tree is available it is copied and checked. Capture the menu with the actual engine/export:
+
+```powershell
+godot --path . --resolution 1920x1080 -- --qa-session --capture --capture-path res://docs/media/menu.png
+```
+
+## 私有配置与许可 / Private configuration and licensing
+
+签名密码、网关 API 凭据和个人文件不进入 Git。保留第三方许可、字体许可和地理署名；本仓库没有为全部原创内容擅自选择开源许可证。详见[许可说明](../LICENSE-NOTICE.md)。
+
+Do not commit keys, passwords, gateway credentials or personal files. Retain third-party/font/geographic notices. No blanket license has been selected on behalf of the project owner; see the license notice.
+
+本项目禁止本地 Docker、WSL、虚拟机和模拟器。若使用浏览器，工作结束关闭无用标签页。
+
+Local Docker, WSL, VMs and emulators are prohibited. Close unused browser tabs after browser work.

@@ -1,0 +1,198 @@
+[
+  {
+    "id": "ammo_refill_reduction",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_cap_300",
+    "semantics": "每弹药点每层军备费用先减免向上取整，至少1，然后乘补入点数。",
+    "effect_version": 1
+  },
+  {
+    "id": "ap_flat",
+    "value_unit": "points",
+    "stack_policy": "sum_then_cap_8",
+    "semantics": "本方阶段刷新时增加对应兵种AP；第三科技等级才生效，不恢复已经花掉的AP。",
+    "effect_version": 1
+  },
+  {
+    "id": "attack_bonus",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_clamp",
+    "semantics": "合并科技、将领、勋章、战法、状态和难度；科技子和最多150，总和-300至400。",
+    "effect_version": 1
+  },
+  {
+    "id": "cargo_survival_bonus",
+    "value_unit": "permille",
+    "stack_policy": "add_then_cap_700",
+    "semantics": "加到沉船紧急撤出基础500，最多700；无合法岸格仍击破。",
+    "effect_version": 1
+  },
+  {
+    "id": "command_pool_flat",
+    "value_unit": "command_points",
+    "stack_policy": "sum_then_cap_5",
+    "semantics": "参谋三级+1；多电报站至多+1；阶段刷新时生效。",
+    "effect_version": 1
+  },
+  {
+    "id": "defense_flat",
+    "value_unit": "points",
+    "stack_policy": "sum_with_source_caps",
+    "semantics": "科技独立；将领与勋章合计最多8；固守与掘壕取大最多12；最终防御最多100。",
+    "effect_version": 1
+  },
+  {
+    "id": "food_reserve_restore",
+    "value_unit": "food_tokens",
+    "stack_policy": "add_capped_by_formation",
+    "semantics": "即时恢复携粮1；仅平原/道路/城镇/丘陵/森林的陆地编队，资源与指挥点足额。",
+    "effect_version": 1
+  },
+  {
+    "id": "food_upkeep_reduction",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_cap_300",
+    "semantics": "只减作用编队的粮耗；单层先向上取整且至少1，再乘层数；雪天每层另加1。",
+    "effect_version": 1
+  },
+  {
+    "id": "fort_bonus",
+    "value_unit": "permille",
+    "stack_policy": "add_to_affinity_then_cap_2400",
+    "semantics": "加到兵种对工事千分倍率，最终最多2400；只用于FortStrike。",
+    "effect_version": 1
+  },
+  {
+    "id": "general_xp_bonus",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_cap_150",
+    "semantics": "奖励计入档案前增加训练经验并向下取整；单局80与重复20的硬上限最后应用。",
+    "effect_version": 1
+  },
+  {
+    "id": "heal_hp",
+    "value_unit": "hp",
+    "stack_policy": "add_capped_max_hp",
+    "semantics": "自己或邻接友方机械编队即时恢复20HP；不解除已行动、欠粮、压制或冷却。",
+    "effect_version": 1
+  },
+  {
+    "id": "morale_recovery_flat",
+    "value_unit": "points",
+    "stack_policy": "sum_toward_neutral",
+    "semantics": "增加安全FULL补给时向中性50恢复的幅度；不自动向100增长。",
+    "effect_version": 1
+  },
+  {
+    "id": "post_attack_ap",
+    "value_unit": "ap",
+    "stack_policy": "replace_capped_2",
+    "semantics": "本次骑兵攻击后开放撤离AP至多2；仍受控制区；不恢复攻击名额。",
+    "effect_version": 1
+  },
+  {
+    "id": "recruit_cost_reduction",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_cap_300",
+    "semantics": "只降符合兵种的招募与扩编军费/粮/军备，分别向上取整；兵源不减免。",
+    "effect_version": 1
+  },
+  {
+    "id": "reinforce_efficiency_bonus",
+    "value_unit": "permille",
+    "stack_policy": "multiply_base_heal",
+    "semantics": "乘基础25%整补恢复比例；最多+150；按实际HP收费，仍受兵源/资源/邻敌限制。",
+    "effect_version": 1
+  },
+  {
+    "id": "repair_cost_reduction",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_cap_300",
+    "semantics": "只减少铁路/桥梁军费和军备；不改变施工阶段，不作用免费破路。",
+    "effect_version": 1
+  },
+  {
+    "id": "reserve_cap_flat",
+    "value_unit": "food_tokens",
+    "stack_policy": "sum_then_cap_4",
+    "semantics": "携粮上限基础3、最多4；不增兵源、不凭空即时回填。",
+    "effect_version": 1
+  },
+  {
+    "id": "reveal_radius",
+    "value_unit": "hex_radius",
+    "stack_policy": "replace_timed_reveal",
+    "semantics": "以指定可见陆地格或施法编队为中心，临时显示半径2，至施法势力下阶段开始。",
+    "effect_version": 1
+  },
+  {
+    "id": "reveal_radius_flat",
+    "value_unit": "hex_radius",
+    "stack_policy": "sum",
+    "semantics": "只增航空侦察半径；基础2；不自动共享中立情报。",
+    "effect_version": 1
+  },
+  {
+    "id": "sortie_cap_flat",
+    "value_unit": "sorties",
+    "stack_policy": "sum_then_cap_faction_5",
+    "semantics": "三级科技给机场阶段架次+1；每机场最终最多4，全势力最终最多5。",
+    "effect_version": 1
+  },
+  {
+    "id": "support_cost_reduction",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_cap_300",
+    "semantics": "航空侦察/轰炸军费军备分别减免向上取整至少1。",
+    "effect_version": 1
+  },
+  {
+    "id": "support_damage_bonus",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_cap_400",
+    "semantics": "航空轰炸基础伤害乘1+合计加成；仅合格机场，先源范围筛选再同类取最高。",
+    "effect_version": 1
+  },
+  {
+    "id": "suppression_flat",
+    "value_unit": "points",
+    "stack_policy": "sum_then_clamp",
+    "semantics": "有效命中额外压制相加，目标压制最终0至100。",
+    "effect_version": 1
+  },
+  {
+    "id": "trade_cost_reduction",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_cap_300",
+    "semantics": "只降买入军费并向上取整；卖出价固定为基础买价的一半，任何等级无套利。",
+    "effect_version": 1
+  },
+  {
+    "id": "transport_cost_reduction",
+    "value_unit": "capacity_points",
+    "stack_policy": "max_single_use",
+    "semantics": "只减下一次合法运输成本1且最低1；消耗后移除，不退款已占运力。",
+    "effect_version": 1
+  },
+  {
+    "id": "transport_pool_flat",
+    "value_unit": "capacity_points",
+    "stack_policy": "sum_then_cap_12",
+    "semantics": "增加势力阶段运输总池，不增加任何轨道边容量或运输距离。",
+    "effect_version": 1
+  },
+  {
+    "id": "upkeep_cash_reduction",
+    "value_unit": "permille",
+    "stack_policy": "sum_then_cap_300",
+    "semantics": "作用兵种每层军费维护减免，向上取整至少1；不降低费用为0。",
+    "effect_version": 1
+  },
+  {
+    "id": "vision_flat",
+    "value_unit": "hex_radius",
+    "stack_policy": "sum",
+    "semantics": "增加地面视野范围，保留山林遮挡与战争迷雾规则。",
+    "effect_version": 1
+  }
+]

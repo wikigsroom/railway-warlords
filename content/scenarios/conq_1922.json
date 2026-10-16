@@ -1,0 +1,47 @@
+{
+  "id": "conq_1922",
+  "name": "1922 · 直奉对峙",
+  "anchor_date": "1922-04-01",
+  "mode": "conquest",
+  "days_per_round": 7,
+  "round_limit": 80,
+  "content_status": "design_spec_not_historical_deployment_release",
+  "major_conflict": "第一次直奉战争",
+  "source_ids": [
+    "history_overview"
+  ],
+  "map_id": "conquest_china",
+  "player_default": "zhili",
+  "faction_roster": [
+    "zhili",
+    "fengtian",
+    "anhui",
+    "shanxi",
+    "jiangsu",
+    "zhejiang",
+    "yunnan",
+    "guangdong"
+  ],
+  "general_slots": 5,
+  "starting_resources": {
+    "cash": 650,
+    "food": 520,
+    "arms": 360
+  },
+  "full_visibility": false,
+  "objective_type": "unify",
+  "objective_count": 1,
+  "player_formations": 0,
+  "enemy_formations": 0,
+  "target_city_id": "beijing",
+  "historical_status": "historical_theater_with_authored_tactical_deployment",
+  "deployment_note": "战略归属按历史阵营作粗略抽象；城外编队与能力白名单为平衡配置。租界不作为独立可占领城市。",
+  "events": [],
+  "weak_faction_ids": [
+    "anhui",
+    "shanxi",
+    "zhejiang",
+    "yunnan"
+  ],
+  "weak_faction_tag_basis": "游戏挑战标签，用于成就计数，不是对各时期实际军力的历史判断。"
+}

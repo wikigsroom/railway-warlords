@@ -1,0 +1,8 @@
+Additional settlement positions use the GeoNames China populated-place dump, downloaded 2026-10-11.
+Source: https://download.geonames.org/export/dump/CN.zip
+License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+Attribution: GeoNames, https://www.geonames.org/
+License text: https://creativecommons.org/licenses/by/4.0/
+Changes: selected same-name populated-place coordinates, projected into the game map; historical names and administrative ranks are separately sourced from contemporary government bulletins and official local histories. No modern administrative polygons or ranks are substituted for the 1920-1924 setting.
+The original CN.txt dump and readme are retained in the source/provenance archive under design/geodata/settlements/.
+Three village locations without a matched point are explicitly coarse coordinates based on official locality descriptions, with 1500m positioning precision; they are not exact old-government-office survey points.

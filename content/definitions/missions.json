@@ -1,0 +1,1035 @@
+[
+  {
+    "id": "campaign_1920_01",
+    "chapter": 1,
+    "chapter_name": "直皖战区",
+    "title": "京汉线部署",
+    "year": 1920,
+    "reference_month": 7,
+    "map_region": "保定—涿州",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "capture",
+      "target_reference": "涿州通道",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 7,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 10,
+    "starting_resource_budget": {
+      "cash": 510,
+      "food": 385,
+      "arms": 250
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 14,
+      "enemy_formations": 16
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1920_02",
+    "chapter": 1,
+    "chapter_name": "直皖战区",
+    "title": "涿州前线",
+    "year": 1920,
+    "reference_month": 7,
+    "map_region": "涿州及周边",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "hold",
+      "target_reference": "前线据点",
+      "count": 3
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 9,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 12,
+    "starting_resource_budget": {
+      "cash": 570,
+      "food": 420,
+      "arms": 280
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 16,
+      "enemy_formations": 18
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1920_01"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1920_03",
+    "chapter": 1,
+    "chapter_name": "直皖战区",
+    "title": "廊坊争夺",
+    "year": 1920,
+    "reference_month": 7,
+    "map_region": "廊坊",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "capture",
+      "target_reference": "铁路节点",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 11,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 14,
+    "starting_resource_budget": {
+      "cash": 630,
+      "food": 455,
+      "arms": 310
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 18,
+      "enemy_formations": 20
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1920_02"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1920_04",
+    "chapter": 1,
+    "chapter_name": "直皖战区",
+    "title": "杨村通道",
+    "year": 1920,
+    "reference_month": 7,
+    "map_region": "天津杨村",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "escort",
+      "target_reference": "军需队",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit",
+      "escort_lost"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 13,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 16,
+    "starting_resource_budget": {
+      "cash": 690,
+      "food": 490,
+      "arms": 340
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 20,
+      "enemy_formations": 22
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1920_03"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1920_05",
+    "chapter": 1,
+    "chapter_name": "直皖战区",
+    "title": "南苑外围",
+    "year": 1920,
+    "reference_month": 7,
+    "map_region": "北京南苑",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "capture",
+      "target_reference": "指定外围据点",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 15,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 18,
+    "starting_resource_budget": {
+      "cash": 750,
+      "food": 525,
+      "arms": 370
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 22,
+      "enemy_formations": 24
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1920_04"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1920_06",
+    "chapter": 1,
+    "chapter_name": "直皖战区",
+    "title": "京津停战",
+    "year": 1920,
+    "reference_month": 7,
+    "map_region": "北京—天津",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "survive",
+      "target_reference": "部队撤出目标",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 17,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 20,
+    "starting_resource_budget": {
+      "cash": 810,
+      "food": 560,
+      "arms": 400
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 24,
+      "enemy_formations": 26
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1920_05"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1922_01",
+    "chapter": 2,
+    "chapter_name": "第一次直奉战区",
+    "title": "长辛店部署",
+    "year": 1922,
+    "reference_month": 4,
+    "map_region": "北京长辛店",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "capture",
+      "target_reference": "京汉线节点",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 9,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 12,
+    "starting_resource_budget": {
+      "cash": 510,
+      "food": 385,
+      "arms": 250
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 14,
+      "enemy_formations": 16
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1920_06"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1922_02",
+    "chapter": 2,
+    "chapter_name": "第一次直奉战区",
+    "title": "固安侧翼",
+    "year": 1922,
+    "reference_month": 4,
+    "map_region": "固安",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "capture",
+      "target_reference": "侧翼补给点",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 11,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 14,
+    "starting_resource_budget": {
+      "cash": 570,
+      "food": 420,
+      "arms": 280
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 16,
+      "enemy_formations": 18
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1922_01"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1922_03",
+    "chapter": 2,
+    "chapter_name": "第一次直奉战区",
+    "title": "马厂战线",
+    "year": 1922,
+    "reference_month": 4,
+    "map_region": "天津南部马厂",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "hold",
+      "target_reference": "交通防线",
+      "count": 3
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 13,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 16,
+    "starting_resource_budget": {
+      "cash": 630,
+      "food": 455,
+      "arms": 310
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 18,
+      "enemy_formations": 20
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1922_02"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1922_04",
+    "chapter": 2,
+    "chapter_name": "第一次直奉战区",
+    "title": "京津追击",
+    "year": 1922,
+    "reference_month": 4,
+    "map_region": "北京—天津",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "capture",
+      "target_reference": "指定军需站",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 15,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 18,
+    "starting_resource_budget": {
+      "cash": 690,
+      "food": 490,
+      "arms": 340
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 20,
+      "enemy_formations": 22
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1922_03"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1922_05",
+    "chapter": 2,
+    "chapter_name": "第一次直奉战区",
+    "title": "山海关撤退",
+    "year": 1922,
+    "reference_month": 4,
+    "map_region": "山海关",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "escort",
+      "target_reference": "撤退编队",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit",
+      "escort_lost"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 17,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 20,
+    "starting_resource_budget": {
+      "cash": 750,
+      "food": 525,
+      "arms": 370
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 22,
+      "enemy_formations": 24
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1922_04"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1922_06",
+    "chapter": 2,
+    "chapter_name": "第一次直奉战区",
+    "title": "关内整编",
+    "year": 1922,
+    "reference_month": 4,
+    "map_region": "天津—山海关",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "history_overview"
+    ],
+    "primary_objective": {
+      "type": "repair",
+      "target_reference": "受损铁路",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 19,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 22,
+    "starting_resource_budget": {
+      "cash": 810,
+      "food": 560,
+      "arms": 400
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 24,
+      "enemy_formations": 26
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1922_05"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1924_01",
+    "chapter": 3,
+    "chapter_name": "第二次直奉战区",
+    "title": "京奉前线",
+    "year": 1924,
+    "reference_month": 9,
+    "map_region": "唐山—山海关",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "coup_1924",
+      "ruc_1924"
+    ],
+    "primary_objective": {
+      "type": "capture",
+      "target_reference": "前线车站",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 11,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 14,
+    "starting_resource_budget": {
+      "cash": 510,
+      "food": 385,
+      "arms": 250
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 14,
+      "enemy_formations": 16
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1922_06"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1924_02",
+    "chapter": 3,
+    "chapter_name": "第二次直奉战区",
+    "title": "九门口山地",
+    "year": 1924,
+    "reference_month": 9,
+    "map_region": "山海关北侧九门口",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "coup_1924",
+      "ruc_1924"
+    ],
+    "primary_objective": {
+      "type": "hold",
+      "target_reference": "山地通道",
+      "count": 3
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 13,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 16,
+    "starting_resource_budget": {
+      "cash": 570,
+      "food": 420,
+      "arms": 280
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 16,
+      "enemy_formations": 18
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1924_01"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1924_03",
+    "chapter": 3,
+    "chapter_name": "第二次直奉战区",
+    "title": "山海关攻守",
+    "year": 1924,
+    "reference_month": 9,
+    "map_region": "山海关",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "coup_1924",
+      "ruc_1924"
+    ],
+    "primary_objective": {
+      "type": "capture",
+      "target_reference": "指定关口",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 15,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 18,
+    "starting_resource_budget": {
+      "cash": 630,
+      "food": 455,
+      "arms": 310
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 18,
+      "enemy_formations": 20
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1924_02"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1924_04",
+    "chapter": 3,
+    "chapter_name": "第二次直奉战区",
+    "title": "滦州铁路",
+    "year": 1924,
+    "reference_month": 10,
+    "map_region": "滦州—秦皇岛",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "coup_1924",
+      "ruc_1924"
+    ],
+    "primary_objective": {
+      "type": "repair",
+      "target_reference": "运兵线路",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 17,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 20,
+    "starting_resource_budget": {
+      "cash": 690,
+      "food": 490,
+      "arms": 340
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 20,
+      "enemy_formations": 22
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1924_03"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1924_05",
+    "chapter": 3,
+    "chapter_name": "第二次直奉战区",
+    "title": "北京政变",
+    "year": 1924,
+    "reference_month": 10,
+    "map_region": "北京",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "coup_1924",
+      "ruc_1924"
+    ],
+    "primary_objective": {
+      "type": "survive",
+      "target_reference": "主力保护与局势事件",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 19,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 22,
+    "starting_resource_budget": {
+      "cash": 750,
+      "food": 525,
+      "arms": 370
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 22,
+      "enemy_formations": 24
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1924_04"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  },
+  {
+    "id": "campaign_1924_06",
+    "chapter": 3,
+    "chapter_name": "第二次直奉战区",
+    "title": "津沽撤退",
+    "year": 1924,
+    "reference_month": 10,
+    "map_region": "天津及周边",
+    "content_kind": "historical_theater_design_task",
+    "historical_status": "exact_date_deployment_and_task_narrative_require_release_review",
+    "source_ids": [
+      "coup_1924",
+      "ruc_1924"
+    ],
+    "primary_objective": {
+      "type": "escort",
+      "target_reference": "撤离编队",
+      "count": 1
+    },
+    "failures": [
+      "commander_defeated",
+      "round_limit",
+      "escort_lost"
+    ],
+    "stars": {
+      "victory": true,
+      "rounds_at_most": 21,
+      "loss_ratio_permille_at_most": 300
+    },
+    "round_limit": 24,
+    "starting_resource_budget": {
+      "cash": 810,
+      "food": 560,
+      "arms": 400
+    },
+    "general_slots": 3,
+    "unit_budget": {
+      "player_formations": 24,
+      "enemy_formations": 26
+    },
+    "difficulty_policy": "normal_growth_hard_deployment_challenge_normalized",
+    "first_win_reward": {
+      "merit": 60,
+      "research": 30
+    },
+    "unlock_after": [
+      "campaign_1924_05"
+    ],
+    "release_required_fields": [
+      "exact_date_window",
+      "map_release_id",
+      "faction_roster",
+      "general_whitelist",
+      "initial_deployments",
+      "source_evidence",
+      "authored_event_order"
+    ],
+    "release_verified": false
+  }
+]

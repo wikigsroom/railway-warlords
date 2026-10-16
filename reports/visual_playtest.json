@@ -1,0 +1,315 @@
+{
+	"artillery_visible": true,
+	"attacks": 9,
+	"build_version": "0.2.12",
+	"captures": [
+		"01_command_preview.png",
+		"02_marching.png",
+		"02_marching.png",
+		"03_dice_rolling.png",
+		"04_impact.png",
+		"03_dice_rolling.png",
+		"04_impact.png",
+		"05_battle_complete.png"
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"counterattacks": 0,
+	"dice_rolls": 9,
+	"failures": [],
+	"final_combat_random": {
+		"algorithm": "park_miller_48271_v1",
+		"draws": 18,
+		"state": 660874449
+	},
+	"impact_visible": true,
+	"initial_combat_random": {
+		"algorithm": "park_miller_48271_v1",
+		"draws": 0,
+		"state": 114182110
+	},
+	"manual_image_compositing": false,
+	"moves": 16,
+	"muzzle_visible": true,
+	"native_commands": [
+		{
+			"actor_id": "zhili",
+			"expected_version": 0,
+			"target_hex": {
+				"q": 234,
+				"r": -18
+			},
+			"type": "Move",
+			"unit_id": "u_00004"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 1,
+			"target_hex": {
+				"q": 232,
+				"r": -19
+			},
+			"type": "Move",
+			"unit_id": "u_00008"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 2,
+			"type": "EndPhase"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 3,
+			"target_hex": {
+				"q": 236,
+				"r": -20
+			},
+			"type": "Move",
+			"unit_id": "u_00015"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 4,
+			"target_hex": {
+				"q": 235,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00015"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 5,
+			"target_hex": {
+				"q": 235,
+				"r": -20
+			},
+			"type": "Move",
+			"unit_id": "u_00016"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 6,
+			"target_hex": {
+				"q": 235,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00016"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 7,
+			"target_hex": {
+				"q": 236,
+				"r": -19
+			},
+			"type": "Move",
+			"unit_id": "u_00017"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 8,
+			"target_hex": {
+				"q": 235,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00017"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 9,
+			"target_hex": {
+				"q": 236,
+				"r": -21
+			},
+			"type": "Move",
+			"unit_id": "u_00018"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 10,
+			"target_hex": {
+				"q": 235,
+				"r": -19
+			},
+			"target_id": "u_00031",
+			"type": "ActivateSkill",
+			"unit_id": "u_00018"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 11,
+			"target_hex": {
+				"q": 235,
+				"r": -18
+			},
+			"type": "Move",
+			"unit_id": "u_00019"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 12,
+			"target_hex": {
+				"q": 235,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00019"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 13,
+			"target_hex": {
+				"q": 237,
+				"r": -19
+			},
+			"type": "Move",
+			"unit_id": "u_00020"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 14,
+			"target_hex": {
+				"q": 236,
+				"r": -18
+			},
+			"type": "Move",
+			"unit_id": "u_00021"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 15,
+			"target_hex": {
+				"q": 235,
+				"r": -21
+			},
+			"type": "Move",
+			"unit_id": "u_00022"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 16,
+			"target_hex": {
+				"q": 235,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00022"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 17,
+			"target_hex": {
+				"q": 234,
+				"r": -19
+			},
+			"type": "Move",
+			"unit_id": "u_00025"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 18,
+			"target_hex": {
+				"q": 234,
+				"r": -18
+			},
+			"type": "Attack",
+			"unit_id": "u_00025"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 19,
+			"target_hex": {
+				"q": 235,
+				"r": -17
+			},
+			"type": "Move",
+			"unit_id": "u_00026"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 20,
+			"target_hex": {
+				"q": 237,
+				"r": -22
+			},
+			"type": "Move",
+			"unit_id": "u_00027"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 21,
+			"target_hex": {
+				"q": 238,
+				"r": -20
+			},
+			"type": "Move",
+			"unit_id": "u_00028"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 22,
+			"target_hex": {
+				"q": 238,
+				"r": -22
+			},
+			"type": "Move",
+			"unit_id": "u_00029"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 23,
+			"target_hex": {
+				"q": 238,
+				"r": -21
+			},
+			"type": "Move",
+			"unit_id": "u_00030"
+		},
+		{
+			"actor_id": "fengtian",
+			"city_id": "jinzhou",
+			"def_id": "rifle",
+			"expected_version": 24,
+			"stack": 1,
+			"type": "Recruit"
+		},
+		{
+			"actor_id": "fengtian",
+			"expected_version": 25,
+			"type": "EndPhase"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 26,
+			"target_hex": {
+				"q": 236,
+				"r": -20
+			},
+			"type": "Attack",
+			"unit_id": "u_00004"
+		},
+		{
+			"actor_id": "zhili",
+			"expected_version": 27,
+			"target_hex": {
+				"q": 234,
+				"r": -19
+			},
+			"type": "Attack",
+			"unit_id": "u_00008"
+		}
+	],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"player_attacks": 2,
+	"player_moves": 2,
+	"published_scenario_unchanged": true,
+	"qa_save_isolated": true,
+	"replay_same_final_state": true,
+	"ruleset_version": 9,
+	"scenario_id": "campaign_1924_03",
+	"unmodified_campaign_deployment": true,
+	"viewport": "(1920.0, 1080.0)"
+}

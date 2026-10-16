@@ -1,0 +1,61 @@
+{
+	"checks": [
+		{
+			"name": "current_production_loaded",
+			"passed": true
+		},
+		{
+			"name": "published_definition_tables_are_recursively_immutable",
+			"passed": true
+		},
+		{
+			"name": "first_query_ordered_paths_and_costs_match_archived_algorithm",
+			"passed": true
+		},
+		{
+			"name": "repeated_query_ordered_paths_and_costs_match_archived_algorithm",
+			"passed": true
+		},
+		{
+			"name": "returned_graph_edits_cannot_change_validation_ordered_paths_and_costs_match_archived_algorithm",
+			"passed": true
+		},
+		{
+			"name": "visibility_regression_has_reachable_neighbor",
+			"passed": true
+		},
+		{
+			"name": "visibility_change_without_a_version_increment_ordered_paths_and_costs_match_archived_algorithm",
+			"passed": true
+		},
+		{
+			"name": "hidden_enemy_changes_legal_destination",
+			"passed": true
+		},
+		{
+			"name": "ap_change_on_the_same_state_ordered_paths_and_costs_match_archived_algorithm",
+			"passed": true
+		},
+		{
+			"name": "occupant_change_without_a_version_increment_ordered_paths_and_costs_match_archived_algorithm",
+			"passed": true
+		},
+		{
+			"name": "definition_change_on_the_same_registry_ordered_paths_and_costs_match_archived_algorithm",
+			"passed": true
+		},
+		{
+			"name": "mutable_crossing_change_ordered_paths_and_costs_match_archived_algorithm",
+			"passed": true
+		},
+		{
+			"name": "mutable_geometry_bypasses_reuse_ordered_paths_and_costs_match_archived_algorithm",
+			"passed": true
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"failures": [],
+	"game_version": "0.2.12",
+	"passed": true,
+	"reference_version": "0.2.0"
+}

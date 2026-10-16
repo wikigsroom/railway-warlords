@@ -1,0 +1,387 @@
+{
+	"checks": [
+		{
+			"name": "load_frozen_geography_and_sources",
+			"passed": true
+		},
+		{
+			"name": "jingjin_all_geography_sources_resolve",
+			"passed": true
+		},
+		{
+			"name": "jingjin_geographic_extent_limits_sea_rendering",
+			"passed": true
+		},
+		{
+			"name": "jingjin_no_unsourced_land_elevations",
+			"passed": true
+		},
+		{
+			"name": "jingjin_no_invented_historical_forest_blocks",
+			"passed": true
+		},
+		{
+			"name": "jingjin_flat_highlands_not_automatically_hills",
+			"passed": true
+		},
+		{
+			"name": "jingjin_1920_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "jingjin_1922_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "jingjin_1924_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_all_geography_sources_resolve",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_geographic_extent_limits_sea_rendering",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_no_unsourced_land_elevations",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_no_invented_historical_forest_blocks",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_flat_highlands_not_automatically_hills",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_1920_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_1922_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_1924_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_all_geography_sources_resolve",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_geographic_extent_limits_sea_rendering",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_no_unsourced_land_elevations",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_no_invented_historical_forest_blocks",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_flat_highlands_not_automatically_hills",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_1920_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_1922_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_1924_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "hankou_all_geography_sources_resolve",
+			"passed": true
+		},
+		{
+			"name": "hankou_geographic_extent_limits_sea_rendering",
+			"passed": true
+		},
+		{
+			"name": "hankou_no_unsourced_land_elevations",
+			"passed": true
+		},
+		{
+			"name": "hankou_no_invented_historical_forest_blocks",
+			"passed": true
+		},
+		{
+			"name": "hankou_flat_highlands_not_automatically_hills",
+			"passed": true
+		},
+		{
+			"name": "hankou_1920_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "hankou_1922_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "hankou_1924_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "ningpu_all_geography_sources_resolve",
+			"passed": true
+		},
+		{
+			"name": "ningpu_geographic_extent_limits_sea_rendering",
+			"passed": true
+		},
+		{
+			"name": "ningpu_no_unsourced_land_elevations",
+			"passed": true
+		},
+		{
+			"name": "ningpu_no_invented_historical_forest_blocks",
+			"passed": true
+		},
+		{
+			"name": "ningpu_flat_highlands_not_automatically_hills",
+			"passed": true
+		},
+		{
+			"name": "ningpu_1920_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "ningpu_1922_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "ningpu_1924_no_later_province_names",
+			"passed": true
+		},
+		{
+			"name": "asia_strategic_all_geography_sources_resolve",
+			"passed": true
+		},
+		{
+			"name": "asia_strategic_geographic_extent_limits_sea_rendering",
+			"passed": true
+		},
+		{
+			"name": "asia_strategic_strategic_geometry_status_declared",
+			"passed": true
+		},
+		{
+			"name": "asia_strategic_strategic_terrain_source_declared",
+			"passed": true
+		},
+		{
+			"name": "asia_strategic_continental_dem_scale_is_explicit",
+			"passed": true
+		},
+		{
+			"name": "asia_strategic_all_continental_land_has_archived_dem_elevations",
+			"passed": true
+		},
+		{
+			"name": "asia_strategic_no_invented_historical_forest_blocks",
+			"passed": true
+		},
+		{
+			"name": "asia_strategic_continental_hills_require_measured_100km_relief",
+			"passed": true
+		},
+		{
+			"name": "asia_strategic_no_unsupported_admin_border_claim",
+			"passed": true
+		},
+		{
+			"name": "jiumenkou_uses_published_survey_location",
+			"passed": true
+		},
+		{
+			"name": "jiumenkou_is_wall_pass_not_station",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_does_not_run_through_jiumenkou_pass",
+			"passed": true
+		},
+		{
+			"name": "jiumenkou_attack_uses_documented_october_window",
+			"passed": true
+		},
+		{
+			"name": "jiumenkou_and_shanhaiguan_start_under_zhili_defense",
+			"passed": true
+		},
+		{
+			"name": "fengtian_rear_base_is_jinzhou_not_qinhuangdao",
+			"passed": true
+		},
+		{
+			"name": "fengtian_attackers_start_east_of_jiumenkou",
+			"passed": true
+		},
+		{
+			"name": "shanhaiguan_defense_uses_supported_second_war_window",
+			"passed": true
+		},
+		{
+			"name": "shanhaiguan_defense_initial_city_control_corrected",
+			"passed": true
+		},
+		{
+			"name": "shanhaiguan_is_defended_not_recaptured_from_fictitious_garrison",
+			"passed": true
+		},
+		{
+			"name": "shanhaiguan_fengtian_deployment_is_east_of_pass",
+			"passed": true
+		},
+		{
+			"name": "republican_zhuoxian_name",
+			"passed": true
+		},
+		{
+			"name": "republican_luanxian_name",
+			"passed": true
+		},
+		{
+			"name": "jingzhao_independent_of_modern_beijing_province_label",
+			"passed": true
+		},
+		{
+			"name": "intermediate_year_uses_covered_historical_period",
+			"passed": true
+		},
+		{
+			"name": "cross_year_region_name_has_archived_primary_sources",
+			"passed": true
+		},
+		{
+			"name": "chuanbian_name_not_changed_at_arbitrary_new_year",
+			"passed": true
+		},
+		{
+			"name": "unresolved_early_february_uses_geographic_reference",
+			"passed": true
+		},
+		{
+			"name": "xikang_name_from_attested_february_appointment",
+			"passed": true
+		},
+		{
+			"name": "1924_conquest_cannot_keep_stale_chuanbian_label_into_1926",
+			"passed": true
+		},
+		{
+			"name": "xikang_update_does_not_relabel_sichuan",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_no_fabricated_chinese_qingdao_garrison",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_occupied_qingdao_is_protected_reference",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_no_premature_sun_chen_opposing_rosters",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_no_automatic_zhili_control_of_changsha",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_no_fabricated_chinese_qingdao_garrison",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_occupied_qingdao_is_protected_reference",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_no_premature_sun_chen_opposing_rosters",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_no_automatic_zhili_control_of_changsha",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_no_continuous_anhui_clique_bengbu_garrison",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_no_continuous_anhui_clique_bengbu_garrison",
+			"passed": true
+		},
+		{
+			"name": "1920_anhui_bengbu_retained_in_documented_early_window",
+			"passed": true
+		},
+		{
+			"name": "qingdao_closed_day_before_handover",
+			"passed": true
+		},
+		{
+			"name": "qingdao_opens_at_historical_handover",
+			"passed": true
+		},
+		{
+			"name": "handover_updates_render_and_movement_together",
+			"passed": true
+		},
+		{
+			"name": "qingdao_administrative_exception_after_handover",
+			"passed": true
+		},
+		{
+			"name": "city_handover_does_not_prematurely_unlock_rail_military_access",
+			"passed": true
+		},
+		{
+			"name": "rail_military_access_closed_before_full_police_handover",
+			"passed": true
+		},
+		{
+			"name": "rail_military_access_opens_after_full_handover",
+			"passed": true
+		},
+		{
+			"name": "historical_handover_is_idempotent",
+			"passed": true
+		},
+		{
+			"name": "hankou_no_anachronistic_cross_yangtze_rail_bridge",
+			"passed": true
+		},
+		{
+			"name": "hankou_ferries_not_rail_connections",
+			"passed": true
+		},
+		{
+			"name": "ningpu_no_anachronistic_cross_yangtze_rail_bridge",
+			"passed": true
+		},
+		{
+			"name": "ningpu_ferries_not_rail_connections",
+			"passed": true
+		},
+		{
+			"name": "historical_handover_state_remains_playable",
+			"passed": true
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"failures": [],
+	"scope": "Historical geography and supported date corrections; not a complete archival OOB audit"
+}

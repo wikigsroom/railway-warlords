@@ -1,0 +1,38 @@
+{
+  "campaign": {
+    "normal": {
+      "merit": 60,
+      "research": 30
+    },
+    "hard": {
+      "merit": 80,
+      "research": 40
+    },
+    "challenge": {
+      "merit": 100,
+      "research": 50
+    },
+    "additional_star": {
+      "merit": 20,
+      "research": 10
+    }
+  },
+  "conquest_first_win": {
+    "merit": 180,
+    "research": 90
+  },
+  "conquest_three_star_bonus": {
+    "merit": 60,
+    "research": 30
+  },
+  "repeat_win_general_xp_cap": 20,
+  "general_match_xp_cap": 80,
+  "achievement_count": 24,
+  "achievement_merit_each": 20,
+  "ledger_unique_key": [
+    "profile_id",
+    "content_id",
+    "difficulty",
+    "reward_tier"
+  ]
+}

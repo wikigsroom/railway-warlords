@@ -1,0 +1,160 @@
+{
+  "version": "0.2.12",
+  "screenshots": [
+    {
+      "file": "docs/media/menu.png",
+      "sha256": "9b2730a0957c1f22d62a95dc4eca3766f3b03bee54f139cf95ab44b169f37517",
+      "native_source": "current Windows export --qa-session --capture",
+      "metadata": "docs/media/menu.json",
+      "raw_godot_viewport": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/battlefield.png",
+      "native_source": "reports/screenshots/map_final_windows.png",
+      "sha256": "1f87ebf1ca5f4fdb049d46de3514e569dd008b6e48e42d2eaa00c06e3020aa02",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/battlefield.json"
+    },
+    {
+      "file": "docs/media/mountains.png",
+      "native_source": "reports/screenshots/map_bank_native/mountain.png",
+      "sha256": "a9d921423216e7ea5a017b388fca58008e3bc6c48e15ba7ba9fe6e64064e0d8b",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/mountains.json"
+    },
+    {
+      "file": "docs/media/coast.png",
+      "native_source": "reports/screenshots/map_bank_native/coast.png",
+      "sha256": "75b5ca6863dde6ff104a4dc31d3ce25d59ade617d6951b7c2f63e7bb6d641f0f",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/coast.json"
+    },
+    {
+      "file": "docs/media/tributaries.png",
+      "native_source": "reports/screenshots/map_bank_native/tributaries.png",
+      "sha256": "0726fa567b40aa46df78409aead4baa4c4f54bf54e9d4bc12cd21849e9f07a60",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/tributaries.json"
+    },
+    {
+      "file": "docs/media/sand.png",
+      "native_source": "reports/screenshots/map_bank_native/sand.png",
+      "sha256": "15243b72cf668706964a6d9736169df57318066c626b019922b6f7b48127a1d1",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/sand.json"
+    },
+    {
+      "file": "docs/media/gravel.png",
+      "native_source": "reports/screenshots/map_bank_native/gravel.png",
+      "sha256": "a06428c5d0f50eb1d92cabe54dd597bc78d2db0527094bb21c0a3f3842ef7070",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/gravel.json"
+    },
+    {
+      "file": "docs/media/wet-soil.png",
+      "native_source": "reports/screenshots/map_bank_native/wet_soil.png",
+      "sha256": "599616fb828d56f8e7aa69d13878e22a411cd4bc619cedf33bfdc5ce68aff99d",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/wet-soil.json"
+    },
+    {
+      "file": "docs/media/yangtze.png",
+      "native_source": "reports/screenshots/map_bank_native/yangtze.png",
+      "sha256": "87794c4a31515a19ff5b41b285218fe12658e704b7c77e541ce6139b39c8c1e8",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/yangtze.json"
+    },
+    {
+      "file": "docs/media/asia-overview.png",
+      "native_source": "reports/screenshots/asia_1840_overview.png",
+      "sha256": "1bbcbe113f33f52561b7db967b047212d539b17e9ab6a1e4bd40842d6f902292",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/asia-overview.json"
+    },
+    {
+      "file": "docs/media/legion-deployment.png",
+      "native_source": "reports/screenshots/legion_deployment_windows.png",
+      "sha256": "53f70bf2fc383d937783c103009652311f01771005b413b8ef9fd7ebad11adba",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/legion-deployment.json"
+    },
+    {
+      "file": "docs/media/mobile-layout.png",
+      "native_source": "reports/screenshots/map_bank_native/forest_x30.png",
+      "sha256": "d13a4ab1f2cb81e077c9e3725f735db3748ea5c0c288c4a669b29240e4df396a",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false,
+      "metadata": "docs/media/mobile-layout.json"
+    },
+    {
+      "file": "docs/media/battle-impact.png",
+      "native_source": "reports/screenshots/visual_playtest/04_impact.png",
+      "sha256": "3f147f07dd0b48ba453eb755335df7c55c6e6354e49d413c47565201cff2d4df",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/air-recon.png",
+      "native_source": "reports/screenshots/visual_playtest/06_air_recon.png",
+      "sha256": "222d44616c8d66dfcc7efba02e0989d0915033e2e7ccbae4797a880d33525dcf",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    }
+  ],
+  "animations": [
+    {
+      "file": "docs/media/movement.gif",
+      "sha256": "1178d46d19329fb14a505cbd8c6c5573c5777f9e29bacf5a9553230604c1f515",
+      "source": "reports/atlas_v2_native_final.mp4",
+      "source_sha256": "b47451a6c715a332307fdb170468dcbfe13b4f599ea7a45f743dc7ca7a83c66e",
+      "start_seconds": 0.5,
+      "duration_seconds": 7.0,
+      "fps": 12,
+      "width": 960,
+      "full_frame": true,
+      "playback_speed": 1.0,
+      "filter": "fps=12,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=sierra2_4a",
+      "overlays": false,
+      "synthetic_frames": false,
+      "audio": false
+    },
+    {
+      "file": "docs/media/combat.gif",
+      "sha256": "49da150a5b0d6bc187195bee1786c4134b52b5f9798ac06dd8785fa9316b2650",
+      "source": "reports/atlas_v2_native_final.mp4",
+      "source_sha256": "b47451a6c715a332307fdb170468dcbfe13b4f599ea7a45f743dc7ca7a83c66e",
+      "start_seconds": 15.0,
+      "duration_seconds": 8.0,
+      "fps": 12,
+      "width": 960,
+      "full_frame": true,
+      "playback_speed": 1.0,
+      "filter": "fps=12,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=sierra2_4a",
+      "overlays": false,
+      "synthetic_frames": false,
+      "audio": false
+    }
+  ],
+  "source_video": {
+    "file": "reports/atlas_v2_native_final.mp4",
+    "sha256": "b47451a6c715a332307fdb170468dcbfe13b4f599ea7a45f743dc7ca7a83c66e",
+    "resolution": [
+      1440,
+      810
+    ],
+    "fps": 30,
+    "duration_seconds": 26.2
+  },
+  "notice": "Desktop native captures. Mobile layout is not a physical Android test."
+}

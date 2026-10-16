@@ -1,0 +1,134 @@
+[
+  {
+    "id": "plain",
+    "name": "平原",
+    "cost_foot": 1,
+    "cost_cavalry": 1,
+    "cost_motor": 1,
+    "cover_defense": 0,
+    "water": false,
+    "cost_water": 0,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "road",
+    "name": "道路",
+    "cost_foot": 1,
+    "cost_cavalry": 1,
+    "cost_motor": 1,
+    "cover_defense": 0,
+    "water": false,
+    "cost_water": 0,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "hill",
+    "name": "丘陵",
+    "cost_foot": 2,
+    "cost_cavalry": 3,
+    "cost_motor": 3,
+    "cover_defense": 10,
+    "water": false,
+    "cost_water": 0,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "forest",
+    "name": "森林",
+    "cost_foot": 2,
+    "cost_cavalry": 3,
+    "cost_motor": 3,
+    "cover_defense": 12,
+    "water": false,
+    "cost_water": 0,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "mountain",
+    "name": "山地",
+    "cost_foot": 3,
+    "cost_cavalry": 4,
+    "cost_motor": 0,
+    "cover_defense": 18,
+    "water": false,
+    "cost_water": 0,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "peak",
+    "name": "山峰",
+    "cost_foot": 0,
+    "cost_cavalry": 0,
+    "cost_motor": 0,
+    "cover_defense": 24,
+    "water": false,
+    "cost_water": 0,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "wetland",
+    "name": "湿地",
+    "cost_foot": 3,
+    "cost_cavalry": 4,
+    "cost_motor": 0,
+    "cover_defense": 8,
+    "water": false,
+    "cost_water": 0,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "city",
+    "name": "城镇",
+    "cost_foot": 1,
+    "cost_cavalry": 1,
+    "cost_motor": 1,
+    "cover_defense": 16,
+    "water": false,
+    "cost_water": 0,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "river",
+    "name": "可航河流",
+    "cost_foot": 0,
+    "cost_cavalry": 0,
+    "cost_motor": 0,
+    "cover_defense": 0,
+    "water": true,
+    "cost_water": 1,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "sea",
+    "name": "海域",
+    "cost_foot": 0,
+    "cost_cavalry": 0,
+    "cost_motor": 0,
+    "cover_defense": 0,
+    "water": true,
+    "cost_water": 1,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "port",
+    "name": "港水格",
+    "cost_foot": 0,
+    "cost_cavalry": 0,
+    "cost_motor": 0,
+    "cover_defense": 0,
+    "water": true,
+    "cost_water": 1,
+    "zero_cost_means": "impassable"
+  },
+  {
+    "id": "ford",
+    "name": "浅滩",
+    "cost_foot": 3,
+    "cost_cavalry": 4,
+    "cost_motor": 0,
+    "cover_defense": 0,
+    "water": false,
+    "cost_water": 0,
+    "zero_cost_means": "impassable"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "id": "legion_11",
+  "name": "弱军破关",
+  "map_region": "九门口",
+  "scenario_reference": "conq_1924",
+  "content_kind": "military_training_not_claimed_historical_battle",
+  "focus": "weak_faction",
+  "deployment_cash_budget": 1000,
+  "general_slots": 3,
+  "elite_slots": 1,
+  "round_limit": 23,
+  "profile_normalized": true,
+  "first_win_merit": 100,
+  "first_win_research": 50,
+  "release_verified": false,
+  "mode": "legion",
+  "map_id": "jingjin",
+  "anchor_date": "1924-09-15",
+  "days_per_round": 1,
+  "player_default": "zhili",
+  "faction_roster": [
+    "zhili",
+    "fengtian"
+  ],
+  "target_city_id": "nanyuan",
+  "objective_type": "capture",
+  "objective_count": 1,
+  "starting_resources": {
+    "cash": 1000,
+    "food": 360,
+    "arms": 220
+  },
+  "player_formations": 12,
+  "enemy_formations": 13,
+  "full_visibility": false,
+  "events": [],
+  "historical_status": "declared_military_training_on_real_geography",
+  "deployment_note": "军团训练题，不对应史实战役。",
+  "unlock_after": []
+}

@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "map_id": "asia_strategic",
+  "description": "Named historical forest and grove sites only. These are presentation landmarks, not a continuous vegetation survey and never change movement or combat terrain.",
+  "features": [
+    {
+      "id": "wulingshan_qing_houlong_forest",
+      "name": "雾灵山·清东陵后龙禁地",
+      "kind": "forest",
+      "longitude": 117.45,
+      "latitude": 40.58,
+      "world_position": [
+        4680.0,
+        2535.72
+      ],
+      "valid_from": 1663,
+      "valid_to": 1940,
+      "source_status": "named forest reserve and Qing imperial fengshui禁地; landmark presentation only",
+      "source_urls": [
+        "https://zh.wikipedia.org/wiki/北京市密云区雾灵山林场",
+        "https://whly.hebei.gov.cn/c/2018-07-16/556516.html"
+      ],
+      "presentation_radius_hex": 2,
+      "scenery_asset": "scenery_forest_pine"
+    },
+    {
+      "id": "dongling_fengshui_forest",
+      "name": "清东陵·风水林",
+      "kind": "forest",
+      "longitude": 117.63,
+      "latitude": 40.19,
+      "world_position": [
+        4680.0,
+        2618.86
+      ],
+      "valid_from": 1663,
+      "valid_to": 1940,
+      "source_status": "protected tomb landscape with ancient and scenic trees; landmark presentation only",
+      "source_urls": [
+        "https://whly.hebei.gov.cn/c/2022-03-08/562790.html",
+        "https://www.beijing.gov.cn/renwen/sy/whkb/201910/t20191018_1867219.html"
+      ],
+      "presentation_radius_hex": 1,
+      "scenery_asset": "scenery_forest_mixed"
+    },
+    {
+      "id": "xiling_ancient_pine_forest",
+      "name": "清西陵·古松林",
+      "kind": "forest",
+      "longitude": 115.3,
+      "latitude": 39.35,
+      "world_position": [
+        4608.0,
+        2577.29
+      ],
+      "valid_from": 1730,
+      "valid_to": 1940,
+      "source_status": "named ancient pine woodland associated with the tomb complex; landmark presentation only",
+      "visual_offset": [
+        -26.0,
+        -12.0
+      ],
+      "source_urls": [
+        "https://www.dpm.org.cn/court/system/236389.html"
+      ],
+      "presentation_radius_hex": 1,
+      "scenery_asset": "scenery_forest_pine"
+    },
+    {
+      "id": "shangfangshan_ancient_forest",
+      "name": "上方山·古柏林",
+      "kind": "forest",
+      "longitude": 115.85,
+      "latitude": 39.65,
+      "world_position": [
+        4608.0,
+        2577.29
+      ],
+      "valid_from": 1840,
+      "valid_to": 1940,
+      "source_status": "named forest and ancient-tree site in Fangshan; landmark presentation only",
+      "visual_offset": [
+        26.0,
+        0.0
+      ],
+      "source_urls": [
+        "https://yllhj.beijing.gov.cn/ztxx/lhysh/sh/202011/t20201117_2138262.shtml",
+        "https://www.beijing.gov.cn/renwen/rwzyd/qxdw/dmfshqxty/shfsh/202309/t20230922_3264889.html"
+      ],
+      "presentation_radius_hex": 1,
+      "scenery_asset": "scenery_forest_mixed"
+    },
+    {
+      "id": "xishan_1922_afforestation_grove",
+      "name": "西山·1922造林区",
+      "kind": "grove",
+      "longitude": 116.18,
+      "latitude": 39.99,
+      "world_position": [
+        4608.0,
+        2577.29
+      ],
+      "valid_from": 1922,
+      "valid_to": 1940,
+      "source_status": "documented Republican afforestation area; shown only after its dated establishment",
+      "visual_offset": [
+        0.0,
+        25.0
+      ],
+      "source_urls": [
+        "https://yllhj.beijing.gov.cn/ztxx/lhysh/st/202402/t20240207_3559118.shtml"
+      ],
+      "presentation_radius_hex": 1,
+      "scenery_asset": "scenery_forest_mixed"
+    },
+    {
+      "id": "greater_khingan_natural_forest",
+      "name": "大兴安岭·天然林区",
+      "kind": "forest",
+      "longitude": 122.75,
+      "latitude": 50.4,
+      "world_position": [
+        4896.0,
+        1912.18
+      ],
+      "valid_from": 1840,
+      "valid_to": 1940,
+      "source_status": "named Greater Khingan natural forest belt; presentation landmark only",
+      "source_urls": [
+        "https://www.forestry.gov.cn/c/www/tsxa/580108.jhtml",
+        "https://www.hlj.gov.cn/hlj/c108376/201403/c00_31184781.shtml"
+      ],
+      "presentation_radius_hex": 5,
+      "scenery_asset": "scenery_forest_pine"
+    },
+    {
+      "id": "lesser_khingan_natural_forest",
+      "name": "小兴安岭·天然林区",
+      "kind": "forest",
+      "longitude": 129.3,
+      "latitude": 48.1,
+      "world_position": [
+        5256.0,
+        2036.89
+      ],
+      "valid_from": 1840,
+      "valid_to": 1940,
+      "source_status": "named Lesser Khingan natural forest belt; presentation landmark only",
+      "source_urls": [
+        "https://www.hlj.gov.cn/hlj/c108376/201403/c00_31184781.shtml"
+      ],
+      "presentation_radius_hex": 4,
+      "scenery_asset": "scenery_forest_pine"
+    },
+    {
+      "id": "changbaishan_natural_forest",
+      "name": "长白山·天然林",
+      "kind": "forest",
+      "longitude": 128.05,
+      "latitude": 42.0,
+      "world_position": [
+        5184.0,
+        2411.01
+      ],
+      "valid_from": 1840,
+      "valid_to": 1940,
+      "source_status": "named Changbai Mountain natural forest and tundra belt; presentation landmark only",
+      "source_urls": [
+        "https://changbaishan.gov.cn/shjj/qhgh/bhgh/201101/t20110122_217994.html",
+        "https://jllc.jl.gov.cn/zsdw/blhgjzrbhq/xh_xxgk_75247/xxgk_zcxx/201607/t20160727_3033660.html"
+      ],
+      "presentation_radius_hex": 3,
+      "scenery_asset": "scenery_forest_pine"
+    },
+    {
+      "id": "shennongjia_natural_forest",
+      "name": "神农架·原始林区",
+      "kind": "forest",
+      "longitude": 110.5,
+      "latitude": 31.5,
+      "world_position": [
+        4320.0,
+        3076.12
+      ],
+      "valid_from": 1840,
+      "valid_to": 1940,
+      "source_status": "named Shennongjia central China forest region; presentation landmark only",
+      "source_urls": [
+        "https://www.forestry.gov.cn/c/www/xwdt/52227.jhtml",
+        "https://www.mof.gov.cn/zhengwuxinxi/xinwenlianbo/hubeicaizhengxinxilianbo/200903/t20090306_119571.htm"
+      ],
+      "presentation_radius_hex": 3,
+      "scenery_asset": "scenery_forest_mixed"
+    }
+  ]
+}

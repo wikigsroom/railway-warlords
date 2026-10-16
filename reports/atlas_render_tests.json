@@ -1,0 +1,468 @@
+{
+	"checks": [
+		{
+			"name": "content_loaded",
+			"passed": true
+		},
+		{
+			"name": "jingjin_render_preparation_keeps_authoritative_state_unchanged",
+			"passed": true
+		},
+		{
+			"name": "jingjin_all_surveyed_land_and_island_rings_fill_without_triangulation_failure",
+			"passed": true
+		},
+		{
+			"name": "jingjin_filled_mesh_covers_the_entire_surveyed_polygon_area",
+			"passed": true
+		},
+		{
+			"name": "jingjin_surface_keeps_original_surveyed_vertices",
+			"passed": true
+		},
+		{
+			"name": "jingjin_scenery_only_on_sampled_hilly_ground",
+			"passed": true
+		},
+		{
+			"name": "jingjin_complete_sprite_rectangles_inside_source_land_and_outside_holes",
+			"passed": true
+		},
+		{
+			"name": "jingjin_relief_does_not_cover_source_river_strokes",
+			"passed": true
+		},
+		{
+			"name": "jingjin_relief_does_not_cover_source_tracks",
+			"passed": true
+		},
+		{
+			"name": "jingjin_overview_contains_complete_map_extent",
+			"passed": true
+		},
+		{
+			"name": "jingjin_placement_deterministic",
+			"passed": true
+		},
+		{
+			"name": "jingjin_mesh_alpha_finite_and_bounded",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_render_preparation_keeps_authoritative_state_unchanged",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_all_surveyed_land_and_island_rings_fill_without_triangulation_failure",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_filled_mesh_covers_the_entire_surveyed_polygon_area",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_surface_keeps_original_surveyed_vertices",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_scenery_only_on_sampled_hilly_ground",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_complete_sprite_rectangles_inside_source_land_and_outside_holes",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_relief_does_not_cover_source_river_strokes",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_relief_does_not_cover_source_tracks",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_overview_contains_complete_map_extent",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_placement_deterministic",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_mesh_alpha_finite_and_bounded",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_render_preparation_keeps_authoritative_state_unchanged",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_all_surveyed_land_and_island_rings_fill_without_triangulation_failure",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_filled_mesh_covers_the_entire_surveyed_polygon_area",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_surface_keeps_original_surveyed_vertices",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_scenery_only_on_sampled_hilly_ground",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_complete_sprite_rectangles_inside_source_land_and_outside_holes",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_relief_does_not_cover_source_river_strokes",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_relief_does_not_cover_source_tracks",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_overview_contains_complete_map_extent",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_placement_deterministic",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_mesh_alpha_finite_and_bounded",
+			"passed": true
+		},
+		{
+			"name": "atlas_font_floor_scale_1.0",
+			"passed": true
+		},
+		{
+			"name": "atlas_city_labels_do_not_overlap_scale_1.0",
+			"passed": true
+		},
+		{
+			"name": "atlas_font_floor_scale_1.2",
+			"passed": true
+		},
+		{
+			"name": "atlas_city_labels_do_not_overlap_scale_1.2",
+			"passed": true
+		},
+		{
+			"name": "atlas_font_floor_scale_1.5",
+			"passed": true
+		},
+		{
+			"name": "atlas_city_labels_do_not_overlap_scale_1.5",
+			"passed": true
+		},
+		{
+			"name": "selected_city_label_retained_in_dense_northern_cluster",
+			"passed": true
+		},
+		{
+			"name": "administrative_year_change_reuses_surveyed_relief",
+			"passed": true
+		},
+		{
+			"name": "administrative_year_change_updates_boundaries_separately",
+			"passed": true
+		},
+		{
+			"name": "hankou_render_preparation_keeps_authoritative_state_unchanged",
+			"passed": true
+		},
+		{
+			"name": "hankou_all_surveyed_land_and_island_rings_fill_without_triangulation_failure",
+			"passed": true
+		},
+		{
+			"name": "hankou_filled_mesh_covers_the_entire_surveyed_polygon_area",
+			"passed": true
+		},
+		{
+			"name": "hankou_surface_keeps_original_surveyed_vertices",
+			"passed": true
+		},
+		{
+			"name": "hankou_scenery_only_on_sampled_hilly_ground",
+			"passed": true
+		},
+		{
+			"name": "hankou_complete_sprite_rectangles_inside_source_land_and_outside_holes",
+			"passed": true
+		},
+		{
+			"name": "hankou_relief_does_not_cover_source_river_strokes",
+			"passed": true
+		},
+		{
+			"name": "hankou_relief_does_not_cover_source_tracks",
+			"passed": true
+		},
+		{
+			"name": "hankou_overview_contains_complete_map_extent",
+			"passed": true
+		},
+		{
+			"name": "hankou_placement_deterministic",
+			"passed": true
+		},
+		{
+			"name": "hankou_mesh_alpha_finite_and_bounded",
+			"passed": true
+		},
+		{
+			"name": "ningpu_render_preparation_keeps_authoritative_state_unchanged",
+			"passed": true
+		},
+		{
+			"name": "ningpu_all_surveyed_land_and_island_rings_fill_without_triangulation_failure",
+			"passed": true
+		},
+		{
+			"name": "ningpu_filled_mesh_covers_the_entire_surveyed_polygon_area",
+			"passed": true
+		},
+		{
+			"name": "ningpu_surface_keeps_original_surveyed_vertices",
+			"passed": true
+		},
+		{
+			"name": "ningpu_scenery_only_on_sampled_hilly_ground",
+			"passed": true
+		},
+		{
+			"name": "ningpu_complete_sprite_rectangles_inside_source_land_and_outside_holes",
+			"passed": true
+		},
+		{
+			"name": "ningpu_relief_does_not_cover_source_river_strokes",
+			"passed": true
+		},
+		{
+			"name": "ningpu_relief_does_not_cover_source_tracks",
+			"passed": true
+		},
+		{
+			"name": "ningpu_overview_contains_complete_map_extent",
+			"passed": true
+		},
+		{
+			"name": "ningpu_placement_deterministic",
+			"passed": true
+		},
+		{
+			"name": "ningpu_mesh_alpha_finite_and_bounded",
+			"passed": true
+		},
+		{
+			"name": "native_qa_does_not_open_live_save_directory",
+			"passed": true
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"failed": 0,
+	"failures": [],
+	"maps": [
+		{
+			"cells": 26195,
+			"features_fingerprint": "9b7e88653493c3f19aec01efe4cc4cd6d7e2eb4d1cf397fba6af6b3fbb2d3a0f",
+			"map_id": "jingjin",
+			"relief": {
+				"contour_segments": 9614,
+				"crest_axis_from_source_neighbours": true,
+				"eligible_features": 2197,
+				"families": {
+					"foothill_ew": 902,
+					"foothill_ns": 471,
+					"peak_ew": 9,
+					"peak_ns": 2,
+					"ridge_ew": 207,
+					"ridge_ns": 88
+				},
+				"generated_continental_contours": false,
+				"geographic_gradient_in_meters": false,
+				"height_exaggeration_display_only": 6.0,
+				"historical_vegetation_claimed": false,
+				"independent_relief_originals_used": 193,
+				"index_ms": 57.066,
+				"lighting": "continuous_source_height_normals",
+				"mesh_ms": 1745.93,
+				"nearby_variant_exclusion_world": 270.0,
+				"placed_features": 1679,
+				"placement_ms": 559.995,
+				"preparation_ms": 2362.99,
+				"rules_map_mutated": false,
+				"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
+				"source_meters_per_world_unit": 20.8333333333333,
+				"strategic_category_relief": false,
+				"triangles": 46063
+			},
+			"surface": {
+				"errors": [],
+				"land_rings": 4,
+				"land_triangles": 72,
+				"water_rings": 0
+			}
+		},
+		{
+			"cells": 65726,
+			"features_fingerprint": "60c9e41df91e7e54a15f061052e01706287ab47d65640da3149b3d590755ea1d",
+			"map_id": "jingfeng",
+			"relief": {
+				"contour_segments": 30166,
+				"crest_axis_from_source_neighbours": true,
+				"eligible_features": 7326,
+				"families": {
+					"foothill_ew": 3596,
+					"foothill_ns": 2044,
+					"ridge_ew": 337,
+					"ridge_ns": 177
+				},
+				"generated_continental_contours": false,
+				"geographic_gradient_in_meters": false,
+				"height_exaggeration_display_only": 6.0,
+				"historical_vegetation_claimed": false,
+				"independent_relief_originals_used": 191,
+				"index_ms": 148.713,
+				"lighting": "continuous_source_height_normals",
+				"mesh_ms": 3467.158,
+				"nearby_variant_exclusion_world": 270.0,
+				"placed_features": 6154,
+				"placement_ms": 1942.185,
+				"preparation_ms": 5558.055,
+				"rules_map_mutated": false,
+				"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
+				"source_meters_per_world_unit": 20.8333333333333,
+				"strategic_category_relief": false,
+				"triangles": 89939
+			},
+			"surface": {
+				"errors": [],
+				"land_rings": 10,
+				"land_triangles": 639,
+				"water_rings": 0
+			}
+		},
+		{
+			"cells": 74762,
+			"features_fingerprint": "f37b214df6f8f8a25775d8ed3915ac9682dbf58cf6d64404f55392237781bf14",
+			"map_id": "conquest_china",
+			"relief": {
+				"contour_segments": 69051,
+				"crest_axis_from_source_neighbours": true,
+				"eligible_features": 14761,
+				"families": {
+					"foothill_ew": 3920,
+					"foothill_ns": 2078,
+					"peak_ew": 324,
+					"peak_ns": 189,
+					"ridge_ew": 2250,
+					"ridge_ns": 1172
+				},
+				"generated_continental_contours": false,
+				"geographic_gradient_in_meters": false,
+				"height_exaggeration_display_only": 6.0,
+				"historical_vegetation_claimed": false,
+				"independent_relief_originals_used": 240,
+				"index_ms": 291.15,
+				"lighting": "continuous_source_height_normals",
+				"mesh_ms": 7571.632,
+				"nearby_variant_exclusion_world": 270.0,
+				"placed_features": 9933,
+				"placement_ms": 6323.067,
+				"preparation_ms": 14185.848,
+				"rules_map_mutated": false,
+				"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
+				"source_meters_per_world_unit": 112.5,
+				"strategic_category_relief": false,
+				"triangles": 100945
+			},
+			"surface": {
+				"errors": [],
+				"land_rings": 362,
+				"land_triangles": 12660,
+				"water_rings": 0
+			}
+		},
+		{
+			"cells": 400,
+			"features_fingerprint": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+			"map_id": "hankou",
+			"relief": {
+				"contour_segments": 7,
+				"crest_axis_from_source_neighbours": true,
+				"eligible_features": 0,
+				"families": {},
+				"generated_continental_contours": false,
+				"geographic_gradient_in_meters": false,
+				"height_exaggeration_display_only": 6.0,
+				"historical_vegetation_claimed": false,
+				"independent_relief_originals_used": 0,
+				"index_ms": 2.01,
+				"lighting": "continuous_source_height_normals",
+				"mesh_ms": 18.394,
+				"nearby_variant_exclusion_world": 270.0,
+				"placed_features": 0,
+				"placement_ms": 0.825,
+				"preparation_ms": 21.229,
+				"rules_map_mutated": false,
+				"source": "SRTM90m_v3_five_point_samples",
+				"source_meters_per_world_unit": 26.0416666666667,
+				"strategic_category_relief": false,
+				"triangles": 514
+			},
+			"surface": {
+				"errors": [],
+				"land_rings": 1,
+				"land_triangles": 2,
+				"water_rings": 0
+			}
+		},
+		{
+			"cells": 440,
+			"features_fingerprint": "2c119d32faa55401deeacc33459488974a5393db5d6ea7cf09c233b7db136086",
+			"map_id": "ningpu",
+			"relief": {
+				"contour_segments": 165,
+				"crest_axis_from_source_neighbours": true,
+				"eligible_features": 7,
+				"families": {
+					"foothill_ew": 7
+				},
+				"generated_continental_contours": false,
+				"geographic_gradient_in_meters": false,
+				"height_exaggeration_display_only": 6.0,
+				"historical_vegetation_claimed": false,
+				"independent_relief_originals_used": 7,
+				"index_ms": 1.811,
+				"lighting": "continuous_source_height_normals",
+				"mesh_ms": 23.631,
+				"nearby_variant_exclusion_world": 270.0,
+				"placed_features": 7,
+				"placement_ms": 1.406,
+				"preparation_ms": 26.848,
+				"rules_map_mutated": false,
+				"source": "SRTM90m_v3_five_point_samples",
+				"source_meters_per_world_unit": 26.0416666666667,
+				"strategic_category_relief": false,
+				"triangles": 602
+			},
+			"surface": {
+				"errors": [],
+				"land_rings": 1,
+				"land_triangles": 2,
+				"water_rings": 0
+			}
+		}
+	],
+	"passed": 66,
+	"physical_android_device_tested": false,
+	"ruleset_version": 9,
+	"scope": "Source geography footprint, immutable state, atlas typography and QA save isolation; not all-assets visual or military-history approval."
+}

@@ -1,0 +1,511 @@
+[
+  {
+    "id": "inf_focus",
+    "name": "步军统率",
+    "kind": "passive",
+    "effect": "attack_bonus",
+    "value": 80,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "infantry",
+    "command_cost": 0,
+    "cooldown_own_phases": 0,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 0,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "infantry",
+    "effect_lifetime": "attached_general"
+  },
+  {
+    "id": "art_focus",
+    "name": "炮兵教范",
+    "kind": "passive",
+    "effect": "attack_bonus",
+    "value": 80,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "artillery",
+    "command_cost": 0,
+    "cooldown_own_phases": 0,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 0,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "artillery",
+    "effect_lifetime": "attached_general"
+  },
+  {
+    "id": "cav_focus",
+    "name": "骑军统率",
+    "kind": "passive",
+    "effect": "attack_bonus",
+    "value": 80,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "cavalry",
+    "command_cost": 0,
+    "cooldown_own_phases": 0,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 0,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "cavalry",
+    "effect_lifetime": "attached_general"
+  },
+  {
+    "id": "nav_focus",
+    "name": "舰炮教范",
+    "kind": "passive",
+    "effect": "attack_bonus",
+    "value": 80,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "naval",
+    "command_cost": 0,
+    "cooldown_own_phases": 0,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 0,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "naval",
+    "effect_lifetime": "attached_general"
+  },
+  {
+    "id": "logistics",
+    "name": "军需统筹",
+    "kind": "passive",
+    "effect": "food_upkeep_reduction",
+    "value": 100,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "all",
+    "command_cost": 0,
+    "cooldown_own_phases": 0,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 0,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "all",
+    "effect_lifetime": "attached_general"
+  },
+  {
+    "id": "defense",
+    "name": "坚守",
+    "kind": "passive",
+    "effect": "defense_flat",
+    "value": 4,
+    "rank_scale_permille": [
+      1000,
+      1000,
+      1000
+    ],
+    "scope": "all",
+    "command_cost": 0,
+    "cooldown_own_phases": 0,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 0,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "all",
+    "effect_lifetime": "attached_general"
+  },
+  {
+    "id": "mg_focus",
+    "name": "火力组织",
+    "kind": "passive",
+    "effect": "suppression_flat",
+    "value": 10,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "machine_gun",
+    "command_cost": 0,
+    "cooldown_own_phases": 0,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 0,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "machine_gun",
+    "effect_lifetime": "attached_general"
+  },
+  {
+    "id": "staff_morale",
+    "name": "军心整顿",
+    "kind": "passive",
+    "effect": "morale_recovery_flat",
+    "value": 3,
+    "rank_scale_permille": [
+      1000,
+      1000,
+      1000
+    ],
+    "scope": "all",
+    "command_cost": 0,
+    "cooldown_own_phases": 0,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 0,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "all",
+    "effect_lifetime": "attached_general"
+  },
+  {
+    "id": "air_focus",
+    "name": "航空协调",
+    "kind": "passive",
+    "effect": "support_damage_bonus",
+    "value": 80,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "airfield",
+    "command_cost": 0,
+    "cooldown_own_phases": 0,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 0,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "airfield",
+    "effect_lifetime": "attached_general"
+  },
+  {
+    "id": "barrage",
+    "name": "炮火压制",
+    "kind": "active",
+    "effect": "attack_bonus",
+    "value": 100,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "artillery",
+    "command_cost": 2,
+    "cooldown_own_phases": 3,
+    "max_rank": 3,
+    "consumes_main_attack": true,
+    "precondition": "eligible_family",
+    "duration_own_phases": 1,
+    "extra_effects": [
+      {
+        "effect": "suppression_flat",
+        "value": 20
+      }
+    ],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "artillery",
+    "target_scope": "artillery",
+    "effect_lifetime": "this_attack"
+  },
+  {
+    "id": "assault_order",
+    "name": "步军强攻",
+    "kind": "active",
+    "effect": "attack_bonus",
+    "value": 150,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "infantry",
+    "command_cost": 2,
+    "cooldown_own_phases": 3,
+    "max_rank": 3,
+    "consumes_main_attack": true,
+    "precondition": "target_suppression_at_least_60",
+    "duration_own_phases": 1,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "infantry",
+    "target_scope": "infantry",
+    "effect_lifetime": "this_attack"
+  },
+  {
+    "id": "cavalry_sweep",
+    "name": "骑兵穿插",
+    "kind": "active",
+    "effect": "post_attack_ap",
+    "value": 2,
+    "rank_scale_permille": [
+      1000,
+      1000,
+      1000
+    ],
+    "scope": "cavalry",
+    "command_cost": 2,
+    "cooldown_own_phases": 3,
+    "max_rank": 3,
+    "consumes_main_attack": true,
+    "precondition": "eligible_family",
+    "duration_own_phases": 1,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "cavalry",
+    "target_scope": "cavalry",
+    "effect_lifetime": "this_attack"
+  },
+  {
+    "id": "ration_order",
+    "name": "应急给养",
+    "kind": "active",
+    "effect": "food_reserve_restore",
+    "value": 1,
+    "rank_scale_permille": [
+      1000,
+      1000,
+      1000
+    ],
+    "scope": "all",
+    "command_cost": 1,
+    "cooldown_own_phases": 4,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "land_with_local_foraging_and_food_below_cap",
+    "duration_own_phases": 1,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 20,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "all",
+    "effect_lifetime": "instant_or_next_owner_phase_as_effect_registry"
+  },
+  {
+    "id": "rail_priority",
+    "name": "优先运输",
+    "kind": "active",
+    "effect": "transport_cost_reduction",
+    "value": 1,
+    "rank_scale_permille": [
+      1000,
+      1000,
+      1000
+    ],
+    "scope": "all",
+    "command_cost": 1,
+    "cooldown_own_phases": 3,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "one_transport_not_already_transported",
+    "duration_own_phases": 1,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "all",
+    "effect_lifetime": "instant_or_next_owner_phase_as_effect_registry"
+  },
+  {
+    "id": "recon_order",
+    "name": "前线侦察",
+    "kind": "active",
+    "effect": "reveal_radius",
+    "value": 2,
+    "rank_scale_permille": [
+      1000,
+      1000,
+      1000
+    ],
+    "scope": "all",
+    "command_cost": 1,
+    "cooldown_own_phases": 3,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "eligible_family",
+    "duration_own_phases": 1,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "all",
+    "effect_lifetime": "instant_or_next_owner_phase_as_effect_registry"
+  },
+  {
+    "id": "entrench_order",
+    "name": "固守阵地",
+    "kind": "active",
+    "effect": "defense_flat",
+    "value": 8,
+    "rank_scale_permille": [
+      1000,
+      1000,
+      1000
+    ],
+    "scope": "infantry",
+    "command_cost": 2,
+    "cooldown_own_phases": 3,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "has_not_attacked",
+    "duration_own_phases": 1,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "infantry",
+    "effect_lifetime": "instant_or_next_owner_phase_as_effect_registry"
+  },
+  {
+    "id": "field_repair",
+    "name": "现场抢修",
+    "kind": "active",
+    "effect": "heal_hp",
+    "value": 20,
+    "rank_scale_permille": [
+      1000,
+      1000,
+      1000
+    ],
+    "scope": "motor_or_rail",
+    "command_cost": 2,
+    "cooldown_own_phases": 4,
+    "max_rank": 3,
+    "consumes_main_attack": false,
+    "precondition": "adjacent_friendly_mechanized_missing_hp",
+    "duration_own_phases": 1,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 20,
+      "food": 0,
+      "arms": 8
+    },
+    "caster_scope": "all_assigned_generals",
+    "target_scope": "motor_or_rail",
+    "effect_lifetime": "instant_or_next_owner_phase_as_effect_registry"
+  },
+  {
+    "id": "coordinated_fire",
+    "name": "协同射击",
+    "kind": "active",
+    "effect": "attack_bonus",
+    "value": 120,
+    "rank_scale_permille": [
+      1000,
+      1100,
+      1200
+    ],
+    "scope": "artillery_or_naval",
+    "command_cost": 2,
+    "cooldown_own_phases": 3,
+    "max_rank": 3,
+    "consumes_main_attack": true,
+    "precondition": "friendly_observer_sees_target",
+    "duration_own_phases": 1,
+    "extra_effects": [],
+    "resource_cost": {
+      "cash": 0,
+      "food": 0,
+      "arms": 0
+    },
+    "caster_scope": "artillery_or_naval",
+    "target_scope": "artillery_or_naval",
+    "effect_lifetime": "this_attack"
+  }
+]
