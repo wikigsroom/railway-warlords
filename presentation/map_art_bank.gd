@@ -15,6 +15,8 @@ static func available() -> bool:
 	return data().get("records",{}).size()>=796
 
 static func ids(family: String) -> Array:
+	var surfaces=MapTerrainSurfaces.ids(family)
+	if not surfaces.is_empty():return surfaces
 	return data().get("families",{}).get(family,[])
 
 static func pick(family: String, identity: String) -> String:
@@ -58,6 +60,8 @@ static func source_rect(id: String, bounds: Vector2) -> Rect2:
 
 static func material_family(cell: Dictionary) -> String:
 	var kind=TerrainVisuals.kind_for_cell(cell)
+	var sourced_surface=MapTerrainSurfaces.family_for(cell)
+	if not sourced_surface.is_empty():return sourced_surface
 	if kind=="sea":return "sea_water"
 	if kind=="forest":return "woodland_floor"
 	if kind=="wetland":return "wetland_ground"

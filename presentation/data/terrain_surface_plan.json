@@ -1,0 +1,1575 @@
+{
+  "format": 1,
+  "version": "0.2.13",
+  "terrain_type_count": 20,
+  "independent_sources": 80,
+  "originals_per_type": 4,
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "original_images_modified": false,
+  "manual_compositing": false,
+  "classification_scope": "Twenty regional presentation subtypes; existing twelve movement-rule terrains are retained",
+  "types": [
+    {
+      "id": "temperate_meadow",
+      "name": "温带草甸",
+      "parent_terrain": "plain",
+      "source_gate": "temperate grassland and forest-steppe ecological regions"
+    },
+    {
+      "id": "dry_steppe",
+      "name": "旱生草原",
+      "parent_terrain": "plain",
+      "source_gate": "temperate continental grassland ecological regions"
+    },
+    {
+      "id": "desert_steppe",
+      "name": "荒漠草原",
+      "parent_terrain": "plain",
+      "source_gate": "named desert-steppe and semi-desert ecological regions"
+    },
+    {
+      "id": "dune_sand",
+      "name": "风成沙地",
+      "parent_terrain": "plain",
+      "source_gate": "explicit named sandy-desert ecological regions only"
+    },
+    {
+      "id": "gravel_gobi",
+      "name": "戈壁砾地",
+      "parent_terrain": "plain",
+      "source_gate": "named stony and xeric-desert ecological regions"
+    },
+    {
+      "id": "saline_meadow",
+      "name": "盐生草甸地表",
+      "parent_terrain": "plain",
+      "source_gate": "explicit named saline meadow and salt-marsh ecological regions; no water extent inferred"
+    },
+    {
+      "id": "alpine_meadow",
+      "name": "高山草甸",
+      "parent_terrain": "plain",
+      "source_gate": "named alpine meadow ecological regions"
+    },
+    {
+      "id": "alpine_steppe",
+      "name": "高寒草原",
+      "parent_terrain": "plain",
+      "source_gate": "named alpine steppe and alpine desert ecological regions"
+    },
+    {
+      "id": "tundra_moss",
+      "name": "苔原地表",
+      "parent_terrain": "plain",
+      "source_gate": "tundra ecological regions; no seasonal ice or permafrost boundary inferred"
+    },
+    {
+      "id": "boreal_litter",
+      "name": "寒带林带腐殖层",
+      "parent_terrain": "plain",
+      "source_gate": "boreal ecological region ground reference, not an assertion of historical tree cover"
+    },
+    {
+      "id": "temperate_litter",
+      "name": "温带阔叶林带落叶层",
+      "parent_terrain": "plain",
+      "source_gate": "temperate mixed and broadleaf ecological region ground reference, not historical tree cover"
+    },
+    {
+      "id": "conifer_litter",
+      "name": "针叶林带针叶层",
+      "parent_terrain": "plain",
+      "source_gate": "temperate or tropical conifer ecological region ground reference, not historical tree cover"
+    },
+    {
+      "id": "subtropical_humus",
+      "name": "亚热带林带湿润土",
+      "parent_terrain": "plain",
+      "source_gate": "low-latitude Asian temperate broadleaf ecological region ground reference"
+    },
+    {
+      "id": "tropical_moist_humus",
+      "name": "热带湿润林带腐土",
+      "parent_terrain": "plain",
+      "source_gate": "tropical moist broadleaf ecological region ground reference; no historical jungle boundary inferred"
+    },
+    {
+      "id": "dry_woodland_litter",
+      "name": "旱林灌丛带地表",
+      "parent_terrain": "plain",
+      "source_gate": "tropical dry broadleaf or Mediterranean woodland ecological region ground reference"
+    },
+    {
+      "id": "savanna_red_soil",
+      "name": "热带草原地表",
+      "parent_terrain": "plain",
+      "source_gate": "tropical savanna and grassland ecological region ground reference; soil color is representative art"
+    },
+    {
+      "id": "flood_meadow",
+      "name": "洪泛草甸地表",
+      "parent_terrain": "plain",
+      "source_gate": "named flooded grassland ecological region ground reference; not historical flooding or wetland extent"
+    },
+    {
+      "id": "alluvial_loam",
+      "name": "河谷冲积地表",
+      "parent_terrain": "plain",
+      "source_gate": "low-relief named alluvial ecological regions close to an archived surveyed river"
+    },
+    {
+      "id": "weathered_rock",
+      "name": "风化岩坡地表",
+      "parent_terrain": "hill",
+      "source_gate": "DEM-classified hill and mountain cells; representative mineral grain, not a lithological survey"
+    },
+    {
+      "id": "alpine_scree",
+      "name": "峰岭碎岩地表",
+      "parent_terrain": "peak",
+      "source_gate": "DEM-classified peak cells; representative rock fragment grain, not a mapped scree deposit"
+    }
+  ],
+  "assets": [
+    {
+      "id": "tile_surface_temperate_meadow_01",
+      "category": "tile",
+      "family": "temperate_meadow",
+      "terrain_surface_id": "temperate_meadow",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate grassland and forest-steppe ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nFresh temperate meadow ground. Interlocking patches of short sage-green grass blades, visible warm ochre loam in narrow irregular gaps. Broad blade groups with tiny cool green foot shadows; no flowers. Palette sage #88966A, loam #A69771, shadow #606F4E.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_temperate_meadow_02",
+      "category": "tile",
+      "family": "temperate_meadow",
+      "terrain_surface_id": "temperate_meadow",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate grassland and forest-steppe ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nFresh temperate meadow ground. Interlocking patches of short sage-green grass blades, visible warm ochre loam in narrow irregular gaps. Broad blade groups with tiny cool green foot shadows; no flowers. Palette sage #88966A, loam #A69771, shadow #606F4E.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_temperate_meadow_03",
+      "category": "tile",
+      "family": "temperate_meadow",
+      "terrain_surface_id": "temperate_meadow",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate grassland and forest-steppe ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nFresh temperate meadow ground. Interlocking patches of short sage-green grass blades, visible warm ochre loam in narrow irregular gaps. Broad blade groups with tiny cool green foot shadows; no flowers. Palette sage #88966A, loam #A69771, shadow #606F4E.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_temperate_meadow_04",
+      "category": "tile",
+      "family": "temperate_meadow",
+      "terrain_surface_id": "temperate_meadow",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate grassland and forest-steppe ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nFresh temperate meadow ground. Interlocking patches of short sage-green grass blades, visible warm ochre loam in narrow irregular gaps. Broad blade groups with tiny cool green foot shadows; no flowers. Palette sage #88966A, loam #A69771, shadow #606F4E.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_dry_steppe_01",
+      "category": "tile",
+      "family": "dry_steppe",
+      "terrain_surface_id": "dry_steppe",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate continental grassland ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nDry continental steppe ground. Short broken straw-gold blade fans, sparse olive grass and broad exposed compact tan earth between them. Distinct fibrous wisps, never lush meadow. Palette dusty straw #B4A375, dry olive #94906B, earth #95846C.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_dry_steppe_02",
+      "category": "tile",
+      "family": "dry_steppe",
+      "terrain_surface_id": "dry_steppe",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate continental grassland ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nDry continental steppe ground. Short broken straw-gold blade fans, sparse olive grass and broad exposed compact tan earth between them. Distinct fibrous wisps, never lush meadow. Palette dusty straw #B4A375, dry olive #94906B, earth #95846C.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_dry_steppe_03",
+      "category": "tile",
+      "family": "dry_steppe",
+      "terrain_surface_id": "dry_steppe",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate continental grassland ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nDry continental steppe ground. Short broken straw-gold blade fans, sparse olive grass and broad exposed compact tan earth between them. Distinct fibrous wisps, never lush meadow. Palette dusty straw #B4A375, dry olive #94906B, earth #95846C.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_dry_steppe_04",
+      "category": "tile",
+      "family": "dry_steppe",
+      "terrain_surface_id": "dry_steppe",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate continental grassland ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nDry continental steppe ground. Short broken straw-gold blade fans, sparse olive grass and broad exposed compact tan earth between them. Distinct fibrous wisps, never lush meadow. Palette dusty straw #B4A375, dry olive #94906B, earth #95846C.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_desert_steppe_01",
+      "category": "tile",
+      "family": "desert_steppe",
+      "terrain_surface_id": "desert_steppe",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named desert-steppe and semi-desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nDesert-steppe ground. Mostly dusty gray-brown mineral earth with widely spaced tiny desiccated grass stubble, thin embedded gravel and subdued interrupted wind streaks. Sparse plant fibers, no dunes or shrubs. Palette gray taupe #A69C86, slate pebbles #777B70, straw #B6AA83.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_desert_steppe_02",
+      "category": "tile",
+      "family": "desert_steppe",
+      "terrain_surface_id": "desert_steppe",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named desert-steppe and semi-desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nDesert-steppe ground. Mostly dusty gray-brown mineral earth with widely spaced tiny desiccated grass stubble, thin embedded gravel and subdued interrupted wind streaks. Sparse plant fibers, no dunes or shrubs. Palette gray taupe #A69C86, slate pebbles #777B70, straw #B6AA83.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_desert_steppe_03",
+      "category": "tile",
+      "family": "desert_steppe",
+      "terrain_surface_id": "desert_steppe",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named desert-steppe and semi-desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nDesert-steppe ground. Mostly dusty gray-brown mineral earth with widely spaced tiny desiccated grass stubble, thin embedded gravel and subdued interrupted wind streaks. Sparse plant fibers, no dunes or shrubs. Palette gray taupe #A69C86, slate pebbles #777B70, straw #B6AA83.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_desert_steppe_04",
+      "category": "tile",
+      "family": "desert_steppe",
+      "terrain_surface_id": "desert_steppe",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named desert-steppe and semi-desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nDesert-steppe ground. Mostly dusty gray-brown mineral earth with widely spaced tiny desiccated grass stubble, thin embedded gravel and subdued interrupted wind streaks. Sparse plant fibers, no dunes or shrubs. Palette gray taupe #A69C86, slate pebbles #777B70, straw #B6AA83.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_dune_sand_01",
+      "category": "tile",
+      "family": "dune_sand",
+      "terrain_surface_id": "dune_sand",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named sandy-desert ecological regions only",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nFine wind-worked desert sand, clear silky curved ripple combs and shallow broad sweeping sand sheets. Fine ripple highlights and gentle trough shadows, completely flat material with no three-dimensional dune silhouette. Palette pale muted ochre #C1AC7E, sand highlight #D1BD91, trough #A58F67.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_dune_sand_02",
+      "category": "tile",
+      "family": "dune_sand",
+      "terrain_surface_id": "dune_sand",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named sandy-desert ecological regions only",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nFine wind-worked desert sand, clear silky curved ripple combs and shallow broad sweeping sand sheets. Fine ripple highlights and gentle trough shadows, completely flat material with no three-dimensional dune silhouette. Palette pale muted ochre #C1AC7E, sand highlight #D1BD91, trough #A58F67.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_dune_sand_03",
+      "category": "tile",
+      "family": "dune_sand",
+      "terrain_surface_id": "dune_sand",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named sandy-desert ecological regions only",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nFine wind-worked desert sand, clear silky curved ripple combs and shallow broad sweeping sand sheets. Fine ripple highlights and gentle trough shadows, completely flat material with no three-dimensional dune silhouette. Palette pale muted ochre #C1AC7E, sand highlight #D1BD91, trough #A58F67.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_dune_sand_04",
+      "category": "tile",
+      "family": "dune_sand",
+      "terrain_surface_id": "dune_sand",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named sandy-desert ecological regions only",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nFine wind-worked desert sand, clear silky curved ripple combs and shallow broad sweeping sand sheets. Fine ripple highlights and gentle trough shadows, completely flat material with no three-dimensional dune silhouette. Palette pale muted ochre #C1AC7E, sand highlight #D1BD91, trough #A58F67.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_gravel_gobi_01",
+      "category": "tile",
+      "family": "gravel_gobi",
+      "terrain_surface_id": "gravel_gobi",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named stony and xeric-desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nStony desert pavement ground. Many small flat angular slate-gray and dusty umber chips embedded in compact buff mineral soil, unequal pebble sizes and coherent gravel-rich patches. Strongly different from sand: no ripple combs. Palette stone #7E827B, buff #ADA184, umber #8D806C.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_gravel_gobi_02",
+      "category": "tile",
+      "family": "gravel_gobi",
+      "terrain_surface_id": "gravel_gobi",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named stony and xeric-desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nStony desert pavement ground. Many small flat angular slate-gray and dusty umber chips embedded in compact buff mineral soil, unequal pebble sizes and coherent gravel-rich patches. Strongly different from sand: no ripple combs. Palette stone #7E827B, buff #ADA184, umber #8D806C.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_gravel_gobi_03",
+      "category": "tile",
+      "family": "gravel_gobi",
+      "terrain_surface_id": "gravel_gobi",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named stony and xeric-desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nStony desert pavement ground. Many small flat angular slate-gray and dusty umber chips embedded in compact buff mineral soil, unequal pebble sizes and coherent gravel-rich patches. Strongly different from sand: no ripple combs. Palette stone #7E827B, buff #ADA184, umber #8D806C.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_gravel_gobi_04",
+      "category": "tile",
+      "family": "gravel_gobi",
+      "terrain_surface_id": "gravel_gobi",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named stony and xeric-desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nStony desert pavement ground. Many small flat angular slate-gray and dusty umber chips embedded in compact buff mineral soil, unequal pebble sizes and coherent gravel-rich patches. Strongly different from sand: no ripple combs. Palette stone #7E827B, buff #ADA184, umber #8D806C.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_saline_meadow_01",
+      "category": "tile",
+      "family": "saline_meadow",
+      "terrain_surface_id": "saline_meadow",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named saline meadow and salt-marsh ecological regions; no water extent inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative saline-meadow surface. Muted gray-green fine sedge stubble crossing pale chalky silt seams, broad subdued mineral flats and small dark soil freckles. Thin chalk traces, not a white salt lake or salt polygon. Palette gray sage #8A9A88, pale silt #C0BDA5, damp earth #777B68.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_saline_meadow_02",
+      "category": "tile",
+      "family": "saline_meadow",
+      "terrain_surface_id": "saline_meadow",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named saline meadow and salt-marsh ecological regions; no water extent inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative saline-meadow surface. Muted gray-green fine sedge stubble crossing pale chalky silt seams, broad subdued mineral flats and small dark soil freckles. Thin chalk traces, not a white salt lake or salt polygon. Palette gray sage #8A9A88, pale silt #C0BDA5, damp earth #777B68.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_saline_meadow_03",
+      "category": "tile",
+      "family": "saline_meadow",
+      "terrain_surface_id": "saline_meadow",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named saline meadow and salt-marsh ecological regions; no water extent inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative saline-meadow surface. Muted gray-green fine sedge stubble crossing pale chalky silt seams, broad subdued mineral flats and small dark soil freckles. Thin chalk traces, not a white salt lake or salt polygon. Palette gray sage #8A9A88, pale silt #C0BDA5, damp earth #777B68.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_saline_meadow_04",
+      "category": "tile",
+      "family": "saline_meadow",
+      "terrain_surface_id": "saline_meadow",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named saline meadow and salt-marsh ecological regions; no water extent inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative saline-meadow surface. Muted gray-green fine sedge stubble crossing pale chalky silt seams, broad subdued mineral flats and small dark soil freckles. Thin chalk traces, not a white salt lake or salt polygon. Palette gray sage #8A9A88, pale silt #C0BDA5, damp earth #777B68.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_alpine_meadow_01",
+      "category": "tile",
+      "family": "alpine_meadow",
+      "terrain_surface_id": "alpine_meadow",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine meadow ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nAlpine meadow ground. Tight low cushion-like grass mats and small velvety moss patches separated by visible cool fine gritty soil. Dense short radial fibers and occasional flat tiny gray chips, no flowers or snow. Palette cool sage #7F957D, moss #6C846B, grit #9B9A86.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_alpine_meadow_02",
+      "category": "tile",
+      "family": "alpine_meadow",
+      "terrain_surface_id": "alpine_meadow",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine meadow ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nAlpine meadow ground. Tight low cushion-like grass mats and small velvety moss patches separated by visible cool fine gritty soil. Dense short radial fibers and occasional flat tiny gray chips, no flowers or snow. Palette cool sage #7F957D, moss #6C846B, grit #9B9A86.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_alpine_meadow_03",
+      "category": "tile",
+      "family": "alpine_meadow",
+      "terrain_surface_id": "alpine_meadow",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine meadow ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nAlpine meadow ground. Tight low cushion-like grass mats and small velvety moss patches separated by visible cool fine gritty soil. Dense short radial fibers and occasional flat tiny gray chips, no flowers or snow. Palette cool sage #7F957D, moss #6C846B, grit #9B9A86.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_alpine_meadow_04",
+      "category": "tile",
+      "family": "alpine_meadow",
+      "terrain_surface_id": "alpine_meadow",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine meadow ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nAlpine meadow ground. Tight low cushion-like grass mats and small velvety moss patches separated by visible cool fine gritty soil. Dense short radial fibers and occasional flat tiny gray chips, no flowers or snow. Palette cool sage #7F957D, moss #6C846B, grit #9B9A86.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_alpine_steppe_01",
+      "category": "tile",
+      "family": "alpine_steppe",
+      "terrain_surface_id": "alpine_steppe",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine steppe and alpine desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nCold high plateau steppe surface. Pale short wiry grass fibers forming low open mats over gray tan coarse grit, clearly open soil channels between uneven grass patches. Cold dry matte finish, not snow or dunes. Palette gray straw #ADA991, dry sage #8F9680, grit #8E8B7D.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_alpine_steppe_02",
+      "category": "tile",
+      "family": "alpine_steppe",
+      "terrain_surface_id": "alpine_steppe",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine steppe and alpine desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nCold high plateau steppe surface. Pale short wiry grass fibers forming low open mats over gray tan coarse grit, clearly open soil channels between uneven grass patches. Cold dry matte finish, not snow or dunes. Palette gray straw #ADA991, dry sage #8F9680, grit #8E8B7D.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_alpine_steppe_03",
+      "category": "tile",
+      "family": "alpine_steppe",
+      "terrain_surface_id": "alpine_steppe",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine steppe and alpine desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nCold high plateau steppe surface. Pale short wiry grass fibers forming low open mats over gray tan coarse grit, clearly open soil channels between uneven grass patches. Cold dry matte finish, not snow or dunes. Palette gray straw #ADA991, dry sage #8F9680, grit #8E8B7D.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_alpine_steppe_04",
+      "category": "tile",
+      "family": "alpine_steppe",
+      "terrain_surface_id": "alpine_steppe",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine steppe and alpine desert ecological regions",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nCold high plateau steppe surface. Pale short wiry grass fibers forming low open mats over gray tan coarse grit, clearly open soil channels between uneven grass patches. Cold dry matte finish, not snow or dunes. Palette gray straw #ADA991, dry sage #8F9680, grit #8E8B7D.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_tundra_moss_01",
+      "category": "tile",
+      "family": "tundra_moss",
+      "terrain_surface_id": "tundra_moss",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tundra ecological regions; no seasonal ice or permafrost boundary inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nTundra ground material. Low dense olive moss and gray lichen crusts, tiny rusty brown organic flecks and broken dark peat grain between low mats. Organic close-to-ground texture, no shrubs, frost polygons, snow or water. Palette olive #858F69, lichen #ADAFA0, peat #686A56, muted rust #927A62.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_tundra_moss_02",
+      "category": "tile",
+      "family": "tundra_moss",
+      "terrain_surface_id": "tundra_moss",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tundra ecological regions; no seasonal ice or permafrost boundary inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nTundra ground material. Low dense olive moss and gray lichen crusts, tiny rusty brown organic flecks and broken dark peat grain between low mats. Organic close-to-ground texture, no shrubs, frost polygons, snow or water. Palette olive #858F69, lichen #ADAFA0, peat #686A56, muted rust #927A62.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_tundra_moss_03",
+      "category": "tile",
+      "family": "tundra_moss",
+      "terrain_surface_id": "tundra_moss",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tundra ecological regions; no seasonal ice or permafrost boundary inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nTundra ground material. Low dense olive moss and gray lichen crusts, tiny rusty brown organic flecks and broken dark peat grain between low mats. Organic close-to-ground texture, no shrubs, frost polygons, snow or water. Palette olive #858F69, lichen #ADAFA0, peat #686A56, muted rust #927A62.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_tundra_moss_04",
+      "category": "tile",
+      "family": "tundra_moss",
+      "terrain_surface_id": "tundra_moss",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tundra ecological regions; no seasonal ice or permafrost boundary inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nTundra ground material. Low dense olive moss and gray lichen crusts, tiny rusty brown organic flecks and broken dark peat grain between low mats. Organic close-to-ground texture, no shrubs, frost polygons, snow or water. Palette olive #858F69, lichen #ADAFA0, peat #686A56, muted rust #927A62.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_boreal_litter_01",
+      "category": "tile",
+      "family": "boreal_litter",
+      "terrain_surface_id": "boreal_litter",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "boreal ecological region ground reference, not an assertion of historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative boreal-zone floor material. Dark cool humus with fine rusty needle fibers and low olive moss crescents, sparse tiny dry bark chips. Distinct deep earthy organic texture; no trees, branches or trunks. Palette peat #666C57, moss #7F8D65, needle #A18B64.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_boreal_litter_02",
+      "category": "tile",
+      "family": "boreal_litter",
+      "terrain_surface_id": "boreal_litter",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "boreal ecological region ground reference, not an assertion of historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative boreal-zone floor material. Dark cool humus with fine rusty needle fibers and low olive moss crescents, sparse tiny dry bark chips. Distinct deep earthy organic texture; no trees, branches or trunks. Palette peat #666C57, moss #7F8D65, needle #A18B64.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_boreal_litter_03",
+      "category": "tile",
+      "family": "boreal_litter",
+      "terrain_surface_id": "boreal_litter",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "boreal ecological region ground reference, not an assertion of historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative boreal-zone floor material. Dark cool humus with fine rusty needle fibers and low olive moss crescents, sparse tiny dry bark chips. Distinct deep earthy organic texture; no trees, branches or trunks. Palette peat #666C57, moss #7F8D65, needle #A18B64.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_boreal_litter_04",
+      "category": "tile",
+      "family": "boreal_litter",
+      "terrain_surface_id": "boreal_litter",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "boreal ecological region ground reference, not an assertion of historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative boreal-zone floor material. Dark cool humus with fine rusty needle fibers and low olive moss crescents, sparse tiny dry bark chips. Distinct deep earthy organic texture; no trees, branches or trunks. Palette peat #666C57, moss #7F8D65, needle #A18B64.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_temperate_litter_01",
+      "category": "tile",
+      "family": "temperate_litter",
+      "terrain_surface_id": "temperate_litter",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate mixed and broadleaf ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative temperate mixed-forest-zone floor material. Small flat irregular ochre and muted copper leaf fragments woven into loose dark loam, soft olive decomposed patches. Readable broad leaf-shape fragments without large individual hero leaves. Palette loam #827B61, leaf ochre #B2A078, muted copper #A18A68, olive #858A67.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_temperate_litter_02",
+      "category": "tile",
+      "family": "temperate_litter",
+      "terrain_surface_id": "temperate_litter",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate mixed and broadleaf ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative temperate mixed-forest-zone floor material. Small flat irregular ochre and muted copper leaf fragments woven into loose dark loam, soft olive decomposed patches. Readable broad leaf-shape fragments without large individual hero leaves. Palette loam #827B61, leaf ochre #B2A078, muted copper #A18A68, olive #858A67.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_temperate_litter_03",
+      "category": "tile",
+      "family": "temperate_litter",
+      "terrain_surface_id": "temperate_litter",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate mixed and broadleaf ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative temperate mixed-forest-zone floor material. Small flat irregular ochre and muted copper leaf fragments woven into loose dark loam, soft olive decomposed patches. Readable broad leaf-shape fragments without large individual hero leaves. Palette loam #827B61, leaf ochre #B2A078, muted copper #A18A68, olive #858A67.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_temperate_litter_04",
+      "category": "tile",
+      "family": "temperate_litter",
+      "terrain_surface_id": "temperate_litter",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate mixed and broadleaf ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative temperate mixed-forest-zone floor material. Small flat irregular ochre and muted copper leaf fragments woven into loose dark loam, soft olive decomposed patches. Readable broad leaf-shape fragments without large individual hero leaves. Palette loam #827B61, leaf ochre #B2A078, muted copper #A18A68, olive #858A67.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_conifer_litter_01",
+      "category": "tile",
+      "family": "conifer_litter",
+      "terrain_surface_id": "conifer_litter",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate or tropical conifer ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative montane conifer-zone floor material. Clearly directional thin tan needle threads in overlapping fans over cool gray-green mineral humus, small isolated moss patches and tiny flat gray grit. More linear needle-rich than broadleaf litter; no branches or cones. Palette needles #B0A082, humus #7A806A, stone #979A89.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_conifer_litter_02",
+      "category": "tile",
+      "family": "conifer_litter",
+      "terrain_surface_id": "conifer_litter",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate or tropical conifer ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative montane conifer-zone floor material. Clearly directional thin tan needle threads in overlapping fans over cool gray-green mineral humus, small isolated moss patches and tiny flat gray grit. More linear needle-rich than broadleaf litter; no branches or cones. Palette needles #B0A082, humus #7A806A, stone #979A89.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_conifer_litter_03",
+      "category": "tile",
+      "family": "conifer_litter",
+      "terrain_surface_id": "conifer_litter",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate or tropical conifer ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative montane conifer-zone floor material. Clearly directional thin tan needle threads in overlapping fans over cool gray-green mineral humus, small isolated moss patches and tiny flat gray grit. More linear needle-rich than broadleaf litter; no branches or cones. Palette needles #B0A082, humus #7A806A, stone #979A89.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_conifer_litter_04",
+      "category": "tile",
+      "family": "conifer_litter",
+      "terrain_surface_id": "conifer_litter",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate or tropical conifer ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative montane conifer-zone floor material. Clearly directional thin tan needle threads in overlapping fans over cool gray-green mineral humus, small isolated moss patches and tiny flat gray grit. More linear needle-rich than broadleaf litter; no branches or cones. Palette needles #B0A082, humus #7A806A, stone #979A89.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_subtropical_humus_01",
+      "category": "tile",
+      "family": "subtropical_humus",
+      "terrain_surface_id": "subtropical_humus",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-latitude Asian temperate broadleaf ecological region ground reference",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative humid subtropical-zone floor material. Rich muted warm sienna loam threaded with short olive organic fibers, scattered small flat weathered leaf flakes and granular earth clods. Clearly warm brown mineral-organic surface with green touches; no roots or plants. Palette earth #A28A64, shade #7D7255, olive #8F986B, leaf #B6A078.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_subtropical_humus_02",
+      "category": "tile",
+      "family": "subtropical_humus",
+      "terrain_surface_id": "subtropical_humus",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-latitude Asian temperate broadleaf ecological region ground reference",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative humid subtropical-zone floor material. Rich muted warm sienna loam threaded with short olive organic fibers, scattered small flat weathered leaf flakes and granular earth clods. Clearly warm brown mineral-organic surface with green touches; no roots or plants. Palette earth #A28A64, shade #7D7255, olive #8F986B, leaf #B6A078.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_subtropical_humus_03",
+      "category": "tile",
+      "family": "subtropical_humus",
+      "terrain_surface_id": "subtropical_humus",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-latitude Asian temperate broadleaf ecological region ground reference",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative humid subtropical-zone floor material. Rich muted warm sienna loam threaded with short olive organic fibers, scattered small flat weathered leaf flakes and granular earth clods. Clearly warm brown mineral-organic surface with green touches; no roots or plants. Palette earth #A28A64, shade #7D7255, olive #8F986B, leaf #B6A078.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_subtropical_humus_04",
+      "category": "tile",
+      "family": "subtropical_humus",
+      "terrain_surface_id": "subtropical_humus",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-latitude Asian temperate broadleaf ecological region ground reference",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative humid subtropical-zone floor material. Rich muted warm sienna loam threaded with short olive organic fibers, scattered small flat weathered leaf flakes and granular earth clods. Clearly warm brown mineral-organic surface with green touches; no roots or plants. Palette earth #A28A64, shade #7D7255, olive #8F986B, leaf #B6A078.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_tropical_moist_humus_01",
+      "category": "tile",
+      "family": "tropical_moist_humus",
+      "terrain_surface_id": "tropical_moist_humus",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical moist broadleaf ecological region ground reference; no historical jungle boundary inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative humid tropical-zone floor material. Deep warm brown crumbling organic soil, fine dark wet-looking grain with flattened russet leaf chips and small muted emerald moss stains. Matte, rich and dark, never glossy or muddy water. Palette earth #806C50, russet #A17D55, moss #6D825C, light clods #A49170.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_tropical_moist_humus_02",
+      "category": "tile",
+      "family": "tropical_moist_humus",
+      "terrain_surface_id": "tropical_moist_humus",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical moist broadleaf ecological region ground reference; no historical jungle boundary inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative humid tropical-zone floor material. Deep warm brown crumbling organic soil, fine dark wet-looking grain with flattened russet leaf chips and small muted emerald moss stains. Matte, rich and dark, never glossy or muddy water. Palette earth #806C50, russet #A17D55, moss #6D825C, light clods #A49170.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_tropical_moist_humus_03",
+      "category": "tile",
+      "family": "tropical_moist_humus",
+      "terrain_surface_id": "tropical_moist_humus",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical moist broadleaf ecological region ground reference; no historical jungle boundary inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative humid tropical-zone floor material. Deep warm brown crumbling organic soil, fine dark wet-looking grain with flattened russet leaf chips and small muted emerald moss stains. Matte, rich and dark, never glossy or muddy water. Palette earth #806C50, russet #A17D55, moss #6D825C, light clods #A49170.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_tropical_moist_humus_04",
+      "category": "tile",
+      "family": "tropical_moist_humus",
+      "terrain_surface_id": "tropical_moist_humus",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical moist broadleaf ecological region ground reference; no historical jungle boundary inferred",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative humid tropical-zone floor material. Deep warm brown crumbling organic soil, fine dark wet-looking grain with flattened russet leaf chips and small muted emerald moss stains. Matte, rich and dark, never glossy or muddy water. Palette earth #806C50, russet #A17D55, moss #6D825C, light clods #A49170.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_dry_woodland_litter_01",
+      "category": "tile",
+      "family": "dry_woodland_litter",
+      "terrain_surface_id": "dry_woodland_litter",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical dry broadleaf or Mediterranean woodland ecological region ground reference",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative dry woodland and sclerophyll-zone floor material. Pale powdery warm soil with sparse curled small dry leaf flakes, thin short woody fibers and embedded chalk-gray mineral specks. Open dusty irregular organic grain, no standing scrub. Palette soil #B3A484, leaves #9C8A65, chalk #C3BEA5, shadow #8D826C.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_dry_woodland_litter_02",
+      "category": "tile",
+      "family": "dry_woodland_litter",
+      "terrain_surface_id": "dry_woodland_litter",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical dry broadleaf or Mediterranean woodland ecological region ground reference",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative dry woodland and sclerophyll-zone floor material. Pale powdery warm soil with sparse curled small dry leaf flakes, thin short woody fibers and embedded chalk-gray mineral specks. Open dusty irregular organic grain, no standing scrub. Palette soil #B3A484, leaves #9C8A65, chalk #C3BEA5, shadow #8D826C.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_dry_woodland_litter_03",
+      "category": "tile",
+      "family": "dry_woodland_litter",
+      "terrain_surface_id": "dry_woodland_litter",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical dry broadleaf or Mediterranean woodland ecological region ground reference",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative dry woodland and sclerophyll-zone floor material. Pale powdery warm soil with sparse curled small dry leaf flakes, thin short woody fibers and embedded chalk-gray mineral specks. Open dusty irregular organic grain, no standing scrub. Palette soil #B3A484, leaves #9C8A65, chalk #C3BEA5, shadow #8D826C.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_dry_woodland_litter_04",
+      "category": "tile",
+      "family": "dry_woodland_litter",
+      "terrain_surface_id": "dry_woodland_litter",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical dry broadleaf or Mediterranean woodland ecological region ground reference",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative dry woodland and sclerophyll-zone floor material. Pale powdery warm soil with sparse curled small dry leaf flakes, thin short woody fibers and embedded chalk-gray mineral specks. Open dusty irregular organic grain, no standing scrub. Palette soil #B3A484, leaves #9C8A65, chalk #C3BEA5, shadow #8D826C.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_savanna_red_soil_01",
+      "category": "tile",
+      "family": "savanna_red_soil",
+      "terrain_surface_id": "savanna_red_soil",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical savanna and grassland ecological region ground reference; soil color is representative art",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative tropical grassland surface. Warm muted reddish-ochre granular ground with sparse short straw-gold grass fibers and flat rust-colored mineral flecks. Red-earth dominated ground with broad calm zones, no trees or termite mounds. Palette earth #AB8A64, rust #987653, straw #C2AD7C, olive #8F9166.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_savanna_red_soil_02",
+      "category": "tile",
+      "family": "savanna_red_soil",
+      "terrain_surface_id": "savanna_red_soil",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical savanna and grassland ecological region ground reference; soil color is representative art",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative tropical grassland surface. Warm muted reddish-ochre granular ground with sparse short straw-gold grass fibers and flat rust-colored mineral flecks. Red-earth dominated ground with broad calm zones, no trees or termite mounds. Palette earth #AB8A64, rust #987653, straw #C2AD7C, olive #8F9166.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_savanna_red_soil_03",
+      "category": "tile",
+      "family": "savanna_red_soil",
+      "terrain_surface_id": "savanna_red_soil",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical savanna and grassland ecological region ground reference; soil color is representative art",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative tropical grassland surface. Warm muted reddish-ochre granular ground with sparse short straw-gold grass fibers and flat rust-colored mineral flecks. Red-earth dominated ground with broad calm zones, no trees or termite mounds. Palette earth #AB8A64, rust #987653, straw #C2AD7C, olive #8F9166.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_savanna_red_soil_04",
+      "category": "tile",
+      "family": "savanna_red_soil",
+      "terrain_surface_id": "savanna_red_soil",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical savanna and grassland ecological region ground reference; soil color is representative art",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative tropical grassland surface. Warm muted reddish-ochre granular ground with sparse short straw-gold grass fibers and flat rust-colored mineral flecks. Red-earth dominated ground with broad calm zones, no trees or termite mounds. Palette earth #AB8A64, rust #987653, straw #C2AD7C, olive #8F9166.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_flood_meadow_01",
+      "category": "tile",
+      "family": "flood_meadow",
+      "terrain_surface_id": "flood_meadow",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named flooded grassland ecological region ground reference; not historical flooding or wetland extent",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative flood-meadow ground. Dark gray-green fine silt interwoven with flattened narrow sedge blades, quiet broad pale dried-silt traces and short moist organic fibers. Flat continuous ground with visibly different fine linear mat grain, no water, channels or pools. Palette silt #8E9989, sedge #7B8B69, pale #B1B59C, dark humus #6F7B68.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_flood_meadow_02",
+      "category": "tile",
+      "family": "flood_meadow",
+      "terrain_surface_id": "flood_meadow",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named flooded grassland ecological region ground reference; not historical flooding or wetland extent",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative flood-meadow ground. Dark gray-green fine silt interwoven with flattened narrow sedge blades, quiet broad pale dried-silt traces and short moist organic fibers. Flat continuous ground with visibly different fine linear mat grain, no water, channels or pools. Palette silt #8E9989, sedge #7B8B69, pale #B1B59C, dark humus #6F7B68.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_flood_meadow_03",
+      "category": "tile",
+      "family": "flood_meadow",
+      "terrain_surface_id": "flood_meadow",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named flooded grassland ecological region ground reference; not historical flooding or wetland extent",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative flood-meadow ground. Dark gray-green fine silt interwoven with flattened narrow sedge blades, quiet broad pale dried-silt traces and short moist organic fibers. Flat continuous ground with visibly different fine linear mat grain, no water, channels or pools. Palette silt #8E9989, sedge #7B8B69, pale #B1B59C, dark humus #6F7B68.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_flood_meadow_04",
+      "category": "tile",
+      "family": "flood_meadow",
+      "terrain_surface_id": "flood_meadow",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named flooded grassland ecological region ground reference; not historical flooding or wetland extent",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative flood-meadow ground. Dark gray-green fine silt interwoven with flattened narrow sedge blades, quiet broad pale dried-silt traces and short moist organic fibers. Flat continuous ground with visibly different fine linear mat grain, no water, channels or pools. Palette silt #8E9989, sedge #7B8B69, pale #B1B59C, dark humus #6F7B68.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_alluvial_loam_01",
+      "category": "tile",
+      "family": "alluvial_loam",
+      "terrain_surface_id": "alluvial_loam",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-relief named alluvial ecological regions close to an archived surveyed river",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative river-valley silt and loam ground. Broad warm fine-grained buff silt patches, uneven tiny earth clods and shallow irregular dried-soil lines, sparse soft grass fibers. Soft sediment-rich material, no farms, plow furrows, water channels or mud-crack polygons. Palette buff #B7A887, loam #9C8D6B, silt #C1B494, grass #919772.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_alluvial_loam_02",
+      "category": "tile",
+      "family": "alluvial_loam",
+      "terrain_surface_id": "alluvial_loam",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-relief named alluvial ecological regions close to an archived surveyed river",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative river-valley silt and loam ground. Broad warm fine-grained buff silt patches, uneven tiny earth clods and shallow irregular dried-soil lines, sparse soft grass fibers. Soft sediment-rich material, no farms, plow furrows, water channels or mud-crack polygons. Palette buff #B7A887, loam #9C8D6B, silt #C1B494, grass #919772.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_alluvial_loam_03",
+      "category": "tile",
+      "family": "alluvial_loam",
+      "terrain_surface_id": "alluvial_loam",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-relief named alluvial ecological regions close to an archived surveyed river",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative river-valley silt and loam ground. Broad warm fine-grained buff silt patches, uneven tiny earth clods and shallow irregular dried-soil lines, sparse soft grass fibers. Soft sediment-rich material, no farms, plow furrows, water channels or mud-crack polygons. Palette buff #B7A887, loam #9C8D6B, silt #C1B494, grass #919772.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_alluvial_loam_04",
+      "category": "tile",
+      "family": "alluvial_loam",
+      "terrain_surface_id": "alluvial_loam",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-relief named alluvial ecological regions close to an archived surveyed river",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative river-valley silt and loam ground. Broad warm fine-grained buff silt patches, uneven tiny earth clods and shallow irregular dried-soil lines, sparse soft grass fibers. Soft sediment-rich material, no farms, plow furrows, water channels or mud-crack polygons. Palette buff #B7A887, loam #9C8D6B, silt #C1B494, grass #919772.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_weathered_rock_01",
+      "category": "tile",
+      "family": "weathered_rock",
+      "terrain_surface_id": "weathered_rock",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified hill and mountain cells; representative mineral grain, not a lithological survey",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative weathered mountain-ground material. Broad flat broken mineral flakes and embedded stratified stone chips, shallow irregular fracture grain interrupted by small muted olive soil pockets. Strong angular planar grain with restrained short contact shadows, no isolated boulder or mountain silhouette. Palette slate #8B9186, pale mineral #B0B09A, umber #979078, olive #81886B.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_weathered_rock_02",
+      "category": "tile",
+      "family": "weathered_rock",
+      "terrain_surface_id": "weathered_rock",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified hill and mountain cells; representative mineral grain, not a lithological survey",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative weathered mountain-ground material. Broad flat broken mineral flakes and embedded stratified stone chips, shallow irregular fracture grain interrupted by small muted olive soil pockets. Strong angular planar grain with restrained short contact shadows, no isolated boulder or mountain silhouette. Palette slate #8B9186, pale mineral #B0B09A, umber #979078, olive #81886B.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_weathered_rock_03",
+      "category": "tile",
+      "family": "weathered_rock",
+      "terrain_surface_id": "weathered_rock",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified hill and mountain cells; representative mineral grain, not a lithological survey",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative weathered mountain-ground material. Broad flat broken mineral flakes and embedded stratified stone chips, shallow irregular fracture grain interrupted by small muted olive soil pockets. Strong angular planar grain with restrained short contact shadows, no isolated boulder or mountain silhouette. Palette slate #8B9186, pale mineral #B0B09A, umber #979078, olive #81886B.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_weathered_rock_04",
+      "category": "tile",
+      "family": "weathered_rock",
+      "terrain_surface_id": "weathered_rock",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified hill and mountain cells; representative mineral grain, not a lithological survey",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative weathered mountain-ground material. Broad flat broken mineral flakes and embedded stratified stone chips, shallow irregular fracture grain interrupted by small muted olive soil pockets. Strong angular planar grain with restrained short contact shadows, no isolated boulder or mountain silhouette. Palette slate #8B9186, pale mineral #B0B09A, umber #979078, olive #81886B.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    },
+    {
+      "id": "tile_surface_alpine_scree_01",
+      "category": "tile",
+      "family": "alpine_scree",
+      "terrain_surface_id": "alpine_scree",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified peak cells; representative rock fragment grain, not a mapped scree deposit",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative high-relief peak-ground material. Dense unequal angular gray scree chips and coarse fine rock splinters, small connected shallow talus-like directional grain. Cool stony surface with light-facing tiny planes and dark crevices, no snow, boulder silhouette or actual raised peaks. Palette stone #9B9F95, highlight #C1C1B0, crevice #6E786D, mineral tan #A6A18B.\nSTRUCTURAL VARIANT: Broad uneven interlocking diagonal grain patches, larger calm opening offset toward upper-right; visible grain distributed asymmetrically across all edges."
+    },
+    {
+      "id": "tile_surface_alpine_scree_02",
+      "category": "tile",
+      "family": "alpine_scree",
+      "terrain_surface_id": "alpine_scree",
+      "variant": 2,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified peak cells; representative rock fragment grain, not a mapped scree deposit",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative high-relief peak-ground material. Dense unequal angular gray scree chips and coarse fine rock splinters, small connected shallow talus-like directional grain. Cool stony surface with light-facing tiny planes and dark crevices, no snow, boulder silhouette or actual raised peaks. Palette stone #9B9F95, highlight #C1C1B0, crevice #6E786D, mineral tan #A6A18B.\nSTRUCTURAL VARIANT: Two wide gently curving texture currents, grain-rich areas offset toward lower-left and upper-center; middle is quieter with fine secondary flecks."
+    },
+    {
+      "id": "tile_surface_alpine_scree_03",
+      "category": "tile",
+      "family": "alpine_scree",
+      "terrain_surface_id": "alpine_scree",
+      "variant": 3,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified peak cells; representative rock fragment grain, not a mapped scree deposit",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative high-relief peak-ground material. Dense unequal angular gray scree chips and coarse fine rock splinters, small connected shallow talus-like directional grain. Cool stony surface with light-facing tiny planes and dark crevices, no snow, boulder silhouette or actual raised peaks. Palette stone #9B9F95, highlight #C1C1B0, crevice #6E786D, mineral tan #A6A18B.\nSTRUCTURAL VARIANT: Loose unequal islands of connected material grain, separated by broad calm channels of the same ground; avoid evenly spaced spots or a cellular pattern."
+    },
+    {
+      "id": "tile_surface_alpine_scree_04",
+      "category": "tile",
+      "family": "alpine_scree",
+      "terrain_surface_id": "alpine_scree",
+      "variant": 4,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified peak cells; representative rock fragment grain, not a mapped scree deposit",
+      "visible_bounds": [
+        128,
+        110
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 256,
+      "prompt": "ONE original edge-to-edge hand-painted terrain GROUND MATERIAL for a\npremium 2.5D historical turn-based strategy atlas. Exact top-down flat material,\nseamless tiling edges, one continuous surface, opaque PNG. Authored visible\nmaterial identity that remains legible when the entire image is reduced to\n128x128 pixels: use medium-sized grouped grain and finer secondary grain,\nNOT a nearly blank beige wash or uniform sponge noise. Roughly sixty percent\ncalm broad material planes, forty percent readable natural microstructure.\nRestrained painterly realism, matte mineral and organic pigments, consistent\nsoft upper-left illumination with shallow grain shading. Moderate local value\nseparation, unsaturated but distinct natural colors. No black outlines or\nphotographic grit. This is an original material, do not copy existing game art.\nNo landscape scene, sky, horizon, trees, standing bushes, large stones,\nmountains, villages, buildings, roads, cultivated fields, rivers, lakes, pools,\ncoasts, grid, hexagon, borders, words, diagrams, collage, panels, UI or watermark.\nDo not draw a specimen disc, object silhouette, rectangular material swatch\ninside a margin, or transparent exterior: cover the whole image continuously.\nThe image is a representative atlas material, not a survey of a named site.\nMATERIAL IDENTITY:\nRepresentative high-relief peak-ground material. Dense unequal angular gray scree chips and coarse fine rock splinters, small connected shallow talus-like directional grain. Cool stony surface with light-facing tiny planes and dark crevices, no snow, boulder silhouette or actual raised peaks. Palette stone #9B9F95, highlight #C1C1B0, crevice #6E786D, mineral tan #A6A18B.\nSTRUCTURAL VARIANT: Several wide broken near-horizontal material bands, varied thickness and interrupted edges; subtle fine grain crosses between bands; no straight stripes."
+    }
+  ]
+}

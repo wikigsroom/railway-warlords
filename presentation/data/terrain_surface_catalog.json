@@ -1,0 +1,975 @@
+{
+  "format": 1,
+  "version": "0.2.13",
+  "terrain_type_count": 20,
+  "originals_per_type": 4,
+  "independent_sources": 80,
+  "source_plan_sha256": "db89a490e62a9afbf57d442f68d9029dfeab1447750db3356bc748889620b7e2",
+  "original_images_modified": false,
+  "full_texture_draw": true,
+  "scope": "Regional ground presentation, not new water/forest boundaries or movement barriers",
+  "types": {
+    "temperate_meadow": {
+      "id": "temperate_meadow",
+      "name": "温带草甸",
+      "parent_terrain": "plain",
+      "source_gate": "temperate grassland and forest-steppe ecological regions",
+      "assets": [
+        "tile_surface_temperate_meadow_01",
+        "tile_surface_temperate_meadow_02",
+        "tile_surface_temperate_meadow_03",
+        "tile_surface_temperate_meadow_04"
+      ]
+    },
+    "dry_steppe": {
+      "id": "dry_steppe",
+      "name": "旱生草原",
+      "parent_terrain": "plain",
+      "source_gate": "temperate continental grassland ecological regions",
+      "assets": [
+        "tile_surface_dry_steppe_01",
+        "tile_surface_dry_steppe_02",
+        "tile_surface_dry_steppe_03",
+        "tile_surface_dry_steppe_04"
+      ]
+    },
+    "desert_steppe": {
+      "id": "desert_steppe",
+      "name": "荒漠草原",
+      "parent_terrain": "plain",
+      "source_gate": "named desert-steppe and semi-desert ecological regions",
+      "assets": [
+        "tile_surface_desert_steppe_01",
+        "tile_surface_desert_steppe_02",
+        "tile_surface_desert_steppe_03",
+        "tile_surface_desert_steppe_04"
+      ]
+    },
+    "dune_sand": {
+      "id": "dune_sand",
+      "name": "风成沙地",
+      "parent_terrain": "plain",
+      "source_gate": "explicit named sandy-desert ecological regions only",
+      "assets": [
+        "tile_surface_dune_sand_01",
+        "tile_surface_dune_sand_02",
+        "tile_surface_dune_sand_03",
+        "tile_surface_dune_sand_04"
+      ]
+    },
+    "gravel_gobi": {
+      "id": "gravel_gobi",
+      "name": "戈壁砾地",
+      "parent_terrain": "plain",
+      "source_gate": "named stony and xeric-desert ecological regions",
+      "assets": [
+        "tile_surface_gravel_gobi_01",
+        "tile_surface_gravel_gobi_02",
+        "tile_surface_gravel_gobi_03",
+        "tile_surface_gravel_gobi_04"
+      ]
+    },
+    "saline_meadow": {
+      "id": "saline_meadow",
+      "name": "盐生草甸地表",
+      "parent_terrain": "plain",
+      "source_gate": "explicit named saline meadow and salt-marsh ecological regions; no water extent inferred",
+      "assets": [
+        "tile_surface_saline_meadow_01",
+        "tile_surface_saline_meadow_02",
+        "tile_surface_saline_meadow_03",
+        "tile_surface_saline_meadow_04"
+      ]
+    },
+    "alpine_meadow": {
+      "id": "alpine_meadow",
+      "name": "高山草甸",
+      "parent_terrain": "plain",
+      "source_gate": "named alpine meadow ecological regions",
+      "assets": [
+        "tile_surface_alpine_meadow_01",
+        "tile_surface_alpine_meadow_02",
+        "tile_surface_alpine_meadow_03",
+        "tile_surface_alpine_meadow_04"
+      ]
+    },
+    "alpine_steppe": {
+      "id": "alpine_steppe",
+      "name": "高寒草原",
+      "parent_terrain": "plain",
+      "source_gate": "named alpine steppe and alpine desert ecological regions",
+      "assets": [
+        "tile_surface_alpine_steppe_01",
+        "tile_surface_alpine_steppe_02",
+        "tile_surface_alpine_steppe_03",
+        "tile_surface_alpine_steppe_04"
+      ]
+    },
+    "tundra_moss": {
+      "id": "tundra_moss",
+      "name": "苔原地表",
+      "parent_terrain": "plain",
+      "source_gate": "tundra ecological regions; no seasonal ice or permafrost boundary inferred",
+      "assets": [
+        "tile_surface_tundra_moss_01",
+        "tile_surface_tundra_moss_02",
+        "tile_surface_tundra_moss_03",
+        "tile_surface_tundra_moss_04"
+      ]
+    },
+    "boreal_litter": {
+      "id": "boreal_litter",
+      "name": "寒带林带腐殖层",
+      "parent_terrain": "plain",
+      "source_gate": "boreal ecological region ground reference, not an assertion of historical tree cover",
+      "assets": [
+        "tile_surface_boreal_litter_01",
+        "tile_surface_boreal_litter_02",
+        "tile_surface_boreal_litter_03",
+        "tile_surface_boreal_litter_04"
+      ]
+    },
+    "temperate_litter": {
+      "id": "temperate_litter",
+      "name": "温带阔叶林带落叶层",
+      "parent_terrain": "plain",
+      "source_gate": "temperate mixed and broadleaf ecological region ground reference, not historical tree cover",
+      "assets": [
+        "tile_surface_temperate_litter_01",
+        "tile_surface_temperate_litter_02",
+        "tile_surface_temperate_litter_03",
+        "tile_surface_temperate_litter_04"
+      ]
+    },
+    "conifer_litter": {
+      "id": "conifer_litter",
+      "name": "针叶林带针叶层",
+      "parent_terrain": "plain",
+      "source_gate": "temperate or tropical conifer ecological region ground reference, not historical tree cover",
+      "assets": [
+        "tile_surface_conifer_litter_01",
+        "tile_surface_conifer_litter_02",
+        "tile_surface_conifer_litter_03",
+        "tile_surface_conifer_litter_04"
+      ]
+    },
+    "subtropical_humus": {
+      "id": "subtropical_humus",
+      "name": "亚热带林带湿润土",
+      "parent_terrain": "plain",
+      "source_gate": "low-latitude Asian temperate broadleaf ecological region ground reference",
+      "assets": [
+        "tile_surface_subtropical_humus_01",
+        "tile_surface_subtropical_humus_02",
+        "tile_surface_subtropical_humus_03",
+        "tile_surface_subtropical_humus_04"
+      ]
+    },
+    "tropical_moist_humus": {
+      "id": "tropical_moist_humus",
+      "name": "热带湿润林带腐土",
+      "parent_terrain": "plain",
+      "source_gate": "tropical moist broadleaf ecological region ground reference; no historical jungle boundary inferred",
+      "assets": [
+        "tile_surface_tropical_moist_humus_01",
+        "tile_surface_tropical_moist_humus_02",
+        "tile_surface_tropical_moist_humus_03",
+        "tile_surface_tropical_moist_humus_04"
+      ]
+    },
+    "dry_woodland_litter": {
+      "id": "dry_woodland_litter",
+      "name": "旱林灌丛带地表",
+      "parent_terrain": "plain",
+      "source_gate": "tropical dry broadleaf or Mediterranean woodland ecological region ground reference",
+      "assets": [
+        "tile_surface_dry_woodland_litter_01",
+        "tile_surface_dry_woodland_litter_02",
+        "tile_surface_dry_woodland_litter_03",
+        "tile_surface_dry_woodland_litter_04"
+      ]
+    },
+    "savanna_red_soil": {
+      "id": "savanna_red_soil",
+      "name": "热带草原地表",
+      "parent_terrain": "plain",
+      "source_gate": "tropical savanna and grassland ecological region ground reference; soil color is representative art",
+      "assets": [
+        "tile_surface_savanna_red_soil_01",
+        "tile_surface_savanna_red_soil_02",
+        "tile_surface_savanna_red_soil_03",
+        "tile_surface_savanna_red_soil_04"
+      ]
+    },
+    "flood_meadow": {
+      "id": "flood_meadow",
+      "name": "洪泛草甸地表",
+      "parent_terrain": "plain",
+      "source_gate": "named flooded grassland ecological region ground reference; not historical flooding or wetland extent",
+      "assets": [
+        "tile_surface_flood_meadow_01",
+        "tile_surface_flood_meadow_02",
+        "tile_surface_flood_meadow_03",
+        "tile_surface_flood_meadow_04"
+      ]
+    },
+    "alluvial_loam": {
+      "id": "alluvial_loam",
+      "name": "河谷冲积地表",
+      "parent_terrain": "plain",
+      "source_gate": "low-relief named alluvial ecological regions close to an archived surveyed river",
+      "assets": [
+        "tile_surface_alluvial_loam_01",
+        "tile_surface_alluvial_loam_02",
+        "tile_surface_alluvial_loam_03",
+        "tile_surface_alluvial_loam_04"
+      ]
+    },
+    "weathered_rock": {
+      "id": "weathered_rock",
+      "name": "风化岩坡地表",
+      "parent_terrain": "hill",
+      "source_gate": "DEM-classified hill and mountain cells; representative mineral grain, not a lithological survey",
+      "assets": [
+        "tile_surface_weathered_rock_01",
+        "tile_surface_weathered_rock_02",
+        "tile_surface_weathered_rock_03",
+        "tile_surface_weathered_rock_04"
+      ]
+    },
+    "alpine_scree": {
+      "id": "alpine_scree",
+      "name": "峰岭碎岩地表",
+      "parent_terrain": "peak",
+      "source_gate": "DEM-classified peak cells; representative rock fragment grain, not a mapped scree deposit",
+      "assets": [
+        "tile_surface_alpine_scree_01",
+        "tile_surface_alpine_scree_02",
+        "tile_surface_alpine_scree_03",
+        "tile_surface_alpine_scree_04"
+      ]
+    }
+  },
+  "records": {
+    "tile_surface_temperate_meadow_01": {
+      "family": "temperate_meadow",
+      "variant": 1,
+      "source_sha256": "ad4e345a35e8c4325726b6661dec2014edca5b3322665d191efcc23322f705a2",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_temperate_meadow_02": {
+      "family": "temperate_meadow",
+      "variant": 2,
+      "source_sha256": "919739ea8c6040f451aa2dec5f0403a4e38ad8e5af6f05bd52ca7d8c5acebf6b",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_temperate_meadow_03": {
+      "family": "temperate_meadow",
+      "variant": 3,
+      "source_sha256": "e73c5a5b131967f344b5af4fb837804753d89200c270c1ae176f6b5e8a95e1a6",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_temperate_meadow_04": {
+      "family": "temperate_meadow",
+      "variant": 4,
+      "source_sha256": "965dc6e464f1d183d1caf8231ab9c6a11bd172e5cabcb8360157d8fbe74533f0",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dry_steppe_01": {
+      "family": "dry_steppe",
+      "variant": 1,
+      "source_sha256": "bfa180afb8d5e5874775d3d390257212f066aeb9a42435553ea8534a43aa2a98",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dry_steppe_02": {
+      "family": "dry_steppe",
+      "variant": 2,
+      "source_sha256": "f0973b60707a62ef2aa7d11d509a4abba24f99e1f5bf1c21be59b1aec429ff2c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dry_steppe_03": {
+      "family": "dry_steppe",
+      "variant": 3,
+      "source_sha256": "d5f0401d8e87a63812cc797ce0a0730c943100680bd13c30d7bd1a833960ad45",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dry_steppe_04": {
+      "family": "dry_steppe",
+      "variant": 4,
+      "source_sha256": "b6b9cb85db50819ad703bc89b2e725ce6b757c7fcd61370d2648bfb0b4927664",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_desert_steppe_01": {
+      "family": "desert_steppe",
+      "variant": 1,
+      "source_sha256": "8b543e7a7da8ef7397075ffff77bbd6b66f30d011a74f36dfefea3f937e7b1bd",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_desert_steppe_02": {
+      "family": "desert_steppe",
+      "variant": 2,
+      "source_sha256": "a647ca584509d848f947be8e1fdc101fa128d6e06b60e1bbf99a3d609ddce730",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_desert_steppe_03": {
+      "family": "desert_steppe",
+      "variant": 3,
+      "source_sha256": "91d70badd38a95f3ca6eb42f2388b88298b260f5b58fb9d807c6c3475e38d4cb",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_desert_steppe_04": {
+      "family": "desert_steppe",
+      "variant": 4,
+      "source_sha256": "81e52f7d94be98d2e12efa5bbe86d14f9bfacf04aa659a108c41a2d6d7f62f72",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dune_sand_01": {
+      "family": "dune_sand",
+      "variant": 1,
+      "source_sha256": "65d0524d3aae53246a6421faee2a9b7a6c5398f13618ef429545e2da7d198056",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dune_sand_02": {
+      "family": "dune_sand",
+      "variant": 2,
+      "source_sha256": "2612508a12103a77830a9d72e7d59253117c735ff62355bb922102f22195cc07",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dune_sand_03": {
+      "family": "dune_sand",
+      "variant": 3,
+      "source_sha256": "e8fa6b6db07e6e1e181a1bd82496a6297b46dcc48be95d25e54014816619c721",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dune_sand_04": {
+      "family": "dune_sand",
+      "variant": 4,
+      "source_sha256": "22f0d902266304736ab09729aa10d903d3e5997be405c5f5cd331a3ad6754283",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_gravel_gobi_01": {
+      "family": "gravel_gobi",
+      "variant": 1,
+      "source_sha256": "ffd0dcdb136854b65fd29bb4f2439813f156a2946a9394a73d2afc3fe3be327e",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_gravel_gobi_02": {
+      "family": "gravel_gobi",
+      "variant": 2,
+      "source_sha256": "ef04d901df811d7ed44e083814a78bcf60f118a58e2478c30120678ddeb6eb0b",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_gravel_gobi_03": {
+      "family": "gravel_gobi",
+      "variant": 3,
+      "source_sha256": "49035a152e9edb7dfd77073cc0788bcc985c7b626327398ebc66cbedc0142e63",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_gravel_gobi_04": {
+      "family": "gravel_gobi",
+      "variant": 4,
+      "source_sha256": "9cf4f8265ee500f3ae4bdee8588c3a74efc5c438605083adff54be903d74acc5",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_saline_meadow_01": {
+      "family": "saline_meadow",
+      "variant": 1,
+      "source_sha256": "bf7b39d2244da075c66af0f21418c9508acdf2516958954e80ed52036aef6fdc",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_saline_meadow_02": {
+      "family": "saline_meadow",
+      "variant": 2,
+      "source_sha256": "fd21bb650a8ab7db2f831490f288c9f6856040b3b549304d004f2e73c743ae17",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_saline_meadow_03": {
+      "family": "saline_meadow",
+      "variant": 3,
+      "source_sha256": "89423d3637a2a0463566f398c63019c612398760450775717b754cbc84804b7e",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_saline_meadow_04": {
+      "family": "saline_meadow",
+      "variant": 4,
+      "source_sha256": "eb48039b8c0bcced23cb3431d4d1297a7fde4a424f10e213ec710e6dd3c1c82b",
+      "actual_dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "tile_surface_alpine_meadow_01": {
+      "family": "alpine_meadow",
+      "variant": 1,
+      "source_sha256": "72f0e58058ddf06497171540da4b7c117829e7cd09254f3c113db2c9e0559901",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_meadow_02": {
+      "family": "alpine_meadow",
+      "variant": 2,
+      "source_sha256": "800268cf0fcdf4a2c26310be81bfb76a508fd0be9e15d5377c3dbe8d2dc345d7",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_meadow_03": {
+      "family": "alpine_meadow",
+      "variant": 3,
+      "source_sha256": "074f02f9176549c9a27473ae5004e5b26cf9ea82720cb1cfecb15f496ffc9cf8",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_meadow_04": {
+      "family": "alpine_meadow",
+      "variant": 4,
+      "source_sha256": "8b150e1bfc5c3b49a21d463889d806ae04a1007b1feb053533aa7dc222e627bc",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_steppe_01": {
+      "family": "alpine_steppe",
+      "variant": 1,
+      "source_sha256": "591672f2b0b60f4d4eabfd90eb5f07bb0a841610bdaa6bae9003a3afee1cad25",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_steppe_02": {
+      "family": "alpine_steppe",
+      "variant": 2,
+      "source_sha256": "eeecd6498848c35bc3fae843b10bca7853d2185340dd2304f8aa50ccea99deeb",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_steppe_03": {
+      "family": "alpine_steppe",
+      "variant": 3,
+      "source_sha256": "9fa7ec0b68cd7725b94c3d02a1dcdbc4c809b09ae79491f9d08b32bc57c099e5",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_steppe_04": {
+      "family": "alpine_steppe",
+      "variant": 4,
+      "source_sha256": "375c3dafe3f873613e25493fe9a0405b904013aa481f152193fa08fd1af47ecb",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_tundra_moss_01": {
+      "family": "tundra_moss",
+      "variant": 1,
+      "source_sha256": "a224bdf845f020ed3152d6bf8d59d0e7994bc3d1a73d4e4e774aa887bf2f8f1f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_tundra_moss_02": {
+      "family": "tundra_moss",
+      "variant": 2,
+      "source_sha256": "e1e219dd8d40550270c7428a61b719d1f9dda9506236dd2d96b9cee5f73c814c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_tundra_moss_03": {
+      "family": "tundra_moss",
+      "variant": 3,
+      "source_sha256": "c844eaa07616979a48b59b2aebf2f317fee8ad00c2c7ce4c0daed52f32ef427f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_tundra_moss_04": {
+      "family": "tundra_moss",
+      "variant": 4,
+      "source_sha256": "7e887058860fe37464bc54ee54414bc785a80f1d7d93d8bc184ef300eb028c56",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_boreal_litter_01": {
+      "family": "boreal_litter",
+      "variant": 1,
+      "source_sha256": "213c208fc5ec63c4103ccb141e78e8cc69a1dfbb893c4093389d36f3399cc7a2",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_boreal_litter_02": {
+      "family": "boreal_litter",
+      "variant": 2,
+      "source_sha256": "d9ce62b4c5d88c15f5f05a217783220223901782b99eb101a4dbd2515f4943bf",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_boreal_litter_03": {
+      "family": "boreal_litter",
+      "variant": 3,
+      "source_sha256": "0566d8b0c19b06d8b761e0fb732048d154ed8761970521122a5942394181f9ff",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_boreal_litter_04": {
+      "family": "boreal_litter",
+      "variant": 4,
+      "source_sha256": "fa627f145046f4ab0b5e02cfb0a083605c2acf25c255d6e5e13c19fc61be8938",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_temperate_litter_01": {
+      "family": "temperate_litter",
+      "variant": 1,
+      "source_sha256": "41bb900575819d88a1cb6dcabccd4e0bfaeb3a2d05efeb5f522b570ddb29dfe2",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_temperate_litter_02": {
+      "family": "temperate_litter",
+      "variant": 2,
+      "source_sha256": "62b1d48cf6a7c097b507b39263e3d443aa0ffc1ee99ceada665e0e74f72be2ef",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_temperate_litter_03": {
+      "family": "temperate_litter",
+      "variant": 3,
+      "source_sha256": "da021faf0cf6150fbe82d138067ad148ed146996ffba10d22f8a5d8e419a331f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_temperate_litter_04": {
+      "family": "temperate_litter",
+      "variant": 4,
+      "source_sha256": "b9183a1c7c7280772c61ceb8d832d1a4ba0a91fe5412dbc1b4081e83fcc4934d",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_conifer_litter_01": {
+      "family": "conifer_litter",
+      "variant": 1,
+      "source_sha256": "b57bf7c090950d0b4eab8a211b5c78cd65e47742c2b5aa47e4c5b2cbcf4bbe52",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_conifer_litter_02": {
+      "family": "conifer_litter",
+      "variant": 2,
+      "source_sha256": "add408a7aad7de8721ff1a92deb9c424270a74f34fae9b8a6e3210e43ce05d5b",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_conifer_litter_03": {
+      "family": "conifer_litter",
+      "variant": 3,
+      "source_sha256": "f76c4f3ca5cd05d2603859f7e776822e4fb1dc99e52f6c5698145fb2f1fc768c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_conifer_litter_04": {
+      "family": "conifer_litter",
+      "variant": 4,
+      "source_sha256": "e87d8d14c6a5e99c22880a814cb0d29440348b86e76fa185760fa45b8bd55ae4",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_subtropical_humus_01": {
+      "family": "subtropical_humus",
+      "variant": 1,
+      "source_sha256": "d5824d6550b18c36885ca7c60b9f75ae1d27215fe50514696e7ba9456aeb4293",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_subtropical_humus_02": {
+      "family": "subtropical_humus",
+      "variant": 2,
+      "source_sha256": "b39383521778ca23d3b8079e818590eb749715712e2de86364cf24ec67ed3baa",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_subtropical_humus_03": {
+      "family": "subtropical_humus",
+      "variant": 3,
+      "source_sha256": "a6f344e0b1a26df34db70ee4c3476fd6290fcc40ee1b3d11fd9932ec341c8f50",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_subtropical_humus_04": {
+      "family": "subtropical_humus",
+      "variant": 4,
+      "source_sha256": "04a07413abb41f256d4a147265f29a65a525604923aadf473a923f3ec1a6b65e",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_tropical_moist_humus_01": {
+      "family": "tropical_moist_humus",
+      "variant": 1,
+      "source_sha256": "d0b99a2ce48ee8e2f8f0395defc081bb99bb05028bdeb3ca34d3c58921802cba",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_tropical_moist_humus_02": {
+      "family": "tropical_moist_humus",
+      "variant": 2,
+      "source_sha256": "ef9618081c01665df94724b1002756d3bae597b3584e1a783a79529b9fbc0a41",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_tropical_moist_humus_03": {
+      "family": "tropical_moist_humus",
+      "variant": 3,
+      "source_sha256": "550a4eccfff6c42ddd2995cb45f6d0369341a81ee04cff9ea72047ea3144e44e",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_tropical_moist_humus_04": {
+      "family": "tropical_moist_humus",
+      "variant": 4,
+      "source_sha256": "6c16da40de64c17174dfdd71e5ea160b868597bda66195152563a74270420c43",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dry_woodland_litter_01": {
+      "family": "dry_woodland_litter",
+      "variant": 1,
+      "source_sha256": "d178c92cdffb25f33233d7b78958562f9bc47dd404a0190fdb6e2a29e922a199",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dry_woodland_litter_02": {
+      "family": "dry_woodland_litter",
+      "variant": 2,
+      "source_sha256": "2cf3b7b3a4b11c0dae8850416994b79bab9d4de704d94eb643dbed47c22c4fab",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dry_woodland_litter_03": {
+      "family": "dry_woodland_litter",
+      "variant": 3,
+      "source_sha256": "66a083d373db5a2b7ec320558cf54bd0430b470c02583439a704bba114100499",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_dry_woodland_litter_04": {
+      "family": "dry_woodland_litter",
+      "variant": 4,
+      "source_sha256": "16402e09ad68701b31f800a4ee5d9426a24072e6a929f915f7e18ad7406d6efa",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_savanna_red_soil_01": {
+      "family": "savanna_red_soil",
+      "variant": 1,
+      "source_sha256": "29711085cf16a5c4a2dd9311c80cdb70c0953b066645e3ebb5849badd280039c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_savanna_red_soil_02": {
+      "family": "savanna_red_soil",
+      "variant": 2,
+      "source_sha256": "e346d6fbfb29982deba0f39784970a066e14a2fa095bf8d2d8b6f640713921bb",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_savanna_red_soil_03": {
+      "family": "savanna_red_soil",
+      "variant": 3,
+      "source_sha256": "dcf3485441fba5a318ee01782cfb07a2e42e424b1b441fb8cc6601c63ed3b412",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_savanna_red_soil_04": {
+      "family": "savanna_red_soil",
+      "variant": 4,
+      "source_sha256": "8c0d724d02c880e95d4c5803a79404879523127a3e5b61c69d4854c2001da37b",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_flood_meadow_01": {
+      "family": "flood_meadow",
+      "variant": 1,
+      "source_sha256": "a85b4cc925158741d931e4b96bff73c4d8e6afb563ec0c7911a8481843041fdf",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_flood_meadow_02": {
+      "family": "flood_meadow",
+      "variant": 2,
+      "source_sha256": "a24f3f2d8c72a9801fa417fe2cae011410d9b33dfa548ada2935474849ebf9aa",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_flood_meadow_03": {
+      "family": "flood_meadow",
+      "variant": 3,
+      "source_sha256": "13c5a72f42fc88aabd5b25957682e83027208c63e351abde75513619817ff464",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_flood_meadow_04": {
+      "family": "flood_meadow",
+      "variant": 4,
+      "source_sha256": "ec263729e5aacffa9322a84476f2ee15e1f3ad7a3eda7f635ab70c703767788a",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alluvial_loam_01": {
+      "family": "alluvial_loam",
+      "variant": 1,
+      "source_sha256": "898a431d1685e43e2808abf440c09d66c111a5453d09cb19a8dc79b2181ff240",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alluvial_loam_02": {
+      "family": "alluvial_loam",
+      "variant": 2,
+      "source_sha256": "d8e1d1ec153ddf991613e37d3321525498138691eac8a69ce6d9183eea7848d6",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alluvial_loam_03": {
+      "family": "alluvial_loam",
+      "variant": 3,
+      "source_sha256": "11865cb6533d872884ac22195393101f2b4e66e4cf6718916a7f41a5d618779f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alluvial_loam_04": {
+      "family": "alluvial_loam",
+      "variant": 4,
+      "source_sha256": "fa3a84b0d43a924aa6529bb0a91ed9f87511277a5a63bc4c2ba714ea24f279df",
+      "actual_dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "tile_surface_weathered_rock_01": {
+      "family": "weathered_rock",
+      "variant": 1,
+      "source_sha256": "2d8af36a25cc22e871a67c24161c971459fa7ddeb29befa8eeb24f2a2006863e",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_weathered_rock_02": {
+      "family": "weathered_rock",
+      "variant": 2,
+      "source_sha256": "497eb7c2e23c7ef383bc972cd5ea3f6d59d5c460ca4811579aa58006d54c812b",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_weathered_rock_03": {
+      "family": "weathered_rock",
+      "variant": 3,
+      "source_sha256": "992c9b168d79b422bb09aa712772a702d979948fd2a7f6e9b117eaff74f9e735",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_weathered_rock_04": {
+      "family": "weathered_rock",
+      "variant": 4,
+      "source_sha256": "459bc5ead5fd23bdf1399342de61a2b3dd971c189e697e197578e3f7a04a5bbe",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_scree_01": {
+      "family": "alpine_scree",
+      "variant": 1,
+      "source_sha256": "fe3034b4b90cda9bdb59dfee35b9213ca9dede3824f1ba07b3fcda2d2763cd18",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_scree_02": {
+      "family": "alpine_scree",
+      "variant": 2,
+      "source_sha256": "c63aee2f27a93d16f69268095a0d84076c63b6ae296836f4cac35c706bd657a9",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_scree_03": {
+      "family": "alpine_scree",
+      "variant": 3,
+      "source_sha256": "82c2ee583d4bfade3707521944dcafaee4100524839f4931c68f70abb18ebd1b",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    },
+    "tile_surface_alpine_scree_04": {
+      "family": "alpine_scree",
+      "variant": 4,
+      "source_sha256": "6a1b921d108c6e325d254e17d8b7d2d7e3a4e8c886e857b819bee8f1c8464f78",
+      "actual_dimensions": [
+        1254,
+        1254
+      ]
+    }
+  }
+}

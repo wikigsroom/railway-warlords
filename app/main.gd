@@ -69,6 +69,7 @@ var mission_shell: PanelContainer
 var layer_shell: PanelContainer
 var footer_shell: PanelContainer
 var header_shell: PanelContainer
+var war_room=WarRoomScreens.new()
 
 func hud_line(parent: Node, text: String, font_size: int, color: Color = PAPER) -> Label:
 	var line=label(parent,text,font_size,color)
@@ -82,6 +83,7 @@ func _ready() -> void:
 	if not OS.has_feature("mobile"):DisplayServer.window_set_min_size(Vector2i(1280,720))
 	Engine.max_fps=60
 	assets=AssetLibrary.new()
+	war_room.app=self
 	if mobile_layout():settings.ui_scale=1.2
 	var args=OS.get_cmdline_user_args()
 	if "--qa-session" in args and qa_save_path.is_empty():qa_save_path="user://qa/native_%d"%Time.get_ticks_usec()
@@ -106,6 +108,8 @@ func _ready() -> void:
 	if "--capture" in args:capture_frame.call_deferred()
 	if "--ui-test" in args:ui_smoke.call_deferred()
 	if "--progression-ui-test" in args:progression_ui_smoke.call_deferred()
+	if "--war-room-test" in args:WarRoomQA.run.call_deferred(self)
+	if "--terrain-surface-test" in args:TerrainSurfaceQA.run.call_deferred(self)
 	if "--benchmark" in args:benchmark.call_deferred()
 	if "--capacity-benchmark" in args:CapacityBenchmark.run.call_deferred(self)
 	if "--unit-layer-test" in args:UnitLayerQA.run.call_deferred(self)
@@ -231,9 +235,9 @@ func show_home() -> void:
 	var spacer=Control.new();spacer.size_flags_vertical=Control.SIZE_EXPAND_FILL;v.add_child(spacer)
 	var hero=row(v);hero.size_flags_vertical=Control.SIZE_EXPAND;hero.add_theme_constant_override("separation",24)
 	var dossier=ui_panel(hero,"ui_paper_panel",Color(1.0,1.0,1.0,.93),18);dossier.custom_minimum_size=Vector2(560,270);dossier.size_flags_horizontal=Control.SIZE_EXPAND_FILL
-	var dossier_copy=column(dossier);ui_kicker(dossier_copy,"战区档案 · 真实铁路与行政区划",Color("75633f"),14);label(dossier_copy,"亚洲战场总览",38,INK);ui_rule(dossier_copy,Color("9b8a64"));label(dossier_copy,"从鸦片战争、太平天国、义和团、护法、北伐到中日战场，按时间锚点进入局部战区。",21,Color("4e5c58"));label(dossier_copy,"蜂窝操作格保持统一，海岸、河流、铁路、城镇和势力边界来自对应时代的真实地理资料。",18,Color("65736d"))
+	var dossier_copy=column(dossier);ui_kicker(dossier_copy,"战区档案 · 地理与铁路",Color("75633f"),14);label(dossier_copy,"亚洲战场总览",38,INK);ui_rule(dossier_copy,Color("9b8a64"));label(dossier_copy,"从鸦片战争、太平天国、义和团、护法、北伐到中日战场，按时间锚点进入局部战区。",21,Color("4e5c58"));label(dossier_copy,"沿真实海岸、河流与铁路争夺城市节点；各时代控制、战术部署与军力采用剧本抽象。",18,Color("65736d"))
 	var menu=column(hero);menu.custom_minimum_size.x=390;menu.add_theme_constant_override("separation",6);ui_kicker(menu,"主战场",UI_BRASS_BRIGHT,14)
-	for item in [["战役","18场省级战区任务","campaign"],["自由世界","7个亚洲时间锚点 · 多方角逐","conquest"],["军团挑战","12项标准化战术训练","legion"]]:
+	for item in [["战役","%d场局部战区任务"%war_room.scenario_ids("campaign").size(),"campaign"],["自由世界","7个亚洲时间锚点 · 3个军阀开局","conquest"],["军团挑战","%d项标准化战术训练"%war_room.scenario_ids("legion").size(),"legion"]]:
 		var main_button=button(menu,item[0],func():show_scenario_browser(item[2]));main_button.custom_minimum_size=Vector2(390,70);main_button.add_theme_font_size_override("font_size",int(26*settings.ui_scale));main_button.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 		label(menu,item[1],15,UI_MUTED)
 	var links=row(v)
@@ -242,34 +246,7 @@ func show_home() -> void:
 	if not OS.has_feature("mobile"):button(v,"退出",func():get_tree().quit()).custom_minimum_size.x=120
 
 func show_scenario_browser(mode: String) -> void:
-	new_screen();background("background_"+mode)
-	var m=margin(screen,36);m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);var v=column(m)
-	var heading=row(v);label(heading,{"campaign":"战役档案","conquest":"时代征服","legion":"军团训练"}[mode],40);button(heading,"返回",show_home)
-	var intro={"campaign":"从鸦片战争、太平天国、义和团、护法、北伐到中日战场；每场任务限制在不超过三个历史省级区域。","conquest":"选择1840—1940亚洲时间锚点和阵营；城市经济、铁路运输、外交、补给与战争疲劳共同决定战局。","legion":"使用标准化成长快照，训练组合兵种、压制、抢修与保全行动。"}[mode]
-	label(v,intro,23,Color("c0c4ac"))
-	var diff=row(v);label(diff,"难度",22)
-	var options=OptionButton.new();options.custom_minimum_size=Vector2(240,64)
-	for text in ["普通 · 成长档案","困难 · 敌军攻击 +10%","挑战 · 标准化成长"]:options.add_item(text)
-	options.select(["normal","hard","challenge"].find(difficulty));options.item_selected.connect(func(index):difficulty=["normal","hard","challenge"][index]);diff.add_child(options)
-	if mode=="legion":diff.hide()
-	var list=scroll_column(v)
-	for id in content.scenarios:
-		var recipe=content.scenarios[id]
-		if recipe.mode!=mode:continue
-		var card=PanelContainer.new();list.add_child(card);var c=column(card);var top=row(c)
-		label(top,recipe.name,28)
-		var stars=int(profiles.profile.victories.get(id+":"+difficulty,0));label(top,"★".repeat(stars),24,BRASS)
-		label(c,"%s  ·  %s  ·  %d 回合"%[recipe.anchor_date,content.maps[recipe.map_id].name,recipe.round_limit],20,Color("aab49e"))
-		var description={"capture":"突破城防并占领目标","hold":"占领并连续守住目标","escort":"保护指定编队抵达接应点","survive":"保全主力至局势事件结束","repair":"派出工兵抢通受损铁路","destroy":"消灭目标编队","capture_commander":"俘获或击溃指定将领","unify":"统一战略节点，或在期限内以积分获胜"}.get(recipe.objective_type,"完成目标")
-		label(c,description,22)
-		var actions=row(c)
-		var unlocked=mode!="campaign" or profiles.profile.campaign_unlocked.has(id)
-		if mode=="conquest":
-			var playable=content.playable_factions(id)
-			var factions=OptionButton.new();factions.custom_minimum_size=Vector2(280,64)
-			for owner in playable:factions.add_item(content.definition("factions",owner).get("name",owner))
-			actions.add_child(factions);button(actions,"开始征服",func():start_game(id,playable[factions.selected]),not playable.is_empty())
-		else:button(actions,"编组并训练" if mode=="legion" else ("开始任务" if unlocked else "完成前置任务后解锁"),func():if mode=="legion":show_legion_deployment(id) else:start_game(id,recipe.player_default),unlocked).size_flags_horizontal=Control.SIZE_EXPAND_FILL
+	war_room.show_browser(mode)
 
 func start_game(id: String, owner: String, deployment: Array = [], general_ids: Array = []) -> void:
 	var start_profile=profiles.profile.duplicate(true)
@@ -301,7 +278,7 @@ func build_battle() -> void:
 	layer_shell=ui_panel(screen,"ui_hud_plate",Color.WHITE,4);layer_shell.z_index=30;layer_shell.anchor_left=1;layer_shell.anchor_right=1;layer_shell.offset_left=-110;layer_shell.offset_right=-12
 	var layers=scroll_column(layer_shell);layers.set_meta("hud_layers",true);layers.add_theme_constant_override("separation",3)
 	for item in [["势力",func():map_view.show_control=not map_view.show_control;map_view.queue_redraw();map_view.minimap.queue_redraw()],["地形",func():map_view.show_terrain=not map_view.show_terrain;map_view.queue_redraw()],["地名",func():map_view.show_places=not map_view.show_places;map_view.queue_redraw()],["查地名",func():selected_unit_id="";selected_city_id="";selected_poi_id="";pending={};order_mode="";refresh_battle();toast("点选村镇图标，查看地方与归属")],["铁路",func():map_view.show_rail=not map_view.show_rail;map_view.queue_redraw()],["补给",func():map_view.show_supply=not map_view.show_supply;map_view.queue_redraw()],["全图",show_strategic_map]]:hud_button(layers,item[0],item[1])
-	var mini=StrategicMinimap.new();screen.add_child(mini);mini.z_index=30;mini.anchor_left=0;mini.anchor_right=0;mini.anchor_top=0;mini.anchor_bottom=0;mini.focused.connect(func(world):map_view.camera=world;map_view.clamp_camera();map_view.queue_redraw());map_view.minimap=mini
+	var mini=StrategicMinimap.new();screen.add_child(mini);mini.z_index=30;mini.anchor_left=0;mini.anchor_right=0;mini.anchor_top=0;mini.anchor_bottom=0;mini.focused.connect(func(world):map_view.focus_world(world));map_view.minimap=mini
 	inspector_shell=ui_panel(screen,"ui_hud_plate",Color.WHITE,10);inspector_shell.z_index=30;inspector=scroll_column(inspector_shell);inspector.add_theme_constant_override("separation",5)
 	footer_shell=ui_panel(screen,"ui_hud_plate",Color.WHITE,8);footer_shell.z_index=30;footer_shell.anchor_top=1;footer_shell.anchor_bottom=1;footer_shell.anchor_right=1;footer_shell.offset_left=12;footer_shell.offset_right=-12;footer_shell.grow_vertical=Control.GROW_DIRECTION_BEGIN
 	var c=column(footer_shell);c.add_theme_constant_override("separation",2);orders=HFlowContainer.new();orders.add_theme_constant_override("h_separation",12);orders.size_flags_horizontal=Control.SIZE_EXPAND_FILL;c.add_child(orders);notice=label(c,"选择部队 · 选择目标 · 再次点击确认；拖动平移，滚轮缩放。",14,UI_MUTED)
@@ -552,6 +529,7 @@ func terrain_details(hex: Vector2i) -> void:
 		label(inspector,movement[0]+(" · 地形消耗 %d 行动点"%cost if cost>0 else " · 无法通行"),18)
 	label(inspector,"地形掩护  +%d 防御"%int(terrain.get("cover_defense",0)),19,BRASS)
 	label(inspector,"天气、敌军控制区和线路状态会进一步影响通行。",16,UI_MUTED)
+	button(inspector,"地形图鉴",show_terrain_atlas)
 	button(inspector,"返回待命部队",select_next_unit)
 
 func geography_details(poi: Dictionary) -> void:
@@ -574,7 +552,7 @@ func place_details(poi: Dictionary) -> void:
 		label(inspector,"周边战局势力："+StateAccess.faction_name(s,city.owner_id,content),21,BRASS)
 		var km=poi.at.distance_to(Vector2(city.render_position[0],city.render_position[1]))*s.map.hex_radius_m/(48.0*1000)
 		label(inspector,"邻近据点：%s · 约 %.1f 公里"%[city.name,km],20)
-		button(inspector,"定位邻近据点",func():map_view.camera=HexGrid.to_world(HexGrid.coordinate(city.position));map_view.clamp_camera();selected_poi_id="";selected_city_id=city.id;refresh_battle())
+		button(inspector,"定位邻近据点",func():map_view.focus_world(HexGrid.to_world(HexGrid.coordinate(city.position)));selected_poi_id="";selected_city_id=city.id;refresh_battle())
 	else:label(inspector,"地方参考节点 · 未列入当前战区据点",20)
 	label(inspector,"地理位置约 %.3f°E / %.3f°N"%[poi.longitude,poi.latitude],18)
 	label(inspector,"村镇符号表示聚落位置；色块随战局控制变化。",18,Color("74694f"))
@@ -622,8 +600,9 @@ func refresh_orders() -> void:
 	hud_button(orders,"待命部队",select_next_unit,acting)
 	var end=hud_button(orders,"结束回合  →",request_end_phase,acting);end.custom_minimum_size.x=116 if mobile_layout() else 106;end.add_theme_stylebox_override("normal",box(Color(.38,.31,.22,.82),UI_BRASS,0,3))
 
-func command_button(parent: Node, text: String, c: Dictionary) -> Button:
+func command_button(parent: Node, text: String, c: Dictionary, reason: Label=null) -> Button:
 	var control=button(parent,text,func():close_overlay();match_controller.request_command(c),false,"正在核对命令条件")
+	if is_instance_valid(reason):control.set_meta("validation_label",reason)
 	update_command_button(control,c)
 	return control
 
@@ -634,6 +613,10 @@ func update_command_button(control: Button, c: Dictionary) -> void:
 	if not is_instance_valid(control) or token!=match_controller.generation:job.cancel();return
 	if not is_same(s,match_controller.state):control.tooltip_text="战局已经更新，请重新选择";return
 	control.disabled=not job.result.get("valid",false);control.tooltip_text=job.result.get("reason","")
+	var validation_label=control.get_meta("validation_label") if control.has_meta("validation_label") else null
+	if is_instance_valid(validation_label):
+		validation_label.text=control.tooltip_text if control.disabled else "条件满足 · 可下达命令"
+		validation_label.add_theme_color_override("font_color",Color("915f49") if control.disabled else Color("4e715e"))
 
 func on_hex_selected(hex: Vector2i) -> void:
 	if match_controller.presentation_busy or match_controller.paused or match_controller.command_busy:return
@@ -667,7 +650,7 @@ func select_next_unit() -> void:
 	var s=match_controller.state;var candidates=s.units.filter(func(u):return u.owner_id==s.player_faction_id and u.position!=null and (u.ap_left>0 or u.attack_ready))
 	if candidates.is_empty():toast("所有部队已完成本阶段行动");return
 	var index=candidates.find(StateAccess.find(s,"units",selected_unit_id));var u=candidates[(index+1)%candidates.size()]
-	selected_unit_id=u.id;selected_city_id="";selected_poi_id="";pending={};order_mode="";map_view.camera=HexGrid.to_world(HexGrid.coordinate(u.position));map_view.clamp_camera();refresh_battle()
+	selected_unit_id=u.id;selected_city_id="";selected_poi_id="";pending={};order_mode="";map_view.focus_world(HexGrid.to_world(HexGrid.coordinate(u.position)));refresh_battle()
 
 func issue(type: String, arguments: Dictionary = {}) -> void:match_controller.request_command(match_controller.command(type,arguments))
 
@@ -680,9 +663,14 @@ func modal(title: String) -> VBoxContainer:
 	if is_instance_valid(match_controller) and not match_controller.state.is_empty() and match_controller.state.status=="playing":match_controller.paused=true
 	if is_instance_valid(map_view):map_view.playback_paused=true
 	var shade=ColorRect.new();shade.color=Color(0,0,0,.65);shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);overlay.add_child(shade)
-	var m=margin(overlay,42);m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	var shell=ui_panel(m,"ui_steel_panel",Color.WHITE,8)
-	var panel=ui_panel(shell,"ui_paper_panel",Color(1.0,1.0,1.0,.97),12)
+	var m=margin(overlay,24);m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var center=CenterContainer.new();m.add_child(center)
+	var shell=ui_panel(center,"ui_hud_plate",Color.WHITE,7)
+	# Bound the sheet to the actual viewport; the content scrolls independently
+	# while the title and Close action remain reachable on touch and large type.
+	var insets=safe_insets()
+	shell.custom_minimum_size=Vector2(minf(1440*minf(settings.ui_scale,1.25),get_viewport_rect().size.x-48-insets.x-insets.z),minf(880*minf(settings.ui_scale,1.25),get_viewport_rect().size.y-48-insets.y-insets.w))
+	var panel=ui_panel(shell,"ui_dialog_frame",Color.WHITE,16)
 	panel.set_meta("ui_light",true)
 	var v=column(panel);v.set_meta("ui_light",true);var heading=row(v);label(heading,title,34,Color("66533b"));button(heading,"关闭",close_overlay)
 	return scroll_column(v)
@@ -694,14 +682,7 @@ func close_overlay() -> void:
 		if is_instance_valid(map_view):map_view.playback_paused=false
 
 func show_recruit(city_id: String) -> void:
-	var v=modal("征募部队 · 三条生产队列")
-	for d in content.tables.units:
-		var card=row(v);image_view(card,assets.texture("unit","unit_"+d.id+"_se"),Vector2(110,100));var info=column(card);label(info,d.name,25);label(info,"基础兵力%d · 攻击%d · %d阶段"%[d.hp,d.attack,d.build_turns],19)
-		for stack in range(1,d.max_stack+1):
-			var c=match_controller.command("Recruit",{"city_id":city_id,"def_id":d.id,"stack":stack});var cost=EconomyRules.recruit_cost(match_controller.state,match_controller.state.player_faction_id,d.id,stack,null,content)
-			command_button(card,"%d层\n%d费 / %d械"%[stack,cost.cash,cost.arms],c)
-	for elite in content.tables.elite_variants:
-		var card=row(v);image_view(card,assets.texture("unit","unit_"+elite.id+"_se"),Vector2(100,100));label(card,elite.name,24);command_button(card,"征募精锐",match_controller.command("Recruit",{"city_id":city_id,"def_id":elite.base_unit,"elite_id":elite.id,"stack":1}))
+	war_room.show_recruit(city_id)
 
 func show_legion_deployment(id: String) -> void:
 	var recipe=content.scenarios[id];legion_draft={};legion_generals=["wu_peifu","feng_yuxiang"].slice(0,recipe.general_slots)
@@ -768,18 +749,10 @@ func update_legion_draft(recipe: Dictionary) -> void:
 	legion_draft_label.text="部署预算 %d / %d · 精锐 %d / %d\n%s"%[legion_spent(),recipe.deployment_cash_budget,elites,recipe.elite_slots," · ".join(parts)]
 
 func show_buildings(city_id: String) -> void:
-	var v=modal("建设设施 · 升级中原设施继续工作")
-	label(v,"每城4个一般设施槽；工事不占槽。建设完成后才生效。",22)
-	for d in content.tables.buildings:
-		var card=row(v);image_view(card,assets.texture("building","building_"+d.id+"_intact"),Vector2(100,90));var info=column(card);label(info,d.name,25);label(info,"一级 %d军费 / %d军械 · %d阶段"%[d.cost_cash,d.cost_arms,d.build_turns],19)
-		command_button(card,"建设 / 升级",match_controller.command("Build",{"city_id":city_id,"def_id":d.id}))
-		var city=StateAccess.find(match_controller.state,"cities",city_id)
-		if EconomyRules.building_level(city,d.id)>0:command_button(card,"拆除",match_controller.command("DemolishBuilding",{"city_id":city_id,"def_id":d.id}))
+	war_room.show_buildings(city_id)
 
 func show_generals(unit_id: String) -> void:
-	var v=modal("任命将领 · 本阶段不能再攻击")
-	for g in match_controller.state.generals:
-		var d=content.definition("generals",g.id);var r=row(v);image_view(r,assets.texture("portrait","portrait_"+g.id),Vector2(100,115));label(r,d.name+" · 军衔%d"%g.rank,25);command_button(r,"任命",match_controller.command("AssignGeneral",{"unit_id":unit_id,"general_id":g.id}))
+	war_room.show_generals(unit_id)
 
 func show_rail_destinations(unit_id: String) -> void:
 	var v=modal("铁路运输 · 区间和车站共同限制运力")
@@ -808,15 +781,7 @@ func show_trade(city_id: String) -> void:
 		command_button(r,"出售20",match_controller.command("Trade",{"city_id":city_id,"resource":resource,"amount":20,"buy":false}))
 
 func show_diplomacy() -> void:
-	var s=match_controller.state;var v=modal("外交 · 提案、宣战和援助各有独立次数")
-	for f in s.factions:
-		if f.id==s.player_faction_id or f.eliminated:continue
-		var r=StateAccess.relation(s,s.player_faction_id,f.id);var result=DiplomacyRules.acceptance(s,s.player_faction_id,f.id);var c=column(v)
-		label(c,StateAccess.faction_name(s,f.id,content)+" · "+{"WAR":"交战","NEUTRAL":"中立","TRUCE":"停战","ALLIANCE":"同盟"}[r.state],26)
-		label(c,"提案评分%d / 接受门槛50   %s"%[result.score,"、".join(result.reasons)],19)
-		var buttons=row(c)
-		for action in [["declare_war","宣战"],["truce","停战"],["alliance","结盟"],["break","通知解约"]]:command_button(buttons,action[1],match_controller.command("Diplomacy",{"target_faction_id":f.id,"action":action[0],"passage":true,"supply":true}))
-		command_button(buttons,"援助50军费",match_controller.command("Diplomacy",{"target_faction_id":f.id,"action":"aid","resources":{"cash":50}}))
+	war_room.show_diplomacy()
 
 func show_save_dialog(writing: bool) -> void:
 	var v=modal("保存战局" if writing else "读取战局")
@@ -854,18 +819,7 @@ func load_match_snapshot(slot: String) -> void:
 	match_controller.load_prepared_state(job.result.state,job.result.get("presentation",{}));build_battle();map_view.focus_player();audio.set_music("battle")
 
 func show_headquarters() -> void:
-	new_screen();background("background_campaign");var m=margin(screen,36);m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);var v=column(m);var h=row(v)
-	label(h,"指挥部 · 功勋 %d / 研究 %d"%[profiles.profile.merit,profiles.profile.research],34);button(h,"返回",show_home)
-	label(v,"成长仅影响下一局；挑战与军团训练使用标准化快照。",22,BRASS)
-	var list=scroll_column(v)
-	for g in content.tables.generals:
-		var r=row(list);image_view(r,assets.texture("portrait","portrait_"+g.id),Vector2(92,112));var text=column(r);label(text,g.name+" · 军衔%d"%int(profiles.profile.general_ranks.get(g.id,0)),25);label(text,"经验 %d · 步%d 炮%d 骑%d"%[int(profiles.profile.general_xp.get(g.id,0)),g.stars.infantry,g.stars.artillery,g.stars.cavalry],19)
-		button(r,"晋升",func():if not profiles.upgrade_general(g.id):show_profile_error() else:show_headquarters())
-		button(r,"战法 / 勋章",func():show_general_growth(g.id))
-	label(list,"七系科技",32,BRASS)
-	for d in content.tables.technologies:
-		var rank=int(profiles.profile.tech_ranks.get(d.id,0));var r=row(list);image_view(r,assets.texture("icon","icon_tech_"+d.branch),Vector2(58,58));label(r,d.name+" · %d / 3"%rank,23)
-		button(r,"研究 %d"%int(d.cost_research_by_rank[rank]) if rank<3 else "已完成",func():if not profiles.upgrade_tech(d.id):show_profile_error() else:show_headquarters(),rank<3)
+	war_room.show_headquarters()
 
 func show_profile_error() -> void:var v=modal("指挥部提示");label(v,profiles.error,26)
 
@@ -926,13 +880,16 @@ func show_event_log() -> void:
 func show_strategic_map() -> void:
 	var v=modal("战略全图 · 点击定位")
 	var mini=StrategicMinimap.new();mini.custom_minimum_size=Vector2(900,540);v.add_child(mini);mini.update_map(match_controller.state,content,map_view)
-	mini.focused.connect(func(world):map_view.camera=world;map_view.clamp_camera();map_view.queue_redraw();close_overlay())
+	mini.focused.connect(func(world):map_view.focus_world(world);close_overlay())
 	label(v,"城市位置取真实地理坐标；不同阵营以指挥标记颜色区分。",22,BRASS)
 
 func show_manual() -> void:
 	var v=modal("作战手册")
+	button(v,"地形图鉴 · 20 类区域地表",show_terrain_atlas)
 	for item in [["基本操作","鼠标单击选中部队或城市，拖动地图平移，滚轮缩放。Android使用单指点选与拖动、双指缩放。选择目标后在下方确认命令。Tab切换待命部队，空格结束本方阶段，Esc打开暂停。"],["进攻与反击","移动可分段。每部队每阶段一次主攻击，攻击后行动点归零。攻击耗1弹药；反击使用命中后的兵力和压制，每整回合一次，机枪两次。伤害预览显示双方预计损失。"],["城市与城防","先击破城防，再由步兵、骑兵、工兵或装甲车占领空城。炮兵与舰艇不能占领。驻军受到城防实际损失15%的附带伤害；城防未破时不反击。失城会取消当地队列并降低稳定。"],["军需与补员","每本方阶段结算收入、军饷、粮食与弹药。地面补给半径为6移动成本，安全铁路延长覆盖。储粮降至0后持续断粮，第二个断粮阶段起损失兵力。在本方补给城市可消耗兵源和资源补员。"],["铁路与工兵","未行动部队在本方车站可运输，车站池与铁路区间分别限额。敌军控制区或受损轨道阻断运输。工兵靠近线路可修复；桥梁用两阶段，普通线路一阶段。工兵离开时任务暂停。"],["指挥与成长","将领专长、被动、军衔与勋章影响所属部队。主动战法消耗指挥点并有冷却。指挥部科技与将领成长冻结于开局快照。精锐需科技二级，并在战役章节结业后解锁。"],["外交与航空","停战最低3回合，同盟最低6回合，解约有2回合通知。借道运输后本阶段不能宣战。机场只能在剧本允许的城市建造，侦察揭示区域，轰炸消耗弹药、资源与出动数，雨天停飞轰炸。"],["历史与地图","海岸、河流来自真实地理，城市采用真实位置，铁路按年代开放。编队规模、交战部署、天气循环、关卡目标属于游戏抽象。军团挑战是训练题，不声称史实战役。征服首版使用中国东部战区。"]]:
 		label(v,item[0],28,BRASS);label(v,item[1],22)
+
+func show_terrain_atlas() -> void:war_room.show_terrain_atlas()
 
 func show_tutorial() -> void:
 	var v=modal("前线指挥 · 首次操作")
@@ -1142,12 +1099,12 @@ func ui_nodes(parent: Node) -> Array:
 	for child in parent.get_children():result.append(child);result.append_array(ui_nodes(child))
 	return result
 
-func capture_ui(path: String) -> bool:
+func capture_ui(path: String, surface: String="legion_deployment") -> bool:
 	await get_tree().process_frame;await get_tree().process_frame;await RenderingServer.frame_post_draw
 	DirAccess.make_dir_recursive_absolute(path.get_base_dir())
 	var error=get_viewport().get_texture().get_image().save_png(path)
 	var metadata=FileAccess.open(path.get_basename()+".json",FileAccess.WRITE)
-	if metadata:metadata.store_string(JSON.stringify({"viewport":get_viewport_rect().size,"window":DisplayServer.window_get_size(),"ui_scale":settings.ui_scale,"mobile_layout_profile":mobile_layout(),"physical_android_device_tested":OS.has_feature("android"),"content_hash":content.content_hash,"build_version":ContentRegistry.APP_VERSION,"raw_godot_capture":true,"qa_save_isolated":not qa_save_path.is_empty(),"surface":"legion_deployment"},"\t"));metadata.close()
+	if metadata:metadata.store_string(JSON.stringify({"viewport":get_viewport_rect().size,"window":DisplayServer.window_get_size(),"ui_scale":settings.ui_scale,"mobile_layout_profile":mobile_layout(),"physical_android_device_tested":OS.has_feature("android"),"content_hash":content.content_hash,"build_version":ContentRegistry.APP_VERSION,"raw_godot_capture":true,"qa_save_isolated":not qa_save_path.is_empty(),"surface":surface},"\t"));metadata.close()
 	return error==OK
 
 func progression_ui_smoke() -> void:

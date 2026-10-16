@@ -1,0 +1,2065 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-16T08:26:59.815416+00:00",
+  "checks": [
+    {
+      "name": "geographic_original_bytes_preserved",
+      "passed": true
+    },
+    {
+      "name": "historical_precision_is_not_overclaimed",
+      "passed": true
+    },
+    {
+      "name": "exact_original_polygon_membership:asia_strategic",
+      "passed": true,
+      "cells": 3391
+    },
+    {
+      "name": "type_semantics_and_protected_features:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:asia_strategic",
+      "passed": true,
+      "maximum_world_distance": 77.746
+    },
+    {
+      "name": "exact_original_polygon_membership:conquest_china",
+      "passed": true,
+      "cells": 53855
+    },
+    {
+      "name": "type_semantics_and_protected_features:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:conquest_china",
+      "passed": true,
+      "maximum_world_distance": 95.7444
+    },
+    {
+      "name": "exact_original_polygon_membership:hankou",
+      "passed": true,
+      "cells": 355
+    },
+    {
+      "name": "type_semantics_and_protected_features:hankou",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:hankou",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:hankou",
+      "passed": true,
+      "maximum_world_distance": 94.372
+    },
+    {
+      "name": "exact_original_polygon_membership:jingfeng",
+      "passed": true,
+      "cells": 45368
+    },
+    {
+      "name": "type_semantics_and_protected_features:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:jingfeng",
+      "passed": true,
+      "maximum_world_distance": 95.3164
+    },
+    {
+      "name": "exact_original_polygon_membership:jingjin",
+      "passed": true,
+      "cells": 23135
+    },
+    {
+      "name": "type_semantics_and_protected_features:jingjin",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:jingjin",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:jingjin",
+      "passed": true,
+      "maximum_world_distance": 95.2878
+    },
+    {
+      "name": "exact_original_polygon_membership:ningpu",
+      "passed": true,
+      "cells": 406
+    },
+    {
+      "name": "type_semantics_and_protected_features:ningpu",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:ningpu",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:ningpu",
+      "passed": true,
+      "maximum_world_distance": 93.884
+    },
+    {
+      "name": "all_twenty_subtypes_are_present_in_real_maps",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_temperate_meadow_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_temperate_meadow_01",
+      "passed": true,
+      "contrast_128px": 15.926
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_temperate_meadow_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_temperate_meadow_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_temperate_meadow_02",
+      "passed": true,
+      "contrast_128px": 11.631
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_temperate_meadow_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_temperate_meadow_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_temperate_meadow_03",
+      "passed": true,
+      "contrast_128px": 12.844
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_temperate_meadow_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_temperate_meadow_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_temperate_meadow_04",
+      "passed": true,
+      "contrast_128px": 14.224
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_temperate_meadow_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dry_steppe_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dry_steppe_01",
+      "passed": true,
+      "contrast_128px": 15.815
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dry_steppe_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dry_steppe_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dry_steppe_02",
+      "passed": true,
+      "contrast_128px": 14.001
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dry_steppe_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dry_steppe_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dry_steppe_03",
+      "passed": true,
+      "contrast_128px": 13.348
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dry_steppe_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dry_steppe_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dry_steppe_04",
+      "passed": true,
+      "contrast_128px": 12.539
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dry_steppe_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_desert_steppe_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_desert_steppe_01",
+      "passed": true,
+      "contrast_128px": 11.896
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_desert_steppe_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_desert_steppe_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_desert_steppe_02",
+      "passed": true,
+      "contrast_128px": 9.562
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_desert_steppe_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_desert_steppe_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_desert_steppe_03",
+      "passed": true,
+      "contrast_128px": 10.433
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_desert_steppe_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_desert_steppe_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_desert_steppe_04",
+      "passed": true,
+      "contrast_128px": 11.11
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_desert_steppe_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dune_sand_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dune_sand_01",
+      "passed": true,
+      "contrast_128px": 8.76
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dune_sand_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dune_sand_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dune_sand_02",
+      "passed": true,
+      "contrast_128px": 8.996
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dune_sand_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dune_sand_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dune_sand_03",
+      "passed": true,
+      "contrast_128px": 7.69
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dune_sand_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dune_sand_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dune_sand_04",
+      "passed": true,
+      "contrast_128px": 8.863
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dune_sand_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_gravel_gobi_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_gravel_gobi_01",
+      "passed": true,
+      "contrast_128px": 14.252
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_gravel_gobi_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_gravel_gobi_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_gravel_gobi_02",
+      "passed": true,
+      "contrast_128px": 16.059
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_gravel_gobi_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_gravel_gobi_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_gravel_gobi_03",
+      "passed": true,
+      "contrast_128px": 13.52
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_gravel_gobi_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_gravel_gobi_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_gravel_gobi_04",
+      "passed": true,
+      "contrast_128px": 14.505
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_gravel_gobi_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_saline_meadow_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_saline_meadow_01",
+      "passed": true,
+      "contrast_128px": 19.672
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_saline_meadow_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_saline_meadow_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_saline_meadow_02",
+      "passed": true,
+      "contrast_128px": 16.964
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_saline_meadow_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_saline_meadow_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_saline_meadow_03",
+      "passed": true,
+      "contrast_128px": 18.544
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_saline_meadow_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_saline_meadow_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_saline_meadow_04",
+      "passed": true,
+      "contrast_128px": 18.311
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_saline_meadow_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_meadow_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_meadow_01",
+      "passed": true,
+      "contrast_128px": 16.289
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_meadow_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_meadow_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_meadow_02",
+      "passed": true,
+      "contrast_128px": 14.025
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_meadow_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_meadow_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_meadow_03",
+      "passed": true,
+      "contrast_128px": 14.702
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_meadow_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_meadow_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_meadow_04",
+      "passed": true,
+      "contrast_128px": 14.479
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_meadow_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_steppe_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_steppe_01",
+      "passed": true,
+      "contrast_128px": 13.423
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_steppe_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_steppe_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_steppe_02",
+      "passed": true,
+      "contrast_128px": 15.228
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_steppe_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_steppe_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_steppe_03",
+      "passed": true,
+      "contrast_128px": 14.685
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_steppe_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_steppe_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_steppe_04",
+      "passed": true,
+      "contrast_128px": 13.383
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_steppe_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_tundra_moss_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_tundra_moss_01",
+      "passed": true,
+      "contrast_128px": 16.367
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_tundra_moss_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_tundra_moss_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_tundra_moss_02",
+      "passed": true,
+      "contrast_128px": 15.633
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_tundra_moss_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_tundra_moss_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_tundra_moss_03",
+      "passed": true,
+      "contrast_128px": 15.218
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_tundra_moss_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_tundra_moss_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_tundra_moss_04",
+      "passed": true,
+      "contrast_128px": 15.947
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_tundra_moss_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_boreal_litter_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_boreal_litter_01",
+      "passed": true,
+      "contrast_128px": 13.419
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_boreal_litter_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_boreal_litter_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_boreal_litter_02",
+      "passed": true,
+      "contrast_128px": 11.941
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_boreal_litter_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_boreal_litter_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_boreal_litter_03",
+      "passed": true,
+      "contrast_128px": 12.025
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_boreal_litter_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_boreal_litter_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_boreal_litter_04",
+      "passed": true,
+      "contrast_128px": 14.315
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_boreal_litter_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_temperate_litter_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_temperate_litter_01",
+      "passed": true,
+      "contrast_128px": 14.509
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_temperate_litter_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_temperate_litter_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_temperate_litter_02",
+      "passed": true,
+      "contrast_128px": 14.683
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_temperate_litter_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_temperate_litter_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_temperate_litter_03",
+      "passed": true,
+      "contrast_128px": 13.135
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_temperate_litter_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_temperate_litter_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_temperate_litter_04",
+      "passed": true,
+      "contrast_128px": 16.947
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_temperate_litter_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_conifer_litter_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_conifer_litter_01",
+      "passed": true,
+      "contrast_128px": 13.799
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_conifer_litter_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_conifer_litter_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_conifer_litter_02",
+      "passed": true,
+      "contrast_128px": 13.392
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_conifer_litter_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_conifer_litter_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_conifer_litter_03",
+      "passed": true,
+      "contrast_128px": 13.359
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_conifer_litter_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_conifer_litter_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_conifer_litter_04",
+      "passed": true,
+      "contrast_128px": 12.319
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_conifer_litter_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_subtropical_humus_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_subtropical_humus_01",
+      "passed": true,
+      "contrast_128px": 15.997
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_subtropical_humus_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_subtropical_humus_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_subtropical_humus_02",
+      "passed": true,
+      "contrast_128px": 15.549
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_subtropical_humus_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_subtropical_humus_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_subtropical_humus_03",
+      "passed": true,
+      "contrast_128px": 13.544
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_subtropical_humus_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_subtropical_humus_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_subtropical_humus_04",
+      "passed": true,
+      "contrast_128px": 12.678
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_subtropical_humus_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_tropical_moist_humus_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_tropical_moist_humus_01",
+      "passed": true,
+      "contrast_128px": 14.357
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_tropical_moist_humus_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_tropical_moist_humus_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_tropical_moist_humus_02",
+      "passed": true,
+      "contrast_128px": 12.814
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_tropical_moist_humus_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_tropical_moist_humus_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_tropical_moist_humus_03",
+      "passed": true,
+      "contrast_128px": 11.356
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_tropical_moist_humus_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_tropical_moist_humus_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_tropical_moist_humus_04",
+      "passed": true,
+      "contrast_128px": 15.448
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_tropical_moist_humus_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dry_woodland_litter_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dry_woodland_litter_01",
+      "passed": true,
+      "contrast_128px": 14.614
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dry_woodland_litter_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dry_woodland_litter_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dry_woodland_litter_02",
+      "passed": true,
+      "contrast_128px": 15.731
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dry_woodland_litter_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dry_woodland_litter_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dry_woodland_litter_03",
+      "passed": true,
+      "contrast_128px": 13.559
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dry_woodland_litter_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_dry_woodland_litter_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_dry_woodland_litter_04",
+      "passed": true,
+      "contrast_128px": 14.658
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_dry_woodland_litter_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_savanna_red_soil_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_savanna_red_soil_01",
+      "passed": true,
+      "contrast_128px": 11.635
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_savanna_red_soil_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_savanna_red_soil_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_savanna_red_soil_02",
+      "passed": true,
+      "contrast_128px": 9.805
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_savanna_red_soil_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_savanna_red_soil_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_savanna_red_soil_03",
+      "passed": true,
+      "contrast_128px": 8.638
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_savanna_red_soil_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_savanna_red_soil_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_savanna_red_soil_04",
+      "passed": true,
+      "contrast_128px": 10.775
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_savanna_red_soil_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_flood_meadow_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_flood_meadow_01",
+      "passed": true,
+      "contrast_128px": 16.008
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_flood_meadow_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_flood_meadow_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_flood_meadow_02",
+      "passed": true,
+      "contrast_128px": 15.522
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_flood_meadow_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_flood_meadow_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_flood_meadow_03",
+      "passed": true,
+      "contrast_128px": 15.794
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_flood_meadow_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_flood_meadow_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_flood_meadow_04",
+      "passed": true,
+      "contrast_128px": 15.282
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_flood_meadow_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alluvial_loam_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alluvial_loam_01",
+      "passed": true,
+      "contrast_128px": 15.386
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alluvial_loam_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alluvial_loam_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alluvial_loam_02",
+      "passed": true,
+      "contrast_128px": 14.939
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alluvial_loam_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alluvial_loam_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alluvial_loam_03",
+      "passed": true,
+      "contrast_128px": 14.094
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alluvial_loam_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alluvial_loam_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alluvial_loam_04",
+      "passed": true,
+      "contrast_128px": 14.162
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alluvial_loam_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_weathered_rock_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_weathered_rock_01",
+      "passed": true,
+      "contrast_128px": 18.244
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_weathered_rock_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_weathered_rock_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_weathered_rock_02",
+      "passed": true,
+      "contrast_128px": 13.908
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_weathered_rock_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_weathered_rock_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_weathered_rock_03",
+      "passed": true,
+      "contrast_128px": 14.791
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_weathered_rock_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_weathered_rock_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_weathered_rock_04",
+      "passed": true,
+      "contrast_128px": 16.283
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_weathered_rock_04",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_scree_01",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_scree_01",
+      "passed": true,
+      "contrast_128px": 20.284
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_scree_01",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_scree_02",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_scree_02",
+      "passed": true,
+      "contrast_128px": 18.001
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_scree_02",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_scree_03",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_scree_03",
+      "passed": true,
+      "contrast_128px": 15.399
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_scree_03",
+      "passed": true
+    },
+    {
+      "name": "source_engine_and_prompt_provenance:tile_surface_alpine_scree_04",
+      "passed": true
+    },
+    {
+      "name": "opaque_full_material_and_readable_reduced_grain:tile_surface_alpine_scree_04",
+      "passed": true,
+      "contrast_128px": 16.796
+    },
+    {
+      "name": "mipmapped_budgeted_native_import:tile_surface_alpine_scree_04",
+      "passed": true
+    },
+    {
+      "name": "eighty_unique_originals_and_reduced_fingerprints",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "scope": "Independent raw-polygon membership, type semantics, map immutability, immutable PNGs, prompt provenance, native imports and reduced-size grain",
+  "totals_by_type": {
+    "weathered_rock": 52573,
+    "boreal_litter": 530,
+    "temperate_litter": 52836,
+    "gravel_gobi": 278,
+    "savanna_red_soil": 159,
+    "tropical_moist_humus": 4920,
+    "dry_steppe": 1082,
+    "flood_meadow": 13,
+    "tundra_moss": 225,
+    "dune_sand": 47,
+    "alpine_scree": 2188,
+    "saline_meadow": 1916,
+    "desert_steppe": 3405,
+    "temperate_meadow": 23,
+    "dry_woodland_litter": 40,
+    "alluvial_loam": 703,
+    "alpine_steppe": 1267,
+    "alpine_meadow": 91,
+    "subtropical_humus": 4005,
+    "conifer_litter": 209
+  },
+  "assignments_by_map": {
+    "asia_strategic": {
+      "weathered_rock": 1558,
+      "boreal_litter": 530,
+      "temperate_litter": 166,
+      "gravel_gobi": 278,
+      "savanna_red_soil": 159,
+      "tropical_moist_humus": 88,
+      "dry_steppe": 132,
+      "flood_meadow": 13,
+      "tundra_moss": 225,
+      "dune_sand": 47,
+      "alpine_scree": 33,
+      "saline_meadow": 5,
+      "desert_steppe": 59,
+      "temperate_meadow": 23,
+      "dry_woodland_litter": 40,
+      "alluvial_loam": 16,
+      "alpine_steppe": 9,
+      "alpine_meadow": 3,
+      "subtropical_humus": 4,
+      "conifer_litter": 3
+    },
+    "conquest_china": {
+      "tropical_moist_humus": 4832,
+      "weathered_rock": 28934,
+      "alpine_scree": 2131,
+      "conifer_litter": 206,
+      "alpine_meadow": 88,
+      "desert_steppe": 3346,
+      "subtropical_humus": 3555,
+      "temperate_litter": 8028,
+      "alpine_steppe": 1258,
+      "dry_steppe": 887,
+      "alluvial_loam": 378,
+      "saline_meadow": 212
+    },
+    "hankou": {
+      "subtropical_humus": 317,
+      "alluvial_loam": 38
+    },
+    "jingfeng": {
+      "temperate_litter": 27050,
+      "weathered_rock": 16936,
+      "dry_steppe": 57,
+      "alluvial_loam": 165,
+      "saline_meadow": 1160
+    },
+    "jingjin": {
+      "weathered_rock": 5131,
+      "temperate_litter": 17363,
+      "dry_steppe": 6,
+      "alpine_scree": 24,
+      "alluvial_loam": 72,
+      "saline_meadow": 539
+    },
+    "ningpu": {
+      "temperate_litter": 229,
+      "weathered_rock": 14,
+      "subtropical_humus": 129,
+      "alluvial_loam": 34
+    }
+  },
+  "image_statistics": [
+    {
+      "id": "tile_surface_temperate_meadow_01",
+      "type": "temperate_meadow",
+      "mean_rgb": [
+        128.31,
+        123.13,
+        71.83
+      ],
+      "luminance_std_128": 15.926
+    },
+    {
+      "id": "tile_surface_temperate_meadow_02",
+      "type": "temperate_meadow",
+      "mean_rgb": [
+        130.95,
+        129.7,
+        76.36
+      ],
+      "luminance_std_128": 11.631
+    },
+    {
+      "id": "tile_surface_temperate_meadow_03",
+      "type": "temperate_meadow",
+      "mean_rgb": [
+        132.03,
+        128.54,
+        76.88
+      ],
+      "luminance_std_128": 12.844
+    },
+    {
+      "id": "tile_surface_temperate_meadow_04",
+      "type": "temperate_meadow",
+      "mean_rgb": [
+        134.92,
+        128.69,
+        75.33
+      ],
+      "luminance_std_128": 14.224
+    },
+    {
+      "id": "tile_surface_dry_steppe_01",
+      "type": "dry_steppe",
+      "mean_rgb": [
+        152.35,
+        127.26,
+        86.08
+      ],
+      "luminance_std_128": 15.815
+    },
+    {
+      "id": "tile_surface_dry_steppe_02",
+      "type": "dry_steppe",
+      "mean_rgb": [
+        157.51,
+        126.46,
+        80.65
+      ],
+      "luminance_std_128": 14.001
+    },
+    {
+      "id": "tile_surface_dry_steppe_03",
+      "type": "dry_steppe",
+      "mean_rgb": [
+        155.15,
+        127.13,
+        79.93
+      ],
+      "luminance_std_128": 13.348
+    },
+    {
+      "id": "tile_surface_dry_steppe_04",
+      "type": "dry_steppe",
+      "mean_rgb": [
+        152.6,
+        128.57,
+        87.92
+      ],
+      "luminance_std_128": 12.539
+    },
+    {
+      "id": "tile_surface_desert_steppe_01",
+      "type": "desert_steppe",
+      "mean_rgb": [
+        144.29,
+        128.83,
+        105.24
+      ],
+      "luminance_std_128": 11.896
+    },
+    {
+      "id": "tile_surface_desert_steppe_02",
+      "type": "desert_steppe",
+      "mean_rgb": [
+        150.0,
+        133.03,
+        109.68
+      ],
+      "luminance_std_128": 9.562
+    },
+    {
+      "id": "tile_surface_desert_steppe_03",
+      "type": "desert_steppe",
+      "mean_rgb": [
+        148.37,
+        131.96,
+        106.36
+      ],
+      "luminance_std_128": 10.433
+    },
+    {
+      "id": "tile_surface_desert_steppe_04",
+      "type": "desert_steppe",
+      "mean_rgb": [
+        148.65,
+        132.8,
+        108.85
+      ],
+      "luminance_std_128": 11.11
+    },
+    {
+      "id": "tile_surface_dune_sand_01",
+      "type": "dune_sand",
+      "mean_rgb": [
+        198.16,
+        164.19,
+        110.33
+      ],
+      "luminance_std_128": 8.76
+    },
+    {
+      "id": "tile_surface_dune_sand_02",
+      "type": "dune_sand",
+      "mean_rgb": [
+        189.26,
+        156.72,
+        101.44
+      ],
+      "luminance_std_128": 8.996
+    },
+    {
+      "id": "tile_surface_dune_sand_03",
+      "type": "dune_sand",
+      "mean_rgb": [
+        197.99,
+        163.96,
+        106.27
+      ],
+      "luminance_std_128": 7.69
+    },
+    {
+      "id": "tile_surface_dune_sand_04",
+      "type": "dune_sand",
+      "mean_rgb": [
+        194.38,
+        160.66,
+        105.08
+      ],
+      "luminance_std_128": 8.863
+    },
+    {
+      "id": "tile_surface_gravel_gobi_01",
+      "type": "gravel_gobi",
+      "mean_rgb": [
+        147.81,
+        130.59,
+        103.77
+      ],
+      "luminance_std_128": 14.252
+    },
+    {
+      "id": "tile_surface_gravel_gobi_02",
+      "type": "gravel_gobi",
+      "mean_rgb": [
+        150.41,
+        130.63,
+        102.84
+      ],
+      "luminance_std_128": 16.059
+    },
+    {
+      "id": "tile_surface_gravel_gobi_03",
+      "type": "gravel_gobi",
+      "mean_rgb": [
+        140.8,
+        123.14,
+        96.83
+      ],
+      "luminance_std_128": 13.52
+    },
+    {
+      "id": "tile_surface_gravel_gobi_04",
+      "type": "gravel_gobi",
+      "mean_rgb": [
+        142.89,
+        124.41,
+        97.94
+      ],
+      "luminance_std_128": 14.505
+    },
+    {
+      "id": "tile_surface_saline_meadow_01",
+      "type": "saline_meadow",
+      "mean_rgb": [
+        140.08,
+        137.25,
+        111.28
+      ],
+      "luminance_std_128": 19.672
+    },
+    {
+      "id": "tile_surface_saline_meadow_02",
+      "type": "saline_meadow",
+      "mean_rgb": [
+        136.39,
+        133.46,
+        104.38
+      ],
+      "luminance_std_128": 16.964
+    },
+    {
+      "id": "tile_surface_saline_meadow_03",
+      "type": "saline_meadow",
+      "mean_rgb": [
+        136.11,
+        133.52,
+        106.42
+      ],
+      "luminance_std_128": 18.544
+    },
+    {
+      "id": "tile_surface_saline_meadow_04",
+      "type": "saline_meadow",
+      "mean_rgb": [
+        137.3,
+        134.77,
+        106.56
+      ],
+      "luminance_std_128": 18.311
+    },
+    {
+      "id": "tile_surface_alpine_meadow_01",
+      "type": "alpine_meadow",
+      "mean_rgb": [
+        111.44,
+        117.83,
+        79.84
+      ],
+      "luminance_std_128": 16.289
+    },
+    {
+      "id": "tile_surface_alpine_meadow_02",
+      "type": "alpine_meadow",
+      "mean_rgb": [
+        108.9,
+        113.83,
+        80.58
+      ],
+      "luminance_std_128": 14.025
+    },
+    {
+      "id": "tile_surface_alpine_meadow_03",
+      "type": "alpine_meadow",
+      "mean_rgb": [
+        112.29,
+        114.87,
+        83.58
+      ],
+      "luminance_std_128": 14.702
+    },
+    {
+      "id": "tile_surface_alpine_meadow_04",
+      "type": "alpine_meadow",
+      "mean_rgb": [
+        110.8,
+        114.46,
+        78.17
+      ],
+      "luminance_std_128": 14.479
+    },
+    {
+      "id": "tile_surface_alpine_steppe_01",
+      "type": "alpine_steppe",
+      "mean_rgb": [
+        142.17,
+        132.13,
+        106.26
+      ],
+      "luminance_std_128": 13.423
+    },
+    {
+      "id": "tile_surface_alpine_steppe_02",
+      "type": "alpine_steppe",
+      "mean_rgb": [
+        142.94,
+        133.77,
+        111.12
+      ],
+      "luminance_std_128": 15.228
+    },
+    {
+      "id": "tile_surface_alpine_steppe_03",
+      "type": "alpine_steppe",
+      "mean_rgb": [
+        141.22,
+        129.72,
+        100.15
+      ],
+      "luminance_std_128": 14.685
+    },
+    {
+      "id": "tile_surface_alpine_steppe_04",
+      "type": "alpine_steppe",
+      "mean_rgb": [
+        134.94,
+        126.67,
+        103.79
+      ],
+      "luminance_std_128": 13.383
+    },
+    {
+      "id": "tile_surface_tundra_moss_01",
+      "type": "tundra_moss",
+      "mean_rgb": [
+        108.53,
+        100.52,
+        69.55
+      ],
+      "luminance_std_128": 16.367
+    },
+    {
+      "id": "tile_surface_tundra_moss_02",
+      "type": "tundra_moss",
+      "mean_rgb": [
+        110.69,
+        99.41,
+        66.97
+      ],
+      "luminance_std_128": 15.633
+    },
+    {
+      "id": "tile_surface_tundra_moss_03",
+      "type": "tundra_moss",
+      "mean_rgb": [
+        110.42,
+        99.32,
+        65.48
+      ],
+      "luminance_std_128": 15.218
+    },
+    {
+      "id": "tile_surface_tundra_moss_04",
+      "type": "tundra_moss",
+      "mean_rgb": [
+        105.51,
+        97.19,
+        65.44
+      ],
+      "luminance_std_128": 15.947
+    },
+    {
+      "id": "tile_surface_boreal_litter_01",
+      "type": "boreal_litter",
+      "mean_rgb": [
+        84.94,
+        73.43,
+        45.23
+      ],
+      "luminance_std_128": 13.419
+    },
+    {
+      "id": "tile_surface_boreal_litter_02",
+      "type": "boreal_litter",
+      "mean_rgb": [
+        83.98,
+        72.99,
+        48.7
+      ],
+      "luminance_std_128": 11.941
+    },
+    {
+      "id": "tile_surface_boreal_litter_03",
+      "type": "boreal_litter",
+      "mean_rgb": [
+        89.17,
+        78.34,
+        50.31
+      ],
+      "luminance_std_128": 12.025
+    },
+    {
+      "id": "tile_surface_boreal_litter_04",
+      "type": "boreal_litter",
+      "mean_rgb": [
+        86.94,
+        75.23,
+        50.4
+      ],
+      "luminance_std_128": 14.315
+    },
+    {
+      "id": "tile_surface_temperate_litter_01",
+      "type": "temperate_litter",
+      "mean_rgb": [
+        110.47,
+        90.25,
+        62.92
+      ],
+      "luminance_std_128": 14.509
+    },
+    {
+      "id": "tile_surface_temperate_litter_02",
+      "type": "temperate_litter",
+      "mean_rgb": [
+        114.45,
+        92.39,
+        63.1
+      ],
+      "luminance_std_128": 14.683
+    },
+    {
+      "id": "tile_surface_temperate_litter_03",
+      "type": "temperate_litter",
+      "mean_rgb": [
+        113.26,
+        94.72,
+        63.03
+      ],
+      "luminance_std_128": 13.135
+    },
+    {
+      "id": "tile_surface_temperate_litter_04",
+      "type": "temperate_litter",
+      "mean_rgb": [
+        111.99,
+        90.92,
+        61.68
+      ],
+      "luminance_std_128": 16.947
+    },
+    {
+      "id": "tile_surface_conifer_litter_01",
+      "type": "conifer_litter",
+      "mean_rgb": [
+        108.6,
+        98.81,
+        69.99
+      ],
+      "luminance_std_128": 13.799
+    },
+    {
+      "id": "tile_surface_conifer_litter_02",
+      "type": "conifer_litter",
+      "mean_rgb": [
+        104.67,
+        96.48,
+        66.84
+      ],
+      "luminance_std_128": 13.392
+    },
+    {
+      "id": "tile_surface_conifer_litter_03",
+      "type": "conifer_litter",
+      "mean_rgb": [
+        109.18,
+        97.5,
+        68.39
+      ],
+      "luminance_std_128": 13.359
+    },
+    {
+      "id": "tile_surface_conifer_litter_04",
+      "type": "conifer_litter",
+      "mean_rgb": [
+        112.33,
+        101.3,
+        70.05
+      ],
+      "luminance_std_128": 12.319
+    },
+    {
+      "id": "tile_surface_subtropical_humus_01",
+      "type": "subtropical_humus",
+      "mean_rgb": [
+        132.62,
+        99.47,
+        58.71
+      ],
+      "luminance_std_128": 15.997
+    },
+    {
+      "id": "tile_surface_subtropical_humus_02",
+      "type": "subtropical_humus",
+      "mean_rgb": [
+        134.16,
+        100.32,
+        59.03
+      ],
+      "luminance_std_128": 15.549
+    },
+    {
+      "id": "tile_surface_subtropical_humus_03",
+      "type": "subtropical_humus",
+      "mean_rgb": [
+        132.29,
+        101.74,
+        64.28
+      ],
+      "luminance_std_128": 13.544
+    },
+    {
+      "id": "tile_surface_subtropical_humus_04",
+      "type": "subtropical_humus",
+      "mean_rgb": [
+        128.64,
+        95.27,
+        54.32
+      ],
+      "luminance_std_128": 12.678
+    },
+    {
+      "id": "tile_surface_tropical_moist_humus_01",
+      "type": "tropical_moist_humus",
+      "mean_rgb": [
+        86.24,
+        63.81,
+        38.7
+      ],
+      "luminance_std_128": 14.357
+    },
+    {
+      "id": "tile_surface_tropical_moist_humus_02",
+      "type": "tropical_moist_humus",
+      "mean_rgb": [
+        87.44,
+        62.27,
+        35.06
+      ],
+      "luminance_std_128": 12.814
+    },
+    {
+      "id": "tile_surface_tropical_moist_humus_03",
+      "type": "tropical_moist_humus",
+      "mean_rgb": [
+        86.59,
+        62.42,
+        35.89
+      ],
+      "luminance_std_128": 11.356
+    },
+    {
+      "id": "tile_surface_tropical_moist_humus_04",
+      "type": "tropical_moist_humus",
+      "mean_rgb": [
+        88.19,
+        63.63,
+        40.02
+      ],
+      "luminance_std_128": 15.448
+    },
+    {
+      "id": "tile_surface_dry_woodland_litter_01",
+      "type": "dry_woodland_litter",
+      "mean_rgb": [
+        165.76,
+        138.44,
+        100.07
+      ],
+      "luminance_std_128": 14.614
+    },
+    {
+      "id": "tile_surface_dry_woodland_litter_02",
+      "type": "dry_woodland_litter",
+      "mean_rgb": [
+        162.11,
+        136.04,
+        97.62
+      ],
+      "luminance_std_128": 15.731
+    },
+    {
+      "id": "tile_surface_dry_woodland_litter_03",
+      "type": "dry_woodland_litter",
+      "mean_rgb": [
+        164.04,
+        141.46,
+        106.83
+      ],
+      "luminance_std_128": 13.559
+    },
+    {
+      "id": "tile_surface_dry_woodland_litter_04",
+      "type": "dry_woodland_litter",
+      "mean_rgb": [
+        160.08,
+        135.44,
+        99.21
+      ],
+      "luminance_std_128": 14.658
+    },
+    {
+      "id": "tile_surface_savanna_red_soil_01",
+      "type": "savanna_red_soil",
+      "mean_rgb": [
+        163.21,
+        109.59,
+        65.97
+      ],
+      "luminance_std_128": 11.635
+    },
+    {
+      "id": "tile_surface_savanna_red_soil_02",
+      "type": "savanna_red_soil",
+      "mean_rgb": [
+        165.09,
+        115.58,
+        68.5
+      ],
+      "luminance_std_128": 9.805
+    },
+    {
+      "id": "tile_surface_savanna_red_soil_03",
+      "type": "savanna_red_soil",
+      "mean_rgb": [
+        160.4,
+        110.84,
+        64.08
+      ],
+      "luminance_std_128": 8.638
+    },
+    {
+      "id": "tile_surface_savanna_red_soil_04",
+      "type": "savanna_red_soil",
+      "mean_rgb": [
+        168.51,
+        113.08,
+        65.3
+      ],
+      "luminance_std_128": 10.775
+    },
+    {
+      "id": "tile_surface_flood_meadow_01",
+      "type": "flood_meadow",
+      "mean_rgb": [
+        113.52,
+        111.7,
+        82.38
+      ],
+      "luminance_std_128": 16.008
+    },
+    {
+      "id": "tile_surface_flood_meadow_02",
+      "type": "flood_meadow",
+      "mean_rgb": [
+        106.65,
+        105.15,
+        73.3
+      ],
+      "luminance_std_128": 15.522
+    },
+    {
+      "id": "tile_surface_flood_meadow_03",
+      "type": "flood_meadow",
+      "mean_rgb": [
+        112.65,
+        113.27,
+        81.37
+      ],
+      "luminance_std_128": 15.794
+    },
+    {
+      "id": "tile_surface_flood_meadow_04",
+      "type": "flood_meadow",
+      "mean_rgb": [
+        114.07,
+        113.66,
+        82.46
+      ],
+      "luminance_std_128": 15.282
+    },
+    {
+      "id": "tile_surface_alluvial_loam_01",
+      "type": "alluvial_loam",
+      "mean_rgb": [
+        164.85,
+        139.07,
+        93.83
+      ],
+      "luminance_std_128": 15.386
+    },
+    {
+      "id": "tile_surface_alluvial_loam_02",
+      "type": "alluvial_loam",
+      "mean_rgb": [
+        168.53,
+        143.1,
+        92.96
+      ],
+      "luminance_std_128": 14.939
+    },
+    {
+      "id": "tile_surface_alluvial_loam_03",
+      "type": "alluvial_loam",
+      "mean_rgb": [
+        164.71,
+        139.06,
+        91.94
+      ],
+      "luminance_std_128": 14.094
+    },
+    {
+      "id": "tile_surface_alluvial_loam_04",
+      "type": "alluvial_loam",
+      "mean_rgb": [
+        169.95,
+        144.82,
+        95.64
+      ],
+      "luminance_std_128": 14.162
+    },
+    {
+      "id": "tile_surface_weathered_rock_01",
+      "type": "weathered_rock",
+      "mean_rgb": [
+        129.13,
+        118.97,
+        93.64
+      ],
+      "luminance_std_128": 18.244
+    },
+    {
+      "id": "tile_surface_weathered_rock_02",
+      "type": "weathered_rock",
+      "mean_rgb": [
+        122.33,
+        113.65,
+        89.25
+      ],
+      "luminance_std_128": 13.908
+    },
+    {
+      "id": "tile_surface_weathered_rock_03",
+      "type": "weathered_rock",
+      "mean_rgb": [
+        129.11,
+        119.56,
+        92.3
+      ],
+      "luminance_std_128": 14.791
+    },
+    {
+      "id": "tile_surface_weathered_rock_04",
+      "type": "weathered_rock",
+      "mean_rgb": [
+        128.72,
+        120.64,
+        95.54
+      ],
+      "luminance_std_128": 16.283
+    },
+    {
+      "id": "tile_surface_alpine_scree_01",
+      "type": "alpine_scree",
+      "mean_rgb": [
+        130.7,
+        126.15,
+        110.2
+      ],
+      "luminance_std_128": 20.284
+    },
+    {
+      "id": "tile_surface_alpine_scree_02",
+      "type": "alpine_scree",
+      "mean_rgb": [
+        136.01,
+        133.65,
+        118.29
+      ],
+      "luminance_std_128": 18.001
+    },
+    {
+      "id": "tile_surface_alpine_scree_03",
+      "type": "alpine_scree",
+      "mean_rgb": [
+        137.8,
+        135.17,
+        117.74
+      ],
+      "luminance_std_128": 15.399
+    },
+    {
+      "id": "tile_surface_alpine_scree_04",
+      "type": "alpine_scree",
+      "mean_rgb": [
+        131.95,
+        128.45,
+        112.74
+      ],
+      "luminance_std_128": 16.796
+    }
+  ],
+  "old_material_median_luminance_std_128": 4.89093193352249,
+  "new_material_median_luminance_std_128": 14.335999999999999,
+  "raster_pixels_written": false,
+  "originals_modified": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false
+}

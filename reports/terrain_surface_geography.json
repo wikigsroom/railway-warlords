@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-16T05:55:34.444875+00:00",
+  "terrain_type_count": 20,
+  "types_in_actual_maps": 20,
+  "assignments_by_map": {
+    "asia_strategic": {
+      "weathered_rock": 1558,
+      "boreal_litter": 530,
+      "temperate_litter": 166,
+      "gravel_gobi": 278,
+      "savanna_red_soil": 159,
+      "tropical_moist_humus": 88,
+      "dry_steppe": 132,
+      "flood_meadow": 13,
+      "tundra_moss": 225,
+      "dune_sand": 47,
+      "alpine_scree": 33,
+      "saline_meadow": 5,
+      "desert_steppe": 59,
+      "temperate_meadow": 23,
+      "dry_woodland_litter": 40,
+      "alluvial_loam": 16,
+      "alpine_steppe": 9,
+      "alpine_meadow": 3,
+      "subtropical_humus": 4,
+      "conifer_litter": 3
+    },
+    "conquest_china": {
+      "tropical_moist_humus": 4832,
+      "weathered_rock": 28934,
+      "alpine_scree": 2131,
+      "conifer_litter": 206,
+      "alpine_meadow": 88,
+      "desert_steppe": 3346,
+      "subtropical_humus": 3555,
+      "temperate_litter": 8028,
+      "alpine_steppe": 1258,
+      "dry_steppe": 887,
+      "alluvial_loam": 378,
+      "saline_meadow": 212
+    },
+    "hankou": {
+      "subtropical_humus": 317,
+      "alluvial_loam": 38
+    },
+    "jingfeng": {
+      "temperate_litter": 27050,
+      "weathered_rock": 16936,
+      "dry_steppe": 57,
+      "alluvial_loam": 165,
+      "saline_meadow": 1160
+    },
+    "jingjin": {
+      "weathered_rock": 5131,
+      "temperate_litter": 17363,
+      "dry_steppe": 6,
+      "alpine_scree": 24,
+      "alluvial_loam": 72,
+      "saline_meadow": 539
+    },
+    "ningpu": {
+      "temperate_litter": 229,
+      "weathered_rock": 14,
+      "subtropical_humus": 129,
+      "alluvial_loam": 34
+    }
+  },
+  "totals_by_type": {
+    "weathered_rock": 52573,
+    "boreal_litter": 530,
+    "temperate_litter": 52836,
+    "gravel_gobi": 278,
+    "savanna_red_soil": 159,
+    "tropical_moist_humus": 4920,
+    "dry_steppe": 1082,
+    "flood_meadow": 13,
+    "tundra_moss": 225,
+    "dune_sand": 47,
+    "alpine_scree": 2188,
+    "saline_meadow": 1916,
+    "desert_steppe": 3405,
+    "temperate_meadow": 23,
+    "dry_woodland_litter": 40,
+    "alluvial_loam": 703,
+    "alpine_steppe": 1267,
+    "alpine_meadow": 91,
+    "subtropical_humus": 4005,
+    "conifer_litter": 209
+  },
+  "source_files_sha256": {
+    ".shp": "d564235263d7a2f118cbb4fcb6e7593ef5f8c2f3600604d46047aa2712a83574",
+    ".shx": "140342bc19d04a6f1ee11d1099a6c115f8c076f1396c6f2a5a55182471ff4c42",
+    ".dbf": "036987c540eef2dfd6e8a0678f3b85193649b3f63f545463dfcb2fed4f973ab5",
+    ".prj": "db2f4b2a30c81a88981162acd3ff4629b86350834194efed1a6650446ccaecf4"
+  },
+  "output_sha256": "9d6ff8a87352f590092299e4324b4da68821ea9a6337edfced3e9d47d0f11f37",
+  "rule_map_hashes": {
+    "asia_strategic.json": "268ab58f6d5bd40c8e88d151449bab27170ac5b5c61ceaa310d84b26334de0ae",
+    "conquest_china.json": "a68ad6428ad42709ae80aab0f9caed5a48762ddc30347f07b374082188cdcc57",
+    "hankou.json": "b6ca1e209cf9e238f4fd6db168474ab94f76c4bddb9218b5e75fe9d695e87745",
+    "jingfeng.json": "d9d442a9c5966fe87f59a2cc37502989abc7282059e7de4c179cf70ed0031cf9",
+    "jingjin.json": "334faba922f4bf9869f5600ea9a0c73c6e8ce8783b2eac5c091d8880dbc813ae",
+    "ningpu.json": "d6986cf2485acc272521e5cf13984ca0552e74009f74fc03274eb6163165a116"
+  },
+  "original_maps_modified": false,
+  "random_geography": false,
+  "historical_landuse_survey_claimed": false,
+  "elapsed_seconds": 142.25
+}

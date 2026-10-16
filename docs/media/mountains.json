@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.12",
+	"build_version": "0.2.13",
 	"city_labels": [
 		{
 			"city_id": "place_banchangyu",
@@ -61,7 +61,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1770.56,
+		"preparation_ms": 2123.657,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -77,8 +77,9 @@
 		],
 		"catalog_additional_sources": 796,
 		"catalog_map_assets": 870.0,
+		"current_total_map_assets": 950,
 		"distinct_scenery_originals_intersecting_view": 69,
-		"distinct_surface_originals_in_view": 64,
+		"distinct_surface_originals_in_view": 8,
 		"families": {
 			"foothill_ew": 53,
 			"foothill_ns": 18,
@@ -201,12 +202,53 @@
 			"source_id": "resolve_ecoregions_2017",
 			"source_scope": "biogeographic_ground_material_reference",
 			"source_year": 2017.0,
+			"terrain_subtypes": {
+				"active": true,
+				"assignments": 45368,
+				"historical_landuse_survey": false,
+				"independent_originals": 80,
+				"registered_types": 20,
+				"rule_maps_modified": false,
+				"source_scope": "regional_ground_reference_plus_archived_dem",
+				"source_year": 2017,
+				"types": {
+					"alluvial_loam": 165,
+					"dry_steppe": 57,
+					"saline_meadow": 1160,
+					"temperate_litter": 27050,
+					"weathered_rock": 16936
+				},
+				"water_or_forest_added": false
+			},
 			"water_or_forest_added": false
 		},
 		"surface_material_families_in_view": {
-			"alluvial_soil": 54,
-			"meadow": 64,
-			"rocky_ground": 251
+			"temperate_litter": 118,
+			"weathered_rock": 251
+		},
+		"terrain_surface_extension": {
+			"active": true,
+			"blend_inner_ratio": 0.7,
+			"checked_adjacent_pairs": 1087,
+			"ground_alpha": 0.94,
+			"independent_originals": 80,
+			"registered_types": 20,
+			"rule_geometry_changed": false,
+			"same_original_on_adjacent_cells": 0,
+			"source_use_counts": {
+				"tile_surface_temperate_litter_01": 17,
+				"tile_surface_temperate_litter_02": 39,
+				"tile_surface_temperate_litter_03": 39,
+				"tile_surface_temperate_litter_04": 23,
+				"tile_surface_weathered_rock_01": 36,
+				"tile_surface_weathered_rock_02": 81,
+				"tile_surface_weathered_rock_03": 92,
+				"tile_surface_weathered_rock_04": 42
+			},
+			"visible_types": {
+				"temperate_litter": 118,
+				"weathered_rock": 251
+			}
 		},
 		"zoom": 1.05
 	},
@@ -270,13 +312,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 166.793,
+		"index_ms": 211.249,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2959.051,
+		"mesh_ms": 4730.247,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1259.198,
-		"preparation_ms": 4385.042,
+		"placement_ms": 2075.512,
+		"preparation_ms": 7017.008,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

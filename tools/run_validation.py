@@ -17,6 +17,7 @@ CHECKS.append('facing_memory_test')
 CHECKS.append('relief_surface_test')
 CHECKS.append('map_bank_test')
 CHECKS.append('surface_geography_test')
+CHECKS.append('terrain_surfaces_test')
 
 def main():
     # Build the schema fixture with the current native content registry. Rule

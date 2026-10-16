@@ -5,12 +5,16 @@ from pathlib import Path
 import re
 import subprocess
 from PIL import Image
-from build_release import source_digest
+from build_release import source_digest, current_version
 
 P = Path(__file__).resolve().parents[1]
 PUBLIC_DOCS = ['README.md', 'README.en.md', 'LICENSE-NOTICE.md',
                'docs/DEVELOPMENT.md', 'docs/MEDIA.md',
-               'docs/SCENARIO_INDEX.md', 'docs/UNIT_REFERENCE.md']
+               'docs/SCENARIO_INDEX.md', 'docs/UNIT_REFERENCE.md',
+               'docs/30_二十类地域地表与纹理整改.md',
+               'docs/00_程序文档索引.md', 'docs/04_美术来源与审核.md',
+               'docs/05_测试与验收.md', 'docs/06_双端构建与发布.md',
+               'docs/23_当前完成度评估.md', 'docs/26_欧陆战争6_UI结构与视觉对标.md']
 
 
 def digest(path):
@@ -53,14 +57,25 @@ def main():
             if path.resolve() not in paths or not path.is_file() or digest(path) != row[checksum]:
                 errors.append({'type': 'asset_provenance', 'asset': row['id'], 'field': field})
         checked_assets += 1
-    if checked_assets != 1056:
+    manifest_assets = read('assets/manifest.json')['assets']
+    if checked_assets != len(manifest_assets) or {r['id'] for r in provenance['assets']} != {r['id'] for r in manifest_assets}:
         errors.append({'type': 'asset_count', 'actual': checked_assets})
+    for row in manifest_assets:
+        if digest(P / row['engine_path'].removeprefix('res://')) != row['source_sha256']:
+            errors.append({'type': 'registered_original_changed', 'asset': row['id']})
 
     media = read('docs/media/manifest.json')
     gif_facts = []
     for row in media['screenshots']:
         if digest(P / row['file']) != row['sha256']:
             errors.append({'type': 'native_png_digest', 'file': row['file']})
+        original = P / row['native_source']
+        if not original.is_file() or digest(original) != row['sha256']:
+            errors.append({'type': 'native_source_digest', 'file': row['file']})
+        if row.get('metadata'):
+            meta = read(row['metadata'])
+            if meta['build_version'] != row.get('version', media['version']) or not meta['raw_godot_capture']:
+                errors.append({'type': 'native_media_version', 'file': row['file']})
     for row in media['animations']:
         target = P / row['file']
         if digest(target) != row['sha256'] or digest(P / row['source']) != row['source_sha256']:
@@ -101,7 +116,14 @@ def main():
                                'line': text[:match.start()].count('\n') + 1})
 
     runtime = source_digest()[0]
-    expected_runtime = read('reports/native_visual_evidence.json')['runtime_source_sha256']
+    proof = read('reports/terrain_surface_native_evidence.json')
+    expected_runtime = proof['runtime_source_sha256']
+    if not proof['passed'] or proof['version'] != current_version() or len(proof['groups']) != 6:
+        errors.append({'type': 'current_native_proof_incomplete'})
+    for group in proof['groups']:
+        for row in group['captures']:
+            if digest(P / row['file']) != row['sha256'] or digest(P / row['metadata']) != row['metadata_sha256']:
+                errors.append({'type': 'current_native_capture_changed', 'file': row['file']})
     if runtime != expected_runtime:
         errors.append({'type': 'runtime_changed_during_documentation'})
     counts = {}
@@ -110,7 +132,7 @@ def main():
         counts[mode] = counts.get(mode, 0) + 1
     if counts != {'campaign': 39, 'conquest': 10, 'legion': 12}:
         errors.append({'type': 'scenario_counts', 'actual': counts})
-    result = {'passed': not errors, 'version': '0.2.12', 'public_documents': len(PUBLIC_DOCS),
+    result = {'passed': not errors, 'version': current_version(), 'public_documents': len(PUBLIC_DOCS),
               'local_links_checked': links, 'verified_images_and_prompts': checked_assets,
               'native_screenshots': len(media['screenshots']), 'gifs': gif_facts,
               'candidate_files': len(files), 'candidate_bytes': sum(f.stat().st_size for f in files),

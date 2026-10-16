@@ -24,5 +24,7 @@ static func apply(cells: Dictionary, map_id: String) -> Dictionary:
 	return {"source_id":source.get("source_id",""),"source_year":source.get("source_year",0),"material_assignments":assigned,"families":counts,"source_scope":"biogeographic_ground_material_reference","historical_landuse_survey":false,"rule_maps_modified":false,"water_or_forest_added":false}
 
 static func material_label(cell: Dictionary) -> String:
+	var surface_label=MapTerrainSurfaces.label_for(cell)
+	if not surface_label.is_empty():return surface_label
 	var names={"meadow":"草土地表","dry_grass":"草原旱草","sandy_ground":"细沙地表","arid_gravel":"荒漠砾土","alluvial_soil":"平原与河谷土","wetland_ground":"草甸湿土","rocky_ground":"岩质地表","woodland_floor":"林下腐土","sea_water":"水面"}
 	return str(names.get(MapArtBank.material_family(cell),""))

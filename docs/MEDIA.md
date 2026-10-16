@@ -4,9 +4,9 @@
 
 ## 截图 / Screenshots
 
-14 张完整 PNG 直接来自 Godot 原生视口。主菜单使用本版 Windows EXE 新截取；其他画面来自本版已核验的原生报告。复制进 `docs/media` 的 PNG 与来源逐字节相同，没有裁切、拼接、补绘或叠字。Godot 的控件、地图和独立美术资源在实际程序中正常渲染。
+当前媒体目录有 33 张完整 PNG：31 张来自 0.2.13 Windows EXE，另外两张交战/航空画面保留 0.2.12 身份。当前 90 张地表与管理页面原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot 在实际程序中渲染控件、地图与独立美术资源。
 
-Fourteen complete PNGs come directly from native Godot viewports. The menu was captured anew from the current Windows executable; the others come from verified native evidence for this version. Copied PNGs are byte-identical, without cropping, stitching, repainting or text overlays. Godot renders the real controls, maps and independent assets.
+The media folder contains 33 complete PNGs: 31 from the 0.2.13 Windows EXE and two preserved 0.2.12 combat/air-action stills. Selected current terrain/UI and export-validation viewports are copied byte for byte, without cropping, stitching, repainting or text overlays. Godot renders the real controls, maps and independent assets.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
@@ -16,7 +16,7 @@ Fourteen complete PNGs come directly from native Godot viewports. The menu was c
 | [coast.png](media/coast.png) | 渤海海岸 / Bohai coast |
 | [tributaries.png](media/tributaries.png) | 来源山谷支流 / Sourced valley tributaries |
 | [sand.png](media/sand.png) | 塔克拉玛干沙土 / Taklamakan sand |
-| [gravel.png](media/gravel.png) | 戈壁砾土 / Gobi gravel |
+| [gravel.png](media/gravel.png) | 来源荒漠区域矿质地表 / Source-bound arid mineral ground |
 | [wet-soil.png](media/wet-soil.png) | 沿海湿土 / Coastal wet ground |
 | [yangtze.png](media/yangtze.png) | 汉口长江 / Yangtze at Hankou |
 | [asia-overview.png](media/asia-overview.png) | 亚洲战略层 / Strategic Asia |
@@ -24,16 +24,25 @@ Fourteen complete PNGs come directly from native Godot viewports. The menu was c
 | [mobile-layout.png](media/mobile-layout.png) | 桌面移动布局 / Mobile layout on desktop |
 | [battle-impact.png](media/battle-impact.png) | 交战与受击 / Combat impact |
 | [air-recon.png](media/air-recon.png) | 航空侦察 / Air reconnaissance |
+| [terrain-atlas-grass.png](media/terrain-atlas-grass.png) | 8 类草地与荒漠底材 / Eight grassland and arid materials |
+| [terrain-atlas-forest.png](media/terrain-atlas-forest.png) | 8 类寒带与林带底材 / Eight cold-climate and woodland materials |
+| [terrain-atlas-relief.png](media/terrain-atlas-relief.png) | 4 类河谷与峰岭底材 / Four floodplain, valley and rock materials |
+| [campaign-browser.png](media/campaign-browser.png) | 真实战役地图预览 / Actual campaign map preview |
+| [conquest-browser.png](media/conquest-browser.png) | 时间锚与阵营选择 / Timeline and faction selection |
+| [recruitment.png](media/recruitment.png) | 层数、费用与征募队列 / Stacks, costs and recruitment queue |
+| [city-buildings.png](media/city-buildings.png) | 城市设施与队列 / City facilities and queue |
+| [diplomacy.png](media/diplomacy.png) | 外交关系与命令条件 / Relations and validation |
+| [headquarters.png](media/headquarters.png) / [technology.png](media/technology.png) | 将领和科技 / Generals and technologies |
 
-地图截图的 JSON 同时记录视口、版本、内容指纹、地表／地景等信息；战斗演示帧的共同证据见 `reports/native_visual_evidence.json`。X30 尺寸截图来自 Windows，`physical_android_device_tested` 为 false。
+截图 JSON 记录视口、版本、内容指纹等；实际地表/UI的共同证据见 `reports/terrain_surface_native_evidence.json`，旧战斗演示见 `reports/native_visual_evidence.json`。图鉴是游戏内真实控件，不是后期拼接图片。X30 尺寸截图来自 Windows，`physical_android_device_tested` 为 false。
 
-Associated JSON records viewport, version, content fingerprint and map information where available. Combat frames share `reports/native_visual_evidence.json`. X30-size screenshots are Windows captures with `physical_android_device_tested: false`.
+Associated JSON records viewport, version and content fingerprint. Current UI/terrain proof is `reports/terrain_surface_native_evidence.json`; older battle proof is `reports/native_visual_evidence.json`. The atlas is an actual in-game interface. X30-size screenshots are Windows captures with `physical_android_device_tested: false`.
 
 ## 录像与 GIF / Recording and GIFs
 
-原生录像：[atlas_v2_native_final.mp4](../reports/atlas_v2_native_final.mp4)，1440×810、30 FPS、26.2 秒，包含声音。使用 Godot MovieWriter 录制，正式剧本部署未修改，命令重放最终状态和随机流一致。不是概念动画或生成视频。
+保留的 **0.2.12** 原生录像：[atlas_v2_native_final.mp4](../reports/atlas_v2_native_final.mp4)，1440×810、30 FPS、26.2 秒，包含声音。使用 Godot MovieWriter 录制，正式剧本部署未修改，命令重放最终状态和随机流一致；该录像不作为本轮新底纹的画面证据。
 
-The native recording is 1440×810, 30 FPS and 26.2 seconds with audio. Godot MovieWriter records unchanged scenario deployment. Replayed commands reach the same final state and random stream. This is not concept animation or generated video.
+The preserved **0.2.12** native recording is 1440×810, 30 FPS and 26.2 seconds with audio. Godot MovieWriter records unchanged scenario deployment and deterministic command replay. Current ground textures are documented separately in the new native screenshots.
 
 | GIF | 原录像片段 / Source excerpt | 输出 / Output |
 | --- | --- | --- |

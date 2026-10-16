@@ -7,7 +7,7 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.12, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.13, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
@@ -50,9 +50,10 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Factions and generals | **47 faction definitions and 29 general definitions**; availability is scenario-specific |
 | Progression | **28 technologies, 9 passive skills, 9 active skills and 24 achievements** |
 | Facilities | **12 types** covering recruitment, transport, supply, medicine, defense, communications and trade |
-| Raster art | **1,056 PNGs**, including **870 map assets**, 64 cardinal-direction unit views and 16 ordinary-infantry action images |
+| Raster art | **1,136 PNGs**, including **950 map assets**, 64 cardinal-direction unit views and 16 ordinary-infantry action images |
+| Regional terrain | **20 new ground types × 4 independent textures = 80 originals**; named cell details and an interactive atlas |
 | Audio and fonts | 14 procedural sound effects, 3 procedural music tracks and 2 Chinese fonts with OFL notices |
-| Current regression snapshot | **22 groups / 4,741 passing checks**, plus native HUD, facing, action and pixel checks |
+| Current regression snapshot | **23 groups / 4,893 passing checks**, plus 184 native terrain checks and 203 UI action/layout checks |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
 
 Runtime data lives in `content/`. Original designs and older versions retain their own status. Content counts do not establish complete art, historical, balance or device acceptance. See the [completion assessment](docs/23_当前完成度评估.md).
@@ -67,6 +68,8 @@ Runtime data lives in `content/`. Original designs and older versions retain the
 *The resource/date bar sits above the map, objectives occupy the upper left, the inspector is on the right, and command previews and confirmations sit below.*
 
 ### Native movement and combat
+
+The following GIFs and full MP4 retain their original **0.2.12** recording identity. They demonstrate real movement and combat commands. Current terrain and UI are shown in the 0.2.13 native screenshots.
 
 ![Movement and combat from the native campaign recording](docs/media/movement.gif)
 
@@ -97,7 +100,7 @@ Godot MovieWriter produced the recording. A controlled native demonstration subm
 
 ![Sandy ground in the Taklamakan region](docs/media/sand.png)
 
-![Gravel ground in the Gobi region](docs/media/gravel.png)
+![Source-bound mineral gravel in an arid region](docs/media/gravel.png)
 
 ![Wet ground near the Bohai coast](docs/media/wet-soil.png)
 
@@ -150,7 +153,22 @@ flowchart TD
 | Bottom command bar | Preview, confirm, cancel, auto-play, end phase and skip presentation |
 | Battle window | Combatants, dice, attacks, hits and counters; optional and skippable |
 
-The main-menu campaign subtitle still says “18 missions.” The actual list contains **39 campaigns**, as recorded in JSON and the index. Updating that older label remains a follow-up.
+Campaign, conquest and legion browsers use real map previews with era, difficulty and faction selection, unlock conditions, stars and objectives. The main-menu campaign count now matches the actual **39 missions**. Recruitment, buildings, general assignment, diplomacy and headquarters use cards with real command costs and visible validation reasons; the technology page exposes all seven branches.
+
+![Campaign selection with actual theater geography](docs/media/campaign-browser.png)
+
+<details>
+<summary>Recruitment, city facilities, diplomacy and research</summary>
+
+![Three-layer recruitment and actual costs](docs/media/recruitment.png)
+
+![City facilities and production queues](docs/media/city-buildings.png)
+
+![Diplomatic relations and action conditions](docs/media/diplomacy.png)
+
+![Headquarters technology and research requirements](docs/media/technology.png)
+
+</details>
 
 <a id="play"></a>
 ## Getting started and controls
@@ -161,7 +179,7 @@ The main-menu campaign subtitle still says “18 missions.” The actual list co
 | Android | Install your exported `build/android/RailwayWarlords.apk` | Landscape, ARM64 / ARMv7, Android 7.0 / API 24 minimum; validated package targets SDK 36 |
 | Godot editor | Import root `project.godot`, wait for import, press **F5** | Godot 4.7.2, Compatibility renderer |
 
-Git includes complete source and runtime assets. Binaries, caches and private signing material are excluded. Original art occupies about 1.9 GiB; allow time for clone/import and several GB of free disk space. Existing local 0.2.12 delivery packages remain separate.
+Git includes complete source and runtime assets. Binaries, caches and private signing material are excluded. Original PNGs occupy about 2.13 GiB; allow time for clone/import and several GB of free disk space. Local delivery packages remain separate.
 
 ### First battle
 
@@ -293,9 +311,15 @@ Totals include water and restricted cells, not only deployable land. Beijing–T
 - **Ground:** meadow, dry grass, rocky soil, woodland floor, wet soil, water, sand, gravel and alluvium selected through source regions, relief and geography.
 - **Scenery:** tree canopies, hills, ridges, peaks, banks, outcrops, reeds and regional buildings with anchors, slope direction and spatial repetition constraints.
 - **Settlements:** capitals, provincial/county seats, towns and villages; 67 additional source-linked markers, zoom-dependent visibility and administrative notes.
-- **Control:** translucent tint preserves terrain, approximately 0.21 strategic / 0.26 tactical opacity. It follows in-game node ownership, not surveyed historical military boundaries.
+- **Control:** the translucent control field uses approximately 0.20–0.23 opacity; local city influence fills use 0.26. It follows in-game node ownership, not surveyed historical military boundaries.
 
-The map library grew from 74 to **870 assets, about 11.76×**. The 796 new originals include **176 ground materials, 480 scenery assets and 140 buildings**. Display scaling, mirroring and tint variants are not counted as independent originals.
+The map library grew from 74 to **950 assets, about 12.84×**. The 796 originals added in 0.2.12 include **176 ground materials, 480 scenery assets and 140 buildings**; 0.2.13 adds **80 regional ground textures**. Display scaling, mirroring and tint variants are not counted as independent originals.
+
+The 20 new types cover temperate meadow, dry steppe, desert steppe, aeolian sand, Gobi gravel, saline meadow, alpine meadow, alpine steppe, tundra, boreal litter, temperate leaf litter, conifer needles, subtropical humus, tropical moist humus, dry woodland litter, savanna ground, flood meadow, valley alluvium, weathered rock and alpine scree. Each has four independently generated originals. Ecoregions, relief and existing rivers guide selection; neighboring cells of the same type use different sources. Stronger ground texture preserves grain beneath the separate translucent control overlay.
+
+![Interactive in-game terrain atlas: grasslands and arid ground](docs/media/terrain-atlas-grass.png)
+
+Open the terrain atlas from the manual or cell inspector to browse three pages and all four originals per type. Regional appearance is separate from the cell's authoritative movement, cover and water rules. See [20 terrain types, source gates and texture changes](docs/30_二十类地域地表与纹理整改.md).
 
 Physical geography, dated administrative sources, people and OOB are tracked separately. Modern potential ecoregions guide representative materials, not annual historical forest/wetland/land-use maps. Modern waterways do not automatically establish historic channels. Generated buildings are regional symbols, not reconstructions of named streets.
 
@@ -427,13 +451,14 @@ godot --headless --path . --script tests/transaction_test.gd
 godot --headless --path . --script tests/asia_content_test.gd
 godot --headless --path . --script tests/map_bank_test.gd
 godot --headless --path . --script tests/surface_geography_test.gd
+godot --headless --path . --script tests/terrain_surfaces_test.gd
 ```
 
-Twenty-two groups / 4,741 checks cover rules, input, geography, progression, transactions, events, rendering, workers, scale, logistics, caches, settlements, snapshots, Asia, boundaries, facing, surfaces and the map bank. Additional checks cover 84 HUD assertions over three viewports, legal cardinal movement/idle facing, infantry actions, command replay and cached/direct rendering pixels.
+Twenty-three groups / 4,893 checks cover rules, input, geography, progression, transactions, events, rendering, workers, scale, logistics, caches, settlements, snapshots, Asia, boundaries, facing, surfaces and the map bank. The current EXE also passes 184 terrain checks over two viewports and 203 real UI action/layout checks over three viewports, with 90 native captures. Older movement, action, replay and pixel evidence retains its original version identity.
 
-[Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current summary](reports/visual_update_verification_summary.json)
+[Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current summary](reports/terrain_update_verification_summary.json)
 
-Reports are original-workspace 0.2.12 snapshots, not a claim that another machine has rerun them. They do not replace manual gameplay, art, historical or device acceptance. Full AI endurance was not rerun for this map patch; older results retain their version identity.
+Current reports are original-workspace 0.2.13 snapshots, not a claim that another machine has rerun them. They do not replace manual gameplay, art, historical or device acceptance. Full AI endurance was not rerun for this map patch; older endurance results and recordings retain their version identity.
 
 ### Desktop measurements
 
@@ -441,22 +466,22 @@ RTX 3060, VSync disabled, maximum load including 240 formations. Sustained pan/z
 
 | Phase | 1920×1080 average FPS / P95 ms | 2400×1080 desktop mobile layout average FPS / P95 ms |
 | --- | ---: | ---: |
-| Static atlas | 389.9 / 3.46 | 418.9 / 3.01 |
-| Atlas pan | 160.0 / 8.20 | 169.0 / 7.61 |
-| Tactical selection | 63.9 / 45.16 | 74.0 / 37.08 |
-| Sustained pan/zoom | 170.8 / 7.90 | 175.3 / 7.17 |
-| Active combat | 129.5 / 8.19 | 123.8 / 8.81 |
+| Static atlas | 401.9 / 3.39 | 375.2 / 3.54 |
+| Atlas pan | 162.6 / 8.23 | 167.1 / 9.27 |
+| Tactical selection | 73.2 / 39.11 | 68.0 / 39.78 |
+| Sustained pan/zoom | 180.1 / 7.61 | 173.8 / 8.14 |
+| Active combat | 133.2 / 7.75 | 134.7 / 8.32 |
 
 Tactical selection still has frame-time spikes; averages do not establish stable individual frames. These are not physical X30 results. See [capacity and rendering equivalence](docs/12_容量性能与渲染等价.md).
 
 <a id="assets"></a>
 ## Artwork, media and licensing
 
-All 1,056 runtime PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
+All 1,136 runtime PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
 
 - [Runtime manifest](assets/manifest.json): original workspace sources, models, dimensions and hashes.
 - [Portable provenance](docs/asset-provenance/index.json): repository-relative images/prompts and SHA-256.
-- [Prompt directory](docs/asset-prompts/): 1,056 prompts; gateway configuration and credentials are excluded.
+- [Prompt directory](docs/asset-prompts/): 1,136 prompts; gateway configuration and credentials are excluded.
 - [Media guide](docs/MEDIA.md): native screenshots, recording, GIF conversion and evidence scope.
 - [Map expansion](docs/28_地图素材扩充与去重.md), [ground and rivers](docs/29_地表材质与细水系.md): selection and source precision.
 
@@ -496,8 +521,8 @@ Detailed implementation chapters currently use Chinese; this English README cove
 | Asia | [Historical sources](docs/19_亚洲全境时间线与史实数据.md), [campaign/free world](docs/20_亚洲战役系统与自由世界.md) |
 | Economy/progression | [Resources and morale](docs/21_经济物资士气与多元军队.md), [profile transactions](docs/08_养成与事务回归.md) |
 | Visual references | [EW6 direction](docs/16_欧陆战争6对标与美术改版.md), [map gaps](docs/25_欧陆战争6地图资源差距评估.md), [UI structure](docs/26_欧陆战争6_UI结构与视觉对标.md) |
-| Current art | [Actions](docs/27_动作关键帧与地格详情.md), [asset bank](docs/28_地图素材扩充与去重.md), [surfaces/rivers](docs/29_地表材质与细水系.md) |
+| Current art | [20 regional ground types](docs/30_二十类地域地表与纹理整改.md), [actions](docs/27_动作关键帧与地格详情.md), [asset bank](docs/28_地图素材扩充与去重.md), [surfaces/rivers](docs/29_地表材质与细水系.md) |
 | Verified scope | [Completion](docs/23_当前完成度评估.md), [validation](docs/05_测试与验收.md) |
 | Media and sources | [Screenshots/GIFs](docs/MEDIA.md), [provenance](docs/asset-provenance/index.json), [licensing](LICENSE-NOTICE.md) |
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.12 assessment and corresponding reports for current status.
+Older chapters preserve their version context. Use these READMEs, the 0.2.13 assessment and corresponding reports for current status.

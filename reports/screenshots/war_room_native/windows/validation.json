@@ -1,0 +1,385 @@
+{
+	"build_version": "0.2.13",
+	"captures": [
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/home.png",
+			"surface": "home"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/campaign.png",
+			"surface": "campaign"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/conquest.png",
+			"surface": "conquest"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/legion.png",
+			"surface": "legion"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/opening_army.png",
+			"surface": "opening_army"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/recruit.png",
+			"surface": "recruit"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/buildings.png",
+			"surface": "buildings"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/diplomacy.png",
+			"surface": "diplomacy"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/assign_general.png",
+			"surface": "assign_general"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/headquarters.png",
+			"surface": "headquarters"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/technology.png",
+			"surface": "technology"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/staff_research.png",
+			"surface": "staff_research"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/legion_deployment.png",
+			"surface": "legion_deployment"
+		}
+	],
+	"checks": [
+		{
+			"detail": null,
+			"name": "native_capture_home",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "home_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "locked_campaign_cannot_launch",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_campaign",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "campaign_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_LaunchScenario_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_EraSelector_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_DifficultySelector_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_date_stays_on_one_line",
+			"passed": true
+		},
+		{
+			"detail": 733.0,
+			"name": "campaign_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "era_filter_selects_actual_1927_scenario",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_preview_uses_real_asia_map",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "map_city_touch_changes_playable_faction",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_conquest",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "conquest_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_LaunchScenario_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_EraSelector_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_DifficultySelector_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_FactionSelector_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_date_stays_on_one_line",
+			"passed": true
+		},
+		{
+			"detail": 733.0,
+			"name": "conquest_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_legion",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "legion_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "legion_LaunchScenario_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "legion_EraSelector_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "legion_date_stays_on_one_line",
+			"passed": true
+		},
+		{
+			"detail": 733.0,
+			"name": "legion_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "preview_navigation_does_not_create_match_or_mutate_profile",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "unlocked_campaign_can_launch",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "launch_button_starts_selected_scenario",
+			"passed": true
+		},
+		{
+			"detail": {
+				"own_units": 14,
+				"playfield": "[P: (316.0, 104.0), S: (1180.0, 822.0)]",
+				"visible": 14
+			},
+			"name": "opening_army_visible_between_hud_panels",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_opening_army",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "opening_army_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "rifle_card_present",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "rapid_stack_change_validates_latest_three_layer_offer",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "three_layer_offer_submits_actual_recruit_command",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "displayed_recruit_cost_matches_actual_resource_payment",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_recruit",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "recruit_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "recruit_close_reachable",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_buildings",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "buildings_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "buildings_close_reachable",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_diplomacy",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "diplomacy_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "diplomacy_close_reachable",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "unavailable_diplomatic_actions_have_visible_reasons",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_assign_general",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "assign_general_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "assign_general_close_reachable",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_headquarters",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "headquarters_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_technology",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "technology_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "first_technology_has_actionable_research_button",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "research_button_pays_and_persists_real_rank",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "headquarters_research_does_not_change_live_match_snapshot",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_staff_research",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "staff_research_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "seventh_staff_research_branch_accessible",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_legion_deployment",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "legion_deployment_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "legion_deployment_close_reachable",
+			"passed": true
+		}
+	],
+	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
+	"passed": true,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"raw_godot_captures": true,
+	"ui_scale": 1.0,
+	"viewport": "(1920.0, 1080.0)"
+}

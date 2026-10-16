@@ -280,6 +280,7 @@ func prepare_geography() -> void:
 		world_bounds=world_bounds.expand(HexGrid.to_world(h))
 	apply_named_landcover_classes()
 	surface_region_diagnostics=MapSurfaceRegions.apply(presentation_cells,presentation_source_map_id())
+	surface_region_diagnostics["terrain_subtypes"]=MapTerrainSurfaces.apply(presentation_cells,presentation_source_map_id())
 	for h in presentation_cells:
 		var visual_cell: Dictionary=presentation_cells[h]
 		var terrain_kind=TerrainVisuals.kind_for_cell(visual_cell)
@@ -447,10 +448,28 @@ func focus_player() -> void:
 	var own=state.units.filter(func(u):return u.owner_id==state.player_faction_id and u.position!=null)
 	if state.mode=="conquest":
 		var city=StateAccess.nearest_city(state,HexGrid.coordinate(own[0].position),state.player_faction_id) if not own.is_empty() else {}
-		camera=HexGrid.to_world(HexGrid.coordinate(city.position)) if not city.is_empty() else Vector2(1200,1000);zoom=.65
+		zoom=.65;focus_world(HexGrid.to_world(HexGrid.coordinate(city.position)) if not city.is_empty() else Vector2(1200,1000))
 	else:
 		var city=StateAccess.find(state,"cities",recipe.target_city_id)
-		camera=HexGrid.to_world(HexGrid.coordinate(city.position))+Vector2(-420,50);zoom=.76
+		var at=HexGrid.to_world(HexGrid.coordinate(city.position)) if not city.is_empty() else world_bounds.get_center()
+		if not own.is_empty():
+			var first=HexGrid.to_world(HexGrid.coordinate(own[0].position));var army=Rect2(first,Vector2.ONE)
+			for unit in own:
+				var point=HexGrid.to_world(HexGrid.coordinate(unit.position))
+				if point.distance_to(first)<1600:army=army.expand(point)
+			army=army.grow(100)
+			var area=map_hud_area().grow(-48)
+			# Include the objective when it is locally reachable in this opening
+			# view. A distant campaign objective must not shrink the army to dots.
+			if at.distance_to(army.get_center())<minf(area.size.x,area.size.y)/.65:army=army.expand(at).grow(36)
+			zoom=clampf(minf(area.size.x/maxf(1,army.size.x),area.size.y/maxf(1,army.size.y)),.48,.90)
+			focus_world(army.get_center())
+		else:zoom=.76;focus_world(at)
+
+func focus_world(world: Vector2) -> void:
+	# The unobscured playfield has a different centre from the full viewport.
+	# Keep the selected city/army there, rather than beneath the right inspector.
+	camera=world-(map_hud_area().get_center()-size*.5)/zoom
 	clamp_camera();queue_redraw()
 
 func screen_to_hex(screen: Vector2) -> Vector2i:return HexGrid.from_world((screen-size*.5)/zoom+camera)
@@ -491,7 +510,22 @@ func map_bank_capture_facts() -> Dictionary:
 		materials[family]=int(materials.get(family,0))+1
 		material_ids[map_details.surfaces.get(key,"")]=true
 	var hydro_facts=MapHydrography.facts(detail_river_lines,detail_river_buckets,hydrography_diagnostics,view,zoom,state.map.get("strategic_scale",false))
-	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
+	var subtype_facts=terrain_surface_capture_facts(view)
+	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
+
+func terrain_surface_capture_facts(view: Rect2) -> Dictionary:
+	var type_counts: Dictionary={};var source_counts: Dictionary={};var repeated=0;var pairs=0
+	for entry in visible_terrain_entries(view):
+		var key=HexGrid.key(entry.hex);var id=str(map_details.surfaces.get(key,""))
+		if not id.begins_with("tile_surface_"):continue
+		var family=str(map_details.surface_families.get(key,""))
+		type_counts[family]=int(type_counts.get(family,0))+1;source_counts[id]=int(source_counts.get(id,0))+1
+		for direction in [Vector2i(1,0),Vector2i(0,1),Vector2i(-1,1)]:
+			var other=str(map_details.surfaces.get(HexGrid.key(entry.hex+direction),""))
+			if not other.begins_with("tile_surface_"):continue
+			pairs+=1
+			if id==other:repeated+=1
+	return {"active":MapTerrainSurfaces.available(),"registered_types":MapTerrainSurfaces.data().get("types",{}).size(),"independent_originals":MapTerrainSurfaces.data().get("records",{}).size(),"visible_types":type_counts,"source_use_counts":source_counts,"checked_adjacent_pairs":pairs,"same_original_on_adjacent_cells":repeated,"ground_alpha":MapTerrainSurfaces.alpha_for("temperate_meadow",bool(state.map.get("strategic_scale",false))),"blend_inner_ratio":MapDetails.SURFACE_BLEND_INNER,"rule_geometry_changed":false}
 
 func place_at_screen(screen: Vector2) -> String:
 	if not show_places or not selected_unit_id.is_empty():return ""
@@ -529,10 +563,11 @@ func zoom_at(factor: float, at: Vector2) -> void:
 func clamp_camera() -> void:
 	if state.is_empty():return
 	var bounds=camera_bounds if camera_bounds.has_area() else world_bounds
-	var half_view=size/(2*zoom)
+	var area=map_hud_area();var half_view=area.size/(2*zoom)
+	var center_offset=(area.get_center()-size*.5)/zoom
 	for axis in range(2):
-		var low=bounds.position[axis]+minf(half_view[axis]-20,bounds.size[axis]*.5)
-		var high=bounds.end[axis]-minf(half_view[axis]-20,bounds.size[axis]*.5)
+		var low=bounds.position[axis]+minf(half_view[axis]-20,bounds.size[axis]*.5)-center_offset[axis]
+		var high=bounds.end[axis]-minf(half_view[axis]-20,bounds.size[axis]*.5)-center_offset[axis]
 		camera[axis]=clampf(camera[axis],low,high)
 
 func _gui_input(event: InputEvent) -> void:

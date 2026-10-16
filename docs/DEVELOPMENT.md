@@ -52,9 +52,9 @@ godot --headless --path . --script tests/transaction_test.gd
 godot --headless --path . --script tests/asia_content_test.gd
 ```
 
-全部 22 组名称和历史通过数见[测试与验收](05_测试与验收.md)。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
+全部 23 组名称和通过范围见[测试与验收](05_测试与验收.md)，包含新增 `tests/terrain_surfaces_test.gd`。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
 
-All 22 groups and prior counts are in the validation chapter. Selected reports preserve their original paths, timestamps and fingerprints as historical evidence, not as newly executed tests on the clone.
+All 23 groups and their scope are in the validation chapter, including `tests/terrain_surfaces_test.gd`. Selected reports preserve their original paths, timestamps and fingerprints as evidence, not as newly executed tests on the clone.
 
 ## 文档和媒体维护 / Documentation maintenance
 
@@ -63,12 +63,18 @@ All 22 groups and prior counts are in the validation chapter. Selected reports p
 The two READMEs are maintained together and protected from status-generator overwrites. Navigation diagrams use Mermaid. Screenshots remain full native viewports. GIFs convert continuous native MP4 excerpts at normal speed, retaining the complete frame and provenance.
 
 ```powershell
-# 已有图片、提示词和录像时，重新整理仓库文档素材：
-# Rebuild documentation media from existing sources:
-python tools/prepare_repository_media.py --workspace E:/dev/vibe-game/世界征服者类
-# 已转换 GIF 时，只核对／整理其他资料：
-python tools/prepare_repository_media.py --skip-gifs
+# 核对全部当前原图、提示词副本和来源：
+# Verify current immutable originals and portable prompts:
+python tools/refresh_terrain_repository.py --provenance-only
+# 原工作区完成当前 EXE 原生验收后，复制当前界面/地表截图：
+# Copy current native UI/terrain captures after the exported EXE passes QA:
+python tools/capture_terrain_update.py
+python tools/refresh_terrain_repository.py
 ```
+
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前 0.2.13 截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+
+`prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 
 独立克隆内已有提示词副本；外部原始提示词目录可用时会核对并复制，不可用时核对仓库副本。重新捕获主菜单需使用原生导出或编辑器运行：
 

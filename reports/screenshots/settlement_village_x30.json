@@ -1,14 +1,14 @@
 {
-	"build_version": "0.2.12",
+	"build_version": "0.2.13",
 	"city_labels": [
 		{
 			"city_id": "shanhaiguan",
 			"font_pixels": 22,
 			"screen_rect": [
 				1145.99987792969,
-				600.640808105469,
-				108.000005493164,
-				28.8000003051758
+				605.565734863281,
+				107.999998063959,
+				28.7999988343036
 			],
 			"shifted": true,
 			"text": "山海关 ★"
@@ -17,10 +17,10 @@
 			"city_id": "qinhuangdao",
 			"font_pixels": 22,
 			"screen_rect": [
-				667.519836425781,
-				816.15869140625,
-				80.0000021362305,
-				28.8000003051758
+				608.418212890625,
+				862.788818359375,
+				80.0000021737787,
+				28.7999988343036
 			],
 			"shifted": true,
 			"text": "秦皇岛"
@@ -29,10 +29,10 @@
 			"city_id": "place_beiyingzi",
 			"font_pixels": 20,
 			"screen_rect": [
-				1054.21362304688,
-				374.719299316406,
-				107.000000610352,
-				27.5999990844727
+				1043.138671875,
+				364.220489501953,
+				106.999996819127,
+				27.5999992887611
 			],
 			"shifted": true,
 			"text": "北营子 · 村"
@@ -61,7 +61,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1684.932,
+		"preparation_ms": 1177.433,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -77,14 +77,15 @@
 		],
 		"catalog_additional_sources": 796,
 		"catalog_map_assets": 870.0,
-		"distinct_scenery_originals_intersecting_view": 49,
-		"distinct_surface_originals_in_view": 76,
+		"current_total_map_assets": 950,
+		"distinct_scenery_originals_intersecting_view": 40,
+		"distinct_surface_originals_in_view": 20,
 		"families": {
-			"foothill_ew": 22,
-			"foothill_ns": 12,
-			"ridge_ew": 7,
+			"foothill_ew": 15,
+			"foothill_ns": 8,
+			"ridge_ew": 4,
 			"ridge_ns": 4,
-			"riverbank": 4,
+			"riverbank": 3,
 			"rocky_outcrop": 8
 		},
 		"hydrography": {
@@ -98,66 +99,58 @@
 			"source_endpoints_preserved": true,
 			"source_fine_reaches": 2921,
 			"source_map_id": "jingfeng",
-			"visible_detail_segments": 72,
+			"visible_detail_segments": 157,
 			"visible_existing_detail_reaches": 0,
-			"visible_fine_reaches": 12,
+			"visible_fine_reaches": 25,
 			"visible_fine_stream_orders": {
+				"1": 13,
 				"2": 6,
 				"3": 6
 			},
 			"width_is_symbolic": true
 		},
 		"measurement_scope": "Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score.",
-		"nearest_repeated_source_distance_world": 425.952270507813,
+		"nearest_repeated_source_distance_world": 1230.95922851563,
 		"same_source_pairs_under_250_world_units": 0,
-		"scenery_instances_intersecting_view": 57,
+		"scenery_instances_intersecting_view": 42,
 		"settlement_sources": {
 			"place_beiyingzi": "building_bank_village_north_china_012",
 			"qinhuangdao": "building_bank_station_north_china_009"
 		},
 		"source_images_modified": false,
 		"source_use_counts": {
-			"scenery_bank_foothill_ew_001": 1,
 			"scenery_bank_foothill_ew_003": 1,
 			"scenery_bank_foothill_ew_005": 1,
 			"scenery_bank_foothill_ew_007": 1,
-			"scenery_bank_foothill_ew_009": 1,
-			"scenery_bank_foothill_ew_010": 2,
+			"scenery_bank_foothill_ew_010": 1,
 			"scenery_bank_foothill_ew_013": 1,
 			"scenery_bank_foothill_ew_022": 1,
-			"scenery_bank_foothill_ew_024": 4,
+			"scenery_bank_foothill_ew_024": 1,
 			"scenery_bank_foothill_ew_026": 1,
 			"scenery_bank_foothill_ew_027": 1,
 			"scenery_bank_foothill_ew_032": 1,
 			"scenery_bank_foothill_ew_036": 1,
 			"scenery_bank_foothill_ew_037": 1,
-			"scenery_bank_foothill_ew_038": 1,
 			"scenery_bank_foothill_ew_039": 1,
 			"scenery_bank_foothill_ew_045": 1,
 			"scenery_bank_foothill_ew_046": 1,
 			"scenery_bank_foothill_ns_001": 1,
-			"scenery_bank_foothill_ns_007": 1,
 			"scenery_bank_foothill_ns_008": 1,
 			"scenery_bank_foothill_ns_011": 1,
 			"scenery_bank_foothill_ns_012": 1,
 			"scenery_bank_foothill_ns_013": 1,
 			"scenery_bank_foothill_ns_014": 1,
-			"scenery_bank_foothill_ns_017": 1,
-			"scenery_bank_foothill_ns_024": 1,
-			"scenery_bank_foothill_ns_025": 2,
+			"scenery_bank_foothill_ns_025": 1,
 			"scenery_bank_foothill_ns_026": 1,
-			"scenery_bank_ridge_ew_001": 1,
 			"scenery_bank_ridge_ew_005": 1,
-			"scenery_bank_ridge_ew_008": 1,
 			"scenery_bank_ridge_ew_019": 1,
-			"scenery_bank_ridge_ew_022": 1,
 			"scenery_bank_ridge_ew_033": 1,
 			"scenery_bank_ridge_ew_047": 1,
 			"scenery_bank_ridge_ns_004": 1,
 			"scenery_bank_ridge_ns_009": 1,
 			"scenery_bank_ridge_ns_010": 1,
 			"scenery_bank_ridge_ns_041": 1,
-			"scenery_bank_riverbank_002": 2,
+			"scenery_bank_riverbank_002": 1,
 			"scenery_bank_riverbank_003": 1,
 			"scenery_bank_riverbank_004": 1,
 			"scenery_bank_rocky_outcrop_006": 2,
@@ -179,18 +172,59 @@
 			"source_id": "resolve_ecoregions_2017",
 			"source_scope": "biogeographic_ground_material_reference",
 			"source_year": 2017.0,
+			"terrain_subtypes": {
+				"active": true,
+				"assignments": 45368,
+				"historical_landuse_survey": false,
+				"independent_originals": 80,
+				"registered_types": 20,
+				"rule_maps_modified": false,
+				"source_scope": "regional_ground_reference_plus_archived_dem",
+				"source_year": 2017,
+				"types": {
+					"alluvial_loam": 165,
+					"dry_steppe": 57,
+					"saline_meadow": 1160,
+					"temperate_litter": 27050,
+					"weathered_rock": 16936
+				},
+				"water_or_forest_added": false
+			},
 			"water_or_forest_added": false
 		},
 		"surface_material_families_in_view": {
-			"alluvial_soil": 234,
-			"meadow": 67,
-			"rocky_ground": 125,
-			"sea_water": 286
+			"sea_water": 222,
+			"temperate_litter": 254,
+			"weathered_rock": 90
 		},
-		"zoom": 0.76
+		"terrain_surface_extension": {
+			"active": true,
+			"blend_inner_ratio": 0.7,
+			"checked_adjacent_pairs": 901,
+			"ground_alpha": 0.94,
+			"independent_originals": 80,
+			"registered_types": 20,
+			"rule_geometry_changed": false,
+			"same_original_on_adjacent_cells": 0,
+			"source_use_counts": {
+				"tile_surface_temperate_litter_01": 50,
+				"tile_surface_temperate_litter_02": 87,
+				"tile_surface_temperate_litter_03": 84,
+				"tile_surface_temperate_litter_04": 33,
+				"tile_surface_weathered_rock_01": 14,
+				"tile_surface_weathered_rock_02": 33,
+				"tile_surface_weathered_rock_03": 29,
+				"tile_surface_weathered_rock_04": 14
+			},
+			"visible_types": {
+				"temperate_litter": 254,
+				"weathered_rock": 90
+			}
+		},
+		"zoom": 0.85120637964149
 	},
 	"map_detail": {
-		"cell_river_segments": 548,
+		"cell_river_segments": 1283,
 		"coast_lines": 11,
 		"control_layer_visible": true,
 		"crossing_markers": 4,
@@ -220,16 +254,16 @@
 			"road": 369,
 			"sea": 17847
 		},
-		"terrain_depth_draw_count": 296,
+		"terrain_depth_draw_count": 278,
 		"terrain_feature_sprite_draw_count": 0,
 		"terrain_layer_visible": true,
 		"terrain_micro_symbol_draw_count": 0,
-		"terrain_surface_variant_draw_count": 1455,
+		"terrain_surface_variant_draw_count": 1178,
 		"terrain_symbol_draw_count": 0,
-		"terrain_tile_draw_count": 296,
+		"terrain_tile_draw_count": 278,
 		"territory_field_opacity": 0.21
 	},
-	"map_zoom": 0.76,
+	"map_zoom": 0.85120637964149,
 	"mobile_layout_profile": true,
 	"physical_android_device_tested": false,
 	"qa_save_isolated": true,
@@ -249,13 +283,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 136.383,
+		"index_ms": 129.484,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2508.987,
+		"mesh_ms": 2610.241,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1127.111,
-		"preparation_ms": 3772.481,
+		"placement_ms": 1220.091,
+		"preparation_ms": 3959.815,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

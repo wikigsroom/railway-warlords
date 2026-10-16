@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.12",
+	"build_version": "0.2.13",
 	"city_labels": [
 		{
 			"city_id": "shanhaiguan",
@@ -61,7 +61,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1688.953,
+		"preparation_ms": 1195.088,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -77,8 +77,9 @@
 		],
 		"catalog_additional_sources": 796,
 		"catalog_map_assets": 870.0,
+		"current_total_map_assets": 950,
 		"distinct_scenery_originals_intersecting_view": 191,
-		"distinct_surface_originals_in_view": 119,
+		"distinct_surface_originals_in_view": 57,
 		"families": {
 			"foothill_ew": 3596,
 			"foothill_ns": 2044,
@@ -318,15 +319,73 @@
 			"source_id": "resolve_ecoregions_2017",
 			"source_scope": "biogeographic_ground_material_reference",
 			"source_year": 2017.0,
+			"terrain_subtypes": {
+				"active": true,
+				"assignments": 45368,
+				"historical_landuse_survey": false,
+				"independent_originals": 80,
+				"registered_types": 20,
+				"rule_maps_modified": false,
+				"source_scope": "regional_ground_reference_plus_archived_dem",
+				"source_year": 2017,
+				"types": {
+					"alluvial_loam": 165,
+					"dry_steppe": 57,
+					"saline_meadow": 1160,
+					"temperate_litter": 27050,
+					"weathered_rock": 16936
+				},
+				"water_or_forest_added": false
+			},
 			"water_or_forest_added": false
 		},
 		"surface_material_families_in_view": {
-			"alluvial_soil": 16898,
-			"dry_grass": 47,
-			"meadow": 9531,
-			"rocky_ground": 16820,
+			"alluvial_loam": 165,
+			"dry_steppe": 47,
+			"meadow": 39,
+			"saline_meadow": 1088,
 			"sea_water": 16951,
-			"wetland_ground": 1088
+			"temperate_litter": 26225,
+			"weathered_rock": 16820
+		},
+		"terrain_surface_extension": {
+			"active": true,
+			"blend_inner_ratio": 0.7,
+			"checked_adjacent_pairs": 130254,
+			"ground_alpha": 0.94,
+			"independent_originals": 80,
+			"registered_types": 20,
+			"rule_geometry_changed": false,
+			"same_original_on_adjacent_cells": 0,
+			"source_use_counts": {
+				"tile_surface_alluvial_loam_01": 26,
+				"tile_surface_alluvial_loam_02": 54,
+				"tile_surface_alluvial_loam_03": 55,
+				"tile_surface_alluvial_loam_04": 30,
+				"tile_surface_dry_steppe_01": 13,
+				"tile_surface_dry_steppe_02": 14,
+				"tile_surface_dry_steppe_03": 16,
+				"tile_surface_dry_steppe_04": 4,
+				"tile_surface_saline_meadow_01": 170,
+				"tile_surface_saline_meadow_02": 359,
+				"tile_surface_saline_meadow_03": 370,
+				"tile_surface_saline_meadow_04": 189,
+				"tile_surface_temperate_litter_01": 4388,
+				"tile_surface_temperate_litter_02": 8704,
+				"tile_surface_temperate_litter_03": 8757,
+				"tile_surface_temperate_litter_04": 4376,
+				"tile_surface_weathered_rock_01": 2804,
+				"tile_surface_weathered_rock_02": 5633,
+				"tile_surface_weathered_rock_03": 5585,
+				"tile_surface_weathered_rock_04": 2798
+			},
+			"visible_types": {
+				"alluvial_loam": 165,
+				"dry_steppe": 47,
+				"saline_meadow": 1088,
+				"temperate_litter": 26225,
+				"weathered_rock": 16820
+			}
 		},
 		"zoom": 0.0643602552042205
 	},
@@ -390,13 +449,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 116.373,
+		"index_ms": 143.953,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2453.878,
+		"mesh_ms": 2626.764,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1102.113,
-		"preparation_ms": 3672.364,
+		"placement_ms": 1236.491,
+		"preparation_ms": 4007.208,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

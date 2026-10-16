@@ -1,0 +1,220 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-16T06:29:57.787231+00:00",
+  "checks": [
+    {
+      "name": "geographic_original_bytes_preserved",
+      "passed": true
+    },
+    {
+      "name": "historical_precision_is_not_overclaimed",
+      "passed": true
+    },
+    {
+      "name": "exact_original_polygon_membership:asia_strategic",
+      "passed": true,
+      "cells": 3391
+    },
+    {
+      "name": "type_semantics_and_protected_features:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:asia_strategic",
+      "passed": true,
+      "maximum_world_distance": 77.746
+    },
+    {
+      "name": "exact_original_polygon_membership:conquest_china",
+      "passed": true,
+      "cells": 53855
+    },
+    {
+      "name": "type_semantics_and_protected_features:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:conquest_china",
+      "passed": true,
+      "maximum_world_distance": 95.7444
+    },
+    {
+      "name": "exact_original_polygon_membership:hankou",
+      "passed": true,
+      "cells": 355
+    },
+    {
+      "name": "type_semantics_and_protected_features:hankou",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:hankou",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:hankou",
+      "passed": true,
+      "maximum_world_distance": 94.372
+    },
+    {
+      "name": "exact_original_polygon_membership:jingfeng",
+      "passed": true,
+      "cells": 45368
+    },
+    {
+      "name": "type_semantics_and_protected_features:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:jingfeng",
+      "passed": true,
+      "maximum_world_distance": 95.3164
+    },
+    {
+      "name": "exact_original_polygon_membership:jingjin",
+      "passed": true,
+      "cells": 23135
+    },
+    {
+      "name": "type_semantics_and_protected_features:jingjin",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:jingjin",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:jingjin",
+      "passed": true,
+      "maximum_world_distance": 95.2878
+    },
+    {
+      "name": "exact_original_polygon_membership:ningpu",
+      "passed": true,
+      "cells": 406
+    },
+    {
+      "name": "type_semantics_and_protected_features:ningpu",
+      "passed": true
+    },
+    {
+      "name": "authoritative_rule_map_hash_preserved:ningpu",
+      "passed": true
+    },
+    {
+      "name": "valley_material_is_near_an_existing_surveyed_river:ningpu",
+      "passed": true,
+      "maximum_world_distance": 93.884
+    },
+    {
+      "name": "all_twenty_subtypes_are_present_in_real_maps",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "scope": "Independent raw-polygon membership, type semantics, map immutability",
+  "totals_by_type": {
+    "weathered_rock": 52573,
+    "boreal_litter": 530,
+    "temperate_litter": 52836,
+    "gravel_gobi": 278,
+    "savanna_red_soil": 159,
+    "tropical_moist_humus": 4920,
+    "dry_steppe": 1082,
+    "flood_meadow": 13,
+    "tundra_moss": 225,
+    "dune_sand": 47,
+    "alpine_scree": 2188,
+    "saline_meadow": 1916,
+    "desert_steppe": 3405,
+    "temperate_meadow": 23,
+    "dry_woodland_litter": 40,
+    "alluvial_loam": 703,
+    "alpine_steppe": 1267,
+    "alpine_meadow": 91,
+    "subtropical_humus": 4005,
+    "conifer_litter": 209
+  },
+  "assignments_by_map": {
+    "asia_strategic": {
+      "weathered_rock": 1558,
+      "boreal_litter": 530,
+      "temperate_litter": 166,
+      "gravel_gobi": 278,
+      "savanna_red_soil": 159,
+      "tropical_moist_humus": 88,
+      "dry_steppe": 132,
+      "flood_meadow": 13,
+      "tundra_moss": 225,
+      "dune_sand": 47,
+      "alpine_scree": 33,
+      "saline_meadow": 5,
+      "desert_steppe": 59,
+      "temperate_meadow": 23,
+      "dry_woodland_litter": 40,
+      "alluvial_loam": 16,
+      "alpine_steppe": 9,
+      "alpine_meadow": 3,
+      "subtropical_humus": 4,
+      "conifer_litter": 3
+    },
+    "conquest_china": {
+      "tropical_moist_humus": 4832,
+      "weathered_rock": 28934,
+      "alpine_scree": 2131,
+      "conifer_litter": 206,
+      "alpine_meadow": 88,
+      "desert_steppe": 3346,
+      "subtropical_humus": 3555,
+      "temperate_litter": 8028,
+      "alpine_steppe": 1258,
+      "dry_steppe": 887,
+      "alluvial_loam": 378,
+      "saline_meadow": 212
+    },
+    "hankou": {
+      "subtropical_humus": 317,
+      "alluvial_loam": 38
+    },
+    "jingfeng": {
+      "temperate_litter": 27050,
+      "weathered_rock": 16936,
+      "dry_steppe": 57,
+      "alluvial_loam": 165,
+      "saline_meadow": 1160
+    },
+    "jingjin": {
+      "weathered_rock": 5131,
+      "temperate_litter": 17363,
+      "dry_steppe": 6,
+      "alpine_scree": 24,
+      "alluvial_loam": 72,
+      "saline_meadow": 539
+    },
+    "ningpu": {
+      "temperate_litter": 229,
+      "weathered_rock": 14,
+      "subtropical_humus": 129,
+      "alluvial_loam": 34
+    }
+  },
+  "image_statistics": [],
+  "old_material_median_luminance_std_128": null,
+  "new_material_median_luminance_std_128": null,
+  "raster_pixels_written": false,
+  "originals_modified": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false
+}

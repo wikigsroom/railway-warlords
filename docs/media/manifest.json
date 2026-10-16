@@ -1,115 +1,302 @@
 {
-  "version": "0.2.12",
+  "version": "0.2.13",
   "screenshots": [
     {
       "file": "docs/media/menu.png",
-      "sha256": "9b2730a0957c1f22d62a95dc4eca3766f3b03bee54f139cf95ab44b169f37517",
-      "native_source": "current Windows export --qa-session --capture",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/home.png",
+      "sha256": "bf339310ee9b3483ac7797fa42fd6fc3def1d279ea74fe05f53264cf5201eb00",
       "metadata": "docs/media/menu.json",
-      "raw_godot_viewport": true,
+      "byte_identical_to_native_capture": true,
       "physical_android_device_tested": false
     },
     {
       "file": "docs/media/battlefield.png",
+      "version": "0.2.13",
       "native_source": "reports/screenshots/map_final_windows.png",
-      "sha256": "1f87ebf1ca5f4fdb049d46de3514e569dd008b6e48e42d2eaa00c06e3020aa02",
+      "sha256": "4833c06e9827da10cd81dd4e574d8a9ca92aed0deeaa0928b220ce2b0ead526c",
+      "metadata": "docs/media/battlefield.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/battlefield.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/mountains.png",
-      "native_source": "reports/screenshots/map_bank_native/mountain.png",
-      "sha256": "a9d921423216e7ea5a017b388fca58008e3bc6c48e15ba7ba9fe6e64064e0d8b",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/details/mountain.png",
+      "sha256": "3fc2acce1a3e727475da50289bb2bbeb8a4b627eec309d2ecb5ffd472d1b0d47",
+      "metadata": "docs/media/mountains.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/mountains.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/coast.png",
-      "native_source": "reports/screenshots/map_bank_native/coast.png",
-      "sha256": "75b5ca6863dde6ff104a4dc31d3ce25d59ade617d6951b7c2f63e7bb6d641f0f",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/details/coast.png",
+      "sha256": "5b79c5ad90cb4675240ec914f88c4c20792dac53522d1814af260856585026ba",
+      "metadata": "docs/media/coast.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/coast.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/tributaries.png",
-      "native_source": "reports/screenshots/map_bank_native/tributaries.png",
-      "sha256": "0726fa567b40aa46df78409aead4baa4c4f54bf54e9d4bc12cd21849e9f07a60",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/details/tributaries.png",
+      "sha256": "3639dc8a5602c1b0f4b37fade15adb9eef07544518267ac4fac2849d46b75ea6",
+      "metadata": "docs/media/tributaries.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/tributaries.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/sand.png",
-      "native_source": "reports/screenshots/map_bank_native/sand.png",
-      "sha256": "15243b72cf668706964a6d9736169df57318066c626b019922b6f7b48127a1d1",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/map_dune_sand.png",
+      "sha256": "4f49f4566338ecf35b7fdd84808297969ff6cb1e2ef8a6ea5068328db118aed8",
+      "metadata": "docs/media/sand.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/sand.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/gravel.png",
-      "native_source": "reports/screenshots/map_bank_native/gravel.png",
-      "sha256": "a06428c5d0f50eb1d92cabe54dd597bc78d2db0527094bb21c0a3f3842ef7070",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/map_gravel_gobi.png",
+      "sha256": "320a21ab6a50921d57c2703764a3256d92f4b2b3fd52b6b31198514743729efa",
+      "metadata": "docs/media/gravel.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/gravel.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/wet-soil.png",
-      "native_source": "reports/screenshots/map_bank_native/wet_soil.png",
-      "sha256": "599616fb828d56f8e7aa69d13878e22a411cd4bc619cedf33bfdc5ce68aff99d",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/map_saline_meadow.png",
+      "sha256": "a21d2b73fad35ad9edec509f505c34c04b31e617311b08a4b16afe7c8b2b123e",
+      "metadata": "docs/media/wet-soil.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/wet-soil.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/yangtze.png",
-      "native_source": "reports/screenshots/map_bank_native/yangtze.png",
-      "sha256": "87794c4a31515a19ff5b41b285218fe12658e704b7c77e541ce6139b39c8c1e8",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/details/yangtze.png",
+      "sha256": "d655856a23fdbb1429a65f94b8995042b441621b493d20c35dfbbc4d4d55f8c1",
+      "metadata": "docs/media/yangtze.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/yangtze.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/asia-overview.png",
+      "version": "0.2.13",
       "native_source": "reports/screenshots/asia_1840_overview.png",
-      "sha256": "1bbcbe113f33f52561b7db967b047212d539b17e9ab6a1e4bd40842d6f902292",
+      "sha256": "622d58f1a5428a20ecadf3f83d285e126b6de35c62b81e70c8f2eb191e3af7b2",
+      "metadata": "docs/media/asia-overview.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/asia-overview.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/legion-deployment.png",
-      "native_source": "reports/screenshots/legion_deployment_windows.png",
-      "sha256": "53f70bf2fc383d937783c103009652311f01771005b413b8ef9fd7ebad11adba",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/legion_deployment.png",
+      "sha256": "0f149ac999539cdab8f7d611bd244248e5c6fb4c78ce29ef059dd81553bb253c",
+      "metadata": "docs/media/legion-deployment.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/legion-deployment.json"
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/mobile-layout.png",
-      "native_source": "reports/screenshots/map_bank_native/forest_x30.png",
-      "sha256": "d13a4ab1f2cb81e077c9e3725f735db3748ea5c0c288c4a669b29240e4df396a",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/x30_layout/opening_army.png",
+      "sha256": "fb9026cca197987f21cf306fec43acb9b167be05328960a18c926bbcdd978de2",
+      "metadata": "docs/media/mobile-layout.json",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false,
-      "metadata": "docs/media/mobile-layout.json"
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/campaign-browser.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/campaign.png",
+      "sha256": "7aef923a06b869f66369b99011336da402c0a47dc9f43a2f21262f20051540dd",
+      "metadata": "docs/media/campaign-browser.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/conquest-browser.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/conquest.png",
+      "sha256": "c1e4f5f68d8d5aa1e2a2d5a60f6d61d88dc1dfcc9d0640ab2df3a17761120a65",
+      "metadata": "docs/media/conquest-browser.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/legion-browser.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/legion.png",
+      "sha256": "b7caf8b75def95fbd3bce81c48432af2baa76832aa8eedd567f1e8b6bac0cebf",
+      "metadata": "docs/media/legion-browser.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/recruitment.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/recruit.png",
+      "sha256": "64303d5e8e9a90e4ec300cc9a862107149580dfdf2496b15db273ff8ea1057b1",
+      "metadata": "docs/media/recruitment.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/city-buildings.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/buildings.png",
+      "sha256": "ee9828f8766ec7e4e13e84eef6bad0f7be54ba67cb29d2453d657435a15f14cf",
+      "metadata": "docs/media/city-buildings.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/diplomacy.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/diplomacy.png",
+      "sha256": "7cf18936ba88bb72268af07f75dc71dd436f529c6177ed6ec36ae1abd59c394e",
+      "metadata": "docs/media/diplomacy.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/assign-general.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/assign_general.png",
+      "sha256": "149d9be858b5c35f8ac464c2cf254fa49d01a1fe1f300a8b71adef47c05f681f",
+      "metadata": "docs/media/assign-general.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/headquarters.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/headquarters.png",
+      "sha256": "8a69b63f6015294a43d2049573f1ecb15b7a1ddd14aff8f61c105ae1b07eb710",
+      "metadata": "docs/media/headquarters.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/technology.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/technology.png",
+      "sha256": "57ee9ce4e7309803701df3d67ad5394ad5f0096f61397d2ea188fec684a54829",
+      "metadata": "docs/media/technology.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/staff-research.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/war_room_native/windows/staff_research.png",
+      "sha256": "1aaf9bd8162d00e40b3868e78f2f655f2da94d9c717b31dd786d4a4f68e29fc9",
+      "metadata": "docs/media/staff-research.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/terrain-atlas-grass.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/atlas_0.png",
+      "sha256": "5f758833724ec78dc33acbff46cde79cdcd939e67e3f14b1c5ba660831a4bf73",
+      "metadata": "docs/media/terrain-atlas-grass.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/terrain-atlas-forest.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/atlas_1.png",
+      "sha256": "6871d5ac452771573d8d990df39a3fef36b76567a3cfe0a3f741280932049591",
+      "metadata": "docs/media/terrain-atlas-forest.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/terrain-atlas-relief.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/atlas_2.png",
+      "sha256": "ef3650da08a444b6c076a9ff876c9ddeef16cc5c4e42d6775d53bab81585e1d9",
+      "metadata": "docs/media/terrain-atlas-relief.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/terrain-temperate-meadow.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_meadow.png",
+      "sha256": "f952e9653d1659f61416aa2db6e122f3ebc8b6c005e8a065112b0223f1b92cdf",
+      "metadata": "docs/media/terrain-temperate-meadow.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/terrain-temperate-litter.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_litter.png",
+      "sha256": "47d4dbbe70dcddc51e5e4832f45cd014a39aa694be8ad6ca5bd90e53b50fbb1e",
+      "metadata": "docs/media/terrain-temperate-litter.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/terrain-conifer-litter.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/map_conifer_litter.png",
+      "sha256": "f393765cab43f17b65ebfb108ff870dc7d037763e98cabb269cccec9cf4e0317",
+      "metadata": "docs/media/terrain-conifer-litter.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/terrain-flood-meadow.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/map_flood_meadow.png",
+      "sha256": "085300fc100291e70e073ce8e4a729e0852eec8bf43d44b2bce8b8cfdb8afb8b",
+      "metadata": "docs/media/terrain-flood-meadow.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/terrain-weathered-rock.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/map_weathered_rock.png",
+      "sha256": "e1905328dcc4b633b1bacc7186f2712dc9ef68e75c427dac59d1892e30911cd6",
+      "metadata": "docs/media/terrain-weathered-rock.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/terrain-alpine-scree.png",
+      "version": "0.2.13",
+      "native_source": "reports/screenshots/terrain_surfaces_native/windows/map_alpine_scree.png",
+      "sha256": "ae01ab4c0760ca2641c73904f7935cbd666065cfd8138991d84b0f570145237a",
+      "metadata": "docs/media/terrain-alpine-scree.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
     },
     {
       "file": "docs/media/battle-impact.png",
       "native_source": "reports/screenshots/visual_playtest/04_impact.png",
       "sha256": "3f147f07dd0b48ba453eb755335df7c55c6e6354e49d413c47565201cff2d4df",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false
+      "physical_android_device_tested": false,
+      "version": "0.2.12",
+      "historical_capture": true
     },
     {
       "file": "docs/media/air-recon.png",
       "native_source": "reports/screenshots/visual_playtest/06_air_recon.png",
       "sha256": "222d44616c8d66dfcc7efba02e0989d0915033e2e7ccbae4797a880d33525dcf",
       "byte_identical_to_native_capture": true,
-      "physical_android_device_tested": false
+      "physical_android_device_tested": false,
+      "version": "0.2.12",
+      "historical_capture": true
     }
   ],
   "animations": [
@@ -127,7 +314,9 @@
       "filter": "fps=12,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=sierra2_4a",
       "overlays": false,
       "synthetic_frames": false,
-      "audio": false
+      "audio": false,
+      "version": "0.2.12",
+      "historical_recording": true
     },
     {
       "file": "docs/media/combat.gif",
@@ -143,7 +332,9 @@
       "filter": "fps=12,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=sierra2_4a",
       "overlays": false,
       "synthetic_frames": false,
-      "audio": false
+      "audio": false,
+      "version": "0.2.12",
+      "historical_recording": true
     }
   ],
   "source_video": {
@@ -154,7 +345,9 @@
       810
     ],
     "fps": 30,
-    "duration_seconds": 26.2
+    "duration_seconds": 26.2,
+    "version": "0.2.12"
   },
-  "notice": "Desktop native captures. Mobile layout is not a physical Android test."
+  "current_native_evidence": "reports/terrain_surface_native_evidence.json",
+  "notice": "Current terrain/UI screenshots are native Windows captures. Battle GIFs and action stills preserve version 0.2.12. No physical Android acceptance."
 }

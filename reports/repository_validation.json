@@ -1,10 +1,10 @@
 {
   "passed": true,
-  "version": "0.2.12",
-  "public_documents": 7,
-  "local_links_checked": 265,
-  "verified_images_and_prompts": 1056,
-  "native_screenshots": 14,
+  "version": "0.2.13",
+  "public_documents": 14,
+  "local_links_checked": 362,
+  "verified_images_and_prompts": 1136,
+  "native_screenshots": 33,
   "gifs": [
     {
       "file": "docs/media/movement.gif",
@@ -27,15 +27,15 @@
       ]
     }
   ],
-  "candidate_files": 3792,
-  "candidate_bytes": 2251973666,
-  "text_files_scanned_for_credentials": 2557,
+  "candidate_files": 4293,
+  "candidate_bytes": 2907536997,
+  "text_files_scanned_for_credentials": 2862,
   "scenario_counts": {
     "campaign": 39,
     "conquest": 10,
     "legion": 12
   },
-  "runtime_source_sha256": "8a763cfc5ab4f34259511fb38c82893b07a87c897c8103649a1e76c874d35488",
+  "runtime_source_sha256": "43e87fc6639d92ea52e9b378b11901dbd5f4f1dffc2ab0c950d1c12ad561b0e1",
   "runtime_unchanged": true,
   "physical_android_device_tested": false,
   "errors": []

@@ -10,7 +10,7 @@ var surface_families: Dictionary={}
 var diagnostics: Dictionary={}
 var overhang=220.0
 const SURFACE_BLEND_RADIUS=64.0
-const SURFACE_BLEND_INNER=.50
+const SURFACE_BLEND_INNER=.70
 
 func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array, rivers: Array) -> void:
 	features=[];buckets={};surfaces={};surface_families={};diagnostics={"active":false}
@@ -25,7 +25,9 @@ func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array
 		var material_rect=Rect2(p-Vector2.ONE*SURFACE_BLEND_RADIUS,Vector2.ONE*SURFACE_BLEND_RADIUS*2.0)
 		var safe_material=(kind=="sea" or cell.get("render_land_covered",true)) and not relief.intersects_index(material_rect,relief.boundary_buckets,0.0)
 		if not family.is_empty() and safe_material:
-			materials.append({"key":HexGrid.key(h),"family":family,"position":p})
+			var new_surface=MapTerrainSurfaces.variant_for(family,h)
+			if new_surface.is_empty():materials.append({"key":HexGrid.key(h),"family":family,"position":p})
+			else:surfaces[HexGrid.key(h)]=new_surface
 			surface_families[HexGrid.key(h)]=family
 		if kind not in ["forest","wetland","hill","mountain","peak"] or not cell.get("render_land_covered",false):continue
 		var seed=absi(hash(str(cell.get("id",HexGrid.key(h)))))
@@ -51,7 +53,7 @@ func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array
 	# must pass a whole-source land and route-clearance test after assignment.
 	append_edge_candidates(candidates,coast,"shore",relief,200.0)
 	append_edge_candidates(candidates,rivers,"riverbank",relief,230.0)
-	surfaces=MapArtBank.assign(materials,180.0)
+	surfaces.merge(MapArtBank.assign(materials,180.0))
 	var choices=MapArtBank.assign(candidates,250.0)
 	var rejected=0;var uses: Dictionary={}
 	for feature in candidates:
@@ -136,8 +138,10 @@ func surface_meshes(entries: Array, strategic: bool, limit: int=1900) -> Diction
 		var key=HexGrid.key(entry.hex);var id=str(surfaces.get(key,""))
 		if id.is_empty():continue
 		var family=str(surface_families.get(key,MapArtBank.material_family(entry.cell)))
-		var alpha=float({"meadow":.56,"dry_grass":.58,"rocky_ground":.38,"woodland_floor":.60,"wetland_ground":.66,"sea_water":.10,"sandy_ground":.74,"arid_gravel":.68,"alluvial_soil":.58}.get(family,.0))
-		if strategic:alpha*=.86
+		var alpha=MapTerrainSurfaces.alpha_for(family,strategic)
+		if alpha<0:
+			alpha=float({"meadow":.56,"dry_grass":.58,"rocky_ground":.38,"woodland_floor":.60,"wetland_ground":.66,"sea_water":.10,"sandy_ground":.74,"arid_gravel":.68,"alluvial_soil":.58}.get(family,.0))
+			if strategic:alpha*=.86
 		if not groups.has(id):groups[id]={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
 		var group: Dictionary=groups[id];var center=HexGrid.to_world(entry.hex);var corners=HexGrid.corners(center,SURFACE_BLEND_RADIUS)
 		for index in range(6):

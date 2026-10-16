@@ -1,14 +1,14 @@
 {
-	"build_version": "0.2.12",
+	"build_version": "0.2.13",
 	"city_labels": [
 		{
 			"city_id": "tangshan",
 			"font_pixels": 17,
 			"screen_rect": [
-				938.000061035156,
-				560.419799804688,
-				44.0000003051758,
-				23.0000006866455
+				938.000122070313,
+				566.300415039063,
+				44.0000003814697,
+				22.9999998092651
 			],
 			"shifted": false,
 			"text": "唐山"
@@ -37,7 +37,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1684.247,
+		"preparation_ms": 1167.148,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -53,11 +53,10 @@
 		],
 		"catalog_additional_sources": 796,
 		"catalog_map_assets": 870.0,
-		"distinct_scenery_originals_intersecting_view": 1,
-		"distinct_surface_originals_in_view": 24,
-		"families": {
-			"foothill_ew": 1
-		},
+		"current_total_map_assets": 950,
+		"distinct_scenery_originals_intersecting_view": 0,
+		"distinct_surface_originals_in_view": 4,
+		"families": {},
 		"hydrography": {
 			"display_corner_rounding_max_deviation_metres": 60.0,
 			"fine_source_id": "hydrorivers_v10_as",
@@ -80,14 +79,12 @@
 		"measurement_scope": "Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score.",
 		"nearest_repeated_source_distance_world": null,
 		"same_source_pairs_under_250_world_units": 0,
-		"scenery_instances_intersecting_view": 1,
+		"scenery_instances_intersecting_view": 0,
 		"settlement_sources": {
 			"tangshan": "building_bank_market_north_china_014"
 		},
 		"source_images_modified": false,
-		"source_use_counts": {
-			"scenery_bank_foothill_ew_018": 1
-		},
+		"source_use_counts": {},
 		"surface_geography": {
 			"families": {
 				"alluvial_soil": 17602,
@@ -100,17 +97,52 @@
 			"source_id": "resolve_ecoregions_2017",
 			"source_scope": "biogeographic_ground_material_reference",
 			"source_year": 2017.0,
+			"terrain_subtypes": {
+				"active": true,
+				"assignments": 45368,
+				"historical_landuse_survey": false,
+				"independent_originals": 80,
+				"registered_types": 20,
+				"rule_maps_modified": false,
+				"source_scope": "regional_ground_reference_plus_archived_dem",
+				"source_year": 2017,
+				"types": {
+					"alluvial_loam": 165,
+					"dry_steppe": 57,
+					"saline_meadow": 1160,
+					"temperate_litter": 27050,
+					"weathered_rock": 16936
+				},
+				"water_or_forest_added": false
+			},
 			"water_or_forest_added": false
 		},
 		"surface_material_families_in_view": {
-			"alluvial_soil": 623,
-			"meadow": 6,
-			"rocky_ground": 2
+			"temperate_litter": 450
 		},
-		"zoom": 0.76
+		"terrain_surface_extension": {
+			"active": true,
+			"blend_inner_ratio": 0.7,
+			"checked_adjacent_pairs": 1294,
+			"ground_alpha": 0.94,
+			"independent_originals": 80,
+			"registered_types": 20,
+			"rule_geometry_changed": false,
+			"same_original_on_adjacent_cells": 0,
+			"source_use_counts": {
+				"tile_surface_temperate_litter_01": 68,
+				"tile_surface_temperate_litter_02": 145,
+				"tile_surface_temperate_litter_03": 160,
+				"tile_surface_temperate_litter_04": 77
+			},
+			"visible_types": {
+				"temperate_litter": 450
+			}
+		},
+		"zoom": 0.9
 	},
 	"map_detail": {
-		"cell_river_segments": 16,
+		"cell_river_segments": 47,
 		"coast_lines": 11,
 		"control_layer_visible": true,
 		"crossing_markers": 4,
@@ -140,16 +172,16 @@
 			"road": 369,
 			"sea": 17847
 		},
-		"terrain_depth_draw_count": 10,
+		"terrain_depth_draw_count": 6,
 		"terrain_feature_sprite_draw_count": 0,
 		"terrain_layer_visible": true,
 		"terrain_micro_symbol_draw_count": 0,
-		"terrain_surface_variant_draw_count": 1320,
+		"terrain_surface_variant_draw_count": 987,
 		"terrain_symbol_draw_count": 0,
-		"terrain_tile_draw_count": 10,
+		"terrain_tile_draw_count": 6,
 		"territory_field_opacity": 0.21
 	},
-	"map_zoom": 0.76,
+	"map_zoom": 0.9,
 	"mobile_layout_profile": false,
 	"physical_android_device_tested": false,
 	"qa_save_isolated": true,
@@ -169,13 +201,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 174.088,
+		"index_ms": 142.247,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2503.794,
+		"mesh_ms": 2712.362,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1115.842,
-		"preparation_ms": 3793.723,
+		"placement_ms": 1242.6,
+		"preparation_ms": 4097.209,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

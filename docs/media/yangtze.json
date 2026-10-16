@@ -1,11 +1,11 @@
 {
-	"build_version": "0.2.12",
+	"build_version": "0.2.13",
 	"city_labels": [
 		{
 			"city_id": "wuchang",
 			"font_pixels": 18,
 			"screen_rect": [
-				1022.40002441406,
+				1060.19995117188,
 				759.290649414063,
 				102.000003433228,
 				24.0000005722046
@@ -17,7 +17,7 @@
 			"city_id": "hankou",
 			"font_pixels": 18,
 			"screen_rect": [
-				885.700012207031,
+				923.5,
 				584.699951171875,
 				73.0000019073486,
 				24.0000005722046
@@ -29,7 +29,7 @@
 			"city_id": "hanyang",
 			"font_pixels": 18,
 			"screen_rect": [
-				821.600036621094,
+				859.400024414063,
 				704.938354492188,
 				50.0000015258789,
 				24.0000005722046
@@ -61,7 +61,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 259,
 		"placed": 1,
-		"preparation_ms": 5.839,
+		"preparation_ms": 4.35,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 3,
 		"rule_cells_changed": false,
@@ -72,13 +72,14 @@
 	"map_bank_visible": {
 		"active": true,
 		"camera": [
-			684.0,
+			648.0,
 			706.6767578125
 		],
 		"catalog_additional_sources": 796,
 		"catalog_map_assets": 870.0,
+		"current_total_map_assets": 950,
 		"distinct_scenery_originals_intersecting_view": 0,
-		"distinct_surface_originals_in_view": 17,
+		"distinct_surface_originals_in_view": 8,
 		"families": {},
 		"hydrography": {
 			"display_corner_rounding_max_deviation_metres": 0.0,
@@ -118,11 +119,50 @@
 			"source_id": "resolve_ecoregions_2017",
 			"source_scope": "biogeographic_ground_material_reference",
 			"source_year": 2017.0,
+			"terrain_subtypes": {
+				"active": true,
+				"assignments": 355,
+				"historical_landuse_survey": false,
+				"independent_originals": 80,
+				"registered_types": 20,
+				"rule_maps_modified": false,
+				"source_scope": "regional_ground_reference_plus_archived_dem",
+				"source_year": 2017,
+				"types": {
+					"alluvial_loam": 38,
+					"subtropical_humus": 317
+				},
+				"water_or_forest_added": false
+			},
 			"water_or_forest_added": false
 		},
 		"surface_material_families_in_view": {
-			"alluvial_soil": 193,
-			"meadow": 1
+			"alluvial_loam": 27,
+			"subtropical_humus": 167
+		},
+		"terrain_surface_extension": {
+			"active": true,
+			"blend_inner_ratio": 0.7,
+			"checked_adjacent_pairs": 505,
+			"ground_alpha": 0.94,
+			"independent_originals": 80,
+			"registered_types": 20,
+			"rule_geometry_changed": false,
+			"same_original_on_adjacent_cells": 0,
+			"source_use_counts": {
+				"tile_surface_alluvial_loam_01": 6,
+				"tile_surface_alluvial_loam_02": 11,
+				"tile_surface_alluvial_loam_03": 7,
+				"tile_surface_alluvial_loam_04": 3,
+				"tile_surface_subtropical_humus_01": 29,
+				"tile_surface_subtropical_humus_02": 55,
+				"tile_surface_subtropical_humus_03": 56,
+				"tile_surface_subtropical_humus_04": 27
+			},
+			"visible_types": {
+				"alluvial_loam": 27,
+				"subtropical_humus": 167
+			}
 		},
 		"zoom": 1.05
 	},
@@ -171,13 +211,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 0,
-		"index_ms": 11.347,
+		"index_ms": 11.792,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 18.383,
+		"mesh_ms": 18.762,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 0,
-		"placement_ms": 0.63,
-		"preparation_ms": 30.36,
+		"placement_ms": 0.661,
+		"preparation_ms": 31.214,
 		"rules_map_mutated": false,
 		"source": "SRTM90m_v3_five_point_samples",
 		"source_meters_per_world_unit": 26.0416666666667,
