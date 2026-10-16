@@ -9,23 +9,11 @@ static func symbolic_width(order: int, strategic: bool, fallback: float=1.7) -> 
 	if order<=0:return fallback
 	# Stream order controls hierarchy, never the number of vertices in a reach.
 	# The same order has the same width on either side of a source junction.
-	var width=float([0.0,1.45,1.85,2.4,3.1,4.15,6.8,7.45,8.1,8.75,9.4][clampi(order,1,10)])
+	var width=float([0.0,1.45,1.85,2.4,3.1,4.15,6.8,9.6,13.6,19.2,27.2][clampi(order,1,10)])
 	return width*(.82 if strategic else 1.0)
 
-static func paint(canvas: CanvasItem, points: PackedVector2Array, width: float, opacity: float, fine: bool) -> void:
-	if points.size()<2 or width<=0.0 or opacity<=0.0:return
-	# Light and a narrow bank shadow supply volume around the archived line.
-	# These are symbolic strokes: no bank polygons, sandbars or new tributaries
-	# are inferred. One continuous lip replaces disconnected decorative dashes.
-	var shade=PackedVector2Array();var light=PackedVector2Array()
-	var offset=Vector2(.35,.65) if fine else Vector2(.65,1.05)
-	for point in points:shade.append(point+offset);light.append(point-offset*.40)
-	canvas.draw_polyline(shade,Color("46594e",opacity*.36),width+(1.9 if fine else 4.1),true)
-	canvas.draw_polyline(points,Color("bdc29b",opacity*.76),width+(1.8 if fine else 3.4),true)
-	canvas.draw_polyline(points,Color("466e6c",opacity*.95),width+.65,true)
-	canvas.draw_polyline(points,Color("548b99",opacity),width,true)
-	canvas.draw_polyline(light,Color("8fc1c1",opacity*.76),maxf(.48,width*.54),true)
-	if not fine:canvas.draw_polyline(light,Color("c1d9cf",opacity*.42),maxf(.6,width*.12),true)
+static func primary_width(row: Dictionary, strategic: bool) -> float:
+	return symbolic_width(int(row.get("stream_order",0)),strategic,6.8*(.82 if strategic else 1.0))
 
 static func source(name: String) -> Dictionary:
 	if not catalogs.has(name):
@@ -64,9 +52,45 @@ static func detail_row(raw: Dictionary, source_id: String, radius_m: float) -> D
 	var display=rounded_source_corners(points,120.0*48.0/maxf(1.0,radius_m)) if raw.has("source_reach_id") else points
 	return {"points":points,"display_points":display,"bounds":Rect2(Vector2(bounds[0],bounds[1]),Vector2(bounds[2]-bounds[0],bounds[3]-bounds[1])),"rank":int(raw.get("source_rank",10)),"source_name":str(raw.get("source_name","")),"source_id":source_id,"source_reach_id":int(raw.get("source_reach_id",0)),"stream_order":int(raw.get("stream_order",0)),"min_zoom":float(raw.get("min_zoom",.38)),"width_symbolic":true}
 
+static func main_row(points: PackedVector2Array, order: int, radius_m: float, source_reach_id: int=0, next_down: int=0) -> Dictionary:
+	var bounds=Rect2(points[0],Vector2.ZERO) if not points.is_empty() else Rect2()
+	for point in points:bounds=bounds.expand(point)
+	# Replacement mains receive the same bounded fillet as tributaries.
+	var display=rounded_source_corners(points,120.0*48.0/maxf(1,radius_m)) if source_reach_id>0 else points
+	return {"points":points,"display_points":display,"bounds":bounds,"stream_order":order,"source_reach_id":source_reach_id,"next_down":next_down,"width_symbolic":true}
+
+static func join_primary_rows(rows: Array) -> int:
+	var nodes: Dictionary={};var joined=0
+	for row_index in range(rows.size()):
+		var row: Dictionary=rows[row_index];var points: PackedVector2Array=row.points
+		if points.size()<2 or int(row.source_reach_id)<=0:continue
+		for at_start in [true,false]:
+			var point=points[0] if at_start else points[-1]
+			var away=((points[1] if at_start else points[-2])-point).normalized()
+			if not nodes.has(point):nodes[point]=[]
+			nodes[point].append({"index":row_index,"start":at_start,"away":away})
+	for point in nodes:
+		var ends: Array=nodes[point]
+		for own in ends:
+			var row: Dictionary=rows[own.index]
+			for other in ends:
+				if own.index==other.index:continue
+				var neighbor: Dictionary=rows[other.index]
+				var source_link=int(row.next_down)==int(neighbor.source_reach_id) or int(neighbor.next_down)==int(row.source_reach_id)
+				if not source_link or row.stream_order!=neighbor.stream_order:continue
+				var incoming: Vector2=-other.away if own.start else -own.away
+				var outgoing: Vector2=own.away if own.start else other.away
+				var normal=(incoming.orthogonal()+outgoing.orthogonal()).normalized()
+				if normal.length_squared()<.001:continue
+				var miter=minf(1.45,1.0/maxf(.001,absf(normal.dot(outgoing.orthogonal()))))
+				row["start_join" if own.start else "end_join"]=normal*miter;joined+=1;break
+	return joined
+
 static func build(map: Dictionary, source_map_id: String) -> Dictionary:
-	var major: Array=[];var major_orders: Array=[];var detail: Array=[]
-	for line in map.get("render_rivers",[]):major.append(points_array(line));major_orders.append(0)
+	var major: Array=[];var major_orders: Array=[];var major_rows: Array=[];var detail: Array=[]
+	var radius=float(map.get("hex_radius_m",1000))
+	for line in map.get("render_rivers",[]):
+		var points=points_array(line);major.append(points);major_orders.append(0);major_rows.append(main_row(points,0,radius))
 	for raw in source("hydrography_detail").get("maps",{}).get(source_map_id,[]):
 		var row=detail_row(raw,"natural_earth_rivers_10m",float(map.get("hex_radius_m",1000)))
 		if not row.is_empty():detail.append(row)
@@ -75,13 +99,16 @@ static func build(map: Dictionary, source_map_id: String) -> Dictionary:
 	var fine={} if map.get("strategic_scale",false) else source("hydrography_fine")
 	var replacements: Array=fine.get("major_presentation_replacements",{}).get(source_map_id,[])
 	if not replacements.is_empty():
-		major.clear();major_orders.clear()
-		for row in replacements:major.append(points_array(row.points));major_orders.append(int(row.stream_order))
+		major.clear();major_orders.clear();major_rows.clear()
+		for row in replacements:
+			var points=points_array(row.points);var order=int(row.stream_order)
+			major.append(points);major_orders.append(order);major_rows.append(main_row(points,order,radius,int(row.source_reach_id),int(row.next_down)))
+	var shared_endpoint_frames=join_primary_rows(major_rows)
 	var fine_count=0
 	for raw in fine.get("maps",{}).get(source_map_id,[]):
 		var row=detail_row(raw,str(fine.get("source_id","")),float(map.get("hex_radius_m",1000)))
 		if not row.is_empty():detail.append(row);fine_count+=1
-	return {"major":major,"major_orders":major_orders,"detail":detail,"diagnostics":{"source_map_id":source_map_id,"fine_source_id":fine.get("source_id",""),"fine_source_sha256":fine.get("source_sha256",""),"source_fine_reaches":fine_count,"major_presentation_replacements":replacements.size(),"rule_geometry_modified":false,"historical_channel_survey":false,"width_is_symbolic":true,"flat_lowland_model_branches_excluded":true,"display_corner_rounding_max_deviation_metres":60.0 if fine_count>0 else 0.0,"source_endpoints_preserved":true}}
+	return {"major":major,"major_orders":major_orders,"major_rows":major_rows,"detail":detail,"diagnostics":{"source_map_id":source_map_id,"fine_source_id":fine.get("source_id",""),"fine_source_sha256":fine.get("source_sha256",""),"source_fine_reaches":fine_count,"major_presentation_replacements":replacements.size(),"source_linked_endpoint_frames":shared_endpoint_frames,"rule_geometry_modified":false,"historical_channel_survey":false,"width_is_symbolic":true,"flat_lowland_model_branches_excluded":true,"display_corner_rounding_max_deviation_metres":60.0 if fine_count>0 or not replacements.is_empty() else 0.0,"source_endpoints_preserved":true}}
 
 static func visible(row: Dictionary, view: Rect2, zoom: float, strategic: bool) -> bool:
 	if not view.intersects(row.bounds.grow(8)) or zoom<float(row.get("min_zoom",.38)):return false

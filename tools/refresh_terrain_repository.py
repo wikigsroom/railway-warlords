@@ -56,6 +56,7 @@ def media():
                 'tributaries.png': details / 'tributaries.png', 'sand.png': terrain / 'map_dune_sand.png',
                 'gravel.png': terrain / 'map_gravel_gobi.png', 'wet-soil.png': terrain / 'map_saline_meadow.png',
                 'yangtze.png': details / 'yangtze.png', 'asia-overview.png': folder / 'asia_1840_overview.png',
+                'nanjing.png': details / 'nanjing.png', 'yangtze-x30.png': details / 'yangtze_x30.png',
                 'legion-deployment.png': war / 'legion_deployment.png',
                 'mobile-layout.png': folder / 'war_room_native/x30_layout/opening_army.png'}
     for name, surface in [('campaign-browser', 'campaign'), ('conquest-browser', 'conquest'), ('legion-browser', 'legion'),

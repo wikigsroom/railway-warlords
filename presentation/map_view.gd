@@ -63,6 +63,11 @@ var surface_diagnostics: Dictionary={}
 var coast_lines: Array=[]
 var river_lines: Array=[]
 var river_stream_orders: Array=[]
+var river_rows: Array=[]
+var river_surface_draw_count=0
+var river_texture_draw_count=0
+var river_ink_draw_count=0
+var water_source_texture: Texture2D
 var detail_river_lines: Array=[]
 var detail_river_buckets: Dictionary={}
 var crossing_markers: Array=[]
@@ -293,14 +298,14 @@ func prepare_geography() -> void:
 	var holes: Array=[]
 	for shape in land_shapes:holes.append_array(shape.holes)
 	var land=AtlasSurface.build(land_shapes.map(func(shape):return shape.exterior),768)
-	var water=AtlasSurface.build(holes,384)
-	var extent=AtlasSurface.build([map_extent] if map_extent.size()>=3 else [],1024)
+	var water=AtlasSurface.build(holes,MapRiverSurface.TEXTURE_PERIOD)
+	var extent=AtlasSurface.build([map_extent] if map_extent.size()>=3 else [],MapRiverSurface.TEXTURE_PERIOD)
 	land_surface=land.mesh;water_surface=water.mesh;extent_surface=extent.mesh
 	surface_diagnostics={"land_rings":land.rings,"land_triangles":land.triangles,"water_rings":water.rings,"errors":land.errors+water.errors+extent.errors}
 	if not surface_diagnostics.errors.is_empty():push_error("Surveyed atlas surface failed: "+state.map.id+" "+str(surface_diagnostics.errors))
 	for line in state.map.render_coast:coast_lines.append(points_array(line))
 	var hydro=MapHydrography.build(state.map,presentation_source_map_id())
-	river_lines=hydro.major;river_stream_orders=hydro.major_orders;detail_river_lines=hydro.detail;hydrography_diagnostics=hydro.diagnostics
+	river_lines=hydro.major;river_stream_orders=hydro.major_orders;river_rows=hydro.major_rows;detail_river_lines=hydro.detail;hydrography_diagnostics=hydro.diagnostics
 	detail_river_buckets=MapHydrography.spatial_index(detail_river_lines)
 	for crossing in state.map.get("crossings",[]):
 		var from=HexGrid.to_world(HexGrid.coordinate(crossing.get("from",{})));var to=HexGrid.to_world(HexGrid.coordinate(crossing.get("to",{})))
@@ -510,6 +515,8 @@ func map_bank_capture_facts() -> Dictionary:
 		materials[family]=int(materials.get(family,0))+1
 		material_ids[map_details.surfaces.get(key,"")]=true
 	var hydro_facts=MapHydrography.facts(detail_river_lines,detail_river_buckets,hydrography_diagnostics,view,zoom,state.map.get("strategic_scale",false))
+	var water_renderer=backdrop_view if is_instance_valid(backdrop_view) and not static_only else self
+	hydro_facts["river_surface"]={"renderer":"source_centerline_gradient_ribbon","water_texture_id":MapRiverSurface.TEXTURE_ID,"world_texture_period":MapRiverSurface.TEXTURE_PERIOD,"drawn_watercourses":water_renderer.river_surface_draw_count,"drawn_gradient_ribbons":water_renderer.river_surface_draw_count-water_renderer.river_ink_draw_count,"drawn_antialiased_headwaters":water_renderer.river_ink_draw_count,"drawn_textured_ribbons":water_renderer.river_texture_draw_count,"primary_width_from_vertex_count":false,"measured_banks_claimed":false}
 	var subtype_facts=terrain_surface_capture_facts(view)
 	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals)+int(subtype_facts.macro_originals),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
 
@@ -1083,7 +1090,7 @@ func sync_backdrop() -> bool:
 	backdrop_view.camera=camera;backdrop_view.zoom=zoom;backdrop_view.state=state;backdrop_view.visible_ids=visible_ids
 	backdrop_view.annotation_view_size=size;backdrop_view.show_grid=show_grid;backdrop_view.show_rail=show_rail;backdrop_view.label_scale=label_scale;backdrop_view.show_terrain=show_terrain
 	backdrop_view.land_shapes=land_shapes;backdrop_view.coast_lines=coast_lines;backdrop_view.river_lines=river_lines;backdrop_view.detail_river_lines=detail_river_lines;backdrop_view.region_lines=region_lines
-	backdrop_view.river_stream_orders=river_stream_orders
+	backdrop_view.river_stream_orders=river_stream_orders;backdrop_view.river_rows=river_rows
 	backdrop_view.crossing_markers=crossing_markers
 	backdrop_view.land_surface=land_surface;backdrop_view.water_surface=water_surface;backdrop_view.extent_surface=extent_surface
 	backdrop_view.map_extent=map_extent;backdrop_view.relief=relief;backdrop_view.world_bounds=world_bounds
@@ -1279,7 +1286,9 @@ func draw_playback(view: Rect2) -> void:
 		if action.event.type=="UnitPromoted":map_name("晋为"+action.event.name,position+Vector2(0,-55-p*18),22,Color("cfad6e"),sin(p*PI))
 
 func draw_landscape(view: Rect2) -> void:
-	var sea=assets.texture("tile","tile_sea_01");var plain=assets.texture("tile","tile_plain_01")
+	river_surface_draw_count=0;river_texture_draw_count=0;river_ink_draw_count=0
+	water_source_texture=assets.texture("tile",MapRiverSurface.TEXTURE_ID)
+	var sea=water_source_texture;var plain=assets.texture("tile","tile_plain_01")
 	var rectangle=PackedVector2Array([view.position,Vector2(view.end.x,view.position.y),view.end,Vector2(view.position.x,view.end.y)])
 	# The authored textures carry the geographic detail; these restrained
 	# parchment/sea modulations move the presentation toward the paper atlas
@@ -1317,18 +1326,17 @@ func draw_landscape(view: Rect2) -> void:
 			draw_polyline(points,Color(.12,.22,.24,.52),8.0,true)
 			draw_polyline(points,Color("78877a",.76),3.2,true)
 			draw_polyline(points,Color("d9d0aa",.70),1.2,true)
-	for river_index in range(river_lines.size()):
-		var points: PackedVector2Array=river_lines[river_index]
-		if points.size()>1:
-			# Source lines are not measured bank polygons. HydroRIVERS main reaches
-			# use their actual stream order, so short source reaches retain the
-			# same symbolic width as adjoining reaches of the same order.
-			var stream_order=int(river_stream_orders[river_index]) if river_index<river_stream_orders.size() else 0
-			var river_width=clampf(2.7+sqrt(float(points.size()))*.34,3.4,12.6)
-			if stream_order>0:river_width=MapHydrography.symbolic_width(stream_order,false,river_width)
-			var minor=stream_order==0 and points.size()<18
-			var opacity=.54 if minor else (.70 if points.size()<90 else .86)
-			MapHydrography.paint(self,points,river_width,opacity,false)
+	var visible_mains: Array=[]
+	for row in river_rows:
+		if view.intersects(row.bounds.grow(40)):visible_mains.append(row)
+	# Paint all banks before any water, so source confluences do not acquire
+	# a decorative bank across the receiving channel. Nothing is snapped.
+	for layer in [1,2,3]:
+		for row in visible_mains:
+			var width=MapHydrography.primary_width(row,state.map.get("strategic_scale",false))
+			if MapRiverSurface.paint(self,row,width,.96,water_source_texture,layer) and layer==2:
+				river_surface_draw_count+=1
+				if width>=4:river_texture_draw_count+=1
 	draw_crossing_markers(view)
 
 func draw_crossing_markers(view: Rect2) -> void:
@@ -1554,7 +1562,10 @@ func draw_cell_river_details(view: Rect2) -> void:
 		var display_points: PackedVector2Array=row.get("display_points",row.points)
 		var width=MapHydrography.symbolic_width(order,strategic,1.25 if strategic else 1.7)
 		var opacity=clampf((zoom-float(row.get("min_zoom",.38))+.10)/.24,0.0,1.0)*(.88 if fine else .86)
-		MapHydrography.paint(self,display_points,width,opacity,true)
+		if MapRiverSurface.paint(self,row,width,opacity,water_source_texture):
+			river_surface_draw_count+=1
+			if width<MapRiverSurface.SMALL_STREAM_LIMIT:river_ink_draw_count+=1
+			if width>=4:river_texture_draw_count+=1
 		terrain_cell_river_draw_count+=display_points.size()-1
 
 func draw_cell_micro_symbols(view: Rect2) -> void:
@@ -1630,18 +1641,6 @@ func visible_terrain_entries(view: Rect2) -> Array:
 func draw_terrain_fabric(_view: Rect2) -> void:
 	# Hand-painted source relief replaces repeated synthetic ridge hatching.
 	pass
-
-func draw_river_banks(points: PackedVector2Array, width: float) -> void:
-	# Double banks and occasional sand bars follow the actual sampled river
-	# centerline, preserving the source hydrography while improving readability
-	# at the zoom used for tactical campaigns.
-	var step=maxi(1,int(points.size()/18))
-	for i in range(0,points.size()-1,step):
-		var delta=points[i+1]-points[i]
-		if delta.length()<1:continue
-		var normal=delta.normalized().orthogonal()*maxf(2.0,width*.42)
-		draw_line(points[i]+normal,points[i+1]+normal,Color(.88,.94,.86,.36),maxf(.5,width*.08),true)
-		draw_line(points[i]-normal,points[i+1]-normal,Color(.25,.49,.56,.32),maxf(.5,width*.08),true)
 
 func rounded_track(points: PackedVector2Array) -> PackedVector2Array:
 	var rounded=PackedVector2Array([points[0]])

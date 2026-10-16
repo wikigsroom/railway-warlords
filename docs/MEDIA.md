@@ -4,9 +4,9 @@
 
 ## 截图 / Screenshots
 
-当前媒体目录有 33 张完整 PNG：31 张来自 0.2.14 Windows EXE，另外两张交战/航空画面保留 0.2.12 身份。当前 90 张地表与管理页面原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot 在实际程序中渲染控件、地图与独立美术资源。
+当前媒体目录有 35 张完整 PNG：33 张来自 0.2.15 Windows EXE，另外两张交战/航空画面保留 0.2.12 身份。当前 92 张地表与管理页面原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot 在实际程序中渲染控件、地图与独立美术资源。
 
-The media folder contains 33 complete PNGs: 31 from the 0.2.14 Windows EXE and two preserved 0.2.12 combat/air-action stills. Selected current terrain/UI and export-validation viewports are copied byte for byte, without cropping, stitching, repainting or text overlays. Godot renders the real controls, maps and independent assets.
+The media folder contains 35 complete PNGs: 33 from the 0.2.15 Windows EXE and two preserved 0.2.12 combat/air-action stills. Selected current terrain/UI and export-validation viewports are copied byte for byte, without cropping, stitching, repainting or text overlays. Godot renders the real controls, maps and independent assets.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
@@ -18,7 +18,9 @@ The media folder contains 33 complete PNGs: 31 from the 0.2.14 Windows EXE and t
 | [sand.png](media/sand.png) | 塔克拉玛干沙土 / Taklamakan sand |
 | [gravel.png](media/gravel.png) | 来源荒漠区域矿质地表 / Source-bound arid mineral ground |
 | [wet-soil.png](media/wet-soil.png) | 沿海湿土 / Coastal wet ground |
-| [yangtze.png](media/yangtze.png) | 汉口长江 / Yangtze at Hankou |
+| [yangtze.png](media/yangtze.png) | 汉口连续长江水面 / Continuous Yangtze surface at Hankou |
+| [nanjing.png](media/nanjing.png) | 南京—浦口河带 / Nanjing–Pukou river ribbon |
+| [yangtze-x30.png](media/yangtze-x30.png) | 桌面移动比例汉口 / Hankou in desktop mobile layout |
 | [asia-overview.png](media/asia-overview.png) | 亚洲战略层 / Strategic Asia |
 | [legion-deployment.png](media/legion-deployment.png) | 军团编组 / Legion deployment |
 | [mobile-layout.png](media/mobile-layout.png) | 桌面移动布局 / Mobile layout on desktop |

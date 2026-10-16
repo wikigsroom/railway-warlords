@@ -260,28 +260,28 @@
 	],
 	"content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
 	"failures": [],
-	"game_version": "0.2.14",
+	"game_version": "0.2.15",
 	"measurements": [
 		{
 			"cells": 74762,
-			"read_ms": 40.881,
-			"save_bytes": 138350,
+			"read_ms": 40.285,
+			"save_bytes": 138349,
 			"scenario_id": "conq_1920",
-			"write_ms": 93.142
+			"write_ms": 79.768
 		},
 		{
 			"cells": 74762,
-			"read_ms": 50.813,
+			"read_ms": 48.79,
 			"save_bytes": 147477,
 			"scenario_id": "conq_1922",
-			"write_ms": 92.167
+			"write_ms": 82.773
 		},
 		{
 			"cells": 74762,
-			"read_ms": 26.654,
+			"read_ms": 49.223,
 			"save_bytes": 155876,
 			"scenario_id": "conq_1924",
-			"write_ms": 54.334
+			"write_ms": 74.732
 		}
 	],
 	"passed": true,

@@ -52,9 +52,9 @@ godot --headless --path . --script tests/transaction_test.gd
 godot --headless --path . --script tests/asia_content_test.gd
 ```
 
-全部 24 组名称和通过范围见[测试与验收](05_测试与验收.md)，包含新增 `tests/terrain_surfaces_test.gd`。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
+全部 25 组名称和通过范围见[测试与验收](05_测试与验收.md)，包含 `tests/terrain_surfaces_test.gd` 和新增 `tests/river_surface_test.gd`。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
 
-All 24 groups and their scope are in the validation chapter, including `tests/terrain_surfaces_test.gd`. Selected reports preserve their original paths, timestamps and fingerprints as evidence, not as newly executed tests on the clone.
+All 25 groups and their scope are in the validation chapter, including `tests/terrain_surfaces_test.gd` and `tests/river_surface_test.gd`. Selected reports preserve their original paths, timestamps and fingerprints as evidence, not as newly executed tests on the clone.
 
 ## 文档和媒体维护 / Documentation maintenance
 
@@ -72,7 +72,7 @@ python tools/capture_terrain_update.py
 python tools/refresh_terrain_repository.py
 ```
 
-`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前 0.2.14 截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前 0.2.15 截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
 
 `prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 

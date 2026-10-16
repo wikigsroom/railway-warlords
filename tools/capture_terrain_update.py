@@ -76,14 +76,18 @@ def main():
                 ('coast', 'campaign_1924_03', ['--focus-city', 'shanhaiguan', '--capture-zoom', '.88']),
                 ('village', 'campaign_1924_03', ['--focus-place', 'place_dongjiakou', '--capture-zoom', '1.15']),
                 ('tributaries', 'campaign_1924_03', ['--focus-point', tributary_point('jingfeng'), '--capture-zoom', '1.15']),
-                ('yangtze', 'legion_07', ['--focus-city', 'hankou', '--capture-zoom', '1.05'])]
+                ('yangtze', 'legion_07', ['--focus-city', 'hankou', '--capture-zoom', '1.05']),
+                ('nanjing', 'legion_08', ['--focus-city', 'nanjing', '--capture-zoom', '1.05']),
+                ('yangtze_x30', 'legion_07', ['--focus-city', 'hankou', '--capture-zoom', '1.05',
+                                           '--ui-scale', '1.2', '--mobile-ui-test'])]
         captures = []
         for name, scenario, extra in jobs:
             folder = P / 'reports/screenshots/terrain_surfaces_native/details'
             folder.mkdir(parents=True, exist_ok=True)
             path = folder / (name + '.png')
             log = P / 'reports' / ('terrain_detail_' + name + '.log')
-            command = [str(exe), '--resolution', '1920x1080', '--position', '-4000,-3000', '--',
+            resolution = '2400x1080' if name.endswith('_x30') else '1920x1080'
+            command = [str(exe), '--resolution', resolution, '--position', '-4000,-3000', '--',
                        '--qa-session', '--scenario', scenario, *extra, '--capture', '--capture-path', str(path)]
             started = datetime.now(timezone.utc).timestamp()
             with log.open('w', encoding='utf-8') as stream:
@@ -96,16 +100,27 @@ def main():
                     and path.stat().st_mtime >= started - 2, 'Current native detail required: ' + name)
             visible = meta['map_bank_visible']
             require(visible['current_total_map_assets'] == 970, 'Current complete map library required')
+            with Image.open(path) as im:
+                require(im.size == tuple(map(int, resolution.split('x'))), 'Wrong detail viewport: ' + name)
+            rivers = visible['hydrography']['river_surface']
             if name == 'tributaries':
                 require(visible['hydrography']['visible_fine_reaches'] > 0, 'Actual source tributaries must be visible')
+                require(rivers['drawn_antialiased_headwaters'] > 0, 'Fine source streams must be drawn continuously')
+            if name in ['yangtze', 'nanjing', 'yangtze_x30']:
+                require(rivers['drawn_gradient_ribbons'] > 0 and rivers['drawn_textured_ribbons'] > 0,
+                        'Primary gradient water and immutable water texture must be drawn')
+                require(visible['hydrography']['source_linked_endpoint_frames'] > 0
+                        and visible['hydrography']['source_endpoints_preserved']
+                        and not rivers['measured_banks_claimed'], 'Source-linked symbolic river evidence required')
             if name == 'mountain':
                 require(visible['distinct_scenery_originals_intersecting_view'] >= 30 and
                         visible['same_source_pairs_under_250_world_units'] == 0, 'Native scenery diversity regressed')
             captures.append(dict(file=path.relative_to(P).as_posix(), sha256=sha(path),
+                                 resolution=resolution,
                                  metadata=path.with_suffix('.json').relative_to(P).as_posix(),
                                  metadata_sha256=sha(path.with_suffix('.json'))))
             print(json.dumps(dict(kind='details', profile=name, passed=True)), flush=True)
-        groups.append(dict(kind='details', profile='windows', resolution='1920x1080', passed=True, captures=captures))
+        groups.append(dict(kind='details', profile='windows_and_x30_layout', resolution='per-capture', passed=True, captures=captures))
     require(source_digest()[0] == runtime and sha(exe) == exported['sha256'], 'Native identity changed during capture')
     proof = dict(passed=True, version=version, created_at_utc=datetime.now(timezone.utc).isoformat(),
                  runtime_source_sha256=runtime, windows_exe_sha256=exported['sha256'],
