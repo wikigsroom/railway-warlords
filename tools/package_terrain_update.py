@@ -56,7 +56,8 @@ def main():
                 'ground_macro_generation.json', 'ground_macro_asset_audit.json', 'ground_macro_source_review.json',
                 'terrain_surface_native_evidence.json', 'river_surface_native_review.json', 'apk_content_validation.json',
                 'control_land_clip_audit.json', 'control_land_native_evidence.json', 'control_land_native_review.json',
-                'ground_continuity_native_evidence.json', 'map_symbol_native_evidence.json', 'map_symbol_native_review.json',
+                'ground_continuity_native_evidence.json', 'relief_shade_native_evidence.json',
+                'relief_shade_native_review.json', 'map_symbol_native_evidence.json', 'map_symbol_native_review.json',
                 'unit_layer_native.json', 'unit_layer_pixel_validation.json']
     for name in required:
         path = P / 'reports' / name
@@ -161,6 +162,30 @@ def main():
         path = P / ground[name]
         require(sha(path) == ground[key], 'Native material proof changed')
         reports.add(path)
+    lighting = read(P / 'reports/relief_shade_native_evidence.json')
+    require(lighting['version'] == version and lighting['runtime_source_sha256'] == runtime
+            and lighting['windows_exe_sha256'] == native['windows_exe_sha256'] and lighting['checks'] == 11
+            and lighting['independent_sixteen_weight_reference_verified']
+            and lighting['triangle_diagonal_independence_verified'] and lighting['world_phase_verified']
+            and lighting['new_dem_samples'] == 0 and len(lighting['captures']) == 4,
+            'Current independent native relief-lighting proof required')
+    for name, key in [('report', 'report_sha256'), ('log', 'log_sha256')]:
+        path = P / lighting[name]
+        require(sha(path) == lighting[key], 'Native lighting proof changed')
+        reports.add(path)
+    fixture_captures = set()
+    for row in lighting['captures']:
+        path = P / row['file']
+        require(sha(path) == row['sha256'] and row['whole_native_viewport']
+                and row['synthetic_fixture_not_gameplay'], 'Numerical fixture changed')
+        fixture_captures.add(path)
+    lighting_review = read(P / 'reports/relief_shade_native_review.json')
+    require(lighting_review['version'] == version and lighting_review['runtime_source_sha256'] == runtime
+            and lighting_review['windows_exe_sha256'] == native['windows_exe_sha256'],
+            'Current whole-map lighting/river image review required')
+    for row in lighting_review['images']:
+        require(row['viewed_complete_native_frame'] and sha(P / row['file']) == row['sha256'],
+                'Reviewed relief/river viewport changed')
     require(all(row['city_influence_fill_draws'] == 0 and row['field_fill_batches'] > 0
                 and row['continuous_ground_shader_active'] for group in control['groups'] for row in group['cases']),
             'Continental controls must not stack city-influence fills over the field')
@@ -171,6 +196,11 @@ def main():
         hydro = read(P / detail_rows[name]['metadata'])['map_bank_visible']['hydrography']
         require(hydro['source_endpoints_preserved'] and hydro['source_linked_endpoint_frames'] > 0
                 and hydro['river_surface']['drawn_textured_ribbons'] > 0, 'Primary river render proof missing: ' + name)
+    for name in ['mountain', 'tributaries', 'yangtze', 'nanjing', 'yangtze_x30']:
+        meta = read(P / detail_rows[name]['metadata'])['map_bank_visible']
+        require(meta['terrain_surface_extension']['relief_lighting']['shader_active']
+                and meta['hydrography']['river_surface']['detail_banks_drawn_before_water'],
+                'Normal-renderer continuous relief or river passes missing: ' + name)
     exports = read(P / 'reports/export_results.json')
     require({row['target'] for row in exports} == {'windows', 'android'}, 'Both verified exports required')
     for row in exports:
@@ -218,6 +248,8 @@ def main():
                    coastal_control_land_clipped=True, source_lake_islands_preserved=True,
                    continuous_ground_nonoverlapping=True, exclusive_continental_control_fill=True,
                    native_material_fixture_checks=ground['checks'],
+                   native_relief_fixture_checks=lighting['checks'], native_relief_fixture_captures=4,
+                   continuous_source_lighting_verified=True, layered_headwaters_verified=True,
                    native_map_symbol_checks=symbols['checks'], map_symbol_native_captures=32,
                    source_engine_cache_direct_native_pairs=4,
                    visible_individual_formations_preserved=True, compact_counter_selection_verified=True,
@@ -241,7 +273,7 @@ def main():
 
 运行 RailwayWarlords.exe，无需安装 Godot。
 20 类地域地表各有 1 张连续底材与 4 张细节原图；说明书内可打开地形图鉴。
-本版总览/区域视角使用清楚的城市与部队图符，近景恢复完整素材；选中和战斗对象优先显示完整模型。图符可直接点选，地理与编队数量不变。
+本版高程光影连续取样，减少三角面拼块；细河增加低饱和水床与半透明岸带。总览/区域视角使用城市与部队图符，近景恢复完整素材。
 点选部队、选目标、再次点击确认；拖动平移、滚轮缩放、空格跳过战斗演出。
 本版为可玩测试交付，X30 真机与完整 AI 长局尚未在本轮复验。
 ''', encoding='utf-8')
@@ -259,7 +291,7 @@ def main():
         # retain old versioned media references as well as current evidence.
         raw = subprocess.check_output(['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'], cwd=P)
         public = {P / name.decode('utf-8') for name in raw.split(b'\0') if name}
-        for path in sorted(public | reports | captures):
+        for path in sorted(public | reports | captures | fixture_captures):
             if not path.is_file(): continue
             require(not any(part in {'.git','.godot','.toolchain','build','__pycache__','signing'} for part in path.relative_to(P).parts),
                     'Private or generated directory in source archive')
@@ -273,7 +305,7 @@ def main():
         require(hashlib.sha256(archive.read(exe.name)).hexdigest() == sha(exe), 'Windows archive differs from tested EXE')
     require(sha(android) == sha(apk) and source_digest()[0] == runtime, 'Delivery identity changed')
     manifest = dict(version=version, created_at_utc=datetime.now(timezone.utc).isoformat(),
-                    release_kind='scoped_semantic_map_and_precise_selection_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
+                    release_kind='scoped_continuous_relief_and_layered_headwaters_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
                     regression=regression, capacity=capacity, source_pngs_modified=False, manual_image_compositing=False,
                     source_image_location='game/railway_warlords/assets; byte-identical generated originals, portable prompt/provenance copies in docs',
                     original_production_tree_duplicated=False, old_releases_modified=False,
@@ -288,6 +320,7 @@ def main():
     shutil.copyfile(P / 'docs/33_真实海岸与控制区裁切.md', out / '真实海岸与控制区裁切.md')
     shutil.copyfile(P / 'docs/34_连续地表混合与控制色去重.md', out / '连续地表混合与控制色去重.md')
     shutil.copyfile(P / 'docs/35_地图缩放层次与精确点选.md', out / '地图缩放层次与精确点选.md')
+    shutil.copyfile(P / 'docs/36_连续高程光影与细河岸带.md', out / '连续高程光影与细河岸带.md')
     (out / '交付说明.md').write_text(f'''# 铁道烽烟 {version} · 地表与界面测试交付
 
 Windows：解压 RailwayWarlords-Windows-{version}.zip，运行 RailwayWarlords.exe。
@@ -295,9 +328,9 @@ Android：安装 RailwayWarlords-{version}.apk，延续现有签名。目标样�
 Godot：解压工程 ZIP，用 Godot 4.7.2 打开 game/railway_warlords/project.godot。
 
 保留 20 类地域地表、80 张细节原图和 20 张连续底材，共 100 张专用地表原图；地图素材共 970 张，全部 PNG 共 1,156 张。本版未增加栅格原图。
-本版按缩放切换城市与单个编队图符，近景恢复完整素材，选中或战斗对象优先显示完整模型；修正城市吸附抢走相邻部队点选的问题，跨缩放阈值及时更新缓存。没有减少或合并军队。手绘素材库可用时不再重复叠加旧地形线符。
+本版将既有源高程光照改为连续正权重取样，减少三角面拼块；没有添加DEM采样或改写源地形。细河增加低饱和水床与半透明岸带，所有细河先画岸带再画水面，源河段端点与既有60米显示约束保持。沿用按缩放切换的独立城市/编队图符和精确点选。
 沿用上一轮的不重叠地表网格和三种相邻来源连续混合；各地图总览仍显示地域底材。亚洲控制区不再重复叠加城市影响色。44项原生材质夹具检查核对20种完整导入纹理、连续覆盖、绘制顺序和平移稳定性；夹具不冒充历史地图画面。
-沿用上一轮共享世界纹理的渐变主河水面；汉口、南京的31条替代主河使用既有60米有界显示圆角，上下游共用端点共享接头方向。细支流使用抗锯齿线，水陆纹理和地格规则保持来源约束。河宽是制图符号，不是历史实测岸线。
+沿用共享世界纹理的渐变主河水面；汉口、南京的31条替代主河使用既有60米有界显示圆角，上下游共用端点共享接头方向。河宽与岸带是制图符号，不是历史实测岸线。11项新增原生数值夹具核对GPU与独立16权重计算、三角方向和镜头平移；4张夹具画面单列，不作为实机地图画面。
 沿用上一轮依据既有真实陆地裁切的亚洲战略层控制区：61个城市影响区和617个沿海控制格保留实际陆地部分，14个完全离岸候选格不绘制；主地图与缩略图共享裁切网格。里海水面扣除来源中独立的岛屿，保留真实湖中陆地。地理数据、历史归属和规则格未重写。
 说明书与地格详情均可进入交互地形图鉴。材质按生态区、高程与既有河谷选取；不宣称逐年历史土地利用复原。
 

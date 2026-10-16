@@ -83,6 +83,7 @@ var terrain_visual_buckets: Dictionary={}
 var map_extent=PackedVector2Array()
 var minimap: StrategicMinimap
 var relief=AtlasRelief.new()
+var continuous_relief_enabled=true
 var map_details=MapDetails.new()
 var surface_region_diagnostics: Dictionary={}
 var hydrography_diagnostics: Dictionary={}
@@ -530,7 +531,12 @@ func map_bank_capture_facts() -> Dictionary:
 	var hydro_facts=MapHydrography.facts(detail_river_lines,detail_river_buckets,hydrography_diagnostics,view,zoom,state.map.get("strategic_scale",false))
 	var water_renderer=backdrop_view if is_instance_valid(backdrop_view) and not static_only else self
 	hydro_facts["river_surface"]={"renderer":"source_centerline_gradient_ribbon","water_texture_id":MapRiverSurface.TEXTURE_ID,"world_texture_period":MapRiverSurface.TEXTURE_PERIOD,"drawn_watercourses":water_renderer.river_surface_draw_count,"drawn_gradient_ribbons":water_renderer.river_surface_draw_count-water_renderer.river_ink_draw_count,"drawn_antialiased_headwaters":water_renderer.river_ink_draw_count,"drawn_textured_ribbons":water_renderer.river_texture_draw_count,"primary_width_from_vertex_count":false,"measured_banks_claimed":false}
+	hydro_facts.river_surface["headwater_style"]="muted_waterbed_with_translucent_riparian_halo"
+	hydro_facts.river_surface["detail_banks_drawn_before_water"]=true
 	var subtype_facts=terrain_surface_capture_facts(view)
+	var lighting=relief.shade_field.facts()
+	lighting["shader_active"]=water_renderer.material!=null and bool(water_renderer.material.get_shader_parameter("relief_enabled"))
+	subtype_facts["relief_lighting"]=lighting
 	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"map_symbols":map_symbol_capture_facts(),"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals)+int(subtype_facts.macro_originals),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
 
 func map_symbol_capture_facts() -> Dictionary:
@@ -1188,6 +1194,7 @@ func sync_backdrop() -> bool:
 	backdrop_view.crossing_markers=crossing_markers
 	backdrop_view.land_surface=land_surface;backdrop_view.water_surface=water_surface;backdrop_view.extent_surface=extent_surface
 	backdrop_view.map_extent=map_extent;backdrop_view.relief=relief;backdrop_view.world_bounds=world_bounds
+	backdrop_view.continuous_relief_enabled=continuous_relief_enabled
 	backdrop_view.map_details=map_details
 	backdrop_view.settlement_choices=settlement_choices
 	backdrop_view.presentation_cells=presentation_cells;backdrop_view.terrain_visual_buckets=terrain_visual_buckets
@@ -1579,9 +1586,15 @@ func draw_cell_surface_variants(view: Rect2) -> void:
 	terrain_surface_variant_draw_count=0
 	var strategic=state.map.get("strategic_scale",false)
 	var threshold=.10
-	if zoom<threshold:return
+	if zoom<threshold:
+		# Far overview still draws the relief mesh. Bind its numerical sampler
+		# even when the detailed ground-material batches are omitted.
+		var ground=map_details.ground_material(strategic) if MapArtBank.available() else null
+		relief.shade_field.bind_to(ground,continuous_relief_enabled);material=ground
+		return
 	if MapArtBank.available():
 		var ground=map_details.ground_material(strategic)
+		relief.shade_field.bind_to(ground,continuous_relief_enabled)
 		material=ground
 		var fine_details=zoom>=(.20 if strategic else .28)
 		if ground==null and not fine_details:return
@@ -1684,16 +1697,18 @@ func draw_cell_river_details(view: Rect2) -> void:
 	if zoom<(.42 if strategic else .38):return
 	# Only archived vector tributaries are drawn. Adjacency between river-class
 	# hexes cannot establish a real watercourse or justify invented streams.
-	for row in MapHydrography.visible_rows(detail_river_lines,detail_river_buckets,view,zoom,strategic):
-		var order=int(row.get("stream_order",0));var fine=order>0
-		var display_points: PackedVector2Array=row.get("display_points",row.points)
-		var width=MapHydrography.symbolic_width(order,strategic,1.25 if strategic else 1.7)
-		var opacity=clampf((zoom-float(row.get("min_zoom",.38))+.10)/.24,0.0,1.0)*(.88 if fine else .86)
-		if MapRiverSurface.paint(self,row,width,opacity,water_source_texture):
-			river_surface_draw_count+=1
-			if width<MapRiverSurface.SMALL_STREAM_LIMIT:river_ink_draw_count+=1
-			if width>=4:river_texture_draw_count+=1
-		terrain_cell_river_draw_count+=display_points.size()-1
+	var rows=MapHydrography.visible_rows(detail_river_lines,detail_river_buckets,view,zoom,strategic)
+	for layer in [1,2,3]:
+		for row in rows:
+			var order=int(row.get("stream_order",0));var fine=order>0
+			var display_points: PackedVector2Array=row.get("display_points",row.points)
+			var width=MapHydrography.symbolic_width(order,strategic,1.25 if strategic else 1.7)
+			var opacity=clampf((zoom-float(row.get("min_zoom",.38))+.10)/.24,0.0,1.0)*(.88 if fine else .86)
+			if MapRiverSurface.paint(self,row,width,opacity,water_source_texture,layer) and layer==2:
+				river_surface_draw_count+=1
+				if width<MapRiverSurface.SMALL_STREAM_LIMIT:river_ink_draw_count+=1
+				if width>=4:river_texture_draw_count+=1
+				terrain_cell_river_draw_count+=display_points.size()-1
 
 func draw_cell_micro_symbols(view: Rect2) -> void:
 	terrain_micro_symbol_draw_count=0

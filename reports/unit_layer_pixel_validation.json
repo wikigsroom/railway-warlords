@@ -1,16 +1,16 @@
 {
   "passed": true,
-  "version": "0.2.18",
-  "runtime_source_sha256": "da853f78a5689ce7235fd73b7ea1d4a04472180a494bba7b48a755ce6bc0729f",
+  "version": "0.2.19",
+  "runtime_source_sha256": "05223238dd872ef482cc166ac2b08fcaf3b5be84637fb3f3e5833e1fd9afa8a5",
   "cases": [
     {
       "name": "campaign_static",
-      "mean_channel_difference_0_255": 0.006116255144032922,
+      "mean_channel_difference_0_255": 0.00611963091563786,
       "maximum_channel_difference": 2,
       "channels_over_three_ratio": 0.0,
       "native_images_sha256": [
-        "2c6f7c677705c8d624cce860f1ae4e10ac6d0fb90d6656d0e8b4bb16b265d19d",
-        "06e74ab1bdec8db31765cdf22712dce85359285b9b9e5abfb0204e9ed96ef5f7"
+        "9105a2858549a3e731ad88449a4521eda672969ee09c730e6c353ba4f3eebb0c",
+        "cd8c2ea34a2cd0e3714838b17f45eed0c7c3b2a7a7cb65ab05263e641a5826d3"
       ],
       "unit_order_preserved": true,
       "state_and_rng_unchanged": true,
@@ -18,12 +18,12 @@
     },
     {
       "name": "capacity_static",
-      "mean_channel_difference_0_255": 3.472222222222222e-05,
+      "mean_channel_difference_0_255": 3.4400720164609055e-05,
       "maximum_channel_difference": 1,
       "channels_over_three_ratio": 0.0,
       "native_images_sha256": [
-        "ba282552831dd3977e8eb4c67f68e7366e185dbee1248026f841b6e023eb02ed",
-        "dc77f0c52d54dffc2fafad2c51190fb6b68c827dff13b881f9581e9796514ace"
+        "a4e2519d33e2b997d0c7fa4777b9a1de95c9c5c0e0ab6aeb7a35a8d4db4b21e6",
+        "393d503cbd4ed66121cd6e54f814b90b385e5afe5bb50e5f1e2d8675a6b465c7"
       ],
       "unit_order_preserved": true,
       "state_and_rng_unchanged": true,
@@ -31,12 +31,12 @@
     },
     {
       "name": "capacity_attack_start",
-      "mean_channel_difference_0_255": 3.472222222222222e-05,
+      "mean_channel_difference_0_255": 3.4400720164609055e-05,
       "maximum_channel_difference": 1,
       "channels_over_three_ratio": 0.0,
       "native_images_sha256": [
-        "6a09953ee444b4b52cdba3fc634aa0e83c6ac9454eda2d2578ef6549d7543f7c",
-        "1af9ae7f8f4adc0b998277ace471cf1b54f37e5253f0ce9705aedbf761d98a2f"
+        "5896e22a87b7ee970834c8df540230052bc5ea60db058cd40d00b503cb19d009",
+        "f60043cd2148e2d956b5fa10e0317bbbc985ad41fed131f9315a1a2e80867a46"
       ],
       "unit_order_preserved": true,
       "state_and_rng_unchanged": true,
@@ -44,12 +44,12 @@
     },
     {
       "name": "capacity_attack_hit",
-      "mean_channel_difference_0_255": 3.472222222222222e-05,
+      "mean_channel_difference_0_255": 3.4400720164609055e-05,
       "maximum_channel_difference": 1,
       "channels_over_three_ratio": 0.0,
       "native_images_sha256": [
-        "7436dafe32e510735c48fdb19369f23b8a91f113344d4c714d72d99f40560d10",
-        "b71f2867d334bb97a39439e5fc9597bdc417edccf5a0d068860d1a199b8692fe"
+        "be0696b71fc89e2ee6ef6e454cc800f8ac78b53db4990c7857812301c183ebd0",
+        "6b50a8354a80c733a05194f09f9b236a4755577ef669e1b09ab8873ce206343f"
       ],
       "unit_order_preserved": true,
       "state_and_rng_unchanged": true,

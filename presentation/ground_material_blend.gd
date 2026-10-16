@@ -12,12 +12,19 @@ shader_type canvas_item;
 render_mode unshaded;
 uniform sampler2DArray ground_sources : source_color, repeat_enable, filter_linear_mipmap;
 uniform float ground_alpha = 0.94;
+uniform bool relief_enabled = false;
+uniform sampler2D relief_shades : repeat_disable, filter_linear;
+uniform vec2 relief_dimensions = vec2(1.0);
+varying float relief_mode;
+varying vec2 relief_uv;
 varying float ground_mode;
 varying vec3 ground_layers;
 varying vec3 ground_weights;
 varying vec2 ground_uv;
 varying float ground_coverage;
 void vertex() {
+    relief_mode = UV.y >= 512.0 && UV.y <= 513.0 ? 1.0 : 0.0;
+    relief_uv = vec2(UV.x, UV.y - 512.0);
     ground_mode = UV.y < -1023.0 ? 1.0 : 0.0;
     if (ground_mode > 0.5) {
         ground_layers = floor(COLOR.rgb * 255.0 + vec3(0.5));
@@ -26,8 +33,31 @@ void vertex() {
         ground_coverage = COLOR.a;
     }
 }
+// Four bilinear fetches evaluate the sixteen positive cubic B-spline weights.
+// World/axial UVs are affine across the entire source mesh: its triangle edges
+// cannot introduce a different lighting function or camera-dependent phase.
+vec4 continuous_relief(vec2 uv) {
+    vec2 p = uv * relief_dimensions - vec2(0.5);
+    vec2 base = floor(p);
+    vec2 f = fract(p);
+    vec2 w0 = pow(vec2(1.0) - f, vec2(3.0)) / 6.0;
+    vec2 w1 = (3.0 * f*f*f - 6.0 * f*f + vec2(4.0)) / 6.0;
+    vec2 w2 = (-3.0 * f*f*f + 3.0 * f*f + 3.0 * f + vec2(1.0)) / 6.0;
+    vec2 w3 = f*f*f / 6.0;
+    vec2 g0 = w0 + w1;
+    vec2 g1 = w2 + w3;
+    vec2 a = (base - vec2(1.0) + w1/g0 + vec2(0.5)) / relief_dimensions;
+    vec2 b = (base + vec2(1.0) + w3/g1 + vec2(0.5)) / relief_dimensions;
+    return texture(relief_shades, a) * g0.x * g0.y
+        + texture(relief_shades, vec2(b.x, a.y)) * g1.x * g0.y
+        + texture(relief_shades, vec2(a.x, b.y)) * g0.x * g1.y
+        + texture(relief_shades, b) * g1.x * g1.y;
+}
 void fragment() {
-    if (ground_mode > 0.5) {
+    if (relief_mode > 0.5 && relief_enabled) {
+        vec4 shade = continuous_relief(relief_uv);
+        COLOR = vec4(shade.rgb / max(shade.a, 0.0001), shade.a);
+    } else if (ground_mode > 0.5) {
         vec3 weights = clamp(ground_weights, vec3(0.0), vec3(1.0));
         weights = weights * weights * (vec3(3.0) - 2.0 * weights);
         weights /= max(dot(weights, vec3(1.0)), 0.0001);

@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.18",
+	"build_version": "0.2.19",
 	"checks": [
 		{
 			"name": "physical_slope_matches_independent_analytic_plane_in_metres",
@@ -23,6 +23,34 @@
 		},
 		{
 			"name": "lighting_does_not_mutate_source_cell_or_rule_fields",
+			"passed": true
+		},
+		{
+			"name": "numerical_field_preserves_negative_axial_coordinates_with_two_sample_padding",
+			"passed": true
+		},
+		{
+			"name": "every_gpu_lookup_component_is_the_quantized_premultiplied_source_lighting_within_half_a_byte",
+			"passed": true
+		},
+		{
+			"name": "relief_texture_coordinates_remain_world_fixed_and_affine_in_the_source_hex_basis",
+			"passed": true
+		},
+		{
+			"name": "portable_numerical_lookup_has_transparent_unsupported_samples_and_no_invented_edge_elevation",
+			"passed": true
+		},
+		{
+			"name": "lighting_data_is_not_counted_as_new_art_or_new_geographic_measurements",
+			"passed": true
+		},
+		{
+			"name": "building_the_numerical_lighting_field_preserves_every_source_and_rule_value",
+			"passed": true
+		},
+		{
+			"name": "missing_source_support_clears_stale_field_without_extrapolation",
 			"passed": true
 		},
 		{

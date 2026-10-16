@@ -1,10 +1,10 @@
 {
-  "passed": true,
-  "version": "0.2.18",
-  "runtime_source_sha256": "da853f78a5689ce7235fd73b7ea1d4a04472180a494bba7b48a755ce6bc0729f",
+  "passed": false,
+  "version": "0.2.19",
+  "runtime_source_sha256": "05223238dd872ef482cc166ac2b08fcaf3b5be84637fb3f3e5833e1fd9afa8a5",
   "content_hash": "0ae13806bed7958a51f3df7110a4a84a38821386d79052fb10f89a05229357f4",
   "regression_groups": 26,
-  "regression_checks": 5024,
+  "regression_checks": 5031,
   "terrain_types": 20,
   "detail_originals": 80,
   "macro_originals": 20,
@@ -28,9 +28,15 @@
   "control_native_groups": 2,
   "control_native_captures": 20,
   "total_native_captures": 144,
-  "current_native_capacity": true,
+  "current_native_capacity": false,
   "full_ai_endurance_rerun": false,
   "physical_android_device_tested": false,
   "formal_art_approval": false,
-  "ew6_parity_claimed": false
+  "ew6_parity_claimed": false,
+  "native_relief_fixture_checks": 11,
+  "native_relief_fixture_captures": 4,
+  "continuous_source_lighting_verified": true,
+  "layered_headwaters_verified": true,
+  "release_published": false,
+  "failed_gate": "capacity_x30_v0219:battle_active_average_fps_53.7542682057527_below_60"
 }

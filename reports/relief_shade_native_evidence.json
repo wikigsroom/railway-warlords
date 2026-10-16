@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "version": "0.2.19",
+  "runtime_source_sha256": "05223238dd872ef482cc166ac2b08fcaf3b5be84637fb3f3e5833e1fd9afa8a5",
+  "windows_exe_sha256": "9d415bffb98193086108cca8b8ccbcabd493a434840e51fecb8ecd5dc6b26f0c",
+  "checks": 11,
+  "report": "reports/relief_shade_native/validation.json",
+  "report_sha256": "a2b96a77bd197db7c390a6d2ba8deff4a12b192b55b4fff3bebeb780f5802078",
+  "log": "reports/relief_shade_native/native.log",
+  "log_sha256": "c2060960035ac752201ccb89f6daa84316c60c4e35dfeb093154dd93db352aaf",
+  "captures": [
+    {
+      "file": "reports/relief_shade_native/constant.png",
+      "sha256": "80edf4bcd7caa53499247e63686a334d21b37306128ac6582010a49938be62b8",
+      "whole_native_viewport": true,
+      "synthetic_fixture_not_gameplay": true
+    },
+    {
+      "file": "reports/relief_shade_native/varying.png",
+      "sha256": "f6b5383b4208cbf06052af446f69dccb13934e788d342d1832b818450514a34c",
+      "whole_native_viewport": true,
+      "synthetic_fixture_not_gameplay": true
+    },
+    {
+      "file": "reports/relief_shade_native/opposite_triangles.png",
+      "sha256": "d5e0ee8d1a60fad785732c1fbb4e45d043e2a382a143254289b8bd0cc8047451",
+      "whole_native_viewport": true,
+      "synthetic_fixture_not_gameplay": true
+    },
+    {
+      "file": "reports/relief_shade_native/panned.png",
+      "sha256": "772624a95cf52271c5b5bcd0a21b36fce9368120a39e59a46ba67e17cbd9e44e",
+      "whole_native_viewport": true,
+      "synthetic_fixture_not_gameplay": true
+    }
+  ],
+  "independent_sixteen_weight_reference_verified": true,
+  "triangle_diagonal_independence_verified": true,
+  "world_phase_verified": true,
+  "synthetic_fixture_not_gameplay": true,
+  "new_dem_samples": 0,
+  "source_images_modified": false,
+  "physical_android_device_tested": false,
+  "ew6_parity_claimed": false
+}

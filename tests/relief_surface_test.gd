@@ -36,6 +36,23 @@ func run() -> void:
 		finite=finite and is_finite(color.r) and is_finite(color.g) and is_finite(color.b) and color.a>=0 and color.a<=.5
 	verify(finite,"continuous_relief_colours_are_finite_and_translucent")
 	verify(ContentRegistry.fingerprint(relief.cells)==before,"lighting_does_not_mutate_source_cell_or_rule_fields")
+	var source_shades: Dictionary={}
+	for cell in relief.cells.values():source_shades[cell.id]=relief.shade(cell)
+	var field=ReliefShadeField.new();field.build(relief.cells,source_shades)
+	verify(field.source_count==relief.cells.size() and field.origin_hex==Vector2i(-4,-4) and field.dimensions==Vector2i(9,9),"numerical_field_preserves_negative_axial_coordinates_with_two_sample_padding")
+	var exact=true;var affine=true
+	for cell in relief.cells.values():
+		var h=HexGrid.coordinate(cell.position);var at=h-field.origin_hex;var stored=field.image.get_pixel(at.x,at.y);var source_color: Color=source_shades[cell.id]
+		for pair in [[stored.r,source_color.r*source_color.a],[stored.g,source_color.g*source_color.a],[stored.b,source_color.b*source_color.a],[stored.a,source_color.a]]:exact=exact and absf(pair[0]-pair[1])<=.5001/255.0
+		var uv=field.uv(h);var expected=(Vector2(h-field.origin_hex)+Vector2(.5,.5))/Vector2(field.dimensions)
+		affine=affine and Vector2(uv.x,uv.y-ReliefShadeField.UV_MARKER).distance_to(expected)<.0001
+	verify(exact,"every_gpu_lookup_component_is_the_quantized_premultiplied_source_lighting_within_half_a_byte")
+	verify(affine,"relief_texture_coordinates_remain_world_fixed_and_affine_in_the_source_hex_basis")
+	verify(field.image.get_format()==Image.FORMAT_RGBA8 and not field.image.has_mipmaps() and field.image.get_pixel(0,0)==Color(0,0,0,0),"portable_numerical_lookup_has_transparent_unsupported_samples_and_no_invented_edge_elevation")
+	verify(field.facts().new_dem_samples==0 and not field.facts().raster_art_generated and not field.facts().source_images_modified,"lighting_data_is_not_counted_as_new_art_or_new_geographic_measurements")
+	verify(ContentRegistry.fingerprint(relief.cells)==before,"building_the_numerical_lighting_field_preserves_every_source_and_rule_value")
+	field.build(relief.cells,{})
+	verify(field.image==null and field.texture==null and field.source_count==0 and field.dimensions==Vector2i.ZERO,"missing_source_support_clears_stale_field_without_extrapolation")
 	for sample in [["ns",true],["ew",false]]:
 		var ridge=plane(Vector2.ZERO)
 		for cell in ridge.cells.values():

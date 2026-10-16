@@ -1,0 +1,124 @@
+{
+	"build_version": "0.2.19",
+	"captures": [
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_shade_native/constant.png",
+			"synthetic_fixture_not_gameplay": true,
+			"whole_native_viewport": true
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_shade_native/varying.png",
+			"synthetic_fixture_not_gameplay": true,
+			"whole_native_viewport": true
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_shade_native/opposite_triangles.png",
+			"synthetic_fixture_not_gameplay": true,
+			"whole_native_viewport": true
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_shade_native/panned.png",
+			"synthetic_fixture_not_gameplay": true,
+			"whole_native_viewport": true
+		}
+	],
+	"checks": [
+		{
+			"name": "shipping_compatibility_material_is_available",
+			"passed": true
+		},
+		{
+			"name": "complete_native_fixture_capture:constant",
+			"passed": true
+		},
+		{
+			"name": "gpu_matches_independent_sixteen_weight_cpu_reference:constant",
+			"passed": true
+		},
+		{
+			"name": "complete_native_fixture_capture:varying",
+			"passed": true
+		},
+		{
+			"name": "gpu_matches_independent_sixteen_weight_cpu_reference:varying",
+			"passed": true
+		},
+		{
+			"name": "complete_native_fixture_capture:opposite_triangles",
+			"passed": true
+		},
+		{
+			"name": "lighting_is_independent_of_mesh_triangle_diagonals",
+			"passed": true
+		},
+		{
+			"name": "complete_native_fixture_capture:panned",
+			"passed": true
+		},
+		{
+			"name": "camera_pan_preserves_the_source_lighting_phase",
+			"passed": true
+		},
+		{
+			"name": "panned_gpu_matches_the_independent_source_reference",
+			"passed": true
+		},
+		{
+			"name": "missing_source_support_disables_the_lookup_without_stale_data",
+			"passed": true
+		}
+	],
+	"ew6_parity_claimed": false,
+	"failures": [],
+	"fixture_size": [
+		384,
+		256
+	],
+	"new_dem_samples": 0,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"renderer": "gl_compatibility",
+	"rendering_device": "NVIDIA GeForce RTX 3060",
+	"samples": [
+		{
+			"comparison": {
+				"maximum_channel_delta": 0.294119417667389,
+				"mean_channel_delta": 0.294113218414117,
+				"pixels": 966
+			},
+			"reference": "constant"
+		},
+		{
+			"comparison": {
+				"maximum_channel_delta": 0.649962723255157,
+				"mean_channel_delta": 0.439226314518022,
+				"pixels": 966
+			},
+			"reference": "varying"
+		},
+		{
+			"triangle_diagonals": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 966
+			}
+		},
+		{
+			"world_phase": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 966
+			}
+		},
+		{
+			"comparison": {
+				"maximum_channel_delta": 0.63678503036499,
+				"mean_channel_delta": 0.434311596873384,
+				"pixels": 966
+			},
+			"reference": "panned"
+		}
+	],
+	"scope": "Native GPU/independent CPU lighting agreement, triangle-diagonal independence and world-phase invariance. Synthetic numerical fixtures, not historical-map screenshots or artistic acceptance.",
+	"source_images_modified": false
+}

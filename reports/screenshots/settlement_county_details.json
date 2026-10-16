@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.18",
+	"build_version": "0.2.19",
 	"city_labels": [
 		{
 			"city_id": "place_lulong",
@@ -38,7 +38,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1376.728,
+		"preparation_ms": 1361.996,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -71,10 +71,12 @@
 			"historical_channel_survey": false,
 			"major_presentation_replacements": 0,
 			"river_surface": {
+				"detail_banks_drawn_before_water": true,
 				"drawn_antialiased_headwaters": 29,
 				"drawn_gradient_ribbons": 1,
 				"drawn_textured_ribbons": 1,
 				"drawn_watercourses": 30,
+				"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 				"measured_banks_claimed": false,
 				"primary_width_from_vertex_count": false,
 				"renderer": "source_centerline_gradient_ribbon",
@@ -215,6 +217,27 @@
 			"macro_originals": 20,
 			"macro_repeat_world_units": 384.0,
 			"registered_types": 20,
+			"relief_lighting": {
+				"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+				"gpu_texture_available": true,
+				"interpolation_stencil": [
+					4,
+					4
+				],
+				"lookup_bytes": 531392,
+				"lookup_dimensions": [
+					368,
+					361
+				],
+				"maximum_contributing_samples": 16,
+				"method": "source_cell_cubic_bspline_lighting",
+				"new_dem_samples": 0,
+				"raster_art_generated": false,
+				"rules_map_mutated": false,
+				"shader_active": true,
+				"source_images_modified": false,
+				"source_samples": 45961
+			},
 			"rule_geometry_changed": false,
 			"same_original_on_adjacent_cells": 0,
 			"source_use_counts": {
@@ -290,6 +313,26 @@
 	"qa_save_isolated": true,
 	"raw_godot_capture": true,
 	"relief": {
+		"continuous_lighting": {
+			"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+			"gpu_texture_available": true,
+			"interpolation_stencil": [
+				4,
+				4
+			],
+			"lookup_bytes": 531392,
+			"lookup_dimensions": [
+				368,
+				361
+			],
+			"maximum_contributing_samples": 16,
+			"method": "source_cell_cubic_bspline_lighting",
+			"new_dem_samples": 0,
+			"raster_art_generated": false,
+			"rules_map_mutated": false,
+			"source_images_modified": false,
+			"source_samples": 45961
+		},
 		"contour_segments": 30166,
 		"crest_axis_from_source_neighbours": true,
 		"eligible_features": 7326,
@@ -304,13 +347,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 123.301,
+		"index_ms": 142.433,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2669.438,
+		"mesh_ms": 3561.999,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1326.282,
-		"preparation_ms": 4119.018,
+		"placement_ms": 1456.863,
+		"preparation_ms": 5161.295,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

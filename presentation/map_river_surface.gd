@@ -69,10 +69,16 @@ static func paint(canvas: CanvasItem, row: Dictionary, width: float, opacity: fl
 		var points: PackedVector2Array=row.get("display_points",row.points)
 		if points.size()<2:return false
 		# Subpixel triangle cores alias in the cached viewport. Native line AA
-		# preserves continuous headwaters without inflating their rule footprint.
-		canvas.draw_polyline(points,Color("637b67",opacity*.27),width+1.5,true)
-		canvas.draw_polyline(points,Color("518d9b",opacity*.96),width,true)
-		canvas.draw_polyline(points,Color("a4c8c8",opacity*.40),maxf(.5,width*.24),true)
+		# preserves continuous headwaters. A quiet riparian halo and waterbed
+		# give the source line depth without inventing banks or a new centreline.
+		# Separate passes keep downstream water above every tributary's halo.
+		if layer in [0,1]:
+			canvas.draw_polyline(points,Color("858b6e",opacity*.13),width+4.2,true)
+			canvas.draw_polyline(points,Color("6c816a",opacity*.24),width+2.3,true)
+		if layer in [0,2]:
+			canvas.draw_polyline(points,Color("3f625f",opacity*.44),width+.6,true)
+			canvas.draw_polyline(points,Color("57847f",opacity*.93),width,true)
+			canvas.draw_polyline(points,Color("a4beb0",opacity*.34),maxf(.5,width*.30),true)
 		return true
 	var geometry=prepared(row,width)
 	if geometry.is_empty():return false

@@ -3,6 +3,7 @@ extends RefCounted
 
 # Presentation-only relief, derived from the immutable surveyed map. No rules data is edited.
 var mesh: ArrayMesh
+var shade_field=ReliefShadeField.new()
 var contours: Array=[]
 var features: Array=[]
 var diagnostics: Dictionary={}
@@ -52,7 +53,7 @@ func build(map: Dictionary, land_shapes: Array, river_lines: Array, minor_river_
 	for line in rivers:index_path(line,path_buckets.river)
 	for line in tracks:index_path(line,path_buckets.rail)
 	var indexed=Time.get_ticks_usec()
-	var vertices=PackedVector3Array();var colors=PackedColorArray();var seen: Dictionary={};var shades: Dictionary={}
+	var vertices=PackedVector3Array();var colors=PackedColorArray();var uvs=PackedVector2Array();var seen: Dictionary={};var shades: Dictionary={}
 	for cell in map.cells:
 		if not sampled_land(cell) or (surveyed_grid and not cell.get("render_land_covered",false)):continue
 		# Surveyed cell coverage and the clipped presentation coastline have
@@ -64,6 +65,7 @@ func build(map: Dictionary, land_shapes: Array, river_lines: Array, minor_river_
 			# clips the visible polygon.
 			if cell.get("render_land_covered",false):shades[cell.id]=shade(cell)
 		elif dry_point(HexGrid.to_world(HexGrid.coordinate(cell.position))):shades[cell.id]=shade(cell)
+	shade_field.build(cells,shades)
 	for cell in map.cells:
 		if not shades.has(cell.id):continue
 		var h=HexGrid.coordinate(cell.position);var p=HexGrid.to_world(h)
@@ -83,8 +85,9 @@ func build(map: Dictionary, land_shapes: Array, river_lines: Array, minor_river_
 				add_contours([p,pa,pb],[elevation_value(cell),elevation_value(a),elevation_value(b)])
 			for pair in [[p,cell.id],[pa,a.id],[pb,b.id]]:
 				vertices.append(Vector3(pair[0].x,pair[0].y,0));colors.append(shades[pair[1]])
+				uvs.append(shade_field.uv(HexGrid.from_world(pair[0])))
 	if not vertices.is_empty():
-		var arrays=[];arrays.resize(Mesh.ARRAY_MAX);arrays[Mesh.ARRAY_VERTEX]=vertices;arrays[Mesh.ARRAY_COLOR]=colors
+		var arrays=[];arrays.resize(Mesh.ARRAY_MAX);arrays[Mesh.ARRAY_VERTEX]=vertices;arrays[Mesh.ARRAY_COLOR]=colors;arrays[Mesh.ARRAY_TEX_UV]=uvs
 		mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
 	var shaded=Time.get_ticks_usec()
 	var candidates: Array=[];var relief_items: Array=[]
@@ -146,6 +149,7 @@ func build(map: Dictionary, land_shapes: Array, river_lines: Array, minor_river_
 	diagnostics["independent_relief_originals_used"]=variants.size()
 	diagnostics["families"]=family_counts
 	diagnostics["nearby_variant_exclusion_world"]=270.0 if MapArtBank.available() else 0.0
+	diagnostics["continuous_lighting"]=shade_field.facts()
 
 func visible_features(view: Rect2) -> Array:
 	var area=view.grow(maximum_feature_overhang+1.0)

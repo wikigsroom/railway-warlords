@@ -1,79 +1,48 @@
 {
   "passed": true,
-  "version": "0.2.18",
-  "runtime_source_sha256": "da853f78a5689ce7235fd73b7ea1d4a04472180a494bba7b48a755ce6bc0729f",
-  "windows_exe_sha256": "d01a2a311a0fa78adfb350518319c0df4bf6102a55710a6ed22a79b8896f62e3",
-  "created_at_utc": "2026-10-16T18:48:00.906058+00:00",
-  "scope": "Scoped agent review of ten complete current native viewports for retained continuous regional ground, exclusive Asian control coverage, source water and overview counters. Both desktop profiles and all five cases have separate pixel checks. Not commercial art approval.",
+  "version": "0.2.19",
+  "runtime_source_sha256": "05223238dd872ef482cc166ac2b08fcaf3b5be84637fb3f3e5833e1fd9afa8a5",
+  "windows_exe_sha256": "9d415bffb98193086108cca8b8ccbcabd493a434840e51fecb8ecd5dc6b26f0c",
+  "created_at_utc": "2026-10-16T20:17:15.414421+00:00",
+  "scope": "Scoped inspection of six complete current native coastal/overview frames, including Bohai control on/off, Caspian control on/off, Asian overview and desktop mobile-layout Bohai. All five coast cases in both layouts have separate automated pixel checks. Not formal art or historical approval.",
   "images": [
     {
       "file": "reports/screenshots/control_land_native/windows/tianjin_control.png",
-      "sha256": "08f8583bf49dc46809f913fdde109915c2c9080c502c83c30b7a9d8069278fe6",
+      "sha256": "7a7c8e1adbe7df04ff3d9b6270d598488406791c1d6551da2d4fa358395f492b",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/control_land_native/windows/tianjin_natural.png",
-      "sha256": "dbc8a074158edf4d9415fc679da830524dc3fe8851144aacecf9fdd611dc27ba",
-      "viewed_complete_native_frame": true
-    },
-    {
-      "file": "reports/screenshots/control_land_native/windows/osaka_control.png",
-      "sha256": "3486c556fe472689b7ef8d6892faee79753902cc04e1273d5fd2ee0c2f96ce61",
+      "sha256": "b07899759c37fdf8d960d20450fe9b50c0b8ab108d795a127cceed8e4f352629",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/control_land_native/windows/baku_control.png",
-      "sha256": "5d949bbb022778e9562f987b623c0fcb1f8bcf59a0c21c5a3c6285ede2be7cf9",
+      "sha256": "bc0b0e2adceff2d872fa89b76805a3e3c1921ada2a77301ce451fe4ad07261b0",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/control_land_native/windows/baku_natural.png",
-      "sha256": "67337d5c84e5fac26abfda275989679022164f89a517058930bf1b37c68549d7",
-      "viewed_complete_native_frame": true
-    },
-    {
-      "file": "reports/screenshots/control_land_native/windows/singapore_control.png",
-      "sha256": "2cc7d72c5df17146e7197bb37d258859864eb2814aa45e42a61b4e41e5b6b88b",
+      "sha256": "a05f01bf4edaf43b9334cc2184caba746fc0d088bd8cbbff78c08b3021c0bbb2",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/control_land_native/windows/overview_control.png",
-      "sha256": "3d7da59b8f66e61b20019d30596773e477ad6b9a913ab39ab95175ab5920ff4c",
+      "sha256": "a756891f31ec1714be03b3d3bf1e3e87e961525a9449d623e9a8b167159d4f0b",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/control_land_native/x30_layout/tianjin_control.png",
-      "sha256": "c45cf937f16bafddcc474107b37e7e80645313e518478eb3ed3f4518a3bebb3f",
-      "viewed_complete_native_frame": true
-    },
-    {
-      "file": "reports/screenshots/control_land_native/x30_layout/overview_control.png",
-      "sha256": "74f1fe0b0af1aa24e7cb977949b862d5c98682fe03180c79450492fece636d04",
-      "viewed_complete_native_frame": true
-    },
-    {
-      "file": "reports/screenshots/control_land_native/x30_layout/baku_control.png",
-      "sha256": "db76f4e3aab73988d0c8aa34f3fbde057d35025f6bbc7a5e3a7b70671347127b",
+      "sha256": "cb2fbf7aea71bfe2f137997f8daf0c8c0b85d44672d7440a038ccaf0b266abd8",
       "viewed_complete_native_frame": true
     }
   ],
-  "normal_shipping_renderer": true,
-  "source_images_modified": false,
-  "manual_compositing": false,
-  "physical_android_device_tested": false,
+  "observations": [
+    "Ground remains visible through the control wash. Water and sourced inland islands remain legible; automated toggle comparisons separately test water pixels.",
+    "Continuous lighting is retained with control on and off. Regional material/control polygons and crowded detailed city/army clusters remain visible limitations.",
+    "Only these six frames were manually inspected in this iteration; the other cases retain their automated checks."
+  ],
   "formal_art_approval": false,
   "ew6_parity_claimed": false,
-  "observations": [
-    "The inspected Asian control views no longer accumulate darker overlapping city influence patches; regional ground remains visible through the single field wash.",
-    "Bohai and Japan control color ends at source land; inspected open sea retains its natural appearance.",
-    "Caspian source islands remain land and surrounding water remains visible in both inspected layouts; Singapore islands remain separated by water.",
-    "Both complete overview layouts retain regional ground color, the normal HUD and source-clipped minimap; no screenshot was cropped or retouched.",
-    "All ten measured cases remain within the two-channel-value tolerance on sampled unobstructed main-map and minimap water pixels, while land samples change. Native draw counters confirm zero city influence fills and nonzero field coverage."
-  ],
-  "remaining_visual_issues": [
-    "Coarse source relief still creates visible triangular light facets; control-cell edges remain visible in places.",
-    "Overview and regional counters reduce symbol crowding, but full close-view cities, formations and labels remain dense around eastern China. Near-view composition and label priorities need further work.",
-    "Source coastline angularity remains visible. The Caspian shoreline style differs from the exterior sea; narrow islands and protected coastal bands still use base-ground fallback.",
-    "Location-specific ports, bridges and landmarks, complete unit animation cycles and physical Motorola X30 acceptance remain outstanding."
-  ]
+  "physical_android_device_tested": false
 }

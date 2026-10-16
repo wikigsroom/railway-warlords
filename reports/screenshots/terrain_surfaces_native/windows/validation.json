@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.18",
+	"build_version": "0.2.19",
 	"captures": [
 		{
 			"name": "atlas_0",
@@ -45,10 +45,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 92,
 						"drawn_gradient_ribbons": 31,
 						"drawn_textured_ribbons": 31,
 						"drawn_watercourses": 123,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -241,6 +243,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -331,10 +354,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 101,
 						"drawn_gradient_ribbons": 31,
 						"drawn_textured_ribbons": 31,
 						"drawn_watercourses": 132,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -547,6 +572,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -640,10 +686,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 118,
 						"drawn_gradient_ribbons": 37,
 						"drawn_textured_ribbons": 37,
 						"drawn_watercourses": 155,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -876,6 +924,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -964,10 +1033,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 79,
 						"drawn_gradient_ribbons": 44,
 						"drawn_textured_ribbons": 44,
 						"drawn_watercourses": 123,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -1154,6 +1225,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -1237,10 +1329,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 76,
 						"drawn_gradient_ribbons": 51,
 						"drawn_textured_ribbons": 51,
 						"drawn_watercourses": 127,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -1400,6 +1494,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -1479,10 +1594,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 96,
 						"drawn_gradient_ribbons": 48,
 						"drawn_textured_ribbons": 48,
 						"drawn_watercourses": 144,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -1634,6 +1751,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -1716,10 +1854,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 164,
 						"drawn_gradient_ribbons": 66,
 						"drawn_textured_ribbons": 66,
 						"drawn_watercourses": 230,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -1899,6 +2039,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -1996,10 +2157,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 112,
 						"drawn_gradient_ribbons": 62,
 						"drawn_textured_ribbons": 62,
 						"drawn_watercourses": 174,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -2180,6 +2343,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -2265,10 +2449,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 43,
 						"drawn_gradient_ribbons": 8,
 						"drawn_textured_ribbons": 8,
 						"drawn_watercourses": 51,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -2406,6 +2592,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -2467,10 +2674,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 63,
 						"drawn_gradient_ribbons": 28,
 						"drawn_textured_ribbons": 28,
 						"drawn_watercourses": 91,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -2624,6 +2833,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -2696,10 +2926,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 105,
 						"drawn_gradient_ribbons": 23,
 						"drawn_textured_ribbons": 23,
 						"drawn_watercourses": 128,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -2898,6 +3130,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -2986,10 +3239,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 79,
 						"drawn_gradient_ribbons": 17,
 						"drawn_textured_ribbons": 17,
 						"drawn_watercourses": 96,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -3157,6 +3412,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -3240,10 +3516,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 130,
 						"drawn_gradient_ribbons": 60,
 						"drawn_textured_ribbons": 60,
 						"drawn_watercourses": 190,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -3477,6 +3755,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -3553,10 +3852,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 135,
 						"drawn_gradient_ribbons": 57,
 						"drawn_textured_ribbons": 57,
 						"drawn_watercourses": 192,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -3719,6 +4020,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -3781,10 +4103,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 104,
 						"drawn_gradient_ribbons": 59,
 						"drawn_textured_ribbons": 59,
 						"drawn_watercourses": 163,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -3938,6 +4262,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -4025,10 +4370,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 35,
 						"drawn_gradient_ribbons": 29,
 						"drawn_textured_ribbons": 29,
 						"drawn_watercourses": 64,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -4172,6 +4519,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -4235,10 +4603,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 91,
 						"drawn_gradient_ribbons": 22,
 						"drawn_textured_ribbons": 22,
 						"drawn_watercourses": 113,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -4415,6 +4785,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -4505,10 +4896,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 118,
 						"drawn_gradient_ribbons": 35,
 						"drawn_textured_ribbons": 35,
 						"drawn_watercourses": 153,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -4747,6 +5140,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -4831,10 +5245,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 114,
 						"drawn_gradient_ribbons": 41,
 						"drawn_textured_ribbons": 41,
 						"drawn_watercourses": 155,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -5055,6 +5471,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
@@ -5133,10 +5570,12 @@
 					"historical_channel_survey": false,
 					"major_presentation_replacements": 0,
 					"river_surface": {
+						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 132,
 						"drawn_gradient_ribbons": 68,
 						"drawn_textured_ribbons": 68,
 						"drawn_watercourses": 200,
+						"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
@@ -5296,6 +5735,27 @@
 					"macro_originals": 20,
 					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
+					"relief_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"shader_active": true,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
 					"source_use_counts": {
