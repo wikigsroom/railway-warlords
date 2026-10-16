@@ -1,0 +1,350 @@
+{
+  "format": 1,
+  "version": "0.2.14",
+  "independent_originals": 20,
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "original_images_modified": false,
+  "manual_compositing": false,
+  "assets": [
+    {
+      "id": "tile_ground_macro_temperate_meadow",
+      "category": "tile",
+      "family": "temperate_meadow",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate grassland and forest-steppe ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nQuiet sage-green grass ground #98A478 with soft olive blade-shaped brush clusters, broad lighter grass openings and small warm loam touches; a green painted plain, never a realistic lawn photo."
+    },
+    {
+      "id": "tile_ground_macro_dry_steppe",
+      "category": "tile",
+      "family": "dry_steppe",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate continental grassland ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nDry muted straw and sage ground #B0A47C. Broad broken wispy ochre brush currents with calm dry earth; distinctly drier and lighter than meadow."
+    },
+    {
+      "id": "tile_ground_macro_desert_steppe",
+      "category": "tile",
+      "family": "desert_steppe",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named desert-steppe and semi-desert ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nOpen taupe mineral ground #ABA18A, sparse desiccated straw brush marks in irregular groups. Large empty mineral planes, no dunes."
+    },
+    {
+      "id": "tile_ground_macro_dune_sand",
+      "category": "tile",
+      "family": "dune_sand",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named sandy-desert ecological regions only",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nSoft ochre sand #C6AF80, very gentle broad silky wind ripples in long interrupted curved brush strokes. Clean smooth sand planes, no speckles or raised dune silhouettes."
+    },
+    {
+      "id": "tile_ground_macro_gravel_gobi",
+      "category": "tile",
+      "family": "gravel_gobi",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named stony and xeric-desert ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nCool gray taupe desert pavement #A09D8A, sparse grouped broad flat angular slate brush chips. Calm stony ground, not sand ripples and not noisy gravel photography."
+    },
+    {
+      "id": "tile_ground_macro_saline_meadow",
+      "category": "tile",
+      "family": "saline_meadow",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named saline meadow and salt-marsh ecological regions; no water extent inferred",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nPale gray sage #A2AC94 with sparse sedge-shaped brush traces and soft chalky silt streaks. Quiet mineral-organic ground; no salt lake or white salt polygons."
+    },
+    {
+      "id": "tile_ground_macro_alpine_meadow",
+      "category": "tile",
+      "family": "alpine_meadow",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine meadow ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nCool green #8CA68A low cushion-grass ground, connected soft velvet-like brush patches and a few shallow cool gray grit touches. No snow."
+    },
+    {
+      "id": "tile_ground_macro_alpine_steppe",
+      "category": "tile",
+      "family": "alpine_steppe",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine steppe and alpine desert ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nPale cool gray straw #B0B09A with open muted sage fibrous brush currents and broad calm gray mineral earth. No snow or frost polygons."
+    },
+    {
+      "id": "tile_ground_macro_tundra_moss",
+      "category": "tile",
+      "family": "tundra_moss",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tundra ecological regions; no seasonal ice or permafrost boundary inferred",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nOlive moss and pale gray lichen #919B7C, shallow soft organic brush lobes with muted peat seams. No bushes, water or snow."
+    },
+    {
+      "id": "tile_ground_macro_boreal_litter",
+      "category": "tile",
+      "family": "boreal_litter",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "boreal ecological region ground reference, not an assertion of historical tree cover",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nCool muted olive humus #899371, a few soft rust needle-like brush currents and broad calm moss-earth planes. No dense needles, trees or leaf carpet."
+    },
+    {
+      "id": "tile_ground_macro_temperate_litter",
+      "category": "tile",
+      "family": "temperate_litter",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate mixed and broadleaf ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nSoft muted sage-ochre mineral and organic earth #A1A27B, a few broad decomposed olive brush patches with sparse warm straw marks. Ground of a temperate ecological region, NOT a forest leaf carpet; no recognizable leaves or trees."
+    },
+    {
+      "id": "tile_ground_macro_conifer_litter",
+      "category": "tile",
+      "family": "conifer_litter",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate or tropical conifer ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nCool gray sage earth #929B81 with sparse quiet tan linear brush threads. Broad calm mineral humus; no dense needle carpet or branches."
+    },
+    {
+      "id": "tile_ground_macro_subtropical_humus",
+      "category": "tile",
+      "family": "subtropical_humus",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-latitude Asian temperate broadleaf ecological region ground reference",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nMuted warm loam #AA9B77, shallow olive organic brush patches and a few sienna clod-like brush touches. Ground without plants, cultivated parcels or individual leaves."
+    },
+    {
+      "id": "tile_ground_macro_tropical_moist_humus",
+      "category": "tile",
+      "family": "tropical_moist_humus",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical moist broadleaf ecological region ground reference; no historical jungle boundary inferred",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nWarm muted russet-earth #A18D70 with cool olive humus brush seams and broad soft dark loam planes, subtle shallow damp shading. No puddles or leaf carpet."
+    },
+    {
+      "id": "tile_ground_macro_dry_woodland_litter",
+      "category": "tile",
+      "family": "dry_woodland_litter",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical dry broadleaf or Mediterranean woodland ecological region ground reference",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nWarm dry muted tan-olive earth #ADA17D, sparse broken straw brush wisps with broad calm sandy loam planes; no woodland silhouettes or leaves."
+    },
+    {
+      "id": "tile_ground_macro_savanna_red_soil",
+      "category": "tile",
+      "family": "savanna_red_soil",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical savanna and grassland ecological region ground reference; soil color is representative art",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nSubdued red ochre mineral earth #B49B75 with sparse dry olive grass-shaped brush wisps and connected warm clay planes. No trees, shrubs or fields."
+    },
+    {
+      "id": "tile_ground_macro_flood_meadow",
+      "category": "tile",
+      "family": "flood_meadow",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named flooded grassland ecological region ground reference; not historical flooding or wetland extent",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nQuiet gray-green ground #8F9E86, shallow broad sedge-shaped brush currents mixed with muted silt planes. No pools, river channels or marsh water extent."
+    },
+    {
+      "id": "tile_ground_macro_alluvial_loam",
+      "category": "tile",
+      "family": "alluvial_loam",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-relief named alluvial ecological regions close to an archived surveyed river",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nSoft muted warm gray-brown silt #AFA58B, wide shallow interrupted sediment-like brush bands and a few small loam clod marks. Dry flat material, no channels or agricultural furrows."
+    },
+    {
+      "id": "tile_ground_macro_weathered_rock",
+      "category": "tile",
+      "family": "weathered_rock",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified hill and mountain cells; representative mineral grain, not a lithological survey",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nMuted sage-gray mineral earth #989D85 with sparse broad flat weathered stone brush planes and fine subdued strata-like direction. Flat surface, not raised boulders or a ridge."
+    },
+    {
+      "id": "tile_ground_macro_alpine_scree",
+      "category": "tile",
+      "family": "alpine_scree",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified peak cells; representative rock fragment grain, not a mapped scree deposit",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "prompt": "One original seamless opaque map-ground material for a premium\nhand-painted historical turn-based strategy game. Exact top-down flat texture,\nedge-to-edge. This covers a broad region on the game map, NOT a close-up\nphotograph of soil. Use calm broad painterly connected color planes, smooth\npigment transitions, subtle hand-painted brush direction and sparse distinct\nmedium-sized material marks. About 80 percent calm color, 20 percent clear\nclustered identity. Medium brush shapes roughly 50-180 pixels wide in a 1024\nimage; fine marks should be very sparse. Reduce illustrative complexity to\nthe legible level of a painted strategy-game landscape. Soft shallow light\nfrom upper left. Matte pigments, natural restrained saturation, moderate\nvalue range without black speckles. Absolutely no sandpaper noise, photo\ngrain, dense leaf carpet, individual realistic leaves, micropebbles, gritty\nfreckles, stippling, repeated circular spots or camouflage shapes. No objects\ncasting long shadows, trees, bushes, cliffs, mountains, roads, buildings,\nagricultural parcel lines, water channels, pools, coasts, labels, hexagons,\nborders, UI, panels, frames, logos or watermark. Full continuous seamless\nsurface, never a swatch with margins. Do not copy another game's artwork.\nThe material is representative regional ground, not a historical land-use\nsurvey. Subtle small organic/mineral marks describe this material:\nCool slate-gray mineral ground #A3A795, connected broad angular shallow brush planes and sparse small dark fissure marks. Flat representative scree, no peaks, snow or raised boulders."
+    }
+  ]
+}

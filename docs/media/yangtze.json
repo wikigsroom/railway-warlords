@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.13",
+	"build_version": "0.2.14",
 	"city_labels": [
 		{
 			"city_id": "wuchang",
@@ -61,7 +61,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 259,
 		"placed": 1,
-		"preparation_ms": 4.35,
+		"preparation_ms": 4.018,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 3,
 		"rule_cells_changed": false,
@@ -77,7 +77,7 @@
 		],
 		"catalog_additional_sources": 796,
 		"catalog_map_assets": 870.0,
-		"current_total_map_assets": 950,
+		"current_total_map_assets": 970,
 		"distinct_scenery_originals_intersecting_view": 0,
 		"distinct_surface_originals_in_view": 8,
 		"families": {},
@@ -144,8 +144,11 @@
 			"active": true,
 			"blend_inner_ratio": 0.7,
 			"checked_adjacent_pairs": 505,
+			"fine_detail_alpha": 0.22,
 			"ground_alpha": 0.94,
 			"independent_originals": 80,
+			"macro_originals": 20,
+			"macro_repeat_world_units": 384.0,
 			"registered_types": 20,
 			"rule_geometry_changed": false,
 			"same_original_on_adjacent_cells": 0,
@@ -159,6 +162,10 @@
 				"tile_surface_subtropical_humus_03": 56,
 				"tile_surface_subtropical_humus_04": 27
 			},
+			"visible_macro_sources": [
+				"tile_ground_macro_subtropical_humus",
+				"tile_ground_macro_alluvial_loam"
+			],
 			"visible_types": {
 				"alluvial_loam": 27,
 				"subtropical_humus": 167
@@ -211,13 +218,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 0,
-		"index_ms": 11.792,
+		"index_ms": 10.954,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 18.762,
+		"mesh_ms": 18.798,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 0,
-		"placement_ms": 0.661,
-		"preparation_ms": 31.214,
+		"placement_ms": 0.638,
+		"preparation_ms": 30.39,
 		"rules_map_mutated": false,
 		"source": "SRTM90m_v3_five_point_samples",
 		"source_meters_per_world_unit": 26.0416666666667,

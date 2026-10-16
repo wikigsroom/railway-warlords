@@ -511,21 +511,23 @@ func map_bank_capture_facts() -> Dictionary:
 		material_ids[map_details.surfaces.get(key,"")]=true
 	var hydro_facts=MapHydrography.facts(detail_river_lines,detail_river_buckets,hydrography_diagnostics,view,zoom,state.map.get("strategic_scale",false))
 	var subtype_facts=terrain_surface_capture_facts(view)
-	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
+	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals)+int(subtype_facts.macro_originals),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
 
 func terrain_surface_capture_facts(view: Rect2) -> Dictionary:
-	var type_counts: Dictionary={};var source_counts: Dictionary={};var repeated=0;var pairs=0
+	var type_counts: Dictionary={};var source_counts: Dictionary={};var repeated=0;var pairs=0;var macro_sources: Dictionary={}
 	for entry in visible_terrain_entries(view):
 		var key=HexGrid.key(entry.hex);var id=str(map_details.surfaces.get(key,""))
 		if not id.begins_with("tile_surface_"):continue
 		var family=str(map_details.surface_families.get(key,""))
+		var macro=MapTerrainSurfaces.macro_id(family)
+		if not macro.is_empty():macro_sources[macro]=true
 		type_counts[family]=int(type_counts.get(family,0))+1;source_counts[id]=int(source_counts.get(id,0))+1
 		for direction in [Vector2i(1,0),Vector2i(0,1),Vector2i(-1,1)]:
 			var other=str(map_details.surfaces.get(HexGrid.key(entry.hex+direction),""))
 			if not other.begins_with("tile_surface_"):continue
 			pairs+=1
 			if id==other:repeated+=1
-	return {"active":MapTerrainSurfaces.available(),"registered_types":MapTerrainSurfaces.data().get("types",{}).size(),"independent_originals":MapTerrainSurfaces.data().get("records",{}).size(),"visible_types":type_counts,"source_use_counts":source_counts,"checked_adjacent_pairs":pairs,"same_original_on_adjacent_cells":repeated,"ground_alpha":MapTerrainSurfaces.alpha_for("temperate_meadow",bool(state.map.get("strategic_scale",false))),"blend_inner_ratio":MapDetails.SURFACE_BLEND_INNER,"rule_geometry_changed":false}
+	return {"active":MapTerrainSurfaces.available(),"registered_types":MapTerrainSurfaces.data().get("types",{}).size(),"independent_originals":MapTerrainSurfaces.data().get("records",{}).size(),"macro_originals":MapTerrainSurfaces.macro_data().get("records",{}).size(),"visible_macro_sources":macro_sources.keys(),"macro_repeat_world_units":MapTerrainSurfaces.macro_data().get("world_repeat_period",0),"fine_detail_alpha":MapTerrainSurfaces.detail_alpha(bool(state.map.get("strategic_scale",false))),"visible_types":type_counts,"source_use_counts":source_counts,"checked_adjacent_pairs":pairs,"same_original_on_adjacent_cells":repeated,"ground_alpha":MapTerrainSurfaces.alpha_for("temperate_meadow",bool(state.map.get("strategic_scale",false))),"blend_inner_ratio":MapDetails.SURFACE_BLEND_INNER,"rule_geometry_changed":false}
 
 func place_at_screen(screen: Vector2) -> String:
 	if not show_places or not selected_unit_id.is_empty():return ""
@@ -1323,14 +1325,10 @@ func draw_landscape(view: Rect2) -> void:
 			# same symbolic width as adjoining reaches of the same order.
 			var stream_order=int(river_stream_orders[river_index]) if river_index<river_stream_orders.size() else 0
 			var river_width=clampf(2.7+sqrt(float(points.size()))*.34,3.4,12.6)
-			if stream_order>0:river_width=6.8+maxi(0,stream_order-6)*.65
+			if stream_order>0:river_width=MapHydrography.symbolic_width(stream_order,false,river_width)
 			var minor=stream_order==0 and points.size()<18
 			var opacity=.54 if minor else (.70 if points.size()<90 else .86)
-			var bank=Color("acd0c4",opacity*.72)
-			var body=Color("3e839e",opacity)
-			var highlight=Color("72b6c6",opacity*.62)
-			draw_polyline(points,bank,river_width+4.4,true);draw_polyline(points,body,river_width+1.25,true);draw_polyline(points,highlight,maxf(1.1,river_width*.30),true);draw_polyline(points,Color(.78,.94,.94,opacity*.42),maxf(.55,river_width*.08),true)
-			if zoom>.20 and (not minor or zoom>.34):draw_river_banks(points,river_width)
+			MapHydrography.paint(self,points,river_width,opacity,false)
 	draw_crossing_markers(view)
 
 func draw_crossing_markers(view: Rect2) -> void:
@@ -1554,12 +1552,9 @@ func draw_cell_river_details(view: Rect2) -> void:
 	for row in MapHydrography.visible_rows(detail_river_lines,detail_river_buckets,view,zoom,strategic):
 		var order=int(row.get("stream_order",0));var fine=order>0
 		var display_points: PackedVector2Array=row.get("display_points",row.points)
-		var width=(.72+float(order)*.24) if fine else (1.25 if strategic else 1.7)
-		var opacity=clampf((zoom-float(row.get("min_zoom",.38))+.10)/.24,0.0,1.0)*(.72 if fine else .77)
-		draw_polyline(display_points,Color("a9af91",opacity*.52),width+2.0,true)
-		if fine:draw_polyline(display_points,Color("465f59",opacity*.48),width+.65,true)
-		draw_polyline(display_points,Color("58828a",opacity),width,true)
-		draw_polyline(display_points,Color("afc6bf",opacity*.34),.36 if fine else .50,true)
+		var width=MapHydrography.symbolic_width(order,strategic,1.25 if strategic else 1.7)
+		var opacity=clampf((zoom-float(row.get("min_zoom",.38))+.10)/.24,0.0,1.0)*(.88 if fine else .86)
+		MapHydrography.paint(self,display_points,width,opacity,true)
 		terrain_cell_river_draw_count+=display_points.size()-1
 
 func draw_cell_micro_symbols(view: Rect2) -> void:

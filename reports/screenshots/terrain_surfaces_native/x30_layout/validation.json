@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.13",
+	"build_version": "0.2.14",
 	"captures": [
 		{
 			"name": "atlas_0",
@@ -25,7 +25,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 53,
 				"distinct_surface_originals_in_view": 30,
 				"families": {
@@ -185,8 +185,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 680,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -220,6 +223,17 @@
 						"tile_surface_weathered_rock_03": 60,
 						"tile_surface_weathered_rock_04": 27
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_boreal_litter",
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_dry_steppe",
+						"tile_ground_macro_temperate_meadow",
+						"tile_ground_macro_tundra_moss",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_flood_meadow",
+						"tile_ground_macro_conifer_litter"
+					],
 					"visible_types": {
 						"boreal_litter": 15,
 						"conifer_litter": 3,
@@ -247,7 +261,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 59,
 				"distinct_surface_originals_in_view": 34,
 				"families": {
@@ -418,8 +432,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 659,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -455,6 +472,18 @@
 						"tile_surface_weathered_rock_03": 55,
 						"tile_surface_weathered_rock_04": 25
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_dry_steppe",
+						"tile_ground_macro_boreal_litter",
+						"tile_ground_macro_temperate_meadow",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_flood_meadow",
+						"tile_ground_macro_conifer_litter"
+					],
 					"visible_types": {
 						"alpine_scree": 2,
 						"alpine_steppe": 5,
@@ -483,7 +512,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 61,
 				"distinct_surface_originals_in_view": 30,
 				"families": {
@@ -664,8 +693,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 736,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -700,6 +732,18 @@
 						"tile_surface_weathered_rock_03": 61,
 						"tile_surface_weathered_rock_04": 33
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_dune_sand",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_dry_steppe",
+						"tile_ground_macro_temperate_meadow",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_flood_meadow"
+					],
 					"visible_types": {
 						"alluvial_loam": 2,
 						"alpine_scree": 3,
@@ -728,7 +772,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 50,
 				"distinct_surface_originals_in_view": 28,
 				"families": {
@@ -887,8 +931,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 925,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -921,6 +968,16 @@
 						"tile_surface_weathered_rock_03": 74,
 						"tile_surface_weathered_rock_04": 41
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_gravel_gobi",
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_dune_sand",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_alpine_meadow"
+					],
 					"visible_types": {
 						"alpine_meadow": 3,
 						"alpine_scree": 22,
@@ -947,7 +1004,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 20,
 				"distinct_surface_originals_in_view": 31,
 				"families": {
@@ -1071,8 +1128,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 720,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -1106,6 +1166,17 @@
 						"tile_surface_weathered_rock_03": 36,
 						"tile_surface_weathered_rock_04": 17
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_dry_steppe",
+						"tile_ground_macro_gravel_gobi",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_temperate_meadow",
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_dune_sand",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_temperate_litter"
+					],
 					"visible_types": {
 						"alpine_scree": 12,
 						"alpine_steppe": 2,
@@ -1133,7 +1204,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 19,
 				"distinct_surface_originals_in_view": 39,
 				"families": {
@@ -1255,8 +1326,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 411,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -1289,6 +1363,17 @@
 						"tile_surface_weathered_rock_03": 23,
 						"tile_surface_weathered_rock_04": 15
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_dune_sand",
+						"tile_ground_macro_gravel_gobi",
+						"tile_ground_macro_saline_meadow",
+						"tile_ground_macro_dry_woodland_litter",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_tropical_moist_humus",
+						"tile_ground_macro_alpine_meadow"
+					],
 					"visible_types": {
 						"alluvial_loam": 6,
 						"alpine_meadow": 1,
@@ -1316,7 +1401,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 16,
 				"distinct_surface_originals_in_view": 33,
 				"families": {
@@ -1445,8 +1530,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 834,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -1485,6 +1573,20 @@
 						"tile_surface_weathered_rock_03": 69,
 						"tile_surface_weathered_rock_04": 36
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_dune_sand",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_gravel_gobi",
+						"tile_ground_macro_dry_woodland_litter",
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_tropical_moist_humus",
+						"tile_ground_macro_alpine_meadow",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_subtropical_humus",
+						"tile_ground_macro_temperate_litter"
+					],
 					"visible_types": {
 						"alluvial_loam": 7,
 						"alpine_meadow": 3,
@@ -1515,7 +1617,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 32,
 				"distinct_surface_originals_in_view": 31,
 				"families": {
@@ -1659,8 +1761,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 907,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -1696,6 +1801,18 @@
 						"tile_surface_weathered_rock_03": 73,
 						"tile_surface_weathered_rock_04": 35
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_gravel_gobi",
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_dune_sand",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_alpine_meadow",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_subtropical_humus"
+					],
 					"visible_types": {
 						"alluvial_loam": 1,
 						"alpine_meadow": 3,
@@ -1724,7 +1841,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 18,
 				"distinct_surface_originals_in_view": 24,
 				"families": {
@@ -1835,8 +1952,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 513,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -1854,6 +1974,11 @@
 						"tile_surface_weathered_rock_03": 26,
 						"tile_surface_weathered_rock_04": 13
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_tundra_moss",
+						"tile_ground_macro_boreal_litter"
+					],
 					"visible_types": {
 						"boreal_litter": 75,
 						"tundra_moss": 32,
@@ -1875,7 +2000,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 27,
 				"distinct_surface_originals_in_view": 16,
 				"families": {
@@ -2003,8 +2128,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 758,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -2025,6 +2153,15 @@
 						"tile_surface_weathered_rock_03": 37,
 						"tile_surface_weathered_rock_04": 23
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_boreal_litter",
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_tundra_moss",
+						"tile_ground_macro_temperate_meadow",
+						"tile_ground_macro_conifer_litter",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_flood_meadow"
+					],
 					"visible_types": {
 						"boreal_litter": 155,
 						"conifer_litter": 2,
@@ -2050,7 +2187,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 30,
 				"distinct_surface_originals_in_view": 36,
 				"families": {
@@ -2197,8 +2334,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 444,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -2229,6 +2369,17 @@
 						"tile_surface_weathered_rock_03": 33,
 						"tile_surface_weathered_rock_04": 15
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_dry_steppe",
+						"tile_ground_macro_temperate_meadow",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_flood_meadow",
+						"tile_ground_macro_conifer_litter",
+						"tile_ground_macro_alluvial_loam"
+					],
 					"visible_types": {
 						"alluvial_loam": 1,
 						"alpine_steppe": 5,
@@ -2256,7 +2407,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 32,
 				"distinct_surface_originals_in_view": 40,
 				"families": {
@@ -2395,8 +2546,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 498,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -2429,6 +2583,17 @@
 						"tile_surface_weathered_rock_03": 40,
 						"tile_surface_weathered_rock_04": 18
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_boreal_litter",
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_dry_steppe",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_temperate_meadow",
+						"tile_ground_macro_tundra_moss",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_flood_meadow",
+						"tile_ground_macro_conifer_litter"
+					],
 					"visible_types": {
 						"boreal_litter": 10,
 						"conifer_litter": 3,
@@ -2456,7 +2621,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 7,
 				"distinct_surface_originals_in_view": 36,
 				"families": {
@@ -2586,8 +2751,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 538,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -2617,6 +2785,17 @@
 						"tile_surface_weathered_rock_03": 54,
 						"tile_surface_weathered_rock_04": 28
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_dry_woodland_litter",
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_alpine_meadow",
+						"tile_ground_macro_subtropical_humus",
+						"tile_ground_macro_tropical_moist_humus",
+						"tile_ground_macro_temperate_litter"
+					],
 					"visible_types": {
 						"alluvial_loam": 7,
 						"alpine_meadow": 3,
@@ -2644,7 +2823,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 0,
 				"distinct_surface_originals_in_view": 24,
 				"families": {},
@@ -2741,8 +2920,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 199,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -2760,6 +2942,12 @@
 						"tile_surface_weathered_rock_03": 18,
 						"tile_surface_weathered_rock_04": 11
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_dry_woodland_litter",
+						"tile_ground_macro_tropical_moist_humus",
+						"tile_ground_macro_weathered_rock"
+					],
 					"visible_types": {
 						"alluvial_loam": 2,
 						"dry_woodland_litter": 17,
@@ -2782,7 +2970,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 17,
 				"distinct_surface_originals_in_view": 39,
 				"families": {
@@ -2902,8 +3090,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 476,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -2936,6 +3127,17 @@
 						"tile_surface_weathered_rock_03": 40,
 						"tile_surface_weathered_rock_04": 14
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_dune_sand",
+						"tile_ground_macro_gravel_gobi",
+						"tile_ground_macro_saline_meadow",
+						"tile_ground_macro_dry_woodland_litter",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_tropical_moist_humus",
+						"tile_ground_macro_alpine_meadow"
+					],
 					"visible_types": {
 						"alluvial_loam": 6,
 						"alpine_meadow": 1,
@@ -2963,7 +3165,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 22,
 				"distinct_surface_originals_in_view": 26,
 				"families": {
@@ -3083,8 +3285,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 287,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -3104,6 +3309,13 @@
 						"tile_surface_weathered_rock_03": 18,
 						"tile_surface_weathered_rock_04": 15
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_savanna_red_soil",
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_gravel_gobi",
+						"tile_ground_macro_flood_meadow",
+						"tile_ground_macro_tropical_moist_humus"
+					],
 					"visible_types": {
 						"flood_meadow": 7,
 						"gravel_gobi": 2,
@@ -3127,7 +3339,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 26,
 				"distinct_surface_originals_in_view": 41,
 				"families": {
@@ -3262,8 +3474,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 461,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -3298,6 +3513,18 @@
 						"tile_surface_weathered_rock_03": 36,
 						"tile_surface_weathered_rock_04": 14
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_dry_steppe",
+						"tile_ground_macro_boreal_litter",
+						"tile_ground_macro_temperate_meadow",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_tundra_moss",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_flood_meadow",
+						"tile_ground_macro_conifer_litter"
+					],
 					"visible_types": {
 						"alpine_steppe": 2,
 						"boreal_litter": 5,
@@ -3326,7 +3553,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 18,
 				"distinct_surface_originals_in_view": 39,
 				"families": {
@@ -3472,8 +3699,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 452,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -3506,6 +3736,18 @@
 						"tile_surface_weathered_rock_03": 39,
 						"tile_surface_weathered_rock_04": 23
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_alpine_meadow",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_subtropical_humus",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_tropical_moist_humus",
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_dry_steppe"
+					],
 					"visible_types": {
 						"alluvial_loam": 7,
 						"alpine_meadow": 2,
@@ -3534,7 +3776,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 47,
 				"distinct_surface_originals_in_view": 38,
 				"families": {
@@ -3699,8 +3941,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 553,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -3732,6 +3977,17 @@
 						"tile_surface_weathered_rock_03": 44,
 						"tile_surface_weathered_rock_04": 23
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_desert_steppe",
+						"tile_ground_macro_dry_steppe",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_alpine_meadow",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_temperate_litter",
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_flood_meadow"
+					],
 					"visible_types": {
 						"alluvial_loam": 4,
 						"alpine_meadow": 1,
@@ -3759,7 +4015,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 950,
+				"current_total_map_assets": 970,
 				"distinct_scenery_originals_intersecting_view": 12,
 				"distinct_surface_originals_in_view": 33,
 				"families": {
@@ -3878,8 +4134,11 @@
 					"active": true,
 					"blend_inner_ratio": 0.7,
 					"checked_adjacent_pairs": 733,
+					"fine_detail_alpha": 0.14,
 					"ground_alpha": 0.91,
 					"independent_originals": 80,
+					"macro_originals": 20,
+					"macro_repeat_world_units": 384.0,
 					"registered_types": 20,
 					"rule_geometry_changed": false,
 					"same_original_on_adjacent_cells": 0,
@@ -3915,6 +4174,18 @@
 						"tile_surface_weathered_rock_03": 62,
 						"tile_surface_weathered_rock_04": 32
 					},
+					"visible_macro_sources": [
+						"tile_ground_macro_weathered_rock",
+						"tile_ground_macro_alpine_scree",
+						"tile_ground_macro_alpine_steppe",
+						"tile_ground_macro_gravel_gobi",
+						"tile_ground_macro_saline_meadow",
+						"tile_ground_macro_dry_woodland_litter",
+						"tile_ground_macro_alluvial_loam",
+						"tile_ground_macro_tropical_moist_humus",
+						"tile_ground_macro_alpine_meadow",
+						"tile_ground_macro_subtropical_humus"
+					],
 					"visible_types": {
 						"alluvial_loam": 6,
 						"alpine_meadow": 3,
@@ -3943,7 +4214,7 @@
 		},
 		{
 			"details": null,
-			"name": "atlas_four_actual_originals_are_reachable:0",
+			"name": "atlas_macro_and_four_detail_originals_are_reachable:0",
 			"passed": true
 		},
 		{
@@ -3958,7 +4229,7 @@
 		},
 		{
 			"details": null,
-			"name": "atlas_four_actual_originals_are_reachable:1",
+			"name": "atlas_macro_and_four_detail_originals_are_reachable:1",
 			"passed": true
 		},
 		{
@@ -3973,7 +4244,7 @@
 		},
 		{
 			"details": null,
-			"name": "atlas_four_actual_originals_are_reachable:2",
+			"name": "atlas_macro_and_four_detail_originals_are_reachable:2",
 			"passed": true
 		},
 		{
@@ -3998,6 +4269,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:temperate_meadow",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:temperate_meadow",
 			"passed": true
 		},
@@ -4014,6 +4290,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:dry_steppe",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:dry_steppe",
 			"passed": true
 		},
 		{
@@ -4038,6 +4319,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:desert_steppe",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:desert_steppe",
 			"passed": true
 		},
@@ -4054,6 +4340,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:dune_sand",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:dune_sand",
 			"passed": true
 		},
 		{
@@ -4078,6 +4369,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:gravel_gobi",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:gravel_gobi",
 			"passed": true
 		},
@@ -4094,6 +4390,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:saline_meadow",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:saline_meadow",
 			"passed": true
 		},
 		{
@@ -4118,6 +4419,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:alpine_meadow",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:alpine_meadow",
 			"passed": true
 		},
@@ -4134,6 +4440,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:alpine_steppe",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:alpine_steppe",
 			"passed": true
 		},
 		{
@@ -4158,6 +4469,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:tundra_moss",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:tundra_moss",
 			"passed": true
 		},
@@ -4174,6 +4490,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:boreal_litter",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:boreal_litter",
 			"passed": true
 		},
 		{
@@ -4198,6 +4519,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:temperate_litter",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:temperate_litter",
 			"passed": true
 		},
@@ -4214,6 +4540,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:conifer_litter",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:conifer_litter",
 			"passed": true
 		},
 		{
@@ -4238,6 +4569,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:subtropical_humus",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:subtropical_humus",
 			"passed": true
 		},
@@ -4254,6 +4590,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:tropical_moist_humus",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:tropical_moist_humus",
 			"passed": true
 		},
 		{
@@ -4278,6 +4619,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:dry_woodland_litter",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:dry_woodland_litter",
 			"passed": true
 		},
@@ -4294,6 +4640,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:savanna_red_soil",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:savanna_red_soil",
 			"passed": true
 		},
 		{
@@ -4318,6 +4669,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:flood_meadow",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:flood_meadow",
 			"passed": true
 		},
@@ -4334,6 +4690,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:alluvial_loam",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:alluvial_loam",
 			"passed": true
 		},
 		{
@@ -4358,6 +4719,11 @@
 		},
 		{
 			"details": null,
+			"name": "continuous_macro_visible_on_real_map:weathered_rock",
+			"passed": true
+		},
+		{
+			"details": null,
 			"name": "adjacent_originals_differ:weathered_rock",
 			"passed": true
 		},
@@ -4374,6 +4740,11 @@
 		{
 			"details": null,
 			"name": "material_visible_in_real_map:alpine_scree",
+			"passed": true
+		},
+		{
+			"details": null,
+			"name": "continuous_macro_visible_on_real_map:alpine_scree",
 			"passed": true
 		},
 		{

@@ -58,11 +58,11 @@ func execute() -> void:
 			var picture=node.find_child("TerrainMaterialPreview",true,false)
 			var button=node.find_child("TerrainVariant",true,false)
 			var first=picture.texture
-			for variant in range(4):
+			for variant in range(int(picture.get_meta("variant_count",4))):
 				all_variants=all_variants and picture.texture!=null and int(picture.get_meta("variant",-1))==variant
 				button.pressed.emit()
 			all_variants=all_variants and picture.texture==first
-		check(all_variants,"atlas_four_actual_originals_are_reachable:"+str(section))
+		check(all_variants,"atlas_macro_and_four_detail_originals_are_reachable:"+str(section))
 		var fits=true
 		for node in app.ui_nodes(app.overlay):
 			if node is ScrollContainer:
@@ -83,6 +83,7 @@ func execute() -> void:
 		var view=Rect2(app.map_view.camera-app.map_view.size/(2*app.map_view.zoom),app.map_view.size/app.map_view.zoom)
 		var facts=app.map_view.terrain_surface_capture_facts(view)
 		check(int(facts.visible_types.get(family,0))>0,"material_visible_in_real_map:"+family)
+		check(facts.visible_macro_sources.has(MapTerrainSurfaces.macro_id(family)),"continuous_macro_visible_on_real_map:"+family)
 		check(facts.same_original_on_adjacent_cells==0,"adjacent_originals_differ:"+family)
 		await capture("map_"+family)
 	check(ContentRegistry.fingerprint(app.match_controller.state.map)==original and ContentRegistry.fingerprint(app.match_controller.state)==state_before,"viewing_all_twenty_materials_does_not_change_game_or_map_state")

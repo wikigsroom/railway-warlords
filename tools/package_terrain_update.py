@@ -53,6 +53,7 @@ def main():
                 'terrain_surface_generation.json', 'terrain_surface_installation.json',
                 'terrain_surface_geography.json', 'terrain_surface_geography_audit.json',
                 'terrain_surface_asset_audit.json', 'terrain_surface_source_review.json',
+                'ground_macro_generation.json', 'ground_macro_asset_audit.json', 'ground_macro_source_review.json',
                 'terrain_surface_native_evidence.json', 'apk_content_validation.json']
     for name in required:
         path = P / 'reports' / name
@@ -91,8 +92,12 @@ def main():
     catalog = read(P / 'presentation/data/terrain_surface_catalog.json')
     require(len(catalog['types']) == 20 and len(catalog['records']) == 80, 'Twenty types and eighty originals required')
     provenance = read(P / 'docs/asset-provenance/index.json')
-    require(provenance['count'] == len(assets) == 1136, 'Current portable provenance is incomplete')
+    require(provenance['count'] == len(assets) == 1156, 'Current portable provenance is incomplete')
     require(len({r['source_sha256'] for r in catalog['records'].values()}) == 80, 'Duplicate new originals')
+    macros=read(P/'presentation/data/ground_macro_catalog.json')
+    require(set(macros['records']) == set(catalog['types']) and len({row['source_sha256'] for row in macros['records'].values()})==20,
+            'Twenty matching continuous-ground originals required')
+    require(read(P/'reports/ground_macro_source_review.json')['all_twenty_originals_viewed'], 'New ground visual review missing')
     for row in provenance['assets']:
         require(sha(P / row['image']) == row['image_sha256'] and sha(P / row['prompt']) == row['prompt_sha256'],
                 'Portable image or prompt changed: ' + row['id'])
@@ -109,7 +114,8 @@ def main():
                    'apk_signature.log', 'apk_badging.log', 'apk_permissions.log', 'android_devices.log', 'desktop_benchmark.json'])
     summary = dict(passed=True, version=version, runtime_source_sha256=runtime, content_hash=fingerprint,
                    regression_groups=len(regression), regression_checks=sum(int(r['passed_checks']) for r in regression),
-                   terrain_types=20, new_independent_originals=80, total_rasters=len(assets), total_map_assets=950,
+                   terrain_types=20, detail_originals=80, macro_originals=20, new_independent_originals=20,
+                   total_rasters=len(assets), total_map_assets=970,
                    native_groups=len(native['groups']), native_captures=len(captures)//2,
                    current_native_capacity=True, full_ai_endurance_rerun=False,
                    physical_android_device_tested=False, formal_art_approval=False, ew6_parity_claimed=False)
@@ -129,7 +135,7 @@ def main():
     (portable / 'README.md').write_text(f'''# 铁道烽烟 {version}
 
 运行 RailwayWarlords.exe，无需安装 Godot。
-本版新增 20 类地域地表、80 张独立底纹；说明书内可打开地形图鉴。
+20 类地域地表各有 1 张连续底材与 4 张细节原图；说明书内可打开地形图鉴。
 点选部队、选目标、再次点击确认；拖动平移、滚轮缩放、空格跳过战斗演出。
 本版为可玩测试交付，X30 真机与完整 AI 长局尚未在本轮复验。
 ''', encoding='utf-8')
@@ -171,13 +177,15 @@ def main():
                     archive_integrity_verified=True)
     write(out / 'release_manifest.json', manifest)
     shutil.copyfile(P / 'docs/30_二十类地域地表与纹理整改.md', out / '二十类地域地表与纹理整改.md')
+    shutil.copyfile(P / 'docs/31_连续地表与水系层次.md', out / '连续地表与水系层次.md')
     (out / '交付说明.md').write_text(f'''# 铁道烽烟 {version} · 地表与界面测试交付
 
 Windows：解压 RailwayWarlords-Windows-{version}.zip，运行 RailwayWarlords.exe。
 Android：安装 RailwayWarlords-{version}.apk，延续现有签名。目标样机 Motorola X30 尚未完成物理验收。
 Godot：解压工程 ZIP，用 Godot 4.7.2 打开 game/railway_warlords/project.godot。
 
-新增 20 类地域地表 × 4 张独立 Sub2 原图，共 80 张；地图素材共 950 张，全部 PNG 共 1,136 张。
+保留 20 类地域地表与 80 张细节原图，再新增 20 张连续绘制底材，共 100 张专用地表原图；地图素材共 970 张，全部 PNG 共 1,156 张。
+本版改为世界坐标连续取样与低强度细节覆盖，改善逐格噪声和材质接缝；水系按河级显示明暗岸缘。战役列表会自动显示所选关卡。
 说明书与地格详情均可进入交互地形图鉴。材质按生态区、高程与既有河谷选取；不宣称逐年历史土地利用复原。
 
 当前 {summary['regression_groups']} 组 / {summary['regression_checks']} 项回归通过；85 张地表/UI及5张局部地图原生截图、双桌面视口容量与 APK 载荷已绑定本次 EXE/源码哈希。

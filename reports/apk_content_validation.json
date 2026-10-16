@@ -467,6 +467,16 @@
       "sha_matches": true
     },
     {
+      "file": "presentation/data/ground_macro_catalog.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/ground_macro_plan.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
       "file": "presentation/data/hydrography_detail.json",
       "included": true,
       "sha_matches": true
@@ -564,7 +574,7 @@
     "lib/armeabi-v7a/libgodot_android.so"
   ],
   "private_files_detected": [],
-  "artifact_sha256": "a78abcd5837eb01e2c1887512ab9031613ad25ca4935145db9da844e1269c32f",
+  "artifact_sha256": "b9c2a44900ca0279a285f1622764628dc1037428f6e9d1fd4045ebfb0200522a",
   "raster_manifest_byte_verified": true,
   "raster_import_files_verified": [
     {
@@ -7900,6 +7910,166 @@
       "source_sha256": "fa2d0f8c6b514127d2d04bdea958b813a99b6273e1161f10ea6889e22bfad383",
       "embedded_imports": [
         ".godot/imported/tile_forest_02.png-ce2015a390901c10e02158201fc4b2c0.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_alluvial_loam",
+      "source_sha256": "c512728717ff4c44867fc4b5af413d7592da87759a2b0ff8aed8dd4e5258797c",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_alluvial_loam.png-b4f63da963b1971f0c4bcef46bd060db.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_alpine_meadow",
+      "source_sha256": "754fa72eae1c53e6d7322fa8b41ad029765018bd4ff45aabc20648836fd96b18",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_alpine_meadow.png-0c34892149aa2d93fefea1b667ced0d9.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_alpine_scree",
+      "source_sha256": "887125ba33e4f6c84a03a3b5eece54ce2ba228f8b5ec39b43ac341364b52a560",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_alpine_scree.png-6f00129ee5ef305f797f6eb202a2a1c6.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_alpine_steppe",
+      "source_sha256": "24e252d5d125066e39af8f7650f6d8e3057f357a23e11f69c564e17c2390d591",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_alpine_steppe.png-91bcb8611cef831329f9fc6f97d2361d.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_boreal_litter",
+      "source_sha256": "587d8f9684168b51f5e7053c94cbec7698de133b2936e35c1b5c7f3a98bd8bbe",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_boreal_litter.png-cfb11c547e76a777618c3691247fbb8b.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_conifer_litter",
+      "source_sha256": "cace4e800ffb9b0ef558011dbbd08aa4ca8b469adc0dc1a68ea2c2952d0b4628",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_conifer_litter.png-aee92395c45ff0f53757e3894c5e28b2.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_desert_steppe",
+      "source_sha256": "6c7c452a2c5653c86d5cad55a8d6dbe7f5f1ff183f1182b54607f9fde2d549ef",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_desert_steppe.png-a1b283359eeae6af2bab26f7f93ac662.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_dry_steppe",
+      "source_sha256": "4037ae0a58e36036184d84ce1dce8f45b3866aaf3ac85ffb4b50c92a4d6c85d2",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_dry_steppe.png-520467ae366d89caf1a9f766ce567a00.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_dry_woodland_litter",
+      "source_sha256": "d41b7712613766ca1843d8e51134d4f2c9f649f9fc2b8589bcfe02b631d50923",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_dry_woodland_litter.png-52d9fa59d99c8bee23af432b9f5ff513.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_dune_sand",
+      "source_sha256": "2f06346dc11dc9f1b9399a3013c6d84415b9b4186eeada9937d5c60aefc02aaa",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_dune_sand.png-4dea8cdc7bdcec0100104a66aa6016a0.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_flood_meadow",
+      "source_sha256": "b9e07fa9c2cfba4c159b38435678d253e01092ee5aa6f838e1d91ecd08c5050d",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_flood_meadow.png-8cca076acc7c862e70a0606f89d4afa0.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_gravel_gobi",
+      "source_sha256": "b53fb6caecf1aed8b40d4f55b6d529917f55a135ccd5437394ddf9c620273620",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_gravel_gobi.png-0e8b3793d2f82d13f58bf2b2f2939bad.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_saline_meadow",
+      "source_sha256": "982061542380bfd699822055df3ef6b852b35b8726e8f3ffda1843c1ef469590",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_saline_meadow.png-bb6f8d0422586bdb6c91e112b0438a4a.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_savanna_red_soil",
+      "source_sha256": "8a0587eb49c414636a7875c0a7ddd120f528730ed1dd5b01948647fe56ea68ac",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_savanna_red_soil.png-d8fce809004aee2ae073437a56e4bf10.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_subtropical_humus",
+      "source_sha256": "88987287fe695e713d6f36779c11d123cd625086fe2a2b625d9c6e3a8e3ab1f1",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_subtropical_humus.png-d5fc9f044040fb35a744b23244d0a6a4.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_temperate_litter",
+      "source_sha256": "91ae908a1c07aa03ad7f7f5ee88fce549e3829ec42a73c7a1e8b875f27832e51",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_temperate_litter.png-21d93bde1dffa4f38d6522358f865cd5.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_temperate_meadow",
+      "source_sha256": "38a134ebb23cc8354db6a3ae4e7f07da1f327c2205133f8a5099edb9417cd448",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_temperate_meadow.png-579a2537984a50125caeb2ddf13d28fd.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_tropical_moist_humus",
+      "source_sha256": "41db48010eda1edbc28c7a40671b5b7dbd6218d65e029f121c5fd019c89fab7b",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_tropical_moist_humus.png-07a9dd2625e5e3c94801e4be44ef24f0.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_tundra_moss",
+      "source_sha256": "44c20cece5b209d0dbc60dde3ed853de62008e2642ea835fabc258715ea8d18c",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_tundra_moss.png-00e0b58e0aec28ef2e033ecef673dd5d.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_macro_weathered_rock",
+      "source_sha256": "77e2d0299ae978c9cdf23a7d49b733e9ce401012ae636e0cd3a8a421a1f72923",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_macro_weathered_rock.png-0d30ac6ac8911a70e86ca983023b4734.ctex"
       ],
       "current_import_bytes_match": true
     },

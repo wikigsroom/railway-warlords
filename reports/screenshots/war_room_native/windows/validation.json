@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.13",
+	"build_version": "0.2.14",
 	"captures": [
 		{
 			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/home.png",
@@ -107,6 +107,11 @@
 		},
 		{
 			"detail": null,
+			"name": "campaign_selected_scenario_card_is_visible",
+			"passed": true
+		},
+		{
+			"detail": null,
 			"name": "era_filter_selects_actual_1927_scenario",
 			"passed": true
 		},
@@ -162,6 +167,11 @@
 		},
 		{
 			"detail": null,
+			"name": "conquest_selected_scenario_card_is_visible",
+			"passed": true
+		},
+		{
+			"detail": null,
 			"name": "native_capture_legion",
 			"passed": true
 		},
@@ -188,6 +198,11 @@
 		{
 			"detail": 733.0,
 			"name": "legion_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "legion_selected_scenario_card_is_visible",
 			"passed": true
 		},
 		{

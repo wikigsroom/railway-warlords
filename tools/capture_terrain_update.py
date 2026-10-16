@@ -95,7 +95,7 @@ def main():
             require(meta['build_version'] == version and meta['raw_godot_capture'] and meta['qa_save_isolated']
                     and path.stat().st_mtime >= started - 2, 'Current native detail required: ' + name)
             visible = meta['map_bank_visible']
-            require(visible['current_total_map_assets'] == 950, 'Current complete map library required')
+            require(visible['current_total_map_assets'] == 970, 'Current complete map library required')
             if name == 'tributaries':
                 require(visible['hydrography']['visible_fine_reaches'] > 0, 'Actual source tributaries must be visible')
             if name == 'mountain':

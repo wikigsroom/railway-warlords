@@ -82,16 +82,21 @@ func show_terrain_atlas(section: int=0) -> void:
 	var g=grid(v,310)
 	for family in groups[clampi(section,0,2)]:
 		var definition: Dictionary=MapTerrainSurfaces.data().types[family]
+		var originals: Array=definition.assets.duplicate()
+		var macro=MapTerrainSurfaces.macro_id(family)
+		if not macro.is_empty():originals.push_front(macro)
 		var body=card(g);body.set_meta("terrain_surface",family)
 		app.label(body,definition.name,23,Color("39484a"))
-		var picture=app.image_view(body,app.assets.texture("tile",definition.assets[0]),Vector2(180,132))
-		picture.name="TerrainMaterialPreview";picture.set_meta("variant",0)
-		var caption=app.label(body,"独立底纹 1 / 4",16,Color("65716b"))
+		var picture=app.image_view(body,app.assets.texture("tile",originals[0]),Vector2(180,132))
+		picture.name="TerrainMaterialPreview";picture.set_meta("variant",0);picture.set_meta("variant_count",originals.size())
+		var caption=app.label(body,"连续底材" if not macro.is_empty() else "细节底纹 1 / 4",16,Color("65716b"))
 		var change=app.button(body,"查看另一幅底纹",func():
-			var variant=(int(picture.get_meta("variant",0))+1)%4
-			picture.set_meta("variant",variant);picture.texture=app.assets.texture("tile",definition.assets[variant]);caption.text="独立底纹 %d / 4"%(variant+1))
+			var variant=(int(picture.get_meta("variant",0))+1)%originals.size()
+			picture.set_meta("variant",variant);picture.texture=app.assets.texture("tile",originals[variant])
+			caption.text=("连续底材" if variant==0 else "细节底纹 %d / 4"%variant) if not macro.is_empty() else "细节底纹 %d / 4"%(variant+1))
 		change.name="TerrainVariant";change.custom_minimum_size.y=touch_height()
 	app.label(v,"地表按区域生态与高程资料配置；林带底材与实际树林分开显示。",16,Color("65716b"))
+	var bottom_space=Control.new();bottom_space.custom_minimum_size.y=16*scale();v.add_child(bottom_space)
 
 func scenario_ids(mode: String, era: String="all") -> Array:
 	var result: Array=[]
@@ -156,12 +161,22 @@ func style_scenario_buttons() -> void:
 		b.text="%s%s\n%s  ·  %d 回合\n%s"%["▶ " if id==browser_id else "",r.name,r.anchor_date,r.round_limit,"★".repeat(stars) if stars>0 else ("前置任务未完成" if locked else "待部署")]
 		b.add_theme_stylebox_override("normal",app.material_box("ui_button_plate",Color(1.2,1.13,.91) if id==browser_id else Color(.80,.87,.88),10))
 
+func reveal_selected_scenario(id: String, list: VBoxContainer) -> void:
+	# Selection may be restored far down the chronology or changed by the map.
+	# Wait for containers to settle before revealing the actual selected card.
+	for frame in range(2):await app.get_tree().process_frame
+	if id!=browser_id or not is_instance_valid(list) or list!=browser_list:return
+	var button=browser_buttons.get(id)
+	if is_instance_valid(button) and list.get_parent() is ScrollContainer:
+		list.get_parent().ensure_control_visible(button)
+
 func select_recipe(id: String) -> void:
 	if id.is_empty() or not is_instance_valid(browser_brief):return
 	browser_id=id;var r=app.content.scenarios[id];var source_map=app.content.maps[r.map_id]
 	var playable=app.content.playable_factions(id) if r.mode=="conquest" else [r.player_default]
 	if not playable.has(browser_owner):browser_owner=r.player_default if playable.has(r.player_default) else (str(playable[0]) if not playable.is_empty() else "")
 	atlas.select_scenario(id,browser_owner);app.clear(browser_brief);app.clear(browser_actions);style_scenario_buttons()
+	reveal_selected_scenario.call_deferred(id,browser_list)
 	var headline=app.row(browser_brief);app.label(headline,r.name,24,Color("39484a"));var date=app.label(headline,r.anchor_date,16,Color("66716a"));date.name="ScenarioDate";date.autowrap_mode=TextServer.AUTOWRAP_OFF;date.size_flags_horizontal=Control.SIZE_SHRINK_END
 	var scope=" · ".join(r.get("province_scope",[]))
 	var goal=OBJECTIVES.get(r.objective_type,"完成指定任务")

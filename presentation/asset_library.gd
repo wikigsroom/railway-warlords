@@ -32,7 +32,7 @@ func texture(category: String, id: String) -> Texture2D:
 	if not textures.has(key):
 		var path="res://assets/%s/%s.png"%[category,id]
 		textures[key]=load(path) if ResourceLoader.exists(path) else null
-	if id.contains("_bank_") or id.begins_with("tile_surface_"):
+	if id.contains("_bank_") or id.begins_with("tile_surface_") or id.begins_with("tile_ground_macro_"):
 		map_texture_order.erase(key);map_texture_order.append(key)
 		while map_texture_order.size()>MAP_TEXTURE_CACHE_LIMIT:
 			textures.erase(map_texture_order.pop_front())

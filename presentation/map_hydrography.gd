@@ -5,6 +5,28 @@ extends RefCounted
 # tributaries never create rule crossings, channels, names or movement costs.
 static var catalogs: Dictionary={}
 
+static func symbolic_width(order: int, strategic: bool, fallback: float=1.7) -> float:
+	if order<=0:return fallback
+	# Stream order controls hierarchy, never the number of vertices in a reach.
+	# The same order has the same width on either side of a source junction.
+	var width=float([0.0,1.45,1.85,2.4,3.1,4.15,6.8,7.45,8.1,8.75,9.4][clampi(order,1,10)])
+	return width*(.82 if strategic else 1.0)
+
+static func paint(canvas: CanvasItem, points: PackedVector2Array, width: float, opacity: float, fine: bool) -> void:
+	if points.size()<2 or width<=0.0 or opacity<=0.0:return
+	# Light and a narrow bank shadow supply volume around the archived line.
+	# These are symbolic strokes: no bank polygons, sandbars or new tributaries
+	# are inferred. One continuous lip replaces disconnected decorative dashes.
+	var shade=PackedVector2Array();var light=PackedVector2Array()
+	var offset=Vector2(.35,.65) if fine else Vector2(.65,1.05)
+	for point in points:shade.append(point+offset);light.append(point-offset*.40)
+	canvas.draw_polyline(shade,Color("46594e",opacity*.36),width+(1.9 if fine else 4.1),true)
+	canvas.draw_polyline(points,Color("bdc29b",opacity*.76),width+(1.8 if fine else 3.4),true)
+	canvas.draw_polyline(points,Color("466e6c",opacity*.95),width+.65,true)
+	canvas.draw_polyline(points,Color("548b99",opacity),width,true)
+	canvas.draw_polyline(light,Color("8fc1c1",opacity*.76),maxf(.48,width*.54),true)
+	if not fine:canvas.draw_polyline(light,Color("c1d9cf",opacity*.42),maxf(.6,width*.12),true)
+
 static func source(name: String) -> Dictionary:
 	if not catalogs.has(name):
 		var path="res://presentation/data/"+name+".json"

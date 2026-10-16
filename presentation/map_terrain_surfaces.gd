@@ -5,6 +5,24 @@ extends RefCounted
 # movement/cover terrains. Ecological zones never create historical tree cover.
 static var catalog: Dictionary={}
 static var regions: Dictionary={}
+static var macro_catalog: Dictionary={}
+
+static func macro_data() -> Dictionary:
+	if macro_catalog.is_empty() and FileAccess.file_exists("res://presentation/data/ground_macro_catalog.json"):
+		var parsed=JSON.parse_string(FileAccess.get_file_as_string("res://presentation/data/ground_macro_catalog.json"))
+		if parsed is Dictionary:macro_catalog=parsed
+	return macro_catalog
+
+static func macro_id(family: String) -> String:
+	return str(macro_data().get("records",{}).get(family,{}).get("asset_id",""))
+
+static func macro_uv(world: Vector2) -> Vector2:
+	# A shared world origin is essential: adjoining hexes sample exactly the
+	# same point in the complete repeating source, including negative positions.
+	return world/float(macro_data().get("world_repeat_period",384))
+
+static func detail_alpha(strategic: bool) -> float:
+	return .14 if strategic else .22
 
 static func data() -> Dictionary:
 	if catalog.is_empty() and FileAccess.file_exists("res://presentation/data/terrain_surface_catalog.json"):

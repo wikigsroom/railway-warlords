@@ -12,6 +12,8 @@ PUBLIC_DOCS = ['README.md', 'README.en.md', 'LICENSE-NOTICE.md',
                'docs/DEVELOPMENT.md', 'docs/MEDIA.md',
                'docs/SCENARIO_INDEX.md', 'docs/UNIT_REFERENCE.md',
                'docs/30_二十类地域地表与纹理整改.md',
+               'docs/31_连续地表与水系层次.md',
+               'docs/25_欧陆战争6地图资源差距评估.md',
                'docs/00_程序文档索引.md', 'docs/04_美术来源与审核.md',
                'docs/05_测试与验收.md', 'docs/06_双端构建与发布.md',
                'docs/23_当前完成度评估.md', 'docs/26_欧陆战争6_UI结构与视觉对标.md']

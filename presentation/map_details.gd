@@ -9,6 +9,8 @@ var surfaces: Dictionary={}
 var surface_families: Dictionary={}
 var diagnostics: Dictionary={}
 var overhang=220.0
+var surface_template: Dictionary={}
+var surface_color_templates: Dictionary={}
 const SURFACE_BLEND_RADIUS=64.0
 const SURFACE_BLEND_INNER=.70
 
@@ -132,37 +134,64 @@ func visible_features(view: Rect2, zoom: float) -> Array:
 func surface_meshes(entries: Array, strategic: bool, limit: int=1900) -> Dictionary:
 	# Batch feathered hex materials by immutable source texture. This is native
 	# mesh drawing, not a generated-image composite or a stored raster atlas.
-	var groups: Dictionary={};var count=0
+	prepare_surface_template()
+	var groups: Dictionary={};var macro_groups: Dictionary={};var count=0
 	for entry in entries:
 		if count>=limit:break
 		var key=HexGrid.key(entry.hex);var id=str(surfaces.get(key,""))
 		if id.is_empty():continue
 		var family=str(surface_families.get(key,MapArtBank.material_family(entry.cell)))
 		var alpha=MapTerrainSurfaces.alpha_for(family,strategic)
+		var macro_id=MapTerrainSurfaces.macro_id(family)
 		if alpha<0:
 			alpha=float({"meadow":.56,"dry_grass":.58,"rocky_ground":.38,"woodland_floor":.60,"wetland_ground":.66,"sea_water":.10,"sandy_ground":.74,"arid_gravel":.68,"alluvial_soil":.58}.get(family,.0))
 			if strategic:alpha*=.86
 		if not groups.has(id):groups[id]={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
-		var group: Dictionary=groups[id];var center=HexGrid.to_world(entry.hex);var corners=HexGrid.corners(center,SURFACE_BLEND_RADIUS)
-		for index in range(6):
-			var outer_a=corners[index]-center;var outer_b=corners[(index+1)%6]-center
-			var inner_a=outer_a*SURFACE_BLEND_INNER;var inner_b=outer_b*SURFACE_BLEND_INNER
-			# Neighboring feathered materials overlap across the operation edge.
-			# This removes bare green gutters without changing the 48px grid;
-			# build() reserves this entire wider footprint against real coastlines.
-			var offsets=[Vector2.ZERO,inner_a,inner_b,inner_a,outer_a,outer_b,inner_a,outer_b,inner_b]
-			for vertex in range(offsets.size()):
-				var offset: Vector2=offsets[vertex]
-				group.vertices.append(Vector3(center.x+offset.x,center.y+offset.y,0))
-				group.colors.append(Color(1,1,1,0.0 if vertex in [4,5,7] else alpha))
-				group.uvs.append(offset/(SURFACE_BLEND_RADIUS*2.0)+Vector2(.5,.5))
+		if not macro_id.is_empty() and not macro_groups.has(macro_id):macro_groups[macro_id]={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
+		var group: Dictionary=groups[id];var center=HexGrid.to_world(entry.hex)
+		# Transform and append whole packed arrays in native code. Rebuilding
+		# 54 vertices twice in GDScript for every visible cell stalled selection.
+		# Geometry, source UVs and feather weights retain the same layout.
+		var vertices: PackedVector3Array=Transform3D(Basis.IDENTITY,Vector3(center.x,center.y,0))*surface_template.vertices
+		group.vertices.append_array(vertices)
+		group.colors.append_array(surface_colors(alpha if macro_id.is_empty() else MapTerrainSurfaces.detail_alpha(strategic)))
+		group.uvs.append_array(surface_template.detail_uvs)
+		if not macro_id.is_empty():
+			var macro: Dictionary=macro_groups[macro_id]
+			macro.vertices.append_array(vertices);macro.colors.append_array(surface_colors(alpha))
+			macro.uvs.append_array(Transform2D(0.0,MapTerrainSurfaces.macro_uv(center))*surface_template.macro_uvs)
 		count+=1
 	var result: Array=[]
 	# Overlapping materials must keep their blend order while panning.
-	var source_ids=groups.keys();source_ids.sort()
-	for id in source_ids:
-		var group: Dictionary=groups[id];var arrays=[];arrays.resize(Mesh.ARRAY_MAX)
-		arrays[Mesh.ARRAY_VERTEX]=group.vertices;arrays[Mesh.ARRAY_COLOR]=group.colors;arrays[Mesh.ARRAY_TEX_UV]=group.uvs
-		var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
-		result.append({"asset_id":id,"mesh":mesh})
-	return {"count":count,"batches":result}
+	# Continuous region-wide pigment precedes the low-strength per-cell detail.
+	# Repeating UVs never move with the camera or change with faction ownership.
+	for layer_index in range(2):
+		var layer: Dictionary=macro_groups if layer_index==0 else groups
+		var source_ids=layer.keys();source_ids.sort()
+		for id in source_ids:
+			var group: Dictionary=layer[id];var arrays=[];arrays.resize(Mesh.ARRAY_MAX)
+			arrays[Mesh.ARRAY_VERTEX]=group.vertices;arrays[Mesh.ARRAY_COLOR]=group.colors;arrays[Mesh.ARRAY_TEX_UV]=group.uvs
+			var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
+			result.append({"asset_id":id,"mesh":mesh,"layer":"macro" if layer_index==0 else "detail"})
+	return {"count":count,"batches":result,"macro_materials":macro_groups.size()}
+
+func prepare_surface_template() -> void:
+	if not surface_template.is_empty():return
+	surface_template={"vertices":PackedVector3Array(),"detail_uvs":PackedVector2Array(),"macro_uvs":PackedVector2Array(),"weights":PackedFloat32Array()}
+	var corners=HexGrid.corners(Vector2.ZERO,SURFACE_BLEND_RADIUS)
+	for index in range(6):
+		var a=corners[index];var b=corners[(index+1)%6];var inner_a=a*SURFACE_BLEND_INNER;var inner_b=b*SURFACE_BLEND_INNER
+		var offsets=[Vector2.ZERO,inner_a,inner_b,inner_a,a,b,inner_a,b,inner_b]
+		for vertex in range(offsets.size()):
+			var offset: Vector2=offsets[vertex]
+			surface_template.vertices.append(Vector3(offset.x,offset.y,0))
+			surface_template.detail_uvs.append(offset/(SURFACE_BLEND_RADIUS*2.0)+Vector2(.5,.5))
+			surface_template.macro_uvs.append(MapTerrainSurfaces.macro_uv(offset))
+			surface_template.weights.append(0.0 if vertex in [4,5,7] else 1.0)
+
+func surface_colors(alpha: float) -> PackedColorArray:
+	if not surface_color_templates.has(alpha):
+		var colors=PackedColorArray()
+		for weight in surface_template.weights:colors.append(Color(1,1,1,weight*alpha))
+		surface_color_templates[alpha]=colors
+	return surface_color_templates[alpha]

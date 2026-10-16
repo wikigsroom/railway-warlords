@@ -47,6 +47,9 @@ func layout_checks(surface: String) -> void:
 	if is_instance_valid(date):
 		check(date.size.x>=date.get_minimum_size().x and date.get_line_count()==1,surface+"_date_stays_on_one_line")
 		check(app.war_room.atlas.size.y>=app.get_viewport_rect().size.y*.40,surface+"_atlas_retains_useful_height",app.war_room.atlas.size.y)
+		var chosen: Button=app.war_room.browser_buttons.get(app.war_room.browser_id)
+		var scroll: ScrollContainer=app.war_room.browser_list.get_parent()
+		check(is_instance_valid(chosen) and scroll.get_global_rect().grow(2).encloses(chosen.get_global_rect()),surface+"_selected_scenario_card_is_visible")
 	if is_instance_valid(app.overlay):
 		var close=find_button(root,"关闭")
 		check(is_instance_valid(close) and viewport.encloses(close.get_global_rect()),surface+"_close_reachable")
