@@ -18,6 +18,8 @@ func fixture(date: String) -> Dictionary:
 func run() -> void:
 	verify(content.load_all(),"native_content_loaded")
 	verify(TurnRules.DAYS_PER_ROUND==1,"one_complete_round_is_one_day")
+	verify(int(content.rules.scenario.conquest_days_per_round)==1,"registered_conquest_default_matches_daily_calendar")
+	verify(int(content.rules.scenario.campaign_days_per_round)==1,"registered_campaign_default_matches_daily_calendar")
 	for id in content.scenarios:
 		verify(int(content.scenarios[id].get("days_per_round",0))==1,"daily_calendar_is_authored:"+id)
 	base=StateBuilder.create(content,"campaign_1920_01","zhili",{},"normal")

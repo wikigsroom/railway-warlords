@@ -13,13 +13,13 @@
   "definition_tables": 21,
   "maps": 6,
   "scenarios": 61,
-  "raster_count": 1299,
+  "raster_count": 1304,
   "audio_count": 17,
   "font_count": 2,
   "review_states": {
     "generated_pending_visual_review": 1156,
     "generated_scoped_source_review_complete": 20,
-    "source_reviewed_runtime_pending": 123
+    "source_reviewed_runtime_pending": 128
   },
   "manual_image_composition": false,
   "raster_images_modified": false,
@@ -15610,6 +15610,66 @@
       "source_available": true,
       "source_matches": true,
       "alpha_zero_percent": 46.22,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "ui_officer_sheet_v023",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "10fc351ca4994b787903fdcccc911ddd9ca5c23eb02f1eb2eeb6fc54d09444cb",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "ui_command_plate_v023",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "f933e1ef2864b7b42211b4ee8735871c8a8444af872f4c43141daf30779af3a1",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "icon_medal_marksmanship_v023",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "ba2081226e7ce238847d56394481672ed7c2b746567e472c3e943ce763f8bc76",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.22,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "icon_medal_steadfast_v023",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c44add6ada182a7ac821d513329645c4448a39be39e1c521a1611eff5df2de64",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 64.89,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "icon_medal_logistics_v023",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "6425de33da890340bc62f54a5fdf20c1c4d2714e782d3c652d2d560bac20b45a",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 65.34,
       "review_state": "source_reviewed_runtime_pending"
     }
   ],

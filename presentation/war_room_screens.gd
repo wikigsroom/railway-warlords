@@ -16,6 +16,7 @@ var browser_buttons: Dictionary={}
 var hq_tab="generals"
 var hq_portrait_stage="middle"
 var political_portrait_stage=""
+var hq_query=""
 var tech_branch="infantry"
 
 const TITLES={"campaign":"战役档案","conquest":"时代征服","legion":"军团训练"}
@@ -40,7 +41,7 @@ func fit_grid(g: GridContainer, minimum_width: float) -> void:
 	if not is_instance_valid(g):return
 	var available=g.get_parent().size.x
 	if available<100:available=app.get_viewport_rect().size.x-128
-	g.columns=clampi(int((available+14)/(minimum_width*scale()+14)),1,4)
+	g.columns=clampi(int((available+14)/(minimum_width*scale()+14)),1,int(g.get_meta("max_columns",4)))
 
 func cost_text(cost: Dictionary) -> String:
 	var pieces=PackedStringArray()
@@ -288,7 +289,8 @@ func show_generals(unit_id: String) -> void:
 		var reason=status(c);action(c,"任命到选定编队",app.match_controller.command("AssignGeneral",{"unit_id":unit_id,"general_id":general.id}),reason)
 
 func general_portrait(parent: Node, d: Dictionary, rank: int, date: String="", stage: String="") -> void:
-	var head=app.row(parent);var visual=GeneralPortraitView.new();visual.setup(app.assets,d.id,Vector2(110,130)*minf(scale(),1.2),date,stage);head.add_child(visual)
+	var head=app.row(parent);head.add_theme_constant_override("separation",14)
+	var visual=GeneralPortraitView.new();visual.setup(app.assets,d.id,Vector2(148,172)*minf(scale(),1.2),date,stage);head.add_child(visual)
 	var copy=app.column(head);app.label(copy,d.name,27);app.label(copy,"军衔  %d / %d"%[rank,d.max_rank],18,Color("735d3e"))
 	app.label(copy,str(visual.record.caption),16,Color("68614e"))
 	app.label(copy,str(visual.record.get("reference_caption","")),15,Color("68614e"))
@@ -342,10 +344,15 @@ func show_headquarters(tab: String="", branch: String="") -> void:
 		selector.name="PoliticalPortraitAgeStage";selector.select(maxi(0,ages.find(political_portrait_stage)))
 		selector.item_selected.connect(func(index):political_portrait_stage=ages[index];show_headquarters("political"))
 		app.label(v,"政治背景人物按文献登记；档案浏览不开放战场任命。早逝者只展示生前阶段。",17)
+	var search: LineEdit
+	if hq_tab in ["generals","political"]:
+		search=LineEdit.new();search.name="HeadquartersSearch"
+		search.placeholder_text="查找人物姓名";search.text=hq_query
+		search.custom_minimum_size.y=touch_height();v.add_child(search)
 	var list=app.scroll_column(v);var g=grid(list,420)
 	if hq_tab=="generals":
 		for d in app.content.tables.generals:
-			var c=card(g);var rank=int(profile.general_ranks.get(d.id,0));general_portrait(c,d,rank,"",hq_portrait_stage)
+			var c=card(g);c.get_parent().set_meta("roster_name",str(d.name));var rank=int(profile.general_ranks.get(d.id,0));general_portrait(c,d,rank,"",hq_portrait_stage)
 			var experience=int(profile.general_xp.get(d.id,0));app.label(c,"将领经验  %d"%experience,17)
 			var can_upgrade=rank<d.max_rank;var price=0;var xp=0
 			if can_upgrade:price=int(app.content.rules.progression.general_rank_cost_merit[rank]);xp=int(app.content.rules.progression.general_rank_xp[rank]);app.label(c,"晋升需要 %d 功勋 / %d 经验"%[price,xp],17,Color("735d3e"))
@@ -356,8 +363,8 @@ func show_headquarters(tab: String="", branch: String="") -> void:
 		var history=JSON.parse_string(FileAccess.get_file_as_string("res://content/history/asia_timeline.json"))
 		var date=str(app.match_controller.state.get("date","")) if political_portrait_stage.is_empty() else ""
 		for figure in history.political_figures:
-			var c=card(g);var head=app.row(c)
-			var visual=GeneralPortraitView.new();visual.setup(app.assets,figure.id,Vector2(110,130)*minf(scale(),1.2),date,political_portrait_stage);head.add_child(visual)
+			var c=card(g);c.get_parent().set_meta("roster_name",str(figure.name_zh));var head=app.row(c)
+			var visual=GeneralPortraitView.new();visual.setup(app.assets,figure.id,Vector2(148,172)*minf(scale(),1.2),date,political_portrait_stage);head.add_child(visual)
 			var copy=app.column(head);app.label(copy,figure.name_zh,27)
 			app.label(copy,str(visual.record.caption),17,Color("68614e"))
 			app.label(copy,str(visual.record.get("reference_caption","")),16,Color("68614e"))
@@ -366,6 +373,11 @@ func show_headquarters(tab: String="", branch: String="") -> void:
 		for d in app.content.tables.technologies:
 			if d.branch!=tech_branch:continue
 			technology_card(g,d)
+	if is_instance_valid(search):
+		var apply_query=func(query):
+			hq_query=str(query).strip_edges()
+			for child in g.get_children():child.visible=hq_query.is_empty() or str(child.get_meta("roster_name","")).containsn(hq_query)
+		search.text_changed.connect(apply_query);apply_query.call(hq_query)
 
 func technology_card(parent: Node, d: Dictionary) -> void:
 	var profile=app.profiles.profile;var rank=int(profile.tech_ranks.get(d.id,0));var c=card(parent);var head=app.row(c)

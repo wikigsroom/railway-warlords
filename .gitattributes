@@ -1,3 +1,7 @@
+# Runtime, native evidence and original prompts have byte hashes. Keep their
+# exact bytes across Windows/Linux checkouts, including mixed text newlines.
+* -text
+
 # The source-bound presentation vector has a reproducible byte identity.
 /presentation/data/control_land_clip.json text eol=lf
 /presentation/data/ground_coverage*.json text eol=lf

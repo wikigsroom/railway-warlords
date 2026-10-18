@@ -1,6 +1,6 @@
 {
-  "version": "0.2.22",
-  "count": 1299,
+  "version": "0.2.23",
+  "count": 1304,
   "image_bytes": "Engine PNG files are byte-identical originals; no duplicate raw tree needed.",
   "assets": [
     {
@@ -18192,6 +18192,76 @@
       "model": "gpt-image-2.5",
       "quality": "high",
       "original_workspace_source": "output/imagegen/warlord/portrait_ages_v0222/portrait_nicholas_ii_1917/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "ui_officer_sheet_v023",
+      "category": "ui",
+      "image": "assets/ui/ui_officer_sheet_v023.png",
+      "image_sha256": "10fc351ca4994b787903fdcccc911ddd9ca5c23eb02f1eb2eeb6fc54d09444cb",
+      "prompt": "docs/asset-prompts/ui_officer_sheet_v023.txt",
+      "prompt_sha256": "a19a1f6715f6751be62449f0cfaca44ba38312405282c41c878b916240505eb1",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/officer_ui_v0223/ui_officer_sheet_v023/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "ui_command_plate_v023",
+      "category": "ui",
+      "image": "assets/ui/ui_command_plate_v023.png",
+      "image_sha256": "f933e1ef2864b7b42211b4ee8735871c8a8444af872f4c43141daf30779af3a1",
+      "prompt": "docs/asset-prompts/ui_command_plate_v023.txt",
+      "prompt_sha256": "c6dd5013a31696e522f16c41a599115b49d8c3cf7651f96a31170e172420ae08",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/officer_ui_v0223/ui_command_plate_v023/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "icon_medal_marksmanship_v023",
+      "category": "icon",
+      "image": "assets/icon/icon_medal_marksmanship_v023.png",
+      "image_sha256": "ba2081226e7ce238847d56394481672ed7c2b746567e472c3e943ce763f8bc76",
+      "prompt": "docs/asset-prompts/icon_medal_marksmanship_v023.txt",
+      "prompt_sha256": "7007dc65f56d82800c95ddbcfb240dcb8d6d90b086475d2d6d54daa032b332a2",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/officer_ui_v0223/icon_medal_marksmanship_v023/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "icon_medal_steadfast_v023",
+      "category": "icon",
+      "image": "assets/icon/icon_medal_steadfast_v023.png",
+      "image_sha256": "c44add6ada182a7ac821d513329645c4448a39be39e1c521a1611eff5df2de64",
+      "prompt": "docs/asset-prompts/icon_medal_steadfast_v023.txt",
+      "prompt_sha256": "510d25e8d9a0d726192ec1cc76f78ca7897ecc23c2422df4568ff543ed43c287",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/officer_ui_v0223/icon_medal_steadfast_v023/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "icon_medal_logistics_v023",
+      "category": "icon",
+      "image": "assets/icon/icon_medal_logistics_v023.png",
+      "image_sha256": "6425de33da890340bc62f54a5fdf20c1c4d2714e782d3c652d2d560bac20b45a",
+      "prompt": "docs/asset-prompts/icon_medal_logistics_v023.txt",
+      "prompt_sha256": "7fc7bb1be68996169b9996df2b533d84541e7f9adffe33d52104eb1dd96abd98",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/officer_ui_v0223/icon_medal_logistics_v023/r001/source.png",
       "image_modified": false,
       "formal_art_approval": false
     }

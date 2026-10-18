@@ -7,7 +7,7 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.22, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.23, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
@@ -19,7 +19,9 @@ Version 0.2.22 uses one calendar day per complete round and provides four living
 
 The headquarters now includes a political archive with all 17 registered political figures, stage previews and selection by the current match date. Short-lived people retain four actual living periods: Xianfeng's illustrations represent approximately 18, 22, 26 and 29 years of age, with the third stage labelled as the middle of his reign. The archive does not add military appointments for political-only figures.
 
-![Hong Xiuquan in the native 0.2.22 character page](docs/media/hong-middle-v0222.png)
+Version 0.2.23 refines the military UI direction with gunmetal framing, cool silver cards, large whole portraits, independent scrolling and roster search. Promotion, skills and medals expose actual costs, experience and slot restrictions. Five independent Sub2 UI originals are new; maps and all 135 portrait originals are retained. See [military UI and dossier refinement](docs/41_军事界面与将领档案精修.md).
+
+![Hong Xiuquan dossier, complete native 0.2.23 viewport](docs/media/dossier-hong-v0223.png)
 
 <a id="contents"></a>
 ## Contents
@@ -56,10 +58,10 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Factions and generals | **47 faction definitions and 29 general definitions**; availability is scenario-specific |
 | Progression | **28 technologies, 9 passive skills, 9 active skills and 24 achievements** |
 | Facilities | **12 types** covering recruitment, transport, supply, medicine, defense, communications and trade |
-| Raster art | **1,299 PNGs**; **990 stored map assets, 970 currently active**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
+| Raster art | **1,304 PNGs**; **990 stored map assets, 970 currently active**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
 | Regional terrain | **20 types × (1 new continuous ground + 4 detail originals) = 100 active originals**; 20 superseded macrogrounds retained, interactive atlas |
 | Audio and fonts | 14 procedural effects, 3 local YuE2 scores (180 seconds each), 3 retained fallback loops and 2 Chinese fonts with OFL notices |
-| Current regression snapshot | **29 groups / 5,778 checks**, plus 1,725 portrait UI, 216 terrain, 212 UI, 84 coastal, 220 map-symbol and 18 music checks; older numerical fixtures retain their version identity |
+| Current regression snapshot | **29 groups / 5,780 checks**, plus 1,725 portrait UI, 157 dossier transaction, 216 terrain, 212 UI, 84 coastal, 220 map-symbol and 18 music checks; older numerical fixtures retain their version identity |
 | Character portraits | **33 people × 4 stages + 3 extra dates = 135 independent originals**; automatic dated selection, general roster and political archive previews |
 | Calendar | **One day per complete round**; all factions finish their phases before the Gregorian date advances |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
@@ -312,6 +314,10 @@ The 29 general definitions include Wu Peifu, Zhang Zuolin, Feng Yuxiang, Yan Xis
 
 Headquarters manages generals, ranks, active/passive skills, medals, research and elites. Units gain in-match experience. Long-term progression is frozen into a starting snapshot; later profile upgrades do not change an ongoing match. A reward ledger prevents duplicate grants.
 
+Type a name in the military or political roster to filter it; clear the field to restore all entries. A general's skills/medals button opens the dossier. The age selector stays at the top, the whole portrait and lifespan stay on the left, and abilities and progression scroll independently on the right. Buttons show registered prices and disable unavailable purchases with their requirements. Medals have three ranks and two slots, disallow duplicate types, and retain the existing no-refund unequip rule. Successful changes preserve the selected age stage. These are abstract progression emblems, not claims of historical awards.
+
+![Actual equipped medals and slot restrictions, native 0.2.23](docs/media/dossier-medals-v0223.png)
+
 Three elites cover assault infantry, cavalry and artillery, with chapter and research gates. Eighteen skills cover bombardment, assault, cavalry maneuvers, emergency rations, rail priority, reconnaissance, entrenchment, field repair and coordinated fire.
 
 <a id="economy"></a>
@@ -455,7 +461,7 @@ Configure your own release keystore, alias and password through Godot private cr
 godot --headless --path . --export-release "Android" "build/android/RailwayWarlords.apk"
 ```
 
-App ID is `org.railwaywarlords.game`, current versionCode 17. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
+App ID is `org.railwaywarlords.game`, current versionCode 28. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
 
 ### Automation scope
 
@@ -506,11 +512,13 @@ godot --headless --path . --script tests/surface_geography_test.gd
 godot --headless --path . --script tests/terrain_surfaces_test.gd
 ```
 
-Version 0.2.22 passes 29 groups / 5,778 checks, including 611 portrait and 83 daily-calendar checks. The final EXE passes 1,725 portrait UI checks with 174 captures across three desktop layouts, plus 216 terrain and 212 UI checks with 90 captures, 84 coastal checks with 20 captures and 220 symbol checks with 32 captures: 316 current native frames in total. Music playback passes 18 checks. See the [dependency seal](reports/regression_dependency_evidence.json) and [native portrait evidence](reports/general_portrait_native_evidence.json). Older numerical fixtures and movement/combat recordings retain their original version identity.
+Version 0.2.23 passes 29 groups / 5,780 checks, including 611 portrait and 85 daily-calendar checks. The final EXE passes 1,725 portrait UI checks with 174 captures across three desktop layouts, plus 157 dossier transaction checks with 24 captures, 216 terrain and 212 UI checks with 90 captures, 84 coastal checks with 20 captures and 220 symbol checks with 32 captures: 340 current scoped native frames in total. Music playback passes 18 checks. See the [dependency seal](reports/regression_dependency_evidence.json), [portrait evidence](reports/general_portrait_native_evidence.json) and [dossier evidence](reports/ui_refinement_native_evidence.json). Fourteen complete frames were individually viewed; the [scoped visual record](reports/ui_refinement_native_review.json) also lists remaining issues and does not claim manual approval of all 340 frames. Older numerical fixtures and movement/combat recordings retain their original version identity.
 
-[Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current summary](reports/terrain_update_verification_summary.json)
+[Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current dossier transaction evidence](reports/ui_refinement_native_evidence.json)
 
 Reports record tests run in the original workspace. They do not claim that another machine has rerun them and do not replace manual gameplay, art, music listening, historical or device acceptance. Full AI endurance was not rerun for this patch; older endurance results and recordings retain their version identity.
+
+The repository's `.gitattributes` preserves original bytes so automatic newline conversion cannot change hashed prompts, native metadata or evidence. The [Git byte check](reports/git_byte_preservation.json) compares staged objects with working files separately from gameplay checks.
 
 ### Historical version 0.2.21 full-load measurements
 
@@ -557,11 +565,11 @@ Tactical selection still has frame-time spikes; averages do not establish stable
 <a id="assets"></a>
 ## Artwork, media and licensing
 
-All 1,299 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including twenty retained superseded macrogrounds. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
+All 1,304 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including twenty retained superseded macrogrounds. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
 
 - [Runtime manifest](assets/manifest.json): original workspace sources, models, dimensions and hashes.
 - [Portable provenance](docs/asset-provenance/index.json): repository-relative images/prompts and SHA-256.
-- [Prompt directory](docs/asset-prompts/): 1,299 prompts; gateway configuration and credentials are excluded.
+- [Prompt directory](docs/asset-prompts/): 1,304 prompts; gateway configuration and credentials are excluded.
 
 Two legacy portrait prompts have readable alias transcriptions using Li Desheng. Their exact original UTF-8 bytes are preserved reversibly with the original SHA256; source images and workspace production originals remain immutable.
 - [Media guide](docs/MEDIA.md): native screenshots, recording, GIF conversion and evidence scope.
@@ -607,4 +615,6 @@ Detailed implementation chapters currently use Chinese; this English README cove
 | Verified scope | [Completion](docs/23_当前完成度评估.md), [validation](docs/05_测试与验收.md) |
 | Media and sources | [Screenshots/GIFs](docs/MEDIA.md), [provenance](docs/asset-provenance/index.json), [licensing](LICENSE-NOTICE.md) |
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.22 assessment and corresponding reports for current status.
+The [0.2.23 military UI and dossier chapter](docs/41_军事界面与将领档案精修.md) covers material specifications, complete character pages, desktop phone proportions, large text, actual progression requirements and acceptance boundaries.
+
+Older chapters preserve their version context. Use these READMEs, the 0.2.23 assessment and corresponding reports for current status.

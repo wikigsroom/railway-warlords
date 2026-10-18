@@ -115,6 +115,7 @@ func _ready() -> void:
 	if "--ground-coverage-test" in args:GroundCoverageQA.run.call_deferred(self)
 	if "--music-test" in args:MusicPlaybackQA.run.call_deferred(self)
 	if "--general-portrait-test" in args:GeneralPortraitQA.run.call_deferred(self)
+	if "--dossier-test" in args:DossierQA.run.call_deferred(self)
 	if "--relief-shade-test" in args:ReliefShadeQA.run.call_deferred(self)
 	if "--map-symbol-test" in args:MapSymbolQA.run.call_deferred(self)
 	if "--benchmark" in args:benchmark.call_deferred()
@@ -144,9 +145,12 @@ func setup_theme() -> void:
 	t.set_stylebox("scroll","VScrollBar",box(Color("9caaac"),Color.TRANSPARENT,0,0))
 	t.set_stylebox("grabber","VScrollBar",box(Color("485c64"),Color("bac1c1"),0,0))
 	t.set_stylebox("grabber_highlight","VScrollBar",box(Color("76613f"),UI_BRASS,0,0))
+	MilitaryUI.install(t,float(settings.ui_scale),assets)
 	theme=t
 
-func material_box(id: String, color: Color, padding: int) -> StyleBoxTexture:
+func material_box(id: String, color: Color, padding: int) -> StyleBox:
+	if id in ["ui_button_plate","ui_order_card","ui_dialog_frame","ui_hud_plate","ui_steel_panel","ui_paper_panel"]:
+		return MilitaryUI.skin(id,color,padding)
 	var style=StyleBoxTexture.new();style.texture=assets.texture("ui",id);style.modulate_color=color
 	for side in [SIDE_LEFT,SIDE_TOP,SIDE_RIGHT,SIDE_BOTTOM]:style.set_texture_margin(side,24);style.set_content_margin(side,padding)
 	return style
@@ -156,6 +160,7 @@ func box(fill: Color, border: Color, radius: int = 0, padding: int = 0) -> Style
 
 func ui_panel(parent: Node, texture_id: String = "ui_steel_panel", tint: Color = Color.WHITE, padding: int = 10) -> PanelContainer:
 	var p=PanelContainer.new()
+	p.set_meta("ui_light",texture_id in ["ui_dialog_frame","ui_paper_panel"])
 	# Optional newly generated art falls back to a native style while production
 	# is pending. No raster is synthesized or edited by this fallback.
 	if ResourceLoader.exists("res://assets/ui/"+texture_id+".png"):
@@ -167,7 +172,7 @@ func ui_rule(parent: Node, color: Color = Color("9b8a64")) -> HSeparator:
 	var line=HSeparator.new();line.add_theme_stylebox_override("separator",box(color,color,0,0));line.custom_minimum_size.y=2;parent.add_child(line);return line
 
 func ui_kicker(parent: Node, text: String, color: Color = UI_BRASS, font_size: int = 13) -> Label:
-	var l=label(parent,text,font_size,color);l.uppercase=true;l.add_theme_constant_override("outline_size",3);l.add_theme_color_override("font_outline_color",Color(0,0,0,.35));return l
+	var l=label(parent,text,font_size,color);l.uppercase=true;l.add_theme_constant_override("outline_size",0);return l
 
 func ui_stat(parent: Node, caption: String, value: String, icon_id: String = "") -> Control:
 	var r=row(parent);r.size_flags_horizontal=Control.SIZE_SHRINK_BEGIN;r.add_theme_constant_override("separation",5);r.custom_minimum_size=Vector2(106,42)
@@ -191,7 +196,8 @@ func label(parent: Node, text: String, font_size: int = 22, color: Color = PAPER
 	# nested columns and never changes gameplay or map labels.
 	var probe:Node=parent
 	while probe!=null:
-		if probe.has_meta("ui_light") and bool(probe.get_meta("ui_light")):
+		if probe.has_meta("ui_light"):
+			if not bool(probe.get_meta("ui_light")):break
 			if color==PAPER:color=Color("354344")
 			elif color in [BRASS,UI_BRASS_BRIGHT]:color=Color("765f3d")
 			elif color.get_luminance()>.34:color=color.darkened(.46)
@@ -668,7 +674,7 @@ func toast(text: String) -> void:
 	if is_instance_valid(notice):notice.text=text
 	else:print(text)
 
-func modal(title: String) -> VBoxContainer:
+func modal(title: String, scroll_content: bool=true) -> VBoxContainer:
 	close_overlay();overlay=Control.new();overlay.z_index=100;overlay.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);add_child(overlay)
 	if is_instance_valid(match_controller) and not match_controller.state.is_empty() and match_controller.state.status=="playing":match_controller.paused=true
 	if is_instance_valid(map_view):map_view.playback_paused=true
@@ -683,6 +689,8 @@ func modal(title: String) -> VBoxContainer:
 	var panel=ui_panel(shell,"ui_dialog_frame",Color.WHITE,16)
 	panel.set_meta("ui_light",true)
 	var v=column(panel);v.set_meta("ui_light",true);var heading=row(v);label(heading,title,34,Color("66533b"));button(heading,"关闭",close_overlay)
+	if not scroll_content:
+		var content=column(v);content.size_flags_vertical=Control.SIZE_EXPAND_FILL;return content
 	return scroll_column(v)
 
 func close_overlay() -> void:
@@ -834,32 +842,7 @@ func show_headquarters() -> void:
 func show_profile_error() -> void:var v=modal("指挥部提示");label(v,profiles.error,26)
 
 func show_general_growth(id: String, age_stage: String="middle") -> void:
-	var d=content.definition("generals",id);var v=modal(d.name+" · 战法与勋章")
-	var stages=assets.general_portraits.records.get(id,{}).get("stages",[])
-	var selector=OptionButton.new();selector.name="GeneralAgeStage";selector.custom_minimum_size.y=58
-	var selected=0
-	for index in stages.size():
-		var stage=stages[index]
-		selector.add_item("%s · %d年形象"%[stage.label,stage.reference_year])
-		if stage.id==age_stage:selected=index
-	v.add_child(selector);selector.select(selected)
-	selector.item_selected.connect(func(index):show_general_growth(id,str(stages[index].id)))
-	war_room.general_portrait(v,d,int(profiles.profile.general_ranks.get(id,0)),"",age_stage)
-	label(v,"对局中按日期自动选择年龄形象；名册可浏览四个生涯阶段。",18,BRASS)
-	if assets.general_portraits.records.get(id,{}).get("late_stage_is_last_living_period",false):label(v,"最后阶段取生前晚期，不延长人物寿命。",18,BRASS)
-	var chosen=profiles.profile.get("active_skills",{}).get(id,d.active_skill)
-	if d.stars.cavalry>=3:
-		label(v,"下局主动战法 · 挑战模式使用默认配置",23,BRASS)
-		var choices=row(v)
-		for skill_id in [d.active_skill,"cavalry_sweep"]:button(choices,("✓ " if chosen==skill_id else "")+content.definition("skills",skill_id).name,func():profiles.choose_active_skill(id,skill_id);show_general_growth(id))
-	for skill_id in [d.passive_skill,chosen]:
-		var rank=int(profiles.profile.skill_ranks.get(id+":"+skill_id,1));var r=row(v);image_view(r,assets.texture("icon","icon_"+skill_id),Vector2(70,70));label(r,content.definition("skills",skill_id).name+" · %d级"%rank,25);button(r,"升级",func():if not profiles.upgrade_skill(id,skill_id):show_profile_error() else:show_general_growth(id))
-	for medal in profiles.profile.medals:
-		if medal.general_id==id:
-			var r=row(v);label(r,content.definition("medals",medal.medal_id).name+" · %d级"%medal.rank,24);button(r,"卸下",func():profiles.unequip_medal(id,medal.medal_id);show_general_growth(id))
-	for medal in content.tables.medals:
-		var r=row(v);label(r,medal.name,25)
-		for rank in [1,2,3]:button(r,"装备%d级"%rank,func():if not profiles.equip_medal(id,medal.id,rank):show_profile_error() else:show_general_growth(id))
+	GeneralDossier.show(self,id,age_stage)
 
 func show_achievements() -> void:
 	var v=modal("战报与成就 · 成就奖励只领取一次")

@@ -122,7 +122,8 @@ def media():
           current_map_symbol_native_evidence='reports/map_symbol_native_evidence.json',
           current_general_native_evidence='reports/general_portrait_native_evidence.json',
           notice='Current terrain/UI screenshots are native Windows captures. Battle GIFs and action stills preserve version 0.2.12. No physical Android acceptance.'))
-    print(json.dumps(dict(screenshots=len(rows), current=len(selected), historical=len(rows)-len(selected),
+    current_count=sum(row.get('version') == version for row in rows)
+    print(json.dumps(dict(screenshots=len(rows), current=current_count, historical=len(rows)-current_count,
                           historical_gifs=len(animations))), flush=True)
 
 

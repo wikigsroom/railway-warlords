@@ -1,0 +1,258 @@
+{
+	"build_version": "0.2.23",
+	"captures": [
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\dossier_native\\x30_layout/headquarters.png",
+			"surface": "headquarters"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\dossier_native\\x30_layout/roster_search_hong.png",
+			"surface": "roster_search_hong"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\dossier_native\\x30_layout/dossier_hong_young.png",
+			"surface": "dossier_hong_young"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\dossier_native\\x30_layout/dossier_hong_middle.png",
+			"surface": "dossier_hong_middle"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\dossier_native\\x30_layout/unaffordable_medal.png",
+			"surface": "unaffordable_medal"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\dossier_native\\x30_layout/medal_equipped.png",
+			"surface": "medal_equipped"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\dossier_native\\x30_layout/medal_slots_full.png",
+			"surface": "medal_slots_full"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\dossier_native\\x30_layout/medal_removed.png",
+			"surface": "medal_removed"
+		}
+	],
+	"checks": [
+		{
+			"name": "profile_isolated_from_user",
+			"passed": true
+		},
+		{
+			"name": "horizontal_content_fits_headquarters",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture_headquarters",
+			"passed": true
+		},
+		{
+			"name": "roster_has_live_search",
+			"passed": true
+		},
+		{
+			"name": "search_keeps_exact_historical_identity",
+			"passed": true
+		},
+		{
+			"name": "horizontal_content_fits_roster_search_hong",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture_roster_search_hong",
+			"passed": true
+		},
+		{
+			"name": "clearing_search_restores_all_29",
+			"passed": true
+		},
+		{
+			"name": "dossier_uses_large_whole_portrait",
+			"passed": true
+		},
+		{
+			"name": "whole_portrait_inside_actual_viewport",
+			"passed": true
+		},
+		{
+			"name": "fixed_close_remains_inside_viewport",
+			"passed": true
+		},
+		{
+			"name": "close_and_age_selector_keep_mobile_touch_height",
+			"passed": true
+		},
+		{
+			"name": "era_caption_does_not_wrap_vertically",
+			"passed": true
+		},
+		{
+			"name": "all_six_ability_captions_are_readable_on_one_line",
+			"passed": true
+		},
+		{
+			"name": "promotion_disabled_until_real_xp_requirement",
+			"passed": true
+		},
+		{
+			"name": "skill_disabled_until_real_xp_requirement",
+			"passed": true
+		},
+		{
+			"name": "horizontal_content_fits_dossier_hong_young",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture_dossier_hong_young",
+			"passed": true
+		},
+		{
+			"name": "selector_exists_GeneralAgeStage",
+			"passed": true
+		},
+		{
+			"name": "horizontal_content_fits_dossier_hong_middle",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture_dossier_hong_middle",
+			"passed": true
+		},
+		{
+			"name": "search_and_age_preview_never_spend_profile_resources",
+			"passed": true
+		},
+		{
+			"name": "selector_exists_GeneralAgeStage",
+			"passed": true
+		},
+		{
+			"name": "selector_exists_MedalRank_marksmanship",
+			"passed": true
+		},
+		{
+			"name": "unaffordable_medal_explains_real_shortage",
+			"passed": true
+		},
+		{
+			"name": "action_revealed_EquipMedal_marksmanship",
+			"passed": true
+		},
+		{
+			"name": "horizontal_content_fits_unaffordable_medal",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture_unaffordable_medal",
+			"passed": true
+		},
+		{
+			"name": "selector_exists_MedalRank_marksmanship",
+			"passed": true
+		},
+		{
+			"name": "available_real_action_EquipMedal_marksmanship",
+			"passed": true
+		},
+		{
+			"name": "action_revealed_EquipMedal_marksmanship",
+			"passed": true
+		},
+		{
+			"name": "medal_charges_registered_price_once",
+			"passed": true
+		},
+		{
+			"name": "successful_growth_keeps_selected_young_stage",
+			"passed": true
+		},
+		{
+			"name": "duplicate_medal_not_offered",
+			"passed": true
+		},
+		{
+			"name": "action_revealed_UnequipMedal_marksmanship",
+			"passed": true
+		},
+		{
+			"name": "horizontal_content_fits_medal_equipped",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture_medal_equipped",
+			"passed": true
+		},
+		{
+			"name": "available_real_action_EquipMedal_steadfast",
+			"passed": true
+		},
+		{
+			"name": "action_revealed_EquipMedal_steadfast",
+			"passed": true
+		},
+		{
+			"name": "third_medal_disabled_with_two_real_slots_full",
+			"passed": true
+		},
+		{
+			"name": "action_revealed_EquipMedal_logistics_medal",
+			"passed": true
+		},
+		{
+			"name": "medal_scroll_keeps_whole_portrait_visible",
+			"passed": true
+		},
+		{
+			"name": "horizontal_content_fits_medal_slots_full",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture_medal_slots_full",
+			"passed": true
+		},
+		{
+			"name": "available_real_action_UnequipMedal_steadfast",
+			"passed": true
+		},
+		{
+			"name": "action_revealed_UnequipMedal_steadfast",
+			"passed": true
+		},
+		{
+			"name": "unequip_preserves_existing_no_refund_rule",
+			"passed": true
+		},
+		{
+			"name": "unequip_updates_actual_profile",
+			"passed": true
+		},
+		{
+			"name": "action_revealed_EquipMedal_steadfast",
+			"passed": true
+		},
+		{
+			"name": "horizontal_content_fits_medal_removed",
+			"passed": true
+		},
+		{
+			"name": "raw_native_capture_medal_removed",
+			"passed": true
+		},
+		{
+			"name": "restore_isolated_profile_after_real_action_checks",
+			"passed": true
+		},
+		{
+			"name": "isolated_profile_restored_exactly",
+			"passed": true
+		}
+	],
+	"content_hash": "fe6095da17daa08abf7acac594655c9221275c3534f88665316a89eaa9f214a1",
+	"isolated_profile_restored": true,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"raw_godot_captures": true,
+	"ui_scale": 1.2,
+	"viewport": "(2400.0, 1080.0)"
+}

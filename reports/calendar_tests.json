@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.22",
+	"build_version": "0.2.23",
 	"checks": [
 		{
 			"name": "native_content_loaded",
@@ -7,6 +7,14 @@
 		},
 		{
 			"name": "one_complete_round_is_one_day",
+			"passed": true
+		},
+		{
+			"name": "registered_conquest_default_matches_daily_calendar",
+			"passed": true
+		},
+		{
+			"name": "registered_campaign_default_matches_daily_calendar",
 			"passed": true
 		},
 		{
@@ -334,7 +342,7 @@
 			"passed": true
 		}
 	],
-	"content_hash": "8c9d2b34dc2f94e2db8bec9e1b23e128ac21340abc8270834a7d772b961869ae",
+	"content_hash": "fe6095da17daa08abf7acac594655c9221275c3534f88665316a89eaa9f214a1",
 	"daily_scenarios": 61,
 	"days_per_round": 1,
 	"failures": [],

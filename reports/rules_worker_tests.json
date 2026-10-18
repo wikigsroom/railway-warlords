@@ -1441,12 +1441,12 @@
 			"passed": true
 		}
 	],
-	"content_hash": "8c9d2b34dc2f94e2db8bec9e1b23e128ac21340abc8270834a7d772b961869ae",
+	"content_hash": "fe6095da17daa08abf7acac594655c9221275c3534f88665316a89eaa9f214a1",
 	"failed": 0,
 	"failures": [],
-	"game_version": "0.2.22",
-	"longest_worker_ms": 250.108,
-	"main_thread_heartbeats": 204,
+	"game_version": "0.2.23",
+	"longest_worker_ms": 266.704,
+	"main_thread_heartbeats": 167,
 	"passed": 360,
 	"scope": "Native serialized thread, immutable input snapshots, concurrent renderer queries, exact commands/events/full-state/RNG equality, pause/resume/cancel/load/lifetime. Does not certify physical Android frame time.",
 	"trace_commands": 40

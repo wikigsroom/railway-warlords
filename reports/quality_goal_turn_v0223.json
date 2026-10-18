@@ -1,0 +1,47 @@
+{
+  "objective": "最终交付成品质量与欧陆战争6高度一致",
+  "previous_goal_turn_classification": "progress",
+  "previous_authoritative_change": "0.2.22双端交付、每日历法、33人四阶段肖像，Git提交844371bccbba1cdf6b3bef120aee92cc490f79e8已核对远端",
+  "current_version": "0.2.23",
+  "current_status": "scoped_implementation_and_native_verification_complete_overall_goal_active",
+  "current_focus": [
+    "共用军事界面层级",
+    "完整大幅将领肖像",
+    "成长费用和状态",
+    "姓名筛选",
+    "独立滚动",
+    "低对比Sub2材质"
+  ],
+  "overall_completion_proven": false,
+  "ew6_parity_claimed": false,
+  "physical_android_device_tested": false,
+  "remaining_requirements": [
+    "战役浏览器地貌与底纹预览精修",
+    "单一对手外交页的密度与留白",
+    "整幅地图山脚/河岸/地点细节商业美术审核",
+    "完整兵种动作",
+    "逐年代行政与军队史实复核",
+    "每日制长局平衡",
+    "声音独立签核",
+    "Motorola X30触控与GPU验收"
+  ],
+  "runtime_source_sha256": "4aaadd3235b8bdaa0c5fb669fa8bed428decbf5a415523eef72aaeb3719bb501",
+  "current_scope_verified": {
+    "regression_groups": 29,
+    "regression_checks": 5780,
+    "calendar_checks": 85,
+    "portrait_checks": 611,
+    "dossier_native_checks": 157,
+    "dossier_native_captures": 24,
+    "all_people_ui_checks": 1725,
+    "all_people_ui_captures": 174,
+    "new_direct_sub2_originals": 5,
+    "apk_raster_imports_verified": 1304,
+    "native_captures": 340,
+    "native_music_checks": 18,
+    "manually_viewed_complete_captures": 14,
+    "source_pngs_modified": false,
+    "manual_compositing": false
+  },
+  "current_goal_turn_classification": "progress"
+}

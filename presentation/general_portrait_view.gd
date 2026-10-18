@@ -19,10 +19,10 @@ func setup(library: AssetLibrary, general_id: String, bound: Vector2, date: Stri
 func _draw() -> void:
 	if assets==null:return
 	var frame=Rect2(Vector2.ZERO,size)
-	draw_rect(frame,Color("d4d1bc"))
-	if paper!=null:draw_texture_rect(paper,frame,false,Color(.92,.91,.83))
-	draw_rect(frame.grow(-1),Color("716343"),false,1.5)
-	draw_rect(frame.grow(-4),Color("e6d6a5"),false,1.0)
+	draw_rect(frame,Color("aebbb6"))
+	draw_rect(Rect2(Vector2(6,6),size-Vector2(12,12)),Color("c7cfbf"))
+	draw_rect(frame.grow(-1),Color("6d7e7e"),false,1.0)
+	draw_line(Vector2(7,size.y-6),Vector2(size.x-7,size.y-6),Color("ac9560"),2.0)
 	var inset=frame.grow(-8)
 	if portrait!=null:
 		var source=portrait.get_size()

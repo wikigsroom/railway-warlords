@@ -4,9 +4,9 @@
 
 ## 截图 / Screenshots
 
-当前媒体目录有45张完整PNG：43张来自0.2.21 Windows EXE，另外两张交战/航空画面保留0.2.12身份。当前90张地表/UI、20张海岸控制开关和32张图符专项原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot在实际程序中渲染控件、地图与独立美术资源。
+当前媒体目录有53张完整PNG：47张来自0.2.23 Windows EXE，4张人物页保留0.2.22身份，另外两张交战/航空画面保留0.2.12身份。当前24张成长事务、174张人物遍历、90张地表/UI、20张海岸控制开关和32张图符专项原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot在实际程序中渲染控件、地图与独立美术资源。旧人物页来源另存于 `reports/screenshots/general_portraits_native/v0222`，新旧画面版本和SHA分别保留。
 
-The media folder contains 45 complete PNGs: 43 from the 0.2.21 Windows EXE and two preserved 0.2.12 combat/air-action stills. Selections from 90 terrain/UI, 20 coastal control-toggle and 32 symbol-check captures, plus export-validation viewports, are copied byte for byte, without cropping, stitching, repainting or text overlays. Godot renders the real controls, maps and independent assets.
+The media folder contains 53 complete PNGs: 47 from the 0.2.23 Windows EXE, four preserved 0.2.22 character pages and two preserved 0.2.12 combat/air-action stills. Selections from 24 dossier transaction, 174 character traversal, 90 terrain/UI, 20 coastal control-toggle and 32 symbol-check captures, plus export-validation viewports, are copied byte for byte, without cropping, stitching, repainting or text overlays. Old character sources remain under `reports/screenshots/general_portraits_native/v0222`. Godot renders the real controls, maps and independent assets.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
@@ -37,8 +37,12 @@ The media folder contains 45 complete PNGs: 43 from the 0.2.21 Windows EXE and t
 | [city-buildings.png](media/city-buildings.png) | 城市设施与队列 / City facilities and queue |
 | [diplomacy.png](media/diplomacy.png) | 外交关系与命令条件 / Relations and validation |
 | [headquarters.png](media/headquarters.png) / [technology.png](media/technology.png) | 将领和科技 / Generals and technologies |
+| [dossier-hong-v0223.png](media/dossier-hong-v0223.png) | 大幅洪秀全档案与实际成长条件 / Whole Hong Xiuquan portrait and actual progression requirements |
+| [dossier-medals-v0223.png](media/dossier-medals-v0223.png) | 实际装备和槽位限制 / Actual medal loadout and slot restrictions |
+| [dossier-x30-v0223.png](media/dossier-x30-v0223.png) | 桌面手机比例独立滚动 / Independent scrolling in desktop phone proportions |
+| [dossier-large-text-v0223.png](media/dossier-large-text-v0223.png) | 1280×720、150%字号设置 / 1280×720 with the 150% text setting |
 
-截图 JSON 记录视口、版本、内容指纹等；实际地表/UI的共同证据见 `reports/terrain_surface_native_evidence.json`，旧战斗演示见 `reports/native_visual_evidence.json`。图鉴是游戏内真实控件，不是后期拼接图片。X30 尺寸截图来自 Windows，`physical_android_device_tested` 为 false。
+截图 JSON 记录视口、版本、内容指纹等；实际地表/UI的共同证据见 `reports/terrain_surface_native_evidence.json`，成长事务见 `reports/ui_refinement_native_evidence.json`，旧战斗演示见 `reports/native_visual_evidence.json`。图鉴是游戏内真实控件，不是后期拼接图片。X30 尺寸截图来自 Windows，`physical_android_device_tested` 为 false。
 
 Associated JSON records viewport, version and content fingerprint. Current UI/terrain proof is `reports/terrain_surface_native_evidence.json`; symbol checks are in `reports/map_symbol_native_evidence.json`; older battle proof is `reports/native_visual_evidence.json`. The atlas is an actual in-game interface. X30-size screenshots are Windows captures with `physical_android_device_tested: false`.
 
@@ -67,6 +71,6 @@ The manifest records source and output hashes and conversion parameters. Native 
 
 ## 示意图与验证边界 / Diagrams and evidence scope
 
-菜单和回合流程使用 Mermaid 文本图，不把它们当成实际画面。截图与 GIF 展示当前功能，不能替代美术发行批准、全部任务人工平衡或 Android 真机验收。
+菜单和回合流程使用 Mermaid 文本图，不把它们当成实际画面。截图与 GIF 展示其对应版本的功能，不能替代美术发行批准、全部任务人工平衡或 Android 真机验收。
 
-Menu and loop diagrams use Mermaid and are identified as diagrams. Native media demonstrates current functions, not final art approval, all-mission balance or physical Android acceptance.
+Menu and loop diagrams use Mermaid and are identified as diagrams. Native media demonstrates its corresponding version's functions, not final art approval, all-mission balance or physical Android acceptance.
