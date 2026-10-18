@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "version": "0.2.21",
-  "runtime_source_sha256": "feb29a8b71e2622f7ee8eb66292846018241cf18c8a92eb33e6ae3be35f8303b",
-  "windows_exe_sha256": "4cb297f481a967f0dc82aaa15209ccd7e75288620b6cf3fb465a48c4eb129326",
+  "version": "0.2.22",
+  "runtime_source_sha256": "30bbbbd3c3d874c1b164b33583eed404cb3f9e97b130aa915e73289852283cae",
+  "windows_exe_sha256": "bf087dc6ce03b673fa4d942967abd0a64c5e89527695e5d5dc311c37844724a4",
   "clip_data_sha256": "d5c291280e7f10fa64346e917e533e3ca910a96a0cb952912cf2b81a5ba60f48",
   "groups": [
     {
@@ -11,7 +11,7 @@
       "ui_scale": "1.0",
       "checks": 42,
       "report": "reports/screenshots/control_land_native/windows/validation.json",
-      "report_sha256": "d9e0135aa1489d79b8125e0b6db4b92b1822d01380f555c2f4cac593d8bedf10",
+      "report_sha256": "37ca5311dd9f15c74f81a31c7c578c16d6d1696da7300874e3417d3e0aac358d",
       "log": "reports/control_land_windows.log",
       "cases": [
         {
@@ -6685,63 +6685,63 @@
       "captures": [
         {
           "file": "reports/screenshots/control_land_native/windows/tianjin_natural.png",
-          "sha256": "ff80194047b0dade1469d5f0eb52dcf604ada4d063251207547c194ce5a0fef8",
+          "sha256": "d75240419609b97209573d457e7ea9ab82172a4d85ad5d06f60a997149e4ccf4",
           "metadata": "reports/screenshots/control_land_native/windows/tianjin_natural.json",
-          "metadata_sha256": "5fa998c3797eb715a12ceff37a2c131c9c6ccf83c2e60f361d4b10a69ae1c516"
+          "metadata_sha256": "d13de99ecff13565275ca2e3983b49458b1a4f45b06edead9d797cb7a8629fe4"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/tianjin_control.png",
-          "sha256": "2babb4770468a853660574a051342e7ef6e0af1f18633452a970094233011c8d",
+          "sha256": "e73a1107543f107a2dfb076a0822f9a3914ef71271fcc033f0ab8d12b5c18432",
           "metadata": "reports/screenshots/control_land_native/windows/tianjin_control.json",
-          "metadata_sha256": "9f1c7425d14ab61ee563c5a224c00d80e6b279b570bc8fa01974f7db46087af5"
+          "metadata_sha256": "c5c26ae915b405f55823e10b10b712912a335280d9629dcb7295ee6663703dfa"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/osaka_natural.png",
-          "sha256": "e4179c8b7a1ffeaf00a48c127f7cc72a087e7fe1c55b31e1baf55a291b77c7c1",
+          "sha256": "fe92966ffebcf69d5fbfc57ee84c865a07a6b36bef4735a221d23bbb3117f65e",
           "metadata": "reports/screenshots/control_land_native/windows/osaka_natural.json",
-          "metadata_sha256": "df748fbdb53c0bdeb5c521c4ba4c8c1848e6474711053af8b0ef531a2e0a5656"
+          "metadata_sha256": "1559971514098b055259792a6b32a54adbdf48b9b405123c3fcd6ca7df64b8ba"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/osaka_control.png",
-          "sha256": "7a368543c8b61548d060e0661742de1b53370e784ae4149807680846ade11627",
+          "sha256": "58b0a2acfbd88613033c70c508145f8e2461498cc9d25cae4a4207abe5e22bdf",
           "metadata": "reports/screenshots/control_land_native/windows/osaka_control.json",
-          "metadata_sha256": "5cda71bda37bdd86df0041b7aaca1aae393fe6fded430b57bec9e81304888ece"
+          "metadata_sha256": "aadf4c92464b29a237f3f64dadc9612283b06a620ee9a66616636c0edfe3f846"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/baku_natural.png",
-          "sha256": "d7c969977d34b69b0fcf07e9cc96a045c40f8ce5c0c960c30ed60d44d3fd9ba6",
+          "sha256": "93cff5ddb2c3db0844371e067593d31f5e11fa23fa0b48bb8b8e0762ef8b9d68",
           "metadata": "reports/screenshots/control_land_native/windows/baku_natural.json",
-          "metadata_sha256": "29619333e1b796fca70948bd65ee281318c7a22f4ca694a012fbab15b6154c97"
+          "metadata_sha256": "3b278a2aac8d92b113b56449db180b4b438dbf7e8392a158458347bf17e80916"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/baku_control.png",
-          "sha256": "1e32d3eacb4409886d288de4cfcdc7b4057d4a6ba52eb8eb474c9f61029ad4e9",
+          "sha256": "bb372481b7faebe9c2d7e452219c6bb04ecc252f8faff824b2eb27d81fea0338",
           "metadata": "reports/screenshots/control_land_native/windows/baku_control.json",
-          "metadata_sha256": "89f7afb7f6b6ca268484d7e04b3a5c80c3913195704ee4d581b88333413c3b22"
+          "metadata_sha256": "3739657ef50ca74dc139c3a289579cad59e0c5242ad5ba89bc54adb21c1fd48a"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/singapore_natural.png",
-          "sha256": "f82d7ad93756065a1688e46190deba83f15c5dc3385cf97eeecd28abc24ca6ee",
+          "sha256": "a162679278bdb6fb04208a8c29779dc2f140920b795cb192d1473dad872790fc",
           "metadata": "reports/screenshots/control_land_native/windows/singapore_natural.json",
-          "metadata_sha256": "47a707147d302a554556412203e3577ddd74857a3364a0926cf89382dc2b9707"
+          "metadata_sha256": "3490b2d83dffe074948c6f337025a41c68d9a2ec62f0659eca90edced64cf45c"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/singapore_control.png",
-          "sha256": "f2eeb2ae7c141ed7d5b25dc566f887d610ca1997b9d797f1270e2f9ce409027e",
+          "sha256": "b48d2b15b0504cbdab2ec2ad461b5605b677acea2253895ffba8d5fd536d5c8b",
           "metadata": "reports/screenshots/control_land_native/windows/singapore_control.json",
-          "metadata_sha256": "78671e5ba186324387c3857257f1a4cf1b9eef882d986c32d706a511500a51ba"
+          "metadata_sha256": "c69b8760edb1e939f4ed9cce1bf497591668831e893b0b250048fac2481f9015"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/overview_natural.png",
-          "sha256": "c1db0674550ece9c0920f78e58c23d409bde5974aa13fc9a9fc615785ab3239a",
+          "sha256": "a52ae82c5d149f5b70e4aef734525dcc2e257b3b57da3e28204cae463bafe773",
           "metadata": "reports/screenshots/control_land_native/windows/overview_natural.json",
-          "metadata_sha256": "9458d4f2404fd7206a874859e50fc47fca989f99ac69a1f3f2b6458c692e8006"
+          "metadata_sha256": "5dca4ddf7df7cd77384a0bb1257871d43dfedde5ff26dc9103f20e6e3032f66e"
         },
         {
           "file": "reports/screenshots/control_land_native/windows/overview_control.png",
-          "sha256": "dfa3318b014fd364424aa6986d006a8d73111facbb42d477f8b0343f588e3510",
+          "sha256": "57fa9284634e1968c4a43b12650d8ac9a758eec3cf74ccc52dd3e932a6dd6ca2",
           "metadata": "reports/screenshots/control_land_native/windows/overview_control.json",
-          "metadata_sha256": "9c0c2cbef958e9056658fe912c02561cabbeb134e13d8b90139bfe79512448a1"
+          "metadata_sha256": "47220788d8abdf0cdc4002ced45dc4de0fe2d001321aa4911e5ea09f73369b89"
         }
       ]
     },
@@ -6751,7 +6751,7 @@
       "ui_scale": "1.2",
       "checks": 42,
       "report": "reports/screenshots/control_land_native/x30_layout/validation.json",
-      "report_sha256": "c0a126f328726dd6c4ae6ce127170f13eb8b2837f1ed039d3eda2bbb0f299f3c",
+      "report_sha256": "a6e4759e6ceccf0fdc6366edfb0f686a643fddd6d78343d5c8da39f1ca313a63",
       "log": "reports/control_land_x30_layout.log",
       "cases": [
         {
@@ -13277,63 +13277,63 @@
       "captures": [
         {
           "file": "reports/screenshots/control_land_native/x30_layout/tianjin_natural.png",
-          "sha256": "b77058d9d9ddb53df6c07b83410e12515710f81e6c0954d2790d277e37257754",
+          "sha256": "4902ce757edfbe53ca2d23286189061caea48d38949f61e2d197a2379c99c021",
           "metadata": "reports/screenshots/control_land_native/x30_layout/tianjin_natural.json",
-          "metadata_sha256": "5c7208e2d3c4e9697bfec71713a3c06fb45ab8d5ae180de9f93b2240cd8f9e59"
+          "metadata_sha256": "2dbc2af99c44a190a90211637a3df644e8b01938ccb19b2cf47e648fa60b79fa"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/tianjin_control.png",
-          "sha256": "1adacb9d211ace4ce9902ab5385ec3c5d048d084dd32aa86dd4d462ef1b4e0fb",
+          "sha256": "e364762d61ba55079cb2c4c628032b384541a0d8ac9934c8fc1f2bc4e353b209",
           "metadata": "reports/screenshots/control_land_native/x30_layout/tianjin_control.json",
-          "metadata_sha256": "bf8df1e72b923943bc48f0be88183b0828803c9470ca6880e084873b20301d04"
+          "metadata_sha256": "6aff26913c53ff8c3fdbeea572128ca67ead10d8eded1e833423d33bb9852044"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/osaka_natural.png",
-          "sha256": "4605b4d1280fd8d68cdf0a8b0355e83f18ecbcefb05d13480fa302644cfa14ff",
+          "sha256": "ddeb3a8bec9d968c5df5c606b9a0acf69647d8922621ed26098a42d826f61b39",
           "metadata": "reports/screenshots/control_land_native/x30_layout/osaka_natural.json",
-          "metadata_sha256": "0e80b88c1323b1b082c9e887bcd272cace4a083e8605c109f1caa3031019d2d8"
+          "metadata_sha256": "0a7f710e6a406446fb5b020170c6f2f44ea131a1b8a93bd683aa0a849845e77c"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/osaka_control.png",
-          "sha256": "87901173a9452ea9ddea6102815773543392a883dbe481a34a7f785b919885d0",
+          "sha256": "898862c8f9661d725ed4e5414885d6a1f0472a037650c34f8eed07a3e963b498",
           "metadata": "reports/screenshots/control_land_native/x30_layout/osaka_control.json",
-          "metadata_sha256": "e3f6d52d833d1e9d4482d55f2abbdda70a180bd357bd9c3586d07f4adccabc83"
+          "metadata_sha256": "d4fde5b70645fa08a9f70bb05bd4190246b729e5feed79772258b7b7e6b7d740"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/baku_natural.png",
-          "sha256": "ec38f5d85b0b19bbf281405c0554bd447164284769f458ded948906ad6352ee8",
+          "sha256": "df70b375047478891c4a5153e09d3698df91aac524e54372635a0e11659f6d87",
           "metadata": "reports/screenshots/control_land_native/x30_layout/baku_natural.json",
-          "metadata_sha256": "5b23e07a8d10cb4269ffb32a1b0eca480c8e3244e2f74574131a87fd0adbc53a"
+          "metadata_sha256": "f229718cb7701c64aabc5a04f9cda513d607cec78e5b7f23c85b58614adbbb82"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/baku_control.png",
-          "sha256": "b3cf3140aa416bbab9772c413e4ebc68dc46e24d79182787ff0df681b6fb7ade",
+          "sha256": "fbee84c8599d2fece4847031e34602ce4d0e57f80f39395a2d5bde8f9a5831ca",
           "metadata": "reports/screenshots/control_land_native/x30_layout/baku_control.json",
-          "metadata_sha256": "ba4c00ff21fabd3b367833733d7f5851c45f43ecfdcf7156407a4cf881532e88"
+          "metadata_sha256": "70e2b36fbb066a597e79aad4fe7cba004f9f4812668bb2b6c90d98dc0b04ef64"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/singapore_natural.png",
-          "sha256": "98c9fe7f18af2d98961ef470cc0d060918568c0b55168ac293a1e6c3180e3005",
+          "sha256": "32bbd0e5c923793d0cbb9a8b1b1aa3dfa3023461f1d598e912899bb6ca2ec83a",
           "metadata": "reports/screenshots/control_land_native/x30_layout/singapore_natural.json",
-          "metadata_sha256": "ee32ef7cfd5d311ace30480f318e4d0829d768cfb6dfcf2d2aba719fc621db53"
+          "metadata_sha256": "6c9c5094f5dfa34b846228e94e09a5abe7f0eae0eaa6e301e8436717d944c18d"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/singapore_control.png",
-          "sha256": "33aacf4fe08eaf9458fcfa79009f6dd14a2afd43ff49d7d2a3359caa4f0231db",
+          "sha256": "69e6161b959ad33e5e9c57b46c9f045fc70730c4873d96ced04deb8e8ee98e1e",
           "metadata": "reports/screenshots/control_land_native/x30_layout/singapore_control.json",
-          "metadata_sha256": "e65f1f92066377d9946af05ebd74f5d740480898638a9824340cea02111563e0"
+          "metadata_sha256": "55ddd2bf614d964b940d3a4fa6d82af6b07c57a2a33bbf1a6415b324f932e58a"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/overview_natural.png",
-          "sha256": "992177c9d79f68f4a16349ae6796d4e47f8e984c7863b9d64c914647a975735f",
+          "sha256": "fb17f2d85c949f2a97080628caf89852a5ec2f4a2da2450a68fc38d0af7eed4a",
           "metadata": "reports/screenshots/control_land_native/x30_layout/overview_natural.json",
-          "metadata_sha256": "df331831c51447e0b1af5febcfddc51bcbbdd7e1d543da69b1782aa3c81c1e5b"
+          "metadata_sha256": "9748f849b21c7ad467eac3f44238992f62c3e962048faf627d1705526026f692"
         },
         {
           "file": "reports/screenshots/control_land_native/x30_layout/overview_control.png",
-          "sha256": "c675ea4909690b7004149ccc4ca754e8d1bf1a5dee1b9fb5625afc3f615aa8e0",
+          "sha256": "e4ee752340886f9ab0ef8188ef396596ff40c4d61b9e55261449f53f00ea5acd",
           "metadata": "reports/screenshots/control_land_native/x30_layout/overview_control.json",
-          "metadata_sha256": "74e7b661ee5b3079628254394ce6194160b509d4572f035aa1b320d8ec227c0e"
+          "metadata_sha256": "f5eddd86f0860ed4d536a31101d7dae4bb5a87685e832ed7ac7f81e7aa114f8a"
         }
       ]
     }

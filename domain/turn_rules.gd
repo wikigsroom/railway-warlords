@@ -1,6 +1,14 @@
 class_name TurnRules
 extends RefCounted
 
+const DAYS_PER_ROUND=1
+
+static func event_due(event: Dictionary, date: String, round_index: int) -> bool:
+	# A dated historical event is governed by its calendar date. A round hint
+	# must never make it happen early when the calendar scale changes.
+	if event.has("date"):return date>=str(event.date)
+	return int(event.get("round",-1))==round_index
+
 static func round_start(state: Dictionary, content: ContentRegistry, events: Array) -> void:
 	HistoricalRules.update_designations(state,events)
 	for poi in state.map.get("reference_pois",[]).duplicate():
@@ -18,10 +26,10 @@ static func round_start(state: Dictionary, content: ContentRegistry, events: Arr
 	state.weather.forecast=[]
 	var timestamp=Time.get_unix_time_from_datetime_string(state.date+"T00:00:00")
 	for offset in range(1,4):
-		var date=Time.get_date_string_from_unix_time(timestamp+86400*offset*int(content.scenarios[state.scenario_id].days_per_round))
+		var date=Time.get_date_string_from_unix_time(timestamp+86400*offset*DAYS_PER_ROUND)
 		state.weather.forecast.append({"round":state.round+offset,"date":date,"weather":weather_at(state,date,state.round+offset)})
 	for event in state.authored_events:
-		if (int(event.get("round",-1))==state.round or (event.has("date") and state.date>=event.date)) and not event.get("fired",false):
+		if event_due(event,state.date,state.round) and not event.get("fired",false):
 			HistoricalRules.process(state,event,content,events)
 	events.append({"type":"RoundStarted","round":state.round,"weather":state.weather.current})
 
@@ -90,7 +98,7 @@ static func end_phase(state: Dictionary, content: ContentRegistry, events: Array
 		if state.phase_index>=state.turn_order.size():
 			state.phase_index=0;state.round+=1;state.metrics.rounds=state.round
 			var timestamp=Time.get_unix_time_from_datetime_string(state.date+"T00:00:00")
-			state.date=Time.get_date_string_from_unix_time(timestamp+86400*int(content.scenarios[state.scenario_id].days_per_round))
+			state.date=Time.get_date_string_from_unix_time(timestamp+86400*DAYS_PER_ROUND)
 			round_start(state,content,events)
 		if not StateAccess.faction(state,state.turn_order[state.phase_index]).eliminated:break
 		state.phase_index+=1;steps+=1

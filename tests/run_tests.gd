@@ -80,11 +80,11 @@ func run() -> void:
 	s=StateBuilder.create(content,"conq_1924","zhili",{});s.date="1924-09-15"
 	StateAccess.faction(s,s.turn_order[-1]).eliminated=true;s.phase_index=s.turn_order.size()-2
 	TurnRules.end_phase(s,content,[])
-	assert_true(s.round==2 and s.phase_index==0 and s.date=="1924-09-22","eliminated_final_faction_still_advances_round_and_date")
-	s=StateBuilder.create(content,"conq_1924","zhili",{});s.date="1924-10-20";s.phase_index=s.turn_order.size()-3
+	assert_true(s.round==2 and s.phase_index==0 and s.date=="1924-09-16","eliminated_final_faction_still_advances_round_and_date")
+	s=StateBuilder.create(content,"conq_1924","zhili",{});s.date="1924-10-22";s.phase_index=s.turn_order.size()-3
 	for id in [s.turn_order[0],s.turn_order[-1],s.turn_order[-2]]:StateAccess.faction(s,id).eliminated=true
 	TurnRules.end_phase(s,content,[])
-	assert_true(s.round==2 and s.phase_index==1 and s.date=="1924-10-27" and StateAccess.find(s,"cities","beijing").owner_id=="zhili" and s.authored_events[0].outcome=="not_triggered" and not s.turn_order.has("guominjun"),"skipping_eliminated_factions_advances_date_without_reviving_coup_source")
+	assert_true(s.round==2 and s.phase_index==1 and s.date=="1924-10-23" and StateAccess.find(s,"cities","beijing").owner_id=="zhili" and s.authored_events[0].outcome=="not_triggered" and not s.turn_order.has("guominjun"),"skipping_eliminated_factions_advances_date_without_reviving_coup_source")
 	var save=SaveService.new("user://test_suite");s=fixture();var start=Time.get_ticks_msec();assert_true(save.write("test",s,content.content_hash),"atomic_save_verified_write");var loaded=save.load_slot("test",content.content_hash);assert_true(ContentRegistry.fingerprint(loaded)==ContentRegistry.fingerprint(s),"save_load_hash_round_trip");timings.save_load_ms=Time.get_ticks_msec()-start
 	s.round=2;save.write("test",s,content.content_hash);var broken=FileAccess.open(save.path_for("test"),FileAccess.WRITE);broken.store_string("{interrupted");broken.close();loaded=save.load_slot("test",content.content_hash);assert_true(loaded.get("round",0)==1,"corrupt_save_recovers_previous_backup")
 	var repository=ProfileRepository.new(content,SaveService.new("user://test_profile_%s"%Time.get_ticks_msec()));s=fixture();s.status="won";s.result_stars=3;s.match_id="reward_test_unique";s.initial_player_count=14;var reward=repository.settle(s);var before=repository.profile.merit;repository.settle(s);assert_true(reward.merit>=100 and repository.profile.merit==before,"reward_ledger_idempotent")

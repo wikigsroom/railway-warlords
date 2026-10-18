@@ -1,5 +1,6 @@
 """Validate portable README links, native media and immutable asset provenance."""
 import hashlib
+import base64
 import json
 from pathlib import Path
 import re
@@ -21,6 +22,7 @@ PUBLIC_DOCS = ['README.md', 'README.en.md', 'LICENSE-NOTICE.md',
                'docs/37_二十类地表材质形态重制.md',
                'docs/38_源陆地补纹与林底选材约束.md',
                'docs/39_本地YuE2纯器乐配乐与场景衔接.md',
+               'docs/40_每日历法与四阶段人物肖像.md',
                'docs/SOUND_DESIGN.md', 'SOUND_DESIGN.md',
                'docs/25_欧陆战争6地图资源差距评估.md',
                'docs/00_程序文档索引.md', 'docs/04_美术来源与审核.md',
@@ -74,6 +76,12 @@ def main():
     for row in manifest_assets:
         if digest(P / row['engine_path'].removeprefix('res://')) != row['source_sha256']:
             errors.append({'type': 'registered_original_changed', 'asset': row['id']})
+    aliases=read('docs/asset-provenance/legacy-portrait-prompts.json')['prompts']
+    for aid,row in aliases.items():
+        raw=base64.b64decode(row['utf8_bytes_base64'])
+        expected=next(a for a in manifest_assets if a['id']==aid)['prompt_sha256']
+        if hashlib.sha256(raw).hexdigest()!=row['original_sha256'] or row['original_sha256']!=expected:
+            errors.append({'type':'encoded_original_prompt_changed','asset':aid})
 
     media = read('docs/media/manifest.json')
     gif_facts = []

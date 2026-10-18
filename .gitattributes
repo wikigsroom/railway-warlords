@@ -3,3 +3,6 @@
 /presentation/data/ground_coverage*.json text eol=lf
 # Generated score specifications, original ABC and audit records are immutable.
 /docs/music-provenance/** -text
+# Exact prompt/provenance byte hashes must survive Windows checkouts.
+/docs/asset-prompts/** -text
+/docs/asset-provenance/** -text

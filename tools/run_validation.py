@@ -22,6 +22,8 @@ CHECKS.append('map_material_continuity_test')
 CHECKS.append('river_surface_test')
 CHECKS.append('control_land_clip_test')
 CHECKS.append('ground_coverage_test')
+CHECKS.append('general_portraits_test')
+CHECKS.append('calendar_test')
 
 def main():
     # Build the schema fixture with the current native content registry. Rule

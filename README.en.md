@@ -7,13 +7,19 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.21, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.22, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
 ![Main menu captured from the current native Windows executable](docs/media/menu.png)
 
 *A complete native viewport capture. PNG screenshots below have no montage, repainting or promotional overlays.*
+
+Version 0.2.22 uses one calendar day per complete round and provides four living age-stage originals for each of 33 people, 135 portraits in total: 29 military generals and four political-only figures. Match dates select the appearance automatically. Li Desheng uses a youthful 1917 appearance and a middle-aged 1947 appearance; post-1940 art does not add a new 1947 scenario. See [daily calendar and age-stage implementation](docs/40_每日历法与四阶段人物肖像.md).
+
+The headquarters now includes a political archive with all 17 registered political figures, stage previews and selection by the current match date. Short-lived people retain four actual living periods: Xianfeng's illustrations represent approximately 18, 22, 26 and 29 years of age, with the third stage labelled as the middle of his reign. The archive does not add military appointments for political-only figures.
+
+![Hong Xiuquan in the native 0.2.22 character page](docs/media/hong-middle-v0222.png)
 
 <a id="contents"></a>
 ## Contents
@@ -37,7 +43,7 @@ European War 6 is the main reference for visual presentation and interaction. Ca
 <a id="status"></a>
 ## Version and content
 
-Counts come from current runtime data, excluding unimplemented plans and duplicate historical inventories. Runtime compatibility is **schema 2 / ruleset 9**.
+Counts come from current runtime data, excluding unimplemented plans and duplicate historical inventories. Runtime compatibility is **schema 2 / ruleset 10**.
 
 | Content | Implemented scope |
 | --- | --- |
@@ -50,10 +56,12 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Factions and generals | **47 faction definitions and 29 general definitions**; availability is scenario-specific |
 | Progression | **28 technologies, 9 passive skills, 9 active skills and 24 achievements** |
 | Facilities | **12 types** covering recruitment, transport, supply, medicine, defense, communications and trade |
-| Raster art | **1,176 PNGs**; **990 stored map assets, 970 currently active**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
+| Raster art | **1,299 PNGs**; **990 stored map assets, 970 currently active**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
 | Regional terrain | **20 types × (1 new continuous ground + 4 detail originals) = 100 active originals**; 20 superseded macrogrounds retained, interactive atlas |
 | Audio and fonts | 14 procedural effects, 3 local YuE2 scores (180 seconds each), 3 retained fallback loops and 2 Chinese fonts with OFL notices |
-| Current regression snapshot | **27 groups / 5,084 passing checks**, plus 216 native terrain, 212 UI, 84 coastal, 44 material-pixel, 11 relief-fixture, 10 clipping-fixture, 220 map-symbol and 18 music-playback checks |
+| Current regression snapshot | **29 groups / 5,778 checks**, plus 1,725 portrait UI, 216 terrain, 212 UI, 84 coastal, 220 map-symbol and 18 music checks; older numerical fixtures retain their version identity |
+| Character portraits | **33 people × 4 stages + 3 extra dates = 135 independent originals**; automatic dated selection, general roster and political archive previews |
+| Calendar | **One day per complete round**; all factions finish their phases before the Gregorian date advances |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
 
 Runtime data lives in `content/`. Original designs and older versions retain their own status. Content counts do not establish complete art, historical, balance or device acceptance. See the [completion assessment](docs/23_当前完成度评估.md).
@@ -250,6 +258,8 @@ Git includes complete source and runtime assets. Binaries, caches and private si
 <a id="combat"></a>
 ## Turns, combat and victory
 
+One complete round advances exactly one Gregorian day. A single faction phase does not add another day. Month lengths, leap years and year boundaries follow the calendar. Old ruleset 9 matches require a new game under ruleset 10.
+
 ```mermaid
 flowchart LR
     A[Income, supply and phase events] --> B[Inspect objectives and intelligence]
@@ -273,7 +283,7 @@ flowchart LR
 
 Objectives include capture, continuous defense, elimination of a target formation, commander capture/defeat, escort, survival and repairs. Protected-unit losses and general injuries can take failure priority. Scenario thresholds and losses determine stars.
 
-Conquest/free world evaluate strategic nodes, faction survival and alliances, with scenario scoring at the round limit. Warlord conquests generally use 80 rounds; Asian free worlds use 180. The game calendar is not a daily historical chronology.
+Conquest/free world evaluate strategic nodes, faction survival and alliances, with scenario scoring at the round limit. Warlord conquests generally use 80 rounds; Asian free worlds use 180. Those are now 80 and 180 days. Weather and operational values remain gameplay abstractions rather than daily historical measurements.
 
 Difficulty includes ordinary progression, hard and standardized challenge. The current hard setting advertises +10% enemy attack. Legion uses normalized progression; deployment budgets and in-match city funds are separate.
 
@@ -496,13 +506,13 @@ godot --headless --path . --script tests/surface_geography_test.gd
 godot --headless --path . --script tests/terrain_surfaces_test.gd
 ```
 
-Twenty-seven groups / 5,084 checks cover rules, input, geography, progression, transactions, events, rendering, workers, scale, logistics, caches, settlements, snapshots, Asia, boundaries, facing, surfaces, the map bank, river continuity, coastal control and source-land clipping. The current EXE also passes 216 terrain, 212 real UI action/layout, 84 coastal and 44 native material-fixture checks. Another 220 symbol checks cover individual formations, zoom crossings in both directions, selection near cities and unchanged state/RNG. The 90 terrain/UI, 20 control-toggle and 32 symbol images total 142 current EXE native captures. Eleven relief and ten source-land clipping checks have four numerical fixture frames each, listed separately from historical-map screenshots. All three scores pass eighteen native EXE playback checks. Older movement, action and command-replay evidence retains its original version identity.
+Version 0.2.22 passes 29 groups / 5,778 checks, including 611 portrait and 83 daily-calendar checks. The final EXE passes 1,725 portrait UI checks with 174 captures across three desktop layouts, plus 216 terrain and 212 UI checks with 90 captures, 84 coastal checks with 20 captures and 220 symbol checks with 32 captures: 316 current native frames in total. Music playback passes 18 checks. See the [dependency seal](reports/regression_dependency_evidence.json) and [native portrait evidence](reports/general_portrait_native_evidence.json). Older numerical fixtures and movement/combat recordings retain their original version identity.
 
 [Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current summary](reports/terrain_update_verification_summary.json)
 
-Current reports are original-workspace 0.2.21 snapshots, not a claim that another machine has rerun them. They do not replace manual gameplay, art, music listening, historical or device acceptance. Full AI endurance was not rerun for this patch; older endurance results and recordings retain their version identity.
+Reports record tests run in the original workspace. They do not claim that another machine has rerun them and do not replace manual gameplay, art, music listening, historical or device acceptance. Full AI endurance was not rerun for this patch; older endurance results and recordings retain their version identity.
 
-### Current version 0.2.21 full-load measurements
+### Historical version 0.2.21 full-load measurements
 
 Final 0.2.21 EXE, desktop RTX 3060, 240 formations and 74,762 cells. Sustained pan/zoom ran for 60 seconds per viewport; other stages use fixed-frame samples or actual combat presentation. Both columns use the desktop GPU.
 
@@ -547,11 +557,13 @@ Tactical selection still has frame-time spikes; averages do not establish stable
 <a id="assets"></a>
 ## Artwork, media and licensing
 
-All 1,176 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including twenty retained superseded macrogrounds. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
+All 1,299 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including twenty retained superseded macrogrounds. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
 
 - [Runtime manifest](assets/manifest.json): original workspace sources, models, dimensions and hashes.
 - [Portable provenance](docs/asset-provenance/index.json): repository-relative images/prompts and SHA-256.
-- [Prompt directory](docs/asset-prompts/): 1,176 prompts; gateway configuration and credentials are excluded.
+- [Prompt directory](docs/asset-prompts/): 1,299 prompts; gateway configuration and credentials are excluded.
+
+Two legacy portrait prompts have readable alias transcriptions using Li Desheng. Their exact original UTF-8 bytes are preserved reversibly with the original SHA256; source images and workspace production originals remain immutable.
 - [Media guide](docs/MEDIA.md): native screenshots, recording, GIF conversion and evidence scope.
 - [Map expansion](docs/28_地图素材扩充与去重.md), [ground and rivers](docs/29_地表材质与细水系.md): selection and source precision.
 
@@ -595,4 +607,4 @@ Detailed implementation chapters currently use Chinese; this English README cove
 | Verified scope | [Completion](docs/23_当前完成度评估.md), [validation](docs/05_测试与验收.md) |
 | Media and sources | [Screenshots/GIFs](docs/MEDIA.md), [provenance](docs/asset-provenance/index.json), [licensing](LICENSE-NOTICE.md) |
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.21 assessment and corresponding reports for current status.
+Older chapters preserve their version context. Use these READMEs, the 0.2.22 assessment and corresponding reports for current status.

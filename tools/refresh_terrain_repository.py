@@ -6,6 +6,8 @@ import argparse
 import json
 from pathlib import Path
 import shutil
+import base64
+import hashlib
 from build_release import P, ROOT, current_version, source_digest
 from package_delivery import read, require, sha
 
@@ -17,25 +19,33 @@ def write(path, value):
 
 def provenance():
     records = []
+    archive_path=P/'docs/asset-provenance/legacy-portrait-prompts.json'
+    legacy=read(archive_path)['prompts'] if archive_path.exists() else {}
     previous = {row['id']:row for row in read(P / 'docs/asset-provenance/index.json')['assets']}
     for row in read(P / 'assets/manifest.json')['assets']:
         image = P / row['engine_path'].removeprefix('res://')
         prompt = P / 'docs/asset-prompts' / (row['id'] + '.txt')
         original_prompt = ROOT / row['prompt_file']
         require(sha(image) == row['source_sha256'], 'Original image mismatch: ' + row['id'])
-        if prompt.exists() and original_prompt.exists():
+        alias_record=legacy.get(row['id'])
+        if alias_record:
+            original=base64.b64decode(alias_record['utf8_bytes_base64'])
+            require(hashlib.sha256(original).hexdigest()==row['prompt_sha256']==alias_record['original_sha256'], 'Encoded original prompt differs')
+            if original_prompt.exists():require(original_prompt.read_bytes()==original, 'Original prompt bytes changed')
+        elif prompt.exists() and original_prompt.exists():
             require(sha(prompt) == sha(original_prompt), 'Immutable portable prompt differs: ' + row['id'])
         elif not prompt.exists() and original_prompt.exists():
             shutil.copyfile(original_prompt, prompt)
         require(prompt.is_file(), 'Missing portable prompt: ' + row['id'])
         prompt_sha = sha(prompt)
         expected = row.get('prompt_sha256') or previous.get(row['id'],{}).get('prompt_sha256')
-        require(expected is not None and prompt_sha == expected, 'Registered prompt differs: ' + row['id'])
+        require(expected is not None and (prompt_sha == expected or alias_record is not None), 'Registered prompt differs: ' + row['id'])
         records.append(dict(id=row['id'], category=row['category'], image=image.relative_to(P).as_posix(),
                             image_sha256=sha(image), prompt=prompt.relative_to(P).as_posix(),
                             prompt_sha256=prompt_sha, source_kind=row['source_kind'], model=row.get('model'),
                             quality=row.get('quality'), original_workspace_source=row['source_file'],
                             image_modified=False, formal_art_approval=False))
+        if alias_record:records[-1].update(readable_alias_transcription=True,original_prompt_archive=archive_path.relative_to(P).as_posix(),original_prompt_sha256=alias_record['original_sha256'])
     write(P / 'docs/asset-provenance/index.json', dict(version=current_version(), count=len(records),
           image_bytes='Engine PNG files are byte-identical originals; no duplicate raw tree needed.', assets=records))
     print(json.dumps(dict(provenance_images_and_prompts=len(records))), flush=True)
@@ -98,7 +108,7 @@ def media():
     for row in old['screenshots']:
         if Path(row['file']).name not in selected:
             row.setdefault('version', '0.2.12')
-            row['historical_capture'] = True
+            row['historical_capture'] = row['version'] != version
             rows.append(row)
     animations = old['animations']
     for row in animations:
@@ -110,6 +120,7 @@ def media():
           source_video=video, current_native_evidence='reports/terrain_surface_native_evidence.json',
           current_control_native_evidence='reports/control_land_native_evidence.json',
           current_map_symbol_native_evidence='reports/map_symbol_native_evidence.json',
+          current_general_native_evidence='reports/general_portrait_native_evidence.json',
           notice='Current terrain/UI screenshots are native Windows captures. Battle GIFs and action stills preserve version 0.2.12. No physical Android acceptance.'))
     print(json.dumps(dict(screenshots=len(rows), current=len(selected), historical=len(rows)-len(selected),
                           historical_gifs=len(animations))), flush=True)

@@ -114,6 +114,7 @@ func _ready() -> void:
 	if "--ground-continuity-test" in args:GroundContinuityQA.run.call_deferred(self)
 	if "--ground-coverage-test" in args:GroundCoverageQA.run.call_deferred(self)
 	if "--music-test" in args:MusicPlaybackQA.run.call_deferred(self)
+	if "--general-portrait-test" in args:GeneralPortraitQA.run.call_deferred(self)
 	if "--relief-shade-test" in args:ReliefShadeQA.run.call_deferred(self)
 	if "--map-symbol-test" in args:MapSymbolQA.run.call_deferred(self)
 	if "--benchmark" in args:benchmark.call_deferred()
@@ -396,7 +397,7 @@ func refresh_battle(slice_work: bool = false) -> void:
 		hud_button(primary,"战报",show_event_log);hud_button(primary,"存档",func():show_save_dialog(true));hud_button(primary,"设置",show_pause)
 		information=row(header);information.add_theme_constant_override("separation",24)
 	var context=column(information);context.size_flags_horizontal=Control.SIZE_EXPAND_FILL;context.custom_minimum_size.x=240;context.add_theme_constant_override("separation",0);hud_line(context,s.date,20 if compact else 24);var mode_label="自由世界" if s.get("play_mode","")=="free_world" else {"campaign":"战役","conquest":"征服","legion":"演习"}[s.mode];hud_line(context,mode_label+" · "+StateAccess.faction_name(s,s.player_faction_id,content),14,UI_BRASS)
-	var phase=column(information);phase.size_flags_horizontal=Control.SIZE_EXPAND_FILL;phase.custom_minimum_size.x=176;phase.add_theme_constant_override("separation",0);hud_line(phase,"第 %d 回合"%s.round,20 if compact else 23);hud_line(phase,StateAccess.faction_name(s,s.turn_order[s.phase_index],content)+"行动",14,UI_BRASS)
+	var phase=column(information);phase.size_flags_horizontal=Control.SIZE_EXPAND_FILL;phase.custom_minimum_size.x=176;phase.add_theme_constant_override("separation",0);hud_line(phase,"第 %d 回合 · 1天"%s.round,20 if compact else 23);hud_line(phase,StateAccess.faction_name(s,s.turn_order[s.phase_index],content)+"行动",14,UI_BRASS)
 	if not compact:hud_button(primary,"战报",show_event_log);hud_button(primary,"存档",func():show_save_dialog(true));hud_button(primary,"设置",show_pause)
 	if slice_work:
 		await get_tree().process_frame
@@ -469,7 +470,9 @@ func unit_details(u: Dictionary, compact: bool = false) -> void:
 	ui_kicker(inspector,"编队检查器 · %s"%StateAccess.faction_name(s,u.owner_id,content),UI_BRASS)
 	var faction_strip=ColorRect.new();faction_strip.color=MapView.TERRITORY_COLORS.get(u.owner_id,Color("788d8f"));faction_strip.custom_minimum_size.y=5;inspector.add_child(faction_strip)
 	var portrait=ui_panel(inspector,"ui_order_card",Color.WHITE,4)
-	image_view(portrait,assets.texture("portrait","portrait_"+u.general_id) if u.general_id!=null else assets.unit_texture(u),Vector2(232,176))
+	if u.general_id!=null:
+		var general_view=GeneralPortraitView.new();general_view.setup(assets,str(u.general_id),Vector2(232,176),str(s.date));portrait.add_child(general_view)
+	else:image_view(portrait,assets.unit_texture(u),Vector2(232,176))
 	label(inspector,content.definition("generals",u.general_id).name if u.general_id!=null else d.name,27,Color("e3cfaa"))
 	label(inspector,StateAccess.faction_name(s,u.owner_id,content)+" · "+d.name+" · %d层编制"%u.stack,17)
 	label(inspector,"兵力  %d / %d"%[u.hp,u.max_hp],22)
@@ -830,8 +833,20 @@ func show_headquarters() -> void:
 
 func show_profile_error() -> void:var v=modal("指挥部提示");label(v,profiles.error,26)
 
-func show_general_growth(id: String) -> void:
+func show_general_growth(id: String, age_stage: String="middle") -> void:
 	var d=content.definition("generals",id);var v=modal(d.name+" · 战法与勋章")
+	var stages=assets.general_portraits.records.get(id,{}).get("stages",[])
+	var selector=OptionButton.new();selector.name="GeneralAgeStage";selector.custom_minimum_size.y=58
+	var selected=0
+	for index in stages.size():
+		var stage=stages[index]
+		selector.add_item("%s · %d年形象"%[stage.label,stage.reference_year])
+		if stage.id==age_stage:selected=index
+	v.add_child(selector);selector.select(selected)
+	selector.item_selected.connect(func(index):show_general_growth(id,str(stages[index].id)))
+	war_room.general_portrait(v,d,int(profiles.profile.general_ranks.get(id,0)),"",age_stage)
+	label(v,"对局中按日期自动选择年龄形象；名册可浏览四个生涯阶段。",18,BRASS)
+	if assets.general_portraits.records.get(id,{}).get("late_stage_is_last_living_period",false):label(v,"最后阶段取生前晚期，不延长人物寿命。",18,BRASS)
 	var chosen=profiles.profile.get("active_skills",{}).get(id,d.active_skill)
 	if d.stars.cavalry>=3:
 		label(v,"下局主动战法 · 挑战模式使用默认配置",23,BRASS)
@@ -893,7 +908,7 @@ func show_strategic_map() -> void:
 func show_manual() -> void:
 	var v=modal("作战手册")
 	button(v,"地形图鉴 · 20 类区域地表",show_terrain_atlas)
-	for item in [["基本操作","鼠标单击选中部队或城市，拖动地图平移，滚轮缩放。Android使用单指点选与拖动、双指缩放。选择目标后在下方确认命令。Tab切换待命部队，空格结束本方阶段，Esc打开暂停。"],["进攻与反击","移动可分段。每部队每阶段一次主攻击，攻击后行动点归零。攻击耗1弹药；反击使用命中后的兵力和压制，每整回合一次，机枪两次。伤害预览显示双方预计损失。"],["城市与城防","先击破城防，再由步兵、骑兵、工兵或装甲车占领空城。炮兵与舰艇不能占领。驻军受到城防实际损失15%的附带伤害；城防未破时不反击。失城会取消当地队列并降低稳定。"],["军需与补员","每本方阶段结算收入、军饷、粮食与弹药。地面补给半径为6移动成本，安全铁路延长覆盖。储粮降至0后持续断粮，第二个断粮阶段起损失兵力。在本方补给城市可消耗兵源和资源补员。"],["铁路与工兵","未行动部队在本方车站可运输，车站池与铁路区间分别限额。敌军控制区或受损轨道阻断运输。工兵靠近线路可修复；桥梁用两阶段，普通线路一阶段。工兵离开时任务暂停。"],["指挥与成长","将领专长、被动、军衔与勋章影响所属部队。主动战法消耗指挥点并有冷却。指挥部科技与将领成长冻结于开局快照。精锐需科技二级，并在战役章节结业后解锁。"],["外交与航空","停战最低3回合，同盟最低6回合，解约有2回合通知。借道运输后本阶段不能宣战。机场只能在剧本允许的城市建造，侦察揭示区域，轰炸消耗弹药、资源与出动数，雨天停飞轰炸。"],["历史与地图","海岸、河流来自真实地理，城市采用真实位置，铁路按年代开放。编队规模、交战部署、天气循环、关卡目标属于游戏抽象。军团挑战是训练题，不声称史实战役。征服首版使用中国东部战区。"]]:
+	for item in [["时间与年龄","各参战阵营依次完成本方阶段后，整回合日期前进1天；结束单个阵营阶段不会额外过一天。天气预报、日期事件与人物年龄使用同一公历。将领按当前日期切换青年、壮年、中年、暮年或生前晚期形象；完整生日已核实的记录按生日计算周岁，其余显示约岁。"],["基本操作","鼠标单击选中部队或城市，拖动地图平移，滚轮缩放。Android使用单指点选与拖动、双指缩放。选择目标后在下方确认命令。Tab切换待命部队，空格结束本方阶段，Esc打开暂停。"],["进攻与反击","移动可分段。每部队每阶段一次主攻击，攻击后行动点归零。攻击耗1弹药；反击使用命中后的兵力和压制，每整回合一次，机枪两次。伤害预览显示双方预计损失。"],["城市与城防","先击破城防，再由步兵、骑兵、工兵或装甲车占领空城。炮兵与舰艇不能占领。驻军受到城防实际损失15%的附带伤害；城防未破时不反击。失城会取消当地队列并降低稳定。"],["军需与补员","每本方阶段结算收入、军饷、粮食与弹药。地面补给半径为6移动成本，安全铁路延长覆盖。储粮降至0后持续断粮，第二个断粮阶段起损失兵力。在本方补给城市可消耗兵源和资源补员。"],["铁路与工兵","未行动部队在本方车站可运输，车站池与铁路区间分别限额。敌军控制区或受损轨道阻断运输。工兵靠近线路可修复；桥梁用两阶段，普通线路一阶段。工兵离开时任务暂停。"],["指挥与成长","将领专长、被动、军衔与勋章影响所属部队。主动战法消耗指挥点并有冷却。指挥部科技与将领成长冻结于开局快照。精锐需科技二级，并在战役章节结业后解锁。"],["外交与航空","停战最低3回合，同盟最低6回合，解约有2回合通知。借道运输后本阶段不能宣战。机场只能在剧本允许的城市建造，侦察揭示区域，轰炸消耗弹药、资源与出动数，雨天停飞轰炸。"],["历史与地图","海岸、河流来自真实地理，城市采用真实位置，铁路按年代开放。编队规模、交战部署、天气循环、关卡目标属于游戏抽象。军团挑战是训练题，不声称史实战役。征服首版使用中国东部战区。"]]:
 		label(v,item[0],28,BRASS);label(v,item[1],22)
 
 func show_terrain_atlas() -> void:war_room.show_terrain_atlas()

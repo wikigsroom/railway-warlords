@@ -5,6 +5,7 @@ var textures: Dictionary={}
 var font: Font
 var map_font: Font
 var unit_actions: Dictionary={}
+var general_portraits=GeneralPortraits.new()
 var map_texture_order: Array[String]=[]
 const MAP_TEXTURE_CACHE_LIMIT=384
 

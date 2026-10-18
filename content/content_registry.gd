@@ -1,8 +1,8 @@
 class_name ContentRegistry
 extends RefCounted
 
-const RUNTIME_RULESET_VERSION=9
-const APP_VERSION="0.2.21"
+const RUNTIME_RULESET_VERSION=10
+const APP_VERSION="0.2.22"
 
 var tables: Dictionary = {}
 var indexes: Dictionary = {}
@@ -39,6 +39,8 @@ func load_all() -> bool:
 	var scenario_list = read_json("res://content/scenarios/catalog.json")
 	for scenario_id in scenario_list.get("scenarios", []):
 		scenarios[scenario_id] = integerize(read_json("res://content/scenarios/%s.json" % scenario_id))
+		if int(scenarios[scenario_id].get("days_per_round",0))!=1:
+			errors.append("剧本必须以每日回合推进：%s"%scenario_id)
 	geography_sources=read_json("res://content/geography_sources.json")
 	for general in tables.get("generals", []):
 		if not indexes.skills.has(general.passive_skill) or not indexes.skills.has(general.active_skill):

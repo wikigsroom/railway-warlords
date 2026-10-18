@@ -14,6 +14,8 @@ var browser_brief: VBoxContainer
 var browser_actions: VBoxContainer
 var browser_buttons: Dictionary={}
 var hq_tab="generals"
+var hq_portrait_stage="middle"
+var political_portrait_stage=""
 var tech_branch="infantry"
 
 const TITLES={"campaign":"战役档案","conquest":"时代征服","legion":"军团训练"}
@@ -276,14 +278,20 @@ func building_description(d: Dictionary) -> String:
 func show_generals(unit_id: String) -> void:
 	var v=app.modal("将领任命 · 本阶段不能再攻击")
 	app.label(v,"选定编队任命后会消耗本阶段攻击机会。可用名单以当前剧本为准。",18)
+	if app.match_controller.state.generals.is_empty():
+		var empty=app.label(v,"当前剧本没有可任命将领。编队仍可执行移动、攻击与整补。",22)
+		empty.name="NoScenarioGenerals"
+		return
 	var g=grid(v)
 	for general in app.match_controller.state.generals:
-		var d=app.content.definition("generals",general.id);var c=card(g);general_portrait(c,d,general.rank)
+		var d=app.content.definition("generals",general.id);var c=card(g);general_portrait(c,d,general.rank,str(app.match_controller.state.date))
 		var reason=status(c);action(c,"任命到选定编队",app.match_controller.command("AssignGeneral",{"unit_id":unit_id,"general_id":general.id}),reason)
 
-func general_portrait(parent: Node, d: Dictionary, rank: int) -> void:
-	var head=app.row(parent);app.image_view(head,app.assets.texture("portrait","portrait_"+d.id),Vector2(110,130)*minf(scale(),1.2))
+func general_portrait(parent: Node, d: Dictionary, rank: int, date: String="", stage: String="") -> void:
+	var head=app.row(parent);var visual=GeneralPortraitView.new();visual.setup(app.assets,d.id,Vector2(110,130)*minf(scale(),1.2),date,stage);head.add_child(visual)
 	var copy=app.column(head);app.label(copy,d.name,27);app.label(copy,"军衔  %d / %d"%[rank,d.max_rank],18,Color("735d3e"))
+	app.label(copy,str(visual.record.caption),16,Color("68614e"))
+	app.label(copy,str(visual.record.get("reference_caption","")),15,Color("68614e"))
 	app.label(copy,"步 %d  炮 %d  骑 %d\n海 %d  航 %d  后 %d"%[d.stars.infantry,d.stars.artillery,d.stars.cavalry,d.stars.navy,d.stars.aviation,d.stars.logistics],17)
 	app.label(parent,app.content.definition("skills",d.passive_skill).name+" / "+app.content.definition("skills",d.active_skill).name,17)
 
@@ -316,23 +324,44 @@ func show_headquarters(tab: String="", branch: String="") -> void:
 	var v=page("指挥部","成长于下一局开局时生效；标准化挑战与军团训练使用独立快照。")
 	var resources=app.row(v);app.ui_stat(resources,"功勋",str(profile.merit),"icon_resource_cash");app.ui_stat(resources,"研究",str(profile.research),"icon_tech_logistics")
 	var tabs=app.row(v)
-	for entry in [["generals","将领名册 · %d"%app.content.tables.generals.size()],["technology","军备研究 · %d"%app.content.tables.technologies.size()]]:
+	for entry in [["generals","将领名册 · %d"%app.content.tables.generals.size()],["political","政要档案"],["technology","军备研究 · %d"%app.content.tables.technologies.size()]]:
 		var b=app.button(tabs,entry[1],func():show_headquarters(entry[0]));b.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 		if hq_tab==entry[0]:b.add_theme_stylebox_override("normal",app.material_box("ui_button_plate",Color(1.2,1.12,.90),10))
 	if hq_tab=="technology":
 		var names: Array=[];var keys=BRANCHES.keys()
 		for key in keys:names.append(BRANCHES[key]+"研究")
 		var selector=option(v,names);selector.name="TechnologyBranch";selector.select(maxi(0,keys.find(tech_branch)));selector.item_selected.connect(func(index):show_headquarters("technology",keys[index]))
+	if hq_tab=="generals":
+		var ages=["young","prime","middle","late"]
+		var selector=option(v,["青年形象","壮年形象","中年形象","暮年 / 生前晚期形象"])
+		selector.name="HeadquartersAgeStage";selector.select(ages.find(hq_portrait_stage))
+		selector.item_selected.connect(func(index):hq_portrait_stage=ages[index];show_headquarters("generals"))
+	if hq_tab=="political":
+		var ages=["","young","prime","middle","late"]
+		var selector=option(v,["按当前战局日期 / 默认中期预览","青年阶段","壮年阶段","中年 / 在位中期","暮年 / 生前晚期"])
+		selector.name="PoliticalPortraitAgeStage";selector.select(maxi(0,ages.find(political_portrait_stage)))
+		selector.item_selected.connect(func(index):political_portrait_stage=ages[index];show_headquarters("political"))
+		app.label(v,"政治背景人物按文献登记；档案浏览不开放战场任命。早逝者只展示生前阶段。",17)
 	var list=app.scroll_column(v);var g=grid(list,420)
 	if hq_tab=="generals":
 		for d in app.content.tables.generals:
-			var c=card(g);var rank=int(profile.general_ranks.get(d.id,0));general_portrait(c,d,rank)
+			var c=card(g);var rank=int(profile.general_ranks.get(d.id,0));general_portrait(c,d,rank,"",hq_portrait_stage)
 			var experience=int(profile.general_xp.get(d.id,0));app.label(c,"将领经验  %d"%experience,17)
 			var can_upgrade=rank<d.max_rank;var price=0;var xp=0
 			if can_upgrade:price=int(app.content.rules.progression.general_rank_cost_merit[rank]);xp=int(app.content.rules.progression.general_rank_xp[rank]);app.label(c,"晋升需要 %d 功勋 / %d 经验"%[price,xp],17,Color("735d3e"))
 			var actions=app.row(c)
 			app.button(actions,"晋升" if can_upgrade else "军衔已满",func():if not app.profiles.upgrade_general(d.id):app.show_profile_error() else:show_headquarters(),can_upgrade and profile.merit>=price and experience>=xp).size_flags_horizontal=Control.SIZE_EXPAND_FILL
 			app.button(actions,"战法 / 勋章",func():app.show_general_growth(d.id)).size_flags_horizontal=Control.SIZE_EXPAND_FILL
+	elif hq_tab=="political":
+		var history=JSON.parse_string(FileAccess.get_file_as_string("res://content/history/asia_timeline.json"))
+		var date=str(app.match_controller.state.get("date","")) if political_portrait_stage.is_empty() else ""
+		for figure in history.political_figures:
+			var c=card(g);var head=app.row(c)
+			var visual=GeneralPortraitView.new();visual.setup(app.assets,figure.id,Vector2(110,130)*minf(scale(),1.2),date,political_portrait_stage);head.add_child(visual)
+			var copy=app.column(head);app.label(copy,figure.name_zh,27)
+			app.label(copy,str(visual.record.caption),17,Color("68614e"))
+			app.label(copy,str(visual.record.get("reference_caption","")),16,Color("68614e"))
+			app.label(c,figure.role,19);app.label(c,figure.background,17)
 	else:
 		for d in app.content.tables.technologies:
 			if d.branch!=tech_branch:continue

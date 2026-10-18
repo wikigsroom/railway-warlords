@@ -13,12 +13,13 @@
   "definition_tables": 21,
   "maps": 6,
   "scenarios": 61,
-  "raster_count": 1176,
+  "raster_count": 1299,
   "audio_count": 17,
   "font_count": 2,
   "review_states": {
     "generated_pending_visual_review": 1156,
-    "generated_scoped_source_review_complete": 20
+    "generated_scoped_source_review_complete": 20,
+    "source_reviewed_runtime_pending": 123
   },
   "manual_image_composition": false,
   "raster_images_modified": false,
@@ -14134,6 +14135,1482 @@
       "source_matches": true,
       "alpha_zero_percent": 73.44,
       "review_state": "generated_pending_visual_review"
+    },
+    {
+      "id": "portrait_lin_zexu_1840",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "498fa1fe17493f7acefe94023209293e5dd341b812e0be4825b40e6ad0d47378",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 62.77,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zeng_guofan_1860",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "1b3d2853cacc2e05884470a3baf090db65f32d083039484332a010ff9fc2328f",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 45.02,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_li_hongzhang_1860",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "4aff83fb838f3b9d4f12d3848cdd7d41479d9bf9d34fe79802c887e068ca8521",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 46.7,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_li_hongzhang_1890",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "5d0829508d1d6eda5ecbbe487a2b8652ffa25226a5efd83e595bbe50a102650c",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 46.45,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_li_hongzhang_1900",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "2a8d6295d558de49a0f6791ce8f01e0df9ee89c09feb8d414ffbbc8eb5cab54b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 65.62,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1890",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "d0cca23e614e675f99c12eb14a1b2bad8f93ee84c581f086d1ef01872b0d9e04",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.81,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1900",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "2f5dc354d205919d640dd194b6dfdb392b489b5dc73ea28dafde4364e0407431",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.1,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1917",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "8d96a4dc4b05f861361d14a6163817efd49d97dec4bddd5e06ee6c2e371dd251",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.11,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_waldersee_1900",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "fcdf4942c0ca1af66868e04dc433a204971bd647fc939b14d9cf9e68ab6cae7b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.71,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_kuropatkin_1890",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a79a8492d5d1a9935c952f2faf5df2654daa0d95348ad77c4c4fd9b6fe481aa5",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 46.67,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_kuropatkin_1900",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b57e9fa11d55d584cdf01661fd6a1d8d90e06b5f5d34e32019b1c6960a60d82b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.75,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_sun_yat_sen_1917",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "bba1a34057b62be50a83c2ffb63642d5051d0f82f74ebd23b9176fe7aa9745fd",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 46.54,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_duan_qirui_1917",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "94cf1cb360a03de8e5e1ba1d292a461a54c12442ae487c682d08b58b9e635880",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.54,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_duan_qirui_1927",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "7c066185613572d022570736905a1a99c426743a291b2807df8a2601c34be8f2",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.17,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_chiang_kai_shek_1927",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "23ef9d62ff9790f337b7d3fe639065daa7a06e0fdfd5a2373c56a3a5253e3fdd",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.18,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_chiang_kai_shek_1940",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "aadcf42feabf9a329acc650b2dc4f392d26b4c53fd0fd417a3228025d0c85a4c",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.86,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_li_zongren_1927",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "8bd97cbd7f25766528b93c5e3f31c3b9b550c5dbbb5eaade0cc6423c722bbda9",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.9,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_li_zongren_1940",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "f90ab62ab6229b4f9d93dccefcd3d118b9ad644cdac4742e6f10e313d9ea8fdc",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 46.93,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_bai_chongxi_1927",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c2ae3845a88715861a99501c11a1b3b2b60c86b6d1872785d4eee1cce4d38d1b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.17,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_bai_chongxi_1940",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "88c717ce959bd40ec2afdf0982fcd2c1dc7bf18c322fae3555d85b6f7e3815cf",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.61,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_mao_zedong_1927",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "7a28c20b90f20bbdc524a333021be33d2bc8dc5bcd50fba4dd0a26b65c5b9348",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.65,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_mao_zedong_1940",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "064b5e1b4e17617c2769095ca6efc87e76a0666120adb7d35877056b59d06141",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.46,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_peng_dehuai_1940",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "6235d36ec61f1be4d300dd713b4a0e649703fc477cc5eafc20399661d0533ae7",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 46.71,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_tojo_hideki_1940",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "21fc4e46ca525555c46511e6e7f159906233c6c7ecd44ad547e6bf186401c9f8",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 46.01,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yamashita_tomoyuki_1940",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "5127e45c6093357f71832583a8fbbaa93fa34811676838565887b31da1b68138",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.22,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_alexei_kaledin_1917",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "120dc8043c121a86c51724e048e52a658c61ec7febd11882d064415d77b2af4b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.93,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_wu_peifu_1899",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "163b857774cbffb7cd47aaf815ba3dc4727a9235730eebd49816712a570f368a",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 56.09,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_wu_peifu_1914",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "f46016cfad09c0166f377e5079bdc95f9f3e2b4d033e5084a835e7cda929c201",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.6,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_wu_peifu_1938",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "2daf634f1dc8ddf54d8020cb70428e4b071bdd24e41c7e0dc8cd0ed66c621d47",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 57.24,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zhang_zuolin_1900",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "5ff0f4e8c28328f29553e0566b3b3fd7cc13f48451a5fd9961ac224e5e336e2b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.13,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zhang_zuolin_1915",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "d16a44efd6a916af01620784bc4f14081fc6be2ba733ec70b3de75cfebfb784f",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.65,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zhang_zuolin_1928",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c871582e9708a4ae59281a40511e8751e8449311cbda28f9b00d9a4953c1556d",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.79,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zhang_xueliang_1936",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "efc0aaa085ca514ef3a2f216e953cd4e879b701ced319fb62619365477f9fdf4",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.48,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zhang_xueliang_1955",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "460fe1823bf8bd80a97487d75c9010520c9862e381c79fbb536cd3cc336d72d3",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.1,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zhang_xueliang_1995",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "38ed7e91fd81b82b71ac75a41af30738b57c88e290622254d6d76fccc809ddfb",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.17,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_feng_yuxiang_1907",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "771f8f3ce8bdf92ac2ca935c639988b2172980d6f1d8525a011c899ec8bda7bd",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.41,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_feng_yuxiang_1934",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "e671bd4cdde2bada3e9ced8532236a48e67ae42384a9e70f07bb2612ff1d1ae0",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.77,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_feng_yuxiang_1947",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b5ae9cbd24695353a97c4fa4b4b3a12a779776167f37d6b52b848d96053c096b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.48,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_sun_chuanfang_1910",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "dba48b461b627ab4b493f7cd2d1cd809d287aa18103c9f60282537805a6e0d86",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 53.12,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_sun_chuanfang_1930",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3b898008c24e1efe97aad247a4108a117510ac523e1793cccd47437980cc0e83",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.55,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_sun_chuanfang_1934",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "afce79ad791c1c7755900c181dc3060736b9b92181f3dbacf8e1207ffd8d3738",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 55.35,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_qi_xieyuan_1910",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "d412cc19e3d022b01918fe7b67c8b78fe74d88993b361983be0eece67fd7e924",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.87,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_qi_xieyuan_1937",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "d51afcf26b8d9ae227c91ca928d37e558a39c54f1e20a318b5ceea50fa433b39",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.14,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_qi_xieyuan_1945",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "188195c75c5967b028abd56c47150c9415316ccc317392e0bfcf5bc5cd3dabee",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.14,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_lu_yongxiang_1892",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "65d93058b18517c46a21007925537fe3f17c550d289dd19d7bc10dff23e5525a",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.06,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_lu_yongxiang_1907",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "7e8b17c555c791ac6a93631740580672b4fed0a2ebe6c7a4df42a37b81aa1463",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.38,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_lu_yongxiang_1932",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "ee6f82369d42c53a3b95bc17854358889ba9935519661ccc74942191874120ab",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.33,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yan_xishan_1908",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "7af742513a74f1a483e72fef60c0199ebc07ea37e6ea8e035d5346007a039366",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.2,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yan_xishan_1938",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "58c84a7f1afe1e5a26827d0492fa87dae406e1dc4805a8eff6b37ec6a9d6d564",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.02,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yan_xishan_1958",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "79e723d908a23d0ed25fee3decb64b10c814ff73b75397f2223027d97208de6b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.27,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_tang_jiyao_1901",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a018bb714ac5a6c717517dd9fb9fd42459d847d78ce97d4b6915a75fbed96d40",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.93,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_tang_jiyao_1908",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "1aacf71ee6842e3aeceb898b2129f9f993e5730773729a8923fad7439b775d19",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.05,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_tang_jiyao_1926",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "bcb0de25dfa492eee03b98cda6bcad4667921a4fa6072d254e61f4cb68df60fe",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.82,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_chen_jiongming_1903",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "0de6ac7c48974a8adf4d23f16ad0a51b9b35ef3109fc8552da8f02afcab0efaa",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 55.61,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_chen_jiongming_1914",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "766b463bb00d87be60eaa104a6f93837e74d77086a639de3057bc8257d58796b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.41,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_chen_jiongming_1932",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "d3aacafefcc5d795e6d296f5154c6b9f1d4d91b5028dcc47decdb7f7180c1226",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.12,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_xu_chongzhi_1912",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c9efd3edc56e558896c1dbbe1303f888ec65786eac72ccab73574a6119041c80",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.14,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_xu_chongzhi_1940",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a475a0400056b70c9c1f1a88afed421547b43f14dc1b55138db2fc9ce0b94253",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 56.68,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_xu_chongzhi_1960",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "715f08f7e578ea66ad4dd6e03a79f303fb5c0f298539c8aedd3b812d2b8b4166",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.42,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_guo_songling_1901",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "53defbbb128c4ec842edc4b86e36c02b371d4a64361d06608b6d1baa20765699",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.91,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_guo_songling_1910",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "0f7b9eba7a9a91c3f768324b73c1152c63d472318f2ff0b0b7157eae487b7283",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.56,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_guo_songling_1925",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "62bb98342c843dab22d76e802f375baf51253b5055ee38d233dbfd04ac21969b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.19,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_lin_zexu_1810",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "25d5ea3fc64defbaf51322f3abc70db23f4c6b64297ab5a4981919ba3d83bbf2",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.37,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_lin_zexu_1825",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "610b645aebd74ca9b60a825a33b3c6ca0e5c9cac9496cbe0d6b8c4eafb5c4ad3",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.31,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_lin_zexu_1849",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "4afb09a52d698fe9d76d56c9fc676b1b8560b67d49229908705cda2a9088b515",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.27,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_hong_xiuquan_1835",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b3c543b1c8df98f187710612184b9187dd5c6aab09d731af16da00f11e4de505",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.13,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_hong_xiuquan_1845",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "95d15f079ebca2fc6d3cf5b6f17e5e7a77a5c7207620aa768ec84d8de156eec8",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 56.22,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_hong_xiuquan_1855",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "f469089727725a5d8f04e1e7df90f777105d1e01fdac506209c6b26ca77977cf",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 38.69,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_hong_xiuquan_1863",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "ce91638cfd363565c37e3c905f423a519f7fca552669b62a64c3e4756e79c2bd",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.02,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zeng_guofan_1836",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "336692d232e01d356eb8ec0c12de0beb3d60d16b5e436b77413b29cd09758d60",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.67,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zeng_guofan_1851",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b230d38830ad0540253384e0b95ed43943be76f6b9b96f74094b847e1d91fcdd",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.57,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_zeng_guofan_1871",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "cf488f15cf54f3a3088bfa58c09d7c562e3a148887400b422410fbe161087fd4",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.01,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_li_hongzhang_1848",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "57ef4ec117c0f8d65f888819b1c76647c4c2f6c32cc4f663491cd19677d267d7",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 53.74,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_li_hongzhang_1873",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "ea1eb90f6a78b22ff68d5fa59c1a68c246b66c90c730964a85a4ff88ae80357c",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.53,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1863",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3a4bdc4b7011f7eefc5f99c755d0fa5b2114543bca32be67efa0cb91d2904755",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 56.14,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1878",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a86d6c8ef0f358580acec8f091184f5c81eb975bb07d779be37784742ea902e5",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.03,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_waldersee_1857",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "6886b10fe475fc37677428d8c761756202bc928de7446e1b28edafbb13071446",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.37,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_waldersee_1872",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "d4803571c6d59464adb75fe163414deabccaf70a1d89b6f20128f318b0b5d03a",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.32,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_waldersee_1887",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "d3c84876a4f76cbf3e4a43fea3ee1c607086003e334e9e1b0506e7e540af1044",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.47,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_kuropatkin_1873",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c446404bc3b74df180ae0b055ca5dae63875275631fe70e88d0a9fa718226fc6",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.85,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_kuropatkin_1920",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "4e3d099ef61e5e4b48999053599cad2d95210428e9ae194575543bd4ebe92674",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.89,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_sun_yat_sen_1891",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "570c4e76daac2622c6bbf93de8c16dc26b2600abd1cea93854139ee44d5a6f8c",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.86,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_sun_yat_sen_1906",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3685e04eb77701fd4386581ab0b0e83acae06d867d539b60e73a0dc2beca89ce",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.5,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_sun_yat_sen_1924",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a70ccb87b5903a6aceb5fe683668b4e822adf32462750cd955215990b9e559aa",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 53.51,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_duan_qirui_1890",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "43f7a076ed454a5714f6a882420f2977b43077663a59b620f9d24fc53e77ffe0",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.89,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_duan_qirui_1905",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a3097b45355f70ea48750fa744d4970ee8b42fc79b517f2bfe52843aeaa191c9",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 53.67,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_chiang_kai_shek_1912",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b5a5626f537b2ffbc69e62ff626aee7b2ed9003180e7ebefe33e71273a67748f",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.12,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_chiang_kai_shek_1969",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c0732026c4c1d0be5e43aad8e2688df40a189e19d8822f5efc27fbdc26606af1",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.16,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_li_zongren_1916",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "68ddc3936eb7d87971e232f41cf4f3eee72b3d544281238e749e772473285979",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.54,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_li_zongren_1965",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "db3e974279e1615c90f0e51b2dd84cbf1442bf07b65db042bbfc9303c9fc67bf",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 50.49,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_bai_chongxi_1918",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "671e7b8e070138dc6157bac62e522359473ee2c5372fea640207068c25aa35c5",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.38,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_bai_chongxi_1963",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "e99ac0997918e9d475d4829e7ec547e85573eb82ce3cb06ca9b5136243d81f2f",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 55.17,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_mao_zedong_1917",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "df61fbb551259a2ebce74253131a4d2b685f9a25afaed3de3ab3b052c62ec9b4",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.85,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_mao_zedong_1947",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "ec00f4add506a0cca781a3cb81cbd8efc23deec860bf66bcc1d8275988349ed5",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.15,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_mao_zedong_1972",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "e8b5d32406a416dcf1e3429065a9b7f408a2d8cd1ff92bd304495d328a78490f",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 43.0,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_peng_dehuai_1923",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "616ad9205861bc9376d1e951a9db3db5aaaa32cd8c4b02b84cc399c55a647781",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 53.53,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_peng_dehuai_1933",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "51f30a0d28e171a4d024322166356c0fe478f99a1d321e114bc25647d66b7502",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.96,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_peng_dehuai_1970",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "4a297743cbeb47ddc308456c25f5bb0278375f11181c4d7b33fce3655478d183",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.55,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_tojo_hideki_1909",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "35e3d7d90b5c9d10627fdc4e79e6df134238ddf2317f49aaf2d5c00c5842729c",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.71,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_tojo_hideki_1924",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b45502daa047cf387561f969fd8258e8d535a6060b30807f9145ba867bcabe8a",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 49.02,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_tojo_hideki_1947",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3ae73607d8da9619a879bdd489341f158238503b6e41f1e0e7ec0690819807f8",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.89,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yamashita_tomoyuki_1910",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "fb481c5a8a4a1fa14c583224c82a9a2b2dd460e331b451989993c9524c56ae1d",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.8,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yamashita_tomoyuki_1925",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "a6e94297f89fef01308f1ad13776329cf454bec0b58ecde216c81c225fb241cb",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 55.69,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_yamashita_tomoyuki_1945",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "51d9a9b5f137aa95bd63b6454995f8ee3e98d4fb8840b7dbb7609eff76376c96",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.56,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_alexei_kaledin_1886",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "33f9bf36cb4b4e67fe4fd38e3a4a9a07b6ca712e383de9e407edcb6d57873550",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.67,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_alexei_kaledin_1901",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3da5b7fdc2a14877622fb48f0615248291c8f69e4f58f42951c4d1f44541d529",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.65,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_alexei_kaledin_1911",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "18303f6b31aa18396982150f785700e6a79129bb7a4dfd313cd95ddd3107451b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.87,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_daoguang_1807",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "9c4e82e6e5b87c63858e1d072a0b3eaeb78d60b76d38d7f0b434ce23350ec60a",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.79,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_daoguang_1822",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "82a1370849b730891ca2307b25132d5c1b9456f5bda132fe9e1a968c093746e3",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.19,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_daoguang_1837",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "0d1c29472b669c74836d20edfea62f3b08fbf21ecf443f231bbf294e6bd3d631",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.77,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_daoguang_1848",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "9c603dade5cba001b61a5ecc5252965f243d4e1a8ca4a5e7d2cd44900fdb8e0e",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 48.15,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_xianfeng_1849",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b0578cc68178f9d523548e188df3c7b6adb1e8b1dc302491a6c8627bf8f72283",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.21,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_xianfeng_1853",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "cbc28ba967a5d950b4ac854be86636e738c30c05f333319a36311106dd57d317",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.08,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_xianfeng_1857",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "85c5e667b6830d4a25c800cb8d9da9e3ee59c63c50a673f87d3831fee1b93198",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 56.18,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_xianfeng_1860",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "d61b6df35408bc9888952110d52ae6fbe37414a1bf21a8ed0849ab27b22304e0",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 53.05,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_ito_hirobumi_1864",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "9235346efe45cfeb4030b8e07794e6fcf07f782b88617fb1c24f6dea149f0eba",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.29,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_ito_hirobumi_1878",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "1cdb5ebcfb53b97a4896241ac1e9df6b892d99b91d65082dc41a4b38553bac66",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 53.88,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_ito_hirobumi_1895",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "c798ce7406e890e543693fcaf0831c280198e09f880e20398b6a7d7cd31724a9",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 54.2,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_ito_hirobumi_1908",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "460ee6448e987703887cd309d911caa886e1c5435d8dd7d08b29d316ad3be025",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 53.99,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_nicholas_ii_1890",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "7052206b47e58706875c68494c3c7edd3a7250cfbc11e4de093553dada85ca75",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.7,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_nicholas_ii_1900",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "77e5d6e7778fa1401acc38073b82ba9211fb4a140bfe5b6ff4d063209dc889dd",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 55.57,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_nicholas_ii_1910",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "3f8b0907d989c77b57d5765e2678f0e06faa6b479418603932f393dfcb50a2f7",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 51.11,
+      "review_state": "source_reviewed_runtime_pending"
+    },
+    {
+      "id": "portrait_nicholas_ii_1917",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b294392c44069557d03cc7410892e1106286f847643b607fc58530924bb899ae",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 46.22,
+      "review_state": "source_reviewed_runtime_pending"
     }
   ],
   "audio": [
@@ -14275,9 +15752,9 @@
     }
   ],
   "schema_contract": {
-    "descriptor_sha256": "a9f9da0b014bfbd3c49a76bd75e13e2e2293abaa7f600e8519be4ae3ad82b530",
+    "descriptor_sha256": "84180e022e9cce5bc98317e2b5f177dacb3868a3e2a96ec935a85a484895c8e0",
     "previous_descriptor_sha256": "2fd5d2c87dd7a421c1bd5927437e83c04f4705cd6995162db87edffac5c81339",
-    "sole_descriptor_change_is_ruleset_7_to_9": true,
+    "sole_descriptor_change_is_ruleset_7_to_10": true,
     "matches_runtime_ruleset": true,
     "stale_ruleset_rejected": true,
     "runtime_schema_file_references": [],
