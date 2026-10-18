@@ -18,6 +18,7 @@ var hq_portrait_stage="middle"
 var political_portrait_stage=""
 var hq_query=""
 var tech_branch="infantry"
+var diplomacy_target=""
 
 const TITLES={"campaign":"战役档案","conquest":"时代征服","legion":"军团训练"}
 const OBJECTIVES={"capture":"突破城防，占领目标城市","hold":"占领并连续守住目标","escort":"护送指定编队抵达接应点","survive":"保全主力，坚持至事件结束","repair":"派遣工兵，抢通受损铁路","destroy":"消灭指定敌军编队","capture_commander":"俘获或击溃目标将领","unify":"统一战略节点，或在期限内以积分获胜"}
@@ -124,6 +125,11 @@ func show_browser(mode: String) -> void:
 	var map_content=app.column(map_shell);app.ui_kicker(map_content,"战区沙盘  /  北向固定 · 当期铁路 · 城市节点",app.UI_MUTED,13)
 	atlas=WarRoomAtlas.new();atlas.name="WarRoomAtlas";atlas.configure(app.content,app.assets,scale());atlas.custom_minimum_size=Vector2(260,180);atlas.size_flags_horizontal=Control.SIZE_EXPAND_FILL;atlas.size_flags_vertical=Control.SIZE_EXPAND_FILL;map_content.add_child(atlas)
 	atlas.faction_selected.connect(func(owner):browser_owner=owner;select_recipe(browser_id))
+	var atlas_controls=HBoxContainer.new();atlas_controls.name="AtlasControls";atlas_controls.add_theme_constant_override("separation",6);atlas.add_child(atlas_controls)
+	for item in [["AtlasZoomOut","−",func():atlas.zoom_at(.8,atlas.size*.5)],["AtlasZoomIn","+",func():atlas.zoom_at(1.25,atlas.size*.5)],["AtlasFit","复位",func():atlas.reset_view()]]:
+		var b=app.button(atlas_controls,item[1],item[2]);b.name=item[0];b.custom_minimum_size.x=maxf(touch_height(),b.custom_minimum_size.x)
+	var place_controls=func():atlas_controls.position=Vector2(maxf(12,atlas.size.x-atlas_controls.size.x-16),16)
+	atlas.resized.connect(place_controls);atlas_controls.resized.connect(place_controls)
 	var brief_shell=app.ui_panel(left,"ui_dialog_frame",Color.WHITE,16);brief_shell.set_meta("ui_light",true)
 	browser_brief=app.column(brief_shell)
 	var sidebar=app.ui_panel(body,"ui_hud_plate",Color.WHITE,12)
@@ -297,27 +303,8 @@ func general_portrait(parent: Node, d: Dictionary, rank: int, date: String="", s
 	app.label(copy,"步 %d  炮 %d  骑 %d\n海 %d  航 %d  后 %d"%[d.stars.infantry,d.stars.artillery,d.stars.cavalry,d.stars.navy,d.stars.aviation,d.stars.logistics],17)
 	app.label(parent,app.content.definition("skills",d.passive_skill).name+" / "+app.content.definition("skills",d.active_skill).name,17)
 
-func show_diplomacy() -> void:
-	var state=app.match_controller.state;var player=StateAccess.faction(state,state.player_faction_id);var v=app.modal("外交事务 · 关系与条约")
-	app.label(v,"本阶段  提案 %d  ·  宣战 %d  ·  援助 %d"%[player.diplomacy_orders_left,player.war_orders_left,player.aid_orders_left],22,Color("735d3e"))
-	app.label(v,"停战与同盟包含借道、补给权；行动消耗、冷却与最低条约期限由当前战局核对。",17)
-	var g=grid(v,420)
-	for faction in state.factions:
-		if faction.id==state.player_faction_id or faction.eliminated:continue
-		var relation=StateAccess.relation(state,state.player_faction_id,faction.id);var acceptance=DiplomacyRules.acceptance(state,state.player_faction_id,faction.id)
-		var c=card(g);var top=app.row(c);var strip=ColorRect.new();strip.color=MapView.TERRITORY_COLORS.get(faction.id,Color("70838a"));strip.custom_minimum_size=Vector2(7,52);top.add_child(strip)
-		var text=app.column(top);app.label(text,StateAccess.faction_name(state,faction.id,app.content),25)
-		app.label(text,{"WAR":"交战","NEUTRAL":"中立","TRUCE":"停战","ALLIANCE":"同盟"}.get(relation.state,relation.state),18,Color("915b49") if relation.state=="WAR" else Color("526e65"))
-		var meter=ProgressBar.new();meter.max_value=100;meter.value=clampf(acceptance.score,0,100);meter.show_percentage=false;meter.custom_minimum_size.y=12;c.add_child(meter)
-		app.label(c,"提案评分 %d / 接受门槛 50"%acceptance.score,18);app.label(c," · ".join(acceptance.reasons),16)
-		if relation.minimum_until_round>state.round:app.label(c,"最低条约期限：第 %d 回合"%relation.minimum_until_round,16,Color("735d3e"))
-		if relation.break_at_round>0:app.label(c,"解约生效：第 %d 回合"%relation.break_at_round,16,Color("915b49"))
-		var buttons=grid(c,150)
-		for entry in [["declare_war","宣战"],["truce","停战"],["alliance","结盟"],["break","通知解约"],["aid","援助50军费"]]:
-			var slot=app.column(buttons);var reason=status(slot)
-			var command=app.match_controller.command("Diplomacy",{"target_faction_id":faction.id,"action":entry[0],"passage":true,"supply":true})
-			if entry[0]=="aid":command.resources={"cash":50}
-			action(slot,entry[1],command,reason)
+func show_diplomacy(target: String="") -> void:
+	diplomacy_target=DiplomacyOffice.show(app,self,target if not target.is_empty() else diplomacy_target)
 
 func show_headquarters(tab: String="", branch: String="") -> void:
 	if not tab.is_empty():hq_tab=tab

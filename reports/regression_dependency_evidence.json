@@ -1,14 +1,14 @@
 {
   "passed": true,
-  "game_version": "0.2.23",
-  "runtime_source_sha256": "4aaadd3235b8bdaa0c5fb669fa8bed428decbf5a415523eef72aaeb3719bb501",
-  "created_at_utc": "2026-10-18T16:52:55.738955+00:00",
+  "game_version": "0.2.24",
+  "runtime_source_sha256": "17eee6c2cb147867b19a102a4fc76a769b3f1fe632a36fd06b3566209ce942f5",
+  "created_at_utc": "2026-10-18T19:24:13.025089+00:00",
   "scope": "Conservative global-class and explicit scene/script dependency closure, plus all content, schemas, fixtures and raster/font/audio bytes. Native exported screenshots and performance use the complete runtime separately.",
   "checks": [
     {
       "check": "run_tests",
       "passed": true,
-      "dependency_sha256_at_seal": "87c989fdf67448d00872034d22aa9052051ab2f34a0a64be133cdb33f6716161",
+      "dependency_sha256_at_seal": "8c16f9743e290f98f60a19128e82cd72258ae3aebd9b910cc047c58272ab50fd",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -1495,14 +1495,14 @@
         "tests/run_tests.gd"
       ],
       "report": "rule_tests.json",
-      "report_sha256": "00626e160ea9ce3effd67c2af583ff489e81029d0e83b2c40675ed572799bb76",
-      "log": "run_tests_v0223.log",
+      "report_sha256": "179be8e96f7490ba754bfb77ab15d011710b740fc9db5ce7fb8f9f0d91ffb965",
+      "log": "run_tests_v0224.log",
       "log_sha256": "d29f0b0bc26402b0fbbad4424f42124d77ede66c359883d3eb7173785408219f"
     },
     {
       "check": "acceptance_test",
       "passed": true,
-      "dependency_sha256_at_seal": "8de70c3b5367b40d281bddb40df8c84ce468dfd42d372d9024628f5f32767827",
+      "dependency_sha256_at_seal": "278467632d57c46f27fd52dcae42b9aa8ea03a0709659096d81f19610abf13c5",
       "dependencies": [
         "ai/ai_planner.gd",
         "assets/audio/music/01_menu_embers.ogg",
@@ -2989,14 +2989,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "acceptance_tests.json",
-      "report_sha256": "cd1df9c7f5f1e290426381ccbb2e769df3f1cc4a6cba32a02378bf285fbf4a38",
-      "log": "acceptance_test_v0223.log",
+      "report_sha256": "8accec3ed535efa82c64f58bb4cc847184cee46b7082fb13593fc7a9cfaebcfd",
+      "log": "acceptance_test_v0224.log",
       "log_sha256": "b403d43a2a5b0fd54612d077df5029bbdf719e6bd58801113767a54830fa6cdf"
     },
     {
       "check": "input_test",
       "passed": true,
-      "dependency_sha256_at_seal": "526cf59d98adec835c93aeed6b1b451f89fc927157745c1c15d1627a23dac3cf",
+      "dependency_sha256_at_seal": "5bcc9adece0b151fe3c1839d8f326e9326d3acfe5451aa56d0fad45b97395fa3",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_benchmark.gd",
@@ -4501,6 +4501,7 @@
         "presentation/data/terrain_surface_plan.json",
         "presentation/data/terrain_surface_regions.json",
         "presentation/data/unit_actions.json",
+        "presentation/diplomacy_office.gd",
         "presentation/facing_memory.gd",
         "presentation/general_dossier.gd",
         "presentation/general_portrait_view.gd",
@@ -4536,13 +4537,13 @@
       ],
       "report": "input_tests.json",
       "report_sha256": "17a28801d943ddc7023f7bd3f9c303394d76f53340c1862828eee5353393a4a6",
-      "log": "input_test_v0223.log",
+      "log": "input_test_v0224.log",
       "log_sha256": "9e06b7cb1c3e527a5cecdca2aa5f4d638381ff3ad914e306fcde82c391fe822a"
     },
     {
       "check": "geography_test",
       "passed": true,
-      "dependency_sha256_at_seal": "15016999db14ac08b68b53ab4a8e468e8118adb3ea3062287d71f9c1992e97e4",
+      "dependency_sha256_at_seal": "47b746e7244a97610bad52624ab8981e65b9abd13a845b976095f79f54d75767",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -6027,14 +6028,14 @@
         "tests/geography_test.gd"
       ],
       "report": "geography_tests.json",
-      "report_sha256": "1813df5a25defb32f867f330d9597474ba050e7c68404e8e5452a5668ea1d366",
-      "log": "geography_test_v0223.log",
+      "report_sha256": "14cd1507b42d3272e714a85c68426fe45e3ed74153b78c6e4a9f481c9a38d611",
+      "log": "geography_test_v0224.log",
       "log_sha256": "8eb0adc459a71e3d361c24bef99d2cca3c528434319c799730263c16f20e88e4"
     },
     {
       "check": "progression_test",
       "passed": true,
-      "dependency_sha256_at_seal": "e1782325097b9e7d67d9550b982802aacc813aa88381d2cf110d770ad2acc709",
+      "dependency_sha256_at_seal": "d8e28932ba8be84ec8564260997f721e6ba2998e2c7437efbfa30a903c218bd1",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -7521,14 +7522,14 @@
         "tests/progression_test.gd"
       ],
       "report": "progression_tests.json",
-      "report_sha256": "85411c1f4df1e4191ee2f728540136d0f110db325056eafd2985ba3932343ff6",
-      "log": "progression_test_v0223.log",
+      "report_sha256": "ee108a31981633ceee3c6f698abdb2e69f31d2cf809ced70de23a19f9b240468",
+      "log": "progression_test_v0224.log",
       "log_sha256": "67734ecd9c8ac01810f00134624999c112316a12702279162544f265e5026d08"
     },
     {
       "check": "transaction_test",
       "passed": true,
-      "dependency_sha256_at_seal": "76e895c66a0f98d2cdc2f7c547da8fa55c8a2d8c841d43d9679d4f7a42f3babf",
+      "dependency_sha256_at_seal": "7106578dcd94279361a6a13df62a3411c8a88d5623a8b76e3ade61441ce4f170",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -9014,14 +9015,14 @@
         "tests/transaction_test.gd"
       ],
       "report": "transaction_tests.json",
-      "report_sha256": "7cc0a26fc143fff029faf9e493053c9e484bc1aca9c65d9b8c7b04e245178e71",
-      "log": "transaction_test_v0223.log",
-      "log_sha256": "cf1aed75bbf162d5be16fca4547489b10a494518c6a35dd5ef8e50800ab3ac85"
+      "report_sha256": "d76fbafea783a0240fb5881d7b1a942dde14b0c611143402da27229c36b0075f",
+      "log": "transaction_test_v0224.log",
+      "log_sha256": "0e1c08a3eabf3795e5bad04b8c86a74d671f90d9687d9ba581483a4fc62c0779"
     },
     {
       "check": "strategic_history_test",
       "passed": true,
-      "dependency_sha256_at_seal": "0a0987fec895d23f96206623d86d0e5044bf156a0a14e288cb3982b42e9eb58b",
+      "dependency_sha256_at_seal": "de0522c65123f4aed6416e97ada8079b77396f2707d96d66a5a29285325abee5",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -10505,14 +10506,14 @@
         "tests/strategic_history_test.gd"
       ],
       "report": "strategic_history_tests.json",
-      "report_sha256": "d310dd17049342b65578d2b51a262ff73539f51657a5b6ce2f788cdfa216c639",
-      "log": "strategic_history_test_v0223.log",
-      "log_sha256": "2c884d09366b2712c1c9f9ed1d07e8d1c47008340395f04a6f952181c04cb452"
+      "report_sha256": "4a239619065cda8243d9d7493829d60f6544132c195c5ceb4c5c1eec8ea0406a",
+      "log": "strategic_history_test_v0224.log",
+      "log_sha256": "5b8b0935bda98d54de2522b61996a3a54585224485ea6cde259426b4f7e0b0d4"
     },
     {
       "check": "atlas_render_test",
       "passed": true,
-      "dependency_sha256_at_seal": "e33d39620fed3b63adeb22b90260e3551ddf896e939e135b217e7a31627a5a79",
+      "dependency_sha256_at_seal": "a2dd25b5fcc55e512f79f961bb24a48d9a3760b552075da245cfa94798c2554e",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_benchmark.gd",
@@ -12017,6 +12018,7 @@
         "presentation/data/terrain_surface_plan.json",
         "presentation/data/terrain_surface_regions.json",
         "presentation/data/unit_actions.json",
+        "presentation/diplomacy_office.gd",
         "presentation/facing_memory.gd",
         "presentation/general_dossier.gd",
         "presentation/general_portrait_view.gd",
@@ -12051,14 +12053,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "atlas_render_tests.json",
-      "report_sha256": "f77634aa23643b0b791fc006a79347ec6445b43cdbfbe665f2935e22a778603d",
-      "log": "atlas_render_test_v0223.log",
-      "log_sha256": "5b1bd57e004dfa391d6e30524d6a49f2b09664e8ade8866558327737c31c6b16"
+      "report_sha256": "c1e9a95a6f2de09e386289aeb95a9aa8d577f878fcafe32d490d4fa2e8e05f31",
+      "log": "atlas_render_test_v0224.log",
+      "log_sha256": "e5226894a3410d633072723cdfd1e898600b0c789fdf8cb68afc99acbe068894"
     },
     {
       "check": "combat_presentation_test",
       "passed": true,
-      "dependency_sha256_at_seal": "68305d4406967d3b7ccfe5dcaafedf5c29e2703518edcd3b4ec48272018347c4",
+      "dependency_sha256_at_seal": "83b8d7563bc60c54133bc15154b173792297c3bc69ba2be42d2f699cd3ee4834",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/visual_playtest.gd",
@@ -13568,14 +13570,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "combat_presentation_tests.json",
-      "report_sha256": "9dc2224ad72768a8e670335ce76ba043178d83a3d949cd00ff60c8ca1399f3e3",
-      "log": "combat_presentation_test_v0223.log",
+      "report_sha256": "2765a3c62820e388f9442edec451ceaefa7aae5eb2037eac1b6f730054832759",
+      "log": "combat_presentation_test_v0224.log",
       "log_sha256": "e0055fac0812adc348620afac75e92347c5f922c7dfb836ffa587e533f85c201"
     },
     {
       "check": "automation_test",
       "passed": true,
-      "dependency_sha256_at_seal": "fa2dc95a9a8305ffd81d4141659889ea29f34951cd206f1826369827b571a9a2",
+      "dependency_sha256_at_seal": "c608bfe1eaf719b91724af5800f0358f09355618363a7cc6e881e02b1ba4bec2",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/match_controller.gd",
@@ -15070,14 +15072,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "automation_tests.json",
-      "report_sha256": "12187369ba126c8fcdfacfd8d722a36133eba89f3088a6dc098f76f0c56db2ee",
-      "log": "automation_test_v0223.log",
+      "report_sha256": "66425553d32329e227f5364166ddab1041d807270326ded1a4e79bc83d742184",
+      "log": "automation_test_v0224.log",
       "log_sha256": "52d05dd79fa8c91dd8992acee109c87c53955754d233c36cbe109c40389a2051"
     },
     {
       "check": "rules_worker_test",
       "passed": true,
-      "dependency_sha256_at_seal": "9f36f8e78d39ab69d08882542010bca25cb7d8f366c7ec519deb81cd907c1634",
+      "dependency_sha256_at_seal": "7c1214579cd5d32d547d1d26ee4451556f3136233dc96a68d8cd82dd664fc03f",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_fixture.gd",
@@ -16573,14 +16575,14 @@
         "tests/rules_worker_test.gd"
       ],
       "report": "rules_worker_tests.json",
-      "report_sha256": "a96e62d4347dc1b4c84bd84f61d83092cf4f49510cff2503ce4b6572d2c5b0fd",
-      "log": "rules_worker_test_v0223.log",
-      "log_sha256": "51a7fa16bf8aedd87daa845a1c44dff035b79eeff00f239c850fc5df3c8598d5"
+      "report_sha256": "a184043317c92365f7b4448ff3ca38a99ad11ebe83568ecfd87ba23d92fb4875",
+      "log": "rules_worker_test_v0224.log",
+      "log_sha256": "8c59c2b53eb6198360d7c5c970d325acd65b861177e28ac63f89f0ead10cb15f"
     },
     {
       "check": "map_scale_test",
       "passed": true,
-      "dependency_sha256_at_seal": "78b5b6540189e0555ae5517774be5d53b11d30811c42f63501b58146a886108b",
+      "dependency_sha256_at_seal": "62e85b5805b3a6105a9e443bfa9200321fce30bd795eb66ed5f15e484c30ed50",
       "dependencies": [
         "app/capacity_fixture.gd",
         "assets/audio/music/01_menu_embers.ogg",
@@ -18067,14 +18069,14 @@
         "tests/map_scale_test.gd"
       ],
       "report": "map_scale_tests.json",
-      "report_sha256": "2b897bbff118e5180d6706f66922fa58bb9eb083257bcdfb30301e0681728d59",
-      "log": "map_scale_test_v0223.log",
-      "log_sha256": "892524ceb4102a0e26cd907f12baf97850e5e5dfd9ed5fc92edcf00327fa308f"
+      "report_sha256": "f1f67deaeab66e8ac3548622757a3e5538011964a877c21e61fa232b181268bd",
+      "log": "map_scale_test_v0224.log",
+      "log_sha256": "6d7928f0bd0f3bab1a9a44554d087ed0481b64aefe643c20458f39acc069f02c"
     },
     {
       "check": "scaled_logistics_test",
       "passed": true,
-      "dependency_sha256_at_seal": "3d4eb25f1fccc99d32b025a3faf2f64cb7383a4fb6432459f0e6682a3d085858",
+      "dependency_sha256_at_seal": "255eafe28ef1bbfe3e435c2f694b07199358c25e9440ddc5f7021f58a2533cd4",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -19558,14 +19560,14 @@
         "tests/scaled_logistics_test.gd"
       ],
       "report": "scaled_logistics_tests.json",
-      "report_sha256": "01ff977a232d6d1db5dc76b63658dfdd0522fc1150a49a955b618d4a121e38e3",
-      "log": "scaled_logistics_test_v0223.log",
-      "log_sha256": "cad3c0b64d832020924cf66076be48acdc4702c73f540d41bad1a6d9579af360"
+      "report_sha256": "8da0cc01fae9ede9913e6f6dc8fa377fc455150c811564d113e1977b92adce24",
+      "log": "scaled_logistics_test_v0224.log",
+      "log_sha256": "5b785df0e4dac45ad022e1c17a9f53c266a117036e41b3b1bbcccd80ab374002"
     },
     {
       "check": "movement_cache_test",
       "passed": true,
-      "dependency_sha256_at_seal": "9db4a17b961a07f900925a8d1eb07324bdf083256a4df78bbf4fa273192298cb",
+      "dependency_sha256_at_seal": "6cf1a3010005c4657b9cf5bd8ceb07561d5da0c072434433a8198417d65ff021",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -21049,14 +21051,14 @@
         "tests/movement_cache_test.gd"
       ],
       "report": "movement_cache_tests.json",
-      "report_sha256": "1fe97a26f7b08ede358ebacfcf1c8e6662fd26e2fc457f0a11a3d35a1244ce91",
-      "log": "movement_cache_test_v0223.log",
+      "report_sha256": "9e1bb271de195eef11f8e0852c350714394c40928e0c07ef721b88c9812dd937",
+      "log": "movement_cache_test_v0224.log",
       "log_sha256": "487e556c83144cb722792724eb49fa5bbcb3f69209b50e9c49d2d40ec5c54a9b"
     },
     {
       "check": "historical_places_test",
       "passed": true,
-      "dependency_sha256_at_seal": "da3513ddda2163eaa7ef30bba61b8ee65767e51db916595dd677ac0d4b73832a",
+      "dependency_sha256_at_seal": "c6dd13f0b02896484c23d094a344c5633aebee779c2da50467f985819352dcfa",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_benchmark.gd",
@@ -22561,6 +22563,7 @@
         "presentation/data/terrain_surface_plan.json",
         "presentation/data/terrain_surface_regions.json",
         "presentation/data/unit_actions.json",
+        "presentation/diplomacy_office.gd",
         "presentation/facing_memory.gd",
         "presentation/general_dossier.gd",
         "presentation/general_portrait_view.gd",
@@ -22595,14 +22598,14 @@
         "tests/historical_places_test.gd"
       ],
       "report": "historical_places_tests.json",
-      "report_sha256": "9f2fc9bc59c0aa96bac04d39cb26596c4b54d485c05748e74820835ffaedba5e",
-      "log": "historical_places_test_v0223.log",
-      "log_sha256": "6cfa92b1248bc5d4db5bf4d598994482a5194f1bc533ddbd4aa44af496bff059"
+      "report_sha256": "b5662f4adc69cf33783d77c6a24e77b30ac710774af38e301624a9dcc9fae848",
+      "log": "historical_places_test_v0224.log",
+      "log_sha256": "565b899894b09bf0db150a05823cdee63dd31e81c3f8abd33a0cd4a009c638f6"
     },
     {
       "check": "snapshot_optimization_test",
       "passed": true,
-      "dependency_sha256_at_seal": "f3fa34c3ecf730ae3a4bcf8e2fdd29acb20d7700c2f179e99c4c1a2f5e276201",
+      "dependency_sha256_at_seal": "d59a353928f6f769c8dbc9d9f0ebf0b196c55d0a2f0fb0e8bbe6de2a55d12f2d",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/capacity_fixture.gd",
@@ -24093,14 +24096,14 @@
         "tests/snapshot_optimization_test.gd"
       ],
       "report": "snapshot_optimization_tests.json",
-      "report_sha256": "94a75284a08fe52bf61ac2a52f518cd9759c01c498d6caf8fbad2e06fc431c55",
-      "log": "snapshot_optimization_test_v0223.log",
+      "report_sha256": "2e93e61c3d5a1f96a5ba50ed609915b1f45b1ee6f3c889483ec5d3905a4e69d1",
+      "log": "snapshot_optimization_test_v0224.log",
       "log_sha256": "b221118ea2c7e3a2be65eae3d8bc0f7ae9ab592a7d426900ba7d86d02942f5a4"
     },
     {
       "check": "asia_content_test",
       "passed": true,
-      "dependency_sha256_at_seal": "b4d7e1e06311da9c2e84e9eeed18a1e309ba25eab75131fcb7cc0adb5b99e307",
+      "dependency_sha256_at_seal": "3f9a86d77b306e30adba8964de0f879a6f3c0e86d69ccf33cec6a025a765858b",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -25584,14 +25587,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "asia_content_tests.json",
-      "report_sha256": "756e0aa783e831e6eade665ac2042e0292ed748d95940dd75f5b8c81ea236dda",
-      "log": "asia_content_test_v0223.log",
-      "log_sha256": "b8df260d64f14a74041f08426544db17434ae1039cbe2eb3b0531e293184cd9c"
+      "report_sha256": "a89b5849198353837f1827ac7c220295f4c0cf99af19ca9f2975d136fb854395",
+      "log": "asia_content_test_v0224.log",
+      "log_sha256": "6db4717bd5b7c801cf6a902803385d87b2caa7cc27e08387d28173690c08bafe"
     },
     {
       "check": "map_detail_boundary_motion_test",
       "passed": true,
-      "dependency_sha256_at_seal": "32ccad45129b81ca372816d20e383f2e2977ffa0e9391f5140ad8443bce234f5",
+      "dependency_sha256_at_seal": "ee43a71266f789210258c9184a4e3374486831289bfbdff5be979a2e90ba82b9",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -27096,14 +27099,14 @@
         "tests/map_detail_boundary_motion_test.gd"
       ],
       "report": "map_detail_boundary_motion_tests.json",
-      "report_sha256": "caf5768aabf6f966126bf0ff0f26d494da5669173221cc4ff2b5b60835cdce0b",
-      "log": "map_detail_boundary_motion_test_v0223.log",
+      "report_sha256": "a3c781dafeb8d2c24c52053b76ba85fbd0d0bfb4ac2b1606fdac6c1f23c33b41",
+      "log": "map_detail_boundary_motion_test_v0224.log",
       "log_sha256": "89f1866afa6cafe3029cea4efaea1212be388ff829641e34fc116f2d29f66bce"
     },
     {
       "check": "facing_memory_test",
       "passed": true,
-      "dependency_sha256_at_seal": "f7bf812aeee533f4a961b2f9c4b8a5734befe799012addd9f0ca2db7aec6f9cf",
+      "dependency_sha256_at_seal": "7b39288ac1af1573d226b8708233bbfbd4563f085007c86a3def825d84466322",
       "dependencies": [
         "ai/ai_planner.gd",
         "app/visual_playtest.gd",
@@ -28613,14 +28616,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "facing_memory_tests.json",
-      "report_sha256": "27ee9ffa2d1ebc243fccc32237a51d1b90c566090bbe6ce9f8e211d912cd092c",
-      "log": "facing_memory_test_v0223.log",
+      "report_sha256": "7d1adfb4b662adb03ace706a9f558ee4fe52bd16cbd1f85af35f7c3399efd0ef",
+      "log": "facing_memory_test_v0224.log",
       "log_sha256": "24ebcfca739154676d1f112c1c2fe05c9d55b94637231bf8f2b8cf65a798f610"
     },
     {
       "check": "relief_surface_test",
       "passed": true,
-      "dependency_sha256_at_seal": "46fde0a7bf805e1f2a564ea30135e23cc33b80775d24e850ed16a91bbab6b7d7",
+      "dependency_sha256_at_seal": "0b954be38aa6d179f781ad4ff236601c83e668d444f0e641c96abf4abebdf979",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -30125,14 +30128,14 @@
         "tests/relief_surface_test.gd"
       ],
       "report": "relief_surface_tests.json",
-      "report_sha256": "be83545fddb5846dd7625be5dcd9e5740f3102ffce2c04e73f2a2e2c54cdd986",
-      "log": "relief_surface_test_v0223.log",
-      "log_sha256": "44f797aba93e2595f0f917611ad279eecc64fea8b7cf5eabc7392a3761f5991a"
+      "report_sha256": "a0743a9040694306ce398866147b9a93659a4f25023cebf26ed8244e9d9333e4",
+      "log": "relief_surface_test_v0224.log",
+      "log_sha256": "0f55c7cf893912bb8cd0ec63ea280d7389a3822d14c3ba69daa9b5b75c74a644"
     },
     {
       "check": "map_bank_test",
       "passed": true,
-      "dependency_sha256_at_seal": "675e5d721fd15fbb15905e8b5e0a90dd9cce172f80acaf5347e19d2ea4389fb7",
+      "dependency_sha256_at_seal": "292123c751b17d7979129ad01c472ff505e2233f89823ca0f2c942752a27c231",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -31637,14 +31640,14 @@
         "tests/map_bank_test.gd"
       ],
       "report": "map_bank_tests.json",
-      "report_sha256": "e50096a292a83c29dcc1a50d622900a1358562d7c0420294ace72235edefbf88",
-      "log": "map_bank_test_v0223.log",
-      "log_sha256": "68b8ea0ae9cea83fe625d78848b89e51267f4bd2e5404778cda2b7dad7a8b4ce"
+      "report_sha256": "37df5c7aa294fcdfc2b1fd4b3301dbbdda22ade92ba110e6a54c38e24e98d63f",
+      "log": "map_bank_test_v0224.log",
+      "log_sha256": "f6e94fd88955537a19332944d18f454a5f9fdd52413139c2c4200f64f2599087"
     },
     {
       "check": "surface_geography_test",
       "passed": true,
-      "dependency_sha256_at_seal": "94f2549094fae4d3f85913c88f276c966b7cfd8630da4f53e742cca111bd357d",
+      "dependency_sha256_at_seal": "439aa024ab6ebdd2a941a6d2a1b231b4fc22e758bea2551f41844c2bc57ad859",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -33149,14 +33152,14 @@
         "tests/surface_geography_test.gd"
       ],
       "report": "surface_geography_tests.json",
-      "report_sha256": "72d407ff17f58ae9cddf482fcde6932f580af643743fff8ee4813349e4de5bec",
-      "log": "surface_geography_test_v0223.log",
-      "log_sha256": "fcc1acb0ecd169448cc8760981504366070260949a875d1f1103f08dc1fbfdd4"
+      "report_sha256": "534607510a84752faee243ce7f17c5ae22e0ef64e0473c1ea1783522705e2202",
+      "log": "surface_geography_test_v0224.log",
+      "log_sha256": "b4ef2d3b6a4cc7bda645c778b8f26e8fedf0ac12bfb7e6cd18f734200f11afd8"
     },
     {
       "check": "terrain_surfaces_test",
       "passed": true,
-      "dependency_sha256_at_seal": "d5e7f22f3aa45acbd56a88b35bf3a9c20b4e9a42a2ccad2c80f59e73efe2440b",
+      "dependency_sha256_at_seal": "a3502a41ff5bf02f52d7f4493dba65c2635be557fd16430647712aa45c3016d7",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -34661,14 +34664,14 @@
         "tests/terrain_surfaces_test.gd"
       ],
       "report": "terrain_surfaces_tests.json",
-      "report_sha256": "739ecb14d9cbcdb2a794cfdb3309fc58d176fc0d9df2aae50ce71bd7de964abe",
-      "log": "terrain_surfaces_test_v0223.log",
+      "report_sha256": "ec25896cf9ecc0bdb511d6b7520703b5701e7507e3bda9e88e6ce55bacc41b87",
+      "log": "terrain_surfaces_test_v0224.log",
       "log_sha256": "85771cd280bd2d8d6787e353483492e3487db89cabf1cce8e4732eafcb63099b"
     },
     {
       "check": "map_material_continuity_test",
       "passed": true,
-      "dependency_sha256_at_seal": "b03e64efd49ee34d70fccbcca8195c247bbf992574d7413a5cb927895108307c",
+      "dependency_sha256_at_seal": "3e51e21cb4a9b33a9d56f8c02e5a0576b04202f2bbae69e3a7af295736a7f2ea",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -36173,14 +36176,14 @@
         "tests/map_material_continuity_test.gd"
       ],
       "report": "map_material_continuity_tests.json",
-      "report_sha256": "1e3fbef71caf7e0e1bae135ba791e3daa6aaeb6b51d1144e059d6fac64ebf192",
-      "log": "map_material_continuity_test_v0223.log",
+      "report_sha256": "3411e3c04c32b7257a5c50dc60681f0844075bef590d27b839ea161f1562cccd",
+      "log": "map_material_continuity_test_v0224.log",
       "log_sha256": "8455ddfadf9928b49c5472c8795c52af964989380fb4ac480fecee1ef4e4065e"
     },
     {
       "check": "river_surface_test",
       "passed": true,
-      "dependency_sha256_at_seal": "7192dc242c63049ad1a3c4ddc20bc90fa0f8270dcc6cb3dd36a28eee75066e39",
+      "dependency_sha256_at_seal": "b11e0312b96df13c73e9b175740e6137f10049ddab4cd6962c8e7a08251026c3",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -37651,14 +37654,14 @@
         "tests/river_surface_test.gd"
       ],
       "report": "river_surface_tests.json",
-      "report_sha256": "382ce0e9ebf693181208650be65580b0c236f8a9793ddabe4de2cdbe183f2351",
-      "log": "river_surface_test_v0223.log",
+      "report_sha256": "97e0c8fde46ab23ee22c6ac4ba21c3fa1dded2b3a70ca5c206e1d5bc5672340b",
+      "log": "river_surface_test_v0224.log",
       "log_sha256": "55edac77089550d097b69eb6782b1c76e472440c97fe4a40761116c19577a7a9"
     },
     {
       "check": "control_land_clip_test",
       "passed": true,
-      "dependency_sha256_at_seal": "ded81092f2bc1e7ebb268e8f02bd7b0e59b8ae77ef1c32788673cdfff5dd870b",
+      "dependency_sha256_at_seal": "7e5ce1969e855f2ca2c61d7d2e3d07746a665b1245bcf2b770606a2c35722354",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -39163,14 +39166,14 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "control_land_clip_tests.json",
-      "report_sha256": "db82b0359abca6b5ef706cc3994c0b6d6a0eba08700715b99560561d01d3d5f8",
-      "log": "control_land_clip_test_v0223.log",
+      "report_sha256": "ab03a24e8750a6ec54ce741930086cbe2cc77f0feea30f32879560373f7d7f58",
+      "log": "control_land_clip_test_v0224.log",
       "log_sha256": "ab88a222b6613c24884e1c94f50930c27cff4812086c472bae2a2424fa10f704"
     },
     {
       "check": "ground_coverage_test",
       "passed": true,
-      "dependency_sha256_at_seal": "243bd1ca160c27ffc59985116b06c46a429c3e39d1f80f810a484597a288e760",
+      "dependency_sha256_at_seal": "4a30137929f986d667e2610a99954254f387551b934b9b2cf8598c64468970dc",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -40675,14 +40678,14 @@
         "tests/ground_coverage_test.gd"
       ],
       "report": "ground_coverage_tests.json",
-      "report_sha256": "e07f840860f6dbc2fa27354e19fccff329d7c182cc6d0775bd4beb2abfb5de7f",
-      "log": "ground_coverage_test_v0223.log",
+      "report_sha256": "803546cd66c868ae5b306502e9939e829cf4f0852f3778a35fd26e96bc01e07e",
+      "log": "ground_coverage_test_v0224.log",
       "log_sha256": "c018e39574d8b256af89e7953a763dd378a6543f8145fdbcfee680f7d4e54752"
     },
     {
       "check": "general_portraits_test",
       "passed": true,
-      "dependency_sha256_at_seal": "9b814e218bea4c9e2c0d6ac3f269e317bcbf639a55320e91651da1913a0f3cfb",
+      "dependency_sha256_at_seal": "9b1948086bdf27faf82be03f452c118cda24196d55af76633773cf9adce8edfa",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -42152,14 +42155,14 @@
         "tests/general_portraits_test.gd"
       ],
       "report": "general_portraits_tests.json",
-      "report_sha256": "99273ecc36d77421f52c15f1f2b0ee189c72825b0e95faea297f2faf260d69be",
-      "log": "general_portraits_test_v0223.log",
+      "report_sha256": "ac9df81694283edf47e96dba4267e840a25d3f123fed783d947961aed323dea9",
+      "log": "general_portraits_test_v0224.log",
       "log_sha256": "27e1945979fb8e322f65b22edf7d7bcebcfd56e46fbd9ec94b8c56c4a9ac7f0b"
     },
     {
       "check": "calendar_test",
       "passed": true,
-      "dependency_sha256_at_seal": "b9396bdea8056d42f34614cdff08be4cf8fcc1e51f9c482e65f742fbb69d4a68",
+      "dependency_sha256_at_seal": "082a902322bdedf313313b56c50cecaaee23cfacc8fd8ffd0e7726868a7e4084",
       "dependencies": [
         "assets/audio/music/01_menu_embers.ogg",
         "assets/audio/music/02_strategy_rivers.ogg",
@@ -43643,9 +43646,9 @@
         "tests/fixtures/reference_v023.json"
       ],
       "report": "calendar_tests.json",
-      "report_sha256": "ed7003462b85743b2a49f2b584e87e5b0318875a8fd0f2245d8f4cddc6b5034d",
-      "log": "calendar_test_v0223.log",
-      "log_sha256": "ce2a9d85e354588b3e3a85b90405da93706bdf15a2641fbc9f4641c9ffe1502e"
+      "report_sha256": "e06ebbc741e7bdfa34bf015462f23c32a1652ef369d6e23ff6fca6178045743c",
+      "log": "calendar_test_v0224.log",
+      "log_sha256": "dfaa9cd06e8ea5883f39f95212f81fa61fb1388007a30044fdb0654a92402281"
     }
   ]
 }

@@ -34,6 +34,7 @@ static func importance(node: Dictionary, date: String) -> int:
 	return {"national_capital":6,"capital":5,"city":4,"county":3,"market":2,"village":1,"pass":3}.get(kind(node,date),2)
 
 static func visible_at(node: Dictionary, date: String, zoom: float, selected: String="") -> bool:
+	if date<str(node.get("active_from","0000-01-01")) or date>=str(node.get("active_to","9999-12-31")):return false
 	if node.get("id","")==selected:return true
 	var rank=importance(node,date)
 	return zoom>=.48 if rank==1 else zoom>=.30 if rank==2 else zoom>=.16 if rank==3 else zoom>=.06 if rank==4 else true

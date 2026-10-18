@@ -69,7 +69,7 @@ def main():
                 require(im.size == tuple(map(int, resolution.split('x'))), 'Viewport dimensions differ: ' + path.name)
             captures.append(dict(file=path.relative_to(P).as_posix(), sha256=sha(path),
                                  metadata=metadata.relative_to(P).as_posix(), metadata_sha256=sha(metadata)))
-        expected = 3+value['rendered_map_types'] if kind == 'terrain' else 13
+        expected = 3+value['rendered_map_types'] if kind == 'terrain' else 16
         if kind == 'terrain':
             withheld=set(value.get('withheld_without_dated_forest_source',[]))
             require(value['registered_library_types']==20 and withheld <= {'boreal_litter','temperate_litter','conifer_litter','dry_woodland_litter'}

@@ -103,6 +103,7 @@ var cinema: BattleCinema
 var attack_targets: Dictionary={}
 var command_preview: Dictionary={}
 var static_only=false
+var atlas_preview=false
 var static_units_only=false
 var unit_viewport: SubViewport
 var unit_view: MapView
@@ -1214,7 +1215,7 @@ func draw_static_atlas(view: Rect2) -> void:
 		draw_territory_qa_atlas(view)
 		return
 	draw_landscape(view)
-	if show_terrain and zoom>=.10:
+	if show_terrain and zoom>=(.025 if atlas_preview else .10):
 		var scenery=relief.visible_features(view)
 		if MapArtBank.available():
 			scenery.append_array(map_details.visible_features(view,zoom))
@@ -1269,7 +1270,7 @@ func draw_static_atlas(view: Rect2) -> void:
 				# Keep the operational hex visible without letting the lattice overpower
 				# surveyed coastlines, terrain objects and semi-transparent control fields.
 				draw_polyline(outline,Color(.94,.97,.94,.16 if show_grid else .065),.55/zoom,true)
-	if zoom<.52 and not territory_qa_mode:draw_overview_grid(view)
+	if zoom<.52 and not territory_qa_mode and not atlas_preview:draw_overview_grid(view)
 
 func draw_territory_qa_atlas(view: Rect2) -> void:
 	# Keep the evidence image geographic without asking CanvasItem to upload the
@@ -1401,9 +1402,10 @@ func draw_landscape(view: Rect2) -> void:
 	if map_extent.size()>=4:
 		draw_colored_polygon(map_extent,Color("567f84"))
 		if extent_surface!=null:draw_mesh(extent_surface,sea,Transform2D.IDENTITY,Color(.82,.88,.83,1.0))
-	for fraction in [.07,.93]:
-		var at=view.position+Vector2(view.size.x*fraction,view.size.y*.55)
-		if map_extent.size()>=4 and not Geometry2D.is_point_in_polygon(at,map_extent):map_name("图幅外",at,int(20/zoom),Color("756e5b"),.62)
+	if not atlas_preview:
+		for fraction in [.07,.93]:
+			var at=view.position+Vector2(view.size.x*fraction,view.size.y*.55)
+			if map_extent.size()>=4 and not Geometry2D.is_point_in_polygon(at,map_extent):map_name("图幅外",at,int(20/zoom),Color("756e5b"),.62)
 	if land_surface!=null:draw_mesh(land_surface,plain,Transform2D.IDENTITY,Color(.94,1.0,.96,1.0))
 	if water_surface!=null:draw_mesh(water_surface,sea,Transform2D.IDENTITY,Color(.82,.88,.83,1.0))
 	if show_terrain:draw_cell_surface_variants(view)
@@ -1585,7 +1587,7 @@ func draw_cell_surface_variants(view: Rect2) -> void:
 	# ownership remains its own translucent layer above the ground.
 	terrain_surface_variant_draw_count=0
 	var strategic=state.map.get("strategic_scale",false)
-	var threshold=.10
+	var threshold=0.0 if atlas_preview else .10
 	if zoom<threshold:
 		# Far overview still draws the relief mesh. Bind its numerical sampler
 		# even when the detailed ground-material batches are omitted.

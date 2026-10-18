@@ -87,7 +87,9 @@ def media():
     for name, surface in [('campaign-browser', 'campaign'), ('conquest-browser', 'conquest'), ('legion-browser', 'legion'),
                           ('recruitment', 'recruit'), ('city-buildings', 'buildings'), ('diplomacy', 'diplomacy'),
                           ('assign-general', 'assign_general'), ('headquarters', 'headquarters'),
-                          ('technology', 'technology'), ('staff-research', 'staff_research')]:
+                          ('technology', 'technology'), ('staff-research', 'staff_research'),
+                          ('campaign-zoom', 'campaign_detail'), ('diplomacy-multiple', 'multi_diplomacy'),
+                          ('diplomacy-aid-pending', 'aid_pending')]:
         selected[name + '.png'] = war / (surface + '.png')
     for index, name in enumerate(['terrain-atlas-grass', 'terrain-atlas-forest', 'terrain-atlas-relief']):
         selected[name + '.png'] = terrain / ('atlas_' + str(index) + '.png')

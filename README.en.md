@@ -7,7 +7,7 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.23, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.24, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
@@ -22,6 +22,8 @@ The headquarters now includes a political archive with all 17 registered politic
 Version 0.2.23 refines the military UI direction with gunmetal framing, cool silver cards, large whole portraits, independent scrolling and roster search. Promotion, skills and medals expose actual costs, experience and slot restrictions. Five independent Sub2 UI originals are new; maps and all 135 portrait originals are retained. See [military UI and dossier refinement](docs/41_军事界面与将领档案精修.md).
 
 ![Hong Xiuquan dossier, complete native 0.2.23 viewport](docs/media/dossier-hong-v0223.png)
+
+Version 0.2.24 connects selection maps to the shipping ground, elevation, river and whole-scenery renderer, with zoom, pan, pinch and fit. Settlements and sourced places follow registered dates. The diplomacy office separates its faction roster from selected-counterparty details, showing actual treaty dates, visible formations, offer reasons and pending aid. Three legacy seven-day conquest registrations are synchronized to daily rounds. No new raster originals are added. See [selection atlas and diplomacy office](docs/42_战区沙盘与外交事务精修.md).
 
 <a id="contents"></a>
 ## Contents
@@ -61,7 +63,7 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Raster art | **1,304 PNGs**; **990 stored map assets, 970 currently active**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
 | Regional terrain | **20 types × (1 new continuous ground + 4 detail originals) = 100 active originals**; 20 superseded macrogrounds retained, interactive atlas |
 | Audio and fonts | 14 procedural effects, 3 local YuE2 scores (180 seconds each), 3 retained fallback loops and 2 Chinese fonts with OFL notices |
-| Current regression snapshot | **29 groups / 5,780 checks**, plus 1,725 portrait UI, 157 dossier transaction, 216 terrain, 212 UI, 84 coastal, 220 map-symbol and 18 music checks; older numerical fixtures retain their version identity |
+| Current regression snapshot | **29 groups / 5,787 checks**, plus 1,725 portrait UI, 157 dossier transaction, 216 terrain, 373 UI, 84 coastal, 220 map-symbol and 18 music checks; older numerical fixtures retain their version identity |
 | Character portraits | **33 people × 4 stages + 3 extra dates = 135 independent originals**; automatic dated selection, general roster and political archive previews |
 | Calendar | **One day per complete round**; all factions finish their phases before the Gregorian date advances |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
@@ -207,6 +209,10 @@ Campaign, conquest and legion browsers use real map previews with era, difficult
 
 ![Campaign selection with actual theater geography](docs/media/campaign-browser.png)
 
+Use plus/minus, the wheel or pinch to zoom, drag to pan, and Fit to restore theater framing. Zoom reaches ten times the initial framing; the operational hexes and scenario bounds stay tied to their actual map. Objective labels take priority, while railways and local places follow registered activation dates.
+
+![Zoomed theater terrain and sourced settlements](docs/media/campaign-zoom.png)
+
 <details>
 <summary>Recruitment, city facilities, diplomacy and research</summary>
 
@@ -215,6 +221,10 @@ Campaign, conquest and legion browsers use real map previews with era, difficult
 ![City facilities and production queues](docs/media/city-buildings.png)
 
 ![Diplomatic relations and action conditions](docs/media/diplomacy.png)
+
+![Selected faction and actual pending aid](docs/media/diplomacy-aid-pending.png)
+
+Select a counterparty in the left roster to inspect treaties, proposal scores and reasons. Known formations follow the player's visibility. Successful aid deducts 50 actual funds and settles at the recipient's next action phase; withdrawal refunds half of undelivered aid under the existing rules. Disabled actions and cooldowns reflect the live match.
 
 ![Headquarters technology and research requirements](docs/media/technology.png)
 
@@ -461,7 +471,7 @@ Configure your own release keystore, alias and password through Godot private cr
 godot --headless --path . --export-release "Android" "build/android/RailwayWarlords.apk"
 ```
 
-App ID is `org.railwaywarlords.game`, current versionCode 28. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
+App ID is `org.railwaywarlords.game`, current versionCode 29. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
 
 ### Automation scope
 
@@ -512,11 +522,11 @@ godot --headless --path . --script tests/surface_geography_test.gd
 godot --headless --path . --script tests/terrain_surfaces_test.gd
 ```
 
-Version 0.2.23 passes 29 groups / 5,780 checks, including 611 portrait and 85 daily-calendar checks. The final EXE passes 1,725 portrait UI checks with 174 captures across three desktop layouts, plus 157 dossier transaction checks with 24 captures, 216 terrain and 212 UI checks with 90 captures, 84 coastal checks with 20 captures and 220 symbol checks with 32 captures: 340 current scoped native frames in total. Music playback passes 18 checks. See the [dependency seal](reports/regression_dependency_evidence.json), [portrait evidence](reports/general_portrait_native_evidence.json) and [dossier evidence](reports/ui_refinement_native_evidence.json). Fourteen complete frames were individually viewed; the [scoped visual record](reports/ui_refinement_native_review.json) also lists remaining issues and does not claim manual approval of all 340 frames. Older numerical fixtures and movement/combat recordings retain their original version identity.
+Version 0.2.24 passes 29 groups / 5,787 checks, including 611 portrait and 88 daily-calendar checks. The final EXE passes 1,725 portrait UI checks with 174 captures across three desktop layouts, 157 dossier transaction checks with 24 captures, 216 terrain and 373 UI checks with 99 captures, 84 coastal checks with 20 captures and 220 symbol checks with 32 captures: 349 current scoped native frames in total. Music playback passes 18 checks. See the [dependency seal](reports/regression_dependency_evidence.json), [portrait evidence](reports/general_portrait_native_evidence.json), [dossier evidence](reports/ui_refinement_native_evidence.json) and [terrain/UI evidence](reports/terrain_surface_native_evidence.json). 16 complete frames were individually viewed; the [scoped visual record](reports/atlas_office_native_review.json) lists remaining issues without claiming manual approval of all 349 frames. Older numerical fixtures and movement/combat recordings retain their original version identity.
 
 [Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current dossier transaction evidence](reports/ui_refinement_native_evidence.json)
 
-Reports record tests run in the original workspace. They do not claim that another machine has rerun them and do not replace manual gameplay, art, music listening, historical or device acceptance. Full AI endurance was not rerun for this patch; older endurance results and recordings retain their version identity.
+Reports record tests run in the original workspace. They do not claim that another machine has rerun them and do not replace manual gameplay, art, music listening, historical or device acceptance. Full AI endurance was not rerun for this patch; older endurance results and recordings retain their version identity. The content hash has changed, so existing active matches require a new game; career and settings retain their own formats.
 
 The repository's `.gitattributes` preserves original bytes so automatic newline conversion cannot change hashed prompts, native metadata or evidence. The [Git byte check](reports/git_byte_preservation.json) compares staged objects with working files separately from gameplay checks.
 
@@ -617,4 +627,6 @@ Detailed implementation chapters currently use Chinese; this English README cove
 
 The [0.2.23 military UI and dossier chapter](docs/41_军事界面与将领档案精修.md) covers material specifications, complete character pages, desktop phone proportions, large text, actual progression requirements and acceptance boundaries.
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.23 assessment and corresponding reports for current status.
+The [0.2.24 atlas and diplomacy chapter](docs/42_战区沙盘与外交事务精修.md) covers shipping terrain previews, zoom and pan, date gates, counterparty selection, actual aid transactions and current delivery limits.
+
+Older chapters preserve their version context. Use these READMEs, the 0.2.24 assessment and corresponding reports for current status.

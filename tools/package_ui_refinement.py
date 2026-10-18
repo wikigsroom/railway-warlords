@@ -15,7 +15,8 @@ def write(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
 
-def validate():
+def validate(scope='dossier'):
+    require(scope in {'dossier', 'atlas_office'}, 'Unknown scoped delivery')
     version = current_version()
     runtime = source_digest()[0]
     exe = P / 'build/windows/RailwayWarlords.exe'
@@ -42,7 +43,8 @@ def validate():
         reports.update([report, log])
         regression.append(dict(name=row['check'], checks=len(value['checks']), report=report.relative_to(P).as_posix(), sha256=sha(report)))
     calendar = read(P / 'reports/calendar_tests.json')
-    require(calendar['passed'] and len(calendar['checks']) == 85, 'Daily calendar and both default registrations required')
+    calendar_checks = 88 if scope == 'atlas_office' else 85
+    require(calendar['passed'] and len(calendar['checks']) == calendar_checks, 'Complete daily-calendar registrations required')
     portraits = read(P / 'presentation/data/general_portraits.json')
     assets = read(P / 'assets/manifest.json')['assets']
     portrait_assets = [a for a in assets if a['category'] == 'portrait']
@@ -65,7 +67,8 @@ def validate():
     art = read(P / 'reports/ui_refinement_source_review.json')
     expected_ui = {'ui_officer_sheet_v023', 'ui_command_plate_v023', 'icon_medal_marksmanship_v023',
                    'icon_medal_steadfast_v023', 'icon_medal_logistics_v023'}
-    require(art['version'] == version and {r['id'] for r in art['originals']} == expected_ui
+    reviewed_ui_version = '0.2.23' if scope == 'atlas_office' else version
+    require(art['version'] == reviewed_ui_version and {r['id'] for r in art['originals']} == expected_ui
             and not art['source_images_modified'] and not art['manual_compositing'], 'Five direct Sub2 originals required')
     for row in art['originals']:
         asset = next(a for a in assets if a['id'] == row['id'])
@@ -129,13 +132,30 @@ def validate():
     audit = read(P / 'reports/daily_age_text_audit.json')
     require(audit['passed'] and audit['version'] == version and audit['runtime_source_sha256'] == runtime
             and not audit['legacy_display_name_plaintext_files'], 'Current display-name audit required')
-    visual = read(P / 'reports/ui_refinement_native_review.json')
+    visual_name = 'atlas_office_native_review.json' if scope == 'atlas_office' else 'ui_refinement_native_review.json'
+    visual = read(P / 'reports' / visual_name)
     require(visual['version'] == version and visual['runtime_source_sha256'] == runtime
             and visual['windows_exe_sha256'] == sha(exe) and len(visual['viewed_complete_captures']) >= 8,
             'Current scoped visual inspection required')
     for row in visual['viewed_complete_captures']:
         require(sha(P / row['file']) == row['sha256'] and row['viewed_complete_original_capture'], 'Inspected native capture changed')
-    names = ['daily_age_text_audit.json', 'git_byte_preservation.json', 'ui_refinement_native_review.json', 'ui_refinement_source_review.json',
+    if scope == 'atlas_office':
+        terrain_proof = read(P / 'reports/terrain_surface_native_evidence.json')
+        offices = [g for g in terrain_proof['groups'] if g['kind'] == 'war-room']
+        require(len(offices) == 3, 'Three current office/atlas layouts required')
+        for group in offices:
+            proof = read(P / group['report'])
+            by_surface = {r['surface']: r for r in proof['captures']}
+            require(len(by_surface) == 16 and {'campaign_detail', 'multi_diplomacy', 'aid_pending'} <= by_surface.keys(),
+                    'Full atlas interaction and diplomacy transaction captures required')
+            preview = by_surface['campaign']['atlas_preview']
+            require(preview['renderer'] == 'shipping_MapView_static_atlas' and preview['source_map_immutable']
+                    and preview['ground']['active'] and preview['material_cells_drawn'] > 0
+                    and preview['scenery_drawn'] > 0, 'Shipping preview ground and whole scenery must actually be drawn')
+            require(by_surface['campaign_detail']['atlas_preview']['zoom_multiplier'] > 2,
+                    'Actual zoomed native preview required')
+            require(all(row['passed'] for row in proof['checks']), 'Office interaction/transaction checks failed')
+    names = ['daily_age_text_audit.json', 'git_byte_preservation.json', visual_name, 'ui_refinement_source_review.json',
              'regression_dependency_evidence.json', 'resource_validation.json', 'repository_validation.json',
              'export_results.json', 'sample_state_v2.json', 'apk_content_validation.json', 'apk_signature.log',
              'apk_badging.log', 'apk_permissions.log', 'android_devices.log', 'general_portrait_first_source_review.json',
@@ -145,15 +165,17 @@ def validate():
                    content_hash=read(P / 'reports/sample_state_v2.json')['content_hash'], ruleset=10,
                    days_per_complete_round=1, scenarios=61, people=33, military_generals=29, political_only_people=4,
                    living_age_stages_per_person=4, portrait_originals=135, new_portrait_originals=0,
-                   new_ui_originals=5, total_rasters=1304, regression_groups=29,
+                   new_ui_originals=0 if scope == 'atlas_office' else 5, total_rasters=1304, regression_groups=29,
+                   calendar_checks=len(calendar['checks']),
                    regression_checks=sum(r['checks'] for r in regression), native_groups=native_groups,
                    native_captures=len(captures) // 2, native_music_checks=18, apk_version_code=android_version_code(),
                    apk_data_and_notice_files=len(apk_report['files']), physical_android_device_tested=False,
                    formal_art_approval=False, historical_likeness_approval=False, new_1947_scenario=False,
                    full_daily_balance_acceptance=False, full_ai_endurance_rerun=False, ew6_parity_claimed=False,
                    source_pngs_modified=False, manual_compositing=False, git_working_bytes_preserved=True)
-    write(P / 'reports/ui_refinement_release_validation.json', summary)
-    reports.add(P / 'reports/ui_refinement_release_validation.json')
+    validation_name = 'atlas_office_release_validation.json' if scope == 'atlas_office' else 'ui_refinement_release_validation.json'
+    write(P / 'reports' / validation_name, summary)
+    reports.add(P / 'reports' / validation_name)
     return summary, reports, captures, regression
 
 

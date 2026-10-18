@@ -1,19 +1,492 @@
 {
-	"build_version": "0.2.23",
+	"build_version": "0.2.24",
 	"captures": [
 		{
 			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/home.png",
 			"surface": "home"
 		},
 		{
+			"atlas_preview": {
+				"anchor_date": "1920-07-14",
+				"camera": "(7442.48, 5195.675)",
+				"creates_match": false,
+				"dated_rail_edges": 7,
+				"ground": {
+					"active": true,
+					"city_influence_fill_draws": 0,
+					"field_fill_batches": 0,
+					"ground_material_policy": {
+						"drawn_families": {
+							"alluvial_loam": 140,
+							"alpine_scree": 24,
+							"dry_steppe": 8,
+							"saline_meadow": 636,
+							"temperate_meadow": 17786,
+							"weathered_rock": 5272
+						},
+						"forest_floor_requires_sourced_forest": true,
+						"withheld_forest_floor_cells": 17786
+					},
+					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+					"source_ground_coverage": {
+						"active": true,
+						"cache_scope": "one_map_catalogue",
+						"covered_cells": 23866,
+						"historical_landuse_claimed": false,
+						"new_rasters": 0,
+						"partial_cells": 640,
+						"rule_cells_modified": false,
+						"source_land_clipped": true,
+						"supplemental_underlays": 731,
+						"unclassified_cells": 98
+					},
+					"source_images_modified": false,
+					"source_layers": 20,
+					"whole_original_dimensions": [
+						1254,
+						1254
+					]
+				},
+				"hydrography": {
+					"display_corner_rounding_max_deviation_metres": 60.0,
+					"fine_source_id": "hydrorivers_v10_as",
+					"fine_source_sha256": "827e03a8e419b9578d5f246bcce1c93de1a0bd561a9f572fe84606c5d36d31fa",
+					"flat_lowland_model_branches_excluded": true,
+					"historical_channel_survey": false,
+					"major_presentation_replacements": 0,
+					"rule_geometry_modified": false,
+					"source_endpoints_preserved": true,
+					"source_fine_reaches": 756,
+					"source_linked_endpoint_frames": 0,
+					"source_map_id": "jingjin",
+					"width_is_symbolic": true
+				},
+				"map_id": "jingjin",
+				"material_cells_drawn": 23866,
+				"reference_originals_drawn": 17,
+				"relief": {
+					"continuous_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 192280,
+						"lookup_dimensions": [
+							209,
+							230
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"source_images_modified": false,
+						"source_samples": 23423
+					},
+					"contour_segments": 9614,
+					"crest_axis_from_source_neighbours": true,
+					"eligible_features": 2197,
+					"families": {
+						"foothill_ew": 902,
+						"foothill_ns": 471,
+						"peak_ew": 9,
+						"peak_ns": 2,
+						"ridge_ew": 207,
+						"ridge_ns": 88
+					},
+					"generated_continental_contours": false,
+					"geographic_gradient_in_meters": false,
+					"height_exaggeration_display_only": 6.0,
+					"historical_vegetation_claimed": false,
+					"independent_relief_originals_used": 193,
+					"index_ms": 98.012,
+					"lighting": "continuous_source_height_normals",
+					"mesh_ms": 1718.819,
+					"nearby_variant_exclusion_world": 270.0,
+					"placed_features": 1679,
+					"placement_ms": 525.081,
+					"preparation_ms": 2341.911,
+					"rules_map_mutated": false,
+					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
+					"source_meters_per_world_unit": 20.8333333333333,
+					"strategic_category_relief": false,
+					"triangles": 46063
+				},
+				"renderer": "shipping_MapView_static_atlas",
+				"scenery_drawn": 1679,
+				"settlement_originals_drawn": 7,
+				"source_map_immutable": true,
+				"zoom_multiplier": 1.0
+			},
 			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/campaign.png",
 			"surface": "campaign"
 		},
 		{
+			"atlas_preview": {
+				"anchor_date": "1920-07-14",
+				"camera": "(6921.035, 4967.542)",
+				"creates_match": false,
+				"dated_rail_edges": 7,
+				"ground": {
+					"active": true,
+					"city_influence_fill_draws": 0,
+					"field_fill_batches": 0,
+					"ground_material_policy": {
+						"drawn_families": {
+							"alluvial_loam": 140,
+							"alpine_scree": 24,
+							"dry_steppe": 8,
+							"saline_meadow": 636,
+							"temperate_meadow": 17786,
+							"weathered_rock": 5272
+						},
+						"forest_floor_requires_sourced_forest": true,
+						"withheld_forest_floor_cells": 17786
+					},
+					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+					"source_ground_coverage": {
+						"active": true,
+						"cache_scope": "one_map_catalogue",
+						"covered_cells": 23866,
+						"historical_landuse_claimed": false,
+						"new_rasters": 0,
+						"partial_cells": 640,
+						"rule_cells_modified": false,
+						"source_land_clipped": true,
+						"supplemental_underlays": 731,
+						"unclassified_cells": 98
+					},
+					"source_images_modified": false,
+					"source_layers": 20,
+					"whole_original_dimensions": [
+						1254,
+						1254
+					]
+				},
+				"hydrography": {
+					"display_corner_rounding_max_deviation_metres": 60.0,
+					"fine_source_id": "hydrorivers_v10_as",
+					"fine_source_sha256": "827e03a8e419b9578d5f246bcce1c93de1a0bd561a9f572fe84606c5d36d31fa",
+					"flat_lowland_model_branches_excluded": true,
+					"historical_channel_survey": false,
+					"major_presentation_replacements": 0,
+					"rule_geometry_modified": false,
+					"source_endpoints_preserved": true,
+					"source_fine_reaches": 756,
+					"source_linked_endpoint_frames": 0,
+					"source_map_id": "jingjin",
+					"width_is_symbolic": true
+				},
+				"map_id": "jingjin",
+				"material_cells_drawn": 11264,
+				"reference_originals_drawn": 5,
+				"relief": {
+					"continuous_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 192280,
+						"lookup_dimensions": [
+							209,
+							230
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"source_images_modified": false,
+						"source_samples": 23423
+					},
+					"contour_segments": 9614,
+					"crest_axis_from_source_neighbours": true,
+					"eligible_features": 2197,
+					"families": {
+						"foothill_ew": 902,
+						"foothill_ns": 471,
+						"peak_ew": 9,
+						"peak_ns": 2,
+						"ridge_ew": 207,
+						"ridge_ns": 88
+					},
+					"generated_continental_contours": false,
+					"geographic_gradient_in_meters": false,
+					"height_exaggeration_display_only": 6.0,
+					"historical_vegetation_claimed": false,
+					"independent_relief_originals_used": 193,
+					"index_ms": 98.012,
+					"lighting": "continuous_source_height_normals",
+					"mesh_ms": 1718.819,
+					"nearby_variant_exclusion_world": 270.0,
+					"placed_features": 1679,
+					"placement_ms": 525.081,
+					"preparation_ms": 2341.911,
+					"rules_map_mutated": false,
+					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
+					"source_meters_per_world_unit": 20.8333333333333,
+					"strategic_category_relief": false,
+					"triangles": 46063
+				},
+				"renderer": "shipping_MapView_static_atlas",
+				"scenery_drawn": 231,
+				"settlement_originals_drawn": 3,
+				"source_map_immutable": true,
+				"zoom_multiplier": 2.44140625
+			},
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/campaign_detail.png",
+			"surface": "campaign_detail"
+		},
+		{
+			"atlas_preview": {
+				"anchor_date": "1927-04-12",
+				"camera": "(3840.0, 2880.0)",
+				"creates_match": false,
+				"dated_rail_edges": 22,
+				"ground": {
+					"active": true,
+					"city_influence_fill_draws": 0,
+					"field_fill_batches": 0,
+					"ground_material_policy": {
+						"drawn_families": {
+							"alluvial_loam": 39,
+							"alpine_meadow": 4,
+							"alpine_scree": 34,
+							"alpine_steppe": 10,
+							"boreal_litter": 6,
+							"conifer_litter": 3,
+							"desert_steppe": 64,
+							"dry_steppe": 253,
+							"dune_sand": 48,
+							"flood_meadow": 21,
+							"gravel_gobi": 344,
+							"saline_meadow": 7,
+							"savanna_red_soil": 172,
+							"subtropical_humus": 9,
+							"temperate_litter": 16,
+							"temperate_meadow": 957,
+							"tropical_moist_humus": 380,
+							"tundra_moss": 421,
+							"weathered_rock": 1664
+						},
+						"forest_floor_requires_sourced_forest": true,
+						"withheld_forest_floor_cells": 1006
+					},
+					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+					"source_ground_coverage": {
+						"active": true,
+						"cache_scope": "one_map_catalogue",
+						"covered_cells": 4452,
+						"historical_landuse_claimed": false,
+						"new_rasters": 0,
+						"partial_cells": 1344,
+						"rule_cells_modified": false,
+						"source_land_clipped": true,
+						"supplemental_underlays": 1075,
+						"unclassified_cells": 14
+					},
+					"source_images_modified": false,
+					"source_layers": 20,
+					"whole_original_dimensions": [
+						1254,
+						1254
+					]
+				},
+				"hydrography": {
+					"display_corner_rounding_max_deviation_metres": 0.0,
+					"fine_source_id": "",
+					"fine_source_sha256": "",
+					"flat_lowland_model_branches_excluded": true,
+					"historical_channel_survey": false,
+					"major_presentation_replacements": 0,
+					"rule_geometry_modified": false,
+					"source_endpoints_preserved": true,
+					"source_fine_reaches": 0,
+					"source_linked_endpoint_frames": 0,
+					"source_map_id": "asia_strategic",
+					"width_is_symbolic": true
+				},
+				"map_id": "asia_strategic",
+				"material_cells_drawn": 4452,
+				"reference_originals_drawn": 0,
+				"relief": {
+					"continuous_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 53724,
+						"lookup_dimensions": [
+							111,
+							121
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"source_images_modified": false,
+						"source_samples": 3587
+					},
+					"contour_segments": 0,
+					"crest_axis_from_source_neighbours": true,
+					"eligible_features": 291,
+					"families": {
+						"foothill_ew": 116,
+						"foothill_ns": 67,
+						"peak_ew": 1,
+						"peak_ns": 1,
+						"ridge_ew": 28,
+						"ridge_ns": 7
+					},
+					"generated_continental_contours": false,
+					"geographic_gradient_in_meters": true,
+					"height_exaggeration_display_only": 6.0,
+					"historical_vegetation_claimed": false,
+					"independent_relief_originals_used": 103,
+					"index_ms": 224.813,
+					"lighting": "continuous_source_height_normals",
+					"mesh_ms": 629.623,
+					"nearby_variant_exclusion_world": 270.0,
+					"placed_features": 220,
+					"placement_ms": 534.355,
+					"preparation_ms": 1388.791,
+					"rules_map_mutated": false,
+					"source": "Tilezen_TerrainTiles_geotiff_nine_point_100km",
+					"source_meters_per_world_unit": 3125.0,
+					"strategic_category_relief": false,
+					"triangles": 5506
+				},
+				"renderer": "shipping_MapView_static_atlas",
+				"scenery_drawn": 220,
+				"settlement_originals_drawn": 26,
+				"source_map_immutable": true,
+				"zoom_multiplier": 1.0
+			},
 			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/conquest.png",
 			"surface": "conquest"
 		},
 		{
+			"atlas_preview": {
+				"anchor_date": "1924-09-15",
+				"camera": "(7442.48, 5195.675)",
+				"creates_match": false,
+				"dated_rail_edges": 7,
+				"ground": {
+					"active": true,
+					"city_influence_fill_draws": 0,
+					"field_fill_batches": 0,
+					"ground_material_policy": {
+						"drawn_families": {
+							"alluvial_loam": 140,
+							"alpine_scree": 24,
+							"dry_steppe": 8,
+							"saline_meadow": 636,
+							"temperate_meadow": 17786,
+							"weathered_rock": 5272
+						},
+						"forest_floor_requires_sourced_forest": true,
+						"withheld_forest_floor_cells": 17786
+					},
+					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+					"source_ground_coverage": {
+						"active": true,
+						"cache_scope": "one_map_catalogue",
+						"covered_cells": 23866,
+						"historical_landuse_claimed": false,
+						"new_rasters": 0,
+						"partial_cells": 640,
+						"rule_cells_modified": false,
+						"source_land_clipped": true,
+						"supplemental_underlays": 731,
+						"unclassified_cells": 98
+					},
+					"source_images_modified": false,
+					"source_layers": 20,
+					"whole_original_dimensions": [
+						1254,
+						1254
+					]
+				},
+				"hydrography": {
+					"display_corner_rounding_max_deviation_metres": 60.0,
+					"fine_source_id": "hydrorivers_v10_as",
+					"fine_source_sha256": "827e03a8e419b9578d5f246bcce1c93de1a0bd561a9f572fe84606c5d36d31fa",
+					"flat_lowland_model_branches_excluded": true,
+					"historical_channel_survey": false,
+					"major_presentation_replacements": 0,
+					"rule_geometry_modified": false,
+					"source_endpoints_preserved": true,
+					"source_fine_reaches": 756,
+					"source_linked_endpoint_frames": 0,
+					"source_map_id": "jingjin",
+					"width_is_symbolic": true
+				},
+				"map_id": "jingjin",
+				"material_cells_drawn": 23866,
+				"reference_originals_drawn": 17,
+				"relief": {
+					"continuous_lighting": {
+						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+						"gpu_texture_available": true,
+						"interpolation_stencil": [
+							4,
+							4
+						],
+						"lookup_bytes": 192280,
+						"lookup_dimensions": [
+							209,
+							230
+						],
+						"maximum_contributing_samples": 16,
+						"method": "source_cell_cubic_bspline_lighting",
+						"new_dem_samples": 0,
+						"raster_art_generated": false,
+						"rules_map_mutated": false,
+						"source_images_modified": false,
+						"source_samples": 23423
+					},
+					"contour_segments": 9614,
+					"crest_axis_from_source_neighbours": true,
+					"eligible_features": 2197,
+					"families": {
+						"foothill_ew": 902,
+						"foothill_ns": 471,
+						"peak_ew": 9,
+						"peak_ns": 2,
+						"ridge_ew": 207,
+						"ridge_ns": 88
+					},
+					"generated_continental_contours": false,
+					"geographic_gradient_in_meters": false,
+					"height_exaggeration_display_only": 6.0,
+					"historical_vegetation_claimed": false,
+					"independent_relief_originals_used": 193,
+					"index_ms": 68.62,
+					"lighting": "continuous_source_height_normals",
+					"mesh_ms": 1972.845,
+					"nearby_variant_exclusion_world": 270.0,
+					"placed_features": 1679,
+					"placement_ms": 580.947,
+					"preparation_ms": 2622.41,
+					"rules_map_mutated": false,
+					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
+					"source_meters_per_world_unit": 20.8333333333333,
+					"strategic_category_relief": false,
+					"triangles": 46063
+				},
+				"renderer": "shipping_MapView_static_atlas",
+				"scenery_drawn": 1679,
+				"settlement_originals_drawn": 11,
+				"source_map_immutable": true,
+				"zoom_multiplier": 1.0
+			},
 			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/legion.png",
 			"surface": "legion"
 		},
@@ -52,6 +525,14 @@
 		{
 			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/legion_deployment.png",
 			"surface": "legion_deployment"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/multi_diplomacy.png",
+			"surface": "multi_diplomacy"
+		},
+		{
+			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/aid_pending.png",
+			"surface": "aid_pending"
 		}
 	],
 	"checks": [
@@ -97,6 +578,21 @@
 		},
 		{
 			"detail": null,
+			"name": "campaign_AtlasZoomIn_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_AtlasZoomOut_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_AtlasFit_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
 			"name": "campaign_date_stays_on_one_line",
 			"passed": true
 		},
@@ -108,6 +604,101 @@
 		{
 			"detail": null,
 			"name": "campaign_selected_scenario_card_is_visible",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "scenario_preview_renders_shipping_ground_material",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "scenario_preview_renders_source_relief",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "scenario_preview_renders_whole_scenery_originals",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "scenario_preview_renders_whole_settlement_originals",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "scenario_preview_keeps_source_map_immutable",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "atlas_zoom_changes_camera_without_rebuilding_source_map",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "atlas_drag_pans_without_selecting_another_scenario",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_campaign_detail",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "campaign_detail_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_LaunchScenario_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_EraSelector_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_DifficultySelector_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_AtlasZoomIn_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_AtlasZoomOut_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_AtlasFit_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_date_stays_on_one_line",
+			"passed": true
+		},
+		{
+			"detail": 729.0,
+			"name": "campaign_detail_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_selected_scenario_card_is_visible",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "atlas_fit_restores_geographic_framing",
 			"passed": true
 		},
 		{
@@ -157,6 +748,21 @@
 		},
 		{
 			"detail": null,
+			"name": "conquest_AtlasZoomIn_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_AtlasZoomOut_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_AtlasFit_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
 			"name": "conquest_date_stays_on_one_line",
 			"passed": true
 		},
@@ -188,6 +794,21 @@
 		{
 			"detail": null,
 			"name": "legion_EraSelector_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "legion_AtlasZoomIn_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "legion_AtlasZoomOut_inside_viewport",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "legion_AtlasFit_inside_viewport",
 			"passed": true
 		},
 		{
@@ -311,6 +932,21 @@
 		},
 		{
 			"detail": null,
+			"name": "single_counterparty_selected_office_uses_available_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "single_counterparty_army_display_respects_current_intelligence",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "single_counterparty_details_follow_selected_faction",
+			"passed": true
+		},
+		{
+			"detail": null,
 			"name": "native_capture_assign_general",
 			"passed": true
 		},
@@ -388,9 +1024,156 @@
 			"detail": null,
 			"name": "legion_deployment_close_reachable",
 			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "multi_faction_office_has_real_counterparty_roster",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "multi_faction_aid_fixture_has_another_strategic_base",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "roster_button_selects_its_named_counterparty",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "multiple_counterparties_selected_office_uses_available_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "multiple_counterparties_army_display_respects_current_intelligence",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "multiple_counterparties_details_follow_selected_faction",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_multi_diplomacy",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "multi_diplomacy_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "multi_diplomacy_close_reachable",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "selected_counterparty_aid_offer_is_actionable",
+			"passed": true
+		},
+		{
+			"detail": {
+				"after": 844,
+				"before": 894,
+				"events": [
+					{
+						"after": 844,
+						"before": 894,
+						"delta": -50,
+						"owner_id": "zhili",
+						"reason": "外交援助",
+						"resource": "cash",
+						"round": 1,
+						"sequence": 1,
+						"type": "ResourceChanged"
+					},
+					{
+						"action": "aid",
+						"owner_id": "zhili",
+						"round": 1,
+						"sequence": 1,
+						"target_id": "guangdong",
+						"type": "DiplomacyChanged"
+					},
+					{
+						"owner_id": "anhui",
+						"round": 1,
+						"sequence": 1,
+						"type": "FactionEliminated",
+						"withdrawn_unit_ids": []
+					},
+					{
+						"owner_id": "dongjiang",
+						"reason": "势力失去战略反击能力",
+						"round": 1,
+						"sequence": 1,
+						"type": "UnitWithdrawn",
+						"unit_id": "u_00083"
+					},
+					{
+						"owner_id": "dongjiang",
+						"round": 1,
+						"sequence": 1,
+						"type": "FactionEliminated",
+						"withdrawn_unit_ids": [
+							"u_00083"
+						]
+					}
+				],
+				"target": "guangdong"
+			},
+			"name": "office_aid_button_pays_exactly_fifty_once",
+			"passed": true
+		},
+		{
+			"detail": {
+				"pending": [
+					{
+						"arrival_owner_phase": 1,
+						"id": "aid_00128",
+						"receiver_id": "guangdong",
+						"resources": {
+							"cash": 50
+						},
+						"sender_id": "zhili"
+					}
+				],
+				"target": "guangdong"
+			},
+			"name": "office_aid_uses_selected_real_counterparty",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "aid_cooldown_disables_repeat_offer",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "pending_aid_is_visible_in_selected_office",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "native_capture_aid_pending",
+			"passed": true
+		},
+		{
+			"detail": [],
+			"name": "aid_pending_scroll_content_fits_width",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "aid_pending_close_reachable",
+			"passed": true
 		}
 	],
-	"content_hash": "fe6095da17daa08abf7acac594655c9221275c3534f88665316a89eaa9f214a1",
+	"content_hash": "a75da77276df468600ed2432bef1d404a8179d00d4ca197731e30576ce2d23f1",
 	"passed": true,
 	"physical_android_device_tested": false,
 	"qa_save_isolated": true,

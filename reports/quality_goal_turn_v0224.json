@@ -1,0 +1,68 @@
+{
+  "objective": "最终交付成品质量与欧陆战争6高度一致",
+  "previous_goal_turn_classification": "progress",
+  "previous_authoritative_change": "0.2.23军事界面及人物档案双端交付，提交11aed986c0266554bb52b9b996a5e3e8de8a084e已实际核对远端",
+  "current_version": "0.2.24",
+  "current_status": "scoped_implementation_and_native_verification_complete_overall_goal_active",
+  "current_focus": [
+    "选关复用正式地表及景物",
+    "缩放拖动与双指操作",
+    "日期有效性",
+    "对象外交页",
+    "已侦知编队",
+    "真实援助及冷却",
+    "旧征服每日登记同步"
+  ],
+  "runtime_source_sha256": "17eee6c2cb147867b19a102a4fc76a769b3f1fe632a36fd06b3566209ce942f5",
+  "current_scope_verified": {
+    "regression_groups": 29,
+    "regression_checks": 5787,
+    "calendar_checks": 88,
+    "portrait_checks": 611,
+    "native_captures": 349,
+    "native_groups": {
+      "people": {
+        "checks": 1725,
+        "captures": 174
+      },
+      "dossier": {
+        "checks": 157,
+        "captures": 24
+      },
+      "terrain": {
+        "checks": 589,
+        "captures": 99
+      },
+      "coast": {
+        "checks": 84,
+        "captures": 20
+      },
+      "symbols": {
+        "checks": 220,
+        "captures": 32
+      }
+    },
+    "terrain_checks": 216,
+    "ui_checks": 373,
+    "native_music_checks": 18,
+    "manually_viewed_complete_captures": 16,
+    "new_direct_sub2_originals": 0,
+    "retained_portrait_originals": 135,
+    "apk_raster_imports_verified": 1304,
+    "source_pngs_modified": false,
+    "manual_compositing": false
+  },
+  "current_goal_turn_classification": "progress",
+  "overall_completion_proven": false,
+  "ew6_parity_claimed": false,
+  "physical_android_device_tested": false,
+  "remaining_requirements": [
+    "整幅地图纹理、山脚、河岸及地点细节美术深化",
+    "全部兵种动作",
+    "逐年代行政与军队史实复核",
+    "每日制完整长局平衡",
+    "声音独立签核",
+    "Motorola X30触控与GPU验收"
+  ],
+  "updated_at_utc": "2026-10-18T20:50:38.855217+00:00"
+}

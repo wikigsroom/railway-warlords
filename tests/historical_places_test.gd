@@ -46,6 +46,11 @@ func run() -> void:
 	view.show_places=true
 	verify(not HistoricalPlaces.visible_at(village,view.state.date,.10) and HistoricalPlaces.visible_at(village,view.state.date,.10,village.id),"overview_hides_minor_places_while_selected_place_stays_visible")
 	verify(HistoricalPlaces.visible_at({"id":"place_anqing","kind":"capital"},view.state.date,.01),"province_capitals_remain_legible_in_full_country_view")
+	var dated={"id":"dated_place","kind":"county","active_from":"1922-01-01","active_to":"1925-01-01"}
+	verify(not HistoricalPlaces.visible_at(dated,"1921-12-31",1.0),"place_cannot_appear_before_its_archived_period")
+	verify(HistoricalPlaces.visible_at(dated,"1922-01-01",1.0),"place_activation_date_is_inclusive")
+	verify(not HistoricalPlaces.visible_at(dated,"1925-01-01",1.0),"place_end_date_is_exclusive")
+	verify(not HistoricalPlaces.visible_at(dated,"1921-12-31",1.0,"dated_place"),"selection_cannot_expose_a_future_place")
 	var meshes=view.places.zones.map(func(zone):return zone.mesh.get_instance_id());var old_signature=view.places.owner_signature
 	var changed=app.match_controller.state.duplicate(false);changed.cities=changed.cities.duplicate(true);changed.cities[0].owner_id="fengtian"
 	view.places.update_owners(changed)

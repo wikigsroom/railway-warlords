@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.23",
+	"build_version": "0.2.24",
 	"checks": [
 		{
 			"name": "67_sourced_additional_places_load_from_shipping_resource",
@@ -62,6 +62,22 @@
 			"passed": true
 		},
 		{
+			"name": "place_cannot_appear_before_its_archived_period",
+			"passed": true
+		},
+		{
+			"name": "place_activation_date_is_inclusive",
+			"passed": true
+		},
+		{
+			"name": "place_end_date_is_exclusive",
+			"passed": true
+		},
+		{
+			"name": "selection_cannot_expose_a_future_place",
+			"passed": true
+		},
+		{
 			"name": "capture_recolors_control_areas_without_rebuilding_or_changing_geography",
 			"passed": true
 		},
@@ -74,7 +90,7 @@
 			"passed": true
 		}
 	],
-	"content_hash": "fe6095da17daa08abf7acac594655c9221275c3534f88665316a89eaa9f214a1",
+	"content_hash": "a75da77276df468600ed2432bef1d404a8179d00d4ca197731e30576ce2d23f1",
 	"failed": 0,
 	"failures": [],
 	"passed": true,

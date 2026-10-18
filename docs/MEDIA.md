@@ -4,9 +4,9 @@
 
 ## 截图 / Screenshots
 
-当前媒体目录有53张完整PNG：47张来自0.2.23 Windows EXE，4张人物页保留0.2.22身份，另外两张交战/航空画面保留0.2.12身份。当前24张成长事务、174张人物遍历、90张地表/UI、20张海岸控制开关和32张图符专项原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot在实际程序中渲染控件、地图与独立美术资源。旧人物页来源另存于 `reports/screenshots/general_portraits_native/v0222`，新旧画面版本和SHA分别保留。
+当前媒体目录有56张完整PNG：46张来自0.2.24 Windows EXE，4张档案画面保留0.2.23、4张人物页保留0.2.22，另外两张交战/航空画面保留0.2.12身份。当前174张人物遍历、24张成长事务、99张地表/UI、20张海岸和32张图符的精选画面，以及导出核验截图，按原字节复制到`docs/media`。没有裁切、拼接、补绘或叠字。旧人物及旧有限查看来源另存版本目录；新旧画面版本及SHA分别保留。
 
-The media folder contains 53 complete PNGs: 47 from the 0.2.23 Windows EXE, four preserved 0.2.22 character pages and two preserved 0.2.12 combat/air-action stills. Selections from 24 dossier transaction, 174 character traversal, 90 terrain/UI, 20 coastal control-toggle and 32 symbol-check captures, plus export-validation viewports, are copied byte for byte, without cropping, stitching, repainting or text overlays. Old character sources remain under `reports/screenshots/general_portraits_native/v0222`. Godot renders the real controls, maps and independent assets.
+The media folder contains 56 complete PNGs: 46 from the 0.2.24 Windows EXE, four retained 0.2.23 dossier views, four retained 0.2.22 character pages and two retained 0.2.12 combat/air-action stills. Selections from 174 character, 24 dossier, 99 terrain/UI, 20 coastal and 32 symbol captures, plus export checks, are copied byte for byte without cropping, stitching, repainting or overlays. Old sources and reviewed frames remain in versioned directories with their original identities.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
@@ -33,6 +33,9 @@ The media folder contains 53 complete PNGs: 47 from the 0.2.23 Windows EXE, four
 | [terrain-atlas-relief.png](media/terrain-atlas-relief.png) | 4 类河谷与峰岭底材 / Four floodplain, valley and rock materials |
 | [campaign-browser.png](media/campaign-browser.png) | 真实战役地图预览 / Actual campaign map preview |
 | [conquest-browser.png](media/conquest-browser.png) | 时间锚与阵营选择 / Timeline and faction selection |
+| [campaign-zoom.png](media/campaign-zoom.png) | 实际缩放后的正式地貌 / Zoomed shipping terrain |
+| [diplomacy-multiple.png](media/diplomacy-multiple.png) | 多对象外交名册 / Multiple-counterparty roster |
+| [diplomacy-aid-pending.png](media/diplomacy-aid-pending.png) | 真实援助扣款与在途记录 / Actual aid payment and transit |
 | [recruitment.png](media/recruitment.png) | 层数、费用与征募队列 / Stacks, costs and recruitment queue |
 | [city-buildings.png](media/city-buildings.png) | 城市设施与队列 / City facilities and queue |
 | [diplomacy.png](media/diplomacy.png) | 外交关系与命令条件 / Relations and validation |
