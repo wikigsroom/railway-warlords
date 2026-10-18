@@ -1,2 +1,5 @@
 # The source-bound presentation vector has a reproducible byte identity.
 /presentation/data/control_land_clip.json text eol=lf
+/presentation/data/ground_coverage*.json text eol=lf
+# Generated score specifications, original ABC and audit records are immutable.
+/docs/music-provenance/** -text

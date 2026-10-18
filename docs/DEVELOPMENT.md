@@ -73,7 +73,7 @@ python tools/capture_terrain_update.py
 python tools/refresh_terrain_repository.py
 ```
 
-`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.20截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.21截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
 
 `prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 

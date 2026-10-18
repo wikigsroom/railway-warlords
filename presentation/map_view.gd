@@ -577,7 +577,7 @@ func terrain_surface_capture_facts(view: Rect2) -> Dictionary:
 
 func continuous_ground_facts() -> Dictionary:
 	var renderer=backdrop_view if is_instance_valid(backdrop_view) and not static_only else self
-	return {"active":renderer.material!=null,"source_layers":GroundMaterialBlend.source_layers().size(),"whole_original_dimensions":[1254,1254],"macro_coverage":"nonoverlapping_hex_partition_with_three_source_blending","source_images_modified":false,"city_influence_fill_draws":renderer.city_control_fill_draw_count,"field_fill_batches":renderer.territory_field_fill_draw_count}
+	return {"active":renderer.material!=null,"source_layers":GroundMaterialBlend.source_layers().size(),"whole_original_dimensions":[1254,1254],"macro_coverage":"nonoverlapping_hex_partition_with_three_source_blending","source_ground_coverage":MapGroundCoverage.diagnostics(map_details.source_ground_coverage),"ground_material_policy":map_details.ground_policy,"source_images_modified":false,"city_influence_fill_draws":renderer.city_control_fill_draw_count,"field_fill_batches":renderer.territory_field_fill_draw_count}
 
 func place_at_screen(screen: Vector2) -> String:
 	if not show_places or not selected_unit_id.is_empty():return ""

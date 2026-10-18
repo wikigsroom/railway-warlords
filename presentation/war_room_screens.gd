@@ -110,7 +110,7 @@ func show_browser(mode: String) -> void:
 	if browser_mode!=mode:browser_era="all";browser_id=""
 	browser_mode=mode
 	var v=page(TITLES[mode],"选择时代与任务，查看真实地理战区，再进入部署。")
-	app.audio.set_music("campaign")
+	app.audio.set_music("menu")
 	var tabs=v.get_child(0);var index=1
 	for key in TITLES:
 		var tab=app.button(tabs,"%s %d"%[{"campaign":"战役","conquest":"征服","legion":"军团"}[key],scenario_ids(key).size()],func():app.show_scenario_browser(key));tabs.move_child(tab,index);index+=1

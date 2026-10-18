@@ -69,7 +69,11 @@ def main():
                 require(im.size == tuple(map(int, resolution.split('x'))), 'Viewport dimensions differ: ' + path.name)
             captures.append(dict(file=path.relative_to(P).as_posix(), sha256=sha(path),
                                  metadata=metadata.relative_to(P).as_posix(), metadata_sha256=sha(metadata)))
-        expected = 23 if kind == 'terrain' else 13
+        expected = 3+value['rendered_map_types'] if kind == 'terrain' else 13
+        if kind == 'terrain':
+            withheld=set(value.get('withheld_without_dated_forest_source',[]))
+            require(value['registered_library_types']==20 and withheld <= {'boreal_litter','temperate_litter','conifer_litter','dry_woodland_litter'}
+                    and value['rendered_map_types']+len(withheld)==20,'Source-gated terrain coverage is incomplete')
         require(len(captures) == expected, 'Incomplete native capture set')
         groups.append(dict(kind=kind, profile=profile, resolution=resolution, ui_scale=scale,
                            checks=len(value['checks']), passed=True, report=report_path.relative_to(P).as_posix(),

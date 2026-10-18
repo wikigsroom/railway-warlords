@@ -45,9 +45,12 @@ func run() -> void:
 			valid=valid and row.size()==3 and row[0]==family and geo.ecoregions.has(str(int(row[1])))
 			valid=valid and cell.terrain_id not in ["sea","river","road","city","port","ford"]
 			var occupied=cell.duplicate(true);occupied["owner_id"]="another_owner"
-			valid=valid and MapArtBank.material_family(occupied)==family and MapSurfaceRegions.material_label(cell)!=""
+			valid=valid and MapArtBank.material_family(occupied)==MapTerrainSurfaces.draw_family(family,cell) and MapSurfaceRegions.material_label(cell)!=""
 		verify(valid,"every_applied_material_is_sourced_and_independent_of_occupying_faction:"+map_id)
 	verify(observed.size()==20,"all_twenty_types_exist_on_actual_maps")
+	for family in ["temperate_litter","conifer_litter","boreal_litter","dry_woodland_litter"]:
+		verify(MapTerrainSurfaces.draw_family(family,{"terrain_id":"plain"}) not in ["temperate_litter","conifer_litter","boreal_litter","dry_woodland_litter"],"potential_forest_does_not_paint_plain_as_fallen_leaves:"+family)
+		verify(MapTerrainSurfaces.draw_family(family,{"terrain_id":"plain","presentation_terrain_id":"forest"})==family,"dated_visual_forest_can_retain_regional_ground:"+family)
 	for feature in ["sea","river","road","city","port","ford"]:
 		var cell={"terrain_id":feature,"presentation_terrain_surface":"dune_sand"}
 		verify(MapTerrainSurfaces.family_for(cell).is_empty(),"feature_precedence:"+feature)

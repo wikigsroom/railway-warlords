@@ -1,0 +1,56 @@
+{
+  "source": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\03_battle_railfront\\deliveries\\20261017_170011_d45891\\铁路线上的交锋_180s.wav",
+  "source_sha256": "3ec635678b56eeede5ee6e1463d0467ba37619ff7b90c3d0beeeb38e009065f6",
+  "model": "offline Whisper-small CPU, no reference text or forced language",
+  "windows": [
+    {
+      "start_seconds": 0,
+      "duration_seconds": 30,
+      "transcript": "Music",
+      "nonempty": true,
+      "mean_token_probability": 0.13248634338378906
+    },
+    {
+      "start_seconds": 30,
+      "duration_seconds": 30,
+      "transcript": "ḍᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃᵃ�",
+      "nonempty": true,
+      "mean_token_probability": 0.8511314392089844
+    },
+    {
+      "start_seconds": 60,
+      "duration_seconds": 30,
+      "transcript": "you",
+      "nonempty": true,
+      "mean_token_probability": 0.2145986706018448
+    },
+    {
+      "start_seconds": 90,
+      "duration_seconds": 30,
+      "transcript": "The power played out of etched, the one who she shethed and I.",
+      "nonempty": true,
+      "mean_token_probability": 0.23580798506736755
+    },
+    {
+      "start_seconds": 120,
+      "duration_seconds": 30,
+      "transcript": "Oh",
+      "nonempty": true,
+      "mean_token_probability": 0.17435455322265625
+    },
+    {
+      "start_seconds": 150,
+      "duration_seconds": 30,
+      "transcript": "The fire is another sight.",
+      "nonempty": true,
+      "mean_token_probability": 0.7885713577270508
+    }
+  ],
+  "covered_seconds": 180,
+  "nonempty_windows": 6,
+  "asr_returned_no_words": false,
+  "subjective_listening_performed": false,
+  "absence_of_human_voice_certified": false,
+  "scope": "Whole-track speech transcription screen only; music can cause ASR hallucinations. This does not prove absence of singing, choir, humming or voice-like instruments.",
+  "elapsed_seconds": 53.54
+}

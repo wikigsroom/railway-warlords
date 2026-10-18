@@ -1,0 +1,195 @@
+{
+  "title": "铁道烽烟 · 山河余烬",
+  "bpm": 72,
+  "seed": 202610170721,
+  "genre": "中国近代历史策略游戏主菜单纯器乐",
+  "style": "Entirely instrumental historical strategy game main theme, no human voice, no speech, no lyrics, no choir, no chanting or humming. 72 BPM, 4/4, D minor, warm acoustic chamber orchestra with restrained erhu melody, pipa and guzheng plucked figures, bamboo flute countermelodies, low strings and soft French horn. A dignified, weathered Chinese railway war room at dusk, late nineteenth and early twentieth century atmosphere. An original recurring D F G A C pentatonic motif, spacious and elegiac rather than melodramatic. Six-bar misty introduction, twelve-bar theme, twelve-bar dialogue, twelve-bar restrained rise, eight-bar reflective reprise, four-bar quiet D minor cadence. Natural acoustic depth, understated percussion, preserve room for menu sound effects. No modern electronic beats, no military sound effects or dialogue, no abrupt finale.",
+  "sections": [
+    {
+      "name": "Intro",
+      "bars": 6,
+      "pattern": [
+        [
+          "Dm",
+          "D16A16"
+        ],
+        [
+          "C",
+          "G32"
+        ],
+        [
+          "Gm",
+          "G16F16"
+        ]
+      ]
+    },
+    {
+      "name": "Theme",
+      "bars": 12,
+      "pattern": [
+        [
+          "Dm",
+          "D8F8G8A8"
+        ],
+        [
+          "C",
+          "G8A8c16"
+        ],
+        [
+          "Gm",
+          "B8A8G16"
+        ],
+        [
+          "Dm",
+          "F16D16"
+        ]
+      ]
+    },
+    {
+      "name": "Dialogue",
+      "bars": 12,
+      "pattern": [
+        [
+          "F",
+          "A8c8d16"
+        ],
+        [
+          "C",
+          "c8A8G16"
+        ],
+        [
+          "Gm",
+          "G8B8d16"
+        ],
+        [
+          "Dm",
+          "A16F16"
+        ]
+      ]
+    },
+    {
+      "name": "Rise",
+      "bars": 12,
+      "pattern": [
+        [
+          "Dm",
+          "d8c8A8G8"
+        ],
+        [
+          "C",
+          "c16G16"
+        ],
+        [
+          "Gm",
+          "B8d8c8A8"
+        ],
+        [
+          "Dm",
+          "G8F8D16"
+        ]
+      ]
+    },
+    {
+      "name": "Return",
+      "bars": 8,
+      "pattern": [
+        [
+          "Dm",
+          "D8F8G8A8"
+        ],
+        [
+          "C",
+          "G8A8c16"
+        ],
+        [
+          "Gm",
+          "B8A8G16"
+        ],
+        [
+          "Dm",
+          "F16D16"
+        ]
+      ]
+    },
+    {
+      "name": "Outro",
+      "bars": 4,
+      "pattern": [
+        [
+          "Gm",
+          "G16F16"
+        ],
+        [
+          "C",
+          "E16G16"
+        ],
+        [
+          "Dm",
+          "F16A16"
+        ],
+        [
+          "Dm",
+          "D32"
+        ]
+      ]
+    }
+  ],
+  "duration_seconds": 180,
+  "vocal": false,
+  "language": "instrumental",
+  "key": "Dm",
+  "steps": 32,
+  "target_lufs": -20.0,
+  "exports": [
+    "wav",
+    "mp3",
+    "ogg"
+  ],
+  "lyrics": "[Intro]\n\n[Theme]\n\n[Dialogue]\n\n[Rise]\n\n[Return]\n\n[Outro]\n",
+  "timeline": [
+    {
+      "section": "Intro",
+      "start_seconds": 0.0,
+      "end_seconds": 20.0,
+      "bars": 6,
+      "sung": false
+    },
+    {
+      "section": "Theme",
+      "start_seconds": 20.0,
+      "end_seconds": 60.0,
+      "bars": 12,
+      "sung": false
+    },
+    {
+      "section": "Dialogue",
+      "start_seconds": 60.0,
+      "end_seconds": 100.0,
+      "bars": 12,
+      "sung": false
+    },
+    {
+      "section": "Rise",
+      "start_seconds": 100.0,
+      "end_seconds": 140.0,
+      "bars": 12,
+      "sung": false
+    },
+    {
+      "section": "Return",
+      "start_seconds": 140.0,
+      "end_seconds": 166.66666666666666,
+      "bars": 8,
+      "sung": false
+    },
+    {
+      "section": "Outro",
+      "start_seconds": 166.66666666666666,
+      "end_seconds": 180.0,
+      "bars": 4,
+      "sung": false
+    }
+  ],
+  "workflow_sha256": "1f02b8b2874bbf9e96ae40ceffcaddd36ded6c491be6146ec1233b51dcb662f8",
+  "job_uuid": "59f60f1a80fe462e8690e0813de98993"
+}

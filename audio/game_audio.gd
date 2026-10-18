@@ -6,6 +6,14 @@ const SYNTH=preload("res://audio/audio_synth.gd")
 const SFX=["ui_select","order_move","rifle","machine_gun","artillery","explosion","capture","rail","repair","skill","danger","victory","dice","air"]
 var players: Array=[]
 var music: AudioStreamPlayer
+var music_fading: AudioStreamPlayer
+var music_cache: Dictionary={}
+var music_catalog: Dictionary={}
+var fade_elapsed=2.4
+var fading_gain=0.0
+var combat_hold=0.0
+const MUSIC_FADE_SECONDS=2.4
+const COMBAT_HOLD_SECONDS=24.0
 var enabled=true
 var music_enabled=true
 var sfx_volume=.65
@@ -19,7 +27,8 @@ func stop_all() -> void:
 	for p in players:
 		if is_instance_valid(p):p.stop();p.stream=null
 	if is_instance_valid(music):music.stop();music.stream=null
-	cache.clear();current_music=""
+	if is_instance_valid(music_fading):music_fading.stop();music_fading.stream=null
+	cache.clear();music_cache.clear();current_music="";combat_hold=0.0
 
 func _exit_tree() -> void:stop_all()
 
@@ -33,6 +42,45 @@ func _ready() -> void:
 	for i in range(8):
 		var p=AudioStreamPlayer.new();add_child(p);players.append(p)
 	music=AudioStreamPlayer.new();add_child(music)
+	music_fading=AudioStreamPlayer.new();add_child(music_fading)
+	var path="res://presentation/data/music_catalog.json"
+	if FileAccess.file_exists(path):
+		var parsed=JSON.parse_string(FileAccess.get_file_as_string(path))
+		if parsed is Dictionary:music_catalog=parsed
+	# OGG streams stay compressed. Prepare the three small resources before
+	# gameplay, so a combat event never performs a synchronous disk import.
+	for id in music_catalog.get("tracks",{}):
+		var source=str(music_catalog.tracks[id].get("runtime_file",""))
+		if ResourceLoader.exists(source):music_cache[id]=load(source)
+
+func _process(delta: float) -> void:
+	if music==null:return
+	if combat_hold>0:
+		combat_hold=maxf(0,combat_hold-delta)
+		if combat_hold==0 and current_music=="battle":set_music("campaign")
+	if not music_enabled:return
+	fade_elapsed=minf(MUSIC_FADE_SECONDS,fade_elapsed+delta)
+	apply_music_gain()
+	if fade_elapsed>=MUSIC_FADE_SECONDS and music_fading.playing:music_fading.stop();music_fading.stream=null
+	if music.playing and music.stream!=null:
+		var remaining=music.stream.get_length()-music.get_playback_position()-AudioServer.get_time_since_last_mix()
+		if remaining<=MUSIC_FADE_SECONDS and fade_elapsed>=MUSIC_FADE_SECONDS:
+			# Audited originals have natural fades, not a claimed seamless edit.
+			# Overlap the actual tail and head at runtime without changing bytes.
+			switch_music_stream(music.stream)
+
+func apply_music_gain() -> void:
+	var phase=clampf(fade_elapsed/MUSIC_FADE_SECONDS,0,1)
+	music.volume_db=linear_to_db(maxf(.000001,music_volume*sin(phase*PI*.5)))
+	music_fading.volume_db=linear_to_db(maxf(.000001,music_volume*fading_gain*cos(phase*PI*.5)))
+
+func switch_music_stream(stream: AudioStream) -> void:
+	var old_gain=sin(clampf(fade_elapsed/MUSIC_FADE_SECONDS,0,1)*PI*.5) if music.playing else 0.0
+	music_fading.stop();music_fading.stream=null
+	var previous=music;music=music_fading;music_fading=previous
+	music.stream=stream;fading_gain=old_gain;fade_elapsed=0.0
+	apply_music_gain()
+	if music_enabled:music.play()
 
 static func make_sfx(id: String) -> AudioStreamWAV:
 	var duration={"ui_select":.08,"order_move":.28,"rifle":.18,"machine_gun":.45,"artillery":.7,"explosion":.8,"capture":.5,"rail":.8,"repair":.45,"skill":.6,"danger":.7,"victory":1.6,"dice":.43,"air":1.1}.get(id,.2)
@@ -88,13 +136,29 @@ func play(id: String) -> void:
 
 func set_music(id: String) -> void:
 	if music==null:return
+	if id=="victory":id="menu"
+	if id!="battle":combat_hold=0.0
 	if current_music!=id:
-		var path="res://assets/audio/music/%s.wav"%id;var stream=load(path) if ResourceLoader.exists(path) else make_music(id)
-		if stream is AudioStreamWAV:stream.loop_mode=AudioStreamWAV.LOOP_FORWARD;stream.loop_begin=0;stream.loop_end=int(stream.get_length()*RATE)
-		music.stream=stream;current_music=id
-	music.volume_db=linear_to_db(music_volume)
-	if music_enabled and not music.playing:music.play()
-	elif not music_enabled:music.stop()
+		var stream: AudioStream=music_cache.get(id)
+		if stream==null:
+			var legacy_id="campaign" if id=="menu" else id
+			var path="res://assets/audio/music/%s.wav"%legacy_id
+			stream=load(path) if ResourceLoader.exists(path) else make_music(legacy_id)
+		if stream is AudioStreamWAV:stream.loop_mode=AudioStreamWAV.LOOP_DISABLED
+		elif stream is AudioStreamOggVorbis:stream.loop=false
+		switch_music_stream(stream);current_music=id
+	if music_enabled and not music.playing:
+		fade_elapsed=0.0;fading_gain=0.0;music.play()
+	elif not music_enabled:
+		music.stop();music_fading.stop();fade_elapsed=MUSIC_FADE_SECONDS
+	apply_music_gain()
+
+func score_events(events: Array, status: String) -> void:
+	# Presentation-only tension, independent of dice, AI and simulation time.
+	if status!="playing":return
+	for event in events:
+		if str(event.get("type","")) in ["DamageApplied","UnitDefeated","CityCaptured"]:
+			set_music("battle");combat_hold=COMBAT_HOLD_SECONDS;return
 
 func on_events(events: Array, state: Dictionary, content: ContentRegistry) -> void:
 	for e in events:

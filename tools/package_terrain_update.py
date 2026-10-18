@@ -99,7 +99,24 @@ def main():
             require(sha(path) == row['sha256'] and sha(metadata) == row['metadata_sha256'], 'Native capture changed')
             require(read(metadata)['build_version'] == version, 'Old capture in current native proof')
             captures.update([path, metadata])
-    require(len(captures) == 92 * 2, 'Complete current 92-view native evidence required')
+    terrain_profiles = [group for group in native['groups'] if group['kind'] == 'terrain']
+    ui_profiles = [group for group in native['groups'] if group['kind'] == 'war-room']
+    require(len(terrain_profiles) == 2 and len(ui_profiles) == 3, 'Both terrain and all three UI profiles required')
+    terrain_capture_count = 0
+    for group in terrain_profiles:
+        profile_report = read(P / group['report'])
+        withheld = set(profile_report.get('withheld_without_dated_forest_source', []))
+        rendered = profile_report['rendered_map_types']
+        require(profile_report['registered_library_types'] == 20
+                and withheld <= {'boreal_litter', 'temperate_litter', 'conifer_litter', 'dry_woodland_litter'}
+                and rendered + len(withheld) == 20 and group['checks'] == 32 + 4 * rendered
+                and len(group['captures']) == 3 + rendered,
+                'Source-gated native terrain set is incomplete')
+        terrain_capture_count += len(group['captures'])
+    require([group['checks'] for group in ui_profiles] == [66, 80, 66]
+            and all(len(group['captures']) == 13 for group in ui_profiles), 'All 212 UI checks and 39 captures required')
+    base_capture_count = terrain_capture_count + 39 + 7
+    require(len(captures) == base_capture_count * 2, 'Complete current source-gated terrain/UI/detail evidence required')
     control = read(P / 'reports/control_land_native_evidence.json')
     clip_sha = sha(P / 'presentation/data/control_land_clip.json')
     require(control['version'] == version and control['runtime_source_sha256'] == runtime
@@ -131,7 +148,7 @@ def main():
             require(sha(path) == row['sha256'] and sha(metadata) == row['metadata_sha256']
                     and read(metadata)['build_version'] == version, 'Coast viewport changed')
             captures.update([path, metadata])
-    require(len(captures) == 112 * 2, 'Complete current 112-view terrain/UI/coast evidence required')
+    require(len(captures) == (base_capture_count + 20) * 2, 'Complete current terrain/UI/coast evidence required')
     symbols = read(P / 'reports/map_symbol_native_evidence.json')
     require(symbols['version'] == version and symbols['runtime_source_sha256'] == runtime
             and symbols['windows_exe_sha256'] == native['windows_exe_sha256'] and len(symbols['groups']) == 2
@@ -148,7 +165,7 @@ def main():
             require(sha(path) == row['sha256'] and sha(metadata) == row['metadata_sha256']
                     and read(metadata)['build_version'] == version, 'Native symbol frame changed')
             captures.update([path, metadata])
-    require(len(captures) == 144 * 2, 'Current 144-view terrain/UI/coast/symbol evidence required')
+    require(len(captures) == (base_capture_count + 20 + 32) * 2, 'Complete current terrain/UI/coast/symbol evidence required')
     symbols_review = read(P / 'reports/map_symbol_native_review.json')
     require(symbols_review['version'] == version and symbols_review['runtime_source_sha256'] == runtime
             and symbols_review['windows_exe_sha256'] == native['windows_exe_sha256'], 'Current symbol image review required')
@@ -235,14 +252,15 @@ def main():
     stored_map_ids = {row['id'] for row in assets if row['category'] in {'building','scenery','tile'}}
     require(len(stored_map_ids) == 990 and len(stored_map_ids - retained_ids) == 970,
             'Stored and active map inventory must match the registered assets')
-    require(identity['version'] == installation['version'] == identity_review['version'] == version
+    production_version=identity['version']
+    require(production_version == installation['version'] == identity_review['version']
             and identity['completed'] == identity['requested'] == 20
             and identity['source_route'] == 'sub2-image-gen/gpt-image-2.5/high'
             and identity['source_plan_sha256'] == macros['source_plan_sha256']
                 == sha(P / macros['source_plan_file'])
             and {row['id'] for row in identity['assets']} == active_ids
             and len({row['source_sha256'] for row in identity['assets']}) == 20,
-            'Twenty current independent Sub2 material originals required')
+            'Twenty active independent Sub2 material originals with immutable production identity required')
     reviewed = {row['id']: row for row in identity_review['originals']}
     require(identity_review['all_twenty_originals_viewed'] and set(reviewed) == active_ids,
             'Complete individual source-image review required')
@@ -270,6 +288,42 @@ def main():
     for row in material_review['images']:
         require(row['viewed_complete_native_frame'] and sha(P/row['file']) == row['sha256'],
                 'Reviewed material viewport changed')
+    coverage=read(P/'reports/ground_coverage_compilation.json')
+    coverage_test=read(P/'reports/ground_coverage_tests.json')
+    coverage_native=read(P/'reports/ground_coverage_native_evidence.json')
+    require(coverage['passed'] and not coverage['source_maps_modified'] and not coverage['source_rasters_modified']
+            and coverage['data_sha256']==sha(P/'presentation/data/ground_coverage.json')
+            and coverage_test['passed'] and coverage_test['build_version']==version
+            and coverage_native['passed'] and coverage_native['version']==version
+            and coverage_native['runtime_source_sha256']==runtime and coverage_native['windows_exe_sha256']==sha(exe),
+            'Current source-clipped functional/coastal ground proof required')
+    for row in coverage_native['files']:
+        require(sha(P/row['file'])==row['sha256'],'Ground coverage native evidence changed')
+        fixture_captures.add(P/row['file'])
+    music=read(P/'presentation/data/music_catalog.json')
+    music_installation=read(P/'reports/music_installation.json')
+    music_native=read(P/'reports/music_native_tests.json')
+    require(len(music['tracks'])==3 and music_installation['passed'] and music_native['passed']
+            and music_native['build_version']==version and music_native['runtime_source_sha256']==runtime
+            and music_native['windows_exe_sha256']==sha(exe) and music_native['native_export_tested']
+            and len(music_native['checks'])==18,
+            'Current audited instrumental music and native playback proof required')
+    for role,row in music['tracks'].items():
+        require(row['vocal'] is False and row['duration_seconds']==180
+                and sha(P/row['runtime_file'].removeprefix('res://'))==row['runtime_sha256']
+                and sha(P/row['raw_original'])==row['raw_original_sha256'], 'Music original changed: '+role)
+        delivery_path = P / 'docs/music-provenance' / row['id'] / 'delivery.json'
+        audit_path = delivery_path.with_name('waveform_audit.json')
+        require(sha(delivery_path)==row['source_delivery_sha256']
+                and sha(audit_path)==row['waveform_audit_sha256'], 'Music provenance changed: '+role)
+        masters = {Path(item['file']).suffix:item for item in read(delivery_path)['files']}
+        for extension,field in [('.mp3','mp3'),('.wav','wav'),('.ogg','runtime_file')]:
+            master = P / row[field].removeprefix('res://')
+            require(master.stat().st_size==masters[extension]['bytes'] and sha(master)==masters[extension]['sha256']
+                    and masters[extension]['samples_per_channel']==8640000,
+                    'Audited music master changed: '+role+extension)
+    reports.update(P/'reports'/name for name in ['ground_coverage_compilation.json','ground_coverage_tests.json',
+                   'ground_coverage_native_evidence.json','music_installation.json','music_native_tests.json'])
     for row in provenance['assets']:
         require(sha(P / row['image']) == row['image_sha256'] and sha(P / row['prompt']) == row['prompt_sha256'],
                 'Portable image or prompt changed: ' + row['id'])
@@ -286,12 +340,15 @@ def main():
                    'apk_signature.log', 'apk_badging.log', 'apk_permissions.log', 'android_devices.log', 'desktop_benchmark.json'])
     summary = dict(passed=True, version=version, runtime_source_sha256=runtime, content_hash=fingerprint,
                    regression_groups=len(regression), regression_checks=sum(int(r['passed_checks']) for r in regression),
-                   terrain_types=20, detail_originals=80, macro_originals=20, new_independent_originals=20,
+                   terrain_types=20, detail_originals=80, macro_originals=20, new_independent_originals=20 if production_version==version else 0,
+                   material_original_production_version=production_version,
+                   source_clipped_ground_maps=6,source_clipped_ground_cells=sum(row['covered_cells'] for row in coverage['maps'].values()),
+                   pure_instrumental_scores=3,total_score_seconds=540,native_music_checks=len(music_native['checks']),
                    stored_superseded_macro_originals=20, material_identity_revision=macros['material_identity_revision'],
                    material_world_repeat_period=128, new_material_source_images_reviewed=20, native_material_cards_viewed=20,
                    river_replacement_reaches=31, source_linked_river_continuity_verified=True,
                    total_rasters=len(assets), total_map_assets=len(stored_map_ids - retained_ids), total_stored_map_assets=len(stored_map_ids),
-                   native_groups=len(native['groups']), native_captures=92,
+                   native_groups=len(native['groups']), native_captures=sum(len(group['captures']) for group in native['groups']),
                    coastal_control_land_clipped=True, source_lake_islands_preserved=True,
                    continuous_ground_nonoverlapping=True, exclusive_continental_control_fill=True,
                    native_material_fixture_checks=ground['checks'],
@@ -320,7 +377,8 @@ def main():
 
 运行 RailwayWarlords.exe，无需安装 Godot。
 20 类地域地表各有 1 张连续底材与 4 张细节原图；说明书内可打开地形图鉴。
-本版启用 20 张新生成的连续底材：草叶、针叶、砂纹、砾石、苔藓等具有独立形态。旧 20 张底材保留归档。沿用连续光影、分层细河岸带与按缩放切换的城市/部队图符。
+本版按真实陆地裁切连续底材，补上城市、道路与岸边底纹；林底材质仅在有林地依据的地格使用。20 类材质库与原始图片继续保留。
+新增三首本地 YuE2 配乐，每首180秒；菜单、推演与交锋共享主题，2.4秒淡化衔接。无编写或叠加的人声台词/歌词。
 点选部队、选目标、再次点击确认；拖动平移、滚轮缩放、空格跳过战斗演出。
 本版为可玩测试交付，X30 真机与完整 AI 长局尚未在本轮复验。
 ''', encoding='utf-8')
@@ -332,6 +390,31 @@ def main():
         for path in sorted(portable.rglob('*')):
             if path.is_file(): archive.write(path, path.relative_to(portable).as_posix())
     android = out / f'RailwayWarlords-{version}.apk'; shutil.copyfile(apk, android)
+    soundtrack = out / f'RailwayWarlords-Soundtrack-{version}.zip'
+    listen = out / '配乐试听'; listen.mkdir(exist_ok=True)
+    music_note = '''# 铁道烽烟 · 本地 YuE2 配乐
+
+三首均为180秒，围绕同一主题按纯器乐谱面制作，没有编写或叠加台词、歌词和旁白。
+
+- [山河余烬 · 菜单](配乐试听/01_menu_embers.mp3)
+- [江流与驿路 · 推演](配乐试听/02_strategy_rivers.mp3)
+- [铁路线上的交锋 · 战斗](配乐试听/03_battle_railfront.mp3)
+
+游戏使用48 kHz双声道OGG，2.4秒交叉淡化；24秒无交战后回到推演曲。
+原始FLAC、24位WAV、OGG、完整谱面、生成历史及波形审计在Godot源码ZIP的docs目录。
+18项导出程序播放检查通过；主观整曲听辨与物理手机扬声器验收仍独立记录。
+
+Three locally generated 180-second instrumental-score variations share one original theme.
+No authored or added dialogue, lyrics or narration. Complete originals and production records
+are included in the separate Godot source archive. Native playback checks are technical evidence.
+'''
+    with zipfile.ZipFile(soundtrack, 'w', zipfile.ZIP_DEFLATED, compresslevel=1) as archive:
+        for row in music['tracks'].values():
+            audio = P / 'docs/audio' / (Path(row['runtime_file']).stem + '.mp3')
+            require(audio.is_file(), 'Audition master missing')
+            shutil.copyfile(audio, listen / audio.name)
+            archive.write(audio, '配乐试听/' + audio.name)
+        archive.writestr('README.md', music_note)
     source = out / f'RailwayWarlords-Godot-Source-{version}.zip'
     with zipfile.ZipFile(source, 'w', zipfile.ZIP_DEFLATED, compresslevel=1) as archive:
         # Use exactly the public file set already inspected by verify_repository;
@@ -345,20 +428,20 @@ def main():
             archive.write(path, path.relative_to(ROOT).as_posix())
         add_tree(archive, ROOT / 'design', ROOT,
                  allowed={'.md', '.json', '.py', '.csv', '.txt', '.png', '.shp', '.shx', '.dbf', '.prj', '.cpg', '.html', '.xml', '.zip', '.tif', '.pdf'})
-    for path in [windows, source]:
+    for path in [windows, source, soundtrack]:
         with zipfile.ZipFile(path) as archive:
             require(archive.testzip() is None, 'Corrupt archive: ' + path.name)
     with zipfile.ZipFile(windows) as archive:
         require(hashlib.sha256(archive.read(exe.name)).hexdigest() == sha(exe), 'Windows archive differs from tested EXE')
     require(sha(android) == sha(apk) and source_digest()[0] == runtime, 'Delivery identity changed')
     manifest = dict(version=version, created_at_utc=datetime.now(timezone.utc).isoformat(),
-                    release_kind='scoped_material_identity_terrain_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
+                    release_kind='scoped_source_clipped_ground_and_instrumental_score_beta', **{k:v for k,v in summary.items() if k not in ['version','passed']},
                     regression=regression, capacity=capacity, source_pngs_modified=False, manual_image_compositing=False,
                     source_image_location='game/railway_warlords/assets; byte-identical generated originals, portable prompt/provenance copies in docs',
                     original_production_tree_duplicated=False, old_releases_modified=False,
                     reports=[dict(file=p.relative_to(P).as_posix(), sha256=sha(p)) for p in sorted(reports)],
                     native_evidence_sha256=sha(P / 'reports/terrain_surface_native_evidence.json'),
-                    artifacts=[dict(file=p.name, bytes=p.stat().st_size, sha256=sha(p)) for p in [windows, android, source]],
+                    artifacts=[dict(file=p.name, bytes=p.stat().st_size, sha256=sha(p)) for p in [windows, android, source, soundtrack]],
                     archive_integrity_verified=True)
     write(out / 'release_manifest.json', manifest)
     shutil.copyfile(P / 'docs/30_二十类地域地表与纹理整改.md', out / '二十类地域地表与纹理整改.md')
@@ -369,20 +452,25 @@ def main():
     shutil.copyfile(P / 'docs/35_地图缩放层次与精确点选.md', out / '地图缩放层次与精确点选.md')
     shutil.copyfile(P / 'docs/36_连续高程光影与细河岸带.md', out / '连续高程光影与细河岸带.md')
     shutil.copyfile(P / 'docs/37_二十类地表材质形态重制.md', out / '二十类地表材质形态重制.md')
-    (out / '交付说明.md').write_text(f'''# 铁道烽烟 {version} · 地表与界面测试交付
+    shutil.copyfile(P / 'docs/38_源陆地补纹与林底选材约束.md', out / '源陆地补纹与林底选材约束.md')
+    (out / '本地YuE2配乐与场景衔接.md').write_text(music_note, encoding='utf-8')
+    (out / '交付说明.md').write_text(f'''# 铁道烽烟 {version} · 源陆地补纹与配乐测试交付
 
 Windows：解压 RailwayWarlords-Windows-{version}.zip，运行 RailwayWarlords.exe。
 Android：安装 RailwayWarlords-{version}.apk，延续现有签名。目标样机 Motorola X30 尚未完成物理验收。
 Godot：解压工程 ZIP，用 Godot 4.7.2 打开 game/railway_warlords/project.godot。
+配乐：直接打开配乐试听目录，或单独解压 RailwayWarlords-Soundtrack-{version}.zip。
 
-20 类地域地表的连续底材已全部重制：新增 20 张独立 Sub2 原图，各具草叶、针叶、砂纹、砾石、盐壳或岩板等结构。与既有 80 张细节原图合计 100 张启用专用地表原图。旧 20 张连续底材保留原始字节、ID、提示词及来源，未重复计入新增量或启用量。全部 PNG 共 1,176 张；存储的地图素材 990 张，其中当前启用 970 张。
+本版没有新增栅格原图，沿用0.2.20生产的20张Sub2连续底材与80张细节原图；旧20张底材继续保留。全部PNG为1,176张；存储地图素材990张，当前启用素材库970张。
+6张来源地图的连续地表沿真实陆地与孔洞裁切，在城市、道路和岸边下方补上底纹。覆盖133,577个既有来源格；544个没有充分分类依据的交界格保留原有地表。落叶、落针底纹只在有效林地来源处显示，图鉴仍保留全部20类，不为截图数量而铺设无来源森林。
+新增3首本地YuE2原创配乐，每首180秒，共9分钟，按纯器乐谱面制作，未添加台词、歌词和旁白。OGG用于双端，MP3/WAV及原始FLAC、规格、谱面、母带和波形核验在源码docs中保留。配乐在菜单、推演和交锋间以2.4秒交叉淡化，24秒无交锋后返回战略配乐。语音识别筛查不等于主观听辨或绝对无人声签核。
 新底材继续使用既有生态区、高程和河谷分配，不把示意材质当成逐年历史土地利用调查；规则地形仍为 12 类。沿用连续正权重高程光照及分层细河岸带，没有添加DEM采样或改写源地形。所有细河先画岸带再画水面，源河段端点与既有60米显示约束保持。沿用按缩放切换的独立城市/编队图符和精确点选。
 沿用上一轮的不重叠地表网格和三种相邻来源连续混合；各地图总览仍显示地域底材。亚洲控制区不再重复叠加城市影响色。44项原生材质夹具检查核对20种完整导入纹理、连续覆盖、绘制顺序和平移稳定性；夹具不冒充历史地图画面。
 沿用共享世界纹理的渐变主河水面；汉口、南京的31条替代主河使用既有60米有界显示圆角，上下游共用端点共享接头方向。河宽与岸带是制图符号，不是历史实测岸线。另有11项原生数值夹具检查核对GPU与独立16权重计算、三角方向和镜头平移；4张夹具画面单列，不作为实机地图画面。
 沿用上一轮依据既有真实陆地裁切的亚洲战略层控制区：61个城市影响区和617个沿海控制格保留实际陆地部分，14个完全离岸候选格不绘制；主地图与缩略图共享裁切网格。里海水面扣除来源中独立的岛屿，保留真实湖中陆地。地理数据、历史归属和规则格未重写。
 说明书与地格详情均可进入交互地形图鉴。材质按生态区、高程与既有河谷选取；不宣称逐年历史土地利用复原。
 
-当前 {summary['regression_groups']} 组 / {summary['regression_checks']} 项回归通过；92张地表/UI及局部地图、20张海岸控制层开关和32张缩放/点选专项截图，共144张原生画面、双桌面视口容量与APK载荷已绑定本次EXE/源码哈希。五处海岸/总览的主图和缩略图水面像素均经开关对照。地图图符专项通过{symbols['checks']}项原生检查。
+当前 {summary['regression_groups']} 组 / {summary['regression_checks']} 项回归通过；{summary['native_captures']}张地表/UI及局部地图、20张海岸控制层开关和32张缩放/点选专项截图，共{summary['total_native_captures']}张实际地图/UI画面、双桌面视口容量与APK载荷已绑定本次EXE/源码哈希。另有4张裁切数值夹具和4张光影数值夹具，独立记录，不作为地图实机图。音乐原生播放通过18项检查。
 截图为 Windows 原生程序；README 的战斗 GIF 保留 0.2.12 原录像身份。本轮未重新宣称完整 AI 长局、正式美术/历史批准或《欧陆战争6》商业品质达标。
 
 工程内的 PNG 即原始生成字节，提示词与便携来源索引位于 docs；原始 GIS 归档随 design 保留。不包含引擎缓存、签名、素材网关凭据或重复原图树。

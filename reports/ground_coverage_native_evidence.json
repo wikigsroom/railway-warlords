@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "version": "0.2.21",
+  "runtime_source_sha256": "feb29a8b71e2622f7ee8eb66292846018241cf18c8a92eb33e6ae3be35f8303b",
+  "windows_exe_sha256": "4cb297f481a967f0dc82aaa15209ccd7e75288620b6cf3fb465a48c4eb129326",
+  "checks": 10,
+  "cases": [
+    {
+      "capture": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_coverage_native/asia_strategic.png",
+      "hex": "0,8",
+      "map": "asia_strategic",
+      "max_water_channel_delta": 0.0,
+      "mode": "source_coast",
+      "numerical_fixture_not_gameplay_screenshot": true,
+      "textured_land_pixels": 1009,
+      "water_pixels": 5530
+    },
+    {
+      "capture": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_coverage_native/jingfeng.png",
+      "hex": "0,176",
+      "map": "jingfeng",
+      "max_water_channel_delta": 0.0,
+      "mode": "source_coast",
+      "numerical_fixture_not_gameplay_screenshot": true,
+      "textured_land_pixels": 1158,
+      "water_pixels": 4803
+    },
+    {
+      "capture": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_coverage_native/hankou.png",
+      "hex": "8,7",
+      "map": "hankou",
+      "max_water_channel_delta": 0.0,
+      "mode": "functional_underlay",
+      "numerical_fixture_not_gameplay_screenshot": true,
+      "textured_land_pixels": 3355,
+      "water_pixels": 0
+    },
+    {
+      "capture": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_coverage_native/jingjin.png",
+      "hex": "40,56",
+      "map": "jingjin",
+      "max_water_channel_delta": 0.0,
+      "mode": "functional_underlay",
+      "numerical_fixture_not_gameplay_screenshot": true,
+      "textured_land_pixels": 3355,
+      "water_pixels": 0
+    }
+  ],
+  "files": [
+    {
+      "file": "reports/ground_coverage_native/validation.json",
+      "sha256": "7dd73456affb7f509c290e8d2e50fce4fca908378bcee2882b1104ed339c4d92"
+    },
+    {
+      "file": "reports/ground_coverage_native.log",
+      "sha256": "c81b04a5024fb4af6fb0fc301f65a624dfc8e5d623024e411a896f5a81e1e1c4"
+    },
+    {
+      "file": "reports/ground_coverage_native/asia_strategic.png",
+      "sha256": "e59303aaf3cede266a83b92db7364dcf617fcb97dee2c833491e671fd6caf326"
+    },
+    {
+      "file": "reports/ground_coverage_native/jingfeng.png",
+      "sha256": "c15a5ad99305abf0717af3fa7392a07537bff43266fdb0ff9c4c27181f8ad843"
+    },
+    {
+      "file": "reports/ground_coverage_native/hankou.png",
+      "sha256": "a491dead2d4a21e60f8523d04a0596c1b9ad5d0c00e518860fa9fc22e064545a"
+    },
+    {
+      "file": "reports/ground_coverage_native/jingjin.png",
+      "sha256": "bdb070ffc47034c3692564c6bde016787594fad868eaebeac075ad46d0e1ae82"
+    }
+  ],
+  "physical_android_device_tested": false,
+  "numerical_fixtures_not_gameplay_screenshots": true,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false
+}

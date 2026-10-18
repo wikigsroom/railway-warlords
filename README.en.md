@@ -7,7 +7,7 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.20, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.21, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
@@ -52,8 +52,8 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Facilities | **12 types** covering recruitment, transport, supply, medicine, defense, communications and trade |
 | Raster art | **1,176 PNGs**; **990 stored map assets, 970 currently active**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
 | Regional terrain | **20 types × (1 new continuous ground + 4 detail originals) = 100 active originals**; 20 superseded macrogrounds retained, interactive atlas |
-| Audio and fonts | 14 procedural sound effects, 3 procedural music tracks and 2 Chinese fonts with OFL notices |
-| Current regression snapshot | **26 groups / 5,031 passing checks**, plus 224 native terrain, 212 UI action/layout, 84 coastal pixel/viewport, 44 native material pixel, 11 relief-fixture and 220 map-symbol checks |
+| Audio and fonts | 14 procedural effects, 3 local YuE2 scores (180 seconds each), 3 retained fallback loops and 2 Chinese fonts with OFL notices |
+| Current regression snapshot | **27 groups / 5,084 passing checks**, plus 216 native terrain, 212 UI, 84 coastal, 44 material-pixel, 11 relief-fixture, 10 clipping-fixture, 220 map-symbol and 18 music-playback checks |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
 
 Runtime data lives in `content/`. Original designs and older versions retain their own status. Content counts do not establish complete art, historical, balance or device acceptance. See the [completion assessment](docs/23_当前完成度评估.md).
@@ -68,6 +68,16 @@ Runtime data lives in `content/`. Original designs and older versions retain the
 *The resource/date bar sits above the map, objectives occupy the upper left, the inspector is on the right, and command previews and confirmations sit below.*
 
 ### Twenty distinct ground materials
+
+Version 0.2.21 clips ground to source land beneath cities, roads and shore edges. Leaf/needle floors require forest evidence; all twenty families remain in the atlas, while nineteen are deployed in the tested Asia 1927 map. Three local YuE2 scores, each 180 seconds, share a theme across menus, planning and combat with 2.4-second crossfades. See [source-clipped ground](docs/38_源陆地补纹与林底选材约束.md) and [music, downloads and verification scope](docs/39_本地YuE2纯器乐配乐与场景衔接.md).
+
+| Listen | Context | Arrangement |
+| --- | --- | --- |
+| [Embers over the Land · 3 minutes](docs/audio/01_menu_embers.mp3) | Main menu and mode selection | 72 BPM, plucked strings and chamber strings introduce the theme |
+| [Rivers and Post Roads · 3 minutes](docs/audio/02_strategy_rivers.mp3) | Map, diplomacy and supply planning | 80 BPM, bamboo flute, sparse plucked strings and soft strings |
+| [Clash along the Railway · 3 minutes](docs/audio/03_battle_railfront.mp3) | Damage, defeated formations and captured cities | 96 BPM, low strings, restrained drums and brass |
+
+All three use instrumental scores with no authored or added dialogue, lyrics or narration. The game uses 48 kHz stereo compressed OGG; the source includes 24-bit WAV, 320 kbps MP3, original FLAC and production/mastering records. Eighteen exported-program playback checks pass. Subjective listening and phone-speaker acceptance are recorded separately.
 
 Version 0.2.20 generates and activates **twenty independent macroground originals**. Grass blades, straw fibers, fallen broad leaves, needles, sand ripples, angular gravel, salt crust, moss and rock plates replace the previous similar mottled textures. All twenty complete originals were individually inspected and use the required Sub2 route. The previous twenty macrogrounds retain their source bytes, prompts and provenance. Existing ecoregion, elevation and river assignments remain; the rules still define twelve terrain categories. See [twenty ground-material identities](docs/37_二十类地表材质形态重制.md).
 
@@ -486,25 +496,25 @@ godot --headless --path . --script tests/surface_geography_test.gd
 godot --headless --path . --script tests/terrain_surfaces_test.gd
 ```
 
-Twenty-six groups / 5,031 checks cover rules, input, geography, progression, transactions, events, rendering, workers, scale, logistics, caches, settlements, snapshots, Asia, boundaries, facing, surfaces, the map bank, source-linked river continuity and coastal control geometry. The current EXE also passes 224 terrain, 212 real UI action/layout, 84 coastal and 44 native material-fixture checks. Another 220 symbol checks cover individual formations, zoom crossings in both directions, selection near cities and unchanged state/RNG. The 92 terrain/UI, 20 control-toggle and 32 symbol images total 144 current EXE native captures. Eleven additional native relief checks compare GPU sampling with an independent CPU reference and verify triangle diagonals and camera phase. Four numerical fixture frames are listed separately from historical-map screenshots. Older movement, action and command-replay evidence retains its original version identity.
+Twenty-seven groups / 5,084 checks cover rules, input, geography, progression, transactions, events, rendering, workers, scale, logistics, caches, settlements, snapshots, Asia, boundaries, facing, surfaces, the map bank, river continuity, coastal control and source-land clipping. The current EXE also passes 216 terrain, 212 real UI action/layout, 84 coastal and 44 native material-fixture checks. Another 220 symbol checks cover individual formations, zoom crossings in both directions, selection near cities and unchanged state/RNG. The 90 terrain/UI, 20 control-toggle and 32 symbol images total 142 current EXE native captures. Eleven relief and ten source-land clipping checks have four numerical fixture frames each, listed separately from historical-map screenshots. All three scores pass eighteen native EXE playback checks. Older movement, action and command-replay evidence retains its original version identity.
 
 [Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current summary](reports/terrain_update_verification_summary.json)
 
-Current reports are original-workspace 0.2.20 snapshots, not a claim that another machine has rerun them. They do not replace manual gameplay, art, historical or device acceptance. Full AI endurance was not rerun for this map patch; older endurance results and recordings retain their version identity.
+Current reports are original-workspace 0.2.21 snapshots, not a claim that another machine has rerun them. They do not replace manual gameplay, art, music listening, historical or device acceptance. Full AI endurance was not rerun for this patch; older endurance results and recordings retain their version identity.
 
-### Current version 0.2.20 full-load measurements
+### Current version 0.2.21 full-load measurements
 
-Final 0.2.20 EXE, desktop RTX 3060, 240 formations and 74,762 cells. Sustained pan/zoom ran for 60 seconds per viewport; other stages use fixed-frame samples or actual combat presentation. Both columns use the desktop GPU.
+Final 0.2.21 EXE, desktop RTX 3060, 240 formations and 74,762 cells. Sustained pan/zoom ran for 60 seconds per viewport; other stages use fixed-frame samples or actual combat presentation. Both columns use the desktop GPU.
 
 | Phase | 1920×1080 average FPS / P95 ms | 2400×1080 desktop mobile layout average FPS / P95 ms |
 | --- | ---: | ---: |
-| Static atlas | 428.1 / 2.71 | 406.8 / 3.10 |
-| Atlas pan | 161.6 / 7.92 | 122.6 / 12.75 |
-| Tactical selection | 81.7 / 39.45 | 69.8 / 44.12 |
-| Sustained pan/zoom | 162.3 / 7.61 | 153.2 / 9.61 |
-| Active combat | 121.8 / 8.57 | 105.1 / 11.14 |
+| Static atlas | 347.1 / 4.32 | 291.5 / 4.33 |
+| Atlas pan | 138.9 / 9.48 | 138.7 / 10.35 |
+| Tactical selection | 76.4 / 41.68 | 73.3 / 41.33 |
+| Sustained pan/zoom | 147.2 / 8.66 | 142.5 / 9.11 |
+| Active combat | 108.0 / 9.01 | 112.3 / 8.97 |
 
-Every stage in both layouts passes the existing 60 average FPS gate. Tactical selection still reaches 39.45 / 44.12 ms at P95; averages do not establish stable individual frames. The 2400×1080 desktop layout does not replace physical Motorola X30 acceptance. [Current Windows result](reports/capacity_windows_v0220.json) · [Current desktop Android-layout result](reports/capacity_x30_v0220.json). The failed 0.2.19 intermediate result remains below.
+Every stage in both layouts passes the existing 60 average FPS gate. Tactical selection reaches 41.68 / 41.33 ms at P95; averages do not establish stable individual frames. The 2400×1080 desktop layout does not replace physical Motorola X30 acceptance. [Current Windows result](reports/capacity_windows_v0221.json) · [Current desktop Android-layout result](reports/capacity_x30_v0221.json). [Version 0.2.20 Windows](reports/capacity_windows_v0220.json), [version 0.2.20 desktop mobile layout](reports/capacity_x30_v0220.json) and the failed 0.2.19 intermediate result below retain their original identities.
 
 ### Historical intermediate version 0.2.19 desktop performance
 
@@ -585,4 +595,4 @@ Detailed implementation chapters currently use Chinese; this English README cove
 | Verified scope | [Completion](docs/23_当前完成度评估.md), [validation](docs/05_测试与验收.md) |
 | Media and sources | [Screenshots/GIFs](docs/MEDIA.md), [provenance](docs/asset-provenance/index.json), [licensing](LICENSE-NOTICE.md) |
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.20 assessment and corresponding reports for current status.
+Older chapters preserve their version context. Use these READMEs, the 0.2.21 assessment and corresponding reports for current status.

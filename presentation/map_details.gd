@@ -7,6 +7,10 @@ var features: Array=[]
 var buckets: Dictionary={}
 var surfaces: Dictionary={}
 var surface_families: Dictionary={}
+var ground_families: Dictionary={}
+var ground_clips: Dictionary={}
+var source_ground_coverage: Dictionary={}
+var ground_policy: Dictionary={}
 var diagnostics: Dictionary={}
 var overhang=220.0
 var surface_template: Dictionary={}
@@ -26,10 +30,21 @@ const SURFACE_BLEND_INNER=.70
 
 func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array, rivers: Array) -> void:
 	features=[];buckets={};surfaces={};surface_families={};diagnostics={"active":false}
+	ground_families={};ground_clips={};source_ground_coverage={};continuous_color_templates.clear()
+	ground_policy={"forest_floor_requires_sourced_forest":true,"withheld_forest_floor_cells":0,"drawn_families":{}}
 	blend_material=null;blend_material_prepared=false
 	macro_chunks.clear();macro_chunk_meshes.clear();macro_index_prepared=false
 	if not MapArtBank.available():return
 	var started=Time.get_ticks_usec();var candidates: Array=[];var materials: Array=[]
+	source_ground_coverage=MapGroundCoverage.for_map(map)
+	ground_families=source_ground_coverage.get("families",{}).duplicate()
+	ground_clips=source_ground_coverage.get("clips",{})
+	for key in ground_families:
+		var source_cell: Dictionary=cells.get(HexGrid.from_key(key),{})
+		var regional=str(ground_families[key]);var drawn=MapTerrainSurfaces.draw_family(regional,source_cell)
+		ground_families[key]=drawn
+		if drawn!=regional:ground_policy.withheld_forest_floor_cells+=1
+		ground_policy.drawn_families[drawn]=int(ground_policy.drawn_families.get(drawn,0))+1
 	for h in cells:
 		var cell: Dictionary=cells[h];var p=HexGrid.to_world(h)
 		var kind=TerrainVisuals.kind_for_cell(cell);var family=MapArtBank.material_family(cell)
@@ -197,8 +212,9 @@ func continuous_macro_meshes(view: Rect2) -> Dictionary:
 	# map does not walk or rebuild all ground assignments during an atlas pan.
 	if not macro_index_prepared:
 		macro_index_prepared=true
-		for key in surfaces:
-			var family=str(surface_families.get(key,""))
+		var assignments=surface_families if ground_families.is_empty() else ground_families
+		for key in assignments:
+			var family=str(assignments[key])
 			if MapTerrainSurfaces.macro_id(family).is_empty():continue
 			var hex=HexGrid.from_key(key);var chunk=Vector2i(floori(float(hex.x)/MACRO_CHUNK_SIZE),floori(float(hex.y)/MACRO_CHUNK_SIZE))
 			var center=HexGrid.to_world(hex);var bounds=Rect2(center-Vector2.ONE*HexGrid.RADIUS,Vector2.ONE*HexGrid.RADIUS*2)
@@ -211,7 +227,7 @@ func continuous_macro_meshes(view: Rect2) -> Dictionary:
 		if not view.intersects(row.bounds):continue
 		if not macro_chunk_meshes.has(chunk):
 			var group={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
-			for hex in row.hexes:append_continuous_ground(group,hex,str(surface_families[HexGrid.key(hex)]))
+			for hex in row.hexes:append_continuous_ground(group,hex,ground_family(HexGrid.key(hex)))
 			var arrays=[];arrays.resize(Mesh.ARRAY_MAX)
 			arrays[Mesh.ARRAY_VERTEX]=group.vertices;arrays[Mesh.ARRAY_COLOR]=group.colors;arrays[Mesh.ARRAY_TEX_UV]=group.uvs
 			var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
@@ -223,6 +239,9 @@ func ground_material(strategic: bool) -> ShaderMaterial:
 	if not blend_material_prepared:
 		blend_material_prepared=true;blend_material=GroundMaterialBlend.material(strategic)
 	return blend_material
+
+func ground_family(key: String) -> String:
+	return str(ground_families.get(key,"")) if not ground_families.is_empty() else str(surface_families.get(key,""))
 
 func append_continuous_ground(group: Dictionary, hex: Vector2i, family: String) -> void:
 	# The six source-centre triangles partition the hex exactly. Adjacent hexes
@@ -236,16 +255,27 @@ func append_continuous_ground(group: Dictionary, hex: Vector2i, family: String) 
 			continuous_vertices.append_array(continuous_templates[-1])
 			continuous_uvs.append_array(PackedVector2Array([GroundMaterialBlend.weights(1,0),GroundMaterialBlend.weights(.5,.5),GroundMaterialBlend.weights(1.0/3.0,1.0/3.0),GroundMaterialBlend.weights(1,0),GroundMaterialBlend.weights(1.0/3.0,1.0/3.0),GroundMaterialBlend.weights(.5,0)]))
 	var layer_ids=GroundMaterialBlend.source_layers();var first=int(layer_ids[family]);var center=HexGrid.to_world(hex)
+	var nearby: Array=[]
+	for direction in HexGrid.DIRECTIONS:nearby.append(int(layer_ids.get(ground_family(HexGrid.key(hex+direction)),-1)))
+	var clipped: Array=ground_clips.get(HexGrid.key(hex),[])
+	if not clipped.is_empty():
+		# These numerical vertices partition only the source land intersection.
+		# Interpolated weights retain the very same three-source basis as an
+		# unclipped neighbour; no texture is painted across a source lake/inlet.
+		for vertex in clipped:
+			var direction=int(vertex[4]);var a=int(nearby[direction]);var b=int(nearby[(direction+1)%6])
+			group.vertices.append(Vector3(float(vertex[0]),float(vertex[1]),0))
+			group.uvs.append(GroundMaterialBlend.weights(float(vertex[2]),float(vertex[3])))
+			group.colors.append(Color(first/255.0,(first if a<0 else a)/255.0,(first if b<0 else b)/255.0,1))
+		return
 	group.vertices.append_array(Transform3D(Basis.IDENTITY,Vector3(center.x,center.y,0))*continuous_vertices)
 	group.uvs.append_array(continuous_uvs)
-	var nearby: Array=[]
-	for direction in HexGrid.DIRECTIONS:nearby.append(int(layer_ids.get(str(surface_families.get(HexGrid.key(hex+direction),"")),-1)))
 	for direction in range(6):
 		var a=int(nearby[direction]);var b=int(nearby[(direction+1)%6]);var signature=Vector3i(first,a,b)
 		if not continuous_color_templates.has(signature):
 			var pigment=Color(first/255.0,(first if a<0 else a)/255.0,(first if b<0 else b)/255.0,1)
 			var corner_coverage=(1.0+float(a>=0)+float(b>=0))/3.0;var colors=PackedColorArray()
-			for coverage in [1.0,(1.0+float(a>=0))*.5,corner_coverage,1.0,corner_coverage,(1.0+float(b>=0))*.5]:colors.append(Color(pigment,coverage))
+			for coverage in [1.0,(1.0+float(a>=0))*.5,corner_coverage,1.0,corner_coverage,(1.0+float(b>=0))*.5]:colors.append(Color(pigment,coverage if source_ground_coverage.is_empty() else 1.0))
 			continuous_color_templates[signature]=colors
 		group.colors.append_array(continuous_color_templates[signature])
 

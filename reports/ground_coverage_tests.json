@@ -1,0 +1,240 @@
+{
+	"art_approval": false,
+	"build_version": "0.2.21",
+	"checks": [
+		{
+			"name": "six_source_maps_have_independent_numerical_catalogues",
+			"passed": true
+		},
+		{
+			"name": "coverage_has_no_generated_or_edited_raster",
+			"passed": true
+		},
+		{
+			"name": "registered_ecological_geography_retains_original_bytes",
+			"passed": true
+		},
+		{
+			"name": "ground_is_bound_to_current_immutable_map:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "unsupported_ecology_is_only_bounded_neighbour_pigment_interpolation:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "functional_cells_receive_independent_ground_without_reclassification:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "all_source_clipped_vertices_reach_runtime_mesh:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "source_shore_partition_has_constant_opacity:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "runtime_ground_area_matches_compiled_source_partition:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "rules_coasts_rivers_cities_and_dem_are_unchanged:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "ground_is_bound_to_current_immutable_map:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "unsupported_ecology_is_only_bounded_neighbour_pigment_interpolation:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "functional_cells_receive_independent_ground_without_reclassification:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "all_source_clipped_vertices_reach_runtime_mesh:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "source_shore_partition_has_constant_opacity:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "runtime_ground_area_matches_compiled_source_partition:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "rules_coasts_rivers_cities_and_dem_are_unchanged:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "ground_is_bound_to_current_immutable_map:hankou",
+			"passed": true
+		},
+		{
+			"name": "unsupported_ecology_is_only_bounded_neighbour_pigment_interpolation:hankou",
+			"passed": true
+		},
+		{
+			"name": "functional_cells_receive_independent_ground_without_reclassification:hankou",
+			"passed": true
+		},
+		{
+			"name": "all_source_clipped_vertices_reach_runtime_mesh:hankou",
+			"passed": true
+		},
+		{
+			"name": "source_shore_partition_has_constant_opacity:hankou",
+			"passed": true
+		},
+		{
+			"name": "runtime_ground_area_matches_compiled_source_partition:hankou",
+			"passed": true
+		},
+		{
+			"name": "rules_coasts_rivers_cities_and_dem_are_unchanged:hankou",
+			"passed": true
+		},
+		{
+			"name": "ground_is_bound_to_current_immutable_map:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "unsupported_ecology_is_only_bounded_neighbour_pigment_interpolation:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "functional_cells_receive_independent_ground_without_reclassification:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "all_source_clipped_vertices_reach_runtime_mesh:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "source_shore_partition_has_constant_opacity:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "runtime_ground_area_matches_compiled_source_partition:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "rules_coasts_rivers_cities_and_dem_are_unchanged:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "ground_is_bound_to_current_immutable_map:jingjin",
+			"passed": true
+		},
+		{
+			"name": "unsupported_ecology_is_only_bounded_neighbour_pigment_interpolation:jingjin",
+			"passed": true
+		},
+		{
+			"name": "functional_cells_receive_independent_ground_without_reclassification:jingjin",
+			"passed": true
+		},
+		{
+			"name": "all_source_clipped_vertices_reach_runtime_mesh:jingjin",
+			"passed": true
+		},
+		{
+			"name": "source_shore_partition_has_constant_opacity:jingjin",
+			"passed": true
+		},
+		{
+			"name": "runtime_ground_area_matches_compiled_source_partition:jingjin",
+			"passed": true
+		},
+		{
+			"name": "rules_coasts_rivers_cities_and_dem_are_unchanged:jingjin",
+			"passed": true
+		},
+		{
+			"name": "ground_is_bound_to_current_immutable_map:ningpu",
+			"passed": true
+		},
+		{
+			"name": "unsupported_ecology_is_only_bounded_neighbour_pigment_interpolation:ningpu",
+			"passed": true
+		},
+		{
+			"name": "functional_cells_receive_independent_ground_without_reclassification:ningpu",
+			"passed": true
+		},
+		{
+			"name": "all_source_clipped_vertices_reach_runtime_mesh:ningpu",
+			"passed": true
+		},
+		{
+			"name": "source_shore_partition_has_constant_opacity:ningpu",
+			"passed": true
+		},
+		{
+			"name": "runtime_ground_area_matches_compiled_source_partition:ningpu",
+			"passed": true
+		},
+		{
+			"name": "rules_coasts_rivers_cities_and_dem_are_unchanged:ningpu",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"maps": [
+		{
+			"covered_cells": 4452.0,
+			"functional_underlays": 325,
+			"map": "asia_strategic",
+			"partial_cells": 1344,
+			"pigment_interpolations": 120,
+			"unclassified_cells": 14.0
+		},
+		{
+			"covered_cells": 56889.0,
+			"functional_underlays": 1923,
+			"map": "conquest_china",
+			"partial_cells": 2418,
+			"pigment_interpolations": 407,
+			"unclassified_cells": 227.0
+		},
+		{
+			"covered_cells": 380.0,
+			"functional_underlays": 43,
+			"map": "hankou",
+			"partial_cells": 82,
+			"pigment_interpolations": 0,
+			"unclassified_cells": 0.0
+		},
+		{
+			"covered_cells": 47591.0,
+			"functional_underlays": 740,
+			"map": "jingfeng",
+			"partial_cells": 1488,
+			"pigment_interpolations": 259,
+			"unclassified_cells": 205.0
+		},
+		{
+			"covered_cells": 23866.0,
+			"functional_underlays": 318,
+			"map": "jingjin",
+			"partial_cells": 640,
+			"pigment_interpolations": 71,
+			"unclassified_cells": 98.0
+		},
+		{
+			"covered_cells": 399.0,
+			"functional_underlays": 33,
+			"map": "ningpu",
+			"partial_cells": 66,
+			"pigment_interpolations": 0,
+			"unclassified_cells": 0.0
+		}
+	],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"source_map_modified": false
+}

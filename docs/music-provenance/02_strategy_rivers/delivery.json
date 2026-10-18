@@ -1,0 +1,61 @@
+{
+  "title": "山河经略 · 江流与驿路",
+  "vocal_requested": false,
+  "language": "instrumental",
+  "duration_seconds": 180.0,
+  "source": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\02_strategy_rivers\\raw_yue2_00001.flac",
+  "source_seconds": 184.0,
+  "tempo_ratio": 1.0222222222222221,
+  "prompt_id": "0010d967-a2a4-4449-aeec-b7595fcd56ce",
+  "target_lufs": -20.0,
+  "measured_loudness": {
+    "input_i": "-20.01",
+    "input_tp": "-6.25",
+    "input_lra": "7.20",
+    "input_thresh": "-30.15",
+    "output_i": "-19.28",
+    "output_tp": "-5.61",
+    "output_lra": "6.50",
+    "output_thresh": "-29.37",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.72"
+  },
+  "files": [
+    {
+      "file": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\02_strategy_rivers\\deliveries\\20261017_165747_7716fb\\山河经略 · 江流与驿路_180s.wav",
+      "bytes": 51840142,
+      "sha256": "305894507124be3e592ea30cebc5b16d13a8c702ce60be7843f0067775afce8e",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_s24le",
+      "samples_per_channel": 8640000,
+      "decoded_seconds": 180.0,
+      "rms": 0.08617150316403376,
+      "peak": 0.4868290424346924
+    },
+    {
+      "file": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\02_strategy_rivers\\deliveries\\20261017_165747_7716fb\\山河经略 · 江流与驿路_180s.mp3",
+      "bytes": 7202004,
+      "sha256": "c1dd08ff2577985f656cffddb9a7e2c47ed3ee920938b2e4300d33ff9edd0597",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "samples_per_channel": 8640000,
+      "decoded_seconds": 180.0,
+      "rms": 0.08616987687577977,
+      "peak": 0.48666977882385254
+    },
+    {
+      "file": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\02_strategy_rivers\\deliveries\\20261017_165747_7716fb\\山河经略 · 江流与驿路_180s.ogg",
+      "bytes": 3641894,
+      "sha256": "2e5bb070cb7af49e1822ccf01cac14c66c2637044924207b00440a890711f4d1",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "vorbis",
+      "samples_per_channel": 8640000,
+      "decoded_seconds": 180.0,
+      "rms": 0.08656776480515742,
+      "peak": 0.48752284049987793
+    }
+  ]
+}

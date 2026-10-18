@@ -1,0 +1,162 @@
+{
+  "prompt": [
+    1,
+    "0010d967-a2a4-4449-aeec-b7595fcd56ce",
+    {
+      "1": {
+        "class_type": "CheckpointLoaderSimple",
+        "inputs": {
+          "ckpt_name": "yue2_3b_int8_convrot.safetensors"
+        }
+      },
+      "3": {
+        "class_type": "YuE2GenerateMusic",
+        "inputs": {
+          "clip": [
+            "1",
+            1
+          ],
+          "style": "Entirely instrumental long-session historical strategy map background music, no human voice, no speech, no lyrics, no choir, no chanting or humming. 80 BPM, 4/4, D minor with gentle F major colors. Sparse guzheng ostinato, soft pipa, breathy bamboo flute, warm string chamber ensemble, occasional low clarinet and restrained horn. Share an original D F G A C motif with the main menu theme. Calm deliberate exploration, river valleys and rail supply planning, early twentieth century Chinese setting; thoughtful diplomacy with mild undercurrents of uncertainty. Eight-bar introduction, sixteen-bar exploration, twelve-bar development, eight-bar restrained tension, twelve-bar return, four-bar settled cadence. Stable moderate dynamics, no sudden loud impacts, no foley, no synth arpeggios or electronic beat. Warm natural room, orchestration leaves space for interface and battlefield cues.",
+          "lyrics": "[Intro]\n\n[Exploration]\n\n[Development]\n\n[Tension]\n\n[Return]\n\n[Outro]\n",
+          "abc": "X:1\nT:山河经略 · 江流与驿路\nM:4/4\nL:1/32\nQ:1/4=80\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Dm\n% Intro\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"F\"z32|\"Dm\"z32|\nV: Ins\nD16F16|G32|A16G16|F32|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"F\"z32|\"Dm\"z32|\nV: Ins\nD16F16|G32|A16G16|F32|\n% Exploration\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8A16|G8A8c16|B16G16|A8G8F16|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8A16|G8A8c16|B16G16|A8G8F16|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8A16|G8A8c16|B16G16|A8G8F16|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8A16|G8A8c16|B16G16|A8G8F16|\n% Development\nV: Vocal\n\"F\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nA8c8d8c8|G8A8G16|G16B16|A8F8D16|\nV: Vocal\n\"F\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nA8c8d8c8|G8A8G16|G16B16|A8F8D16|\nV: Vocal\n\"F\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nA8c8d8c8|G8A8G16|G16B16|A8F8D16|\n% Tension\nV: Vocal\n\"Gm\"z32|\"Dm\"z32|\"C\"z32|\"Dm\"z32|\nV: Ins\nG8B8d16|A16F16|E8G8A16|F8E8D16|\nV: Vocal\n\"Gm\"z32|\"Dm\"z32|\"C\"z32|\"Dm\"z32|\nV: Ins\nG8B8d16|A16F16|E8G8A16|F8E8D16|\n% Return\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8G8A8|G8A8c16|B8A8G16|F16D16|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8G8A8|G8A8c16|B8A8G16|F16D16|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8G8A8|G8A8c16|B8A8G16|F16D16|\n% Outro\nV: Vocal\n\"F\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nA32|G32|G16F16|D32|\n",
+          "seed": 202610170722,
+          "mode": "full",
+          "max_duration": 184.0,
+          "temperature": 0.95,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "cfg_scale": 1.0
+        }
+      },
+      "4": {
+        "class_type": "ConditioningZeroOut",
+        "inputs": {
+          "conditioning": [
+            "3",
+            0
+          ]
+        }
+      },
+      "5": {
+        "class_type": "EmptyYuE2LatentAudio",
+        "inputs": {
+          "seconds": [
+            "3",
+            1
+          ],
+          "batch_size": 1
+        }
+      },
+      "6": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "3",
+            0
+          ],
+          "negative": [
+            "4",
+            0
+          ],
+          "latent_image": [
+            "5",
+            0
+          ],
+          "seed": 202610170722,
+          "steps": 32,
+          "cfg": 1.0,
+          "sampler_name": "dpm_2",
+          "scheduler": "sgm_uniform",
+          "denoise": 1.0
+        }
+      },
+      "7": {
+        "class_type": "VAEDecodeAudio",
+        "inputs": {
+          "samples": [
+            "6",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        }
+      },
+      "8": {
+        "class_type": "SaveAudioAdvanced",
+        "inputs": {
+          "audio": [
+            "7",
+            0
+          ],
+          "filename_prefix": "YuE2/RailwayWarlords_20261017/02_strategy_rivers/raw_yue2",
+          "format": "flac"
+        }
+      }
+    },
+    {
+      "music_local_job": "ae82312001484ab098ade88ba7aa3b55",
+      "client_id": "ae82312001484ab098ade88ba7aa3b55",
+      "create_time": 1792227070375
+    },
+    [
+      "8"
+    ]
+  ],
+  "outputs": {
+    "8": {
+      "audio": [
+        {
+          "filename": "raw_yue2_00001.flac",
+          "subfolder": "YuE2\\RailwayWarlords_20261017\\02_strategy_rivers",
+          "type": "output",
+          "id": "e2bab7a9-58ca-49ed-8721-72d336d969d5"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "0010d967-a2a4-4449-aeec-b7595fcd56ce",
+          "timestamp": 1792227297847
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1"
+          ],
+          "prompt_id": "0010d967-a2a4-4449-aeec-b7595fcd56ce",
+          "timestamp": 1792227297850
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "0010d967-a2a4-4449-aeec-b7595fcd56ce",
+          "timestamp": 1792227427581
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "8": {
+      "node_id": "8",
+      "display_node": "8",
+      "parent_node": null,
+      "real_node_id": "8"
+    }
+  }
+}

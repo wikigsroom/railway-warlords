@@ -1,0 +1,162 @@
+{
+  "prompt": [
+    2,
+    "6d6e1dc3-cea6-4da4-a4c9-e3169a0179f6",
+    {
+      "1": {
+        "class_type": "CheckpointLoaderSimple",
+        "inputs": {
+          "ckpt_name": "yue2_3b_int8_convrot.safetensors"
+        }
+      },
+      "3": {
+        "class_type": "YuE2GenerateMusic",
+        "inputs": {
+          "clip": [
+            "1",
+            1
+          ],
+          "style": "Entirely instrumental tactical historical strategy battle music, no human voice, no speech, no lyrics, no choir, no chants, no humming. 96 BPM, 4/4, D minor. Low acoustic strings in controlled rhythmic ostinatos, short pipa accents, distant Chinese barrel war drums, period military snare played softly, low brass and restrained erhu fragments. Original D F G A C motif from the menu theme transformed into resolute shorter phrases. Late nineteenth and early twentieth century Chinese railway front, urgent tactical maneuver rather than a modern cinematic trailer. Eight-bar preparation, sixteen-bar maneuver, sixteen-bar engagement, eight-bar exposed bridge, sixteen-bar renewed resolve, eight-bar measured release. Tension rises without harsh treble, explosive hits, gunfire, train noises or dialogue. Moderate game background loudness, not triumphalist bombast; clear space for rifle, artillery and UI audio.",
+          "lyrics": "[Preparation]\n\n[Maneuver]\n\n[Engagement]\n\n[Bridge]\n\n[Resolve]\n\n[Release]\n",
+          "abc": "X:1\nT:铁路线上的交锋\nM:4/4\nL:1/32\nQ:1/4=96\nV: Vocal clef=treble name=\"Vocal Melody\" snm=\"Vocal\"\nV: Ins clef=treble name=\"Ins Melody\" snm=\"Inst.\"\nK:Dm\n% Preparation\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8D8A16|G8G8c16|G8B8A16|F8D8D16|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8D8A16|G8G8c16|G8B8A16|F8D8D16|\n% Maneuver\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD4F4G8A8G8|G8A8c8G8|G4B4d8c8B8|A8G8F8D8|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD4F4G8A8G8|G8A8c8G8|G4B4d8c8B8|A8G8F8D8|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD4F4G8A8G8|G8A8c8G8|G4B4d8c8B8|A8G8F8D8|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD4F4G8A8G8|G8A8c8G8|G4B4d8c8B8|A8G8F8D8|\n% Engagement\nV: Vocal\n\"Dm\"z32|\"F\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nd8d8c8A8|c8A8c8d8|B8d8c8B8|A4G4F8D16|\nV: Vocal\n\"Dm\"z32|\"F\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nd8d8c8A8|c8A8c8d8|B8d8c8B8|A4G4F8D16|\nV: Vocal\n\"Dm\"z32|\"F\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nd8d8c8A8|c8A8c8d8|B8d8c8B8|A4G4F8D16|\nV: Vocal\n\"Dm\"z32|\"F\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nd8d8c8A8|c8A8c8d8|B8d8c8B8|A4G4F8D16|\n% Bridge\nV: Vocal\n\"Gm\"z32|\"Dm\"z32|\"C\"z32|\"Dm\"z32|\nV: Ins\nG16d16|A16F16|G16E16|D32|\nV: Vocal\n\"Gm\"z32|\"Dm\"z32|\"C\"z32|\"Dm\"z32|\nV: Ins\nG16d16|A16F16|G16E16|D32|\n% Resolve\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8G8A8|c8A8G8E8|G8B8d8c8|A8F8D16|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8G8A8|c8A8G8E8|G8B8d8c8|A8F8D16|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8G8A8|c8A8G8E8|G8B8d8c8|A8F8D16|\nV: Vocal\n\"Dm\"z32|\"C\"z32|\"Gm\"z32|\"Dm\"z32|\nV: Ins\nD8F8G8A8|c8A8G8E8|G8B8d8c8|A8F8D16|\n% Release\nV: Vocal\n\"Gm\"z32|\"C\"z32|\"Dm\"z32|\"Dm\"z32|\nV: Ins\nG16B16|G16E16|F16A16|D32|\nV: Vocal\n\"Gm\"z32|\"C\"z32|\"Dm\"z32|\"Dm\"z32|\nV: Ins\nG16B16|G16E16|F16A16|D32|\n",
+          "seed": 202610170723,
+          "mode": "full",
+          "max_duration": 184.0,
+          "temperature": 0.95,
+          "top_p": 0.95,
+          "top_k": 100,
+          "repetition_penalty": 1.2,
+          "cfg_scale": 1.0
+        }
+      },
+      "4": {
+        "class_type": "ConditioningZeroOut",
+        "inputs": {
+          "conditioning": [
+            "3",
+            0
+          ]
+        }
+      },
+      "5": {
+        "class_type": "EmptyYuE2LatentAudio",
+        "inputs": {
+          "seconds": [
+            "3",
+            1
+          ],
+          "batch_size": 1
+        }
+      },
+      "6": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "3",
+            0
+          ],
+          "negative": [
+            "4",
+            0
+          ],
+          "latent_image": [
+            "5",
+            0
+          ],
+          "seed": 202610170723,
+          "steps": 32,
+          "cfg": 1.0,
+          "sampler_name": "dpm_2",
+          "scheduler": "sgm_uniform",
+          "denoise": 1.0
+        }
+      },
+      "7": {
+        "class_type": "VAEDecodeAudio",
+        "inputs": {
+          "samples": [
+            "6",
+            0
+          ],
+          "vae": [
+            "1",
+            2
+          ]
+        }
+      },
+      "8": {
+        "class_type": "SaveAudioAdvanced",
+        "inputs": {
+          "audio": [
+            "7",
+            0
+          ],
+          "filename_prefix": "YuE2/RailwayWarlords_20261017/03_battle_railfront/raw_yue2",
+          "format": "flac"
+        }
+      }
+    },
+    {
+      "music_local_job": "9ffe3723920b4472be95cfe1e30a416c",
+      "client_id": "9ffe3723920b4472be95cfe1e30a416c",
+      "create_time": 1792227075373
+    },
+    [
+      "8"
+    ]
+  ],
+  "outputs": {
+    "8": {
+      "audio": [
+        {
+          "filename": "raw_yue2_00001.flac",
+          "subfolder": "YuE2\\RailwayWarlords_20261017\\03_battle_railfront",
+          "type": "output",
+          "id": "9bd108d1-073c-4f11-9cb9-fe32f1213356"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "6d6e1dc3-cea6-4da4-a4c9-e3169a0179f6",
+          "timestamp": 1792227428570
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1"
+          ],
+          "prompt_id": "6d6e1dc3-cea6-4da4-a4c9-e3169a0179f6",
+          "timestamp": 1792227428571
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "6d6e1dc3-cea6-4da4-a4c9-e3169a0179f6",
+          "timestamp": 1792227543223
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "8": {
+      "node_id": "8",
+      "display_node": "8",
+      "parent_node": null,
+      "real_node_id": "8"
+    }
+  }
+}

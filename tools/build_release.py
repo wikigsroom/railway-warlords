@@ -30,7 +30,7 @@ def source_digest():
         scoped=[p for p in (P/folder).rglob('*') if p.is_file() and p.suffix in ['.gd','.tscn','.json']]
         files.extend(scoped);test_sources.extend(p for p in scoped if p not in [P/'app/responsiveness_qa.gd',P/'app/visual_playtest.gd'])
     schemas=list((P/'schemas').glob('*.json'));files.extend(schemas);test_sources.extend(schemas)
-    files.extend(p for p in (P/'assets').rglob('*') if p.is_file() and p.suffix in ['.png','.wav','.otf','.ttf','.json','.txt','.tres','.gdshader','.import'])
+    files.extend(p for p in (P/'assets').rglob('*') if p.is_file() and p.suffix in ['.png','.wav','.ogg','.mp3','.otf','.ttf','.json','.txt','.tres','.gdshader','.import'])
     for path in sorted(files):
         digest.update(path.relative_to(P).as_posix().encode());digest.update(path.read_bytes())
     return digest.hexdigest(),max(path.stat().st_mtime for path in test_sources)

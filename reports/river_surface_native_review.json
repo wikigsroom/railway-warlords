@@ -1,9 +1,9 @@
 {
   "passed": true,
-  "version": "0.2.20",
-  "runtime_source_sha256": "61ae4e93e4efee62c86cc700374e06d079f04d5de61f1e1b634c2df60e732605",
-  "windows_exe_sha256": "5c47a61a84d72f2c71613e97cce6a2e426fa473d00489b4ac82dcf7c5496fdf0",
-  "created_at_utc": "2026-10-16T21:58:30.409260+00:00",
+  "version": "0.2.21",
+  "runtime_source_sha256": "feb29a8b71e2622f7ee8eb66292846018241cf18c8a92eb33e6ae3be35f8303b",
+  "windows_exe_sha256": "4cb297f481a967f0dc82aaa15209ccd7e75288620b6cf3fb465a48c4eb129326",
+  "created_at_utc": "2026-10-17T09:47:48.418704+00:00",
   "source_images_modified": false,
   "manual_compositing": false,
   "physical_android_device_tested": false,
@@ -12,40 +12,39 @@
   "images": [
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/mountain.png",
-      "sha256": "8f5cfc16bbf2a5d16208ae57e0ed094c4a24a9ec38f3fbdf779a5a5de330a468",
+      "sha256": "e35f52dda9dd35cdba80bc6636e25f27bb8f8953615227613d1965505120cd1e",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/tributaries.png",
-      "sha256": "589f7567ac69626adad21d01aef174073bdc42f7cd16338b38ea34e6238f8223",
+      "sha256": "df41abb62233772b699014aac3bb45d0e389f5e6155f6d3fb38edc6c0f241878",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/yangtze.png",
-      "sha256": "6eb073c6500021115424c7327c1be4a6c071d40e38ead6b7cf5044027257a999",
+      "sha256": "1b35b00d882e56573942f346bf30371d3c68132b522e8055cc4584878387e4c2",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/nanjing.png",
-      "sha256": "525058d16a898a043561978b4164a670c2eb3d5eee1988bcbe74a76ac9b9bc21",
+      "sha256": "6fe88c3e17bac57738ce25c6fb2bb22bca1557a3226e38598ba3f77268e68c82",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/details/yangtze_x30.png",
-      "sha256": "dfd0eb8a23a5b97ff5eab4462e479abaa82d7aa7cc4df6f914c65ccaafec5068",
+      "sha256": "fbc0105399167d51db9295925e513eb1c7aac6f4e7087e3e3958b95095ad5a11",
       "viewed_complete_native_frame": true
     }
   ],
-  "scope": "Scoped agent review of five complete final EXE mountain/river viewports at the calibrated 128-unit material period. All twenty material cards and eight other map views have their separate ground_identity_native_review.json.",
+  "scope": "Scoped agent inspection of five complete current exported mountain/river viewports. Every listed image was actually opened. Independent numerical checks, source-image production review, formal approval and physical-phone testing remain separate.",
   "observations": [
-    "The inspected Yanshan mountain and tributary viewports retain continuous ground shading, narrow subdued blue-green headwaters and visible source-supported bends. Their thin angular cartographic lines remain apparent.",
-    "Hankou and Nanjing show connected main-channel ribbons with banks under the normal full HUD. The inspected desktop X30-layout Hankou frame preserves those water ribbons and material detail.",
-    "The new broadleaf fragments and pale jointed mineral ground are visibly different in the mountain views. Smaller motif scale reduces the oversized-leaf problem of the rejected integration candidate.",
-    "The frames still show hexagonal material/control edges, repeated leaf motifs across uniform ground, miniature-like mountain placement and dense unit/city overlap near Nanjing. These five views do not establish historical channel widths or commercial art parity."
+    "The five complete current frames were opened: Yanshan mountains, actual source tributaries, Hankou, Nanjing and desktop X30-layout Hankou. The headwater strokes remain narrow and connected main-channel ribbons remain visible under the normal HUD.",
+    "Continuous grass/soil replaces the earlier fallen-leaf pattern on the inspected nonforest Yanshan plain and extends under functional areas. Hankou retains its original regional humus and alluvial palette; Nanjing has grass/soil with a pale river margin.",
+    "Fine tributary bends remain angular cartographic strokes, main-channel segments retain visible corners, and the small regional-map extents expose their page boundary. Mountain placement, unit/city crowding and full historical waterway review remain unresolved."
   ],
   "remaining_visual_issues": [
-    "Headwater bends and main-channel geometry remain angular at tactical zoom; river-bank widths are visual symbols, not measured historical widths.",
-    "Material/control boundaries still reveal polygons, and broad uniform regions still repeat their source motifs.",
-    "Mountain placement, near-view unit/city crowding, some label attachment and physical Motorola X30 acceptance remain outstanding."
+    "Angular source headwaters and visible main-channel corners remain; bank widths are display symbols rather than measured historical widths.",
+    "Material/control polygons, repeated textures, miniature-like mountain feet, page boundaries and dense city/army overlap remain.",
+    "Complete historical/timeline review and physical Motorola X30 acceptance remain outstanding."
   ]
 }

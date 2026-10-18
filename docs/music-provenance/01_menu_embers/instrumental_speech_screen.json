@@ -1,0 +1,56 @@
+{
+  "source": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\01_menu_embers\\deliveries\\20261017_165532_efb950\\铁道烽烟 · 山河余烬_180s.wav",
+  "source_sha256": "c974d4d8d2118acc17908a98fd84391cff59e7d59d2c104f8b08ae79a6509bf7",
+  "model": "offline Whisper-small CPU, no reference text or forced language",
+  "windows": [
+    {
+      "start_seconds": 0,
+      "duration_seconds": 30,
+      "transcript": "Music",
+      "nonempty": true,
+      "mean_token_probability": 0.12074418365955353
+    },
+    {
+      "start_seconds": 30,
+      "duration_seconds": 30,
+      "transcript": "Oh",
+      "nonempty": true,
+      "mean_token_probability": 0.2009182721376419
+    },
+    {
+      "start_seconds": 60,
+      "duration_seconds": 30,
+      "transcript": "ឍ",
+      "nonempty": true,
+      "mean_token_probability": 0.1991884857416153
+    },
+    {
+      "start_seconds": 90,
+      "duration_seconds": 30,
+      "transcript": "ស្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្្�",
+      "nonempty": true,
+      "mean_token_probability": 0.7417478561401367
+    },
+    {
+      "start_seconds": 120,
+      "duration_seconds": 30,
+      "transcript": "Oh",
+      "nonempty": true,
+      "mean_token_probability": 0.23856355249881744
+    },
+    {
+      "start_seconds": 150,
+      "duration_seconds": 30,
+      "transcript": "Ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo",
+      "nonempty": true,
+      "mean_token_probability": 0.9125705361366272
+    }
+  ],
+  "covered_seconds": 180,
+  "nonempty_windows": 6,
+  "asr_returned_no_words": false,
+  "subjective_listening_performed": false,
+  "absence_of_human_voice_certified": false,
+  "scope": "Whole-track speech transcription screen only; music can cause ASR hallucinations. This does not prove absence of singing, choir, humming or voice-like instruments.",
+  "elapsed_seconds": 68.17
+}

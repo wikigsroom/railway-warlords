@@ -7,6 +7,7 @@ var app
 var checks: Array=[]
 var captures: Array=[]
 var folder=""
+var withheld_forest_families: Array=[]
 const PREFERRED={
 	"temperate_meadow":Vector2(115,46),"dry_steppe":Vector2(111,44),"desert_steppe":Vector2(108,43),
 	"dune_sand":Vector2(83,39),"gravel_gobi":Vector2(65,43),"saline_meadow":Vector2(117,39),
@@ -75,6 +76,14 @@ func execute() -> void:
 	var state_before=ContentRegistry.fingerprint(app.match_controller.state)
 	for family in MapTerrainSurfaces.data().types:
 		var chosen=target(family)
+		if chosen.is_empty() and family in ["boreal_litter","temperate_litter","conifer_litter","dry_woodland_litter"]:
+			var eligible=0;var regional=0
+			for cell in app.map_view.presentation_cells.values():
+				if MapTerrainSurfaces.family_for(cell)!=family:continue
+				regional+=1
+				if TerrainVisuals.kind_for_cell(cell)=="forest":eligible+=1
+			check(regional>0 and eligible==0,"forest_floor_withheld_without_dated_forest_source:"+family)
+			withheld_forest_families.append(family);continue
 		check(not chosen.is_empty(),"actual_source_material_is_deployed:"+family)
 		if chosen.is_empty():continue
 		app.selected_unit_id="";app.selected_city_id="";app.selected_poi_id="";app.pending={};app.order_mode=""
@@ -89,6 +98,6 @@ func execute() -> void:
 	check(ContentRegistry.fingerprint(app.match_controller.state.map)==original and ContentRegistry.fingerprint(app.match_controller.state)==state_before,"viewing_all_twenty_materials_does_not_change_game_or_map_state")
 	check(ContentRegistry.fingerprint(app.profiles.profile)==before_profile,"atlas_does_not_mutate_growth_profile")
 	var failures=checks.filter(func(c):return not c.passed)
-	var report={"passed":failures.is_empty(),"checks":checks,"failures":failures,"captures":captures,"build_version":ContentRegistry.APP_VERSION,"resolution":app.get_viewport_rect().size,"ui_scale":app.settings.ui_scale,"physical_android_device_tested":false,"formal_art_approval":false,"ew6_parity_claimed":false}
+	var report={"passed":failures.is_empty(),"checks":checks,"failures":failures,"captures":captures,"registered_library_types":20,"rendered_map_types":20-withheld_forest_families.size(),"withheld_without_dated_forest_source":withheld_forest_families,"build_version":ContentRegistry.APP_VERSION,"resolution":app.get_viewport_rect().size,"ui_scale":app.settings.ui_scale,"physical_android_device_tested":false,"formal_art_approval":false,"ew6_parity_claimed":false}
 	var file=FileAccess.open(folder+"/validation.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("TERRAIN_SURFACE_NATIVE ",JSON.stringify({"passed":failures.is_empty(),"checks":checks.size(),"captures":captures.size(),"failures":failures}));app.get_tree().quit(0 if failures.is_empty() else 1)

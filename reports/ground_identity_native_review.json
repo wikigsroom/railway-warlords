@@ -1,10 +1,10 @@
 {
   "passed": true,
-  "version": "0.2.20",
-  "runtime_source_sha256": "61ae4e93e4efee62c86cc700374e06d079f04d5de61f1e1b634c2df60e732605",
-  "windows_exe_sha256": "5c47a61a84d72f2c71613e97cce6a2e426fa473d00489b4ac82dcf7c5496fdf0",
-  "created_at_utc": "2026-10-16T21:55:02.747679+00:00",
-  "scope": "Scoped agent inspection of eleven complete final EXE frames: all twenty material cards across three atlas pages and eight source-assigned historical-map views. Source-image inspection, numerical sampling and commercial art approval are separate.",
+  "version": "0.2.21",
+  "runtime_source_sha256": "feb29a8b71e2622f7ee8eb66292846018241cf18c8a92eb33e6ae3be35f8303b",
+  "windows_exe_sha256": "4cb297f481a967f0dc82aaa15209ccd7e75288620b6cf3fb465a48c4eb129326",
+  "created_at_utc": "2026-10-17T09:37:13.199989+00:00",
+  "scope": "Scoped agent inspection of eleven complete current EXE frames: all twenty atlas cards across three pages and eight actual source-selected map cells. Every listed frame was opened. The 0.2.20 originals are reused unchanged; production review and commercial approval are separate.",
   "images": [
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/atlas_0.png",
@@ -23,50 +23,50 @@
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_meadow.png",
-      "sha256": "695e3bc37fad01c987ae1f15ae1b1939a02e5515bc7f8b9b996e749760b0b98c",
+      "sha256": "9f2a8b565a6d929552f6312dca43339448514c7e3ecb4426f0a3ca54578f2ffd",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_dry_steppe.png",
-      "sha256": "28143084e298d23c9d2fbba6392049589558e080fd34039d7e447e18f4d95ce9",
+      "sha256": "f12ca49705eed4431156c84562417948ed727da07a39326d3b2a58c734a78bbb",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_dune_sand.png",
-      "sha256": "8d65ec144145cd9c7252c9b8057a07ea4ad27d27dc2d75c4f0940a263fefdb23",
+      "sha256": "805cf2575dd26c6e1cedcefa7174ccdd97a03fa7aa3c7ecbbea22447cfc41116",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_gravel_gobi.png",
-      "sha256": "3fb561f570aca9f89492627528913cf16bdcfdf035f8d66cc6a5e8940ec1d526",
+      "sha256": "3f14b18e1aa38c9ec46b13414112e443e243ff3b5cdfd40e20d77928d6be4b94",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_temperate_litter.png",
-      "sha256": "077066396df3a8b505880bbc65451eb2e81be9a1a0b0e83410cc2c5da88e2a0b",
+      "sha256": "95ad50878661d07efbb170ad70f4a3ce696e02838a078759088ca2eb253875db",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_conifer_litter.png",
-      "sha256": "849d9df3879dededc262f6f5743f09fbe3c96b90aeeedce140d27e814534caa8",
+      "sha256": "ef1813eae84a24794cdb84937f16efed9ed0c4f532f7c4fc26b6c4a4d914828c",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_saline_meadow.png",
-      "sha256": "b6a571667b60b6599653ab444e090d1a054a074c128d8df6b89e67a2f5f331f2",
+      "sha256": "12602988071227fe19adc72e7de92c9cdb76bff8a28f950148f718fe72380ee9",
       "viewed_complete_native_frame": true
     },
     {
       "file": "reports/screenshots/terrain_surfaces_native/windows/map_weathered_rock.png",
-      "sha256": "b4d017249a595e10060b5f6ed53aafd66b3cac9e4cfb3476175f5169854d63c0",
+      "sha256": "074777472ba78b98fd93e7b5bb73196f58acab3cad5645bda76e0920d9208d20",
       "viewed_complete_native_frame": true
     }
   ],
   "observations": [
-    "The three atlas pages visibly distinguish grass blades and straw, bare desert earth, sand ripple combs, gravel chips, pale salt crust, lichens/moss, fallen leaves/needles, moist humus and two rock families. All twenty displayed macrogrounds are the new active IDs.",
-    "Eight selected map cells were inspected with their normal HUD and terrain inspector. Sand ripples, mineral gravel, straw, broadleaf litter and needle strands show different structures; salt ground remains paler, and rock surfaces have plate-like grain.",
-    "The runtime source period is calibrated to 128 world units. Leaf/needle motifs are smaller than the rejected 384-period integration candidate; no source PNG was edited. Motifs still repeat in broad uniform regions.",
-    "Material/control transitions still expose polygons, large Asia cells retain coarse source footprints, several reduced humus/mineral textures remain subtle, and placed mountain miniatures and unit/city crowding still need refinement. This is not EW6 commercial parity or a year-specific historical land-cover survey."
+    "All twenty atlas cards remain visible, distinguishing grass, straw, sand ripples, gravel, salt crust, moss, broadleaf/needle floors, humus and jointed/crushed rock. No new raster originals were produced in this patch.",
+    "The eight map views retain the normal HUD and selected-cell inspector. Source-supported forest-floor selections are confined to dated forest features; ordinary neighboring plains use restrained grass/soil. The dry woodland floor is retained in the atlas and withheld from this map without a valid forest source.",
+    "Continuous base textures extend beneath functional/coastal cells without editing the source PNGs. Sand combs, gravel chips, straw, leaves, needles, pale salt and rock plates remain distinct, although repeated motifs and subtle reduced humus/mineral variants remain.",
+    "Large Asian cells and material/control transitions still expose polygons. Placed mountain miniatures, displaced labels and dense city/army overlap remain visible. These inspected frames do not establish EW6 commercial quality or year-specific land-use reconstruction."
   ],
   "source_images_modified": false,
   "manual_compositing": false,

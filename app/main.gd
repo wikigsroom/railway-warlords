@@ -112,6 +112,8 @@ func _ready() -> void:
 	if "--terrain-surface-test" in args:TerrainSurfaceQA.run.call_deferred(self)
 	if "--control-land-test" in args:ControlLandQA.run.call_deferred(self)
 	if "--ground-continuity-test" in args:GroundContinuityQA.run.call_deferred(self)
+	if "--ground-coverage-test" in args:GroundCoverageQA.run.call_deferred(self)
+	if "--music-test" in args:MusicPlaybackQA.run.call_deferred(self)
 	if "--relief-shade-test" in args:ReliefShadeQA.run.call_deferred(self)
 	if "--map-symbol-test" in args:MapSymbolQA.run.call_deferred(self)
 	if "--benchmark" in args:benchmark.call_deferred()
@@ -230,7 +232,7 @@ func background(id: String) -> void:
 	var wash=ColorRect.new();wash.color=Color(.06,.09,.08,.42);wash.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);wash.mouse_filter=Control.MOUSE_FILTER_IGNORE;screen.add_child(wash)
 
 func show_home() -> void:
-	new_screen();background("background_campaign");audio.set_music("campaign")
+	new_screen();background("background_campaign");audio.set_music("menu")
 	var m=margin(screen,64);m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var v=column(m)
 	ui_kicker(v,"中国战区 · 真实地理 · 1840—1940",UI_BRASS_BRIGHT,15)
@@ -258,7 +260,7 @@ func start_game(id: String, owner: String, deployment: Array = [], general_ids: 
 	if content.scenarios[id].mode=="legion" and not deployment.is_empty():start_profile._legion_generals=general_ids
 	if not match_controller.start(id,owner,start_profile,"normal" if content.scenarios[id].mode=="legion" else difficulty):return
 	close_overlay();selected_unit_id="";selected_city_id="";selected_poi_id="";pending={};order_mode="";result_shown=false;last_auto_phase=-1
-	build_battle();map_view.focus_player.call_deferred();audio.set_music("battle")
+	build_battle();map_view.focus_player.call_deferred();audio.set_music("campaign")
 	var commander=match_controller.state.units.filter(func(u):return u.owner_id==owner and u.position!=null and u.general_id!=null)
 	if not commander.is_empty():selected_unit_id=commander[0].id;refresh_battle()
 	if settings.tutorial and not territory_qa_mode:show_tutorial()
@@ -347,6 +349,7 @@ func build_busy_orders(parent: VBoxContainer) -> void:
 func on_changed(events: Array) -> void:
 	if match_controller.state.is_empty():return
 	var s=match_controller.state;var token=match_controller.generation;var f=StateAccess.faction(s,s.player_faction_id)
+	audio.score_events(events,str(s.status))
 	if s.status=="playing" and s.turn_order[s.phase_index]==s.player_faction_id and int(f.own_phase_index)!=last_auto_phase:
 		last_auto_phase=f.own_phase_index;auto_slot=(auto_slot%3)+1
 		autosave_snapshot(s,"auto_%d"%auto_slot)
@@ -820,7 +823,7 @@ func load_match_snapshot(slot: String) -> void:
 	if token!=match_controller.generation:return
 	if not job.result.get("valid",false):toast(job.result.get("reason","战局无法读取"));return
 	close_overlay();selected_unit_id="";selected_city_id="";pending={};result_shown=false
-	match_controller.load_prepared_state(job.result.state,job.result.get("presentation",{}));build_battle();map_view.focus_player();audio.set_music("battle")
+	match_controller.load_prepared_state(job.result.state,job.result.get("presentation",{}));build_battle();map_view.focus_player();audio.set_music("campaign")
 
 func show_headquarters() -> void:
 	war_room.show_headquarters()

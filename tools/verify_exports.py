@@ -96,12 +96,24 @@ def main():
             matched=bool(embedded) and all(hashlib.sha256(archive.read('assets/'+name)).digest()==hashlib.sha256((P/name).read_bytes()).digest() for name in embedded)
             raster_rows.append({'id':item['id'],'source_sha256':item['source_sha256'],'embedded_imports':embedded,'current_import_bytes_match':matched})
         if not all(item['current_import_bytes_match'] for item in raster_rows):raise SystemExit('APK imported raster textures do not match current verified engine imports.')
+        music_rows=[]
+        music=json.loads((P/'presentation/data/music_catalog.json').read_text(encoding='utf-8'))
+        for role,row in music['tracks'].items():
+            source=P/row['runtime_file'].removeprefix('res://')
+            if hashlib.sha256(source.read_bytes()).hexdigest()!=row['runtime_sha256']:raise SystemExit('Music source identity differs: '+role)
+            imported=source.with_name(source.name+'.import').read_text(encoding='utf-8')
+            remaps=re.findall(r'^path(?:\.[A-Za-z0-9_]+)?="res://([^"\n]+)"',imported,re.MULTILINE)
+            embedded=[name for name in remaps if 'assets/'+name in names]
+            matched=bool(embedded) and all(hashlib.sha256(archive.read('assets/'+name)).digest()==hashlib.sha256((P/name).read_bytes()).digest() for name in embedded)
+            music_rows.append(dict(role=role,source_sha256=row['runtime_sha256'],embedded_imports=embedded,current_import_bytes_match=matched))
+        if len(music_rows)!=3 or not all(row['current_import_bytes_match'] for row in music_rows):raise SystemExit('APK instrumental music payload mismatch.')
         private = [n for n in names if any(w in n.lower() for w in ('keystore', 'railway_warlords.json', 'sub2_image_gen.py'))]
         abis = sorted({n.split('/')[1] for n in names if n.startswith('lib/') and n.endswith('.so')})
         if abis != ['arm64-v8a', 'armeabi-v7a']:
             raise SystemExit('Unexpected Android architectures.')
         report = {'passed': all(row['sha_matches'] for row in rows), 'files': rows, 'native_libraries': [n for n in names if n.startswith('lib/')], 'private_files_detected': private, 'artifact_sha256': hashlib.sha256(apk.read_bytes()).hexdigest()}
         report.update({'raster_manifest_byte_verified':True,'raster_import_files_verified':raster_rows})
+        report.update({'instrumental_music_imports_verified':music_rows})
     (P / 'reports/apk_content_validation.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
     if not report['passed'] or private:
         raise SystemExit('APK payload mismatch.')

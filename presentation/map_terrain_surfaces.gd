@@ -62,7 +62,17 @@ static func family_for(cell: Dictionary) -> String:
 	return family if data().get("types",{}).has(family) else ""
 
 static func label_for(cell: Dictionary) -> String:
-	return str(data().get("types",{}).get(family_for(cell),{}).get("name",""))
+	return str(data().get("types",{}).get(draw_family(family_for(cell),cell),{}).get("name",""))
+
+static func draw_family(regional: String, cell: Dictionary) -> String:
+	# A potential forest ecoregion is not a historical forest-cover survey.
+	# Full fallen-leaf/needle textures require an existing rule/dated visual
+	# forest class. Other flat land uses a representative, restrained grass/soil
+	# material; this never adds trees, farmland, a biome or movement modifiers.
+	if TerrainVisuals.kind_for_cell(cell)=="forest":return regional
+	if regional in ["temperate_litter","conifer_litter","boreal_litter"]:return "temperate_meadow"
+	if regional=="dry_woodland_litter":return "dry_steppe"
+	return regional
 
 static func variant_for(family: String, hex: Vector2i) -> String:
 	var pool=ids(family)

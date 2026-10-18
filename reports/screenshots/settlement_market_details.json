@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.20",
+	"build_version": "0.2.21",
 	"city_labels": [
 		{
 			"city_id": "tangshan",
@@ -38,7 +38,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 1146.868,
+		"preparation_ms": 1905.82,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -156,7 +156,7 @@
 			"water_or_forest_added": false
 		},
 		"surface_material_families_in_view": {
-			"temperate_litter": 450
+			"temperate_meadow": 450
 		},
 		"terrain_surface_extension": {
 			"active": true,
@@ -166,7 +166,30 @@
 				"active": true,
 				"city_influence_fill_draws": 0,
 				"field_fill_batches": 0,
+				"ground_material_policy": {
+					"drawn_families": {
+						"alluvial_loam": 321,
+						"dry_steppe": 68,
+						"saline_meadow": 1263,
+						"temperate_meadow": 28520,
+						"weathered_rock": 17419
+					},
+					"forest_floor_requires_sourced_forest": true,
+					"withheld_forest_floor_cells": 28520
+				},
 				"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+				"source_ground_coverage": {
+					"active": true,
+					"cache_scope": "one_map_catalogue",
+					"covered_cells": 47591,
+					"historical_landuse_claimed": false,
+					"new_rasters": 0,
+					"partial_cells": 1488,
+					"rule_cells_modified": false,
+					"source_land_clipped": true,
+					"supplemental_underlays": 2223,
+					"unclassified_cells": 205
+				},
 				"source_images_modified": false,
 				"source_layers": 20,
 				"whole_original_dimensions": [
@@ -205,17 +228,17 @@
 			"rule_geometry_changed": false,
 			"same_original_on_adjacent_cells": 0,
 			"source_use_counts": {
-				"tile_surface_temperate_litter_01": 68,
-				"tile_surface_temperate_litter_02": 145,
-				"tile_surface_temperate_litter_03": 160,
-				"tile_surface_temperate_litter_04": 77
+				"tile_surface_temperate_meadow_01": 77,
+				"tile_surface_temperate_meadow_02": 145,
+				"tile_surface_temperate_meadow_03": 160,
+				"tile_surface_temperate_meadow_04": 68
 			},
 			"stored_superseded_macro_originals": 20.0,
 			"visible_macro_sources": [
-				"tile_ground_identity_temperate_litter"
+				"tile_ground_identity_temperate_meadow"
 			],
 			"visible_types": {
-				"temperate_litter": 450
+				"temperate_meadow": 450
 			}
 		},
 		"zoom": 0.9
@@ -255,7 +278,7 @@
 		"terrain_feature_sprite_draw_count": 0,
 		"terrain_layer_visible": true,
 		"terrain_micro_symbol_draw_count": 0,
-		"terrain_surface_variant_draw_count": 3011,
+		"terrain_surface_variant_draw_count": 3072,
 		"terrain_symbol_draw_count": 0,
 		"terrain_tile_draw_count": 6,
 		"territory_field_opacity": 0.21
@@ -300,13 +323,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 119.827,
+		"index_ms": 166.965,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2823.492,
+		"mesh_ms": 3799.596,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1143.62,
-		"preparation_ms": 4086.939,
+		"placement_ms": 1578.394,
+		"preparation_ms": 5544.953,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

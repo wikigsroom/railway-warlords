@@ -4,9 +4,9 @@
 
 ## 截图 / Screenshots
 
-当前媒体目录有 45张完整PNG：43张来自0.2.20 Windows EXE，另外两张交战/航空画面保留 0.2.12 身份。当前92张地表/UI、20张海岸控制开关和32张图符专项原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot 在实际程序中渲染控件、地图与独立美术资源。
+当前媒体目录有45张完整PNG：43张来自0.2.21 Windows EXE，另外两张交战/航空画面保留0.2.12身份。当前90张地表/UI、20张海岸控制开关和32张图符专项原生截图中的精选画面，以及本版导出核验截图，按原始字节复制到 `docs/media`。没有裁切、拼接、补绘或叠字；Godot在实际程序中渲染控件、地图与独立美术资源。
 
-The media folder contains 45 complete PNGs: 43 from the 0.2.20 Windows EXE and two preserved 0.2.12 combat/air-action stills. Selections from 92 terrain/UI, 20 coastal control-toggle and 32 symbol-check captures, plus export-validation viewports, are copied byte for byte, without cropping, stitching, repainting or text overlays. Godot renders the real controls, maps and independent assets.
+The media folder contains 45 complete PNGs: 43 from the 0.2.21 Windows EXE and two preserved 0.2.12 combat/air-action stills. Selections from 90 terrain/UI, 20 coastal control-toggle and 32 symbol-check captures, plus export-validation viewports, are copied byte for byte, without cropping, stitching, repainting or text overlays. Godot renders the real controls, maps and independent assets.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |

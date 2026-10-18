@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.20",
+	"build_version": "0.2.21",
 	"city_labels": [
 		{
 			"city_id": "wuchang",
@@ -62,7 +62,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 259,
 		"placed": 1,
-		"preparation_ms": 4.614,
+		"preparation_ms": 90.063,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 3,
 		"rule_cells_changed": false,
@@ -197,7 +197,27 @@
 				"active": true,
 				"city_influence_fill_draws": 3,
 				"field_fill_batches": 0,
+				"ground_material_policy": {
+					"drawn_families": {
+						"alluvial_loam": 79,
+						"subtropical_humus": 301
+					},
+					"forest_floor_requires_sourced_forest": true,
+					"withheld_forest_floor_cells": 0
+				},
 				"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+				"source_ground_coverage": {
+					"active": true,
+					"cache_scope": "one_map_catalogue",
+					"covered_cells": 380,
+					"historical_landuse_claimed": false,
+					"new_rasters": 0,
+					"partial_cells": 82,
+					"rule_cells_modified": false,
+					"source_land_clipped": true,
+					"supplemental_underlays": 43,
+					"unclassified_cells": 0
+				},
 				"source_images_modified": false,
 				"source_layers": 20,
 				"whole_original_dimensions": [
@@ -282,7 +302,7 @@
 		"terrain_feature_sprite_draw_count": 0,
 		"terrain_layer_visible": true,
 		"terrain_micro_symbol_draw_count": 0,
-		"terrain_surface_variant_draw_count": 259,
+		"terrain_surface_variant_draw_count": 380,
 		"terrain_symbol_draw_count": 0,
 		"terrain_tile_draw_count": 0,
 		"territory_field_opacity": 0.21
@@ -322,13 +342,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 0,
-		"index_ms": 11.165,
+		"index_ms": 30.068,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 18.18,
+		"mesh_ms": 51.845,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 0,
-		"placement_ms": 0.73,
-		"preparation_ms": 30.075,
+		"placement_ms": 2.955,
+		"preparation_ms": 84.866,
 		"rules_map_mutated": false,
 		"source": "SRTM90m_v3_five_point_samples",
 		"source_meters_per_world_unit": 26.0416666666667,

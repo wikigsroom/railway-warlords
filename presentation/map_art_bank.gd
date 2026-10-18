@@ -61,7 +61,7 @@ static func source_rect(id: String, bounds: Vector2) -> Rect2:
 static func material_family(cell: Dictionary) -> String:
 	var kind=TerrainVisuals.kind_for_cell(cell)
 	var sourced_surface=MapTerrainSurfaces.family_for(cell)
-	if not sourced_surface.is_empty():return sourced_surface
+	if not sourced_surface.is_empty():return MapTerrainSurfaces.draw_family(sourced_surface,cell)
 	if kind=="sea":return "sea_water"
 	if kind=="forest":return "woodland_floor"
 	if kind=="wetland":return "wetland_ground"

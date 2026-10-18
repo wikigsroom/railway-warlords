@@ -1,0 +1,93 @@
+{
+	"build_version": "0.2.21",
+	"cases": [
+		{
+			"capture": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_coverage_native/asia_strategic.png",
+			"hex": "0,8",
+			"map": "asia_strategic",
+			"max_water_channel_delta": 0.0,
+			"mode": "source_coast",
+			"numerical_fixture_not_gameplay_screenshot": true,
+			"textured_land_pixels": 1009,
+			"water_pixels": 5530
+		},
+		{
+			"capture": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_coverage_native/jingfeng.png",
+			"hex": "0,176",
+			"map": "jingfeng",
+			"max_water_channel_delta": 0.0,
+			"mode": "source_coast",
+			"numerical_fixture_not_gameplay_screenshot": true,
+			"textured_land_pixels": 1158,
+			"water_pixels": 4803
+		},
+		{
+			"capture": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_coverage_native/hankou.png",
+			"hex": "8,7",
+			"map": "hankou",
+			"max_water_channel_delta": 0.0,
+			"mode": "functional_underlay",
+			"numerical_fixture_not_gameplay_screenshot": true,
+			"textured_land_pixels": 3355,
+			"water_pixels": 0
+		},
+		{
+			"capture": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_coverage_native/jingjin.png",
+			"hex": "40,56",
+			"map": "jingjin",
+			"max_water_channel_delta": 0.0,
+			"mode": "functional_underlay",
+			"numerical_fixture_not_gameplay_screenshot": true,
+			"textured_land_pixels": 3355,
+			"water_pixels": 0
+		}
+	],
+	"checks": [
+		{
+			"name": "actual_source_case_available:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "source_water_stays_unpainted:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "actual_source_land_or_functional_ground_has_visible_texture:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "actual_source_case_available:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "source_water_stays_unpainted:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "actual_source_land_or_functional_ground_has_visible_texture:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "actual_source_case_available:hankou",
+			"passed": true
+		},
+		{
+			"name": "actual_source_land_or_functional_ground_has_visible_texture:hankou",
+			"passed": true
+		},
+		{
+			"name": "actual_source_case_available:jingjin",
+			"passed": true
+		},
+		{
+			"name": "actual_source_land_or_functional_ground_has_visible_texture:jingjin",
+			"passed": true
+		}
+	],
+	"ew6_parity_claimed": false,
+	"failures": [],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"scope": "Four unmodified native numerical viewport fixtures from source coast/city cells, shipping shader and clipped mesh builder. Independent point-in-source-land water witnesses; not art approval or gameplay captures.",
+	"source_images_modified": false
+}

@@ -1,0 +1,61 @@
+{
+  "title": "铁道烽烟 · 山河余烬",
+  "vocal_requested": false,
+  "language": "instrumental",
+  "duration_seconds": 180.0,
+  "source": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\01_menu_embers\\raw_yue2_00001.flac",
+  "source_seconds": 184.0,
+  "tempo_ratio": 1.0222222222222221,
+  "prompt_id": "35381255-81bd-48b8-9847-6c8bad561b0b",
+  "target_lufs": -20.0,
+  "measured_loudness": {
+    "input_i": "-20.00",
+    "input_tp": "-6.85",
+    "input_lra": "6.40",
+    "input_thresh": "-30.13",
+    "output_i": "-18.83",
+    "output_tp": "-6.15",
+    "output_lra": "4.40",
+    "output_thresh": "-28.89",
+    "normalization_type": "dynamic",
+    "target_offset": "-1.17"
+  },
+  "files": [
+    {
+      "file": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\01_menu_embers\\deliveries\\20261017_165532_efb950\\铁道烽烟 · 山河余烬_180s.wav",
+      "bytes": 51840140,
+      "sha256": "c974d4d8d2118acc17908a98fd84391cff59e7d59d2c104f8b08ae79a6509bf7",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_s24le",
+      "samples_per_channel": 8640000,
+      "decoded_seconds": 180.0,
+      "rms": 0.08336049591415239,
+      "peak": 0.4544891119003296
+    },
+    {
+      "file": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\01_menu_embers\\deliveries\\20261017_165532_efb950\\铁道烽烟 · 山河余烬_180s.mp3",
+      "bytes": 7202002,
+      "sha256": "99d8b60660fff46f6bcf88974d82b0503923cb8e9a24182a1a3ad9858caacc66",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "samples_per_channel": 8640000,
+      "decoded_seconds": 180.0,
+      "rms": 0.08335861503625645,
+      "peak": 0.4541459083557129
+    },
+    {
+      "file": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\01_menu_embers\\deliveries\\20261017_165532_efb950\\铁道烽烟 · 山河余烬_180s.ogg",
+      "bytes": 3587591,
+      "sha256": "12d7469815d98254b3f23a7a76d24b176c3a2280ee013ed8e0fa8c37f6c77139",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "vorbis",
+      "samples_per_channel": 8640000,
+      "decoded_seconds": 180.0,
+      "rms": 0.08377670765699155,
+      "peak": 0.4641279876232147
+    }
+  ]
+}

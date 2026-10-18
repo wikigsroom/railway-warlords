@@ -3,7 +3,7 @@ config_version=5
 
 [application]
 config/name="铁道烽烟：军阀时代"
-config/version="0.2.20"
+config/version="0.2.21"
 run/main_scene="res://app/main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 
@@ -30,4 +30,4 @@ pointing/emulate_mouse_from_touch=false
 theme/default_font_multichannel_signed_distance_field=true
 
 [audio]
-driver/mix_rate=22050
+driver/mix_rate=48000

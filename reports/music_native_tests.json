@@ -1,0 +1,92 @@
+{
+  "build_version": "0.2.21",
+  "checks": [
+    {
+      "name": "native_audio_player_profile",
+      "passed": true
+    },
+    {
+      "name": "three_prepared_compressed_streams_and_existing_sfx_pool",
+      "passed": true
+    },
+    {
+      "name": "audited_three_minute_ogg:menu",
+      "passed": true
+    },
+    {
+      "name": "audited_three_minute_ogg:campaign",
+      "passed": true
+    },
+    {
+      "name": "audited_three_minute_ogg:battle",
+      "passed": true
+    },
+    {
+      "name": "native_48khz_mixer",
+      "passed": true
+    },
+    {
+      "name": "menu_decoder_actually_advances",
+      "passed": true
+    },
+    {
+      "name": "old_and_new_scores_overlap_during_transition",
+      "passed": true
+    },
+    {
+      "name": "crossfade_preserves_equal_power_envelope",
+      "passed": true
+    },
+    {
+      "name": "completed_fade_releases_previous_stream",
+      "passed": true
+    },
+    {
+      "name": "movement_preserves_planning_music",
+      "passed": true
+    },
+    {
+      "name": "actual_combat_events_request_battle_score",
+      "passed": true
+    },
+    {
+      "name": "quiet_period_returns_to_strategic_score",
+      "passed": true
+    },
+    {
+      "name": "track_tail_overlaps_fresh_head_without_raster_or_audio_edits",
+      "passed": true
+    },
+    {
+      "name": "mute_stops_both_crossfade_players",
+      "passed": true
+    },
+    {
+      "name": "unmute_resumes_correct_menu_context",
+      "passed": true
+    },
+    {
+      "name": "result_uses_coherent_main_theme_with_existing_victory_sfx",
+      "passed": true
+    },
+    {
+      "name": "shutdown_releases_compressed_streams",
+      "passed": true
+    }
+  ],
+  "crossfade_seconds": 2.4,
+  "failures": [],
+  "mix_rate": 48000.0,
+  "passed": true,
+  "physical_android_device_tested": false,
+  "subjective_listening_performed": false,
+  "track_durations": {
+    "battle": 180.0,
+    "campaign": 180.0,
+    "menu": 180.0
+  },
+  "runtime_source_sha256": "feb29a8b71e2622f7ee8eb66292846018241cf18c8a92eb33e6ae3be35f8303b",
+  "windows_exe_sha256": "4cb297f481a967f0dc82aaa15209ccd7e75288620b6cf3fb465a48c4eb129326",
+  "log_sha256": "6bee438889f2fc843b233af6833d1da636d4e1ca64c0d57c4f240ba7de09b393",
+  "native_export_tested": true
+}

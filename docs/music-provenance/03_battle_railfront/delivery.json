@@ -1,0 +1,61 @@
+{
+  "title": "铁路线上的交锋",
+  "vocal_requested": false,
+  "language": "instrumental",
+  "duration_seconds": 180.0,
+  "source": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\03_battle_railfront\\raw_yue2_00001.flac",
+  "source_seconds": 184.0,
+  "tempo_ratio": 1.0222222222222221,
+  "prompt_id": "6d6e1dc3-cea6-4da4-a4c9-e3169a0179f6",
+  "target_lufs": -20.0,
+  "measured_loudness": {
+    "input_i": "-20.01",
+    "input_tp": "-5.02",
+    "input_lra": "8.10",
+    "input_thresh": "-30.22",
+    "output_i": "-19.26",
+    "output_tp": "-3.74",
+    "output_lra": "8.00",
+    "output_thresh": "-29.40",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.74"
+  },
+  "files": [
+    {
+      "file": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\03_battle_railfront\\deliveries\\20261017_170011_d45891\\铁路线上的交锋_180s.wav",
+      "bytes": 51840132,
+      "sha256": "3ec635678b56eeede5ee6e1463d0467ba37619ff7b90c3d0beeeb38e009065f6",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "pcm_s24le",
+      "samples_per_channel": 8640000,
+      "decoded_seconds": 180.0,
+      "rms": 0.08247204119604454,
+      "peak": 0.561039924621582
+    },
+    {
+      "file": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\03_battle_railfront\\deliveries\\20261017_170011_d45891\\铁路线上的交锋_180s.mp3",
+      "bytes": 7201994,
+      "sha256": "dfa379e434eba0a4f0ef3e690cd2a9a81142e55b413b50e218230acfe43fffa1",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "mp3",
+      "samples_per_channel": 8640000,
+      "decoded_seconds": 180.0,
+      "rms": 0.08246894531217762,
+      "peak": 0.5616344213485718
+    },
+    {
+      "file": "E:\\dev\\sandbox\\模型配乐\\output\\YuE2\\RailwayWarlords_20261017\\03_battle_railfront\\deliveries\\20261017_170011_d45891\\铁路线上的交锋_180s.ogg",
+      "bytes": 3584328,
+      "sha256": "c654354430f402f464c1204a60dfc6d0bc82f7a6a6a8ac89cd1d101b19d2714a",
+      "sample_rate": 48000,
+      "channels": 2,
+      "codec": "vorbis",
+      "samples_per_channel": 8640000,
+      "decoded_seconds": 180.0,
+      "rms": 0.08266380797697988,
+      "peak": 0.5699818730354309
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
 	"actual_types": 20,
 	"adjacent_pairs": 75000,
-	"build_version": "0.2.20",
+	"build_version": "0.2.21",
 	"checks": [
 		{
 			"name": "content_loads",
@@ -577,6 +577,38 @@
 		},
 		{
 			"name": "all_twenty_types_exist_on_actual_maps",
+			"passed": true
+		},
+		{
+			"name": "potential_forest_does_not_paint_plain_as_fallen_leaves:temperate_litter",
+			"passed": true
+		},
+		{
+			"name": "dated_visual_forest_can_retain_regional_ground:temperate_litter",
+			"passed": true
+		},
+		{
+			"name": "potential_forest_does_not_paint_plain_as_fallen_leaves:conifer_litter",
+			"passed": true
+		},
+		{
+			"name": "dated_visual_forest_can_retain_regional_ground:conifer_litter",
+			"passed": true
+		},
+		{
+			"name": "potential_forest_does_not_paint_plain_as_fallen_leaves:boreal_litter",
+			"passed": true
+		},
+		{
+			"name": "dated_visual_forest_can_retain_regional_ground:boreal_litter",
+			"passed": true
+		},
+		{
+			"name": "potential_forest_does_not_paint_plain_as_fallen_leaves:dry_woodland_litter",
+			"passed": true
+		},
+		{
+			"name": "dated_visual_forest_can_retain_regional_ground:dry_woodland_litter",
 			"passed": true
 		},
 		{

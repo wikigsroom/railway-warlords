@@ -472,6 +472,41 @@
       "sha_matches": true
     },
     {
+      "file": "presentation/data/ground_coverage.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/ground_coverage_asia_strategic.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/ground_coverage_conquest_china.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/ground_coverage_hankou.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/ground_coverage_jingfeng.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/ground_coverage_jingjin.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/ground_coverage_ningpu.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
       "file": "presentation/data/ground_identity_plan.json",
       "included": true,
       "sha_matches": true
@@ -513,6 +548,11 @@
     },
     {
       "file": "presentation/data/map_surface_extension_plan.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/music_catalog.json",
       "included": true,
       "sha_matches": true
     },
@@ -584,7 +624,7 @@
     "lib/armeabi-v7a/libgodot_android.so"
   ],
   "private_files_detected": [],
-  "artifact_sha256": "684a214640bcc5bb7572a3ecad3c5db81c404d47e889efc60572270e1757e356",
+  "artifact_sha256": "a017d45f3789e5808ecb89e7f92d4bf12a41d91a901af61fec1f88877d0a768e",
   "raster_manifest_byte_verified": true,
   "raster_import_files_verified": [
     {
@@ -9992,6 +10032,32 @@
       "source_sha256": "39a135189d9aeb48daaef817c86f44c5df7b294b7bbfcd6d106dd9d201999b94",
       "embedded_imports": [
         ".godot/imported/unit_transport_ship_w.png-7836b26bb618f1251c32c477154a9b8e.ctex"
+      ],
+      "current_import_bytes_match": true
+    }
+  ],
+  "instrumental_music_imports_verified": [
+    {
+      "role": "menu",
+      "source_sha256": "12d7469815d98254b3f23a7a76d24b176c3a2280ee013ed8e0fa8c37f6c77139",
+      "embedded_imports": [
+        ".godot/imported/01_menu_embers.ogg-39712d9a25682b657dd9713cb39e2129.oggvorbisstr"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "role": "campaign",
+      "source_sha256": "2e5bb070cb7af49e1822ccf01cac14c66c2637044924207b00440a890711f4d1",
+      "embedded_imports": [
+        ".godot/imported/02_strategy_rivers.ogg-83da58d9f09fd36feda02d879a204f1b.oggvorbisstr"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "role": "battle",
+      "source_sha256": "c654354430f402f464c1204a60dfc6d0bc82f7a6a6a8ac89cd1d101b19d2714a",
+      "embedded_imports": [
+        ".godot/imported/03_battle_railfront.ogg-46e8136934b81268587be3584565da6c.oggvorbisstr"
       ],
       "current_import_bytes_match": true
     }

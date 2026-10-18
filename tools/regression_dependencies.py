@@ -41,7 +41,7 @@ def dependencies(check):
     used.update([P / 'project.godot', P / 'export_presets.cfg'])
     for folder in ('content', 'presentation/data', 'schemas', 'tests/fixtures', 'assets'):
         used.update(path for path in (P / folder).rglob('*') if path.is_file()
-                    and path.suffix in {'.json', '.png', '.wav', '.otf', '.ttf', '.tres', '.gdshader'})
+                    and path.suffix in {'.json', '.png', '.wav', '.ogg', '.mp3', '.otf', '.ttf', '.tres', '.gdshader'})
     return sorted(used)
 
 

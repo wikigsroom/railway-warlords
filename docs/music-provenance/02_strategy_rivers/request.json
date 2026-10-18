@@ -1,0 +1,199 @@
+{
+  "title": "山河经略 · 江流与驿路",
+  "bpm": 80,
+  "seed": 202610170722,
+  "genre": "中国历史战略地图与外交纯器乐",
+  "style": "Entirely instrumental long-session historical strategy map background music, no human voice, no speech, no lyrics, no choir, no chanting or humming. 80 BPM, 4/4, D minor with gentle F major colors. Sparse guzheng ostinato, soft pipa, breathy bamboo flute, warm string chamber ensemble, occasional low clarinet and restrained horn. Share an original D F G A C motif with the main menu theme. Calm deliberate exploration, river valleys and rail supply planning, early twentieth century Chinese setting; thoughtful diplomacy with mild undercurrents of uncertainty. Eight-bar introduction, sixteen-bar exploration, twelve-bar development, eight-bar restrained tension, twelve-bar return, four-bar settled cadence. Stable moderate dynamics, no sudden loud impacts, no foley, no synth arpeggios or electronic beat. Warm natural room, orchestration leaves space for interface and battlefield cues.",
+  "sections": [
+    {
+      "name": "Intro",
+      "bars": 8,
+      "pattern": [
+        [
+          "Dm",
+          "D16F16"
+        ],
+        [
+          "C",
+          "G32"
+        ],
+        [
+          "F",
+          "A16G16"
+        ],
+        [
+          "Dm",
+          "F32"
+        ]
+      ]
+    },
+    {
+      "name": "Exploration",
+      "bars": 16,
+      "pattern": [
+        [
+          "Dm",
+          "D8F8A16"
+        ],
+        [
+          "C",
+          "G8A8c16"
+        ],
+        [
+          "Gm",
+          "B16G16"
+        ],
+        [
+          "Dm",
+          "A8G8F16"
+        ]
+      ]
+    },
+    {
+      "name": "Development",
+      "bars": 12,
+      "pattern": [
+        [
+          "F",
+          "A8c8d8c8"
+        ],
+        [
+          "C",
+          "G8A8G16"
+        ],
+        [
+          "Gm",
+          "G16B16"
+        ],
+        [
+          "Dm",
+          "A8F8D16"
+        ]
+      ]
+    },
+    {
+      "name": "Tension",
+      "bars": 8,
+      "pattern": [
+        [
+          "Gm",
+          "G8B8d16"
+        ],
+        [
+          "Dm",
+          "A16F16"
+        ],
+        [
+          "C",
+          "E8G8A16"
+        ],
+        [
+          "Dm",
+          "F8E8D16"
+        ]
+      ]
+    },
+    {
+      "name": "Return",
+      "bars": 12,
+      "pattern": [
+        [
+          "Dm",
+          "D8F8G8A8"
+        ],
+        [
+          "C",
+          "G8A8c16"
+        ],
+        [
+          "Gm",
+          "B8A8G16"
+        ],
+        [
+          "Dm",
+          "F16D16"
+        ]
+      ]
+    },
+    {
+      "name": "Outro",
+      "bars": 4,
+      "pattern": [
+        [
+          "F",
+          "A32"
+        ],
+        [
+          "C",
+          "G32"
+        ],
+        [
+          "Gm",
+          "G16F16"
+        ],
+        [
+          "Dm",
+          "D32"
+        ]
+      ]
+    }
+  ],
+  "duration_seconds": 180,
+  "vocal": false,
+  "language": "instrumental",
+  "key": "Dm",
+  "steps": 32,
+  "target_lufs": -20.0,
+  "exports": [
+    "wav",
+    "mp3",
+    "ogg"
+  ],
+  "lyrics": "[Intro]\n\n[Exploration]\n\n[Development]\n\n[Tension]\n\n[Return]\n\n[Outro]\n",
+  "timeline": [
+    {
+      "section": "Intro",
+      "start_seconds": 0.0,
+      "end_seconds": 24.0,
+      "bars": 8,
+      "sung": false
+    },
+    {
+      "section": "Exploration",
+      "start_seconds": 24.0,
+      "end_seconds": 72.0,
+      "bars": 16,
+      "sung": false
+    },
+    {
+      "section": "Development",
+      "start_seconds": 72.0,
+      "end_seconds": 108.0,
+      "bars": 12,
+      "sung": false
+    },
+    {
+      "section": "Tension",
+      "start_seconds": 108.0,
+      "end_seconds": 132.0,
+      "bars": 8,
+      "sung": false
+    },
+    {
+      "section": "Return",
+      "start_seconds": 132.0,
+      "end_seconds": 168.0,
+      "bars": 12,
+      "sung": false
+    },
+    {
+      "section": "Outro",
+      "start_seconds": 168.0,
+      "end_seconds": 180.0,
+      "bars": 4,
+      "sung": false
+    }
+  ],
+  "workflow_sha256": "854dbc5906034134a53e407161dda7a41dd799b5db77864bd0ed38fd0b7476ff",
+  "job_uuid": "ae82312001484ab098ade88ba7aa3b55"
+}

@@ -1,16 +1,16 @@
 {
   "passed": true,
-  "version": "0.2.20",
-  "runtime_source_sha256": "61ae4e93e4efee62c86cc700374e06d079f04d5de61f1e1b634c2df60e732605",
+  "version": "0.2.21",
+  "runtime_source_sha256": "feb29a8b71e2622f7ee8eb66292846018241cf18c8a92eb33e6ae3be35f8303b",
   "cases": [
     {
       "name": "campaign_static",
-      "mean_channel_difference_0_255": 0.006050990226337449,
+      "mean_channel_difference_0_255": 0.0060751028806584366,
       "maximum_channel_difference": 2,
       "channels_over_three_ratio": 0.0,
       "native_images_sha256": [
-        "31a288d36b66054e4035436fc382c0f23eb5d4e4bb25f80187d8b14b99640b7e",
-        "90b774c454380d93acdb2ccf520a5234ad5c99d659e3c1df6c4818b282ff2d07"
+        "6aab3e97641fe1d1b34ca689995e429f55106195bd4d284efdb3fd86c65f7576",
+        "d7f6d873d362eca853b7cc035110cceb58caf40bde944f33d65327c10bb01ee4"
       ],
       "unit_order_preserved": true,
       "state_and_rng_unchanged": true,
@@ -48,8 +48,8 @@
       "maximum_channel_difference": 1,
       "channels_over_three_ratio": 0.0,
       "native_images_sha256": [
-        "d3267db6e99a4d715423353666f30cde87251a296fdde6875f6c1fad682a6ea5",
-        "a634301b91aff7df144e3aa9fbc8b57583691900b41b5a09c3e5a74363c7b8f6"
+        "c71ae4b63d2d81b062774ac637b4686b4f356bc028bb643a797c0f13b7f38fe3",
+        "4753b80bac90d1523f6989fa41c93c7d6b55b0f8247ff158b154afcb3fa3f957"
       ],
       "unit_order_preserved": true,
       "state_and_rng_unchanged": true,

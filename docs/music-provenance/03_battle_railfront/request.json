@@ -1,0 +1,199 @@
+{
+  "title": "铁路线上的交锋",
+  "bpm": 96,
+  "seed": 202610170723,
+  "genre": "近代战场回合交锋纯器乐",
+  "style": "Entirely instrumental tactical historical strategy battle music, no human voice, no speech, no lyrics, no choir, no chants, no humming. 96 BPM, 4/4, D minor. Low acoustic strings in controlled rhythmic ostinatos, short pipa accents, distant Chinese barrel war drums, period military snare played softly, low brass and restrained erhu fragments. Original D F G A C motif from the menu theme transformed into resolute shorter phrases. Late nineteenth and early twentieth century Chinese railway front, urgent tactical maneuver rather than a modern cinematic trailer. Eight-bar preparation, sixteen-bar maneuver, sixteen-bar engagement, eight-bar exposed bridge, sixteen-bar renewed resolve, eight-bar measured release. Tension rises without harsh treble, explosive hits, gunfire, train noises or dialogue. Moderate game background loudness, not triumphalist bombast; clear space for rifle, artillery and UI audio.",
+  "sections": [
+    {
+      "name": "Preparation",
+      "bars": 8,
+      "pattern": [
+        [
+          "Dm",
+          "D8D8A16"
+        ],
+        [
+          "C",
+          "G8G8c16"
+        ],
+        [
+          "Gm",
+          "G8B8A16"
+        ],
+        [
+          "Dm",
+          "F8D8D16"
+        ]
+      ]
+    },
+    {
+      "name": "Maneuver",
+      "bars": 16,
+      "pattern": [
+        [
+          "Dm",
+          "D4F4G8A8G8"
+        ],
+        [
+          "C",
+          "G8A8c8G8"
+        ],
+        [
+          "Gm",
+          "G4B4d8c8B8"
+        ],
+        [
+          "Dm",
+          "A8G8F8D8"
+        ]
+      ]
+    },
+    {
+      "name": "Engagement",
+      "bars": 16,
+      "pattern": [
+        [
+          "Dm",
+          "d8d8c8A8"
+        ],
+        [
+          "F",
+          "c8A8c8d8"
+        ],
+        [
+          "Gm",
+          "B8d8c8B8"
+        ],
+        [
+          "Dm",
+          "A4G4F8D16"
+        ]
+      ]
+    },
+    {
+      "name": "Bridge",
+      "bars": 8,
+      "pattern": [
+        [
+          "Gm",
+          "G16d16"
+        ],
+        [
+          "Dm",
+          "A16F16"
+        ],
+        [
+          "C",
+          "G16E16"
+        ],
+        [
+          "Dm",
+          "D32"
+        ]
+      ]
+    },
+    {
+      "name": "Resolve",
+      "bars": 16,
+      "pattern": [
+        [
+          "Dm",
+          "D8F8G8A8"
+        ],
+        [
+          "C",
+          "c8A8G8E8"
+        ],
+        [
+          "Gm",
+          "G8B8d8c8"
+        ],
+        [
+          "Dm",
+          "A8F8D16"
+        ]
+      ]
+    },
+    {
+      "name": "Release",
+      "bars": 8,
+      "pattern": [
+        [
+          "Gm",
+          "G16B16"
+        ],
+        [
+          "C",
+          "G16E16"
+        ],
+        [
+          "Dm",
+          "F16A16"
+        ],
+        [
+          "Dm",
+          "D32"
+        ]
+      ]
+    }
+  ],
+  "duration_seconds": 180,
+  "vocal": false,
+  "language": "instrumental",
+  "key": "Dm",
+  "steps": 32,
+  "target_lufs": -20.0,
+  "exports": [
+    "wav",
+    "mp3",
+    "ogg"
+  ],
+  "lyrics": "[Preparation]\n\n[Maneuver]\n\n[Engagement]\n\n[Bridge]\n\n[Resolve]\n\n[Release]\n",
+  "timeline": [
+    {
+      "section": "Preparation",
+      "start_seconds": 0.0,
+      "end_seconds": 20.0,
+      "bars": 8,
+      "sung": false
+    },
+    {
+      "section": "Maneuver",
+      "start_seconds": 20.0,
+      "end_seconds": 60.0,
+      "bars": 16,
+      "sung": false
+    },
+    {
+      "section": "Engagement",
+      "start_seconds": 60.0,
+      "end_seconds": 100.0,
+      "bars": 16,
+      "sung": false
+    },
+    {
+      "section": "Bridge",
+      "start_seconds": 100.0,
+      "end_seconds": 120.0,
+      "bars": 8,
+      "sung": false
+    },
+    {
+      "section": "Resolve",
+      "start_seconds": 120.0,
+      "end_seconds": 160.0,
+      "bars": 16,
+      "sung": false
+    },
+    {
+      "section": "Release",
+      "start_seconds": 160.0,
+      "end_seconds": 180.0,
+      "bars": 8,
+      "sung": false
+    }
+  ],
+  "workflow_sha256": "328f3c762e7868528c3b87044a644081a27e3e12718e216cb5d870532fb632a6",
+  "job_uuid": "9ffe3723920b4472be95cfe1e30a416c"
+}
