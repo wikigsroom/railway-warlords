@@ -73,7 +73,7 @@ python tools/capture_terrain_update.py
 python tools/refresh_terrain_repository.py
 ```
 
-`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.26截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.27截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
 
 `prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 
@@ -118,3 +118,24 @@ The 0.2.25 material producer is `tools/generate_ground_atlas.py`, with twenty in
 海岸生产入口为 `tools/fetch_coast_geodata.py` 与 `tools/compile_coast_detail.py`；`--check` 完整重编比较。独立原始GIS审计用 `tools/audit_coast_detail.py`，不导入生产编译器。原工作区验证及交付入口为 `tools/run_coast_validation.py`、`tools/package_coast_detail.py`，仍需本机引擎、GIS依赖、签名与当前证据。运行克隆包含预编译数值、可编辑区域源集与完整许可，无需重下载才能游玩。原始149MB下载和选用GIS随源码ZIP保留，未把161MB原始shapefile提交Git。见[44](44_细海岸与沿岸图层统一.md)。
 
 Coast production uses the fetch/compile tools above, with a full reproducible `--check`. The independent raw-GIS audit does not import the compiler. Workspace validation and packaging still require configured native paths, GIS libraries, signing and fresh evidence. Clones include runtime geometry, editable regional subsets and licenses; playing requires no source download. The complete source ZIP retains the original download and selected GIS files outside Git.
+
+## 0.2.27水面与蜂窝 / Water and hex-grid validation
+
+三张水面PNG通过指定Sub2路线直接生成。Godot使用完整原图、mipmap及世界坐标取样；全国总览采用完整原图的末级mipmap平均值，避免重复亮点。不输出派生拼图，不改变源海岸、河道或规则格。实现和史实范围见[45](45_连续水纹与真实蜂窝显示.md)。
+
+Three independent full Sub2 originals use runtime world-anchored mirrored sampling and distance filtering. Actual optional 48-unit operation hexes remain; triangular overview guides are removed. Existing 0.2.26 geography, rules, original images and content identity are preserved. See chapter 45 for the exact scope.
+
+```powershell
+python tools/run_water_map_validation.py
+# After validation and actual complete-frame review:
+python tools/refresh_terrain_repository.py
+# Run only when the new version's receipt path does not already exist:
+python tools/package_water_maps.py --prepare-receipt
+# The preparation file explicitly says passed=false; it only reserves the documentation link.
+python tools/audit_display_names.py
+python tools/verify_repository.py
+# Stage all intended files and finish the staged-byte sequence in chapter 06.
+python tools/package_water_maps.py
+```
+
+该助手依赖原工作区原生工具路径。独立克隆可先用Godot直接导出，并按自己的SDK与签名路径配置；检查报告不能移植为另一台机器的新验收。 / These helpers retain original-workspace native paths. Configure your own SDK and signing paths for a clone; retained reports do not constitute a new test on another machine.

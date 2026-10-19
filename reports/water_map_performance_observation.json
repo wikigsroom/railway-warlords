@@ -1,0 +1,43 @@
+{
+  "version": "0.2.27",
+  "runtime_source_sha256": "67a11cffc90b2695d729afb66a53e32552dc55206e0269e4b73dd702636d067f",
+  "windows_exe_sha256": "caebeeba0b06f60e92f39c6e61099d0faed5f122dc3ae7f579d097e868c531a3",
+  "recorded_at_utc": "2026-10-19T17:34:24.779171+00:00",
+  "observation_recorded": true,
+  "target_fps": 60,
+  "target_met": false,
+  "average_fps": 12.0980246479777,
+  "frame_ms_p95": 83.84,
+  "sample_frames": 180,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "scenario_id": "campaign_1924_02",
+  "viewport": "(1920.0, 1080.0)",
+  "window_focus_recorded": false,
+  "window_occlusion_recorded": false,
+  "physical_android_device_tested": false,
+  "regression_caused_by_water_change_established": false,
+  "scope": "Raw static battlefield sample from the current exported Windows EXE. Focus and occlusion were not recorded, and no matched pre-change baseline is available. The observed sample misses the target and cannot certify foreground or phone performance.",
+  "follow_up": "Run controlled foreground baseline/current and pan/combat profiles, identify the bottleneck, then repeat on physical Motorola X30.",
+  "files": [
+    {
+      "file": "reports/water_map_performance/desktop_benchmark.json",
+      "sha256": "1d45cc0693e3c2726a110d9178547cab1b909da18552146b00c88c6f4496fcb8"
+    },
+    {
+      "file": "reports/water_map_performance/native.log",
+      "sha256": "f88dd4c6753fa0156762c7026e96dd5761ba465e7dede32498f8e7186eb7cbc2"
+    },
+    {
+      "file": "reports/water_map_performance/stdout.log",
+      "sha256": "d4e7d0878fa68ffb67e346a01583b09bcb62984f269102f5cb23089b00ed1421"
+    },
+    {
+      "file": "reports/water_map_performance/viewport.png",
+      "sha256": "405c15d06fd7785222e98c0cd3b4df11caf79fde6ef10445a717a0734067bbde"
+    },
+    {
+      "file": "reports/water_map_performance/viewport.json",
+      "sha256": "5c9951d09140bb0d86f58e951af8da53389ad72506c751bfc23550ef8bbb08d3"
+    }
+  ]
+}

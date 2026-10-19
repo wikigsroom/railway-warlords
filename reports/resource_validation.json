@@ -13,13 +13,13 @@
   "definition_tables": 21,
   "maps": 6,
   "scenarios": 61,
-  "raster_count": 1324,
+  "raster_count": 1327,
   "audio_count": 17,
   "font_count": 2,
   "review_states": {
     "generated_pending_visual_review": 1156,
     "source_reviewed_runtime_pending": 128,
-    "generated_scoped_source_review_complete": 20,
+    "generated_scoped_source_review_complete": 23,
     "generated_source_reviewed_runtime_trial": 20
   },
   "manual_image_composition": false,
@@ -14412,6 +14412,42 @@
       "source_matches": true,
       "alpha_zero_percent": 0,
       "review_state": "generated_pending_visual_review"
+    },
+    {
+      "id": "tile_water_inland_v0227",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "6078603055399698a3fa880a8e3378edb995afebf1544f8644b3a478d13ec615",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_water_river_v0227",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "dd4a19088172599ae113d3deef5d994bb75f4cec14b5e86c33c58aac1959c9ce",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
+    },
+    {
+      "id": "tile_water_sea_v0227",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "157b1ba30aad7063f34f3856574c7f3ef7949adb5099a507583392d2265840a2",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_scoped_source_review_complete"
     },
     {
       "id": "tile_wetland_01",

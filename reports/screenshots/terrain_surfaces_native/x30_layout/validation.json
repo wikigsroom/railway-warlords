@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.26",
+	"build_version": "0.2.27",
 	"captures": [
 		{
 			"name": "atlas_0",
@@ -25,7 +25,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 53,
 				"distinct_surface_originals_in_view": 31,
 				"families": {
@@ -65,6 +65,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 69,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 106,
@@ -75,7 +82,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -87,6 +94,23 @@
 					"visible_existing_detail_reaches": 49,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -407,7 +431,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 59,
 				"distinct_surface_originals_in_view": 34,
 				"families": {
@@ -448,6 +472,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 103,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 114,
@@ -458,7 +489,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -470,6 +501,23 @@
 					"visible_existing_detail_reaches": 57,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -817,7 +865,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 61,
 				"distinct_surface_originals_in_view": 31,
 				"families": {
@@ -859,6 +907,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 133,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 129,
@@ -869,7 +924,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -881,6 +936,23 @@
 					"visible_existing_detail_reaches": 58,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -1250,7 +1322,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 50,
 				"distinct_surface_originals_in_view": 28,
 				"families": {
@@ -1291,6 +1363,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 117,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 104,
@@ -1301,7 +1380,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -1313,6 +1392,23 @@
 					"visible_existing_detail_reaches": 51,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -1631,7 +1727,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 21,
 				"distinct_surface_originals_in_view": 31,
 				"families": {
@@ -1669,6 +1765,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 40,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 93,
@@ -1679,7 +1782,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -1691,6 +1794,23 @@
 					"visible_existing_detail_reaches": 27,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -1973,7 +2093,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 23,
 				"distinct_surface_originals_in_view": 39,
 				"families": {
@@ -2011,6 +2131,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 23,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 109,
@@ -2021,7 +2148,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -2033,6 +2160,23 @@
 					"visible_existing_detail_reaches": 47,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -2315,7 +2459,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 16,
 				"distinct_surface_originals_in_view": 33,
 				"families": {
@@ -2352,6 +2496,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 202,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 184,
@@ -2362,7 +2513,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -2374,6 +2525,23 @@
 					"visible_existing_detail_reaches": 95,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -2702,7 +2870,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 32,
 				"distinct_surface_originals_in_view": 31,
 				"families": {
@@ -2742,6 +2910,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 127,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 130,
@@ -2752,7 +2927,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -2764,6 +2939,23 @@
 					"visible_existing_detail_reaches": 60,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -3080,7 +3272,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 19,
 				"distinct_surface_originals_in_view": 24,
 				"families": {
@@ -3117,6 +3309,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 0,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 51,
@@ -3127,7 +3326,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -3139,6 +3338,23 @@
 					"visible_existing_detail_reaches": 29,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -3372,7 +3588,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 35,
 				"distinct_surface_originals_in_view": 27,
 				"families": {
@@ -3413,6 +3629,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 31,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 86,
@@ -3423,7 +3646,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -3435,6 +3658,23 @@
 					"visible_existing_detail_reaches": 43,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -3726,7 +3966,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 30,
 				"distinct_surface_originals_in_view": 37,
 				"families": {
@@ -3766,6 +4006,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 102,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 108,
@@ -3776,7 +4023,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -3788,6 +4035,23 @@
 					"visible_existing_detail_reaches": 66,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -4117,7 +4381,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 33,
 				"distinct_surface_originals_in_view": 41,
 				"families": {
@@ -4158,6 +4422,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 38,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 85,
@@ -4168,7 +4439,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -4180,6 +4451,23 @@
 					"visible_existing_detail_reaches": 35,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -4474,7 +4762,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 8,
 				"distinct_surface_originals_in_view": 35,
 				"families": {
@@ -4511,6 +4799,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 198,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 145,
@@ -4521,7 +4816,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -4533,6 +4828,23 @@
 					"visible_existing_detail_reaches": 90,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -4891,7 +5203,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 1,
 				"distinct_surface_originals_in_view": 24,
 				"families": {
@@ -4925,6 +5237,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 99,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 151,
@@ -4935,7 +5254,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -4947,6 +5266,23 @@
 					"visible_existing_detail_reaches": 76,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -5206,7 +5542,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 22,
 				"distinct_surface_originals_in_view": 26,
 				"families": {
@@ -5246,6 +5582,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 0,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 50,
@@ -5256,7 +5599,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -5268,6 +5611,23 @@
 					"visible_existing_detail_reaches": 21,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -5512,7 +5872,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 26,
 				"distinct_surface_originals_in_view": 41,
 				"families": {
@@ -5551,6 +5911,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 75,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 94,
@@ -5561,7 +5928,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -5573,6 +5940,23 @@
 					"visible_existing_detail_reaches": 61,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -5879,7 +6263,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 18,
 				"distinct_surface_originals_in_view": 41,
 				"families": {
@@ -5917,6 +6301,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 185,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 134,
@@ -5927,7 +6318,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -5939,6 +6330,23 @@
 					"visible_existing_detail_reaches": 77,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -6310,7 +6718,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 47,
 				"distinct_surface_originals_in_view": 40,
 				"families": {
@@ -6350,6 +6758,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 132,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 122,
@@ -6360,7 +6775,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -6372,6 +6787,23 @@
 					"visible_existing_detail_reaches": 64,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {
@@ -6733,7 +7165,7 @@
 				],
 				"catalog_additional_sources": 796,
 				"catalog_map_assets": 870.0,
-				"current_total_map_assets": 970,
+				"current_total_map_assets": 973,
 				"distinct_scenery_originals_intersecting_view": 13,
 				"distinct_surface_originals_in_view": 33,
 				"families": {
@@ -6771,6 +7203,13 @@
 						"pretriangulated": true,
 						"source": "gshhg_2_3_7_L1"
 					},
+					"operation_grid": {
+						"axial_guide_lines": 0,
+						"drawn_hexes": 119,
+						"hex_radius_world": 48.0,
+						"minimum_zoom": 0.2,
+						"overview_guide_replacement": false
+					},
 					"river_surface": {
 						"detail_banks_drawn_before_water": true,
 						"drawn_antialiased_headwaters": 151,
@@ -6781,7 +7220,7 @@
 						"measured_banks_claimed": false,
 						"primary_width_from_vertex_count": false,
 						"renderer": "source_centerline_gradient_ribbon",
-						"water_texture_id": "tile_bank_sea_water_001",
+						"water_texture_id": "tile_water_river_v0227",
 						"world_texture_period": 256.0
 					},
 					"rule_geometry_modified": false,
@@ -6793,6 +7232,23 @@
 					"visible_existing_detail_reaches": 86,
 					"visible_fine_reaches": 0,
 					"visible_fine_stream_orders": {},
+					"water_materials": {
+						"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+						"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+						"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+						"fixed_wallpaper_period": false,
+						"geographic_water_extent_changed": false,
+						"historical_water_color_claimed": false,
+						"independent_originals": 3,
+						"inland_texture_id": "tile_water_inland_v0227",
+						"legacy_per_cell_water_stamps": false,
+						"mipmapped_minification_active": true,
+						"river_texture_id": "tile_water_river_v0227",
+						"sea_texture_id": "tile_water_sea_v0227",
+						"source_images_modified": false,
+						"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+						"world_texture_period": 256.0
+					},
 					"width_is_symbolic": true
 				},
 				"map_symbols": {

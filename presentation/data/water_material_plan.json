@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "version": "0.2.27",
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "original_images_modified": false,
+  "manual_compositing": false,
+  "assets": [
+    {
+      "id": "tile_water_sea_v0227",
+      "category": "tile",
+      "family": "sea",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "source_revision": "r001",
+      "visible_bounds": [
+        256,
+        256
+      ],
+      "runtime_import_max_dimension": 512,
+      "gate": "existing_sourced_sea_geometry_only",
+      "prompt": "ONE original seamless, opaque, edge-to-edge hand-painted water\nmaterial for a polished historical turn-based strategy map. Exact top-down\nflat surface, no perspective and no horizon. Calm connected blue-green water,\nsubtle short irregular broken ripples with very low relief, restrained matte\npainted realism and shallow upper-left illumination. The whole image must\nremain visually calm when repeated across a large sea and reduced to 256 px.\nUse small softly connected tonal variations, never large alternating light\nand dark blotches. About ninety percent quiet water and ten percent delicate\nbroken surface strokes. Uniform overall value, no bright central focus, no\nedge vignette. Small ripple marks are about 5-18 px wide at 1024 resolution.\nAbsolutely no land, grass, soil, algae patches, brown or ochre patches, islands,\nrocks, coasts, riverbanks, channels, underwater terrain, pools, depth contours,\nfoam bands, surf, large waves, caustic cells, repeating circles, hexagons, grid,\nstars, dots, paper weave, words, border, diagram, panels, UI or watermark.\nNo photographic speckle or noisy sandpaper. Do not copy existing game artwork.\nThis is a representative surface, not a claim of measured local water color.\nWATER IDENTITY:\nMuted deep teal-blue sea, base #3C6974 with quiet #497782 ripple strokes and very restrained #335E69 troughs. A continuous open sea, sparse short uneven near-horizontal ripple dashes, not a quilt or patches."
+    },
+    {
+      "id": "tile_water_river_v0227",
+      "category": "tile",
+      "family": "river",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "source_revision": "r001",
+      "visible_bounds": [
+        256,
+        256
+      ],
+      "runtime_import_max_dimension": 512,
+      "gate": "existing_sourced_river_geometry_only",
+      "prompt": "ONE original seamless, opaque, edge-to-edge hand-painted water\nmaterial for a polished historical turn-based strategy map. Exact top-down\nflat surface, no perspective and no horizon. Calm connected blue-green water,\nsubtle short irregular broken ripples with very low relief, restrained matte\npainted realism and shallow upper-left illumination. The whole image must\nremain visually calm when repeated across a large sea and reduced to 256 px.\nUse small softly connected tonal variations, never large alternating light\nand dark blotches. About ninety percent quiet water and ten percent delicate\nbroken surface strokes. Uniform overall value, no bright central focus, no\nedge vignette. Small ripple marks are about 5-18 px wide at 1024 resolution.\nAbsolutely no land, grass, soil, algae patches, brown or ochre patches, islands,\nrocks, coasts, riverbanks, channels, underwater terrain, pools, depth contours,\nfoam bands, surf, large waves, caustic cells, repeating circles, hexagons, grid,\nstars, dots, paper weave, words, border, diagram, panels, UI or watermark.\nNo photographic speckle or noisy sandpaper. Do not copy existing game artwork.\nThis is a representative surface, not a claim of measured local water color.\nWATER IDENTITY:\nMuted jade-teal river water, base #58878A with quiet #6A9898 surface strokes and #4D777E shallow shadows. Fine short flowing brush dashes, never brown silt bars, farmland, islands, a drawn channel or banks."
+    },
+    {
+      "id": "tile_water_inland_v0227",
+      "category": "tile",
+      "family": "inland",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "source_revision": "r001",
+      "visible_bounds": [
+        256,
+        256
+      ],
+      "runtime_import_max_dimension": 512,
+      "gate": "existing_sourced_inland_geometry_only",
+      "prompt": "ONE original seamless, opaque, edge-to-edge hand-painted water\nmaterial for a polished historical turn-based strategy map. Exact top-down\nflat surface, no perspective and no horizon. Calm connected blue-green water,\nsubtle short irregular broken ripples with very low relief, restrained matte\npainted realism and shallow upper-left illumination. The whole image must\nremain visually calm when repeated across a large sea and reduced to 256 px.\nUse small softly connected tonal variations, never large alternating light\nand dark blotches. About ninety percent quiet water and ten percent delicate\nbroken surface strokes. Uniform overall value, no bright central focus, no\nedge vignette. Small ripple marks are about 5-18 px wide at 1024 resolution.\nAbsolutely no land, grass, soil, algae patches, brown or ochre patches, islands,\nrocks, coasts, riverbanks, channels, underwater terrain, pools, depth contours,\nfoam bands, surf, large waves, caustic cells, repeating circles, hexagons, grid,\nstars, dots, paper weave, words, border, diagram, panels, UI or watermark.\nNo photographic speckle or noisy sandpaper. Do not copy existing game artwork.\nThis is a representative surface, not a claim of measured local water color.\nWATER IDENTITY:\nStill inland water, muted cool sage-blue base #527D80 with quiet #638D8E sparse short ripple arcs and #487176 gentle troughs. No dark central basin, aquatic plants, shore or added water extent."
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "passed": true,
+  "version": "0.2.27",
+  "created_at_utc": "2026-10-19T15:42:09.293038+00:00",
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "source_images_modified": false,
+  "manual_compositing": false,
+  "formal_art_approval": false,
+  "completed": 3,
+  "failures": [],
+  "assets": [
+    {
+      "id": "tile_water_sea_v0227",
+      "category": "tile",
+      "family": "sea",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "source_revision": "r001",
+      "visible_bounds": [
+        256,
+        256
+      ],
+      "runtime_import_max_dimension": 512,
+      "gate": "existing_sourced_sea_geometry_only",
+      "state": "generated_pending_visual_review",
+      "game_ready": false,
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "style_version": "warlord_ew6_v025_map_bank_v0212",
+      "era": "terrain_symbol_not_historical_landcover",
+      "source_file": "output/imagegen/warlord/water_materials_v0227/originals/tile_water_sea_v0227/r001/source.png",
+      "source_sha256": "157b1ba30aad7063f34f3856574c7f3ef7949adb5099a507583392d2265840a2",
+      "prompt_file": "output/imagegen/warlord/water_materials_v0227/originals/tile_water_sea_v0227/r001/prompt.txt",
+      "prompt_sha256": "56738c905d6f89174ec386472dcd5efd421c957d984c81c3b3b7675ee9bc081d",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "planned_source_request": [
+        1024,
+        1024
+      ],
+      "engine_path": "res://assets/tile/tile_water_sea_v0227.png",
+      "planned_engine_path": "res://assets/tile/tile_water_sea_v0227.png",
+      "background": "opaque_seamless",
+      "alpha_min": 255,
+      "alpha_coverage_mean": 1.0,
+      "alpha_bounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "analysis_fingerprint_rgba_24": "7bd8fa25bf7d366c1b4338e842de05d716fb7bf1871c1693e21f4a584066a766",
+      "revision": "map_bank_v0212_r001",
+      "image_modified": false,
+      "manual_compositing": false,
+      "visual_review": "pending; automated alpha/format/provenance checks are not formal art approval"
+    },
+    {
+      "id": "tile_water_river_v0227",
+      "category": "tile",
+      "family": "river",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "source_revision": "r001",
+      "visible_bounds": [
+        256,
+        256
+      ],
+      "runtime_import_max_dimension": 512,
+      "gate": "existing_sourced_river_geometry_only",
+      "state": "generated_pending_visual_review",
+      "game_ready": false,
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "style_version": "warlord_ew6_v025_map_bank_v0212",
+      "era": "terrain_symbol_not_historical_landcover",
+      "source_file": "output/imagegen/warlord/water_materials_v0227/originals/tile_water_river_v0227/r001/source.png",
+      "source_sha256": "dd4a19088172599ae113d3deef5d994bb75f4cec14b5e86c33c58aac1959c9ce",
+      "prompt_file": "output/imagegen/warlord/water_materials_v0227/originals/tile_water_river_v0227/r001/prompt.txt",
+      "prompt_sha256": "4e7ad480d2cf0dbc1748a908fb37ceaa80763345ec238f6bba96f25cce0440d1",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "planned_source_request": [
+        1024,
+        1024
+      ],
+      "engine_path": "res://assets/tile/tile_water_river_v0227.png",
+      "planned_engine_path": "res://assets/tile/tile_water_river_v0227.png",
+      "background": "opaque_seamless",
+      "alpha_min": 255,
+      "alpha_coverage_mean": 1.0,
+      "alpha_bounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "analysis_fingerprint_rgba_24": "a76c4a4e63e1e64ecda11e6de360d4b7bdc589895c156aad1fbf1c98b5d4c846",
+      "revision": "map_bank_v0212_r001",
+      "image_modified": false,
+      "manual_compositing": false,
+      "visual_review": "pending; automated alpha/format/provenance checks are not formal art approval"
+    },
+    {
+      "id": "tile_water_inland_v0227",
+      "category": "tile",
+      "family": "inland",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "source_revision": "r001",
+      "visible_bounds": [
+        256,
+        256
+      ],
+      "runtime_import_max_dimension": 512,
+      "gate": "existing_sourced_inland_geometry_only",
+      "state": "generated_pending_visual_review",
+      "game_ready": false,
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "style_version": "warlord_ew6_v025_map_bank_v0212",
+      "era": "terrain_symbol_not_historical_landcover",
+      "source_file": "output/imagegen/warlord/water_materials_v0227/originals/tile_water_inland_v0227/r001/source.png",
+      "source_sha256": "6078603055399698a3fa880a8e3378edb995afebf1544f8644b3a478d13ec615",
+      "prompt_file": "output/imagegen/warlord/water_materials_v0227/originals/tile_water_inland_v0227/r001/prompt.txt",
+      "prompt_sha256": "c07b61f5f329d6275579c8abaaa67ebe5f972db47f76fc28c286071e6380aa50",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "planned_source_request": [
+        1024,
+        1024
+      ],
+      "engine_path": "res://assets/tile/tile_water_inland_v0227.png",
+      "planned_engine_path": "res://assets/tile/tile_water_inland_v0227.png",
+      "background": "opaque_seamless",
+      "alpha_min": 255,
+      "alpha_coverage_mean": 1.0,
+      "alpha_bounds": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "analysis_fingerprint_rgba_24": "1577b8b49faa70ef348fef0c2ce5fa5de0de42f3f3fcd946f8fb06cc99125740",
+      "revision": "map_bank_v0212_r001",
+      "image_modified": false,
+      "manual_compositing": false,
+      "visual_review": "pending; automated alpha/format/provenance checks are not formal art approval"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.26",
+	"build_version": "0.2.27",
 	"checks": [
 		{
 			"name": "content_loads_with_continuous_water_renderer",
@@ -183,6 +183,14 @@
 		},
 		{
 			"name": "actual_bank_and_water_indices_are_separate_for_confluence_passes",
+			"passed": true
+		},
+		{
+			"name": "legacy_per_hex_water_stamps_cannot_cover_continuous_water",
+			"passed": true
+		},
+		{
+			"name": "main_cached_ground_and_unit_views_all_use_imported_mipmaps",
 			"passed": true
 		}
 	],

@@ -105,6 +105,14 @@ func run() -> void:
 		var v: Vector3=body_arrays[Mesh.ARRAY_VERTEX][index]
 		body_inside=body_inside and distance_to_source(Vector2(v.x,v.y),short.points)<=4+.0001
 	verify(bank_outside and body_inside,"actual_bank_and_water_indices_are_separate_for_confluence_passes")
+	var patch=MapDetails.new()
+	patch.surfaces={"0,0":"tile_bank_sea_water_001"};patch.surface_families={"0,0":"sea_water"}
+	var sea_cell={"hex":Vector2i.ZERO,"cell":{"terrain_id":"sea"}}
+	var surface_batches=patch.surface_meshes([sea_cell],false)
+	verify(surface_batches.count==0 and surface_batches.batches.is_empty(),"legacy_per_hex_water_stamps_cannot_cover_continuous_water")
+	var map_view=MapView.new();map_view.setup(content,AssetLibrary.new())
+	verify(map_view.texture_filter==CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS and map_view.backdrop_view.texture_filter==CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS and map_view.unit_view.texture_filter==CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS,"main_cached_ground_and_unit_views_all_use_imported_mipmaps")
+	map_view.free()
 	var report={"passed":failures.is_empty(),"failed":failures.size(),"checks":checks,"failures":failures,"build_version":ContentRegistry.APP_VERSION,"replacement_reaches_checked":replacement_checks,"scope":"Actual source geometry, bounded display mains, mesh joins, world UV phase, cache lifetime and authoritative-state isolation; not measured riverbanks or historical-channel certification."}
 	var file=FileAccess.open("res://reports/river_surface_tests.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("RIVER_SURFACE_TEST ",JSON.stringify({"passed":failures.is_empty(),"checks":checks.size(),"failures":failures}));quit(0 if failures.is_empty() else 1)

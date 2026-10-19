@@ -1,0 +1,235 @@
+{
+	"build_version": "0.2.27",
+	"checks": [
+		{
+			"name": "shipping_compatibility_material_available",
+			"passed": true
+		},
+		{
+			"name": "actual_independent_imported_source_available:tile_water_sea_v0227",
+			"passed": true
+		},
+		{
+			"name": "production_partition_matches_independent_continuous_quad:tile_water_sea_v0227",
+			"passed": true
+		},
+		{
+			"name": "panning_retains_world_space_water_phase:tile_water_sea_v0227",
+			"passed": true
+		},
+		{
+			"name": "source_period_does_not_create_identical_repeated_water_tiles:tile_water_sea_v0227",
+			"passed": true
+		},
+		{
+			"name": "mirrored_source_edge_is_continuous_at_positive_negative_world_boundary:tile_water_sea_v0227:0",
+			"passed": true
+		},
+		{
+			"name": "mirrored_source_edge_is_continuous_at_positive_negative_world_boundary:tile_water_sea_v0227:1",
+			"passed": true
+		},
+		{
+			"name": "continental_minification_uses_source_average_without_repeated_bright_dots:tile_water_sea_v0227",
+			"passed": true
+		},
+		{
+			"name": "actual_independent_imported_source_available:tile_water_river_v0227",
+			"passed": true
+		},
+		{
+			"name": "production_partition_matches_independent_continuous_quad:tile_water_river_v0227",
+			"passed": true
+		},
+		{
+			"name": "panning_retains_world_space_water_phase:tile_water_river_v0227",
+			"passed": true
+		},
+		{
+			"name": "source_period_does_not_create_identical_repeated_water_tiles:tile_water_river_v0227",
+			"passed": true
+		},
+		{
+			"name": "mirrored_source_edge_is_continuous_at_positive_negative_world_boundary:tile_water_river_v0227:0",
+			"passed": true
+		},
+		{
+			"name": "mirrored_source_edge_is_continuous_at_positive_negative_world_boundary:tile_water_river_v0227:1",
+			"passed": true
+		},
+		{
+			"name": "continental_minification_uses_source_average_without_repeated_bright_dots:tile_water_river_v0227",
+			"passed": true
+		},
+		{
+			"name": "actual_independent_imported_source_available:tile_water_inland_v0227",
+			"passed": true
+		},
+		{
+			"name": "production_partition_matches_independent_continuous_quad:tile_water_inland_v0227",
+			"passed": true
+		},
+		{
+			"name": "panning_retains_world_space_water_phase:tile_water_inland_v0227",
+			"passed": true
+		},
+		{
+			"name": "source_period_does_not_create_identical_repeated_water_tiles:tile_water_inland_v0227",
+			"passed": true
+		},
+		{
+			"name": "mirrored_source_edge_is_continuous_at_positive_negative_world_boundary:tile_water_inland_v0227:0",
+			"passed": true
+		},
+		{
+			"name": "mirrored_source_edge_is_continuous_at_positive_negative_world_boundary:tile_water_inland_v0227:1",
+			"passed": true
+		},
+		{
+			"name": "continental_minification_uses_source_average_without_repeated_bright_dots:tile_water_inland_v0227",
+			"passed": true
+		}
+	],
+	"formal_art_approval": false,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"samples": [
+		{
+			"id": "tile_water_sea_v0227",
+			"mesh_partition": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 1856
+			}
+		},
+		{
+			"id": "tile_water_sea_v0227",
+			"world_phase": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 1856
+			}
+		},
+		{
+			"id": "tile_water_sea_v0227",
+			"nominal_period": {
+				"maximum_channel_delta": 63.9999999850988,
+				"mean_channel_delta": 9.48868540982748,
+				"pixels": 1856
+			}
+		},
+		{
+			"id": "tile_water_sea_v0227",
+			"mirrored_source_edge": {
+				"axis": 0,
+				"maximum_channel_delta": 0.0,
+				"pixels": 52
+			}
+		},
+		{
+			"id": "tile_water_sea_v0227",
+			"mirrored_source_edge": {
+				"axis": 1,
+				"maximum_channel_delta": 0.0,
+				"pixels": 52
+			}
+		},
+		{
+			"id": "tile_water_sea_v0227",
+			"overview_channel_spread": 0.0,
+			"overview_zoom": 0.0446823365
+		},
+		{
+			"id": "tile_water_river_v0227",
+			"mesh_partition": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 1856
+			}
+		},
+		{
+			"id": "tile_water_river_v0227",
+			"world_phase": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 1856
+			}
+		},
+		{
+			"id": "tile_water_river_v0227",
+			"nominal_period": {
+				"maximum_channel_delta": 60.0000040233135,
+				"mean_channel_delta": 7.20474199809391,
+				"pixels": 1856
+			}
+		},
+		{
+			"id": "tile_water_river_v0227",
+			"mirrored_source_edge": {
+				"axis": 0,
+				"maximum_channel_delta": 0.0,
+				"pixels": 52
+			}
+		},
+		{
+			"id": "tile_water_river_v0227",
+			"mirrored_source_edge": {
+				"axis": 1,
+				"maximum_channel_delta": 0.0,
+				"pixels": 52
+			}
+		},
+		{
+			"id": "tile_water_river_v0227",
+			"overview_channel_spread": 0.0,
+			"overview_zoom": 0.0446823365
+		},
+		{
+			"id": "tile_water_inland_v0227",
+			"mesh_partition": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 1856
+			}
+		},
+		{
+			"id": "tile_water_inland_v0227",
+			"world_phase": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 1856
+			}
+		},
+		{
+			"id": "tile_water_inland_v0227",
+			"nominal_period": {
+				"maximum_channel_delta": 49.0000046789646,
+				"mean_channel_delta": 5.22629513814724,
+				"pixels": 1856
+			}
+		},
+		{
+			"id": "tile_water_inland_v0227",
+			"mirrored_source_edge": {
+				"axis": 0,
+				"maximum_channel_delta": 0.0,
+				"pixels": 52
+			}
+		},
+		{
+			"id": "tile_water_inland_v0227",
+			"mirrored_source_edge": {
+				"axis": 1,
+				"maximum_channel_delta": 0.0,
+				"pixels": 52
+			}
+		},
+		{
+			"id": "tile_water_inland_v0227",
+			"overview_channel_spread": 0.0,
+			"overview_zoom": 0.0446823365
+		}
+	],
+	"scope": "Synthetic native GPU fixture: shipping water shader/imports, actual mesh partition, positive/negative source-edge continuity, world phase, mipmapped overview and repetition. Not a gameplay image or formal art approval.",
+	"source_images_modified": false
+}

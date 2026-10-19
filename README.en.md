@@ -7,7 +7,7 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.26, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.27, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
@@ -17,9 +17,9 @@ European War 6 is the main reference for visual presentation and interaction. Ca
 
 Version 0.2.22 uses one calendar day per complete round and provides four living age-stage originals for each of 33 people, 135 portraits in total: 29 military generals and four political-only figures. Match dates select the appearance automatically. Li Desheng uses a youthful 1917 appearance and a middle-aged 1947 appearance; post-1940 art does not add a new 1947 scenario. See [daily calendar and age-stage implementation](docs/40_每日历法与四阶段人物肖像.md).
 
-![Li Desheng in 1917, complete native 0.2.26 portrait page](docs/media/lidesheng-young-v0226.png)
+![Li Desheng in 1917, complete native 0.2.27 portrait page](docs/media/lidesheng-young-v0227.png)
 
-![Li Desheng in 1947, native 0.2.26 portrait preparation preview](docs/media/lidesheng-middle-v0226.png)
+![Li Desheng in 1947, native 0.2.27 portrait preparation preview](docs/media/lidesheng-middle-v0227.png)
 
 The headquarters now includes a political archive with all 17 registered political figures, stage previews and selection by the current match date. Short-lived people retain four actual living periods: Xianfeng's illustrations represent approximately 18, 22, 26 and 29 years of age, with the third stage labelled as the middle of his reign. The archive does not add military appointments for political-only figures.
 
@@ -32,6 +32,12 @@ Version 0.2.24 connects selection maps to the shipping ground, elevation, river 
 Version 0.2.25 adds 20 direct Sub2 ground originals with calmer material shapes, world-anchored translated sampling and softly blended mountain feet. Forty earlier grounds remain intact; 121 existing rule, scenario and geographical JSON files retain the delivered 0.2.24 bytes. The shipping material passes 48 native checks. See [quiet ground and mountain feet](docs/43_安静地表与山脚融合.md).
 
 Version 0.2.26 refines sourced marine geometry in four maps, uses offline land triangulation and a narrow fading shoreline batch, and clips ground, administrative display lines and city influence zones to the same land boundary. Of 123 existing JSON files, 111 retain their bytes and 12 have documented drawing-data changes. Rule grids and historical nodes remain intact. No PNG originals are added or processed. See [coast geometry and coastal layers](docs/44_细海岸与沿岸图层统一.md).
+
+Version 0.2.27 adds three independent Sub2 water originals with continuous world-anchored sampling and distance filtering: tactical zoom retains waves, while continental zoom removes periodic bright dots. The triangular overview guides are removed; actual optional 48-unit operation hexes remain. Existing 0.2.26 geography, history, rules and content identity are preserved. See [continuous water and actual hexes](docs/45_连续水纹与真实蜂窝显示.md).
+
+![China overview from the current complete native Windows viewport](docs/media/water-china-overview.png)
+
+![Bohai tactical water and actual movement hexes](docs/media/water-bohai.png)
 
 <a id="contents"></a>
 ## Contents
@@ -68,10 +74,10 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Factions and generals | **47 faction definitions and 29 general definitions**; availability is scenario-specific |
 | Progression | **28 technologies, 9 passive skills, 9 active skills and 24 achievements** |
 | Facilities | **12 types** covering recruitment, transport, supply, medicine, defense, communications and trade |
-| Raster art | **1,324 PNGs**; **1,010 stored map assets, 970 currently active**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
+| Raster art | **1,327 PNGs**; **1,013 stored map assets, 973 currently available**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
 | Regional terrain | **20 types × (1 new continuous ground + 4 detail originals) = 100 active originals**; 40 superseded macrogrounds retained, interactive atlas |
 | Audio and fonts | 14 procedural effects, 3 local YuE2 scores (180 seconds each), 3 retained fallback loops and 2 Chinese fonts with OFL notices |
-| Current regression snapshot | **29 groups / 5,787 checks**, plus 1,725 portrait UI, 157 dossier transaction, 216 terrain, 373 UI, 84 coastal, 220 map-symbol and 18 music checks; older numerical fixtures retain their version identity |
+| Current regression snapshot | **29 groups / 5,789 checks**, plus 1,725 portrait UI, 157 dossier transaction, 216 terrain, 373 UI, 84 coastal, 220 map-symbol and 18 music checks; older numerical fixtures retain their version identity |
 | Character portraits | **33 people × 4 stages + 3 extra dates = 135 independent originals**; automatic dated selection, general roster and political archive previews |
 | Calendar | **One day per complete round**; all factions finish their phases before the Gregorian date advances |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
@@ -530,11 +536,13 @@ godot --headless --path . --script tests/surface_geography_test.gd
 godot --headless --path . --script tests/terrain_surfaces_test.gd
 ```
 
-Version 0.2.26 passes 29 groups / 5,787 checks, including 611 portrait and 88 daily-calendar checks. The shipping EXE passes 1,725 portrait UI checks / 174 captures, 157 dossier checks / 24 captures, 216 terrain and 373 UI checks / 99 captures, 84 coastal checks / 20 captures, 220 symbol checks / 32 captures, plus four changed-map coast views: 353 current scoped native frames. Music playback passes 18 checks. Separate checks cover 61 native coast geometry cases, 152 independent raw-GIS assertions and 48 native material cases. See the [regression seal](reports/regression_dependency_evidence.json), [portrait evidence](reports/general_portrait_native_evidence.json) and [terrain/UI proof](reports/terrain_surface_native_evidence.json). 23 specialist frames and three additional export-check frames were individually viewed (26 complete frames in total); the [current visual record](reports/coast_detail_native_review.json) states remaining issues without claiming manual approval of all 353 frames. Older performance, numerical fixtures, GIFs and recordings retain their original version identities.
+Version 0.2.27 passes 29 groups / 5,789 checks, including 611 portrait and 88 daily-calendar checks. The shipping EXE produces 174 portrait, 24 dossier, 99 terrain/UI, 20 coastal, 32 symbol, four detailed-coast and 11 new water/grid views: 364 complete scoped native frames. Separate checks cover 61 native coast geometry cases, 48 ground GPU cases, 22 water GPU cases and 18 music playback cases. The retained 152-assertion independent raw-GIS audit still binds the unchanged map bytes. See the [regression seal](reports/regression_dependency_evidence.json), [water fixture](reports/water_continuity_native_evidence.json), [water/grid captures](reports/water_map_native_capture_evidence.json) and [actual complete-frame review](reports/water_map_native_review.json). The review does not claim manual approval of every frame; older performance records, fixtures and GIFs retain their version identities.
 
 [Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current dossier transaction evidence](reports/ui_refinement_native_evidence.json)
 
-Reports record tests run in the original workspace and do not replace manual gameplay, art, music listening, historical or device acceptance. Full AI endurance was not rerun for this patch. Schema 2 / ruleset 10 remain; drawing data changes the content hash. Continue existing 0.2.25 matches with the retained 0.2.25 build and start a fresh match in this version. Career profiles retain their existing format.
+Reports record tests run in the original workspace and do not replace manual gameplay, art, music listening, historical or device acceptance. Full AI endurance was not rerun for this patch. Schema 2 / ruleset 10 and the 0.2.26 content hash remain, so existing 0.2.26 matches retain their content identity. Earlier builds retain their documented compatibility limits. Career profiles keep their existing format.
+
+The recorded 180-frame RTX 3060 static battlefield sample at 1920×1080 averages **12.10 FPS**, with 83.84ms p95 frame time, missing the 60 FPS target. Window focus and occlusion were not recorded and no matched old-build baseline is available; this does not establish causality or phone performance. [Raw performance evidence](reports/water_map_performance_observation.json) is retained separately. Controlled foreground, moving/combat and physical-phone performance remain unresolved.
 
 The repository's `.gitattributes` preserves original bytes so automatic newline conversion cannot change hashed prompts, native metadata or evidence. The [Git byte check](reports/git_byte_preservation.json) compares staged objects with working files separately from gameplay checks.
 
@@ -583,11 +591,11 @@ Tactical selection still has frame-time spikes; averages do not establish stable
 <a id="assets"></a>
 ## Artwork, media and licensing
 
-All 1,324 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including forty retained superseded macrogrounds. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
+All 1,327 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including forty retained superseded macrogrounds. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
 
 - [Runtime manifest](assets/manifest.json): original workspace sources, models, dimensions and hashes.
 - [Portable provenance](docs/asset-provenance/index.json): repository-relative images/prompts and SHA-256.
-- [Prompt directory](docs/asset-prompts/): 1,324 prompts; gateway configuration and credentials are excluded.
+- [Prompt directory](docs/asset-prompts/): 1,327 prompts; gateway configuration and credentials are excluded.
 
 Two legacy portrait prompts have readable alias transcriptions using Li Desheng. Their exact original UTF-8 bytes are preserved reversibly with the original SHA256; source images and workspace production originals remain immutable.
 - [Media guide](docs/MEDIA.md): native screenshots, recording, GIF conversion and evidence scope.
@@ -637,4 +645,4 @@ The [0.2.23 military UI and dossier chapter](docs/41_军事界面与将领档案
 
 The [0.2.24 atlas and diplomacy chapter](docs/42_战区沙盘与外交事务精修.md) covers shipping terrain previews, zoom and pan, date gates, counterparty selection, actual aid transactions and current delivery limits.
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.26 assessment and corresponding reports for current status.
+Older chapters preserve their version context. Use these READMEs, the 0.2.27 assessment and corresponding reports for current status.

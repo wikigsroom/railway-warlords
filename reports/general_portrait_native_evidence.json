@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "version": "0.2.26",
-  "runtime_source_sha256": "f761e97b9893878942fbaa9df9cee60efaefd28c0af8c05ea0ddad3fc1f07540",
-  "windows_exe_sha256": "7670fe1b9034695c7577ae477b5b6094f2f5c9063cfdf5ef1c028cb73a8b1e6a",
+  "version": "0.2.27",
+  "runtime_source_sha256": "67a11cffc90b2695d729afb66a53e32552dc55206e0269e4b73dd702636d067f",
+  "windows_exe_sha256": "caebeeba0b06f60e92f39c6e61099d0faed5f122dc3ae7f579d097e868c531a3",
   "capture_driver_sha256": "9ba406a37e334807787772e2d80d1a346273366f0049fa0cef3f4e139ca15296",
   "groups": [
     {
@@ -11,356 +11,356 @@
       "ui_scale": "1.0",
       "checks": 575,
       "report": "reports/screenshots/general_portraits_native/windows/validation.json",
-      "report_sha256": "9a654f55fd1f299cc3c3cb142a4d5f9b0256915ee03708f5a9bd9865022e69eb",
+      "report_sha256": "6063adfc47da41d91c3cedae553f76b0c8c5a3c8a58a7bf628c6b29704a95c7d",
       "log": "reports/general_portraits_native_windows.log",
       "captures": [
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_young_00.png",
           "sha256": "58a79a76300afa93ad3be911102ba6e0b38185d011afb5b50e79d56e737491da",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_young_00.json",
-          "metadata_sha256": "b02aef707c11c753c6f0fc898e51fbb4f9d4268e5e11b58f7be9aa063011e34a"
+          "metadata_sha256": "cc8200c7bb0b69dd4b4087efdbdac98e9fc4b0a7b928a976389bd7cfee1f82f5"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_young_12.png",
           "sha256": "1223116b364bc7832d60c5ad70af31a38de269f9fc0be94d259423ac3acac630",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_young_12.json",
-          "metadata_sha256": "c97e2985752b014c8985171710005e5e18b50bc304558dda594a59d24bdb4486"
+          "metadata_sha256": "d5db9c0a271d62f36842993acc530145917367ef7c13766fd890b1430e8fa64c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_young_23.png",
           "sha256": "fbfc5522013635be450bfc36f21db6dab1c2125091cb42c5fe290143d9b6e484",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_young_23.json",
-          "metadata_sha256": "3bf4894d1e36281d2ff40b7633c9bfb2b4a4b9367a410f1641e7ebe6717b6570"
+          "metadata_sha256": "9d2838c39516d1068d39c43d898f16c62a894e8a5a78d8dcd92255818aa138bc"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_young_28.png",
           "sha256": "b2f8fcc8cd6c1378e5ff0bd4bbbb4c3ea634a4061dfcfb0a48cc9ceff4c09b7e",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_young_28.json",
-          "metadata_sha256": "4ec998a460566b4b0c47a7d1716509951417b9741883a464251bca6ee43ddbca"
+          "metadata_sha256": "424b94c9c647731f3ef83f8cdac61079168191b1941eb1bbefe2f2846a0a95a5"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_prime_00.png",
           "sha256": "ac5f1a828f656c4bc60bb81709ef0d70207430921b631e9bfbcb3237c2d59573",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_prime_00.json",
-          "metadata_sha256": "0583138f564cb5760baf675debd502d56fccdc94c3c1cbf49d0b9fc8cddc6015"
+          "metadata_sha256": "d72c0d991f2dd44edd1d356a8a0c9e137815a0db91b296daef9c9fe15a2650a4"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_prime_12.png",
           "sha256": "58616054ace2be2fc23db8acd86a2f2610d42c123a263f5d826abfd3bece3dfa",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_prime_12.json",
-          "metadata_sha256": "34fe3f337036aaa9db7e4e78a04f92edc2499c106cc50bb8aab9559a1d6a645d"
+          "metadata_sha256": "14fa758e0a510bc7670111584c3823077fff22deb365d001158701b779493018"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_prime_23.png",
           "sha256": "761fca15e4e1c21576094b477dc193795374f17d74fcd4d324e578ee5df0df03",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_prime_23.json",
-          "metadata_sha256": "b7de9956f1eeb441df35aa1f3d26b0c47e9416ed235b03937d95d5f58b1760dc"
+          "metadata_sha256": "29e8f5bad031433829b3426bf961ed321f70752d93ae0aa0ec9b78a8d856bfbf"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_prime_28.png",
           "sha256": "c5e76b63abf4bcce5ce8a3b0230e064a94297351c06725795b298bb9e40241e9",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_prime_28.json",
-          "metadata_sha256": "e9ad2602af667535611ed8d5d8fe4ab09471652eb654397f0a2b045b1f6dd672"
+          "metadata_sha256": "8a4b15066514b065e29920c7394b64fdaf0b10e15701542e2dd65866e1d34cde"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_middle_00.png",
           "sha256": "51a7298a2ce9259e0a0c66d90dd4e009010e80e907cc18c1cd8628e57fcb451c",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_middle_00.json",
-          "metadata_sha256": "8d0026232e04b32dd1b020663b38b4793b360a1402e107d00eb0dbe5729a32d9"
+          "metadata_sha256": "2df2cea2e9606da9668444aa6561f979ae6b5d59c3f233b4e34dae7234454df1"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_middle_12.png",
           "sha256": "2bab701b98436cce9d893ff7d4ff84bb8d326a32e6d5bad01f75f2ccd6f42911",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_middle_12.json",
-          "metadata_sha256": "74fbaca7d77cdb0f31ec6d8f3c1087e2c22ab770f17a599b891c258a95794304"
+          "metadata_sha256": "6c73a28eed36ad47a262d30184b862beeb7fd9b81c84fd259fb7e823eee104ed"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_middle_23.png",
           "sha256": "50ae45e508a49214eb0e2af68650a084e36d26daeaae1abd41bf3e19e537df7c",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_middle_23.json",
-          "metadata_sha256": "4732c48fffeb53e019ede556f927793bc4e6615eb1132ded78841576a23de8ba"
+          "metadata_sha256": "853bc358a5dfbf47b5222c1bf5eae4b1112fab2f5dee258d00001bb16f1a5f3f"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_middle_28.png",
           "sha256": "5467b3371eafdce4ec74f1dc47a28daa3ebabcc0a87dcecf2b08920675c5770b",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_middle_28.json",
-          "metadata_sha256": "4324de169119e5778548e68ac0a2d8c722591ed83b0e38f0a50a9f416e5424f9"
+          "metadata_sha256": "14374a577cec0e92218f2cd4c5f18431b08d7562ccf8566017cbaf075db22de9"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_late_00.png",
           "sha256": "7d3abbb939a7e4972c64a150db65f9938cbb0e6a114776f9b42c689a44246ce9",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_late_00.json",
-          "metadata_sha256": "56b9eb8e32c46326a3349dec4a2ec9ce1627d42f5adb6b8ec827e24443330e77"
+          "metadata_sha256": "2d7ba9674dbc1a6fdd4b1b91d15b5f03a980e7ddb5f39d44dee595fef023fb9b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_late_12.png",
           "sha256": "58b91b31cc1083e14915f8ac1f9a059edb6e48b1a98d4df1d7cc8db82b1fba19",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_late_12.json",
-          "metadata_sha256": "f108da59b9142e2930d60991d894c9c118e309f61b6beb380199e315131151d1"
+          "metadata_sha256": "f792faf77a0aa8796a02e34aaaf419c849c7930fec2bc7a4698dc3602fa15c98"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_late_23.png",
           "sha256": "087ea2ed23220b6bbfd204e761ee0f2352b70e91903ca54760b16135410950f7",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_late_23.json",
-          "metadata_sha256": "2f94c7032ee9518fd6c0db137ae2564873f60bdd959a3c861bed923d4229975e"
+          "metadata_sha256": "c0d548a984dbeb3df02a6adf3f61f6199a261beecee12c53e59900bb9dd92caf"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/roster_late_28.png",
           "sha256": "58263c57d71b4c8597c37880d4a3f5f5c90119a5ebc1d097beea70a00fa51463",
           "metadata": "reports/screenshots/general_portraits_native/windows/roster_late_28.json",
-          "metadata_sha256": "d6bb01c8d327673744589dac087caad458678a2a043009c72471a1dc0722886f"
+          "metadata_sha256": "963b91771f3bea9bb5bd2fea328aed8fc3b26788f0185b4ba12bd91c11402697"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_li_hongzhang_young.png",
           "sha256": "ac61edb4016eef2ab9060d5445e0ee5b5f0eec8fadadb719192905aaeedcd1aa",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_li_hongzhang_young.json",
-          "metadata_sha256": "2d353c97a99f464676bec34a6a19f16f2b407069431a7a14ee5203f7dae4a42e"
+          "metadata_sha256": "fcf2d787417d6a81f1ab7a54adcda2108b3a61be8582fdfa5e7e0ec8c4debb6b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_li_hongzhang_prime.png",
           "sha256": "3f2ef6f0110f4076c1b52a315c947555440f9ca6bf103356c5651e408ee095c5",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_li_hongzhang_prime.json",
-          "metadata_sha256": "387d7c328d5012f6ac80049e54eec5ba4205c6b64c4a1e1a83b2a84887b6c7b0"
+          "metadata_sha256": "b23d8c345c0d2803a9f9689e21f30f674a966b1d84484fe16e44b795c0a63c92"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_li_hongzhang_middle.png",
           "sha256": "8af1308615cc42e8ce374be1fd97f4c174fd36e44c623b76be8ab1e1d4b79075",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_li_hongzhang_middle.json",
-          "metadata_sha256": "df406c48e62af4b87951454996fbf5fb2f0b672b45b4c787680953448e8ce05f"
+          "metadata_sha256": "df5cd8481d985fd1156d2d018f255b4e7cdb1338421c9b7aa0eea37f7b67e300"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_li_hongzhang_late.png",
           "sha256": "1b5beb553458835b330fec6711129f4189d57cec9d701c56ad825b72e21759d7",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_li_hongzhang_late.json",
-          "metadata_sha256": "c2d1d0fa89e5a01c9098e63b69eaf3dddae09f66a5d028f26ce0694e1926e331"
+          "metadata_sha256": "dec6adbe256b763b283632698c93b3e583b32a50f445f877115143e067def79a"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_hong_xiuquan_young.png",
           "sha256": "5ed2f35b178765dbf867600f394f2caa58a051c312fd1c984b5e0cedb0532b0e",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_hong_xiuquan_young.json",
-          "metadata_sha256": "e8073a673e3e9fc62a406478bac735d5ac80050cf04dd8ec809fbd79f3b186ff"
+          "metadata_sha256": "667b97f750a45ea8eba3c350f605ae42ddf6f1d05160e8cd04be5a950b87c4fc"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_hong_xiuquan_prime.png",
           "sha256": "e03816520ee1960165a8659d30f5742b69f3f31a445a1f6dbd3eca89903cc755",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_hong_xiuquan_prime.json",
-          "metadata_sha256": "f8dc799029a1c624909a03e9deb5e9b2ff4ece406aa8fc61800b63b4406a136a"
+          "metadata_sha256": "dc4409147047cc50202bca4e727a79db0e0490d27f8eea08aeeed66c2bdf42b7"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_hong_xiuquan_middle.png",
           "sha256": "33f3e052f0d76b277baa7d983ba553b01d96197e350ad7b4d33e42a73ea2d30e",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_hong_xiuquan_middle.json",
-          "metadata_sha256": "9fdad1c9f2c327b75622e1601e693cdec6366815923107e784803b4e48a0588d"
+          "metadata_sha256": "1e227b166c5ad98054da0a439ae300b52b4162dc7f833576803a7de27197e1a0"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_hong_xiuquan_late.png",
           "sha256": "892810582ec73c0ffb50e339f6f1f8ab8fadacd823b04d27a478f5fb9f8fdcac",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_hong_xiuquan_late.json",
-          "metadata_sha256": "472f7f917ea55c78cd85eb9fe37b8be7e9d0f8906f3d7156180ac251eb0a298a"
+          "metadata_sha256": "f4bb91ae49fe2d5bc48fe914132ccfe75036908353631da1e1964e11e89883ae"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_mao_zedong_young.png",
           "sha256": "dd47d616033055c5b716ec5ea157f6f1ba2e722dcbc105914b864f82d6a25310",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_mao_zedong_young.json",
-          "metadata_sha256": "21e381dad631b3d2c899ec11ccc4bf75a17078754d45b43a0cdc104b7fce720b"
+          "metadata_sha256": "d5bebdb03a6aeeabf797ecc4c9cc3e45d54caf06f2db6a0fdeceadfd80a3f2bb"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_mao_zedong_prime.png",
           "sha256": "a3782875213fdc4687bcf9d65b1d2baba34cdd423e3516ed900d4b7f809a54bc",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_mao_zedong_prime.json",
-          "metadata_sha256": "222bb1414ca564ee96af48a69ef2c06cb7921e85a47ae41ad5f480f764d87a66"
+          "metadata_sha256": "b8a9246782b7e96089eb1ad656162fab6f18174d5130a02fdcfbc1da73f7ddb6"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_mao_zedong_middle.png",
           "sha256": "f61f3048aeab83aaba83e446afc5d22135319c68bd62372fd76de413fc530cd2",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_mao_zedong_middle.json",
-          "metadata_sha256": "26dd3e8e63397f561842f4b848f155260a1f00c070bd228a72452b909c72eb59"
+          "metadata_sha256": "a8f1b26ecd22609caad721dfdd52e3b0960120b07fa998237bbe559acd3d6932"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/growth_mao_zedong_late.png",
           "sha256": "38d1604069e49af061ff70dd1bd879ef40f54c7c4dc51f1a95c952a2c1e4f819",
           "metadata": "reports/screenshots/general_portraits_native/windows/growth_mao_zedong_late.json",
-          "metadata_sha256": "cc59d45f1e155f879f47883f8c640922d948327eca884ebd532e783869a91b36"
+          "metadata_sha256": "9943ba3dfab525d3666edfe8f8607f748d2d97003c046a74dd38a0d531726381"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_daoguang_young.png",
           "sha256": "af20527aacaaf645ddacf17b35582556ba084704bb7acadd4ed6d58ce076ce28",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_daoguang_young.json",
-          "metadata_sha256": "622ca21f40258af032201367dc29a81105a10a8ae955fbe22f91ecdbeb39aa51"
+          "metadata_sha256": "f491f63fd40bd2266ca3a7f8fd2ede8e6fc02daf797247d4132ef3534311e37d"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_xianfeng_young.png",
           "sha256": "af20527aacaaf645ddacf17b35582556ba084704bb7acadd4ed6d58ce076ce28",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_xianfeng_young.json",
-          "metadata_sha256": "8d55fd757db7ee5f7478df8350c60c73b66c44350fb138b6498c659f7bfc84e2"
+          "metadata_sha256": "d94f793e860e9e6bbfd545f016c1b03fdcb1aac537955e87aa29e72aa19138d3"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_ito_hirobumi_young.png",
           "sha256": "af20527aacaaf645ddacf17b35582556ba084704bb7acadd4ed6d58ce076ce28",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_ito_hirobumi_young.json",
-          "metadata_sha256": "426b41f922f6ec9d55e3826630fe3bc7c8a139faa3886289f461b7db9a076a2f"
+          "metadata_sha256": "20da974bb44596165b0d616f956594d20b63247b654db35594e0d657a3a643a9"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_nicholas_ii_young.png",
           "sha256": "4b1aee0034a097867b2638e13d5f7a9033f012528dcee7a855e9371ac8ffe23d",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_nicholas_ii_young.json",
-          "metadata_sha256": "90986eaa65347e7324187a54f392d9fee3e617c01e97407191baf3830e9593e8"
+          "metadata_sha256": "c576b82c5148f0ffb21794eebf1c9222b64ba3a4449495fac3c5d8cfe918ca3f"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_daoguang_prime.png",
           "sha256": "7447238bc96bdae06526efef97e6e1f9e050077bdeaf486fa2156dcf7ea947af",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_daoguang_prime.json",
-          "metadata_sha256": "f5ec31e93691a18adc8b44a24f71dfc816ee971c566620e42c2934be507257c8"
+          "metadata_sha256": "33ff32de133a75a0135ad3e40c9f5b73623ec374c50e9859d6cb0e18f011e723"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_xianfeng_prime.png",
           "sha256": "7447238bc96bdae06526efef97e6e1f9e050077bdeaf486fa2156dcf7ea947af",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_xianfeng_prime.json",
-          "metadata_sha256": "a7c01e891303fc237006f12eceeb2dce5601f0d8f16c8315abfde2598ad8d688"
+          "metadata_sha256": "6608da6f692326ca62b199b2e9f0585ea0e657bd5978fa43ce01efb91850d4f5"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_ito_hirobumi_prime.png",
           "sha256": "7447238bc96bdae06526efef97e6e1f9e050077bdeaf486fa2156dcf7ea947af",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_ito_hirobumi_prime.json",
-          "metadata_sha256": "158d6ffcd0a5c15093d7d892936c9387a33a006f40d9049ba305a8ec30ea8fc3"
+          "metadata_sha256": "775392001d645f38d151c293155ce145df315a79466bc9a16618dfc2382b3851"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_nicholas_ii_prime.png",
           "sha256": "96af6fec20feee14e72196823806fc3e63bab3ef1c9ea093ff311415d8a08e29",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_nicholas_ii_prime.json",
-          "metadata_sha256": "8627a2cb454d0c294f35e9dc7f0b105af94a5f196526a3e57de81c1484c94d52"
+          "metadata_sha256": "d4b5c1ec7c5544dc173a73f6d6775c5bacee7b6440ca266e482ae071feb45999"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_daoguang_middle.png",
           "sha256": "8b77f5a8eabd76c80ba8be6d7d504cc56c44201752a6b3250e9910a87c113a66",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_daoguang_middle.json",
-          "metadata_sha256": "d983278e6f6a4fcfdfa6c1117d551df20995411cba3c5b13b31eb4c8f4e1728e"
+          "metadata_sha256": "a039a4c8e5ade5ac2f9c50fc318ecce527417ec73a6cded36c436a7dd6ec01b3"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_xianfeng_middle.png",
           "sha256": "8b77f5a8eabd76c80ba8be6d7d504cc56c44201752a6b3250e9910a87c113a66",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_xianfeng_middle.json",
-          "metadata_sha256": "07127ff5cf3688fd77031f927cbe5bb1191138fd38138d02080fa87bb200678c"
+          "metadata_sha256": "0c9d15a2d173273fbd433ec232db32bbfcb3de3ce8add200e37f9251b781c24e"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_ito_hirobumi_middle.png",
           "sha256": "8b77f5a8eabd76c80ba8be6d7d504cc56c44201752a6b3250e9910a87c113a66",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_ito_hirobumi_middle.json",
-          "metadata_sha256": "6a7d64dfea758a3dfe59ff7e0102205e5a160a8c06ac3b2aa4798959720c0d1a"
+          "metadata_sha256": "ab3b8cc9ae2e10a1dd58413358f6167c620608de726aa03b98451497b765cab5"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_nicholas_ii_middle.png",
           "sha256": "f3f1d0d4658043e15ec0febb51f9963d8baa8da7290fc1db3d448d6f218dd326",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_nicholas_ii_middle.json",
-          "metadata_sha256": "b1564263c43e7a908af501478e1472df6e362b64e2df8905473cb4e29077c910"
+          "metadata_sha256": "b330daf93d30fc9ef731295531aa9434d4aa7ecc812b78ba7884c82f69ff37a0"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_daoguang_late.png",
           "sha256": "8ef6792b9d1244b7b461c76fb6bb7009b47d1b6e9a34edffd928f4a7049b6aa7",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_daoguang_late.json",
-          "metadata_sha256": "a9045d4569a5f14998d101f13d176a3905d19188ab5271afe2f993616fc5a6d2"
+          "metadata_sha256": "c9a7ab9c9b21d22f93c371446b2c64dc7d5bab3affecf76eff2f089ff9ae5e6c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_xianfeng_late.png",
           "sha256": "8ef6792b9d1244b7b461c76fb6bb7009b47d1b6e9a34edffd928f4a7049b6aa7",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_xianfeng_late.json",
-          "metadata_sha256": "bde299b758f075ccb258fe29d9063f26ff9871b65b6cc2075f4fab5beef5e398"
+          "metadata_sha256": "69cf2b83e27b5231543b64541d6f36f4ab8f13297c8722a92931cdbaa33c4bf5"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_ito_hirobumi_late.png",
           "sha256": "8ef6792b9d1244b7b461c76fb6bb7009b47d1b6e9a34edffd928f4a7049b6aa7",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_ito_hirobumi_late.json",
-          "metadata_sha256": "f38a239aa8cde8574848dd1af15e5f48da7ea18436a42baeb716dc83e808864c"
+          "metadata_sha256": "d82d2b7defddcafc5a9b151bdbf8632d7f17cd9be6e9b5b7598ca852fd9eca14"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_nicholas_ii_late.png",
           "sha256": "cfd431fd8390e25f51caa2c9d845eb411f257533a6f9b0f60f987b9726cf2f69",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_nicholas_ii_late.json",
-          "metadata_sha256": "996a77a5a41bc7a0c5e760df2e037cf61333460f435f3131c928e80ac2053480"
+          "metadata_sha256": "c85eb5198fcf9e44878a6b8632c518e0540d123f5203007089f7906fdd5612ec"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1840_01.png",
-          "sha256": "2670940caff227ed026dc990fad4608b78d009949cb204c1b3bc7dc4287e0c7f",
+          "sha256": "5d9529b8847ed99aec984d4d97ad6187c3f4a198cd59400f2127ba97bdae5aa7",
           "metadata": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1840_01.json",
-          "metadata_sha256": "a3bf87b1e6551df50ad895394fb6fddca7175889ac3f71ba1caba9d9350a1f18"
+          "metadata_sha256": "e0256b1b3c973bf2d5b8cbddaeec1a64b1c7c3ec543813d993fadea4ec5794fe"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/inspector_campaign_1840_01.png",
-          "sha256": "c4b9b51a46168a5d5eb5574d50b0d38e2be17c7c2dba1474d9ad32f8e34fd430",
+          "sha256": "c68007ef7f1ac308f591bca32804327e74190daf8188ed5379c283f630e18911",
           "metadata": "reports/screenshots/general_portraits_native/windows/inspector_campaign_1840_01.json",
-          "metadata_sha256": "eaee99fea6da4920ac6d632f11254215527bdebd68cf43ec032f41ccaebe8ef6"
+          "metadata_sha256": "a9af878f624da098b02471bfd76af405225796314b43d7338a1f462a931a964e"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1860_01.png",
-          "sha256": "5b2a0a58f8102c8ec0827d7feb708468389bd0f55eda435e5b0ab37022d04549",
+          "sha256": "8a0b6855beaddb9076242b90d691ff5c8aa577f66966602e860cc1249d3ba167",
           "metadata": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1860_01.json",
-          "metadata_sha256": "f7b649e9109f4e4c527c58fea779d563c62bb9a2aaed10640977a87a38ee2859"
+          "metadata_sha256": "84f62aad9bfa59a775b06ffb0060913320ab435bd94d087486aa2be05eb38ea3"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/inspector_campaign_1860_01.png",
-          "sha256": "4589a51bc45523b64f688f0866b8aaaa3478b9d6a52bda999352c40650693ea7",
+          "sha256": "5d9c086783334825c07f61a24d35172f960463ad4db6d071f3a9b29a1d3eff99",
           "metadata": "reports/screenshots/general_portraits_native/windows/inspector_campaign_1860_01.json",
-          "metadata_sha256": "ee32b65adca9ffaa146b2513d06c428c010727fe2130bd56bff64d63a7822743"
+          "metadata_sha256": "e76d07b52de0277874a9561d59d0f0be66c1d3d06dee2f134e0bab44f78874c2"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1890_01.png",
-          "sha256": "1c832fce969094d2f0b7b9bf110473ebf3d30dade01af3541651a2f1b934b5f0",
+          "sha256": "07d7afd725324be71e372b95ed1e34707c68e4f8f0b8b841a7099162df06b65e",
           "metadata": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1890_01.json",
-          "metadata_sha256": "aebf8715a10a825553c2a2ab247f933bc867770b3b5467d685669b2ee31a694c"
+          "metadata_sha256": "7f96ea005d58839fda0be6bdf971b9ae2b7cff3b88febcf98a0004a344167258"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1900_01.png",
-          "sha256": "0fdf8379ab0140a6ec9b0267a1c5418c1be77a33f17f0bfcf5057b69846904a7",
+          "sha256": "8a5a208625f938d9f8837b24eb60a1ca977bd984fae53530c0f66e2c585ea742",
           "metadata": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1900_01.json",
-          "metadata_sha256": "61f56584ce90dc338448836973d99f39ac04f484a74040ec6fd524262983cdf0"
+          "metadata_sha256": "4c0bf98fde9390a63337da514b5e2a7def6b7b5dac96ec96a855d5ea7a72ab84"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1917_01.png",
-          "sha256": "d29f65ee819379e01b247b5317690fcfea9aae6a2d9dfcff2ab927ac1aa47086",
+          "sha256": "6ad10a6eee99566eee103d312bc8b5a545ab65f4806874e0230ba0222120a9e9",
           "metadata": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1917_01.json",
-          "metadata_sha256": "4db52c845e76263ed6ab5c192bf371a63d4b149525e93cfeb79bdc8efae7e9fa"
+          "metadata_sha256": "ce98bafa3a78c10641cac77509b596c2b93993282b1fe315d0064c5cd282debd"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1927_01.png",
-          "sha256": "d4f9b86d6121451311060c2b69ff281b43d61088a0e72f98c5d9a73980ef29c9",
+          "sha256": "daccdc46f83c60a9547b9ff578bd8fe1dd4790ccd5904ae807c6eafb458247da",
           "metadata": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1927_01.json",
-          "metadata_sha256": "aeaf20971b5cc56cbc2bc1d4014a391b743eea44de8f6d6a9da21e019a490501"
+          "metadata_sha256": "7fcd2a1c8df6f104d6823e2b417502066b073e9f11e5a6bc8e15bc0650b48208"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1940_01.png",
-          "sha256": "0fe2a010ee0bb0ea38e180832d9bdfc23258b8c8e89483598aad40bc2f261410",
+          "sha256": "8467119be076e58f67517e00db25444767d127e88ba2366a29acc8b0beb9ccd9",
           "metadata": "reports/screenshots/general_portraits_native/windows/assignment_campaign_1940_01.json",
-          "metadata_sha256": "eafc2281a0e047ba38a49b939b39e2ecbd6a75cb27936aba124a6795e7fecf82"
+          "metadata_sha256": "efb2e6d05a7adb290fc400af79475b0c91263202dd31a89e153f7d8a0372ce1f"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/assignment_asia_1917.png",
-          "sha256": "ab45ae5e57f84ec871648ecdcb6254b854ab32202f95d7725cc0182c41f23138",
+          "sha256": "2162adc5ccaea6a471374c8bebed17ea4a3c8e5c8374afd8b5d3d063f679a5d8",
           "metadata": "reports/screenshots/general_portraits_native/windows/assignment_asia_1917.json",
-          "metadata_sha256": "c00932c806daf319408d8ae887892c7e54b90a8e3246f2478412f470971eb024"
+          "metadata_sha256": "532612bb63fbe95e1d60e7f98ef4cd2f0c0381748d2a46bd77025a9dbbd4916d"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/inspector_asia_1917.png",
-          "sha256": "d0f87b755dd57bea4a512dcd97e9ff99bc9a501e9afad5240ed534307e86a988",
+          "sha256": "c56dbedf198d8e93b630c15ed8ce464962c24d5e1d8014934839418e373e1e86",
           "metadata": "reports/screenshots/general_portraits_native/windows/inspector_asia_1917.json",
-          "metadata_sha256": "cd46fb9657d820f6ae576b2fe87f8571f15eb83e37b1fda9400280383134da16"
+          "metadata_sha256": "624091356317de20372a66f27c121e551f83f99f7b16843ae0c603830d06c9bd"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/assignment_asia_1940.png",
-          "sha256": "75e93a564728bb29ddec3b93a046a0e6160adfde4f51d29bdac053a5591f9d0f",
+          "sha256": "b4100b98271554e93ff66082e5f68262255fc89af93f889e076cf79f2932d39b",
           "metadata": "reports/screenshots/general_portraits_native/windows/assignment_asia_1940.json",
-          "metadata_sha256": "1511c9ee486dd2dc8f55303d0c87c8cce2afc8536bbcd4f95fcf3a8e78bb7a21"
+          "metadata_sha256": "c8f523ca3d04c125586f58201e79290cc88c865cb342f379222a57c63345394b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/inspector_asia_1940.png",
-          "sha256": "51fe4acb5a690949a500a56711c862c0fb22d86fbb792c74562db833230b8d67",
+          "sha256": "e4092c8709b321367c299e23153733f225f15c3e5994dd6fd09ba1acbddb9be8",
           "metadata": "reports/screenshots/general_portraits_native/windows/inspector_asia_1940.json",
-          "metadata_sha256": "e4d3a6c0d6eb4dcbc88405269192583e2d4e4f51a9e55806dc7fe5c9e223a696"
+          "metadata_sha256": "bf12d0e1588f29feb777cbfb5976ceaa8cee0fb437944e8436d4626df77e9b09"
         },
         {
           "file": "reports/screenshots/general_portraits_native/windows/political_current_match_date.png",
           "sha256": "a7d2e2c23d275f08a0402e9a5ebdeffd68f9691f32bafb145dabfb8fbabdd7d4",
           "metadata": "reports/screenshots/general_portraits_native/windows/political_current_match_date.json",
-          "metadata_sha256": "b405a516386da0019c08ebbbd4440c10e1c6b5965323b96e74c7657f6933a530"
+          "metadata_sha256": "31df07b9be32061b2e69fd546e17d67516df97973d836df17c4313a01b9c91db"
         }
       ]
     },
@@ -370,356 +370,356 @@
       "ui_scale": "1.2",
       "checks": 575,
       "report": "reports/screenshots/general_portraits_native/x30_layout/validation.json",
-      "report_sha256": "fc9d13118a8a91f76446fbfd8b81aa06470632bbebd1666890b0417ef1860bdf",
+      "report_sha256": "a8ec8975594c30c86467b3560247e113623db1463c12c570e2e7718348770ebb",
       "log": "reports/general_portraits_native_x30_layout.log",
       "captures": [
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_young_00.png",
           "sha256": "abf7726019d2880d685d72c3fe78731cbd799c26a8132d5ee90d44c2795d64e9",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_young_00.json",
-          "metadata_sha256": "fbae280ac37f5baf9d4f200d6418881b2f28f9cdb8837bc0ad282c596297114e"
+          "metadata_sha256": "b3c22510ade57de93d6c07123baf7c38f5cd183d52c0e9730d64298c73441a46"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_young_12.png",
           "sha256": "0e9737d07c428727d549360c0a1ae76be8581271b972c2af11837f25ed284a95",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_young_12.json",
-          "metadata_sha256": "0d8e8bd321328a0b8b191aa08870204e2477acb3c044652981ef331d60ad117c"
+          "metadata_sha256": "98adcb64ce97dc747d88d6c026a75e4156fafa13c8f5e9837fcb4224cf9889fb"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_young_23.png",
           "sha256": "9cf9e56c836148c17fc6db2a50931fcd4ee5463b1084a9e9f36cdb1c88594f55",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_young_23.json",
-          "metadata_sha256": "c6de2a340b7a12ae6a1778d58dac3fd4e882eac404cc2c86d57fcec0a722edde"
+          "metadata_sha256": "09aca9a8dd7f5fb89cd3613bbf37df945f31b3808c8d8e16c82b5665f729f04c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_young_28.png",
           "sha256": "4ad82e9892a62384722b1659e6adc0369f74e5e2ce25619358ca8a9b1f8e73d9",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_young_28.json",
-          "metadata_sha256": "e0a7d4c0b296428dd27e0974553d30811588ea4dc2f85172017380aa7c9c4742"
+          "metadata_sha256": "03c07cad8c96b012113d4b79722bc3f22a08dfa590d7f7ef6d0e0c84aa32a32c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_prime_00.png",
           "sha256": "79c515560c7c4562418015940de5106c6339a7061beaa11dc1cb3c7de92cd86a",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_prime_00.json",
-          "metadata_sha256": "74874dd617821db62af5fd20f298680ad3f6d6fb08804555fab63552ebb7c334"
+          "metadata_sha256": "c39ca3f9e2edee5f40d8a7a8312704375bc9e0bc84002c25b8a534f0beb276f2"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_prime_12.png",
           "sha256": "abfa49b08873eab5a72822aaf2fa87f6db0d968755597c604a48abdf49634314",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_prime_12.json",
-          "metadata_sha256": "afc0c92f08006ac07008995c00a36e53b5f2a037fe0659319a25f9321768c605"
+          "metadata_sha256": "a9375d3b69d184a6bccdbf523e8061f61a47e6a2277d2b11c6128cbb85aba19a"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_prime_23.png",
           "sha256": "7bb50dcdc77c0549f027a5d8da95672223e8f7a63e26a507e0abe9d9859f4a6f",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_prime_23.json",
-          "metadata_sha256": "713961946d5326e1a626740e3b7e14526a13198df1b1bbe51795dcfce9f0cf25"
+          "metadata_sha256": "1a9fa8b4331c4c8e75a09cc0ea25108c4710e21f34e3a8ca1510dcd0e078b249"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_prime_28.png",
           "sha256": "d41d63f20dfebedb650809b227cb9fb9d5a0ed33f525beecc7ff01040e921306",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_prime_28.json",
-          "metadata_sha256": "be7860f37cab10e077336c43a0c67718478d67b09da13cd44a6fdb5913371b24"
+          "metadata_sha256": "eb64ad5a888a14ace66bffd9288b459e6c159d6053ceeba5cb00064d7b51c891"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_middle_00.png",
           "sha256": "537af34cb5f2dc475e8c7dd6fba9832300aae85b1bbc3691ea6597fd2e396680",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_middle_00.json",
-          "metadata_sha256": "3a37f6e1f685451913727a2d8e4434cc2910892ca63c3a7b2f8048acff304631"
+          "metadata_sha256": "f96ed6420638b263b85e5fda8248ca66a8d5c8fb372736914d79dce4049c7dad"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_middle_12.png",
           "sha256": "023525244a59c277c8c174b29e0592d6f936de457f786e25af1aadcfb76d34e9",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_middle_12.json",
-          "metadata_sha256": "95fe80bd82c16457719da74c08a85d0d77ff9b139fa6c1d9017831296b26559f"
+          "metadata_sha256": "217aab8e903acfa7524522f7ee7bff8602664ac69c1c9a9e7d58660244d633c2"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_middle_23.png",
           "sha256": "087b7df7c19350776e44953a21fa468742e4a0b2e6f30392ad267bb3220aa686",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_middle_23.json",
-          "metadata_sha256": "4c90a0ede8ae7b53af1d9b234beb3ca341e1dd49c15c16e0055f9309cf91508a"
+          "metadata_sha256": "f56edc572fa23292e8f11803639b4a90338e28234de2a7e3b4c55678881950cc"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_middle_28.png",
           "sha256": "91d121cdd94d44b41182bb62d899128ee45c70475920ffee8935d79d882f4781",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_middle_28.json",
-          "metadata_sha256": "37319a4cfa5a6a244e9498824ba193866a69cf874dbef41acc605b84af0bed34"
+          "metadata_sha256": "ea5d7602825183b18ecda3beff30c07f7de913a03add5fe26319907659e06af5"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_late_00.png",
           "sha256": "5e2ee240aeb61752ec288c5a1ebf5c1d844eb40201ba74efee251c1b554b2c03",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_late_00.json",
-          "metadata_sha256": "d06f1104d455e71fb05997d568221b6cf853380249755ff4259293753f5f5326"
+          "metadata_sha256": "4345afe0f51c36c1c11b27b38013c72aabc895f8f5485bab8c0d5a0ddf566a48"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_late_12.png",
           "sha256": "94a98b7d2d9314bef2bf8f19af0049f4420997e64504853a238426f1df0176e9",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_late_12.json",
-          "metadata_sha256": "559d028a9ea31a13b2a97a6f4cbb76b47e94412795390c3840ae986fa48370f0"
+          "metadata_sha256": "f6795310bc645122c42d6e208f9a30051d1378523f1baef5558e5302a478722c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_late_23.png",
           "sha256": "fd55b481aa2a3d33af657d511af69e24bdb4c0dac0ed5d8969f8e237b67ffe2d",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_late_23.json",
-          "metadata_sha256": "fe5ef07aecdd6ec1ac80b0357f699f5c1e5e0d9a8ba6a6ec98ceee46ef1e4b74"
+          "metadata_sha256": "2e6ea0b1626d476da8f61c09a5b3f932c52fd87ed1f23957702aa6f896b971b8"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/roster_late_28.png",
           "sha256": "0055fa0fdfb7ee2d0dfe17d36e6ad647b6f8e40a189ce8208d1c4303fb7dcada",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/roster_late_28.json",
-          "metadata_sha256": "44caa30d2a8dabfb270bb08a6383cb5ea30dc5fd2a60b5c8b58850ad5b9b9ac0"
+          "metadata_sha256": "fcb18275c71cf8fcee29eb92f1cb68380bd31f095f96353110a5c51f075f704c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_li_hongzhang_young.png",
           "sha256": "ba375d2c7c5d520a5bbd3697864600179fdd0dd7631657213fe80e2cdb251c12",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_li_hongzhang_young.json",
-          "metadata_sha256": "4a9c82d3ca165265766775d03e2f427469576d73a8b02efbd2cea5d7ede8ad87"
+          "metadata_sha256": "eed4e2e79acd1a66c92a4034ef0cc3f584246f13fd52525f17673ca48ecd6c0d"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_li_hongzhang_prime.png",
           "sha256": "43337bb6d7f15fc8d6ba995c869bef22cf624976607edb298003dbf21703b3d9",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_li_hongzhang_prime.json",
-          "metadata_sha256": "7da66266dd2059da700e58869e32d8adad382165a661105c70847e75aae4f458"
+          "metadata_sha256": "aa67606c6a8a79ecb389871dea313a48f3a98522ceb19b4f5a3b70a3824c8427"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_li_hongzhang_middle.png",
           "sha256": "de920199b99343704dec990d160656f36821c7fdb0ef95550708b0f338681cc4",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_li_hongzhang_middle.json",
-          "metadata_sha256": "022b02a6659df8d5f38bff17b4fff713bba5acd00e17a40be01d1bf3160370e9"
+          "metadata_sha256": "47d84b1078a5e27036fe582090cf326efb2cd055a6559f630977334cb6addb6e"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_li_hongzhang_late.png",
           "sha256": "695adf36e9ed5d4b5fb9fc59c19a8bde8ed752e6aa4a23a3740578653113a3f9",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_li_hongzhang_late.json",
-          "metadata_sha256": "a98c10686a6d3a8e421ea1d34fc57d8bb387453cedf241d4e172c40c3f942a85"
+          "metadata_sha256": "60dfb191aba25622cb36cdddecebb0caa7e5bf6cf7447f06e34a126bb58c7806"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_hong_xiuquan_young.png",
           "sha256": "82d80531e2c51e407382b1c31ca9687d8cc74f3aa1b80c9fa6bb64bd2ed4f6b6",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_hong_xiuquan_young.json",
-          "metadata_sha256": "18ee5de528e1988e0e389847b0942af7f8d48a2d73dffb721ebbde152439cf72"
+          "metadata_sha256": "33e23528fb468df9827ca4416c2a13a5771446ad405e9f89a015ca76aa13864b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_hong_xiuquan_prime.png",
           "sha256": "65d56ea8a9f676d991e245953f359c6a71b1fc698955b327a03aaa358b8c5938",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_hong_xiuquan_prime.json",
-          "metadata_sha256": "04c775525f051a655610b4a5eea08fb622d3f36fa1b0d28ca9ce57ec56c714c5"
+          "metadata_sha256": "0d40600190f909836f5fb8125090a8f6f318dc771db47a31828057c2a3506ba9"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_hong_xiuquan_middle.png",
           "sha256": "61e9f85d4b8e06bb4850286adba3e53e1d5db67135c2f24e27e91d83349689b2",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_hong_xiuquan_middle.json",
-          "metadata_sha256": "ffc4857a6c52f0b98045dc203452e47a8ab553a1f1d2847f111a0242ac671d52"
+          "metadata_sha256": "13d3e431ed036d424b0f0afe03a8a660d2d4b062e1adcc6a3d700573bddc1186"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_hong_xiuquan_late.png",
           "sha256": "c743b7480df9357da74940c9457253f12bcb0c65232ac41afe2dae060a0c0599",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_hong_xiuquan_late.json",
-          "metadata_sha256": "54c93fcff4e49ca8e5d36e01597854d9e89c664924bdb7cb96b44884343bc074"
+          "metadata_sha256": "fed241882b3543a11c02e81f365900339bca422c1c30ed01e162e7865918d698"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_mao_zedong_young.png",
           "sha256": "39037705ee66b9fe59f725c94b4605316d27b711a0345490576bb4c6f6a44caf",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_mao_zedong_young.json",
-          "metadata_sha256": "3388c586d2c42e5e987fdbdc7637ef015c45060d21e7b1d860e114ca5d9b1a5f"
+          "metadata_sha256": "bea326bd2ac4920cadfb2e0c8314146d8d17a7dc1263514872ecd5f1068ef9b5"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_mao_zedong_prime.png",
           "sha256": "c6c84620c2b7556b61d6926b512bb9ed0eecfb946451fa64331b209143058e66",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_mao_zedong_prime.json",
-          "metadata_sha256": "131306a874f521b3b28f0f7d4671122c3c6eb1995a671fd6052112a12b92b678"
+          "metadata_sha256": "f07b3cd743acd062bfa692c4d9f184bd41855abfeb83d334a726858570ecb1f4"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_mao_zedong_middle.png",
           "sha256": "90cec123a7cd321c5016605e90c09b3c0720e1c16fba9f22550d01fb977f51d3",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_mao_zedong_middle.json",
-          "metadata_sha256": "8aae81191fbafffee4f84eec3bfbea2dcff413c7b2c5f02d6d5fae29ca9cd048"
+          "metadata_sha256": "603fde93b4575aeb843ebff2ab9282c778818e18d6324857a68316876f440925"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/growth_mao_zedong_late.png",
           "sha256": "fee49162de86cfd2ba0e6d45cd8096fc65d5ce0cb3176100aef8c5a1ca731ef9",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/growth_mao_zedong_late.json",
-          "metadata_sha256": "0691a42822892153f27454bb031717578f1552d39ccd5b9df8a65491785bcb26"
+          "metadata_sha256": "22ac8c655d282391e6f4fa50a1bfe09062ba00a89ebcd0f8260841b67e6f434d"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_daoguang_young.png",
           "sha256": "8e621f99d25e58b16a837a9c9ae3a63f66e0050a536e868234b15ea5bbc6876e",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_daoguang_young.json",
-          "metadata_sha256": "a4f45eee28a2a8aa7cf4a0451697d0efb97323154f2ff61ba165bf4d63724639"
+          "metadata_sha256": "b662385438d65a975d36f28b5fa4bca1e877b27d86e09fc59af55bc51d98e00b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_xianfeng_young.png",
           "sha256": "8e621f99d25e58b16a837a9c9ae3a63f66e0050a536e868234b15ea5bbc6876e",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_xianfeng_young.json",
-          "metadata_sha256": "6c94d081f7222fd01ddb851c29e709032c266b9e752bbd28beff1e02ade4bb9a"
+          "metadata_sha256": "68aa2de4de9116602192da822e53a2a43b7413a119004dcc582617b60a765472"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_ito_hirobumi_young.png",
           "sha256": "06e29592ef17847e98d97970d7b0e63e6a1534e59609bc01a32313a75cabe755",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_ito_hirobumi_young.json",
-          "metadata_sha256": "46457725fae97bdff6e1cc24b56628281c1e95892d77d2beedf289bb16cf78e3"
+          "metadata_sha256": "e3e76b5939f9be71327f0982a19ff4e36fc3fc059eb4d6b578d0e172c093122d"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_nicholas_ii_young.png",
           "sha256": "a1fb28524d7339e07b50e54915ec24f68f5b205b624966ddd02072159075727a",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_nicholas_ii_young.json",
-          "metadata_sha256": "c29c236a66edb60783bd39ee19210e94a8671d841d4cae0f972976747ac1f00e"
+          "metadata_sha256": "60213bec9925e609f0e26f601165b68891c4059c60a50f9d5fce357d39d6c223"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_daoguang_prime.png",
           "sha256": "2d48675195b7b674158163ac76cf3cef086541862e4fb72f3414027166186362",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_daoguang_prime.json",
-          "metadata_sha256": "f95445320c08b55801acb91159c6abf9fa9842b3e5e4c3db8e9b93dc86519197"
+          "metadata_sha256": "8b90996a3f3c5d266210e577f83d56385e6c046add662a72bb7f15c8a3a2da4c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_xianfeng_prime.png",
           "sha256": "2d48675195b7b674158163ac76cf3cef086541862e4fb72f3414027166186362",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_xianfeng_prime.json",
-          "metadata_sha256": "02121340999f4bd59f0fc96e90b54d5845189934829a8ce579696d7e95696ef4"
+          "metadata_sha256": "111fa926bc7046315890d69dac3eb7079ff51e896adb22e202ca1c5c574f8dc8"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_ito_hirobumi_prime.png",
           "sha256": "675ab8ae6c49adefa9e4606680f72b83ae67db3fbe48d7937dc995e8cf0ca315",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_ito_hirobumi_prime.json",
-          "metadata_sha256": "274e561d003fcb2fdef7769a9ff76e5b6ba694ecd79dc3a7adbda08095a3553e"
+          "metadata_sha256": "e49905bd1506af611d418d1f0bc89705d03a167a3f7f3cfa72edbc271d06b49b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_nicholas_ii_prime.png",
           "sha256": "1cfff86bd47d73ecdc6cc0216ecd7d0543da3346ec419999a103c7d8121511d0",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_nicholas_ii_prime.json",
-          "metadata_sha256": "e77191f080494b7a1297de71b77a8002bf02db514def430c7b312ca4f3f6bd1c"
+          "metadata_sha256": "ffc1841ec3a44fde46a7f7e690b68ad29c640d675bdd5b8f8d30fb439a2bc937"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_daoguang_middle.png",
           "sha256": "7eb7b47f002752659782a3d349fb27b7066d82a3244685ff95b9d0717eeee769",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_daoguang_middle.json",
-          "metadata_sha256": "94111515732326333ceeceda74e842e14f57f1620e2aa55bd05f9c61ec76b2a4"
+          "metadata_sha256": "92cdfe9433587f096d9cada9469e717000bd1512777645d0934dbca059e6ceda"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_xianfeng_middle.png",
           "sha256": "7eb7b47f002752659782a3d349fb27b7066d82a3244685ff95b9d0717eeee769",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_xianfeng_middle.json",
-          "metadata_sha256": "b1d8d38679bd3eecf5acbeb970ec7b561eca54b946f0843c6db6c0cc71c28231"
+          "metadata_sha256": "c67fa660816e1717589bc9bb8df833a5154c9c8052aac4d6de5a55a9102bac38"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_ito_hirobumi_middle.png",
           "sha256": "c35799dad429d3b22f9b116363e0b4d5e9f9b2518f6336b1a0d9be13b8e8939a",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_ito_hirobumi_middle.json",
-          "metadata_sha256": "420a18d83cacea57388f95f3c6f6f08f31fb010b7acb7cdd072ff40c643d53b9"
+          "metadata_sha256": "9134e64f1e786d50c31d243db7224813fc0f6de80e2a0c9c91cd5b6c36bf0f0f"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_nicholas_ii_middle.png",
           "sha256": "c157d891782f31a0d8575ff209839cb871fcceb03334ff93513ccd75b81712a8",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_nicholas_ii_middle.json",
-          "metadata_sha256": "870feac55747c8864d7a818d746929ed6a92305ad6e509173fa7f0eec2a3dfe6"
+          "metadata_sha256": "42cdf9f9c48f96a233b5b1694cae3d5a5aa05535741b0d46d29977b9552122a7"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_daoguang_late.png",
           "sha256": "3b64372d2575b5d7b607e5c21b1240ac8a293b9b8c600bb9bfcc3a7e93ad02ed",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_daoguang_late.json",
-          "metadata_sha256": "bf384456281776eb970b56bc1ee74a3e116552b47f373523449fbb2eb7215780"
+          "metadata_sha256": "c68ec8fcc44a2d7bdd6ff5dc6962a4d763598eea36d4f2e3ca717225b8dae5aa"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_xianfeng_late.png",
           "sha256": "3b64372d2575b5d7b607e5c21b1240ac8a293b9b8c600bb9bfcc3a7e93ad02ed",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_xianfeng_late.json",
-          "metadata_sha256": "89efb04c7226c41819acf7fb053734e1c5593d3b74ebdaa722afb5c2b758ebb2"
+          "metadata_sha256": "9f8472c508425038af2b2ff2216d8631d75561cdff395069876e45d8484c655d"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_ito_hirobumi_late.png",
           "sha256": "859da511c717f3580f31fd44f9eca0753a40b355e3c5621a3aca6c029f13dd52",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_ito_hirobumi_late.json",
-          "metadata_sha256": "12f80b8594366051350559f1bf57dfe2de6524fdea334e2b8ef5f63797c99fa4"
+          "metadata_sha256": "72d0ff4df9a7015dc830211d79bb5a11955765d365d18d438ee87751db35e682"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_nicholas_ii_late.png",
           "sha256": "6a2b4bd3c45d374319983a8f6bbb345404c68f967b8d131ca5ce26d90b8258ed",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_nicholas_ii_late.json",
-          "metadata_sha256": "cec5b53ba3b676741cbdc855d9af7b3d93238ad63671aa9aa1a79d67a9917e14"
+          "metadata_sha256": "7d66556e4086c2f82b0622ec0ccff82a02a1c9a566cc0b29c50153c8e29a773f"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1840_01.png",
-          "sha256": "1b7ead218240b73894f776cde958cc7806dcefef012fab73efc9690a3a9684d8",
+          "sha256": "76815ab3c1c49da2255c652196261e1c116c404fd07ac753ce0a5abc1ba6bffc",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1840_01.json",
-          "metadata_sha256": "e9d00a7fad76f0a5b9ac930e99d3fda8824f9fceb113d53ff43917114d0888d7"
+          "metadata_sha256": "5519bd43c1cf291c9f162d08a5fc36a4d78659be102fdcc7416237faa4241b23"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/inspector_campaign_1840_01.png",
-          "sha256": "dee74c9eeb3d906595777bcdbeed857c70b934a39794bdcee8319cf34884c27d",
+          "sha256": "17df75cc4e84a930d9f0182d3feb63559dc3865fde80b8eca7adc7b9cf334dc6",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/inspector_campaign_1840_01.json",
-          "metadata_sha256": "1e40f2138442495617c13adb5a3868031f7a8ff37273087fa0bda559b6aa4976"
+          "metadata_sha256": "ea7839e139aab131281c33fbf2fcec5ae5ada79f8c234382d5c0322fc8b01419"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1860_01.png",
-          "sha256": "87b15bda5cb62c8dfdfdf5a45c1fec03f31fd6f77f75ff504dd884f633d84f1b",
+          "sha256": "2322887cfbd121d018e4cfa9d1e78ba8488013d0c2472e9bdf4f9baf702463e5",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1860_01.json",
-          "metadata_sha256": "28c79fad4404c5a07a786392b311d6bad03ef891c78621f13d3ef7039f5bb1fd"
+          "metadata_sha256": "a021e893e1faffd7f641d2f88ed5821cce8a6f39c9d46a180aec934a43a700d8"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/inspector_campaign_1860_01.png",
-          "sha256": "e6dd1d6f290aa15bc562fcc1ad5da19cd207bf6a776e11f56a63a84dad409d95",
+          "sha256": "d12824162909ef7fb6a51c330903dd56d42c2bbf7a4694db8e6a7ce9d49f5bd9",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/inspector_campaign_1860_01.json",
-          "metadata_sha256": "59f5fb21da68af071e0e67b69325c3d8fc68bf65fb40c6f5fd7cb4988a2f2887"
+          "metadata_sha256": "b5ab263552dce53871c3bb0f725cc42536d51619057189d5f197607899b42bd7"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1890_01.png",
-          "sha256": "b981c7246092939efd0c067a5bb23ed0b8002f9dc3bf4bd1a25555a63e38c0de",
+          "sha256": "a6ec8b04e8806ff391155ee93a85847c6ba3122b949a33a5acc4f7402427be4a",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1890_01.json",
-          "metadata_sha256": "7245bbccbfa715ade2a506d7f7f3343de6900a17769acc41b90b21db6e5eaf58"
+          "metadata_sha256": "8cec5585bf89578d835a6b017c0f01d68dd0806e0252e1f5d39aec3d3ecc11f4"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1900_01.png",
-          "sha256": "12e44395f6a96038563171fd919eb88c6e463e0a8eca504b58921bf75d0b88f7",
+          "sha256": "0ae8a3cb76577447bc9cfbb00e153e5c436144ab8abcb8d39a75c76fe1616361",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1900_01.json",
-          "metadata_sha256": "8dba8d8fc9f8d0ef4f66049372067dd27d9778e597ed0028a7372d23ef51891b"
+          "metadata_sha256": "ae86ed6cbad0cb1ee60d6e5583c6365d4fe631e607e7af02f9f2e3cae46feed0"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1917_01.png",
-          "sha256": "2ee25224bd7a1632f073b89ff89f1c313138f4ee0f21a62f671a8e6cf7847cc2",
+          "sha256": "04f1731c78df9a4a8c0177eb55e419566d46b1aca876335bf40014fbedd63110",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1917_01.json",
-          "metadata_sha256": "0d8da0534ff193b1a79be5500f9e47425484dbacaef92a9b822e54b76745c1f7"
+          "metadata_sha256": "8abd98fd0b1a7b46752b267acb005633437ddfd46bae2fb06933ddd55040536b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1927_01.png",
-          "sha256": "96ccb91ece38b2ce27e3d2f593bc94283fa90d88cc56ff6ceb6cca3bc253570a",
+          "sha256": "c6248abd8c94572b5b9e2fc1677d569b72d1c2f4451a7a6d3d5f9a164f7caf9e",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1927_01.json",
-          "metadata_sha256": "1900e6818d313d5e2c3188b894bbbcea29bbfb85d5b5134c90a615379d8a7cee"
+          "metadata_sha256": "475339be0d579e0ef2c530cee1eaca0197396c31316b2c6ce2e48727c937e73b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1940_01.png",
-          "sha256": "03d4a862c5ddd92b1eafa0305d81936e8bf1ac62f28649b803b1576110510bba",
+          "sha256": "ebb05818fa89ba00bffeba1491515767d10d18c6ce4fa8488957abd01d90fe06",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/assignment_campaign_1940_01.json",
-          "metadata_sha256": "a2f3089689432616a91b09ce10e7d6fefeeb6b7d5d3c5b25ab9a51231ca5ca6a"
+          "metadata_sha256": "31a0f1d2fb3df7b36c12e527a2a5798c40af62dfc3328c1f63d068cf5bf8c3fb"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/assignment_asia_1917.png",
-          "sha256": "e41aa5ece4e4c2934315e8baca29e79463e95331ec4a00d35eed2466da8cd382",
+          "sha256": "4625ed4fb68e75761b43114ff1c34f5c8645aafdfaba9b422006a4aa0cd94c9b",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/assignment_asia_1917.json",
-          "metadata_sha256": "f500334fda40a113317b422700fc0c8f9faf1bf4e7ae832b8062c1d700946895"
+          "metadata_sha256": "8a59e49eaecb3f20a7b18ab173744a9a543aad915e3d1678fc82652c349643eb"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/inspector_asia_1917.png",
-          "sha256": "9fcad995569775d342df6b0b1834f409bada9f5589df57523d92f51043361f5e",
+          "sha256": "0b251a7d7efae9340acf866b02bf52ad8b8830ab0e3cc3a500ea50b8845c1527",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/inspector_asia_1917.json",
-          "metadata_sha256": "c6a453630c58a5ea357b77793bc3105a749548b0ed27e3580e0236a3e59fb0d5"
+          "metadata_sha256": "4069f0f602981f29ce1c672912d98241e361836d38c6adc9b4f7724242cfbf2b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/assignment_asia_1940.png",
-          "sha256": "5dc0454b38e0fafac534d675736279d247830fd9b2216a38b8a1c51ce64e861b",
+          "sha256": "c8279c129939c7a5c3da6a165e278b8f59564d68a75edeec30156efef1fbce67",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/assignment_asia_1940.json",
-          "metadata_sha256": "566b7338af56ac493ade887cde1ff3861880dae6896fd751772599847eae55e2"
+          "metadata_sha256": "b55dbcd3955b56aaf854b8fbbff3d98903d81b60fd0ad590887b36d3ca88757d"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/inspector_asia_1940.png",
-          "sha256": "170475d7127b1d13cdd6ff2440e3e89e64a42adcebe7695bb80c186f51c8672e",
+          "sha256": "3507d37af47cd0df9436d5e8eca673292dbaf3cdf5f69c3093da060496a7fe55",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/inspector_asia_1940.json",
-          "metadata_sha256": "b87589724805a48c8c38329bc7a66bf5962447b9065812a633402ddd717ac56a"
+          "metadata_sha256": "59ec5cd08d822b3d6b793b01452055cdb275c573138760bd1b17164e66275b49"
         },
         {
           "file": "reports/screenshots/general_portraits_native/x30_layout/political_current_match_date.png",
           "sha256": "fe7232b7599fb7730fe20ee86c7d841e175a96dd20554dff1cea8fd28cc5548b",
           "metadata": "reports/screenshots/general_portraits_native/x30_layout/political_current_match_date.json",
-          "metadata_sha256": "48009199e3622e46ef31828f9f98bbdeb9533b164c0afa7a678739b128929886"
+          "metadata_sha256": "d418ae2f939d9f77afb0b7c5aef21a714b6dc74c9fa41c4a945c5b338762027e"
         }
       ]
     },
@@ -729,356 +729,356 @@
       "ui_scale": "1.5",
       "checks": 575,
       "report": "reports/screenshots/general_portraits_native/large_text/validation.json",
-      "report_sha256": "a687363619101a4ccd10a21198e888fc7a69d4cdc769cf328b42685c04c0b379",
+      "report_sha256": "0adca215807b32fa1c055a311d81f0098b2d5032e2132fc01e7ceee1bcd75b21",
       "log": "reports/general_portraits_native_large_text.log",
       "captures": [
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_young_00.png",
           "sha256": "4677b97800c5edf35059d3983ebde843942f9c6067e187d203d681e336a33997",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_young_00.json",
-          "metadata_sha256": "c349ec37e71c83e36e3b6fd97ae02d9e0819c131e25c2e31f7104760a93bdc73"
+          "metadata_sha256": "a501ae676d6032a1e8cf9994c94eec84376ec53619e967a9bdafd1c9f41640b5"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_young_12.png",
           "sha256": "59e1cb1ea7ca70064d76188dc938a72226b1bd435ded112819fccc566f845e6e",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_young_12.json",
-          "metadata_sha256": "0d7488de3d8661c63ee55e155bcf8fc7ddaae6398c6f5bcc8946f0de7dc3f574"
+          "metadata_sha256": "ea23f82a4468c0788aedc7c2af24a547329f1a01eb2fcb02545e573d2ca6a8c7"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_young_23.png",
           "sha256": "8b988cf9f1292c3a9caff00ca479949440e835eed746f24ff4a86e551edea6ad",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_young_23.json",
-          "metadata_sha256": "024eeec03d48803b5f069d54044b85c4005b6da70156f01dcfe1c5ae4f4dd24a"
+          "metadata_sha256": "7062b87b24c3a7de1275c98258382bf4ef1fde5d6a78532f5a10b0fe248c056b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_young_28.png",
           "sha256": "64bfbb86655a628b39af1ea68944dcfc5b06c4f28097234bde85ce3f694b29fe",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_young_28.json",
-          "metadata_sha256": "941ff2d9e1823a4137ec9c77d8c1ec3bb520d8fd646fbbf1c3d9596a24651f84"
+          "metadata_sha256": "a42adbbe1d201b80c9d555c5ea62a95719f1317c0abc52938d41985256ae710a"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_prime_00.png",
           "sha256": "3cc6cff9a167644446a8b2d109a7c63164302c8388cef2f4c461072e2b43d13a",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_prime_00.json",
-          "metadata_sha256": "8f9865310f74a373d8d4f4751c77b4016048ecb1e841e80ec9a034439da1b11f"
+          "metadata_sha256": "a55b77fb07ae350781c2a055a8769ec76752a2dbe57e92749203c19b931a88e3"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_prime_12.png",
           "sha256": "32febbcd32bd614d38bd284728619ba3c557ea481374120ce462e662b8e64614",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_prime_12.json",
-          "metadata_sha256": "e5d36a7a8e0a9e565d75a9c179860a5dc44887603bb5dcf2c7ac9cb969ed5327"
+          "metadata_sha256": "493dd6f72fba8d0c1bc27ef054db0898aa4b32d14fc0e0051d2398cde0e305d4"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_prime_23.png",
           "sha256": "683a4e7c29643ecb05470ff32c8b74ba5966f88a8f31711b2912c5d233426375",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_prime_23.json",
-          "metadata_sha256": "7e4abb5b1cd672caed2c2ec64d2440e0d35699fe883229077da319f2b055d00b"
+          "metadata_sha256": "ba93422f4706fe82ec08562bb75bc45d48593a967a81bb2a6000785dff8a5a2e"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_prime_28.png",
           "sha256": "1eb789431215ebf6f2c345c795a99862026ce1fdb86204d2060e262350170b4d",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_prime_28.json",
-          "metadata_sha256": "5f9966f7b032e8a207e7075765d4771745c4a639ceabaa0f5b3286b5523eccc5"
+          "metadata_sha256": "33d7123c61083e05bf994ec7a180aba212de04950be72be38c20c4f4dcf95524"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_middle_00.png",
           "sha256": "70e8c895e772c9982803f1ffc3d3b2854d68a61bfb32686f01f1934c54061916",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_middle_00.json",
-          "metadata_sha256": "8dade5357106a5763079d594eb315bc8d6b5a9f7e2bd78751e06e509d4ded261"
+          "metadata_sha256": "d084f8cedbb298adb94ed203e9348756eb8acebb5584c08cc617ba633081bf08"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_middle_12.png",
           "sha256": "73c71e6ef92cdc49d5b9aecbbdde46f5a7a92385ce1b3eb955a82c2caf348e9c",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_middle_12.json",
-          "metadata_sha256": "071e82d5defb42c9d0dfa08b3bd82f104c4bc89833a2b44eb7c7a2ccaa3d9dd1"
+          "metadata_sha256": "51104e0938886fc1c3a4f17bb34dc6a8958c14094c759cdc9e123ff209226a9e"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_middle_23.png",
           "sha256": "915d0918026aa2d9b43eb79e2eea08a065bc62076685d431d7a18ede9788ad72",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_middle_23.json",
-          "metadata_sha256": "f6301a280b2dedf0e6ebde4b83a92cd4f83f380da0402607a5c0d1054b090300"
+          "metadata_sha256": "894fd0c53e61c8b5d324f745f8b0e04787a6d167b8c052ccd5cc519c18b7cf88"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_middle_28.png",
           "sha256": "32b460846380128af6898867d8e0fb639aff8e5a7b2ffcfe9b3903088ab27e66",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_middle_28.json",
-          "metadata_sha256": "3444fc724f70522158445a345aaec56c1482af66f4272d0555a81ddafa3f7889"
+          "metadata_sha256": "e9869ccef474bc63b3860aa16f2e04992cfc4f3f27722f16ee1a42843876400b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_late_00.png",
           "sha256": "4b626fcf8ebfa03c4a73222ed1a60e2e4fb38fde8d0899226c1e52a9d9265eee",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_late_00.json",
-          "metadata_sha256": "cf916239eff61a895c18fe384eb9ed0d5a2dcb22c0b136f9421a981fa1357021"
+          "metadata_sha256": "1dd83b1f676e659c518aa9c0ad04d410ccd66a81db67b86d022b442411b2a66f"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_late_12.png",
           "sha256": "5bdcab56992a4d7bf94378e8e05012a7d2c0ff782ffa727d8cc5252187992545",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_late_12.json",
-          "metadata_sha256": "e07a1d173bb87af35da568e9159a8deb3f6517671c36e0210130b160deddc288"
+          "metadata_sha256": "50aae1f5cc96098e9d559f848929bc27b519bdb9092e326919c91218709515ea"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_late_23.png",
           "sha256": "dedc962931f9a57fd39d3e1664f0fd84548c4066490f1c8e73a0f39605fe1efd",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_late_23.json",
-          "metadata_sha256": "e9b5b833e2a2a6652001386639d4bf0427f28e2d7707ffaacc93851f982d0da1"
+          "metadata_sha256": "6d7ecfeefdd586ed56c6f00c7c3186d1fa86c9638672f566032dc715bdb98469"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/roster_late_28.png",
           "sha256": "50696b324f28c2957dad2fcc06f89ca19d077de4c1189a6915d9d98cb5ec525e",
           "metadata": "reports/screenshots/general_portraits_native/large_text/roster_late_28.json",
-          "metadata_sha256": "6c55b02da449a39fe32cda0a26602b403bbd7e2510e4e2b98535a497fb6f85db"
+          "metadata_sha256": "b8c2eaf82c2a4d2cb6b2c23d2e9fa4561c53d97f810efcf6662686c93d6883c0"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_li_hongzhang_young.png",
           "sha256": "bcf5b62aafce9fc10d1d3580e78906726dbd6014bd091bf081ab94a88dc09c47",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_li_hongzhang_young.json",
-          "metadata_sha256": "9759e23733b403c05d6ba558fe25bc0209ed7037d9c8165fc9c570637f8b6050"
+          "metadata_sha256": "088155b81ac4f41ecd828323b8fa553ce9c06f064aff18cb9c7ee6825fd6ada7"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_li_hongzhang_prime.png",
           "sha256": "d49eb19e065b4d180135d205e6517eea0cccfcffa97d45cd43c745ca16bbd863",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_li_hongzhang_prime.json",
-          "metadata_sha256": "4f77809336ee72a38b774461bc65ebcf7bf5397b8364fb55797b27adbe290f32"
+          "metadata_sha256": "cb97a84829870fdbd92128e054952066c1b0628ba14c31e23002ad1a01bc180c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_li_hongzhang_middle.png",
           "sha256": "5ed4f91a4a59dcd1df3a193f6662d6285bf06d35808628cd111ad7f4a9b6e262",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_li_hongzhang_middle.json",
-          "metadata_sha256": "9e0a2d15ab944ad5b1bdae365f49a5ffb35973394f3ecab8c4eb1c9f48e1ef3c"
+          "metadata_sha256": "8cba1ecde8772bc6c49445453545e07c5f082a5eeaf6bf95c4496ed003e28147"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_li_hongzhang_late.png",
           "sha256": "b09d10ce193aea714af88d6cb9cd667a8382bc1e5a9bfbc5ff975a47cac2c626",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_li_hongzhang_late.json",
-          "metadata_sha256": "76317d7357294ae8616f145c9c0ecfe713ce51ff46848107e70a7f7507e65d6d"
+          "metadata_sha256": "cd947afbc941cb59177481537a769bf5c4a98652af4c5b1ef7fc3d39986a6e3c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_hong_xiuquan_young.png",
           "sha256": "9ec79f4a4fb867ba2ae00c419b868ae99fd17d85e304040210f71b74685f1e0b",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_hong_xiuquan_young.json",
-          "metadata_sha256": "84474613072247878a63cda5ba47a8e0e758a3ec7a594ab05d12d46323367c88"
+          "metadata_sha256": "2b09de75f5858fced5403245123be8a0d151b25d11f81ca68be13c085331d081"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_hong_xiuquan_prime.png",
           "sha256": "c7ed5b6c930aa5369f6fea209416b43c648effe7e4acc8df8aff0973e65fb311",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_hong_xiuquan_prime.json",
-          "metadata_sha256": "0bbb7a59dfe6c06d9edbe7bf447277a4c81420c58ef5b30e4ec11cc78c67ff32"
+          "metadata_sha256": "c6f6d3de202bf6c6f08d38e0587002fb7109eb316ae9bc464a3360d3848f5a69"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_hong_xiuquan_middle.png",
           "sha256": "a838736e838730155bf89f98ac5af929d55d6be2a06c3a9f2f003f57aaed30a5",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_hong_xiuquan_middle.json",
-          "metadata_sha256": "ffe0449909ad20d4cd3ec4f0f0da1aed19ad0911315bcdd7b9ac08b92650af8e"
+          "metadata_sha256": "0b4a4ee9b8c7849a23c7e45b3ea9aa0e3916f41de80c3238a5dab331a09c184d"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_hong_xiuquan_late.png",
           "sha256": "4b3ce1588fac83a4f6f28f126e606c763c1d86d527b5d07364d3e1fff7bbb00a",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_hong_xiuquan_late.json",
-          "metadata_sha256": "8bdcb550caf3bc96190dea66ad54ae4bc1417e21a6ecfe79cd771b5607c11e78"
+          "metadata_sha256": "20b79cc39777df72e129068fff1a3d17995299945fe388f006a631610293da7e"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_mao_zedong_young.png",
           "sha256": "efc315df2e777db1349fd591a01b73ead03f4dd6ccd2ef6111b24a4123220707",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_mao_zedong_young.json",
-          "metadata_sha256": "6fc8df65174b79076ffa1ec1d237509b83c9d08c4bfbad557dd46d2c5fff2708"
+          "metadata_sha256": "36b9ff41f445c3778f541294c9d1ff82381c773119972cb799717956a6567c83"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_mao_zedong_prime.png",
           "sha256": "4f7f99e76be79b0218772429e55c0c0f16c67522239b42f1f4c91044b99f05a0",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_mao_zedong_prime.json",
-          "metadata_sha256": "ba715d7a8bdeb8689eb20e5d35b26b8b06cb1812547e178a9b31bebb6f3f9220"
+          "metadata_sha256": "0cf572dfbd47ad015aaa8edeccf8974f02675e6d22f12f4e5ea369be549cda4f"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_mao_zedong_middle.png",
           "sha256": "5bc4e1c41fd6958161979de38f9e4779319d8733dbb920c2f2b6791df47e8bb6",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_mao_zedong_middle.json",
-          "metadata_sha256": "258b29926478091749bee8f11380dec0bdfda9b6de9b84e0d678353f671e5270"
+          "metadata_sha256": "b363394d5d417456ba9686843ab223e439cc1cfb3a4bf93e08ae1ebf815a7357"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/growth_mao_zedong_late.png",
           "sha256": "b7ac6b477479f1856cb5dbf6e178786df57e157e0ae73b8d0b05651d8c3acc08",
           "metadata": "reports/screenshots/general_portraits_native/large_text/growth_mao_zedong_late.json",
-          "metadata_sha256": "1b179600851b82f53afa6e3e5771987432a45701f792446240f506bd1fe6c2dd"
+          "metadata_sha256": "5e5cc8158ca82cb431f7d443a3530a0393fb9f2d49bd7f2c06cab55636b57ab9"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_daoguang_young.png",
           "sha256": "8705b49fe35c62182b0f0af9fcbf95bf1a31ca096d8ab6f38944c938ccf7bde4",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_daoguang_young.json",
-          "metadata_sha256": "0a3032ea1b9959a36d1978927d9dfad89364bed964cffd642ffe1238ca75d8ab"
+          "metadata_sha256": "1b989546072b44da6c5c64568fc17bf7d818b1547beb984e85a058054247767b"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_xianfeng_young.png",
           "sha256": "950f7a6fe3d4e98dcee4771bd0445abfda56968796f8bcf6d030b2ca496d6162",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_xianfeng_young.json",
-          "metadata_sha256": "91f43023fb5f2399ec956c47e2f21fc30238800202187321488827eb75f05dfe"
+          "metadata_sha256": "29a9726dc2da9df874b3f7b759a991267ea4fef571dde9ca64acbe4d99d012cc"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_ito_hirobumi_young.png",
           "sha256": "c94c30ee3e02091449157da101474b077ec277c05dbf9a682aaf7ad31840dafc",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_ito_hirobumi_young.json",
-          "metadata_sha256": "8bbd74428e5faf54bd561863c218f1f39ea2358ad39c20032e091a06b73f0083"
+          "metadata_sha256": "7d17415cebfb3c3f4c1acf5537c1926400cf5c4ec5db151026ed3b1a068de485"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_nicholas_ii_young.png",
           "sha256": "c7bf1ed649676db1d9fd6e6606ea15672b210ea2018ef532fb528eed8f019c3b",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_nicholas_ii_young.json",
-          "metadata_sha256": "a0bdd8d901502691262f40df83bc31c75f037507d7db04470107cb4239971880"
+          "metadata_sha256": "3f34b5bf8aeb4eef929394477c1522be9750db6e35fa65fe5987c7c0dea1993f"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_daoguang_prime.png",
           "sha256": "c7651374e02fc2522098ee98cdf81bcdcded6224e406f7c42fa338f3c7a3194d",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_daoguang_prime.json",
-          "metadata_sha256": "b74ecfe7c1287920109b70d99059323fd23dcc2756fec5db7d9a92e7cba069a9"
+          "metadata_sha256": "fa07711505cda36d656c19a7ef344d62cdf02c3357eed95f53d0866cf2446a2c"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_xianfeng_prime.png",
           "sha256": "597dd1ae6f8ab2093e39ccfec7e3a1a1dc390aed2c5d2f539975abea06520277",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_xianfeng_prime.json",
-          "metadata_sha256": "decc03d3167842f491652912383febf4f2100c5882772876956a6d1dd265590d"
+          "metadata_sha256": "e439c8cbb9664cc62996757afcd0cda004b26e154435fc61fa2d1c2d99e010bb"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_ito_hirobumi_prime.png",
           "sha256": "3345b18564591eb0ffb1bfa312431d7bb3a1accc4c99f2f46f41051d41087e14",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_ito_hirobumi_prime.json",
-          "metadata_sha256": "ac96f6910e72c8a305e9f00ac621dfec1d7bcef90121c2a50fdbce54e18923c0"
+          "metadata_sha256": "3c6ec9f26c5a9c1c6c5d3089f80edc605bce7665e84b12690136e8040ab6edd1"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_nicholas_ii_prime.png",
           "sha256": "17904fd75ca262f2ded7688785e8bd7e7d3323dfb36e8f5a0bf0058ccaae2af3",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_nicholas_ii_prime.json",
-          "metadata_sha256": "38adff82c7a6de23d38ccf5dda9021e64faf87def41e820757ec02fe92ed46b8"
+          "metadata_sha256": "5dbff179072c416c60468bd6f63875f745bbd99288f392ab4020933fd59b6203"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_daoguang_middle.png",
           "sha256": "c1b1e3b05e99090e3c9683a04eb13a27534ba986e8739f5fc839a6bca582351e",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_daoguang_middle.json",
-          "metadata_sha256": "ae6993a60966662b34fc42c706b781a8fc45d7df2ced68f22ce39a881eeba800"
+          "metadata_sha256": "48bf1005a51c96b3263247c2ceb4d37116111424b04f494813317e19029e676e"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_xianfeng_middle.png",
           "sha256": "4b6f63f9296ff5b051ce09beab208a86394e4413870895a15b026704746d9722",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_xianfeng_middle.json",
-          "metadata_sha256": "4b28ccaf641ece01680f0efaccbe4d2ad325a3df376d367fa2ae07af3be1ee90"
+          "metadata_sha256": "0d0c93890e4892fd91f7615d1c8f56f8324473708ed833e431502d6b6b58e287"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_ito_hirobumi_middle.png",
           "sha256": "3c2cc322141f511ccba9adb9224d6521e100ef8a161657ce09051734ed6cafa3",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_ito_hirobumi_middle.json",
-          "metadata_sha256": "293c0e57d8b6da3bc9dd71b618e8155a876a9d098dc5c158b216973d81ed47db"
+          "metadata_sha256": "26183664afe1a2b8b2646a02b3c71bae7024d75349a01eb7d717cae8bdb88b60"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_nicholas_ii_middle.png",
           "sha256": "cdbfe95237e7a6793392b3f3193a8596394e62bcf9929c3180f25775da5cf9c6",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_nicholas_ii_middle.json",
-          "metadata_sha256": "0c9bd3898170883e10b65c384d3145bbc5aa82061c967d93cb8ae620761deb79"
+          "metadata_sha256": "9fb5f804b36be9190d588c80488f24aa1e6036fb7ad5e92ac6a5e91e78182ba6"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_daoguang_late.png",
           "sha256": "00e1a2c1cf94434ad2678c6cde957a7743b5d0b1bec01c0f542b968297f27235",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_daoguang_late.json",
-          "metadata_sha256": "6dea18a5baa94d4fbf2a749dd7fcd40d0e4fa08be76e398553f75cf66926ded4"
+          "metadata_sha256": "8a518a119c1911b70050c32db9d31bc5259da1c98b81d369389f725784178338"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_xianfeng_late.png",
           "sha256": "a74d7d0243d74898e8c9dfeed489128f01bcbf90ff9f34c8248f8b2021825e41",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_xianfeng_late.json",
-          "metadata_sha256": "f849673122a860c2fee15d48f67d64a1a76b921397a6d50c9ee1b23a5e87fbfe"
+          "metadata_sha256": "2b5e95459f0246453083dd8ae3f4b2b8446a5521110823b4c7f68b57ba084872"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_ito_hirobumi_late.png",
           "sha256": "193283d82f9b2d557abfc8623172f03fe76fd81b0882636810bfe37e5a5a3e57",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_ito_hirobumi_late.json",
-          "metadata_sha256": "8cbac4d88d23c78d733cc9ee0984295902d955734ac0dbda6ea9bc91687ba2e3"
+          "metadata_sha256": "29f2fd1dac0e989259fb4fd70a0d996286f702617ca26b553f9b8c372ed71b3e"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_nicholas_ii_late.png",
           "sha256": "fc9a4726a5d3f4c47de1d06e9e7e3ab7b22cdec4953dbd15bd92daf58ea69aa2",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_nicholas_ii_late.json",
-          "metadata_sha256": "9bfdf38482f897ce861fdb4a432af4cf4d0ca7af99fcf69d5f4b8202f2de3585"
+          "metadata_sha256": "c0abd8969dfbf5784b62b5023f8b6e23b83dbee0f46ce8ed709a77b39cd23a83"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1840_01.png",
-          "sha256": "abeb2d94ff3a23b82fd3f8840572a86adad7ff29dbf2329397912c6e2cf263c6",
+          "sha256": "76a13c635fa945182f5c0b25fec711e0990035f1070b1bbd62951ea7892ce1e2",
           "metadata": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1840_01.json",
-          "metadata_sha256": "4b237c3a12c2ad540df526973dbc50c56efba736ece5e5cfadcb9962e23bda42"
+          "metadata_sha256": "4fb1873aca95e1217df033a7c097356aef7cf9f8a9445cb3fee3846a4efbef84"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/inspector_campaign_1840_01.png",
-          "sha256": "1f996bb3e7a4908fb984b130aaccdeac6087aa6ea4a6dbf3942acaa979b5265c",
+          "sha256": "a091f07c56e3de3bb8c5e5589635b273960ff0b51739aa2280b2ac86d4045ca6",
           "metadata": "reports/screenshots/general_portraits_native/large_text/inspector_campaign_1840_01.json",
-          "metadata_sha256": "4d5e05389dfebeac85d4ed772bf2738f05c2ec8ec016134ef99f0e491ce7f2ed"
+          "metadata_sha256": "3731e6430e0a74013bf1d2acb1c471f6b8bcaf5777d54b2d054eeb518bfccb6d"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1860_01.png",
-          "sha256": "485c126f74ddf482aa4f6190109c77beedc850f6f70433f850585bbe22faafda",
+          "sha256": "6dbe2b2662edf7ee77d03a6c970469ab12e6b521a94847d049ff66936bca8d0d",
           "metadata": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1860_01.json",
-          "metadata_sha256": "2b8cb27bac6e60d2765cb698c20ec997d5f1f3cc81ff5f3eaa14844b780c5276"
+          "metadata_sha256": "739468bb068c6aa61b27960d8e66616bb79ead2000d2338b9a9eb0b3fe9d9a88"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/inspector_campaign_1860_01.png",
-          "sha256": "9dfaae4fa1dbdfcaa3e3b9d0413bccc70da1c0e7ee6a70aaba27f4f21bf38792",
+          "sha256": "411e5decd573ee534da10622118dcf33bcd9400d7f04e7f086d7ea23a02237b3",
           "metadata": "reports/screenshots/general_portraits_native/large_text/inspector_campaign_1860_01.json",
-          "metadata_sha256": "37ac97ff33833d640fd16357bd877b5e9af86ad4c60648006e9ecaf772cc9d24"
+          "metadata_sha256": "2e5528ccdad661e86294c0f20ac9ad5d848e5dabb165fbaf2fe5d1ea992a6896"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1890_01.png",
-          "sha256": "eb6bfc825e9c85f4a9f526b8725d5197abbf5ef9a902652f4e043078037f8a22",
+          "sha256": "36d5e904749b78ad51542e85391419a2eec1413a48c86d025a7bc8a3cf8e9731",
           "metadata": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1890_01.json",
-          "metadata_sha256": "385f38c42d5567f1f165c9322caebaa5032daca28b83460b0f4c84d1b778fafe"
+          "metadata_sha256": "0320ab722ca13d84861babf20cfc24ec628fdc36b90b9430870c8be607810ef4"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1900_01.png",
-          "sha256": "7429c56fe7a736c648000485d8ec807a8e74c5bf2b0ffdf2a0629ad6d8d0e117",
+          "sha256": "095f2f0f32e28ce67df6308a001aec57d532b57541575c4e291394e180f67d53",
           "metadata": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1900_01.json",
-          "metadata_sha256": "7b3b2352c80e889d26e81d827d0877d2b9690b7a14ee1e6bbd94054685e779cf"
+          "metadata_sha256": "6321a8e35e0a8ea7fff79922b033fe1b6b4bac7bd2dba7b2e74c6b6497d9d2f7"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1917_01.png",
-          "sha256": "0a6ac7df4f89d4fdaec89fbd9d0a271d4192703af6a701d744092d74b6af215e",
+          "sha256": "7d66ded6f6d5d40f3ce9e2f04dea3982cea88f8ffa33f08fbfde878d5617e627",
           "metadata": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1917_01.json",
-          "metadata_sha256": "389b99939bf4145c68f592c1af0488a5bb90a6cdfd0982d931d76b02c8201a46"
+          "metadata_sha256": "a7abfc7473d47bbedad97ff1f4c2bd46fddeb702147547fb8894e8ff6ea9920e"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1927_01.png",
-          "sha256": "bd0e347b4392aeb7e1b3f271d446ba3a3f3aec3818e0647c0c5af1a2ff9ced73",
+          "sha256": "00046ffb7f9abac802d5395c3936b9c4dcda7a7d9bf582411ee941ab1826c2a7",
           "metadata": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1927_01.json",
-          "metadata_sha256": "269cf49bc1ae18a08fe0ae92e3ffb0d17a21648bac982dc882f7f1c2c1abbf04"
+          "metadata_sha256": "91d118a2c7a80f0d7c936ef998177a99e3610d1c0200138f604d0681205c1f11"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1940_01.png",
-          "sha256": "7b34c4504b2d8236da8af56da9c019ba96656be53b069adadd483abc58a41a66",
+          "sha256": "9f32b8fc7cd992e46ad541cf1d40c8fce1ce46a9057c94d7228aa0e8b51ac508",
           "metadata": "reports/screenshots/general_portraits_native/large_text/assignment_campaign_1940_01.json",
-          "metadata_sha256": "cb7d6248b7ed67ddb0e615c7bedefa69efeffafb658fef812c6a43e5b04f3b8a"
+          "metadata_sha256": "2581d003ca6ca0002dc42fa1fbfcbf3597b918315690a9c4a81b0b36ab5bf946"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/assignment_asia_1917.png",
-          "sha256": "6f358ef5f23d806f192e2f317711e4f3430d5469f3c2fc06ff7c666f785040f4",
+          "sha256": "36d06f408ba2b5aed56ae077b2a7e8063be412580e334761c81ff6d91d470214",
           "metadata": "reports/screenshots/general_portraits_native/large_text/assignment_asia_1917.json",
-          "metadata_sha256": "ecd3a40f2ebd3475363388cf41a5d64d1aa80ae37c0e687289f2fcc085ed5281"
+          "metadata_sha256": "ebc132aa447a0d4fce94261d657479339481bd7bad122b8aec8026d2e0982b66"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/inspector_asia_1917.png",
-          "sha256": "795c71edcf91a8f99fd4d12392d7ca153c5b24ba28c210b396e718dcb8f02637",
+          "sha256": "10aa142fe810fca7ebe6cff1a0880171d774b9b0761db39717883c77387721a3",
           "metadata": "reports/screenshots/general_portraits_native/large_text/inspector_asia_1917.json",
-          "metadata_sha256": "0986add6562ce067ddcf67e8bb8472ecee83e5d1da0296bec5c6fd2ba3c87bca"
+          "metadata_sha256": "70db7ce1a3f833b6628b3349dbcaa5d44eae016600f61be0c8fdf865954b10bd"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/assignment_asia_1940.png",
-          "sha256": "84c27f8f896c043dc5b9123fc2770132f42e4336adadbba6d2efd86bbf2c4c75",
+          "sha256": "f20c889143e8129292eb34a31177ec2b2134c82d40ed76af95f716296d880a26",
           "metadata": "reports/screenshots/general_portraits_native/large_text/assignment_asia_1940.json",
-          "metadata_sha256": "527e02e6dc5028a5c130811fd030e3225bc1f5e744a630ccfab3f5c701c7c149"
+          "metadata_sha256": "541828c9d554051e0c04599f31d0c35ed0b896d7971cfa83c73c6494c46fca07"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/inspector_asia_1940.png",
-          "sha256": "fcf21a1c7bff2fe5c276ea34e97fba7dbb84023567d710fb8036062d9192b3e0",
+          "sha256": "6e49b01ca6f5d8e018ed5d432c6f56078d8fc1f718ade8eca1327e32f17454b0",
           "metadata": "reports/screenshots/general_portraits_native/large_text/inspector_asia_1940.json",
-          "metadata_sha256": "cc68f5588ed995f0aae77175335deab542b7c22e124b0034d40c67d00cb0be39"
+          "metadata_sha256": "7da63097b6a7224725b67518c96f58fba72ade5dee757e7b6991567223226bbf"
         },
         {
           "file": "reports/screenshots/general_portraits_native/large_text/political_current_match_date.png",
           "sha256": "632da3a6a07ce5068b3f9efcdb2f954f01f5e73c554b9d93debca71351a7dd71",
           "metadata": "reports/screenshots/general_portraits_native/large_text/political_current_match_date.json",
-          "metadata_sha256": "d4744667105d61de97931690979eade264930279b3bcd536f353c03b1b0e4834"
+          "metadata_sha256": "c9af40cb6f8a4a9323631a67eda28578d2051c2bdae79d9d01ca3090dee4bf67"
         }
       ]
     }

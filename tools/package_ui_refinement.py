@@ -16,10 +16,11 @@ def write(path, value):
 
 
 def validate(scope='dossier'):
-    require(scope in {'dossier', 'atlas_office', 'ground_atlas', 'coast_detail'}, 'Unknown scoped delivery')
-    atlas_scope = scope in {'atlas_office', 'ground_atlas', 'coast_detail'}
-    ground_scope = scope in {'ground_atlas', 'coast_detail'}
-    expected_rasters = 1324 if ground_scope else 1304
+    require(scope in {'dossier', 'atlas_office', 'ground_atlas', 'coast_detail', 'water_map'}, 'Unknown scoped delivery')
+    water_scope = scope == 'water_map'
+    atlas_scope = scope in {'atlas_office', 'ground_atlas', 'coast_detail', 'water_map'}
+    ground_scope = scope in {'ground_atlas', 'coast_detail', 'water_map'}
+    expected_rasters = 1327 if water_scope else 1324 if ground_scope else 1304
     version = current_version()
     runtime = source_digest()[0]
     exe = P / 'build/windows/RailwayWarlords.exe'
@@ -135,7 +136,7 @@ def validate(scope='dossier'):
     audit = read(P / 'reports/daily_age_text_audit.json')
     require(audit['passed'] and audit['version'] == version and audit['runtime_source_sha256'] == runtime
             and not audit['legacy_display_name_plaintext_files'], 'Current display-name audit required')
-    visual_name = {'coast_detail': 'coast_detail_native_review.json', 'ground_atlas': 'ground_atlas_native_review.json', 'atlas_office': 'atlas_office_native_review.json',
+    visual_name = {'water_map': 'water_map_native_review.json', 'coast_detail': 'coast_detail_native_review.json', 'ground_atlas': 'ground_atlas_native_review.json', 'atlas_office': 'atlas_office_native_review.json',
                    'dossier': 'ui_refinement_native_review.json'}[scope]
     visual = read(P / 'reports' / visual_name)
     require(visual['version'] == version and visual['runtime_source_sha256'] == runtime
@@ -160,7 +161,7 @@ def validate(scope='dossier'):
                     'Actual zoomed native preview required')
             require(all(row['passed'] for row in proof['checks']), 'Office interaction/transaction checks failed')
     if ground_scope:
-        require(version == ('0.2.26' if scope == 'coast_detail' else '0.2.25'), 'Scoped map specification/version mismatch')
+        require(version == ('0.2.27' if water_scope else '0.2.26' if scope == 'coast_detail' else '0.2.25'), 'Scoped map specification/version mismatch')
         catalog = read(P / 'presentation/data/ground_macro_catalog.json')
         source_review = read(P / 'reports/ground_atlas_source_review.json')
         require(catalog['world_repeat_period'] == 224 and catalog['superseded_originals'] == 40
@@ -241,6 +242,50 @@ def validate(scope='dossier'):
             'ground_atlas_installation.json', 'ground_macro_asset_audit.json', 'ground_continuity_native_evidence.json',
             'ground_continuity_native/validation.json', 'ground_continuity_native/native.log'])
         if scope == 'ground_atlas':reports.add(P / 'reports/ground_atlas_scope_audit.json')
+    if water_scope:
+        audit = read(P / 'reports/water_map_scope_audit.json')
+        require(audit['passed'] and audit['version'] == version and audit['runtime_source_sha256'] == runtime
+                and audit['preserved_existing_originals'] == 1324
+                and audit['preserved_existing_geography_and_rules'] > 100
+                and not audit['changed_existing_geography_and_rules'] and len(audit['new_water_originals']) == 3,
+                'Water/grid revision must preserve delivered geography, rules and originals')
+        water_native = read(P / 'reports/water_continuity_native_evidence.json')
+        require(water_native['passed'] and water_native['version'] == version
+                and water_native['runtime_source_sha256'] == runtime and water_native['windows_exe_sha256'] == sha(exe)
+                and water_native['fixture_driver_sha256'] == sha(P / 'tools/verify_water_continuity.py')
+                and water_native['checks'] == 22, 'Current production water GPU fixture required')
+        require(sha(P / water_native['report']) == water_native['report_sha256']
+                and sha(P / water_native['log']) == water_native['log_sha256'], 'Water fixture evidence changed')
+        require(len(water_native['fixture_captures']) == 3, 'Three raw overview fixture views required')
+        for row in water_native['fixture_captures']:
+            require(sha(P / row['file']) == row['sha256'], 'Synthetic water fixture changed')
+            reports.add(P / row['file'])
+        frames = read(P / 'reports/water_map_native_capture_evidence.json')
+        require(frames['passed'] and frames['version'] == version and frames['runtime_source_sha256'] == runtime
+                and frames['windows_exe_sha256'] == sha(exe)
+                and frames['capture_driver_sha256'] == sha(P / 'tools/capture_water_maps.py')
+                and len(frames['captures']) == 11, 'Current full water/grid native viewports required')
+        for row in frames['captures']:
+            require(all(sha(P / row[key]) == row[key + '_sha256'] for key in ['metadata', 'log'])
+                    and sha(P / row['file']) == row['sha256'], 'Water/grid native evidence changed')
+            captures.update([P / row['file'], P / row['metadata']]);reports.add(P / row['log'])
+        reports.update(P / 'reports' / name for name in ['water_map_scope_audit.json', 'water_material_generation.json',
+            'water_material_source_review.json', 'water_continuity_native_evidence.json',
+            'water_continuity_native/validation.json', 'water_continuity_native/native.log',
+            'water_map_native_capture_evidence.json'])
+        performance = read(P / 'reports/water_map_performance_observation.json')
+        require(performance['observation_recorded'] and performance['version'] == version
+                and performance['runtime_source_sha256'] == runtime
+                and performance['windows_exe_sha256'] == sha(exe), 'Current performance observation must be disclosed')
+        for row in performance['files']:
+            require(sha(P / row['file']) == row['sha256'], 'Archived performance observation changed')
+            reports.add(P / row['file'])
+        measured = read(P / 'reports/water_map_performance/desktop_benchmark.json')
+        require(measured['sample_frames'] == performance['sample_frames'] == 180
+                and measured['average_fps'] == performance['average_fps']
+                and performance['target_met'] == (performance['average_fps'] >= performance['target_fps']),
+                'Performance disclosure differs from the raw sample')
+        reports.add(P / 'reports/water_map_performance_observation.json')
     names = ['daily_age_text_audit.json', 'git_byte_preservation.json', visual_name, 'ui_refinement_source_review.json',
              'regression_dependency_evidence.json', 'resource_validation.json', 'repository_validation.json',
              'export_results.json', 'sample_state_v2.json', 'apk_content_validation.json', 'apk_signature.log',
@@ -262,13 +307,21 @@ def validate(scope='dossier'):
                    full_daily_balance_acceptance=False, full_ai_endurance_rerun=False, ew6_parity_claimed=False,
                    source_pngs_modified=False, manual_compositing=False, git_working_bytes_preserved=True)
     if ground_scope:
-        summary.update(new_ground_originals=20 if scope == 'ground_atlas' else 0, stored_map_originals=1010, active_map_originals=970,
+        summary.update(new_ground_originals=20 if scope == 'ground_atlas' else 0, stored_map_originals=1013 if water_scope else 1010, active_map_originals=970,
                        preserved_superseded_ground_originals=40, native_material_checks=48)
-    if scope == 'coast_detail':
+    if scope in {'coast_detail', 'water_map'}:
         summary.update(refined_marine_maps=4, new_raster_originals=0, native_coast_checks=61,
                        independent_geography_checks=len(coast['checks']), historical_coast_survey_approval=False,
                        additional_coast_native_captures=len(coast_frames['captures']))
-    validation_name = {'coast_detail': 'coast_detail_release_validation.json', 'ground_atlas': 'ground_atlas_release_validation.json', 'atlas_office': 'atlas_office_release_validation.json',
+    if water_scope:
+        summary.pop('active_map_originals')
+        summary.update(new_raster_originals=3, new_water_originals=3, available_map_originals=973,
+                       native_water_checks=22, additional_water_native_captures=11,
+                       existing_geography_and_rules_changed=False, historical_water_color_claimed=False,
+                       desktop_static_average_fps=performance['average_fps'],
+                       desktop_static_frame_ms_p95=performance['frame_ms_p95'],
+                       desktop_performance_target_met=performance['target_met'])
+    validation_name = {'water_map': 'water_map_release_validation.json', 'coast_detail': 'coast_detail_release_validation.json', 'ground_atlas': 'ground_atlas_release_validation.json', 'atlas_office': 'atlas_office_release_validation.json',
                        'dossier': 'ui_refinement_release_validation.json'}[scope]
     write(P / 'reports' / validation_name, summary)
     reports.add(P / 'reports' / validation_name)

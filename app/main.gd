@@ -112,6 +112,7 @@ func _ready() -> void:
 	if "--terrain-surface-test" in args:TerrainSurfaceQA.run.call_deferred(self)
 	if "--control-land-test" in args:ControlLandQA.run.call_deferred(self)
 	if "--ground-continuity-test" in args:GroundContinuityQA.run.call_deferred(self)
+	if "--water-continuity-test" in args:WaterContinuityQA.run.call_deferred(self)
 	if "--ground-coverage-test" in args:GroundCoverageQA.run.call_deferred(self)
 	if "--music-test" in args:MusicPlaybackQA.run.call_deferred(self)
 	if "--general-portrait-test" in args:GeneralPortraitQA.run.call_deferred(self)
@@ -992,6 +993,9 @@ func capture_frame() -> void:
 	var args=OS.get_cmdline_user_args()
 	if is_instance_valid(map_view) and "--atlas-view" in args:
 		map_view.fit_map()
+	if is_instance_valid(map_view) and not qa_save_path.is_empty() and "--capture-grid" in args:
+		# Exercise the actual optional operation-grid layer in isolated QA only.
+		map_view.show_grid=true;map_view.queue_redraw()
 	if is_instance_valid(map_view) and "--focus-city" in args:
 		var index=args.find("--focus-city")
 		if index+1<args.size():

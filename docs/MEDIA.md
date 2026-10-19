@@ -4,9 +4,9 @@
 
 ## 截图 / Screenshots
 
-当前媒体目录有60张完整PNG：50张来自0.2.26 Windows EXE，另保留0.2.23档案4张、0.2.22人物4张和0.2.12交战/航空2张。当前人物、成长、地表/UI、沿岸与图符及另4张修改地图沿岸，共353张专项原生画面的精选，以及导出检查截图，均按原字节复制到`docs/media`；本轮新增四张李德胜阶段页媒体副本。没有裁切、拼接、补绘或叠字。原图与旧版有限查看来源独立保留版本及SHA。
+当前媒体目录收录完整PNG原生画面，当前数量和版本由[媒体登记](media/manifest.json)逐张记录。本轮增加11张水面/蜂窝实机画面和4张当前李德胜阶段页；旧0.2.26人物页、0.2.23档案、0.2.22人物和0.2.12交战/航空图保留历史身份。当前专项完整画面共364张，文档只精选其中一部分及导出检查图，全部按原字节复制到`docs/media`，没有裁切、拼接、补绘或叠字。原图与实际查看范围分别保留版本及SHA；合成GPU夹具不计入实机地图媒体。
 
-The media folder contains 60 complete PNGs: 50 from the 0.2.26 Windows EXE, four retained 0.2.23 dossier views, four 0.2.22 character views and two 0.2.12 combat/air stills. Selections from the 353 current scoped native captures and export checks are copied byte for byte. Four current Li Desheng stage views are included. No cropping, stitching, repainting or overlays are used; older media and reviewed sources retain their version identities and hashes.
+Complete PNGs and their exact versions are listed individually in the media manifest. This update adds 11 water/grid gameplay views and four current Li Desheng stage pages. Older 0.2.26, 0.2.23, 0.2.22 and 0.2.12 media retain their historical identities. Selections from 364 current scoped native frames and export checks are copied byte for byte, without cropping, stitching, repainting or overlays. Synthetic GPU fixtures are separate from gameplay media; generated captures and actually viewed frames have separate records.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
@@ -40,8 +40,13 @@ The media folder contains 60 complete PNGs: 50 from the 0.2.26 Windows EXE, four
 | [city-buildings.png](media/city-buildings.png) | 城市设施与队列 / City facilities and queue |
 | [diplomacy.png](media/diplomacy.png) | 外交关系与命令条件 / Relations and validation |
 | [headquarters.png](media/headquarters.png) / [technology.png](media/technology.png) | 将领和科技 / Generals and technologies |
-| [lidesheng-young-v0226.png](media/lidesheng-young-v0226.png) / [middle](media/lidesheng-middle-v0226.png) | 李德胜1917青年与1947中年原生预览；1947仅素材 / 1917 youthful and 1947 middle-aged native previews; 1947 art only |
-| [lidesheng-prime-v0226.png](media/lidesheng-prime-v0226.png) / [late](media/lidesheng-late-v0226.png) | 壮年与暮年阶段原生页 / Prime and late stage pages |
+| [lidesheng-young-v0227.png](media/lidesheng-young-v0227.png) / [middle](media/lidesheng-middle-v0227.png) | 李德胜1917青年与1947中年原生预览；1947仅素材 / 1917 youthful and 1947 middle-aged native previews; 1947 art only |
+| [lidesheng-prime-v0227.png](media/lidesheng-prime-v0227.png) / [late](media/lidesheng-late-v0227.png) | 壮年与暮年阶段原生页 / Prime and late stage pages |
+| [water-china-overview.png](media/water-china-overview.png) / [asia](media/water-asia-overview.png) | 当前全国/亚洲总览，无三角辅助网纹 / Current China and Asia overviews |
+| [water-bohai.png](media/water-bohai.png) / [japan](media/water-japan.png) / [caspian](media/water-caspian.png) | 三处连续海/内陆水面 / Three native sea/inland-water views |
+| [water-yangtze.png](media/water-yangtze.png) / [nanjing](media/water-nanjing.png) | 来源长江河带 / Sourced Yangtze ribbons |
+| [water-yangtze-x30.png](media/water-yangtze-x30.png) / [china](media/water-china-overview-x30.png) | Windows移动比例检查 / Desktop mobile-layout checks |
+| [water-grid-below-readable.png](media/water-grid-below-readable.png) / [grid](media/water-grid-readable.png) | 可选真实蜂窝在0.19/0.21缩放的显示边界 / Actual optional hex grid across its visibility threshold |
 | [dossier-hong-v0223.png](media/dossier-hong-v0223.png) | 大幅洪秀全档案与实际成长条件 / Whole Hong Xiuquan portrait and actual progression requirements |
 | [dossier-medals-v0223.png](media/dossier-medals-v0223.png) | 实际装备和槽位限制 / Actual medal loadout and slot restrictions |
 | [dossier-x30-v0223.png](media/dossier-x30-v0223.png) | 桌面手机比例独立滚动 / Independent scrolling in desktop phone proportions |

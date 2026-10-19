@@ -95,6 +95,17 @@ def media():
         selected[name + '.png'] = terrain / ('atlas_' + str(index) + '.png')
     for family in ['temperate_meadow', 'temperate_litter', 'conifer_litter', 'flood_meadow', 'weathered_rock', 'alpine_scree']:
         selected['terrain-' + family.replace('_', '-') + '.png'] = terrain / ('map_' + family + '.png')
+    if version == '0.2.27':
+        water = read(P / 'reports/water_map_native_capture_evidence.json')
+        require(water['passed'] and water['version'] == version
+                and water['runtime_source_sha256'] == proof['runtime_source_sha256'],
+                'Current complete water/grid native proof required')
+        for row in water['captures']:
+            source = P / row['file']
+            require(sha(source) == row['sha256'], 'Water/grid capture changed')
+            selected['water-' + row['name'].replace('_', '-') + '.png'] = source
+        for stage in ['young', 'prime', 'middle', 'late']:
+            selected['lidesheng-' + stage + '-v0227.png'] = folder / 'general_portraits_native/windows' / ('growth_mao_zedong_' + stage + '.png')
     rows = []
     for name, source in selected.items():
         meta = read(source.with_suffix('.json'))
@@ -123,6 +134,7 @@ def media():
           current_control_native_evidence='reports/control_land_native_evidence.json',
           current_map_symbol_native_evidence='reports/map_symbol_native_evidence.json',
           current_general_native_evidence='reports/general_portrait_native_evidence.json',
+          current_water_native_evidence='reports/water_map_native_capture_evidence.json' if version == '0.2.27' else None,
           notice='Current terrain/UI screenshots are native Windows captures. Battle GIFs and action stills preserve version 0.2.12. No physical Android acceptance.'))
     current_count=sum(row.get('version') == version for row in rows)
     print(json.dumps(dict(screenshots=len(rows), current=current_count, historical=len(rows)-current_count,

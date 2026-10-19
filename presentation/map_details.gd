@@ -168,6 +168,9 @@ func surface_meshes(entries: Array, strategic: bool, limit: int=1900, continuous
 		var key=HexGrid.key(entry.hex);var id=str(surfaces.get(key,""))
 		if id.is_empty():continue
 		var family=str(surface_families.get(key,MapArtBank.material_family(entry.cell)))
+		# Existing water polygons have one continuous world-space material. Old
+		# per-hex water patches must not reintroduce brown/cellular stamps on it.
+		if family=="sea_water":continue
 		var alpha=MapTerrainSurfaces.alpha_for(family,strategic)
 		var macro_id=MapTerrainSurfaces.macro_id(family)
 		if alpha<0:

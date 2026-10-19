@@ -14,6 +14,7 @@ uniform sampler2DArray ground_sources : source_color, repeat_enable, filter_line
 uniform float ground_alpha = 0.94;
 uniform float ground_repeat_period = 224.0;
 uniform bool ground_stochastic = true;
+uniform bool water_stochastic = true;
 uniform bool relief_enabled = false;
 uniform sampler2D relief_shades : repeat_disable, filter_linear;
 uniform vec2 relief_dimensions = vec2(1.0);
@@ -26,7 +27,16 @@ varying vec2 ground_uv;
 varying float ground_coverage;
 varying float scenery_mode;
 varying vec2 scenery_foot;
+varying float water_mode;
+varying vec2 water_uv;
+varying vec4 water_tint;
 void vertex() {
+    water_mode = UV.x >= 3072.0 && UV.x <= 8192.0 ? 1.0 : 0.0;
+    // Source UVs carry a mode tag only. Derive the continuous coordinates from
+    // uncompressed world vertices: a large UV tag can quantize small wave
+    // increments in the native mesh buffer, especially at overview scale.
+    water_uv = VERTEX / 256.0;
+    water_tint = COLOR;
     relief_mode = UV.y >= 512.0 && UV.y <= 513.0 ? 1.0 : 0.0;
     relief_uv = vec2(UV.x, UV.y - 512.0);
     ground_mode = UV.y < -1023.0 ? 1.0 : 0.0;
@@ -42,6 +52,46 @@ void vertex() {
         ground_uv = VERTEX / ground_repeat_period;
         ground_coverage = COLOR.a;
     }
+}
+// Mirror folds join the full source at the same edge texels; three smoothly
+// weighted world-space translations conceal a repeated rectangular motif.
+// Explicit derivatives select the imported mip chain without seam blur/noise.
+vec3 water_sample(sampler2D water_texture, vec2 uv, vec2 dx, vec2 dy) {
+    vec2 parity = mod(floor(uv), vec2(2.0));
+    vec2 folded = mix(fract(uv), vec2(1.0) - fract(uv), parity);
+    vec2 direction = vec2(1.0) - 2.0 * parity;
+    return textureGrad(water_texture, folded, dx * direction, dy * direction).rgb;
+}
+vec3 water_pigment(sampler2D water_texture, vec2 uv) {
+    vec2 dx = dFdx(uv);
+    vec2 dy = dFdy(uv);
+    if (!water_stochastic) return textureGrad(water_texture, uv, dx, dy).rgb;
+    vec2 lattice = vec2(uv.x - uv.y * 0.57735027, uv.y * 1.15470054) * 0.65;
+    vec2 cell = floor(lattice);
+    vec2 f = fract(lattice);
+    float upper = step(1.0, f.x + f.y);
+    vec2 a = cell + vec2(upper);
+    vec2 b = cell + vec2(1.0, 0.0);
+    vec2 c = cell + vec2(0.0, 1.0);
+    vec3 weights = mix(vec3(1.0 - f.x - f.y, f.x, f.y),
+        vec3(f.x + f.y - 1.0, 1.0 - f.y, 1.0 - f.x), upper);
+    weights = clamp(weights, vec3(0.0), vec3(1.0));
+    weights = weights * weights * (vec3(3.0) - 2.0 * weights);
+    weights /= max(dot(weights, vec3(1.0)), 0.0001);
+    vec2 oa = fract(sin(vec2(dot(a, vec2(127.1,311.7)),dot(a, vec2(269.5,183.3)))) * 43758.5453);
+    vec2 ob = fract(sin(vec2(dot(b, vec2(127.1,311.7)),dot(b, vec2(269.5,183.3)))) * 43758.5453);
+    vec2 oc = fract(sin(vec2(dot(c, vec2(127.1,311.7)),dot(c, vec2(269.5,183.3)))) * 43758.5453);
+    vec3 pigment = water_sample(water_texture, uv + oa, dx, dy) * weights.x
+        + water_sample(water_texture, uv + ob, dx, dy) * weights.y
+        + water_sample(water_texture, uv + oc, dx, dy) * weights.z;
+    // An entire source becomes only a few pixels on continental views. Its
+    // authored broad lighting would turn into repeated bright dots there.
+    // Fade to the source's full-footprint mip average while waves become
+    // unreadable; tactical zoom retains the complete translated originals.
+    float pixels_per_source = 1.0 / max(max(length(dx), length(dy)), 0.00001);
+    float detail = smoothstep(24.0, 80.0, pixels_per_source);
+    vec3 distant = textureLod(water_texture, vec2(0.5), 16.0).rgb;
+    return mix(distant, pigment, detail);
 }
 vec2 ground_offset(vec2 vertex, float layer) {
     vec2 key = vec2(dot(vertex, vec2(127.1, 311.7)), dot(vertex, vec2(269.5, 183.3)));
@@ -93,7 +143,9 @@ vec4 continuous_relief(vec2 uv) {
         + texture(relief_shades, b) * g1.x * g1.y;
 }
 void fragment() {
-    if (relief_mode > 0.5 && relief_enabled) {
+    if (water_mode > 0.5) {
+        COLOR = vec4(water_pigment(TEXTURE, water_uv) * water_tint.rgb, water_tint.a);
+    } else if (relief_mode > 0.5 && relief_enabled) {
         vec4 shade = continuous_relief(relief_uv);
         COLOR = vec4(shade.rgb / max(shade.a, 0.0001), shade.a);
     } else if (ground_mode > 0.5) {

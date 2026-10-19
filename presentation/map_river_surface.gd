@@ -3,7 +3,7 @@ extends RefCounted
 
 # A cartographic ribbon, not a measured bank polygon. The archived centreline
 # and confluences remain authoritative. Source PNGs are sampled in world space.
-const TEXTURE_ID="tile_bank_sea_water_001"
+const TEXTURE_ID=MapWaterMaterials.RIVER_ID
 const TEXTURE_PERIOD=256.0
 const SMALL_STREAM_LIMIT=3.6
 const CROSS_SECTION=[-1.7,-1.2,-1.0,-.60,0.0,.60,1.0,1.2,1.7]
@@ -55,6 +55,9 @@ static func build(source: PackedVector2Array, width: float, start_join: Vector2=
 	var body=ArrayMesh.new();body.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
 	var texture_colors=PackedColorArray();texture_colors.resize(vertices.size());texture_colors.fill(Color(1,1,1,.26))
 	arrays[Mesh.ARRAY_COLOR]=texture_colors;arrays[Mesh.ARRAY_INDEX]=water_indices
+	var water_uv=uvs.duplicate()
+	for index in range(water_uv.size()):water_uv[index].x+=MapWaterMaterials.UV_MARKER
+	arrays[Mesh.ARRAY_TEX_UV]=water_uv
 	var water=ArrayMesh.new();water.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
 	return {"ribbon":banks,"banks":banks,"body":body,"water":water,"width":width,"source_points":points.size(),"vertices":vertices.size(),"triangles":indices.size()/3,"maximum_half_width":width*.5*1.7*1.45,"world_texture_period":TEXTURE_PERIOD}
 

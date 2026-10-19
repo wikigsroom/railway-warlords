@@ -1,6 +1,6 @@
 {
-  "version": "0.2.25",
-  "count": 1324,
+  "version": "0.2.27",
+  "count": 1327,
   "image_bytes": "Engine PNG files are byte-identical originals; no duplicate raw tree needed.",
   "assets": [
     {
@@ -16792,6 +16792,48 @@
       "model": "gpt-image-2.5",
       "quality": "high",
       "original_workspace_source": "output/imagegen/warlord/ew6_v025/terrain_surfaces_v0213/tile_surface_weathered_rock_04/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "tile_water_inland_v0227",
+      "category": "tile",
+      "image": "assets/tile/tile_water_inland_v0227.png",
+      "image_sha256": "6078603055399698a3fa880a8e3378edb995afebf1544f8644b3a478d13ec615",
+      "prompt": "docs/asset-prompts/tile_water_inland_v0227.txt",
+      "prompt_sha256": "c07b61f5f329d6275579c8abaaa67ebe5f972db47f76fc28c286071e6380aa50",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/water_materials_v0227/originals/tile_water_inland_v0227/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "tile_water_river_v0227",
+      "category": "tile",
+      "image": "assets/tile/tile_water_river_v0227.png",
+      "image_sha256": "dd4a19088172599ae113d3deef5d994bb75f4cec14b5e86c33c58aac1959c9ce",
+      "prompt": "docs/asset-prompts/tile_water_river_v0227.txt",
+      "prompt_sha256": "4e7ad480d2cf0dbc1748a908fb37ceaa80763345ec238f6bba96f25cce0440d1",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/water_materials_v0227/originals/tile_water_river_v0227/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "tile_water_sea_v0227",
+      "category": "tile",
+      "image": "assets/tile/tile_water_sea_v0227.png",
+      "image_sha256": "157b1ba30aad7063f34f3856574c7f3ef7949adb5099a507583392d2265840a2",
+      "prompt": "docs/asset-prompts/tile_water_sea_v0227.txt",
+      "prompt_sha256": "56738c905d6f89174ec386472dcd5efd421c957d984c81c3b3b7675ee9bc081d",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/water_materials_v0227/originals/tile_water_sea_v0227/r001/source.png",
       "image_modified": false,
       "formal_art_approval": false
     },

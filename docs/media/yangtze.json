@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.26",
+	"build_version": "0.2.27",
 	"city_labels": [
 		{
 			"city_id": "wuchang",
@@ -62,7 +62,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 259,
 		"placed": 1,
-		"preparation_ms": 46.402,
+		"preparation_ms": 45.796,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 3,
 		"rule_cells_changed": false,
@@ -78,7 +78,7 @@
 		],
 		"catalog_additional_sources": 796,
 		"catalog_map_assets": 870.0,
-		"current_total_map_assets": 970,
+		"current_total_map_assets": 973,
 		"distinct_scenery_originals_intersecting_view": 0,
 		"distinct_surface_originals_in_view": 8,
 		"families": {},
@@ -101,6 +101,13 @@
 			"marine_geometry": {
 				"active": false
 			},
+			"operation_grid": {
+				"axial_guide_lines": 0,
+				"drawn_hexes": 58,
+				"hex_radius_world": 48.0,
+				"minimum_zoom": 0.2,
+				"overview_guide_replacement": false
+			},
 			"river_surface": {
 				"detail_banks_drawn_before_water": true,
 				"drawn_antialiased_headwaters": 0,
@@ -111,7 +118,7 @@
 				"measured_banks_claimed": false,
 				"primary_width_from_vertex_count": false,
 				"renderer": "source_centerline_gradient_ribbon",
-				"water_texture_id": "tile_bank_sea_water_001",
+				"water_texture_id": "tile_water_river_v0227",
 				"world_texture_period": 256.0
 			},
 			"rule_geometry_modified": false,
@@ -123,6 +130,23 @@
 			"visible_existing_detail_reaches": 0,
 			"visible_fine_reaches": 0,
 			"visible_fine_stream_orders": {},
+			"water_materials": {
+				"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+				"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+				"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+				"fixed_wallpaper_period": false,
+				"geographic_water_extent_changed": false,
+				"historical_water_color_claimed": false,
+				"independent_originals": 3,
+				"inland_texture_id": "tile_water_inland_v0227",
+				"legacy_per_cell_water_stamps": false,
+				"mipmapped_minification_active": true,
+				"river_texture_id": "tile_water_river_v0227",
+				"sea_texture_id": "tile_water_sea_v0227",
+				"source_images_modified": false,
+				"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+				"world_texture_period": 256.0
+			},
 			"width_is_symbolic": true
 		},
 		"map_symbols": {
@@ -358,13 +382,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 0,
-		"index_ms": 15.058,
+		"index_ms": 14.56,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 22.703,
+		"mesh_ms": 22.281,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 0,
-		"placement_ms": 0.992,
-		"preparation_ms": 38.752,
+		"placement_ms": 1.148,
+		"preparation_ms": 37.988,
 		"rules_map_mutated": false,
 		"source": "SRTM90m_v3_five_point_samples",
 		"source_meters_per_world_unit": 26.0416666666667,

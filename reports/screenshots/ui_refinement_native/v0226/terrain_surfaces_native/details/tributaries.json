@@ -1,0 +1,878 @@
+{
+	"build_version": "0.2.26",
+	"city_labels": [],
+	"content_hash": "9ea85ebaea4412357c628bf6d2c16d29d7ef08c594dc77dcef7b3005b42f6661",
+	"control_land_clip": {},
+	"historical_places": {
+		"additional_markers": 32,
+		"control_overlay_visible": true,
+		"control_zones": 15,
+		"historic_military_border_claimed": false,
+		"ownership": {
+			"jinzhou": "fengtian",
+			"qinhuangdao": "zhili",
+			"shanhaiguan": "zhili"
+		},
+		"place_overlay_visible": true,
+		"presentation_data_sha256": "66fea55f568ade8f7cd9019c153f8d0dca736deac78c9ee9c9e2c9a5051bdc10",
+		"selected_id": "",
+		"selected_kind": "",
+		"total_nodes": 47
+	},
+	"map_bank": {
+		"active": true,
+		"full_source_rectangles_reserved": true,
+		"invented_waterways": 0,
+		"material_assignments": 60875,
+		"placed": 1232,
+		"preparation_ms": 1895.579,
+		"random_stream_used": false,
+		"rejected_for_source_geography": 1610,
+		"rule_cells_changed": false,
+		"source_cells": 65726,
+		"source_images_modified": false,
+		"unique_originals": 55
+	},
+	"map_bank_visible": {
+		"active": true,
+		"camera": [
+			11806.150390625,
+			4497.18994140625
+		],
+		"catalog_additional_sources": 796,
+		"catalog_map_assets": 870.0,
+		"current_total_map_assets": 970,
+		"distinct_scenery_originals_intersecting_view": 66,
+		"distinct_surface_originals_in_view": 8,
+		"families": {
+			"foothill_ew": 47,
+			"foothill_ns": 17,
+			"ridge_ew": 9,
+			"ridge_ns": 3,
+			"riverbank": 4,
+			"rocky_outcrop": 17
+		},
+		"hydrography": {
+			"actual_coast_band_draws": 1,
+			"coast_band": {
+				"batched_draws": 1,
+				"half_width_world": 2.8,
+				"source_centrelines_modified": false,
+				"source_lines": 62,
+				"source_points": 12402,
+				"triangles": 99192
+			},
+			"display_corner_rounding_max_deviation_metres": 60.0,
+			"fine_source_id": "hydrorivers_v10_as",
+			"fine_source_sha256": "827e03a8e419b9578d5f246bcce1c93de1a0bd561a9f572fe84606c5d36d31fa",
+			"flat_lowland_model_branches_excluded": true,
+			"historical_channel_survey": false,
+			"major_presentation_replacements": 0,
+			"marine_geometry": {
+				"active": true,
+				"cache_scope": "one_map",
+				"coast_vertices": 12461,
+				"existing_inland_water_preserved": true,
+				"historical_survey_claimed": false,
+				"land_polygons": 62,
+				"land_triangles": 12369,
+				"new_l2_reservoirs_imported": false,
+				"pretriangulated": true,
+				"source": "gshhg_2_3_7_L1"
+			},
+			"river_surface": {
+				"detail_banks_drawn_before_water": true,
+				"drawn_antialiased_headwaters": 72,
+				"drawn_gradient_ribbons": 1,
+				"drawn_textured_ribbons": 1,
+				"drawn_watercourses": 73,
+				"headwater_style": "muted_waterbed_with_translucent_riparian_halo",
+				"measured_banks_claimed": false,
+				"primary_width_from_vertex_count": false,
+				"renderer": "source_centerline_gradient_ribbon",
+				"water_texture_id": "tile_bank_sea_water_001",
+				"world_texture_period": 256.0
+			},
+			"rule_geometry_modified": false,
+			"source_endpoints_preserved": true,
+			"source_fine_reaches": 2921,
+			"source_linked_endpoint_frames": 0,
+			"source_map_id": "jingfeng",
+			"visible_detail_segments": 253,
+			"visible_existing_detail_reaches": 0,
+			"visible_fine_reaches": 31,
+			"visible_fine_stream_orders": {
+				"1": 13,
+				"2": 11,
+				"3": 5,
+				"4": 2
+			},
+			"width_is_symbolic": true
+		},
+		"map_symbols": {
+			"background_legacy_terrain_symbols": 0,
+			"background_painted_scenery": 216,
+			"city_counter_ids": [],
+			"city_detail_ids": [],
+			"detail_threshold": 0.56,
+			"place_counter_ids": [],
+			"place_detail_ids": [],
+			"regional_threshold": 0.2,
+			"rule_positions_changed": false,
+			"scope": "Actual draw IDs in the unit layers, filtered to anchors in this viewport; HUD occlusion is not subtracted.",
+			"source_units_removed": false,
+			"unit_counter_ids": [],
+			"unit_counter_screen_size": [
+				15.0,
+				10.8000001907349
+			],
+			"unit_detail_ids": [],
+			"units_aggregated": false,
+			"zoom_band": "detail"
+		},
+		"measurement_scope": "Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score.",
+		"nearest_repeated_source_distance_world": 379.429016113281,
+		"same_source_pairs_under_250_world_units": 0,
+		"scenery_instances_intersecting_view": 97,
+		"settlement_sources": {},
+		"source_images_modified": false,
+		"source_use_counts": {
+			"scenery_bank_foothill_ew_001": 1,
+			"scenery_bank_foothill_ew_003": 1,
+			"scenery_bank_foothill_ew_004": 2,
+			"scenery_bank_foothill_ew_005": 1,
+			"scenery_bank_foothill_ew_009": 2,
+			"scenery_bank_foothill_ew_010": 3,
+			"scenery_bank_foothill_ew_011": 4,
+			"scenery_bank_foothill_ew_014": 1,
+			"scenery_bank_foothill_ew_016": 1,
+			"scenery_bank_foothill_ew_018": 1,
+			"scenery_bank_foothill_ew_019": 2,
+			"scenery_bank_foothill_ew_024": 2,
+			"scenery_bank_foothill_ew_025": 1,
+			"scenery_bank_foothill_ew_026": 2,
+			"scenery_bank_foothill_ew_028": 2,
+			"scenery_bank_foothill_ew_029": 3,
+			"scenery_bank_foothill_ew_030": 1,
+			"scenery_bank_foothill_ew_031": 1,
+			"scenery_bank_foothill_ew_032": 1,
+			"scenery_bank_foothill_ew_033": 2,
+			"scenery_bank_foothill_ew_034": 1,
+			"scenery_bank_foothill_ew_038": 2,
+			"scenery_bank_foothill_ew_039": 1,
+			"scenery_bank_foothill_ew_040": 2,
+			"scenery_bank_foothill_ew_041": 1,
+			"scenery_bank_foothill_ew_042": 2,
+			"scenery_bank_foothill_ew_044": 1,
+			"scenery_bank_foothill_ew_045": 1,
+			"scenery_bank_foothill_ew_047": 1,
+			"scenery_bank_foothill_ew_048": 1,
+			"scenery_bank_foothill_ns_014": 2,
+			"scenery_bank_foothill_ns_017": 1,
+			"scenery_bank_foothill_ns_018": 2,
+			"scenery_bank_foothill_ns_019": 2,
+			"scenery_bank_foothill_ns_020": 1,
+			"scenery_bank_foothill_ns_031": 1,
+			"scenery_bank_foothill_ns_032": 1,
+			"scenery_bank_foothill_ns_033": 2,
+			"scenery_bank_foothill_ns_036": 1,
+			"scenery_bank_foothill_ns_038": 1,
+			"scenery_bank_foothill_ns_046": 1,
+			"scenery_bank_foothill_ns_047": 2,
+			"scenery_bank_ridge_ew_004": 1,
+			"scenery_bank_ridge_ew_005": 1,
+			"scenery_bank_ridge_ew_006": 1,
+			"scenery_bank_ridge_ew_018": 1,
+			"scenery_bank_ridge_ew_022": 1,
+			"scenery_bank_ridge_ew_025": 1,
+			"scenery_bank_ridge_ew_026": 1,
+			"scenery_bank_ridge_ew_033": 1,
+			"scenery_bank_ridge_ew_038": 1,
+			"scenery_bank_ridge_ns_029": 1,
+			"scenery_bank_ridge_ns_042": 1,
+			"scenery_bank_ridge_ns_043": 1,
+			"scenery_bank_riverbank_002": 1,
+			"scenery_bank_riverbank_015": 1,
+			"scenery_bank_riverbank_017": 1,
+			"scenery_bank_riverbank_019": 1,
+			"scenery_bank_rocky_outcrop_001": 2,
+			"scenery_bank_rocky_outcrop_004": 3,
+			"scenery_bank_rocky_outcrop_007": 2,
+			"scenery_bank_rocky_outcrop_010": 2,
+			"scenery_bank_rocky_outcrop_013": 2,
+			"scenery_bank_rocky_outcrop_016": 3,
+			"scenery_bank_rocky_outcrop_019": 2,
+			"scenery_bank_rocky_outcrop_022": 1
+		},
+		"surface_geography": {
+			"families": {
+				"alluvial_soil": 17602,
+				"dry_grass": 57,
+				"wetland_ground": 1160
+			},
+			"historical_landuse_survey": false,
+			"material_assignments": 18819,
+			"rule_maps_modified": false,
+			"source_id": "resolve_ecoregions_2017",
+			"source_scope": "biogeographic_ground_material_reference",
+			"source_year": 2017.0,
+			"terrain_subtypes": {
+				"active": true,
+				"assignments": 45368,
+				"historical_landuse_survey": false,
+				"independent_originals": 80,
+				"registered_types": 20,
+				"rule_maps_modified": false,
+				"source_scope": "regional_ground_reference_plus_archived_dem",
+				"source_year": 2017,
+				"types": {
+					"alluvial_loam": 165,
+					"dry_steppe": 57,
+					"saline_meadow": 1160,
+					"temperate_litter": 27050,
+					"weathered_rock": 16936
+				},
+				"water_or_forest_added": false
+			},
+			"water_or_forest_added": false
+		},
+		"surface_material_families_in_view": {
+			"temperate_meadow": 60,
+			"weathered_rock": 253
+		},
+		"terrain_surface_extension": {
+			"active": true,
+			"blend_inner_ratio": 0.7,
+			"checked_adjacent_pairs": 939,
+			"continuous_ground": {
+				"active": true,
+				"city_influence_fill_draws": 0,
+				"field_fill_batches": 0,
+				"fixed_wallpaper_period": false,
+				"ground_material_policy": {
+					"drawn_families": {
+						"alluvial_loam": 321,
+						"dry_steppe": 68,
+						"saline_meadow": 1280,
+						"temperate_meadow": 28298,
+						"weathered_rock": 17159
+					},
+					"forest_floor_requires_sourced_forest": true,
+					"withheld_forest_floor_cells": 28298
+				},
+				"grounded_scenery_draws": 210,
+				"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+				"sampling_world_units": 224.0,
+				"source_ground_coverage": {
+					"active": true,
+					"cache_scope": "one_map_catalogue",
+					"covered_cells": 47126,
+					"historical_landuse_claimed": false,
+					"new_rasters": 0,
+					"partial_cells": 1802,
+					"rule_cells_modified": false,
+					"source_land_clipped": true,
+					"supplemental_underlays": 1759,
+					"unclassified_cells": 215
+				},
+				"source_images_modified": false,
+				"source_layers": 20,
+				"source_sampling": "world_anchored_three_translations_with_explicit_mip_gradients",
+				"whole_original_dimensions": [
+					1254,
+					1254
+				]
+			},
+			"fine_detail_alpha": 0.12,
+			"ground_alpha": 0.94,
+			"independent_originals": 80,
+			"macro_identity_revision": "quiet_material_shapes_v0225_r001",
+			"macro_originals": 20,
+			"macro_repeat_world_units": 224.0,
+			"registered_types": 20,
+			"relief_lighting": {
+				"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+				"gpu_texture_available": true,
+				"interpolation_stencil": [
+					4,
+					4
+				],
+				"lookup_bytes": 531392,
+				"lookup_dimensions": [
+					368,
+					361
+				],
+				"maximum_contributing_samples": 16,
+				"method": "source_cell_cubic_bspline_lighting",
+				"new_dem_samples": 0,
+				"raster_art_generated": false,
+				"rules_map_mutated": false,
+				"shader_active": true,
+				"source_images_modified": false,
+				"source_samples": 45911
+			},
+			"rule_geometry_changed": false,
+			"same_original_on_adjacent_cells": 0,
+			"source_use_counts": {
+				"tile_surface_temperate_meadow_01": 11,
+				"tile_surface_temperate_meadow_02": 14,
+				"tile_surface_temperate_meadow_03": 19,
+				"tile_surface_temperate_meadow_04": 16,
+				"tile_surface_weathered_rock_01": 47,
+				"tile_surface_weathered_rock_02": 86,
+				"tile_surface_weathered_rock_03": 81,
+				"tile_surface_weathered_rock_04": 39
+			},
+			"stored_superseded_macro_originals": 40.0,
+			"visible_macro_sources": [
+				"tile_ground_quiet_v0225_weathered_rock",
+				"tile_ground_quiet_v0225_temperate_meadow"
+			],
+			"visible_types": {
+				"temperate_meadow": 60,
+				"weathered_rock": 253
+			}
+		},
+		"zoom": 1.15
+	},
+	"map_detail": {
+		"cell_river_segments": 2227,
+		"coast_lines": 62,
+		"control_layer_visible": true,
+		"crossing_markers": 4,
+		"detail_hydrography_lines": 2924,
+		"historical_landcover_features": 0,
+		"historical_landcover_patch_cells": 0,
+		"presentation_terrain_counts": {
+			"city": 15,
+			"ford": 2,
+			"hill": 16229,
+			"mountain": 1358,
+			"plain": 29550,
+			"river": 356,
+			"road": 369,
+			"sea": 17847
+		},
+		"rail_edges": 10,
+		"river_lines": 2,
+		"tactical_zone_opacity": 0.26,
+		"terrain_cell_counts": {
+			"city": 15,
+			"ford": 2,
+			"hill": 16229,
+			"mountain": 1358,
+			"plain": 29550,
+			"river": 356,
+			"road": 369,
+			"sea": 17847
+		},
+		"terrain_depth_draw_count": 561,
+		"terrain_feature_sprite_draw_count": 0,
+		"terrain_layer_visible": true,
+		"terrain_micro_symbol_draw_count": 0,
+		"terrain_surface_variant_draw_count": 2304,
+		"terrain_symbol_draw_count": 0,
+		"terrain_tile_draw_count": 561,
+		"territory_field_opacity": 0.21
+	},
+	"map_zoom": 1.15,
+	"mobile_layout_profile": false,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"raw_godot_capture": true,
+	"relief": {
+		"continuous_lighting": {
+			"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+			"gpu_texture_available": true,
+			"interpolation_stencil": [
+				4,
+				4
+			],
+			"lookup_bytes": 531392,
+			"lookup_dimensions": [
+				368,
+				361
+			],
+			"maximum_contributing_samples": 16,
+			"method": "source_cell_cubic_bspline_lighting",
+			"new_dem_samples": 0,
+			"raster_art_generated": false,
+			"rules_map_mutated": false,
+			"source_images_modified": false,
+			"source_samples": 45911
+		},
+		"contour_segments": 30157,
+		"crest_axis_from_source_neighbours": true,
+		"eligible_features": 7276,
+		"families": {
+			"foothill_ew": 3551,
+			"foothill_ns": 2042,
+			"ridge_ew": 337,
+			"ridge_ns": 177
+		},
+		"generated_continental_contours": false,
+		"geographic_gradient_in_meters": false,
+		"height_exaggeration_display_only": 6.0,
+		"historical_vegetation_claimed": false,
+		"independent_relief_originals_used": 191,
+		"index_ms": 152.741,
+		"lighting": "continuous_source_height_normals",
+		"mesh_ms": 3527.923,
+		"nearby_variant_exclusion_world": 270.0,
+		"placed_features": 6107,
+		"placement_ms": 1321.101,
+		"preparation_ms": 5001.764,
+		"rules_map_mutated": false,
+		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
+		"source_meters_per_world_unit": 20.8333333333333,
+		"strategic_category_relief": false,
+		"triangles": 89782
+	},
+	"safe_insets": "(0.0, 0.0, 0.0, 0.0)",
+	"scenario_id": "campaign_1924_03",
+	"territory_field": {},
+	"ui_scale": 1.0,
+	"unit_facing": {
+		"compact_idle_chevrons": true,
+		"directional_source_families": 6,
+		"directional_source_views": 24,
+		"records": [
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00001"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00002"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00003"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00004"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "engineer",
+				"unit_id": "u_00005"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "cavalry",
+				"unit_id": "u_00006"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00007"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00008"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00009"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00010"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "cavalry",
+				"unit_id": "u_00011"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00012"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "engineer",
+				"unit_id": "u_00013"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00014"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00015"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00016"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00017"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00018"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "engineer",
+				"unit_id": "u_00019"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "cavalry",
+				"unit_id": "u_00020"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00021"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00022"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00023"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00024"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "cavalry",
+				"unit_id": "u_00025"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00026"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "engineer",
+				"unit_id": "u_00027"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00028"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00029"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00030"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "machine_gun",
+				"unit_id": "u_00031"
+			}
+		]
+	},
+	"viewport": "(1920.0, 1080.0)",
+	"window": "(1920, 1080)"
+}

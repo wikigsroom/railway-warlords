@@ -637,6 +637,11 @@
       "sha_matches": true
     },
     {
+      "file": "presentation/data/water_material_plan.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
       "file": "assets/legal/GEOGRAPHIC-DATA-NOTICES.txt",
       "included": true,
       "sha_matches": true
@@ -684,7 +689,7 @@
     "lib/armeabi-v7a/libgodot_android.so"
   ],
   "private_files_detected": [],
-  "artifact_sha256": "8f0194e4b17170cdc06b578de18d4b6314bc678d3adb8c954fbf9f6486dcddfa",
+  "artifact_sha256": "7a209cfc02386a77e7def53e0d56bc091e5bce88680bca48f3cf11924dce23ef",
   "raster_manifest_byte_verified": true,
   "raster_import_files_verified": [
     {
@@ -10276,6 +10281,30 @@
       "source_sha256": "459bc5ead5fd23bdf1399342de61a2b3dd971c189e697e197578e3f7a04a5bbe",
       "embedded_imports": [
         ".godot/imported/tile_surface_weathered_rock_04.png-7109625b20f33aad1254881b517c2928.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_water_inland_v0227",
+      "source_sha256": "6078603055399698a3fa880a8e3378edb995afebf1544f8644b3a478d13ec615",
+      "embedded_imports": [
+        ".godot/imported/tile_water_inland_v0227.png-44951f7c06aadb3c0c1ae3b2503318a8.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_water_river_v0227",
+      "source_sha256": "dd4a19088172599ae113d3deef5d994bb75f4cec14b5e86c33c58aac1959c9ce",
+      "embedded_imports": [
+        ".godot/imported/tile_water_river_v0227.png-d53251aa826b9e8b1bd0bbe2be9ad1b0.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_water_sea_v0227",
+      "source_sha256": "157b1ba30aad7063f34f3856574c7f3ef7949adb5099a507583392d2265840a2",
+      "embedded_imports": [
+        ".godot/imported/tile_water_sea_v0227.png-e2eb635372dbb2c936359fd2cdc34abd.ctex"
       ],
       "current_import_bytes_match": true
     },

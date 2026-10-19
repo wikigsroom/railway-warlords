@@ -70,6 +70,9 @@ var river_surface_draw_count=0
 var river_texture_draw_count=0
 var river_ink_draw_count=0
 var water_source_texture: Texture2D
+var sea_source_texture: Texture2D
+var inland_source_texture: Texture2D
+var operation_grid_drawn_hexes=0
 var detail_river_lines: Array=[]
 var detail_river_buckets: Dictionary={}
 var crossing_markers: Array=[]
@@ -170,6 +173,12 @@ var territory_field_cells: Dictionary={}
 var territory_field_borders: Array=[]
 var territory_field_diagnostics: Dictionary={}
 var territory_field_signature=""
+
+func _init() -> void:
+	# Imported map originals already contain mipmaps. Every MapView, including
+	# the cached SubViewport layers, must actually select them when minifying;
+	# linear-only sampling turned fine painted water into distant speckle.
+	texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
 
 func setup(registry: ContentRegistry, library: AssetLibrary) -> void:
 	content=registry;assets=library;mouse_filter=Control.MOUSE_FILTER_STOP
@@ -320,7 +329,7 @@ func prepare_geography() -> void:
 		water={"mesh":MapControlLandClip.inland_water_mesh(clipped,MapRiverSurface.TEXTURE_PERIOD),"rings":holes.size(),
 			"triangles":MapControlLandClip.vertices(clipped.inland_water).size()/3,"errors":[]}
 	var extent=AtlasSurface.build([map_extent] if map_extent.size()>=3 else [],MapRiverSurface.TEXTURE_PERIOD)
-	land_surface=land.mesh;water_surface=water.mesh;extent_surface=extent.mesh
+	land_surface=land.mesh;water_surface=MapWaterMaterials.mesh(water.mesh);extent_surface=MapWaterMaterials.mesh(extent.mesh)
 	surface_diagnostics={"land_rings":land.rings,"land_triangles":land.triangles,"water_rings":water.rings,"errors":land.errors+water.errors+extent.errors}
 	surface_diagnostics["marine_geometry"]=MapCoastGeometry.diagnostics(marine)
 	if not surface_diagnostics.errors.is_empty():push_error("Surveyed atlas surface failed: "+state.map.id+" "+str(surface_diagnostics.errors))
@@ -550,11 +559,17 @@ func map_bank_capture_facts() -> Dictionary:
 	hydro_facts["river_surface"]={"renderer":"source_centerline_gradient_ribbon","water_texture_id":MapRiverSurface.TEXTURE_ID,"world_texture_period":MapRiverSurface.TEXTURE_PERIOD,"drawn_watercourses":water_renderer.river_surface_draw_count,"drawn_gradient_ribbons":water_renderer.river_surface_draw_count-water_renderer.river_ink_draw_count,"drawn_antialiased_headwaters":water_renderer.river_ink_draw_count,"drawn_textured_ribbons":water_renderer.river_texture_draw_count,"primary_width_from_vertex_count":false,"measured_banks_claimed":false}
 	hydro_facts.river_surface["headwater_style"]="muted_waterbed_with_translucent_riparian_halo"
 	hydro_facts.river_surface["detail_banks_drawn_before_water"]=true
+	hydro_facts["water_materials"]=MapWaterMaterials.facts()
+	hydro_facts.water_materials["mipmapped_minification_active"]=water_renderer.texture_filter==CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+	hydro_facts.water_materials["bound_sea_resource"]=water_renderer.sea_source_texture.resource_path if water_renderer.sea_source_texture!=null else ""
+	hydro_facts.water_materials["bound_river_resource"]=water_renderer.water_source_texture.resource_path if water_renderer.water_source_texture!=null else ""
+	hydro_facts.water_materials["bound_inland_resource"]=water_renderer.inland_source_texture.resource_path if water_renderer.inland_source_texture!=null else ""
+	hydro_facts["operation_grid"]={"hex_radius_world":HexGrid.RADIUS,"drawn_hexes":water_renderer.operation_grid_drawn_hexes,"axial_guide_lines":0,"overview_guide_replacement":false,"minimum_zoom":.20}
 	var subtype_facts=terrain_surface_capture_facts(view)
 	var lighting=relief.shade_field.facts()
 	lighting["shader_active"]=water_renderer.material!=null and bool(water_renderer.material.get_shader_parameter("relief_enabled"))
 	subtype_facts["relief_lighting"]=lighting
-	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"map_symbols":map_symbol_capture_facts(),"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals)+int(subtype_facts.macro_originals),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
+	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"map_symbols":map_symbol_capture_facts(),"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals)+int(subtype_facts.macro_originals)+MapWaterMaterials.IDS.size(),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
 
 func map_symbol_capture_facts() -> Dictionary:
 	var counters: Array=[];var details: Array=[]
@@ -1229,6 +1244,7 @@ func sync_backdrop() -> bool:
 func draw_static_atlas(view: Rect2) -> void:
 	terrain_scenery_draw_count=0
 	grounded_scenery_draw_count=0
+	operation_grid_drawn_hexes=0
 	if territory_qa_mode:
 		draw_territory_qa_atlas(view)
 		return
@@ -1291,7 +1307,7 @@ func draw_static_atlas(view: Rect2) -> void:
 				# Keep the operational hex visible without letting the lattice overpower
 				# surveyed coastlines, terrain objects and semi-transparent control fields.
 				draw_polyline(outline,Color(.94,.97,.94,.16 if show_grid else .065),.55/zoom,true)
-	if zoom<.52 and not territory_qa_mode and not atlas_preview:draw_overview_grid(view)
+				operation_grid_drawn_hexes+=1
 
 func draw_territory_qa_atlas(view: Rect2) -> void:
 	# Keep the evidence image geographic without asking CanvasItem to upload the
@@ -1311,43 +1327,6 @@ func draw_territory_qa_atlas(view: Rect2) -> void:
 		if points.size()>1 and view.intersects(Rect2(points[0],Vector2.ZERO).expand(points[points.size()-1]).grow(160)):
 			draw_polyline(points,Color("5b9aaa"),maxf(2.4,3.2/zoom),true)
 	if show_control and not state.map.get("strategic_scale",false):draw_control_zones(view)
-
-func draw_overview_grid(view: Rect2) -> void:
-	# EW6-style strategic readability: retain the same 48px gameplay hex while
-	# thinning the overview lattice so the 74k-cell map remains inexpensive.
-	# Long axial guides are aligned to the compiled coordinate system and clipped
-	# by the MapView; they do not alter movement cells or invent map content.
-	var bounds=visible_hex_bounds(view);var low:Vector2i=bounds[0];var high:Vector2i=bounds[1]
-	var stride=3 if zoom<.34 else 2
-	var q_step=maxi(stride,ceili(float(high.x-low.x)/96.0))
-	var r_step=maxi(stride,ceili(float(high.y-low.y)/96.0))
-	# The overview lattice needs to survive the parchment relief and faction fills
-	# at both 1080p and the smaller Android viewport.  Keep it restrained, but
-	# give each axial guide enough contrast to read as the strategic EW6 grid.
-	var strategic=state.map.get("strategic_scale",false)
-	var ink=Color(.13,.23,.25,.16 if strategic else .28)
-	var width=(.60 if strategic else .82)/zoom
-	for q in range(low.x,high.x+1,q_step):
-		draw_overview_segment(HexGrid.to_world(Vector2i(q,low.y-2)),HexGrid.to_world(Vector2i(q,high.y+2)),ink,width)
-	for r in range(low.y,high.y+1,r_step):
-		draw_overview_segment(HexGrid.to_world(Vector2i(low.x-2,r)),HexGrid.to_world(Vector2i(high.x+2,r)),ink,width)
-	var diagonal_low=low.x+low.y-2;var diagonal_high=high.x+high.y+2
-	var diagonal_step=maxi(stride,ceili(float(diagonal_high-diagonal_low)/96.0))
-	for diagonal in range(diagonal_low,diagonal_high+1,diagonal_step):
-		draw_overview_segment(HexGrid.to_world(Vector2i(low.x-2,diagonal-low.x+2)),HexGrid.to_world(Vector2i(high.x+2,diagonal-high.x-2)),ink,width)
-
-func draw_overview_segment(a: Vector2, b: Vector2, color: Color, width: float) -> void:
-	# Overview guides are clipped to the sourced map polygon so the strategic
-	# lattice does not leak into the HUD margins or the surrounding sea backdrop.
-	if map_extent.size()<3:
-		draw_line(a,b,color,width,true);return
-	# Let the engine clip the two-point polyline in one geometry operation. This
-	# avoids allocating/sorting intersection points on every redraw of the
-	# 74k-cell overview and keeps the same sourced polygon boundary.
-	var clipped=Geometry2D.intersect_polyline_with_polygon(PackedVector2Array([a,b]),map_extent)
-	for fragment in clipped:
-		if fragment is PackedVector2Array and fragment.size()>1:
-			draw_polyline(fragment,color,width,true)
 
 func visible_hex_bounds(view: Rect2) -> Array:
 	var low=Vector2i(2147483647,2147483647);var high=Vector2i(-2147483647,-2147483647)
@@ -1414,8 +1393,11 @@ func draw_landscape(view: Rect2) -> void:
 	city_control_fill_draw_count=0;territory_field_fill_draw_count=0
 	coast_band_draw_count=0
 	river_surface_draw_count=0;river_texture_draw_count=0;river_ink_draw_count=0
+	if material==null and MapArtBank.available():material=map_details.ground_material(state.map.get("strategic_scale",false))
 	water_source_texture=assets.texture("tile",MapRiverSurface.TEXTURE_ID)
-	var sea=water_source_texture;var plain=assets.texture("tile","tile_plain_01")
+	sea_source_texture=assets.texture("tile",MapWaterMaterials.SEA_ID)
+	inland_source_texture=assets.texture("tile",MapWaterMaterials.INLAND_ID)
+	var sea=sea_source_texture;var plain=assets.texture("tile","tile_plain_01")
 	var rectangle=PackedVector2Array([view.position,Vector2(view.end.x,view.position.y),view.end,Vector2(view.position.x,view.end.y)])
 	# The authored textures carry the geographic detail; these restrained
 	# parchment/sea modulations move the presentation toward the paper atlas
@@ -1429,7 +1411,7 @@ func draw_landscape(view: Rect2) -> void:
 			var at=view.position+Vector2(view.size.x*fraction,view.size.y*.55)
 			if map_extent.size()>=4 and not Geometry2D.is_point_in_polygon(at,map_extent):map_name("图幅外",at,int(20/zoom),Color("756e5b"),.62)
 	if land_surface!=null:draw_mesh(land_surface,plain,Transform2D.IDENTITY,Color(.94,1.0,.96,1.0))
-	if water_surface!=null:draw_mesh(water_surface,sea,Transform2D.IDENTITY,Color(.82,.88,.83,1.0))
+	if water_surface!=null:draw_mesh(water_surface,inland_source_texture,Transform2D.IDENTITY,Color(.92,.96,.94,1.0))
 	if show_terrain:draw_cell_surface_variants(view)
 	if show_control:draw_territory_field(view)
 	if show_terrain:draw_cell_terrain_tiles(view)
