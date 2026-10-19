@@ -231,7 +231,7 @@ def validate(scope='dossier'):
             reports.update(P / 'reports' / name for name in ['coast_detail_scope_audit.json',
                 'coast_detail_geography_audit.json', 'coast_detail_compilation.json', 'coast_geometry_tests.json',
                 'coast_geometry_native.log', 'coast_detail_native_geometry_evidence.json', 'coast_detail_native_capture_evidence.json',
-                'map_surface_geography_audit.json', 'asia_relief_rebuild_verification.json'])
+                'surface_geography_audit.json', 'asia_relief_rebuild_verification.json'])
         details = read(P / 'reports/screenshots/terrain_surfaces_native/details/mountain.json')
         ground = details['map_bank_visible']['terrain_surface_extension']['continuous_ground']
         require(ground['active'] and ground['grounded_scenery_draws'] > 0
@@ -247,6 +247,8 @@ def validate(scope='dossier'):
              'apk_badging.log', 'apk_permissions.log', 'android_devices.log', 'general_portrait_first_source_review.json',
              'general_portrait_source_review.json', 'music_native_tests.json']
     reports.update(P / 'reports' / name for name in names)
+    missing_reports = sorted(p.relative_to(P).as_posix() for p in reports if not p.is_file())
+    require(not missing_reports, 'Delivery reports are missing: ' + ', '.join(missing_reports))
     summary = dict(passed=True, version=version, runtime_source_sha256=runtime,
                    content_hash=read(P / 'reports/sample_state_v2.json')['content_hash'], ruleset=10,
                    days_per_complete_round=1, scenarios=61, people=33, military_generals=29, political_only_people=4,
