@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "version": "0.2.26",
+  "runtime_source_sha256": "f761e97b9893878942fbaa9df9cee60efaefd28c0af8c05ea0ddad3fc1f07540",
+  "windows_exe_sha256": "7670fe1b9034695c7577ae477b5b6094f2f5c9063cfdf5ef1c028cb73a8b1e6a",
+  "capture_driver_sha256": "432bfaae2b8d62baf0cb7d01fce951f7b5dd944cee62e92eb5105b23c5cbe3e1",
+  "captures": [
+    {
+      "map_id": "jingjin",
+      "scenario_id": "campaign_1920_01",
+      "reference_city": "tianjin",
+      "focus_point": [
+        11862.0883,
+        7884.1305
+      ],
+      "focus_point_source": "nearest_registered_coast_vertex_to_city_render_position",
+      "map_sha256": "7a18d0e7d579c50bae1d1f3162d0e78df55e71adbaa26acf1763bb2dc6b51434",
+      "file": "reports/screenshots/coast_detail_native/jingjin.png",
+      "sha256": "52a9f9aad54f087905f75f27dbab02dcfa7fb8f5fa9868ddd96e00143c220eae",
+      "metadata": "reports/screenshots/coast_detail_native/jingjin.json",
+      "metadata_sha256": "6a22d00bcde3686ac707e3e71d291511ec16fc86d55fc2f53458589565ea1885",
+      "log": "reports/coast_detail_capture_jingjin.log",
+      "log_sha256": "121db21cf4215ec7fe3f7095b450b47a32aaf66b3c4da10ea31f91793b957445",
+      "actual_coast_band_draws": 1
+    },
+    {
+      "map_id": "jingfeng",
+      "scenario_id": "campaign_1924_03",
+      "reference_city": "shanhaiguan",
+      "focus_point": [
+        16919.1738,
+        8384.6237
+      ],
+      "focus_point_source": "nearest_registered_coast_vertex_to_city_render_position",
+      "map_sha256": "f5fc64bc3e45643fc9b325e1e574a5534cc7c6660880a1e546fc9b68a0ad5c8f",
+      "file": "reports/screenshots/coast_detail_native/jingfeng.png",
+      "sha256": "1c691c108e408550862732c6a0df906849895e59858c2ea0cbf84ef78441fa59",
+      "metadata": "reports/screenshots/coast_detail_native/jingfeng.json",
+      "metadata_sha256": "e37205a28d95d22f4f7fe2173b056c27e15b1acc950a0df182f58590e311a74b",
+      "log": "reports/coast_detail_capture_jingfeng.log",
+      "log_sha256": "fcfda424344c8bf87ae879cc8d8fc4eaaad619e0d1d6b6504ebf1e87968cb681",
+      "actual_coast_band_draws": 1
+    },
+    {
+      "map_id": "conquest_china",
+      "scenario_id": "conq_1924",
+      "reference_city": "qingdao",
+      "focus_point": [
+        16273.6021,
+        7266.6494
+      ],
+      "focus_point_source": "nearest_registered_coast_vertex_to_city_render_position",
+      "map_sha256": "37458183fffe2515b1e0ae5110554a527735c207e44130ce13a7d8da64a0a510",
+      "file": "reports/screenshots/coast_detail_native/conquest_china.png",
+      "sha256": "99cfd241b614f18bb5ed8f4595ae6eed68b977a4dd51eb13f77ff1faa7ae691a",
+      "metadata": "reports/screenshots/coast_detail_native/conquest_china.json",
+      "metadata_sha256": "949af63ea8b7539ab731833dabee06accc964999781f0c5f09e20c54940c33d3",
+      "log": "reports/coast_detail_capture_conquest_china.log",
+      "log_sha256": "fbe0ae95b53ae99af9c766ff1210808bedd22deef3d7446604baa85297f34191",
+      "actual_coast_band_draws": 1
+    },
+    {
+      "map_id": "asia_strategic",
+      "scenario_id": "asia_1927",
+      "reference_city": "osaka",
+      "focus_point": [
+        5541.8,
+        2900.7733
+      ],
+      "focus_point_source": "nearest_registered_coast_vertex_to_city_render_position",
+      "map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
+      "file": "reports/screenshots/coast_detail_native/asia_strategic.png",
+      "sha256": "6ef95e2b25d8794e03b7b0a7e4815268c71c2f57ccd502e184dd3f741d4d8924",
+      "metadata": "reports/screenshots/coast_detail_native/asia_strategic.json",
+      "metadata_sha256": "83102f8dfaaaa287e03985a12dc4b73fb3ef6ec827b5f5296b0cddb26282bc55",
+      "log": "reports/coast_detail_capture_asia_strategic.log",
+      "log_sha256": "d0fe1fa0d93416182b0f1b0e16373ed1469772901f4c279743ba60d33ea8d7d1",
+      "actual_coast_band_draws": 1
+    }
+  ],
+  "raw_godot_captures": true,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "historical_coast_survey_approval": false
+}

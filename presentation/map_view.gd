@@ -60,6 +60,9 @@ var water_surface: ArrayMesh
 var extent_surface: ArrayMesh
 var surface_diagnostics: Dictionary={}
 var coast_lines: Array=[]
+var coast_band_mesh: ArrayMesh
+var coast_band_diagnostics: Dictionary={}
+var coast_band_draw_count=0
 var river_lines: Array=[]
 var river_stream_orders: Array=[]
 var river_rows: Array=[]
@@ -308,7 +311,8 @@ func prepare_geography() -> void:
 	for shape in state.map.get("render_land",[]):land_shapes.append({"exterior":points_array(shape.exterior),"holes":shape.holes.map(points_array)})
 	var holes: Array=[]
 	for shape in land_shapes:holes.append_array(shape.holes)
-	var land=AtlasSurface.build(land_shapes.map(func(shape):return shape.exterior),768)
+	var marine=MapCoastGeometry.for_map(state.map,presentation_source_map_id())
+	var land=MapCoastGeometry.land(marine,768) if not marine.is_empty() else AtlasSurface.build(land_shapes.map(func(shape):return shape.exterior),768)
 	var clipped=MapControlLandClip.for_map(state.map)
 	var water: Dictionary
 	if clipped.is_empty():water=AtlasSurface.build(holes,MapRiverSurface.TEXTURE_PERIOD)
@@ -318,8 +322,12 @@ func prepare_geography() -> void:
 	var extent=AtlasSurface.build([map_extent] if map_extent.size()>=3 else [],MapRiverSurface.TEXTURE_PERIOD)
 	land_surface=land.mesh;water_surface=water.mesh;extent_surface=extent.mesh
 	surface_diagnostics={"land_rings":land.rings,"land_triangles":land.triangles,"water_rings":water.rings,"errors":land.errors+water.errors+extent.errors}
+	surface_diagnostics["marine_geometry"]=MapCoastGeometry.diagnostics(marine)
 	if not surface_diagnostics.errors.is_empty():push_error("Surveyed atlas surface failed: "+state.map.id+" "+str(surface_diagnostics.errors))
 	for line in state.map.render_coast:coast_lines.append(points_array(line))
+	var coast_band=MapCoastBand.build(coast_lines)
+	coast_band_mesh=coast_band.mesh;coast_band_diagnostics=coast_band.duplicate();coast_band_diagnostics.erase("mesh")
+	surface_diagnostics["coast_band"]=coast_band_diagnostics
 	var hydro=MapHydrography.build(state.map,presentation_source_map_id())
 	river_lines=hydro.major;river_stream_orders=hydro.major_orders;river_rows=hydro.major_rows;detail_river_lines=hydro.detail;hydrography_diagnostics=hydro.diagnostics
 	detail_river_buckets=MapHydrography.spatial_index(detail_river_lines)
@@ -442,8 +450,12 @@ func prepare_place_sprites() -> void:
 
 func prepare_administration(refresh_places: bool=true) -> void:
 	administration_key=ContentRegistry.administration_year(state.date);region_lines.clear()
-	for region in state.map.get("admin_layers",{}).get(administration_key,[]):
-		for line in region.lines:region_lines.append(points_array(line))
+	var marine=MapCoastGeometry.for_map(state.map,presentation_source_map_id())
+	if marine.get("administration_lines",{}).has(administration_key):
+		for line in marine.administration_lines[administration_key]:region_lines.append(points_array(line))
+	else:
+		for region in state.map.get("admin_layers",{}).get(administration_key,[]):
+			for line in region.lines:region_lines.append(points_array(line))
 	if refresh_places and not places.map_key.is_empty():places.prepare(state.map,state.date);prepare_place_sprites()
 
 func points_array(coordinates: Array) -> PackedVector2Array:
@@ -531,6 +543,9 @@ func map_bank_capture_facts() -> Dictionary:
 		materials[family]=int(materials.get(family,0))+1
 		material_ids[map_details.surfaces.get(key,"")]=true
 	var hydro_facts=MapHydrography.facts(detail_river_lines,detail_river_buckets,hydrography_diagnostics,view,zoom,state.map.get("strategic_scale",false))
+	hydro_facts["marine_geometry"]=surface_diagnostics.get("marine_geometry",{})
+	hydro_facts["coast_band"]=coast_band_diagnostics
+	hydro_facts["actual_coast_band_draws"]=backdrop_view.coast_band_draw_count if backdrop_view!=null else coast_band_draw_count
 	var water_renderer=backdrop_view if is_instance_valid(backdrop_view) and not static_only else self
 	hydro_facts["river_surface"]={"renderer":"source_centerline_gradient_ribbon","water_texture_id":MapRiverSurface.TEXTURE_ID,"world_texture_period":MapRiverSurface.TEXTURE_PERIOD,"drawn_watercourses":water_renderer.river_surface_draw_count,"drawn_gradient_ribbons":water_renderer.river_surface_draw_count-water_renderer.river_ink_draw_count,"drawn_antialiased_headwaters":water_renderer.river_ink_draw_count,"drawn_textured_ribbons":water_renderer.river_texture_draw_count,"primary_width_from_vertex_count":false,"measured_banks_claimed":false}
 	hydro_facts.river_surface["headwater_style"]="muted_waterbed_with_translucent_riparian_halo"
@@ -1192,6 +1207,7 @@ func sync_backdrop() -> bool:
 	backdrop_view.camera=camera;backdrop_view.zoom=zoom;backdrop_view.state=state;backdrop_view.visible_ids=visible_ids
 	backdrop_view.annotation_view_size=size;backdrop_view.show_grid=show_grid;backdrop_view.show_rail=show_rail;backdrop_view.label_scale=label_scale;backdrop_view.show_terrain=show_terrain
 	backdrop_view.land_shapes=land_shapes;backdrop_view.coast_lines=coast_lines;backdrop_view.river_lines=river_lines;backdrop_view.detail_river_lines=detail_river_lines;backdrop_view.region_lines=region_lines
+	backdrop_view.coast_band_mesh=coast_band_mesh;backdrop_view.coast_band_diagnostics=coast_band_diagnostics
 	backdrop_view.river_stream_orders=river_stream_orders;backdrop_view.river_rows=river_rows
 	backdrop_view.crossing_markers=crossing_markers
 	backdrop_view.land_surface=land_surface;backdrop_view.water_surface=water_surface;backdrop_view.extent_surface=extent_surface
@@ -1396,6 +1412,7 @@ func draw_playback(view: Rect2) -> void:
 
 func draw_landscape(view: Rect2) -> void:
 	city_control_fill_draw_count=0;territory_field_fill_draw_count=0
+	coast_band_draw_count=0
 	river_surface_draw_count=0;river_texture_draw_count=0;river_ink_draw_count=0
 	water_source_texture=assets.texture("tile",MapRiverSurface.TEXTURE_ID)
 	var sea=water_source_texture;var plain=assets.texture("tile","tile_plain_01")
@@ -1430,13 +1447,8 @@ func draw_landscape(view: Rect2) -> void:
 		draw_cell_micro_symbols(view)
 		draw_cell_feature_sprites(view)
 		draw_historical_landcover_features(view)
-	for points in coast_lines:
-		if points.size()>1:
-			# A dark surveyed edge with a warm inner keyline reads as a printed
-			# historical atlas and keeps the coastline visible below faction wash.
-			draw_polyline(points,Color(.12,.22,.24,.52),8.0,true)
-			draw_polyline(points,Color("78877a",.76),3.2,true)
-			draw_polyline(points,Color("d9d0aa",.70),1.2,true)
+	if coast_band_mesh!=null:
+		draw_mesh(coast_band_mesh,null);coast_band_draw_count+=1
 	var visible_mains: Array=[]
 	for row in river_rows:
 		if view.intersects(row.bounds.grow(40)):visible_mains.append(row)

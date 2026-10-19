@@ -467,6 +467,36 @@
       "sha_matches": true
     },
     {
+      "file": "presentation/data/coast_geometry.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/coast_geometry_asia_strategic.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/coast_geometry_conquest_china.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/coast_geometry_jingfeng.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/coast_geometry_jingjin.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/coast_inland_baseline.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
       "file": "presentation/data/control_land_clip.json",
       "included": true,
       "sha_matches": true
@@ -622,6 +652,21 @@
       "sha_matches": true
     },
     {
+      "file": "assets/legal/GSHHG-GPL-3.0.txt",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "assets/legal/GSHHG-LGPL-3.0.txt",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "assets/legal/GSHHG-LICENSE.txt",
+      "included": true,
+      "sha_matches": true
+    },
+    {
       "file": "assets/legal/HYDROSHEDS-V1-LICENSE.txt",
       "included": true,
       "sha_matches": true
@@ -639,7 +684,7 @@
     "lib/armeabi-v7a/libgodot_android.so"
   ],
   "private_files_detected": [],
-  "artifact_sha256": "a4eef0fb4948417f577aeb542286003514f9ae833101b92eab56f8e4ef7a000a",
+  "artifact_sha256": "8f0194e4b17170cdc06b578de18d4b6314bc678d3adb8c954fbf9f6486dcddfa",
   "raster_manifest_byte_verified": true,
   "raster_import_files_verified": [
     {

@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "version": "0.2.25",
-  "runtime_source_sha256": "9ce58221f0daef9c79cc8a2ad6606dcd4c757c228f28294e0531008b63cc10a2",
-  "windows_exe_sha256": "d7727710eed65c1a66d32d0061d7dab33e169848e9fa041cfbf005b2091cc374",
+  "version": "0.2.26",
+  "runtime_source_sha256": "f761e97b9893878942fbaa9df9cee60efaefd28c0af8c05ea0ddad3fc1f07540",
+  "windows_exe_sha256": "7670fe1b9034695c7577ae477b5b6094f2f5c9063cfdf5ef1c028cb73a8b1e6a",
   "groups": [
     {
       "profile": "windows",
@@ -10,105 +10,105 @@
       "ui_scale": "1.0",
       "checks": 110,
       "report": "reports/screenshots/map_symbols_native/windows/validation.json",
-      "report_sha256": "10fe0ddb1895fbab9f98406cd5626aa64a57563b095b3eeddbafb11e7296d9ca",
+      "report_sha256": "54373ec0a8892e20de120e975983d189517ebb4096f512f342da81bb48a2907f",
       "log": "reports/map_symbols_windows.log",
       "log_sha256": "67e50cbfdafea164cbeb748f9ae3d907bf1562fd14366ded02e92665ab36f14a",
       "captures": [
         {
           "file": "reports/screenshots/map_symbols_native/windows/asia_1840_140.png",
-          "sha256": "3d4675a04e7fadc49af36a38238cb37a94b77778896b0b16b4c9e305488aeefe",
+          "sha256": "4bb5fd4c817293e80e04d8f6246b16b0d23ed66ebb8c8acfb834f93d1de1069c",
           "metadata": "reports/screenshots/map_symbols_native/windows/asia_1840_140.json",
-          "metadata_sha256": "82617b6ba5fca785b5af47483dc069207d660c25e9460f1e3e6f2a860c8753cf"
+          "metadata_sha256": "8ea2c5ae247541da2399eee6cefe5e840245682a80483cb3316f3c2a002b5beb"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/asia_1840_199.png",
-          "sha256": "51b56af23a10e90437cdc062fa52c7073965ab2a2b0eff5842dfb9734732caf6",
+          "sha256": "cbe7ae10b02cb9523899f2ea9b957cd2a2aabfa907fa449bc58fb7692f16b817",
           "metadata": "reports/screenshots/map_symbols_native/windows/asia_1840_199.json",
-          "metadata_sha256": "72045c219b784cddbc9707aa53ba5baa90af7f833afd6181f88e24de9b978356"
+          "metadata_sha256": "9c5ac35d1b9b2ef9cae1ade2c835ec311defd2cdca580c86bc56dac967b23d81"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/asia_1840_201.png",
-          "sha256": "ee5791310ad0d2ca89ffcf3f9d2432bafa79743e005e00f54a04a4d7743fb3bb",
+          "sha256": "6cc49bb0982968d38bcc6f40e2dc95777186b5fac3ecdaf0c5ff420946885e29",
           "metadata": "reports/screenshots/map_symbols_native/windows/asia_1840_201.json",
-          "metadata_sha256": "3b576abae9789daa4888f55d2acf3c3842d920b1d9be6f222bc964f8f0500e9e"
+          "metadata_sha256": "190d0356b3dabe3c79bc4a929f1bc26b14d2769e609bb73f1c9313d19a100fea"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/asia_1840_400.png",
-          "sha256": "9031d57fdace29b73dd4f42c26a400f39374b881a005abe7898efef8053a5bb4",
+          "sha256": "539d9e61f46d2dac0c70b83d62b52ac2eb9d8fb29a3c81d1167055362445f952",
           "metadata": "reports/screenshots/map_symbols_native/windows/asia_1840_400.json",
-          "metadata_sha256": "b90eef35f8d64721460a79504ce5bd3c4f0853ea24501f2143d7e8f39c9cc4cc"
+          "metadata_sha256": "6cfc702c1c2e95b5241fcd7158eadd9cda587c9cc81f42da63826dab48d11cd5"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/asia_1840_559.png",
-          "sha256": "973250f9f73ff91162e9043af22c59b50b39d01bdb066339f493142b06b0fc79",
+          "sha256": "d98459a497e34f4479433c096d1c386167cc93a9212d87338f4a6aa08ca39051",
           "metadata": "reports/screenshots/map_symbols_native/windows/asia_1840_559.json",
-          "metadata_sha256": "95c7e05c9466becc965e5653839ffd4c4aac76a87221cdac22911e713611170f"
+          "metadata_sha256": "af9bca526df244f5ba23e61caaeab011a9eb9f6155577f78caae04458cb4c90b"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/asia_1840_561.png",
-          "sha256": "21431f7c3a09ec94f57abd975f5fa4c3132e7ee4652354527f8bd8bd6b801588",
+          "sha256": "adb858360119af2f2ad4515919e5c784836f3efd2df38948c74c7c6a69023d90",
           "metadata": "reports/screenshots/map_symbols_native/windows/asia_1840_561.json",
-          "metadata_sha256": "c1151b64a88c779bb36eba5db62e7eb96c971f0f83c2bafb7eb3ea054874bcca"
+          "metadata_sha256": "b4a5a024aaff2a061df2bc06801e2e7521505b39987d4ee1d855098edba2c7a1"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/asia_1840_900.png",
-          "sha256": "8cf8a6482bbd8a82b7408b12cf5bfe5814731c84d4d2d7bf1e8f53b3e07874d9",
+          "sha256": "22871d3237bde3b8328e0656ba42b1c11e220eb187baf81de85a3f1edc5022f8",
           "metadata": "reports/screenshots/map_symbols_native/windows/asia_1840_900.json",
-          "metadata_sha256": "0c368f03a06501ad9aae0a393d197262aefef1c971d587329595328e0cdf4ac9"
+          "metadata_sha256": "89a7fc9032c1ce51842f02b1d89bcb40ad0687fc42e3abe6f03ca3c16d3e26d3"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/asia_1840_selected.png",
-          "sha256": "a19f67db9b2704c768586b8df8b1b3805b8b45749e5240a3b9a24a4f33ecc808",
+          "sha256": "e0a1aa581032c37eb5f3990d510555f04ed94e03abe6e9b1ab52bc155e9f466b",
           "metadata": "reports/screenshots/map_symbols_native/windows/asia_1840_selected.json",
-          "metadata_sha256": "cb580dfad3e162fb194c7e561661478ba1d781ec4f4be54e86e65711d8fef2aa"
+          "metadata_sha256": "b56151ae966d10ee51cb32aa4beda4d1c5be8eb56de9e08d9a3511db7eb8e0ab"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_140.png",
-          "sha256": "dad0bb9c02eebdb8359988ae8c785294803d0fc262fe6b0a71bf53a4096a0ae3",
+          "sha256": "2f5105e4af691342bafeed83259ba9c3dc2ccce2635d983442a5e30b7f428ee6",
           "metadata": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_140.json",
-          "metadata_sha256": "33d49a1c9865246053428fb29e38ac71bda0418b2f20120b8bc3f346ee3a6ac8"
+          "metadata_sha256": "c811145567fc0a3c625e7b7b6dc01436c50ee7c4af6f4163a272c7dabf38e3b8"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_199.png",
-          "sha256": "a95e16c901ee07990c1fa5dc3cd7bd747c9ecc19b918f4c58a02d4e189729963",
+          "sha256": "2caf9d4f5ca4a36bdfd43f7cbab6831b9ab330130f913c82f337747045fafcc3",
           "metadata": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_199.json",
-          "metadata_sha256": "c583876cc977b03a37f59479f0e149072bfe56b81c48561c7729c271e9ed9504"
+          "metadata_sha256": "e4fa73bd2a758e00129ac201531a487a94d778ec87b6b87ab1cb560f34aded92"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_201.png",
-          "sha256": "d584f6cd08f2b5200223107198565d13f8dc7b9aecf253492e64e15657a5eb68",
+          "sha256": "63ed0af96d7bc301d3f76c849e57aaf915fd09ebbbf18a2a6dbe3ab3db3c1eee",
           "metadata": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_201.json",
-          "metadata_sha256": "03bced596de61c20e9c05357d98a6565fe6ab6481a66d61dbfae685ad0693d57"
+          "metadata_sha256": "bde5cac5110f9c1b5517398499ab1532d38e164ff43f6ac3664c74b955bcd7af"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_400.png",
-          "sha256": "c67e541e4dbb95bdfacaaaaf603b31de152a9487e0c644cd9310c4f738d54c41",
+          "sha256": "65a4df791cf452fcdd0b1c5809a1135aba07d4ae5780f2ddb76182cc9590ff59",
           "metadata": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_400.json",
-          "metadata_sha256": "f7f3e314f79885faaf7145ef1d1ddad1caddfa935be3ffabab8a02e9b9cdcb64"
+          "metadata_sha256": "fb43befb61ce268910c78cc31a56ac40b27c9223348d99e55ed91edd32e19ee1"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_559.png",
-          "sha256": "4c2d0af80f068067ed9fbe9a871067a4e3edfbff1ad86102f324cd103ac5b974",
+          "sha256": "e04349ccf21eebc8c52160bdcaa90b092db677bd53f023ede7aea51c50a7abc3",
           "metadata": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_559.json",
-          "metadata_sha256": "10a16c22137e85247975a6b037363fe109ddcbaa268f8c88094087ad2eb49254"
+          "metadata_sha256": "62da6bbce22bb1b3314343bfcea58d7d74c385ff85185c2b735172f3754e8f90"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_561.png",
-          "sha256": "e107e344d42c7c7250b0ca5cc9442ed7d1a95d7248152065478900364e2ac1db",
+          "sha256": "83b393cd0dfd9f892833ba26d9ac373605b18b1cbb3560b0090af177d1807b28",
           "metadata": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_561.json",
-          "metadata_sha256": "d9eae928fea424041036dd606b735ad03b5d2dcc1af64cf143d77e220982007a"
+          "metadata_sha256": "38a3c073ee728123cb558b3f7c003a9d0986e486f7f2ee1069ec61d72d97c9c4"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_900.png",
-          "sha256": "75404ec0ad6fa1ae06138d4126fe4e6d98c6af5c6a3c081ff128b91bd933020e",
+          "sha256": "147892c58beacd35865145d7512b151e8a14402321cb1c1ade7573cae4582259",
           "metadata": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_900.json",
-          "metadata_sha256": "362061f8dec818e59a46b133e93ce53b70e59fec32079c2bd9bf594433ada7cd"
+          "metadata_sha256": "77d3c1b129b731db38245972a28d074c58dcac1b2677b1dff9eb939e48d77ac6"
         },
         {
           "file": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_selected.png",
-          "sha256": "10538bcf880f6b90dc42d1c35d9965781ef11a424f67a91469a2bc04059f24cc",
+          "sha256": "cc094c73921ca42ec3cc43a2e464f939a414180513c38599445a8f26e7ebbdf5",
           "metadata": "reports/screenshots/map_symbols_native/windows/campaign_1924_03_selected.json",
-          "metadata_sha256": "ab49db43fde1585b50bba4aa0e5bba2fd2f1d3a5c9c3ed4779be1b361147127e"
+          "metadata_sha256": "0d667d75ba199a087ffe6d88e90e7960f5d934b1b1fa4896928486aafea321d6"
         }
       ]
     },
@@ -118,105 +118,105 @@
       "ui_scale": "1.2",
       "checks": 110,
       "report": "reports/screenshots/map_symbols_native/x30_layout/validation.json",
-      "report_sha256": "672157d14e6ddda4756ea7086717011aea0c2ad7f03420d72c1de405c9e77dfd",
+      "report_sha256": "55cd7b0981df0efb9bb591450510cadb7af646b31acab79f0f727be6ceb4888d",
       "log": "reports/map_symbols_x30_layout.log",
       "log_sha256": "67e50cbfdafea164cbeb748f9ae3d907bf1562fd14366ded02e92665ab36f14a",
       "captures": [
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_140.png",
-          "sha256": "3574d1c35f986c65bcd86e300499c2914720a89a104e3eeefd73cb792ba0f13f",
+          "sha256": "53bccaf23d65148d645d980a92494e858b03a02939783abc0514644f85f13e0e",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_140.json",
-          "metadata_sha256": "1f8ae43af95e874557c7f0b46b47f1b162ec44467b896d9c5b193d0e154f045b"
+          "metadata_sha256": "65fba0bab50fa3eaa79f380e280fa869061a599d0c949b366660a7a99401c1f4"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_199.png",
-          "sha256": "3400b0d4753b0d1aee1acde684e7aa92b26d72f21fa5c74975e02c41a868a799",
+          "sha256": "c8b99d6bd10328fa2e6a884635efa044cb2791f3abc55daf0c0558ad5dcf269a",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_199.json",
-          "metadata_sha256": "34be94cdc06cd7961f3bddafcf3d715eb9ce3bdf1d07dc15cd252c590fd8716f"
+          "metadata_sha256": "0c68cf3ff16a315eb42ffdcf023088428a33e7547cda479f959d1de220a6e9cb"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_201.png",
-          "sha256": "63af183d9a5f5b71c9d16c3cd1e6558bada75a56b7720d51e705903ba4574635",
+          "sha256": "125203a116e0acc27c06a84072fe5da5e4c3bf215781a95a21dc390ac53e605d",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_201.json",
-          "metadata_sha256": "31836078b70d8082d8a2f0fb76a616c0a1e8edcd2feeeebb921b8759639b4bec"
+          "metadata_sha256": "ddea3d34e4ecbc6909a5b54cda53c9fec681004f3f7bcef67d68c60a6dad8b32"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_400.png",
-          "sha256": "79d6ee2c9d0b6ba90eb9c958d3ef1cd7c10bbadb51d807883f324cd2a2a704cc",
+          "sha256": "33eade0aea2dd8c1bd9e956af9e94d3393f2cb91be6487dba0e57dd08db42af6",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_400.json",
-          "metadata_sha256": "dfc2a33cc06af80656d190c04ded4693735352ae6465ac72b0184dcab8101a3c"
+          "metadata_sha256": "d485137af87799a855bb47f9fba7a14e3942c58da80a8a553ce10d28fb582894"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_559.png",
-          "sha256": "2159a861652dd9f6220ff709917aee2b058aeb00252d7dda6d8996a53001ffed",
+          "sha256": "d9e8660423c338d2da265ab7af8d6c5018561aa8487ed0613cb2640d226ca6ca",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_559.json",
-          "metadata_sha256": "793e8a142bfdeed605df91adc00a6c6d6296394fe46a1c1eac8be335c65b916d"
+          "metadata_sha256": "2a9dae6d7b2d419498544d4d17a09b7387f5242df4dea03544787ba842f5f689"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_561.png",
-          "sha256": "f95d4fd03a7f1b3eaef0204b0649e225afcb5765b097f83adf59d1cd15a9aaae",
+          "sha256": "0d592ac2b910ceecd2207290c697a18817c22ba73bb6cacc65a4cde2aed6f23f",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_561.json",
-          "metadata_sha256": "336ee74a92d7e1161fc5fea67f963f7fcc6b2988e030890cb1995daf1fc72051"
+          "metadata_sha256": "53d15aa9e4b8b6d436e0f9d4e67bc396ca588c29b45f88966ffe42fb6b263241"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_900.png",
-          "sha256": "c50476db37ce5e800fca97a70bc1862fce45d6bce1fdfb75f6cf2a76bd20b340",
+          "sha256": "e853e527cb3a7e31e5c76134628520d40a3ef24f64db6b9bb1656d3bab79eda4",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_900.json",
-          "metadata_sha256": "bdffc2ef3a35e4c7ab3029f59e6a7e975bd7fc013f209bec28f6a57323114a72"
+          "metadata_sha256": "68a53a0619e5cb83d6ae51764aed8da41ddfd85b3b1950f5963b121a983e2e10"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_selected.png",
-          "sha256": "0e2297ad37454cf621fff297035ae9d57dad4b516cfda0645f05cca31f3d258a",
+          "sha256": "d0743c9344904017e86beb011db0f119bf651d68b92fe72c8e7e53b826c539b8",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/asia_1840_selected.json",
-          "metadata_sha256": "4687e0045c3f20a64b3bbcfa32fdb8125d5e6355b2781b4c88449af4cb29d218"
+          "metadata_sha256": "7a3bcda2ec865fddaa108f2a2eb874a2999180b2647b88181b77290df629d48e"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_140.png",
-          "sha256": "aa2ee6cc5b344d74238102606e4f0f86b9be807193dff339eaf49664e5fca09c",
+          "sha256": "29c961f1cedbfd70ae48a29b21d3c7c06dfbe439f7a3b8e88c8e932e94937413",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_140.json",
-          "metadata_sha256": "c33a5f8dbc61decf6a241e37364205085dfe60dfb2a46f1a74e44a064aa46f15"
+          "metadata_sha256": "9358a137d97d99cff41f2293ac13a330690e2f1ce3d9585ab41044f1d6f06ec6"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_199.png",
-          "sha256": "fcffa6f1b3129a13988e46f471c68159285e1ffa4bce38abe449d6b3e990ee37",
+          "sha256": "78503fceaf5c823d6c14de2ced9747543596b141048d0a0c3e5ca0283821384f",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_199.json",
-          "metadata_sha256": "2b58a4c5b19830281333bc109c0e3a31634b71db57cd68d007efbda5cd578df1"
+          "metadata_sha256": "d71d1af3a99602edcce34424390408ecee29b8d743688a798a5f3b9a3cc4b1b4"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_201.png",
-          "sha256": "84d5f6f5ebadc2db0bd09c4d3e8308decc78cb9634fa7a0830be7a858c268fb8",
+          "sha256": "ed34b03f92541cee616493f4bc4673aee2b1bd6bb97cf9920baacbc1f85a4e3c",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_201.json",
-          "metadata_sha256": "f1805686133c578d074df7c0a272bbaeec1910c22004f665fbba4ebe11bfa0b9"
+          "metadata_sha256": "841c881f64910c662413bbac96dc6c837fe0fb4606b22c12833e7d043358487d"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_400.png",
-          "sha256": "29d222615d7d3d5d4bdc61ce625025cb04b96caeca7e1c776837cb570db2bdcc",
+          "sha256": "559cb7b59ccaed8f2b5b4b8683281f52e3c4f00d5a0ce94762473ac356761961",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_400.json",
-          "metadata_sha256": "847f8ad076f2e03fd2dea9735ab0b8c571e5f5b5a43f1b6097fb876ea9676f14"
+          "metadata_sha256": "def08e5fd2a327d9e5891ec64b40a3932230075947e6e88f2c4b7dea65f7ce52"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_559.png",
-          "sha256": "8d165e7f2d9cc03322a1e15aec87e3a43554d689a4207b3c628a2572dd606ea0",
+          "sha256": "d96464091ded6b9db9ce67f3567810bc2958b652dafca4491b5ed6adc33131b2",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_559.json",
-          "metadata_sha256": "9d2078de911a00fac77b304f5832732fd29c9339ab3165e88de9297650c2c87c"
+          "metadata_sha256": "9b76237f082a5005bf6dd59a2591b95ab82369a6e426a9eff17c17a75fbbfae9"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_561.png",
-          "sha256": "1e92297f5f13021a093538e52ffee65015ccfcf2885804833e0782fc651b5c71",
+          "sha256": "50a166878d17b4f896997b75bafd0025bc58b3e864bf8fa72307c253e44d2575",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_561.json",
-          "metadata_sha256": "393e9d674a5c39d82f8754a996f5046c5d57a379cf72f22744f92f6fc60d3149"
+          "metadata_sha256": "1ebbff14224172dfe811c19521f87a379d120cf7cdc8b5a70fdc68ced5121317"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_900.png",
-          "sha256": "28199b9a9e86b152f5d821e6157209fea4e65372e7d5d26a46b9476335715faa",
+          "sha256": "019661f3f3383e2180516875f8e96db980dd4f0b7a62ac10ccc53390cc24804f",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_900.json",
-          "metadata_sha256": "7758c1daf721764b668bd84f53cfb8fd56d5e890cc57884fbfc8fa730c484500"
+          "metadata_sha256": "12fb6fd06c1530f6a4df0f4470960974c98119abce9b989d69722f013f6e0f83"
         },
         {
           "file": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_selected.png",
-          "sha256": "cc55c6953c4164dad16a407ce7008f0421abe1b7c5bdfabc0205ab3617625f6c",
+          "sha256": "3ba073d587223a9135ec1d69138a74788b9ff89a20713f73ead312af3d173a0b",
           "metadata": "reports/screenshots/map_symbols_native/x30_layout/campaign_1924_03_selected.json",
-          "metadata_sha256": "0cd411db236dcda607470db2ba7d550dccd7d3490afa7cc05354baa581fa55dd"
+          "metadata_sha256": "567c6a7c21b23f49bd078b77778a052afe00584f12558e03bd7a04e584cfda6c"
         }
       ]
     }

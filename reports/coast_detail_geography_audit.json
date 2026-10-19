@@ -1,0 +1,703 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-19T12:40:22.686684+00:00",
+  "elapsed_seconds": 362.69,
+  "checks": [
+    {
+      "name": "preserved_rule_content:content/definitions/achievements.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/ai_profiles.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/buildings.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/catalog.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/challenges.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/city_levels.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/counter_matrix.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/effects.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/elite_variants.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/factions.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/generals.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/medals.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/missions.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/reward_rules.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/rules.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/scenarios.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/skills.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/sources.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/statuses.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/technologies.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/terrains.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/definitions/units.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/history/asia_order_of_battle.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/history/asia_timeline.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/maps/catalog.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/maps/hankou.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/maps/ningpu.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/asia_1840.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/asia_1860.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/asia_1890.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/asia_1900.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/asia_1917.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/asia_1927.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/asia_1940.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1840_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1840_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1840_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1860_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1860_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1860_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1890_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1890_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1890_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1900_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1900_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1900_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1917_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1917_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1917_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1920_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1920_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1920_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1920_04.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1920_05.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1920_06.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1922_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1922_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1922_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1922_04.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1922_05.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1922_06.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1924_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1924_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1924_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1924_04.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1924_05.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1924_06.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1927_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1927_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1927_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1940_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1940_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/campaign_1940_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/catalog.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/conq_1920.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/conq_1922.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/conq_1924.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_01.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_02.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_03.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_04.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_05.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_06.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_07.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_08.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_09.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_10.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_11.json",
+      "passed": true
+    },
+    {
+      "name": "preserved_rule_content:content/scenarios/legion_12.json",
+      "passed": true
+    },
+    {
+      "name": "existing_geographic_source_records_preserved",
+      "passed": true
+    },
+    {
+      "name": "one_explicit_marine_source_record",
+      "passed": true
+    },
+    {
+      "name": "publisher_original_archive_sha256",
+      "passed": true
+    },
+    {
+      "name": "original_archive_crc",
+      "passed": true
+    },
+    {
+      "name": "unmodified_source_notice:LICENSE.TXT",
+      "passed": true
+    },
+    {
+      "name": "unmodified_source_notice:COPYING.LESSERv3",
+      "passed": true
+    },
+    {
+      "name": "full_gpl_text_in_distribution",
+      "passed": true
+    },
+    {
+      "name": "nonvisual_history_grid_cities_and_rules:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "marine_L1_only_no_historical_survey:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "source_members_and_subset_hash:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "retained_subset_matches_original_vectors:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "all_displayed_coasts_follow_source_segments:jingfeng",
+      "passed": true,
+      "max_world_deviation": 0.0606599841518442,
+      "probes": 24860
+    },
+    {
+      "name": "all_original_shore_segments_retained:jingfeng",
+      "passed": true,
+      "max_world_deviation": 0.09174109265645604,
+      "probes": 24880
+    },
+    {
+      "name": "valid_source_land_and_preserved_inland_water:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "mesh_and_map_hashes_are_current:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "actual_triangles_cover_land_and_exclude_water:jingfeng",
+      "passed": true,
+      "triangles": 12369,
+      "area_error": 0.0
+    },
+    {
+      "name": "source_city_influence_catalog_preserved:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "display_administration_is_exact_source_land_intersection:jingfeng",
+      "passed": true,
+      "max_length_error": 2.033427200763724e-12
+    },
+    {
+      "name": "display_city_influence_is_exact_source_land_intersection:jingfeng",
+      "passed": true,
+      "zones": 45,
+      "max_area_error": 4.5622795534557884e-05
+    },
+    {
+      "name": "city_edges_do_not_create_an_extra_coastal_frontier:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "original_hex_radius_preserved:jingfeng",
+      "passed": true
+    },
+    {
+      "name": "nonvisual_history_grid_cities_and_rules:jingjin",
+      "passed": true
+    },
+    {
+      "name": "marine_L1_only_no_historical_survey:jingjin",
+      "passed": true
+    },
+    {
+      "name": "source_members_and_subset_hash:jingjin",
+      "passed": true
+    },
+    {
+      "name": "retained_subset_matches_original_vectors:jingjin",
+      "passed": true
+    },
+    {
+      "name": "all_displayed_coasts_follow_source_segments:jingjin",
+      "passed": true,
+      "max_world_deviation": 6.579087634299632e-05,
+      "probes": 2049
+    },
+    {
+      "name": "all_original_shore_segments_retained:jingjin",
+      "passed": true,
+      "max_world_deviation": 6.846488275038063e-05,
+      "probes": 2049
+    },
+    {
+      "name": "valid_source_land_and_preserved_inland_water:jingjin",
+      "passed": true
+    },
+    {
+      "name": "mesh_and_map_hashes_are_current:jingjin",
+      "passed": true
+    },
+    {
+      "name": "actual_triangles_cover_land_and_exclude_water:jingjin",
+      "passed": true,
+      "triangles": 1092,
+      "area_error": 0.0
+    },
+    {
+      "name": "source_city_influence_catalog_preserved:jingjin",
+      "passed": true
+    },
+    {
+      "name": "display_administration_is_exact_source_land_intersection:jingjin",
+      "passed": true,
+      "max_length_error": 1.019550537895866e-12
+    },
+    {
+      "name": "display_city_influence_is_exact_source_land_intersection:jingjin",
+      "passed": true,
+      "zones": 33,
+      "max_area_error": 8.165348997103127e-06
+    },
+    {
+      "name": "city_edges_do_not_create_an_extra_coastal_frontier:jingjin",
+      "passed": true
+    },
+    {
+      "name": "original_hex_radius_preserved:jingjin",
+      "passed": true
+    },
+    {
+      "name": "nonvisual_history_grid_cities_and_rules:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "marine_L1_only_no_historical_survey:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "source_members_and_subset_hash:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "retained_subset_matches_original_vectors:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "all_displayed_coasts_follow_source_segments:conquest_china",
+      "passed": true,
+      "max_world_deviation": 0.061947698979529585,
+      "probes": 99539
+    },
+    {
+      "name": "all_original_shore_segments_retained:conquest_china",
+      "passed": true,
+      "max_world_deviation": 0.09996722122399786,
+      "probes": 106467
+    },
+    {
+      "name": "valid_source_land_and_preserved_inland_water:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "mesh_and_map_hashes_are_current:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "actual_triangles_cover_land_and_exclude_water:conquest_china",
+      "passed": true,
+      "triangles": 36850,
+      "area_error": 0.0
+    },
+    {
+      "name": "source_city_influence_catalog_preserved:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "display_administration_is_exact_source_land_intersection:conquest_china",
+      "passed": true,
+      "max_length_error": 2.57228591694214e-12
+    },
+    {
+      "name": "display_city_influence_is_exact_source_land_intersection:conquest_china",
+      "passed": true,
+      "zones": 165,
+      "max_area_error": 2.3837399656464853e-05
+    },
+    {
+      "name": "city_edges_do_not_create_an_extra_coastal_frontier:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "original_hex_radius_preserved:conquest_china",
+      "passed": true
+    },
+    {
+      "name": "nonvisual_history_grid_cities_and_rules:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "marine_L1_only_no_historical_survey:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "source_members_and_subset_hash:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "retained_subset_matches_original_vectors:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "all_displayed_coasts_follow_source_segments:asia_strategic",
+      "passed": true,
+      "max_world_deviation": 0.09307670080958427,
+      "probes": 226760
+    },
+    {
+      "name": "all_original_shore_segments_retained:asia_strategic",
+      "passed": true,
+      "max_world_deviation": 0.0998471006189681,
+      "probes": 586032
+    },
+    {
+      "name": "valid_source_land_and_preserved_inland_water:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "mesh_and_map_hashes_are_current:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "actual_triangles_cover_land_and_exclude_water:asia_strategic",
+      "passed": true,
+      "triangles": 81193,
+      "area_error": 0.0
+    },
+    {
+      "name": "source_city_influence_catalog_preserved:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "display_administration_is_exact_source_land_intersection:asia_strategic",
+      "passed": true,
+      "max_length_error": 0.0
+    },
+    {
+      "name": "display_city_influence_is_exact_source_land_intersection:asia_strategic",
+      "passed": true,
+      "zones": 0,
+      "max_area_error": 0.0
+    },
+    {
+      "name": "city_edges_do_not_create_an_extra_coastal_frontier:asia_strategic",
+      "passed": true
+    },
+    {
+      "name": "original_hex_radius_preserved:asia_strategic",
+      "passed": true
+    }
+  ],
+  "maps": [
+    {
+      "map_id": "jingfeng",
+      "source_resolution": "f",
+      "coast_vertices": 12461,
+      "source_polygons": 62,
+      "land_triangles": 12369,
+      "max_display_to_source_world": 0.0606599841518442,
+      "max_source_to_display_world": 0.09174109265645604,
+      "independent_source_probes": 49740,
+      "map_sha256": "f5fc64bc3e45643fc9b325e1e574a5534cc7c6660880a1e546fc9b68a0ad5c8f"
+    },
+    {
+      "map_id": "jingjin",
+      "source_resolution": "f",
+      "coast_vertices": 1025,
+      "source_polygons": 1,
+      "land_triangles": 1092,
+      "max_display_to_source_world": 6.579087634299632e-05,
+      "max_source_to_display_world": 6.846488275038063e-05,
+      "independent_source_probes": 4098,
+      "map_sha256": "7a18d0e7d579c50bae1d1f3162d0e78df55e71adbaa26acf1763bb2dc6b51434"
+    },
+    {
+      "map_id": "conquest_china",
+      "source_resolution": "h",
+      "coast_vertices": 52417,
+      "source_polygons": 5269,
+      "land_triangles": 36850,
+      "max_display_to_source_world": 0.061947698979529585,
+      "max_source_to_display_world": 0.09996722122399786,
+      "independent_source_probes": 206006,
+      "map_sha256": "37458183fffe2515b1e0ae5110554a527735c207e44130ce13a7d8da64a0a510"
+    },
+    {
+      "map_id": "asia_strategic",
+      "source_resolution": "i",
+      "coast_vertices": 119448,
+      "source_polygons": 12105,
+      "land_triangles": 81193,
+      "max_display_to_source_world": 0.09307670080958427,
+      "max_source_to_display_world": 0.0998471006189681,
+      "independent_source_probes": 812792,
+      "map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+    }
+  ],
+  "baseline_commit": "1d4a9c95d3d1cf214490dac69d166dab6f19e9a7",
+  "preserved_rule_content_files": 89,
+  "production_compiler_imported": false,
+  "source_rasters_modified": false,
+  "historical_coast_survey_approval": false,
+  "formal_art_approval": false
+}

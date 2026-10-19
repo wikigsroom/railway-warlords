@@ -1,0 +1,902 @@
+{
+  "passed": true,
+  "version": "0.2.26",
+  "runtime_source_sha256": "f761e97b9893878942fbaa9df9cee60efaefd28c0af8c05ea0ddad3fc1f07540",
+  "baseline_commit": "1d4a9c95d3d1cf214490dac69d166dab6f19e9a7",
+  "checked_existing_json_files": 123,
+  "preserved_json_files": 111,
+  "allowed_changed_files": [
+    "content/geography_sources.json",
+    "content/maps/asia_strategic.json",
+    "content/maps/conquest_china.json",
+    "content/maps/jingfeng.json",
+    "content/maps/jingjin.json",
+    "presentation/data/control_land_clip.json",
+    "presentation/data/ground_coverage.json",
+    "presentation/data/ground_coverage_asia_strategic.json",
+    "presentation/data/ground_coverage_conquest_china.json",
+    "presentation/data/ground_coverage_jingfeng.json",
+    "presentation/data/ground_coverage_jingjin.json",
+    "presentation/data/hydrography_fine.json"
+  ],
+  "actual_changed_files": [
+    "content/geography_sources.json",
+    "content/maps/asia_strategic.json",
+    "content/maps/conquest_china.json",
+    "content/maps/jingfeng.json",
+    "content/maps/jingjin.json",
+    "presentation/data/control_land_clip.json",
+    "presentation/data/ground_coverage.json",
+    "presentation/data/ground_coverage_asia_strategic.json",
+    "presentation/data/ground_coverage_conquest_china.json",
+    "presentation/data/ground_coverage_jingfeng.json",
+    "presentation/data/ground_coverage_jingjin.json",
+    "presentation/data/hydrography_fine.json"
+  ],
+  "unexpected_changed_files": [],
+  "independent_raw_geography_audit_bound": true,
+  "files": [
+    {
+      "file": "content/definitions/achievements.json",
+      "baseline_git_blob": "87fc92e20aede4839ea31c9443c6323f66389d6a",
+      "current_git_blob": "87fc92e20aede4839ea31c9443c6323f66389d6a",
+      "preserved": true,
+      "sha256": "4bd5ff19069d1485f0aa1b126f9e9064fc5ea7b6802d49b1d8237665fa6ede17"
+    },
+    {
+      "file": "content/definitions/ai_profiles.json",
+      "baseline_git_blob": "cff62271c2b4dd5751d174112b378d7414b3b74b",
+      "current_git_blob": "cff62271c2b4dd5751d174112b378d7414b3b74b",
+      "preserved": true,
+      "sha256": "16add280d3aaf32dba9a3ace7419882ba183c63524f41d10a1fa78304731e2cf"
+    },
+    {
+      "file": "content/definitions/buildings.json",
+      "baseline_git_blob": "74b7531162f35ff14bc1aa2ba67ba5aeb950ae87",
+      "current_git_blob": "74b7531162f35ff14bc1aa2ba67ba5aeb950ae87",
+      "preserved": true,
+      "sha256": "0820268d42af64cffc10fa7e6e1cff241011f85848a1ac790d38fe32d7f6feee"
+    },
+    {
+      "file": "content/definitions/catalog.json",
+      "baseline_git_blob": "0c72604277869d4c5de01f812c12eb2aa4cb215b",
+      "current_git_blob": "0c72604277869d4c5de01f812c12eb2aa4cb215b",
+      "preserved": true,
+      "sha256": "a571effcddae6d4b91468c9d4863608838416a194aecca9c76e36b98f0244a92"
+    },
+    {
+      "file": "content/definitions/challenges.json",
+      "baseline_git_blob": "4456ee748ae3b9305954393366464ed8f2aebd72",
+      "current_git_blob": "4456ee748ae3b9305954393366464ed8f2aebd72",
+      "preserved": true,
+      "sha256": "4919dc537d87d7a863ae4022d176d9158bf0b6782f84070f557850cb127c99f8"
+    },
+    {
+      "file": "content/definitions/city_levels.json",
+      "baseline_git_blob": "df8de32ecf58ba0de80c671f8183ddbb42ba933a",
+      "current_git_blob": "df8de32ecf58ba0de80c671f8183ddbb42ba933a",
+      "preserved": true,
+      "sha256": "a9c0f18962a2171132871812a2b8e26eafa1063b1a7f75fbec19167c2b5c362a"
+    },
+    {
+      "file": "content/definitions/counter_matrix.json",
+      "baseline_git_blob": "1a492c8bebcf6a4b5c75d73b381ea5012bdecd49",
+      "current_git_blob": "1a492c8bebcf6a4b5c75d73b381ea5012bdecd49",
+      "preserved": true,
+      "sha256": "a511d6476c036076a0a43e2b68047186c404e3a4fbd7eb105ae7c4fa665cf2b0"
+    },
+    {
+      "file": "content/definitions/effects.json",
+      "baseline_git_blob": "885e07f9d0923f7dca478e197c7550b1a8937bb5",
+      "current_git_blob": "885e07f9d0923f7dca478e197c7550b1a8937bb5",
+      "preserved": true,
+      "sha256": "f34cad0278082c991d8205cccf2dcfd3d1cffa68535b4caa4ea99c0f493f1c71"
+    },
+    {
+      "file": "content/definitions/elite_variants.json",
+      "baseline_git_blob": "0b0f3a39b3b58315820b0364c1df330c50fb35a9",
+      "current_git_blob": "0b0f3a39b3b58315820b0364c1df330c50fb35a9",
+      "preserved": true,
+      "sha256": "9dcc8b0beeb7bb219cf7c74f2345ffb559a858095703393f5033e3f8db63aae4"
+    },
+    {
+      "file": "content/definitions/factions.json",
+      "baseline_git_blob": "e75201a1e44cdba606e78a178f72f059d5ea03da",
+      "current_git_blob": "e75201a1e44cdba606e78a178f72f059d5ea03da",
+      "preserved": true,
+      "sha256": "84f24d240a1e693ef48be513353c519dc4434b3bb789041d306f8f58cd571672"
+    },
+    {
+      "file": "content/definitions/generals.json",
+      "baseline_git_blob": "a208e1fcf48551b0a5acedb434f94b962cc9f7b7",
+      "current_git_blob": "a208e1fcf48551b0a5acedb434f94b962cc9f7b7",
+      "preserved": true,
+      "sha256": "7301d1028a18d2a2746e1e920d9575b2ef4adb2280260acd8e66de7c38d2c48c"
+    },
+    {
+      "file": "content/definitions/medals.json",
+      "baseline_git_blob": "8bd964446f7738210976cc660db128ebb14e4530",
+      "current_git_blob": "8bd964446f7738210976cc660db128ebb14e4530",
+      "preserved": true,
+      "sha256": "3fcbefb5e0392623486fdbae55dcb336d4dab5263dd16ab9395e19c85605065e"
+    },
+    {
+      "file": "content/definitions/missions.json",
+      "baseline_git_blob": "8eccfae1133932f462349af2ef2563a64058b82e",
+      "current_git_blob": "8eccfae1133932f462349af2ef2563a64058b82e",
+      "preserved": true,
+      "sha256": "1ca53ba6a398c172053b5443c4dab8a9865810c2b74dda7f13159581d3a442ff"
+    },
+    {
+      "file": "content/definitions/reward_rules.json",
+      "baseline_git_blob": "f7d8250f624062901c66754329358a68995be8be",
+      "current_git_blob": "f7d8250f624062901c66754329358a68995be8be",
+      "preserved": true,
+      "sha256": "9e840f0e219b23ffdfedee3b9f62660d2da4eb16c87b92910b46218699cf8b45"
+    },
+    {
+      "file": "content/definitions/rules.json",
+      "baseline_git_blob": "00948f23207f995a290af3a6a4aa03e749dbd652",
+      "current_git_blob": "00948f23207f995a290af3a6a4aa03e749dbd652",
+      "preserved": true,
+      "sha256": "bb7bb58247b85d9efc65d0db7a1748fb30a58c55627cfe8d92b17a60d579d759"
+    },
+    {
+      "file": "content/definitions/scenarios.json",
+      "baseline_git_blob": "28112299d2baece65852ecc5472bf07706667328",
+      "current_git_blob": "28112299d2baece65852ecc5472bf07706667328",
+      "preserved": true,
+      "sha256": "121a1ab670b85b06e89b8a73a9dcdef057a2002f83584da245b865dbda60c95d"
+    },
+    {
+      "file": "content/definitions/skills.json",
+      "baseline_git_blob": "dc67646631927f8db8a148665dfb4cd893279a82",
+      "current_git_blob": "dc67646631927f8db8a148665dfb4cd893279a82",
+      "preserved": true,
+      "sha256": "c493f0bb85aefb925d9f81e78c7320bd6d15ae3258762608e8670328db2d7650"
+    },
+    {
+      "file": "content/definitions/sources.json",
+      "baseline_git_blob": "a175ead525ba4a206101d4d138561559b0b36fe4",
+      "current_git_blob": "a175ead525ba4a206101d4d138561559b0b36fe4",
+      "preserved": true,
+      "sha256": "0400f41df93231a975065bc298b2c6a317e20ae3619aea3a2ae825377740e125"
+    },
+    {
+      "file": "content/definitions/statuses.json",
+      "baseline_git_blob": "a32b04d35d264a6f5126cf54e1104cbba0d0d479",
+      "current_git_blob": "a32b04d35d264a6f5126cf54e1104cbba0d0d479",
+      "preserved": true,
+      "sha256": "587244e376fd470cd27d36e9bf407a1eea63c9e3a52158e25bbaacd9d65bd488"
+    },
+    {
+      "file": "content/definitions/technologies.json",
+      "baseline_git_blob": "6294f12368f125f9fb8a6e6ec34fd313ef4939be",
+      "current_git_blob": "6294f12368f125f9fb8a6e6ec34fd313ef4939be",
+      "preserved": true,
+      "sha256": "af9a5c0851658641d267552b5d6dcd3c31e81b7b7a78280fe79b946a2bc11797"
+    },
+    {
+      "file": "content/definitions/terrains.json",
+      "baseline_git_blob": "017ae785c9c3bb57e62acda4bf02a98893d5abb6",
+      "current_git_blob": "017ae785c9c3bb57e62acda4bf02a98893d5abb6",
+      "preserved": true,
+      "sha256": "1d53e6bc17e22485fe32f596d9cb1d6bd59ead4f69149f4f4b4be85b95e8e833"
+    },
+    {
+      "file": "content/definitions/units.json",
+      "baseline_git_blob": "abf6ebcc41dec3d54a9ba15da134b8424bb0c57f",
+      "current_git_blob": "abf6ebcc41dec3d54a9ba15da134b8424bb0c57f",
+      "preserved": true,
+      "sha256": "d552423c8924573cc1da7a68f471b66ab7a4f448c0718ab0d4879525c3842550"
+    },
+    {
+      "file": "content/geography_sources.json",
+      "baseline_git_blob": "4dcd412df9d71ab7701093a1795c346fd9b189f1",
+      "current_git_blob": "8b24aab78861614f3bee5de34571bb47b8c19800",
+      "preserved": false,
+      "sha256": "3aa6ea8227d27f7a736d46bb6344d5f1d8abcdb7863dc135e0793d95fe8738c0"
+    },
+    {
+      "file": "content/history/asia_order_of_battle.json",
+      "baseline_git_blob": "f3190a989782c47222fdfdff506720be7855cb0d",
+      "current_git_blob": "f3190a989782c47222fdfdff506720be7855cb0d",
+      "preserved": true,
+      "sha256": "5c76284264bf5314b011b9d29f9fd21392fb98cb8a6401cc7bede26d29011cf9"
+    },
+    {
+      "file": "content/history/asia_timeline.json",
+      "baseline_git_blob": "19f17a22fd7a19399de22437b57ae21538ddf557",
+      "current_git_blob": "19f17a22fd7a19399de22437b57ae21538ddf557",
+      "preserved": true,
+      "sha256": "24107f67bf42cf7508fe113bf42bd00691d080d1fda7c939820574f877eb009e"
+    },
+    {
+      "file": "content/maps/asia_strategic.json",
+      "baseline_git_blob": "007fc5baa7c438ba15309db30e863f5373c35c2a",
+      "current_git_blob": "cc6e8e92a04b872f7476c7e97d3fb5dbd400ccef",
+      "preserved": false,
+      "sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+    },
+    {
+      "file": "content/maps/catalog.json",
+      "baseline_git_blob": "259daba98aed421e96a2630615a0c90ee41cda4d",
+      "current_git_blob": "259daba98aed421e96a2630615a0c90ee41cda4d",
+      "preserved": true,
+      "sha256": "b8d1b40e9441c740f6538fb033afe3206fb015647e8c64486768167dc0249254"
+    },
+    {
+      "file": "content/maps/conquest_china.json",
+      "baseline_git_blob": "1adfe7e2c1566ef852ed7815e84e2ab10de475ea",
+      "current_git_blob": "b8d47e73ec8909c551dca8ab6add554b895a7c55",
+      "preserved": false,
+      "sha256": "37458183fffe2515b1e0ae5110554a527735c207e44130ce13a7d8da64a0a510"
+    },
+    {
+      "file": "content/maps/hankou.json",
+      "baseline_git_blob": "98ca6c3500a3619e0443b19c2cc2e33cb90ec5ce",
+      "current_git_blob": "98ca6c3500a3619e0443b19c2cc2e33cb90ec5ce",
+      "preserved": true,
+      "sha256": "b6ca1e209cf9e238f4fd6db168474ab94f76c4bddb9218b5e75fe9d695e87745"
+    },
+    {
+      "file": "content/maps/jingfeng.json",
+      "baseline_git_blob": "20210c60b34eaa50e185053353286744aa06391c",
+      "current_git_blob": "a55516b76dd529ef274a8339b85a430f3a078147",
+      "preserved": false,
+      "sha256": "f5fc64bc3e45643fc9b325e1e574a5534cc7c6660880a1e546fc9b68a0ad5c8f"
+    },
+    {
+      "file": "content/maps/jingjin.json",
+      "baseline_git_blob": "29b0640f49c7e72e85654a9c85fd694096a1f300",
+      "current_git_blob": "a083d2c4af47012e4367ce9ea2bc1c499506180f",
+      "preserved": false,
+      "sha256": "7a18d0e7d579c50bae1d1f3162d0e78df55e71adbaa26acf1763bb2dc6b51434"
+    },
+    {
+      "file": "content/maps/ningpu.json",
+      "baseline_git_blob": "50c4555de24c148463dbaf7de4f8b3efdee9ce3b",
+      "current_git_blob": "50c4555de24c148463dbaf7de4f8b3efdee9ce3b",
+      "preserved": true,
+      "sha256": "d6986cf2485acc272521e5cf13984ca0552e74009f74fc03274eb6163165a116"
+    },
+    {
+      "file": "content/scenarios/asia_1840.json",
+      "baseline_git_blob": "ff49952c1ac6dd320b53474ec885320d2abfc48b",
+      "current_git_blob": "ff49952c1ac6dd320b53474ec885320d2abfc48b",
+      "preserved": true,
+      "sha256": "e80c963e120364e2f3438c20af863a1b3f737e4be5723e40bc2c2ebb27f6098d"
+    },
+    {
+      "file": "content/scenarios/asia_1860.json",
+      "baseline_git_blob": "3047d30b7223c6f163298b1a3c359be8a38e6320",
+      "current_git_blob": "3047d30b7223c6f163298b1a3c359be8a38e6320",
+      "preserved": true,
+      "sha256": "986e2761d5915e51c1778649ac69d071dcfe6992693909835ae90658097cf7f7"
+    },
+    {
+      "file": "content/scenarios/asia_1890.json",
+      "baseline_git_blob": "1e6c7a2bfc0ac3a21674b96dd0ffc51d43b63918",
+      "current_git_blob": "1e6c7a2bfc0ac3a21674b96dd0ffc51d43b63918",
+      "preserved": true,
+      "sha256": "556996904c73bacd3225b8c5a92d4bd393a75680615acef5ec40d6cbd50c9583"
+    },
+    {
+      "file": "content/scenarios/asia_1900.json",
+      "baseline_git_blob": "d3e456db24a0b017cd522e541a989a6669cc5779",
+      "current_git_blob": "d3e456db24a0b017cd522e541a989a6669cc5779",
+      "preserved": true,
+      "sha256": "dd543c128200607ac33ca769683df700c122cf790f4bfde0837ef4503c8cdd8f"
+    },
+    {
+      "file": "content/scenarios/asia_1917.json",
+      "baseline_git_blob": "bda6ccb0833352e1207a0fcb07072fa0c9e28543",
+      "current_git_blob": "bda6ccb0833352e1207a0fcb07072fa0c9e28543",
+      "preserved": true,
+      "sha256": "9300660d2717ceeecdc1a265ac40adaa3cdf1e61cd6c5cd55f3aa89fb1b66452"
+    },
+    {
+      "file": "content/scenarios/asia_1927.json",
+      "baseline_git_blob": "accdf8540217c236461b279c9797484ce2e3e515",
+      "current_git_blob": "accdf8540217c236461b279c9797484ce2e3e515",
+      "preserved": true,
+      "sha256": "52b3305867d37809e122bc6023f277d28cc8f6331a93372b0acbad0d36100cd2"
+    },
+    {
+      "file": "content/scenarios/asia_1940.json",
+      "baseline_git_blob": "d0400678b73b11bfc76c593e7a3ebd2fbed9baa2",
+      "current_git_blob": "d0400678b73b11bfc76c593e7a3ebd2fbed9baa2",
+      "preserved": true,
+      "sha256": "38838fef51bb2a28db1f4beee4617fdf291489a03b6bfd5f37ee52864a8051d9"
+    },
+    {
+      "file": "content/scenarios/campaign_1840_01.json",
+      "baseline_git_blob": "ca573228249d4a77ce1e1cad01dc220316a7fe88",
+      "current_git_blob": "ca573228249d4a77ce1e1cad01dc220316a7fe88",
+      "preserved": true,
+      "sha256": "d4da317337d4bac7bb8936b86393e4502ae25933346ec580b97f2765b0ab0956"
+    },
+    {
+      "file": "content/scenarios/campaign_1840_02.json",
+      "baseline_git_blob": "780f8a43026c75745ef4586ef5c8508d45362a36",
+      "current_git_blob": "780f8a43026c75745ef4586ef5c8508d45362a36",
+      "preserved": true,
+      "sha256": "12e366e0e0c764f5aa1f6155b4568b853b2083370093ae7ca2e9f00497a1228b"
+    },
+    {
+      "file": "content/scenarios/campaign_1840_03.json",
+      "baseline_git_blob": "312cf82e0baf4edcd7c7eb11d2b8c261c2ef9335",
+      "current_git_blob": "312cf82e0baf4edcd7c7eb11d2b8c261c2ef9335",
+      "preserved": true,
+      "sha256": "6cd37e8bbe5b0e579eb9d2751843202e3f465550b6313c883040d2ea23ee007c"
+    },
+    {
+      "file": "content/scenarios/campaign_1860_01.json",
+      "baseline_git_blob": "53965c7d5178dd44397cc494900cfe65621bb656",
+      "current_git_blob": "53965c7d5178dd44397cc494900cfe65621bb656",
+      "preserved": true,
+      "sha256": "be5cf0da88b394cd498466782f35cfdb1431606fa7c7db53777f59d23579b865"
+    },
+    {
+      "file": "content/scenarios/campaign_1860_02.json",
+      "baseline_git_blob": "e9f36bfdb09b3aefa07ac8550db97a35c91cd746",
+      "current_git_blob": "e9f36bfdb09b3aefa07ac8550db97a35c91cd746",
+      "preserved": true,
+      "sha256": "6181df29e2c8925d93df04420529d608bd095279e9f23541ccb9e172f83bc2e1"
+    },
+    {
+      "file": "content/scenarios/campaign_1860_03.json",
+      "baseline_git_blob": "026cc34404438ee7ce3a46515ae9da6024eb2e66",
+      "current_git_blob": "026cc34404438ee7ce3a46515ae9da6024eb2e66",
+      "preserved": true,
+      "sha256": "523c0a1796ee96da92e7302e06a53dc28b526a59be23348a4fe4d802472b3955"
+    },
+    {
+      "file": "content/scenarios/campaign_1890_01.json",
+      "baseline_git_blob": "1dd6c6743540de0494427bba7aa2807255cc8dc2",
+      "current_git_blob": "1dd6c6743540de0494427bba7aa2807255cc8dc2",
+      "preserved": true,
+      "sha256": "c6d70de8e075461af25d246c7d053174d9458658d0a7f430d884bf84e65a15f1"
+    },
+    {
+      "file": "content/scenarios/campaign_1890_02.json",
+      "baseline_git_blob": "2b8a0c2b798265df6ce27f9296a26b58ffc51fc7",
+      "current_git_blob": "2b8a0c2b798265df6ce27f9296a26b58ffc51fc7",
+      "preserved": true,
+      "sha256": "91f2e6b54aac407714b74c54d67a83a6c3a6360ca3a2370197796b568c864d0f"
+    },
+    {
+      "file": "content/scenarios/campaign_1890_03.json",
+      "baseline_git_blob": "d636a202b3ae21b009cefb318de3d167256da836",
+      "current_git_blob": "d636a202b3ae21b009cefb318de3d167256da836",
+      "preserved": true,
+      "sha256": "b1f295d8a38c5ea490c294be5ea4e299b354aca63db9baa99a02b6993e6a12a8"
+    },
+    {
+      "file": "content/scenarios/campaign_1900_01.json",
+      "baseline_git_blob": "be5ed9d9ae84f7c2ed937410ad0cc72db2bf8d78",
+      "current_git_blob": "be5ed9d9ae84f7c2ed937410ad0cc72db2bf8d78",
+      "preserved": true,
+      "sha256": "3842fae5b6336088c286fdf0a10d9b1cf095ad450c986e983b74592b1a88da85"
+    },
+    {
+      "file": "content/scenarios/campaign_1900_02.json",
+      "baseline_git_blob": "1ed730bde278d8293a4e4a668457546d8e3abd64",
+      "current_git_blob": "1ed730bde278d8293a4e4a668457546d8e3abd64",
+      "preserved": true,
+      "sha256": "ce8e8ef0a0e95f931b966e718c2c0049d42b6111a1b63cdc01dbd1864e8ee499"
+    },
+    {
+      "file": "content/scenarios/campaign_1900_03.json",
+      "baseline_git_blob": "a69c25e52799535997cba4fad52601af6b4af013",
+      "current_git_blob": "a69c25e52799535997cba4fad52601af6b4af013",
+      "preserved": true,
+      "sha256": "dd966a6fa140827adfdaab91043fbf5dde24c8db82601c7fbd62cc86f7246cbc"
+    },
+    {
+      "file": "content/scenarios/campaign_1917_01.json",
+      "baseline_git_blob": "d4f671fb6a964a02b3bed8e5b844d424574b3265",
+      "current_git_blob": "d4f671fb6a964a02b3bed8e5b844d424574b3265",
+      "preserved": true,
+      "sha256": "d4e08fe23b3f8ece6b5143da8d2f3f2c10ffb412769f6c54ec7659593e8a691c"
+    },
+    {
+      "file": "content/scenarios/campaign_1917_02.json",
+      "baseline_git_blob": "1c0a689f244b23015e02fd16bfa20fe2d9351b32",
+      "current_git_blob": "1c0a689f244b23015e02fd16bfa20fe2d9351b32",
+      "preserved": true,
+      "sha256": "14b0e73f90f6349eb9b62b8bf1ca529175ff02acc009082db22849bbda0caede"
+    },
+    {
+      "file": "content/scenarios/campaign_1917_03.json",
+      "baseline_git_blob": "ac3836d5c5c60b67624aaec811828c12e51e27e0",
+      "current_git_blob": "ac3836d5c5c60b67624aaec811828c12e51e27e0",
+      "preserved": true,
+      "sha256": "7c513a1396fd975ce07449e3c9950ad1dd75fc3cae76faa7bf8e2be7c8fe40df"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_01.json",
+      "baseline_git_blob": "7d390039ea0390ef39bd20365320a222ed2994d1",
+      "current_git_blob": "7d390039ea0390ef39bd20365320a222ed2994d1",
+      "preserved": true,
+      "sha256": "126f53ed196631718c889cdb1ffd9412a5f32c1d173d33d30704973bef74c3b3"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_02.json",
+      "baseline_git_blob": "327b41a62093f92ad59fd48b0c9e6405fc1cfe8a",
+      "current_git_blob": "327b41a62093f92ad59fd48b0c9e6405fc1cfe8a",
+      "preserved": true,
+      "sha256": "ea673e2902d38f9798f5b26cfd2e19c5b415c8dae282004e18001d340156c7c6"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_03.json",
+      "baseline_git_blob": "b23ccd5cfd5b4b7ddb2274c649393ee6114dee59",
+      "current_git_blob": "b23ccd5cfd5b4b7ddb2274c649393ee6114dee59",
+      "preserved": true,
+      "sha256": "eacf3f96d5c6d2dcdb7ebee16c0b999d4bb7e3bd10161ff7bc1b851b5e91369c"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_04.json",
+      "baseline_git_blob": "0be3ca432f2402516bfbd943ad00d51e4727845d",
+      "current_git_blob": "0be3ca432f2402516bfbd943ad00d51e4727845d",
+      "preserved": true,
+      "sha256": "862434b92761d12f191b84e791895b295db9aa99ec7becbde8651c5f4b4c58ea"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_05.json",
+      "baseline_git_blob": "57f1511a4c024f49ebf2437fee8d26f139528097",
+      "current_git_blob": "57f1511a4c024f49ebf2437fee8d26f139528097",
+      "preserved": true,
+      "sha256": "a501a2b79950ab8c3284da94d9242d88a7c4ca9839ea09f5e80982ac43fc9bf0"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_06.json",
+      "baseline_git_blob": "289e61d47bfc4d471295d103109ee8a1e7bb4528",
+      "current_git_blob": "289e61d47bfc4d471295d103109ee8a1e7bb4528",
+      "preserved": true,
+      "sha256": "167fa48a3616d3cf5997c87adb3f9436d0aee3938c4ce2230b6c13510575e337"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_01.json",
+      "baseline_git_blob": "3205d93cc77832cf52cc0b760bf7ac1dba639bf2",
+      "current_git_blob": "3205d93cc77832cf52cc0b760bf7ac1dba639bf2",
+      "preserved": true,
+      "sha256": "38a8ffbfc5b87157753636a01eb745b3d8e418460dc53ab570c0ce65c89428b0"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_02.json",
+      "baseline_git_blob": "9cf76917d4f26b2a61538096fc5365b76f21beb4",
+      "current_git_blob": "9cf76917d4f26b2a61538096fc5365b76f21beb4",
+      "preserved": true,
+      "sha256": "4b1882a01283897c2a3e5867507773d43ce4e957d5527a7440d97cd4cce5b57b"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_03.json",
+      "baseline_git_blob": "8c9f2d43755c4b6bbd9f187a5686548493a0bf59",
+      "current_git_blob": "8c9f2d43755c4b6bbd9f187a5686548493a0bf59",
+      "preserved": true,
+      "sha256": "7af715b56bec25e3b18409e05965f81e0edce3cb06666b69a94f6d14828bb47b"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_04.json",
+      "baseline_git_blob": "ce20d7a7933b4fc16e8ee82b004bbfff25ba7e18",
+      "current_git_blob": "ce20d7a7933b4fc16e8ee82b004bbfff25ba7e18",
+      "preserved": true,
+      "sha256": "51e336126829fa75db44d2b9eb5eb2ae69d79c05b71436300556f8858dacce0d"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_05.json",
+      "baseline_git_blob": "cff7a310c0d07f6c55ac0d482e34c6f112aea7c3",
+      "current_git_blob": "cff7a310c0d07f6c55ac0d482e34c6f112aea7c3",
+      "preserved": true,
+      "sha256": "14dbd01b59f703664dc0e998d554a46bbf483a9c5d2ccf35d06750bcf51a9921"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_06.json",
+      "baseline_git_blob": "975b58f067b700327354c3e8f03b87ca09a00f5e",
+      "current_git_blob": "975b58f067b700327354c3e8f03b87ca09a00f5e",
+      "preserved": true,
+      "sha256": "a2f4bf5a5367db285bcc97f1b1e59500d3bb262ff3ea5a61a457ef38a69508ed"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_01.json",
+      "baseline_git_blob": "aa72a19a874a8b6c17983f1ff2ca55c230197caa",
+      "current_git_blob": "aa72a19a874a8b6c17983f1ff2ca55c230197caa",
+      "preserved": true,
+      "sha256": "1be02154c4f3021bb98de2d868cd35b45b4f3a127bd2c2cbebaae2caa443858b"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_02.json",
+      "baseline_git_blob": "6d2931f60cd8e6eedd3f4259414735935da2ad8d",
+      "current_git_blob": "6d2931f60cd8e6eedd3f4259414735935da2ad8d",
+      "preserved": true,
+      "sha256": "1db4f87a57fb83b5666246b6e2e73896a2be0529df1368720fa3ee6f5c65e7dd"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_03.json",
+      "baseline_git_blob": "692146dada02c037b6e6ad248b3627d0f78a1706",
+      "current_git_blob": "692146dada02c037b6e6ad248b3627d0f78a1706",
+      "preserved": true,
+      "sha256": "b1ba9fc7f137d5f76821220e196ba15d9628f09e0b4a13611f9288a9802f3256"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_04.json",
+      "baseline_git_blob": "4abeac836a6ea3abe4f53da4427e2fa75e598bca",
+      "current_git_blob": "4abeac836a6ea3abe4f53da4427e2fa75e598bca",
+      "preserved": true,
+      "sha256": "3dbc7c7996f0a84668ad08e27e004dd41a95c572827889dc14aae6a09910ab72"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_05.json",
+      "baseline_git_blob": "fec6b9478357c3de7f53951cd234b1252fa0db91",
+      "current_git_blob": "fec6b9478357c3de7f53951cd234b1252fa0db91",
+      "preserved": true,
+      "sha256": "e506dd28d9a610188bfe1c90f3bbc17935824d32d267d1cbb8de2992a3b16e81"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_06.json",
+      "baseline_git_blob": "580d332dacf4b088af86dc6ddc90dd47f413160b",
+      "current_git_blob": "580d332dacf4b088af86dc6ddc90dd47f413160b",
+      "preserved": true,
+      "sha256": "63860345c9437f280a86661e6ffe783275f00d35640cdc1712285c2266d799a9"
+    },
+    {
+      "file": "content/scenarios/campaign_1927_01.json",
+      "baseline_git_blob": "b5c45e3cfac690cefb69bdad96c6e09660e5938b",
+      "current_git_blob": "b5c45e3cfac690cefb69bdad96c6e09660e5938b",
+      "preserved": true,
+      "sha256": "659e8ffe2f3e2b2b5caf6332bd89f21dcfd8e8102825d2e148959170e90fde8b"
+    },
+    {
+      "file": "content/scenarios/campaign_1927_02.json",
+      "baseline_git_blob": "8599aafd7db655c9496a8ebd1e6cd1894ab9cdfd",
+      "current_git_blob": "8599aafd7db655c9496a8ebd1e6cd1894ab9cdfd",
+      "preserved": true,
+      "sha256": "81c562be61434eff0028677f2827ec9186d8d7095eedde9f4b0b29516dbf8ebb"
+    },
+    {
+      "file": "content/scenarios/campaign_1927_03.json",
+      "baseline_git_blob": "8713b3aee738219ce0e366a65e21a0718e3d1e44",
+      "current_git_blob": "8713b3aee738219ce0e366a65e21a0718e3d1e44",
+      "preserved": true,
+      "sha256": "ea861246315941cccd2f18c09dfa158e231016f07b5a20a4ac4ef0ff4795523a"
+    },
+    {
+      "file": "content/scenarios/campaign_1940_01.json",
+      "baseline_git_blob": "36a26d83d2d9964168336d2c65cacafe7ee32139",
+      "current_git_blob": "36a26d83d2d9964168336d2c65cacafe7ee32139",
+      "preserved": true,
+      "sha256": "29c35e7fb0f5c4a7702adeff0ece916ceea78cca921bcde75a217cf7e4dad64a"
+    },
+    {
+      "file": "content/scenarios/campaign_1940_02.json",
+      "baseline_git_blob": "905b371b69d3e8d1222fd7862e9a78d441b43b16",
+      "current_git_blob": "905b371b69d3e8d1222fd7862e9a78d441b43b16",
+      "preserved": true,
+      "sha256": "600d9166045d17b2668f1a2748ec0eb3afa14efb20c343fdaf1125b69c983a2e"
+    },
+    {
+      "file": "content/scenarios/campaign_1940_03.json",
+      "baseline_git_blob": "a5c84322d2f2b8e0e47d4f741135b07a30a9d937",
+      "current_git_blob": "a5c84322d2f2b8e0e47d4f741135b07a30a9d937",
+      "preserved": true,
+      "sha256": "37b4357785eb7bddda4c54984fe59166915a40dcc410ec624caa9b5229992d43"
+    },
+    {
+      "file": "content/scenarios/catalog.json",
+      "baseline_git_blob": "d5a6dd9a8040f4bc1676f1397a095965423dc014",
+      "current_git_blob": "d5a6dd9a8040f4bc1676f1397a095965423dc014",
+      "preserved": true,
+      "sha256": "2ade52274248c15cd824d5b9203f60d58e80f6a604a36ea5117f8e5bfe8be923"
+    },
+    {
+      "file": "content/scenarios/conq_1920.json",
+      "baseline_git_blob": "8f6ac8b9227cdab370dc087199103ee1183a4e34",
+      "current_git_blob": "8f6ac8b9227cdab370dc087199103ee1183a4e34",
+      "preserved": true,
+      "sha256": "bd9345b8693de931ad616b56c19af0616cb02f08a913debd05615c4d8d71c77f"
+    },
+    {
+      "file": "content/scenarios/conq_1922.json",
+      "baseline_git_blob": "0a78e0d04c700ec978c2f89352ec3a305cd207cf",
+      "current_git_blob": "0a78e0d04c700ec978c2f89352ec3a305cd207cf",
+      "preserved": true,
+      "sha256": "5f0488c6d37627e18df4c9a82da83c023845117f044e26848bde0a9b4aeada27"
+    },
+    {
+      "file": "content/scenarios/conq_1924.json",
+      "baseline_git_blob": "8925532d9721b5167333538bf42ece4f648a00f3",
+      "current_git_blob": "8925532d9721b5167333538bf42ece4f648a00f3",
+      "preserved": true,
+      "sha256": "7d3622910800b70f9f8f19a9914e8d1d0e15db50e959252a415573a1580f5c51"
+    },
+    {
+      "file": "content/scenarios/legion_01.json",
+      "baseline_git_blob": "219ca6dbed8f209fc6786f12fc2626528a9b7da6",
+      "current_git_blob": "219ca6dbed8f209fc6786f12fc2626528a9b7da6",
+      "preserved": true,
+      "sha256": "2d522f510a4975ca4d2432a280f557cc32684f760586e46c41534ee4829b1754"
+    },
+    {
+      "file": "content/scenarios/legion_02.json",
+      "baseline_git_blob": "e65585949a711bfdb0dc6cbbae0a70f753911612",
+      "current_git_blob": "e65585949a711bfdb0dc6cbbae0a70f753911612",
+      "preserved": true,
+      "sha256": "f3da05e999e3696c0da0a6f068cedcc71c7d57ada55a83bb38430fc2f31fbc40"
+    },
+    {
+      "file": "content/scenarios/legion_03.json",
+      "baseline_git_blob": "c9a0da3d02958477727d4e32cf2be196019cd2ba",
+      "current_git_blob": "c9a0da3d02958477727d4e32cf2be196019cd2ba",
+      "preserved": true,
+      "sha256": "ea61907e70e5c15ddc93042ef5d2d3b602b723ab73cae161a74245d76bad6913"
+    },
+    {
+      "file": "content/scenarios/legion_04.json",
+      "baseline_git_blob": "990180acd1054b2a69e98973e40b0f0c671dc829",
+      "current_git_blob": "990180acd1054b2a69e98973e40b0f0c671dc829",
+      "preserved": true,
+      "sha256": "1a36a3776f1968932d41cb2314277106ca726e5f54c648375812cacf8bc5e33f"
+    },
+    {
+      "file": "content/scenarios/legion_05.json",
+      "baseline_git_blob": "c0974524ff4a764790b5841ff095e2ccdc5d0a00",
+      "current_git_blob": "c0974524ff4a764790b5841ff095e2ccdc5d0a00",
+      "preserved": true,
+      "sha256": "06249d9a6dc99536f597613b9fc4953a35e43b6139378850d88c03bf09446c71"
+    },
+    {
+      "file": "content/scenarios/legion_06.json",
+      "baseline_git_blob": "7566576c032655fa1a421050ce11f3f7b675b665",
+      "current_git_blob": "7566576c032655fa1a421050ce11f3f7b675b665",
+      "preserved": true,
+      "sha256": "4d85ab7cbf79bc3476a6f9c4d9495f4b801f375b85dd7a3f85c7dbf6dbc5711e"
+    },
+    {
+      "file": "content/scenarios/legion_07.json",
+      "baseline_git_blob": "3fff7d0b2bd5e68e7b52d97659ceaeef94c11e0f",
+      "current_git_blob": "3fff7d0b2bd5e68e7b52d97659ceaeef94c11e0f",
+      "preserved": true,
+      "sha256": "626d13a76c704ad5bbbc9b37ecac1e6f75207e6979d5caa72bfeea7a38aff7f1"
+    },
+    {
+      "file": "content/scenarios/legion_08.json",
+      "baseline_git_blob": "d0f09b80fcdafb3248242ec3ba7fa86d74db8082",
+      "current_git_blob": "d0f09b80fcdafb3248242ec3ba7fa86d74db8082",
+      "preserved": true,
+      "sha256": "bff6cd1b29e63e02cc007f09911dba5add3eff7268b681fb4ea1ada42033dbbc"
+    },
+    {
+      "file": "content/scenarios/legion_09.json",
+      "baseline_git_blob": "c7de7639489521f379af8bc0b6bb9557a52a6f01",
+      "current_git_blob": "c7de7639489521f379af8bc0b6bb9557a52a6f01",
+      "preserved": true,
+      "sha256": "039249d7e41301a4b637f6c55a6198b4a3ecbd087d721e7fd92fe8d05b318977"
+    },
+    {
+      "file": "content/scenarios/legion_10.json",
+      "baseline_git_blob": "e8f66ad723a0092096cece37381f7ad53987d310",
+      "current_git_blob": "e8f66ad723a0092096cece37381f7ad53987d310",
+      "preserved": true,
+      "sha256": "6f3a762d66eb8f10f0c90c710bda39ccdb04f7d59c65e1f6026b8b42d50bd729"
+    },
+    {
+      "file": "content/scenarios/legion_11.json",
+      "baseline_git_blob": "5247249382fc63b4123dbb38e43fc8463ac3a4a5",
+      "current_git_blob": "5247249382fc63b4123dbb38e43fc8463ac3a4a5",
+      "preserved": true,
+      "sha256": "1eab46a67c55985ea2f3dd8baa434720010d080358dfa58881c9b96211c87a8a"
+    },
+    {
+      "file": "content/scenarios/legion_12.json",
+      "baseline_git_blob": "eec6ddb28ebb0ac443d7934afd289fbec243b191",
+      "current_git_blob": "eec6ddb28ebb0ac443d7934afd289fbec243b191",
+      "preserved": true,
+      "sha256": "0df1fd5d93f584d0c26a5692fa87d84ac0a4f72aa727efc92db0b1776a3ca7ea"
+    },
+    {
+      "file": "presentation/data/asia_landcover_features.json",
+      "baseline_git_blob": "c52464c66740edab71b67372a21683280e1c28a6",
+      "current_git_blob": "c52464c66740edab71b67372a21683280e1c28a6",
+      "preserved": true,
+      "sha256": "dcf45eb8f03cb7470aa6a701890f102468e224a2818db650b731f3229343c1bd"
+    },
+    {
+      "file": "presentation/data/control_land_clip.json",
+      "baseline_git_blob": "11d21956c9e2b5ade72a8de3cb55640f3833e485",
+      "current_git_blob": "958caa472f6f599b0f1f9509753c54c953eddd3b",
+      "preserved": false,
+      "sha256": "578ff405de7d3e5d27428526b786e601224327343d169e7aa20909a3a7af14d2"
+    },
+    {
+      "file": "presentation/data/general_lifespans.json",
+      "baseline_git_blob": "75d99167cca16cf5ecedd2fa9f4d8b122a4f46d1",
+      "current_git_blob": "75d99167cca16cf5ecedd2fa9f4d8b122a4f46d1",
+      "preserved": true,
+      "sha256": "e0bffc00f4f13fb31400a4f720dc5d741325b8b931901a328629384c2eb3930f"
+    },
+    {
+      "file": "presentation/data/general_portraits.json",
+      "baseline_git_blob": "a0ec7d9dac0b189dbdf526806927c3e0903856c2",
+      "current_git_blob": "a0ec7d9dac0b189dbdf526806927c3e0903856c2",
+      "preserved": true,
+      "sha256": "51e70e841fd0da166f2b64c7710aa793340b6db2b9f1ca8dc54a6a78c4b3f43e"
+    },
+    {
+      "file": "presentation/data/ground_atlas_plan.json",
+      "baseline_git_blob": "6fbe1fd9505cc916ab7a1fee88cb0d3ee08d7937",
+      "current_git_blob": "6fbe1fd9505cc916ab7a1fee88cb0d3ee08d7937",
+      "preserved": true,
+      "sha256": "2600cedda825b04d42426ab54111a5ea375e55c139ec41fff5c7ae6153895dda"
+    },
+    {
+      "file": "presentation/data/ground_coverage.json",
+      "baseline_git_blob": "eec3f053f8500795ec32929830481d6f2c5bfdbd",
+      "current_git_blob": "29cb55bdf0d528b1023fb76ef99db9639439adac",
+      "preserved": false,
+      "sha256": "8a4c86d78e88c5d7061287a21655afb63f22b893877fd4aa122573668df329d6"
+    },
+    {
+      "file": "presentation/data/ground_coverage_asia_strategic.json",
+      "baseline_git_blob": "fba2694305db859c8ceaa18458362ee92f6c1e5f",
+      "current_git_blob": "fa18dbf5b5c8d474d61bcd4a63e5b2dc27b17d52",
+      "preserved": false,
+      "sha256": "73a2d290618b437ac2f66245027a0f0f113123061ab367bd2f84c7560dc13663"
+    },
+    {
+      "file": "presentation/data/ground_coverage_conquest_china.json",
+      "baseline_git_blob": "37ef77a64f87403d01b46cc6efa8227b1aefab36",
+      "current_git_blob": "e6916bd60f39ea03458b3f6f1e64238a2d560172",
+      "preserved": false,
+      "sha256": "efd53093fe23476ed3105c3e04ffc8a9929e80265319362295e0c87a2d35e047"
+    },
+    {
+      "file": "presentation/data/ground_coverage_hankou.json",
+      "baseline_git_blob": "13b7c785f47d59651e9150369a1814ed3976541a",
+      "current_git_blob": "13b7c785f47d59651e9150369a1814ed3976541a",
+      "preserved": true,
+      "sha256": "cd678b2df2a4325eb2f505f6d67ec2ee5bcf257ef96d1931c3c3d8c85cce06c9"
+    },
+    {
+      "file": "presentation/data/ground_coverage_jingfeng.json",
+      "baseline_git_blob": "c6ec6f490fe44cbddfe58b5a4e0c2a073af59587",
+      "current_git_blob": "186fd6c50b63d31f158313e6b9b8e08180c3f815",
+      "preserved": false,
+      "sha256": "9688054ce740f85dcf6664e4fb824f38f03ff1e19240fa022d2c10ab276a8ef1"
+    },
+    {
+      "file": "presentation/data/ground_coverage_jingjin.json",
+      "baseline_git_blob": "d982f311f8ee61473f1046cade414d587c84a5b3",
+      "current_git_blob": "f37466dfd87766bec0ecd8d8d0935d6b91e9f09c",
+      "preserved": false,
+      "sha256": "fff55ca1bfe38667c0884a35ae28e04a74421ff8b8d4da0929615cdabb169638"
+    },
+    {
+      "file": "presentation/data/ground_coverage_ningpu.json",
+      "baseline_git_blob": "49cc8cdd00484d863fcf4baaebb1b94b5097b963",
+      "current_git_blob": "49cc8cdd00484d863fcf4baaebb1b94b5097b963",
+      "preserved": true,
+      "sha256": "9b94ea507a9a3763ea3475f47d65fcb194492545d15c10399322581239d84153"
+    },
+    {
+      "file": "presentation/data/ground_identity_plan.json",
+      "baseline_git_blob": "033dcba7fe7832a728593f5ded5c164402fc5fec",
+      "current_git_blob": "033dcba7fe7832a728593f5ded5c164402fc5fec",
+      "preserved": true,
+      "sha256": "a7ae5025e07b0d7e6ca923283c4a35728005860ef4ac09a7c6f09967dcb2897d"
+    },
+    {
+      "file": "presentation/data/ground_macro_catalog.json",
+      "baseline_git_blob": "99f04526ba8660c32183dbaab962d22d3a6dca09",
+      "current_git_blob": "99f04526ba8660c32183dbaab962d22d3a6dca09",
+      "preserved": true,
+      "sha256": "60686103fe11336b8c994fe9dfcd2d430811d4fe0aa5747e1caab2f744725835"
+    },
+    {
+      "file": "presentation/data/ground_macro_plan.json",
+      "baseline_git_blob": "dd7e23e75e5053cd9d923d755335e1940dd6788a",
+      "current_git_blob": "dd7e23e75e5053cd9d923d755335e1940dd6788a",
+      "preserved": true,
+      "sha256": "2a05fd3b09eae3a6396871637d8dfeb55f6a9bcebdfdfadf545f61293bb863aa"
+    },
+    {
+      "file": "presentation/data/hydrography_detail.json",
+      "baseline_git_blob": "32ec694a0bd135b9951b8597c38631f08e8f976f",
+      "current_git_blob": "32ec694a0bd135b9951b8597c38631f08e8f976f",
+      "preserved": true,
+      "sha256": "c0adddd37fe58e1db9424634ee11f42ae1515d223514213ced76989d962449b3"
+    },
+    {
+      "file": "presentation/data/hydrography_fine.json",
+      "baseline_git_blob": "1b580da41e7c69cad22fc1d3565f6555ac3fcff5",
+      "current_git_blob": "4fb6e2bf77b423cd606683955e3f53e33acc1ac8",
+      "preserved": false,
+      "sha256": "4ada029dd2abc0185942d225955c2f79e35b18758ac9830bc3652ac8a93ba37b"
+    },
+    {
+      "file": "presentation/data/map_bank_plan.json",
+      "baseline_git_blob": "f038d361bc2db4f416d5c3fc55396a3efa508edb",
+      "current_git_blob": "f038d361bc2db4f416d5c3fc55396a3efa508edb",
+      "preserved": true,
+      "sha256": "df1181be5232668e34f2840d91a67e6dae74c1f1a3837624c23f8946b67175da"
+    },
+    {
+      "file": "presentation/data/map_bank_visuals.json",
+      "baseline_git_blob": "e6edfa75618e74a746ba9d2bcbf890cee81e3063",
+      "current_git_blob": "e6edfa75618e74a746ba9d2bcbf890cee81e3063",
+      "preserved": true,
+      "sha256": "2b874c68776637e33bcbc0618ed5c48f822a6bcd4c2d1544adefb48634f5c68a"
+    },
+    {
+      "file": "presentation/data/map_settlement_extension_plan.json",
+      "baseline_git_blob": "2c45b55e5f3bdad80b8cff3463708401c180548e",
+      "current_git_blob": "2c45b55e5f3bdad80b8cff3463708401c180548e",
+      "preserved": true,
+      "sha256": "4254dd8d9cd7b68598ef65003edd0d8a17c052e43f884c960a391e0fb52c8fcb"
+    },
+    {
+      "file": "presentation/data/map_surface_extension_plan.json",
+      "baseline_git_blob": "a7555c66244e3d2e91202457efe731a5e3c833fa",
+      "current_git_blob": "a7555c66244e3d2e91202457efe731a5e3c833fa",
+      "preserved": true,
+      "sha256": "a88eed0fc90e00a29ea46aff1eb04626624063346cb4d76ec98994c554047aff"
+    },
+    {
+      "file": "presentation/data/music_catalog.json",
+      "baseline_git_blob": "9806064fd40168e66548db901376b576c0915923",
+      "current_git_blob": "9806064fd40168e66548db901376b576c0915923",
+      "preserved": true,
+      "sha256": "baa46f92c1f3d4e70eb1fff02966984095397fa4428f69b5311b887816692740"
+    },
+    {
+      "file": "presentation/data/relief_visuals.json",
+      "baseline_git_blob": "dfb4fdcf374088b2940defe40f94bcdda0cac2e5",
+      "current_git_blob": "dfb4fdcf374088b2940defe40f94bcdda0cac2e5",
+      "preserved": true,
+      "sha256": "6fcdd6bc89bee253259868511d1e2914f4220f70b447ee274d3a3ec7b46d0f2f"
+    },
+    {
+      "file": "presentation/data/settlements_v023.json",
+      "baseline_git_blob": "c9e5001c92a3d3b52ac0f09500429878fcace861",
+      "current_git_blob": "c9e5001c92a3d3b52ac0f09500429878fcace861",
+      "preserved": true,
+      "sha256": "66fea55f568ade8f7cd9019c153f8d0dca736deac78c9ee9c9e2c9a5051bdc10"
+    },
+    {
+      "file": "presentation/data/surface_regions.json",
+      "baseline_git_blob": "179907538812022147e1dfda371cb0188ede8618",
+      "current_git_blob": "179907538812022147e1dfda371cb0188ede8618",
+      "preserved": true,
+      "sha256": "17afb3226714abfed86cbf6a1bfc49743d2278d446bd59e3ae505798624b2efa"
+    },
+    {
+      "file": "presentation/data/terrain_surface_catalog.json",
+      "baseline_git_blob": "2e851a613bfe7cd64c18520ab962c2f63671be69",
+      "current_git_blob": "2e851a613bfe7cd64c18520ab962c2f63671be69",
+      "preserved": true,
+      "sha256": "0002be58bb37d62d686a8c3e9efe5b1ce25e2507b82f46b5b94e99669e9c2a17"
+    },
+    {
+      "file": "presentation/data/terrain_surface_plan.json",
+      "baseline_git_blob": "3554a994ae2ec2f9f1a96dadfe7143f8635f04b2",
+      "current_git_blob": "3554a994ae2ec2f9f1a96dadfe7143f8635f04b2",
+      "preserved": true,
+      "sha256": "db89a490e62a9afbf57d442f68d9029dfeab1447750db3356bc748889620b7e2"
+    },
+    {
+      "file": "presentation/data/terrain_surface_regions.json",
+      "baseline_git_blob": "b9cf316c4e6a89d24dd9fcf6e5af0e341c25c447",
+      "current_git_blob": "b9cf316c4e6a89d24dd9fcf6e5af0e341c25c447",
+      "preserved": true,
+      "sha256": "9d6ff8a87352f590092299e4324b4da68821ea9a6337edfced3e9d47d0f11f37"
+    },
+    {
+      "file": "presentation/data/unit_actions.json",
+      "baseline_git_blob": "4ecf994a431a39448ade5302d0ce9b1df38c13c4",
+      "current_git_blob": "4ecf994a431a39448ade5302d0ce9b1df38c13c4",
+      "preserved": true,
+      "sha256": "5372a596991268d1fa8de06ddea06f95fe70e009b98285f645c2648ef875ffb6"
+    }
+  ],
+  "scope": "Only four marine drawing fields/source registration and recompiled land-dependent display meshes may change. Every other pre-existing JSON retains its delivered bytes. Nonvisual map fields and all old geographic source records have a separate independent source audit."
+}

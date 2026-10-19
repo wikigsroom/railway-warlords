@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.25",
+	"build_version": "0.2.26",
 	"city_labels": [
 		{
 			"city_id": "pukou",
@@ -26,7 +26,7 @@
 			"text": "江浦 · 县"
 		}
 	],
-	"content_hash": "a75da77276df468600ed2432bef1d404a8179d00d4ca197731e30576ce2d23f1",
+	"content_hash": "9ea85ebaea4412357c628bf6d2c16d29d7ef08c594dc77dcef7b3005b42f6661",
 	"control_land_clip": {},
 	"historical_places": {
 		"additional_markers": 1,
@@ -49,7 +49,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 304,
 		"placed": 2,
-		"preparation_ms": 36.692,
+		"preparation_ms": 39.515,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 2,
 		"rule_cells_changed": false,
@@ -73,12 +73,24 @@
 			"riverbank": 2
 		},
 		"hydrography": {
+			"actual_coast_band_draws": 0,
+			"coast_band": {
+				"batched_draws": 0,
+				"half_width_world": 2.8,
+				"source_centrelines_modified": false,
+				"source_lines": 0,
+				"source_points": 0,
+				"triangles": 0
+			},
 			"display_corner_rounding_max_deviation_metres": 60.0,
 			"fine_source_id": "hydrorivers_v10_as",
 			"fine_source_sha256": "827e03a8e419b9578d5f246bcce1c93de1a0bd561a9f572fe84606c5d36d31fa",
 			"flat_lowland_model_branches_excluded": true,
 			"historical_channel_survey": false,
 			"major_presentation_replacements": 16,
+			"marine_geometry": {
+				"active": false
+			},
 			"river_surface": {
 				"detail_banks_drawn_before_water": true,
 				"drawn_antialiased_headwaters": 4,
@@ -377,13 +389,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 7,
-		"index_ms": 14.839,
+		"index_ms": 11.376,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 21.12,
+		"mesh_ms": 24.37,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 7,
-		"placement_ms": 1.296,
-		"preparation_ms": 37.255,
+		"placement_ms": 1.477,
+		"preparation_ms": 37.223,
 		"rules_map_mutated": false,
 		"source": "SRTM90m_v3_five_point_samples",
 		"source_meters_per_world_unit": 26.0416666666667,

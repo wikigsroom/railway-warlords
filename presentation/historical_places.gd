@@ -54,13 +54,17 @@ func prepare(map: Dictionary, date: String="1924-01-01") -> void:
 		node["sources"]=data().get("role_overrides",{}).get(city.id,{}).get("sources",[])
 		node["note"]="历史地方与交通节点。军用城池等级另行显示。"
 		node["rank_period"]="1920—1924";add_node(node)
-	for record in entry.get("control_zones_by_year",{}).get(ContentRegistry.administration_year(date),[]):
+	var year=ContentRegistry.administration_year(date)
+	var marine=MapCoastGeometry.for_map(map,map_key)
+	var zone_records=marine.get("control_zones_by_year",{}).get(year,entry.get("control_zones_by_year",{}).get(year,[]))
+	for record in zone_records:
+		if record.triangles.is_empty():continue
 		var vertices=PackedVector3Array()
 		for point in record.triangles:vertices.append(Vector3(point[0],point[1],0))
 		var arrays=[];arrays.resize(Mesh.ARRAY_MAX);arrays[Mesh.ARRAY_VERTEX]=vertices
 		var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
 		var bounds=record.bounds
-		zones.append({"city_id":record.city_id,"province":record.province,"mesh":mesh,"borders":record.borders.map(points_array),"bounds":Rect2(Vector2(bounds[0],bounds[1]),Vector2(bounds[2]-bounds[0],bounds[3]-bounds[1]))})
+		zones.append({"city_id":record.city_id,"province":record.province,"mesh":mesh,"borders":record.borders.map(points_array),"bounds":Rect2(Vector2(bounds[0],bounds[1]),Vector2(bounds[2]-bounds[0],bounds[3]-bounds[1])),"land_clipped":not marine.is_empty()})
 	# The continental map does not pretend to have surveyed historical county
 	# polygons.  It still needs a readable ownership layer, so each real city
 	# receives a deterministic influence hex, intersected with source land and

@@ -265,13 +265,13 @@
 			"passed": true
 		}
 	],
-	"content_hash": "a75da77276df468600ed2432bef1d404a8179d00d4ca197731e30576ce2d23f1",
+	"content_hash": "9ea85ebaea4412357c628bf6d2c16d29d7ef08c594dc77dcef7b3005b42f6661",
 	"failed": 0,
 	"failures": [],
 	"maps": [
 		{
 			"cells": 26195,
-			"features_fingerprint": "9b7e88653493c3f19aec01efe4cc4cd6d7e2eb4d1cf397fba6af6b3fbb2d3a0f",
+			"features_fingerprint": "5433889f499c764ae4f4777d3c3127deb72fcd38968b8b1a8160ad831ff57d21",
 			"map_id": "jingjin",
 			"relief": {
 				"continuous_lighting": {
@@ -292,17 +292,17 @@
 					"raster_art_generated": false,
 					"rules_map_mutated": false,
 					"source_images_modified": false,
-					"source_samples": 23423
+					"source_samples": 23478
 				},
-				"contour_segments": 9614,
+				"contour_segments": 9615,
 				"crest_axis_from_source_neighbours": true,
-				"eligible_features": 2197,
+				"eligible_features": 2166,
 				"families": {
-					"foothill_ew": 902,
-					"foothill_ns": 471,
+					"foothill_ew": 880,
+					"foothill_ns": 472,
 					"peak_ew": 9,
 					"peak_ns": 2,
-					"ridge_ew": 207,
+					"ridge_ew": 203,
 					"ridge_ns": 88
 				},
 				"generated_continental_contours": false,
@@ -310,29 +310,49 @@
 				"height_exaggeration_display_only": 6.0,
 				"historical_vegetation_claimed": false,
 				"independent_relief_originals_used": 193,
-				"index_ms": 96.888,
+				"index_ms": 53.774,
 				"lighting": "continuous_source_height_normals",
-				"mesh_ms": 2879.412,
+				"mesh_ms": 1799.516,
 				"nearby_variant_exclusion_world": 270.0,
-				"placed_features": 1679,
-				"placement_ms": 640.745,
-				"preparation_ms": 3617.045,
+				"placed_features": 1654,
+				"placement_ms": 486.767,
+				"preparation_ms": 2340.057,
 				"rules_map_mutated": false,
 				"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 				"source_meters_per_world_unit": 20.8333333333333,
 				"strategic_category_relief": false,
-				"triangles": 46063
+				"triangles": 46176
 			},
 			"surface": {
+				"coast_band": {
+					"batched_draws": 1,
+					"half_width_world": 2.8,
+					"source_centrelines_modified": false,
+					"source_lines": 1,
+					"source_points": 1025,
+					"triangles": 8192
+				},
 				"errors": [],
-				"land_rings": 4,
-				"land_triangles": 72,
+				"land_rings": 1,
+				"land_triangles": 1092,
+				"marine_geometry": {
+					"active": true,
+					"cache_scope": "one_map",
+					"coast_vertices": 1025,
+					"existing_inland_water_preserved": true,
+					"historical_survey_claimed": false,
+					"land_polygons": 1,
+					"land_triangles": 1092,
+					"new_l2_reservoirs_imported": false,
+					"pretriangulated": true,
+					"source": "gshhg_2_3_7_L1"
+				},
 				"water_rings": 0
 			}
 		},
 		{
 			"cells": 65726,
-			"features_fingerprint": "60c9e41df91e7e54a15f061052e01706287ab47d65640da3149b3d590755ea1d",
+			"features_fingerprint": "6c18bb89b933da49634cb7b5b80e5942861de7f141c0ee0969e4f17f5d2c3547",
 			"map_id": "jingfeng",
 			"relief": {
 				"continuous_lighting": {
@@ -353,14 +373,14 @@
 					"raster_art_generated": false,
 					"rules_map_mutated": false,
 					"source_images_modified": false,
-					"source_samples": 45961
+					"source_samples": 45911
 				},
-				"contour_segments": 30166,
+				"contour_segments": 30157,
 				"crest_axis_from_source_neighbours": true,
-				"eligible_features": 7326,
+				"eligible_features": 7276,
 				"families": {
-					"foothill_ew": 3596,
-					"foothill_ns": 2044,
+					"foothill_ew": 3551,
+					"foothill_ns": 2042,
 					"ridge_ew": 337,
 					"ridge_ns": 177
 				},
@@ -369,29 +389,49 @@
 				"height_exaggeration_display_only": 6.0,
 				"historical_vegetation_claimed": false,
 				"independent_relief_originals_used": 191,
-				"index_ms": 274.608,
+				"index_ms": 187.998,
 				"lighting": "continuous_source_height_normals",
-				"mesh_ms": 6402.721,
+				"mesh_ms": 4405.081,
 				"nearby_variant_exclusion_world": 270.0,
-				"placed_features": 6154,
-				"placement_ms": 2312.506,
-				"preparation_ms": 8989.834,
+				"placed_features": 6107,
+				"placement_ms": 1662.55,
+				"preparation_ms": 6255.628,
 				"rules_map_mutated": false,
 				"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 				"source_meters_per_world_unit": 20.8333333333333,
 				"strategic_category_relief": false,
-				"triangles": 89939
+				"triangles": 89782
 			},
 			"surface": {
+				"coast_band": {
+					"batched_draws": 1,
+					"half_width_world": 2.8,
+					"source_centrelines_modified": false,
+					"source_lines": 62,
+					"source_points": 12402,
+					"triangles": 99192
+				},
 				"errors": [],
-				"land_rings": 10,
-				"land_triangles": 639,
+				"land_rings": 62,
+				"land_triangles": 12369,
+				"marine_geometry": {
+					"active": true,
+					"cache_scope": "one_map",
+					"coast_vertices": 12461,
+					"existing_inland_water_preserved": true,
+					"historical_survey_claimed": false,
+					"land_polygons": 62,
+					"land_triangles": 12369,
+					"new_l2_reservoirs_imported": false,
+					"pretriangulated": true,
+					"source": "gshhg_2_3_7_L1"
+				},
 				"water_rings": 0
 			}
 		},
 		{
 			"cells": 74762,
-			"features_fingerprint": "f37b214df6f8f8a25775d8ed3915ac9682dbf58cf6d64404f55392237781bf14",
+			"features_fingerprint": "8e3f1f00139a5676ac92acece83c375d466975c3ca9b73d975e20756d1271d0d",
 			"map_id": "conquest_china",
 			"relief": {
 				"continuous_lighting": {
@@ -401,9 +441,9 @@
 						4,
 						4
 					],
-					"lookup_bytes": 451632,
+					"lookup_bytes": 453184,
 					"lookup_dimensions": [
-						291,
+						292,
 						388
 					],
 					"maximum_contributing_samples": 16,
@@ -412,41 +452,61 @@
 					"raster_art_generated": false,
 					"rules_map_mutated": false,
 					"source_images_modified": false,
-					"source_samples": 52184
+					"source_samples": 52501
 				},
-				"contour_segments": 69051,
+				"contour_segments": 69535,
 				"crest_axis_from_source_neighbours": true,
-				"eligible_features": 14761,
+				"eligible_features": 14862,
 				"families": {
-					"foothill_ew": 3920,
-					"foothill_ns": 2078,
-					"peak_ew": 324,
-					"peak_ns": 189,
-					"ridge_ew": 2250,
-					"ridge_ns": 1172
+					"foothill_ew": 3905,
+					"foothill_ns": 2092,
+					"peak_ew": 352,
+					"peak_ns": 198,
+					"ridge_ew": 2262,
+					"ridge_ns": 1181
 				},
 				"generated_continental_contours": false,
 				"geographic_gradient_in_meters": false,
 				"height_exaggeration_display_only": 6.0,
 				"historical_vegetation_claimed": false,
 				"independent_relief_originals_used": 240,
-				"index_ms": 558.049,
+				"index_ms": 300.804,
 				"lighting": "continuous_source_height_normals",
-				"mesh_ms": 15408.26,
+				"mesh_ms": 4851.587,
 				"nearby_variant_exclusion_world": 270.0,
-				"placed_features": 9933,
-				"placement_ms": 8645.918,
-				"preparation_ms": 24612.226,
+				"placed_features": 9990,
+				"placement_ms": 3378.543,
+				"preparation_ms": 8530.934,
 				"rules_map_mutated": false,
 				"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 				"source_meters_per_world_unit": 112.5,
 				"strategic_category_relief": false,
-				"triangles": 100945
+				"triangles": 101610
 			},
 			"surface": {
+				"coast_band": {
+					"batched_draws": 1,
+					"half_width_world": 2.8,
+					"source_centrelines_modified": false,
+					"source_lines": 5295,
+					"source_points": 47169,
+					"triangles": 376976
+				},
 				"errors": [],
-				"land_rings": 362,
-				"land_triangles": 12660,
+				"land_rings": 5269,
+				"land_triangles": 36850,
+				"marine_geometry": {
+					"active": true,
+					"cache_scope": "one_map",
+					"coast_vertices": 52417,
+					"existing_inland_water_preserved": true,
+					"historical_survey_claimed": false,
+					"land_polygons": 5269,
+					"land_triangles": 36850,
+					"new_l2_reservoirs_imported": false,
+					"pretriangulated": true,
+					"source": "gshhg_2_3_7_L1"
+				},
 				"water_rings": 0
 			}
 		},
@@ -484,13 +544,13 @@
 				"height_exaggeration_display_only": 6.0,
 				"historical_vegetation_claimed": false,
 				"independent_relief_originals_used": 0,
-				"index_ms": 4.736,
+				"index_ms": 2.918,
 				"lighting": "continuous_source_height_normals",
-				"mesh_ms": 34.469,
+				"mesh_ms": 28.733,
 				"nearby_variant_exclusion_world": 270.0,
 				"placed_features": 0,
-				"placement_ms": 2.298,
-				"preparation_ms": 41.502,
+				"placement_ms": 0.767,
+				"preparation_ms": 32.418,
 				"rules_map_mutated": false,
 				"source": "SRTM90m_v3_five_point_samples",
 				"source_meters_per_world_unit": 26.0416666666667,
@@ -498,9 +558,20 @@
 				"triangles": 514
 			},
 			"surface": {
+				"coast_band": {
+					"batched_draws": 0,
+					"half_width_world": 2.8,
+					"source_centrelines_modified": false,
+					"source_lines": 0,
+					"source_points": 0,
+					"triangles": 0
+				},
 				"errors": [],
 				"land_rings": 1,
 				"land_triangles": 2,
+				"marine_geometry": {
+					"active": false
+				},
 				"water_rings": 0
 			}
 		},
@@ -540,13 +611,13 @@
 				"height_exaggeration_display_only": 6.0,
 				"historical_vegetation_claimed": false,
 				"independent_relief_originals_used": 7,
-				"index_ms": 3.771,
+				"index_ms": 2.07,
 				"lighting": "continuous_source_height_normals",
-				"mesh_ms": 36.377,
+				"mesh_ms": 28.911,
 				"nearby_variant_exclusion_world": 270.0,
 				"placed_features": 7,
-				"placement_ms": 3.58,
-				"preparation_ms": 43.727,
+				"placement_ms": 2.275,
+				"preparation_ms": 33.256,
 				"rules_map_mutated": false,
 				"source": "SRTM90m_v3_five_point_samples",
 				"source_meters_per_world_unit": 26.0416666666667,
@@ -554,9 +625,20 @@
 				"triangles": 602
 			},
 			"surface": {
+				"coast_band": {
+					"batched_draws": 0,
+					"half_width_world": 2.8,
+					"source_centrelines_modified": false,
+					"source_lines": 0,
+					"source_points": 0,
+					"triangles": 0
+				},
 				"errors": [],
 				"land_rings": 1,
 				"land_triangles": 2,
+				"marine_geometry": {
+					"active": false
+				},
 				"water_rings": 0
 			}
 		}

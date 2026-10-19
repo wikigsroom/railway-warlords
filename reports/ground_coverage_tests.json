@@ -1,6 +1,6 @@
 {
 	"art_approval": false,
-	"build_version": "0.2.25",
+	"build_version": "0.2.26",
 	"checks": [
 		{
 			"name": "six_source_maps_have_independent_numerical_catalogues",
@@ -186,20 +186,20 @@
 	"failures": [],
 	"maps": [
 		{
-			"covered_cells": 4452.0,
+			"covered_cells": 4598.0,
 			"functional_underlays": 325,
 			"map": "asia_strategic",
-			"partial_cells": 1344,
-			"pigment_interpolations": 120,
-			"unclassified_cells": 14.0
+			"partial_cells": 1501,
+			"pigment_interpolations": 207,
+			"unclassified_cells": 56.0
 		},
 		{
-			"covered_cells": 56889.0,
-			"functional_underlays": 1923,
+			"covered_cells": 57365.0,
+			"functional_underlays": 1930,
 			"map": "conquest_china",
-			"partial_cells": 2418,
-			"pigment_interpolations": 407,
-			"unclassified_cells": 227.0
+			"partial_cells": 2842,
+			"pigment_interpolations": 664,
+			"unclassified_cells": 473.0
 		},
 		{
 			"covered_cells": 380.0,
@@ -210,20 +210,20 @@
 			"unclassified_cells": 0.0
 		},
 		{
-			"covered_cells": 47591.0,
-			"functional_underlays": 740,
+			"covered_cells": 47126.0,
+			"functional_underlays": 737,
 			"map": "jingfeng",
-			"partial_cells": 1488,
-			"pigment_interpolations": 259,
-			"unclassified_cells": 205.0
+			"partial_cells": 1802,
+			"pigment_interpolations": 348,
+			"unclassified_cells": 215.0
 		},
 		{
-			"covered_cells": 23866.0,
+			"covered_cells": 23821.0,
 			"functional_underlays": 318,
 			"map": "jingjin",
-			"partial_cells": 640,
-			"pigment_interpolations": 71,
-			"unclassified_cells": 98.0
+			"partial_cells": 664,
+			"pigment_interpolations": 86,
+			"unclassified_cells": 58.0
 		},
 		{
 			"covered_cells": 399.0,

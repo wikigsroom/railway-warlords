@@ -1,6 +1,24 @@
 class_name AtlasSurface
 extends RefCounted
 
+static func build_indexed(source_vertices: Array, source_indices: Array, texture_scale: float) -> Dictionary:
+	var vertices=PackedVector3Array();var uv=PackedVector2Array();var indices=PackedInt32Array();var errors: Array=[]
+	for point in source_vertices:
+		if point.size()!=2 or not is_finite(float(point[0])) or not is_finite(float(point[1])):
+			errors.append("invalid_source_vertex");break
+		var at=Vector2(point[0],point[1]);vertices.append(Vector3(at.x,at.y,0));uv.append(at/texture_scale)
+	if source_indices.size()%3!=0:errors.append("incomplete_source_triangle")
+	for value in source_indices:
+		var index=int(value)
+		if index<0 or index>=vertices.size():errors.append("source_index_out_of_bounds");break
+		indices.append(index)
+	var mesh: ArrayMesh=null
+	if errors.is_empty() and not indices.is_empty():
+		var arrays=[];arrays.resize(Mesh.ARRAY_MAX)
+		arrays[Mesh.ARRAY_VERTEX]=vertices;arrays[Mesh.ARRAY_TEX_UV]=uv;arrays[Mesh.ARRAY_INDEX]=indices
+		mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
+	return {"mesh":mesh,"triangles":indices.size()/3,"errors":errors}
+
 # Surveyed rings can contain tiny islands far from the map origin. Triangulate
 # in local coordinates once, then keep the original coordinates in the mesh.
 # This avoids cancellation in CanvasItem's per-frame polygon triangulator.

@@ -1,8 +1,8 @@
 {
   "passed": true,
-  "version": "0.2.25",
-  "runtime_source_sha256": "9ce58221f0daef9c79cc8a2ad6606dcd4c757c228f28294e0531008b63cc10a2",
-  "windows_exe_sha256": "d7727710eed65c1a66d32d0061d7dab33e169848e9fa041cfbf005b2091cc374",
+  "version": "0.2.26",
+  "runtime_source_sha256": "f761e97b9893878942fbaa9df9cee60efaefd28c0af8c05ea0ddad3fc1f07540",
+  "windows_exe_sha256": "7670fe1b9034695c7577ae477b5b6094f2f5c9063cfdf5ef1c028cb73a8b1e6a",
   "groups": [
     {
       "profile": "windows",
@@ -10,56 +10,56 @@
       "ui_scale": "1.0",
       "checks": 52,
       "report": "reports/screenshots/dossier_native/windows/validation.json",
-      "report_sha256": "138ed8e980a4ed8501347048d40a1844255105b42d83f13dd043a291347c400a",
+      "report_sha256": "87538d38f657bdcc7f3f4b865c658bcb8da605e224ee840a5fa573295690cf4f",
       "log": "reports/dossier_native_windows.log",
       "captures": [
         {
           "file": "reports/screenshots/dossier_native/windows/headquarters.png",
           "sha256": "51a7298a2ce9259e0a0c66d90dd4e009010e80e907cc18c1cd8628e57fcb451c",
           "metadata": "reports/screenshots/dossier_native/windows/headquarters.json",
-          "metadata_sha256": "db946fddbe5acec2612bfe6be364cfe8a8924dee42ab0c71783ba7457c48f6cf"
+          "metadata_sha256": "b53c771bbf97e7764d089d184106eefb51dd89a95fd966f9e2647b5b625c282b"
         },
         {
           "file": "reports/screenshots/dossier_native/windows/roster_search_hong.png",
           "sha256": "8ee6f516fec3c59e2a0803e599d97227f286a280ad23e0e460278ef8fb97f3de",
           "metadata": "reports/screenshots/dossier_native/windows/roster_search_hong.json",
-          "metadata_sha256": "5b85a45470abb6cbe9d9b6b57c6f424f4282836755147aaf6318d4eb238a0b82"
+          "metadata_sha256": "f1c4b1f8895bb560211ad9972f1f4752a41867c1b624f579de2ef384b722a49a"
         },
         {
           "file": "reports/screenshots/dossier_native/windows/dossier_hong_young.png",
           "sha256": "49c71d0e3ca61d68e66ac6bc82d26882e92edaf5c45b23be543e0333e88beb77",
           "metadata": "reports/screenshots/dossier_native/windows/dossier_hong_young.json",
-          "metadata_sha256": "c8ebe1bc63a5797befceafb70dd8017476f09dae58a8a1b94a34c70ea5ac29d4"
+          "metadata_sha256": "699b8364cfdfe67669cb0df0e227388f443463086431882500ae4ac6d0415a57"
         },
         {
           "file": "reports/screenshots/dossier_native/windows/dossier_hong_middle.png",
           "sha256": "aee4d4ff26ea5865d19318f7c37f95ca09f73500d248650457969896acbf4d1c",
           "metadata": "reports/screenshots/dossier_native/windows/dossier_hong_middle.json",
-          "metadata_sha256": "911138d7a67b6e9bc844af5f38e69d0b0f54b3cf5db5cfb389cba9afa899e1e5"
+          "metadata_sha256": "6dbf3dfb1c38b19471896283b639cd4e177d213dd1f2700f7accb4aa95da8ec5"
         },
         {
           "file": "reports/screenshots/dossier_native/windows/unaffordable_medal.png",
           "sha256": "d56f51edb21ee08e86a66005ebb26a1685b841ce966406cbce10480bde00e298",
           "metadata": "reports/screenshots/dossier_native/windows/unaffordable_medal.json",
-          "metadata_sha256": "ce9d120baf2175297b0518374b9f46ee30237b3f102d6b152fc45c6138587305"
+          "metadata_sha256": "19b63d1168ad0dbdf20d486d0d81fa24330f12b583654061f77df1087b39ba74"
         },
         {
           "file": "reports/screenshots/dossier_native/windows/medal_equipped.png",
           "sha256": "1d0da3e230df2a7a8834782ca59e2da0935462d0f6cd6217e723aa455dc71cd3",
           "metadata": "reports/screenshots/dossier_native/windows/medal_equipped.json",
-          "metadata_sha256": "ed9b3c299d7923e301b68055c8492641191da228dfe8c28304c5394647d954ff"
+          "metadata_sha256": "bd36ed471a1a0d5fe23df21cfa6242408b5c928b6a29f1e46b98cd30ad5c67d5"
         },
         {
           "file": "reports/screenshots/dossier_native/windows/medal_slots_full.png",
           "sha256": "d5831efff9fa147a8991a23e5f6b8cae6bb25e880c3a627baba457e430eda1e7",
           "metadata": "reports/screenshots/dossier_native/windows/medal_slots_full.json",
-          "metadata_sha256": "f401d1d965f6696e875e6abbd9a8533215771af57abb0df8ae71920c2ecdb014"
+          "metadata_sha256": "42c21434a18e634d094f03090bb606e3e7ee17dd5746c920f2fda61c6be8789c"
         },
         {
           "file": "reports/screenshots/dossier_native/windows/medal_removed.png",
           "sha256": "bbf17d9fd64d1ca30f8548323b7ce49ddbc023b080f179956dd938feee81462d",
           "metadata": "reports/screenshots/dossier_native/windows/medal_removed.json",
-          "metadata_sha256": "8444a95d4bd408c2bfbd5dd10e2280148995c45b6bd2dcae679aa0c09c0aac62"
+          "metadata_sha256": "a05b1d7b14ac7365dd57f17e45504ab1ac61d0f7336b83a5a0a154ff3097d37e"
         }
       ]
     },
@@ -69,56 +69,56 @@
       "ui_scale": "1.2",
       "checks": 53,
       "report": "reports/screenshots/dossier_native/x30_layout/validation.json",
-      "report_sha256": "1f3a4e099c282deda94d693321f6fe5fa9842c40e29dbae190a6e085435c28ea",
+      "report_sha256": "995a48fa80a30e0c1f4775ab9ed60c3a0ae7ac1e7b131aa4d04a8dcb95880dfe",
       "log": "reports/dossier_native_x30_layout.log",
       "captures": [
         {
           "file": "reports/screenshots/dossier_native/x30_layout/headquarters.png",
           "sha256": "537af34cb5f2dc475e8c7dd6fba9832300aae85b1bbc3691ea6597fd2e396680",
           "metadata": "reports/screenshots/dossier_native/x30_layout/headquarters.json",
-          "metadata_sha256": "8a4c0cc8cca32bc49ca5353db35ae0cd67778bbdcce33dcb4c5a05ffc359a41b"
+          "metadata_sha256": "3428a8d0fd074002a5ba4df88c0c9e3fc107a14f6667d2d691ff740c5d87b737"
         },
         {
           "file": "reports/screenshots/dossier_native/x30_layout/roster_search_hong.png",
           "sha256": "ea579fcc0e0c5ed0afda59dcabc2d3458d17c80d648d09dcf434d9c7f8cb27f5",
           "metadata": "reports/screenshots/dossier_native/x30_layout/roster_search_hong.json",
-          "metadata_sha256": "065ac3517f0a27fabb5ca3be565e9a09600e47e54b545f6420cc02bb7dd52660"
+          "metadata_sha256": "187965af9c0af46752a3fd6fcfbe5874381340f9893261444cf572b3b8f807b9"
         },
         {
           "file": "reports/screenshots/dossier_native/x30_layout/dossier_hong_young.png",
           "sha256": "925c11bf617308a6439432c90c31529932a95796e578e7ee45a8565a5a4ebdad",
           "metadata": "reports/screenshots/dossier_native/x30_layout/dossier_hong_young.json",
-          "metadata_sha256": "c40fd6a5b76dea159590dc08876506a13e116dda0a3f36da19f28011ed2636a0"
+          "metadata_sha256": "4bcdbae06ae989ca953820c58bfd5285984e95396edf2418189e58da69392939"
         },
         {
           "file": "reports/screenshots/dossier_native/x30_layout/dossier_hong_middle.png",
           "sha256": "4106ba9f62ea053596d50d618484aecd8cc797fbec23d7aa3ee85d58c69da2bb",
           "metadata": "reports/screenshots/dossier_native/x30_layout/dossier_hong_middle.json",
-          "metadata_sha256": "06d839511eef34dde13c06b4159c5c04e6140fa46b7eeebe73d611e2629937de"
+          "metadata_sha256": "818b326a658b25028cac11f29baf428fd646e7b04e143b70277e46a57f48dee3"
         },
         {
           "file": "reports/screenshots/dossier_native/x30_layout/unaffordable_medal.png",
           "sha256": "78e7a9a1640be21b0407e47f268d4b62f348f88a071f7b0dd86ed8b62bfc5ca5",
           "metadata": "reports/screenshots/dossier_native/x30_layout/unaffordable_medal.json",
-          "metadata_sha256": "7127594fec7d9473cb2ad425295fdd917b5db6e307d64166bc618dfef8566ffe"
+          "metadata_sha256": "3e29674762bb3a9da03389994ddb6195b935adb56f493c8ff33e3b7185996706"
         },
         {
           "file": "reports/screenshots/dossier_native/x30_layout/medal_equipped.png",
           "sha256": "424f7a4c98b8b5fd0e654f3649266bb6cd803f5c705a0f4f03083da42fbfbd88",
           "metadata": "reports/screenshots/dossier_native/x30_layout/medal_equipped.json",
-          "metadata_sha256": "c914128c48ca036fa7ced8c807c5ee980e190e1ce0a1a24c9876412468dd7233"
+          "metadata_sha256": "86abfd9e4582f459eb1cb45fe36b22047080d056eb25f252988c26949c04d64d"
         },
         {
           "file": "reports/screenshots/dossier_native/x30_layout/medal_slots_full.png",
           "sha256": "74ae19bfa5403d39d7ead3885b8f1bce1d5a00539ab4e0f0e3660025bd063523",
           "metadata": "reports/screenshots/dossier_native/x30_layout/medal_slots_full.json",
-          "metadata_sha256": "39f08593672f1c321e693091250a0a29e1909fada179deb4d3f7020c9e74793d"
+          "metadata_sha256": "9adca96602605449e94e6b412590bac239b841cf849200327ad78a2ec11214fb"
         },
         {
           "file": "reports/screenshots/dossier_native/x30_layout/medal_removed.png",
           "sha256": "1f44dcc3245190e63a49fdc7b95f5aeeb57bae671d68aa0d894c24857ee651bd",
           "metadata": "reports/screenshots/dossier_native/x30_layout/medal_removed.json",
-          "metadata_sha256": "a22de7be0c310e8a86e88bab77dec2be3802220eacf2faa67347eab1f28faafa"
+          "metadata_sha256": "1faf9a7dc1db4ad4a4f4cbe6a1aa81d0aa94cbf21028e26986e5c8215729e559"
         }
       ]
     },
@@ -128,56 +128,56 @@
       "ui_scale": "1.5",
       "checks": 52,
       "report": "reports/screenshots/dossier_native/large_text/validation.json",
-      "report_sha256": "077b16a5a83c7828391046014975d395bedae06edb4e8da966c5500adb289d13",
+      "report_sha256": "d3f1117b6614075318bda65f1c581f3f8975b7918fb297a1a13c8eea6f6a68a4",
       "log": "reports/dossier_native_large_text.log",
       "captures": [
         {
           "file": "reports/screenshots/dossier_native/large_text/headquarters.png",
           "sha256": "70e8c895e772c9982803f1ffc3d3b2854d68a61bfb32686f01f1934c54061916",
           "metadata": "reports/screenshots/dossier_native/large_text/headquarters.json",
-          "metadata_sha256": "d5e3faf1e4454c3c44bb7e8e6640c70c86cfbe127648331448d9bc3d0d8897b7"
+          "metadata_sha256": "705af873e273059ba69498587e1493ce61cda8b3508cfa52ea87b9f3148dd6d1"
         },
         {
           "file": "reports/screenshots/dossier_native/large_text/roster_search_hong.png",
           "sha256": "f378ed283cad5e09b96db6644bd02e42d9fee3e4ab3d3b866439ab913a6da61b",
           "metadata": "reports/screenshots/dossier_native/large_text/roster_search_hong.json",
-          "metadata_sha256": "db2463a2e3a6f754dab3a66ae8c0fa99533ef946140797e3e6ec903f471b8d57"
+          "metadata_sha256": "d0572218a44ddacebb88cf0012f6ce72554388e7d02492c4b533b440d2f91158"
         },
         {
           "file": "reports/screenshots/dossier_native/large_text/dossier_hong_young.png",
           "sha256": "8cb96c2a84c2c842c72a9ef6a04fd0197f2c079d982ccd8099db79726ea3c339",
           "metadata": "reports/screenshots/dossier_native/large_text/dossier_hong_young.json",
-          "metadata_sha256": "aecf033a68704775db17d1e29935c5da8e8565df20f2ca652d6bcdfcfe1b1445"
+          "metadata_sha256": "a97f8ec7195ef6b15cf4c3696d36d45864519b3541b43dd3e5d7094854e05323"
         },
         {
           "file": "reports/screenshots/dossier_native/large_text/dossier_hong_middle.png",
           "sha256": "aad270dc0b75b36e64809e82aa79105e5e41d9ea8bc38596ffe1253dc5178ffa",
           "metadata": "reports/screenshots/dossier_native/large_text/dossier_hong_middle.json",
-          "metadata_sha256": "29c28c24818045003b1d38560d8def194b212677fe8a18482717bf0fcf19d825"
+          "metadata_sha256": "3e076def2b93fab661037581ba0b0a9530f0722b46ce6e5290e889d8a304eb49"
         },
         {
           "file": "reports/screenshots/dossier_native/large_text/unaffordable_medal.png",
           "sha256": "a2c2014c8ba69f73065e56f45fe65bdd404616448eb059c60412392b2bea060d",
           "metadata": "reports/screenshots/dossier_native/large_text/unaffordable_medal.json",
-          "metadata_sha256": "580787372c6445b51503ef4c2be336892af66c66d100fcf4a518a3c2a31f46b5"
+          "metadata_sha256": "0276ce459f18458442f1bf37a5b7a4629e3cd6a33a0ca1d0cd4c6d316c43fddd"
         },
         {
           "file": "reports/screenshots/dossier_native/large_text/medal_equipped.png",
           "sha256": "e6505fefa8c72ab79856a78a0d2b91a8f8d9b11d1830a4c57cd1d2b215075c1c",
           "metadata": "reports/screenshots/dossier_native/large_text/medal_equipped.json",
-          "metadata_sha256": "194c10df66e34c7386ecc4c3ca4bc66f53c76cc448ab4def7ee33007124cb51c"
+          "metadata_sha256": "dc9faf7e0a70937aa382a6e6698bc8773cddff0cf890f9fa6e6ac10d0b8f557f"
         },
         {
           "file": "reports/screenshots/dossier_native/large_text/medal_slots_full.png",
           "sha256": "4c0db1b97602b36f7ca8461932302bac1ea3b75d300ee03b65c4218170731ee4",
           "metadata": "reports/screenshots/dossier_native/large_text/medal_slots_full.json",
-          "metadata_sha256": "edceeec262efa8a9713ff46a16e451b8c02b2acd01b9d40f99afb22b9b412dda"
+          "metadata_sha256": "c42bc748fcf54b5a353f153ece6f219d3105ff58737099e2cfcd6eae50edd770"
         },
         {
           "file": "reports/screenshots/dossier_native/large_text/medal_removed.png",
           "sha256": "199abbaa7b4c974ff06451c3aa2767e074f17a05072e44f1c333af2609f9d57d",
           "metadata": "reports/screenshots/dossier_native/large_text/medal_removed.json",
-          "metadata_sha256": "77fb99dfcf0e72d23c22691e410b75afa85613d78c2fce6c498a0814eacdcb77"
+          "metadata_sha256": "af4ec7910e440ab1402cb1b4dfd0dafd85bd2bd4f5e84bec5777ba46dd86198a"
         }
       ]
     }

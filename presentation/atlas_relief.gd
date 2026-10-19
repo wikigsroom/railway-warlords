@@ -10,6 +10,11 @@ var diagnostics: Dictionary={}
 var cells: Dictionary={}
 var land: Array=[]
 var land_bounds: Array[Rect2]=[]
+var land_buckets: Dictionary={}
+var uniform_land_queries: Dictionary={}
+var land_query_index_ready=false
+var uniform_land_query_hits=0
+var land_mesh_queries: Dictionary={}
 var rivers: Array=[]
 var tracks: Array=[]
 var boundary_buckets: Dictionary={}
@@ -37,14 +42,11 @@ func build(map: Dictionary, land_shapes: Array, river_lines: Array, minor_river_
 	if MapArtBank.available():asset_metadata.merge(MapArtBank.data().records)
 	land=land_shapes;rivers=river_lines.duplicate();rivers.append_array(minor_river_lines)
 	features.clear();feature_buckets.clear();maximum_feature_overhang=0.0
-	contours.clear();cells.clear();tracks.clear();boundary_buckets.clear();land_bounds.clear();mesh=null
+	contours.clear();cells.clear();tracks.clear();boundary_buckets.clear();land_bounds.clear();land_buckets.clear();mesh=null
 	path_buckets={"river":{},"rail":{}}
-	for shape in land:
-		var bounds=Rect2(shape.exterior[0],Vector2.ZERO)
-		for point in shape.exterior:bounds=bounds.expand(point)
-		land_bounds.append(bounds)
-		index_boundary(shape.exterior)
-		for hole in shape.holes:index_boundary(hole)
+	prepare_land_queries(land_shapes)
+	var marine=MapCoastGeometry.for_map(map,str(map.get("fixture_source",{}).get("production_map_id",map.get("id",""))))
+	if not marine.is_empty():land_mesh_queries=MapCoastGeometry.land_queries(marine)
 	for cell in map.cells:cells[HexGrid.key(HexGrid.coordinate(cell.position))]=cell
 	for edge in map.rail_edges:
 		var line=PackedVector2Array()
@@ -247,8 +249,41 @@ func height_gradient(cell: Dictionary) -> Vector2:
 	if absf(determinant)<.001:return Vector2.ZERO
 	return Vector2((yy*xz-xy*yz)/determinant,(xx*yz-xy*xz)/determinant)
 
+func prepare_land_queries(shapes: Array) -> void:
+	land_query_index_ready=false;uniform_land_queries.clear();uniform_land_query_hits=0
+	land_mesh_queries={}
+	land=shapes;land_bounds.clear();land_buckets.clear();boundary_buckets.clear()
+	for shape in land:
+		var bounds=Rect2(shape.exterior[0],Vector2.ZERO)
+		for point in shape.exterior:bounds=bounds.expand(point)
+		land_bounds.append(bounds)
+		var land_index=land_bounds.size()-1
+		for x in range(floori(bounds.position.x/512),floori(bounds.end.x/512)+1):
+			for y in range(floori(bounds.position.y/512),floori(bounds.end.y/512)+1):
+				var bucket=Vector2i(x,y)
+				if not land_buckets.has(bucket):land_buckets[bucket]=[]
+				land_buckets[bucket].append(land_index)
+		index_boundary(shape.exterior)
+		for hole in shape.holes:index_boundary(hole)
+	land_query_index_ready=true
+
 func dry_point(point: Vector2) -> bool:
-	for index in range(land.size()):
+	var bucket=Vector2i(floori(point.x/256),floori(point.y/256))
+	# A connected square crossed by no exterior/hole segment has one constant
+	# exact land classification. The segment AABB index is conservative; mixed
+	# coast squares always retain the complete source point-in-polygon test.
+	var uniform=land_query_index_ready and not boundary_buckets.has(bucket)
+	if uniform and uniform_land_queries.has(bucket):
+		uniform_land_query_hits+=1
+		return uniform_land_queries[bucket]
+	var dry=source_dry_point(point)
+	if uniform:uniform_land_queries[bucket]=dry
+	return dry
+
+func source_dry_point(point: Vector2) -> bool:
+	if not land_mesh_queries.is_empty():return MapCoastGeometry.query_land(land_mesh_queries,point)
+	var candidates=range(land.size()) if land_buckets.is_empty() else land_buckets.get(Vector2i(floori(point.x/512),floori(point.y/512)),[])
+	for index in candidates:
 		if not land_bounds[index].has_point(point):continue
 		var shape=land[index]
 		if not Geometry2D.is_point_in_polygon(point,shape.exterior):continue

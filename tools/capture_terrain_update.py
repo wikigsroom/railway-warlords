@@ -111,6 +111,11 @@ def main():
             with Image.open(path) as im:
                 require(im.size == tuple(map(int, resolution.split('x'))), 'Wrong detail viewport: ' + name)
             rivers = visible['hydrography']['river_surface']
+            if name == 'coast' and version == '0.2.26':
+                marine = visible['hydrography']['marine_geometry']
+                require(marine['active'] and marine['pretriangulated'] and marine['coast_vertices'] > 12000
+                        and visible['hydrography']['actual_coast_band_draws'] == 1,
+                        'Shipping sourced coast geometry and its actual batched draw must be present')
             if name == 'tributaries':
                 require(visible['hydrography']['visible_fine_reaches'] > 0, 'Actual source tributaries must be visible')
                 require(rivers['drawn_antialiased_headwaters'] > 0, 'Fine source streams must be drawn continuously')

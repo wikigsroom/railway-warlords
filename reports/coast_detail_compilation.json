@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-19T11:56:55.773709+00:00",
+  "elapsed_seconds": 212.04,
+  "baseline_commit": "1d4a9c95d3d1cf214490dac69d166dab6f19e9a7",
+  "source_archive_sha256": "8dbbe7e071e77e9e75f2d639239099ebca8d5c16d6a07df8169729d49f15cf41",
+  "independent_historical_approval": false,
+  "raw_rasters_modified": false,
+  "rule_fields_modified": false,
+  "maps": [
+    {
+      "map_id": "jingfeng",
+      "resolution": "f",
+      "old_coast_vertices": 665,
+      "new_coast_vertices": 12461,
+      "land_polygons": 62,
+      "holes": 0,
+      "land_triangles": 12369,
+      "triangle_union_area_error": 0.0,
+      "nonvisual_fields_preserved": true,
+      "existing_inland_water_preserved": true,
+      "new_l2_reservoirs_imported": false,
+      "map_sha256": "f5fc64bc3e45643fc9b325e1e574a5534cc7c6660880a1e546fc9b68a0ad5c8f",
+      "source_subset_sha256": "e420bfe360e6a544309ed931e73a81b6852f617f880a6ffa2cf8445c2eea3fb4"
+    },
+    {
+      "map_id": "jingjin",
+      "resolution": "f",
+      "old_coast_vertices": 79,
+      "new_coast_vertices": 1025,
+      "land_polygons": 1,
+      "holes": 0,
+      "land_triangles": 1092,
+      "triangle_union_area_error": 0.0,
+      "nonvisual_fields_preserved": true,
+      "existing_inland_water_preserved": true,
+      "new_l2_reservoirs_imported": false,
+      "map_sha256": "7a18d0e7d579c50bae1d1f3162d0e78df55e71adbaa26acf1763bb2dc6b51434",
+      "source_subset_sha256": "27a7345f4c8de99c4ffc9054800a69e8d2f3e42ac90358361151ac37907ecd1d"
+    },
+    {
+      "map_id": "conquest_china",
+      "resolution": "h",
+      "old_coast_vertices": 13758,
+      "new_coast_vertices": 52417,
+      "land_polygons": 5269,
+      "holes": 0,
+      "land_triangles": 36850,
+      "triangle_union_area_error": 0.0,
+      "nonvisual_fields_preserved": true,
+      "existing_inland_water_preserved": true,
+      "new_l2_reservoirs_imported": false,
+      "map_sha256": "37458183fffe2515b1e0ae5110554a527735c207e44130ce13a7d8da64a0a510",
+      "source_subset_sha256": "7f3c5dac2f5703d64587b53b49789a810a8973461d6743b2ccfc805e38569eda"
+    },
+    {
+      "map_id": "asia_strategic",
+      "resolution": "i",
+      "old_coast_vertices": 18771,
+      "new_coast_vertices": 119448,
+      "land_polygons": 12105,
+      "holes": 1,
+      "land_triangles": 81193,
+      "triangle_union_area_error": 0.0,
+      "nonvisual_fields_preserved": true,
+      "existing_inland_water_preserved": true,
+      "new_l2_reservoirs_imported": false,
+      "map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
+      "source_subset_sha256": "820c40c7afa16cbdf9d03d8f47952464cff38c26ac9d90b5ff35a9507f9edb33"
+    }
+  ]
+}

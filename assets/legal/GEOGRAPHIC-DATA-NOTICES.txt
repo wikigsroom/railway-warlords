@@ -48,3 +48,21 @@ Original scientific GeoTIFF bytes are preserved. They are not game-art textures.
 
 Natural Earth land and river geometry: public domain.
 https://www.naturalearthdata.com/about/terms-of-use/
+
+GSHHG 2.3.7 marine land reference — Wessel, P.; Smith, W. H. F.
+Data release: https://github.com/GenericMappingTools/gshhg-gmt/releases/tag/2.3.7
+Primary description: https://www.ngdc.noaa.gov/mgg/shorelines/shorelines.html
+Publication: https://doi.org/10.1029/96JB00104
+License: GNU Lesser General Public License v3 or later; the included geographic
+subsets and their derived coastal mesh data remain under that license. See
+GSHHG-LICENSE.txt, GSHHG-LGPL-3.0.txt and GSHHG-GPL-3.0.txt.
+Changes: regional subsets of level-1 marine polygons are projected, simplified
+by at most 0.10 world units, rounded to 4 decimals, and triangulated for drawing.
+Full-resolution source f is used in Jingfeng/Jingjin, high h in eastern China,
+and intermediate i in the Asia overview. Existing inland water and lake islands
+are retained independently. No modern L2 reservoir or political border is added.
+These data do not establish 1840–1940 harbor reclamation, tidal position or
+dated shore accuracy. No endorsement or surveyed beach/cliff width is implied.
+Corresponding editable source subsets: docs/geography-sources/gshhg_*.geojson;
+compiler: tools/compile_coast_detail.py; original archive fetcher and checksum:
+tools/fetch_coast_geodata.py. The source delivery retains the unmodified archive.

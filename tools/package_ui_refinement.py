@@ -16,9 +16,10 @@ def write(path, value):
 
 
 def validate(scope='dossier'):
-    require(scope in {'dossier', 'atlas_office', 'ground_atlas'}, 'Unknown scoped delivery')
-    atlas_scope = scope in {'atlas_office', 'ground_atlas'}
-    expected_rasters = 1324 if scope == 'ground_atlas' else 1304
+    require(scope in {'dossier', 'atlas_office', 'ground_atlas', 'coast_detail'}, 'Unknown scoped delivery')
+    atlas_scope = scope in {'atlas_office', 'ground_atlas', 'coast_detail'}
+    ground_scope = scope in {'ground_atlas', 'coast_detail'}
+    expected_rasters = 1324 if ground_scope else 1304
     version = current_version()
     runtime = source_digest()[0]
     exe = P / 'build/windows/RailwayWarlords.exe'
@@ -134,7 +135,7 @@ def validate(scope='dossier'):
     audit = read(P / 'reports/daily_age_text_audit.json')
     require(audit['passed'] and audit['version'] == version and audit['runtime_source_sha256'] == runtime
             and not audit['legacy_display_name_plaintext_files'], 'Current display-name audit required')
-    visual_name = {'ground_atlas': 'ground_atlas_native_review.json', 'atlas_office': 'atlas_office_native_review.json',
+    visual_name = {'coast_detail': 'coast_detail_native_review.json', 'ground_atlas': 'ground_atlas_native_review.json', 'atlas_office': 'atlas_office_native_review.json',
                    'dossier': 'ui_refinement_native_review.json'}[scope]
     visual = read(P / 'reports' / visual_name)
     require(visual['version'] == version and visual['runtime_source_sha256'] == runtime
@@ -158,8 +159,8 @@ def validate(scope='dossier'):
             require(by_surface['campaign_detail']['atlas_preview']['zoom_multiplier'] > 2,
                     'Actual zoomed native preview required')
             require(all(row['passed'] for row in proof['checks']), 'Office interaction/transaction checks failed')
-    if scope == 'ground_atlas':
-        require(version == '0.2.25', 'Quiet-ground specification targets 0.2.25')
+    if ground_scope:
+        require(version == ('0.2.26' if scope == 'coast_detail' else '0.2.25'), 'Scoped map specification/version mismatch')
         catalog = read(P / 'presentation/data/ground_macro_catalog.json')
         source_review = read(P / 'reports/ground_atlas_source_review.json')
         require(catalog['world_repeat_period'] == 224 and catalog['superseded_originals'] == 40
@@ -184,10 +185,53 @@ def validate(scope='dossier'):
                 and material['runtime_source_sha256'] == runtime and material['windows_exe_sha256'] == sha(exe)
                 and material['checks'] == 48 and material['production_quad_vs_hex_verified']
                 and material['fixed_texture_period_removed'], 'Current native production-material proof required')
-        scope_audit = read(P / 'reports/ground_atlas_scope_audit.json')
-        require(scope_audit['passed'] and scope_audit['version'] == version
-                and scope_audit['runtime_source_sha256'] == runtime and not scope_audit['changed_files']
-                and scope_audit['verified_preserved_json_files'] > 100, 'Dated geography and rules must match the baseline')
+        if scope == 'ground_atlas':
+            scope_audit = read(P / 'reports/ground_atlas_scope_audit.json')
+            require(scope_audit['passed'] and scope_audit['version'] == version
+                    and scope_audit['runtime_source_sha256'] == runtime and not scope_audit['changed_files']
+                    and scope_audit['verified_preserved_json_files'] > 100, 'Dated geography and rules must match the baseline')
+        else:
+            scope_audit = read(P / 'reports/coast_detail_scope_audit.json')
+            require(scope_audit['passed'] and scope_audit['version'] == version
+                    and scope_audit['runtime_source_sha256'] == runtime
+                    and not scope_audit['unexpected_changed_files'] and scope_audit['preserved_json_files'] > 100
+                    and scope_audit['independent_raw_geography_audit_bound'], 'Coast changes exceeded the documented map scope')
+            coast = read(P / 'reports/coast_detail_geography_audit.json')
+            require(coast['passed'] and not coast['production_compiler_imported'] and len(coast['maps']) == 4
+                    and not coast['historical_coast_survey_approval'], 'Independent original-GIS audit required')
+            for row in coast['maps']:
+                require(row['map_sha256'] == sha(P / ('content/maps/' + row['map_id'] + '.json')),
+                        'Raw source audit is stale: ' + row['map_id'])
+            native = read(P / 'reports/coast_geometry_tests.json')
+            seal = read(P / 'reports/coast_detail_native_geometry_evidence.json')
+            require(native['passed'] and native['build_version'] == version
+                    and native['content_hash'] == calendar['content_hash'] and len(native['checks']) == 61,
+                    'Current native precompiled coast/mesh checks required')
+            require(seal['passed'] and seal['version'] == version and seal['runtime_source_sha256'] == runtime
+                    and seal['dependency_sha256'] == identity('coast_geometry_test')[0]
+                    and seal['report_sha256'] == sha(P / seal['report']) and seal['log_sha256'] == sha(P / seal['log']),
+                    'Current geometry dependency seal required')
+            coast_frames = read(P / 'reports/coast_detail_native_capture_evidence.json')
+            require(coast_frames['passed'] and coast_frames['version'] == version
+                    and coast_frames['runtime_source_sha256'] == runtime
+                    and coast_frames['windows_exe_sha256'] == sha(exe)
+                    and coast_frames['capture_driver_sha256'] == sha(P / 'tools/capture_coast_detail.py')
+                    and len(coast_frames['captures']) == 4
+                    and {r['map_id'] for r in coast_frames['captures']} ==
+                        {'jingjin', 'jingfeng', 'conquest_china', 'asia_strategic'},
+                    'All four changed maps require current exported viewport evidence')
+            for row in coast_frames['captures']:
+                require(row['actual_coast_band_draws'] == 1
+                        and row['map_sha256'] == sha(P / ('content/maps/' + row['map_id'] + '.json'))
+                        and sha(P / row['file']) == row['sha256']
+                        and sha(P / row['metadata']) == row['metadata_sha256']
+                        and sha(P / row['log']) == row['log_sha256'], 'Coast viewport evidence changed')
+                captures.update([P / row['file'], P / row['metadata']])
+                reports.add(P / row['log'])
+            reports.update(P / 'reports' / name for name in ['coast_detail_scope_audit.json',
+                'coast_detail_geography_audit.json', 'coast_detail_compilation.json', 'coast_geometry_tests.json',
+                'coast_geometry_native.log', 'coast_detail_native_geometry_evidence.json', 'coast_detail_native_capture_evidence.json',
+                'map_surface_geography_audit.json', 'asia_relief_rebuild_verification.json'])
         details = read(P / 'reports/screenshots/terrain_surfaces_native/details/mountain.json')
         ground = details['map_bank_visible']['terrain_surface_extension']['continuous_ground']
         require(ground['active'] and ground['grounded_scenery_draws'] > 0
@@ -195,7 +239,8 @@ def validate(scope='dossier'):
                 and not ground['fixed_wallpaper_period'], 'Shipping ground and mountain feet must actually be drawn')
         reports.update(P / 'reports' / name for name in ['ground_atlas_generation.json', 'ground_atlas_source_review.json',
             'ground_atlas_installation.json', 'ground_macro_asset_audit.json', 'ground_continuity_native_evidence.json',
-            'ground_continuity_native/validation.json', 'ground_continuity_native/native.log', 'ground_atlas_scope_audit.json'])
+            'ground_continuity_native/validation.json', 'ground_continuity_native/native.log'])
+        if scope == 'ground_atlas':reports.add(P / 'reports/ground_atlas_scope_audit.json')
     names = ['daily_age_text_audit.json', 'git_byte_preservation.json', visual_name, 'ui_refinement_source_review.json',
              'regression_dependency_evidence.json', 'resource_validation.json', 'repository_validation.json',
              'export_results.json', 'sample_state_v2.json', 'apk_content_validation.json', 'apk_signature.log',
@@ -214,10 +259,14 @@ def validate(scope='dossier'):
                    formal_art_approval=False, historical_likeness_approval=False, new_1947_scenario=False,
                    full_daily_balance_acceptance=False, full_ai_endurance_rerun=False, ew6_parity_claimed=False,
                    source_pngs_modified=False, manual_compositing=False, git_working_bytes_preserved=True)
-    if scope == 'ground_atlas':
-        summary.update(new_ground_originals=20, stored_map_originals=1010, active_map_originals=970,
+    if ground_scope:
+        summary.update(new_ground_originals=20 if scope == 'ground_atlas' else 0, stored_map_originals=1010, active_map_originals=970,
                        preserved_superseded_ground_originals=40, native_material_checks=48)
-    validation_name = {'ground_atlas': 'ground_atlas_release_validation.json', 'atlas_office': 'atlas_office_release_validation.json',
+    if scope == 'coast_detail':
+        summary.update(refined_marine_maps=4, new_raster_originals=0, native_coast_checks=61,
+                       independent_geography_checks=len(coast['checks']), historical_coast_survey_approval=False,
+                       additional_coast_native_captures=len(coast_frames['captures']))
+    validation_name = {'coast_detail': 'coast_detail_release_validation.json', 'ground_atlas': 'ground_atlas_release_validation.json', 'atlas_office': 'atlas_office_release_validation.json',
                        'dossier': 'ui_refinement_release_validation.json'}[scope]
     write(P / 'reports' / validation_name, summary)
     reports.add(P / 'reports' / validation_name)

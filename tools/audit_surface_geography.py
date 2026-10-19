@@ -67,8 +67,11 @@ def main():
     samples=read(ROOT/'design/geodata/asia_relief_dem/samples_v1.json')
     old=read(ROOT/'design/geodata/asia_relief_dem/asia_strategic_before_dem.json')
     current=read(P/'content/maps/asia_strategic.json')
-    geometry_fields=['cities','rail_edges','rail_nodes','render_land','render_coast','render_rivers','admin_layers','geographic_bounds','hex_radius_px']
-    check('asia_city_political_rail_and_water_geometry_preserved',all(old[key]==current[key] for key in geometry_fields))
+    geometry_fields=['cities','rail_edges','rail_nodes','render_rivers','admin_layers','geographic_bounds','hex_radius_px']
+    check('asia_city_political_rail_and_river_rule_geometry_preserved',all(old[key]==current[key] for key in geometry_fields))
+    coast=read(P/'reports/coast_detail_geography_audit.json')
+    current_coast=next((row for row in coast.get('maps',[]) if row['map_id']=='asia_strategic'),{})
+    check('refined_marine_geometry_has_current_independent_raw_source_audit',coast['passed'] and not coast['production_compiler_imported'] and current_coast.get('map_sha256')==sha(P/'content/maps/asia_strategic.json'))
     check('all_continental_dem_originals_preserved',len(samples['tiles'])==54 and all(sha(ROOT/row['file'])==row['sha256'] for row in samples['tiles']))
     tiles={};maximum_error=0.0
     for row in samples['tiles']:

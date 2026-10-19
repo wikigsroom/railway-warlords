@@ -73,7 +73,7 @@ python tools/capture_terrain_update.py
 python tools/refresh_terrain_repository.py
 ```
 
-`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.25截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.26截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
 
 `prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 
@@ -112,3 +112,9 @@ The 0.2.20 material producer uses the required Sub2 route and installs new IDs o
 0.2.25地表生产入口为 `tools/generate_ground_atlas.py`，计划为 `presentation/data/ground_atlas_plan.json`。20张新原图分别生成与查看，保留40张前批底材；独立克隆已有全部运行原图和提示词，游玩无需重新生成。安装与导入完成后冻结源码，再执行规则、导出及原生验证。当前48项材质夹具由 `python tools/verify_ground_continuity.py` 运行，生产取样跨格对照与完整原图直接取样分开记录。原工作区整套验证入口为 `python tools/run_ground_atlas_validation.py`，交付入口为 `python tools/package_ground_atlas.py`；它们需要配置上文所述本机路径、签名和证据。范围见[43](43_安静地表与山脚融合.md)。
 
 The 0.2.25 material producer is `tools/generate_ground_atlas.py`, with twenty independently generated and reviewed originals and forty retained earlier grounds. The clone includes all runtime sources and prompts. Freeze sources after installation/imports, then validate rules, exports and native views. `verify_ground_continuity.py` runs 48 current material checks, distinguishing direct source calibration from production partition continuity. The original-workspace validation and packaging entry points require locally configured paths, signing and evidence; they are not portable one-command installers.
+
+## 0.2.26海岸重建 / Coast rebuild
+
+海岸生产入口为 `tools/fetch_coast_geodata.py` 与 `tools/compile_coast_detail.py`；`--check` 完整重编比较。独立原始GIS审计用 `tools/audit_coast_detail.py`，不导入生产编译器。原工作区验证及交付入口为 `tools/run_coast_validation.py`、`tools/package_coast_detail.py`，仍需本机引擎、GIS依赖、签名与当前证据。运行克隆包含预编译数值、可编辑区域源集与完整许可，无需重下载才能游玩。原始149MB下载和选用GIS随源码ZIP保留，未把161MB原始shapefile提交Git。见[44](44_细海岸与沿岸图层统一.md)。
+
+Coast production uses the fetch/compile tools above, with a full reproducible `--check`. The independent raw-GIS audit does not import the compiler. Workspace validation and packaging still require configured native paths, GIS libraries, signing and fresh evidence. Clones include runtime geometry, editable regional subsets and licenses; playing requires no source download. The complete source ZIP retains the original download and selected GIS files outside Git.

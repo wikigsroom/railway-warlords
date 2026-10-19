@@ -10,6 +10,16 @@ def main():
  version=current_version();runtime=source_digest()[0];exe=P/'build/windows/RailwayWarlords.exe'
  export=next(r for r in read(P/'reports/export_results.json') if r['target']=='windows')
  require(export['export_verified'] and export['sha256']==sha(exe) and export['runtime_source_sha256']==runtime,'Verified current Windows binary required')
+ proof_path=P/'reports/general_portrait_native_evidence.json';driver=sha(Path(__file__))
+ if proof_path.exists():
+  previous=read(proof_path)
+  if (previous.get('passed') and previous.get('version')==version
+      and previous.get('runtime_source_sha256')==runtime and previous.get('windows_exe_sha256')==export['sha256']
+      and previous.get('capture_driver_sha256')==driver and len(previous.get('groups',[]))==3
+      and all(sha(P/g['report'])==g['report_sha256'] for g in previous['groups'])
+      and all(sha(P/r['file'])==r['sha256'] and sha(P/r['metadata'])==r['metadata_sha256']
+              for g in previous['groups'] for r in g['captures'])):
+   print('Current frozen-build three-layout portrait evidence retained.',flush=True);return
  groups=[]
  for profile,resolution,scale in [('windows','1920x1080','1.0'),('x30_layout','2400x1080','1.2'),('large_text','1280x720','1.5')]:
   folder=P/'reports/screenshots/general_portraits_native'/profile;folder.mkdir(parents=True,exist_ok=True)
@@ -31,7 +41,7 @@ def main():
   groups.append(dict(profile=profile,resolution=resolution,ui_scale=scale,checks=len(value['checks']),report=report.relative_to(P).as_posix(),report_sha256=sha(report),log=log.relative_to(P).as_posix(),captures=captures))
   print(json.dumps(dict(profile=profile,passed=True,checks=len(value['checks']),captures=len(captures))),flush=True)
  require(source_digest()[0]==runtime and sha(exe)==export['sha256'],'Source or binary changed during QA')
- result=dict(passed=True,version=version,runtime_source_sha256=runtime,windows_exe_sha256=export['sha256'],groups=groups,raw_godot_captures=True,physical_android_device_tested=False,formal_art_approval=False,historical_likeness_approval=False)
+ result=dict(passed=True,version=version,runtime_source_sha256=runtime,windows_exe_sha256=export['sha256'],capture_driver_sha256=driver,groups=groups,raw_godot_captures=True,physical_android_device_tested=False,formal_art_approval=False,historical_likeness_approval=False)
  (P/'reports/general_portrait_native_evidence.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 
 if __name__=='__main__':main()

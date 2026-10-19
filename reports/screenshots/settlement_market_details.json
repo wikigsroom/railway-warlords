@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.25",
+	"build_version": "0.2.26",
 	"city_labels": [
 		{
 			"city_id": "tangshan",
@@ -14,7 +14,7 @@
 			"text": "唐山"
 		}
 	],
-	"content_hash": "a75da77276df468600ed2432bef1d404a8179d00d4ca197731e30576ce2d23f1",
+	"content_hash": "9ea85ebaea4412357c628bf6d2c16d29d7ef08c594dc77dcef7b3005b42f6661",
 	"control_land_clip": {},
 	"historical_places": {
 		"additional_markers": 32,
@@ -36,15 +36,15 @@
 		"active": true,
 		"full_source_rectangles_reserved": true,
 		"invented_waterways": 0,
-		"material_assignments": 61335,
-		"placed": 1235,
-		"preparation_ms": 1646.584,
+		"material_assignments": 60875,
+		"placed": 1232,
+		"preparation_ms": 1868.166,
 		"random_stream_used": false,
-		"rejected_for_source_geography": 1602,
+		"rejected_for_source_geography": 1610,
 		"rule_cells_changed": false,
 		"source_cells": 65726,
 		"source_images_modified": false,
-		"unique_originals": 52
+		"unique_originals": 55
 	},
 	"map_bank_visible": {
 		"active": true,
@@ -59,12 +59,33 @@
 		"distinct_surface_originals_in_view": 4,
 		"families": {},
 		"hydrography": {
+			"actual_coast_band_draws": 1,
+			"coast_band": {
+				"batched_draws": 1,
+				"half_width_world": 2.8,
+				"source_centrelines_modified": false,
+				"source_lines": 62,
+				"source_points": 12402,
+				"triangles": 99192
+			},
 			"display_corner_rounding_max_deviation_metres": 60.0,
 			"fine_source_id": "hydrorivers_v10_as",
 			"fine_source_sha256": "827e03a8e419b9578d5f246bcce1c93de1a0bd561a9f572fe84606c5d36d31fa",
 			"flat_lowland_model_branches_excluded": true,
 			"historical_channel_survey": false,
 			"major_presentation_replacements": 0,
+			"marine_geometry": {
+				"active": true,
+				"cache_scope": "one_map",
+				"coast_vertices": 12461,
+				"existing_inland_water_preserved": true,
+				"historical_survey_claimed": false,
+				"land_polygons": 62,
+				"land_triangles": 12369,
+				"new_l2_reservoirs_imported": false,
+				"pretriangulated": true,
+				"source": "gshhg_2_3_7_L1"
+			},
 			"river_surface": {
 				"detail_banks_drawn_before_water": true,
 				"drawn_antialiased_headwaters": 2,
@@ -171,12 +192,12 @@
 					"drawn_families": {
 						"alluvial_loam": 321,
 						"dry_steppe": 68,
-						"saline_meadow": 1263,
-						"temperate_meadow": 28520,
-						"weathered_rock": 17419
+						"saline_meadow": 1280,
+						"temperate_meadow": 28298,
+						"weathered_rock": 17159
 					},
 					"forest_floor_requires_sourced_forest": true,
-					"withheld_forest_floor_cells": 28520
+					"withheld_forest_floor_cells": 28298
 				},
 				"grounded_scenery_draws": 5,
 				"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
@@ -184,14 +205,14 @@
 				"source_ground_coverage": {
 					"active": true,
 					"cache_scope": "one_map_catalogue",
-					"covered_cells": 47591,
+					"covered_cells": 47126,
 					"historical_landuse_claimed": false,
 					"new_rasters": 0,
-					"partial_cells": 1488,
+					"partial_cells": 1802,
 					"rule_cells_modified": false,
 					"source_land_clipped": true,
-					"supplemental_underlays": 2223,
-					"unclassified_cells": 205
+					"supplemental_underlays": 1759,
+					"unclassified_cells": 215
 				},
 				"source_images_modified": false,
 				"source_layers": 20,
@@ -227,7 +248,7 @@
 				"rules_map_mutated": false,
 				"shader_active": true,
 				"source_images_modified": false,
-				"source_samples": 45961
+				"source_samples": 45911
 			},
 			"rule_geometry_changed": false,
 			"same_original_on_adjacent_cells": 0,
@@ -249,7 +270,7 @@
 	},
 	"map_detail": {
 		"cell_river_segments": 47,
-		"coast_lines": 11,
+		"coast_lines": 62,
 		"control_layer_visible": true,
 		"crossing_markers": 4,
 		"detail_hydrography_lines": 2924,
@@ -311,14 +332,14 @@
 			"raster_art_generated": false,
 			"rules_map_mutated": false,
 			"source_images_modified": false,
-			"source_samples": 45961
+			"source_samples": 45911
 		},
-		"contour_segments": 30166,
+		"contour_segments": 30157,
 		"crest_axis_from_source_neighbours": true,
-		"eligible_features": 7326,
+		"eligible_features": 7276,
 		"families": {
-			"foothill_ew": 3596,
-			"foothill_ns": 2044,
+			"foothill_ew": 3551,
+			"foothill_ns": 2042,
 			"ridge_ew": 337,
 			"ridge_ns": 177
 		},
@@ -327,18 +348,18 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 127.494,
+		"index_ms": 151.643,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 3151.741,
+		"mesh_ms": 3231.813,
 		"nearby_variant_exclusion_world": 270.0,
-		"placed_features": 6154,
-		"placement_ms": 1242.487,
-		"preparation_ms": 4521.722,
+		"placed_features": 6107,
+		"placement_ms": 1235.356,
+		"preparation_ms": 4618.811,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,
 		"strategic_category_relief": false,
-		"triangles": 89939
+		"triangles": 89782
 	},
 	"safe_insets": "(0.0, 0.0, 0.0, 0.0)",
 	"scenario_id": "campaign_1924_03",

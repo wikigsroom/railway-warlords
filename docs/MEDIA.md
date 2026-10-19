@@ -4,9 +4,9 @@
 
 ## 截图 / Screenshots
 
-当前媒体目录有56张完整PNG：46张来自0.2.25 Windows EXE，4张档案画面保留0.2.23、4张人物页保留0.2.22，另外两张交战/航空画面保留0.2.12身份。当前174张人物遍历、24张成长事务、99张地表/UI、20张海岸和32张图符的精选画面，以及导出核验截图，按原字节复制到`docs/media`。没有裁切、拼接、补绘或叠字。旧人物及旧有限查看来源另存版本目录；新旧画面版本及SHA分别保留。
+当前媒体目录有60张完整PNG：50张来自0.2.26 Windows EXE，另保留0.2.23档案4张、0.2.22人物4张和0.2.12交战/航空2张。当前人物、成长、地表/UI、沿岸与图符及另4张修改地图沿岸，共353张专项原生画面的精选，以及导出检查截图，均按原字节复制到`docs/media`；本轮新增四张李德胜阶段页媒体副本。没有裁切、拼接、补绘或叠字。原图与旧版有限查看来源独立保留版本及SHA。
 
-The media folder contains 56 complete PNGs: 46 from the 0.2.25 Windows EXE, four retained 0.2.23 dossier views, four retained 0.2.22 character pages and two retained 0.2.12 combat/air-action stills. Selections from 174 character, 24 dossier, 99 terrain/UI, 20 coastal and 32 symbol captures, plus export checks, are copied byte for byte without cropping, stitching, repainting or overlays. Old sources and reviewed frames remain in versioned directories with their original identities.
+The media folder contains 60 complete PNGs: 50 from the 0.2.26 Windows EXE, four retained 0.2.23 dossier views, four 0.2.22 character views and two 0.2.12 combat/air stills. Selections from the 353 current scoped native captures and export checks are copied byte for byte. Four current Li Desheng stage views are included. No cropping, stitching, repainting or overlays are used; older media and reviewed sources retain their version identities and hashes.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
@@ -40,6 +40,8 @@ The media folder contains 56 complete PNGs: 46 from the 0.2.25 Windows EXE, four
 | [city-buildings.png](media/city-buildings.png) | 城市设施与队列 / City facilities and queue |
 | [diplomacy.png](media/diplomacy.png) | 外交关系与命令条件 / Relations and validation |
 | [headquarters.png](media/headquarters.png) / [technology.png](media/technology.png) | 将领和科技 / Generals and technologies |
+| [lidesheng-young-v0226.png](media/lidesheng-young-v0226.png) / [middle](media/lidesheng-middle-v0226.png) | 李德胜1917青年与1947中年原生预览；1947仅素材 / 1917 youthful and 1947 middle-aged native previews; 1947 art only |
+| [lidesheng-prime-v0226.png](media/lidesheng-prime-v0226.png) / [late](media/lidesheng-late-v0226.png) | 壮年与暮年阶段原生页 / Prime and late stage pages |
 | [dossier-hong-v0223.png](media/dossier-hong-v0223.png) | 大幅洪秀全档案与实际成长条件 / Whole Hong Xiuquan portrait and actual progression requirements |
 | [dossier-medals-v0223.png](media/dossier-medals-v0223.png) | 实际装备和槽位限制 / Actual medal loadout and slot restrictions |
 | [dossier-x30-v0223.png](media/dossier-x30-v0223.png) | 桌面手机比例独立滚动 / Independent scrolling in desktop phone proportions |
