@@ -73,6 +73,7 @@ var crossing_markers: Array=[]
 var historical_landcover_features: Array=[]
 var historical_landcover_patch_cells=0
 var terrain_feature_sprite_draw_count=0
+var grounded_scenery_draw_count=0
 var region_lines: Array=[]
 var world_bounds=Rect2()
 var camera_bounds=Rect2()
@@ -578,7 +579,7 @@ func terrain_surface_capture_facts(view: Rect2) -> Dictionary:
 
 func continuous_ground_facts() -> Dictionary:
 	var renderer=backdrop_view if is_instance_valid(backdrop_view) and not static_only else self
-	return {"active":renderer.material!=null,"source_layers":GroundMaterialBlend.source_layers().size(),"whole_original_dimensions":[1254,1254],"macro_coverage":"nonoverlapping_hex_partition_with_three_source_blending","source_ground_coverage":MapGroundCoverage.diagnostics(map_details.source_ground_coverage),"ground_material_policy":map_details.ground_policy,"source_images_modified":false,"city_influence_fill_draws":renderer.city_control_fill_draw_count,"field_fill_batches":renderer.territory_field_fill_draw_count}
+	return {"active":renderer.material!=null,"source_layers":GroundMaterialBlend.source_layers().size(),"whole_original_dimensions":[1254,1254],"macro_coverage":"nonoverlapping_hex_partition_with_three_source_blending","source_sampling":"world_anchored_three_translations_with_explicit_mip_gradients","sampling_world_units":MapTerrainSurfaces.macro_data().get("world_repeat_period",0),"fixed_wallpaper_period":false,"grounded_scenery_draws":renderer.grounded_scenery_draw_count,"source_ground_coverage":MapGroundCoverage.diagnostics(map_details.source_ground_coverage),"ground_material_policy":map_details.ground_policy,"source_images_modified":false,"city_influence_fill_draws":renderer.city_control_fill_draw_count,"field_fill_batches":renderer.territory_field_fill_draw_count}
 
 func place_at_screen(screen: Vector2) -> String:
 	if not show_places or not selected_unit_id.is_empty():return ""
@@ -1211,6 +1212,7 @@ func sync_backdrop() -> bool:
 
 func draw_static_atlas(view: Rect2) -> void:
 	terrain_scenery_draw_count=0
+	grounded_scenery_draw_count=0
 	if territory_qa_mode:
 		draw_territory_qa_atlas(view)
 		return
@@ -1233,7 +1235,10 @@ func draw_static_atlas(view: Rect2) -> void:
 				if state.map.get("strategic_scale",false):feature_alpha+=.04
 				if feature.has("texture_rect") and has_original:
 					var rectangle: Rect2=feature.texture_rect;rectangle.position+=feature.position
-					draw_texture_rect(image,rectangle,false,Color(1.0,1.0,.98,minf(feature_alpha,1.0)))
+					var grounded=feature.terrain_id in ["hill","mountain","peak"] and material!=null
+					if grounded:grounded=GroundMaterialBlend.draw_grounded_feature(self,image,rectangle,feature.asset_id,minf(feature_alpha,1.0))
+					if grounded:grounded_scenery_draw_count+=1
+					else:draw_texture_rect(image,rectangle,false,Color(1.0,1.0,.98,minf(feature_alpha,1.0)))
 				else:sprite(image,feature.position,feature.bounds,Color(1.0,1.0,.98,minf(feature_alpha,1.0)))
 	if show_control and not state.map.get("strategic_scale",false):draw_control_zones(view,true)
 	for points in region_lines:

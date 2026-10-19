@@ -59,6 +59,10 @@ Thumbs.db
 !/reports/control_land_*.json
 !/reports/ground_macro_*.json
 !/reports/ground_identity_*.json
+!/reports/ground_atlas_*.json
+!/reports/ground_continuity_*.json
+!/reports/ground_continuity_native/
+!/reports/ground_continuity_native/**
 !/reports/terrain_update_verification_summary.json
 !/reports/river_surface_native_review.json
 !/reports/apk_content_validation.json
@@ -134,6 +138,7 @@ Thumbs.db
 !/reports/git_byte_preservation.json
 !/reports/quality_goal_turn_v0223.json
 !/reports/quality_goal_turn_v0224.json
+!/reports/quality_goal_turn_v0225.json
 !/reports/atlas_office_native_review.json
 !/reports/atlas_office_release_validation.json
 !/reports/screenshots/ui_refinement_native/

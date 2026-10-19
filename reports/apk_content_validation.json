@@ -482,6 +482,11 @@
       "sha_matches": true
     },
     {
+      "file": "presentation/data/ground_atlas_plan.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
       "file": "presentation/data/ground_coverage.json",
       "included": true,
       "sha_matches": true
@@ -634,7 +639,7 @@
     "lib/armeabi-v7a/libgodot_android.so"
   ],
   "private_files_detected": [],
-  "artifact_sha256": "52fddcadd11c3d61e0aa346e4df3612b272f81c9b23459f044ca1c4ee0859f9e",
+  "artifact_sha256": "a4eef0fb4948417f577aeb542286003514f9ae833101b92eab56f8e4ef7a000a",
   "raster_manifest_byte_verified": true,
   "raster_import_files_verified": [
     {
@@ -2198,6 +2203,30 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "icon_medal_logistics_v023",
+      "source_sha256": "6425de33da890340bc62f54a5fdf20c1c4d2714e782d3c652d2d560bac20b45a",
+      "embedded_imports": [
+        ".godot/imported/icon_medal_logistics_v023.png-6d58b8a5660f8d69654f14acfe9476c6.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "icon_medal_marksmanship_v023",
+      "source_sha256": "ba2081226e7ce238847d56394481672ed7c2b746567e472c3e943ce763f8bc76",
+      "embedded_imports": [
+        ".godot/imported/icon_medal_marksmanship_v023.png-60704e83df45d294984829e576e32a2a.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "icon_medal_steadfast_v023",
+      "source_sha256": "c44add6ada182a7ac821d513329645c4448a39be39e1c521a1611eff5df2de64",
+      "embedded_imports": [
+        ".godot/imported/icon_medal_steadfast_v023.png-758b2ffe9bcbd4853d2b4f09eaefe058.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "icon_mg_focus",
       "source_sha256": "5c4cc7e37a38b15b6bb98b674cbd32b0afd7fa22c98e916694dd889ebb7887f4",
       "embedded_imports": [
@@ -2374,10 +2403,194 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "portrait_alexei_kaledin_1886",
+      "source_sha256": "33f9bf36cb4b4e67fe4fd38e3a4a9a07b6ca712e383de9e407edcb6d57873550",
+      "embedded_imports": [
+        ".godot/imported/portrait_alexei_kaledin_1886.png-d7439a55f719af743edd15ce03130515.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_alexei_kaledin_1901",
+      "source_sha256": "3da5b7fdc2a14877622fb48f0615248291c8f69e4f58f42951c4d1f44541d529",
+      "embedded_imports": [
+        ".godot/imported/portrait_alexei_kaledin_1901.png-71c0f80184a81f1a9f47120875f037b9.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_alexei_kaledin_1911",
+      "source_sha256": "18303f6b31aa18396982150f785700e6a79129bb7a4dfd313cd95ddd3107451b",
+      "embedded_imports": [
+        ".godot/imported/portrait_alexei_kaledin_1911.png-a196f32826bf68d7eb50f38e533bf461.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_alexei_kaledin_1917",
+      "source_sha256": "120dc8043c121a86c51724e048e52a658c61ec7febd11882d064415d77b2af4b",
+      "embedded_imports": [
+        ".godot/imported/portrait_alexei_kaledin_1917.png-8552f825694fa567d053e2666b20ff81.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_bai_chongxi_1918",
+      "source_sha256": "671e7b8e070138dc6157bac62e522359473ee2c5372fea640207068c25aa35c5",
+      "embedded_imports": [
+        ".godot/imported/portrait_bai_chongxi_1918.png-abac44eeaedf4157f5ae0072fb58a807.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_bai_chongxi_1927",
+      "source_sha256": "c2ae3845a88715861a99501c11a1b3b2b60c86b6d1872785d4eee1cce4d38d1b",
+      "embedded_imports": [
+        ".godot/imported/portrait_bai_chongxi_1927.png-46cc3fe9ba285ba35ba839cc8c787213.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_bai_chongxi_1940",
+      "source_sha256": "88c717ce959bd40ec2afdf0982fcd2c1dc7bf18c322fae3555d85b6f7e3815cf",
+      "embedded_imports": [
+        ".godot/imported/portrait_bai_chongxi_1940.png-df6bc66fdeb86efcb8d0df1af149a9a1.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_bai_chongxi_1963",
+      "source_sha256": "e99ac0997918e9d475d4829e7ec547e85573eb82ce3cb06ca9b5136243d81f2f",
+      "embedded_imports": [
+        ".godot/imported/portrait_bai_chongxi_1963.png-6bb2a8bb102ba1ec4be8bfad90262c72.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "portrait_chen_jiongming",
       "source_sha256": "6345dc6a3ec1e2aba416b0632d8384e3024f3f40979eef476880da6cda4143ae",
       "embedded_imports": [
         ".godot/imported/portrait_chen_jiongming.png-45db5b3a8111c76f5c1df2ed700cc020.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_chen_jiongming_1903",
+      "source_sha256": "0de6ac7c48974a8adf4d23f16ad0a51b9b35ef3109fc8552da8f02afcab0efaa",
+      "embedded_imports": [
+        ".godot/imported/portrait_chen_jiongming_1903.png-afea1b8b6d1901adbe683c7f8dddcf4b.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_chen_jiongming_1914",
+      "source_sha256": "766b463bb00d87be60eaa104a6f93837e74d77086a639de3057bc8257d58796b",
+      "embedded_imports": [
+        ".godot/imported/portrait_chen_jiongming_1914.png-ff92cec1fed9f85ff73ead86fcf536a6.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_chen_jiongming_1932",
+      "source_sha256": "d3aacafefcc5d795e6d296f5154c6b9f1d4d91b5028dcc47decdb7f7180c1226",
+      "embedded_imports": [
+        ".godot/imported/portrait_chen_jiongming_1932.png-cf470c5b84a015a1084f42fa9745186e.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_chiang_kai_shek_1912",
+      "source_sha256": "b5a5626f537b2ffbc69e62ff626aee7b2ed9003180e7ebefe33e71273a67748f",
+      "embedded_imports": [
+        ".godot/imported/portrait_chiang_kai_shek_1912.png-e72422b32fd43402d9a5a7d5b119a0d1.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_chiang_kai_shek_1927",
+      "source_sha256": "23ef9d62ff9790f337b7d3fe639065daa7a06e0fdfd5a2373c56a3a5253e3fdd",
+      "embedded_imports": [
+        ".godot/imported/portrait_chiang_kai_shek_1927.png-4beed7635f295971dd26df0d1059de66.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_chiang_kai_shek_1940",
+      "source_sha256": "aadcf42feabf9a329acc650b2dc4f392d26b4c53fd0fd417a3228025d0c85a4c",
+      "embedded_imports": [
+        ".godot/imported/portrait_chiang_kai_shek_1940.png-ba4bd120fb358e58814ae0d351775d12.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_chiang_kai_shek_1969",
+      "source_sha256": "c0732026c4c1d0be5e43aad8e2688df40a189e19d8822f5efc27fbdc26606af1",
+      "embedded_imports": [
+        ".godot/imported/portrait_chiang_kai_shek_1969.png-c1b78cae6b51921edcdd146bc77edadc.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_daoguang_1807",
+      "source_sha256": "9c4e82e6e5b87c63858e1d072a0b3eaeb78d60b76d38d7f0b434ce23350ec60a",
+      "embedded_imports": [
+        ".godot/imported/portrait_daoguang_1807.png-7664ad4a3221a98dd8441eca83379faa.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_daoguang_1822",
+      "source_sha256": "82a1370849b730891ca2307b25132d5c1b9456f5bda132fe9e1a968c093746e3",
+      "embedded_imports": [
+        ".godot/imported/portrait_daoguang_1822.png-def79271996e91eb360c158a50740499.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_daoguang_1837",
+      "source_sha256": "0d1c29472b669c74836d20edfea62f3b08fbf21ecf443f231bbf294e6bd3d631",
+      "embedded_imports": [
+        ".godot/imported/portrait_daoguang_1837.png-10fb99fcc39e39e2603fe2a56b2269f3.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_daoguang_1848",
+      "source_sha256": "9c603dade5cba001b61a5ecc5252965f243d4e1a8ca4a5e7d2cd44900fdb8e0e",
+      "embedded_imports": [
+        ".godot/imported/portrait_daoguang_1848.png-ada571cc8793d39d29df125edf0364e0.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_duan_qirui_1890",
+      "source_sha256": "43f7a076ed454a5714f6a882420f2977b43077663a59b620f9d24fc53e77ffe0",
+      "embedded_imports": [
+        ".godot/imported/portrait_duan_qirui_1890.png-ca382cdbe91393e2ea68c918be5a5aac.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_duan_qirui_1905",
+      "source_sha256": "a3097b45355f70ea48750fa744d4970ee8b42fc79b517f2bfe52843aeaa191c9",
+      "embedded_imports": [
+        ".godot/imported/portrait_duan_qirui_1905.png-31b65b4c2ea68849a612bf8c6cd5e802.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_duan_qirui_1917",
+      "source_sha256": "94cf1cb360a03de8e5e1ba1d292a461a54c12442ae487c682d08b58b9e635880",
+      "embedded_imports": [
+        ".godot/imported/portrait_duan_qirui_1917.png-48fdbbd00aae37a987f7514bccaaa79f.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_duan_qirui_1927",
+      "source_sha256": "7c066185613572d022570736905a1a99c426743a291b2807df8a2601c34be8f2",
+      "embedded_imports": [
+        ".godot/imported/portrait_duan_qirui_1927.png-e9d96c0728711295da8c95953856b3e5.ctex"
       ],
       "current_import_bytes_match": true
     },
@@ -2390,10 +2603,258 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "portrait_feng_yuxiang_1907",
+      "source_sha256": "771f8f3ce8bdf92ac2ca935c639988b2172980d6f1d8525a011c899ec8bda7bd",
+      "embedded_imports": [
+        ".godot/imported/portrait_feng_yuxiang_1907.png-4afb327f51c166533fbcd7b304244076.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_feng_yuxiang_1934",
+      "source_sha256": "e671bd4cdde2bada3e9ced8532236a48e67ae42384a9e70f07bb2612ff1d1ae0",
+      "embedded_imports": [
+        ".godot/imported/portrait_feng_yuxiang_1934.png-040bd868241fd0ca0b83b63ff3fc9372.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_feng_yuxiang_1947",
+      "source_sha256": "b5ae9cbd24695353a97c4fa4b4b3a12a779776167f37d6b52b848d96053c096b",
+      "embedded_imports": [
+        ".godot/imported/portrait_feng_yuxiang_1947.png-72d1ff9ba7ccf3998588a6b48bcc7e86.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "portrait_guo_songling",
       "source_sha256": "23c0f9fce8e18209f687d2a957ca07ff2ff95b96bab4a91fc36420c9587460fb",
       "embedded_imports": [
         ".godot/imported/portrait_guo_songling.png-c7bd935eefa4ea13ea3dba0dd7237ca6.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_guo_songling_1901",
+      "source_sha256": "53defbbb128c4ec842edc4b86e36c02b371d4a64361d06608b6d1baa20765699",
+      "embedded_imports": [
+        ".godot/imported/portrait_guo_songling_1901.png-51aeaec8aecefdb07e3741b154ecf2ec.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_guo_songling_1910",
+      "source_sha256": "0f7b9eba7a9a91c3f768324b73c1152c63d472318f2ff0b0b7157eae487b7283",
+      "embedded_imports": [
+        ".godot/imported/portrait_guo_songling_1910.png-0b55ae4b8dc8dc2b35257317f8ee0231.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_guo_songling_1925",
+      "source_sha256": "62bb98342c843dab22d76e802f375baf51253b5055ee38d233dbfd04ac21969b",
+      "embedded_imports": [
+        ".godot/imported/portrait_guo_songling_1925.png-1cc3629b7bff62b241ce841cc163c59f.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_hong_xiuquan_1835",
+      "source_sha256": "b3c543b1c8df98f187710612184b9187dd5c6aab09d731af16da00f11e4de505",
+      "embedded_imports": [
+        ".godot/imported/portrait_hong_xiuquan_1835.png-1d9cdb10793ea945742811177385ea42.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_hong_xiuquan_1845",
+      "source_sha256": "95d15f079ebca2fc6d3cf5b6f17e5e7a77a5c7207620aa768ec84d8de156eec8",
+      "embedded_imports": [
+        ".godot/imported/portrait_hong_xiuquan_1845.png-1c18814b16c9cb4754ba28456dd13ecf.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_hong_xiuquan_1855",
+      "source_sha256": "f469089727725a5d8f04e1e7df90f777105d1e01fdac506209c6b26ca77977cf",
+      "embedded_imports": [
+        ".godot/imported/portrait_hong_xiuquan_1855.png-a3ea260ae2aeb97adbb6931110a4bb1d.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_hong_xiuquan_1863",
+      "source_sha256": "ce91638cfd363565c37e3c905f423a519f7fca552669b62a64c3e4756e79c2bd",
+      "embedded_imports": [
+        ".godot/imported/portrait_hong_xiuquan_1863.png-ebe26b0d750dbfa197f8afb92b89678e.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_ito_hirobumi_1864",
+      "source_sha256": "9235346efe45cfeb4030b8e07794e6fcf07f782b88617fb1c24f6dea149f0eba",
+      "embedded_imports": [
+        ".godot/imported/portrait_ito_hirobumi_1864.png-f37fec69e6c48f0e79ff8aaee59e8007.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_ito_hirobumi_1878",
+      "source_sha256": "1cdb5ebcfb53b97a4896241ac1e9df6b892d99b91d65082dc41a4b38553bac66",
+      "embedded_imports": [
+        ".godot/imported/portrait_ito_hirobumi_1878.png-b40013aebdf6ae55ad92764160d04cab.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_ito_hirobumi_1895",
+      "source_sha256": "c798ce7406e890e543693fcaf0831c280198e09f880e20398b6a7d7cd31724a9",
+      "embedded_imports": [
+        ".godot/imported/portrait_ito_hirobumi_1895.png-7049fe212c773751efd689b156c7d128.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_ito_hirobumi_1908",
+      "source_sha256": "460ee6448e987703887cd309d911caa886e1c5435d8dd7d08b29d316ad3be025",
+      "embedded_imports": [
+        ".godot/imported/portrait_ito_hirobumi_1908.png-761f8f29801304ba81dc1f26c02b4ad7.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_kuropatkin_1873",
+      "source_sha256": "c446404bc3b74df180ae0b055ca5dae63875275631fe70e88d0a9fa718226fc6",
+      "embedded_imports": [
+        ".godot/imported/portrait_kuropatkin_1873.png-3e01e5d8befd66ace1f9be5ec836e8be.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_kuropatkin_1890",
+      "source_sha256": "a79a8492d5d1a9935c952f2faf5df2654daa0d95348ad77c4c4fd9b6fe481aa5",
+      "embedded_imports": [
+        ".godot/imported/portrait_kuropatkin_1890.png-f82d5d83b6e1040bc4e1a806bfc4da5c.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_kuropatkin_1900",
+      "source_sha256": "b57e9fa11d55d584cdf01661fd6a1d8d90e06b5f5d34e32019b1c6960a60d82b",
+      "embedded_imports": [
+        ".godot/imported/portrait_kuropatkin_1900.png-49793ad28bbbbfcb87e5b974ee687575.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_kuropatkin_1920",
+      "source_sha256": "4e3d099ef61e5e4b48999053599cad2d95210428e9ae194575543bd4ebe92674",
+      "embedded_imports": [
+        ".godot/imported/portrait_kuropatkin_1920.png-ec8ccf79ae7d057beec0e96a5fd193d1.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_li_hongzhang_1848",
+      "source_sha256": "57ef4ec117c0f8d65f888819b1c76647c4c2f6c32cc4f663491cd19677d267d7",
+      "embedded_imports": [
+        ".godot/imported/portrait_li_hongzhang_1848.png-8eac53404771513dd41afad5c02eb333.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_li_hongzhang_1860",
+      "source_sha256": "4aff83fb838f3b9d4f12d3848cdd7d41479d9bf9d34fe79802c887e068ca8521",
+      "embedded_imports": [
+        ".godot/imported/portrait_li_hongzhang_1860.png-20f46371293e8f75d1995a64b8d63056.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_li_hongzhang_1873",
+      "source_sha256": "ea1eb90f6a78b22ff68d5fa59c1a68c246b66c90c730964a85a4ff88ae80357c",
+      "embedded_imports": [
+        ".godot/imported/portrait_li_hongzhang_1873.png-71d5e544918f67eb2fe4437d747ee115.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_li_hongzhang_1890",
+      "source_sha256": "5d0829508d1d6eda5ecbbe487a2b8652ffa25226a5efd83e595bbe50a102650c",
+      "embedded_imports": [
+        ".godot/imported/portrait_li_hongzhang_1890.png-7678b844eadb5a6cfdfa3f6da16ff8e5.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_li_hongzhang_1900",
+      "source_sha256": "2a8d6295d558de49a0f6791ce8f01e0df9ee89c09feb8d414ffbbc8eb5cab54b",
+      "embedded_imports": [
+        ".godot/imported/portrait_li_hongzhang_1900.png-02096eac1d741e10a4204b255d57a9df.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_li_zongren_1916",
+      "source_sha256": "68ddc3936eb7d87971e232f41cf4f3eee72b3d544281238e749e772473285979",
+      "embedded_imports": [
+        ".godot/imported/portrait_li_zongren_1916.png-2d9d19c835d9adffbbe48729b0221c09.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_li_zongren_1927",
+      "source_sha256": "8bd97cbd7f25766528b93c5e3f31c3b9b550c5dbbb5eaade0cc6423c722bbda9",
+      "embedded_imports": [
+        ".godot/imported/portrait_li_zongren_1927.png-f68fd9763369b35964b82e965430c646.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_li_zongren_1940",
+      "source_sha256": "f90ab62ab6229b4f9d93dccefcd3d118b9ad644cdac4742e6f10e313d9ea8fdc",
+      "embedded_imports": [
+        ".godot/imported/portrait_li_zongren_1940.png-73eabf64796d18a977a5bd43970d014a.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_li_zongren_1965",
+      "source_sha256": "db3e974279e1615c90f0e51b2dd84cbf1442bf07b65db042bbfc9303c9fc67bf",
+      "embedded_imports": [
+        ".godot/imported/portrait_li_zongren_1965.png-174e14e675540bf3b82906459bd82158.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_lin_zexu_1810",
+      "source_sha256": "25d5ea3fc64defbaf51322f3abc70db23f4c6b64297ab5a4981919ba3d83bbf2",
+      "embedded_imports": [
+        ".godot/imported/portrait_lin_zexu_1810.png-dd0970a453e5587885470cea0bdc4c8b.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_lin_zexu_1825",
+      "source_sha256": "610b645aebd74ca9b60a825a33b3c6ca0e5c9cac9496cbe0d6b8c4eafb5c4ad3",
+      "embedded_imports": [
+        ".godot/imported/portrait_lin_zexu_1825.png-a1ccfd65e4b6681b8a66aa9bf0d4b2ff.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_lin_zexu_1840",
+      "source_sha256": "498fa1fe17493f7acefe94023209293e5dd341b812e0be4825b40e6ad0d47378",
+      "embedded_imports": [
+        ".godot/imported/portrait_lin_zexu_1840.png-c317770db65b0c4c35ac70111cfb29e7.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_lin_zexu_1849",
+      "source_sha256": "4afb09a52d698fe9d76d56c9fc676b1b8560b67d49229908705cda2a9088b515",
+      "embedded_imports": [
+        ".godot/imported/portrait_lin_zexu_1849.png-cb8aed14e890683c21c34904a8413c19.ctex"
       ],
       "current_import_bytes_match": true
     },
@@ -2406,10 +2867,162 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "portrait_lu_yongxiang_1892",
+      "source_sha256": "65d93058b18517c46a21007925537fe3f17c550d289dd19d7bc10dff23e5525a",
+      "embedded_imports": [
+        ".godot/imported/portrait_lu_yongxiang_1892.png-5059fb6becdb737e539af27a1c866caa.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_lu_yongxiang_1907",
+      "source_sha256": "7e8b17c555c791ac6a93631740580672b4fed0a2ebe6c7a4df42a37b81aa1463",
+      "embedded_imports": [
+        ".godot/imported/portrait_lu_yongxiang_1907.png-059240b18d929685d5716b742179a61d.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_lu_yongxiang_1932",
+      "source_sha256": "ee6f82369d42c53a3b95bc17854358889ba9935519661ccc74942191874120ab",
+      "embedded_imports": [
+        ".godot/imported/portrait_lu_yongxiang_1932.png-342b0b196369137855b2e8057382b72e.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_mao_zedong_1917",
+      "source_sha256": "df61fbb551259a2ebce74253131a4d2b685f9a25afaed3de3ab3b052c62ec9b4",
+      "embedded_imports": [
+        ".godot/imported/portrait_mao_zedong_1917.png-227773cfc575a2ab789c58845b702de8.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_mao_zedong_1927",
+      "source_sha256": "7a28c20b90f20bbdc524a333021be33d2bc8dc5bcd50fba4dd0a26b65c5b9348",
+      "embedded_imports": [
+        ".godot/imported/portrait_mao_zedong_1927.png-dab77116090682ab597c15a0e23cac63.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_mao_zedong_1940",
+      "source_sha256": "064b5e1b4e17617c2769095ca6efc87e76a0666120adb7d35877056b59d06141",
+      "embedded_imports": [
+        ".godot/imported/portrait_mao_zedong_1940.png-124a942f32b6688868e4f67d43688763.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_mao_zedong_1947",
+      "source_sha256": "ec00f4add506a0cca781a3cb81cbd8efc23deec860bf66bcc1d8275988349ed5",
+      "embedded_imports": [
+        ".godot/imported/portrait_mao_zedong_1947.png-df2b380e3e2bbdf6c8288ff647c285e3.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_mao_zedong_1972",
+      "source_sha256": "e8b5d32406a416dcf1e3429065a9b7f408a2d8cd1ff92bd304495d328a78490f",
+      "embedded_imports": [
+        ".godot/imported/portrait_mao_zedong_1972.png-b8c20e315756df1d0d4a8cf0c84b7ed7.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_nicholas_ii_1890",
+      "source_sha256": "7052206b47e58706875c68494c3c7edd3a7250cfbc11e4de093553dada85ca75",
+      "embedded_imports": [
+        ".godot/imported/portrait_nicholas_ii_1890.png-8eb6a7501b81ce81b5da19cefe3b0ccc.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_nicholas_ii_1900",
+      "source_sha256": "77e5d6e7778fa1401acc38073b82ba9211fb4a140bfe5b6ff4d063209dc889dd",
+      "embedded_imports": [
+        ".godot/imported/portrait_nicholas_ii_1900.png-57ee5fb1bf984b1eb48996fcb60ef5d8.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_nicholas_ii_1910",
+      "source_sha256": "3f8b0907d989c77b57d5765e2678f0e06faa6b479418603932f393dfcb50a2f7",
+      "embedded_imports": [
+        ".godot/imported/portrait_nicholas_ii_1910.png-ed1fb8a2e3a176c7ad3a7da44adca148.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_nicholas_ii_1917",
+      "source_sha256": "b294392c44069557d03cc7410892e1106286f847643b607fc58530924bb899ae",
+      "embedded_imports": [
+        ".godot/imported/portrait_nicholas_ii_1917.png-a82dae917c7598ab5f633f0de787f906.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_peng_dehuai_1923",
+      "source_sha256": "616ad9205861bc9376d1e951a9db3db5aaaa32cd8c4b02b84cc399c55a647781",
+      "embedded_imports": [
+        ".godot/imported/portrait_peng_dehuai_1923.png-d495a65fbda07210f8a70181196a37ec.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_peng_dehuai_1933",
+      "source_sha256": "51f30a0d28e171a4d024322166356c0fe478f99a1d321e114bc25647d66b7502",
+      "embedded_imports": [
+        ".godot/imported/portrait_peng_dehuai_1933.png-d8bb0248a97ede05a071b446afb1122d.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_peng_dehuai_1940",
+      "source_sha256": "6235d36ec61f1be4d300dd713b4a0e649703fc477cc5eafc20399661d0533ae7",
+      "embedded_imports": [
+        ".godot/imported/portrait_peng_dehuai_1940.png-4b42548f6c9f471a3e4bc94ae8b8211d.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_peng_dehuai_1970",
+      "source_sha256": "4a297743cbeb47ddc308456c25f5bb0278375f11181c4d7b33fce3655478d183",
+      "embedded_imports": [
+        ".godot/imported/portrait_peng_dehuai_1970.png-31fccbf8e15fa5d68973facd60824b59.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "portrait_qi_xieyuan",
       "source_sha256": "b9086536866fcb203d2bf217aad76c54ccbfff3fdc1a74928a7102349defd1be",
       "embedded_imports": [
         ".godot/imported/portrait_qi_xieyuan.png-463d1bd2f9315ac4f383dc6fe27974db.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_qi_xieyuan_1910",
+      "source_sha256": "d412cc19e3d022b01918fe7b67c8b78fe74d88993b361983be0eece67fd7e924",
+      "embedded_imports": [
+        ".godot/imported/portrait_qi_xieyuan_1910.png-ba5ed494ce1991d4de339f7f46f586d4.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_qi_xieyuan_1937",
+      "source_sha256": "d51afcf26b8d9ae227c91ca928d37e558a39c54f1e20a318b5ceea50fa433b39",
+      "embedded_imports": [
+        ".godot/imported/portrait_qi_xieyuan_1937.png-b37ce9a6bbeec7e04c4c3036ac347b71.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_qi_xieyuan_1945",
+      "source_sha256": "188195c75c5967b028abd56c47150c9415316ccc317392e0bfcf5bc5cd3dabee",
+      "embedded_imports": [
+        ".godot/imported/portrait_qi_xieyuan_1945.png-51fb4cdc91692adb0cbab4da6f772b0e.ctex"
       ],
       "current_import_bytes_match": true
     },
@@ -2422,10 +3035,154 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "portrait_sun_chuanfang_1910",
+      "source_sha256": "dba48b461b627ab4b493f7cd2d1cd809d287aa18103c9f60282537805a6e0d86",
+      "embedded_imports": [
+        ".godot/imported/portrait_sun_chuanfang_1910.png-e94448f81513b226caf05a25a06bc306.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_sun_chuanfang_1930",
+      "source_sha256": "3b898008c24e1efe97aad247a4108a117510ac523e1793cccd47437980cc0e83",
+      "embedded_imports": [
+        ".godot/imported/portrait_sun_chuanfang_1930.png-54d7c5a03fcbe14727abeadcf461114c.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_sun_chuanfang_1934",
+      "source_sha256": "afce79ad791c1c7755900c181dc3060736b9b92181f3dbacf8e1207ffd8d3738",
+      "embedded_imports": [
+        ".godot/imported/portrait_sun_chuanfang_1934.png-829ee71f2921d27c44977a160751e273.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_sun_yat_sen_1891",
+      "source_sha256": "570c4e76daac2622c6bbf93de8c16dc26b2600abd1cea93854139ee44d5a6f8c",
+      "embedded_imports": [
+        ".godot/imported/portrait_sun_yat_sen_1891.png-70b405125937929237a4cc8c631316da.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_sun_yat_sen_1906",
+      "source_sha256": "3685e04eb77701fd4386581ab0b0e83acae06d867d539b60e73a0dc2beca89ce",
+      "embedded_imports": [
+        ".godot/imported/portrait_sun_yat_sen_1906.png-782aed064d506c1fa84967b5e2b2cf61.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_sun_yat_sen_1917",
+      "source_sha256": "bba1a34057b62be50a83c2ffb63642d5051d0f82f74ebd23b9176fe7aa9745fd",
+      "embedded_imports": [
+        ".godot/imported/portrait_sun_yat_sen_1917.png-937e3c1d85cd49aae2c7ebda6bbf52d7.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_sun_yat_sen_1924",
+      "source_sha256": "a70ccb87b5903a6aceb5fe683668b4e822adf32462750cd955215990b9e559aa",
+      "embedded_imports": [
+        ".godot/imported/portrait_sun_yat_sen_1924.png-82a2718f0d0d57df16c26079f1cba8ff.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "portrait_tang_jiyao",
       "source_sha256": "19c07f9680083709a46941982cbc6dc2197d2334bae354c2afcd6e0ee49e8ea5",
       "embedded_imports": [
         ".godot/imported/portrait_tang_jiyao.png-b06800bde71c36f2c2f907f648ddde6b.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_tang_jiyao_1901",
+      "source_sha256": "a018bb714ac5a6c717517dd9fb9fd42459d847d78ce97d4b6915a75fbed96d40",
+      "embedded_imports": [
+        ".godot/imported/portrait_tang_jiyao_1901.png-033708fa388c150eb7f9a1695f7e4c12.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_tang_jiyao_1908",
+      "source_sha256": "1aacf71ee6842e3aeceb898b2129f9f993e5730773729a8923fad7439b775d19",
+      "embedded_imports": [
+        ".godot/imported/portrait_tang_jiyao_1908.png-6b27f53dadcbc90b8ab4ad979a606847.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_tang_jiyao_1926",
+      "source_sha256": "bcb0de25dfa492eee03b98cda6bcad4667921a4fa6072d254e61f4cb68df60fe",
+      "embedded_imports": [
+        ".godot/imported/portrait_tang_jiyao_1926.png-ec78fac8589235011d2f76173af985fd.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_tojo_hideki_1909",
+      "source_sha256": "35e3d7d90b5c9d10627fdc4e79e6df134238ddf2317f49aaf2d5c00c5842729c",
+      "embedded_imports": [
+        ".godot/imported/portrait_tojo_hideki_1909.png-4b384f82d2a398d593bc9ab6d7520051.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_tojo_hideki_1924",
+      "source_sha256": "b45502daa047cf387561f969fd8258e8d535a6060b30807f9145ba867bcabe8a",
+      "embedded_imports": [
+        ".godot/imported/portrait_tojo_hideki_1924.png-393e23567e5d670232cd33891258d850.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_tojo_hideki_1940",
+      "source_sha256": "21fc4e46ca525555c46511e6e7f159906233c6c7ecd44ad547e6bf186401c9f8",
+      "embedded_imports": [
+        ".godot/imported/portrait_tojo_hideki_1940.png-9f03a1ff94d209edec8151ec58e93cf1.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_tojo_hideki_1947",
+      "source_sha256": "3ae73607d8da9619a879bdd489341f158238503b6e41f1e0e7ec0690819807f8",
+      "embedded_imports": [
+        ".godot/imported/portrait_tojo_hideki_1947.png-9dd1d1db45a6bbf4fc91e22cf60f33a4.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_waldersee_1857",
+      "source_sha256": "6886b10fe475fc37677428d8c761756202bc928de7446e1b28edafbb13071446",
+      "embedded_imports": [
+        ".godot/imported/portrait_waldersee_1857.png-5178c8b91a163b90be3a5e4325ad448f.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_waldersee_1872",
+      "source_sha256": "d4803571c6d59464adb75fe163414deabccaf70a1d89b6f20128f318b0b5d03a",
+      "embedded_imports": [
+        ".godot/imported/portrait_waldersee_1872.png-a41a006069b2cc89c5cf52881b40d530.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_waldersee_1887",
+      "source_sha256": "d3c84876a4f76cbf3e4a43fea3ee1c607086003e334e9e1b0506e7e540af1044",
+      "embedded_imports": [
+        ".godot/imported/portrait_waldersee_1887.png-db132f1961c9f3fad4a151a62f7aa06e.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_waldersee_1900",
+      "source_sha256": "fcdf4942c0ca1af66868e04dc433a204971bd647fc939b14d9cf9e68ab6cae7b",
+      "embedded_imports": [
+        ".godot/imported/portrait_waldersee_1900.png-42ce8d7fabe7b72d7f87907acf9779f3.ctex"
       ],
       "current_import_bytes_match": true
     },
@@ -2438,10 +3195,162 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "portrait_wu_peifu_1899",
+      "source_sha256": "163b857774cbffb7cd47aaf815ba3dc4727a9235730eebd49816712a570f368a",
+      "embedded_imports": [
+        ".godot/imported/portrait_wu_peifu_1899.png-ceedf2f457f93ea7e30fa4af40df5434.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_wu_peifu_1914",
+      "source_sha256": "f46016cfad09c0166f377e5079bdc95f9f3e2b4d033e5084a835e7cda929c201",
+      "embedded_imports": [
+        ".godot/imported/portrait_wu_peifu_1914.png-240f5385dbcfbbaa3200fc3123924ceb.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_wu_peifu_1938",
+      "source_sha256": "2daf634f1dc8ddf54d8020cb70428e4b071bdd24e41c7e0dc8cd0ed66c621d47",
+      "embedded_imports": [
+        ".godot/imported/portrait_wu_peifu_1938.png-f43e06de0cf40db15410e3501502b39c.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_xianfeng_1849",
+      "source_sha256": "b0578cc68178f9d523548e188df3c7b6adb1e8b1dc302491a6c8627bf8f72283",
+      "embedded_imports": [
+        ".godot/imported/portrait_xianfeng_1849.png-bee5331417cd461363e271e8c2c142c5.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_xianfeng_1853",
+      "source_sha256": "cbc28ba967a5d950b4ac854be86636e738c30c05f333319a36311106dd57d317",
+      "embedded_imports": [
+        ".godot/imported/portrait_xianfeng_1853.png-25631795db8b7f98f320c4d24360c2f4.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_xianfeng_1857",
+      "source_sha256": "85c5e667b6830d4a25c800cb8d9da9e3ee59c63c50a673f87d3831fee1b93198",
+      "embedded_imports": [
+        ".godot/imported/portrait_xianfeng_1857.png-c1682683713bf38419cf1ca3503854ac.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_xianfeng_1860",
+      "source_sha256": "d61b6df35408bc9888952110d52ae6fbe37414a1bf21a8ed0849ab27b22304e0",
+      "embedded_imports": [
+        ".godot/imported/portrait_xianfeng_1860.png-6ba7d8c6c96d1e21e1d416418c730fbc.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "portrait_xu_chongzhi",
       "source_sha256": "4cb13c3a23b50f48bb0f747b98f5a668b9fc71e1ccf984dc440e13b74db76864",
       "embedded_imports": [
         ".godot/imported/portrait_xu_chongzhi.png-665a9e3777a248a0082b598d65c4374f.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_xu_chongzhi_1912",
+      "source_sha256": "c9efd3edc56e558896c1dbbe1303f888ec65786eac72ccab73574a6119041c80",
+      "embedded_imports": [
+        ".godot/imported/portrait_xu_chongzhi_1912.png-78fdd3a60e2524049b5116b00c123ca5.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_xu_chongzhi_1940",
+      "source_sha256": "a475a0400056b70c9c1f1a88afed421547b43f14dc1b55138db2fc9ce0b94253",
+      "embedded_imports": [
+        ".godot/imported/portrait_xu_chongzhi_1940.png-9f3dc0ffd532734c282823121a1e90c8.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_xu_chongzhi_1960",
+      "source_sha256": "715f08f7e578ea66ad4dd6e03a79f303fb5c0f298539c8aedd3b812d2b8b4166",
+      "embedded_imports": [
+        ".godot/imported/portrait_xu_chongzhi_1960.png-6fe6f408cdb4c7fcbb06cbe5b8b02405.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1863",
+      "source_sha256": "3a4bdc4b7011f7eefc5f99c755d0fa5b2114543bca32be67efa0cb91d2904755",
+      "embedded_imports": [
+        ".godot/imported/portrait_yamagata_aritomo_1863.png-7c6c0305c9c1d04f032f86202224a8c9.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1878",
+      "source_sha256": "a86d6c8ef0f358580acec8f091184f5c81eb975bb07d779be37784742ea902e5",
+      "embedded_imports": [
+        ".godot/imported/portrait_yamagata_aritomo_1878.png-e23d392b89e45816f8d09247897fc790.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1890",
+      "source_sha256": "d0cca23e614e675f99c12eb14a1b2bad8f93ee84c581f086d1ef01872b0d9e04",
+      "embedded_imports": [
+        ".godot/imported/portrait_yamagata_aritomo_1890.png-1f0c094574aec5972e8f549e0cd6c181.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1900",
+      "source_sha256": "2f5dc354d205919d640dd194b6dfdb392b489b5dc73ea28dafde4364e0407431",
+      "embedded_imports": [
+        ".godot/imported/portrait_yamagata_aritomo_1900.png-795927e7379e051f2cd12273610b8707.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yamagata_aritomo_1917",
+      "source_sha256": "8d96a4dc4b05f861361d14a6163817efd49d97dec4bddd5e06ee6c2e371dd251",
+      "embedded_imports": [
+        ".godot/imported/portrait_yamagata_aritomo_1917.png-2e782139f3fa98359a7c0260590146b2.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yamashita_tomoyuki_1910",
+      "source_sha256": "fb481c5a8a4a1fa14c583224c82a9a2b2dd460e331b451989993c9524c56ae1d",
+      "embedded_imports": [
+        ".godot/imported/portrait_yamashita_tomoyuki_1910.png-404d1ac2941aae2111e5db69d2441c31.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yamashita_tomoyuki_1925",
+      "source_sha256": "a6e94297f89fef01308f1ad13776329cf454bec0b58ecde216c81c225fb241cb",
+      "embedded_imports": [
+        ".godot/imported/portrait_yamashita_tomoyuki_1925.png-79252276bb86aab01bd1379b8f96f2a1.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yamashita_tomoyuki_1940",
+      "source_sha256": "5127e45c6093357f71832583a8fbbaa93fa34811676838565887b31da1b68138",
+      "embedded_imports": [
+        ".godot/imported/portrait_yamashita_tomoyuki_1940.png-4380265710fa1139cce810990cf5c27b.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yamashita_tomoyuki_1945",
+      "source_sha256": "51d9a9b5f137aa95bd63b6454995f8ee3e98d4fb8840b7dbb7609eff76376c96",
+      "embedded_imports": [
+        ".godot/imported/portrait_yamashita_tomoyuki_1945.png-c3b131d7cd0c48fb6aa6d7047aefe187.ctex"
       ],
       "current_import_bytes_match": true
     },
@@ -2454,6 +3363,62 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "portrait_yan_xishan_1908",
+      "source_sha256": "7af742513a74f1a483e72fef60c0199ebc07ea37e6ea8e035d5346007a039366",
+      "embedded_imports": [
+        ".godot/imported/portrait_yan_xishan_1908.png-68048ab96506d8e12240db1c0ec1bc1c.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yan_xishan_1938",
+      "source_sha256": "58c84a7f1afe1e5a26827d0492fa87dae406e1dc4805a8eff6b37ec6a9d6d564",
+      "embedded_imports": [
+        ".godot/imported/portrait_yan_xishan_1938.png-56626d51d0328ffd61c139eddda8a86b.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_yan_xishan_1958",
+      "source_sha256": "79e723d908a23d0ed25fee3decb64b10c814ff73b75397f2223027d97208de6b",
+      "embedded_imports": [
+        ".godot/imported/portrait_yan_xishan_1958.png-69195d945ce04d705a65955adba98b5d.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_zeng_guofan_1836",
+      "source_sha256": "336692d232e01d356eb8ec0c12de0beb3d60d16b5e436b77413b29cd09758d60",
+      "embedded_imports": [
+        ".godot/imported/portrait_zeng_guofan_1836.png-0baede3390d41d48c66b7e0abbf1f925.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_zeng_guofan_1851",
+      "source_sha256": "b230d38830ad0540253384e0b95ed43943be76f6b9b96f74094b847e1d91fcdd",
+      "embedded_imports": [
+        ".godot/imported/portrait_zeng_guofan_1851.png-a32d09e4a0a21feed162de995c32fa02.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_zeng_guofan_1860",
+      "source_sha256": "1b3d2853cacc2e05884470a3baf090db65f32d083039484332a010ff9fc2328f",
+      "embedded_imports": [
+        ".godot/imported/portrait_zeng_guofan_1860.png-23b855a337977bb3f9c241766189e8eb.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_zeng_guofan_1871",
+      "source_sha256": "cf488f15cf54f3a3088bfa58c09d7c562e3a148887400b422410fbe161087fd4",
+      "embedded_imports": [
+        ".godot/imported/portrait_zeng_guofan_1871.png-6f51470ec7d51a4aee18c21bd159b05b.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "portrait_zhang_xueliang",
       "source_sha256": "697e61c90dd670c03d7bcddb749da33e0a257042f97bdbb90e5205b961fddfbe",
       "embedded_imports": [
@@ -2462,10 +3427,58 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "portrait_zhang_xueliang_1936",
+      "source_sha256": "efc0aaa085ca514ef3a2f216e953cd4e879b701ced319fb62619365477f9fdf4",
+      "embedded_imports": [
+        ".godot/imported/portrait_zhang_xueliang_1936.png-575606bd3d9fbe1fbf96d71c1ef54c6e.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_zhang_xueliang_1955",
+      "source_sha256": "460fe1823bf8bd80a97487d75c9010520c9862e381c79fbb536cd3cc336d72d3",
+      "embedded_imports": [
+        ".godot/imported/portrait_zhang_xueliang_1955.png-099a256c7f660e93e25aeb6aa1211b8a.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_zhang_xueliang_1995",
+      "source_sha256": "38ed7e91fd81b82b71ac75a41af30738b57c88e290622254d6d76fccc809ddfb",
+      "embedded_imports": [
+        ".godot/imported/portrait_zhang_xueliang_1995.png-63f63038f44f5c82f3a7ece52b77b07d.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "portrait_zhang_zuolin",
       "source_sha256": "76f2333568fc94c3a673541ab518c98b30fa0acdd682cd1a07db69e3f96511a6",
       "embedded_imports": [
         ".godot/imported/portrait_zhang_zuolin.png-36ef6ac421881d8a45d5236b6a9847d8.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_zhang_zuolin_1900",
+      "source_sha256": "5ff0f4e8c28328f29553e0566b3b3fd7cc13f48451a5fd9961ac224e5e336e2b",
+      "embedded_imports": [
+        ".godot/imported/portrait_zhang_zuolin_1900.png-b80c81dea9d721497983469fdeb667b2.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_zhang_zuolin_1915",
+      "source_sha256": "d16a44efd6a916af01620784bc4f14081fc6be2ba733ec70b3de75cfebfb784f",
+      "embedded_imports": [
+        ".godot/imported/portrait_zhang_zuolin_1915.png-69441a7de1f2c0007b8ba872586ff866.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "portrait_zhang_zuolin_1928",
+      "source_sha256": "c871582e9708a4ae59281a40511e8751e8449311cbda28f9b00d9a4953c1556d",
+      "embedded_imports": [
+        ".godot/imported/portrait_zhang_zuolin_1928.png-32f2baa2468381232dd5c153ad4514ab.ctex"
       ],
       "current_import_bytes_match": true
     },
@@ -8294,6 +9307,166 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "tile_ground_quiet_v0225_alluvial_loam",
+      "source_sha256": "9d45692998f61f86e2f5664abf8d9aa730ed308cf03865ba2550a018eeb6ff54",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_alluvial_loam.png-02118986e0c99b9b0db2c45cad3f4644.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_alpine_meadow",
+      "source_sha256": "58d2e1b342c7d3f917be623c4ea7c023230db981a88f61942d18cb31dbdec19d",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_alpine_meadow.png-7fb6049f0b2e3b1e012aef3565e450e0.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_alpine_scree",
+      "source_sha256": "43db94130c983d70d6ef7636a339dd32340e47f92568e9fa82ef9c50e1a32316",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_alpine_scree.png-6c7b13c7cb20bd7a2f887eac1cd82d72.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_alpine_steppe",
+      "source_sha256": "3c19df945638ae33063349d4babb64b9edc88bca8fb8bfac2b46a4f99dc80ed7",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_alpine_steppe.png-24af788c46569c64bd88d095db0da244.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_boreal_litter",
+      "source_sha256": "4d8fdd0c0957b81c89851e6bb3065960b47414868181a0799fe3900c2298e4d9",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_boreal_litter.png-2f9dc8df95b409fc736f05574af9f0a1.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_conifer_litter",
+      "source_sha256": "21ed500e9579c2f5f4787199ee039bf5578d1d0740a3182c6cdccc3819e85337",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_conifer_litter.png-f1b4b9b70b15050bf729c875e31543c2.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_desert_steppe",
+      "source_sha256": "ed3bdac548ea154923607d597bcff704e584abc2508857a85473de0041303bd5",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_desert_steppe.png-a320400eaf9f1621d1f306db4afdfc24.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_dry_steppe",
+      "source_sha256": "932934ad279688d3e5690b6f4ff76c3f086724a203dc79e44e37c5a6c9f314f6",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_dry_steppe.png-0909b4e533e6569ae8f3feaa120e9159.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_dry_woodland_litter",
+      "source_sha256": "f53d244078cb2f8dbcb5039ee638f0888c81344d1f8faf8ffff369f3306aaaad",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_dry_woodland_litter.png-1d3f8d3ec42e3ff1452eb4cc1cd01af5.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_dune_sand",
+      "source_sha256": "7486fb53759944474b1d3c7227fe6313d9eb655247e652cfbc90b47603d51365",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_dune_sand.png-1e54a24322d187c52a1f3676cb39d198.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_flood_meadow",
+      "source_sha256": "e93de985909aec5c0709d26268b9deaedff915b06692b045cce953352bde8b2a",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_flood_meadow.png-d5a87b6b4ba933618adf476148f2f362.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_gravel_gobi",
+      "source_sha256": "367b02a2cfde6c9522a71fadbb6509b4f3a83724b4046f0d3654416981c7f782",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_gravel_gobi.png-ba0df881bf0a0775a15d1f81d61137bb.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_saline_meadow",
+      "source_sha256": "4f3fee77a40548ad61ad018f836071fd0b3c256074f96bfa1e487cd8970cf839",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_saline_meadow.png-1818fe11992935cfb1a7c8e32fe43bab.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_savanna_red_soil",
+      "source_sha256": "de46a0fd863898df98533b569f37fdaa8dd16a4016ac3a4a747555a3e88259e6",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_savanna_red_soil.png-9b2fa3e1afc1194152856dc6a7042c68.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_subtropical_humus",
+      "source_sha256": "649af22f3a5c9d1e1033bd79bc7f5c9d64926e2d80aecbb0bf441bdb5f5e1471",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_subtropical_humus.png-f4cf7b85a6a08d639d4aaf6ca8534333.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_temperate_litter",
+      "source_sha256": "ef5e9e3653e4abeee4c767392733fe520a0562987985d43c3aaf67312a2431bc",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_temperate_litter.png-f372ac327c7eb60049b55292abe9795d.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_temperate_meadow",
+      "source_sha256": "a89b9d46c692b2c962a767348cfb02b2482a4544fb7f0c0935608b46024226cf",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_temperate_meadow.png-e231aa7beab0cc1b34f8ae65ca6d9f92.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_tropical_moist_humus",
+      "source_sha256": "dbdbff14c38d9b7ebb1b75a8722051862151a173de81243d139b5eaeccb01a3c",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_tropical_moist_humus.png-727057380e5476e7e0dea996dac491fb.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_tundra_moss",
+      "source_sha256": "553d0d5394e4c98a227cbc8c070262decc8451f94aad03940949342cd214ae93",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_tundra_moss.png-be91d6ea9db5d092d1f16aa05ce48d67.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_quiet_v0225_weathered_rock",
+      "source_sha256": "d966be2197b4ea14efe8e04aa4dfdcb5c107d90fa56cc77a0d2c66ef1b91339c",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_quiet_v0225_weathered_rock.png-f04765e9a9ce33728fce09fefd2e22a7.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "tile_hill_01",
       "source_sha256": "415a2e88bd2b8bfc6ba292e6c35100069270a07e6657968d8154e561fb5e1504",
       "embedded_imports": [
@@ -9110,6 +10283,14 @@
       "current_import_bytes_match": true
     },
     {
+      "id": "ui_command_plate_v023",
+      "source_sha256": "f933e1ef2864b7b42211b4ee8735871c8a8444af872f4c43141daf30779af3a1",
+      "embedded_imports": [
+        ".godot/imported/ui_command_plate_v023.png-f2c8e07ea580486357734b2f6324914e.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
       "id": "ui_dialog_frame",
       "source_sha256": "6b73e7711493ee36719af022a18f799d548bfa91e183386309259e9d1bd016e7",
       "embedded_imports": [
@@ -9122,6 +10303,14 @@
       "source_sha256": "35d5a694bd714f148f042a6b1779333186b691347348f4bfe83ed607787187e8",
       "embedded_imports": [
         ".godot/imported/ui_hud_plate.png-0b0c0ec99d15fa81bd413f0e592f009c.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "ui_officer_sheet_v023",
+      "source_sha256": "10fc351ca4994b787903fdcccc911ddd9ca5c23eb02f1eb2eeb6fc54d09444cb",
+      "embedded_imports": [
+        ".godot/imported/ui_officer_sheet_v023.png-baf311f631a66c459e2920d4b44018ce.ctex"
       ],
       "current_import_bytes_match": true
     },
@@ -10042,1030 +11231,6 @@
       "source_sha256": "39a135189d9aeb48daaef817c86f44c5df7b294b7bbfcd6d106dd9d201999b94",
       "embedded_imports": [
         ".godot/imported/unit_transport_ship_w.png-7836b26bb618f1251c32c477154a9b8e.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_lin_zexu_1840",
-      "source_sha256": "498fa1fe17493f7acefe94023209293e5dd341b812e0be4825b40e6ad0d47378",
-      "embedded_imports": [
-        ".godot/imported/portrait_lin_zexu_1840.png-c317770db65b0c4c35ac70111cfb29e7.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zeng_guofan_1860",
-      "source_sha256": "1b3d2853cacc2e05884470a3baf090db65f32d083039484332a010ff9fc2328f",
-      "embedded_imports": [
-        ".godot/imported/portrait_zeng_guofan_1860.png-23b855a337977bb3f9c241766189e8eb.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_li_hongzhang_1860",
-      "source_sha256": "4aff83fb838f3b9d4f12d3848cdd7d41479d9bf9d34fe79802c887e068ca8521",
-      "embedded_imports": [
-        ".godot/imported/portrait_li_hongzhang_1860.png-20f46371293e8f75d1995a64b8d63056.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_li_hongzhang_1890",
-      "source_sha256": "5d0829508d1d6eda5ecbbe487a2b8652ffa25226a5efd83e595bbe50a102650c",
-      "embedded_imports": [
-        ".godot/imported/portrait_li_hongzhang_1890.png-7678b844eadb5a6cfdfa3f6da16ff8e5.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_li_hongzhang_1900",
-      "source_sha256": "2a8d6295d558de49a0f6791ce8f01e0df9ee89c09feb8d414ffbbc8eb5cab54b",
-      "embedded_imports": [
-        ".godot/imported/portrait_li_hongzhang_1900.png-02096eac1d741e10a4204b255d57a9df.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yamagata_aritomo_1890",
-      "source_sha256": "d0cca23e614e675f99c12eb14a1b2bad8f93ee84c581f086d1ef01872b0d9e04",
-      "embedded_imports": [
-        ".godot/imported/portrait_yamagata_aritomo_1890.png-1f0c094574aec5972e8f549e0cd6c181.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yamagata_aritomo_1900",
-      "source_sha256": "2f5dc354d205919d640dd194b6dfdb392b489b5dc73ea28dafde4364e0407431",
-      "embedded_imports": [
-        ".godot/imported/portrait_yamagata_aritomo_1900.png-795927e7379e051f2cd12273610b8707.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yamagata_aritomo_1917",
-      "source_sha256": "8d96a4dc4b05f861361d14a6163817efd49d97dec4bddd5e06ee6c2e371dd251",
-      "embedded_imports": [
-        ".godot/imported/portrait_yamagata_aritomo_1917.png-2e782139f3fa98359a7c0260590146b2.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_waldersee_1900",
-      "source_sha256": "fcdf4942c0ca1af66868e04dc433a204971bd647fc939b14d9cf9e68ab6cae7b",
-      "embedded_imports": [
-        ".godot/imported/portrait_waldersee_1900.png-42ce8d7fabe7b72d7f87907acf9779f3.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_kuropatkin_1890",
-      "source_sha256": "a79a8492d5d1a9935c952f2faf5df2654daa0d95348ad77c4c4fd9b6fe481aa5",
-      "embedded_imports": [
-        ".godot/imported/portrait_kuropatkin_1890.png-f82d5d83b6e1040bc4e1a806bfc4da5c.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_kuropatkin_1900",
-      "source_sha256": "b57e9fa11d55d584cdf01661fd6a1d8d90e06b5f5d34e32019b1c6960a60d82b",
-      "embedded_imports": [
-        ".godot/imported/portrait_kuropatkin_1900.png-49793ad28bbbbfcb87e5b974ee687575.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_sun_yat_sen_1917",
-      "source_sha256": "bba1a34057b62be50a83c2ffb63642d5051d0f82f74ebd23b9176fe7aa9745fd",
-      "embedded_imports": [
-        ".godot/imported/portrait_sun_yat_sen_1917.png-937e3c1d85cd49aae2c7ebda6bbf52d7.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_duan_qirui_1917",
-      "source_sha256": "94cf1cb360a03de8e5e1ba1d292a461a54c12442ae487c682d08b58b9e635880",
-      "embedded_imports": [
-        ".godot/imported/portrait_duan_qirui_1917.png-48fdbbd00aae37a987f7514bccaaa79f.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_duan_qirui_1927",
-      "source_sha256": "7c066185613572d022570736905a1a99c426743a291b2807df8a2601c34be8f2",
-      "embedded_imports": [
-        ".godot/imported/portrait_duan_qirui_1927.png-e9d96c0728711295da8c95953856b3e5.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_chiang_kai_shek_1927",
-      "source_sha256": "23ef9d62ff9790f337b7d3fe639065daa7a06e0fdfd5a2373c56a3a5253e3fdd",
-      "embedded_imports": [
-        ".godot/imported/portrait_chiang_kai_shek_1927.png-4beed7635f295971dd26df0d1059de66.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_chiang_kai_shek_1940",
-      "source_sha256": "aadcf42feabf9a329acc650b2dc4f392d26b4c53fd0fd417a3228025d0c85a4c",
-      "embedded_imports": [
-        ".godot/imported/portrait_chiang_kai_shek_1940.png-ba4bd120fb358e58814ae0d351775d12.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_li_zongren_1927",
-      "source_sha256": "8bd97cbd7f25766528b93c5e3f31c3b9b550c5dbbb5eaade0cc6423c722bbda9",
-      "embedded_imports": [
-        ".godot/imported/portrait_li_zongren_1927.png-f68fd9763369b35964b82e965430c646.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_li_zongren_1940",
-      "source_sha256": "f90ab62ab6229b4f9d93dccefcd3d118b9ad644cdac4742e6f10e313d9ea8fdc",
-      "embedded_imports": [
-        ".godot/imported/portrait_li_zongren_1940.png-73eabf64796d18a977a5bd43970d014a.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_bai_chongxi_1927",
-      "source_sha256": "c2ae3845a88715861a99501c11a1b3b2b60c86b6d1872785d4eee1cce4d38d1b",
-      "embedded_imports": [
-        ".godot/imported/portrait_bai_chongxi_1927.png-46cc3fe9ba285ba35ba839cc8c787213.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_bai_chongxi_1940",
-      "source_sha256": "88c717ce959bd40ec2afdf0982fcd2c1dc7bf18c322fae3555d85b6f7e3815cf",
-      "embedded_imports": [
-        ".godot/imported/portrait_bai_chongxi_1940.png-df6bc66fdeb86efcb8d0df1af149a9a1.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_mao_zedong_1927",
-      "source_sha256": "7a28c20b90f20bbdc524a333021be33d2bc8dc5bcd50fba4dd0a26b65c5b9348",
-      "embedded_imports": [
-        ".godot/imported/portrait_mao_zedong_1927.png-dab77116090682ab597c15a0e23cac63.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_mao_zedong_1940",
-      "source_sha256": "064b5e1b4e17617c2769095ca6efc87e76a0666120adb7d35877056b59d06141",
-      "embedded_imports": [
-        ".godot/imported/portrait_mao_zedong_1940.png-124a942f32b6688868e4f67d43688763.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_peng_dehuai_1940",
-      "source_sha256": "6235d36ec61f1be4d300dd713b4a0e649703fc477cc5eafc20399661d0533ae7",
-      "embedded_imports": [
-        ".godot/imported/portrait_peng_dehuai_1940.png-4b42548f6c9f471a3e4bc94ae8b8211d.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_tojo_hideki_1940",
-      "source_sha256": "21fc4e46ca525555c46511e6e7f159906233c6c7ecd44ad547e6bf186401c9f8",
-      "embedded_imports": [
-        ".godot/imported/portrait_tojo_hideki_1940.png-9f03a1ff94d209edec8151ec58e93cf1.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yamashita_tomoyuki_1940",
-      "source_sha256": "5127e45c6093357f71832583a8fbbaa93fa34811676838565887b31da1b68138",
-      "embedded_imports": [
-        ".godot/imported/portrait_yamashita_tomoyuki_1940.png-4380265710fa1139cce810990cf5c27b.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_alexei_kaledin_1917",
-      "source_sha256": "120dc8043c121a86c51724e048e52a658c61ec7febd11882d064415d77b2af4b",
-      "embedded_imports": [
-        ".godot/imported/portrait_alexei_kaledin_1917.png-8552f825694fa567d053e2666b20ff81.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_wu_peifu_1899",
-      "source_sha256": "163b857774cbffb7cd47aaf815ba3dc4727a9235730eebd49816712a570f368a",
-      "embedded_imports": [
-        ".godot/imported/portrait_wu_peifu_1899.png-ceedf2f457f93ea7e30fa4af40df5434.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_wu_peifu_1914",
-      "source_sha256": "f46016cfad09c0166f377e5079bdc95f9f3e2b4d033e5084a835e7cda929c201",
-      "embedded_imports": [
-        ".godot/imported/portrait_wu_peifu_1914.png-240f5385dbcfbbaa3200fc3123924ceb.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_wu_peifu_1938",
-      "source_sha256": "2daf634f1dc8ddf54d8020cb70428e4b071bdd24e41c7e0dc8cd0ed66c621d47",
-      "embedded_imports": [
-        ".godot/imported/portrait_wu_peifu_1938.png-f43e06de0cf40db15410e3501502b39c.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zhang_zuolin_1900",
-      "source_sha256": "5ff0f4e8c28328f29553e0566b3b3fd7cc13f48451a5fd9961ac224e5e336e2b",
-      "embedded_imports": [
-        ".godot/imported/portrait_zhang_zuolin_1900.png-b80c81dea9d721497983469fdeb667b2.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zhang_zuolin_1915",
-      "source_sha256": "d16a44efd6a916af01620784bc4f14081fc6be2ba733ec70b3de75cfebfb784f",
-      "embedded_imports": [
-        ".godot/imported/portrait_zhang_zuolin_1915.png-69441a7de1f2c0007b8ba872586ff866.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zhang_zuolin_1928",
-      "source_sha256": "c871582e9708a4ae59281a40511e8751e8449311cbda28f9b00d9a4953c1556d",
-      "embedded_imports": [
-        ".godot/imported/portrait_zhang_zuolin_1928.png-32f2baa2468381232dd5c153ad4514ab.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zhang_xueliang_1936",
-      "source_sha256": "efc0aaa085ca514ef3a2f216e953cd4e879b701ced319fb62619365477f9fdf4",
-      "embedded_imports": [
-        ".godot/imported/portrait_zhang_xueliang_1936.png-575606bd3d9fbe1fbf96d71c1ef54c6e.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zhang_xueliang_1955",
-      "source_sha256": "460fe1823bf8bd80a97487d75c9010520c9862e381c79fbb536cd3cc336d72d3",
-      "embedded_imports": [
-        ".godot/imported/portrait_zhang_xueliang_1955.png-099a256c7f660e93e25aeb6aa1211b8a.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zhang_xueliang_1995",
-      "source_sha256": "38ed7e91fd81b82b71ac75a41af30738b57c88e290622254d6d76fccc809ddfb",
-      "embedded_imports": [
-        ".godot/imported/portrait_zhang_xueliang_1995.png-63f63038f44f5c82f3a7ece52b77b07d.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_feng_yuxiang_1907",
-      "source_sha256": "771f8f3ce8bdf92ac2ca935c639988b2172980d6f1d8525a011c899ec8bda7bd",
-      "embedded_imports": [
-        ".godot/imported/portrait_feng_yuxiang_1907.png-4afb327f51c166533fbcd7b304244076.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_feng_yuxiang_1934",
-      "source_sha256": "e671bd4cdde2bada3e9ced8532236a48e67ae42384a9e70f07bb2612ff1d1ae0",
-      "embedded_imports": [
-        ".godot/imported/portrait_feng_yuxiang_1934.png-040bd868241fd0ca0b83b63ff3fc9372.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_feng_yuxiang_1947",
-      "source_sha256": "b5ae9cbd24695353a97c4fa4b4b3a12a779776167f37d6b52b848d96053c096b",
-      "embedded_imports": [
-        ".godot/imported/portrait_feng_yuxiang_1947.png-72d1ff9ba7ccf3998588a6b48bcc7e86.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_sun_chuanfang_1910",
-      "source_sha256": "dba48b461b627ab4b493f7cd2d1cd809d287aa18103c9f60282537805a6e0d86",
-      "embedded_imports": [
-        ".godot/imported/portrait_sun_chuanfang_1910.png-e94448f81513b226caf05a25a06bc306.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_sun_chuanfang_1930",
-      "source_sha256": "3b898008c24e1efe97aad247a4108a117510ac523e1793cccd47437980cc0e83",
-      "embedded_imports": [
-        ".godot/imported/portrait_sun_chuanfang_1930.png-54d7c5a03fcbe14727abeadcf461114c.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_sun_chuanfang_1934",
-      "source_sha256": "afce79ad791c1c7755900c181dc3060736b9b92181f3dbacf8e1207ffd8d3738",
-      "embedded_imports": [
-        ".godot/imported/portrait_sun_chuanfang_1934.png-829ee71f2921d27c44977a160751e273.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_qi_xieyuan_1910",
-      "source_sha256": "d412cc19e3d022b01918fe7b67c8b78fe74d88993b361983be0eece67fd7e924",
-      "embedded_imports": [
-        ".godot/imported/portrait_qi_xieyuan_1910.png-ba5ed494ce1991d4de339f7f46f586d4.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_qi_xieyuan_1937",
-      "source_sha256": "d51afcf26b8d9ae227c91ca928d37e558a39c54f1e20a318b5ceea50fa433b39",
-      "embedded_imports": [
-        ".godot/imported/portrait_qi_xieyuan_1937.png-b37ce9a6bbeec7e04c4c3036ac347b71.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_qi_xieyuan_1945",
-      "source_sha256": "188195c75c5967b028abd56c47150c9415316ccc317392e0bfcf5bc5cd3dabee",
-      "embedded_imports": [
-        ".godot/imported/portrait_qi_xieyuan_1945.png-51fb4cdc91692adb0cbab4da6f772b0e.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_lu_yongxiang_1892",
-      "source_sha256": "65d93058b18517c46a21007925537fe3f17c550d289dd19d7bc10dff23e5525a",
-      "embedded_imports": [
-        ".godot/imported/portrait_lu_yongxiang_1892.png-5059fb6becdb737e539af27a1c866caa.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_lu_yongxiang_1907",
-      "source_sha256": "7e8b17c555c791ac6a93631740580672b4fed0a2ebe6c7a4df42a37b81aa1463",
-      "embedded_imports": [
-        ".godot/imported/portrait_lu_yongxiang_1907.png-059240b18d929685d5716b742179a61d.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_lu_yongxiang_1932",
-      "source_sha256": "ee6f82369d42c53a3b95bc17854358889ba9935519661ccc74942191874120ab",
-      "embedded_imports": [
-        ".godot/imported/portrait_lu_yongxiang_1932.png-342b0b196369137855b2e8057382b72e.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yan_xishan_1908",
-      "source_sha256": "7af742513a74f1a483e72fef60c0199ebc07ea37e6ea8e035d5346007a039366",
-      "embedded_imports": [
-        ".godot/imported/portrait_yan_xishan_1908.png-68048ab96506d8e12240db1c0ec1bc1c.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yan_xishan_1938",
-      "source_sha256": "58c84a7f1afe1e5a26827d0492fa87dae406e1dc4805a8eff6b37ec6a9d6d564",
-      "embedded_imports": [
-        ".godot/imported/portrait_yan_xishan_1938.png-56626d51d0328ffd61c139eddda8a86b.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yan_xishan_1958",
-      "source_sha256": "79e723d908a23d0ed25fee3decb64b10c814ff73b75397f2223027d97208de6b",
-      "embedded_imports": [
-        ".godot/imported/portrait_yan_xishan_1958.png-69195d945ce04d705a65955adba98b5d.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_tang_jiyao_1901",
-      "source_sha256": "a018bb714ac5a6c717517dd9fb9fd42459d847d78ce97d4b6915a75fbed96d40",
-      "embedded_imports": [
-        ".godot/imported/portrait_tang_jiyao_1901.png-033708fa388c150eb7f9a1695f7e4c12.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_tang_jiyao_1908",
-      "source_sha256": "1aacf71ee6842e3aeceb898b2129f9f993e5730773729a8923fad7439b775d19",
-      "embedded_imports": [
-        ".godot/imported/portrait_tang_jiyao_1908.png-6b27f53dadcbc90b8ab4ad979a606847.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_tang_jiyao_1926",
-      "source_sha256": "bcb0de25dfa492eee03b98cda6bcad4667921a4fa6072d254e61f4cb68df60fe",
-      "embedded_imports": [
-        ".godot/imported/portrait_tang_jiyao_1926.png-ec78fac8589235011d2f76173af985fd.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_chen_jiongming_1903",
-      "source_sha256": "0de6ac7c48974a8adf4d23f16ad0a51b9b35ef3109fc8552da8f02afcab0efaa",
-      "embedded_imports": [
-        ".godot/imported/portrait_chen_jiongming_1903.png-afea1b8b6d1901adbe683c7f8dddcf4b.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_chen_jiongming_1914",
-      "source_sha256": "766b463bb00d87be60eaa104a6f93837e74d77086a639de3057bc8257d58796b",
-      "embedded_imports": [
-        ".godot/imported/portrait_chen_jiongming_1914.png-ff92cec1fed9f85ff73ead86fcf536a6.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_chen_jiongming_1932",
-      "source_sha256": "d3aacafefcc5d795e6d296f5154c6b9f1d4d91b5028dcc47decdb7f7180c1226",
-      "embedded_imports": [
-        ".godot/imported/portrait_chen_jiongming_1932.png-cf470c5b84a015a1084f42fa9745186e.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_xu_chongzhi_1912",
-      "source_sha256": "c9efd3edc56e558896c1dbbe1303f888ec65786eac72ccab73574a6119041c80",
-      "embedded_imports": [
-        ".godot/imported/portrait_xu_chongzhi_1912.png-78fdd3a60e2524049b5116b00c123ca5.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_xu_chongzhi_1940",
-      "source_sha256": "a475a0400056b70c9c1f1a88afed421547b43f14dc1b55138db2fc9ce0b94253",
-      "embedded_imports": [
-        ".godot/imported/portrait_xu_chongzhi_1940.png-9f3dc0ffd532734c282823121a1e90c8.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_xu_chongzhi_1960",
-      "source_sha256": "715f08f7e578ea66ad4dd6e03a79f303fb5c0f298539c8aedd3b812d2b8b4166",
-      "embedded_imports": [
-        ".godot/imported/portrait_xu_chongzhi_1960.png-6fe6f408cdb4c7fcbb06cbe5b8b02405.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_guo_songling_1901",
-      "source_sha256": "53defbbb128c4ec842edc4b86e36c02b371d4a64361d06608b6d1baa20765699",
-      "embedded_imports": [
-        ".godot/imported/portrait_guo_songling_1901.png-51aeaec8aecefdb07e3741b154ecf2ec.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_guo_songling_1910",
-      "source_sha256": "0f7b9eba7a9a91c3f768324b73c1152c63d472318f2ff0b0b7157eae487b7283",
-      "embedded_imports": [
-        ".godot/imported/portrait_guo_songling_1910.png-0b55ae4b8dc8dc2b35257317f8ee0231.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_guo_songling_1925",
-      "source_sha256": "62bb98342c843dab22d76e802f375baf51253b5055ee38d233dbfd04ac21969b",
-      "embedded_imports": [
-        ".godot/imported/portrait_guo_songling_1925.png-1cc3629b7bff62b241ce841cc163c59f.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_lin_zexu_1810",
-      "source_sha256": "25d5ea3fc64defbaf51322f3abc70db23f4c6b64297ab5a4981919ba3d83bbf2",
-      "embedded_imports": [
-        ".godot/imported/portrait_lin_zexu_1810.png-dd0970a453e5587885470cea0bdc4c8b.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_lin_zexu_1825",
-      "source_sha256": "610b645aebd74ca9b60a825a33b3c6ca0e5c9cac9496cbe0d6b8c4eafb5c4ad3",
-      "embedded_imports": [
-        ".godot/imported/portrait_lin_zexu_1825.png-a1ccfd65e4b6681b8a66aa9bf0d4b2ff.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_lin_zexu_1849",
-      "source_sha256": "4afb09a52d698fe9d76d56c9fc676b1b8560b67d49229908705cda2a9088b515",
-      "embedded_imports": [
-        ".godot/imported/portrait_lin_zexu_1849.png-cb8aed14e890683c21c34904a8413c19.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_hong_xiuquan_1835",
-      "source_sha256": "b3c543b1c8df98f187710612184b9187dd5c6aab09d731af16da00f11e4de505",
-      "embedded_imports": [
-        ".godot/imported/portrait_hong_xiuquan_1835.png-1d9cdb10793ea945742811177385ea42.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_hong_xiuquan_1845",
-      "source_sha256": "95d15f079ebca2fc6d3cf5b6f17e5e7a77a5c7207620aa768ec84d8de156eec8",
-      "embedded_imports": [
-        ".godot/imported/portrait_hong_xiuquan_1845.png-1c18814b16c9cb4754ba28456dd13ecf.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_hong_xiuquan_1855",
-      "source_sha256": "f469089727725a5d8f04e1e7df90f777105d1e01fdac506209c6b26ca77977cf",
-      "embedded_imports": [
-        ".godot/imported/portrait_hong_xiuquan_1855.png-a3ea260ae2aeb97adbb6931110a4bb1d.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_hong_xiuquan_1863",
-      "source_sha256": "ce91638cfd363565c37e3c905f423a519f7fca552669b62a64c3e4756e79c2bd",
-      "embedded_imports": [
-        ".godot/imported/portrait_hong_xiuquan_1863.png-ebe26b0d750dbfa197f8afb92b89678e.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zeng_guofan_1836",
-      "source_sha256": "336692d232e01d356eb8ec0c12de0beb3d60d16b5e436b77413b29cd09758d60",
-      "embedded_imports": [
-        ".godot/imported/portrait_zeng_guofan_1836.png-0baede3390d41d48c66b7e0abbf1f925.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zeng_guofan_1851",
-      "source_sha256": "b230d38830ad0540253384e0b95ed43943be76f6b9b96f74094b847e1d91fcdd",
-      "embedded_imports": [
-        ".godot/imported/portrait_zeng_guofan_1851.png-a32d09e4a0a21feed162de995c32fa02.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_zeng_guofan_1871",
-      "source_sha256": "cf488f15cf54f3a3088bfa58c09d7c562e3a148887400b422410fbe161087fd4",
-      "embedded_imports": [
-        ".godot/imported/portrait_zeng_guofan_1871.png-6f51470ec7d51a4aee18c21bd159b05b.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_li_hongzhang_1848",
-      "source_sha256": "57ef4ec117c0f8d65f888819b1c76647c4c2f6c32cc4f663491cd19677d267d7",
-      "embedded_imports": [
-        ".godot/imported/portrait_li_hongzhang_1848.png-8eac53404771513dd41afad5c02eb333.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_li_hongzhang_1873",
-      "source_sha256": "ea1eb90f6a78b22ff68d5fa59c1a68c246b66c90c730964a85a4ff88ae80357c",
-      "embedded_imports": [
-        ".godot/imported/portrait_li_hongzhang_1873.png-71d5e544918f67eb2fe4437d747ee115.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yamagata_aritomo_1863",
-      "source_sha256": "3a4bdc4b7011f7eefc5f99c755d0fa5b2114543bca32be67efa0cb91d2904755",
-      "embedded_imports": [
-        ".godot/imported/portrait_yamagata_aritomo_1863.png-7c6c0305c9c1d04f032f86202224a8c9.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yamagata_aritomo_1878",
-      "source_sha256": "a86d6c8ef0f358580acec8f091184f5c81eb975bb07d779be37784742ea902e5",
-      "embedded_imports": [
-        ".godot/imported/portrait_yamagata_aritomo_1878.png-e23d392b89e45816f8d09247897fc790.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_waldersee_1857",
-      "source_sha256": "6886b10fe475fc37677428d8c761756202bc928de7446e1b28edafbb13071446",
-      "embedded_imports": [
-        ".godot/imported/portrait_waldersee_1857.png-5178c8b91a163b90be3a5e4325ad448f.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_waldersee_1872",
-      "source_sha256": "d4803571c6d59464adb75fe163414deabccaf70a1d89b6f20128f318b0b5d03a",
-      "embedded_imports": [
-        ".godot/imported/portrait_waldersee_1872.png-a41a006069b2cc89c5cf52881b40d530.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_waldersee_1887",
-      "source_sha256": "d3c84876a4f76cbf3e4a43fea3ee1c607086003e334e9e1b0506e7e540af1044",
-      "embedded_imports": [
-        ".godot/imported/portrait_waldersee_1887.png-db132f1961c9f3fad4a151a62f7aa06e.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_kuropatkin_1873",
-      "source_sha256": "c446404bc3b74df180ae0b055ca5dae63875275631fe70e88d0a9fa718226fc6",
-      "embedded_imports": [
-        ".godot/imported/portrait_kuropatkin_1873.png-3e01e5d8befd66ace1f9be5ec836e8be.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_kuropatkin_1920",
-      "source_sha256": "4e3d099ef61e5e4b48999053599cad2d95210428e9ae194575543bd4ebe92674",
-      "embedded_imports": [
-        ".godot/imported/portrait_kuropatkin_1920.png-ec8ccf79ae7d057beec0e96a5fd193d1.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_sun_yat_sen_1891",
-      "source_sha256": "570c4e76daac2622c6bbf93de8c16dc26b2600abd1cea93854139ee44d5a6f8c",
-      "embedded_imports": [
-        ".godot/imported/portrait_sun_yat_sen_1891.png-70b405125937929237a4cc8c631316da.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_sun_yat_sen_1906",
-      "source_sha256": "3685e04eb77701fd4386581ab0b0e83acae06d867d539b60e73a0dc2beca89ce",
-      "embedded_imports": [
-        ".godot/imported/portrait_sun_yat_sen_1906.png-782aed064d506c1fa84967b5e2b2cf61.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_sun_yat_sen_1924",
-      "source_sha256": "a70ccb87b5903a6aceb5fe683668b4e822adf32462750cd955215990b9e559aa",
-      "embedded_imports": [
-        ".godot/imported/portrait_sun_yat_sen_1924.png-82a2718f0d0d57df16c26079f1cba8ff.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_duan_qirui_1890",
-      "source_sha256": "43f7a076ed454a5714f6a882420f2977b43077663a59b620f9d24fc53e77ffe0",
-      "embedded_imports": [
-        ".godot/imported/portrait_duan_qirui_1890.png-ca382cdbe91393e2ea68c918be5a5aac.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_duan_qirui_1905",
-      "source_sha256": "a3097b45355f70ea48750fa744d4970ee8b42fc79b517f2bfe52843aeaa191c9",
-      "embedded_imports": [
-        ".godot/imported/portrait_duan_qirui_1905.png-31b65b4c2ea68849a612bf8c6cd5e802.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_chiang_kai_shek_1912",
-      "source_sha256": "b5a5626f537b2ffbc69e62ff626aee7b2ed9003180e7ebefe33e71273a67748f",
-      "embedded_imports": [
-        ".godot/imported/portrait_chiang_kai_shek_1912.png-e72422b32fd43402d9a5a7d5b119a0d1.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_chiang_kai_shek_1969",
-      "source_sha256": "c0732026c4c1d0be5e43aad8e2688df40a189e19d8822f5efc27fbdc26606af1",
-      "embedded_imports": [
-        ".godot/imported/portrait_chiang_kai_shek_1969.png-c1b78cae6b51921edcdd146bc77edadc.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_li_zongren_1916",
-      "source_sha256": "68ddc3936eb7d87971e232f41cf4f3eee72b3d544281238e749e772473285979",
-      "embedded_imports": [
-        ".godot/imported/portrait_li_zongren_1916.png-2d9d19c835d9adffbbe48729b0221c09.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_li_zongren_1965",
-      "source_sha256": "db3e974279e1615c90f0e51b2dd84cbf1442bf07b65db042bbfc9303c9fc67bf",
-      "embedded_imports": [
-        ".godot/imported/portrait_li_zongren_1965.png-174e14e675540bf3b82906459bd82158.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_bai_chongxi_1918",
-      "source_sha256": "671e7b8e070138dc6157bac62e522359473ee2c5372fea640207068c25aa35c5",
-      "embedded_imports": [
-        ".godot/imported/portrait_bai_chongxi_1918.png-abac44eeaedf4157f5ae0072fb58a807.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_bai_chongxi_1963",
-      "source_sha256": "e99ac0997918e9d475d4829e7ec547e85573eb82ce3cb06ca9b5136243d81f2f",
-      "embedded_imports": [
-        ".godot/imported/portrait_bai_chongxi_1963.png-6bb2a8bb102ba1ec4be8bfad90262c72.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_mao_zedong_1917",
-      "source_sha256": "df61fbb551259a2ebce74253131a4d2b685f9a25afaed3de3ab3b052c62ec9b4",
-      "embedded_imports": [
-        ".godot/imported/portrait_mao_zedong_1917.png-227773cfc575a2ab789c58845b702de8.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_mao_zedong_1947",
-      "source_sha256": "ec00f4add506a0cca781a3cb81cbd8efc23deec860bf66bcc1d8275988349ed5",
-      "embedded_imports": [
-        ".godot/imported/portrait_mao_zedong_1947.png-df2b380e3e2bbdf6c8288ff647c285e3.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_mao_zedong_1972",
-      "source_sha256": "e8b5d32406a416dcf1e3429065a9b7f408a2d8cd1ff92bd304495d328a78490f",
-      "embedded_imports": [
-        ".godot/imported/portrait_mao_zedong_1972.png-b8c20e315756df1d0d4a8cf0c84b7ed7.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_peng_dehuai_1923",
-      "source_sha256": "616ad9205861bc9376d1e951a9db3db5aaaa32cd8c4b02b84cc399c55a647781",
-      "embedded_imports": [
-        ".godot/imported/portrait_peng_dehuai_1923.png-d495a65fbda07210f8a70181196a37ec.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_peng_dehuai_1933",
-      "source_sha256": "51f30a0d28e171a4d024322166356c0fe478f99a1d321e114bc25647d66b7502",
-      "embedded_imports": [
-        ".godot/imported/portrait_peng_dehuai_1933.png-d8bb0248a97ede05a071b446afb1122d.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_peng_dehuai_1970",
-      "source_sha256": "4a297743cbeb47ddc308456c25f5bb0278375f11181c4d7b33fce3655478d183",
-      "embedded_imports": [
-        ".godot/imported/portrait_peng_dehuai_1970.png-31fccbf8e15fa5d68973facd60824b59.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_tojo_hideki_1909",
-      "source_sha256": "35e3d7d90b5c9d10627fdc4e79e6df134238ddf2317f49aaf2d5c00c5842729c",
-      "embedded_imports": [
-        ".godot/imported/portrait_tojo_hideki_1909.png-4b384f82d2a398d593bc9ab6d7520051.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_tojo_hideki_1924",
-      "source_sha256": "b45502daa047cf387561f969fd8258e8d535a6060b30807f9145ba867bcabe8a",
-      "embedded_imports": [
-        ".godot/imported/portrait_tojo_hideki_1924.png-393e23567e5d670232cd33891258d850.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_tojo_hideki_1947",
-      "source_sha256": "3ae73607d8da9619a879bdd489341f158238503b6e41f1e0e7ec0690819807f8",
-      "embedded_imports": [
-        ".godot/imported/portrait_tojo_hideki_1947.png-9dd1d1db45a6bbf4fc91e22cf60f33a4.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yamashita_tomoyuki_1910",
-      "source_sha256": "fb481c5a8a4a1fa14c583224c82a9a2b2dd460e331b451989993c9524c56ae1d",
-      "embedded_imports": [
-        ".godot/imported/portrait_yamashita_tomoyuki_1910.png-404d1ac2941aae2111e5db69d2441c31.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yamashita_tomoyuki_1925",
-      "source_sha256": "a6e94297f89fef01308f1ad13776329cf454bec0b58ecde216c81c225fb241cb",
-      "embedded_imports": [
-        ".godot/imported/portrait_yamashita_tomoyuki_1925.png-79252276bb86aab01bd1379b8f96f2a1.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_yamashita_tomoyuki_1945",
-      "source_sha256": "51d9a9b5f137aa95bd63b6454995f8ee3e98d4fb8840b7dbb7609eff76376c96",
-      "embedded_imports": [
-        ".godot/imported/portrait_yamashita_tomoyuki_1945.png-c3b131d7cd0c48fb6aa6d7047aefe187.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_alexei_kaledin_1886",
-      "source_sha256": "33f9bf36cb4b4e67fe4fd38e3a4a9a07b6ca712e383de9e407edcb6d57873550",
-      "embedded_imports": [
-        ".godot/imported/portrait_alexei_kaledin_1886.png-d7439a55f719af743edd15ce03130515.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_alexei_kaledin_1901",
-      "source_sha256": "3da5b7fdc2a14877622fb48f0615248291c8f69e4f58f42951c4d1f44541d529",
-      "embedded_imports": [
-        ".godot/imported/portrait_alexei_kaledin_1901.png-71c0f80184a81f1a9f47120875f037b9.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_alexei_kaledin_1911",
-      "source_sha256": "18303f6b31aa18396982150f785700e6a79129bb7a4dfd313cd95ddd3107451b",
-      "embedded_imports": [
-        ".godot/imported/portrait_alexei_kaledin_1911.png-a196f32826bf68d7eb50f38e533bf461.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_daoguang_1807",
-      "source_sha256": "9c4e82e6e5b87c63858e1d072a0b3eaeb78d60b76d38d7f0b434ce23350ec60a",
-      "embedded_imports": [
-        ".godot/imported/portrait_daoguang_1807.png-7664ad4a3221a98dd8441eca83379faa.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_daoguang_1822",
-      "source_sha256": "82a1370849b730891ca2307b25132d5c1b9456f5bda132fe9e1a968c093746e3",
-      "embedded_imports": [
-        ".godot/imported/portrait_daoguang_1822.png-def79271996e91eb360c158a50740499.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_daoguang_1837",
-      "source_sha256": "0d1c29472b669c74836d20edfea62f3b08fbf21ecf443f231bbf294e6bd3d631",
-      "embedded_imports": [
-        ".godot/imported/portrait_daoguang_1837.png-10fb99fcc39e39e2603fe2a56b2269f3.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_daoguang_1848",
-      "source_sha256": "9c603dade5cba001b61a5ecc5252965f243d4e1a8ca4a5e7d2cd44900fdb8e0e",
-      "embedded_imports": [
-        ".godot/imported/portrait_daoguang_1848.png-ada571cc8793d39d29df125edf0364e0.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_xianfeng_1849",
-      "source_sha256": "b0578cc68178f9d523548e188df3c7b6adb1e8b1dc302491a6c8627bf8f72283",
-      "embedded_imports": [
-        ".godot/imported/portrait_xianfeng_1849.png-bee5331417cd461363e271e8c2c142c5.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_xianfeng_1853",
-      "source_sha256": "cbc28ba967a5d950b4ac854be86636e738c30c05f333319a36311106dd57d317",
-      "embedded_imports": [
-        ".godot/imported/portrait_xianfeng_1853.png-25631795db8b7f98f320c4d24360c2f4.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_xianfeng_1857",
-      "source_sha256": "85c5e667b6830d4a25c800cb8d9da9e3ee59c63c50a673f87d3831fee1b93198",
-      "embedded_imports": [
-        ".godot/imported/portrait_xianfeng_1857.png-c1682683713bf38419cf1ca3503854ac.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_xianfeng_1860",
-      "source_sha256": "d61b6df35408bc9888952110d52ae6fbe37414a1bf21a8ed0849ab27b22304e0",
-      "embedded_imports": [
-        ".godot/imported/portrait_xianfeng_1860.png-6ba7d8c6c96d1e21e1d416418c730fbc.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_ito_hirobumi_1864",
-      "source_sha256": "9235346efe45cfeb4030b8e07794e6fcf07f782b88617fb1c24f6dea149f0eba",
-      "embedded_imports": [
-        ".godot/imported/portrait_ito_hirobumi_1864.png-f37fec69e6c48f0e79ff8aaee59e8007.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_ito_hirobumi_1878",
-      "source_sha256": "1cdb5ebcfb53b97a4896241ac1e9df6b892d99b91d65082dc41a4b38553bac66",
-      "embedded_imports": [
-        ".godot/imported/portrait_ito_hirobumi_1878.png-b40013aebdf6ae55ad92764160d04cab.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_ito_hirobumi_1895",
-      "source_sha256": "c798ce7406e890e543693fcaf0831c280198e09f880e20398b6a7d7cd31724a9",
-      "embedded_imports": [
-        ".godot/imported/portrait_ito_hirobumi_1895.png-7049fe212c773751efd689b156c7d128.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_ito_hirobumi_1908",
-      "source_sha256": "460ee6448e987703887cd309d911caa886e1c5435d8dd7d08b29d316ad3be025",
-      "embedded_imports": [
-        ".godot/imported/portrait_ito_hirobumi_1908.png-761f8f29801304ba81dc1f26c02b4ad7.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_nicholas_ii_1890",
-      "source_sha256": "7052206b47e58706875c68494c3c7edd3a7250cfbc11e4de093553dada85ca75",
-      "embedded_imports": [
-        ".godot/imported/portrait_nicholas_ii_1890.png-8eb6a7501b81ce81b5da19cefe3b0ccc.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_nicholas_ii_1900",
-      "source_sha256": "77e5d6e7778fa1401acc38073b82ba9211fb4a140bfe5b6ff4d063209dc889dd",
-      "embedded_imports": [
-        ".godot/imported/portrait_nicholas_ii_1900.png-57ee5fb1bf984b1eb48996fcb60ef5d8.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_nicholas_ii_1910",
-      "source_sha256": "3f8b0907d989c77b57d5765e2678f0e06faa6b479418603932f393dfcb50a2f7",
-      "embedded_imports": [
-        ".godot/imported/portrait_nicholas_ii_1910.png-ed1fb8a2e3a176c7ad3a7da44adca148.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "portrait_nicholas_ii_1917",
-      "source_sha256": "b294392c44069557d03cc7410892e1106286f847643b607fc58530924bb899ae",
-      "embedded_imports": [
-        ".godot/imported/portrait_nicholas_ii_1917.png-a82dae917c7598ab5f633f0de787f906.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "ui_officer_sheet_v023",
-      "source_sha256": "10fc351ca4994b787903fdcccc911ddd9ca5c23eb02f1eb2eeb6fc54d09444cb",
-      "embedded_imports": [
-        ".godot/imported/ui_officer_sheet_v023.png-baf311f631a66c459e2920d4b44018ce.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "ui_command_plate_v023",
-      "source_sha256": "f933e1ef2864b7b42211b4ee8735871c8a8444af872f4c43141daf30779af3a1",
-      "embedded_imports": [
-        ".godot/imported/ui_command_plate_v023.png-f2c8e07ea580486357734b2f6324914e.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "icon_medal_marksmanship_v023",
-      "source_sha256": "ba2081226e7ce238847d56394481672ed7c2b746567e472c3e943ce763f8bc76",
-      "embedded_imports": [
-        ".godot/imported/icon_medal_marksmanship_v023.png-60704e83df45d294984829e576e32a2a.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "icon_medal_steadfast_v023",
-      "source_sha256": "c44add6ada182a7ac821d513329645c4448a39be39e1c521a1611eff5df2de64",
-      "embedded_imports": [
-        ".godot/imported/icon_medal_steadfast_v023.png-758b2ffe9bcbd4853d2b4f09eaefe058.ctex"
-      ],
-      "current_import_bytes_match": true
-    },
-    {
-      "id": "icon_medal_logistics_v023",
-      "source_sha256": "6425de33da890340bc62f54a5fdf20c1c4d2714e782d3c652d2d560bac20b45a",
-      "embedded_imports": [
-        ".godot/imported/icon_medal_logistics_v023.png-6d58b8a5660f8d69654f14acfe9476c6.ctex"
       ],
       "current_import_bytes_match": true
     }

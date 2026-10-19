@@ -1,175 +1,195 @@
 {
   "format": 1,
-  "version": "0.2.20",
+  "version": "0.2.25",
   "independent_originals": 20,
-  "source_plan_file": "presentation/data/ground_identity_plan.json",
-  "source_plan_sha256": "a7ae5025e07b0d7e6ca923283c4a35728005860ef4ac09a7c6f09967dcb2897d",
-  "world_repeat_period": 128,
-  "source_images_modified": false,
+  "source_plan_file": "presentation/data/ground_atlas_plan.json",
+  "source_plan_sha256": "2600cedda825b04d42426ab54111a5ea375e55c139ec41fff5c7ae6153895dda",
+  "world_repeat_period": 224,
   "records": {
     "temperate_meadow": {
-      "asset_id": "tile_ground_identity_temperate_meadow",
-      "source_sha256": "7a7e516f8702b5d4ab4769836c820a59225295854208c1dab8580284063947f8",
+      "asset_id": "tile_ground_quiet_v0225_temperate_meadow",
+      "source_sha256": "a89b9d46c692b2c962a767348cfb02b2482a4544fb7f0c0935608b46024226cf",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "dry_steppe": {
-      "asset_id": "tile_ground_identity_dry_steppe",
-      "source_sha256": "19e9f59ad97e8f02c516c7a081fbf53020bb1d8211ee7ef83c0918e46aefff2e",
+      "asset_id": "tile_ground_quiet_v0225_dry_steppe",
+      "source_sha256": "932934ad279688d3e5690b6f4ff76c3f086724a203dc79e44e37c5a6c9f314f6",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "desert_steppe": {
-      "asset_id": "tile_ground_identity_desert_steppe",
-      "source_sha256": "61cc86f30c9128a22db05df5f804f9831863569c8ac8435dc75d7aff952beeca",
+      "asset_id": "tile_ground_quiet_v0225_desert_steppe",
+      "source_sha256": "ed3bdac548ea154923607d597bcff704e584abc2508857a85473de0041303bd5",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "dune_sand": {
-      "asset_id": "tile_ground_identity_dune_sand",
-      "source_sha256": "5f414d331c5c7bdf767781425fa05904798b435a740774eaf7131ff725f4462f",
+      "asset_id": "tile_ground_quiet_v0225_dune_sand",
+      "source_sha256": "7486fb53759944474b1d3c7227fe6313d9eb655247e652cfbc90b47603d51365",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "gravel_gobi": {
-      "asset_id": "tile_ground_identity_gravel_gobi",
-      "source_sha256": "a9ba8c696b5a6f5a382953fe76260477e136ba42d5c59c3c0d3108f3cbe9f354",
+      "asset_id": "tile_ground_quiet_v0225_gravel_gobi",
+      "source_sha256": "367b02a2cfde6c9522a71fadbb6509b4f3a83724b4046f0d3654416981c7f782",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "saline_meadow": {
-      "asset_id": "tile_ground_identity_saline_meadow",
-      "source_sha256": "6972d1d38f9e15bd4c0ade55aca4c615d378120fff3a5a29c872a9e76c1384cc",
+      "asset_id": "tile_ground_quiet_v0225_saline_meadow",
+      "source_sha256": "4f3fee77a40548ad61ad018f836071fd0b3c256074f96bfa1e487cd8970cf839",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "alpine_meadow": {
-      "asset_id": "tile_ground_identity_alpine_meadow",
-      "source_sha256": "387773b73299b7dcc6cb37b1a4859d8a51c2717c5162f394a2536ba54478b365",
+      "asset_id": "tile_ground_quiet_v0225_alpine_meadow",
+      "source_sha256": "58d2e1b342c7d3f917be623c4ea7c023230db981a88f61942d18cb31dbdec19d",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "alpine_steppe": {
-      "asset_id": "tile_ground_identity_alpine_steppe",
-      "source_sha256": "928713986ed5a94e61b86f46bbae509ce5a82a83900bd1ca0191855c296d0825",
+      "asset_id": "tile_ground_quiet_v0225_alpine_steppe",
+      "source_sha256": "3c19df945638ae33063349d4babb64b9edc88bca8fb8bfac2b46a4f99dc80ed7",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "tundra_moss": {
-      "asset_id": "tile_ground_identity_tundra_moss",
-      "source_sha256": "2870f462187b0b7297192a363d84b05571a610115a710116df22b7f3188ff064",
+      "asset_id": "tile_ground_quiet_v0225_tundra_moss",
+      "source_sha256": "553d0d5394e4c98a227cbc8c070262decc8451f94aad03940949342cd214ae93",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "boreal_litter": {
-      "asset_id": "tile_ground_identity_boreal_litter",
-      "source_sha256": "03baf84291b1d121dc47c7ff59c810e15e363293277125b64e3b6d57caf16589",
+      "asset_id": "tile_ground_quiet_v0225_boreal_litter",
+      "source_sha256": "4d8fdd0c0957b81c89851e6bb3065960b47414868181a0799fe3900c2298e4d9",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "temperate_litter": {
-      "asset_id": "tile_ground_identity_temperate_litter",
-      "source_sha256": "c523b33dacc089ea504287523dbc44476e08445bf8f23dfb7c0bba9f8ba578a3",
+      "asset_id": "tile_ground_quiet_v0225_temperate_litter",
+      "source_sha256": "ef5e9e3653e4abeee4c767392733fe520a0562987985d43c3aaf67312a2431bc",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "conifer_litter": {
-      "asset_id": "tile_ground_identity_conifer_litter",
-      "source_sha256": "8121d946a39e24b8becad19584381f6970167095f0002a364d35c821933de440",
+      "asset_id": "tile_ground_quiet_v0225_conifer_litter",
+      "source_sha256": "21ed500e9579c2f5f4787199ee039bf5578d1d0740a3182c6cdccc3819e85337",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "subtropical_humus": {
-      "asset_id": "tile_ground_identity_subtropical_humus",
-      "source_sha256": "65255606daaedb5cff06f4896cb99d5e862fa67e1fbc2f9137661ac63f884129",
+      "asset_id": "tile_ground_quiet_v0225_subtropical_humus",
+      "source_sha256": "649af22f3a5c9d1e1033bd79bc7f5c9d64926e2d80aecbb0bf441bdb5f5e1471",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "tropical_moist_humus": {
-      "asset_id": "tile_ground_identity_tropical_moist_humus",
-      "source_sha256": "085621f40136a5d23ff5b8e702bea830412a4508227a5a16a83dc05d274c8dcc",
+      "asset_id": "tile_ground_quiet_v0225_tropical_moist_humus",
+      "source_sha256": "dbdbff14c38d9b7ebb1b75a8722051862151a173de81243d139b5eaeccb01a3c",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "dry_woodland_litter": {
-      "asset_id": "tile_ground_identity_dry_woodland_litter",
-      "source_sha256": "f55573e0cf60e8e8fec383c4f5a247b42b37dfc49b5b27e1971788b76b73a705",
+      "asset_id": "tile_ground_quiet_v0225_dry_woodland_litter",
+      "source_sha256": "f53d244078cb2f8dbcb5039ee638f0888c81344d1f8faf8ffff369f3306aaaad",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "savanna_red_soil": {
-      "asset_id": "tile_ground_identity_savanna_red_soil",
-      "source_sha256": "c62945437d8dd5f39e9fde971231e97581d83bf670f86e77574f49addc4856a9",
+      "asset_id": "tile_ground_quiet_v0225_savanna_red_soil",
+      "source_sha256": "de46a0fd863898df98533b569f37fdaa8dd16a4016ac3a4a747555a3e88259e6",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "flood_meadow": {
-      "asset_id": "tile_ground_identity_flood_meadow",
-      "source_sha256": "e5d9a9fed079616676c9c0e5dbc625bb8baa8971316e9f2f2312c04cdd0610f9",
+      "asset_id": "tile_ground_quiet_v0225_flood_meadow",
+      "source_sha256": "e93de985909aec5c0709d26268b9deaedff915b06692b045cce953352bde8b2a",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "alluvial_loam": {
-      "asset_id": "tile_ground_identity_alluvial_loam",
-      "source_sha256": "cdf95ccb22b881db69f297cbdd72ca377303fd19a937d1a5bfe2d8882c6cb341",
+      "asset_id": "tile_ground_quiet_v0225_alluvial_loam",
+      "source_sha256": "9d45692998f61f86e2f5664abf8d9aa730ed308cf03865ba2550a018eeb6ff54",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "weathered_rock": {
-      "asset_id": "tile_ground_identity_weathered_rock",
-      "source_sha256": "3e4e39e5d1437a494312c401216c0160607490e6dce02c3ff59efbbcd9bf5d79",
+      "asset_id": "tile_ground_quiet_v0225_weathered_rock",
+      "source_sha256": "d966be2197b4ea14efe8e04aa4dfdcb5c107d90fa56cc77a0d2c66ef1b91339c",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "alpine_scree": {
-      "asset_id": "tile_ground_identity_alpine_scree",
-      "source_sha256": "45143300fc6157f47d00c3745b49628e91cb9ffd647d66050fb55d7937e97693",
+      "asset_id": "tile_ground_quiet_v0225_alpine_scree",
+      "source_sha256": "43db94130c983d70d6ef7636a339dd32340e47f92568e9fa82ef9c50e1a32316",
       "actual_dimensions": [
         1254,
         1254
       ]
     }
   },
-  "superseded_originals": 20,
+  "source_images_modified": false,
+  "superseded_originals": 40,
   "superseded_asset_ids": [
+    "tile_ground_identity_alluvial_loam",
+    "tile_ground_identity_alpine_meadow",
+    "tile_ground_identity_alpine_scree",
+    "tile_ground_identity_alpine_steppe",
+    "tile_ground_identity_boreal_litter",
+    "tile_ground_identity_conifer_litter",
+    "tile_ground_identity_desert_steppe",
+    "tile_ground_identity_dry_steppe",
+    "tile_ground_identity_dry_woodland_litter",
+    "tile_ground_identity_dune_sand",
+    "tile_ground_identity_flood_meadow",
+    "tile_ground_identity_gravel_gobi",
+    "tile_ground_identity_saline_meadow",
+    "tile_ground_identity_savanna_red_soil",
+    "tile_ground_identity_subtropical_humus",
+    "tile_ground_identity_temperate_litter",
+    "tile_ground_identity_temperate_meadow",
+    "tile_ground_identity_tropical_moist_humus",
+    "tile_ground_identity_tundra_moss",
+    "tile_ground_identity_weathered_rock",
     "tile_ground_macro_alluvial_loam",
     "tile_ground_macro_alpine_meadow",
     "tile_ground_macro_alpine_scree",
@@ -192,5 +212,5 @@
     "tile_ground_macro_weathered_rock"
   ],
   "original_pngs_retained": true,
-  "material_identity_revision": "recognizable_material_motifs_r001"
+  "material_identity_revision": "quiet_material_shapes_v0225_r001"
 }

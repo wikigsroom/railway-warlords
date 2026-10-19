@@ -1,0 +1,371 @@
+{
+  "format": 1,
+  "version": "0.2.25",
+  "terrain_type_count": 20,
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "assets": [
+    {
+      "category": "tile",
+      "family": "temperate_meadow",
+      "name": "温带草甸",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate grassland and forest-steppe ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_temperate_meadow",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nSAGE MEADOW. Muted gray-sage and olive ground, dominant #8D9B76 with soft #7F8F6C shade and #A2AB88 light. Broad connected grass surface. A few flat short curved grass-brush fans, softly interwoven into the same ground; almost no bare ochre earth. The grass is low and distant, no individual long leaves or tall tufts. Quiet green planes with sparse readable short wisps, not a lawn close-up."
+    },
+    {
+      "category": "tile",
+      "family": "dry_steppe",
+      "name": "旱生草原",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate continental grassland ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_dry_steppe",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nDRY STEPPE. Pale straw-olive #ADA57F, shaded #969575, warm pale #BDB28D. Interrupted fine flat straw currents in loose sweeping arcs on calm compact earth; a small amount of faded olive. Broad open dry surface, distinct directional fibrous rhythm, no high-contrast clumps or dense blade carpet."
+    },
+    {
+      "category": "tile",
+      "family": "desert_steppe",
+      "name": "荒漠草原",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named desert-steppe and semi-desert ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_desert_steppe",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nSPARSE DESERT STEPPE. Open gray-taupe mineral earth #ADA58E, lighter #BDB49C, a very few tiny soft straw-brush fans. About nine tenths visually quiet bare mineral ground. Sparse desiccated fibres, not a green mat, sand dunes or mottled camouflage."
+    },
+    {
+      "category": "tile",
+      "family": "dune_sand",
+      "name": "风成沙地",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named sandy-desert ecological regions only",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_dune_sand",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nWIND-WORKED SAND. Pale warm ochre #C0AD86 with gentle #B6A47F troughs and #CDBB97 lips. Several long softly interrupted shallow curved ripple combs separated by broad smooth sand sheets. Coherent flowing ripple rhythm, no random granular speckles or raised dune silhouettes."
+    },
+    {
+      "category": "tile",
+      "family": "gravel_gobi",
+      "name": "戈壁砾地",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named stony and xeric-desert ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_gravel_gobi",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nGOBI GRAVEL PAVEMENT. Muted buff-gray #A29F8D with subdued slate #8E9289 and pale limestone #B9B5A2. Low-contrast flat angular chips in unequal loose groups, generous calm compact mineral ground between them. Small broken polygonal chip structure with soft shallow contacts, no black grit, giant boulders or sand ripples."
+    },
+    {
+      "category": "tile",
+      "family": "saline_meadow",
+      "name": "盐生草甸地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "explicit named saline meadow and salt-marsh ecological regions; no water extent inferred",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_saline_meadow",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nSALINE MEADOW GROUND. Quiet gray-green #94A497, soft silvery #B1B8A5 and muted cool olive #879583. A few pale irregular thin salt veils and sparse flat wiry grass traces; broad smooth moist mineral planes. No water, pools, channels, large white islands or ordinary green lawn."
+    },
+    {
+      "category": "tile",
+      "family": "alpine_meadow",
+      "name": "高山草甸",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine meadow ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_alpine_meadow",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nALPINE MEADOW. Cool short grass ground #92A391, soft light #ADB6A0 and muted #7D9283. Short flat blade-brush cushions grouped loosely in broad open planes; a few tiny cool mineral flecks. Crisp cool short-grass structure, no flowers, snow or tall grass."
+    },
+    {
+      "category": "tile",
+      "family": "alpine_steppe",
+      "name": "高寒草原",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named alpine steppe and alpine desert ecological regions",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_alpine_steppe",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nALPINE STEPPE. Cool pale straw-gray #AAA996, subtle #969E8C and #BAB9A5. Sparse close-cropped wiry straw brushwork and quiet exposed cool earth, broad open areas. Dry short directional fibres, no fresh green meadow or white snow."
+    },
+    {
+      "category": "tile",
+      "family": "tundra_moss",
+      "name": "苔原地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tundra ecological regions; no seasonal ice or permafrost boundary inferred",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_tundra_moss",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nTUNDRA MOSS AND LICHEN. Soft gray-sage #98A599, muted silver #B3B8AA and subdued slate-olive #87988D. Low flattened felt-like moss brush patches with tiny irregular lichen threads. Broad cool soft planes, no bright moss balls, black joints, leaves or rock carpet."
+    },
+    {
+      "category": "tile",
+      "family": "boreal_litter",
+      "name": "寒带林带腐殖层",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "boreal ecological region ground reference, not an assertion of historical tree cover",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_boreal_litter",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nBOREAL FOREST FLOOR. Cool muted olive-brown #7E8C77, soft umber #8E937B and #6F806D shade. Thin fallen needles in very loose short directional fans, soft felted earth underneath. Quiet shallow fibrous floor, no trees, cones, giant leaves or a dense twig lattice."
+    },
+    {
+      "category": "tile",
+      "family": "temperate_litter",
+      "name": "温带阔叶林带落叶层",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate mixed and broadleaf ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_temperate_litter",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nTEMPERATE BROADLEAF FLOOR. Muted brown-olive #9A957B with #ABA18A light and #878C74 shade. A few recognizable small flat rounded lobed fallen-leaf brush shapes, separated by broad calm humus planes. Sparse leaves, gentle edges and no dark contacts, no grass tufts, bark or photographic leaf carpet."
+    },
+    {
+      "category": "tile",
+      "family": "conifer_litter",
+      "name": "针叶林带针叶层",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "temperate or tropical conifer ecological region ground reference, not historical tree cover",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_conifer_litter",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nCONIFER NEEDLE FLOOR. Restrained umber-sage #92917C with soft #A49E86 light and #7F8976 shade. Slender rust-brown needle-like marks in loose interrupted diagonal fans; calm compact dark earth. Fine linear material rhythm distinct from broadleaf shapes, no trees, sticks, cones or dense black crosshatching."
+    },
+    {
+      "category": "tile",
+      "family": "subtropical_humus",
+      "name": "亚热带林带湿润土",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-latitude Asian temperate broadleaf ecological region ground reference",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_subtropical_humus",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nSUBTROPICAL HUMUS. Muted warm gray-umber #948E77, soft #A49C82 and #83866F. Broad smooth cohesive organic earth planes with occasional soft flattened rounded leaf fragments. Warm moist but matte and open, no puddles, black cracks, dense leaf carpet or green camouflage."
+    },
+    {
+      "category": "tile",
+      "family": "tropical_moist_humus",
+      "name": "热带湿润林带腐土",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical moist broadleaf ecological region ground reference; no historical jungle boundary inferred",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_tropical_moist_humus",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nTROPICAL MOIST HUMUS. Cool gray-brown #858E7D, gentle #98A08B and #748373. Smooth compact organic soil with sparse broad flat decaying leaf-brush fragments softly dissolving into the ground. Moist matte cohesive surface, no glossy water, living plants or deep black holes."
+    },
+    {
+      "category": "tile",
+      "family": "dry_woodland_litter",
+      "name": "旱林灌丛带地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical dry broadleaf or Mediterranean woodland ecological region ground reference",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_dry_woodland_litter",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nDRY WOODLAND FLOOR. Warm dusty ochre-olive #A8A084, light #B9AE92, subdued #95957B. Sparse curled flat leaf fragments and a few broken straw fibres on broad dry mineral earth. Quiet open dry floor; distinct small leaf fragments, no lush lawn or pebbly sand."
+    },
+    {
+      "category": "tile",
+      "family": "savanna_red_soil",
+      "name": "热带草原地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "tropical savanna and grassland ecological region ground reference; soil color is representative art",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_savanna_red_soil",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nSAVANNA SOIL AND DRY GRASS. Muted clay-ochre #AF9A7E, gentle #BBA88A and #9F9279. Broad warm mineral earth planes with a few pale straw-brush fans and subdued fine clay seams. Warm, open and dry; no bright red earth, dunes, cracks or dense lush grass."
+    },
+    {
+      "category": "tile",
+      "family": "flood_meadow",
+      "name": "洪泛草甸地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "named flooded grassland ecological region ground reference; not historical flooding or wetland extent",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_flood_meadow",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nFLOOD MEADOW GROUND. Soft cool green-gray #90A49A, gentle #A7B6A5 and #7E998E. Low flattened long soft grass fibres swept into irregular gentle currents over quiet silty soil. Slightly moist matte structure; no channels, pools, tall reeds, crop rows or broad yellow gaps."
+    },
+    {
+      "category": "tile",
+      "family": "alluvial_loam",
+      "name": "河谷冲积地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "low-relief named alluvial ecological regions close to an archived surveyed river",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_alluvial_loam",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nALLUVIAL SILT AND LOAM. Warm pale buff-gray #B2A58C, soft #C0B39B and #A39780. Broad smooth fine-sediment planes, a few long interrupted soft silt streaks and shallow rounded cohesive earth crumbs. Calm fine mineral structure, no sand ripples, cultivation rows, water channels, grass carpet or cracked-earth lattice."
+    },
+    {
+      "category": "tile",
+      "family": "weathered_rock",
+      "name": "风化岩坡地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified hill and mountain cells; representative mineral grain, not a lithological survey",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_weathered_rock",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nWEATHERED BEDROCK. Quiet gray-green #929B8C, soft #AAB09C and muted #7F8C7E. Broad flattened uneven mineral planes, a few shallow softly broken angled fracture seams and faint narrow strata. Coherent slab material with gentle depth, no black cracks, loose gravel, moss islands, boulders or mountain shapes."
+    },
+    {
+      "category": "tile",
+      "family": "alpine_scree",
+      "name": "峰岭碎岩地表",
+      "variant": 1,
+      "axis": "",
+      "region": "",
+      "role": "",
+      "gate": "DEM-classified peak cells; representative rock fragment grain, not a mapped scree deposit",
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "id": "tile_ground_quiet_v0225_alpine_scree",
+      "prompt": "ONE original seamless opaque terrain material for a painted historical\nstrategy map. Entire square is one continuous flat ground surface, exact top\ndown, no margins. Design it to remain attractive when the WHOLE image is shown\nat 180 screen pixels across, behind small military miniatures. Use broad quiet\nmatte pigment planes with restrained material-specific brush structure. Gentle\nvalue variation, softly joined regions, readable medium scale structure, very\nsparse fine detail. The surface must feel open and restful rather than busy.\nNo photographic grain, pointillism, sandpaper, freckles, harsh soil/plant\ncontrast, tiny yellow dots, dense individual grass blades, large clumps with\nblack roots, obvious camouflage blobs, evenly spaced motifs, discs or badges.\nRetain the distinct material shape specified below; do not make generic noise.\nSoft diffuse upper-left light, shallow surface relief only. No long shadows,\ntrees, standing reeds, bushes, raised rocks, mountain miniatures, field parcels,\nfurrows, paths, rivers, pools, coastlines, buildings, grid, hexagons, borders,\nwriting, paper background, UI, panels, frame, logo or watermark. No reference\ngame assets. All four edges wrap seamlessly. This is representative material\nart; it does not define a real historical vegetation or soil boundary.\nMaterial, palette and identifying structure:\nALPINE ROCK CHIPS. Cool slate-gray #98A29D, soft silver #B0B7AC and #879590. Small flattened elongated angular shale strokes in loose uneven short fans, softly joined to a quiet cool mineral matrix. Recognizable elongated chip rhythm with subdued contacts; no dense black gravel, big raised rocks, plants or snow."
+    }
+  ],
+  "source_images_modified": false,
+  "manual_compositing": false,
+  "scope": "Twenty existing material families; no geographical or rule changes"
+}

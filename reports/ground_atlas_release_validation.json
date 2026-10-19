@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "version": "0.2.25",
+  "runtime_source_sha256": "9ce58221f0daef9c79cc8a2ad6606dcd4c757c228f28294e0531008b63cc10a2",
+  "content_hash": "a75da77276df468600ed2432bef1d404a8179d00d4ca197731e30576ce2d23f1",
+  "ruleset": 10,
+  "days_per_complete_round": 1,
+  "scenarios": 61,
+  "people": 33,
+  "military_generals": 29,
+  "political_only_people": 4,
+  "living_age_stages_per_person": 4,
+  "portrait_originals": 135,
+  "new_portrait_originals": 0,
+  "new_ui_originals": 0,
+  "total_rasters": 1324,
+  "regression_groups": 29,
+  "calendar_checks": 88,
+  "regression_checks": 5787,
+  "native_groups": [
+    {
+      "name": "general_portrait_native_evidence.json",
+      "captures": 174,
+      "checks": 1725
+    },
+    {
+      "name": "terrain_surface_native_evidence.json",
+      "captures": 99,
+      "checks": 589
+    },
+    {
+      "name": "control_land_native_evidence.json",
+      "captures": 20,
+      "checks": 84
+    },
+    {
+      "name": "map_symbol_native_evidence.json",
+      "captures": 32,
+      "checks": 220
+    },
+    {
+      "name": "ui_refinement_native_evidence.json",
+      "captures": 24,
+      "checks": 157
+    }
+  ],
+  "native_captures": 349,
+  "native_music_checks": 18,
+  "apk_version_code": 30,
+  "apk_data_and_notice_files": 126,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "historical_likeness_approval": false,
+  "new_1947_scenario": false,
+  "full_daily_balance_acceptance": false,
+  "full_ai_endurance_rerun": false,
+  "ew6_parity_claimed": false,
+  "source_pngs_modified": false,
+  "manual_compositing": false,
+  "git_working_bytes_preserved": true,
+  "new_ground_originals": 20,
+  "stored_map_originals": 1010,
+  "active_map_originals": 970,
+  "preserved_superseded_ground_originals": 40,
+  "native_material_checks": 48
+}

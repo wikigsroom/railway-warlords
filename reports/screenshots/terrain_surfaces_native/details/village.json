@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.24",
+	"build_version": "0.2.25",
 	"city_labels": [
 		{
 			"city_id": "place_banchangyu",
@@ -62,7 +62,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 61335,
 		"placed": 1235,
-		"preparation_ms": 2547.565,
+		"preparation_ms": 1728.851,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1602,
 		"rule_cells_changed": false,
@@ -270,6 +270,7 @@
 				"active": true,
 				"city_influence_fill_draws": 3,
 				"field_fill_batches": 0,
+				"fixed_wallpaper_period": false,
 				"ground_material_policy": {
 					"drawn_families": {
 						"alluvial_loam": 321,
@@ -281,7 +282,9 @@
 					"forest_floor_requires_sourced_forest": true,
 					"withheld_forest_floor_cells": 28520
 				},
+				"grounded_scenery_draws": 198,
 				"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+				"sampling_world_units": 224.0,
 				"source_ground_coverage": {
 					"active": true,
 					"cache_scope": "one_map_catalogue",
@@ -296,17 +299,18 @@
 				},
 				"source_images_modified": false,
 				"source_layers": 20,
+				"source_sampling": "world_anchored_three_translations_with_explicit_mip_gradients",
 				"whole_original_dimensions": [
 					1254,
 					1254
 				]
 			},
-			"fine_detail_alpha": 0.22,
+			"fine_detail_alpha": 0.12,
 			"ground_alpha": 0.94,
 			"independent_originals": 80,
-			"macro_identity_revision": "recognizable_material_motifs_r001",
+			"macro_identity_revision": "quiet_material_shapes_v0225_r001",
 			"macro_originals": 20,
-			"macro_repeat_world_units": 128.0,
+			"macro_repeat_world_units": 224.0,
 			"registered_types": 20,
 			"relief_lighting": {
 				"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
@@ -341,10 +345,10 @@
 				"tile_surface_weathered_rock_03": 84,
 				"tile_surface_weathered_rock_04": 37
 			},
-			"stored_superseded_macro_originals": 20.0,
+			"stored_superseded_macro_originals": 40.0,
 			"visible_macro_sources": [
-				"tile_ground_identity_weathered_rock",
-				"tile_ground_identity_temperate_meadow"
+				"tile_ground_quiet_v0225_weathered_rock",
+				"tile_ground_quiet_v0225_temperate_meadow"
 			],
 			"visible_types": {
 				"temperate_meadow": 80,
@@ -433,13 +437,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 222.821,
+		"index_ms": 127.779,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 5014.883,
+		"mesh_ms": 3257.278,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6154,
-		"placement_ms": 1750.864,
-		"preparation_ms": 6988.567,
+		"placement_ms": 1514.756,
+		"preparation_ms": 4899.812,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

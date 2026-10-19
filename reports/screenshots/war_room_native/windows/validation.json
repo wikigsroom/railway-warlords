@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.24",
+	"build_version": "0.2.25",
 	"captures": [
 		{
 			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\windows/home.png",
@@ -15,6 +15,7 @@
 					"active": true,
 					"city_influence_fill_draws": 0,
 					"field_fill_batches": 0,
+					"fixed_wallpaper_period": false,
 					"ground_material_policy": {
 						"drawn_families": {
 							"alluvial_loam": 140,
@@ -27,7 +28,9 @@
 						"forest_floor_requires_sourced_forest": true,
 						"withheld_forest_floor_cells": 17786
 					},
+					"grounded_scenery_draws": 1679,
 					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+					"sampling_world_units": 224.0,
 					"source_ground_coverage": {
 						"active": true,
 						"cache_scope": "one_map_catalogue",
@@ -42,6 +45,7 @@
 					},
 					"source_images_modified": false,
 					"source_layers": 20,
+					"source_sampling": "world_anchored_three_translations_with_explicit_mip_gradients",
 					"whole_original_dimensions": [
 						1254,
 						1254
@@ -101,13 +105,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 193,
-					"index_ms": 98.012,
+					"index_ms": 61.423,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 1718.819,
+					"mesh_ms": 1511.998,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 1679,
-					"placement_ms": 525.081,
-					"preparation_ms": 2341.911,
+					"placement_ms": 407.423,
+					"preparation_ms": 1980.844,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 					"source_meters_per_world_unit": 20.8333333333333,
@@ -133,6 +137,7 @@
 					"active": true,
 					"city_influence_fill_draws": 0,
 					"field_fill_batches": 0,
+					"fixed_wallpaper_period": false,
 					"ground_material_policy": {
 						"drawn_families": {
 							"alluvial_loam": 140,
@@ -145,7 +150,9 @@
 						"forest_floor_requires_sourced_forest": true,
 						"withheld_forest_floor_cells": 17786
 					},
+					"grounded_scenery_draws": 231,
 					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+					"sampling_world_units": 224.0,
 					"source_ground_coverage": {
 						"active": true,
 						"cache_scope": "one_map_catalogue",
@@ -160,6 +167,7 @@
 					},
 					"source_images_modified": false,
 					"source_layers": 20,
+					"source_sampling": "world_anchored_three_translations_with_explicit_mip_gradients",
 					"whole_original_dimensions": [
 						1254,
 						1254
@@ -219,13 +227,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 193,
-					"index_ms": 98.012,
+					"index_ms": 61.423,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 1718.819,
+					"mesh_ms": 1511.998,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 1679,
-					"placement_ms": 525.081,
-					"preparation_ms": 2341.911,
+					"placement_ms": 407.423,
+					"preparation_ms": 1980.844,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 					"source_meters_per_world_unit": 20.8333333333333,
@@ -251,6 +259,7 @@
 					"active": true,
 					"city_influence_fill_draws": 0,
 					"field_fill_batches": 0,
+					"fixed_wallpaper_period": false,
 					"ground_material_policy": {
 						"drawn_families": {
 							"alluvial_loam": 39,
@@ -276,7 +285,9 @@
 						"forest_floor_requires_sourced_forest": true,
 						"withheld_forest_floor_cells": 1006
 					},
+					"grounded_scenery_draws": 220,
 					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+					"sampling_world_units": 224.0,
 					"source_ground_coverage": {
 						"active": true,
 						"cache_scope": "one_map_catalogue",
@@ -291,6 +302,7 @@
 					},
 					"source_images_modified": false,
 					"source_layers": 20,
+					"source_sampling": "world_anchored_three_translations_with_explicit_mip_gradients",
 					"whole_original_dimensions": [
 						1254,
 						1254
@@ -350,13 +362,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 103,
-					"index_ms": 224.813,
+					"index_ms": 74.116,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 629.623,
+					"mesh_ms": 267.427,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 220,
-					"placement_ms": 534.355,
-					"preparation_ms": 1388.791,
+					"placement_ms": 375.999,
+					"preparation_ms": 717.541,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_nine_point_100km",
 					"source_meters_per_world_unit": 3125.0,
@@ -382,6 +394,7 @@
 					"active": true,
 					"city_influence_fill_draws": 0,
 					"field_fill_batches": 0,
+					"fixed_wallpaper_period": false,
 					"ground_material_policy": {
 						"drawn_families": {
 							"alluvial_loam": 140,
@@ -394,7 +407,9 @@
 						"forest_floor_requires_sourced_forest": true,
 						"withheld_forest_floor_cells": 17786
 					},
+					"grounded_scenery_draws": 1679,
 					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+					"sampling_world_units": 224.0,
 					"source_ground_coverage": {
 						"active": true,
 						"cache_scope": "one_map_catalogue",
@@ -409,6 +424,7 @@
 					},
 					"source_images_modified": false,
 					"source_layers": 20,
+					"source_sampling": "world_anchored_three_translations_with_explicit_mip_gradients",
 					"whole_original_dimensions": [
 						1254,
 						1254
@@ -468,13 +484,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 193,
-					"index_ms": 68.62,
+					"index_ms": 40.34,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 1972.845,
+					"mesh_ms": 1415.109,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 1679,
-					"placement_ms": 580.947,
-					"preparation_ms": 2622.41,
+					"placement_ms": 372.991,
+					"preparation_ms": 1828.44,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 					"source_meters_per_world_unit": 20.8333333333333,

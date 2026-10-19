@@ -4,9 +4,9 @@
 
 ## 截图 / Screenshots
 
-当前媒体目录有56张完整PNG：46张来自0.2.24 Windows EXE，4张档案画面保留0.2.23、4张人物页保留0.2.22，另外两张交战/航空画面保留0.2.12身份。当前174张人物遍历、24张成长事务、99张地表/UI、20张海岸和32张图符的精选画面，以及导出核验截图，按原字节复制到`docs/media`。没有裁切、拼接、补绘或叠字。旧人物及旧有限查看来源另存版本目录；新旧画面版本及SHA分别保留。
+当前媒体目录有56张完整PNG：46张来自0.2.25 Windows EXE，4张档案画面保留0.2.23、4张人物页保留0.2.22，另外两张交战/航空画面保留0.2.12身份。当前174张人物遍历、24张成长事务、99张地表/UI、20张海岸和32张图符的精选画面，以及导出核验截图，按原字节复制到`docs/media`。没有裁切、拼接、补绘或叠字。旧人物及旧有限查看来源另存版本目录；新旧画面版本及SHA分别保留。
 
-The media folder contains 56 complete PNGs: 46 from the 0.2.24 Windows EXE, four retained 0.2.23 dossier views, four retained 0.2.22 character pages and two retained 0.2.12 combat/air-action stills. Selections from 174 character, 24 dossier, 99 terrain/UI, 20 coastal and 32 symbol captures, plus export checks, are copied byte for byte without cropping, stitching, repainting or overlays. Old sources and reviewed frames remain in versioned directories with their original identities.
+The media folder contains 56 complete PNGs: 46 from the 0.2.25 Windows EXE, four retained 0.2.23 dossier views, four retained 0.2.22 character pages and two retained 0.2.12 combat/air-action stills. Selections from 174 character, 24 dossier, 99 terrain/UI, 20 coastal and 32 symbol captures, plus export checks, are copied byte for byte without cropping, stitching, repainting or overlays. Old sources and reviewed frames remain in versioned directories with their original identities.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |

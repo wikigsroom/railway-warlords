@@ -22,7 +22,9 @@ static func macro_uv(world: Vector2) -> Vector2:
 	return world/float(macro_data().get("world_repeat_period",384))
 
 static func detail_alpha(strategic: bool) -> float:
-	return .14 if strategic else .22
+	# Fine variants remain a near-view accent. Their older high-frequency
+	# marks must not obscure the quieter, geographically assigned base material.
+	return .08 if strategic else .12
 
 static func data() -> Dictionary:
 	if catalog.is_empty() and FileAccess.file_exists("res://presentation/data/terrain_surface_catalog.json"):

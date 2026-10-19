@@ -53,9 +53,9 @@ godot --headless --path . --script tests/transaction_test.gd
 godot --headless --path . --script tests/asia_content_test.gd
 ```
 
-全部26组名称和通过范围见[测试与验收](05_测试与验收.md)，包含 `tests/terrain_surfaces_test.gd` 和`tests/river_surface_test.gd`及`tests/control_land_clip_test.gd`。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
+当前29组名称和通过范围见[测试与验收](05_测试与验收.md)，包含 `tests/terrain_surfaces_test.gd` 和`tests/river_surface_test.gd`及`tests/control_land_clip_test.gd`。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
 
-All 26 groups and their scope are in the validation chapter, including `tests/terrain_surfaces_test.gd` `tests/river_surface_test.gd` and `tests/control_land_clip_test.gd`. Selected reports preserve their original paths, timestamps and fingerprints as evidence, not as newly executed tests on the clone.
+All 29 current groups and their scope are in the validation chapter, including `tests/terrain_surfaces_test.gd` `tests/river_surface_test.gd` and `tests/control_land_clip_test.gd`. Selected reports preserve their original paths, timestamps and fingerprints as evidence, not as newly executed tests on the clone.
 
 ## 文档和媒体维护 / Documentation maintenance
 
@@ -73,7 +73,7 @@ python tools/capture_terrain_update.py
 python tools/refresh_terrain_repository.py
 ```
 
-`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.21截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.25截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
 
 `prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 
@@ -108,3 +108,7 @@ Current relief check: `python tools/verify_relief_shading.py`, after a verified 
 0.2.20 连续底材生产入口是 `tools/generate_ground_identity.py`，完整提示词计划为 `presentation/data/ground_identity_plan.json`。仅通过指定Sub2路线生成；安装前要求20张完整原图的检查记录，安装时采用新ID并保留旧20张原图。已登记原图或提示词不一致时拒绝覆盖。独立克隆已带原图与便携提示词，游玩无需重新生成或连接网关。安装应先于导入、源码封存、回归与双端构建，避免构建中改变素材身份。完整范围见[37](37_二十类地表材质形态重制.md)。
 
 The 0.2.20 material producer uses the required Sub2 route and installs new IDs only after all twenty complete originals have a review record. It retains the previous twenty originals and rejects mismatched existing source bytes or prompts. Playing the clone needs neither regeneration nor gateway access. Complete installation and imports before freezing, testing and exporting the source.
+
+0.2.25地表生产入口为 `tools/generate_ground_atlas.py`，计划为 `presentation/data/ground_atlas_plan.json`。20张新原图分别生成与查看，保留40张前批底材；独立克隆已有全部运行原图和提示词，游玩无需重新生成。安装与导入完成后冻结源码，再执行规则、导出及原生验证。当前48项材质夹具由 `python tools/verify_ground_continuity.py` 运行，生产取样跨格对照与完整原图直接取样分开记录。原工作区整套验证入口为 `python tools/run_ground_atlas_validation.py`，交付入口为 `python tools/package_ground_atlas.py`；它们需要配置上文所述本机路径、签名和证据。范围见[43](43_安静地表与山脚融合.md)。
+
+The 0.2.25 material producer is `tools/generate_ground_atlas.py`, with twenty independently generated and reviewed originals and forty retained earlier grounds. The clone includes all runtime sources and prompts. Freeze sources after installation/imports, then validate rules, exports and native views. `verify_ground_continuity.py` runs 48 current material checks, distinguishing direct source calibration from production partition continuity. The original-workspace validation and packaging entry points require locally configured paths, signing and evidence; they are not portable one-command installers.

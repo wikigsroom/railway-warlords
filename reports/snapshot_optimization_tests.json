@@ -8096,7 +8096,7 @@
 	"content_hash": "a75da77276df468600ed2432bef1d404a8179d00d4ca197731e30576ce2d23f1",
 	"failed": 0,
 	"failures": [],
-	"game_version": "0.2.24",
+	"game_version": "0.2.25",
 	"passed": 2023,
 	"reference_version": "0.2.3",
 	"scope": "Exact archived snapshot access and command kernel, immutable and editor rail paths, definition reload, complete 240-unit legal phases, ordered decisions/events/previews, input isolation and every state field/RNG. Raw whole-state fingerprints also verified at each trace start/end.",
@@ -8111,7 +8111,7 @@
 			"final_rng": {
 				"algorithm": "park_miller_48271_v1",
 				"draws": 2,
-				"state": 880479092
+				"state": 77431191
 			},
 			"full_phase": false,
 			"name": "published_fog_campaign"

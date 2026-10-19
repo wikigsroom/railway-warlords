@@ -1444,9 +1444,9 @@
 	"content_hash": "a75da77276df468600ed2432bef1d404a8179d00d4ca197731e30576ce2d23f1",
 	"failed": 0,
 	"failures": [],
-	"game_version": "0.2.24",
-	"longest_worker_ms": 248.326,
-	"main_thread_heartbeats": 180,
+	"game_version": "0.2.25",
+	"longest_worker_ms": 749.211,
+	"main_thread_heartbeats": 395,
 	"passed": 360,
 	"scope": "Native serialized thread, immutable input snapshots, concurrent renderer queries, exact commands/events/full-state/RNG equality, pause/resume/cancel/load/lifetime. Does not certify physical Android frame time.",
 	"trace_commands": 40
