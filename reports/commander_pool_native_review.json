@@ -1,0 +1,182 @@
+{
+  "version": "0.2.28",
+  "runtime_source_sha256": "4707412e073cc70cbc9c45f21b69f2b27b30317cbce40e88fc891efc1e21c2f4",
+  "windows_exe_sha256": "83f799419058ee64dd19c93af93f82fe378e8a1c99fd5bf6c3f50be0889c78a5",
+  "reviewed_at_utc": "2026-10-20T16:16:17.938198+00:00",
+  "scope": "Individually viewed complete untouched shipping-EXE captures. This is not formal art approval, historical likeness approval, pointer/touch usability acceptance or physical-phone testing.",
+  "viewed_complete_captures": [
+    {
+      "file": "reports/screenshots/commander_roster_native/windows/commander_catalogue.png",
+      "sha256": "19335add270adb0afbddd48e905dafaf61849a1d300411feba1cfd8cb5e3abdb",
+      "profile": "windows",
+      "surface": "commander_catalogue",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：名册显示 324 人、第 1/27 页，四列卡片及国家、军职、生存年代和姓名筛选均可见；下方卡片位于滚动区，第一行按钮未越界。肖像脸型及面料仍有相似性，不能据此认定正式美术达标。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/windows/commander_last_page.png",
+      "sha256": "469b5f2ae18f5c5343322c70e1ce43324d06c3bb23f6b69e4e322a67012cf311",
+      "profile": "windows",
+      "surface": "commander_last_page",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：第 27/27 页可见葛云飞、张勋、张发奎、唐生智等条目，上一页可用、下一页禁用；姓名、历史军职和成长等级分行展示。末页仍有下方条目需滚动。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/windows/japanese_division_commanders.png",
+      "sha256": "285e52f8be43dbf9670ca40d47974897af38f5ff7253a07daf5266714eace765",
+      "profile": "windows",
+      "surface": "japanese_division_commanders",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：日本、师/师团级、1940 年在世成年筛选得到 4 人，林铣十郎、阿部信行、石原莞尔、小矶国昭四卡完整可读。该过滤是生存年代，不代表四人当年均正在任所列师团长；卡片数值与战法高度相同，个体平衡尚未完成。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/windows/live_name_search.png",
+      "sha256": "971c6150ca1e1892f91626fef6cb22ef615e7a099741550af256a526eabc6982",
+      "profile": "windows",
+      "surface": "live_name_search",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：输入洪秀全后仅余一张卡，姓名、太平天国天王军职及已生成肖像正常显示，分页为 1/1；本图不验证历史容貌相似性。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/windows/scenario_reserve_appointment.png",
+      "sha256": "ab12a37531077b19dade75686e5293608f1ddf3b73c728d0f0b9afac1985dc7e",
+      "profile": "windows",
+      "surface": "scenario_reserve_appointment",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：1924-09-15 直系场景的可任命列表显示曹锟一人，条件满足且任命按钮可见；标题明确任命将消耗本阶段攻击机会。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/windows/reserve_appointed.png",
+      "sha256": "dd180d5e7c3cad25c4c169d7ca0b261f982b82e9d639a992eb9a68a26481e375",
+      "profile": "windows",
+      "surface": "reserve_appointed",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：任命后返回地图，右侧当前检视的是已存在的冯玉祥编队，不能仅凭此截图证明曹锟的任命结果；实际曹锟绑定与攻击锁定必须以同组原生状态断言为证。地图本身仍有大面积相似底纹，此次不计作地图美术达标。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/x30_layout/commander_catalogue.png",
+      "sha256": "c0aa04c0b247b42076169d7fd2c1668349343676893a086d01568c4421212a71",
+      "profile": "x30_layout",
+      "surface": "commander_catalogue",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：2400×1080 与 1.2 UI 比例下顶部筛选、搜索、分页可见，首行卡片的下部按钮需要纵向滚动，触控区域较高；这是桌面布局验收，不是摩托罗拉 X30 真机测试。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/x30_layout/commander_last_page.png",
+      "sha256": "f8fdb06fd2ec60ea34a8464e6e29aa9f6a265d25eb5455b1894855adf6178627",
+      "profile": "x30_layout",
+      "surface": "commander_last_page",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：移动比例第 27/27 页与禁用的下一页显示正常，四列条目顶部可读；卡片下部位于滚动区，当前帧不能代表手指滚动验收。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/x30_layout/japanese_division_commanders.png",
+      "sha256": "b2b7807068d51a1ad22c34c9f564cd7891eeee27ca2317cf33f7d8e2bbb2c9af",
+      "profile": "x30_layout",
+      "surface": "japanese_division_commanders",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：日本师团级的四人筛选结果在移动比例下保持四列，姓名、军职级别和肖像未横向截断；下部履历和按钮需在滚动区继续查看。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/x30_layout/live_name_search.png",
+      "sha256": "0349a63f0399caf8c2982d5c18ebaccc0d2febd74d6aa306357b42143f1ccd0b",
+      "profile": "x30_layout",
+      "surface": "live_name_search",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：洪秀全搜索结果为 1 人、第 1/1 页，顶栏和肖像正常；卡片的下半部需滚动，当前屏幕有较大的筛选区高度。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/x30_layout/scenario_reserve_appointment.png",
+      "sha256": "8a0a750ae7c13116ab54c7dc531670b232a6ed6d6af27c707758643e0e4568c5",
+      "profile": "x30_layout",
+      "surface": "scenario_reserve_appointment",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：曹锟后备任命弹窗完整位于画面中，可读出军职、条件满足与任命按钮；1.2 比例下控制较大。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/x30_layout/reserve_appointed.png",
+      "sha256": "df82d62e313cc77485b69a2b9a4859309be42af74198ded398cafe4b1ea5bf1e",
+      "profile": "x30_layout",
+      "surface": "reserve_appointed",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：返回战略地图后顶部日期及资源、右侧编队、底部操作条可见；当前检视冯玉祥而非新任命曹锟，任命真实性依赖同组原生状态断言，不能用本帧作曹锟详情证据。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/large_text/commander_catalogue.png",
+      "sha256": "e1fd66b178008419f49bdf40023c4675f2b38e271e00b5d5f49ff14c1ef1fa2a",
+      "profile": "large_text",
+      "surface": "commander_catalogue",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：1280×720、150% 字号时名册改为两列，324 人和第 1/27 页仍可见；仅卡片上部在首屏，履历与按钮需纵向滚动。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/large_text/commander_last_page.png",
+      "sha256": "9524ae5fdd4e1c9614298f0c8185e7f2390c48125a0b2cd3adcd21e221ecece9",
+      "profile": "large_text",
+      "surface": "commander_last_page",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：大字体第 27/27 页显示葛云飞、张勋两张卡的上部，下一页处于禁用态，文字未横向溢出。不能以首屏判断下方所有条目。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/large_text/japanese_division_commanders.png",
+      "sha256": "2473b3d0179f4ea3c118d3f507f15174e0f10491c3c840ee751f52f58c62d1d7",
+      "profile": "large_text",
+      "surface": "japanese_division_commanders",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：大字体筛选 4 人、第 1/1 页；两列卡片可读，另两人位于下方滚动区，筛选项标题不截断。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/large_text/live_name_search.png",
+      "sha256": "04a55288c47f971d99bddf464a32a0d19fdde688412926950e39e21f4ddf17c0",
+      "profile": "large_text",
+      "surface": "live_name_search",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：大字体洪秀全单人检索、分页、肖像与历史职务上部可见，文字和肖像未发生覆盖。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/large_text/scenario_reserve_appointment.png",
+      "sha256": "b9a2b2d17b6d41ad8bfeec1b789301a8fc15da29593b8f520c376f6987b8d10a",
+      "profile": "large_text",
+      "surface": "scenario_reserve_appointment",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：大字体下曹锟后备任命卡与按钮完整位于弹窗内，标题的本阶段不能再攻击及副说明均可读，无横向溢出。"
+    },
+    {
+      "file": "reports/screenshots/commander_roster_native/large_text/reserve_appointed.png",
+      "sha256": "ce922ca5f596ec2a0144d40aef7fbdee7df2de56a6adbd473acb64d16c2924a4",
+      "profile": "large_text",
+      "surface": "reserve_appointed",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：大字体返回地图后顶部资源换行，日期仍可见，右侧检视冯玉祥；右侧底部操作在滚动区下方。不能据此证明曹锟的肖像已成为当前选中编队详情，实际任命由状态断言核验。"
+    },
+    {
+      "file": "reports/screenshots/dossier_native/windows/dossier_hong_middle.png",
+      "sha256": "d19383d31f84fe9595a312eaf5437dd82a579e716c6f28edec84e2deea8fd602",
+      "profile": "windows",
+      "surface": "dossier_hong_middle",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：洪秀全中年 1855 年档案完整位于弹窗；整幅肖像、生卒年、历史类别与游戏成长分列，右侧战法与晋升有明确条件。勋章区下部需继续滚动；不据此批准历史肖似度。"
+    },
+    {
+      "file": "reports/screenshots/dossier_native/windows/medal_slots_full.png",
+      "sha256": "9908898bfe57f7ecd8cde95bee083edfff06c3d67467937197d1d6c62af3e802",
+      "profile": "windows",
+      "surface": "medal_slots_full",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：洪秀全年轻肖像与中年帧有明显造型差异，不能宣称跨阶段身份已终审；两枚勋章显示已装备和卸下按钮，第三枚显示两个勋章槽已满且装备禁用。"
+    },
+    {
+      "file": "reports/screenshots/war_room_native/large_text/conquest.png",
+      "sha256": "30589a3d4acb2bb1d7c68003707b7ef1facfbd085f9d999e939f7d502464a782",
+      "profile": "large_text",
+      "surface": "conquest",
+      "viewed_complete_original_capture": true,
+      "notes": "全幅查看：1280×720、150% 字号的1927亚洲征服选择页，地图预览恢复足够高度；下方紧凑地显示所选奉系初始名册3人、可选后备0人，右侧阵营选择与开始征服按钮可见。各方名单留在提示内。地图仍有聚落图符与标签拥挤，彼得格勒、库伦等逐年代地名尚须纠正；本次修复不表示历史地图或正式美术通过。"
+    }
+  ],
+  "formal_art_approval": false,
+  "historical_likeness_approval": false,
+  "physical_android_device_tested": false,
+  "manual_compositing": false,
+  "post_appointment_screenshot_limitation": "The map resumes with Feng Yuxiang selected; actual Cao Kun assignment and attack lock are verified by same-run native state assertions rather than the pictured inspector."
+}

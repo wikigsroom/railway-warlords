@@ -1,14 +1,14 @@
 {
   "passed": true,
-  "version": "0.2.27",
-  "runtime_source_sha256": "67a11cffc90b2695d729afb66a53e32552dc55206e0269e4b73dd702636d067f",
-  "dependency_sha256": "269fc2a39bb47ebac1c0b70aef190fc5f00edc5f5df105cac71bce00e8719881",
+  "version": "0.2.28",
+  "runtime_source_sha256": "4707412e073cc70cbc9c45f21b69f2b27b30317cbce40e88fc891efc1e21c2f4",
+  "dependency_sha256": "168cf5990f9b23c5d1137f904a62dcc9ae3644e513ecc17cc064878a692f39a3",
   "report": "reports/coast_geometry_tests.json",
-  "report_sha256": "04dda70580bdb4bf72fb0d349955942b0e59e6aa043ff80ec2d18cbc258e44f4",
+  "report_sha256": "baf47e910204d57e6d80d0aeaff17b018a3bb01716bfba5e7293d6e38c0f233e",
   "log": "reports/coast_geometry_native.log",
-  "log_sha256": "90493549f844a29f6dced0083809b7331917d2b885cfaba4ef34c47b965b4e45",
+  "log_sha256": "61be2052d53dfd5ab42dbf2b1248923bf4190ac834ac44d4e43573d0e40fe6cd",
   "checks": 61,
-  "created_at_utc": "2026-10-19T17:07:28.106696+00:00",
+  "created_at_utc": "2026-10-20T15:15:27.040433+00:00",
   "scope": "Native Godot source-engine geometry checks, separate from exported executable viewport verification.",
   "physical_android_device_tested": false
 }

@@ -24,6 +24,7 @@ CHECKS.append('control_land_clip_test')
 CHECKS.append('ground_coverage_test')
 CHECKS.append('general_portraits_test')
 CHECKS.append('calendar_test')
+CHECKS.append('commander_roster_test')
 
 def main():
     # Build the schema fixture with the current native content registry. Rule

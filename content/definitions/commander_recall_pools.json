@@ -1,0 +1,1788 @@
+[
+  {
+    "id": "conq_1920",
+    "anchor_date": "1920-07-01",
+    "factions": {
+      "zhili": [],
+      "fengtian": [],
+      "anhui": [],
+      "shanxi": [],
+      "jiangsu": [],
+      "zhejiang": [],
+      "yunnan": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  },
+  {
+    "id": "conq_1922",
+    "anchor_date": "1922-04-01",
+    "factions": {
+      "zhili": [],
+      "fengtian": [],
+      "anhui": [
+        {
+          "general_id": "xu_shuzheng",
+          "title_at_start": "曾任：西北边防军总司令",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "boorman_xu_shuzheng"
+          ],
+          "reference_urls": [
+            "https://xboorman.enpchina.eu/biographie/xu-shuzheng/"
+          ],
+          "eligible_from": "1922-04-01",
+          "eligible_through": "1922-04-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "shanxi": [],
+      "jiangsu": [],
+      "zhejiang": [],
+      "yunnan": [],
+      "guangdong": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  },
+  {
+    "id": "conq_1924",
+    "anchor_date": "1924-09-01",
+    "factions": {
+      "zhili": [],
+      "fengtian": [],
+      "anhui": [
+        {
+          "general_id": "xu_shuzheng",
+          "title_at_start": "曾任：西北边防军总司令",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "boorman_xu_shuzheng"
+          ],
+          "reference_urls": [
+            "https://xboorman.enpchina.eu/biographie/xu-shuzheng/"
+          ],
+          "eligible_from": "1924-09-01",
+          "eligible_through": "1924-09-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "shanxi": [],
+      "jiangsu": [],
+      "zhejiang": [],
+      "yunnan": [],
+      "guangdong": [],
+      "dongjiang": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  },
+  {
+    "id": "asia_1840",
+    "anchor_date": "1840-07-05",
+    "factions": {
+      "qing": [
+        {
+          "general_id": "ge_yunfei",
+          "title_at_start": "曾任：定海镇总兵",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ge_yunfei_memorial"
+          ],
+          "reference_urls": [
+            "https://www.lzxq.gov.cn/system/2017/11/08/000109327.shtml"
+          ],
+          "eligible_from": "1840-07-05",
+          "eligible_through": "1840-07-05",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "british_empire": [],
+      "british_india": [],
+      "russian_empire": [],
+      "qajar_persia": [],
+      "afghanistan": [],
+      "ottoman": [],
+      "japan": [],
+      "korea": [],
+      "siam": [],
+      "netherlands": [],
+      "spain": [],
+      "french_empire": [],
+      "nguyen_dynasty": [],
+      "burmese_kingdom": [],
+      "sikh_empire": [],
+      "portugal": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  },
+  {
+    "id": "asia_1860",
+    "anchor_date": "1860-08-21",
+    "factions": {
+      "qing": [
+        {
+          "general_id": "cn_80e167977ffc",
+          "title_at_start": "曾任：湖北巡抚、湘军统帅",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "eccp_volume_1"
+          ],
+          "reference_urls": [
+            "https://www.bnasie.eu/Asset/Source/bnBook_ID-2729_No-03.pdf"
+          ],
+          "eligible_from": "1860-08-21",
+          "eligible_through": "1860-08-21",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "taiping": [],
+      "british_empire": [
+        {
+          "general_id": "hugh_gough",
+          "title_at_start": "曾任：英国驻华陆军统帅",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "nam_gough_life",
+            "nam_first_china"
+          ],
+          "reference_urls": [
+            "https://collection.nam.ac.uk/detail.php?acc=2018-10-7-1",
+            "https://www.nam.ac.uk/explore/first-china-war-1839-1842"
+          ],
+          "eligible_from": "1860-08-21",
+          "eligible_through": "1860-08-21",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "william_parker",
+          "title_at_start": "曾任：英国驻华海军统帅",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "rmg_parker",
+            "nam_first_china"
+          ],
+          "reference_urls": [
+            "https://www.rmg.co.uk/collections/objects/rmgc-object-1144147",
+            "https://www.nam.ac.uk/explore/first-china-war-1839-1842"
+          ],
+          "eligible_from": "1860-08-21",
+          "eligible_through": "1860-08-21",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "french_empire": [],
+      "russian_empire": [],
+      "japan": [],
+      "korea": [],
+      "qajar_persia": [],
+      "ottoman": [],
+      "afghanistan": [],
+      "siam": [],
+      "british_india": [],
+      "netherlands": [],
+      "spain": [],
+      "nguyen_dynasty": [],
+      "burmese_kingdom": [],
+      "portugal": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  },
+  {
+    "id": "asia_1890",
+    "anchor_date": "1890-01-01",
+    "factions": {
+      "qing": [
+        {
+          "general_id": "cn_5f6d73899e9f",
+          "title_at_start": "曾任：湘军水师统帅",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "eccp_volume_2"
+          ],
+          "reference_urls": [
+            "https://www.bnasie.eu/Asset/Source/bnBook_ID-2729_No-04.pdf"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_67685cb3658c",
+          "title_at_start": "曾任：湘军水师统帅",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "eccp_volume_2"
+          ],
+          "reference_urls": [
+            "https://www.bnasie.eu/Asset/Source/bnBook_ID-2729_No-04.pdf"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_66fe56fd8343",
+          "title_at_start": "曾任：湘军统帅",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "eccp_volume_2"
+          ],
+          "reference_urls": [
+            "https://www.bnasie.eu/Asset/Source/bnBook_ID-2729_No-04.pdf"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_5218952668e0",
+          "title_at_start": "曾任：西北清军统帅",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "eccp_volume_2"
+          ],
+          "reference_urls": [
+            "https://www.bnasie.eu/Asset/Source/bnBook_ID-2729_No-04.pdf"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "japan": [
+        {
+          "general_id": "jp_ndl_116",
+          "title_at_start": "曾任：第4旅団司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_116"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/116"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_120",
+          "title_at_start": "曾任：別働第1旅団司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_120"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/120"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_131",
+          "title_at_start": "曾任：熊本鎮台司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_131"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/131"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_196",
+          "title_at_start": "曾任：第3旅団司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_196"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/196"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_6126",
+          "title_at_start": "曾任：東征大総督",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_6126"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/6126"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_63",
+          "title_at_start": "曾任：海軍卿",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_63"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/63"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_86",
+          "title_at_start": "曾任：台湾出兵指揮官・陸軍中将",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_86"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/86"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "russian_empire": [],
+      "british_empire": [
+        {
+          "general_id": "robert_napier",
+          "title_at_start": "曾任：赴华英军师级指挥官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "npg_napier",
+            "nam_second_china"
+          ],
+          "reference_urls": [
+            "https://www.npg.org.uk/collections/search/person/mp03247/robert-cornelis-napier-1st-baron-napier-of-magdala",
+            "https://www.nam.ac.uk/explore/second-china-war"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "british_india": [],
+      "french_empire": [
+        {
+          "general_id": "cn_674e58eb535165af",
+          "title_at_start": "曾任：法国海军指挥官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "eccp_volume_1"
+          ],
+          "reference_urls": [
+            "https://www.bnasie.eu/Asset/Source/bnBook_ID-2729_No-03.pdf"
+          ],
+          "eligible_from": "1890-01-01",
+          "eligible_through": "1890-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "french_indochina": [],
+      "ottoman": [],
+      "qajar_persia": [],
+      "siam": [],
+      "korea": [],
+      "netherlands": [],
+      "spain": [],
+      "afghanistan": [],
+      "portugal": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  },
+  {
+    "id": "asia_1900",
+    "anchor_date": "1900-06-17",
+    "factions": {
+      "qing": [
+        {
+          "general_id": "cn_51af5b506750",
+          "title_at_start": "曾任：广西提督",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "eccp_volume_1"
+          ],
+          "reference_urls": [
+            "https://www.bnasie.eu/Asset/Source/bnBook_ID-2729_No-03.pdf"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_88814e1651ef",
+          "title_at_start": "曾任：新建陆军督练",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "eccp_volume_2"
+          ],
+          "reference_urls": [
+            "https://www.bnasie.eu/Asset/Source/bnBook_ID-2729_No-04.pdf"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "boxers": [],
+      "eight_nation": [],
+      "japan": [
+        {
+          "general_id": "jp_ndl_116",
+          "title_at_start": "曾任：第4旅団司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_116"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/116"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_120",
+          "title_at_start": "曾任：別働第1旅団司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_120"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/120"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_131",
+          "title_at_start": "曾任：熊本鎮台司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_131"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/131"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_15",
+          "title_at_start": "曾任：連合艦隊司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_15"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/15"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_160",
+          "title_at_start": "曾任：歩兵第1旅団長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_160"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/160"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_161",
+          "title_at_start": "曾任：第1軍司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_161"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/161"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_164",
+          "title_at_start": "曾任：歩兵第12旅団長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_164"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/164"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_196",
+          "title_at_start": "曾任：第3旅団司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_196"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/196"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_213",
+          "title_at_start": "曾任：海軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_213"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/213"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_39",
+          "title_at_start": "曾任：第2軍司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_39"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/39"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_52",
+          "title_at_start": "曾任：第3師団長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_52"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/52"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_58",
+          "title_at_start": "曾任：海軍軍令部長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_58"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/58"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_63",
+          "title_at_start": "曾任：海軍卿",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_63"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/63"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_70",
+          "title_at_start": "曾任：第6師団長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_70"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/70"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_86",
+          "title_at_start": "曾任：台湾出兵指揮官・陸軍中将",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_86"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/86"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "british_empire": [
+        {
+          "general_id": "alfred_gaselee",
+          "title_at_start": "曾任：英属印度军旅指挥官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "bl_gaselee",
+            "dnb_gaselee"
+          ],
+          "reference_urls": [
+            "https://searcharchives.bl.uk/catalog/040-003188904",
+            "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1927_supplement/Gaselee,_Alfred"
+          ],
+          "eligible_from": "1900-06-17",
+          "eligible_through": "1900-06-17",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "british_india": [],
+      "french_empire": [],
+      "russian_empire": [],
+      "germany": [],
+      "usa": [],
+      "italy": [],
+      "netherlands": [],
+      "spain": [],
+      "portugal": [],
+      "korea": [],
+      "ottoman": [],
+      "afghanistan": [],
+      "qajar_persia": [],
+      "siam": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  },
+  {
+    "id": "asia_1917",
+    "anchor_date": "1917-06-16",
+    "factions": {
+      "beiyang_gov": [
+        {
+          "general_id": "zhang_xun",
+          "title_at_start": "曾任：江南提督",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "boorman_zhang_xun"
+          ],
+          "reference_urls": [
+            "https://xboorman.enpchina.eu/biographie/zhang-xun/"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "guangzhou_government": [],
+      "russian_provisional": [],
+      "bolsheviks": [],
+      "russian_empire": [],
+      "japan": [
+        {
+          "general_id": "jp_ndl_108",
+          "title_at_start": "曾任：第2艦隊司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_108"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/108"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_116",
+          "title_at_start": "曾任：第4旅団司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_116"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/116"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_137",
+          "title_at_start": "曾任：陸軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_137"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/137"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_140",
+          "title_at_start": "曾任：第1艦隊第3戦隊司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_140"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/140"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_141",
+          "title_at_start": "曾任：連合艦隊司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_141"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/141"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_164",
+          "title_at_start": "曾任：歩兵第12旅団長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_164"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/164"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_186",
+          "title_at_start": "曾任：臨時派遣司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_186"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/186"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_196",
+          "title_at_start": "曾任：第3旅団司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_196"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/196"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_213",
+          "title_at_start": "曾任：海軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_213"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/213"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_44",
+          "title_at_start": "曾任：第2軍司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_44"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/44"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_50",
+          "title_at_start": "曾任：第3艦隊司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_50"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/50"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_55",
+          "title_at_start": "曾任：海軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_55"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/55"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_58",
+          "title_at_start": "曾任：海軍軍令部長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_58"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/58"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_62",
+          "title_at_start": "曾任：第10師団長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_62"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/62"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_70",
+          "title_at_start": "曾任：第6師団長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_70"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/70"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_87",
+          "title_at_start": "曾任：海軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_87"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/87"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "british_empire": [
+        {
+          "general_id": "alfred_gaselee",
+          "title_at_start": "曾任：英属印度军旅指挥官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "bl_gaselee",
+            "dnb_gaselee"
+          ],
+          "reference_urls": [
+            "https://searcharchives.bl.uk/catalog/040-003188904",
+            "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1927_supplement/Gaselee,_Alfred"
+          ],
+          "eligible_from": "1917-06-16",
+          "eligible_through": "1917-06-16",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "british_india": [],
+      "ottoman": [],
+      "qajar_persia": [],
+      "afghanistan": [],
+      "mongolia": [],
+      "tibet": [],
+      "netherlands": [],
+      "french_empire": [],
+      "korea": [],
+      "siam": [],
+      "spain": [],
+      "usa": [],
+      "portugal": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  },
+  {
+    "id": "asia_1927",
+    "anchor_date": "1927-04-12",
+    "factions": {
+      "kmt": [],
+      "ccp": [],
+      "fengtian": [],
+      "zhili": [
+        {
+          "general_id": "cao_kun",
+          "title_at_start": "曾任：北洋陆军第3镇统制",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "boorman_cao_kun"
+          ],
+          "reference_urls": [
+            "https://xboorman.enpchina.eu/biographie/cao-kun/"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "shanxi": [],
+      "guominjun": [],
+      "sichuan": [],
+      "yunnan": [],
+      "japan": [
+        {
+          "general_id": "jp_ndl_116",
+          "title_at_start": "曾任：第4旅団司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_116"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/116"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_126",
+          "title_at_start": "曾任：陸軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_126"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/126"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_140",
+          "title_at_start": "曾任：第1艦隊第3戦隊司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_140"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/140"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_141",
+          "title_at_start": "曾任：連合艦隊司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_141"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/141"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_213",
+          "title_at_start": "曾任：海軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_213"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/213"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_239",
+          "title_at_start": "曾任：陸軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_239"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/239"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_275",
+          "title_at_start": "曾任：台湾軍司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_275"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/275"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_41",
+          "title_at_start": "曾任：連合艦隊司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_41"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/41"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_44",
+          "title_at_start": "曾任：第2軍司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_44"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/44"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_593",
+          "title_at_start": "曾任：海軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_593"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/593"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_87",
+          "title_at_start": "曾任：海軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_87"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/87"
+          ],
+          "eligible_from": "1927-04-12",
+          "eligible_through": "1927-04-12",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "soviet": [],
+      "british_empire": [],
+      "french_indochina": [],
+      "korea": [],
+      "afghanistan": [],
+      "british_india": [],
+      "french_empire": [],
+      "netherlands": [],
+      "ottoman": [],
+      "qajar_persia": [],
+      "siam": [],
+      "spain": [],
+      "usa": [],
+      "portugal": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  },
+  {
+    "id": "asia_1940",
+    "anchor_date": "1940-01-01",
+    "factions": {
+      "kmt": [
+        {
+          "general_id": "cn_52116e055fe0",
+          "title_at_start": "曾任：国民革命军陆军第15军65师师长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "martyrs_first",
+            "xing_luoyang_daily_20140915"
+          ],
+          "reference_urls": [
+            "https://sy.mva.gov.cn/sy/lsjnrjnhdsy/201905/t20190517_29079.html",
+            "https://lyrb.lyd.com.cn/images/2014-09/15/1410737462125lyrb20140915004.pdf"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "zhang_fakui",
+          "title_at_start": "曾任：国民革命军第12师师长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "boorman_zhang_fakui",
+            "shanghai_zhang_fakui"
+          ],
+          "reference_urls": [
+            "https://xboorman.enpchina.eu/biographie/zhang-fakui/",
+            "https://www.songjiang.gov.cn/sjsz/sjds/sjkzjy/files/basic-html/page179.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "tang_shengzhi",
+          "title_at_start": "曾任：国民革命军第8军军长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "boorman_tang_shengzhi",
+            "nlpi_tang_shengzhi"
+          ],
+          "reference_urls": [
+            "https://xboorman.enpchina.eu/biographie/tang-shengzhi/",
+            "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000161"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "he_yingqin",
+          "title_at_start": "曾任：国民革命军第1军军长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "he_yingqin_office",
+            "he_yingqin_life"
+          ],
+          "reference_urls": [
+            "https://dangshi.people.com.cn/n1/2017/0223/c85037-29103257.html",
+            "https://www.zgbk.com/ecph/words?Name=%E4%BD%95%E5%BA%94%E9%92%A6&SiteID=1&SourceID=524211&Type=bkzyb&subSourceType=000003000006000002"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "ccp": [
+        {
+          "general_id": "cn_5f905411524d",
+          "title_at_start": "曾任：八路军第129师副师长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_5f905411524d"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_96486bc5",
+          "title_at_start": "曾任：中国工农红军第22军军长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_96486bc5"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_5f204e919038",
+          "title_at_start": "曾任：中国工农红军第7军军长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_5f204e919038"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7537178.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_5f205b97900a",
+          "title_at_start": "曾任：八路军第120师第358旅旅长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_5f205b97900a"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127857/7538565.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_7c9f88d5",
+          "title_at_start": "曾任：中国工农红军挺进师师长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_7c9f88d5"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127855/7536807.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_7f5770b38f89",
+          "title_at_start": "曾任：中国工农红军第22军军长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_7f5770b38f89"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/n1/2023/0529/c443712-40000906.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_546858eb7b2c",
+          "title_at_start": "曾任：国民革命军第25师师长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_546858eb7b2c"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127857/7538728.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_738b5b8f5764",
+          "title_at_start": "曾任：八路军第129师第385旅旅长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_738b5b8f5764"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/GB/64162/126778/127857/7537459.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_53f6525182f1",
+          "title_at_start": "曾任：国民革命军新编第2师代师长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_53f6525182f1"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "cn_53f6633a",
+          "title_at_start": "曾任：国民革命军第11军副军长兼第24师师长",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "cpc_53f6633a",
+            "nanchang_memorial_ye_ting_2021"
+          ],
+          "reference_urls": [
+            "https://cpc.people.com.cn/n1/2021/0520/c64387-32108292.html",
+            "https://cpc.people.com.cn/n1/2021/0122/c64387-32009116.html"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "japan": [
+        {
+          "general_id": "jp_ndl_218",
+          "title_at_start": "曾任：連合艦隊司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_218"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/218"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_227",
+          "title_at_start": "曾任：陸軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_227"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/227"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_239",
+          "title_at_start": "曾任：陸軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_239"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/239"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_275",
+          "title_at_start": "曾任：台湾軍司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_275"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/275"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_349",
+          "title_at_start": "曾任：第2軍司令官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_349"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/349"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_355",
+          "title_at_start": "曾任：第16師団長",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_355"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/355"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_41",
+          "title_at_start": "曾任：連合艦隊司令長官",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_41"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/41"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        },
+        {
+          "general_id": "jp_ndl_593",
+          "title_at_start": "曾任：海軍大臣",
+          "formation": "",
+          "deployment_role": "conquest_optional_reserve",
+          "auto_assign": false,
+          "source_ids": [
+            "ndl_593"
+          ],
+          "reference_urls": [
+            "https://www.ndl.go.jp/portrait/datas/593"
+          ],
+          "eligible_from": "1940-01-01",
+          "eligible_through": "1940-01-01",
+          "historical_note": "自由征服可任命的后备人选；军职见载年份早于开局。不是历史开局任职、现役状态或战场位置的认定。",
+          "placement_status": "gameplay_recall_option_not_historical_opening_oob"
+        }
+      ],
+      "japanese_occupied": [],
+      "soviet": [],
+      "british_empire": [],
+      "british_india": [],
+      "vichy_france": [],
+      "thailand": [],
+      "netherlands": [],
+      "usa": [],
+      "portugal": [],
+      "tibet": [],
+      "mongolia": [],
+      "afghanistan": [],
+      "french_empire": [],
+      "ottoman": [],
+      "qajar_persia": []
+    },
+    "policy": "Conquest-only optional reserve; an earlier documented office plus the registered historical allegiance. Never auto-assigned or used in local historical battles.",
+    "exhaustive": false
+  }
+]

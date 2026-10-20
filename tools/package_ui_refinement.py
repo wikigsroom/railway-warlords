@@ -16,11 +16,15 @@ def write(path, value):
 
 
 def validate(scope='dossier'):
-    require(scope in {'dossier', 'atlas_office', 'ground_atlas', 'coast_detail', 'water_map'}, 'Unknown scoped delivery')
-    water_scope = scope == 'water_map'
-    atlas_scope = scope in {'atlas_office', 'ground_atlas', 'coast_detail', 'water_map'}
-    ground_scope = scope in {'ground_atlas', 'coast_detail', 'water_map'}
-    expected_rasters = 1327 if water_scope else 1324 if ground_scope else 1304
+    require(scope in {'dossier', 'atlas_office', 'ground_atlas', 'coast_detail', 'water_map', 'commander_pool'}, 'Unknown scoped delivery')
+    commander_scope = scope == 'commander_pool'
+    water_scope = scope in {'water_map', 'commander_pool'}
+    atlas_scope = scope in {'atlas_office', 'ground_atlas', 'coast_detail', 'water_map', 'commander_pool'}
+    ground_scope = scope in {'ground_atlas', 'coast_detail', 'water_map', 'commander_pool'}
+    expected_rasters = 2507 if commander_scope else 1327 if water_scope else 1324 if ground_scope else 1304
+    expected_people = 328 if commander_scope else 33
+    expected_portraits = 1315 if commander_scope else 135
+    expected_regression_groups = 30 if commander_scope else 29
     version = current_version()
     runtime = source_digest()[0]
     exe = P / 'build/windows/RailwayWarlords.exe'
@@ -32,7 +36,7 @@ def validate(scope='dossier'):
                 and row['sha256'] == sha(path), 'Current verified export required: ' + target)
     deps = read(P / 'reports/regression_dependency_evidence.json')
     require(deps['passed'] and deps['game_version'] == version
-            and deps['runtime_source_sha256'] == runtime and len(deps['checks']) == 29,
+            and deps['runtime_source_sha256'] == runtime and len(deps['checks']) == expected_regression_groups,
             'Complete current regression seal required')
     reports = set()
     regression = []
@@ -53,9 +57,9 @@ def validate(scope='dossier'):
     assets = read(P / 'assets/manifest.json')['assets']
     portrait_assets = [a for a in assets if a['category'] == 'portrait']
     require(portraits['production_complete'] and not portraits['missing_age_stages']
-            and len(portraits['generals']) == 33 and len(portrait_assets) == 135 and len(assets) == expected_rasters,
+            and len(portraits['generals']) == expected_people and len(portrait_assets) == expected_portraits and len(assets) == expected_rasters,
             'Retained four-stage portraits or UI asset count differs')
-    require(len({a['source_sha256'] for a in portrait_assets}) == 135, 'Independent portrait originals required')
+    require(len({a['source_sha256'] for a in portrait_assets}) == expected_portraits, 'Independent portrait originals required')
     for gid, person in portraits['generals'].items():
         require({v['age_stage'] for v in person['variants']} == {'young', 'prime', 'middle', 'late'}, 'Missing stage: ' + gid)
         require(all(person['birth_year'] <= s['reference_year'] <= person['death_year'] for s in person['stages']), 'Posthumous stage: ' + gid)
@@ -82,9 +86,11 @@ def validate(scope='dossier'):
                 'Unreviewed or modified UI original')
     captures = set()
     native_groups = []
-    for name, expected in [('general_portrait_native_evidence.json', 3), ('terrain_surface_native_evidence.json', 6),
+    native_specs = [('general_portrait_native_evidence.json', 3), ('terrain_surface_native_evidence.json', 6),
                            ('control_land_native_evidence.json', 2), ('map_symbol_native_evidence.json', 2),
-                           ('ui_refinement_native_evidence.json', 3)]:
+                           ('ui_refinement_native_evidence.json', 3)]
+    if commander_scope:native_specs.append(('commander_roster_native_evidence.json', 3))
+    for name, expected in native_specs:
         path = P / 'reports' / name
         proof = read(path)
         require(proof['passed'] and proof['version'] == version and proof['runtime_source_sha256'] == runtime
@@ -136,7 +142,7 @@ def validate(scope='dossier'):
     audit = read(P / 'reports/daily_age_text_audit.json')
     require(audit['passed'] and audit['version'] == version and audit['runtime_source_sha256'] == runtime
             and not audit['legacy_display_name_plaintext_files'], 'Current display-name audit required')
-    visual_name = {'water_map': 'water_map_native_review.json', 'coast_detail': 'coast_detail_native_review.json', 'ground_atlas': 'ground_atlas_native_review.json', 'atlas_office': 'atlas_office_native_review.json',
+    visual_name = {'commander_pool': 'commander_pool_native_review.json', 'water_map': 'water_map_native_review.json', 'coast_detail': 'coast_detail_native_review.json', 'ground_atlas': 'ground_atlas_native_review.json', 'atlas_office': 'atlas_office_native_review.json',
                    'dossier': 'ui_refinement_native_review.json'}[scope]
     visual = read(P / 'reports' / visual_name)
     require(visual['version'] == version and visual['runtime_source_sha256'] == runtime
@@ -161,7 +167,7 @@ def validate(scope='dossier'):
                     'Actual zoomed native preview required')
             require(all(row['passed'] for row in proof['checks']), 'Office interaction/transaction checks failed')
     if ground_scope:
-        require(version == ('0.2.27' if water_scope else '0.2.26' if scope == 'coast_detail' else '0.2.25'), 'Scoped map specification/version mismatch')
+        require(version == ('0.2.28' if commander_scope else '0.2.27' if water_scope else '0.2.26' if scope == 'coast_detail' else '0.2.25'), 'Scoped map specification/version mismatch')
         catalog = read(P / 'presentation/data/ground_macro_catalog.json')
         source_review = read(P / 'reports/ground_atlas_source_review.json')
         require(catalog['world_repeat_period'] == 224 and catalog['superseded_originals'] == 40
@@ -192,7 +198,7 @@ def validate(scope='dossier'):
                     and scope_audit['runtime_source_sha256'] == runtime and not scope_audit['changed_files']
                     and scope_audit['verified_preserved_json_files'] > 100, 'Dated geography and rules must match the baseline')
         else:
-            scope_audit = read(P / 'reports/coast_detail_scope_audit.json')
+            scope_audit = read(P / ('reports/commander_pool_scope_audit.json' if commander_scope else 'reports/coast_detail_scope_audit.json'))
             require(scope_audit['passed'] and scope_audit['version'] == version
                     and scope_audit['runtime_source_sha256'] == runtime
                     and not scope_audit['unexpected_changed_files'] and scope_audit['preserved_json_files'] > 100
@@ -229,7 +235,7 @@ def validate(scope='dossier'):
                         and sha(P / row['log']) == row['log_sha256'], 'Coast viewport evidence changed')
                 captures.update([P / row['file'], P / row['metadata']])
                 reports.add(P / row['log'])
-            reports.update(P / 'reports' / name for name in ['coast_detail_scope_audit.json',
+            reports.update(P / 'reports' / name for name in [('commander_pool_scope_audit.json' if commander_scope else 'coast_detail_scope_audit.json'),
                 'coast_detail_geography_audit.json', 'coast_detail_compilation.json', 'coast_geometry_tests.json',
                 'coast_geometry_native.log', 'coast_detail_native_geometry_evidence.json', 'coast_detail_native_capture_evidence.json',
                 'surface_geography_audit.json', 'asia_relief_rebuild_verification.json'])
@@ -243,12 +249,17 @@ def validate(scope='dossier'):
             'ground_continuity_native/validation.json', 'ground_continuity_native/native.log'])
         if scope == 'ground_atlas':reports.add(P / 'reports/ground_atlas_scope_audit.json')
     if water_scope:
-        audit = read(P / 'reports/water_map_scope_audit.json')
-        require(audit['passed'] and audit['version'] == version and audit['runtime_source_sha256'] == runtime
-                and audit['preserved_existing_originals'] == 1324
-                and audit['preserved_existing_geography_and_rules'] > 100
-                and not audit['changed_existing_geography_and_rules'] and len(audit['new_water_originals']) == 3,
-                'Water/grid revision must preserve delivered geography, rules and originals')
+        if commander_scope:
+            from validate_commander_release import validate_commander_content
+            commander_details, commander_reports = validate_commander_content(runtime)
+            reports.update(commander_reports)
+        else:
+            audit = read(P / 'reports/water_map_scope_audit.json')
+            require(audit['passed'] and audit['version'] == version and audit['runtime_source_sha256'] == runtime
+                    and audit['preserved_existing_originals'] == 1324
+                    and audit['preserved_existing_geography_and_rules'] > 100
+                    and not audit['changed_existing_geography_and_rules'] and len(audit['new_water_originals']) == 3,
+                    'Water/grid revision must preserve delivered geography, rules and originals')
         water_native = read(P / 'reports/water_continuity_native_evidence.json')
         require(water_native['passed'] and water_native['version'] == version
                 and water_native['runtime_source_sha256'] == runtime and water_native['windows_exe_sha256'] == sha(exe)
@@ -269,7 +280,7 @@ def validate(scope='dossier'):
             require(all(sha(P / row[key]) == row[key + '_sha256'] for key in ['metadata', 'log'])
                     and sha(P / row['file']) == row['sha256'], 'Water/grid native evidence changed')
             captures.update([P / row['file'], P / row['metadata']]);reports.add(P / row['log'])
-        reports.update(P / 'reports' / name for name in ['water_map_scope_audit.json', 'water_material_generation.json',
+        reports.update(P / 'reports' / name for name in [('commander_pool_scope_audit.json' if commander_scope else 'water_map_scope_audit.json'), 'water_material_generation.json',
             'water_material_source_review.json', 'water_continuity_native_evidence.json',
             'water_continuity_native/validation.json', 'water_continuity_native/native.log',
             'water_map_native_capture_evidence.json'])
@@ -295,10 +306,10 @@ def validate(scope='dossier'):
     missing_reports = sorted(p.relative_to(P).as_posix() for p in reports if not p.is_file())
     require(not missing_reports, 'Delivery reports are missing: ' + ', '.join(missing_reports))
     summary = dict(passed=True, version=version, runtime_source_sha256=runtime,
-                   content_hash=read(P / 'reports/sample_state_v2.json')['content_hash'], ruleset=10,
-                   days_per_complete_round=1, scenarios=61, people=33, military_generals=29, political_only_people=4,
-                   living_age_stages_per_person=4, portrait_originals=135, new_portrait_originals=0,
-                   new_ui_originals=0 if atlas_scope else 5, total_rasters=expected_rasters, regression_groups=29,
+                   content_hash=read(P / 'reports/sample_state_v2.json')['content_hash'], ruleset=11 if commander_scope else 10,
+                   days_per_complete_round=1, scenarios=61, people=expected_people, military_generals=expected_people-4, political_only_people=4,
+                   living_age_stages_per_person=4, portrait_originals=expected_portraits, new_portrait_originals=1180 if commander_scope else 0,
+                   new_ui_originals=0 if atlas_scope else 5, total_rasters=expected_rasters, regression_groups=expected_regression_groups,
                    calendar_checks=len(calendar['checks']),
                    regression_checks=sum(r['checks'] for r in regression), native_groups=native_groups,
                    native_captures=len(captures) // 2, native_music_checks=18, apk_version_code=android_version_code(),
@@ -309,19 +320,20 @@ def validate(scope='dossier'):
     if ground_scope:
         summary.update(new_ground_originals=20 if scope == 'ground_atlas' else 0, stored_map_originals=1013 if water_scope else 1010, active_map_originals=970,
                        preserved_superseded_ground_originals=40, native_material_checks=48)
-    if scope in {'coast_detail', 'water_map'}:
+    if scope in {'coast_detail', 'water_map', 'commander_pool'}:
         summary.update(refined_marine_maps=4, new_raster_originals=0, native_coast_checks=61,
                        independent_geography_checks=len(coast['checks']), historical_coast_survey_approval=False,
                        additional_coast_native_captures=len(coast_frames['captures']))
     if water_scope:
         summary.pop('active_map_originals')
-        summary.update(new_raster_originals=3, new_water_originals=3, available_map_originals=973,
+        summary.update(new_raster_originals=1180 if commander_scope else 3, new_water_originals=0 if commander_scope else 3, available_map_originals=973,
                        native_water_checks=22, additional_water_native_captures=11,
-                       existing_geography_and_rules_changed=False, historical_water_color_claimed=False,
+                       existing_geography_and_rules_changed=commander_scope, historical_water_color_claimed=False,
                        desktop_static_average_fps=performance['average_fps'],
                        desktop_static_frame_ms_p95=performance['frame_ms_p95'],
                        desktop_performance_target_met=performance['target_met'])
-    validation_name = {'water_map': 'water_map_release_validation.json', 'coast_detail': 'coast_detail_release_validation.json', 'ground_atlas': 'ground_atlas_release_validation.json', 'atlas_office': 'atlas_office_release_validation.json',
+    if commander_scope:summary.update(commander_details)
+    validation_name = {'commander_pool': 'commander_pool_release_validation.json', 'water_map': 'water_map_release_validation.json', 'coast_detail': 'coast_detail_release_validation.json', 'ground_atlas': 'ground_atlas_release_validation.json', 'atlas_office': 'atlas_office_release_validation.json',
                        'dossier': 'ui_refinement_release_validation.json'}[scope]
     write(P / 'reports' / validation_name, summary)
     reports.add(P / 'reports' / validation_name)

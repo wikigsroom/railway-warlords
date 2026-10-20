@@ -1,0 +1,755 @@
+[
+  {
+    "id": "wu_peifu",
+    "name": "吴佩孚",
+    "reference_faction_1924_before_coup": "zhili",
+    "stars": {
+      "infantry": 4,
+      "artillery": 5,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 3
+    },
+    "passive_skill": "art_focus",
+    "active_skill": "barrage",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "zhili"
+    },
+    "active_year_min": 1917,
+    "active_year_max": 1930
+  },
+  {
+    "id": "zhang_zuolin",
+    "name": "张作霖",
+    "reference_faction_1924_before_coup": "fengtian",
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 4,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "logistics",
+    "active_skill": "rail_priority",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "fengtian"
+    },
+    "active_year_min": 1900,
+    "active_year_max": 1928
+  },
+  {
+    "id": "zhang_xueliang",
+    "name": "张学良",
+    "reference_faction_1924_before_coup": "fengtian",
+    "stars": {
+      "infantry": 3,
+      "artillery": 4,
+      "cavalry": 3,
+      "navy": 2,
+      "aviation": 3,
+      "logistics": 3
+    },
+    "passive_skill": "art_focus",
+    "active_skill": "coordinated_fire",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "fengtian"
+    },
+    "active_year_min": 1921,
+    "active_year_max": 1936
+  },
+  {
+    "id": "feng_yuxiang",
+    "name": "冯玉祥",
+    "reference_faction_1924_before_coup": "zhili",
+    "stars": {
+      "infantry": 5,
+      "artillery": 2,
+      "cavalry": 3,
+      "navy": 0,
+      "aviation": 0,
+      "logistics": 4
+    },
+    "passive_skill": "inf_focus",
+    "active_skill": "assault_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "guominjun"
+    },
+    "active_year_min": 1911,
+    "active_year_max": 1948
+  },
+  {
+    "id": "sun_chuanfang",
+    "name": "孙传芳",
+    "reference_faction_1924_before_coup": "zhili",
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 3,
+      "navy": 1,
+      "aviation": 0,
+      "logistics": 3
+    },
+    "passive_skill": "inf_focus",
+    "active_skill": "entrench_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "zhili"
+    },
+    "active_year_min": 1911,
+    "active_year_max": 1927
+  },
+  {
+    "id": "qi_xieyuan",
+    "name": "齐燮元",
+    "reference_faction_1924_before_coup": "jiangsu",
+    "stars": {
+      "infantry": 3,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 0,
+      "aviation": 0,
+      "logistics": 3
+    },
+    "passive_skill": "defense",
+    "active_skill": "entrench_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "zhili"
+    },
+    "active_year_min": 1911,
+    "active_year_max": 1927
+  },
+  {
+    "id": "lu_yongxiang",
+    "name": "卢永祥",
+    "reference_faction_1924_before_coup": "zhejiang",
+    "stars": {
+      "infantry": 3,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 0,
+      "logistics": 3
+    },
+    "passive_skill": "defense",
+    "active_skill": "ration_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "zhili"
+    },
+    "active_year_min": 1911,
+    "active_year_max": 1924
+  },
+  {
+    "id": "yan_xishan",
+    "name": "阎锡山",
+    "reference_faction_1924_before_coup": "shanxi",
+    "stars": {
+      "infantry": 3,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 0,
+      "aviation": 0,
+      "logistics": 5
+    },
+    "passive_skill": "logistics",
+    "active_skill": "field_repair",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "shanxi"
+    },
+    "active_year_min": 1911,
+    "active_year_max": 1960
+  },
+  {
+    "id": "tang_jiyao",
+    "name": "唐继尧",
+    "reference_faction_1924_before_coup": "yunnan",
+    "stars": {
+      "infantry": 4,
+      "artillery": 2,
+      "cavalry": 3,
+      "navy": 0,
+      "aviation": 0,
+      "logistics": 3
+    },
+    "passive_skill": "inf_focus",
+    "active_skill": "recon_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "yunnan"
+    },
+    "active_year_min": 1911,
+    "active_year_max": 1927
+  },
+  {
+    "id": "chen_jiongming",
+    "name": "陈炯明",
+    "reference_faction_1924_before_coup": "dongjiang",
+    "stars": {
+      "infantry": 4,
+      "artillery": 2,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 0,
+      "logistics": 3
+    },
+    "passive_skill": "defense",
+    "active_skill": "entrench_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "kmt"
+    },
+    "active_year_min": 1911,
+    "active_year_max": 1933
+  },
+  {
+    "id": "xu_chongzhi",
+    "name": "许崇智",
+    "reference_faction_1924_before_coup": "guangdong",
+    "stars": {
+      "infantry": 4,
+      "artillery": 2,
+      "cavalry": 3,
+      "navy": 1,
+      "aviation": 0,
+      "logistics": 3
+    },
+    "passive_skill": "inf_focus",
+    "active_skill": "assault_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "kmt"
+    },
+    "active_year_min": 1911,
+    "active_year_max": 1933
+  },
+  {
+    "id": "guo_songling",
+    "name": "郭松龄",
+    "reference_faction_1924_before_coup": "fengtian",
+    "stars": {
+      "infantry": 4,
+      "artillery": 4,
+      "cavalry": 2,
+      "navy": 0,
+      "aviation": 0,
+      "logistics": 3
+    },
+    "passive_skill": "art_focus",
+    "active_skill": "barrage",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "专长是游戏参数；人物所属与军职须由各剧本独立审核",
+    "reference_faction_by_scenario": {
+      "asia_1927": "fengtian"
+    },
+    "active_year_min": 1911,
+    "active_year_max": 1925
+  },
+  {
+    "id": "lin_zexu",
+    "name": "林则徐",
+    "reference_faction_1924_before_coup": "qing",
+    "reference_faction_by_scenario": {
+      "asia_1840": "qing"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "defense",
+    "active_skill": "entrench_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "1840鸦片战争海防与禁烟主政者。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1839,
+    "active_year_max": 1850
+  },
+  {
+    "id": "hong_xiuquan",
+    "name": "洪秀全",
+    "reference_faction_1924_before_coup": "taiping",
+    "reference_faction_by_scenario": {
+      "asia_1860": "taiping"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "staff_morale",
+    "active_skill": "assault_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "太平天国天王；政治宗教领袖，不等同于前线每支部队司令。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1851,
+    "active_year_max": 1864
+  },
+  {
+    "id": "zeng_guofan",
+    "name": "曾国藩",
+    "reference_faction_1924_before_coup": "qing",
+    "reference_faction_by_scenario": {
+      "asia_1860": "qing"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "logistics",
+    "active_skill": "ration_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "湘军创建者与清方后期重臣。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1851,
+    "active_year_max": 1872
+  },
+  {
+    "id": "li_hongzhang",
+    "name": "李鸿章",
+    "reference_faction_1924_before_coup": "qing",
+    "reference_faction_by_scenario": {
+      "asia_1860": "qing",
+      "asia_1890": "qing",
+      "asia_1900": "qing"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "logistics",
+    "active_skill": "rail_priority",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "淮军统帅与晚清外交重臣。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1860,
+    "active_year_max": 1901
+  },
+  {
+    "id": "yamagata_aritomo",
+    "name": "山县有朋",
+    "reference_faction_1924_before_coup": "japan",
+    "reference_faction_by_scenario": {
+      "asia_1890": "japan",
+      "asia_1900": "japan",
+      "asia_1917": "japan"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "staff_morale",
+    "active_skill": "entrench_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "日本陆军元老；作为政治军事背景人物进入时间线。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1870,
+    "active_year_max": 1922
+  },
+  {
+    "id": "waldersee",
+    "name": "瓦德西",
+    "reference_faction_1924_before_coup": "germany",
+    "reference_faction_by_scenario": {
+      "asia_1900": "eight_nation"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "staff_morale",
+    "active_skill": "coordinated_fire",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "1900年后期八国联军联军总司令；任职日期与早期战斗区分。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1900,
+    "active_year_max": 1901
+  },
+  {
+    "id": "kuropatkin",
+    "name": "库罗帕特金",
+    "reference_faction_1924_before_coup": "russian_empire",
+    "reference_faction_by_scenario": {
+      "asia_1890": "russian_empire",
+      "asia_1900": "russian_empire"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "defense",
+    "active_skill": "barrage",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "俄军高级将领；日俄战争战区背景人物。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1890,
+    "active_year_max": 1917
+  },
+  {
+    "id": "sun_yat_sen",
+    "name": "孙中山",
+    "reference_faction_1924_before_coup": "guangdong",
+    "reference_faction_by_scenario": {
+      "asia_1917": "guangzhou_government",
+      "asia_1940": "kmt"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "staff_morale",
+    "active_skill": "assault_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "护法运动与国民革命政治军事领导人。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1894,
+    "active_year_max": 1925
+  },
+  {
+    "id": "duan_qirui",
+    "name": "段祺瑞",
+    "reference_faction_1924_before_coup": "zhili",
+    "reference_faction_by_scenario": {
+      "asia_1917": "beiyang_gov",
+      "asia_1927": "zhili"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "logistics",
+    "active_skill": "rail_priority",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "北洋政府军政人物。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1895,
+    "active_year_max": 1936
+  },
+  {
+    "id": "chiang_kai_shek",
+    "name": "蒋介石",
+    "reference_faction_1924_before_coup": "guangdong",
+    "reference_faction_by_scenario": {
+      "asia_1927": "kmt",
+      "asia_1940": "kmt"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "staff_morale",
+    "active_skill": "coordinated_fire",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "北伐与抗日战争国民政府军事领袖。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1924,
+    "active_year_max": 1975
+  },
+  {
+    "id": "li_zongren",
+    "name": "李宗仁",
+    "reference_faction_1924_before_coup": "guangdong",
+    "reference_faction_by_scenario": {
+      "asia_1927": "kmt",
+      "asia_1940": "kmt"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "defense",
+    "active_skill": "entrench_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "国民革命军与抗日战场将领。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1920,
+    "active_year_max": 1969
+  },
+  {
+    "id": "bai_chongxi",
+    "name": "白崇禧",
+    "reference_faction_1924_before_coup": "guangdong",
+    "reference_faction_by_scenario": {
+      "asia_1927": "kmt",
+      "asia_1940": "kmt"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "art_focus",
+    "active_skill": "barrage",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "国民革命军高级将领，战区与参谋角色需按任务登记。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1924,
+    "active_year_max": 1966
+  },
+  {
+    "id": "mao_zedong",
+    "name": "李德胜",
+    "reference_faction_1924_before_coup": "guangdong",
+    "reference_faction_by_scenario": {
+      "asia_1927": "ccp",
+      "asia_1940": "ccp"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "staff_morale",
+    "active_skill": "assault_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "中国共产党与敌后战场政治军事领导人。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1927,
+    "active_year_max": 1976
+  },
+  {
+    "id": "peng_dehuai",
+    "name": "彭德怀",
+    "reference_faction_1924_before_coup": "guangdong",
+    "reference_faction_by_scenario": {
+      "asia_1940": "ccp"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "assault_order",
+    "active_skill": "coordinated_fire",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "八路军高级将领；百团大战等敌后战场相关。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1927,
+    "active_year_max": 1959
+  },
+  {
+    "id": "tojo_hideki",
+    "name": "东条英机",
+    "reference_faction_1924_before_coup": "japan",
+    "reference_faction_by_scenario": {
+      "asia_1940": "japan"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "staff_morale",
+    "active_skill": "rail_priority",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "日本陆军与内阁政治人物；不代表全部战区指挥链。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1937,
+    "active_year_max": 1945
+  },
+  {
+    "id": "yamashita_tomoyuki",
+    "name": "山下奉文",
+    "reference_faction_1924_before_coup": "japan",
+    "reference_faction_by_scenario": {
+      "asia_1940": "japanese_occupied"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "assault_order",
+    "active_skill": "cavalry_sweep",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "日本陆军将领；以亚洲战区编制记录为准。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1930,
+    "active_year_max": 1945
+  },
+  {
+    "id": "alexei_kaledin",
+    "name": "卡列金",
+    "reference_faction_1924_before_coup": "russian_empire",
+    "reference_faction_by_scenario": {
+      "asia_1917": "russian_provisional"
+    },
+    "stars": {
+      "infantry": 4,
+      "artillery": 3,
+      "cavalry": 2,
+      "navy": 1,
+      "aviation": 1,
+      "logistics": 4
+    },
+    "passive_skill": "cavalry_sweep",
+    "active_skill": "assault_order",
+    "max_rank": 6,
+    "max_skill_rank": 3,
+    "deployment_rule": "scenario_explicit_whitelist",
+    "initial_position": "authored_in_scenario_not_general_definition",
+    "historical_note": "俄国革命与内战早期将领背景；具体战区需逐案核验。",
+    "source_status": "history_recorded_with_source_ids_in_content/history/asia_timeline.json",
+    "active_year_min": 1900,
+    "active_year_max": 1918
+  }
+]

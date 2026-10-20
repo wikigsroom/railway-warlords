@@ -27,6 +27,13 @@ static func create(content: ContentRegistry, scenario_id: String, player_id: Str
 	if not content.scenarios.has(scenario_id):return {}
 	var recipe=content.scenarios[scenario_id]
 	if not recipe.faction_roster.has(player_id) or (recipe.mode=="conquest" and not content.playable_factions(scenario_id).has(player_id)):return {}
+	# A defending and an attacking side can share a dated scenario without
+	# inheriting each other's objective. Keep the source recipe immutable.
+	var side_objective:Dictionary=recipe.get("objective_by_faction",{}).get(player_id,{})
+	if not side_objective.is_empty():
+		recipe=recipe.duplicate(false)
+		recipe.objective_type=side_objective.type
+		recipe.objective_count=int(side_objective.get("count",1))
 	var legion_selection={}
 	if recipe.mode=="legion":
 		difficulty="normal"
@@ -130,22 +137,30 @@ static func create(content: ContentRegistry, scenario_id: String, player_id: Str
 		if recipe.mode=="legion":
 			player_deployment=legion_selection.army
 		else:
-			for i in range(recipe.player_formations):player_deployment.append({"def_id":definitions[i%definitions.size()],"stack":1,"elite_id":null})
+			var player_count=int(recipe.get("starting_formations_by_faction",{}).get(player_id,recipe.player_formations))
+			for i in range(player_count):player_deployment.append({"def_id":definitions[i%definitions.size()],"stack":1,"elite_id":null})
 		for formation in player_deployment:
 			var deployed={}
 			if content.definition("units",formation.def_id).movement_profile in ["river","water","sea"]:deployed=deploy_water(s,target.position,player_id,formation.def_id,content,10,int(formation.stack),formation.elite_id)
 			else:deployed=deploy(s,HexGrid.position(friend_hex),player_id,formation.def_id,content,4,int(formation.stack),formation.elite_id)
 			if recipe.mode=="legion" and deployed.is_empty():return {}
-		var enemy_count=recipe.enemy_formations
-		for i in range(enemy_count):
-			var enemy_unit=deploy(s,HexGrid.position(enemy_hex),s.turn_order[1],definitions[i%definitions.size()],content,4)
-			# A tactical stack is still an abstraction, but retaining the authored
-			# formation id makes named-army objectives auditable and replayable.
-			if not enemy_unit.is_empty() and recipe.has("destroy_formation_id"):
-				enemy_unit.historical_formation_id=str(recipe.destroy_formation_id)
+		var other_sides:Array=recipe.get("starting_formations_by_faction",{}).keys() if recipe.has("starting_formations_by_faction") else [s.turn_order[1]]
+		other_sides.erase(player_id)
+		for side_index in range(other_sides.size()):
+			var owner=str(other_sides[side_index])
+			if not s.turn_order.has(owner):continue
+			var count=int(recipe.get("starting_formations_by_faction",{}).get(owner,recipe.enemy_formations))
+			var side_hex=enemy_hex+Vector2i(0,side_index*4)
+			for i in range(count):
+				var enemy_unit=deploy(s,HexGrid.position(side_hex),owner,definitions[i%definitions.size()],content,4)
+				# Stack counts are gameplay parameters; a sourced formation ID
+				# remains traceable without asserting literal historical strength.
+				if not enemy_unit.is_empty() and recipe.has("destroy_formation_id"):
+					enemy_unit.historical_formation_id=str(recipe.destroy_formation_id)
 		# Keep the objective city as a fortified garrison, rather than an empty flag.
 		var occupying=StateAccess.at(s,"units",origin)
-		if occupying.is_empty() and recipe.objective_type not in ["escort","survive"]:s.units.append(unit(next_id(s,"u"),"machine_gun",target.owner_id,target.position.duplicate(),content))
+		var garrison_type="machine_gun" if available.has("machine_gun") else "rifle" if available.has("rifle") else str(available[0])
+		if occupying.is_empty() and recipe.objective_type not in ["escort","survive"]:s.units.append(unit(next_id(s,"u"),garrison_type,target.owner_id,target.position.duplicate(),content))
 		StateAccess.invalidate_occupancy()
 		if recipe.objective_type in ["escort","survive"]:
 			var escort=s.units.filter(func(u):return u.owner_id==player_id)[0]
@@ -181,7 +196,7 @@ static func create(content: ContentRegistry, scenario_id: String, player_id: Str
 		elif recipe.objective_type=="capture_commander":
 			var commander_id=str(recipe.get("target_commander_id",""))
 			s.objectives.append({"id":"primary","type":"capture_commander","target_ids":[commander_id],"required":1,"progress":0,"protected":false,"optional_if_absent":bool(recipe.get("commander_optional_if_absent",false))})
-		else:s.objectives.append({"id":"primary","type":recipe.objective_type,"target_ids":[target.id],"required":recipe.objective_count,"progress":0,"protected":false})
+		else:s.objectives.append({"id":"primary","type":recipe.objective_type,"target_ids":[target.id],"required":recipe.objective_count,"progress":0,"protected":false,"accept_allied_control":bool(side_objective.get("accept_allied_control",false))})
 		for condition_index in range(recipe.get("secondary_objectives",[]).size()):
 			var condition=recipe.secondary_objectives[condition_index]
 			var condition_type=str(condition.get("type",""))
@@ -228,18 +243,23 @@ static func create(content: ContentRegistry, scenario_id: String, player_id: Str
 						passenger.cargo_parent_id=ship.id;passenger.position=null;passenger.cargo_actions_ready=true
 						s.objectives=[{"id":"river_landing","type":"disembark","target_ids":[passenger.id],"destination":target.position.duplicate(),"required":1,"progress":0,"protected":true}]
 				StateAccess.invalidate_occupancy()
-	var scenario_year=int(str(recipe.anchor_date).substr(0,4))
+	var deployment_recipe=content.scenarios.get(str(recipe.get("scenario_reference","conq_1924")),{}) if recipe.mode=="legion" else recipe
+	var commander_index=CommanderRoster.deployment_index(content,deployment_recipe) if not deployment_recipe.is_empty() else {}
 	for gd in content.tables.generals:
-		var active_min=int(gd.get("active_year_min",0));var active_max=int(gd.get("active_year_max",9999))
-		if scenario_year<active_min or scenario_year>active_max:continue
-		var owner=str(gd.get("reference_faction_by_scenario",{}).get(scenario_id,gd.get("reference_faction_1924_before_coup",gd.get("reference_faction",""))))
+		var deployment: Dictionary=commander_index.get(str(gd.id),{})
+		var owner=str(deployment.get("owner_id",""))
 		if recipe.mode=="legion":
-			var chosen=legion_selection.generals
-			if chosen.has(gd.id):owner=player_id
-			elif owner==player_id:continue
+			if legion_selection.generals.has(gd.id):
+				owner=player_id;deployment={"auto_assign":true,"deployment_role":"training","title_at_start":"军团训练配置"}
+			else:
+				deployment=commander_index.get(str(gd.id),{})
+				owner=str(deployment.get("owner_id",""))
+				if owner==player_id:continue
 		if not s.turn_order.has(owner):continue
 		var f=StateAccess.faction(s,owner)
-		if f.general_whitelist.size()>=recipe.general_slots:continue
+		# Historical battles use their own dated rosters. Only training exercises
+		# have an explicit deployment budget; no shared side quota truncates a battle.
+		if recipe.mode=="legion" and f.general_whitelist.size()>=recipe.general_slots:continue
 		f.general_whitelist.append(gd.id)
 		var rank=int(f.profile_snapshot.general_ranks.get(gd.id,0))
 		var skill_id=str(f.profile_snapshot.get("active_skills",{}).get(gd.id,gd.active_skill))
@@ -249,11 +269,17 @@ static func create(content: ContentRegistry, scenario_id: String, player_id: Str
 		var g={"id":gd.id,"owner_id":owner,"rank":rank,"skill_ranks":ranks,"cooldowns":{},"assigned_unit_id":null,"injured_this_match":false,"unassign_cooldown":0,"earned_xp":0}
 		s.generals.append(g)
 		g.active_skill_id=skill_id
-		var eligible=s.units.filter(func(u):return u.owner_id==owner and u.general_id==null and u.cargo_parent_id==null)
+		g.deployment_role=str(deployment.get("deployment_role","field_command"))
+		g.historical_title=str(deployment.get("title_at_start",""))
+		g.historical_formation=str(deployment.get("formation",""))
+		g.roster_source_ids=deployment.get("source_ids",[]).duplicate()
 		var active=content.definition("skills",skill_id)
+		var eligible=s.units.filter(func(u):return u.owner_id==owner and u.general_id==null and u.cargo_parent_id==null and EffectRules.scope_matches(active.caster_scope,u,content)) if deployment.get("auto_assign",true) else []
 		eligible.sort_custom(func(a,b):
 			var am=EffectRules.scope_matches(active.caster_scope,a,content);var bm=EffectRules.scope_matches(active.caster_scope,b,content)
 			return am and not bm if am!=bm else str(a.id)<str(b.id))
+		# Surplus commanders stay in the reserve. Do not create fictional formations
+		# merely to place every named officer on the map.
 		if not eligible.is_empty():
 			var u=eligible[0];u.general_id=g.id;g.assigned_unit_id=u.id
 			u.max_hp=CombatRules.rational_round([[u.max_hp,1],[1000+30*rank,1000]]);u.hp=u.max_hp

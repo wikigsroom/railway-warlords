@@ -17,6 +17,12 @@ var hq_tab="generals"
 var hq_portrait_stage="middle"
 var political_portrait_stage=""
 var hq_query=""
+var hq_country="all"
+var hq_level="all"
+var hq_era=0
+var hq_page=0
+var hq_grid: GridContainer
+var hq_pager: HBoxContainer
 var tech_branch="infantry"
 var diplomacy_target=""
 
@@ -192,7 +198,15 @@ func select_recipe(id: String) -> void:
 	var target=source_map.cities.filter(func(c):return c.id==r.get("target_city_id",""))
 	if r.objective_type in ["capture","hold","escort"] and not target.is_empty():goal+="  ·  "+str(target[0].name)
 	var summary=app.row(browser_brief);app.label(summary,goal,19,Color("6e583b"))
-	app.label(summary,"%d回合 · %d将领席位 · %d城市节点"%[r.round_limit,r.general_slots,source_map.cities.size()],15)
+	app.label(summary,"%d日 · %d城市节点"%[r.round_limit,source_map.cities.size()],15)
+	if r.mode=="legion":app.label(summary,"训练名额：每方最多 %d 人"%r.general_slots,15)
+	else:
+		var available=CommanderRoster.entries(app.content,r,browser_owner)
+		var reserves=available.filter(func(entry):return entry.get("deployment_role","")=="conquest_optional_reserve").size()
+		var count=app.label(browser_brief,"所选阵营将领：初始名册 %d人 · 可选后备 %d人"%[available.size()-reserves,reserves],15)
+		count.name="ScenarioCommanderCount";count.set_meta("owner_id",browser_owner)
+		count.set_meta("initial_count",available.size()-reserves);count.set_meta("reserve_count",reserves)
+		count.tooltip_text="各阵营已登记人数（含可选后备）\n"+CommanderRoster.count_summary(app.content,r).replace(" / ","\n")
 	if r.mode=="conquest":
 		app.label(browser_brief,"城市标记表示开局控制；自由发展后，外交与领土随玩家行动改变。",14,Color("65716b"))
 	else:app.label(browser_brief,(scope+"  /  " if not scope.is_empty() else "")+"地理据真实资料抽象；战术部署与任务目标属于游戏设计。",14,Color("65716b"))
@@ -285,19 +299,27 @@ func building_description(d: Dictionary) -> String:
 func show_generals(unit_id: String) -> void:
 	var v=app.modal("将领任命 · 本阶段不能再攻击")
 	app.label(v,"选定编队任命后会消耗本阶段攻击机会。可用名单以当前剧本为准。",18)
-	if app.match_controller.state.generals.is_empty():
-		var empty=app.label(v,"当前剧本没有可任命将领。编队仍可执行移动、攻击与整补。",22)
+	var state=app.match_controller.state
+	var owner=str(StateAccess.find(state,"units",unit_id).get("owner_id",""))
+	var available=state.generals.filter(func(g):return g.owner_id==owner and not g.get("injured_this_match",false) and not g.get("withdrawn_this_match",false) and g.assigned_unit_id==null)
+	if available.is_empty():
+		var empty=app.label(v,"本方暂无未任命的预备将领。编队仍可执行移动、攻击与整补。",22)
 		empty.name="NoScenarioGenerals"
 		return
 	var g=grid(v)
-	for general in app.match_controller.state.generals:
+	for general in available:
 		var d=app.content.definition("generals",general.id);var c=card(g);general_portrait(c,d,general.rank,str(app.match_controller.state.date))
-		var reason=status(c);action(c,"任命到选定编队",app.match_controller.command("AssignGeneral",{"unit_id":unit_id,"general_id":general.id}),reason)
+		if general.get("deployment_role","")=="conquest_optional_reserve":app.label(c,"自由征服后备 · 可由玩家任命",17,Color("52685e"))
+		var reason=status(c);var assign=action(c,"任命到选定编队",app.match_controller.command("AssignGeneral",{"unit_id":unit_id,"general_id":general.id}),reason)
+		assign.name="AssignGeneral_"+str(general.id);assign.set_meta("commander_id",str(general.id))
 
 func general_portrait(parent: Node, d: Dictionary, rank: int, date: String="", stage: String="") -> void:
 	var head=app.row(parent);head.add_theme_constant_override("separation",14)
 	var visual=GeneralPortraitView.new();visual.setup(app.assets,d.id,Vector2(148,172)*minf(scale(),1.2),date,stage);head.add_child(visual)
-	var copy=app.column(head);app.label(copy,d.name,27);app.label(copy,"军衔  %d / %d"%[rank,d.max_rank],18,Color("735d3e"))
+	var copy=app.column(head);app.label(copy,d.name,27);app.label(copy,"成长等级  %d / %d"%[rank,d.max_rank],18,Color("735d3e"))
+	var service=CommanderRoster.service(app.content,str(d.id))
+	app.label(copy,CommanderRoster.grade(service),16,Color("735d3e"))
+	if not str(service.get("documented_title","")).is_empty():app.label(parent,str(service.documented_title),17,Color("52685e"))
 	app.label(copy,str(visual.record.caption),16,Color("68614e"))
 	app.label(copy,str(visual.record.get("reference_caption","")),15,Color("68614e"))
 	app.label(copy,"步 %d  炮 %d  骑 %d\n海 %d  航 %d  后 %d"%[d.stars.infantry,d.stars.artillery,d.stars.cavalry,d.stars.navy,d.stars.aviation,d.stars.logistics],17)
@@ -325,6 +347,18 @@ func show_headquarters(tab: String="", branch: String="") -> void:
 		var selector=option(v,["青年形象","壮年形象","中年形象","暮年 / 生前晚期形象"])
 		selector.name="HeadquartersAgeStage";selector.select(ages.find(hq_portrait_stage))
 		selector.item_selected.connect(func(index):hq_portrait_stage=ages[index];show_headquarters("generals"))
+		var filters=app.row(v)
+		var countries=["all"]+CommanderRoster.COUNTRIES.keys();var country_names: Array=["全部国家"]
+		for key in CommanderRoster.COUNTRIES:country_names.append(CommanderRoster.COUNTRIES[key])
+		var country=option(filters,country_names);country.name="HeadquartersCountry";country.select(maxi(0,countries.find(hq_country)))
+		country.item_selected.connect(func(index):hq_country=countries[index];refresh_general_roster(true))
+		var levels=["all","brigade","division","army","naval","historical"]
+		var grade=option(filters,["全部军职","旅 / 旅团级","师 / 师团级","军及以上","舰队 / 海军战队","近代编制形成前的统帅"]);grade.name="HeadquartersCommandLevel";grade.select(maxi(0,levels.find(hq_level)))
+		grade.item_selected.connect(func(index):hq_level=levels[index];refresh_general_roster(true))
+		var years=[0,1840,1860,1890,1900,1917,1927,1940]
+		var era=option(filters,["全部生存年代","1840年在世成年","1860年在世成年","1890年在世成年","1900年在世成年","1917年在世成年","1927年在世成年","1940年在世成年"]);era.name="HeadquartersLivingYear";era.select(maxi(0,years.find(hq_era)))
+		era.tooltip_text="按生卒年查阅人物，不代表当年已任该军职或参加某场战役。"
+		era.item_selected.connect(func(index):hq_era=years[index];refresh_general_roster(true))
 	if hq_tab=="political":
 		var ages=["","young","prime","middle","late"]
 		var selector=option(v,["按当前战局日期 / 默认中期预览","青年阶段","壮年阶段","中年 / 在位中期","暮年 / 生前晚期"])
@@ -334,18 +368,12 @@ func show_headquarters(tab: String="", branch: String="") -> void:
 	var search: LineEdit
 	if hq_tab in ["generals","political"]:
 		search=LineEdit.new();search.name="HeadquartersSearch"
-		search.placeholder_text="查找人物姓名";search.text=hq_query
+		search.placeholder_text="查找姓名、军职、部队或阵营" if hq_tab=="generals" else "查找人物姓名";search.text=hq_query
 		search.custom_minimum_size.y=touch_height();v.add_child(search)
+	if hq_tab=="generals":hq_pager=app.row(v);hq_pager.name="HeadquartersPagination"
 	var list=app.scroll_column(v);var g=grid(list,420)
 	if hq_tab=="generals":
-		for d in app.content.tables.generals:
-			var c=card(g);c.get_parent().set_meta("roster_name",str(d.name));var rank=int(profile.general_ranks.get(d.id,0));general_portrait(c,d,rank,"",hq_portrait_stage)
-			var experience=int(profile.general_xp.get(d.id,0));app.label(c,"将领经验  %d"%experience,17)
-			var can_upgrade=rank<d.max_rank;var price=0;var xp=0
-			if can_upgrade:price=int(app.content.rules.progression.general_rank_cost_merit[rank]);xp=int(app.content.rules.progression.general_rank_xp[rank]);app.label(c,"晋升需要 %d 功勋 / %d 经验"%[price,xp],17,Color("735d3e"))
-			var actions=app.row(c)
-			app.button(actions,"晋升" if can_upgrade else "军衔已满",func():if not app.profiles.upgrade_general(d.id):app.show_profile_error() else:show_headquarters(),can_upgrade and profile.merit>=price and experience>=xp).size_flags_horizontal=Control.SIZE_EXPAND_FILL
-			app.button(actions,"战法 / 勋章",func():app.show_general_growth(d.id)).size_flags_horizontal=Control.SIZE_EXPAND_FILL
+		hq_grid=g;refresh_general_roster()
 	elif hq_tab=="political":
 		var history=JSON.parse_string(FileAccess.get_file_as_string("res://content/history/asia_timeline.json"))
 		var date=str(app.match_controller.state.get("date","")) if political_portrait_stage.is_empty() else ""
@@ -363,8 +391,41 @@ func show_headquarters(tab: String="", branch: String="") -> void:
 	if is_instance_valid(search):
 		var apply_query=func(query):
 			hq_query=str(query).strip_edges()
-			for child in g.get_children():child.visible=hq_query.is_empty() or str(child.get_meta("roster_name","")).containsn(hq_query)
-		search.text_changed.connect(apply_query);apply_query.call(hq_query)
+			if hq_tab=="generals":refresh_general_roster(true)
+			else:
+				for child in g.get_children():child.visible=hq_query.is_empty() or str(child.get_meta("roster_name","")).containsn(hq_query)
+		search.text_changed.connect(apply_query)
+		if hq_tab!="generals":apply_query.call(hq_query)
+
+func refresh_general_roster(reset_page: bool=false) -> void:
+	if not is_instance_valid(hq_grid) or not is_instance_valid(hq_pager):return
+	if reset_page:hq_page=0
+	var selected=CommanderRoster.filtered(app.content,hq_query,hq_country,hq_level,hq_era)
+	var pages=maxi(1,int(ceil(selected.size()/float(CommanderRoster.PAGE_SIZE))))
+	hq_page=clampi(hq_page,0,pages-1)
+	app.clear(hq_grid);app.clear(hq_pager)
+	var previous=app.button(hq_pager,"上一页",func():hq_page-=1;refresh_general_roster(),hq_page>0);previous.name="RosterPrevious"
+	var status_label=app.label(hq_pager,"%d人 · 第%d / %d页"%[selected.size(),hq_page+1,pages],18)
+	status_label.name="RosterPageStatus";status_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	var next=app.button(hq_pager,"下一页",func():hq_page+=1;refresh_general_roster(),hq_page<pages-1);next.name="RosterNext"
+	if selected.is_empty():app.label(hq_grid,"未找到符合条件的将领",22);return
+	var start=hq_page*CommanderRoster.PAGE_SIZE
+	for d in selected.slice(start,mini(start+CommanderRoster.PAGE_SIZE,selected.size())):headquarters_general_card(hq_grid,d)
+	# Rebuilt page contents start at their first card. Retaining the previous
+	# page's scroll offset can otherwise hide an entire short last page.
+	var scroller=hq_grid.get_parent().get_parent()
+	if scroller is ScrollContainer:scroller.set_deferred("scroll_vertical",0)
+
+func headquarters_general_card(parent: Node, d: Dictionary) -> void:
+	var profile=app.profiles.profile
+	var c=card(parent);c.get_parent().set_meta("roster_name",str(d.name));c.get_parent().set_meta("roster_id",str(d.id))
+	var rank=int(profile.general_ranks.get(d.id,0));general_portrait(c,d,rank,"",hq_portrait_stage)
+	var experience=int(profile.general_xp.get(d.id,0));app.label(c,"将领经验  %d"%experience,17)
+	var can_upgrade=rank<d.max_rank;var price=0;var xp=0
+	if can_upgrade:price=int(app.content.rules.progression.general_rank_cost_merit[rank]);xp=int(app.content.rules.progression.general_rank_xp[rank]);app.label(c,"晋升需要 %d 功勋 / %d 经验"%[price,xp],17,Color("735d3e"))
+	var actions=app.row(c)
+	app.button(actions,"晋升" if can_upgrade else "成长等级已满",func():if not app.profiles.upgrade_general(d.id):app.show_profile_error() else:show_headquarters(),can_upgrade and profile.merit>=price and experience>=xp).size_flags_horizontal=Control.SIZE_EXPAND_FILL
+	app.button(actions,"履历 / 战法 / 勋章",func():app.show_general_growth(d.id)).size_flags_horizontal=Control.SIZE_EXPAND_FILL
 
 func technology_card(parent: Node, d: Dictionary) -> void:
 	var profile=app.profiles.profile;var rank=int(profile.tech_ranks.get(d.id,0));var c=card(parent);var head=app.row(c)

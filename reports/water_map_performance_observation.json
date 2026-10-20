@@ -1,35 +1,28 @@
 {
-  "version": "0.2.27",
-  "runtime_source_sha256": "67a11cffc90b2695d729afb66a53e32552dc55206e0269e4b73dd702636d067f",
-  "windows_exe_sha256": "caebeeba0b06f60e92f39c6e61099d0faed5f122dc3ae7f579d097e868c531a3",
-  "recorded_at_utc": "2026-10-19T17:34:24.779171+00:00",
   "observation_recorded": true,
+  "version": "0.2.28",
+  "runtime_source_sha256": "4707412e073cc70cbc9c45f21b69f2b27b30317cbce40e88fc891efc1e21c2f4",
+  "windows_exe_sha256": "83f799419058ee64dd19c93af93f82fe378e8a1c99fd5bf6c3f50be0889c78a5",
+  "sample_frames": 180,
+  "average_fps": 59.9636819966041,
+  "frame_ms_p95": 17.937,
   "target_fps": 60,
   "target_met": false,
-  "average_fps": 12.0980246479777,
-  "frame_ms_p95": 83.84,
-  "sample_frames": 180,
-  "gpu": "NVIDIA GeForce RTX 3060",
-  "scenario_id": "campaign_1924_02",
-  "viewport": "(1920.0, 1080.0)",
-  "window_focus_recorded": false,
-  "window_occlusion_recorded": false,
+  "window_focus_or_occlusion_recorded": false,
+  "matched_old_build_baseline": false,
   "physical_android_device_tested": false,
-  "regression_caused_by_water_change_established": false,
-  "scope": "Raw static battlefield sample from the current exported Windows EXE. Focus and occlusion were not recorded, and no matched pre-change baseline is available. The observed sample misses the target and cannot certify foreground or phone performance.",
-  "follow_up": "Run controlled foreground baseline/current and pan/combat profiles, identify the bottleneck, then repeat on physical Motorola X30.",
   "files": [
     {
       "file": "reports/water_map_performance/desktop_benchmark.json",
-      "sha256": "1d45cc0693e3c2726a110d9178547cab1b909da18552146b00c88c6f4496fcb8"
+      "sha256": "99a2dee9a01f6304747259ac7085bbaabb5220e41ba44b4e440a14e67c02fd62"
     },
     {
       "file": "reports/water_map_performance/native.log",
-      "sha256": "f88dd4c6753fa0156762c7026e96dd5761ba465e7dede32498f8e7186eb7cbc2"
+      "sha256": "76d0ebc528455f74ff89896195a54b3efe77cfe6e1b6e705523a0839499d2f87"
     },
     {
       "file": "reports/water_map_performance/stdout.log",
-      "sha256": "d4e7d0878fa68ffb67e346a01583b09bcb62984f269102f5cb23089b00ed1421"
+      "sha256": "39229aa1e11024f6923c428ef99affdfe5116b309bb68c8d3b8b3857fd9e3af0"
     },
     {
       "file": "reports/water_map_performance/viewport.png",
@@ -37,7 +30,8 @@
     },
     {
       "file": "reports/water_map_performance/viewport.json",
-      "sha256": "5c9951d09140bb0d86f58e951af8da53389ad72506c751bfc23550ef8bbb08d3"
+      "sha256": "b98d77949d94c36bc0bc03673580b673ab5497977eb7c822e8225a4b1c18ee29"
     }
-  ]
+  ],
+  "limitation": "One static RTX 3060 desktop sample from verify_exports. Not a controlled comparative benchmark, sustained battle test or physical phone measurement. Retained report paths serve current shared release gates; this is not a new water-art revision."
 }

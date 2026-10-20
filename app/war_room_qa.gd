@@ -50,6 +50,15 @@ func layout_checks(surface: String) -> void:
 	if is_instance_valid(date):
 		check(date.size.x>=date.get_minimum_size().x and date.get_line_count()==1,surface+"_date_stays_on_one_line")
 		check(app.war_room.atlas.size.y>=app.get_viewport_rect().size.y*.40,surface+"_atlas_retains_useful_height",app.war_room.atlas.size.y)
+		if app.war_room.browser_mode!="legion":
+			var counts=root.find_child("ScenarioCommanderCount",true,false)
+			check(is_instance_valid(counts),surface+"_selected_commander_counts_present")
+			if is_instance_valid(counts):
+				var recipe=app.content.scenarios[app.war_room.browser_id]
+				var entries=CommanderRoster.entries(app.content,recipe,app.war_room.browser_owner)
+				var reserves=entries.filter(func(entry):return entry.get("deployment_role","")=="conquest_optional_reserve").size()
+				check(counts.get_meta("owner_id","")==app.war_room.browser_owner and counts.get_meta("initial_count",-1)==entries.size()-reserves and counts.get_meta("reserve_count",-1)==reserves,surface+"_counts_follow_selected_faction")
+				check(counts.get_line_count()<=2 and viewport.encloses(counts.get_global_rect()),surface+"_counts_remain_compact_and_visible")
 		var chosen: Button=app.war_room.browser_buttons.get(app.war_room.browser_id)
 		var scroll: ScrollContainer=app.war_room.browser_list.get_parent()
 		check(is_instance_valid(chosen) and scroll.get_global_rect().grow(2).encloses(chosen.get_global_rect()),surface+"_selected_scenario_card_is_visible")

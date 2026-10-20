@@ -1,6 +1,6 @@
 # 兵种数值表 / Unit reference
 
-Version 0.2.12. Base values from runtime JSON; terrain, skills, morale and stacks modify actual results.
+Version 0.2.28; retained base values verified against current runtime JSON. Base values from runtime JSON; terrain, skills, morale and stacks modify actual results.
 
 基础数值来自运行数据，实际结果还受地形、技能、士气、编队等影响。最早年代还必须通过具体剧本白名单。
 

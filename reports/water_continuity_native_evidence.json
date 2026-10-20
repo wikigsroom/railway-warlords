@@ -1,12 +1,12 @@
 {
   "passed": true,
-  "version": "0.2.27",
-  "runtime_source_sha256": "67a11cffc90b2695d729afb66a53e32552dc55206e0269e4b73dd702636d067f",
-  "windows_exe_sha256": "caebeeba0b06f60e92f39c6e61099d0faed5f122dc3ae7f579d097e868c531a3",
+  "version": "0.2.28",
+  "runtime_source_sha256": "4707412e073cc70cbc9c45f21b69f2b27b30317cbce40e88fc891efc1e21c2f4",
+  "windows_exe_sha256": "83f799419058ee64dd19c93af93f82fe378e8a1c99fd5bf6c3f50be0889c78a5",
   "fixture_driver_sha256": "3f03f75c873127adf824911c4877239bb24c2156e8a3227b8d2ac40837688244",
   "checks": 22,
   "report": "reports/water_continuity_native/validation.json",
-  "report_sha256": "7110f78c64e76532f1800bed54fbdbeb97a14a552b60c3c1d38b8c0485ec66cd",
+  "report_sha256": "4ab361d3c9bc04de100d9c80589e2986f8d5db82802859bd7a31a8f282c73970",
   "log": "reports/water_continuity_native/native.log",
   "log_sha256": "7715f9516bb9889150f162205c8bbeabc1d5e8ca91665d2abcf4f2c59384117a",
   "fixture_captures": [
@@ -23,7 +23,7 @@
       "sha256": "d234985687c97d63b258f19b9456a45452982e6ee6a7051cfe2daa5e00645f4e"
     }
   ],
-  "created_at_utc": "2026-10-19T17:02:54.825452+00:00",
+  "created_at_utc": "2026-10-20T15:37:33.173410+00:00",
   "synthetic_fixture_not_gameplay": true,
   "physical_android_device_tested": false,
   "formal_art_approval": false,

@@ -7,13 +7,27 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current version is **0.2.27, a playable test build**. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. Current sources are the **0.2.28 commander expansion beta**; see the [delivery receipt](reports/commander_pool_release_validation.json) for the final outcome. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
 ![Main menu captured from the current native Windows executable](docs/media/menu.png)
 
 *A complete native viewport capture. PNG screenshots below have no montage, repainting or promotional overlays.*
+
+Version 0.2.28 expands the military pool from 29 to **324 people**, retaining four separate political-only figures. **303 have a brigade-or-higher, naval or historical equivalent command, including 12 army-or-higher deputies**; 20 deputy-division officers and one army political co-commander are identified separately. Headquarters has twelve-card pagination, name, country, command-level and era filters. All 61 scenario rosters have independent dated faction lists with no uniform three- or five-person cap. Starting participants and optional free-world reserves are distinguished; eligible reserves can receive an actual appointment to an owned formation.
+
+[Full sourced commander CSV](docs/data/commanders.csv) · [Per-scenario faction counts](docs/data/scenario_commanders.csv) · [Commander expansion documentation](docs/46_师旅级将领池与战役名册.md)
+
+![Version 0.2.28 shipping Windows application: division-command filter](docs/media/commander-japan-division-v0228.png)
+
+*Complete native viewport; historical offices and gameplay progression remain distinct.*
+
+Four independent Sub2 age-stage originals have been generated, individually inspected and installed for each of 295 new people: 1,180 new portraits and 1,315 total for 328 people. Generation, individual full-image inspection, installation and final validation have separate records. This is not an exhaustive census of all eligible Asian commanders, complete service tenures or full orders of battle. Historical likeness and final commercial art approval remain pending. Older dated entries below retain their own version context.
+
+Starting rosters involve 68 distinct people and optional reserves involve 65, with **114 distinct people having authored gameplay availability** in specific scenarios. The other **210 currently support archive browsing and growth while dated deployment awaits research**. A 324-person catalogue does not mean all 324 are recruitable in current battles. The CSV flags each availability state.
+
+The 295 new military definitions use an unrated command-role baseline for abilities and skills. Individually distinctive skills, capability differences and long-term balance remain unfinished. Documented historical offices are recorded separately from these gameplay parameters.
 
 Version 0.2.22 uses one calendar day per complete round and provides four living age-stage originals for each of 33 people, 135 portraits in total: 29 military generals and four political-only figures. Match dates select the appearance automatically. Li Desheng uses a youthful 1917 appearance and a middle-aged 1947 appearance; post-1940 art does not add a new 1947 scenario. See [daily calendar and age-stage implementation](docs/40_每日历法与四阶段人物肖像.md).
 
@@ -61,7 +75,7 @@ Version 0.2.27 adds three independent Sub2 water originals with continuous world
 <a id="status"></a>
 ## Version and content
 
-Counts come from current runtime data, excluding unimplemented plans and duplicate historical inventories. Runtime compatibility is **schema 2 / ruleset 10**.
+Counts come from current runtime data, excluding unimplemented plans and duplicate historical inventories. Runtime compatibility is **schema 2 / ruleset 11**. Unfinished portrait production and dual-platform checks are explicitly marked as targets.
 
 | Content | Implemented scope |
 | --- | --- |
@@ -71,14 +85,14 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Total scenarios | **61**; names, dates, maps and round limits are in the [scenario index](docs/SCENARIO_INDEX.md) |
 | Maps | **6**: Beijing–Tianjin, Beijing–Fengtian, eastern China, Hankou, Nanjing–Pukou and strategic Asia |
 | Units | **13 base definitions and 3 elite variants**, restricted by era and scenario |
-| Factions and generals | **47 faction definitions and 29 general definitions**; availability is scenario-specific |
+| Factions and generals | **47 faction definitions and 324 military people**, plus four political-only figures; availability follows dated scenario rosters |
 | Progression | **28 technologies, 9 passive skills, 9 active skills and 24 achievements** |
 | Facilities | **12 types** covering recruitment, transport, supply, medicine, defense, communications and trade |
-| Raster art | **1,327 PNGs**; **1,013 stored map assets, 973 currently available**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
+| Raster art | **2,507 PNGs**; **1,013 stored map assets, 973 currently available**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
 | Regional terrain | **20 types × (1 new continuous ground + 4 detail originals) = 100 active originals**; 40 superseded macrogrounds retained, interactive atlas |
 | Audio and fonts | 14 procedural effects, 3 local YuE2 scores (180 seconds each), 3 retained fallback loops and 2 Chinese fonts with OFL notices |
-| Current regression snapshot | **29 groups / 5,789 checks**, plus 1,725 portrait UI, 157 dossier transaction, 216 terrain, 373 UI, 84 coastal, 220 map-symbol and 18 music checks; older numerical fixtures retain their version identity |
-| Character portraits | **33 people × 4 stages + 3 extra dates = 135 independent originals**; automatic dated selection, general roster and political archive previews |
+| Current regression snapshot | **30 groups / 14,581 checks**, including 5,036 portrait, 4,153 commander-roster and 88 daily-calendar checks; shipping EXE and APK acceptance is bound separately |
+| Character portraits | **328 people × 4 stages + 3 extra dates = 1,315 independent originals**; dated selection and stage previews; all 1,180 new source images individually viewed in full |
 | Calendar | **One day per complete round**; all factions finish their phases before the Gregorian date advances |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
 
@@ -334,7 +348,11 @@ Difficulty includes ordinary progression, hard and standardized challenge. The c
 
 Health, attack, defense, AP, range, costs and earliest eras are in the [unit reference](docs/UNIT_REFERENCE.md). [units.json](content/definitions/units.json) is authoritative. A `stack` is a game formation layer, not an archival battalion, regiment or brigade. Scenario whitelists also restrict recruitment.
 
-The 29 general definitions include Wu Peifu, Zhang Zuolin, Feng Yuxiang, Yan Xishan, Lin Zexu, Hong Xiuquan, Zeng Guofan, Sun Yat-sen, Chiang Kai-shek and Li Zongren. Presence, affiliation and deployability are scenario-specific. Ratings are gameplay values; portraits and historical affiliations require separate review.
+The 324 military definitions cover brigade, division, army and higher command, alongside historical Qing, Taiping and naval command systems. The [full CSV](docs/data/commanders.csv) lists names, countries, life dates, documented positions, reference years and source URLs; 148 sources are registered. Growth stars, ratings and skills are gameplay values, not historical rank or verified combat records.
+
+Headquarters uses twelve-card pages with country, command-level, era and name filters. Era search identifies adults alive in the selected year; it does not imply that they already held a division command or participated in every battle. Each scenario has a dated side roster: 280 initial entries across 61 scenarios, plus 89 optional reserve entries across ten free-world starts. Repeated appearances in different scenarios are not counted as additional people.
+
+Select an eligible owned formation without a general and open the roster to appoint an available reserve registered for that scenario. Rules enforce faction, dates, wounds and duplicate assignments, then update both formation and commander records. Empty historical rosters are not filled by random names. The two northern 1860 missions now use Qing, British and French sides, with an Anglo-French alliance and player-side objectives. See [chapter 46](docs/46_师旅级将领池与战役名册.md) for exact historical boundaries and remaining gaps.
 
 Headquarters manages generals, ranks, active/passive skills, medals, research and elites. Units gain in-match experience. Long-term progression is frozen into a starting snapshot; later profile upgrades do not change an ongoing match. A reward ledger prevents duplicate grants.
 
@@ -485,7 +503,7 @@ Configure your own release keystore, alias and password through Godot private cr
 godot --headless --path . --export-release "Android" "build/android/RailwayWarlords.apk"
 ```
 
-App ID is `org.railwaywarlords.game`, current versionCode 31. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
+App ID is `org.railwaywarlords.game`; version 0.2.28 uses versionCode 33. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
 
 ### Automation scope
 
@@ -536,13 +554,13 @@ godot --headless --path . --script tests/surface_geography_test.gd
 godot --headless --path . --script tests/terrain_surfaces_test.gd
 ```
 
-Version 0.2.27 passes 29 groups / 5,789 checks, including 611 portrait and 88 daily-calendar checks. The shipping EXE produces 174 portrait, 24 dossier, 99 terrain/UI, 20 coastal, 32 symbol, four detailed-coast and 11 new water/grid views: 364 complete scoped native frames. Separate checks cover 61 native coast geometry cases, 48 ground GPU cases, 22 water GPU cases and 18 music playback cases. The retained 152-assertion independent raw-GIS audit still binds the unchanged map bytes. See the [regression seal](reports/regression_dependency_evidence.json), [water fixture](reports/water_continuity_native_evidence.json), [water/grid captures](reports/water_map_native_capture_evidence.json) and [actual complete-frame review](reports/water_map_native_review.json). The review does not claim manual approval of every frame; older performance records, fixtures and GIFs retain their version identities.
+Version 0.2.28 passes 30 groups / 14,581 rule checks, including 5,036 portrait, 4,153 commander and 88 daily-calendar checks. Coverage includes 61 dated rosters, independent side counts, source links, life-date boundaries, filters, reserve appointments, the 1860 Anglo-French alliance and save rules. Whole portrait pages, progression, maps and appointments in three shipping-EXE layouts pass, with 379 specialist complete viewport captures; 21 were actually viewed in full during this review. Synthetic GPU fixtures, native frames and actually viewed frames have distinct records. See the [regression seal](reports/regression_dependency_evidence.json), [commander evidence](reports/commander_roster_native_evidence.json) and [complete-frame review](reports/commander_pool_native_review.json). Older performance records, fixtures and GIFs retain their version identities.
 
 [Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current dossier transaction evidence](reports/ui_refinement_native_evidence.json)
 
-Reports record tests run in the original workspace and do not replace manual gameplay, art, music listening, historical or device acceptance. Full AI endurance was not rerun for this patch. Schema 2 / ruleset 10 and the 0.2.26 content hash remain, so existing 0.2.26 matches retain their content identity. Earlier builds retain their documented compatibility limits. Career profiles keep their existing format.
+Version 0.2.28 completes the scoped regression, native-application and APK revalidation; the [strict receipt](reports/commander_pool_release_validation.json) records delivery acceptance. Older measurements below retain their historical identity. Schema 2 / ruleset 11 changes rosters and starting rules, so ongoing matches from 0.2.27 or earlier require their original build. Start a new match for the new rules. Career profiles retain their independent format.
 
-The recorded 180-frame RTX 3060 static battlefield sample at 1920×1080 averages **12.10 FPS**, with 83.84ms p95 frame time, missing the 60 FPS target. Window focus and occlusion were not recorded and no matched old-build baseline is available; this does not establish causality or phone performance. [Raw performance evidence](reports/water_map_performance_observation.json) is retained separately. Controlled foreground, moving/combat and physical-phone performance remain unresolved.
+The version 0.2.28 180-frame RTX 3060 static battlefield sample at 1920×1080 averages **59.96 FPS**, with 17.94ms p95 frame time, missing the average 60 FPS target. The [performance observation](reports/water_map_performance_observation.json) retains the raw sample. Window focus and occlusion are unrecorded and no matched old-build baseline exists; this cannot establish a speedup over 0.2.27 or phone performance. Controlled foreground, moving/combat and physical-phone measurements remain unresolved.
 
 The repository's `.gitattributes` preserves original bytes so automatic newline conversion cannot change hashed prompts, native metadata or evidence. The [Git byte check](reports/git_byte_preservation.json) compares staged objects with working files separately from gameplay checks.
 
@@ -591,11 +609,11 @@ Tactical selection still has frame-time spikes; averages do not establish stable
 <a id="assets"></a>
 ## Artwork, media and licensing
 
-All 1,327 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including forty retained superseded macrogrounds. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
+All 2,507 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including forty retained superseded macrogrounds and 1,180 new independent portrait originals. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
 
 - [Runtime manifest](assets/manifest.json): original workspace sources, models, dimensions and hashes.
 - [Portable provenance](docs/asset-provenance/index.json): repository-relative images/prompts and SHA-256.
-- [Prompt directory](docs/asset-prompts/): 1,327 prompts; gateway configuration and credentials are excluded.
+- [Prompt directory](docs/asset-prompts/): 2,507 prompts; gateway configuration and credentials are excluded.
 
 Two legacy portrait prompts have readable alias transcriptions using Li Desheng. Their exact original UTF-8 bytes are preserved reversibly with the original SHA256; source images and workspace production originals remain immutable.
 - [Media guide](docs/MEDIA.md): native screenshots, recording, GIF conversion and evidence scope.
@@ -645,4 +663,4 @@ The [0.2.23 military UI and dossier chapter](docs/41_军事界面与将领档案
 
 The [0.2.24 atlas and diplomacy chapter](docs/42_战区沙盘与外交事务精修.md) covers shipping terrain previews, zoom and pan, date gates, counterparty selection, actual aid transactions and current delivery limits.
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.27 assessment and corresponding reports for current status.
+Older chapters preserve their version context. Use these READMEs, the 0.2.28 assessment and corresponding reports for current status. The [commander chapter](docs/46_师旅级将领池与战役名册.md) documents the full registered pool, sources, filters, appointments and remaining coverage.

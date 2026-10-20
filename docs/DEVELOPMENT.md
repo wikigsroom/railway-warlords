@@ -53,9 +53,9 @@ godot --headless --path . --script tests/transaction_test.gd
 godot --headless --path . --script tests/asia_content_test.gd
 ```
 
-当前29组名称和通过范围见[测试与验收](05_测试与验收.md)，包含 `tests/terrain_surfaces_test.gd` 和`tests/river_surface_test.gd`及`tests/control_land_clip_test.gd`。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
+当前30组名称和通过范围见[测试与验收](05_测试与验收.md)，包含 `tests/terrain_surfaces_test.gd` 和`tests/river_surface_test.gd`及`tests/control_land_clip_test.gd`。`reports/` 只提交选定快照和原生画面；旧机器路径、时间戳和指纹反映证据产生环境，不代表克隆后的新测试。
 
-All 29 current groups and their scope are in the validation chapter, including `tests/terrain_surfaces_test.gd` `tests/river_surface_test.gd` and `tests/control_land_clip_test.gd`. Selected reports preserve their original paths, timestamps and fingerprints as evidence, not as newly executed tests on the clone.
+All 30 current groups and their scope are in the validation chapter, including `tests/terrain_surfaces_test.gd` `tests/river_surface_test.gd` and `tests/control_land_clip_test.gd`. Selected reports preserve their original paths, timestamps and fingerprints as evidence, not as newly executed tests on the clone.
 
 ## 文档和媒体维护 / Documentation maintenance
 
@@ -73,7 +73,7 @@ python tools/capture_terrain_update.py
 python tools/refresh_terrain_repository.py
 ```
 
-`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.27截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
+`prepare_repository_media.py` 保留为 0.2.12 媒体制作流程，不能用它覆盖当前0.2.28截图。旧战斗录像与 GIF 明确保留 0.2.12 身份；当前新地表/UI使用本版原生证据。
 
 `prepare_repository_media.py` preserves the 0.2.12 workflow. Do not use it to replace current screenshots. Existing battle GIFs retain their old version; current terrain/UI has its own native proof.
 
@@ -139,3 +139,22 @@ python tools/package_water_maps.py
 ```
 
 该助手依赖原工作区原生工具路径。独立克隆可先用Godot直接导出，并按自己的SDK与签名路径配置；检查报告不能移植为另一台机器的新验收。 / These helpers retain original-workspace native paths. Configure your own SDK and signing paths for a clone; retained reports do not constitute a new test on another machine.
+
+## 0.2.28将领池 / Commander pool
+
+将领资料、源引用、开局名册与可选后备分别在`content/definitions/commander_service.json`、`commander_sources.json`、`commander_deployments.json`、`commander_recall_pools.json`。运行时不从总表任取固定人数；历史军职与游戏成长军阶分离。范围和逐人CSV见[46](46_师旅级将领池与战役名册.md)。
+
+The 324-person military roster separates sourced historical offices, dated scenario rosters, optional free-world reserves and gameplay progression. Every side has its own authored roster. Browsing by life year does not grant scenario eligibility. See chapter 46 and the two CSVs for scope and remaining gaps.
+
+```powershell
+godot --headless --path . --script tests/commander_roster_test.gd
+# Original-workspace pipeline; configure native paths and signing first:
+python tools/run_commander_pool_validation.py
+# After actual whole-source and native-frame review:
+python tools/refresh_commander_media.py
+python tools/package_commander_pool.py
+```
+
+`tools/install_commander_portraits.py`仅安装有逐张完整查看和SHA记录的新原图，拒绝改写既有原图；`tools/build_general_portrait_catalog.py`最终必须不带`--allow-incomplete`通过。制作时的未完成目录不能作为可发行状态。`docs/commander-production`保存终态计划、七批生产报告、逐张检查及历史资料缓存索引；原图和提示词分别在资源与便携提示词目录，不需要网关即可游玩。完整研究网页和出版物保留在原工作区的`output/commander_expansion/archival/historical-source-cache.zip`；公开源码包含来源网址、已编写事实和每个缓存成员的SHA，不重复分发整部参考出版物。缓存不代表已核实完整任期。
+
+The strict catalogue requires all four actual portraits per person before export. Installation checks individual whole-original inspection and SHA, preserving PNG bytes. Terminal plans, cohort reports, inspection decisions and institutional-source cache indexes are archived separately. Complete research publications remain in the local workspace; public source delivery includes source URLs, authored facts and cached-member hashes. Playing the clone requires no image gateway. Cached research does not establish complete service tenures or orders of battle.

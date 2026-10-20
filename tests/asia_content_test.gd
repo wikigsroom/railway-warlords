@@ -81,9 +81,15 @@ func run() -> void:
 				verify(state.turn_order.has(general.owner_id),id+"_general_owner_in_runtime_roster_"+str(general.id))
 				var general_def=content.definition("generals",str(general.id))
 				verify(year>=int(general_def.get("active_year_min",0)) and year<=int(general_def.get("active_year_max",9999)),id+"_general_activity_window_"+str(general.id))
-			var expected_generals={"asia_1840":["lin_zexu"],"asia_1860":["hong_xiuquan","li_hongzhang"],"asia_1890":["li_hongzhang"],"asia_1900":["li_hongzhang"],"asia_1917":["sun_yat_sen"],"asia_1927":["chiang_kai_shek"],"asia_1940":["chiang_kai_shek","tojo_hideki","yamashita_tomoyuki"]}
+			# Dated authored offices replace the old global character-list quota.
+			# A later title or an unverified initial deployment must not create a
+			# commander in this start snapshot. See the sourced roster chapter 46.
+			var expected_generals={"asia_1840":["lin_zexu"],"asia_1860":["hong_xiuquan","zeng_guofan","sengge_rinchen"],"asia_1890":["li_hongzhang"],"asia_1900":["cn_83637984","luo_rongguang"],"asia_1917":["sun_yat_sen"],"asia_1927":["chiang_kai_shek"],"asia_1940":["chiang_kai_shek","cn_5f2081ea5fe0","jp_ndl_344"]}
 			for general_id in expected_generals.get(id,[]):
 				verify(state.generals.any(func(g):return g.id==general_id),id+"_historical_general_loaded_"+general_id)
+			var unregistered_or_future={"asia_1860":["li_hongzhang"],"asia_1900":["li_hongzhang"],"asia_1940":["tojo_hideki","yamashita_tomoyuki"]}
+			for general_id in unregistered_or_future.get(id,[]):
+				verify(not state.generals.any(func(g):return g.id==general_id),id+"_unregistered_or_future_legacy_command_not_spawned_"+general_id)
 	var catalog=content.read_json("res://content/scenarios/catalog.json")
 	var campaign_prefixes=["campaign_1840_","campaign_1860_","campaign_1890_","campaign_1900_","campaign_1917_","campaign_1927_","campaign_1940_"]
 	var campaign_ids=catalog.scenarios.filter(func(id):

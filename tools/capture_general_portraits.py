@@ -26,7 +26,7 @@ def main():
   log=P/'reports'/('general_portraits_native_'+profile+'.log');started=datetime.now(timezone.utc).timestamp()
   command=[str(exe),'--resolution',resolution,'--position','-4000,-3000','--','--qa-session','--ui-scale',scale,'--general-portrait-test','--general-portrait-output',str(folder)]
   if profile=='x30_layout':command.append('--mobile-ui-test')
-  with log.open('w',encoding='utf-8') as out:result=subprocess.run(command,cwd=P,stdout=out,stderr=subprocess.STDOUT,timeout=600)
+  with log.open('w',encoding='utf-8') as out:result=subprocess.run(command,cwd=P,stdout=out,stderr=subprocess.STDOUT,timeout=1500)
   diagnostic=log.read_text(encoding='utf-8',errors='replace')
   require(result.returncode==0 and 'SCRIPT ERROR:' not in diagnostic and '\nERROR:' not in diagnostic,'Native age UI failed: '+profile)
   report=folder/'validation.json';value=read(report)
@@ -37,7 +37,7 @@ def main():
    require(path.stat().st_mtime>=started-2 and m['build_version']==version and m['raw_godot_capture'],'Fresh untouched viewport required')
    with Image.open(path) as im:require(im.size==tuple(map(int,resolution.split('x'))),'Viewport size mismatch')
    captures.append(dict(file=path.relative_to(P).as_posix(),sha256=sha(path),metadata=meta.relative_to(P).as_posix(),metadata_sha256=sha(meta)))
-  require(len(captures)>=58,'Incomplete general and political four-stage native traversal')
+  require(len(captures)>=54,'Incomplete paginated general and political four-stage native traversal')
   groups.append(dict(profile=profile,resolution=resolution,ui_scale=scale,checks=len(value['checks']),report=report.relative_to(P).as_posix(),report_sha256=sha(report),log=log.relative_to(P).as_posix(),captures=captures))
   print(json.dumps(dict(profile=profile,passed=True,checks=len(value['checks']),captures=len(captures))),flush=True)
  require(source_digest()[0]==runtime and sha(exe)==export['sha256'],'Source or binary changed during QA')

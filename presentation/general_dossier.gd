@@ -50,11 +50,14 @@ static func show(app, id: String, age_stage: String="middle") -> void:
 	app.ui_rule(left,Color("738582"))
 	var life=app.assets.general_portraits.records.get(id,{})
 	app.label(left,"%d — %d"%[life.get("birth_year",0),life.get("death_year",0)],20,MilitaryUI.BRASS)
-	app.label(left,"军衔等级  %d / %d"%[rank,d.max_rank],19,MilitaryUI.PALE)
+	var service=CommanderRoster.service(app.content,id)
+	app.label(left,CommanderRoster.grade(service),17,MilitaryUI.BRASS)
+	if not str(service.get("documented_title","")).is_empty():app.label(left,str(service.documented_title),17,MilitaryUI.PALE)
+	app.label(left,"成长等级  %d / %d"%[rank,d.max_rank],19,MilitaryUI.PALE)
 	app.label(left,"将领经验  %d"%int(profile.general_xp.get(id,0)),18,Color("ccd2c6"))
 	if life.get("late_stage_is_last_living_period",false):app.label(left,"末期形象取自生前年代",16,MilitaryUI.BRASS)
 	var right=app.scroll_column(layout);right.name="DossierDevelopment"
-	section(app,right,"兵种专长","星级由将领档案确定")
+	section(app,right,"兵种专长","星级与战法为游戏平衡参数")
 	var abilities=app.war_room.grid(right,170)
 	abilities.set_meta("max_columns",3)
 	for family in FAMILIES:
@@ -80,6 +83,16 @@ static func show(app, id: String, age_stage: String="middle") -> void:
 	section(app,right,"勋章","最多装备 %d 枚，同类不可重复"%app.content.rules.progression.medal_slots)
 	var medals=app.war_room.grid(right,260)
 	for medal in app.content.tables.medals:medal_card(app,medals,d,medal,age_stage)
+	section(app,right,"历史军职与来源","任职年代与战役出场分别核对")
+	app.label(right,str(service.documented_title) if not str(service.get("documented_title","")).is_empty() else "军职资料尚待补充",19,MilitaryUI.INK)
+	if service.get("documented_year")!=null:app.label(right,"文献见载于 %d 年；不表示完整任期"%int(service.documented_year),17,MilitaryUI.MUTED)
+	if not str(service.get("life_year_note","")).is_empty():app.label(right,str(service.life_year_note),16,MilitaryUI.MUTED)
+	if not str(service.get("name_correction_note","")).is_empty():app.label(right,str(service.name_correction_note),16,MilitaryUI.MUTED)
+	app.label(right,"历史军职不等于游戏成长等级。开局是否出场及其所属部队以该战役名单为准。",17,MilitaryUI.MUTED)
+	for source_id in service.get("source_ids",[]):
+		var source=app.content.definition("commander_sources",str(source_id))
+		app.label(right,str(source.get("title",source.get("publisher",source_id))),16,MilitaryUI.MUTED)
+		app.label(right,str(source.get("url","")),15,MilitaryUI.MUTED)
 	selector.tooltip_text="对局按日期自动选择形象；此处可预览各阶段。标准化挑战使用默认成长配置。"
 
 static func section(app, parent: Node, title: String, subtitle: String) -> void:
@@ -91,7 +104,7 @@ static func section(app, parent: Node, title: String, subtitle: String) -> void:
 
 static func promotion(app, parent: Node, d: Dictionary, rank: int, stage: String) -> void:
 	var card=app.war_room.card(parent)
-	var line=app.row(card);var info=app.column(line);app.label(info,"军衔晋升",22,MilitaryUI.INK)
+	var line=app.row(card);var info=app.column(line);app.label(info,"成长晋升",22,MilitaryUI.INK)
 	var reason="军衔已满";var enabled=false;var caption="已达最高等级"
 	if rank<int(d.max_rank):
 		var price=int(app.content.rules.progression.general_rank_cost_merit[rank])

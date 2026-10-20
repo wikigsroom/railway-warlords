@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "version": "0.2.28",
+  "runtime_source_sha256": "4707412e073cc70cbc9c45f21b69f2b27b30317cbce40e88fc891efc1e21c2f4",
+  "windows_exe_sha256": "83f799419058ee64dd19c93af93f82fe378e8a1c99fd5bf6c3f50be0889c78a5",
+  "capture_driver_sha256": "0fa6d687e6e9afe7221798990a8822768761651efc282cc9447c3d83bfbbe9d1",
+  "groups": [
+    {
+      "profile": "windows",
+      "resolution": "1920x1080",
+      "ui_scale": "1.0",
+      "checks": 764,
+      "report": "reports/screenshots/commander_roster_native/windows/validation.json",
+      "report_sha256": "53821b0585eed6cf867ba020ac91d3f6de580ec850c7acc80ebad277f63bda52",
+      "log": "reports/commander_roster_native_windows.log",
+      "log_sha256": "5cc17690b7bc927c793e987e6737c7ba980f0c20c9feb439371a739efaca69dc",
+      "captures": [
+        {
+          "surface": "commander_catalogue",
+          "file": "reports/screenshots/commander_roster_native/windows/commander_catalogue.png",
+          "sha256": "19335add270adb0afbddd48e905dafaf61849a1d300411feba1cfd8cb5e3abdb",
+          "metadata": "reports/screenshots/commander_roster_native/windows/commander_catalogue.json",
+          "metadata_sha256": "8355a017b3c674d1adcee2b43a43baa71ce4e0e823f804bd6d10b9761c5adf18"
+        },
+        {
+          "surface": "commander_last_page",
+          "file": "reports/screenshots/commander_roster_native/windows/commander_last_page.png",
+          "sha256": "469b5f2ae18f5c5343322c70e1ce43324d06c3bb23f6b69e4e322a67012cf311",
+          "metadata": "reports/screenshots/commander_roster_native/windows/commander_last_page.json",
+          "metadata_sha256": "b3eb81acac8348c25754219fb5cf04dbecb29be1f315ea1db20e8ae330df7d0c"
+        },
+        {
+          "surface": "japanese_division_commanders",
+          "file": "reports/screenshots/commander_roster_native/windows/japanese_division_commanders.png",
+          "sha256": "285e52f8be43dbf9670ca40d47974897af38f5ff7253a07daf5266714eace765",
+          "metadata": "reports/screenshots/commander_roster_native/windows/japanese_division_commanders.json",
+          "metadata_sha256": "94ac070ae82fe147536240a4cf1db0ee381fa760d0501412fa069f42d46a07ac"
+        },
+        {
+          "surface": "live_name_search",
+          "file": "reports/screenshots/commander_roster_native/windows/live_name_search.png",
+          "sha256": "971c6150ca1e1892f91626fef6cb22ef615e7a099741550af256a526eabc6982",
+          "metadata": "reports/screenshots/commander_roster_native/windows/live_name_search.json",
+          "metadata_sha256": "18492513b14444210182ae635f19d1f2b5034ea4daf009cd0e6eb632a9c4ce79"
+        },
+        {
+          "surface": "scenario_reserve_appointment",
+          "file": "reports/screenshots/commander_roster_native/windows/scenario_reserve_appointment.png",
+          "sha256": "ab12a37531077b19dade75686e5293608f1ddf3b73c728d0f0b9afac1985dc7e",
+          "metadata": "reports/screenshots/commander_roster_native/windows/scenario_reserve_appointment.json",
+          "metadata_sha256": "25a1dfa11e4a08a8a21c96dc58f8e32cc51f31893723ce16afd1d65410abc248"
+        },
+        {
+          "surface": "reserve_appointed",
+          "file": "reports/screenshots/commander_roster_native/windows/reserve_appointed.png",
+          "sha256": "dd180d5e7c3cad25c4c169d7ca0b261f982b82e9d639a992eb9a68a26481e375",
+          "metadata": "reports/screenshots/commander_roster_native/windows/reserve_appointed.json",
+          "metadata_sha256": "019eab42fa11123822247ec3949f32edf3fa0b7d7dbe0735d8dca413f70c58ed"
+        }
+      ]
+    },
+    {
+      "profile": "x30_layout",
+      "resolution": "2400x1080",
+      "ui_scale": "1.2",
+      "checks": 764,
+      "report": "reports/screenshots/commander_roster_native/x30_layout/validation.json",
+      "report_sha256": "570195919ddea20256942c791fe465365c8443634fc4448b28fa4a2f9a1ba37d",
+      "log": "reports/commander_roster_native_x30_layout.log",
+      "log_sha256": "5cc17690b7bc927c793e987e6737c7ba980f0c20c9feb439371a739efaca69dc",
+      "captures": [
+        {
+          "surface": "commander_catalogue",
+          "file": "reports/screenshots/commander_roster_native/x30_layout/commander_catalogue.png",
+          "sha256": "c0aa04c0b247b42076169d7fd2c1668349343676893a086d01568c4421212a71",
+          "metadata": "reports/screenshots/commander_roster_native/x30_layout/commander_catalogue.json",
+          "metadata_sha256": "f6959bf1accbf2933d183cd992f4ef406859365c4ab467e83d569daa73e75301"
+        },
+        {
+          "surface": "commander_last_page",
+          "file": "reports/screenshots/commander_roster_native/x30_layout/commander_last_page.png",
+          "sha256": "f8fdb06fd2ec60ea34a8464e6e29aa9f6a265d25eb5455b1894855adf6178627",
+          "metadata": "reports/screenshots/commander_roster_native/x30_layout/commander_last_page.json",
+          "metadata_sha256": "f2977006d3b7abbd4cc24145bb21a1a34affe8d6d233ebecc49fa5c78894b628"
+        },
+        {
+          "surface": "japanese_division_commanders",
+          "file": "reports/screenshots/commander_roster_native/x30_layout/japanese_division_commanders.png",
+          "sha256": "b2b7807068d51a1ad22c34c9f564cd7891eeee27ca2317cf33f7d8e2bbb2c9af",
+          "metadata": "reports/screenshots/commander_roster_native/x30_layout/japanese_division_commanders.json",
+          "metadata_sha256": "b02a8c290f6839c3c864ca0f6ae028df491a14ed106ba3fdb3c543971624573b"
+        },
+        {
+          "surface": "live_name_search",
+          "file": "reports/screenshots/commander_roster_native/x30_layout/live_name_search.png",
+          "sha256": "0349a63f0399caf8c2982d5c18ebaccc0d2febd74d6aa306357b42143f1ccd0b",
+          "metadata": "reports/screenshots/commander_roster_native/x30_layout/live_name_search.json",
+          "metadata_sha256": "c40081ecc9afbf3eadb059f80b536157c4217f4dce6aee1d1af6a7acece2eae2"
+        },
+        {
+          "surface": "scenario_reserve_appointment",
+          "file": "reports/screenshots/commander_roster_native/x30_layout/scenario_reserve_appointment.png",
+          "sha256": "8a0a750ae7c13116ab54c7dc531670b232a6ed6d6af27c707758643e0e4568c5",
+          "metadata": "reports/screenshots/commander_roster_native/x30_layout/scenario_reserve_appointment.json",
+          "metadata_sha256": "54119495ea1fa12fc34c1057deb1659b0d2ce2b3a9f9efb905cb746e3af26a63"
+        },
+        {
+          "surface": "reserve_appointed",
+          "file": "reports/screenshots/commander_roster_native/x30_layout/reserve_appointed.png",
+          "sha256": "df82d62e313cc77485b69a2b9a4859309be42af74198ded398cafe4b1ea5bf1e",
+          "metadata": "reports/screenshots/commander_roster_native/x30_layout/reserve_appointed.json",
+          "metadata_sha256": "333e4f914ac9b865095ea114ca7544402ebf08d182d4949f74e5e4f17a184503"
+        }
+      ]
+    },
+    {
+      "profile": "large_text",
+      "resolution": "1280x720",
+      "ui_scale": "1.5",
+      "checks": 764,
+      "report": "reports/screenshots/commander_roster_native/large_text/validation.json",
+      "report_sha256": "1f6119bf61dcbc9efa760ca13de70595991964bf56074b360cd401670cc526f1",
+      "log": "reports/commander_roster_native_large_text.log",
+      "log_sha256": "5cc17690b7bc927c793e987e6737c7ba980f0c20c9feb439371a739efaca69dc",
+      "captures": [
+        {
+          "surface": "commander_catalogue",
+          "file": "reports/screenshots/commander_roster_native/large_text/commander_catalogue.png",
+          "sha256": "e1fd66b178008419f49bdf40023c4675f2b38e271e00b5d5f49ff14c1ef1fa2a",
+          "metadata": "reports/screenshots/commander_roster_native/large_text/commander_catalogue.json",
+          "metadata_sha256": "6b21e7a64aad9dc6322f773cf7b4131a8aa4b09993efd6aa68bd9c4be7f005b4"
+        },
+        {
+          "surface": "commander_last_page",
+          "file": "reports/screenshots/commander_roster_native/large_text/commander_last_page.png",
+          "sha256": "9524ae5fdd4e1c9614298f0c8185e7f2390c48125a0b2cd3adcd21e221ecece9",
+          "metadata": "reports/screenshots/commander_roster_native/large_text/commander_last_page.json",
+          "metadata_sha256": "b8ea3d7d62be676f70da1a455cae4198a448672254249ab8a6f8e0f6fe504dda"
+        },
+        {
+          "surface": "japanese_division_commanders",
+          "file": "reports/screenshots/commander_roster_native/large_text/japanese_division_commanders.png",
+          "sha256": "2473b3d0179f4ea3c118d3f507f15174e0f10491c3c840ee751f52f58c62d1d7",
+          "metadata": "reports/screenshots/commander_roster_native/large_text/japanese_division_commanders.json",
+          "metadata_sha256": "2b1bc66468e8c22e3f2bd8361f8fcfb817a4cb72de2ea386a65771b3ca8f3b7a"
+        },
+        {
+          "surface": "live_name_search",
+          "file": "reports/screenshots/commander_roster_native/large_text/live_name_search.png",
+          "sha256": "04a55288c47f971d99bddf464a32a0d19fdde688412926950e39e21f4ddf17c0",
+          "metadata": "reports/screenshots/commander_roster_native/large_text/live_name_search.json",
+          "metadata_sha256": "2a7e504819a27656d9d4d94575197710238a405e9e9241ede6037b8b157ddc59"
+        },
+        {
+          "surface": "scenario_reserve_appointment",
+          "file": "reports/screenshots/commander_roster_native/large_text/scenario_reserve_appointment.png",
+          "sha256": "b9a2b2d17b6d41ad8bfeec1b789301a8fc15da29593b8f520c376f6987b8d10a",
+          "metadata": "reports/screenshots/commander_roster_native/large_text/scenario_reserve_appointment.json",
+          "metadata_sha256": "9ef7d7ca2e63843a19836447664879a1b8389de2285df75ac560bd0e73e892b0"
+        },
+        {
+          "surface": "reserve_appointed",
+          "file": "reports/screenshots/commander_roster_native/large_text/reserve_appointed.png",
+          "sha256": "ce922ca5f596ec2a0144d40aef7fbdee7df2de56a6adbd473acb64d16c2924a4",
+          "metadata": "reports/screenshots/commander_roster_native/large_text/reserve_appointed.json",
+          "metadata_sha256": "d574c72cca9282359aa21f4458cb491a1268dfd7c0b20b42246fff0c80502cc5"
+        }
+      ]
+    }
+  ],
+  "raw_godot_captures": true,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "historical_likeness_approval": false
+}

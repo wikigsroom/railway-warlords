@@ -10,7 +10,7 @@
   "major_conflict": "通州—北京通道",
   "source_ids": [
     "asia_timeline",
-    "nam_first_china_war"
+    "nam_second_china_war"
   ],
   "map_id": "asia_strategic",
   "player_default": "qing",
@@ -29,7 +29,7 @@
   },
   "full_visibility": false,
   "objective_type": "hold",
-  "objective_count": 1,
+  "objective_count": 5,
   "player_formations": 8,
   "enemy_formations": 8,
   "target_city_id": "beijing",
@@ -62,7 +62,13 @@
       "french_empire"
     ]
   ],
-  "initial_relations": [],
+  "initial_relations": [
+    {
+      "faction_a": "british_empire",
+      "faction_b": "french_empire",
+      "state": "ALLIANCE"
+    }
+  ],
   "events": [],
   "weak_faction_ids": [],
   "deployment_note": "Real city coordinate with authored tactical hex deployment; no claim that each stack equals a literal historical battalion.",
@@ -76,5 +82,27 @@
     "transport_ship",
     "river_gunboat"
   ],
-  "equipment_status": "period_gate_for_game_classes; historical names and unit strengths remain source-tagged in asia_order_of_battle.json"
+  "equipment_status": "period_gate_for_game_classes; historical names and unit strengths remain source-tagged in asia_order_of_battle.json",
+  "starting_formations_by_faction": {
+    "qing": 8,
+    "british_empire": 5,
+    "french_empire": 3
+  },
+  "formation_count_status": "gameplay_stack_counts_not_historical_troop_numbers",
+  "objective_by_faction": {
+    "qing": {
+      "type": "hold",
+      "count": 5
+    },
+    "british_empire": {
+      "type": "capture",
+      "count": 1,
+      "accept_allied_control": true
+    },
+    "french_empire": {
+      "type": "capture",
+      "count": 1,
+      "accept_allied_control": true
+    }
+  }
 }

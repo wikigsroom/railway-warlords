@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.27",
+	"build_version": "0.2.28",
 	"captures": [
 		{
 			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\x30_layout/home.png",
@@ -67,7 +67,7 @@
 				},
 				"map_id": "jingjin",
 				"material_cells_drawn": 23821,
-				"reference_originals_drawn": 15,
+				"reference_originals_drawn": 12,
 				"relief": {
 					"continuous_lighting": {
 						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
@@ -105,13 +105,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 193,
-					"index_ms": 59.017,
+					"index_ms": 56.308,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 1466.637,
+					"mesh_ms": 1386.003,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 1654,
-					"placement_ms": 334.584,
-					"preparation_ms": 1860.237,
+					"placement_ms": 380.712,
+					"preparation_ms": 1823.022,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 					"source_meters_per_world_unit": 20.8333333333333,
@@ -130,7 +130,7 @@
 		{
 			"atlas_preview": {
 				"anchor_date": "1920-07-14",
-				"camera": "(6865.355, 4943.183)",
+				"camera": "(6830.063, 4927.743)",
 				"creates_match": false,
 				"dated_rail_edges": 7,
 				"ground": {
@@ -150,7 +150,7 @@
 						"forest_floor_requires_sourced_forest": true,
 						"withheld_forest_floor_cells": 17765
 					},
-					"grounded_scenery_draws": 648,
+					"grounded_scenery_draws": 734,
 					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
 					"sampling_world_units": 224.0,
 					"source_ground_coverage": {
@@ -227,13 +227,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 193,
-					"index_ms": 59.017,
+					"index_ms": 56.308,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 1466.637,
+					"mesh_ms": 1386.003,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 1654,
-					"placement_ms": 334.584,
-					"preparation_ms": 1860.237,
+					"placement_ms": 380.712,
+					"preparation_ms": 1823.022,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 					"source_meters_per_world_unit": 20.8333333333333,
@@ -241,7 +241,7 @@
 					"triangles": 46176
 				},
 				"renderer": "shipping_MapView_static_atlas",
-				"scenery_drawn": 648,
+				"scenery_drawn": 734,
 				"settlement_originals_drawn": 3,
 				"source_map_immutable": true,
 				"zoom_multiplier": 2.44140625
@@ -362,13 +362,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 102,
-					"index_ms": 152.964,
+					"index_ms": 152.867,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 597.405,
+					"mesh_ms": 556.257,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 219,
-					"placement_ms": 735.76,
-					"preparation_ms": 1486.129,
+					"placement_ms": 748.306,
+					"preparation_ms": 1457.43,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_nine_point_100km",
 					"source_meters_per_world_unit": 3125.0,
@@ -484,13 +484,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 193,
-					"index_ms": 42.992,
+					"index_ms": 56.639,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 1682.284,
+					"mesh_ms": 1412.163,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 1654,
-					"placement_ms": 459.757,
-					"preparation_ms": 2185.033,
+					"placement_ms": 356.185,
+					"preparation_ms": 1824.987,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 					"source_meters_per_world_unit": 20.8333333333333,
@@ -643,8 +643,23 @@
 			"passed": true
 		},
 		{
-			"detail": 666.0,
+			"detail": 632.0,
 			"name": "campaign_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_selected_commander_counts_present",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_counts_follow_selected_faction",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_counts_remain_compact_and_visible",
 			"passed": true
 		},
 		{
@@ -763,8 +778,23 @@
 			"passed": true
 		},
 		{
-			"detail": 666.0,
+			"detail": 632.0,
 			"name": "campaign_detail_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_selected_commander_counts_present",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_counts_follow_selected_faction",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_counts_remain_compact_and_visible",
 			"passed": true
 		},
 		{
@@ -878,8 +908,23 @@
 			"passed": true
 		},
 		{
-			"detail": 666.0,
+			"detail": 632.0,
 			"name": "conquest_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_selected_commander_counts_present",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_counts_follow_selected_faction",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_counts_remain_compact_and_visible",
 			"passed": true
 		},
 		{
@@ -1344,7 +1389,7 @@
 			"passed": true
 		}
 	],
-	"content_hash": "9ea85ebaea4412357c628bf6d2c16d29d7ef08c594dc77dcef7b3005b42f6661",
+	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
 	"passed": true,
 	"physical_android_device_tested": false,
 	"qa_save_isolated": true,

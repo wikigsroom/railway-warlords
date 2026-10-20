@@ -8,6 +8,8 @@ var unit_actions: Dictionary={}
 var general_portraits=GeneralPortraits.new()
 var map_texture_order: Array[String]=[]
 const MAP_TEXTURE_CACHE_LIMIT=384
+var portrait_texture_order: Array[String]=[]
+const PORTRAIT_TEXTURE_CACHE_LIMIT=48
 
 func prepare_battle_glyphs(ui_scale: float) -> void:
 	# Font glyph creation is costly on first use. Warm the actual command/status
@@ -33,11 +35,16 @@ func texture(category: String, id: String) -> Texture2D:
 	if not textures.has(key):
 		var path="res://assets/%s/%s.png"%[category,id]
 		textures[key]=load(path) if ResourceLoader.exists(path) else null
+	var requested: Texture2D=textures[key]
+	if category=="portrait":
+		portrait_texture_order.erase(key);portrait_texture_order.append(key)
+		while portrait_texture_order.size()>PORTRAIT_TEXTURE_CACHE_LIMIT:
+			textures.erase(portrait_texture_order.pop_front())
 	if id.contains("_bank_") or id.begins_with("tile_surface_") or id.begins_with("tile_ground_macro_") or id.begins_with("tile_ground_identity_"):
 		map_texture_order.erase(key);map_texture_order.append(key)
 		while map_texture_order.size()>MAP_TEXTURE_CACHE_LIMIT:
 			textures.erase(map_texture_order.pop_front())
-	return textures[key]
+	return requested
 
 func unit_texture(u: Dictionary, direction: String="") -> Texture2D:
 	var unit_id=str(u.elite_id if u.elite_id!=null else u.def_id)

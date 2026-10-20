@@ -116,6 +116,7 @@ func _ready() -> void:
 	if "--ground-coverage-test" in args:GroundCoverageQA.run.call_deferred(self)
 	if "--music-test" in args:MusicPlaybackQA.run.call_deferred(self)
 	if "--general-portrait-test" in args:GeneralPortraitQA.run.call_deferred(self)
+	if "--commander-roster-test" in args:CommanderRosterQA.run.call_deferred(self)
 	if "--dossier-test" in args:DossierQA.run.call_deferred(self)
 	if "--relief-shade-test" in args:ReliefShadeQA.run.call_deferred(self)
 	if "--map-symbol-test" in args:MapSymbolQA.run.call_deferred(self)
@@ -725,7 +726,7 @@ func show_legion_deployment(id: String) -> void:
 		button(r,"+",func():change_legion_draft(recipe,choice_id,layers.selected+1,1);refresh_counter.call())
 		refresh_counter.call()
 	label(v,"将领 · 最多%d位"%recipe.general_slots,27,BRASS)
-	for gd in content.tables.generals:
+	for gd in CommanderRoster.training_candidates(content,recipe):
 		var checkbox=CheckButton.new();checkbox.text=gd.name;checkbox.custom_minimum_size.y=96 if mobile_layout() else 64;checkbox.button_pressed=legion_generals.has(gd.id);v.add_child(checkbox)
 		checkbox.toggled.connect(func(value):
 			if value and not legion_generals.has(gd.id):

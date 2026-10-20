@@ -1,0 +1,1380 @@
+{
+  "schema": 1,
+  "production_version": "0.2.22",
+  "selection_policy": "Four life stages per person; choose by scenario year and calculated age, never a later-age portrait for an earlier stage. Last living period is not hypothetical posthumous aging.",
+  "post_1940_art_is_preparation_only": true,
+  "generals": {
+    "wu_peifu": {
+      "name": "吴佩孚",
+      "birth_year": 1874,
+      "death_year": 1939,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1899,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1914,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1920,
+          "approximate_age": 46
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1938,
+          "approximate_age": 64
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://ecpo.cats.uni-heidelberg.de/ecpo/agent-information.php?agentid=1773"
+      ],
+      "source_type": "academic_authority",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "zhang_zuolin": {
+      "name": "张作霖",
+      "birth_year": 1875,
+      "death_year": 1928,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1900,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1915,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1920,
+          "approximate_age": 45
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1928,
+          "approximate_age": 53
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "reference_urls": [
+        "https://digital.janeaddams.ramapo.edu/items/show/35986"
+      ],
+      "source_type": "academic_authority",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "zhang_xueliang": {
+      "name": "张学良",
+      "birth_year": 1901,
+      "death_year": 2001,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1920,
+          "approximate_age": 19
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1936,
+          "approximate_age": 35
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1955,
+          "approximate_age": 54
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1995,
+          "approximate_age": 94
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.024glsmy.cn/zhangxueliang/index.shtml"
+      ],
+      "source_type": "museum_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "feng_yuxiang": {
+      "name": "冯玉祥",
+      "birth_year": 1882,
+      "death_year": 1948,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1907,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1920,
+          "approximate_age": 38
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1934,
+          "approximate_age": 52
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1947,
+          "approximate_age": 65
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://lex.dk/Feng_Yuxiang"
+      ],
+      "source_type": "encyclopedia",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "sun_chuanfang": {
+      "name": "孙传芳",
+      "birth_year": 1885,
+      "death_year": 1935,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1910,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1920,
+          "approximate_age": 35
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1930,
+          "approximate_age": 45
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1934,
+          "approximate_age": 49
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "reference_urls": [
+        "https://www.zgbk.com/ecph/words?Name=%E5%AD%99%E4%BC%A0%E8%8A%B3&SiteID=1&SourceID=85626&Type=bkzyb&subSourceType=000003000005000006"
+      ],
+      "source_type": "encyclopedia",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "qi_xieyuan": {
+      "name": "齐燮元",
+      "birth_year": 1885,
+      "death_year": 1946,
+      "date_precision": "year",
+      "source_status": "year_pair_secondary_reference_primary_check_pending",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1910,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1920,
+          "approximate_age": 35
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1937,
+          "approximate_age": 52
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1945,
+          "approximate_age": 60
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://zh.wikipedia.org/wiki/%E9%BD%90%E7%87%AE%E5%85%83"
+      ],
+      "source_type": "secondary_reference_pending_primary_lifespan_check",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "lu_yongxiang": {
+      "name": "卢永祥",
+      "birth_year": 1867,
+      "death_year": 1933,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1892,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1907,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1920,
+          "approximate_age": 53
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1932,
+          "approximate_age": 65
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.dpm.org.cn/lemmas/245438.html"
+      ],
+      "source_type": "museum_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "yan_xishan": {
+      "name": "阎锡山",
+      "birth_year": 1883,
+      "death_year": 1960,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1908,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1920,
+          "approximate_age": 37
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1938,
+          "approximate_age": 55
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1958,
+          "approximate_age": 75
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://digital.janeaddams.ramapo.edu/items/show/41915"
+      ],
+      "source_type": "academic_authority",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "tang_jiyao": {
+      "name": "唐继尧",
+      "birth_year": 1883,
+      "death_year": 1927,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1901,
+          "approximate_age": 18
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1908,
+          "approximate_age": 25
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1920,
+          "approximate_age": 37
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1926,
+          "approximate_age": 43
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "reference_urls": [
+        "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000024"
+      ],
+      "source_type": "national_library_catalog",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "chen_jiongming": {
+      "name": "陈炯明",
+      "birth_year": 1878,
+      "death_year": 1933,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1903,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1914,
+          "approximate_age": 36
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1920,
+          "approximate_age": 42
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1932,
+          "approximate_age": 54
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "reference_urls": [
+        "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0002599"
+      ],
+      "source_type": "national_library_catalog",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。",
+      "source_disagreement": "采用国立公共资讯图书馆人物资料1878年；另有辞典记1877年，生日亦存在1月13日与18日差异，保留年精度。"
+    },
+    "xu_chongzhi": {
+      "name": "许崇智",
+      "birth_year": 1887,
+      "death_year": 1965,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1912,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1920,
+          "approximate_age": 33
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1940,
+          "approximate_age": 53
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1960,
+          "approximate_age": 73
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/xu-chongzhi/"
+      ],
+      "source_type": "academic_biographical_dictionary",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "guo_songling": {
+      "name": "郭松龄",
+      "birth_year": 1883,
+      "death_year": 1925,
+      "date_precision": "year",
+      "source_status": "year_pair_secondary_reference_primary_check_pending",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1901,
+          "approximate_age": 18
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1910,
+          "approximate_age": 27
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1920,
+          "approximate_age": 37
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1925,
+          "approximate_age": 42
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "reference_urls": [
+        "https://zh.wikipedia.org/wiki/%E9%83%AD%E6%9D%BE%E9%BE%84"
+      ],
+      "source_type": "secondary_reference_pending_primary_lifespan_check",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "lin_zexu": {
+      "name": "林则徐",
+      "birth_year": 1785,
+      "death_year": 1850,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1810,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1825,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1840,
+          "approximate_age": 55
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1849,
+          "approximate_age": 64
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://digitalarchive.npm.gov.tw/Collection/Detail/28680?dep=P"
+      ],
+      "source_type": "museum_collection_and_year_reference",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。",
+      "portrait_evidence_note": "馆藏图为后世绘制及题跋材料，非1840年照片；各阶段均为游戏绘制。"
+    },
+    "hong_xiuquan": {
+      "name": "洪秀全",
+      "birth_year": 1814,
+      "death_year": 1864,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1835,
+          "approximate_age": 21
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1845,
+          "approximate_age": 31
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1855,
+          "approximate_age": 41
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1863,
+          "approximate_age": 49
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "likeness_scope": "Interpretation informed by written descriptions and later commemorative depictions, not an authenticated lifetime portrait.",
+      "reference_urls": [
+        "https://onlinelibrary.wiley.com/doi/abs/10.1002/9780470670606.wbecc1486",
+        "https://m.thepaper.cn/newsDetail_forward_10832840"
+      ],
+      "source_type": "academic_encyclopedia",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。",
+      "portrait_evidence_note": "未据可认证生前肖像复原；依据文字记述及后世纪念形象作游戏绘制。不能将误认木刻或1951年纪念像称为同年写生。"
+    },
+    "zeng_guofan": {
+      "name": "曾国藩",
+      "birth_year": 1811,
+      "death_year": 1872,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1836,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1851,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1860,
+          "approximate_age": 49
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1871,
+          "approximate_age": 60
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://whhlyt.hunan.gov.cn/whhlyt/english/Culture/CulturalFigures/202205/t20220527_24654725.html"
+      ],
+      "source_type": "government_cultural_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "li_hongzhang": {
+      "name": "李鸿章",
+      "birth_year": 1823,
+      "death_year": 1901,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1848,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1860,
+          "approximate_age": 37
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1873,
+          "approximate_age": 50
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1900,
+          "approximate_age": 77
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.npg.org.uk/collections/search/portrait/mw225127/Li-Hongzhang-Li-Hung-Chang"
+      ],
+      "source_type": "museum_collection_authority",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "yamagata_aritomo": {
+      "name": "山县有朋",
+      "birth_year": 1838,
+      "death_year": 1922,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1863,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1878,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1890,
+          "approximate_age": 52
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1917,
+          "approximate_age": 79
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.ndl.go.jp/portrait/e/datas/208/"
+      ],
+      "source_type": "national_library_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "waldersee": {
+      "name": "瓦德西",
+      "birth_year": 1832,
+      "death_year": 1904,
+      "date_precision": "year",
+      "source_status": "year_pair_secondary_reference_primary_check_pending",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1857,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1872,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1887,
+          "approximate_age": 55
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1900,
+          "approximate_age": 68
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://en.wikipedia.org/wiki/Alfred_von_Waldersee"
+      ],
+      "source_type": "secondary_reference_and_museum_context",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "kuropatkin": {
+      "name": "库罗帕特金",
+      "birth_year": 1848,
+      "death_year": 1925,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1873,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1890,
+          "approximate_age": 42
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1900,
+          "approximate_age": 52
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1920,
+          "approximate_age": 72
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.enciklopedija.hr/clanak/kuropatkin-aleksej-nikolajevic"
+      ],
+      "source_type": "academic_encyclopedia",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "sun_yat_sen": {
+      "name": "孙中山",
+      "birth_year": 1866,
+      "death_year": 1925,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1891,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1906,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1917,
+          "approximate_age": 51
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1924,
+          "approximate_age": 58
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "reference_urls": [
+        "https://www.sunyat-sen.org/portal/list/index.html?id=216"
+      ],
+      "source_type": "museum_biography_and_photograph_catalog",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "duan_qirui": {
+      "name": "段祺瑞",
+      "birth_year": 1865,
+      "death_year": 1936,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1890,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1905,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1917,
+          "approximate_age": 52
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1927,
+          "approximate_age": 62
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.zgbk.com/ecph/words?ID=57244&SiteID=1"
+      ],
+      "source_type": "encyclopedia",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "chiang_kai_shek": {
+      "name": "蒋介石",
+      "birth_year": 1887,
+      "death_year": 1975,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1912,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1927,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1940,
+          "approximate_age": 53
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1969,
+          "approximate_age": 82
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://onlinebooks.library.upenn.edu/webbin/who/Chiang%2C%20Kai-shek%2C%201887-1975"
+      ],
+      "source_type": "university_library_authority",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "li_zongren": {
+      "name": "李宗仁",
+      "birth_year": 1891,
+      "death_year": 1969,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1916,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1927,
+          "approximate_age": 36
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1940,
+          "approximate_age": 49
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1965,
+          "approximate_age": 74
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.huangpu.org.cn/hpjs/201209/t20120923_3116368.html"
+      ],
+      "source_type": "historical_association_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。",
+      "source_disagreement": "采用黄埔同学会及故宫图书所载1891年；部分英文资料记1890年，保留分歧，未认证具体生日。"
+    },
+    "bai_chongxi": {
+      "name": "白崇禧",
+      "birth_year": 1893,
+      "death_year": 1966,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1918,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1927,
+          "approximate_age": 34
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1940,
+          "approximate_age": 47
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1963,
+          "approximate_age": 70
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.mnd.gov.tw/en/informationservices/publication/72322"
+      ],
+      "source_type": "official_oral_history",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "mao_zedong": {
+      "name": "李德胜",
+      "birth_year": 1893,
+      "death_year": 1976,
+      "date_precision": "day",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1917,
+          "approximate_age": 24
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1927,
+          "approximate_age": 34
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1947,
+          "approximate_age": 54
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1972,
+          "approximate_age": 79
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "birth_date": "1893-12-26",
+      "death_date": "1976-09-09",
+      "reference_urls": [
+        "https://www.12371.cn/2023/12/22/VIDE1703229361350208.shtml"
+      ],
+      "source_type": "official_biography_dates",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "年龄按公历生日计算；逝世后停止增龄，显示生前阶段。"
+    },
+    "peng_dehuai": {
+      "name": "彭德怀",
+      "birth_year": 1898,
+      "death_year": 1974,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1923,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1933,
+          "approximate_age": 35
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1940,
+          "approximate_age": 42
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1970,
+          "approximate_age": 72
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490066.html"
+      ],
+      "source_type": "official_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "tojo_hideki": {
+      "name": "东条英机",
+      "birth_year": 1884,
+      "death_year": 1948,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1909,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1924,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1940,
+          "approximate_age": 56
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1947,
+          "approximate_age": 63
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.ndl.go.jp/portrait/e/datas/142/"
+      ],
+      "source_type": "national_library_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "yamashita_tomoyuki": {
+      "name": "山下奉文",
+      "birth_year": 1885,
+      "death_year": 1946,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1910,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1925,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1940,
+          "approximate_age": 55
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1945,
+          "approximate_age": 60
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://onlinelibrary.wiley.com/doi/abs/10.1002/9781444338232.wbeow710"
+      ],
+      "source_type": "academic_encyclopedia",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。"
+    },
+    "alexei_kaledin": {
+      "name": "卡列金",
+      "birth_year": 1861,
+      "death_year": 1918,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1886,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1901,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1911,
+          "approximate_age": 50
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1917,
+          "approximate_age": 56
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "reference_urls": [
+        "https://en.wikisource.org/wiki/1922_Encyclop%C3%A6dia_Britannica/Kaledin%2C_Alexei"
+      ],
+      "source_type": "contemporary_encyclopedia",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记生卒年；界面使用约岁，不将未知生日伪设为1月1日。",
+      "source_disagreement": "俄历与公历死亡日期存在1月29日和2月11日两种表达；本表只用1861—1918年，不混用历法。"
+    },
+    "daoguang": {
+      "name": "道光帝",
+      "birth_year": 1782,
+      "death_year": 1850,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1807,
+          "approximate_age": 25
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1822,
+          "approximate_age": 40
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1837,
+          "approximate_age": 55
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1848,
+          "approximate_age": 66
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.dpm.org.cn/court/lineage/226239.html"
+      ],
+      "source_type": "museum_dynastic_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记已核实的生卒年，界面使用约岁；原文农历日期不擅自换算。",
+      "person_role": "political_figure_only",
+      "military_deployable": false
+    },
+    "xianfeng": {
+      "name": "咸丰帝",
+      "birth_year": 1831,
+      "death_year": 1861,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1849,
+          "approximate_age": 18
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1853,
+          "approximate_age": 22
+        },
+        {
+          "id": "middle",
+          "label": "在位中期",
+          "reference_year": 1857,
+          "approximate_age": 26
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1860,
+          "approximate_age": 29
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "reference_urls": [
+        "https://www.dpm.org.cn/court/lineage/226247.html"
+      ],
+      "source_type": "museum_dynastic_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记已核实的生卒年，界面使用约岁；原文农历日期不擅自换算。",
+      "person_role": "political_figure_only",
+      "military_deployable": false,
+      "short_life_note": "1861年逝世，实岁约30岁；四图为18、22、26、29岁，不虚构中年或暮年，第三阶段按在位中期命名。"
+    },
+    "ito_hirobumi": {
+      "name": "伊藤博文",
+      "birth_year": 1841,
+      "death_year": 1909,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1864,
+          "approximate_age": 23
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1878,
+          "approximate_age": 37
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1895,
+          "approximate_age": 54
+        },
+        {
+          "id": "late",
+          "label": "暮年",
+          "reference_year": 1908,
+          "approximate_age": 67
+        }
+      ],
+      "late_stage_is_last_living_period": false,
+      "reference_urls": [
+        "https://www.ndl.go.jp/portrait/e/datas/12/"
+      ],
+      "source_type": "national_library_biography",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅登记已核实的生卒年，界面使用约岁；原文农历日期不擅自换算。",
+      "person_role": "political_figure_only",
+      "military_deployable": false
+    },
+    "nicholas_ii": {
+      "name": "尼古拉二世",
+      "birth_year": 1868,
+      "death_year": 1918,
+      "date_precision": "year",
+      "source_status": "consulted_year_pair_with_precision_limits",
+      "stages": [
+        {
+          "id": "young",
+          "label": "青年",
+          "reference_year": 1890,
+          "approximate_age": 22
+        },
+        {
+          "id": "prime",
+          "label": "壮年",
+          "reference_year": 1900,
+          "approximate_age": 32
+        },
+        {
+          "id": "middle",
+          "label": "中年",
+          "reference_year": 1910,
+          "approximate_age": 42
+        },
+        {
+          "id": "late",
+          "label": "生前晚期",
+          "reference_year": 1917,
+          "approximate_age": 49
+        }
+      ],
+      "late_stage_is_last_living_period": true,
+      "reference_urls": [
+        "https://www.rct.uk/collection/2926975/the-coronation-procession-of-nicholas-ii-emperor-of-russia"
+      ],
+      "source_type": "royal_collection_authority",
+      "source_review_date": "2026-10-18",
+      "likeness_approval": false,
+      "precision_note": "仅使用公历生卒年1868—1918，不混用俄历生日；1917图为退位当年49岁生前晚期。",
+      "person_role": "political_figure_only",
+      "military_deployable": false
+    }
+  },
+  "age_display_policy": "Use exact birthday only where day precision is explicitly sourced; otherwise show approximate age. No portrait before birth or before age 16. Posthumous views retain last living form and never keep aging."
+}

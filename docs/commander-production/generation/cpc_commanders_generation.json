@@ -1,0 +1,2824 @@
+{
+  "requested_people": 25,
+  "requested_originals": 100,
+  "generated": 100,
+  "failed": 0,
+  "terminal": true,
+  "passed": true,
+  "records": [
+    {
+      "id": "portrait_cn_67315fb7_1911",
+      "general_id": "cn_67315fb7",
+      "subject": "朱德",
+      "reference_year": 1911,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67315fb7_1911/r001/source.png",
+      "source_sha256": "ce3fb54bc4c65db14ce323bbbdb0c35aab1c0e7024bbdfb79cdb55ec26d323b5",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67315fb7_1911/r001/prompt.txt",
+      "prompt_sha256": "3c19f0e769c675a3593c81677836ad9b6cf9f11c8d54be5d06e51a49dcd075c6",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_67315fb7_1936",
+      "general_id": "cn_67315fb7",
+      "subject": "朱德",
+      "reference_year": 1936,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67315fb7_1936/r001/source.png",
+      "source_sha256": "69814f0a500822373b1ac86456cc566fc1b18dba747deabcee30d30e74d33307",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67315fb7_1936/r001/prompt.txt",
+      "prompt_sha256": "4c7f4335e7f0f6e57d7ddf76a6982dfc319346469aa9d41f9f2375b8fa511b45",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_67315fb7_1924",
+      "general_id": "cn_67315fb7",
+      "subject": "朱德",
+      "reference_year": 1924,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67315fb7_1924/r001/source.png",
+      "source_sha256": "9dc8a13d9ed65b1a0477716b1de988b2832cba5e7c89006504ad51921f97c836",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67315fb7_1924/r001/prompt.txt",
+      "prompt_sha256": "fd4063dca7ebbd0a82a3977f67268b11e4a783b98c6f523a2c4164b7e754c86f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_67315fb7_1975",
+      "general_id": "cn_67315fb7",
+      "subject": "朱德",
+      "reference_year": 1975,
+      "age_stage": "late",
+      "approximate_age": 89,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7489937.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67315fb7_1975/r001/source.png",
+      "source_sha256": "334064630beee926a7b5e5c23f17ab91e81b66be54ff6aa6bf769c7d94bfd54b",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67315fb7_1975/r001/prompt.txt",
+      "prompt_sha256": "25d20363b2682bf4379d81881d65d6db34fe0582688bfe24682a041c29677033",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_52184f2f627f_1917",
+      "general_id": "cn_52184f2f627f",
+      "subject": "刘伯承",
+      "reference_year": 1917,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52184f2f627f_1917/r001/source.png",
+      "source_sha256": "fadde083e922500af8dd1b34314ded7820775a49dd60d591bdd4d77be63dfc14",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52184f2f627f_1917/r001/prompt.txt",
+      "prompt_sha256": "16dbab741563769289a3f6581cb28b8ea792a349d87ff4179f446b0ad86c70cc",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_52184f2f627f_1930",
+      "general_id": "cn_52184f2f627f",
+      "subject": "刘伯承",
+      "reference_year": 1930,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52184f2f627f_1930/r001/source.png",
+      "source_sha256": "ef1a2fe15fd00d8c1675a2d752827d2419376d9c6551b91e20f14a867cb1ac87",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52184f2f627f_1930/r001/prompt.txt",
+      "prompt_sha256": "23dc81e182bde92b358a5812eef34f54a64fbffeddb105e364319adf6b3c665c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8d3a9f99_1921",
+      "general_id": "cn_8d3a9f99",
+      "subject": "贺龙",
+      "reference_year": 1921,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8d3a9f99_1921/r001/source.png",
+      "source_sha256": "aba88f5078a319d86b4549206e0ceabd63986467dcc497bc6658b105b011e52a",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8d3a9f99_1921/r001/prompt.txt",
+      "prompt_sha256": "fcf827861bf65bd98e2e330d7781c5048865aa0d65d4318b6c90a5fd571c2d20",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_52184f2f627f_1985",
+      "general_id": "cn_52184f2f627f",
+      "subject": "刘伯承",
+      "reference_year": 1985,
+      "age_stage": "late",
+      "approximate_age": 93,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52184f2f627f_1985/r001/source.png",
+      "source_sha256": "9731891e222482c8e20a7f416747f96205d785c14b9599e7d448658adfc36c61",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52184f2f627f_1985/r001/prompt.txt",
+      "prompt_sha256": "a5de375017a171fbec0d453613e59751929d788c5ba8c8882a811f3d7ff0dbd4",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_52184f2f627f_1942",
+      "general_id": "cn_52184f2f627f",
+      "subject": "刘伯承",
+      "reference_year": 1942,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490151.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52184f2f627f_1942/r001/source.png",
+      "source_sha256": "e8482838eb6c4abf7287ec07e52136dbeec8c3a1a359648f8e1723b6781946b7",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52184f2f627f_1942/r001/prompt.txt",
+      "prompt_sha256": "0799ad23d1c266cf0cea505653ab0d472a2b618cf9dda257a2834df3a992ae49",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8d3a9f99_1934",
+      "general_id": "cn_8d3a9f99",
+      "subject": "贺龙",
+      "reference_year": 1934,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8d3a9f99_1934/r001/source.png",
+      "source_sha256": "56026af72e1848e255d060b6acee8417ce45e28e82d50a86bf1c5ac0e6afcea5",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8d3a9f99_1934/r001/prompt.txt",
+      "prompt_sha256": "00f28cdf4ff430334fd7d3d441fb9d1fe56845e8ca5f975894614e6173efa238",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8d3a9f99_1946",
+      "general_id": "cn_8d3a9f99",
+      "subject": "贺龙",
+      "reference_year": 1946,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8d3a9f99_1946/r001/source.png",
+      "source_sha256": "9269f074257d44872a72414b146176dd899b3fc610fb55d2ae30182a35b46ede",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8d3a9f99_1946/r001/prompt.txt",
+      "prompt_sha256": "18e9be9e1251524454d69f329fd580b6a7e19fe588744001bc5742b691b3c705",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8d3a9f99_1968",
+      "general_id": "cn_8d3a9f99",
+      "subject": "贺龙",
+      "reference_year": 1968,
+      "age_stage": "late",
+      "approximate_age": 72,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490379.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8d3a9f99_1968/r001/source.png",
+      "source_sha256": "318ee36d4e7001548ea9a7e058b98f7a48eb593f79b6c5732f93870954c7c32a",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8d3a9f99_1968/r001/prompt.txt",
+      "prompt_sha256": "a4624edb6228c0c72636449ab53bb06495cefa462cee9b45dad65732add1069f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f905411524d_1926",
+      "general_id": "cn_5f905411524d",
+      "subject": "徐向前",
+      "reference_year": 1926,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f905411524d_1926/r001/source.png",
+      "source_sha256": "f6927a0b5ca614ce576cca872c063cd29f992061ba2c3163043047a34b7e9444",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f905411524d_1926/r001/prompt.txt",
+      "prompt_sha256": "6c16adc3c5378c5056a06b454769827eebe52ae736318710cf5b38859855e572",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f905411524d_1939",
+      "general_id": "cn_5f905411524d",
+      "subject": "徐向前",
+      "reference_year": 1939,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f905411524d_1939/r001/source.png",
+      "source_sha256": "8e40acbf8ef59131a7bf5f8a909e21e323b5bd0f78c1e30cc9e78c7179246146",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f905411524d_1939/r001/prompt.txt",
+      "prompt_sha256": "765c6c57560a8eaaaed29b2ba345c4905019c3de8735c876e554e7232473d888",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f905411524d_1989",
+      "general_id": "cn_5f905411524d",
+      "subject": "徐向前",
+      "reference_year": 1989,
+      "age_stage": "late",
+      "approximate_age": 88,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f905411524d_1989/r001/source.png",
+      "source_sha256": "1e95ee44e734eacc92578c80b922c0ca092f35e89ccdb021a611df3783485bac",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f905411524d_1989/r001/prompt.txt",
+      "prompt_sha256": "4f62934fe0e6f85634482d7f71cf0fed21400e5ff1109e7fb61ddaa01cf50d65",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f905411524d_1951",
+      "general_id": "cn_5f905411524d",
+      "subject": "徐向前",
+      "reference_year": 1951,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490461.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f905411524d_1951/r001/source.png",
+      "source_sha256": "bb20855d73e3b3dc2bbe060e7946c57e4d66bc36cb322a0fb02e33f067b8f62e",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f905411524d_1951/r001/prompt.txt",
+      "prompt_sha256": "9b69b4a8a90f2a1ad95dbde61b4fd441d7cdcabfa847b6ce857c794f92d3b34d",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_96486bc5_1926",
+      "general_id": "cn_96486bc5",
+      "subject": "陈毅",
+      "reference_year": 1926,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96486bc5_1926/r001/source.png",
+      "source_sha256": "a86f8a91ffa42e587e661b536dc83beefa3b5e7764b7580cd606e678dc7d8740",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96486bc5_1926/r001/prompt.txt",
+      "prompt_sha256": "bf5e532eac4fffa2a560aeb2294470eac816bad5c1ac846f38b8c5b1160b85f6",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_96486bc5_1971",
+      "general_id": "cn_96486bc5",
+      "subject": "陈毅",
+      "reference_year": 1971,
+      "age_stage": "late",
+      "approximate_age": 70,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96486bc5_1971/r001/source.png",
+      "source_sha256": "941fd4074575b5d8d6f6ba4b9289aa8cefe36641e35a8924ee23fd879c49cc50",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96486bc5_1971/r001/prompt.txt",
+      "prompt_sha256": "09fdfbc647d3178096c52fe9d1b6b75b513ef3d7e22649a821d8991aca5b52dc",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_96486bc5_1939",
+      "general_id": "cn_96486bc5",
+      "subject": "陈毅",
+      "reference_year": 1939,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96486bc5_1939/r001/source.png",
+      "source_sha256": "a3a1372c4f9d2823d248b986d7784b1591d4b516e0ea15d274e72fc9efc17cbf",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96486bc5_1939/r001/prompt.txt",
+      "prompt_sha256": "65b76451c855da1edffe499d80001b05f456f15905e6fbfda50b4795b13f454b",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_96486bc5_1951",
+      "general_id": "cn_96486bc5",
+      "subject": "陈毅",
+      "reference_year": 1951,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490411.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96486bc5_1951/r001/source.png",
+      "source_sha256": "d0556078ad7515bf48e54ba34b45fdcfc407c52ee34bbaf25de670f3d3c3a439",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96486bc5_1951/r001/prompt.txt",
+      "prompt_sha256": "6062f20fcac436d4a4bd3059d52923887f5eea921abe35829758a9b7f646655c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8042836381fb_1924",
+      "general_id": "cn_8042836381fb",
+      "subject": "聂荣臻",
+      "reference_year": 1924,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8042836381fb_1924/r001/source.png",
+      "source_sha256": "66c0e5f1db4e9a05497e8e89f7e6050288df110c1da35a914f3caa1817b0fdc4",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8042836381fb_1924/r001/prompt.txt",
+      "prompt_sha256": "38504505ef4e12dc6b54d67aa75dca237be23d60c3847258458b1a2c599285c1",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8042836381fb_1937",
+      "general_id": "cn_8042836381fb",
+      "subject": "聂荣臻",
+      "reference_year": 1937,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8042836381fb_1937/r001/source.png",
+      "source_sha256": "29b1d2fa0707ef88d4f29e857b79c31f6a99c3577dbf2e83485c79f26072d409",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8042836381fb_1937/r001/prompt.txt",
+      "prompt_sha256": "f0cefe3c79e77eee0505f19fc7b831431f61a7056736a5123606306bd821d43f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8042836381fb_1949",
+      "general_id": "cn_8042836381fb",
+      "subject": "聂荣臻",
+      "reference_year": 1949,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8042836381fb_1949/r001/source.png",
+      "source_sha256": "74c3aaf0540cc4b315817b4aca4919dd72ab84c32c23d0be37c8da3ba50fba7e",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8042836381fb_1949/r001/prompt.txt",
+      "prompt_sha256": "440933b6d4a75a716c091e876b866f365d2bb7230df5c7685981ce1c465d7536",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8042836381fb_1991",
+      "general_id": "cn_8042836381fb",
+      "subject": "聂荣臻",
+      "reference_year": 1991,
+      "age_stage": "late",
+      "approximate_age": 92,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490472.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8042836381fb_1991/r001/source.png",
+      "source_sha256": "56f95d70d174b040f255d8805fe2a5ddcd26394ffcdb7486e1d25ae8a0fa5203",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8042836381fb_1991/r001/prompt.txt",
+      "prompt_sha256": "7fb90dc4a3dbf859bb99b52f519e67ac66efd6fbe230b188058abbe200b60290",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_96488d53_1925",
+      "general_id": "cn_96488d53",
+      "subject": "陈赓",
+      "reference_year": 1925,
+      "age_stage": "young",
+      "approximate_age": 22,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537031.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96488d53_1925/r001/source.png",
+      "source_sha256": "44b765ec65ea56d17341e49fb69190a7606fb59b78780d9f23554090be915fb4",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96488d53_1925/r001/prompt.txt",
+      "prompt_sha256": "14d69d693af5979594e561eb15974d9c267fd7a4347dbdd72ed4a78c8de4b794",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_96488d53_1935",
+      "general_id": "cn_96488d53",
+      "subject": "陈赓",
+      "reference_year": 1935,
+      "age_stage": "prime",
+      "approximate_age": 32,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537031.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96488d53_1935/r001/source.png",
+      "source_sha256": "7594a7c27f1df3aa2682f10cc7c5427ee0fc9ea21817eef87f1fe524b52c6b0d",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96488d53_1935/r001/prompt.txt",
+      "prompt_sha256": "a2fce9ca8a5af3d68e73d1717a1797df89979f8abbaace9330cc696bf3413f9b",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_96488d53_1944",
+      "general_id": "cn_96488d53",
+      "subject": "陈赓",
+      "reference_year": 1944,
+      "age_stage": "middle",
+      "approximate_age": 41,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537031.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96488d53_1944/r001/source.png",
+      "source_sha256": "8c4f02911a3337d45c000d281282dfc2c7e4c82b43c796fa1907f354080ee636",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96488d53_1944/r001/prompt.txt",
+      "prompt_sha256": "7d37aa5d222a2e8147fa634fd29100851ae469d3eb85157a11c0953f83b80949",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_96488d53_1960",
+      "general_id": "cn_96488d53",
+      "subject": "陈赓",
+      "reference_year": 1960,
+      "age_stage": "late",
+      "approximate_age": 57,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537031.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96488d53_1960/r001/source.png",
+      "source_sha256": "a35fd3633b7e692a090f721cc13745cafe2f30e40c942b1f1e48333451011c0a",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_96488d53_1960/r001/prompt.txt",
+      "prompt_sha256": "6ea955650af15093f226464a3839f9be2fcc845a3507323c2e48cf9fe11407ae",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_9ec4514b8bda_1927",
+      "general_id": "cn_9ec4514b8bda",
+      "subject": "黄克诚",
+      "reference_year": 1927,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537011.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4514b8bda_1927/r001/source.png",
+      "source_sha256": "91b7f7884cc4cab756c489e5d94f8582b7ce9876a452f82621783fa0e3ed1fea",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4514b8bda_1927/r001/prompt.txt",
+      "prompt_sha256": "1728b6a7f106f1fed89cf540260f4483658cde1203547f92e11e0bbb44ac1e6f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_9ec4514b8bda_1940",
+      "general_id": "cn_9ec4514b8bda",
+      "subject": "黄克诚",
+      "reference_year": 1940,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537011.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4514b8bda_1940/r001/source.png",
+      "source_sha256": "3f346fbac4d56d34e8b2151703ca29b17a374212517c1ab1b710401c405a7d74",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4514b8bda_1940/r001/prompt.txt",
+      "prompt_sha256": "0a7946524073b8465ce92e7ea4f29c827827018abaf42b5e752f1f155a68bc5f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_9ec4514b8bda_1952",
+      "general_id": "cn_9ec4514b8bda",
+      "subject": "黄克诚",
+      "reference_year": 1952,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537011.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4514b8bda_1952/r001/source.png",
+      "source_sha256": "b8b01620eacce163cc3d3c690a09840eee43e5fe710060001a820912700bb863",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4514b8bda_1952/r001/prompt.txt",
+      "prompt_sha256": "8e33afd77899083db137a5724cee4d9e52da0861de0e1c16f194f1be9e4d35e3",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_9ec4514b8bda_1985",
+      "general_id": "cn_9ec4514b8bda",
+      "subject": "黄克诚",
+      "reference_year": 1985,
+      "age_stage": "late",
+      "approximate_age": 83,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537011.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4514b8bda_1985/r001/source.png",
+      "source_sha256": "28c04d69bd4d2c5446a75cb5a1cc2d396791d42e36997abc8795b8ef3c8bbeda",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4514b8bda_1985/r001/prompt.txt",
+      "prompt_sha256": "f631c996662b51a379d3d5966d24c9b8f19c0d8b1dd6a9088f353e4cba6352cc",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f906d774e1c_1938",
+      "general_id": "cn_5f906d774e1c",
+      "subject": "徐海东",
+      "reference_year": 1938,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f906d774e1c_1938/r001/source.png",
+      "source_sha256": "37728cc4eadd40a99b7c6c808779e316f729d113abf744822cf01abd62554666",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f906d774e1c_1938/r001/prompt.txt",
+      "prompt_sha256": "6993e627450c1a67f09045368eaa2983508ff3148c688b60b48c13e15ea52e13",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f906d774e1c_1925",
+      "general_id": "cn_5f906d774e1c",
+      "subject": "徐海东",
+      "reference_year": 1925,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f906d774e1c_1925/r001/source.png",
+      "source_sha256": "637727b865167336dabb8ee84e441eca2de91190737bd5e036ade3cee9d3a4f2",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f906d774e1c_1925/r001/prompt.txt",
+      "prompt_sha256": "f0f286835e6fcaeb691487da8c31380ceff5efbd76b07e9c8e1cbff95b80c220",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f906d774e1c_1950",
+      "general_id": "cn_5f906d774e1c",
+      "subject": "徐海东",
+      "reference_year": 1950,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f906d774e1c_1950/r001/source.png",
+      "source_sha256": "3ad50508c91d2af2d8721453dd22e3b4c869fc9911113708a5a441268b7a2dd1",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f906d774e1c_1950/r001/prompt.txt",
+      "prompt_sha256": "2b0b587e0eebd96e82b13ac77cda02f4e2160a0079c2e81d30f48a4d03996d8d",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f204e919038_1917",
+      "general_id": "cn_5f204e919038",
+      "subject": "张云逸",
+      "reference_year": 1917,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537178.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f204e919038_1917/r001/source.png",
+      "source_sha256": "49544c7abbff1534ccd5f45b5e4d6651d71e41596cd95072573c171b7ede2b13",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f204e919038_1917/r001/prompt.txt",
+      "prompt_sha256": "2f81255ea25cdd4666a1b603587ba5ed2d738194fa913b1af1d6cbc8fd5a5798",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f906d774e1c_1969",
+      "general_id": "cn_5f906d774e1c",
+      "subject": "徐海东",
+      "reference_year": 1969,
+      "age_stage": "late",
+      "approximate_age": 69,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7536984.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f906d774e1c_1969/r001/source.png",
+      "source_sha256": "fecc269f880258b28d611f8d68f6e9b0c1281a32ccf63b7004d3f14651e359eb",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f906d774e1c_1969/r001/prompt.txt",
+      "prompt_sha256": "336c533bb6d69259f8e5228450c6fc94d6a0115aad53664570b9f4d99bb721ab",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f204e919038_1942",
+      "general_id": "cn_5f204e919038",
+      "subject": "张云逸",
+      "reference_year": 1942,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537178.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f204e919038_1942/r001/source.png",
+      "source_sha256": "3069f0f36eea2d37d89bbff80600960af6dd8e75258af4e2bab5c1432e2c42ab",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f204e919038_1942/r001/prompt.txt",
+      "prompt_sha256": "7d937cbc18833c33d2e0a9d8af4b9f97d96a0318637ab63d6389718209c41e8c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f204e919038_1930",
+      "general_id": "cn_5f204e919038",
+      "subject": "张云逸",
+      "reference_year": 1930,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537178.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f204e919038_1930/r001/source.png",
+      "source_sha256": "bf72cbc9c6a8a7566bc2c46cda42ee1404f3b61a4aa1fc8809ac6bc595db8de8",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f204e919038_1930/r001/prompt.txt",
+      "prompt_sha256": "c97be2af7da974e8e01c5461a7e8dfe8abf87432873a8da61a42da11a0b26a7d",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f204e919038_1973",
+      "general_id": "cn_5f204e919038",
+      "subject": "张云逸",
+      "reference_year": 1973,
+      "age_stage": "late",
+      "approximate_age": 81,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7537178.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f204e919038_1973/r001/source.png",
+      "source_sha256": "d679059acfb64aca9caa224c10ab0457292c9e85dde4d0c15a2fbd8c0f2ec925",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f204e919038_1973/r001/prompt.txt",
+      "prompt_sha256": "e581acd243b835d5007288048ed8cfb069dcffc2597478b81c1fb7e3ec9f2c67",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f205b97900a_1946",
+      "general_id": "cn_5f205b97900a",
+      "subject": "张宗逊",
+      "reference_year": 1946,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7538565.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f205b97900a_1946/r001/source.png",
+      "source_sha256": "5a5fb256cc44ac946d459d3ed567cff4abf444152cec9504c59e339dac4e0a24",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f205b97900a_1946/r001/prompt.txt",
+      "prompt_sha256": "f4944636d152bd95bed33546b31d39c46299f720cca5f762dbfd2378e7ad595c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f205b97900a_1933",
+      "general_id": "cn_5f205b97900a",
+      "subject": "张宗逊",
+      "reference_year": 1933,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7538565.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f205b97900a_1933/r001/source.png",
+      "source_sha256": "734fb6bab0a1232193b56ffec81f3c370e0b29e38c47225d6a9394fbc1df6ea7",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f205b97900a_1933/r001/prompt.txt",
+      "prompt_sha256": "c53c6b4c26a62c10c15068653c8f951e043eb40dd16c1921fb61a7595663f0a5",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f205b97900a_1958",
+      "general_id": "cn_5f205b97900a",
+      "subject": "张宗逊",
+      "reference_year": 1958,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7538565.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f205b97900a_1958/r001/source.png",
+      "source_sha256": "a901de573d22965d040d3e255d5671e2ab0298094be27c29df668adf57a5c666",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f205b97900a_1958/r001/prompt.txt",
+      "prompt_sha256": "16851411f2bfd047dadba7f87a1360450fcd13f627532d98653f2bebc3611b76",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5f205b97900a_1997",
+      "general_id": "cn_5f205b97900a",
+      "subject": "张宗逊",
+      "reference_year": 1997,
+      "age_stage": "late",
+      "approximate_age": 89,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7538565.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f205b97900a_1997/r001/source.png",
+      "source_sha256": "59a43b2094285ad9239ef72a687c1f5c54bedf46395df77b670988ea4a637eb9",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5f205b97900a_1997/r001/prompt.txt",
+      "prompt_sha256": "e2967400ff396499c3880ab415b4b308362c1629fa396f1c6ef0d28b3f8b8a54",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8bb84e1653cb_1930",
+      "general_id": "cn_8bb84e1653cb",
+      "subject": "许世友",
+      "reference_year": 1930,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7537900.html",
+        "https://www.mod.gov.cn/2018gfbztlbmb/2019-09/20/content_4850807.htm"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb84e1653cb_1930/r001/source.png",
+      "source_sha256": "c4496c33398193205f33b2b1f8390135e6752410e652f47857452c904c23e2b0",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb84e1653cb_1930/r001/prompt.txt",
+      "prompt_sha256": "3675c2faaaebc3f94ea550e6c20f479f57d79e56154bf3970799a272b1b106ad",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8bb84e1653cb_1943",
+      "general_id": "cn_8bb84e1653cb",
+      "subject": "许世友",
+      "reference_year": 1943,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7537900.html",
+        "https://www.mod.gov.cn/2018gfbztlbmb/2019-09/20/content_4850807.htm"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb84e1653cb_1943/r001/source.png",
+      "source_sha256": "e55b534c06aa92ab9713f203b0d66140ef160cfd2ab14d724d53b6c1e84d51b4",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb84e1653cb_1943/r001/prompt.txt",
+      "prompt_sha256": "af1de9f6a24684d73bfe7fc4490cc9f8b86a1bfd474f736fb376bb3a06f43b8c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8bb84e1653cb_1955",
+      "general_id": "cn_8bb84e1653cb",
+      "subject": "许世友",
+      "reference_year": 1955,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7537900.html",
+        "https://www.mod.gov.cn/2018gfbztlbmb/2019-09/20/content_4850807.htm"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb84e1653cb_1955/r001/source.png",
+      "source_sha256": "bffe76dcebd64c2892c1f817d10b642896d80d763815703fc1aa135177f5fced",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb84e1653cb_1955/r001/prompt.txt",
+      "prompt_sha256": "5a15b7ca00ac1822cb92621d03b205b389c25ab0e3d45f521d13889b04d6286d",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8bb84e1653cb_1984",
+      "general_id": "cn_8bb84e1653cb",
+      "subject": "许世友",
+      "reference_year": 1984,
+      "age_stage": "late",
+      "approximate_age": 79,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7537900.html",
+        "https://www.mod.gov.cn/2018gfbztlbmb/2019-09/20/content_4850807.htm"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb84e1653cb_1984/r001/source.png",
+      "source_sha256": "2ef5e03ab8c8e0c8584667a5e4c034f41e41732cfad5379396d381e9d2f03d51",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb84e1653cb_1984/r001/prompt.txt",
+      "prompt_sha256": "48967ee348bab6baaa878589348885ea44e5bcc046ef043ff16d0ae584128202",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_738b9707_1946",
+      "general_id": "cn_738b9707",
+      "subject": "王震",
+      "reference_year": 1946,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/daohang/n/2013/0226/c357263-20607175.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b9707_1946/r001/source.png",
+      "source_sha256": "0046b3b2ce6e90804b699298dfd9a2ce726540b1acd5a5c49ea1f0fa78c508bc",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b9707_1946/r001/prompt.txt",
+      "prompt_sha256": "3903f5b8d50b7c1ab0776a7cbd33452fd7352db01dbd3b3ecff2eb9d789b65ce",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_738b9707_1933",
+      "general_id": "cn_738b9707",
+      "subject": "王震",
+      "reference_year": 1933,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/daohang/n/2013/0226/c357263-20607175.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b9707_1933/r001/source.png",
+      "source_sha256": "3193c49ddb4a6b3f7fbc5cb678553a2c8ea19e03fd8d8327ff50eafe3d0e3703",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b9707_1933/r001/prompt.txt",
+      "prompt_sha256": "a988ad48876abb9d616250803087578d231dcb6eae44148531b21fd1c026bb64",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_738b9707_1958",
+      "general_id": "cn_738b9707",
+      "subject": "王震",
+      "reference_year": 1958,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/daohang/n/2013/0226/c357263-20607175.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b9707_1958/r001/source.png",
+      "source_sha256": "b14a40931cff3803419fae628c35a85401ebc6a0706b5f1eca269c453a3b5ccb",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b9707_1958/r001/prompt.txt",
+      "prompt_sha256": "18a06521e1bac34612bf24290f06d5a9b812ce989c7059a12f7f23cf092e340d",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_7c9f88d5_1932",
+      "general_id": "cn_7c9f88d5",
+      "subject": "粟裕",
+      "reference_year": 1932,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7536807.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7c9f88d5_1932/r001/source.png",
+      "source_sha256": "7939df1766ca7e81acfb0d5bdedc663bbfb1630204ae3b88f617d4a35b6335b3",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7c9f88d5_1932/r001/prompt.txt",
+      "prompt_sha256": "5369b116e5fcf0ae6ad688176537143bbc20953c85173f367d41efc71e5ec6a8",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_738b9707_1992",
+      "general_id": "cn_738b9707",
+      "subject": "王震",
+      "reference_year": 1992,
+      "age_stage": "late",
+      "approximate_age": 84,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/daohang/n/2013/0226/c357263-20607175.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b9707_1992/r001/source.png",
+      "source_sha256": "830fb6ec6ac068e04e83e142a52f866e09fc4faeef2c60a947ee534821638f86",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b9707_1992/r001/prompt.txt",
+      "prompt_sha256": "193699b15c7241362d5932f2ede1f31f378cd642a6ee4207407731848d63c666",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_7c9f88d5_1945",
+      "general_id": "cn_7c9f88d5",
+      "subject": "粟裕",
+      "reference_year": 1945,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7536807.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7c9f88d5_1945/r001/source.png",
+      "source_sha256": "bbd7b151c80414e2eb8f0fafb632dc324e1d7e5f2318ad396f8f2e91d9360f8a",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7c9f88d5_1945/r001/prompt.txt",
+      "prompt_sha256": "78eba9f0c801e49f231bb4e46536d7ac240c0f06ae64b4a8083497bb99c04d99",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_7c9f88d5_1983",
+      "general_id": "cn_7c9f88d5",
+      "subject": "粟裕",
+      "reference_year": 1983,
+      "age_stage": "late",
+      "approximate_age": 76,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7536807.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7c9f88d5_1983/r001/source.png",
+      "source_sha256": "4673f59309867580a3658235e14b00f0430f7d64724f8b1e1d4346e1514ad148",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7c9f88d5_1983/r001/prompt.txt",
+      "prompt_sha256": "41aa23ed58fa0467a3db3ce4f19139fde343288ac8122a8827339ef3e7f9d627",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_7c9f88d5_1957",
+      "general_id": "cn_7c9f88d5",
+      "subject": "粟裕",
+      "reference_year": 1957,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127855/7536807.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7c9f88d5_1957/r001/source.png",
+      "source_sha256": "2468af7b1fb22bcb1759de4bfc582a742c8a1799d3b36962d5129751727f709a",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7c9f88d5_1957/r001/prompt.txt",
+      "prompt_sha256": "5135d707df0f3d9a54db2171a87cba66c06a8bee4f703e5c38d003772a6de8b5",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8bb851498fbe_1933",
+      "general_id": "cn_8bb851498fbe",
+      "subject": "许光达",
+      "reference_year": 1933,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2543934.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb851498fbe_1933/r001/source.png",
+      "source_sha256": "a11d6a8edcaf89807bf4c2d03842ce725c84da420dfb531dd392eb4611c0c9ad",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb851498fbe_1933/r001/prompt.txt",
+      "prompt_sha256": "04b6cf24420f09b03bc9fb29c7f16703afe5d13e3af33c26424251da8c690be8",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8bb851498fbe_1946",
+      "general_id": "cn_8bb851498fbe",
+      "subject": "许光达",
+      "reference_year": 1946,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2543934.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb851498fbe_1946/r001/source.png",
+      "source_sha256": "c2c190a952e425c571be9b12c2145488ae9162b4c2711297797f1184bfcd6770",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb851498fbe_1946/r001/prompt.txt",
+      "prompt_sha256": "eb7ff3d61ede802a6e3c8a0828f92e73d1179104c504ad0fefc486f46df636f8",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8bb851498fbe_1958",
+      "general_id": "cn_8bb851498fbe",
+      "subject": "许光达",
+      "reference_year": 1958,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2543934.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb851498fbe_1958/r001/source.png",
+      "source_sha256": "462cf7414797503ac2ebee1e3872ffd778439a539dbd85f7e41fc8ef40d313e1",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb851498fbe_1958/r001/prompt.txt",
+      "prompt_sha256": "ae5fa53f3c7ed2fdabcb172277dcafcc926fb05882ac0fca8b2839175a7fc6ed",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_8bb851498fbe_1968",
+      "general_id": "cn_8bb851498fbe",
+      "subject": "许光达",
+      "reference_year": 1968,
+      "age_stage": "late",
+      "approximate_age": 60,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2543934.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb851498fbe_1968/r001/source.png",
+      "source_sha256": "d53e601773da976ec535f6ffbb94a3ff93d4a3c84a62e87d6f44dc27d9f13de4",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_8bb851498fbe_1968/r001/prompt.txt",
+      "prompt_sha256": "feea8eeaed199ff927213333fc9ace172e8bd641ef6f24b3a639552bd0ddcd21",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_7f5770b38f89_1919",
+      "general_id": "cn_7f5770b38f89",
+      "subject": "罗炳辉",
+      "reference_year": 1919,
+      "age_stage": "young",
+      "approximate_age": 22,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2023/0529/c443712-40000906.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7f5770b38f89_1919/r001/source.png",
+      "source_sha256": "c2ae4a846faf33a361bff31b40096e5652cd6e3b81a82071f7c86b9f44788ddb",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7f5770b38f89_1919/r001/prompt.txt",
+      "prompt_sha256": "024f2a5b222e518e88f573e2c14ef27875e35cdac30d255d28d9041f507c6984",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_7f5770b38f89_1929",
+      "general_id": "cn_7f5770b38f89",
+      "subject": "罗炳辉",
+      "reference_year": 1929,
+      "age_stage": "prime",
+      "approximate_age": 32,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2023/0529/c443712-40000906.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7f5770b38f89_1929/r001/source.png",
+      "source_sha256": "594a2d8d5d99e1bad511d3c72dde1594ac97014695bf58ee0646fd2e3b9c1af1",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7f5770b38f89_1929/r001/prompt.txt",
+      "prompt_sha256": "c5a958fbfec90607b4688ee476a4cd3044e5ece963e6c60e4e014f8abb76543f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_7f5770b38f89_1938",
+      "general_id": "cn_7f5770b38f89",
+      "subject": "罗炳辉",
+      "reference_year": 1938,
+      "age_stage": "middle",
+      "approximate_age": 41,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2023/0529/c443712-40000906.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7f5770b38f89_1938/r001/source.png",
+      "source_sha256": "bd1d375178117d275007631293e9d5bbf3f4c8d54793e7f60775e3bb69bc18c5",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7f5770b38f89_1938/r001/prompt.txt",
+      "prompt_sha256": "ea97382428745d854d292726b40873ab8f0983f5385585a6de4b2c9f9c25edf3",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_7f5770b38f89_1945",
+      "general_id": "cn_7f5770b38f89",
+      "subject": "罗炳辉",
+      "reference_year": 1945,
+      "age_stage": "late",
+      "approximate_age": 48,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2023/0529/c443712-40000906.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7f5770b38f89_1945/r001/source.png",
+      "source_sha256": "545e2c21e4394cd4d9fca5ee7c3a147f6b0c7fcd279f6bd8c652495352bbe4f2",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_7f5770b38f89_1945/r001/prompt.txt",
+      "prompt_sha256": "18168bf0b008e47707e9141e1d64e4530dbf4f5f6aebafecb63e00489cc481ab",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_546858eb7b2c_1925",
+      "general_id": "cn_546858eb7b2c",
+      "subject": "周士第",
+      "reference_year": 1925,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7538728.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_546858eb7b2c_1925/r001/source.png",
+      "source_sha256": "7a5205c086195e7c1c8af5a45f6ca0e8d9da0dd0948a8ebe95db27bc68c066e8",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_546858eb7b2c_1925/r001/prompt.txt",
+      "prompt_sha256": "42aaccc5cee1aa70f68db457e14816e9ee3e4537e4b4d5f60e511a03115f8909",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_546858eb7b2c_1938",
+      "general_id": "cn_546858eb7b2c",
+      "subject": "周士第",
+      "reference_year": 1938,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7538728.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_546858eb7b2c_1938/r001/source.png",
+      "source_sha256": "12c1a7237987cad59edf1fcc31a5f7396bfe4c95970b595ca923465a40eb6481",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_546858eb7b2c_1938/r001/prompt.txt",
+      "prompt_sha256": "565dffdb65adfcea9d2ddaceff97103519abacfbe8f9bd3cf162a19dfb1aa324",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_546858eb7b2c_1950",
+      "general_id": "cn_546858eb7b2c",
+      "subject": "周士第",
+      "reference_year": 1950,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7538728.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_546858eb7b2c_1950/r001/source.png",
+      "source_sha256": "1b356acc142f2d2afdbf6ddbe82da7fb10e7180073a646cfd4ebe224c268124e",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_546858eb7b2c_1950/r001/prompt.txt",
+      "prompt_sha256": "7c69aa7d024c5833b2fece40d9a9e1fbecf5f36a8d564f8729a562f5c0428bd3",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_546858eb7b2c_1978",
+      "general_id": "cn_546858eb7b2c",
+      "subject": "周士第",
+      "reference_year": 1978,
+      "age_stage": "late",
+      "approximate_age": 78,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7538728.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_546858eb7b2c_1978/r001/source.png",
+      "source_sha256": "d922f81813f09273605d51408ce5a65dbd7ff207a44229201eaaae250f9cdaac",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_546858eb7b2c_1978/r001/prompt.txt",
+      "prompt_sha256": "f8fde07346d8dfd20e3ccbd0fd5abf29bb758fde9f57f9a17ef1eb300eebdb56",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_809652b25149_1928",
+      "general_id": "cn_809652b25149",
+      "subject": "肖劲光",
+      "reference_year": 1928,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2546506.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_809652b25149_1928/r001/source.png",
+      "source_sha256": "8ec4e538d8069f496f405b2ac036a79da3ca8a13f513c7bed16d2d2f9ed72cba",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_809652b25149_1928/r001/prompt.txt",
+      "prompt_sha256": "bf1df39ac9b32954a4807c7a3512bc12f358a1004a28ea750cc51be45ea40322",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_809652b25149_1941",
+      "general_id": "cn_809652b25149",
+      "subject": "肖劲光",
+      "reference_year": 1941,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2546506.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_809652b25149_1941/r001/source.png",
+      "source_sha256": "31e7fb46604a39cfa58aa20e8d713660353261c8012a06ab8f5112970a1acee9",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_809652b25149_1941/r001/prompt.txt",
+      "prompt_sha256": "9e6dfd9fc7681129809a18c1609688b7e0c0577268cb43f4d67de6c96ebae00f",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_809652b25149_1953",
+      "general_id": "cn_809652b25149",
+      "subject": "肖劲光",
+      "reference_year": 1953,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2546506.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_809652b25149_1953/r001/source.png",
+      "source_sha256": "69c0a4ab8d586db5455e50f0bc7203b95cbe83137f8526836c434cc107a3339d",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_809652b25149_1953/r001/prompt.txt",
+      "prompt_sha256": "6873052085a2ff177067c50fc9aa8fd419130a53ed0b3f8f16fd4249f639f60c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_809652b25149_1988",
+      "general_id": "cn_809652b25149",
+      "subject": "肖劲光",
+      "reference_year": 1988,
+      "age_stage": "late",
+      "approximate_age": 85,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2546506.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_809652b25149_1988/r001/source.png",
+      "source_sha256": "5f17437b56499fc58343d23d3a53091da82690a1d50b24e3c80730308fe972c6",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_809652b25149_1988/r001/prompt.txt",
+      "prompt_sha256": "7310ba005d2b06995de06a43b8ac7bcf780df4e81251061e7228f636ace6e529",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_738b5b8f5764_1934",
+      "general_id": "cn_738b5b8f5764",
+      "subject": "王宏坤",
+      "reference_year": 1934,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7537459.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b5b8f5764_1934/r001/source.png",
+      "source_sha256": "ef275fedceba81939fe4f2c46ba072d517dda0f34a06d4fcac93f97df02aa425",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b5b8f5764_1934/r001/prompt.txt",
+      "prompt_sha256": "8108d2af354acc458fb91ee70cbe5a56cb51f3400bbeceba66cc69df654543e7",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_738b5b8f5764_1947",
+      "general_id": "cn_738b5b8f5764",
+      "subject": "王宏坤",
+      "reference_year": 1947,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7537459.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b5b8f5764_1947/r001/source.png",
+      "source_sha256": "edcdbb9836bc5b5edc8cb1ac46ab2fccd6ad365f28f335976bc514d05e7393c0",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b5b8f5764_1947/r001/prompt.txt",
+      "prompt_sha256": "d3674ea63c16dd9b539b18d1af3e8267e38143fdac917fffc911ca01f8e6f2b2",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_738b5b8f5764_1959",
+      "general_id": "cn_738b5b8f5764",
+      "subject": "王宏坤",
+      "reference_year": 1959,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7537459.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b5b8f5764_1959/r001/source.png",
+      "source_sha256": "c607d82d1aeaf990b15a738f4552df383000ba23f28fddcb423f6441991ad80f",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b5b8f5764_1959/r001/prompt.txt",
+      "prompt_sha256": "c8a95ea33a9458026786719c3532426a1032dd4bfe70da2a27e60942ae38ad1a",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_738b5b8f5764_1992",
+      "general_id": "cn_738b5b8f5764",
+      "subject": "王宏坤",
+      "reference_year": 1992,
+      "age_stage": "late",
+      "approximate_age": 83,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/127857/7537459.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b5b8f5764_1992/r001/source.png",
+      "source_sha256": "6de92403bd70ab0d7c670576e062bedff4c237d32b10ba4565054559eff08f80",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_738b5b8f5764_1992/r001/prompt.txt",
+      "prompt_sha256": "85dfba896a12a8f919cc11c6ab03f445f162acb8c2ea3c134fb3b32be42b3505",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_53f6525182f1_1922",
+      "general_id": "cn_53f6525182f1",
+      "subject": "叶剑英",
+      "reference_year": 1922,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6525182f1_1922/r001/source.png",
+      "source_sha256": "01cf3965f8577ba5679502d4e3e542f213f062b94282bcb5b9f36efe8a33e204",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6525182f1_1922/r001/prompt.txt",
+      "prompt_sha256": "eb757903d934cd6415fc9b2663a89f60ea22d3a9ffba486ee98bd3c6b8d01ccc",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_53f6525182f1_1935",
+      "general_id": "cn_53f6525182f1",
+      "subject": "叶剑英",
+      "reference_year": 1935,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6525182f1_1935/r001/source.png",
+      "source_sha256": "55e3f8210527ff1806a779f79dd25bf30d8c19c96574b686c550f809719c64b2",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6525182f1_1935/r001/prompt.txt",
+      "prompt_sha256": "269776631e4c2143d8badde8f7b661f2e3536a95af7e8a819b02e8a3bb6ca217",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_53f6525182f1_1947",
+      "general_id": "cn_53f6525182f1",
+      "subject": "叶剑英",
+      "reference_year": 1947,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6525182f1_1947/r001/source.png",
+      "source_sha256": "f0af980647471463c9074bfba7ddb924fe493a0ef92fca3b414c6dd8be146899",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6525182f1_1947/r001/prompt.txt",
+      "prompt_sha256": "c3dd508d13687217ff8d0160af59c8c769e9e8e63e526d147b12a63eaff44c19",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_53f6525182f1_1985",
+      "general_id": "cn_53f6525182f1",
+      "subject": "叶剑英",
+      "reference_year": 1985,
+      "age_stage": "late",
+      "approximate_age": 88,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490482.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6525182f1_1985/r001/source.png",
+      "source_sha256": "f3bf24393c42ffdda155e824e9d110f59905e15373a29c53143e88a53c9f4f64",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6525182f1_1985/r001/prompt.txt",
+      "prompt_sha256": "e4dd59e3810c6bfcda3caf451d72686e5dd00e522e3c32089c15338a70686730",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_52185fd74e39_1923",
+      "general_id": "cn_52185fd74e39",
+      "subject": "刘志丹",
+      "reference_year": 1923,
+      "age_stage": "young",
+      "approximate_age": 20,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2544013.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52185fd74e39_1923/r001/source.png",
+      "source_sha256": "1fccd0c4c54f81d21427652088d3c432cdffac856722ecda4b2276e49f374abb",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52185fd74e39_1923/r001/prompt.txt",
+      "prompt_sha256": "44988c6b16f9ad82eec179030168e959f1f3647e00dbca215e22d3dee86b97f0",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_52185fd74e39_1927",
+      "general_id": "cn_52185fd74e39",
+      "subject": "刘志丹",
+      "reference_year": 1927,
+      "age_stage": "prime",
+      "approximate_age": 24,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2544013.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52185fd74e39_1927/r001/source.png",
+      "source_sha256": "926f0a72465c891593f84e5dac80b02baa1ee13bbf9dd0d72561978a0b259c0a",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52185fd74e39_1927/r001/prompt.txt",
+      "prompt_sha256": "fd6c524c8476798081993c02c5b89be25cbd7589736569baaa42d4fc26946234",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_52185fd74e39_1931",
+      "general_id": "cn_52185fd74e39",
+      "subject": "刘志丹",
+      "reference_year": 1931,
+      "age_stage": "middle",
+      "approximate_age": 28,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2544013.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52185fd74e39_1931/r001/source.png",
+      "source_sha256": "d45baddc5cfbe692187ff4f3d99e9fac2790f24bd706e11bbe6dad9d0544d57d",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52185fd74e39_1931/r001/prompt.txt",
+      "prompt_sha256": "3c08f3a1bb472777e92478b2e18f47a5facc1b4161679314f696a5cb271748b4",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_52185fd74e39_1935",
+      "general_id": "cn_52185fd74e39",
+      "subject": "刘志丹",
+      "reference_year": 1935,
+      "age_stage": "late",
+      "approximate_age": 32,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/33840/2544013.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52185fd74e39_1935/r001/source.png",
+      "source_sha256": "51148ff5c4e1a874ad9f2708569270ccca8a62ab4701dbf1f69ce21087d88b9c",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_52185fd74e39_1935/r001/prompt.txt",
+      "prompt_sha256": "7310429b6a1f1e424dc0933b89d23e751b8106433c5197dd948c585753125c59",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_9ec4516c7565_1922",
+      "general_id": "cn_9ec4516c7565",
+      "subject": "黄公略",
+      "reference_year": 1922,
+      "age_stage": "prime",
+      "approximate_age": 24,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2024/1006/c443712-40333531.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4516c7565_1922/r001/source.png",
+      "source_sha256": "f93f5d247d68855bb61db4204781e354619414032fff8f721b811685ab88035b",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4516c7565_1922/r001/prompt.txt",
+      "prompt_sha256": "b2d4935bcd578da064253bb3849ce72b23d6e07a7605b8696a200f8f92d1d63c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_9ec4516c7565_1918",
+      "general_id": "cn_9ec4516c7565",
+      "subject": "黄公略",
+      "reference_year": 1918,
+      "age_stage": "young",
+      "approximate_age": 20,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2024/1006/c443712-40333531.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4516c7565_1918/r001/source.png",
+      "source_sha256": "3945fa7273966a02fc6a7dabdf0ef5566a693599e631a0b64f04f410356e1842",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4516c7565_1918/r001/prompt.txt",
+      "prompt_sha256": "34eeeb65a340555f2c3669614b3411be5bb968f2f6ecdb7e387dec6486c32098",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_9ec4516c7565_1926",
+      "general_id": "cn_9ec4516c7565",
+      "subject": "黄公略",
+      "reference_year": 1926,
+      "age_stage": "middle",
+      "approximate_age": 28,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2024/1006/c443712-40333531.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4516c7565_1926/r001/source.png",
+      "source_sha256": "1064099547ae51100ee76a7bbb7e1fa79881d21740a539ed4e903358f7f8597d",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4516c7565_1926/r001/prompt.txt",
+      "prompt_sha256": "e5a62604ad998fa8d3dedad112b29b061350bf8eb6f8b5f96011ff7be61472b4",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_53f6633a_1918",
+      "general_id": "cn_53f6633a",
+      "subject": "叶挺",
+      "reference_year": 1918,
+      "age_stage": "young",
+      "approximate_age": 22,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2021/0520/c64387-32108292.html",
+        "https://cpc.people.com.cn/n1/2021/0122/c64387-32009116.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6633a_1918/r001/source.png",
+      "source_sha256": "a3861f0bd85f849024739fed3c8753c732f1706c060f52c8fb82e0427a82f7a7",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6633a_1918/r001/prompt.txt",
+      "prompt_sha256": "6bb4401109e14ba47840874fa30d1e5625c213c6ac83905314e13599581d0ae7",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_9ec4516c7565_1930",
+      "general_id": "cn_9ec4516c7565",
+      "subject": "黄公略",
+      "reference_year": 1930,
+      "age_stage": "late",
+      "approximate_age": 32,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2024/1006/c443712-40333531.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4516c7565_1930/r001/source.png",
+      "source_sha256": "f71081f1ce3e9a038cc3d042d8d7bbbc151d6f3d3359541f21e05104eafc0268",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_9ec4516c7565_1930/r001/prompt.txt",
+      "prompt_sha256": "dd789822aae7623efbd3ea8744f8b66eb2a70bc1544908db012bddb9db4129c4",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_53f6633a_1928",
+      "general_id": "cn_53f6633a",
+      "subject": "叶挺",
+      "reference_year": 1928,
+      "age_stage": "prime",
+      "approximate_age": 32,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2021/0520/c64387-32108292.html",
+        "https://cpc.people.com.cn/n1/2021/0122/c64387-32009116.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6633a_1928/r001/source.png",
+      "source_sha256": "dfc7da4d9512b9690a070948548573cda94828a03e1ebe7c400bd92e38a829ac",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6633a_1928/r001/prompt.txt",
+      "prompt_sha256": "709348f603da949284516668f5dd6f0ec9f3ac5efb47c5975b5d2bf2f4e2e385",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_53f6633a_1937",
+      "general_id": "cn_53f6633a",
+      "subject": "叶挺",
+      "reference_year": 1937,
+      "age_stage": "middle",
+      "approximate_age": 41,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2021/0520/c64387-32108292.html",
+        "https://cpc.people.com.cn/n1/2021/0122/c64387-32009116.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6633a_1937/r001/source.png",
+      "source_sha256": "e98519e7c7389a3ee995c09cf78a4388c74dcf99c4c77e92af1cb0f0fce0dd16",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6633a_1937/r001/prompt.txt",
+      "prompt_sha256": "3c52b78cd009c3fc971f1a0d35bb8b2fcc16dee5fd86f8764419499ed2dc208c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_53f6633a_1945",
+      "general_id": "cn_53f6633a",
+      "subject": "叶挺",
+      "reference_year": 1945,
+      "age_stage": "late",
+      "approximate_age": 49,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/n1/2021/0520/c64387-32108292.html",
+        "https://cpc.people.com.cn/n1/2021/0122/c64387-32009116.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6633a_1945/r001/source.png",
+      "source_sha256": "96246c12d3c7728c2e1a7c6302e0b8557712a1099853e6cea4769912b6d413d7",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_53f6633a_1945/r001/prompt.txt",
+      "prompt_sha256": "c03e26a6f84fcd6cdd544c65547d705943c1a8a99cfc1270e25a9da15e4bf1c6",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_67975f6a_1932",
+      "general_id": "cn_67975f6a",
+      "subject": "林彪",
+      "reference_year": 1932,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67975f6a_1932/r001/source.png",
+      "source_sha256": "453c250771c65487c0d86b7f52aae4a2e1b05ea6cf182f887e98ab4aa4a838c4",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67975f6a_1932/r001/prompt.txt",
+      "prompt_sha256": "71e5a6136407857761b14ece59f85a66adf08d60776def5b60131e0adfb933b4",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_67975f6a_1957",
+      "general_id": "cn_67975f6a",
+      "subject": "林彪",
+      "reference_year": 1957,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67975f6a_1957/r001/source.png",
+      "source_sha256": "bd3ca31aab0eb97459d6059255683540f9a378203dec12beea773ae5cab5f9ab",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67975f6a_1957/r001/prompt.txt",
+      "prompt_sha256": "01cb93c962fc2a481ab0f33e1667d130342a56777ca26e245692afe81a4654ac",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_67975f6a_1945",
+      "general_id": "cn_67975f6a",
+      "subject": "林彪",
+      "reference_year": 1945,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67975f6a_1945/r001/source.png",
+      "source_sha256": "5c12cb8b4f5490dc22148c85ac25caaad3f3056a66d76d75fb71c654eddbc78a",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67975f6a_1945/r001/prompt.txt",
+      "prompt_sha256": "02075245cefab35463dae87116fa22ef558bdc5ca3609d9fb89fd7ab7d06ef8c",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_67975f6a_1970",
+      "general_id": "cn_67975f6a",
+      "subject": "林彪",
+      "reference_year": 1970,
+      "age_stage": "late",
+      "approximate_age": 63,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/64162/126778/126780/7490123.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67975f6a_1970/r001/source.png",
+      "source_sha256": "35ac676cb804cc1850a1da0212b045a9280071204781f395f83038fb19139f50",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_67975f6a_1970/r001/prompt.txt",
+      "prompt_sha256": "c1eded7fe8fbf134ebfe036648fddc398f67216ccc73a63be3180e53ff05ab7a",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5de66743_1925",
+      "general_id": "cn_5de66743",
+      "subject": "左权",
+      "reference_year": 1925,
+      "age_stage": "young",
+      "approximate_age": 20,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/34136/2543720.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5de66743_1925/r001/source.png",
+      "source_sha256": "0490c4eac6127491a605cbfc8477f56eb6707edcd5e02ecd4286dfa467300b5c",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5de66743_1925/r001/prompt.txt",
+      "prompt_sha256": "0dde563ab41902c485c2a081ffeff93d229a78f2a4d3c6103a16c0810b112c58",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5de66743_1930",
+      "general_id": "cn_5de66743",
+      "subject": "左权",
+      "reference_year": 1930,
+      "age_stage": "prime",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/34136/2543720.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5de66743_1930/r001/source.png",
+      "source_sha256": "4bd8389d51188e499f9b71954b2bd01988d2a13e80ca0be285007f80cf718578",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5de66743_1930/r001/prompt.txt",
+      "prompt_sha256": "d6bbccb4bf80b6fe3dba5d62828fe29feb7a577056d18b50c8f3f44f8e09fbf2",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5de66743_1936",
+      "general_id": "cn_5de66743",
+      "subject": "左权",
+      "reference_year": 1936,
+      "age_stage": "middle",
+      "approximate_age": 31,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/34136/2543720.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5de66743_1936/r001/source.png",
+      "source_sha256": "a0df7cc13b82f170e744b044ed57f6acd1975c4ef394a8a2a606ac9604474534",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5de66743_1936/r001/prompt.txt",
+      "prompt_sha256": "3e2097a999acfe9af32827beb1608de2a8e1ac17e76af2fc672b79427aa7a406",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cn_5de66743_1941",
+      "general_id": "cn_5de66743",
+      "subject": "左权",
+      "reference_year": 1941,
+      "age_stage": "late",
+      "approximate_age": 36,
+      "revision": "r001",
+      "reference_urls": [
+        "https://cpc.people.com.cn/GB/34136/2543720.html"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5de66743_1941/r001/source.png",
+      "source_sha256": "f611d07ce6663bd06805485174fe706b1fb594b7d681001393d0a2ca8e456959",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cn_5de66743_1941/r001/prompt.txt",
+      "prompt_sha256": "131c43b331aab8ca9ddb68c55ac298901543394491f976e5aaa8cbcf827f41f6",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    }
+  ],
+  "failures": [],
+  "updated_at_utc": "2026-10-19T22:32:11.655522+00:00",
+  "manual_art_review_complete": false,
+  "installed": false,
+  "source_rasters_modified": false,
+  "route": "sub2-image-gen/gpt-image-2.5/high"
+}

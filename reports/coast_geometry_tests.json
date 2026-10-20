@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.27",
+	"build_version": "0.2.28",
 	"checks": [
 		{
 			"name": "current_native_content_and_independent_land_fixture_load",
@@ -246,7 +246,7 @@
 			"passed": true
 		}
 	],
-	"content_hash": "9ea85ebaea4412357c628bf6d2c16d29d7ef08c594dc77dcef7b3005b42f6661",
+	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
 	"failures": [],
 	"formal_art_approval": false,
 	"historical_coast_survey_approval": false,
@@ -257,7 +257,7 @@
 			"land_triangles": 12369,
 			"map_id": "jingfeng",
 			"native_area_error": 9.57388120889664,
-			"preparation_ms": 7428.467,
+			"preparation_ms": 6048.279,
 			"source_coast_vertices": 12461.0,
 			"source_polygons": 62.0,
 			"uniform_query_hits": 113020
@@ -268,7 +268,7 @@
 			"land_triangles": 1092,
 			"map_id": "jingjin",
 			"native_area_error": 2.01006203889847,
-			"preparation_ms": 2504.435,
+			"preparation_ms": 1826.496,
 			"source_coast_vertices": 1025.0,
 			"source_polygons": 1.0,
 			"uniform_query_hits": 45422
@@ -279,7 +279,7 @@
 			"land_triangles": 36850,
 			"map_id": "conquest_china",
 			"native_area_error": 1.79137033224106,
-			"preparation_ms": 16252.68,
+			"preparation_ms": 12373.501,
 			"source_coast_vertices": 52417.0,
 			"source_polygons": 5269.0,
 			"uniform_query_hits": 128104
@@ -290,7 +290,7 @@
 			"land_triangles": 81193,
 			"map_id": "asia_strategic",
 			"native_area_error": 0.378439754247665,
-			"preparation_ms": 38203.072,
+			"preparation_ms": 40961.764,
 			"source_coast_vertices": 119448.0,
 			"source_polygons": 12105.0,
 			"uniform_query_hits": 7802

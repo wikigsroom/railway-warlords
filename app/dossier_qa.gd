@@ -71,7 +71,7 @@ func execute() -> void:
 		check(visible.size()==1 and visible[0].record.general_id=="hong_xiuquan","search_keeps_exact_historical_identity")
 		await capture("roster_search_hong")
 		search.text="";search.text_changed.emit("");await settle()
-		check(app.ui_nodes(app.screen).filter(func(n):return n is GeneralPortraitView and n.is_visible_in_tree()).size()==29,"clearing_search_restores_all_29")
+		check(app.ui_nodes(app.screen).filter(func(n):return n is GeneralPortraitView and n.is_visible_in_tree()).size()==mini(CommanderRoster.PAGE_SIZE,app.content.tables.generals.size()),"clearing_search_restores_bounded_first_page")
 	app.show_general_growth("hong_xiuquan","young");await settle()
 	var views=app.ui_nodes(app.overlay).filter(func(n):return n is GeneralPortraitView)
 	check(views.size()==1 and views[0].size.x>=260,"dossier_uses_large_whole_portrait")

@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.27",
+	"build_version": "0.2.28",
 	"city_labels": [
 		{
 			"city_id": "zhengzhou",
@@ -26,7 +26,7 @@
 			"text": "开封 · 省城"
 		}
 	],
-	"content_hash": "9ea85ebaea4412357c628bf6d2c16d29d7ef08c594dc77dcef7b3005b42f6661",
+	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
 	"control_land_clip": {},
 	"historical_places": {
 		"additional_markers": 67,
@@ -90,7 +90,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 68252,
 		"placed": 2136,
-		"preparation_ms": 5742.462,
+		"preparation_ms": 4871.526,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1481,
 		"rule_cells_changed": false,
@@ -526,13 +526,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 240,
-		"index_ms": 346.577,
+		"index_ms": 291.912,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 4807.299,
+		"mesh_ms": 5428.792,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 9990,
-		"placement_ms": 4077.45,
-		"preparation_ms": 9231.326,
+		"placement_ms": 4852.647,
+		"preparation_ms": 10573.35,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 112.5,

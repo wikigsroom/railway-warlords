@@ -54,8 +54,10 @@ static func validate(content: ContentRegistry, recipe: Dictionary, deployment: V
 	if not generals is Array:return {"valid":false,"reason":"将领编组格式无效"}
 	if generals.size()>int(recipe.general_slots):return {"valid":false,"reason":"将领数量超过本题名额"}
 	var seen_generals={}
+	var eligible_generals=CommanderRoster.training_candidates(content,recipe).map(func(d):return str(d.id))
 	for id in generals:
 		if not id is String or content.definition("generals",id).is_empty() or seen_generals.has(id):return {"valid":false,"reason":"将领无效或重复选择"}
+		if not eligible_generals.has(id):return {"valid":false,"reason":"将领不在本训练年代的开放名册中"}
 		seen_generals[id]=true
 	var allowed=choices(content,recipe);var army: Array=[];var spent=0;var elite_count=0;var counts={}
 	for raw in deployment:

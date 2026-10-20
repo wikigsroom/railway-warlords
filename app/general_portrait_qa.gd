@@ -57,12 +57,22 @@ func execute() -> void:
 		var selector=app.screen.find_child("HeadquartersAgeStage",true,false)
 		check(selector is OptionButton,"headquarters_has_age_selector")
 		selector.select(stage_index);selector.item_selected.emit(stage_index);await settle()
-		var views=portraits(app.screen)
-		check(views.size()==29,"headquarters_has_all_29_people_"+stages[stage_index])
-		for i in range(views.size()):
-			var view=views[i];await reveal(view)
-			check(view.record.kind=="portrait" and view.portrait!=null and view.record.age_stage==stages[stage_index],"whole_age_portrait_"+str(view.record.general_id)+"_"+stages[stage_index])
-			if i in [0,12,23,28]:await capture("roster_%s_%02d"%[stages[stage_index],i])
+		var seen={};var pages=int(ceil(app.content.tables.generals.size()/float(CommanderRoster.PAGE_SIZE)))
+		for page in range(pages):
+			if page>0:
+				var next=app.screen.find_child("RosterNext",true,false)
+				check(next is Button and not next.disabled,"next_roster_page_available_%s_%d"%[stages[stage_index],page])
+				next.pressed.emit();await settle()
+			var views=portraits(app.screen)
+			check(views.size()==mini(CommanderRoster.PAGE_SIZE,app.content.tables.generals.size()-page*CommanderRoster.PAGE_SIZE),"bounded_roster_page_%s_%d"%[stages[stage_index],page])
+			for i in range(views.size()):
+				var view=views[i];await reveal(view)
+				check(view.record.kind=="portrait" and view.portrait!=null and view.record.age_stage==stages[stage_index],"whole_age_portrait_"+str(view.record.general_id)+"_"+stages[stage_index])
+				check(not seen.has(str(view.record.general_id)),"no_duplicate_roster_person_%s_%s"%[stages[stage_index],str(view.record.general_id)]);seen[str(view.record.general_id)]=true
+				if page in [0,int(pages/2),pages-1] and i==0:await capture("roster_%s_page_%02d"%[stages[stage_index],page])
+		check(seen.size()==app.content.tables.generals.size(),"every_registered_general_traversed_"+stages[stage_index])
+		check(app.assets.portrait_texture_order.size()<=AssetLibrary.PORTRAIT_TEXTURE_CACHE_LIMIT,"portrait_cache_bounded_"+stages[stage_index])
+		app.war_room.hq_page=0
 	for id in ["li_hongzhang","hong_xiuquan","mao_zedong"]:
 		app.show_general_growth(id);await settle()
 		for stage_index in range(stages.size()):
@@ -95,7 +105,8 @@ func execute() -> void:
 		var dated=portraits(app.overlay);var valid=true
 		for view in dated:
 			valid=valid and (view.record.kind=="identity" or view.record.reference_year<=int(str(state.date).left(4)) or view.record.age_stage=="young")
-		check(dated.size()==state.generals.size() and valid,"assignment_uses_scenario_date_"+id)
+		var available=state.generals.filter(func(g):return g.owner_id==state.player_faction_id and not g.get("injured_this_match",false) and not g.get("withdrawn_this_match",false) and g.assigned_unit_id==null)
+		check(dated.size()==available.size() and valid,"assignment_uses_own_available_reserves_and_scenario_date_"+id)
 		if dated.is_empty():check(is_instance_valid(app.overlay.find_child("NoScenarioGenerals",true,false)),"empty_roster_explained_"+id)
 		await capture("assignment_"+id);app.close_overlay()
 		var assigned=units.filter(func(u):return u.general_id!=null)

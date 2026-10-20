@@ -4,12 +4,17 @@
 
 ## 截图 / Screenshots
 
-当前媒体目录收录完整PNG原生画面，当前数量和版本由[媒体登记](media/manifest.json)逐张记录。本轮增加11张水面/蜂窝实机画面和4张当前李德胜阶段页；旧0.2.26人物页、0.2.23档案、0.2.22人物和0.2.12交战/航空图保留历史身份。当前专项完整画面共364张，文档只精选其中一部分及导出检查图，全部按原字节复制到`docs/media`，没有裁切、拼接、补绘或叠字。原图与实际查看范围分别保留版本及SHA；合成GPU夹具不计入实机地图媒体。
+当前媒体目录收录完整PNG原生画面，当前数量和版本由[媒体登记](media/manifest.json)逐张记录。0.2.28新增五张将领池精选画面：完整总部、日本师团筛选、待任命后备、任命后返回地图和桌面X30比例。全人物四阶段、分页与正式任命分别保存专项原生证据。0.2.27及更早带版本号的肖像页、档案、交战/航空图与GIF保留历史身份。文档精选画面全部按原字节复制到`docs/media`，没有裁切、拼接、补绘或叠字。截图生成数量、实际查看范围与正式美术批准分别记录；合成GPU夹具不计入实机地图媒体。
 
-Complete PNGs and their exact versions are listed individually in the media manifest. This update adds 11 water/grid gameplay views and four current Li Desheng stage pages. Older 0.2.26, 0.2.23, 0.2.22 and 0.2.12 media retain their historical identities. Selections from 364 current scoped native frames and export checks are copied byte for byte, without cropping, stitching, repainting or overlays. Synthetic GPU fixtures are separate from gameplay media; generated captures and actually viewed frames have separate records.
+Complete PNGs and their exact versions are listed individually in the media manifest. Version 0.2.28 adds five commander views: headquarters, Japanese division filtering, an eligible reserve, the map after appointment and desktop X30 proportions. Separate native evidence covers four-stage traversal, pagination and appointments. Dated portrait pages, dossiers, battle media and GIFs from 0.2.27 or earlier retain their historical identities. Full captures are copied byte for byte, without cropping, stitching, repainting or overlays. Generated captures, actually viewed frames and formal art acceptance are distinct records; synthetic GPU fixtures are separate from gameplay media.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
+| [commander-catalogue-v0228.png](media/commander-catalogue-v0228.png) | 324人总部名册与十二卡分页 / 324-person headquarters and twelve-card pagination |
+| [commander-japan-division-v0228.png](media/commander-japan-division-v0228.png) | 日本师团级军职筛选 / Japanese division command filter |
+| [commander-reserves-v0228.png](media/commander-reserves-v0228.png) | 本方编队与可任命后备 / Owned formation and eligible reserve |
+| [commander-appointed-v0228.png](media/commander-appointed-v0228.png) | 任命后返回地图，仍检视冯玉祥；曹锟绑定由状态断言验证 / Map after appointment, with Feng Yuxiang still selected; Cao Kun assignment is verified by state assertions |
+| [commander-x30-layout-v0228.png](media/commander-x30-layout-v0228.png) | Windows 2400×1080布局 / Windows 2400×1080 layout |
 | [menu.png](media/menu.png) | 当前主菜单 / Current main menu |
 | [battlefield.png](media/battlefield.png) | 战场 HUD / Battlefield HUD |
 | [map-regional-symbols.png](media/map-regional-symbols.png) | 亚洲区域图符与地表 / Regional Asia symbols and ground |
@@ -40,8 +45,8 @@ Complete PNGs and their exact versions are listed individually in the media mani
 | [city-buildings.png](media/city-buildings.png) | 城市设施与队列 / City facilities and queue |
 | [diplomacy.png](media/diplomacy.png) | 外交关系与命令条件 / Relations and validation |
 | [headquarters.png](media/headquarters.png) / [technology.png](media/technology.png) | 将领和科技 / Generals and technologies |
-| [lidesheng-young-v0227.png](media/lidesheng-young-v0227.png) / [middle](media/lidesheng-middle-v0227.png) | 李德胜1917青年与1947中年原生预览；1947仅素材 / 1917 youthful and 1947 middle-aged native previews; 1947 art only |
-| [lidesheng-prime-v0227.png](media/lidesheng-prime-v0227.png) / [late](media/lidesheng-late-v0227.png) | 壮年与暮年阶段原生页 / Prime and late stage pages |
+| [lidesheng-young-v0227.png](media/lidesheng-young-v0227.png) / [middle](media/lidesheng-middle-v0227.png) | 保留0.2.27李德胜1917青年与1947中年预览；1947仅素材 / Retained 0.2.27 youthful and middle-aged previews; 1947 art only |
+| [lidesheng-prime-v0227.png](media/lidesheng-prime-v0227.png) / [late](media/lidesheng-late-v0227.png) | 保留0.2.27壮年与暮年页 / Retained 0.2.27 prime and late stage pages |
 | [water-china-overview.png](media/water-china-overview.png) / [asia](media/water-asia-overview.png) | 当前全国/亚洲总览，无三角辅助网纹 / Current China and Asia overviews |
 | [water-bohai.png](media/water-bohai.png) / [japan](media/water-japan.png) / [caspian](media/water-caspian.png) | 三处连续海/内陆水面 / Three native sea/inland-water views |
 | [water-yangtze.png](media/water-yangtze.png) / [nanjing](media/water-nanjing.png) | 来源长江河带 / Sourced Yangtze ribbons |
@@ -52,7 +57,7 @@ Complete PNGs and their exact versions are listed individually in the media mani
 | [dossier-x30-v0223.png](media/dossier-x30-v0223.png) | 桌面手机比例独立滚动 / Independent scrolling in desktop phone proportions |
 | [dossier-large-text-v0223.png](media/dossier-large-text-v0223.png) | 1280×720、150%字号设置 / 1280×720 with the 150% text setting |
 
-截图 JSON 记录视口、版本、内容指纹等；实际地表/UI的共同证据见 `reports/terrain_surface_native_evidence.json`，成长事务见 `reports/ui_refinement_native_evidence.json`，旧战斗演示见 `reports/native_visual_evidence.json`。图鉴是游戏内真实控件，不是后期拼接图片。X30 尺寸截图来自 Windows，`physical_android_device_tested` 为 false。
+截图JSON记录视口、版本、内容指纹等；将领池见`reports/commander_roster_native_evidence.json`、`reports/general_portrait_native_evidence.json`，实际完整查看见`reports/commander_pool_native_review.json`；地表/UI共同证据见`reports/terrain_surface_native_evidence.json`，成长事务见`reports/ui_refinement_native_evidence.json`，旧战斗演示见`reports/native_visual_evidence.json`。图鉴是游戏内真实控件。X30尺寸截图来自Windows，`physical_android_device_tested`为false。肖像历史肖似度、四阶段身份一致性和正式美术尚未签核。
 
 Associated JSON records viewport, version and content fingerprint. Current UI/terrain proof is `reports/terrain_surface_native_evidence.json`; symbol checks are in `reports/map_symbol_native_evidence.json`; older battle proof is `reports/native_visual_evidence.json`. The atlas is an actual in-game interface. X30-size screenshots are Windows captures with `physical_android_device_tested: false`.
 

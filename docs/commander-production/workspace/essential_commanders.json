@@ -1,0 +1,810 @@
+{
+  "schema": "commander-expansion-research-1",
+  "coverage_complete": false,
+  "people": [
+    {
+      "id": "guan_tianpei",
+      "name": "关天培",
+      "birth_year": 1781,
+      "death_year": 1841,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "qing",
+      "documented_title": "广东水师提督",
+      "documented_year": 1834,
+      "command_level": "fleet",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "gdws_guan"
+      ],
+      "reference_urls": [
+        "https://www.gdwsw.gov.cn/rwcq/content/post_25991.html"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "High forehead, broad cheekbones, lean oval face; thin long moustache and short pointed beard only at mature ages. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain Qing-period dark robe with upright collar, shaved front scalp and a subtle queue falling behind, no military insignia.",
+      "adult_clothing": "Plain muted dark Qing robe and historically shaped Qing official winter cap with an undecorated rounded crown. No invented rank badge, fantasy armor or modern tunic."
+    },
+    {
+      "id": "sengge_rinchen",
+      "name": "僧格林沁",
+      "birth_year": 1811,
+      "death_year": 1865,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "qing",
+      "documented_title": "清军参赞大臣、北方军事统帅",
+      "documented_year": 1853,
+      "command_level": "historical_theater_command",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "dpm_sengge",
+        "nam_second_china"
+      ],
+      "reference_urls": [
+        "https://www.dpm.org.cn/lemmas/243417.html",
+        "https://www.nam.ac.uk/explore/second-china-war"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Mongolian officer with broad round face, small eyes, robust neck and thick moustache at mature ages. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain Qing-period dark robe with upright collar, shaved front scalp and a subtle queue falling behind, no military insignia.",
+      "adult_clothing": "Plain muted dark Qing robe and historically shaped Qing official winter cap with an undecorated rounded crown. No invented rank badge, fantasy armor or modern tunic."
+    },
+    {
+      "id": "ding_ruchang",
+      "name": "丁汝昌",
+      "birth_year": 1836,
+      "death_year": 1895,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "qing",
+      "documented_title": "北洋海军提督",
+      "documented_year": 1888,
+      "command_level": "fleet",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "weihai_ding"
+      ],
+      "reference_urls": [
+        "https://www.weihai.gov.cn/art/2021/1/22/art_58901_3536345.html"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Broad square face, strong cheekbones, distinct heavy moustache and short rounded chin beard at mature ages. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain Qing-period dark robe with upright collar, shaved front scalp and a subtle queue falling behind, no military insignia.",
+      "adult_clothing": "Plain muted dark Qing robe and historically shaped Qing official winter cap with an undecorated rounded crown. No invented rank badge, fantasy armor or modern tunic."
+    },
+    {
+      "id": "luo_rongguang",
+      "name": "罗荣光",
+      "birth_year": 1833,
+      "death_year": 1900,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "qing",
+      "documented_title": "天津镇总兵、大沽口守将",
+      "documented_year": null,
+      "command_level": "historical_field_command",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "hunan_luo"
+      ],
+      "reference_urls": [
+        "https://hunan.gov.cn/hnszf/c101487/202108/t20210830_20409865.html"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Long narrow angular face, receding hairline and a long tapered gray beard only in the late living stage. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain Qing-period dark robe with upright collar, shaved front scalp and a subtle queue falling behind, no military insignia.",
+      "adult_clothing": "Plain muted dark Qing robe and historically shaped Qing official winter cap with an undecorated rounded crown. No invented rank badge, fantasy armor or modern tunic."
+    },
+    {
+      "id": "liu_buchan",
+      "name": "刘步蟾",
+      "birth_year": 1852,
+      "death_year": 1895,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "qing",
+      "documented_title": "北洋海军右翼总兵兼定远舰管带",
+      "documented_year": 1888,
+      "command_level": "naval_squadron",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "weihai_liu"
+      ],
+      "reference_urls": [
+        "https://www.weihai.gov.cn/art/2021/1/22/art_58901_3536266.html"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Oval face with wide forehead, closely set eyes and a neat dark moustache in mature ages. Avoid the elderly Qing minister archetype. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain Qing-period dark robe with upright collar, shaved front scalp and a subtle queue falling behind, no military insignia.",
+      "adult_clothing": "Plain muted dark Qing robe and historically shaped Qing official winter cap with an undecorated rounded crown. No invented rank badge, fantasy armor or modern tunic."
+    },
+    {
+      "id": "yang_fang",
+      "name": "杨芳",
+      "birth_year": 1770,
+      "death_year": 1846,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "qing",
+      "documented_title": "湖南提督、赴粤参赞大臣",
+      "documented_year": 1841,
+      "command_level": "historical_theater_command",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "cppcc_yang_fang"
+      ],
+      "reference_urls": [
+        "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/2509/A3"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Lean weathered angular face, high cheekbones, downturned eyes and long sparse beard at advanced ages. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain Qing-period dark robe with upright collar, shaved front scalp and a subtle queue falling behind, no military insignia.",
+      "adult_clothing": "Plain muted dark Qing robe and historically shaped Qing official winter cap with an undecorated rounded crown. No invented rank badge, fantasy armor or modern tunic."
+    },
+    {
+      "id": "ge_yunfei",
+      "name": "葛云飞",
+      "birth_year": 1789,
+      "death_year": 1841,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "qing",
+      "documented_title": "定海镇总兵",
+      "documented_year": 1838,
+      "command_level": "historical_field_command",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "ge_yunfei_memorial"
+      ],
+      "reference_urls": [
+        "https://www.lzxq.gov.cn/system/2017/11/08/000109327.shtml"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Long broad forehead, upright serious brows, medium cheekbones and short pointed dark beard after middle age. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain Qing-period dark robe with upright collar, shaved front scalp and a subtle queue falling behind, no military insignia.",
+      "adult_clothing": "Plain muted dark Qing robe and historically shaped Qing official winter cap with an undecorated rounded crown. No invented rank badge, fantasy armor or modern tunic."
+    },
+    {
+      "id": "zhang_xun",
+      "name": "张勋",
+      "birth_year": 1854,
+      "death_year": 1923,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "beiyang_gov",
+      "documented_title": "江南提督",
+      "documented_year": 1911,
+      "command_level": "historical_regional_command",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "boorman_zhang_xun"
+      ],
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/zhang-xun/"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "High shoulders, thick neck, sloping forehead, bushy eyebrows and pale skin, as described by the cited 1917 contemporary character sketch. A thin Qing queue remains even after 1912. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain Qing-period dark robe with upright collar, shaved front scalp and a subtle queue falling behind, no military insignia.",
+      "adult_clothing": "Dark late-Qing military robe with a restrained dark round cap and a thin queue; no modern Republican rank boards."
+    },
+    {
+      "id": "zhang_fakui",
+      "name": "张发奎",
+      "birth_year": 1896,
+      "death_year": 1980,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "kmt",
+      "documented_title": "国民革命军第12师师长",
+      "documented_year": 1926,
+      "command_level": "division",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "boorman_zhang_fakui",
+        "shanghai_zhang_fakui"
+      ],
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/zhang-fakui/",
+        "https://www.songjiang.gov.cn/sjsz/sjds/sjkzjy/files/basic-html/page179.html"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Long broad face, thick straight brows, close cropped black hair, small moustache when mature, firm wide jaw. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain dark Chinese early twentieth-century civilian long gown, upright collar, bareheaded; no rank or insignia.",
+      "adult_clothing": "Plain muted khaki or gray early Republican Chinese officer high-collar tunic, bareheaded, no invented medals or post-1949 rank insignia."
+    },
+    {
+      "id": "tang_shengzhi",
+      "name": "唐生智",
+      "birth_year": 1890,
+      "death_year": 1970,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "kmt",
+      "documented_title": "国民革命军第8军军长",
+      "documented_year": 1926,
+      "command_level": "army_or_higher",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "boorman_tang_shengzhi",
+        "nlpi_tang_shengzhi"
+      ],
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/tang-shengzhi/",
+        "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000161"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Long narrow face, high hairline, rounded ears, thin straight moustache at middle age, slender neck. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain dark Chinese early twentieth-century civilian long gown, upright collar, bareheaded; no rank or insignia.",
+      "adult_clothing": "Plain muted khaki or gray early Republican Chinese officer high-collar tunic, bareheaded, no invented medals or post-1949 rank insignia.",
+      "life_year_note": "Boorman gives 1890 with a question mark; NLPI registers 1890–1970. Approximate ages use 1890; uncertainty is retained."
+    },
+    {
+      "id": "he_yingqin",
+      "name": "何应钦",
+      "birth_year": 1890,
+      "death_year": 1987,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "kmt",
+      "documented_title": "国民革命军第1军军长",
+      "documented_year": 1926,
+      "command_level": "army_or_higher",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "he_yingqin_office",
+        "he_yingqin_life"
+      ],
+      "reference_urls": [
+        "https://dangshi.people.com.cn/n1/2017/0223/c85037-29103257.html",
+        "https://www.zgbk.com/ecph/words?Name=%E4%BD%95%E5%BA%94%E9%92%A6&SiteID=1&SourceID=524211&Type=bkzyb&subSourceType=000003000006000002"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Round narrow-chinned face, swept short hair, arched brows and distinct neat small moustache at middle age. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain dark Chinese early twentieth-century civilian long gown, upright collar, bareheaded; no rank or insignia.",
+      "adult_clothing": "Plain muted khaki or gray early Republican Chinese officer high-collar tunic, bareheaded, no invented medals or post-1949 rank insignia."
+    },
+    {
+      "id": "gordon_bremer",
+      "name": "伯麦",
+      "birth_year": 1786,
+      "death_year": 1850,
+      "date_precision": "year",
+      "country": "Britain",
+      "historical_side": "british_empire",
+      "documented_title": "英国赴华海军指挥官",
+      "documented_year": 1840,
+      "command_level": "fleet",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "anu_bremer",
+        "nam_first_china"
+      ],
+      "reference_urls": [
+        "https://adb.anu.edu.au/biography/bremer-sir-james-john-1823/text2091",
+        "https://www.nam.ac.uk/explore/first-china-war-1839-1842"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "British naval officer, wide forehead, short receding light-brown hair, strong aquiline nose, full sideburns at mature ages; distinct face, not a generic Victorian portrait. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain nineteenth-century civilian coat and high shirt collar, bareheaded, no medals or military insignia.",
+      "adult_clothing": "Plain dark navy nineteenth-century British naval officers coat, restrained high collar, no invented medal ribbons or modern service insignia.",
+      "source_name_variants": [
+        "James John Gordon Bremer",
+        "戈登·伯麦"
+      ]
+    },
+    {
+      "id": "hugh_gough",
+      "name": "休·高夫",
+      "birth_year": 1779,
+      "death_year": 1869,
+      "date_precision": "year",
+      "country": "Britain",
+      "historical_side": "british_empire",
+      "documented_title": "英国驻华陆军统帅",
+      "documented_year": 1841,
+      "command_level": "expeditionary_command",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "nam_gough_life",
+        "nam_first_china"
+      ],
+      "reference_urls": [
+        "https://collection.nam.ac.uk/detail.php?acc=2018-10-7-1",
+        "https://www.nam.ac.uk/explore/first-china-war-1839-1842"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Irish officer with high broad forehead, receding hair, narrow lower face and long white side whiskers at elderly ages, clean upper lip. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain nineteenth-century civilian coat and high shirt collar, bareheaded, no medals or military insignia.",
+      "adult_clothing": "Plain muted nineteenth-century British officers coat with high collar, no camouflage, no modern rank boards and no invented medals.",
+      "source_name_variants": [
+        "Hugh Gough",
+        "郭富"
+      ]
+    },
+    {
+      "id": "william_parker",
+      "name": "威廉·帕克",
+      "birth_year": 1781,
+      "death_year": 1866,
+      "date_precision": "year",
+      "country": "Britain",
+      "historical_side": "british_empire",
+      "documented_title": "英国驻华海军统帅",
+      "documented_year": 1841,
+      "command_level": "fleet",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "rmg_parker",
+        "nam_first_china"
+      ],
+      "reference_urls": [
+        "https://www.rmg.co.uk/collections/objects/rmgc-object-1144147",
+        "https://www.nam.ac.uk/explore/first-china-war-1839-1842"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "British naval officer with broad rounded face, short wavy hair, heavy brows, long nose, prominent full sideburns and clean-shaven chin at mature ages. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain nineteenth-century civilian coat and high shirt collar, bareheaded, no medals or military insignia.",
+      "adult_clothing": "Plain dark navy nineteenth-century British naval officers coat, restrained high collar, no invented medal ribbons or modern service insignia.",
+      "source_name_variants": [
+        "Sir William Parker",
+        "巴加"
+      ]
+    },
+    {
+      "id": "hope_grant",
+      "name": "霍普·格兰特",
+      "birth_year": 1808,
+      "death_year": 1875,
+      "date_precision": "year",
+      "country": "Britain",
+      "historical_side": "british_empire",
+      "documented_title": "英国赴华远征军司令",
+      "documented_year": 1860,
+      "command_level": "expeditionary_command",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "nam_grant",
+        "nam_second_china"
+      ],
+      "reference_urls": [
+        "https://collection.nam.ac.uk/detail.php?acc=1998-06-81-1",
+        "https://www.nam.ac.uk/explore/second-china-war"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "Scottish officer, long narrow face, deep-set eyes, tall forehead, close hair and pronounced side whiskers at mature ages, clean upper lip. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain nineteenth-century civilian coat and high shirt collar, bareheaded, no medals or military insignia.",
+      "adult_clothing": "Plain muted nineteenth-century British officers coat with high collar, no camouflage, no modern rank boards and no invented medals."
+    },
+    {
+      "id": "cousin_montauban",
+      "name": "库赞·蒙托邦",
+      "birth_year": 1796,
+      "death_year": 1878,
+      "date_precision": "year",
+      "country": "France",
+      "historical_side": "french_empire",
+      "documented_title": "法国赴华远征军统帅",
+      "documented_year": 1859,
+      "command_level": "expeditionary_command",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "napoleon_montauban",
+        "bnf_montauban",
+        "nam_second_china"
+      ],
+      "reference_urls": [
+        "https://www.napoleon.org/en/history-of-the-two-empires/biographies/cousin-de-montauban-charles-guillaume/",
+        "https://portail.biblissima.fr/ark:/43093/pdatae0fe785bc9d4d1e17b852ebae1899d5a4e624215",
+        "https://www.nam.ac.uk/explore/second-china-war"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "French officer with round broad forehead, receding wavy hair, broad nose and thick curved moustache at mature ages, defined broad cheeks. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain nineteenth-century civilian coat and high shirt collar, bareheaded, no medals or military insignia.",
+      "adult_clothing": "Plain dark nineteenth-century French officers coat with upright collar, no medals or invented rank insignia."
+    },
+    {
+      "id": "robert_napier",
+      "name": "罗伯特·纳皮尔",
+      "birth_year": 1810,
+      "death_year": 1890,
+      "date_precision": "year",
+      "country": "Britain",
+      "historical_side": "british_empire",
+      "documented_title": "赴华英军师级指挥官",
+      "documented_year": 1860,
+      "command_level": "division",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "npg_napier",
+        "nam_second_china"
+      ],
+      "reference_urls": [
+        "https://www.npg.org.uk/collections/search/person/mp03247/robert-cornelis-napier-1st-baron-napier-of-magdala",
+        "https://www.nam.ac.uk/explore/second-china-war"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "British Indian Army engineer officer with high forehead, deep-set eyes, aquiline nose, angular jaw, thick mutton-chop side whiskers at mature ages. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain nineteenth-century civilian coat and high shirt collar, bareheaded, no medals or military insignia.",
+      "adult_clothing": "Plain muted nineteenth-century British officers coat with high collar, no camouflage, no modern rank boards and no invented medals."
+    },
+    {
+      "id": "alfred_gaselee",
+      "name": "阿尔弗雷德·盖斯利",
+      "birth_year": 1844,
+      "death_year": 1918,
+      "date_precision": "year",
+      "country": "Britain",
+      "historical_side": "british_empire",
+      "documented_title": "英属印度军旅指挥官",
+      "documented_year": 1897,
+      "command_level": "brigade",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "bl_gaselee",
+        "dnb_gaselee"
+      ],
+      "reference_urls": [
+        "https://searcharchives.bl.uk/catalog/040-003188904",
+        "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1927_supplement/Gaselee,_Alfred"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "interpretive_features_not_authenticated_likeness",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "portrait_face_brief": "British Indian Army officer with long lean oval face, receding short hair, deep-set eyes and a substantial curved moustache at mature ages. Preserve recognizable structure across age stages; these are interpretive illustrations, not authenticated archival copies.",
+      "youth_clothing": "Plain nineteenth-century civilian coat and high shirt collar, bareheaded, no medals or military insignia.",
+      "adult_clothing": "Plain muted nineteenth-century British officers coat with high collar, no camouflage, no modern rank boards and no invented medals.",
+      "historical_note": "DNB is used for life years and the 1897 brigade command only; its 1900 Waldersee and entry-day claims are not adopted. British Library records support the Beijing relief context."
+    }
+  ],
+  "source_register": {
+    "gdws_guan": {
+      "id": "gdws_guan",
+      "publisher": "文史广东 / 广东省人民政府文史研究馆",
+      "title": "关天培在虎门",
+      "url": "https://www.gdwsw.gov.cn/rwcq/content/post_25991.html",
+      "retrieved_utc": "2026-10-19T19:59:09.045772+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "ConnectionError"
+    },
+    "dpm_sengge": {
+      "id": "dpm_sengge",
+      "publisher": "故宫博物院",
+      "title": "僧格林沁",
+      "url": "https://www.dpm.org.cn/lemmas/243417.html",
+      "retrieved_utc": "2026-10-19T19:59:09.046164+00:00",
+      "local_file": "dpm_sengge.html",
+      "sha256": "8a376eca843a09c02a7718247adeb98ffeb924d7e84910a2e4a48d43e3633ede",
+      "locally_cached_original": true,
+      "text_characters": 1100,
+      "retrieval_status": "cached_original"
+    },
+    "weihai_ding": {
+      "id": "weihai_ding",
+      "publisher": "威海市委党史研究院",
+      "title": "丁汝昌（1836—1895.2）",
+      "url": "https://www.weihai.gov.cn/art/2021/1/22/art_58901_3536345.html",
+      "retrieved_utc": "2026-10-19T19:59:09.046339+00:00",
+      "local_file": "weihai_ding.html",
+      "sha256": "fc7d7f4e7df74f6dd8ba8fe9fa650fe2828f71a0190f2d2b2fc5606affe0e8bf",
+      "locally_cached_original": true,
+      "text_characters": 923,
+      "retrieval_status": "cached_original"
+    },
+    "hunan_luo": {
+      "id": "hunan_luo",
+      "publisher": "湖南省人民政府 / 湖南省委宣传部",
+      "title": "罗荣光故居",
+      "url": "https://hunan.gov.cn/hnszf/c101487/202108/t20210830_20409865.html",
+      "retrieved_utc": "2026-10-19T19:59:09.046652+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "ConnectionError"
+    },
+    "weihai_liu": {
+      "id": "weihai_liu",
+      "publisher": "威海市委党史研究院",
+      "title": "刘步蟾（1852—1895.2）",
+      "url": "https://www.weihai.gov.cn/art/2021/1/22/art_58901_3536266.html",
+      "retrieved_utc": "2026-10-19T19:59:09.826298+00:00",
+      "local_file": "weihai_liu.html",
+      "sha256": "03bc7f3d0915b642cf965d18070c17ef891f413e7e2cc9f2d20f884e4ae88922",
+      "locally_cached_original": true,
+      "text_characters": 824,
+      "retrieval_status": "cached_original"
+    },
+    "cppcc_yang_fang": {
+      "id": "cppcc_yang_fang",
+      "publisher": "贵州省政协",
+      "title": "杨芳：绘像紫光阁的名臣",
+      "url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/2509/A3",
+      "retrieved_utc": "2026-10-19T19:59:09.998027+00:00",
+      "local_file": "cppcc_yang_fang.html",
+      "sha256": "ea73352f751cc2a0ed0e6646e4a648947f7e5ae3a8c297df6f7612112cecd520",
+      "locally_cached_original": true,
+      "text_characters": 6460,
+      "retrieval_status": "cached_original"
+    },
+    "ge_yunfei_memorial": {
+      "id": "ge_yunfei_memorial",
+      "publisher": "兰州新区政府转载 / 葛云飞史迹",
+      "title": "葛云飞：我自励千秋",
+      "url": "https://www.lzxq.gov.cn/system/2017/11/08/000109327.shtml",
+      "retrieved_utc": "2026-10-19T19:59:10.250763+00:00",
+      "local_file": "ge_yunfei_memorial.html",
+      "sha256": "a6e62a863e5556bb8f2909cb8415ab3c7272f6ff231ac8f7b82105d09a6deeb1",
+      "locally_cached_original": true,
+      "text_characters": 3644,
+      "retrieval_status": "cached_original"
+    },
+    "boorman_zhang_xun": {
+      "id": "boorman_zhang_xun",
+      "publisher": "ENP-China / X-Boorman academic edition",
+      "title": "Zhang Xun",
+      "url": "https://xboorman.enpchina.eu/biographie/zhang-xun/",
+      "retrieved_utc": "2026-10-19T19:59:10.763574+00:00",
+      "local_file": "boorman_zhang_xun.html",
+      "sha256": "03f1b915b44be1046e14cfc1beff360d082adf8c7ea66fd9355c5aef5c1512ad",
+      "locally_cached_original": true,
+      "text_characters": 24000,
+      "retrieval_status": "cached_original"
+    },
+    "boorman_zhang_fakui": {
+      "id": "boorman_zhang_fakui",
+      "publisher": "ENP-China / X-Boorman academic edition",
+      "title": "Zhang Fakui",
+      "url": "https://xboorman.enpchina.eu/biographie/zhang-fakui/",
+      "retrieved_utc": "2026-10-19T19:59:11.171159+00:00",
+      "local_file": "boorman_zhang_fakui.html",
+      "sha256": "d22b60c55b2d4fc765d1237a82073788603b347fdf388afb5b259ca3ffa3990e",
+      "locally_cached_original": true,
+      "text_characters": 32389,
+      "retrieval_status": "cached_original"
+    },
+    "shanghai_zhang_fakui": {
+      "id": "shanghai_zhang_fakui",
+      "publisher": "上海市松江区史志办",
+      "title": "抗日战争时期的张发奎",
+      "url": "https://www.songjiang.gov.cn/sjsz/sjds/sjkzjy/files/basic-html/page179.html",
+      "retrieved_utc": "2026-10-19T19:59:11.221669+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "SSLError"
+    },
+    "boorman_tang_shengzhi": {
+      "id": "boorman_tang_shengzhi",
+      "publisher": "ENP-China / X-Boorman academic edition",
+      "title": "Tang Shengzhi",
+      "url": "https://xboorman.enpchina.eu/biographie/tang-shengzhi/",
+      "retrieved_utc": "2026-10-19T19:59:11.236050+00:00",
+      "local_file": "boorman_tang_shengzhi.html",
+      "sha256": "5f73a4e03a1a8a76d8b42b1e1a1c1ef8bf7880dc05737a1c9def646ed6d037cd",
+      "locally_cached_original": true,
+      "text_characters": 15700,
+      "retrieval_status": "cached_original"
+    },
+    "nlpi_tang_shengzhi": {
+      "id": "nlpi_tang_shengzhi",
+      "publisher": "国立公共资讯图书馆",
+      "title": "民国近代史：唐生智",
+      "url": "https://edata.nlpi.edu.tw/CNH/Personage/personage.aspx?ID=0000161",
+      "retrieved_utc": "2026-10-19T19:59:11.680542+00:00",
+      "local_file": "nlpi_tang_shengzhi.html",
+      "sha256": "8c0baaeea0ac712ebdfc7c61569a6a0ba1416fd57891d25435df4ab231245b25",
+      "locally_cached_original": true,
+      "text_characters": 4501,
+      "retrieval_status": "cached_original"
+    },
+    "he_yingqin_office": {
+      "id": "he_yingqin_office",
+      "publisher": "人民网党史频道 / 文史精华",
+      "title": "蒋介石夺何应钦兵权",
+      "url": "https://dangshi.people.com.cn/n1/2017/0223/c85037-29103257.html",
+      "retrieved_utc": "2026-10-19T19:59:13.921401+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "SSLError"
+    },
+    "he_yingqin_life": {
+      "id": "he_yingqin_life",
+      "publisher": "中国大百科全书出版社",
+      "title": "何应钦",
+      "url": "https://www.zgbk.com/ecph/words?Name=%E4%BD%95%E5%BA%94%E9%92%A6&SiteID=1&SourceID=524211&Type=bkzyb&subSourceType=000003000006000002",
+      "retrieved_utc": "2026-10-19T19:59:15.084519+00:00",
+      "local_file": "he_yingqin_life.html",
+      "sha256": "19df776d4e389294bbfd9886c5fe8914df8c0f0ef1f11df7265ae38b49a8205f",
+      "locally_cached_original": true,
+      "text_characters": 923,
+      "retrieval_status": "cached_original"
+    },
+    "anu_bremer": {
+      "id": "anu_bremer",
+      "publisher": "Australian National University / Australian Dictionary of Biography",
+      "title": "Bremer, Sir James John (1786–1850)",
+      "url": "https://adb.anu.edu.au/biography/bremer-sir-james-john-1823/text2091",
+      "retrieved_utc": "2026-10-19T19:59:15.100227+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "ConnectTimeout"
+    },
+    "nam_first_china": {
+      "id": "nam_first_china",
+      "publisher": "National Army Museum",
+      "title": "First China War",
+      "url": "https://www.nam.ac.uk/explore/first-china-war-1839-1842",
+      "retrieved_utc": "2026-10-19T19:59:15.112731+00:00",
+      "local_file": "nam_first_china.html",
+      "sha256": "9e2089366f0a0950908c8161fff35efc1167f1c6fa2a1ebb2342eee5a40d2b33",
+      "locally_cached_original": true,
+      "text_characters": 8992,
+      "retrieval_status": "cached_original"
+    },
+    "nam_gough_life": {
+      "id": "nam_gough_life",
+      "publisher": "National Army Museum",
+      "title": "Lieutenant-General Viscount Hugh Gough (1779–1869)",
+      "url": "https://collection.nam.ac.uk/detail.php?acc=2018-10-7-1",
+      "retrieved_utc": "2026-10-19T19:59:16.570637+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "ReadTimeout"
+    },
+    "rmg_parker": {
+      "id": "rmg_parker",
+      "publisher": "Royal Museums Greenwich",
+      "title": "Captain William Parker, 1781–1866",
+      "url": "https://www.rmg.co.uk/collections/objects/rmgc-object-1144147",
+      "retrieved_utc": "2026-10-19T19:59:17.759698+00:00",
+      "local_file": "rmg_parker.html",
+      "sha256": "7d6dc015fb41d874dff1e0d3c9a7be47a3be6032dc7981e7aa743012d78958b2",
+      "locally_cached_original": true,
+      "text_characters": 4451,
+      "retrieval_status": "cached_original"
+    },
+    "nam_grant": {
+      "id": "nam_grant",
+      "publisher": "National Army Museum",
+      "title": "Sir James Hope Grant, 1862",
+      "url": "https://collection.nam.ac.uk/detail.php?acc=1998-06-81-1",
+      "retrieved_utc": "2026-10-19T19:59:18.509066+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "ReadTimeout"
+    },
+    "nam_second_china": {
+      "id": "nam_second_china",
+      "publisher": "National Army Museum",
+      "title": "Second China War",
+      "url": "https://www.nam.ac.uk/explore/second-china-war",
+      "retrieved_utc": "2026-10-19T19:59:19.459836+00:00",
+      "local_file": "nam_second_china.html",
+      "sha256": "d90895d1fd09831dc63c6b0ede945e1f4ebfaebe8ed890dab5dc224a43945eb4",
+      "locally_cached_original": true,
+      "text_characters": 13043,
+      "retrieval_status": "cached_original"
+    },
+    "napoleon_montauban": {
+      "id": "napoleon_montauban",
+      "publisher": "Fondation Napoléon",
+      "title": "Cousin de Montauban, Charles Guillaume",
+      "url": "https://www.napoleon.org/en/history-of-the-two-empires/biographies/cousin-de-montauban-charles-guillaume/",
+      "retrieved_utc": "2026-10-19T19:59:21.065677+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "HTTPError"
+    },
+    "bnf_montauban": {
+      "id": "bnf_montauban",
+      "publisher": "BnF / Biblissima",
+      "title": "Cousin de Montauban de Palikao (1796–1878)",
+      "url": "https://portail.biblissima.fr/ark:/43093/pdatae0fe785bc9d4d1e17b852ebae1899d5a4e624215",
+      "retrieved_utc": "2026-10-19T19:59:25.048087+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "ConnectionError"
+    },
+    "npg_napier": {
+      "id": "npg_napier",
+      "publisher": "National Portrait Gallery",
+      "title": "Robert Cornelis Napier, 1st Baron Napier of Magdala",
+      "url": "https://www.npg.org.uk/collections/search/person/mp03247/robert-cornelis-napier-1st-baron-napier-of-magdala",
+      "retrieved_utc": "2026-10-19T19:59:26.265732+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "HTTPError"
+    },
+    "bl_gaselee": {
+      "id": "bl_gaselee",
+      "publisher": "British Library Archives",
+      "title": "Photo 1255(22): Gaselee at the British Legation",
+      "url": "https://searcharchives.bl.uk/catalog/040-003188904",
+      "retrieved_utc": "2026-10-19T19:59:29.244354+00:00",
+      "local_file": "bl_gaselee.html",
+      "sha256": "9bce73fea9489098c80658eeb474d1aa4ace46051d071cdd360226b40e2fd6d9",
+      "locally_cached_original": true,
+      "text_characters": 3377,
+      "retrieval_status": "cached_original"
+    },
+    "dnb_gaselee": {
+      "id": "dnb_gaselee",
+      "publisher": "Dictionary of National Biography, 1927 supplement / Wikisource",
+      "title": "Gaselee, Alfred",
+      "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1927_supplement/Gaselee,_Alfred",
+      "retrieved_utc": "2026-10-19T19:59:31.330386+00:00",
+      "locally_cached_original": false,
+      "retrieval_status": "web_tool_verified_native_download_unavailable",
+      "error": "ConnectionError"
+    }
+  }
+}

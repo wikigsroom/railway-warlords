@@ -1,0 +1,102 @@
+{
+  "schema": "commander-expansion-research-1",
+  "coverage_complete": false,
+  "people": [
+    {
+      "id": "cao_kun",
+      "name": "曹锟",
+      "birth_year": 1862,
+      "death_year": 1938,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "zhili",
+      "documented_title": "北洋陆军第3镇统制",
+      "documented_year": 1906,
+      "command_level": "division",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "boorman_cao_kun"
+      ],
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/cao-kun/"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "no_independent_generated_likeness_approval",
+      "portrait_production_status": "pending_four_independent_Sub2_originals"
+    },
+    {
+      "id": "xu_shuzheng",
+      "name": "徐树铮",
+      "birth_year": 1880,
+      "death_year": 1925,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "anhui",
+      "documented_title": "西北边防军总司令",
+      "documented_year": 1919,
+      "command_level": "army_or_higher",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "boorman_xu_shuzheng"
+      ],
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/xu-shuzheng/"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "no_independent_generated_likeness_approval",
+      "portrait_production_status": "pending_four_independent_Sub2_originals"
+    },
+    {
+      "id": "zhang_zongchang",
+      "name": "张宗昌",
+      "birth_year": 1881,
+      "death_year": 1932,
+      "date_precision": "year",
+      "country": "China",
+      "historical_side": "fengtian",
+      "documented_title": "第6混成旅旅长",
+      "documented_year": 1918,
+      "command_level": "brigade",
+      "appointment_start": null,
+      "appointment_end": null,
+      "appointment_date_status": "dated_office_reference; full_tenure_requires_review",
+      "source_ids": [
+        "boorman_zhang_zongchang"
+      ],
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/zhang-zongchang/"
+      ],
+      "eligibility_status": "historical_identity_and_qualifying_office_documented; scenario_appointments_require_review",
+      "likeness_source_status": "no_independent_generated_likeness_approval",
+      "portrait_production_status": "pending_four_independent_Sub2_originals",
+      "life_year_note": "The cited academic biography gives 1881; other biographical accounts give 1882. Approximate ages use 1881, and the discrepancy remains explicit."
+    }
+  ],
+  "source_register": {
+    "boorman_cao_kun": {
+      "id": "boorman_cao_kun",
+      "url": "https://xboorman.enpchina.eu/biographie/cao-kun/",
+      "sha256": "e34b4d5d5b7cf7bc9e2ca6446dca0430061460e9e5ff47f32f478cd31158c06d",
+      "publisher": "ENP-China / X-Boorman academic digital edition",
+      "title": "Biographical Dictionary of Republican China: 曹锟"
+    },
+    "boorman_xu_shuzheng": {
+      "id": "boorman_xu_shuzheng",
+      "url": "https://xboorman.enpchina.eu/biographie/xu-shuzheng/",
+      "sha256": "8b21a0f82e0ace1753d44ecefd56faa57d46dcca536a328fc59b8b072945ec91",
+      "publisher": "ENP-China / X-Boorman academic digital edition",
+      "title": "Biographical Dictionary of Republican China: 徐树铮"
+    },
+    "boorman_zhang_zongchang": {
+      "id": "boorman_zhang_zongchang",
+      "url": "https://xboorman.enpchina.eu/biographie/zhang-zongchang/",
+      "sha256": "cb253f08e6fd91295c59791191aaaaed903a44f2aecb297a722ecb508b9ebd71",
+      "publisher": "ENP-China / X-Boorman academic digital edition",
+      "title": "Biographical Dictionary of Republican China: 张宗昌"
+    }
+  }
+}

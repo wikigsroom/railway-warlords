@@ -21,7 +21,9 @@ static func check(state: Dictionary, content: ContentRegistry, events: Array) ->
 	if state.mode!="conquest":
 		for o in state.objectives:
 			match o.type:
-				"capture":o.progress=o.target_ids.filter(func(id):return StateAccess.find(state,"cities",id).get("owner_id","")==player).size()
+				"capture":o.progress=o.target_ids.filter(func(id):
+					var owner=str(StateAccess.find(state,"cities",id).get("owner_id",""))
+					return owner==player or (o.get("accept_allied_control",false) and StateAccess.allied(state,player,owner))).size()
 				"hold":
 					var phase=StateAccess.faction(state,player).own_phase_index
 					if phase!=o.get("last_checked_phase",phase):

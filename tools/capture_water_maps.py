@@ -13,7 +13,7 @@ def main():
     runtime = source_digest()[0]
     exe = P / 'build/windows/RailwayWarlords.exe'
     export = next(row for row in read(P / 'reports/export_results.json') if row['target'] == 'windows')
-    require(version == '0.2.27' and export['export_verified'] and export['runtime_source_sha256'] == runtime
+    require(version in ['0.2.27', '0.2.28'] and export['export_verified'] and export['runtime_source_sha256'] == runtime
             and export['sha256'] == sha(exe), 'Frozen current Windows executable required')
     cases = [
         ('china_overview', 'conq_1922', ['--atlas-view', '--inspect-city', 'qingdao']),

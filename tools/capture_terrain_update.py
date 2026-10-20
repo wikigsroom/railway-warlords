@@ -107,12 +107,12 @@ def main():
             require(meta['build_version'] == version and meta['raw_godot_capture'] and meta['qa_save_isolated']
                     and path.stat().st_mtime >= started - 2, 'Current native detail required: ' + name)
             visible = meta['map_bank_visible']
-            expected_map_assets = 973 if version == '0.2.27' else 970
+            expected_map_assets = 973 if version in ['0.2.27', '0.2.28'] else 970
             require(visible['current_total_map_assets'] == expected_map_assets, 'Current complete map library required')
             with Image.open(path) as im:
                 require(im.size == tuple(map(int, resolution.split('x'))), 'Wrong detail viewport: ' + name)
             rivers = visible['hydrography']['river_surface']
-            if name == 'coast' and version in ['0.2.26', '0.2.27']:
+            if name == 'coast' and version in ['0.2.26', '0.2.27', '0.2.28']:
                 marine = visible['hydrography']['marine_geometry']
                 require(marine['active'] and marine['pretriangulated'] and marine['coast_vertices'] > 12000
                         and visible['hydrography']['actual_coast_band_draws'] == 1,

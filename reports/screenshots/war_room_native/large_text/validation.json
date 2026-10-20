@@ -1,5 +1,5 @@
 {
-	"build_version": "0.2.27",
+	"build_version": "0.2.28",
 	"captures": [
 		{
 			"path": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\war_room_native\\large_text/home.png",
@@ -67,7 +67,7 @@
 				},
 				"map_id": "jingjin",
 				"material_cells_drawn": 23821,
-				"reference_originals_drawn": 10,
+				"reference_originals_drawn": 0,
 				"relief": {
 					"continuous_lighting": {
 						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
@@ -105,13 +105,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 193,
-					"index_ms": 65.622,
+					"index_ms": 87.895,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 1742.45,
+					"mesh_ms": 1505.552,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 1654,
-					"placement_ms": 379.711,
-					"preparation_ms": 2187.782,
+					"placement_ms": 341.8,
+					"preparation_ms": 1935.247,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 					"source_meters_per_world_unit": 20.8333333333333,
@@ -130,7 +130,7 @@
 		{
 			"atlas_preview": {
 				"anchor_date": "1920-07-14",
-				"camera": "(6846.151, 4934.781)",
+				"camera": "(6801.23, 4915.128)",
 				"creates_match": false,
 				"dated_rail_edges": 7,
 				"ground": {
@@ -150,7 +150,7 @@
 						"forest_floor_requires_sourced_forest": true,
 						"withheld_forest_floor_cells": 17765
 					},
-					"grounded_scenery_draws": 356,
+					"grounded_scenery_draws": 447,
 					"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
 					"sampling_world_units": 224.0,
 					"source_ground_coverage": {
@@ -227,13 +227,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 193,
-					"index_ms": 65.622,
+					"index_ms": 87.895,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 1742.45,
+					"mesh_ms": 1505.552,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 1654,
-					"placement_ms": 379.711,
-					"preparation_ms": 2187.782,
+					"placement_ms": 341.8,
+					"preparation_ms": 1935.247,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 					"source_meters_per_world_unit": 20.8333333333333,
@@ -241,7 +241,7 @@
 					"triangles": 46176
 				},
 				"renderer": "shipping_MapView_static_atlas",
-				"scenery_drawn": 356,
+				"scenery_drawn": 447,
 				"settlement_originals_drawn": 3,
 				"source_map_immutable": true,
 				"zoom_multiplier": 2.44140625
@@ -362,13 +362,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 102,
-					"index_ms": 149.171,
+					"index_ms": 144.656,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 589.155,
+					"mesh_ms": 597.197,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 219,
-					"placement_ms": 717.61,
-					"preparation_ms": 1455.936,
+					"placement_ms": 709.415,
+					"preparation_ms": 1451.268,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_nine_point_100km",
 					"source_meters_per_world_unit": 3125.0,
@@ -446,7 +446,7 @@
 				},
 				"map_id": "jingjin",
 				"material_cells_drawn": 23821,
-				"reference_originals_drawn": 10,
+				"reference_originals_drawn": 0,
 				"relief": {
 					"continuous_lighting": {
 						"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
@@ -484,13 +484,13 @@
 					"height_exaggeration_display_only": 6.0,
 					"historical_vegetation_claimed": false,
 					"independent_relief_originals_used": 193,
-					"index_ms": 41.103,
+					"index_ms": 44.914,
 					"lighting": "continuous_source_height_normals",
-					"mesh_ms": 1568.954,
+					"mesh_ms": 1399.045,
 					"nearby_variant_exclusion_world": 270.0,
 					"placed_features": 1654,
-					"placement_ms": 383.238,
-					"preparation_ms": 1993.294,
+					"placement_ms": 341.79,
+					"preparation_ms": 1785.749,
 					"rules_map_mutated": false,
 					"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 					"source_meters_per_world_unit": 20.8333333333333,
@@ -613,8 +613,23 @@
 			"passed": true
 		},
 		{
-			"detail": 647.0,
+			"detail": 607.0,
 			"name": "campaign_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_selected_commander_counts_present",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_counts_follow_selected_faction",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_counts_remain_compact_and_visible",
 			"passed": true
 		},
 		{
@@ -703,8 +718,23 @@
 			"passed": true
 		},
 		{
-			"detail": 647.0,
+			"detail": 607.0,
 			"name": "campaign_detail_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_selected_commander_counts_present",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_counts_follow_selected_faction",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "campaign_detail_counts_remain_compact_and_visible",
 			"passed": true
 		},
 		{
@@ -783,8 +813,23 @@
 			"passed": true
 		},
 		{
-			"detail": 647.0,
+			"detail": 607.0,
 			"name": "conquest_atlas_retains_useful_height",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_selected_commander_counts_present",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_counts_follow_selected_faction",
+			"passed": true
+		},
+		{
+			"detail": null,
+			"name": "conquest_counts_remain_compact_and_visible",
 			"passed": true
 		},
 		{
@@ -833,7 +878,7 @@
 			"passed": true
 		},
 		{
-			"detail": 647.0,
+			"detail": 602.0,
 			"name": "legion_atlas_retains_useful_height",
 			"passed": true
 		},
@@ -1189,7 +1234,7 @@
 			"passed": true
 		}
 	],
-	"content_hash": "9ea85ebaea4412357c628bf6d2c16d29d7ef08c594dc77dcef7b3005b42f6661",
+	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
 	"passed": true,
 	"physical_android_device_tested": false,
 	"qa_save_isolated": true,

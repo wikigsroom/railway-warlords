@@ -1,0 +1,352 @@
+{
+  "requested_people": 3,
+  "requested_originals": 12,
+  "generated": 12,
+  "failed": 0,
+  "terminal": true,
+  "passed": true,
+  "records": [
+    {
+      "id": "portrait_cao_kun_1900",
+      "general_id": "cao_kun",
+      "subject": "曹锟",
+      "reference_year": 1900,
+      "age_stage": "prime",
+      "approximate_age": 38,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/cao-kun/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cao_kun_1900/r001/source.png",
+      "source_sha256": "06f71d78d4d6a41ff9d4d15a1337ed215ac6d10747b2c4624490888efae07353",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cao_kun_1900/r001/prompt.txt",
+      "prompt_sha256": "e5f2c56249b448f4659bcaa2bc39429a7910e5cc3aba6f0ac5a06a776d9dd5ba",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cao_kun_1887",
+      "general_id": "cao_kun",
+      "subject": "曹锟",
+      "reference_year": 1887,
+      "age_stage": "young",
+      "approximate_age": 25,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/cao-kun/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cao_kun_1887/r001/source.png",
+      "source_sha256": "7e593fee1356fd73f90aa05dfb217bceaeb6fbc27297617e7683d70922fb8330",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cao_kun_1887/r001/prompt.txt",
+      "prompt_sha256": "2661fc436184a5f7d260b6bed1463e9ea7a08e7e88d9bd0924f5d7c7097e4571",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cao_kun_1937",
+      "general_id": "cao_kun",
+      "subject": "曹锟",
+      "reference_year": 1937,
+      "age_stage": "late",
+      "approximate_age": 75,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/cao-kun/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cao_kun_1937/r001/source.png",
+      "source_sha256": "6ada3a47bbffc4143207909cd59e16a2e54205429497db73ed62ef798341bad5",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cao_kun_1937/r001/prompt.txt",
+      "prompt_sha256": "f570662b977211c079d5ef1373972170df0463e566155a9ecc282652280a88c1",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_xu_shuzheng_1900",
+      "general_id": "xu_shuzheng",
+      "subject": "徐树铮",
+      "reference_year": 1900,
+      "age_stage": "young",
+      "approximate_age": 20,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/xu-shuzheng/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_xu_shuzheng_1900/r001/source.png",
+      "source_sha256": "a684316f34906f40a5150049085ac0216148e478e69ecd742215fd748688e409",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_xu_shuzheng_1900/r001/prompt.txt",
+      "prompt_sha256": "91499042cda82ccf4966bc6603eb304523b5395e691da3903ec02edf76fb4c76",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_xu_shuzheng_1908",
+      "general_id": "xu_shuzheng",
+      "subject": "徐树铮",
+      "reference_year": 1908,
+      "age_stage": "prime",
+      "approximate_age": 28,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/xu-shuzheng/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_xu_shuzheng_1908/r001/source.png",
+      "source_sha256": "312b6dd13006051384ad8ee5176adfb05b7b8b194a20af688e64e0fd827e954e",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_xu_shuzheng_1908/r001/prompt.txt",
+      "prompt_sha256": "4dd66b43d920d3ad03d8c1ccdf979e5ef479f143be4774682d6d53d585aed700",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_xu_shuzheng_1916",
+      "general_id": "xu_shuzheng",
+      "subject": "徐树铮",
+      "reference_year": 1916,
+      "age_stage": "middle",
+      "approximate_age": 36,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/xu-shuzheng/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_xu_shuzheng_1916/r001/source.png",
+      "source_sha256": "72906bd4b4f618e01e31cddb4bf1eeee611418ae3e2d828b7d8aedbe36333d3c",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_xu_shuzheng_1916/r001/prompt.txt",
+      "prompt_sha256": "0622bb26eed7c794accbd620fc11dae4421940e3cbcb047342dfa76a3667fbff",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_xu_shuzheng_1924",
+      "general_id": "xu_shuzheng",
+      "subject": "徐树铮",
+      "reference_year": 1924,
+      "age_stage": "late",
+      "approximate_age": 44,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/xu-shuzheng/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_xu_shuzheng_1924/r001/source.png",
+      "source_sha256": "f4f3f1445afac9015a242879c8fd8d5caa669a5b33b769ee10092cf531de9bdb",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_xu_shuzheng_1924/r001/prompt.txt",
+      "prompt_sha256": "50efc5227125650c0df59ba71b67f8cf6cfa5a0591cb54b89004fc3a19c49298",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_zhang_zongchang_1903",
+      "general_id": "zhang_zongchang",
+      "subject": "张宗昌",
+      "reference_year": 1903,
+      "age_stage": "young",
+      "approximate_age": 22,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/zhang-zongchang/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_zhang_zongchang_1903/r001/source.png",
+      "source_sha256": "868acbc4963c15d8a5a7ba0ee78417a49bc6fe98460a71136c19b6ec1c3caf14",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_zhang_zongchang_1903/r001/prompt.txt",
+      "prompt_sha256": "3fcd58c617afb1bb0fde7e3906be9dabce2c9d9cae1ed197e824b3cd45bdaaad",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_zhang_zongchang_1913",
+      "general_id": "zhang_zongchang",
+      "subject": "张宗昌",
+      "reference_year": 1913,
+      "age_stage": "prime",
+      "approximate_age": 32,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/zhang-zongchang/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_zhang_zongchang_1913/r001/source.png",
+      "source_sha256": "e1c252b493282d7ba304e2cfa6113ca75a2d5f6c4336582347e5fcdb8e6f8f9d",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_zhang_zongchang_1913/r001/prompt.txt",
+      "prompt_sha256": "50c19ba0269535202e315fcf590bc3a4a7e81e72a709e96d2e6309ed2aa1d173",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_zhang_zongchang_1922",
+      "general_id": "zhang_zongchang",
+      "subject": "张宗昌",
+      "reference_year": 1922,
+      "age_stage": "middle",
+      "approximate_age": 41,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/zhang-zongchang/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_zhang_zongchang_1922/r001/source.png",
+      "source_sha256": "8cb6437e6e6565bbfc031bd9e3261178a77d2a5a28ab15740f3f4074f5d9eaec",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_zhang_zongchang_1922/r001/prompt.txt",
+      "prompt_sha256": "de142682813f9310dc49b0ccdb2be3f263e42b79787199c7a6c0daa92fc86b24",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_zhang_zongchang_1931",
+      "general_id": "zhang_zongchang",
+      "subject": "张宗昌",
+      "reference_year": 1931,
+      "age_stage": "late",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/zhang-zongchang/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_zhang_zongchang_1931/r001/source.png",
+      "source_sha256": "cb18e65cda22bceecd4ff193370735845e7eb288cba0c8a3c88c7dbeac42e51f",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_zhang_zongchang_1931/r001/prompt.txt",
+      "prompt_sha256": "119c797c1587ae01c084de795b240b4f44a88330d1fe0565b7554d37794464a0",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    },
+    {
+      "id": "portrait_cao_kun_1912",
+      "general_id": "cao_kun",
+      "subject": "曹锟",
+      "reference_year": 1912,
+      "age_stage": "middle",
+      "approximate_age": 50,
+      "revision": "r001",
+      "reference_urls": [
+        "https://xboorman.enpchina.eu/biographie/cao-kun/"
+      ],
+      "reference_scope": "Life-year and command-office facts; interpretive illustration, not an authenticated same-year likeness.",
+      "likeness_approval": false,
+      "source_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cao_kun_1912/r001/source.png",
+      "source_sha256": "68cd7b91b83676bf6c6322908c2e7c481e56c3cb23509474f3e744eb5dc08bd9",
+      "prompt_file": "output/imagegen/warlord/commander_expansion_v0228/portrait_cao_kun_1912/r001/prompt.txt",
+      "prompt_sha256": "c770319ecb25b8739ca9fec6be79a0ead53bdfacd548c9e9d731afcd022a2e05",
+      "actual_dimensions": [
+        1254,
+        1254
+      ],
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "image_modified": false,
+      "manual_compositing": false,
+      "reviewed": false
+    }
+  ],
+  "failures": [],
+  "updated_at_utc": "2026-10-19T23:11:49.528721+00:00",
+  "manual_art_review_complete": false,
+  "installed": false,
+  "source_rasters_modified": false,
+  "route": "sub2-image-gen/gpt-image-2.5/high"
+}

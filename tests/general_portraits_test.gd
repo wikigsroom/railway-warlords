@@ -17,7 +17,7 @@ func run() -> void:
 	var manifest=JSON.parse_string(FileAccess.get_file_as_string("res://assets/manifest.json"))
 	var assets={}
 	for row in manifest.assets:assets[row.id]=row
-	verify(library.records.size()==people.size() and people.size()==33,"every_registered_person_and_general_has_explicit_presentation")
+	verify(library.records.size()==people.size() and content.tables.generals.size()>=300,"every_registered_person_and_general_has_explicit_presentation")
 	var catalog=JSON.parse_string(FileAccess.get_file_as_string(GeneralPortraits.CATALOG_PATH))
 	verify(catalog.production_complete and catalog.missing_age_stages.is_empty(),"all_four_stages_produced")
 	var originals={};var portraits=0;var identities=0
@@ -39,7 +39,7 @@ func run() -> void:
 			verify(not path.is_empty() and FileAccess.get_sha256(path)==variant.asset_sha256 and variant.asset_sha256==asset.get("source_sha256",""),"original_bytes_bound_to_catalog:"+variant.asset_id)
 			verify(ResourceLoader.exists(path) and not variant.exact_year_photograph_claimed,"loadable_interpretive_original:"+variant.asset_id)
 			originals[variant.asset_id]=true
-	verify(originals.size()==135 and portraits==33 and identities==0,"135_originals_cover_all_33_people_and_four_stages")
+	verify(originals.size()>=people.size()*4 and portraits==people.size() and identities==0,"all_people_have_four_distinct_living_age_originals")
 	for figure in history.political_figures:
 		verify(library.records.has(figure.id),"political_figure_included:"+figure.id)
 	for id in ["daoguang","xianfeng","ito_hirobumi","nicholas_ii"]:

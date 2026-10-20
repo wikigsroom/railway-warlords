@@ -1,4 +1,4 @@
-"""Bind all four living age stages to individually reviewed original portraits."""
+"""Bind all four living age stages; technical provenance is not art approval."""
 import argparse,json
 from generate_general_portraits import P,sha
 
@@ -31,7 +31,7 @@ def main():
             if not any(v['age_stage']==stage['id'] for v in variants):missing.append(gid+':'+stage['id'])
         records[gid]=history|dict(name=person['name'],kind='portrait',variants=variants,military_deployable=gid in military_ids)
     if missing and not args.allow_incomplete:raise ValueError('Age-stage originals not yet installed: '+', '.join(missing))
-    result=dict(schema=2,production_version='0.2.22',selection='Latest appropriate dated appearance; catalog previews permit an explicit living age stage.',likeness_policy='Interpretive game illustrations; age-stage art is not an archival photograph, verified same-year uniform or independent historical likeness approval.',missing_age_stages=missing,production_complete=not missing,generals=records)
+    result=dict(schema=2,production_version='0.2.28',selection='Latest appropriate dated appearance; catalog previews permit an explicit living age stage.',likeness_policy='Interpretive game illustrations; age-stage art is not an archival photograph, verified same-year uniform or independent historical likeness approval.',missing_age_stages=missing,production_complete=not missing,generals=records)
     (P/'presentation/data/general_portraits.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(generals=len(records),originals=sum(len(r['variants']) for r in records.values()),missing_age_stages=len(missing),production_complete=not missing)))
 

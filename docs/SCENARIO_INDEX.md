@@ -1,8 +1,8 @@
 # 全部剧本 / Scenario index
 
-Generated from runtime JSON for version 0.2.12. These are authored game settings, not a historical certification.
+Generated from runtime JSON for version 0.2.28. These are authored game settings, not a historical certification.
 
-数据来自当前运行 JSON。日期为剧本登记日期；部分标题、事件标签和部署仍待逐条历史复核。
+数据来自当前运行JSON。日期为剧本登记日期；部分标题、事件标签和部署仍待逐条历史复核。各阵营人数独立，逐场初始名册与可选后备见[人数CSV](data/scenario_commanders.csv)及[将领池说明](46_师旅级将领池与战役名册.md)。
 
 Counts: campaign=39, conquest=10, legion=12
 
