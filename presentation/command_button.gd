@@ -9,6 +9,7 @@ var caption_font: Font
 var caption_size=16
 var accent=Color("d8c99e")
 var short_caption=""
+var compact_menu=false
 
 func _ready() -> void:
 	for state in ["font_color","font_hover_color","font_pressed_color","font_focus_color","font_disabled_color","font_hover_pressed_color"]:
@@ -16,6 +17,7 @@ func _ready() -> void:
 	add_theme_constant_override("outline_size",0)
 
 func _draw() -> void:
+	if compact_menu:return
 	var ink=Color("e9e6d9") if not disabled else Color("858e8f")
 	var icon_tint=Color.WHITE if not disabled else Color(.55,.59,.60,.64)
 	if is_hovered() and not disabled:icon_tint=Color(1.12,1.08,.94)

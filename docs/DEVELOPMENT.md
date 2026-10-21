@@ -181,3 +181,12 @@ Untouched viewport PNGs and metadata are stored under `reports/screenshots/map_c
 回归依赖批处理使用同一排序的原始路径／文件字节流，分别更新每组独立SHA256，避免30次重复读取全部素材；它不缓存历史哈希、不按元数据跳过内容。先运行`python tools/verify_regression_hash_batch.py`，再封存和执行交付流程；严格门槛会核对旧算法等价证明与所有30组最终身份。
 
 Regression dependency batching reads each file once and feeds its original path and bytes into each subscribing check's independent SHA-256 state, preserving the legacy preimage exactly. Run `python tools/verify_regression_hash_batch.py` before the composition release pipeline. Its equivalence proof includes same-size, same-mtime mutations and an actual full commander closure; delivery compares all thirty identities with the final seal. This is an I/O improvement, not reduced validation.
+
+
+### 0.2.30 battlefield controls / 战场控件
+
+`BattleHUD` owns layout and drawers; commands still enter `MatchController` and the same kernel. `TouchScroll` handles screen-touch dragging without mouse emulation, cancels child button presses when a scroll begins, and leaves the map touch path independent.
+
+Run `python tools/verify_battle_hud.py --attempt review_01` with a new attempt name for each run. It captures untouched viewports and sends actual viewport mouse/touch events at three resolutions, including a legal movement confirmation and deterministic replay. Run `tests/touch_scroll_test.gd` headlessly for button-drag cancellation, post-scroll taps, unrelated controls and native wheel input. These are desktop-engine checks, not physical-phone acceptance.
+
+See [the implementation and scope notes](48_战场浮动界面与直接触摸滚动.md). Previous version receipts retain their original scope and must not be presented as current-binary validation.

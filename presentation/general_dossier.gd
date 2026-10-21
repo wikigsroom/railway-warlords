@@ -31,7 +31,7 @@ static func show(app, id: String, age_stage: String="middle") -> void:
 	layout.size_flags_vertical=Control.SIZE_EXPAND_FILL
 	layout.add_theme_constant_override("separation",22)
 	root.add_child(layout)
-	var identity_scroll=ScrollContainer.new();identity_scroll.name="DossierIdentityScroll"
+	var identity_scroll=preload("res://presentation/touch_scroll.gd").new();identity_scroll.name="DossierIdentityScroll"
 	identity_scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED
 	identity_scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL
 	identity_scroll.custom_minimum_size.x=286*minf(float(app.settings.ui_scale),1.12)+44

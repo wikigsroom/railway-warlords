@@ -7,13 +7,19 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. Current sources are the **0.2.29 model-scale and shared-annotation beta**. Both builds, thirty regression groups and the retained native suites have been validated; see the [strict delivery receipt](reports/map_composition_release_validation.json) and [scope notes](docs/47_地图模型比例与统一标注布局.md). It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. Current sources are the **0.2.30 floating battlefield UI and direct touch scrolling beta**; see the [change and verification scope](docs/48_战场浮动界面与直接触摸滚动.md). The full 0.2.29 regression and archive retain their original version and do not constitute a repeated full 0.2.30 acceptance run. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
-![Main menu captured from the current native Windows executable](docs/media/menu.png)
+![Native main menu from the version 0.2.30 shipping Windows application](docs/media/menu-v0230.png)
 
-*A complete native viewport capture. PNG screenshots below have no montage, repainting or promotional overlays.*
+*A complete current exported-application viewport. PNG screenshots have no montage, repainting or promotional overlays; older media retain their actual source versions.*
+
+Version 0.2.30 replaces the permanent inspector, legends and full-width command strip with floating controls and panels opened on demand. Resources and dates sit along the top, the selected formation summary at the lower left, and primary orders at the lower right. Escort objectives name the protected formation, actual destination and one-hex radius. Owned cities expose recruitment and construction directly. Direct touch scrolling can start over a button and cancels its pending command while dragging.
+
+![Version 0.2.30 shipping Windows application: floating Wuhan battlefield UI](docs/media/battle-hud-wuhan-v0230.png)
+
+*The complete exported-application viewport retains actual terrain, translucent control layers and original unit artwork. Three layouts pass 668 input checks; combat presentation passes 56 checks, and seven shipping-EXE map views pass 58 checks. Desktop touch-event verification is separate from physical Motorola X30 acceptance.*
 
 Version 0.2.29 uses five settlement display scales and a shared allocator for city, village and crossing labels, accounting for models, units and HUD. Seven shipping-Windows map views pass 58 layout checks and have each been opened in full. Geography, the 48-unit operation hexes and all 2,507 original PNGs are preserved. Mountain grounding, river banks, regional framing and complete unit action cycles still need work.
 
@@ -97,7 +103,7 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Raster art | **2,507 PNGs**; **1,013 stored map assets, 973 currently available**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
 | Regional terrain | **20 types × (1 new continuous ground + 4 detail originals) = 100 active originals**; 40 superseded macrogrounds retained, interactive atlas |
 | Audio and fonts | 14 procedural effects, 3 local YuE2 scores (180 seconds each), 3 retained fallback loops and 2 Chinese fonts with OFL notices |
-| Current regression snapshot | **30 groups / 14,581 checks**, including 5,036 portrait, 4,153 commander-roster and 88 daily-calendar checks; shipping EXE and APK acceptance is bound separately |
+| Current scoped verification | **205 core/ground/scroll/summary checks, 668 battlefield input checks, 56 combat-presentation checks and 58 shipping-EXE map checks**; the full 30-group / 14,581-check regression retains its 0.2.29 identity |
 | Character portraits | **328 people × 4 stages + 3 extra dates = 1,315 independent originals**; dated selection and stage previews; all 1,180 new source images individually viewed in full |
 | Calendar | **One day per complete round**; all factions finish their phases before the Gregorian date advances |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
@@ -109,9 +115,9 @@ Runtime data lives in `content/`. Original designs and older versions retain the
 
 ### Battlefield layout
 
-![Native battlefield with objectives, terrain, formations, inspector and orders](docs/media/battlefield.png)
+![Version 0.2.30 native terrain, formations, summary and floating orders](docs/media/battle-hud-wuhan-v0230.png)
 
-*The resource/date bar sits above the map, objectives occupy the upper left, the inspector is on the right, and command previews and confirmations sit below.*
+*Resources and dates sit along the top. Open objectives at the upper left and selected-object details at the lower left; preview and confirm orders at the lower right. Settings, reports, overview, layers and additional orders sit at the upper right.*
 
 ### Twenty distinct ground materials
 
@@ -239,12 +245,12 @@ flowchart TD
 | Area | Function |
 | --- | --- |
 | Top bar | Cash, food, arms, fuel, silver, date, round and acting faction |
-| Objective card | Current goals, progress, round conditions and briefing |
+| Upper-left objective entry | Open live goals, progress, deadline, destination and briefing |
 | Central map | Select hexes, formations, cities and places; inspect movement and targets |
-| Right inspector | Strength, AP, range, ammunition, morale, suppression, experience, supply and orders |
-| Layer tools | Control, terrain, names, place inspection, railways, supply and overview |
-| Lower-left minimap | Position and click-to-center navigation |
-| Bottom command bar | Preview, confirm, cancel, auto-play, end phase and skip presentation |
+| Lower-left summary / detail panel | Open strength, AP, range, ammunition, morale, suppression, experience, supply and full orders |
+| Upper-right tools | Settings, reports, overview, six independent map layers and additional orders |
+| Overview entry | Theater framing and navigation; the minimap is collapsed by default |
+| Lower-right floating orders | Preview, confirm, cancel, city recruitment/construction, end phase and skip presentation; auto-play and undo are under additional orders |
 | Battle window | Combatants, dice, attacks, hits and counters; optional and skippable |
 
 Campaign, conquest and legion browsers use real map previews with era, difficulty and faction selection, unlock conditions, stars and objectives. The main-menu campaign count now matches the actual **39 missions**. Recruitment, buildings, general assignment, diplomacy and headquarters use cards with real command costs and visible validation reasons; the technology page exposes all seven branches.
@@ -517,7 +523,7 @@ Configure your own release keystore, alias and password through Godot private cr
 godot --headless --path . --export-release "Android" "build/android/RailwayWarlords.apk"
 ```
 
-App ID is `org.railwaywarlords.game`; version 0.2.29 uses versionCode 34. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
+App ID is `org.railwaywarlords.game`; version 0.2.30 uses versionCode 35. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
 
 ### Automation scope
 
@@ -557,6 +563,8 @@ External archives are not part of a standalone clone. Helpers such as `build_rel
 UI and AI submit commands; previews are read-only. `CommandKernel` validates version, actor, target, costs and legality, resolves atomically, and returns state/events. Rules, AI and save I/O use a serial native worker queue. The main thread validates match identity/version before applying results while map navigation remains independent. See [modules](docs/02_架构与模块.md).
 
 ### Validation
+
+Version 0.2.30 passes 987 targeted checks: 205 core/ground/scroll/summary, 668 battlefield input, 56 combat-presentation and 58 shipping-EXE map-layout checks. Android signatures, both architectures, permissions and all 2,507 imported textures were reverified. Eighteen current native whole images were actually opened. See the [scoped preview receipt](reports/battle_hud_preview_v0230.json) and [actual visual review](reports/battle_hud_visual_review_v0230.json). This UI preview does not repeat the older thirty-group full suite or establish complete art, physical-phone or commercial acceptance.
 
 ```powershell
 godot --headless --path . --script tests/run_tests.gd
@@ -678,4 +686,4 @@ The [0.2.23 military UI and dossier chapter](docs/41_军事界面与将领档案
 
 The [0.2.24 atlas and diplomacy chapter](docs/42_战区沙盘与外交事务精修.md) covers shipping terrain previews, zoom and pan, date gates, counterparty selection, actual aid transactions and current delivery limits.
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.29 assessment and corresponding reports for current status. The [commander chapter](docs/46_师旅级将领池与战役名册.md) documents the full registered pool, sources, filters, appointments and remaining coverage.
+Older chapters preserve their version context. Use these READMEs, the [0.2.30 UI scope](docs/48_战场浮动界面与直接触摸滚动.md), completion assessment and corresponding reports for current status. The [commander chapter](docs/46_师旅级将领池与战役名册.md) documents the full registered pool, sources, filters, appointments and remaining coverage.

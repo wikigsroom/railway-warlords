@@ -34,6 +34,7 @@ var hud_map_rect=Rect2()
 var show_places=true
 var show_control=true
 var show_terrain=true
+var show_legends=true
 var places=HistoricalPlaces.new()
 var place_references: Array=[]
 var settlement_choices: Dictionary={}
@@ -528,9 +529,21 @@ func focus_player() -> void:
 			# Include the objective when it is locally reachable in this opening
 			# view. A distant campaign objective must not shrink the army to dots.
 			if at.distance_to(army.get_center())<minf(area.size.x,area.size.y)/.65:army=army.expand(at).grow(36)
-			zoom=clampf(minf(area.size.x/maxf(1,army.size.x),area.size.y/maxf(1,army.size.y)),.48,.90)
+			var opening_floor=opening_zoom_floor()
+			zoom=clampf(minf(area.size.x/maxf(1,army.size.x),area.size.y/maxf(1,army.size.y)),opening_floor,maxf(.90,opening_floor))
 			focus_world(army.get_center())
-		else:zoom=.76;focus_world(at)
+		else:zoom=maxf(.76,opening_zoom_floor());focus_world(at)
+
+func opening_zoom_floor() -> float:
+	# A small local map should open as a battlefield, rather than a postage-stamp
+	# rectangle on an empty canvas. This only frames existing source geography;
+	# fit_map and zoom-out still expose the full authored theatre and every cell.
+	if state.map.get("strategic_scale",false) or map_extent.size()<3:return .48
+	var extent=Rect2(map_extent[0],Vector2.ZERO)
+	for point in map_extent:extent=extent.expand(point)
+	if not extent.has_area():return .48
+	var area=map_hud_area()
+	return clampf(maxf(area.size.x/extent.size.x,area.size.y/extent.size.y),.48,1.65)
 
 func focus_world(world: Vector2) -> void:
 	# The unobscured playfield has a different centre from the full viewport.
@@ -861,7 +874,7 @@ func map_hud_area() -> Rect2:
 func legend_scale() -> float:return minf(1.25,label_scale)
 
 func terrain_legend_rect() -> Rect2:
-	if not show_terrain or zoom<.24:return Rect2()
+	if not show_legends or not show_terrain or zoom<.24:return Rect2()
 	var area=map_hud_area();var s=legend_scale()
 	var columns=clampi(int((area.size.x/s-58)/76),1,5)
 	return Rect2(area.position,Vector2(columns*76+58,12+ceili(9.0/columns)*22)*s)
@@ -1155,6 +1168,7 @@ func sync_foreground() -> void:
 	foreground_view.settlement_choices=settlement_choices
 	foreground_view.unit_headings=unit_headings
 	foreground_view.crossing_markers=crossing_markers
+	foreground_view.show_legends=show_legends
 	foreground_view.show_places=show_places;foreground_view.show_control=show_control;foreground_view.show_terrain=show_terrain
 	foreground_view.hud_map_rect=hud_map_rect
 	foreground_view.territory_qa_mode=territory_qa_mode
@@ -1860,7 +1874,7 @@ func control_legend_ids() -> Array:
 	return ids
 
 func control_legend_rect(ids: Array) -> Rect2:
-	if ids.is_empty() or not show_control:return Rect2()
+	if not show_legends or ids.is_empty() or not show_control:return Rect2()
 	var columns=control_legend_columns(ids);var rows=ceili(float(ids.size())/columns)
 	var s=legend_scale();var area=map_hud_area();var terrain=terrain_legend_rect()
 	var origin=area.position

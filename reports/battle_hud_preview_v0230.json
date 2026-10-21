@@ -1,0 +1,669 @@
+{
+  "kind": "scoped_battlefield_ui_preview",
+  "version": "0.2.30",
+  "android_version_code": 35,
+  "created_at_utc": "2026-10-21T05:27:06.997270+00:00",
+  "scope_passed": true,
+  "runtime_source_sha256": "9a97363b289ce91150f6fb4ab8dd2b1970075323e74b6e80ef56e9bf6ce4b917",
+  "content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
+  "binaries": {
+    "windows": {
+      "source": "build/windows/RailwayWarlords.exe",
+      "sha256": "5ed03baf245854527d6712ddf3d5a0cd9c8e4e375beab554c576ec2e3bf6c74b",
+      "bytes": 876760712
+    },
+    "android": {
+      "source": "build/android/RailwayWarlords.apk",
+      "sha256": "863178b2bbfd36c33a955c5a8eff69ed3f1ba4bf1191cbe8acb658de47fa20dc",
+      "bytes": 681341260
+    }
+  },
+  "checks": {
+    "core_ground_scroll_summary": 205,
+    "battlefield_input": 668,
+    "combat_presentation": 56,
+    "shipping_map_composition": 58,
+    "total": 987
+  },
+  "evidence_files": [
+    {
+      "path": "app/main.gd",
+      "sha256": "0a5419d07df0055a0e5d020ff5032dca2fecbb796bc9550921a18bddb13e105f",
+      "bytes": 99838
+    },
+    {
+      "path": "content/content_registry.gd",
+      "sha256": "a5f7ee89ec3fc369ff1ece14b760a57b7603e94ba692a903c32d16b1beabf192",
+      "bytes": 6426
+    },
+    {
+      "path": "docs/23_当前完成度评估.md",
+      "sha256": "b5fd50b5da172b28dc5f46ae81c7d5e668534009b7770c46e4fe4d209726d68e",
+      "bytes": 7438
+    },
+    {
+      "path": "docs/48_战场浮动界面与直接触摸滚动.md",
+      "sha256": "9b489fb8c981d6325f1492e8857465653f8b5faa56587da95ceea7a0e7d2d0cb",
+      "bytes": 8306
+    },
+    {
+      "path": "export_presets.cfg",
+      "sha256": "3f83617dd86c533b388a4b16b79c4ac940ae0a41d3ccd4d4b435e5cf0a5bf310",
+      "bytes": 2861
+    },
+    {
+      "path": "presentation/battle_hud.gd",
+      "sha256": "7a0b617909ec453efd620c030aacb58d9d2632accbfd992e9faa59702ba5eb92",
+      "bytes": 17931
+    },
+    {
+      "path": "presentation/command_button.gd",
+      "sha256": "3787f44548d70fdc123e2f643bf4d3e05443f5ad95f4f1e058270db1d7dbe4f8",
+      "bytes": 2416
+    },
+    {
+      "path": "presentation/general_dossier.gd",
+      "sha256": "7ff155fcde865f9d0233ebb0e5d78b25bd64d414e83610132d7df14dcb6f2f50",
+      "bytes": 11203
+    },
+    {
+      "path": "presentation/map_details.gd",
+      "sha256": "01976b0985b954823167941ac461b6df6e188c9ceecc2e99c61c8d8d5a52cd1d",
+      "bytes": 19794
+    },
+    {
+      "path": "presentation/map_view.gd",
+      "sha256": "2460710aafab3c7bad691dad872b3d825b69b4cd6524ad2cc022e73155335959",
+      "bytes": 137840
+    },
+    {
+      "path": "presentation/touch_scroll.gd",
+      "sha256": "cea3c7e996a103f67c287d9c89e5d419e8a9fecbf819eae87d8b8833c2c27171",
+      "bytes": 2372
+    },
+    {
+      "path": "project.godot",
+      "sha256": "5fcc4d96f514852ebb6fc46566a76dbe37ce0be18d7f23246bc42e8dd0d3b044",
+      "bytes": 977
+    },
+    {
+      "path": "README.en.md",
+      "sha256": "31996927f31087116efbec1336f1605493650bef8d5cc5c869acda22be9cd5fa",
+      "bytes": 63073
+    },
+    {
+      "path": "README.md",
+      "sha256": "817a8149e695ae9db21a1c7e69574b2a2e236cfef45ddc9e9193180b96a57302",
+      "bytes": 56118
+    },
+    {
+      "path": "reports/android_devices.log",
+      "sha256": "9de358663219c919aa87a6d917d17c72b36cc1314b74e42bfe13057eaf5a82e3",
+      "bytes": 107
+    },
+    {
+      "path": "reports/apk_badging.log",
+      "sha256": "cc7d1156101b03df1273cd33ec591acff2d63ac5f29af2faed86408e1465987b",
+      "bytes": 5101
+    },
+    {
+      "path": "reports/apk_content_validation.json",
+      "sha256": "1d0d7410e8d6842ca19e2dee42c4898f7537f9b1be00d9daeac2af1a37aa62e2",
+      "bytes": 842657
+    },
+    {
+      "path": "reports/apk_permissions.log",
+      "sha256": "436dddb155419992e5ba72cb5ad1355af535afe381eae3bc1fc49603445d87dd",
+      "bytes": 35
+    },
+    {
+      "path": "reports/apk_signature.log",
+      "sha256": "4138aca1ed2fb40f0b56309a500bc5f26b49b4187ed21a3accaa549f6fefd4eb",
+      "bytes": 983
+    },
+    {
+      "path": "reports/battle_hud_cinema_v0230/final_02/1280x720_150/1280x720_150_impact.png",
+      "sha256": "0a0ef40c84505c396f272482faf7f712e4fb4f55ac50ec0126550c229095314c",
+      "bytes": 1142784
+    },
+    {
+      "path": "reports/battle_hud_cinema_v0230/final_02/1280x720_150/1280x720_150_map.png",
+      "sha256": "ab4aaf28f9af133661a9d34fdfea284ca698d2b0d0b99f1a9e18774145cf4a4d",
+      "bytes": 1153347
+    },
+    {
+      "path": "reports/battle_hud_cinema_v0230/final_02/1280x720_150/validation.json",
+      "sha256": "9c37425a7ff8353e5fafb0dce56fc33f4fa791a36df3ed55960ea3193608b776",
+      "bytes": 3015
+    },
+    {
+      "path": "reports/battle_hud_cinema_v0230/final_02/1280x720_150.log",
+      "sha256": "5f0e848f41f8d2f6fb9c022ac5db26d01198f4db5132322786fcf9509c0bc00c",
+      "bytes": 225
+    },
+    {
+      "path": "reports/battle_hud_cinema_v0230/final_02/1920x1080_100/1920x1080_100_impact.png",
+      "sha256": "bee290f774efbbbfbab6f0d5928ab9fc84bdf23578ba7bbb5f298b3f71add486",
+      "bytes": 2891215
+    },
+    {
+      "path": "reports/battle_hud_cinema_v0230/final_02/1920x1080_100/1920x1080_100_map.png",
+      "sha256": "b52b7c5713893355d702177552c5d8e98c449f69249a874e3d443f5981f034cb",
+      "bytes": 2825382
+    },
+    {
+      "path": "reports/battle_hud_cinema_v0230/final_02/1920x1080_100/validation.json",
+      "sha256": "ce2fc5c18152d28dedebe9ae96703b1d3c2f3c3b979dbcae46cacaf6bee3a61e",
+      "bytes": 3017
+    },
+    {
+      "path": "reports/battle_hud_cinema_v0230/final_02/1920x1080_100.log",
+      "sha256": "be017ec5954b07dc7e35d206f813395ff8314e0b51129b01225ae19fd1a2027e",
+      "bytes": 226
+    },
+    {
+      "path": "reports/battle_hud_cinema_v0230/final_02/validation.json",
+      "sha256": "2f825f79bc30b44c4c60917a4d96082811ced4591d95d563ac7ef20f5bed9eaa",
+      "bytes": 2193
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse/additional_orders.png",
+      "sha256": "fc46873c4b131ae79e151ad2454b48e163033e3389d6cc46bff543d279f94dba",
+      "bytes": 1136416
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse/after_move.png",
+      "sha256": "1e565a1da160b80c7b5cf0fdfdd2cd7413bb67c260be03485b2098339e730692",
+      "bytes": 1216376
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse/battlefield.png",
+      "sha256": "8b7bd3d61674f34aa26e35ba1c45b8ce5b5f402e61f4f56ab01f7c66082fcb29",
+      "bytes": 1164597
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse/details.png",
+      "sha256": "a35117ce9af2e0daef548218a365e6f4fcbfe24d17d0079012992d202561588f",
+      "bytes": 1021394
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse/details_scrolled.png",
+      "sha256": "7c844aea5aed647868cdc2a9263b17b13034e686054b39a28806327b4c33cfc3",
+      "bytes": 1123030
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse/layers.png",
+      "sha256": "1670ade2f0a59cf288a6ba857d1e43c5a484139934db54a8ed2ce17ac0fbdd9f",
+      "bytes": 1179428
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse/move_confirmation.png",
+      "sha256": "913bcdf8dbf7d02c81c6ab66cfba91b4a7b2245bae68bd5defa80c96cda4396c",
+      "bytes": 1110010
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse/objectives.png",
+      "sha256": "a0c1500e1e25a18210b55b5332ad7271591728dff8eaafa9118c95227b4b65d2",
+      "bytes": 1095365
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse/validation.json",
+      "sha256": "5a576e719a44907b787650b4e5d15033ed68aace85a9db4e985bb15be2b157e6",
+      "bytes": 20854
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1280x720_150_mouse.log",
+      "sha256": "4f2d923f3555063e4dbd9b170fb81f92dfc6f871d5a80ae9837d42b693a0ca87",
+      "bytes": 234
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse/additional_orders.png",
+      "sha256": "c12d0bbeb32b87812d5f00de4821165b064f0472cfbd68a0d382088cfeaef8ca",
+      "bytes": 2860787
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse/after_move.png",
+      "sha256": "9d207ff80bdcd95fdd972d58ef9ecfade73cd3867bda3591c9239b406515edef",
+      "bytes": 2310729
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse/battlefield.png",
+      "sha256": "e211b46b9f6987ee1054ad17689a8ea6999a3d0617e5134cfd39a61e3cbb6de3",
+      "bytes": 2861048
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse/details.png",
+      "sha256": "aa8ebb2e1ade96f40b91a3e823a6c93b77a7c83987b1de27bfffed341d07b4d0",
+      "bytes": 2790668
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse/details_scrolled.png",
+      "sha256": "33af455cddb1d9bbe5d9f176aa82f834dd4d0e6f5ca997a65b83f3b3942bd92d",
+      "bytes": 2804474
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse/layers.png",
+      "sha256": "41337ed3e740c5e035680eaf37539833346656716017b3a03c2a0b4f17342a4b",
+      "bytes": 2893759
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse/move_confirmation.png",
+      "sha256": "43cf6ed77c8710d13be27e865201b0b44424b3c48d393c7345f8effd001b8867",
+      "bytes": 2099646
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse/objectives.png",
+      "sha256": "b94bc0ff0eec2e532ae37136f2301edae9081d54e67eaf9d34b62ed373d77284",
+      "bytes": 2855410
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse/validation.json",
+      "sha256": "141e50f4db109cb54696e1ec1be6334000cb5c8e52fd1e712fecd8ba4dd6289b",
+      "bytes": 21627
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/1920x1080_100_mouse.log",
+      "sha256": "354571d9cc489e711671407ae833804411ecf1746059823079715fcd1c7263c1",
+      "bytes": 235
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch/additional_orders.png",
+      "sha256": "7b634b6eef5e9dcd949357384cb905676ad259a28e1d4819235efb1047cb47ee",
+      "bytes": 3526879
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch/after_move.png",
+      "sha256": "7df18ff2575961a13631268c560344262718aaae089def822fccf78f4876f630",
+      "bytes": 2413349
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch/battlefield.png",
+      "sha256": "b8641c226ce0f0a742b6990919916089b9720adf9174acaa45cd343af15fa74b",
+      "bytes": 3532629
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch/details.png",
+      "sha256": "f185924d39c089eaf59aa92d69391227634d716ea1a4839da6b901386cb4f227",
+      "bytes": 3448816
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch/details_scrolled.png",
+      "sha256": "907af7dc29efae01fc7ad9ec51260b44341a853b515d001ee12f762df7bc4b4d",
+      "bytes": 3496125
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch/layers.png",
+      "sha256": "e39794a342f0bc9834e98602b4ad744694ec259fb8f4a7b49fd06247178bcc2d",
+      "bytes": 3558140
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch/move_confirmation.png",
+      "sha256": "0b7a5ebfcae169c1d5fcae406e37653c3499bd08490f3c1e560185cf30961984",
+      "bytes": 2183441
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch/objectives.png",
+      "sha256": "abf381bd6fcb75b22462ba32e69250ac971eeeb5c61d34362270bf94f9aae42f",
+      "bytes": 3499450
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch/validation.json",
+      "sha256": "0fd8da34fb2a9d65c4fc98386f2d52cb68ba0ab03a5021073c23e8ddf3a485b7",
+      "bytes": 21480
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/2400x1080_120_touch.log",
+      "sha256": "1e78cae763c45980d5bc5b99cbb892c24e5332a9384269d9d50a5e501a492b1c",
+      "bytes": 235
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/final_04/validation.json",
+      "sha256": "770e06f1831db8019e2ff586c1ff32031f3f71e7532704de96063d8d5111eb59",
+      "bytes": 7717
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/home.json",
+      "sha256": "4ccdce5e47b0b5b95c53f1b295aabe1cc07f913727a1d16cb03599034172e5c4",
+      "bytes": 436
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/home.log",
+      "sha256": "4d482c447360a6586816aa89e4e5ac0331d3878b1d0556cc7aef30f9e84d60ac",
+      "bytes": 320
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "bytes": 2340612
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/home.stdout.log",
+      "sha256": "8b2c8183d98427d5cc320347887d0be2f914bb67bec0adacc582b4276f216c3e",
+      "bytes": 324
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/ui_smoke.json",
+      "sha256": "4f82dddcd72211fbb9f88a8ff4dabe23adc8bf0acfb37d798c43acdafc3678d6",
+      "bytes": 27499
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/ui_smoke.log",
+      "sha256": "34c431a6b66455b4c80ce147bc3b0ab0c7a355fd651bc1e7db29a7ce8001a838",
+      "bytes": 338
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/ui_smoke.png",
+      "sha256": "e8cc5f7dff4d3f2fb9663984a4bfc9f6c54d4b3f98d5cc8746ccd9204189ea1a",
+      "bytes": 2960522
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/ui_smoke.stdout.log",
+      "sha256": "968763686530ba76c8609caaaad4e47d86087ed2d4338de7b91ebd66ef227024",
+      "bytes": 343
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/validation.json",
+      "sha256": "4d4e21689afe2f63ae006bd5fd68da1d4e9d014da1404e249b5e49599cd3ea85",
+      "bytes": 3959
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/wuhan_opening.json",
+      "sha256": "c4e14ce7114f80dd1f40c67b9767fe8aa3e8ca6aff772ff5c513d267a0a34054",
+      "bytes": 20106
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/wuhan_opening.log",
+      "sha256": "3ca3e09401f570c194db6220d612ac68e7f108c712fd2b7a3eb9946154a39ed5",
+      "bytes": 329
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/wuhan_opening.png",
+      "sha256": "e211b46b9f6987ee1054ad17689a8ea6999a3d0617e5134cfd39a61e3cbb6de3",
+      "bytes": 2861048
+    },
+    {
+      "path": "reports/battle_hud_shipping_v0230/final_02/wuhan_opening.stdout.log",
+      "sha256": "7b7f3e8e48d02c26d258a693251f4c2f0a26567a04b1784d1d1d3099e3d1a257",
+      "bytes": 333
+    },
+    {
+      "path": "reports/battle_hud_visual_review_v0230.json",
+      "sha256": "daeb02d2bcf48a363f4f6359a7ecc51ffd2cee81c44fcc9f82e55f5d8de97ecd",
+      "bytes": 5697
+    },
+    {
+      "path": "reports/battle_summary_cache_v0230/before_fix.json",
+      "sha256": "ce484462779e0dabf56c44e979b28cd4b7ae32bb5e798322ae45f0476a8af90c",
+      "bytes": 1266
+    },
+    {
+      "path": "reports/battle_summary_tests.json",
+      "sha256": "90326aec59eb97bd72e7164ef762e8b4a78e08016f87bf95d9bcf1672daa4474",
+      "bytes": 1096
+    },
+    {
+      "path": "reports/export_results.json",
+      "sha256": "7966687af2552d6b17b6e79dc7d9f4513c91314b7b1dfc4a843c4963c3c617e4",
+      "bytes": 1003
+    },
+    {
+      "path": "reports/ground_coverage_tests.json",
+      "sha256": "c3536aeecd383b4ee6ecd967f08f540aba91a5fbf69ea060391be302dc99f4b4",
+      "bytes": 5930
+    },
+    {
+      "path": "reports/rule_tests.json",
+      "sha256": "965861bc5d9e30570e670b60c2b3ede8034233a5de2bbd470bb41ac0480f3eb2",
+      "bytes": 10632
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/beijing.json",
+      "sha256": "48bf8460fe14b1676878d55ee8b19e894ef3f06301cb8b9b0376b20c1e9b9db2",
+      "bytes": 26256
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/beijing.log",
+      "sha256": "1064dd618df67b77b67cd503e46b75d4afb6a4443e37f45d7a1efd0e8b5fc4e0",
+      "bytes": 354
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/beijing.png",
+      "sha256": "6f6df20ce7fe7628b1e56c6459da3b3b22ba97d26c2244fb887bbd0caebc6e88",
+      "bytes": 2702493
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/beijing.stdout.log",
+      "sha256": "88b9c9b7e74dddf1ed27636aec5b257cd8be133f0fab478e2f9d5a7ada23a5c4",
+      "bytes": 358
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/coast.json",
+      "sha256": "d1a33f79e1f3356655910a04eaef4264832ba7978cbfc2f60db53e64f03402ca",
+      "bytes": 25682
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/coast.log",
+      "sha256": "dafa343c84bafff910fbd01cfff49e854ff7995e7184a90ed3d9342db8df88f1",
+      "bytes": 352
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/coast.png",
+      "sha256": "f532ed22ccd4fb4c5556d4de8d5ced9cba86ed4389acd272aa982507c3196d6f",
+      "bytes": 2816333
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/coast.stdout.log",
+      "sha256": "31942fbf7fbd9a387d03319ce50531271740e342c9de3937ef600a3ee237f759",
+      "bytes": 356
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/validation.json",
+      "sha256": "a10fd3359fc82fa075f16deb0f297036aadd12260602c4ec788943a3bfe029ea",
+      "bytes": 11516
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/village.json",
+      "sha256": "48761f48528f716bb2188030674721a495d6bb66ff49e9e05843c7f162eec799",
+      "bytes": 23100
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/village.log",
+      "sha256": "eef14a844fbe8974aba79dd3107370bd37a768ae1a252f5986afb23de4f45a53",
+      "bytes": 354
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/village.png",
+      "sha256": "a0e7b0a1ce964a1128b4c53b3b2c474b160c78e5efe0e290c8f2099b38df57e1",
+      "bytes": 3142990
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/village.stdout.log",
+      "sha256": "4c29e536e5e71e95f9d576243d138cd18cdc082abfad0e5106c8570250032936",
+      "bytes": 358
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan.json",
+      "sha256": "67af81548dbc57322e8bd9f930053650a50aa3358673c99eceab63e41910edce",
+      "bytes": 19771
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan.log",
+      "sha256": "46121e47beb95d61853b0c0001b6ddde683067ab10de04d14b82e9af0abdc201",
+      "bytes": 352
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan.png",
+      "sha256": "4552d272fae879dec725b86cb4f402cffcb892494338799d55e1e5240fcd7e45",
+      "bytes": 2196902
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan.stdout.log",
+      "sha256": "20cdd463c9f01c085faae4e8c967c70580d3d86763822e89e7a2261430a1eb8f",
+      "bytes": 356
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_large_text.json",
+      "sha256": "b09495878321bfa701214b74cc3f173d0a347cd5b1ac96d58a4234a6e43fac27",
+      "bytes": 19789
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_large_text.log",
+      "sha256": "6bc360670d801f9d2725c1aed3cee64424392d18e3bc23ddda35de059c847996",
+      "bytes": 363
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_large_text.png",
+      "sha256": "a408150db8cbb615214f99a3b23b8fe83f927b9dce75a7efaae3ea49559f8f11",
+      "bytes": 1006072
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_large_text.stdout.log",
+      "sha256": "8c97d45abab01d09aea84d25b19ca9c0d22f23b603cfb907e76d5d96265d9abb",
+      "bytes": 367
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_regional.json",
+      "sha256": "270108c00f33e68270988cfc4ab34fac76c68517221a9ed3ad75e0c0d6ee32aa",
+      "bytes": 18021
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_regional.log",
+      "sha256": "004aaaaa9739839f809b10b9c1c09e490f14068f5418fd772faf781bc057206b",
+      "bytes": 361
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_regional.png",
+      "sha256": "86cd5fbe0a040736e1aa1e65774584a2705d9edf7b364f46cd6f2e1e4934a3b3",
+      "bytes": 393642
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_regional.stdout.log",
+      "sha256": "234846ef6a454187939864a88e2d22add7dc3782771594453c51576d133a5738",
+      "bytes": 365
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_x30_layout.json",
+      "sha256": "f5474b2106b7d6a6a86e694397ce894cf96bcf9ad78304bff7ef27ff821d451c",
+      "bytes": 19777
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_x30_layout.log",
+      "sha256": "1bf3168791e31af762941ddb88c39dafb6520c09db1c8209e79fd9f8b8180241",
+      "bytes": 363
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_x30_layout.png",
+      "sha256": "c5735f62af5189a2ebd0f74c071f4cecfb65d7725ef2fc946d00354d04651695",
+      "bytes": 2295930
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/wuhan_x30_layout.stdout.log",
+      "sha256": "1169fe9aee12c4bf69280e909061643b01229a13a7f36d5dbb85ad55a2573d35",
+      "bytes": 367
+    },
+    {
+      "path": "reports/surface_geography_tests.json",
+      "sha256": "f437c29455987bc05054f25f31d8a6cf5db49045c0a6aca0b2328d4416256439",
+      "bytes": 4304
+    },
+    {
+      "path": "reports/touch_scroll_tests.json",
+      "sha256": "f4969ef5abcce47c766df012fe44e7e19f2f59a460255a0c4b1d66753b4b7a13",
+      "bytes": 1076
+    },
+    {
+      "path": "tests/battle_hud_test.gd",
+      "sha256": "2abca97b464f9ecfb0cae3b310b4fb977c990a5895ede9a9f4384f4e7a77d7be",
+      "bytes": 12018
+    },
+    {
+      "path": "tests/battle_summary_test.gd",
+      "sha256": "7c8125e5e61235c5b9fb694db8da714f759eb5783ef0dd92600ffd65638e66ba",
+      "bytes": 3955
+    },
+    {
+      "path": "tests/hud_native_test.gd",
+      "sha256": "c2ce4058c41d9c8f918d3a17b20921d9ea3f85a2ae0962b76a5b02648556266f",
+      "bytes": 6916
+    },
+    {
+      "path": "tests/touch_scroll_test.gd",
+      "sha256": "0a271c721e50073740085acc802bf19c9800800775a863d75da7a1f61fc09684",
+      "bytes": 4277
+    },
+    {
+      "path": "tools/capture_battle_hud_media.py",
+      "sha256": "52c0c90b23f1e42efb2aaa4c04ed7d391714e268e021257ee107bc84ef9e6b69",
+      "bytes": 3901
+    },
+    {
+      "path": "tools/capture_map_composition.py",
+      "sha256": "b0b0ffe16478529a129991c98b1c81304b0c22da309d3e390ca5dd75be0e03e2",
+      "bytes": 6838
+    },
+    {
+      "path": "tools/package_battle_hud_preview.py",
+      "sha256": "4077561484dc526476871263e1819d53340bf2e9ee07fc5a3ab4daeff6064158",
+      "bytes": 13459
+    },
+    {
+      "path": "tools/verify_battle_cinema.py",
+      "sha256": "e6ca80252cfe1f5435ee7f1578b7ef08bbb86c12423c3bfb2fed166e6550c8c4",
+      "bytes": 3705
+    },
+    {
+      "path": "tools/verify_battle_hud.py",
+      "sha256": "8d4be3c84aee2948ad171e7d033581664234a1f021128c3508bd8bdb4e90e416",
+      "bytes": 4696
+    },
+    {
+      "path": "tools/verify_exports.py",
+      "sha256": "f2eb37c2f3b859b94ea4e879c5792e26593cd05f0cb661e39d2c4ce0dde6b33a",
+      "bytes": 10830
+    }
+  ],
+  "full_30_group_regression_repeated": false,
+  "full_release_approved": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "physical_android_device_tested": false,
+  "performance_approval": false,
+  "source_pngs_modified": false,
+  "new_music_generated": false,
+  "source_delivery": "Git repository; this preview has no standalone full-source ZIP.",
+  "source_repository": "https://github.com/wikigsroom/railway-warlords",
+  "archive_checks_passed": true,
+  "scope_receipt_sha256": "1fb6bc122ac4492cf89b0bb0f7f21e021a6cc3dc77ba85f4f029cfa63b44e5c0",
+  "artifacts": [
+    {
+      "file": "railway-warlords-0.2.30-ui-evidence.zip",
+      "bytes": 87423816,
+      "sha256": "8e4780b4f1885c120d7ee290e67f7d2095e47e17802d33b08d633b193f941eeb"
+    },
+    {
+      "file": "railway-warlords-0.2.30-windows.zip",
+      "bytes": 673853574,
+      "sha256": "ae0eabb79b9a10b209588e1a514a3457fcc33572f2aad2b26cb6e0b4f6267261"
+    },
+    {
+      "file": "RailwayWarlords.apk",
+      "bytes": 681341260,
+      "sha256": "863178b2bbfd36c33a955c5a8eff69ed3f1ba4bf1191cbe8acb658de47fa20dc"
+    },
+    {
+      "file": "RailwayWarlords.exe",
+      "bytes": 876760712,
+      "sha256": "5ed03baf245854527d6712ddf3d5a0cd9c8e4e375beab554c576ec2e3bf6c74b"
+    },
+    {
+      "file": "scope_receipt.json",
+      "bytes": 25515,
+      "sha256": "1fb6bc122ac4492cf89b0bb0f7f21e021a6cc3dc77ba85f4f029cfa63b44e5c0"
+    },
+    {
+      "file": "START_HERE.md",
+      "bytes": 958,
+      "sha256": "8acc1d85ee3133e9e938b8d35fe4c9a016b279deac635fe62f9c6d8bc1bc4094"
+    }
+  ]
+}

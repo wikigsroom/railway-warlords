@@ -27,6 +27,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--development', action='store_true')
     parser.add_argument('--expected-content-hash')
+    parser.add_argument('--evidence-root', help='New evidence directory, preserving earlier attempts.')
     args=parser.parse_args()
     version=current_version()
     driver_sha=sha(__file__)
@@ -39,6 +40,11 @@ def main():
         assert record['export_verified'] and record['runtime_source_sha256']==runtime and record['sha256']==sha(exe), 'A current verified export is required'
     mode='development_engine' if args.development else 'verified_export'
     folder=P/'reports/screenshots/map_composition_native'/('v'+version.replace('.',''))/mode
+    if args.evidence_root:
+        folder=Path(args.evidence_root)
+        if not folder.is_absolute():folder=P/folder
+        folder=folder.resolve()
+        assert folder.is_relative_to((P/'reports').resolve()) and not folder.exists(), 'Use a new directory inside reports'
     folder.mkdir(parents=True,exist_ok=True)
     jobs=[
         ('wuhan','legion_07','1920x1080','1.0',['--focus-city','hankou','--capture-zoom','1.05'],{'hankou','hanyang','wuchang'}),

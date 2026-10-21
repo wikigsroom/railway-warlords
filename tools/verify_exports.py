@@ -1,5 +1,6 @@
 """Verify shipped files with native Windows/Godot and Android SDK tools, without emulation."""
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import os
@@ -24,6 +25,12 @@ def run(args, logfile, env=None):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--android-only', action='store_true', help='Verify APK signatures and all payloads; Windows viewports are checked separately.')
+    args = parser.parse_args()
+    if args.android_only:
+        verify_android()
+        return
     exe = P / 'build/windows/RailwayWarlords.exe'
     png = P / 'reports/screenshots/map_final_windows.png'
     native_log = P / 'reports/exported_windows_native.log'
@@ -61,6 +68,11 @@ def main():
         with Image.open(capture) as im:
             if im.size != tuple(map(int, resolution.split('x'))):
                 raise SystemExit('Native layout capture dimensions mismatch: ' + name)
+    verify_android()
+    print('Exported Windows UI/rendering verified.')
+
+
+def verify_android():
     env = os.environ.copy()
     env['JAVA_HOME'] = str(JAVA)
     apk = P / 'build/android/RailwayWarlords.apk'
@@ -118,7 +130,7 @@ def main():
     if not report['passed'] or private:
         raise SystemExit('APK payload mismatch.')
     run([SDK / 'platform-tools/adb.exe', 'devices', '-l'], P / 'reports/android_devices.log')
-    print(f'Exported Windows UI/rendering verified; APK signature, ABI, permissions and {len(rows)} source/notice files verified.')
+    print(f'APK signature, ABI, permissions and {len(rows)} source/notice files verified.')
 
 
 if __name__ == '__main__':

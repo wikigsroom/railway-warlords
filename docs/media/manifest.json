@@ -1,5 +1,5 @@
 {
-  "version": "0.2.29",
+  "version": "0.2.30",
   "screenshots": [
     {
       "file": "docs/media/menu.png",
@@ -788,6 +788,30 @@
       "byte_identical_to_native_capture": true,
       "historical_capture": false,
       "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/battle-hud-wuhan-v0230.png",
+      "version": "0.2.30",
+      "native_source": "reports/battle_hud_shipping_v0230/final_02/wuhan_opening.png",
+      "metadata": "docs/media/battle-hud-wuhan-v0230.json",
+      "sha256": "e211b46b9f6987ee1054ad17689a8ea6999a3d0617e5134cfd39a61e3cbb6de3",
+      "byte_identical_to_native_capture": true,
+      "historical_capture": false,
+      "physical_android_device_tested": false,
+      "windows_exe_sha256": "5ed03baf245854527d6712ddf3d5a0cd9c8e4e375beab554c576ec2e3bf6c74b",
+      "runtime_source_sha256": "9a97363b289ce91150f6fb4ab8dd2b1970075323e74b6e80ef56e9bf6ce4b917"
+    },
+    {
+      "file": "docs/media/menu-v0230.png",
+      "version": "0.2.30",
+      "native_source": "reports/battle_hud_shipping_v0230/final_02/home.png",
+      "metadata": "docs/media/menu-v0230.json",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "byte_identical_to_native_capture": true,
+      "historical_capture": false,
+      "physical_android_device_tested": false,
+      "windows_exe_sha256": "5ed03baf245854527d6712ddf3d5a0cd9c8e4e375beab554c576ec2e3bf6c74b",
+      "runtime_source_sha256": "9a97363b289ce91150f6fb4ab8dd2b1970075323e74b6e80ef56e9bf6ce4b917"
     }
   ],
   "animations": [
@@ -866,9 +890,9 @@
   "current_map_symbol_native_evidence": "reports/map_symbol_native_evidence.json",
   "current_general_native_evidence": "reports/general_portrait_native_evidence.json",
   "current_water_native_evidence": "reports/water_map_native_capture_evidence.json",
-  "notice": "Complete current shipping Windows viewports copied byte for byte. Explicitly dated older stills and GIFs retain their actual versions. Desktop X30 proportions are not physical phone evidence.",
+  "notice": "Each screenshot and video retains its actual source version. Two new 0.2.30 shipping Windows whole frames are byte-identical copies. Older broad native suites and GIFs remain dated evidence, not repeated 0.2.30 acceptance. Desktop touch layouts are not physical Android tests.",
   "current_commander_native_evidence": "reports/commander_roster_native_evidence.json",
-  "current_map_composition_evidence": "reports/map_composition_native_evidence.json",
+  "current_map_composition_evidence": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/validation.json",
   "current_development_video": {
     "file": "reports/native_gameplay_v0229.mp4",
     "sha256": "b2c91253a6b430ebdaf8e6f542394ebbd1a2827dad5c075245540e4be6472c12",
@@ -882,5 +906,17 @@
     "duration_seconds": 26.366667,
     "shipping_executable": false,
     "physical_android_device_tested": false
-  }
+  },
+  "retained_evidence_versions": {
+    "current_native_evidence": "0.2.29",
+    "current_control_native_evidence": "0.2.29",
+    "current_map_symbol_native_evidence": "0.2.29",
+    "current_general_native_evidence": "0.2.29",
+    "current_water_native_evidence": "0.2.29",
+    "current_commander_native_evidence": "0.2.29",
+    "current_development_video": "0.2.29"
+  },
+  "current_battle_hud_evidence": "reports/battle_hud_native_v0230/final_04/validation.json",
+  "current_shipping_ui_media_evidence": "reports/battle_hud_shipping_v0230/final_02/validation.json",
+  "current_battle_hud_visual_review": "reports/battle_hud_visual_review_v0230.json"
 }

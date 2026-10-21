@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "version": "0.2.30",
+  "runtime_source_sha256": "9a97363b289ce91150f6fb4ab8dd2b1970075323e74b6e80ef56e9bf6ce4b917",
+  "windows_exe_sha256": "5ed03baf245854527d6712ddf3d5a0cd9c8e4e375beab554c576ec2e3bf6c74b",
+  "capture_driver_sha256": "52c0c90b23f1e42efb2aaa4c04ed7d391714e268e021257ee107bc84ef9e6b69",
+  "mode": "verified_export_default_opening_and_ui_smoke",
+  "created_at_utc": "2026-10-21T05:14:13.838905+00:00",
+  "captures": [
+    {
+      "name": "wuhan_opening",
+      "path": "reports/battle_hud_shipping_v0230/final_02/wuhan_opening.png",
+      "sha256": "e211b46b9f6987ee1054ad17689a8ea6999a3d0617e5134cfd39a61e3cbb6de3",
+      "metadata": "reports/battle_hud_shipping_v0230/final_02/wuhan_opening.json",
+      "metadata_sha256": "c4e14ce7114f80dd1f40c67b9767fe8aa3e8ca6aff772ff5c513d267a0a34054",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\battle_hud_shipping_v0230\\final_02\\wuhan_opening.log",
+        "--",
+        "--qa-session",
+        "--ui-scale",
+        "1.0",
+        "--scenario",
+        "legion_07",
+        "--capture",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\battle_hud_shipping_v0230\\final_02\\wuhan_opening.png"
+      ]
+    },
+    {
+      "name": "home",
+      "path": "reports/battle_hud_shipping_v0230/final_02/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "reports/battle_hud_shipping_v0230/final_02/home.json",
+      "metadata_sha256": "4ccdce5e47b0b5b95c53f1b295aabe1cc07f913727a1d16cb03599034172e5c4",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\battle_hud_shipping_v0230\\final_02\\home.log",
+        "--",
+        "--qa-session",
+        "--ui-scale",
+        "1.0",
+        "--capture",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\battle_hud_shipping_v0230\\final_02\\home.png"
+      ]
+    },
+    {
+      "name": "ui_smoke",
+      "path": "reports/battle_hud_shipping_v0230/final_02/ui_smoke.png",
+      "sha256": "e8cc5f7dff4d3f2fb9663984a4bfc9f6c54d4b3f98d5cc8746ccd9204189ea1a",
+      "metadata": "reports/battle_hud_shipping_v0230/final_02/ui_smoke.json",
+      "metadata_sha256": "4f82dddcd72211fbb9f88a8ff4dabe23adc8bf0acfb37d798c43acdafc3678d6",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\battle_hud_shipping_v0230\\final_02\\ui_smoke.log",
+        "--",
+        "--qa-session",
+        "--ui-scale",
+        "1.0",
+        "--scenario",
+        "campaign_1924_02",
+        "--ui-test",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\battle_hud_shipping_v0230\\final_02\\ui_smoke.png"
+      ]
+    }
+  ],
+  "shipping_binary_unchanged": true,
+  "source_directory_hashing_performed": false,
+  "source_identity_reference": "reports/export_results.json",
+  "ui_smoke_passed": true,
+  "raw_full_viewports": true,
+  "manual_image_compositing": false,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false
+}

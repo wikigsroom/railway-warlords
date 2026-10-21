@@ -1,0 +1,56 @@
+{
+	"build_version": "0.2.30",
+	"checks": [
+		{
+			"name": "component_loads_actual_definitions",
+			"passed": true
+		},
+		{
+			"name": "initial_city_summary_uses_actual_defense",
+			"passed": true
+		},
+		{
+			"name": "city_damage_invalidates_summary",
+			"passed": false
+		},
+		{
+			"name": "city_defense_capacity_invalidates_summary",
+			"passed": false
+		},
+		{
+			"name": "unchanged_summary_keeps_existing_controls",
+			"passed": true
+		},
+		{
+			"name": "initial_unit_summary_uses_actual_capacity",
+			"passed": true
+		},
+		{
+			"name": "unit_capacity_invalidates_summary",
+			"passed": false
+		},
+		{
+			"name": "unit_definition_invalidates_summary",
+			"passed": false
+		},
+		{
+			"name": "fixture_does_not_modify_published_initial_state",
+			"passed": true
+		},
+		{
+			"name": "summary_refresh_does_not_consume_random_draws",
+			"passed": true
+		}
+	],
+	"failures": [
+		"city_damage_invalidates_summary",
+		"city_defense_capacity_invalidates_summary",
+		"unit_capacity_invalidates_summary",
+		"unit_definition_invalidates_summary"
+	],
+	"headless_component_fixture": true,
+	"hud_source_sha256": "8257658af38c0749843e70cea57c93dbe109b10c36745d04af0d041bb7f40b0f",
+	"passed": false,
+	"physical_android_device_tested": false,
+	"synthetic_gameplay_evidence": false
+}

@@ -55,7 +55,12 @@ func run() -> void:
 		terrain_cases.append(kind)
 	verify(ContentRegistry.fingerprint(app.match_controller.state)==committed,"inspecting_terrain_keeps_rules_state_and_random_stream")
 	var tag="%dx%d_%03d%s"%[int(viewport.size.x),int(viewport.size.y),roundi(app.settings.ui_scale*100),"_mobile" if app.mobile_layout() else ""]
-	var directory="res://reports/screenshots/hud_native";DirAccess.make_dir_recursive_absolute(directory)
+	var directory="res://reports/screenshots/hud_native"
+	var args=OS.get_cmdline_user_args();var report_path="res://reports/hud_native_"+tag+".json"
+	if "--evidence-root" in args:
+		directory=str(args[args.find("--evidence-root")+1])+"/"+tag
+		report_path=directory+"/validation.json"
+	DirAccess.make_dir_recursive_absolute(directory)
 	await VisualPlaytest.capture(app,directory+"/"+tag+"_map.png")
 	# Real published legal commands establish contact before exercising cinema.
 	var attacked=false;var command_count=0
@@ -78,6 +83,6 @@ func run() -> void:
 	verify(cinema.get_parent()==app.screen and cinema.z_index>app.footer_shell.z_index,"cinema_has_visible_hud_canvas_order")
 	await VisualPlaytest.capture(app,directory+"/"+tag+"_impact.png")
 	var report={"passed":failures.is_empty(),"failures":failures,"checks":checks,"build_version":ContentRegistry.APP_VERSION,"content_hash":app.content.content_hash,"viewport":[viewport.size.x,viewport.size.y],"ui_scale":app.settings.ui_scale,"mobile_layout_test":app.mobile_layout(),"physical_android_device_tested":false,"header":rect_data(app.header_shell.get_global_rect()),"footer":rect_data(app.footer_shell.get_global_rect()),"terrain_legend":rect_data(terrain),"control_legend":rect_data(control),"cinema":rect_data(cinema_rect),"header_overflowing_labels":overflowing,"legal_published_commands":command_count,"terrain_inspected":terrain_cases,"raw_godot_capture":true,"manual_compositing":false}
-	var file=FileAccess.open("res://reports/hud_native_"+tag+".json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
+	var file=FileAccess.open(report_path,FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("HUD_NATIVE_TEST ",tag," ",checks.size()," checks / ",failures.size()," failures")
 	app.map_view.playback.skip();app.audio.stop_all();await create_timer(.1).timeout;quit(0 if failures.is_empty() else 1)

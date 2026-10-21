@@ -1,0 +1,168 @@
+{
+	"build_version": "0.2.30",
+	"checks": [
+		{
+			"name": "top_and_bottom_rails_inside_viewport",
+			"passed": true
+		},
+		{
+			"name": "header_and_orders_do_not_intersect",
+			"passed": true
+		},
+		{
+			"name": "all_header_labels_fit_actual_panel",
+			"passed": true
+		},
+		{
+			"name": "header_phase_and_resource_labels_stay_single_line",
+			"passed": true
+		},
+		{
+			"name": "terrain_legend_inside_viewport",
+			"passed": true
+		},
+		{
+			"name": "terrain_legend_clear_of_116400326441",
+			"passed": true
+		},
+		{
+			"name": "terrain_legend_clear_of_121148278685",
+			"passed": true
+		},
+		{
+			"name": "terrain_legend_clear_of_116534544174",
+			"passed": true
+		},
+		{
+			"name": "terrain_legend_clear_of_120812734348",
+			"passed": true
+		},
+		{
+			"name": "terrain_legend_clear_of_116937197307",
+			"passed": true
+		},
+		{
+			"name": "control_legend_inside_viewport",
+			"passed": true
+		},
+		{
+			"name": "control_legend_clear_of_116400326441",
+			"passed": true
+		},
+		{
+			"name": "control_legend_clear_of_121148278685",
+			"passed": true
+		},
+		{
+			"name": "control_legend_clear_of_116534544174",
+			"passed": true
+		},
+		{
+			"name": "control_legend_clear_of_120812734348",
+			"passed": true
+		},
+		{
+			"name": "control_legend_clear_of_116937197307",
+			"passed": true
+		},
+		{
+			"name": "terrain_and_control_legends_do_not_overlap",
+			"passed": true
+		},
+		{
+			"name": "terrain_toggle_hides_foreground_legend",
+			"passed": true
+		},
+		{
+			"name": "selected_plain_shows_actual_terrain_and_rules",
+			"passed": true
+		},
+		{
+			"name": "selected_hill_shows_actual_terrain_and_rules",
+			"passed": true
+		},
+		{
+			"name": "selected_mountain_shows_actual_terrain_and_rules",
+			"passed": true
+		},
+		{
+			"name": "selected_river_shows_actual_terrain_and_rules",
+			"passed": true
+		},
+		{
+			"name": "selected_sea_shows_actual_terrain_and_rules",
+			"passed": true
+		},
+		{
+			"name": "inspecting_terrain_keeps_rules_state_and_random_stream",
+			"passed": true
+		},
+		{
+			"name": "published_legal_attack_reaches_cinema",
+			"passed": true
+		},
+		{
+			"name": "entire_cinema_visible_inside_viewport",
+			"passed": true
+		},
+		{
+			"name": "cinema_results_and_dice_clear_of_both_rails",
+			"passed": true
+		},
+		{
+			"name": "cinema_has_visible_hud_canvas_order",
+			"passed": true
+		}
+	],
+	"cinema": [
+		600.0,
+		634.0,
+		720.0,
+		300.0
+	],
+	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
+	"control_legend": [
+		0.0,
+		0.0,
+		0.0,
+		0.0
+	],
+	"failures": [],
+	"footer": [
+		1458.0,
+		952.0,
+		450.0,
+		116.0
+	],
+	"header": [
+		12.0,
+		12.0,
+		700.0,
+		62.0
+	],
+	"header_overflowing_labels": [],
+	"legal_published_commands": 2,
+	"manual_compositing": false,
+	"mobile_layout_test": false,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"raw_godot_capture": true,
+	"terrain_inspected": [
+		"plain",
+		"hill",
+		"mountain",
+		"river",
+		"sea"
+	],
+	"terrain_legend": [
+		0.0,
+		0.0,
+		0.0,
+		0.0
+	],
+	"ui_scale": 1.0,
+	"viewport": [
+		1920.0,
+		1080.0
+	]
+}

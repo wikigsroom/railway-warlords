@@ -52,7 +52,9 @@ func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array
 		# The continuous land/water base handles this narrow shore band, so a
 		# hex texture cannot paint over an actual inlet, island edge or lake.
 		var material_rect=Rect2(p-Vector2.ONE*SURFACE_BLEND_RADIUS,Vector2.ONE*SURFACE_BLEND_RADIUS*2.0)
-		var safe_material=(kind=="sea" or cell.get("render_land_covered",true)) and not relief.intersects_index(material_rect,relief.boundary_buckets,0.0)
+		# A rectangle wholly outside the source polygon crosses no boundary.
+		# Its centre must also be on source land before assigning a land texture.
+		var safe_material=(kind=="sea" or (cell.get("render_land_covered",true) and relief.dry_point(p))) and not relief.intersects_index(material_rect,relief.boundary_buckets,0.0)
 		if not family.is_empty() and safe_material:
 			var new_surface=MapTerrainSurfaces.variant_for(family,h)
 			if new_surface.is_empty():materials.append({"key":HexGrid.key(h),"family":family,"position":p})

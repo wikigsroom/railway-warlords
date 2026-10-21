@@ -1,0 +1,48 @@
+{
+	"build_version": "0.2.30",
+	"checks": [
+		{
+			"name": "test_uses_production_mouse_emulation_disabled",
+			"passed": true
+		},
+		{
+			"name": "drag_starting_on_a_button_scrolls_content",
+			"passed": true
+		},
+		{
+			"name": "scroll_begin_cancels_child_button_press",
+			"passed": true
+		},
+		{
+			"name": "repeated_direct_swipes_reach_last_command",
+			"passed": true
+		},
+		{
+			"name": "swipes_over_different_buttons_never_activate_commands",
+			"passed": true
+		},
+		{
+			"name": "ordinary_touch_tap_activates_exactly_once_after_scroll",
+			"passed": true
+		},
+		{
+			"name": "scroll_does_not_capture_an_unrelated_control",
+			"passed": true
+		},
+		{
+			"name": "hiding_panel_clears_active_touch",
+			"passed": true
+		},
+		{
+			"name": "native_mouse_wheel_still_scrolls",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"headless_component_test": true,
+	"mouse_emulation": false,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"synthetic_gameplay_evidence": false,
+	"touch_component_sha256": "cea3c7e996a103f67c287d9c89e5d419e8a9fecbf819eae87d8b8833c2c27171"
+}

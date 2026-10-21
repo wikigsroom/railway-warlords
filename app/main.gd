@@ -13,6 +13,7 @@ const UI_BRASS_BRIGHT=Color("e7d49c")
 const UI_PAPER=Color("e5e8d9")
 const UI_MUTED=Color("aebfc1")
 const CommandCard = preload("res://presentation/command_button.gd")
+const TouchScroll = preload("res://presentation/touch_scroll.gd")
 var content=ContentRegistry.new()
 var assets: AssetLibrary
 var saves: SaveService
@@ -70,6 +71,7 @@ var layer_shell: PanelContainer
 var footer_shell: PanelContainer
 var header_shell: PanelContainer
 var war_room=WarRoomScreens.new()
+var battle_hud: BattleHUD
 
 func hud_line(parent: Node, text: String, font_size: int, color: Color = PAPER) -> Label:
 	var line=label(parent,text,font_size,color)
@@ -189,7 +191,7 @@ func new_screen() -> void:
 	if is_instance_valid(overlay):overlay.queue_free();overlay=null
 	if is_instance_valid(screen):remove_child(screen);screen.queue_free()
 	screen=Control.new();screen.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);add_child(screen)
-	map_view=null;header=null;inspector=null;orders=null;busy_orders=null;notice=null
+	map_view=null;header=null;inspector=null;orders=null;busy_orders=null;notice=null;battle_hud=null
 	selected_terrain_hex=null
 
 func label(parent: Node, text: String, font_size: int = 22, color: Color = PAPER) -> Label:
@@ -234,7 +236,7 @@ func image_view(parent: Node, texture: Texture2D, size_min: Vector2) -> TextureR
 	var view=TextureRect.new();view.texture=texture;view.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;view.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;view.custom_minimum_size=size_min;view.mouse_filter=Control.MOUSE_FILTER_IGNORE;parent.add_child(view);return view
 
 func scroll_column(parent: Node) -> VBoxContainer:
-	var scroll=ScrollContainer.new();scroll.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;scroll.follow_focus=true;parent.add_child(scroll);return column(scroll)
+	var scroll=TouchScroll.new();scroll.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;scroll.follow_focus=true;parent.add_child(scroll);return column(scroll)
 
 func background(id: String) -> void:
 	var image=TextureRect.new();image.texture=assets.texture("background",id);image.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;image.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_COVERED;image.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);image.mouse_filter=Control.MOUSE_FILTER_IGNORE;screen.add_child(image)
@@ -298,6 +300,7 @@ func build_battle() -> void:
 	footer_shell=ui_panel(screen,"ui_hud_plate",Color.WHITE,8);footer_shell.z_index=30;footer_shell.anchor_top=1;footer_shell.anchor_bottom=1;footer_shell.anchor_right=1;footer_shell.offset_left=12;footer_shell.offset_right=-12;footer_shell.grow_vertical=Control.GROW_DIRECTION_BEGIN
 	var c=column(footer_shell);c.add_theme_constant_override("separation",2);orders=HFlowContainer.new();orders.add_theme_constant_override("h_separation",12);orders.size_flags_horizontal=Control.SIZE_EXPAND_FILL;c.add_child(orders);notice=label(c,"选择部队 · 选择目标 · 再次点击确认；拖动平移，滚轮缩放。",14,UI_MUTED)
 	map_view.label_obstacle_controls=[header_shell,mission_shell,layer_shell,mini,inspector_shell,footer_shell]
+	battle_hud=BattleHUD.new();battle_hud.setup(self)
 	# Put the cinema in the HUD canvas, above its plates. Previously it inherited
 	# the map's lower canvas order and the footer concealed the result/roll row.
 	map_view.cinema.reparent(screen);map_view.cinema.z_index=45
@@ -308,41 +311,7 @@ func build_battle() -> void:
 
 func layout_battle_hud() -> void:
 	if not is_instance_valid(header_shell) or not is_instance_valid(map_view):return
-	var insets=safe_insets();var scale=minf(1.25,float(settings.ui_scale));var viewport=get_viewport_rect().size
-	var left=12+insets.x;var right=12+insets.z
-	header_shell.offset_left=left;header_shell.offset_right=-right;header_shell.offset_top=12+insets.y
-	# Container minima include the actual touch targets and enlarged text. Use
-	# their resolved height, never a nominal 74px rail that clips mobile cards.
-	header_shell.size.y=maxf(74*scale,header_shell.get_combined_minimum_size().y)
-	var upper=header_shell.position.y+header_shell.size.y+10
-	# Keep the objective plate content sized to its information density. A
-	# PanelContainer with an unconstrained vertical size can otherwise expand to
-	# the whole map on some viewport/layout passes and hide the unit inspector.
-	var footer_height=maxf(130*scale,footer_shell.get_combined_minimum_size().y)
-	footer_shell.offset_left=left;footer_shell.offset_right=-right;footer_shell.offset_top=-footer_height-12-insets.w;footer_shell.offset_bottom=-12-insets.w
-	var footer_top=footer_shell.position.y
-	var available=maxf(140*scale,footer_top-upper-12*scale)
-	var mission_height=minf(maxf(146*scale,mission_card.get_combined_minimum_size().y+20),available*.60)
-	mission_shell.position=Vector2(left,upper);mission_shell.size=Vector2(292*scale,mission_height)
-	layer_shell.offset_left=-right-maxf(104,96*scale);layer_shell.offset_right=-right;layer_shell.offset_top=upper
-	layer_shell.size.y=available
-	var inspector_width=292*scale
-	var inspector_x=viewport.x-right-96*scale-inspector_width-12*scale
-	inspector_shell.position=Vector2(maxf(left+mission_shell.size.x+18*scale,inspector_x),upper)
-	inspector_shell.size=Vector2(inspector_width,maxf(160*scale,footer_top-upper-12*scale))
-	var mini=map_view.minimap
-	var mini_height=clampf(available-mission_height-12*scale,72*scale,146*scale)
-	mini.position=Vector2(left,footer_top-mini_height-8*scale)
-	mini.size=Vector2(254*scale,mini_height)
-	var field_left=mission_shell.position.x+mission_shell.size.x+12*scale
-	var field_right=inspector_shell.position.x-12*scale
-	map_view.hud_map_rect=Rect2(Vector2(field_left,upper),Vector2(maxf(120,field_right-field_left),maxf(120,footer_top-upper-12*scale)))
-	var cinema=map_view.cinema
-	cinema.set_anchors_and_offsets_preset(Control.PRESET_TOP_LEFT)
-	var cinema_scale=minf(scale,minf((viewport.x-left-right)/720,(available-12*scale)/300))
-	cinema.size=Vector2(720,300)*maxf(.5,cinema_scale)
-	cinema.position=Vector2((viewport.x-cinema.size.x)*.5,maxf(upper,footer_top-cinema.size.y-12*scale))
-	map_view.queue_redraw()
+	if battle_hud!=null:battle_hud.layout()
 
 func build_busy_orders(parent: VBoxContainer) -> void:
 	# These command controls are reused throughout the match. Constructing their
@@ -391,22 +360,7 @@ func refresh_battle(slice_work: bool = false) -> void:
 	if slice_work:
 		await get_tree().process_frame
 		if epoch!=battle_ui_epoch or not is_same(s,match_controller.state) or not is_instance_valid(header):return
-	clear(header)
-	var compact=get_viewport_rect().size.x-safe_insets().x-safe_insets().z<1740*minf(1.25,float(settings.ui_scale))
-	var primary=row(header);primary.set_meta("hud_header",true);primary.add_theme_constant_override("separation",12)
-	var title=column(primary);title.size_flags_horizontal=Control.SIZE_SHRINK_BEGIN;title.custom_minimum_size.x=170;title.add_theme_constant_override("separation",0);hud_line(title,"铁道烽烟",27,Color("ece6cf"));hud_line(title,"军阀时代 · 亚洲战区",11,UI_MUTED)
-	for item in [["军费",f.resources.cash,"cash"],["粮秣",f.resources.food,"food"],["军备",f.resources.arms,"arms"],["燃油",f.resources.get("fuel",0),"fuel"],["白银",f.resources.get("silver",0),"silver"]]:
-		var stat=ui_stat(primary,item[0],str(item[1]),"icon_resource_"+item[2]);stat.custom_minimum_size.x=106
-		for field in stat.get_child(stat.get_child_count()-1).get_children():
-			if field is Label:field.autowrap_mode=TextServer.AUTOWRAP_OFF
-	var spacer=Control.new();spacer.size_flags_horizontal=Control.SIZE_EXPAND_FILL;primary.add_child(spacer)
-	var information=primary
-	if compact:
-		hud_button(primary,"战报",show_event_log);hud_button(primary,"存档",func():show_save_dialog(true));hud_button(primary,"设置",show_pause)
-		information=row(header);information.add_theme_constant_override("separation",24)
-	var context=column(information);context.size_flags_horizontal=Control.SIZE_EXPAND_FILL;context.custom_minimum_size.x=240;context.add_theme_constant_override("separation",0);hud_line(context,s.date,20 if compact else 24);var mode_label="自由世界" if s.get("play_mode","")=="free_world" else {"campaign":"战役","conquest":"征服","legion":"演习"}[s.mode];hud_line(context,mode_label+" · "+StateAccess.faction_name(s,s.player_faction_id,content),14,UI_BRASS)
-	var phase=column(information);phase.size_flags_horizontal=Control.SIZE_EXPAND_FILL;phase.custom_minimum_size.x=176;phase.add_theme_constant_override("separation",0);hud_line(phase,"第 %d 回合 · 1天"%s.round,20 if compact else 23);hud_line(phase,StateAccess.faction_name(s,s.turn_order[s.phase_index],content)+"行动",14,UI_BRASS)
-	if not compact:hud_button(primary,"战报",show_event_log);hud_button(primary,"存档",func():show_save_dialog(true));hud_button(primary,"设置",show_pause)
+	battle_hud.refresh_header(s,f)
 	if slice_work:
 		await get_tree().process_frame
 		if epoch!=battle_ui_epoch or not is_same(s,match_controller.state) or not is_instance_valid(mission_card):return
@@ -414,12 +368,18 @@ func refresh_battle(slice_work: bool = false) -> void:
 	for objective in s.objectives:
 		var target=StateAccess.find(s,"cities",str(objective.target_ids[0])) if not objective.target_ids.is_empty() else {}
 		var target_name=target.get("name","")
+		if objective.type in ["escort","disembark"] and objective.has("destination"):
+			var destination=StateAccess.at(s,"cities",HexGrid.coordinate(objective.destination))
+			var protected_unit=StateAccess.find(s,"units",str(objective.target_ids[0])) if not objective.target_ids.is_empty() else {}
+			var unit_name=content.definition("units",protected_unit.get("def_id","")).get("name","保护编队")
+			target_name=unit_name+" → "+destination.get("name","目标格 %d,%d"%[objective.destination.q,objective.destination.r])+"（一格内）"
 		if objective.type=="destroy":target_name="目标编队"
 		if objective.type=="capture_commander" and not objective.target_ids.is_empty():target_name=content.definition("generals",str(objective.target_ids[0])).get("name",str(objective.target_ids[0]))
 		var verb={"capture":"占领","hold":"守住","escort":"抵达","survive":"保全主力","repair":"修复铁路","disembark":"抵达卸载","destroy":"消灭","capture_commander":"俘获或击溃","metric":"战术训练"}.get(objective.type,objective.type)
 		if objective.type=="hold" and target.get("owner_id",s.player_faction_id)!=s.player_faction_id:verb="夺取并守住"
 		label(mission_card,verb+" "+target_name+"  %d/%d"%[objective.progress,objective.required],16,PAPER)
 	if s.mode=="conquest":label(mission_card,"统一战略城市 · 同盟共同结算",16,PAPER)
+	elif s.get("round_limit",0)>0:label(mission_card,"期限：第%d回合 · 每完整回合一天"%s.round_limit,14,UI_BRASS)
 	label(mission_card,{"clear":"晴","rain":"雨 · 野外移动+1","snow":"雪 · 粮耗增加"}[s.weather.current]+"  /  指挥 %d · 运力 %d"%[f.command_points,f.transport_pool],13,UI_MUTED)
 	if slice_work:
 		await get_tree().process_frame
@@ -478,9 +438,10 @@ func unit_details(u: Dictionary, compact: bool = false) -> void:
 	ui_kicker(inspector,"编队检查器 · %s"%StateAccess.faction_name(s,u.owner_id,content),UI_BRASS)
 	var faction_strip=ColorRect.new();faction_strip.color=MapView.TERRITORY_COLORS.get(u.owner_id,Color("788d8f"));faction_strip.custom_minimum_size.y=5;inspector.add_child(faction_strip)
 	var portrait=ui_panel(inspector,"ui_order_card",Color.WHITE,4)
+	var portrait_height=120 if get_viewport_rect().size.y<850 else 176
 	if u.general_id!=null:
-		var general_view=GeneralPortraitView.new();general_view.setup(assets,str(u.general_id),Vector2(232,176),str(s.date));portrait.add_child(general_view)
-	else:image_view(portrait,assets.unit_texture(u),Vector2(232,176))
+		var general_view=GeneralPortraitView.new();general_view.setup(assets,str(u.general_id),Vector2(232,portrait_height),str(s.date));portrait.add_child(general_view)
+	else:image_view(portrait,assets.unit_texture(u),Vector2(232,portrait_height))
 	label(inspector,content.definition("generals",u.general_id).name if u.general_id!=null else d.name,27,Color("e3cfaa"))
 	label(inspector,StateAccess.faction_name(s,u.owner_id,content)+" · "+d.name+" · %d层编制"%u.stack,17)
 	label(inspector,"兵力  %d / %d"%[u.hp,u.max_hp],22)
@@ -592,6 +553,7 @@ func refresh_orders() -> void:
 		busy_auto_start.visible=not match_controller.auto_player;busy_auto_stop.visible=match_controller.auto_player
 		busy_skip.visible=match_controller.presentation_busy;busy_animation.visible=match_controller.presentation_busy;busy_planning.visible=not match_controller.presentation_busy
 		if "--responsiveness-test" in OS.get_cmdline_user_args():qa_order_timings.append({"kind":"animation" if match_controller.presentation_busy else "planning","reused_controls_us":Time.get_ticks_usec()-timed})
+		if battle_hud!=null:battle_hud.refresh_orders()
 		return
 	orders.visible=true
 	if is_instance_valid(busy_orders):busy_orders.visible=false
@@ -606,7 +568,19 @@ func refresh_orders() -> void:
 			if p.has("damage"):description="伤害 %d—%d  ·  反击 %d—%d"%[p.get("damage_min",p.damage),p.get("damage_max",p.damage),p.get("counter_min",p.counter),p.get("counter_max",p.counter)]
 			elif p.has("path"):description="消耗 %d 行动点 · 沿路径前进"%p.cost
 			else:description="目标与资源已检查"
-		label(orders,description,20,BRASS);hud_button(orders,"取消",func():pending={};order_mode="";refresh_battle());return
+		label(orders,description,20,BRASS);hud_button(orders,"取消",func():pending={};order_mode="";refresh_battle())
+		if battle_hud!=null:battle_hud.refresh_orders()
+		return
+	var selected_city=StateAccess.find(s,"cities",selected_city_id)
+	if not selected_city.is_empty() and selected_city.owner_id==s.player_faction_id:
+		hud_button(orders,"征募部队",func():show_recruit(selected_city.id),acting)
+		hud_button(orders,"城市建设",func():show_buildings(selected_city.id),acting)
+		var repair=match_controller.command("RepairFort",{"city_id":selected_city.id});var repair_check=match_controller.kernel.preview(s,repair)
+		hud_button(orders,"修复城防",func():match_controller.request_command(repair),acting and repair_check.get("valid",false),repair_check.get("reason",""))
+		hud_button(orders,"待命部队",select_next_unit,acting)
+		hud_button(orders,"结束回合  →",request_end_phase,acting)
+		if battle_hud!=null:battle_hud.refresh_orders()
+		return
 	var u=StateAccess.find(s,"units",selected_unit_id);var own=acting and not u.is_empty() and u.owner_id==s.player_faction_id
 	hud_button(orders,"移动",func():order_mode="move";toast("蓝色格可达；选择目标格查看路径。"),own and u.get("ap_left",0)>0)
 	hud_button(orders,"攻击",func():order_mode="attack";toast("红色标记是合法攻击目标；选择目标查看伤害与反击。"),own and u.get("attack_ready",false) and u.get("ammo",0)>0)
@@ -617,6 +591,7 @@ func refresh_orders() -> void:
 	hud_button(orders,"撤销移动",func():match_controller.request_command(undo),acting and undo_check.get("valid",false),undo_check.get("reason",""))
 	hud_button(orders,"待命部队",select_next_unit,acting)
 	var end=hud_button(orders,"结束回合  →",request_end_phase,acting);end.custom_minimum_size.x=116 if mobile_layout() else 106;end.add_theme_stylebox_override("normal",box(Color(.38,.31,.22,.82),UI_BRASS,0,3))
+	if battle_hud!=null:battle_hud.refresh_orders()
 
 func command_button(parent: Node, text: String, c: Dictionary, reason: Label=null) -> Button:
 	var control=button(parent,text,func():close_overlay();match_controller.request_command(c),false,"正在核对命令条件")
@@ -955,6 +930,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode==KEY_ESCAPE:
 			if is_instance_valid(overlay):close_overlay()
+			elif battle_hud!=null and battle_hud.dismiss_drawer():pass
 			elif not pending.is_empty():pending={};order_mode="";refresh_battle()
 			elif not match_controller.state.is_empty():show_pause()
 		elif event.keycode==KEY_SPACE and not match_controller.state.is_empty() and not is_instance_valid(overlay):
@@ -1155,6 +1131,9 @@ func hud_button(parent: Node, text: String, action: Callable, enabled: bool = tr
 	b.custom_minimum_size=Vector2(96,96) if mobile_layout() else Vector2(82,88)*minf(1.25,float(settings.ui_scale))
 	if parent.has_meta("hud_header") and not mobile_layout():b.custom_minimum_size=Vector2(66,66)*minf(1.25,float(settings.ui_scale))
 	var artwork_id=""
+	if text.contains("征募"):artwork_id="icon_inf_focus"
+	elif text.contains("建设"):artwork_id="icon_field_repair"
+	elif text.contains("城防"):artwork_id="icon_entrench_order"
 	for key in ["移动","攻击","战法","整补","待命","铁路","补给","势力","地形","地名","全图","结束","外交","设置","自动","演出","战报","存档"]:
 		if text.contains(key):
 			artwork_id={"移动":"icon_order_move","攻击":"icon_order_attack","战法":"icon_order_tactics","整补":"icon_order_reinforce","待命":"icon_defense","铁路":"icon_rail_priority","补给":"icon_ration_order","势力":"icon_defense","地形":"icon_recon_order","地名":"icon_recon_order","全图":"icon_logistics","结束":"icon_command_endphase","外交":"icon_command_diplomacy","设置":"icon_command_pause","自动":"icon_assault_order","演出":"icon_order_move","战报":"icon_recon_order","存档":"icon_field_repair"}[key];break
