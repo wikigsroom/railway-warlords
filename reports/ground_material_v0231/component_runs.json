@@ -1,0 +1,27 @@
+[
+  {
+    "driver": "run_tests.gd",
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "driver": "map_material_continuity_test.gd",
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "driver": "ground_coverage_test.gd",
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "driver": "surface_geography_test.gd",
+    "passed": true,
+    "exit_code": 0
+  },
+  {
+    "driver": "river_surface_test.gd",
+    "passed": true,
+    "exit_code": 0
+  }
+]

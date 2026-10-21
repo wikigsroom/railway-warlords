@@ -14,9 +14,14 @@ static func cross_color(offset: float, normal: Vector2) -> Color:
 	if distance>1.6:return Color(0,0,0,0)
 	var illumination=normal.dot(LIGHT.normalized())*signf(offset)
 	if distance>1.01:
-		return Color(Color("9cac88").lerp(Color("c9c8a2"),.5+illumination*.24),.40-illumination*.12)
-	var color=Color("447986") if distance>.9 else Color("508b98") if distance>.4 else Color("6099a3")
-	color=color.lightened(maxf(0,illumination)*.04)
+		# A fading material edge replaces the uniform bright bank stripe. These
+		# are symbolic margins; source points and all cross sections stay intact.
+		var feather=1.0-smoothstep(1.0,1.7,distance)
+		return Color(Color("9cac88").lerp(Color("c9c8a2"),.5+illumination*.24),(.20-illumination*.05)*feather)
+	# Quiet shallow edges and a darker centre read as water, without the old
+	# bright axial highlight which made narrow ribbons look like raised pipes.
+	var color=Color("789f95") if distance>.9 else Color("5a8b89") if distance>.4 else Color("527f82")
+	color=color.lightened(maxf(0,illumination)*.025)
 	return Color(color,.97)
 
 static func build(source: PackedVector2Array, width: float, start_join: Vector2=Vector2.ZERO, end_join: Vector2=Vector2.ZERO) -> Dictionary:

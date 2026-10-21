@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "version": "0.2.31",
+  "mode": "verified_shipping_exe",
+  "runtime_source_sha256": "fc0f65450c5d526f0a4efd37d09601b9b9e66dd9607b8089f603391f62cdd1d4",
+  "windows_exe_sha256": "84d9acf88a32510eecef1dd1b51eb6cf70a6f70b42083e9abb47fe5a5d12e475",
+  "shipping_binary_unchanged": true,
+  "capture_driver_sha256": "7b23cf9a43179877477e93e9cf658cf88f1955ce0ad87c78f8823a4948a94cfe",
+  "commands": [
+    {
+      "name": "gpu",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_material_v0231\\shipping_01\\gpu.log",
+        "--",
+        "--qa-session",
+        "--ground-continuity-test",
+        "--ground-continuity-output",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_material_v0231\\shipping_01\\gpu"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "ui_smoke",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_material_v0231\\shipping_01\\ui_smoke.log",
+        "--",
+        "--qa-session",
+        "--scenario",
+        "campaign_1924_02",
+        "--ui-test",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_material_v0231\\shipping_01\\ui_smoke.png"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "home",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_material_v0231\\shipping_01\\home.log",
+        "--",
+        "--qa-session",
+        "--capture",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_material_v0231\\shipping_01\\home.png"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "captures": [
+    {
+      "path": "reports/ground_material_v0231/shipping_01/ui_smoke.png",
+      "sha256": "e89c1e7f32738322f659e4177d1c8f530a857096b3cb5503d0e138c83406623b",
+      "metadata": "reports/ground_material_v0231/shipping_01/ui_smoke.json",
+      "metadata_sha256": "1561157384baf5d67a58818c25adf6fde872ef41cdef0f88aede59fd72e577f4"
+    },
+    {
+      "path": "reports/ground_material_v0231/shipping_01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "reports/ground_material_v0231/shipping_01/home.json",
+      "metadata_sha256": "909fbcf64505a348fbbfcea74230e90277fc87443d1a5d46371e7471ec07bfc0"
+    }
+  ],
+  "gpu_report": "reports/ground_material_v0231/shipping_01/gpu/validation.json",
+  "gpu_report_sha256": "cb8f5f76285ad164fc9dcde2849946959222683cb708c1210ac223ebe3efc288",
+  "gpu_checks": 48,
+  "ui_smoke_passed": true,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "manual_image_compositing": false
+}

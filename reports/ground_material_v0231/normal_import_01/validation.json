@@ -1,0 +1,149 @@
+{
+  "build_version": "0.2.31",
+  "captures": [
+    {
+      "metadata": "res://reports/ground_material_v0231/normal_import_01/wuhan_control.json",
+      "metadata_sha256": "4b372a5f1ab5d05eeb75efd7888f330915c335ea6a8977b7db594016d978da1f",
+      "path": "res://reports/ground_material_v0231/normal_import_01/wuhan_control.png",
+      "sha256": "778caf0e1c30c92cab02fd149c010c3b4876552d9227f464792e1187dd5c388a"
+    },
+    {
+      "metadata": "res://reports/ground_material_v0231/normal_import_01/wuhan_natural.json",
+      "metadata_sha256": "dc0ca48d2278c4c09ad0bf4f6bb22ce43103a474bc43b1182ed23482c32a8cd6",
+      "path": "res://reports/ground_material_v0231/normal_import_01/wuhan_natural.png",
+      "sha256": "709729d2df14492d5703a474ad052bc9c678019472081e32832f834bef553ad6"
+    },
+    {
+      "metadata": "res://reports/ground_material_v0231/normal_import_01/beijing_control.json",
+      "metadata_sha256": "4b372a5f1ab5d05eeb75efd7888f330915c335ea6a8977b7db594016d978da1f",
+      "path": "res://reports/ground_material_v0231/normal_import_01/beijing_control.png",
+      "sha256": "e9f4930be9cd423255cbc82840881616c7132e5f1617ecebf63c5615d10e1219"
+    },
+    {
+      "metadata": "res://reports/ground_material_v0231/normal_import_01/beijing_natural.json",
+      "metadata_sha256": "dc0ca48d2278c4c09ad0bf4f6bb22ce43103a474bc43b1182ed23482c32a8cd6",
+      "path": "res://reports/ground_material_v0231/normal_import_01/beijing_natural.png",
+      "sha256": "b6f7f2a1046a532c290a955c40c7273029fd3a048ce185afe0137775a8082225"
+    },
+    {
+      "metadata": "res://reports/ground_material_v0231/normal_import_01/shanhaiguan_control.json",
+      "metadata_sha256": "4b372a5f1ab5d05eeb75efd7888f330915c335ea6a8977b7db594016d978da1f",
+      "path": "res://reports/ground_material_v0231/normal_import_01/shanhaiguan_control.png",
+      "sha256": "2d2e90371c95b2623fa57f6f99cd74765b4a37fc4da4a14cb02014a4ccaf83ed"
+    },
+    {
+      "metadata": "res://reports/ground_material_v0231/normal_import_01/shanhaiguan_natural.json",
+      "metadata_sha256": "dc0ca48d2278c4c09ad0bf4f6bb22ce43103a474bc43b1182ed23482c32a8cd6",
+      "path": "res://reports/ground_material_v0231/normal_import_01/shanhaiguan_natural.png",
+      "sha256": "70b3e28e9428e41f50726524070899aa37c3633362377ef6e4fda0998e0f5f4c"
+    }
+  ],
+  "checks": [
+    {
+      "name": "wuhan:normal_import_array_is_twenty_384px_layers",
+      "passed": true
+    },
+    {
+      "name": "wuhan:two_material_scales_and_eighteen_existing_scales",
+      "passed": true
+    },
+    {
+      "name": "wuhan:normal_material_has_native_shader_uniforms",
+      "passed": true
+    },
+    {
+      "name": "wuhan:true:complete_native_capture",
+      "passed": true
+    },
+    {
+      "name": "wuhan:true:same_source_city_and_camera",
+      "passed": true
+    },
+    {
+      "name": "wuhan:false:complete_native_capture",
+      "passed": true
+    },
+    {
+      "name": "wuhan:false:same_source_city_and_camera",
+      "passed": true
+    },
+    {
+      "name": "wuhan:visibility_does_not_change_match_or_random_stream",
+      "passed": true
+    },
+    {
+      "name": "beijing:normal_import_array_is_twenty_384px_layers",
+      "passed": true
+    },
+    {
+      "name": "beijing:two_material_scales_and_eighteen_existing_scales",
+      "passed": true
+    },
+    {
+      "name": "beijing:normal_material_has_native_shader_uniforms",
+      "passed": true
+    },
+    {
+      "name": "beijing:true:complete_native_capture",
+      "passed": true
+    },
+    {
+      "name": "beijing:true:same_source_city_and_camera",
+      "passed": true
+    },
+    {
+      "name": "beijing:false:complete_native_capture",
+      "passed": true
+    },
+    {
+      "name": "beijing:false:same_source_city_and_camera",
+      "passed": true
+    },
+    {
+      "name": "beijing:visibility_does_not_change_match_or_random_stream",
+      "passed": true
+    },
+    {
+      "name": "shanhaiguan:normal_import_array_is_twenty_384px_layers",
+      "passed": true
+    },
+    {
+      "name": "shanhaiguan:two_material_scales_and_eighteen_existing_scales",
+      "passed": true
+    },
+    {
+      "name": "shanhaiguan:normal_material_has_native_shader_uniforms",
+      "passed": true
+    },
+    {
+      "name": "shanhaiguan:true:complete_native_capture",
+      "passed": true
+    },
+    {
+      "name": "shanhaiguan:true:same_source_city_and_camera",
+      "passed": true
+    },
+    {
+      "name": "shanhaiguan:false:complete_native_capture",
+      "passed": true
+    },
+    {
+      "name": "shanhaiguan:false:same_source_city_and_camera",
+      "passed": true
+    },
+    {
+      "name": "shanhaiguan:visibility_does_not_change_match_or_random_stream",
+      "passed": true
+    }
+  ],
+  "ew6_parity_claimed": false,
+  "formal_art_approval": false,
+  "manual_image_compositing": false,
+  "mode": "development_engine_normal_imports",
+  "passed": true,
+  "physical_android_device_tested": false,
+  "raw_complete_viewports": true,
+  "runtime_source_sha256": "dc77eb205fadd970f955112dbed54ce2630b0238f284bf23ddb2d4af35c38606",
+  "source_unchanged_during_tests": true,
+  "driver_sha256": "8f78822cf157b0819263750438559d600e4029245213dae5d05f03c00f3b4336"
+}

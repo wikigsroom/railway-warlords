@@ -1,0 +1,36 @@
+{
+  "version": "0.2.31",
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "assets": [
+    {
+      "id": "tile_ground_painted_v0231_temperate_meadow",
+      "category": "tile",
+      "family": "temperate_meadow",
+      "variant": 1,
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "gate": "existing_temperate_meadow_material_only",
+      "prompt": "Create ONE original opaque seamless painted terrain texture for a\nhistorical strategy map, a complete continuous square viewed straight down.\nThe whole square will cover about three to four small hexes in the game; make\nthe ground read as a beautiful calm painted material at 224 screen pixels.\nThis is representative surface art, not a vegetation survey or a named place.\nUse clear interlocking medium-sized brush planes, low clipped grass growth,\nmatte mineral earth and a few fine grouped grass strokes. Broad open shapes\nmust dominate, with enough structure to identify the material after reduction.\nSoft sunlight from upper left, only shallow ground relief. The green should\nlook alive and natural, with warm light planes and cooler shaded strokes.\nAvoid gray fog, beige paper, mottled photographic grit, tiny yellow freckles,\nhigh-frequency fuzz, dark grass roots, regularly spaced tufts or tall plants.\nNo trees, bushes, flowers, crops, field parcels, paths, hills, standing rocks,\nstreams, lakes, shores, puddles, buildings, people, units, shadows of objects,\nhexagons, UI, labels, borders, frame, vignette, letters, logo or watermark.\nThe full texture must reach all four edges, without a surrounding platform or\nbackground. All edges should wrap seamlessly. Do not copy another game's art.\nMaterial:\nOpen temperate short-grass ground. The predominant\npigment is a living muted olive green #819751, with broad soft #9CAA70 lit\nplanes and #617C49 shaded brush accents. About 85 percent reads as connected\nlow green grass, 15 percent as softly exposed earth. Fine flat grass fans are\nsparse, broad irregular blades grouped into a few readable flowing rhythms.\nNo isolated round grass balls. Keep it distinctly greener than gray sage soil,\nyet subdued enough for soldiers and ownership colors to remain readable."
+    },
+    {
+      "id": "tile_ground_painted_v0231_subtropical_humus",
+      "category": "tile",
+      "family": "subtropical_humus",
+      "variant": 1,
+      "source_revision": "r001",
+      "runtime_import_max_dimension": 384,
+      "visible_bounds": [
+        384,
+        384
+      ],
+      "gate": "existing_subtropical_humus_material_only",
+      "prompt": "Create ONE original opaque seamless painted terrain texture for a\nhistorical strategy map, a complete continuous square viewed straight down.\nThe whole square will cover about three to four small hexes in the game; make\nthe ground read as a beautiful calm painted material at 224 screen pixels.\nThis is representative surface art, not a vegetation survey or a named place.\nUse clear interlocking medium-sized brush planes, low clipped grass growth,\nmatte mineral earth and a few fine grouped grass strokes. Broad open shapes\nmust dominate, with enough structure to identify the material after reduction.\nSoft sunlight from upper left, only shallow ground relief. The green should\nlook alive and natural, with warm light planes and cooler shaded strokes.\nAvoid gray fog, beige paper, mottled photographic grit, tiny yellow freckles,\nhigh-frequency fuzz, dark grass roots, regularly spaced tufts or tall plants.\nNo trees, bushes, flowers, crops, field parcels, paths, hills, standing rocks,\nstreams, lakes, shores, puddles, buildings, people, units, shadows of objects,\nhexagons, UI, labels, borders, frame, vignette, letters, logo or watermark.\nThe full texture must reach all four edges, without a surrounding platform or\nbackground. All edges should wrap seamlessly. Do not copy another game's art.\nMaterial:\nWarm humid lowland organic earth with an open low\nground-cover accent, not a forest floor or dense lawn. Warm olive green\n#82915A and mossy #718150 are interwoven with warm brown #93835E humus and\nochre-gray #A89A72 fine earth. Green ground-cover occupies broad connected\npatches; exposed humus is clearly visible between them. A few short flat\ncurved grass strokes rest in the same plane. No fallen leaf carpet, roots,\ncanopy shadows or presumed historic forest. Warm, cohesive and distinct from\nthe more fibrous temperate meadow; no dirty gray photographic cloud pattern."
+    }
+  ],
+  "runtime_installed": false,
+  "historical_landcover_claimed": false
+}

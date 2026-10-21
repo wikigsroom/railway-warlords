@@ -186,3 +186,7 @@ Thumbs.db
 !/reports/screenshots/commander_roster_native/
 !/reports/screenshots/commander_roster_native/**
 /reports/screenshots/commander_roster_native/development/
+
+# Diagnostic logs stay local inside otherwise unignored screenshot folders.
+/reports/**/*.log
+/reports/**/__pycache__/

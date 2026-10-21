@@ -9,6 +9,7 @@ class Fixture extends Node2D:
 	var pan=Vector2(-29,-13)
 	var batches: Array=[]
 	var reference: Texture2D
+	var reference_period=224.0
 	var reference_layer=-1
 	var reversed=false
 	func _draw() -> void:
@@ -17,7 +18,7 @@ class Fixture extends Node2D:
 		if reference!=null:
 			# Independent direct-sampling calibration, with production stochastic
 			# sampling disabled explicitly. This is not an art acceptance claim.
-			var scale=reference.get_width()/float(MapTerrainSurfaces.macro_data().world_repeat_period)
+			var scale=reference.get_width()/reference_period
 			draw_texture_rect_region(reference,Rect2(pan-dimensions*.5,dimensions),Rect2((pan-dimensions*.5)*scale,dimensions*scale),Color(1,1,1,.94))
 		elif reference_layer>=0:
 			# A single continuous quad is independent of hex partitions and
@@ -93,6 +94,7 @@ func execute() -> void:
 			if not image.has_mipmaps():image.generate_mipmaps()
 			var copied=GroundMaterialBlend.source_array.get_layer_data(GroundMaterialBlend.source_layers()[family])
 			check(copied.get_size()==image.get_size() and copied.get_data()==image.get_data(),"runtime_layer_preserves_whole_original_pixels_and_mips:"+family)
+			fixture.reference_period=MapTerrainSurfaces.macro_period(family)
 			fixture.reference=ImageTexture.create_from_image(image);var reference=await frame()
 			fixture.reference=null;fixture.batches=patch([family]).batches;var actual=await frame()
 			var measured=difference(reference,actual);measured["family"]=family;samples.append(measured)

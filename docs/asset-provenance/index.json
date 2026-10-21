@@ -1,7 +1,7 @@
 {
-  "version": "0.2.28",
-  "count": 2507,
-  "image_bytes": 4654613378,
+  "version": "0.2.31",
+  "count": 2509,
+  "image_bytes": 4661314591,
   "assets": [
     {
       "id": "background_battle_field",
@@ -35098,6 +35098,34 @@
       "model": "gpt-image-2.5",
       "quality": "high",
       "original_workspace_source": "output/imagegen/warlord/commander_expansion_v0228/portrait_jp_ndl_95_1909/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "tile_ground_painted_v0231_subtropical_humus",
+      "category": "tile",
+      "image": "assets/tile/tile_ground_painted_v0231_subtropical_humus.png",
+      "image_sha256": "ac9e003b6e58b03e1509115045c5a922fc5873d0ce52b6761447b34275b959d0",
+      "prompt": "docs/asset-prompts/tile_ground_painted_v0231_subtropical_humus.txt",
+      "prompt_sha256": "a15dcd01050dadc9a17344527ab8dc644b838bc8e9380c57dc8a3adf0af66b07",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/ground_material_v0231/originals/tile_ground_painted_v0231_subtropical_humus/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "tile_ground_painted_v0231_temperate_meadow",
+      "category": "tile",
+      "image": "assets/tile/tile_ground_painted_v0231_temperate_meadow.png",
+      "image_sha256": "1f56e626d4c2efa28480f9d0a122152901efa99a65bca8559706bdf92537ea4d",
+      "prompt": "docs/asset-prompts/tile_ground_painted_v0231_temperate_meadow.txt",
+      "prompt_sha256": "d701ecd2bce01d0eb917d33529a1ffe6dc02e069f385253cd6b8ddf024190ef5",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/ground_material_v0231/originals/tile_ground_painted_v0231_temperate_meadow/r001/source.png",
       "image_modified": false,
       "formal_art_approval": false
     }

@@ -2,6 +2,10 @@
 
 [中文 README](../README.md#screenshots) · [English README](../README.en.md#screenshots) · [完整机器可读记录 / Manifest](media/manifest.json)
 
+0.2.31新增四张正式Windows程序整幅画面：[菜单](media/menu-v0231.png)、[武汉](media/map-material-wuhan-v0231.png)、[北京](media/map-material-beijing-v0231.png)、[山海关](media/map-material-coast-v0231.png)。七张正式地图及菜单/界面冒烟画面均已完整查看，详见[记录](../reports/ground_material_v0231/visual_review.json)。源图原始字节复制，未裁切、拼接或叠字。保留的0.2.29 GIF不是本轮新材质录像。
+
+Four new full shipping-Windows captures are dated 0.2.31: menu, Wuhan, Beijing and Shanhaiguan. All seven shipping map images plus the menu/UI-smoke images were opened in full. Copies retain original bytes. The retained 0.2.29 GIF is not footage of the new materials.
+
 ## 截图 / Screenshots
 
 0.2.29新增武汉、北京与山村三张完整精选地图画面，来自正式EXE；七个专项地图视口已全部逐张完整查看。原图、专项报告与实际观察见[地图布局记录](../reports/map_composition_native_evidence.json)和[完整查看记录](../reports/map_composition_native_review.json)。下面保留0.2.28及更早的版本化媒体身份。

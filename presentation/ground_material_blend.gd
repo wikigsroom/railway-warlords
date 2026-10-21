@@ -13,6 +13,7 @@ render_mode unshaded;
 uniform sampler2DArray ground_sources : source_color, repeat_enable, filter_linear_mipmap;
 uniform float ground_alpha = 0.94;
 uniform float ground_repeat_period = 224.0;
+uniform float ground_source_periods[20];
 uniform bool ground_stochastic = true;
 uniform bool water_stochastic = true;
 uniform bool relief_enabled = false;
@@ -101,6 +102,9 @@ vec2 ground_offset(vec2 vertex, float layer) {
 // lattice. Their smooth weights remove a fixed wallpaper period; no texture
 // is painted, rotated, cut into an atlas or saved as a derived raster.
 vec3 ground_pigment(vec2 uv, float layer) {
+    // Material brush scales differ; keep every family anchored to the same
+    // world origin while sampling its entire immutable source.
+    uv *= ground_repeat_period / max(ground_source_periods[int(layer)], 1.0);
     vec2 dx = dFdx(uv);
     vec2 dy = dFdy(uv);
     if (!ground_stochastic) {
@@ -171,6 +175,11 @@ static func source_layers() -> Dictionary:
 		for index in range(families.size()):layers[families[index]]=index
 	return layers
 
+static func source_periods() -> PackedFloat32Array:
+	var periods=PackedFloat32Array();periods.resize(source_layers().size())
+	for family in source_layers():periods[source_layers()[family]]=MapTerrainSurfaces.macro_period(family)
+	return periods
+
 static func material(strategic: bool) -> ShaderMaterial:
 	if DisplayServer.get_name()=="headless":return null
 	if not attempted:
@@ -194,6 +203,7 @@ static func material(strategic: bool) -> ShaderMaterial:
 	var result=ShaderMaterial.new();result.shader=shader
 	result.set_shader_parameter("ground_sources",source_array)
 	result.set_shader_parameter("ground_repeat_period",float(MapTerrainSurfaces.macro_data().get("world_repeat_period",224)))
+	result.set_shader_parameter("ground_source_periods",source_periods())
 	result.set_shader_parameter("ground_alpha",MapTerrainSurfaces.alpha_for("temperate_meadow",strategic))
 	return result
 

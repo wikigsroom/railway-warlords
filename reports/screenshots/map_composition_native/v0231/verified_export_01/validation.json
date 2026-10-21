@@ -1,0 +1,335 @@
+{
+  "passed": true,
+  "version": "0.2.31",
+  "mode": "verified_export",
+  "runtime_source_sha256": "fc0f65450c5d526f0a4efd37d09601b9b9e66dd9607b8089f603391f62cdd1d4",
+  "capture_driver_sha256": "b0b0ffe16478529a129991c98b1c81304b0c22da309d3e390ca5dd75be0e03e2",
+  "expected_content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
+  "created_at_utc": "2026-10-21T09:55:14.792168+00:00",
+  "checks": [
+    {
+      "name": "wuhan:current_raw_viewport",
+      "passed": true
+    },
+    {
+      "name": "wuhan:honest_isolated_desktop_scope",
+      "passed": true
+    },
+    {
+      "name": "wuhan:whole_viewport_dimensions",
+      "passed": true
+    },
+    {
+      "name": "wuhan:operation_grid_and_node_anchors_preserved",
+      "passed": true
+    },
+    {
+      "name": "wuhan:required_node_names_present",
+      "passed": true
+    },
+    {
+      "name": "wuhan:captions_do_not_overlap_each_other",
+      "passed": true
+    },
+    {
+      "name": "wuhan:captions_clear_models_units_and_crossings",
+      "passed": true
+    },
+    {
+      "name": "wuhan:map_and_rule_catalogue_identity_preserved",
+      "passed": true
+    },
+    {
+      "name": "beijing:current_raw_viewport",
+      "passed": true
+    },
+    {
+      "name": "beijing:honest_isolated_desktop_scope",
+      "passed": true
+    },
+    {
+      "name": "beijing:whole_viewport_dimensions",
+      "passed": true
+    },
+    {
+      "name": "beijing:operation_grid_and_node_anchors_preserved",
+      "passed": true
+    },
+    {
+      "name": "beijing:required_node_names_present",
+      "passed": true
+    },
+    {
+      "name": "beijing:captions_do_not_overlap_each_other",
+      "passed": true
+    },
+    {
+      "name": "beijing:captions_clear_models_units_and_crossings",
+      "passed": true
+    },
+    {
+      "name": "beijing:map_and_rule_catalogue_identity_preserved",
+      "passed": true
+    },
+    {
+      "name": "coast:current_raw_viewport",
+      "passed": true
+    },
+    {
+      "name": "coast:honest_isolated_desktop_scope",
+      "passed": true
+    },
+    {
+      "name": "coast:whole_viewport_dimensions",
+      "passed": true
+    },
+    {
+      "name": "coast:operation_grid_and_node_anchors_preserved",
+      "passed": true
+    },
+    {
+      "name": "coast:required_node_names_present",
+      "passed": true
+    },
+    {
+      "name": "coast:captions_do_not_overlap_each_other",
+      "passed": true
+    },
+    {
+      "name": "coast:captions_clear_models_units_and_crossings",
+      "passed": true
+    },
+    {
+      "name": "coast:map_and_rule_catalogue_identity_preserved",
+      "passed": true
+    },
+    {
+      "name": "village:current_raw_viewport",
+      "passed": true
+    },
+    {
+      "name": "village:honest_isolated_desktop_scope",
+      "passed": true
+    },
+    {
+      "name": "village:whole_viewport_dimensions",
+      "passed": true
+    },
+    {
+      "name": "village:operation_grid_and_node_anchors_preserved",
+      "passed": true
+    },
+    {
+      "name": "village:required_node_names_present",
+      "passed": true
+    },
+    {
+      "name": "village:captions_do_not_overlap_each_other",
+      "passed": true
+    },
+    {
+      "name": "village:captions_clear_models_units_and_crossings",
+      "passed": true
+    },
+    {
+      "name": "village:map_and_rule_catalogue_identity_preserved",
+      "passed": true
+    },
+    {
+      "name": "wuhan_regional:current_raw_viewport",
+      "passed": true
+    },
+    {
+      "name": "wuhan_regional:honest_isolated_desktop_scope",
+      "passed": true
+    },
+    {
+      "name": "wuhan_regional:whole_viewport_dimensions",
+      "passed": true
+    },
+    {
+      "name": "wuhan_regional:operation_grid_and_node_anchors_preserved",
+      "passed": true
+    },
+    {
+      "name": "wuhan_regional:required_node_names_present",
+      "passed": true
+    },
+    {
+      "name": "wuhan_regional:captions_do_not_overlap_each_other",
+      "passed": true
+    },
+    {
+      "name": "wuhan_regional:captions_clear_models_units_and_crossings",
+      "passed": true
+    },
+    {
+      "name": "wuhan_regional:map_and_rule_catalogue_identity_preserved",
+      "passed": true
+    },
+    {
+      "name": "wuhan_x30_layout:current_raw_viewport",
+      "passed": true
+    },
+    {
+      "name": "wuhan_x30_layout:honest_isolated_desktop_scope",
+      "passed": true
+    },
+    {
+      "name": "wuhan_x30_layout:whole_viewport_dimensions",
+      "passed": true
+    },
+    {
+      "name": "wuhan_x30_layout:operation_grid_and_node_anchors_preserved",
+      "passed": true
+    },
+    {
+      "name": "wuhan_x30_layout:required_node_names_present",
+      "passed": true
+    },
+    {
+      "name": "wuhan_x30_layout:captions_do_not_overlap_each_other",
+      "passed": true
+    },
+    {
+      "name": "wuhan_x30_layout:captions_clear_models_units_and_crossings",
+      "passed": true
+    },
+    {
+      "name": "wuhan_x30_layout:map_and_rule_catalogue_identity_preserved",
+      "passed": true
+    },
+    {
+      "name": "wuhan_large_text:current_raw_viewport",
+      "passed": true
+    },
+    {
+      "name": "wuhan_large_text:honest_isolated_desktop_scope",
+      "passed": true
+    },
+    {
+      "name": "wuhan_large_text:whole_viewport_dimensions",
+      "passed": true
+    },
+    {
+      "name": "wuhan_large_text:operation_grid_and_node_anchors_preserved",
+      "passed": true
+    },
+    {
+      "name": "wuhan_large_text:required_node_names_present",
+      "passed": true
+    },
+    {
+      "name": "wuhan_large_text:captions_do_not_overlap_each_other",
+      "passed": true
+    },
+    {
+      "name": "wuhan_large_text:captions_clear_models_units_and_crossings",
+      "passed": true
+    },
+    {
+      "name": "wuhan_large_text:map_and_rule_catalogue_identity_preserved",
+      "passed": true
+    },
+    {
+      "name": "runtime_source_unchanged_during_capture_set",
+      "passed": true
+    },
+    {
+      "name": "capture_driver_unchanged_during_capture_set",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "captures": [
+    {
+      "name": "wuhan",
+      "scenario": "legion_07",
+      "image": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\wuhan.png",
+      "sha256": "778caf0e1c30c92cab02fd149c010c3b4876552d9227f464792e1187dd5c388a",
+      "metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\wuhan.json",
+      "metadata_sha256": "61ba21d97b07d1f3918f83c7c78cb75001063f250e53f25ab3671b456dd7dedc",
+      "labels": 5,
+      "objects": 13,
+      "caption_overlaps": [],
+      "caption_object_occlusions": []
+    },
+    {
+      "name": "beijing",
+      "scenario": "campaign_1924_05",
+      "image": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\beijing.png",
+      "sha256": "e9f4930be9cd423255cbc82840881616c7132e5f1617ecebf63c5615d10e1219",
+      "metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\beijing.json",
+      "metadata_sha256": "7573c288eed5648ea54d48889381ff42db0984fbef74c78f29c64cf393000beb",
+      "labels": 4,
+      "objects": 26,
+      "caption_overlaps": [],
+      "caption_object_occlusions": []
+    },
+    {
+      "name": "coast",
+      "scenario": "campaign_1924_03",
+      "image": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\coast.png",
+      "sha256": "2d2e90371c95b2623fa57f6f99cd74765b4a37fc4da4a14cb02014a4ccaf83ed",
+      "metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\coast.json",
+      "metadata_sha256": "fc45f0e73e57c2d69dbb52c5de568cc27ce4cd02ffea9ee06511d96a7792491b",
+      "labels": 4,
+      "objects": 21,
+      "caption_overlaps": [],
+      "caption_object_occlusions": []
+    },
+    {
+      "name": "village",
+      "scenario": "campaign_1924_03",
+      "image": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\village.png",
+      "sha256": "7f4ad0d69a7dfb6863b4ae1dce22e9646b2dd7a8d5e6974ed6e6bfcb03cf33e6",
+      "metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\village.json",
+      "metadata_sha256": "c48dbef19d55d09c573eafd2f27b9a12f3b3d26aff7b45a065e5e277f631d93f",
+      "labels": 4,
+      "objects": 3,
+      "caption_overlaps": [],
+      "caption_object_occlusions": []
+    },
+    {
+      "name": "wuhan_regional",
+      "scenario": "legion_07",
+      "image": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\wuhan_regional.png",
+      "sha256": "445d3a464233bbf02997600a81eb716adada89cc3fce4264f845531117a128e0",
+      "metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\wuhan_regional.json",
+      "metadata_sha256": "bacaaf56813b36f48152fc8e2e0a010bbd67a236d393b5030bd75fc62e61994e",
+      "labels": 2,
+      "objects": 11,
+      "caption_overlaps": [],
+      "caption_object_occlusions": []
+    },
+    {
+      "name": "wuhan_x30_layout",
+      "scenario": "legion_07",
+      "image": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\wuhan_x30_layout.png",
+      "sha256": "c2087d6d2a8c3c97b79104ef1fafa20772d14d5541b2f435d43bca52eed0462e",
+      "metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\wuhan_x30_layout.json",
+      "metadata_sha256": "10c7c2901e9b6b3e0e22e18f120456a5f7c712c7db1311a4ac102ab9068a2da7",
+      "labels": 5,
+      "objects": 13,
+      "caption_overlaps": [],
+      "caption_object_occlusions": []
+    },
+    {
+      "name": "wuhan_large_text",
+      "scenario": "legion_07",
+      "image": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\wuhan_large_text.png",
+      "sha256": "b6dbcd9fd72697edbf8d2f14eb38c47a08e8dcaa0d92b5005265f392c6a7a123",
+      "metadata": "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\screenshots\\map_composition_native\\v0231\\verified_export_01\\wuhan_large_text.json",
+      "metadata_sha256": "16dd424776e3c524187628eb858fd28124313ca6ffd46ab2e650873663611cd2",
+      "labels": 5,
+      "objects": 13,
+      "caption_overlaps": [],
+      "caption_object_occlusions": []
+    }
+  ],
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "source_pngs_modified": false,
+  "manual_image_compositing": false
+}

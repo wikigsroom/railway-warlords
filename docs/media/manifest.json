@@ -1,5 +1,5 @@
 {
-  "version": "0.2.30",
+  "version": "0.2.31",
   "screenshots": [
     {
       "file": "docs/media/menu.png",
@@ -812,6 +812,42 @@
       "physical_android_device_tested": false,
       "windows_exe_sha256": "5ed03baf245854527d6712ddf3d5a0cd9c8e4e375beab554c576ec2e3bf6c74b",
       "runtime_source_sha256": "9a97363b289ce91150f6fb4ab8dd2b1970075323e74b6e80ef56e9bf6ce4b917"
+    },
+    {
+      "file": "docs/media/menu-v0231.png",
+      "version": "0.2.31",
+      "native_source": "reports/ground_material_v0231/shipping_01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "docs/media/menu-v0231.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-material-wuhan-v0231.png",
+      "version": "0.2.31",
+      "native_source": "reports/screenshots/map_composition_native/v0231/verified_export_01/wuhan.png",
+      "sha256": "778caf0e1c30c92cab02fd149c010c3b4876552d9227f464792e1187dd5c388a",
+      "metadata": "docs/media/map-material-wuhan-v0231.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-material-beijing-v0231.png",
+      "version": "0.2.31",
+      "native_source": "reports/screenshots/map_composition_native/v0231/verified_export_01/beijing.png",
+      "sha256": "e9f4930be9cd423255cbc82840881616c7132e5f1617ecebf63c5615d10e1219",
+      "metadata": "docs/media/map-material-beijing-v0231.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-material-coast-v0231.png",
+      "version": "0.2.31",
+      "native_source": "reports/screenshots/map_composition_native/v0231/verified_export_01/coast.png",
+      "sha256": "2d2e90371c95b2623fa57f6f99cd74765b4a37fc4da4a14cb02014a4ccaf83ed",
+      "metadata": "docs/media/map-material-coast-v0231.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
     }
   ],
   "animations": [
@@ -890,9 +926,9 @@
   "current_map_symbol_native_evidence": "reports/map_symbol_native_evidence.json",
   "current_general_native_evidence": "reports/general_portrait_native_evidence.json",
   "current_water_native_evidence": "reports/water_map_native_capture_evidence.json",
-  "notice": "Each screenshot and video retains its actual source version. Two new 0.2.30 shipping Windows whole frames are byte-identical copies. Older broad native suites and GIFs remain dated evidence, not repeated 0.2.30 acceptance. Desktop touch layouts are not physical Android tests.",
+  "notice": "Every image retains its actual version. Four new whole 0.2.31 shipping-Windows images are byte-identical copies. Older broad suites, HUD input checks and GIFs retain their previous version identity. This map-material preview does not claim full art or physical-phone acceptance.",
   "current_commander_native_evidence": "reports/commander_roster_native_evidence.json",
-  "current_map_composition_evidence": "reports/screenshots/map_composition_native/v0230/verified_export_final_02/validation.json",
+  "current_map_composition_evidence": "reports/screenshots/map_composition_native/v0231/verified_export_01/validation.json",
   "current_development_video": {
     "file": "reports/native_gameplay_v0229.mp4",
     "sha256": "b2c91253a6b430ebdaf8e6f542394ebbd1a2827dad5c075245540e4be6472c12",
@@ -914,9 +950,13 @@
     "current_general_native_evidence": "0.2.29",
     "current_water_native_evidence": "0.2.29",
     "current_commander_native_evidence": "0.2.29",
-    "current_development_video": "0.2.29"
+    "current_development_video": "0.2.29",
+    "current_battle_hud_evidence": "0.2.30",
+    "current_battle_hud_visual_review": "0.2.30"
   },
   "current_battle_hud_evidence": "reports/battle_hud_native_v0230/final_04/validation.json",
-  "current_shipping_ui_media_evidence": "reports/battle_hud_shipping_v0230/final_02/validation.json",
-  "current_battle_hud_visual_review": "reports/battle_hud_visual_review_v0230.json"
+  "current_shipping_ui_media_evidence": "reports/ground_material_v0231/shipping_01/validation.json",
+  "current_battle_hud_visual_review": "reports/battle_hud_visual_review_v0230.json",
+  "current_map_material_visual_review": "reports/ground_material_v0231/visual_review.json",
+  "current_map_material_evidence": "reports/ground_material_v0231/shipping_01/gpu/validation.json"
 }

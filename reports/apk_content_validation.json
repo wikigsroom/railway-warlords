@@ -587,6 +587,11 @@
       "sha_matches": true
     },
     {
+      "file": "presentation/data/ground_material_plan_v0231.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
       "file": "presentation/data/hydrography_detail.json",
       "included": true,
       "sha_matches": true
@@ -709,7 +714,7 @@
     "lib/armeabi-v7a/libgodot_android.so"
   ],
   "private_files_detected": [],
-  "artifact_sha256": "863178b2bbfd36c33a955c5a8eff69ed3f1ba4bf1191cbe8acb658de47fa20dc",
+  "artifact_sha256": "7edcef14e15f7f6deacc0fdfea23abc2770a664944ab0b284d64324d59da7679",
   "raster_manifest_byte_verified": true,
   "raster_import_files_verified": [
     {
@@ -20765,6 +20770,22 @@
       "source_sha256": "f36d8c7be552bee1a071a23e18b50c3873ef44af2f484d2ce7b058baa932a284",
       "embedded_imports": [
         ".godot/imported/portrait_jp_ndl_95_1909.png-02f8ab2598ada660494e314f2acc5624.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_painted_v0231_subtropical_humus",
+      "source_sha256": "ac9e003b6e58b03e1509115045c5a922fc5873d0ce52b6761447b34275b959d0",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_painted_v0231_subtropical_humus.png-a2a6bfaeb30162fd9fdc9f6d3d53fb26.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_painted_v0231_temperate_meadow",
+      "source_sha256": "1f56e626d4c2efa28480f9d0a122152901efa99a65bca8559706bdf92537ea4d",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_painted_v0231_temperate_meadow.png-555088142608ddf3009f29cf37c1c009.ctex"
       ],
       "current_import_bytes_match": true
     }

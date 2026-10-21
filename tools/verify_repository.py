@@ -1,4 +1,5 @@
 """Validate portable README links, native media and immutable asset provenance."""
+import argparse
 import hashlib
 import base64
 import json
@@ -30,6 +31,8 @@ PUBLIC_DOCS = ['README.md', 'README.en.md', 'LICENSE-NOTICE.md',
                'docs/45_连续水纹与真实蜂窝显示.md',
                'docs/46_师旅级将领池与战役名册.md',
                'docs/47_地图模型比例与统一标注布局.md',
+               'docs/48_战场浮动界面与直接触摸滚动.md',
+               'docs/49_低地底纹与河岸材质调整.md',
                'docs/SOUND_DESIGN.md', 'SOUND_DESIGN.md',
                'docs/25_欧陆战争6地图资源差距评估.md',
                'docs/00_程序文档索引.md', 'docs/04_美术来源与审核.md',
@@ -46,6 +49,10 @@ def read(relative):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--documentation-only', action='store_true',
+                        help='Validate docs/media/source integrity without claiming the full native release gates.')
+    args = parser.parse_args()
     raw = subprocess.check_output(['git', 'ls-files', '--cached', '--others',
                                    '--exclude-standard', '-z'], cwd=P)
     files = {P / name.decode('utf-8') for name in raw.split(b'\0') if name}
@@ -142,25 +149,27 @@ def main():
                                'line': text[:match.start()].count('\n') + 1})
 
     runtime = source_digest()[0]
-    proof = read('reports/terrain_surface_native_evidence.json')
-    expected_runtime = proof['runtime_source_sha256']
-    if not proof['passed'] or proof['version'] != current_version() or len(proof['groups']) != 6:
-        errors.append({'type': 'current_native_proof_incomplete'})
-    for group in proof['groups']:
-        for row in group['captures']:
-            if digest(P / row['file']) != row['sha256'] or digest(P / row['metadata']) != row['metadata_sha256']:
-                errors.append({'type': 'current_native_capture_changed', 'file': row['file']})
-    if runtime != expected_runtime:
-        errors.append({'type': 'runtime_changed_during_documentation'})
-    coast = read('reports/control_land_native_evidence.json')
-    if not coast['passed'] or coast['version'] != current_version() or coast['runtime_source_sha256'] != runtime or len(coast['groups']) != 2:
-        errors.append({'type': 'current_control_land_proof_incomplete'})
-    for group in coast['groups']:
-        if digest(P / group['report']) != group['report_sha256']:
-            errors.append({'type': 'control_land_report_changed', 'file': group['report']})
-        for row in group['captures']:
-            if digest(P / row['file']) != row['sha256'] or digest(P / row['metadata']) != row['metadata_sha256']:
-                errors.append({'type': 'control_land_capture_changed', 'file': row['file']})
+    expected_runtime = None
+    if not args.documentation_only:
+        proof = read('reports/terrain_surface_native_evidence.json')
+        expected_runtime = proof['runtime_source_sha256']
+        if not proof['passed'] or proof['version'] != current_version() or len(proof['groups']) != 6:
+            errors.append({'type': 'current_native_proof_incomplete'})
+        for group in proof['groups']:
+            for row in group['captures']:
+                if digest(P / row['file']) != row['sha256'] or digest(P / row['metadata']) != row['metadata_sha256']:
+                    errors.append({'type': 'current_native_capture_changed', 'file': row['file']})
+        if runtime != expected_runtime:
+            errors.append({'type': 'runtime_changed_during_documentation'})
+        coast = read('reports/control_land_native_evidence.json')
+        if not coast['passed'] or coast['version'] != current_version() or coast['runtime_source_sha256'] != runtime or len(coast['groups']) != 2:
+            errors.append({'type': 'current_control_land_proof_incomplete'})
+        for group in coast['groups']:
+            if digest(P / group['report']) != group['report_sha256']:
+                errors.append({'type': 'control_land_report_changed', 'file': group['report']})
+            for row in group['captures']:
+                if digest(P / row['file']) != row['sha256'] or digest(P / row['metadata']) != row['metadata_sha256']:
+                    errors.append({'type': 'control_land_capture_changed', 'file': row['file']})
     counts = {}
     for scenario in read('content/scenarios/catalog.json')['scenarios']:
         mode = read('content/scenarios/' + scenario + '.json')['mode']
@@ -172,9 +181,11 @@ def main():
               'native_screenshots': len(media['screenshots']), 'gifs': gif_facts,
               'candidate_files': len(files), 'candidate_bytes': sum(f.stat().st_size for f in files),
               'text_files_scanned_for_credentials': scanned, 'scenario_counts': counts,
-              'runtime_source_sha256': runtime, 'runtime_unchanged': runtime == expected_runtime,
+              'runtime_source_sha256': runtime, 'runtime_unchanged': None if args.documentation_only else runtime == expected_runtime,
+              'scope': 'documentation_media_and_source_integrity' if args.documentation_only else 'full_repository_and_native_proofs',
+              'full_native_release_gates_checked': not args.documentation_only,
               'physical_android_device_tested': False, 'errors': errors}
-    (P / 'reports/repository_validation.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    (P / ('reports/repository_documentation_validation.json' if args.documentation_only else 'reports/repository_validation.json')).write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(result, ensure_ascii=True))
     raise SystemExit(0 if result['passed'] else 1)
 

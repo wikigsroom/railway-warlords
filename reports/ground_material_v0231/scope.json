@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "base_commit": "67797b494856662ec16d3007a25c477abb7ab59f",
+  "version": "0.2.31",
+  "unchanged_rule_and_geography_files": 180,
+  "allowed_changed_files": [
+    "content/content_registry.gd",
+    "presentation/data/ground_macro_catalog.json"
+  ],
+  "previous_2507_registered_asset_rows_unchanged": true,
+  "new_independent_originals": 2,
+  "registered_rasters": 2509,
+  "active_ground_material_types": 20,
+  "stored_superseded_ground_originals": 42,
+  "historical_landuse_claimed": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "physical_android_device_tested": false,
+  "material_source_files": {
+    "presentation/ground_material_blend.gd": "77d7b29198cd7ab3fc1cac7e89452e40a6b647f39289c10138705c15a660d9fa",
+    "presentation/map_terrain_surfaces.gd": "964f4be347133db7e2e5c6f7f89e153fe3228d82cf3dbd7930da7d8db61de579",
+    "presentation/map_river_surface.gd": "be3cf9c6fdba94ec0e9a3120318522bc062398fd8d3938b9d0bc2d7f2141b1a3",
+    "presentation/data/ground_macro_catalog.json": "aa3593205555ef39d0d2266ccfd81c9dfea9b2e5525f3095187bc3e6a2c5d69e"
+  },
+  "final_runtime_source_sha256": "fc0f65450c5d526f0a4efd37d09601b9b9e66dd9607b8089f603391f62cdd1d4",
+  "pre_export_normal_trial_runtime_source_sha256": "dc77eb205fadd970f955112dbed54ce2630b0238f284bf23ddb2d4af35c38606"
+}

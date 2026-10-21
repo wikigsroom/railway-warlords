@@ -7,13 +7,17 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. Current sources are the **0.2.30 floating battlefield UI and direct touch scrolling beta**; see the [change and verification scope](docs/48_战场浮动界面与直接触摸滚动.md). The full 0.2.29 regression and archive retain their original version and do not constitute a repeated full 0.2.30 acceptance run. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. Current sources are the **0.2.31 lowland ground and river-material beta**; see the [scope notes](docs/49_低地底纹与河岸材质调整.md). Two new independent Sub2 originals replace temperate meadow and subtropical humus, with larger brush scales and quieter river shading. Overall art quality remains below the target. Older full regression results and archives retain their original versions. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
-![Native main menu from the version 0.2.30 shipping Windows application](docs/media/menu-v0230.png)
+![Native main menu from the version 0.2.31 shipping Windows application](docs/media/menu-v0231.png)
 
 *A complete current exported-application viewport. PNG screenshots have no montage, repainting or promotional overlays; older media retain their actual source versions.*
+
+Version 0.2.31 uses two new independent originals for clearer grass/exposed-soil structure and quieter river banks. This is a shipping-Windows capture; see also [Beijing](docs/media/map-material-beijing-v0231.png) and [Shanhaiguan](docs/media/map-material-coast-v0231.png). Wuhan frame margins, broad alluvial areas and coarse river bends remain unfinished.
+
+![Version 0.2.31 shipping Windows: lowland materials beneath translucent control colors](docs/media/map-material-wuhan-v0231.png)
 
 Version 0.2.30 replaces the permanent inspector, legends and full-width command strip with floating controls and panels opened on demand. Resources and dates sit along the top, the selected formation summary at the lower left, and primary orders at the lower right. Escort objectives name the protected formation, actual destination and one-hex radius. Owned cities expose recruitment and construction directly. Direct touch scrolling can start over a button and cancels its pending command while dragging.
 
@@ -100,7 +104,7 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Factions and generals | **47 faction definitions and 324 military people**, plus four political-only figures; availability follows dated scenario rosters |
 | Progression | **28 technologies, 9 passive skills, 9 active skills and 24 achievements** |
 | Facilities | **12 types** covering recruitment, transport, supply, medicine, defense, communications and trade |
-| Raster art | **2,507 PNGs**; **1,013 stored map assets, 973 currently available**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
+| Raster art | **2,509 PNGs**; **1,015 stored map assets, 973 currently available**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
 | Regional terrain | **20 types × (1 new continuous ground + 4 detail originals) = 100 active originals**; 40 superseded macrogrounds retained, interactive atlas |
 | Audio and fonts | 14 procedural effects, 3 local YuE2 scores (180 seconds each), 3 retained fallback loops and 2 Chinese fonts with OFL notices |
 | Current scoped verification | **205 core/ground/scroll/summary checks, 668 battlefield input checks, 56 combat-presentation checks and 58 shipping-EXE map checks**; the full 30-group / 14,581-check regression retains its 0.2.29 identity |
@@ -523,7 +527,7 @@ Configure your own release keystore, alias and password through Godot private cr
 godot --headless --path . --export-release "Android" "build/android/RailwayWarlords.apk"
 ```
 
-App ID is `org.railwaywarlords.game`; version 0.2.30 uses versionCode 35. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
+App ID is `org.railwaywarlords.game`; version 0.2.31 uses versionCode 36. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
 
 ### Automation scope
 
@@ -563,6 +567,8 @@ External archives are not part of a standalone clone. Helpers such as `build_rel
 UI and AI submit commands; previews are read-only. `CommandKernel` validates version, actor, target, costs and legality, resolves atomically, and returns state/events. Rules, AI and save I/O use a serial native worker queue. The main thread validates match identity/version before applying results while map navigation remains independent. See [modules](docs/02_架构与模块.md).
 
 ### Validation
+
+Version 0.2.31 passes 273 component checks, 48 shipping-EXE ground GPU checks and 58 checks across seven shipping map layouts, with 24 earlier normal-import trial checks recorded separately. Nine final-application images and six normal-import trial images were opened in full. APK signatures, both ABIs, permissions, 141 data/notice files, 2,509 textures and three existing music payloads were verified. See the [scope](reports/ground_material_v0231/scope.json), [shipping checks](reports/ground_material_v0231/shipping_01/validation.json) and [actual viewing record](reports/ground_material_v0231/visual_review.json). This material preview does not repeat the older thirty-group full suite or establish complete art or physical-phone acceptance.
 
 Version 0.2.30 passes 987 targeted checks: 205 core/ground/scroll/summary, 668 battlefield input, 56 combat-presentation and 58 shipping-EXE map-layout checks. Android signatures, both architectures, permissions and all 2,507 imported textures were reverified. Eighteen current native whole images were actually opened. See the [scoped preview receipt](reports/battle_hud_preview_v0230.json) and [actual visual review](reports/battle_hud_visual_review_v0230.json). This UI preview does not repeat the older thirty-group full suite or establish complete art, physical-phone or commercial acceptance.
 
@@ -631,11 +637,11 @@ Tactical selection still has frame-time spikes; averages do not establish stable
 <a id="assets"></a>
 ## Artwork, media and licensing
 
-All 2,507 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including forty retained superseded macrogrounds and 1,180 new independent portrait originals. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
+All 2,509 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including forty-two retained superseded macrogrounds, the 1,180 independent portraits added in 0.2.28 and two lowland replacement originals in 0.2.31. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
 
 - [Runtime manifest](assets/manifest.json): original workspace sources, models, dimensions and hashes.
 - [Portable provenance](docs/asset-provenance/index.json): repository-relative images/prompts and SHA-256.
-- [Prompt directory](docs/asset-prompts/): 2,507 prompts; gateway configuration and credentials are excluded.
+- [Prompt directory](docs/asset-prompts/): 2,509 prompts; gateway configuration and credentials are excluded.
 
 Two legacy portrait prompts have readable alias transcriptions using Li Desheng. Their exact original UTF-8 bytes are preserved reversibly with the original SHA256; source images and workspace production originals remain immutable.
 - [Media guide](docs/MEDIA.md): native screenshots, recording, GIF conversion and evidence scope.
@@ -686,4 +692,4 @@ The [0.2.23 military UI and dossier chapter](docs/41_军事界面与将领档案
 
 The [0.2.24 atlas and diplomacy chapter](docs/42_战区沙盘与外交事务精修.md) covers shipping terrain previews, zoom and pan, date gates, counterparty selection, actual aid transactions and current delivery limits.
 
-Older chapters preserve their version context. Use these READMEs, the [0.2.30 UI scope](docs/48_战场浮动界面与直接触摸滚动.md), completion assessment and corresponding reports for current status. The [commander chapter](docs/46_师旅级将领池与战役名册.md) documents the full registered pool, sources, filters, appointments and remaining coverage.
+Older chapters preserve their version context. Use these READMEs, the [0.2.31 material scope](docs/49_低地底纹与河岸材质调整.md), completion assessment and corresponding reports for current status. The [commander chapter](docs/46_师旅级将领池与战役名册.md) documents the full registered pool, sources, filters, appointments and remaining coverage.

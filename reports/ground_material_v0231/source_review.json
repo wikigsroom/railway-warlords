@@ -1,0 +1,125 @@
+{
+  "recorded_at_utc": "2026-10-21T08:06:24.351051+00:00",
+  "formal_art_approval": false,
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "originals": [
+    {
+      "id": "tile_ground_painted_v0231_temperate_meadow",
+      "sha256": "1f56e626d4c2efa28480f9d0a122152901efa99a65bca8559706bdf92537ea4d",
+      "prompt_sha256": "d701ecd2bce01d0eb917d33529a1ffe6dc02e069f385253cd6b8ddf024190ef5",
+      "viewed_complete_original": true,
+      "accepted_for_runtime_trial": true,
+      "notes": "Whole generated source; no manual raster editing. Representative open lowland material, not historical vegetation evidence."
+    },
+    {
+      "id": "tile_ground_painted_v0231_subtropical_humus",
+      "sha256": "ac9e003b6e58b03e1509115045c5a922fc5873d0ce52b6761447b34275b959d0",
+      "prompt_sha256": "a15dcd01050dadc9a17344527ab8dc644b838bc8e9380c57dc8a3adf0af66b07",
+      "viewed_complete_original": true,
+      "accepted_for_runtime_trial": true,
+      "notes": "Whole generated source; no manual raster editing. Representative open lowland material, not historical vegetation evidence."
+    }
+  ],
+  "actually_viewed_complete_images": [
+    {
+      "path": "reports/ground_material_v0231/pilot_01/beijing_baseline_control.png",
+      "sha256": "b0827d85fe053c42790168728391a0ff64b51648655518f6c464760155ff6c55",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/beijing_baseline_natural.png",
+      "sha256": "4910fdbf012f523bffb2d6fdeb98f82c04ec353244ea07d4429a35f45a7e17ef",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/beijing_painted_control.png",
+      "sha256": "995c01c4a7181f6ff00331057c60d188588c8366a0c1a6f4c34f4dd8ffdcb9db",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/beijing_painted_natural.png",
+      "sha256": "b99fd0de475221c9678e88af6771f789dd60d7170f69234c50be72913e0a1215",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/shanhaiguan_baseline_control.png",
+      "sha256": "f532ed22ccd4fb4c5556d4de8d5ced9cba86ed4389acd272aa982507c3196d6f",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/shanhaiguan_baseline_natural.png",
+      "sha256": "dd9b9b7d03e20b654f6af7c33a6cceccebbe0e89b166ede8ce5487d12f1f3f58",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/shanhaiguan_painted_control.png",
+      "sha256": "eb73ce34671908a4737a6130f60a058de0b371e9013089c71c0a630f67157b38",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/shanhaiguan_painted_natural.png",
+      "sha256": "6764afd1da1d54196e90fc84f8675568bd58690ec7f6c7af72f9cda55e6884af",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/wuhan_baseline_control.png",
+      "sha256": "fa7df09657c42e8f1bf7d7525e516947923a2196cafa578954207f0e57bd3874",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/wuhan_baseline_natural.png",
+      "sha256": "7b5ef0b3477ba4c223ee8f339b3adf9b7afd5968cb9ba840d3da8419ed68d8e8",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/wuhan_painted_control.png",
+      "sha256": "666491458938105857b00f4d0b8c319db99fd3ba87fdf032bcc2eddd964facf5",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_01/wuhan_painted_natural.png",
+      "sha256": "ffcc2a33c5a624f8833d90b11f60f1edb34982b8d36a676fb2aff43dc8b32779",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_scale_02/beijing_painted_control.png",
+      "sha256": "77f2f68ff115f8af9374e0834700b40e23b13648e08b1b0deb13ff9f5493f5c0",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_scale_02/beijing_painted_natural.png",
+      "sha256": "f322be0f857a466f8f0c984f29e1e0f0f23ca51782d6f3e61540605c20cd1aad",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_scale_02/shanhaiguan_painted_control.png",
+      "sha256": "db34e796bd69a3f322c2d89b9281a964b394f8b17522724ec84afdc83cc70dab",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_scale_02/shanhaiguan_painted_natural.png",
+      "sha256": "4a9a056d338b72aacbdc02fd7fecb155f0c1ebdffd521c54ea2b38bae32945c2",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_scale_02/wuhan_painted_control.png",
+      "sha256": "16e1132e1da495d22ef8e2c614a577124dccd74f292e016fd8fecf76008f7446",
+      "viewed_complete_native_viewport": true
+    },
+    {
+      "path": "reports/ground_material_v0231/pilot_scale_02/wuhan_painted_natural.png",
+      "sha256": "95702a8aee12598dff2e26827dc0b1450c4b1a29b2b2f433aae1625990897a6b",
+      "viewed_complete_native_viewport": true
+    }
+  ],
+  "chosen_candidate_world_repeat_period": 384,
+  "findings": [
+    "Both new sources preserve readable green and exposed earth under the existing ownership wash.",
+    "384 world units retain larger grass-brush structure than the 224-unit candidate.",
+    "Remaining limitations: coarse river geometry, bare alluvial zones, mountain grounding, Wuhan frame edges and unit action coverage."
+  ],
+  "comparison_limitations": "Candidates used full 1254px native ImageTextures; production acceptance must separately inspect the normal 384px imported array.",
+  "source_geography_changed": false,
+  "manual_image_compositing": false,
+  "ew6_parity_claimed": false
+}

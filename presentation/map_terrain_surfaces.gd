@@ -16,6 +16,9 @@ static func macro_data() -> Dictionary:
 static func macro_id(family: String) -> String:
 	return str(macro_data().get("records",{}).get(family,{}).get("asset_id",""))
 
+static func macro_period(family: String) -> float:
+	return float(macro_data().get("records",{}).get(family,{}).get("world_repeat_period",macro_data().get("world_repeat_period",224)))
+
 static func macro_uv(world: Vector2) -> Vector2:
 	# A shared world origin is essential: adjoining hexes sample exactly the
 	# same point in the complete repeating source, including negative positions.
