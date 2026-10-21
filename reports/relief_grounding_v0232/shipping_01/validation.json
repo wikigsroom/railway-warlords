@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "version": "0.2.32",
+  "mode": "verified_shipping_exe",
+  "runtime_source_sha256": "de7ce08159b961063cb87950e7ae4be27dcee69d4f8c6815895b158f8f7d5f4f",
+  "windows_exe_sha256": "d7d9baf0be8c0818861472d4f7ac3821183c49ff02eaad425a7c2db0a14b38cd",
+  "shipping_binary_unchanged": true,
+  "capture_driver_sha256": "d18251795ec69ad26e117fd3a780d0eb8008035e9147d751dffb1b833a6f9b17",
+  "commands": [
+    {
+      "name": "gpu",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_grounding_v0232\\shipping_01\\gpu.log",
+        "--",
+        "--qa-session",
+        "--ground-continuity-test",
+        "--ground-continuity-output",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_grounding_v0232\\shipping_01\\gpu"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "ui_smoke",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_grounding_v0232\\shipping_01\\ui_smoke.log",
+        "--",
+        "--qa-session",
+        "--scenario",
+        "campaign_1924_02",
+        "--ui-test",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_grounding_v0232\\shipping_01\\ui_smoke.png"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "home",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_grounding_v0232\\shipping_01\\home.log",
+        "--",
+        "--qa-session",
+        "--capture",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_grounding_v0232\\shipping_01\\home.png"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "mountains",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_grounding_v0232\\shipping_01\\mountains.log",
+        "--",
+        "--qa-session",
+        "--scenario",
+        "campaign_1924_03",
+        "--focus-point",
+        "16848,7000",
+        "--capture-zoom",
+        "1.05",
+        "--capture",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\relief_grounding_v0232\\shipping_01\\mountains.png"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "captures": [
+    {
+      "path": "reports/relief_grounding_v0232/shipping_01/ui_smoke.png",
+      "sha256": "59fca87f7ee37c4f606ca90e6d1a94241f00300ff4252be3a228d842394534b5",
+      "metadata": "reports/relief_grounding_v0232/shipping_01/ui_smoke.json",
+      "metadata_sha256": "29672ebd8f9e1cac8125808ee820676ba224b037d8df7f8becfa239c84402baa"
+    },
+    {
+      "path": "reports/relief_grounding_v0232/shipping_01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "reports/relief_grounding_v0232/shipping_01/home.json",
+      "metadata_sha256": "0706530aba0ca2c0baaff1109d419424716a551ac631271ccab3760b02f345e6"
+    },
+    {
+      "path": "reports/relief_grounding_v0232/shipping_01/mountains.png",
+      "sha256": "1ca8a024c2af920c7197fe04360f64ddc0f8093db01e8a00f3f0f5ccc901cab3",
+      "metadata": "reports/relief_grounding_v0232/shipping_01/mountains.json",
+      "metadata_sha256": "7731e700502f366a6f09d995202f5fd2c8c6226cb75611e785e208744f3c7b45"
+    }
+  ],
+  "gpu_report": "reports/relief_grounding_v0232/shipping_01/gpu/validation.json",
+  "gpu_report_sha256": "430a1b22f64c6f40eb78b7559b68ef97eedfb445a70dd2a7a4461666ee6d08b8",
+  "gpu_checks": 48,
+  "ui_smoke_passed": true,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "manual_image_compositing": false
+}

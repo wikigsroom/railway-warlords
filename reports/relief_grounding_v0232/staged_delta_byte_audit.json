@@ -1,0 +1,547 @@
+{
+  "passed": true,
+  "version": "0.2.32",
+  "recorded_at_utc": "2026-10-21T14:26:46.041180+00:00",
+  "files_checked": 107,
+  "mismatches": [],
+  "scope": "Only this commit delta; every changed staged regular file matches current working bytes. This receipt is excluded while writing itself. Existing full-repository verifier remains unchanged.",
+  "unchanged_repository_files_claimed_checked": false,
+  "receipt_excluded_when_writing": true,
+  "files": [
+    {
+      "file": ".gitignore",
+      "git_blob_sha1": "0ffc3fe5c8a46457e9a06b4a0fce7573a9818660",
+      "bytes": 7410
+    },
+    {
+      "file": "README.en.md",
+      "git_blob_sha1": "5a23d6a9bcdd473356a75f1b11c0d041d6066dcd",
+      "bytes": 65427
+    },
+    {
+      "file": "README.md",
+      "git_blob_sha1": "27b84e44dad305baebd0c3b4af266007ca7e1d6d",
+      "bytes": 58085
+    },
+    {
+      "file": "content/content_registry.gd",
+      "git_blob_sha1": "b75d7205ac2e7dd7921193d12d9b72d4c26b0a45",
+      "bytes": 6426
+    },
+    {
+      "file": "docs/00_程序文档索引.md",
+      "git_blob_sha1": "3c6f21c27f49e5676f43a6544d896c7c6060bf30",
+      "bytes": 10793
+    },
+    {
+      "file": "docs/23_当前完成度评估.md",
+      "git_blob_sha1": "b8de5a76975571b09a06f83bddb00271210050d2",
+      "bytes": 9590
+    },
+    {
+      "file": "docs/50_山地底材衔接与地形绘制批处理.md",
+      "git_blob_sha1": "f4796d6b7afe267113c6fcc144a024a5e580abae",
+      "bytes": 5841
+    },
+    {
+      "file": "docs/MEDIA.md",
+      "git_blob_sha1": "03bcbea6cac2ed5a627dbc98e638abdcb18a4b64",
+      "bytes": 15219
+    },
+    {
+      "file": "docs/media/manifest.json",
+      "git_blob_sha1": "027ffe8fe8f7ab6d10a9e366f329adc2033ea055",
+      "bytes": 48652
+    },
+    {
+      "file": "docs/media/map-relief-beijing-v0232.json",
+      "git_blob_sha1": "5d61c706c5a191a0c290c0226b032f02f4dc974b",
+      "bytes": 27299
+    },
+    {
+      "file": "docs/media/map-relief-beijing-v0232.png",
+      "git_blob_sha1": "83c489141d01c77a5b63c7399394f20ca84d4ebc",
+      "bytes": 3451008
+    },
+    {
+      "file": "docs/media/map-relief-coast-v0232.json",
+      "git_blob_sha1": "422c4ab4dd597527d00145211a514a17b6c0a261",
+      "bytes": 26725
+    },
+    {
+      "file": "docs/media/map-relief-coast-v0232.png",
+      "git_blob_sha1": "3a9889adb226c9f6b313168f7128dc7f174fa31c",
+      "bytes": 3275793
+    },
+    {
+      "file": "docs/media/map-relief-mountains-v0232.json",
+      "git_blob_sha1": "4bf8ef56cece968fef74882c8caa980e9e62e064",
+      "bytes": 24422
+    },
+    {
+      "file": "docs/media/map-relief-mountains-v0232.png",
+      "git_blob_sha1": "75912ced6a5630de964179972aa7306d399eb3b7",
+      "bytes": 3478403
+    },
+    {
+      "file": "docs/media/map-relief-wuhan-v0232.json",
+      "git_blob_sha1": "bc258edab4c7d9c7c4bf3513a2607b0e02d79581",
+      "bytes": 20812
+    },
+    {
+      "file": "docs/media/map-relief-wuhan-v0232.png",
+      "git_blob_sha1": "b6b1d425f1c379806a1254fbf04d38a517a14cf8",
+      "bytes": 2587614
+    },
+    {
+      "file": "docs/media/menu-v0232.json",
+      "git_blob_sha1": "480a8e3d46710b6d31bd1963815edf542a09d4c6",
+      "bytes": 436
+    },
+    {
+      "file": "docs/media/menu-v0232.png",
+      "git_blob_sha1": "26fe3b4d22a78613cd3d11db5d1d7b7116d0455b",
+      "bytes": 2340612
+    },
+    {
+      "file": "export_presets.cfg",
+      "git_blob_sha1": "00395c42b4ac4e2fd5885d43f447f019ecec6d9d",
+      "bytes": 2861
+    },
+    {
+      "file": "presentation/atlas_relief.gd",
+      "git_blob_sha1": "8f985c8bae6f225031c97d5ed2c9d9cec7b944cc",
+      "bytes": 20813
+    },
+    {
+      "file": "presentation/ground_material_blend.gd",
+      "git_blob_sha1": "642bcf1435e7d223e256d13f95d2315af0786925",
+      "bytes": 11933
+    },
+    {
+      "file": "presentation/map_contour_lines.gd",
+      "git_blob_sha1": "575107c1f2df8f7258c7d9bcca8a32c91b68f962",
+      "bytes": 2861
+    },
+    {
+      "file": "presentation/map_contour_lines.gd.uid",
+      "git_blob_sha1": "b0fe2bd2220eed447dd1b63f1bb0617513f94690",
+      "bytes": 20
+    },
+    {
+      "file": "presentation/map_details.gd",
+      "git_blob_sha1": "350ece0f6e3e107467728b865c2d14a4b116c34c",
+      "bytes": 21903
+    },
+    {
+      "file": "presentation/map_ground_washes.gd",
+      "git_blob_sha1": "fdcc3890d6ddf89017922d44fd60e782bccd2999",
+      "bytes": 1993
+    },
+    {
+      "file": "presentation/map_ground_washes.gd.uid",
+      "git_blob_sha1": "9bce55209a0fec54eb2ed44886c58285a0b2be30",
+      "bytes": 19
+    },
+    {
+      "file": "presentation/map_terrain_surfaces.gd",
+      "git_blob_sha1": "c0c8ee2a971a552701ee9f23f05af29d0ed8be64",
+      "bytes": 6483
+    },
+    {
+      "file": "presentation/map_view.gd",
+      "git_blob_sha1": "4d552af900305f5d6738e9da83f0b0a6cdf0b12b",
+      "bytes": 137408
+    },
+    {
+      "file": "project.godot",
+      "git_blob_sha1": "08339ec3411547fbef4079ee7149bffd465294cc",
+      "bytes": 977
+    },
+    {
+      "file": "reports/apk_badging.log",
+      "git_blob_sha1": "0b4e131755d6a1a56d678155994b29ba658ba068",
+      "bytes": 5101
+    },
+    {
+      "file": "reports/apk_content_validation.json",
+      "git_blob_sha1": "d5581887c573b1d6a1bf41072fa2fc1168460b2e",
+      "bytes": 843512
+    },
+    {
+      "file": "reports/export_results.json",
+      "git_blob_sha1": "70606b24b44ed559b0f6553a866aecc1330aa7d1",
+      "bytes": 1003
+    },
+    {
+      "file": "reports/ground_coverage_tests.json",
+      "git_blob_sha1": "655bb37dfbb326bc3f19ddde757d2af913bcc746",
+      "bytes": 5930
+    },
+    {
+      "file": "reports/ground_macro_asset_audit.json",
+      "git_blob_sha1": "c9a2302b818e241aa3bbc14691a991c9cf680e90",
+      "bytes": 9061
+    },
+    {
+      "file": "reports/map_material_continuity_tests.json",
+      "git_blob_sha1": "2a7730f0dd89e24eab6fd2da1e37a40b25925aa0",
+      "bytes": 3803
+    },
+    {
+      "file": "reports/quality_goal_turn_v0232.json",
+      "git_blob_sha1": "d88338f475522ee8bc4e87824c5821cec1b15b62",
+      "bytes": 2708
+    },
+    {
+      "file": "reports/relief_grounding_preview_v0232.json",
+      "git_blob_sha1": "59eab06e042244a96b36b97acbe7cab73dea7560",
+      "bytes": 1454
+    },
+    {
+      "file": "reports/relief_grounding_v0232/audit_scope.py",
+      "git_blob_sha1": "39dcf2949cf43722f04e4349f4a700c7a0262d47",
+      "bytes": 2517
+    },
+    {
+      "file": "reports/relief_grounding_v0232/baseline_01/coast.json",
+      "git_blob_sha1": "c1725241a654ce7962e4e82e71394480c2e05ffe",
+      "bytes": 26524
+    },
+    {
+      "file": "reports/relief_grounding_v0232/baseline_01/coast.png",
+      "git_blob_sha1": "5b1204e68f191cefe116f30f20b8dbde62828f23",
+      "bytes": 3273425
+    },
+    {
+      "file": "reports/relief_grounding_v0232/baseline_01/mountains.json",
+      "git_blob_sha1": "9201ca7ed098d50b65cbfd53191334383007c554",
+      "bytes": 24220
+    },
+    {
+      "file": "reports/relief_grounding_v0232/baseline_01/mountains.png",
+      "git_blob_sha1": "9264e07d63429741ddd7a9dbe1f5140d5bbe6d4b",
+      "bytes": 3382818
+    },
+    {
+      "file": "reports/relief_grounding_v0232/batching_tests.json",
+      "git_blob_sha1": "eb672e983e7c3557c480f70f35305c246234e69f",
+      "bytes": 1969
+    },
+    {
+      "file": "reports/relief_grounding_v0232/compare_pan_cost.gd",
+      "git_blob_sha1": "19a43a09e67e9231300af9f2892f2f3427ca98ca",
+      "bytes": 4402
+    },
+    {
+      "file": "reports/relief_grounding_v0232/component_tests.json",
+      "git_blob_sha1": "169eb2aa6d9df4adfdc23b673d317aed76d39108",
+      "bytes": 5382
+    },
+    {
+      "file": "reports/relief_grounding_v0232/component_tests_attempt01.json",
+      "git_blob_sha1": "28ba48ffd286901e0b103ab96eaec2b62dbcc1db",
+      "bytes": 5681
+    },
+    {
+      "file": "reports/relief_grounding_v0232/contour_mesh_native_01/compare_pan_cost.gd",
+      "git_blob_sha1": "985df67b196bc07c9a6632072d7de310d99ec8a8",
+      "bytes": 4501
+    },
+    {
+      "file": "reports/relief_grounding_v0232/contour_mesh_native_01/environment.json",
+      "git_blob_sha1": "32f8192472b1c50bc65b7628e3ba554631a736c3",
+      "bytes": 195
+    },
+    {
+      "file": "reports/relief_grounding_v0232/contour_mesh_native_01/mountains.json",
+      "git_blob_sha1": "331c00a65b3f194b7efa55869156e1fc10c56e90",
+      "bytes": 375
+    },
+    {
+      "file": "reports/relief_grounding_v0232/contour_mesh_native_01/mountains.png",
+      "git_blob_sha1": "75912ced6a5630de964179972aa7306d399eb3b7",
+      "bytes": 3478403
+    },
+    {
+      "file": "reports/relief_grounding_v0232/contour_mesh_native_01/pan_cost.json",
+      "git_blob_sha1": "69e4154f68f4d96120a820a0f924abc47dc9235d",
+      "bytes": 10243
+    },
+    {
+      "file": "reports/relief_grounding_v0232/development_01/beijing.json",
+      "git_blob_sha1": "0e33f7aa9e77bdabe25b609814d2d5030f62331d",
+      "bytes": 27299
+    },
+    {
+      "file": "reports/relief_grounding_v0232/development_01/beijing.png",
+      "git_blob_sha1": "c8be3353c4314a2cfe7a8565dcd3b30ef00ec779",
+      "bytes": 3451376
+    },
+    {
+      "file": "reports/relief_grounding_v0232/development_01/coast.json",
+      "git_blob_sha1": "c34dc329ba15a3441477006887e4863c95c91236",
+      "bytes": 26726
+    },
+    {
+      "file": "reports/relief_grounding_v0232/development_01/coast.png",
+      "git_blob_sha1": "e28daf014f84ec973c6a9985c245f83883b00200",
+      "bytes": 3279705
+    },
+    {
+      "file": "reports/relief_grounding_v0232/development_01/mountains.json",
+      "git_blob_sha1": "9973ff1dac1151572497835bd864f7c7d366430f",
+      "bytes": 24423
+    },
+    {
+      "file": "reports/relief_grounding_v0232/development_01/mountains.png",
+      "git_blob_sha1": "c0f750a1d0120e7168420fe62c4e869897ca647f",
+      "bytes": 3485955
+    },
+    {
+      "file": "reports/relief_grounding_v0232/final_components_01/runs.json",
+      "git_blob_sha1": "108a0f748826aa459539c3e86c156b34f2489c84",
+      "bytes": 1126
+    },
+    {
+      "file": "reports/relief_grounding_v0232/finalize_docs.py",
+      "git_blob_sha1": "b8597298297349995ea990e1bb52f2554efe7270",
+      "bytes": 11435
+    },
+    {
+      "file": "reports/relief_grounding_v0232/mountain_batched.json",
+      "git_blob_sha1": "331c00a65b3f194b7efa55869156e1fc10c56e90",
+      "bytes": 375
+    },
+    {
+      "file": "reports/relief_grounding_v0232/mountain_batched.png",
+      "git_blob_sha1": "c0979ed550c12089af9e8cb5cd59306afcff603c",
+      "bytes": 3486393
+    },
+    {
+      "file": "reports/relief_grounding_v0232/mountain_washes_and_multiline.json",
+      "git_blob_sha1": "331c00a65b3f194b7efa55869156e1fc10c56e90",
+      "bytes": 375
+    },
+    {
+      "file": "reports/relief_grounding_v0232/mountain_washes_and_multiline.png",
+      "git_blob_sha1": "c0979ed550c12089af9e8cb5cd59306afcff603c",
+      "bytes": 3486393
+    },
+    {
+      "file": "reports/relief_grounding_v0232/package_recipe.py",
+      "git_blob_sha1": "9ce72436c7e8540bd51e7899e396147f75a67409",
+      "bytes": 11172
+    },
+    {
+      "file": "reports/relief_grounding_v0232/pan_cost.json",
+      "git_blob_sha1": "455c16bc249bc4f0d5c86e3aa1924e4b85fbf538",
+      "bytes": 10167
+    },
+    {
+      "file": "reports/relief_grounding_v0232/pan_cost_trial01_with_headless_jobs.json",
+      "git_blob_sha1": "eb13e0861e60127ffbb058cf35317bd59dc94b0a",
+      "bytes": 9973
+    },
+    {
+      "file": "reports/relief_grounding_v0232/pan_cost_trials.md",
+      "git_blob_sha1": "883420b2ebafda1a30e4d8fdcc5a0b01df7f6386",
+      "bytes": 746
+    },
+    {
+      "file": "reports/relief_grounding_v0232/pan_cost_washes_and_multiline.json",
+      "git_blob_sha1": "455c16bc249bc4f0d5c86e3aa1924e4b85fbf538",
+      "bytes": 10167
+    },
+    {
+      "file": "reports/relief_grounding_v0232/scope.json",
+      "git_blob_sha1": "51e1dd63b3438f0e55612c6a9bd66fb891ea210a",
+      "bytes": 22199
+    },
+    {
+      "file": "reports/relief_grounding_v0232/shipping_01/gpu/validation.json",
+      "git_blob_sha1": "a62888864010de954f50160ecbe340eff49207ac",
+      "bytes": 10443
+    },
+    {
+      "file": "reports/relief_grounding_v0232/shipping_01/home.json",
+      "git_blob_sha1": "480a8e3d46710b6d31bd1963815edf542a09d4c6",
+      "bytes": 436
+    },
+    {
+      "file": "reports/relief_grounding_v0232/shipping_01/home.png",
+      "git_blob_sha1": "26fe3b4d22a78613cd3d11db5d1d7b7116d0455b",
+      "bytes": 2340612
+    },
+    {
+      "file": "reports/relief_grounding_v0232/shipping_01/mountains.json",
+      "git_blob_sha1": "4bf8ef56cece968fef74882c8caa980e9e62e064",
+      "bytes": 24422
+    },
+    {
+      "file": "reports/relief_grounding_v0232/shipping_01/mountains.png",
+      "git_blob_sha1": "75912ced6a5630de964179972aa7306d399eb3b7",
+      "bytes": 3478403
+    },
+    {
+      "file": "reports/relief_grounding_v0232/shipping_01/ui_smoke.json",
+      "git_blob_sha1": "044052bf72e0f6f21ede50dc094bbf7b72077804",
+      "bytes": 28543
+    },
+    {
+      "file": "reports/relief_grounding_v0232/shipping_01/ui_smoke.png",
+      "git_blob_sha1": "c692ad085a55c7161a03a02c2edad8e64b874b41",
+      "bytes": 3436429
+    },
+    {
+      "file": "reports/relief_grounding_v0232/shipping_01/validation.json",
+      "git_blob_sha1": "e4469c4cd0e550b7a0a7311f683ff03de5a0b572",
+      "bytes": 4742
+    },
+    {
+      "file": "reports/relief_grounding_v0232/verify_shipping.py",
+      "git_blob_sha1": "a950f9c46b7fea72e73391d22409c263d704a457",
+      "bytes": 3228
+    },
+    {
+      "file": "reports/relief_grounding_v0232/visual_review.json",
+      "git_blob_sha1": "ba3e621ea80c98106e6aa0014f7052d727ba87c7",
+      "bytes": 5327
+    },
+    {
+      "file": "reports/relief_surface_tests.json",
+      "git_blob_sha1": "7b2beca155afbc364f7c4dde8baaa5d950bec405",
+      "bytes": 2691
+    },
+    {
+      "file": "reports/repository_documentation_validation.json",
+      "git_blob_sha1": "05986fe9b0b1e337f6809e2bba06fd3b4ecd5c09",
+      "bytes": 1258
+    },
+    {
+      "file": "reports/resource_validation.json",
+      "git_blob_sha1": "376fec722ad7c9f8d89fabce4676dad20da692e5",
+      "bytes": 922487
+    },
+    {
+      "file": "reports/river_surface_tests.json",
+      "git_blob_sha1": "0c015dbbaa68b0c93254fe0d77c19ad0c94481c5",
+      "bytes": 5228
+    },
+    {
+      "file": "reports/rule_tests.json",
+      "git_blob_sha1": "fb19b9561501ec823f904952ed25542d126b0b9b",
+      "bytes": 10632
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/beijing.json",
+      "git_blob_sha1": "5d61c706c5a191a0c290c0226b032f02f4dc974b",
+      "bytes": 27299
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/beijing.png",
+      "git_blob_sha1": "83c489141d01c77a5b63c7399394f20ca84d4ebc",
+      "bytes": 3451008
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/coast.json",
+      "git_blob_sha1": "422c4ab4dd597527d00145211a514a17b6c0a261",
+      "bytes": 26725
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/coast.png",
+      "git_blob_sha1": "3a9889adb226c9f6b313168f7128dc7f174fa31c",
+      "bytes": 3275793
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/validation.json",
+      "git_blob_sha1": "dab877c3cb8e5fe9152fbfb172cc3c4a3d757e92",
+      "bytes": 11432
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/village.json",
+      "git_blob_sha1": "79554e68c9eecf664e3287340b7bf78144179d72",
+      "bytes": 24143
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/village.png",
+      "git_blob_sha1": "381ff34a610183955a5d431aafec435ca0598ed1",
+      "bytes": 3367957
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan.json",
+      "git_blob_sha1": "bc258edab4c7d9c7c4bf3513a2607b0e02d79581",
+      "bytes": 20812
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan.png",
+      "git_blob_sha1": "b6b1d425f1c379806a1254fbf04d38a517a14cf8",
+      "bytes": 2587614
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_large_text.json",
+      "git_blob_sha1": "4b2a08cf4d353395a883956d0ed63ef7c2cbd951",
+      "bytes": 20829
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_large_text.png",
+      "git_blob_sha1": "72bccb7bad8229111ca4634127f562a69aa0809f",
+      "bytes": 1172542
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_regional.json",
+      "git_blob_sha1": "ca3762e35edce3d20ca3471d9612bfc6dc7a38bb",
+      "bytes": 19062
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_regional.png",
+      "git_blob_sha1": "78501ebb0aefa0a0e1acec3d8d2b777448b431f2",
+      "bytes": 441999
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_x30_layout.json",
+      "git_blob_sha1": "9d27673835bd8afd367a1d3ca5a994d1781b3764",
+      "bytes": 20816
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_x30_layout.png",
+      "git_blob_sha1": "22efff6ca1b7275fced73f0e6fbf0c4b35df33a0",
+      "bytes": 2688276
+    },
+    {
+      "file": "reports/surface_geography_tests.json",
+      "git_blob_sha1": "418981d940159a8a921c8b54768032fc2065e447",
+      "bytes": 4304
+    },
+    {
+      "file": "reports/terrain_surfaces_tests.json",
+      "git_blob_sha1": "b17611cea7d0e9369a6fb2ba4f1b09b0dbe4980f",
+      "bytes": 14990
+    },
+    {
+      "file": "tests/map_ground_washes_test.gd",
+      "git_blob_sha1": "df07bb9bbb484fa0a0b10d6c4860a1a284487501",
+      "bytes": 6659
+    },
+    {
+      "file": "tests/map_ground_washes_test.gd.uid",
+      "git_blob_sha1": "81bb2efaf83ef59d934f4ebfd4c851b7d4c83626",
+      "bytes": 20
+    },
+    {
+      "file": "tests/relief_grounding_test.gd",
+      "git_blob_sha1": "2d44357b9779a6c777bffcc2b06d8110a8605e90",
+      "bytes": 7304
+    },
+    {
+      "file": "tests/relief_grounding_test.gd.uid",
+      "git_blob_sha1": "2f15e2bd60e22476803aed73de2d1d48858a9286",
+      "bytes": 20
+    },
+    {
+      "file": "tools/verify_repository.py",
+      "git_blob_sha1": "9def8a1270e5105eba30d02219259646a9bc7c45",
+      "bytes": 11395
+    }
+  ]
+}

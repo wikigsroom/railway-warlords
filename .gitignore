@@ -190,3 +190,11 @@ Thumbs.db
 # Diagnostic logs stay local inside otherwise unignored screenshot folders.
 /reports/**/*.log
 /reports/**/__pycache__/
+
+# Mountain-grounding preview: native evidence, measured limits and source tests.
+!/reports/relief_grounding_v0232/
+!/reports/relief_grounding_v0232/**
+/reports/relief_grounding_v0232/**/*.log
+/reports/relief_grounding_v0232/**/__pycache__/
+!/reports/quality_goal_turn_v0232.json
+!/reports/relief_grounding_preview_v0232.json

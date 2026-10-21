@@ -2,6 +2,10 @@
 
 [中文 README](../README.md#screenshots) · [English README](../README.en.md#screenshots) · [完整机器可读记录 / Manifest](media/manifest.json)
 
+0.2.32新增五张正式Windows整幅画面：[菜单](media/menu-v0232.png)、[山地](media/map-relief-mountains-v0232.png)、[武汉](media/map-relief-wuhan-v0232.png)、[北京](media/map-relief-beijing-v0232.png)和[山海关](media/map-relief-coast-v0232.png)。七地图及菜单/冒烟/山地共10张最终画面已完整查看，见[实际查看记录](../reports/relief_grounding_v0232/visual_review.json)。原字节复制，旧GIF身份不变。
+
+Version 0.2.32 adds five whole shipping-Windows selections: menu, mountains, Wuhan, Beijing and Shanhaiguan. Ten final-application images were viewed in full. Copies retain original bytes; older GIF identities are unchanged.
+
 0.2.31新增四张正式Windows程序整幅画面：[菜单](media/menu-v0231.png)、[武汉](media/map-material-wuhan-v0231.png)、[北京](media/map-material-beijing-v0231.png)、[山海关](media/map-material-coast-v0231.png)。七张正式地图及菜单/界面冒烟画面均已完整查看，详见[记录](../reports/ground_material_v0231/visual_review.json)。源图原始字节复制，未裁切、拼接或叠字。保留的0.2.29 GIF不是本轮新材质录像。
 
 Four new full shipping-Windows captures are dated 0.2.31: menu, Wuhan, Beijing and Shanhaiguan. All seven shipping map images plus the menu/UI-smoke images were opened in full. Copies retain original bytes. The retained 0.2.29 GIF is not footage of the new materials.

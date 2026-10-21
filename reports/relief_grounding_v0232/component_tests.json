@@ -1,0 +1,190 @@
+{
+	"actual_supported_cells": 34543,
+	"build_version": "0.2.32",
+	"checks": [
+		{
+			"name": "actual_underlays_require_existing_relief_and_archived_ecology_independent_of_faction_or_identity:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "every_clipped_shore_vertex_and_weight_is_identical_in_both_passes_and_original_partition:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "rock_pass_preserves_source_material_identity_and_both_passes_have_bounded_alpha:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "geography_elevation_terrain_cities_rivers_and_rules_retain_source_bytes:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "actual_underlays_require_existing_relief_and_archived_ecology_independent_of_faction_or_identity:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "every_clipped_shore_vertex_and_weight_is_identical_in_both_passes_and_original_partition:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "rock_pass_preserves_source_material_identity_and_both_passes_have_bounded_alpha:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "geography_elevation_terrain_cities_rivers_and_rules_retain_source_bytes:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "actual_underlays_require_existing_relief_and_archived_ecology_independent_of_faction_or_identity:hankou",
+			"passed": true
+		},
+		{
+			"name": "every_clipped_shore_vertex_and_weight_is_identical_in_both_passes_and_original_partition:hankou",
+			"passed": true
+		},
+		{
+			"name": "rock_pass_preserves_source_material_identity_and_both_passes_have_bounded_alpha:hankou",
+			"passed": true
+		},
+		{
+			"name": "geography_elevation_terrain_cities_rivers_and_rules_retain_source_bytes:hankou",
+			"passed": true
+		},
+		{
+			"name": "actual_underlays_require_existing_relief_and_archived_ecology_independent_of_faction_or_identity:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "every_clipped_shore_vertex_and_weight_is_identical_in_both_passes_and_original_partition:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "rock_pass_preserves_source_material_identity_and_both_passes_have_bounded_alpha:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "geography_elevation_terrain_cities_rivers_and_rules_retain_source_bytes:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "actual_underlays_require_existing_relief_and_archived_ecology_independent_of_faction_or_identity:jingjin",
+			"passed": true
+		},
+		{
+			"name": "every_clipped_shore_vertex_and_weight_is_identical_in_both_passes_and_original_partition:jingjin",
+			"passed": true
+		},
+		{
+			"name": "rock_pass_preserves_source_material_identity_and_both_passes_have_bounded_alpha:jingjin",
+			"passed": true
+		},
+		{
+			"name": "geography_elevation_terrain_cities_rivers_and_rules_retain_source_bytes:jingjin",
+			"passed": true
+		},
+		{
+			"name": "actual_underlays_require_existing_relief_and_archived_ecology_independent_of_faction_or_identity:ningpu",
+			"passed": true
+		},
+		{
+			"name": "every_clipped_shore_vertex_and_weight_is_identical_in_both_passes_and_original_partition:ningpu",
+			"passed": true
+		},
+		{
+			"name": "rock_pass_preserves_source_material_identity_and_both_passes_have_bounded_alpha:ningpu",
+			"passed": true
+		},
+		{
+			"name": "geography_elevation_terrain_cities_rivers_and_rules_retain_source_bytes:ningpu",
+			"passed": true
+		},
+		{
+			"name": "supported_relief_is_used_without_repainting_all_other_regions",
+			"passed": true
+		},
+		{
+			"name": "real_coastal_and_lake_clips_traverse_both_production_passes",
+			"passed": true
+		},
+		{
+			"name": "missing_ecology_or_noneligible_terrain_is_not_filled:hill",
+			"passed": true
+		},
+		{
+			"name": "missing_ecology_or_noneligible_terrain_is_not_filled:plain",
+			"passed": true
+		},
+		{
+			"name": "missing_ecology_or_noneligible_terrain_is_not_filled:peak",
+			"passed": true
+		},
+		{
+			"name": "existing_peak_mineral_material_is_not_replaced",
+			"passed": true
+		},
+		{
+			"name": "shared_edges_and_three_way_vertices_have_identical_alpha_across_negative_axial_cells",
+			"passed": true
+		},
+		{
+			"name": "all_substrates_are_submitted_before_their_mineral_overlays",
+			"passed": true
+		},
+		{
+			"name": "additional_pass_does_not_double_count_game_hexes",
+			"passed": true
+		},
+		{
+			"name": "panning_reuses_both_passes_without_geometry_rebuild_or_source_reselection",
+			"passed": true
+		},
+		{
+			"name": "both_passes_cull_together_outside_the_view",
+			"passed": true
+		}
+	],
+	"clipped_hexes_checked": 6957,
+	"failures": [],
+	"formal_art_approval": false,
+	"historical_rock_cover_measured": false,
+	"maps": [
+		{
+			"clipped_hexes": 1501,
+			"map": "asia_strategic",
+			"supported_shore_neighborhoods": 143,
+			"supported_underlays": 229
+		},
+		{
+			"clipped_hexes": 2842,
+			"map": "conquest_china",
+			"supported_shore_neighborhoods": 159,
+			"supported_underlays": 12234
+		},
+		{
+			"clipped_hexes": 82,
+			"map": "hankou",
+			"supported_shore_neighborhoods": 0,
+			"supported_underlays": 0
+		},
+		{
+			"clipped_hexes": 1802,
+			"map": "jingfeng",
+			"supported_shore_neighborhoods": 452,
+			"supported_underlays": 16936
+		},
+		{
+			"clipped_hexes": 664,
+			"map": "jingjin",
+			"supported_shore_neighborhoods": 294,
+			"supported_underlays": 5131
+		},
+		{
+			"clipped_hexes": 66,
+			"map": "ningpu",
+			"supported_shore_neighborhoods": 12,
+			"supported_underlays": 13
+		}
+	],
+	"new_rasters": 0,
+	"passed": true
+}

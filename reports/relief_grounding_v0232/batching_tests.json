@@ -1,0 +1,72 @@
+{
+	"build_version": "0.2.32",
+	"checks": [
+		{
+			"name": "all_five_existing_detail_classes_keep_six_triangles_while_plain_and_sea_stay_clear",
+			"passed": true
+		},
+		{
+			"name": "batch_area_matches_independent_regular_hex_area_without_new_ground_coverage",
+			"passed": true
+		},
+		{
+			"name": "every_source_class_wash_retains_opaque_centre_and_transparent_perimeter",
+			"passed": true
+		},
+		{
+			"name": "tactical_zoom_changes_reuse_the_same_world_fixed_wash_mesh",
+			"passed": true
+		},
+		{
+			"name": "only_existing_relief_receives_the_original_directional_contact_shadow_at_its_actual_anchor",
+			"passed": true
+		},
+		{
+			"name": "continental_sparse_zoom_band_reuses_its_own_mesh",
+			"passed": true
+		},
+		{
+			"name": "continental_medium_zoom_band_is_separate_and_stable",
+			"passed": true
+		},
+		{
+			"name": "batching_preserves_all_source_cells_classes_and_geographic_positions",
+			"passed": true
+		},
+		{
+			"name": "loading_another_map_clears_old_geographic_meshes",
+			"passed": true
+		},
+		{
+			"name": "empty_detail_buckets_allocate_no_gpu_mesh",
+			"passed": true
+		},
+		{
+			"name": "every_unchanged_contour_segment_has_exactly_one_mesh_owner_including_bucket_crossings",
+			"passed": true
+		},
+		{
+			"name": "visible_source_endpoints_are_never_lost_by_midpoint_bucket_culling_or_negative_coordinates",
+			"passed": true
+		},
+		{
+			"name": "inverse_render_coordinates_recover_original_endpoints_and_constant_screen_width_at_four_zooms",
+			"passed": true
+		},
+		{
+			"name": "panning_reuses_contour_meshes_without_rebuilding_strokes",
+			"passed": true
+		},
+		{
+			"name": "drawing_bands_do_not_smooth_reposition_or_add_source_contours",
+			"passed": true
+		},
+		{
+			"name": "maps_without_contours_do_not_retain_previous_map_lines",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"passed": true,
+	"scope": "Vector geometry, source order, alpha falloff, spatial index and cache invariants. Native pixel and performance evidence is separate."
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "script": "map_ground_washes_test",
+    "report": "reports/relief_grounding_v0232/batching_tests.json",
+    "checks": 16
+  },
+  {
+    "script": "relief_grounding_test",
+    "report": "reports/relief_grounding_v0232/component_tests.json",
+    "checks": 35
+  },
+  {
+    "script": "map_material_continuity_test",
+    "report": "reports/map_material_continuity_tests.json",
+    "checks": 39
+  },
+  {
+    "script": "ground_coverage_test",
+    "report": "reports/ground_coverage_tests.json",
+    "checks": 45
+  },
+  {
+    "script": "relief_surface_test",
+    "report": "reports/relief_surface_tests.json",
+    "checks": 23
+  },
+  {
+    "script": "terrain_surfaces_test",
+    "report": "reports/terrain_surfaces_tests.json",
+    "checks": 160
+  },
+  {
+    "script": "surface_geography_test",
+    "report": "reports/surface_geography_tests.json",
+    "checks": 39
+  },
+  {
+    "script": "river_surface_test",
+    "report": "reports/river_surface_tests.json",
+    "checks": 48
+  },
+  {
+    "script": "run_tests",
+    "report": "reports/rule_tests.json",
+    "checks": 102
+  }
+]

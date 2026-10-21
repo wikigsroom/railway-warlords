@@ -5,6 +5,7 @@ extends RefCounted
 var mesh: ArrayMesh
 var shade_field=ReliefShadeField.new()
 var contours: Array=[]
+var contour_lines=MapContourLines.new()
 var features: Array=[]
 var diagnostics: Dictionary={}
 var cells: Dictionary={}
@@ -91,6 +92,7 @@ func build(map: Dictionary, land_shapes: Array, river_lines: Array, minor_river_
 	if not vertices.is_empty():
 		var arrays=[];arrays.resize(Mesh.ARRAY_MAX);arrays[Mesh.ARRAY_VERTEX]=vertices;arrays[Mesh.ARRAY_COLOR]=colors;arrays[Mesh.ARRAY_TEX_UV]=uvs
 		mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
+	contour_lines.build(contours)
 	var shaded=Time.get_ticks_usec()
 	var candidates: Array=[];var relief_items: Array=[]
 	for cell in map.cells:

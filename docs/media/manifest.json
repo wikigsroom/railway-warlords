@@ -1,5 +1,5 @@
 {
-  "version": "0.2.31",
+  "version": "0.2.32",
   "screenshots": [
     {
       "file": "docs/media/menu.png",
@@ -846,6 +846,51 @@
       "native_source": "reports/screenshots/map_composition_native/v0231/verified_export_01/coast.png",
       "sha256": "2d2e90371c95b2623fa57f6f99cd74765b4a37fc4da4a14cb02014a4ccaf83ed",
       "metadata": "docs/media/map-material-coast-v0231.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/menu-v0232.png",
+      "version": "0.2.32",
+      "native_source": "reports/relief_grounding_v0232/shipping_01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "docs/media/menu-v0232.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-relief-mountains-v0232.png",
+      "version": "0.2.32",
+      "native_source": "reports/relief_grounding_v0232/shipping_01/mountains.png",
+      "sha256": "1ca8a024c2af920c7197fe04360f64ddc0f8093db01e8a00f3f0f5ccc901cab3",
+      "metadata": "docs/media/map-relief-mountains-v0232.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-relief-wuhan-v0232.png",
+      "version": "0.2.32",
+      "native_source": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan.png",
+      "sha256": "4ad8ebc8ff2f0052a320aba3ba69259ef1acb6d291ece8926465b597785dda4d",
+      "metadata": "docs/media/map-relief-wuhan-v0232.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-relief-beijing-v0232.png",
+      "version": "0.2.32",
+      "native_source": "reports/screenshots/map_composition_native/v0232/verified_export_01/beijing.png",
+      "sha256": "b1f14d6bfe18815d0ec0453f22f09eac3b92bff8b101e7b18a06159a0f37dfdc",
+      "metadata": "docs/media/map-relief-beijing-v0232.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-relief-coast-v0232.png",
+      "version": "0.2.32",
+      "native_source": "reports/screenshots/map_composition_native/v0232/verified_export_01/coast.png",
+      "sha256": "eaf3eedcf84d9137619e9020f2aaafcba6cac5a54a2045602cb64a4d3b3081f1",
+      "metadata": "docs/media/map-relief-coast-v0232.json",
       "byte_identical_to_native_capture": true,
       "physical_android_device_tested": false
     }

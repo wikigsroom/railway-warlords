@@ -88,6 +88,7 @@ var camera_bounds_source="full_map"
 var rail_cells: Dictionary={}
 var presentation_cells: Dictionary={}
 var terrain_visual_buckets: Dictionary={}
+var ground_washes=MapGroundWashes.new()
 var map_extent=PackedVector2Array()
 var minimap: StrategicMinimap
 var relief=AtlasRelief.new()
@@ -296,7 +297,7 @@ func presentation_source_map_id() -> String:
 
 func prepare_geography() -> void:
 	geography_key=geography_signature();land_shapes.clear();coast_lines.clear();river_lines.clear();detail_river_lines.clear();crossing_markers.clear();rail_cells.clear()
-	presentation_cells.clear();terrain_visual_buckets.clear();historical_landcover_features.clear();historical_landcover_patch_cells=0
+	presentation_cells.clear();terrain_visual_buckets.clear();ground_washes.clear();historical_landcover_features.clear();historical_landcover_patch_cells=0
 	load_historical_landcover_features()
 	territory_field_meshes.clear();territory_field_cells.clear();territory_field_borders.clear();territory_field_diagnostics={};territory_field_signature=""
 	world_bounds=Rect2(HexGrid.to_world(HexGrid.coordinate(state.map.cells[0].position)),Vector2.ONE)
@@ -1261,7 +1262,7 @@ func sync_backdrop() -> bool:
 	backdrop_view.continuous_relief_enabled=continuous_relief_enabled
 	backdrop_view.map_details=map_details
 	backdrop_view.settlement_choices=settlement_choices
-	backdrop_view.presentation_cells=presentation_cells;backdrop_view.terrain_visual_buckets=terrain_visual_buckets
+	backdrop_view.presentation_cells=presentation_cells;backdrop_view.terrain_visual_buckets=terrain_visual_buckets;backdrop_view.ground_washes=ground_washes
 	backdrop_view.surface_region_diagnostics=surface_region_diagnostics
 	backdrop_view.hydrography_diagnostics=hydrography_diagnostics
 	backdrop_view.detail_river_buckets=detail_river_buckets
@@ -1449,8 +1450,7 @@ func draw_landscape(view: Rect2) -> void:
 	if show_control:draw_control_zones(view)
 	if show_terrain and relief.mesh!=null:draw_mesh(relief.mesh,null)
 	if show_terrain and zoom>.12:
-		for contour in relief.contours:
-			if view.has_point(contour[0]) or view.has_point(contour[1]):draw_polyline(contour,Color(.36,.33,.25,.20),.65/zoom,true)
+		for contour_batch in relief.contour_lines.batches(view,zoom):draw_mesh(contour_batch.mesh,null)
 	if show_terrain:
 		draw_terrain_fabric(view)
 		draw_terrain_transitions(view)
@@ -1591,24 +1591,21 @@ func draw_cell_terrain_tiles(view: Rect2) -> void:
 	terrain_tile_draw_count=0
 	var strategic=state.map.get("strategic_scale",false)
 	if zoom<(.18 if strategic else .30):return
-	# Terrain materials blend into continuous ground. Buildings, water and
-	# transport have their own sourced geometry, never opaque hex pictures.
-	for entry in visible_terrain_entries(view):
-		var kind: String=entry.kind
-		if kind not in ["forest","wetland","hill","mountain","peak"]:continue
-		if not TerrainVisuals.keep_at_overview(entry.cell,kind,strategic,zoom):continue
-		var color: Color={"forest":Color("64855b"),"wetland":Color("74928a"),"hill":Color("a5ad83"),"mountain":Color("758777"),"peak":Color("80918c")}[kind]
-		color.a=.12 if kind=="forest" else .09
-		draw_ground_blend(HexGrid.to_world(entry.hex),color,46.8)
-		terrain_tile_draw_count+=1
+	for row in terrain_wash_batches(view,false):
+		draw_mesh(row.mesh,null);terrain_tile_draw_count+=row.source_cells
 
-func draw_ground_blend(center: Vector2, color: Color, radius: float) -> void:
-	# Vertex alpha feathers the source-class wash. No raster is edited and no
-	# dark hard-edged hex slab is introduced below the miniature scenery.
-	var corners=HexGrid.corners(center,radius)
-	for index in range(6):
-		var polygon=PackedVector2Array([center,corners[index],corners[(index+1)%6]])
-		draw_polygon(polygon,PackedColorArray([color,Color(color,0.0),Color(color,0.0)]))
+func terrain_wash_batches(view: Rect2, depth: bool) -> Array:
+	var bounds=visible_hex_bounds(view);var low: Vector2i=bounds[0];var high: Vector2i=bounds[1]
+	var bucket_low=Vector2i(floori(float(low.x)/16.0)-1,floori(float(low.y)/16.0)-1)
+	var bucket_high=Vector2i(floori(float(high.x)/16.0)+1,floori(float(high.y)/16.0)+1)
+	var result: Array=[]
+	for x in range(bucket_low.x,bucket_high.x+1):
+		for y in range(bucket_low.y,bucket_high.y+1):
+			var bucket=Vector2i(x,y);var entries: Array=terrain_visual_buckets.get(bucket,[])
+			if entries.is_empty():continue
+			var row=ground_washes.for_bucket(bucket,entries,bool(state.map.get("strategic_scale",false)),zoom,depth)
+			if row.mesh!=null and view.intersects(row.bounds):result.append(row)
+	return result
 
 func draw_cell_surface_variants(view: Rect2) -> void:
 	# Regional source geometry chooses a visible seamless ground material.
@@ -1670,14 +1667,8 @@ func draw_cell_surface_variants(view: Rect2) -> void:
 func draw_cell_depth(view: Rect2) -> void:
 	terrain_depth_draw_count=0
 	if zoom<.38:return
-	# Volume belongs to the tree/rock silhouettes and their ground contacts.
-	# A soft directional shadow supports source relief, without raising every
-	# operation hex into a separate six-sided box.
-	for entry in visible_terrain_entries(view):
-		if entry.kind not in ["hill","mountain","peak"]:continue
-		var alpha=.045 if entry.kind=="hill" else .065
-		draw_ground_blend(HexGrid.to_world(entry.hex)+Vector2(5,7),Color(.20,.29,.25,alpha),39)
-		terrain_depth_draw_count+=1
+	for row in terrain_wash_batches(view,true):
+		draw_mesh(row.mesh,null);terrain_depth_draw_count+=row.source_cells
 
 func draw_cell_detail_symbols(view: Rect2) -> void:
 	# At the intermediate strategic zoom the full relief sprites are still too

@@ -7,13 +7,19 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. Current sources are the **0.2.31 lowland ground and river-material beta**; see the [scope notes](docs/49_低地底纹与河岸材质调整.md). Two new independent Sub2 originals replace temperate meadow and subtropical humus, with larger brush scales and quieter river shading. Overall art quality remains below the target. Older full regression results and archives retain their original versions. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. Current sources are the **0.2.32 mountain-grounding and terrain-batching beta**; see the [scope notes](docs/50_山地底材衔接与地形绘制批处理.md). Existing terrain and regional references now guide the ground beneath mountain artwork, while vector terrain draws are batched. Panning spikes and overall art parity remain unresolved. Older proofs and archives retain their original versions. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
-![Native main menu from the version 0.2.31 shipping Windows application](docs/media/menu-v0231.png)
+![Native main menu from the version 0.2.32 shipping Windows application](docs/media/menu-v0232.png)
 
 *A complete current exported-application viewport. PNG screenshots have no montage, repainting or promotional overlays; older media retain their actual source versions.*
+
+Version 0.2.32 improves the transition between green mountain sprites and gray mineral ground, using existing complete originals, and batches terrain washes and contour lines. This is the shipping Windows application; see also [Beijing](docs/media/map-relief-beijing-v0232.png), [Shanhaiguan](docs/media/map-relief-coast-v0232.png) and [Wuhan](docs/media/map-relief-wuhan-v0232.png). No raster originals were added. Ecoregions constrain representative ground color, not historical vegetation claims.
+
+![Version 0.2.32 shipping Windows: mountain ground and sprite-foot transitions](docs/media/map-relief-mountains-v0232.png)
+
+507 component checks, 48 shipping-EXE ground GPU checks and 58 map-layout checks pass: 613 targeted checks. Ten final-application images were viewed in full. Development panning still shows roughly 100ms spikes; overall art parity and physical X30 acceptance remain unfinished. Retained GIFs keep their 0.2.29 identity.
 
 Version 0.2.31 uses two new independent originals for clearer grass/exposed-soil structure and quieter river banks. This is a shipping-Windows capture; see also [Beijing](docs/media/map-material-beijing-v0231.png) and [Shanhaiguan](docs/media/map-material-coast-v0231.png). Wuhan frame margins, broad alluvial areas and coarse river bends remain unfinished.
 
@@ -527,7 +533,7 @@ Configure your own release keystore, alias and password through Godot private cr
 godot --headless --path . --export-release "Android" "build/android/RailwayWarlords.apk"
 ```
 
-App ID is `org.railwaywarlords.game`; version 0.2.31 uses versionCode 36. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
+App ID is `org.railwaywarlords.game`; version 0.2.32 uses versionCode 37. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
 
 ### Automation scope
 
@@ -692,4 +698,4 @@ The [0.2.23 military UI and dossier chapter](docs/41_军事界面与将领档案
 
 The [0.2.24 atlas and diplomacy chapter](docs/42_战区沙盘与外交事务精修.md) covers shipping terrain previews, zoom and pan, date gates, counterparty selection, actual aid transactions and current delivery limits.
 
-Older chapters preserve their version context. Use these READMEs, the [0.2.31 material scope](docs/49_低地底纹与河岸材质调整.md), completion assessment and corresponding reports for current status. The [commander chapter](docs/46_师旅级将领池与战役名册.md) documents the full registered pool, sources, filters, appointments and remaining coverage.
+Older chapters preserve their version context. Use these READMEs, the [0.2.32 relief and batching scope](docs/50_山地底材衔接与地形绘制批处理.md), completion assessment and corresponding reports for current status. The [commander chapter](docs/46_师旅级将领池与战役名册.md) documents the registered pool, sources, filters, appointments and remaining coverage.

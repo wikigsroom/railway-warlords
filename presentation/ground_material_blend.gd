@@ -26,6 +26,8 @@ varying vec3 ground_layers;
 varying vec3 ground_weights;
 varying vec2 ground_uv;
 varying float ground_coverage;
+varying float contour_mode;
+varying vec2 contour_distance;
 varying float scenery_mode;
 varying vec2 scenery_foot;
 varying float water_mode;
@@ -41,6 +43,8 @@ void vertex() {
     relief_mode = UV.y >= 512.0 && UV.y <= 513.0 ? 1.0 : 0.0;
     relief_uv = vec2(UV.x, UV.y - 512.0);
     ground_mode = UV.y < -1023.0 ? 1.0 : 0.0;
+    contour_mode = UV.y >= 1023.5 && UV.y <= 1025.5 ? 1.0 : 0.0;
+    contour_distance = vec2(UV.x, UV.y - 1024.0);
     scenery_mode = UV.y >= 2048.0 && UV.y <= 2049.0 ? 1.0 : 0.0;
     if (scenery_mode > 0.5) {
         scenery_foot = COLOR.rg;
@@ -163,6 +167,16 @@ void fragment() {
                 + ground_pigment(ground_uv, ground_layers.z) * weights.z;
         }
         COLOR = vec4(pigment, ground_alpha * ground_coverage);
+    } else if (contour_mode > 0.5) {
+        // Analytic box coverage retains a thin, antialiased 0.65-pixel ink
+        // stroke while thousands of source segments share a few mesh draws.
+        vec2 pixel = max(fwidth(contour_distance), vec2(0.00001));
+        float core = 0.65 / 2.65;
+        float cross_coverage = clamp((core - contour_distance.x) / pixel.x + 0.5, 0.0, 1.0)
+            - clamp((-core - contour_distance.x) / pixel.x + 0.5, 0.0, 1.0);
+        float end_coverage = clamp((1.0 - contour_distance.y) / pixel.y + 0.5, 0.0, 1.0)
+            - clamp(-contour_distance.y / pixel.y + 0.5, 0.0, 1.0);
+        COLOR.a *= cross_coverage * end_coverage;
     } else if (scenery_mode > 0.5) {
         COLOR.a *= 1.0 - smoothstep(scenery_foot.x, scenery_foot.y, UV.y);
     }
@@ -213,12 +227,12 @@ static func weights(a: float, b: float) -> Vector2:
 static func draw_grounded_feature(canvas: CanvasItem, source: Texture2D, rect: Rect2, id: String, alpha: float) -> bool:
 	var row: Dictionary=MapArtBank.data().get("records",{}).get(id,{})
 	if row.is_empty():return false
-	# Only the lower 12% of the measured opaque silhouette blends into its
+	# Only the lower 24% of the measured opaque silhouette blends into its
 	# existing ground. Source UVs still cover the entire original, with all
 	# transparent margins; placement and the reserved full footprint are intact.
 	var occupied=row.alpha_bounds;var height=float(row.dimensions[1])
 	var end=float(occupied[3])/height
-	var start=end-float(occupied[3]-occupied[1])/height*.12
+	var start=end-float(occupied[3]-occupied[1])/height*.24
 	var tint=Color(start,end,1.0,alpha)
 	var points=PackedVector2Array([rect.position,rect.position+Vector2(rect.size.x,0),rect.end,rect.position+Vector2(0,rect.size.y)])
 	var uv=PackedVector2Array([Vector2(0,2048),Vector2(1,2048),Vector2(1,2049),Vector2(0,2049)])

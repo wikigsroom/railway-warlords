@@ -8,6 +8,8 @@ var buckets: Dictionary={}
 var surfaces: Dictionary={}
 var surface_families: Dictionary={}
 var ground_families: Dictionary={}
+var relief_underlays: Dictionary={}
+var relief_opacities: Dictionary={}
 var ground_clips: Dictionary={}
 var source_ground_coverage: Dictionary={}
 var ground_policy: Dictionary={}
@@ -31,6 +33,7 @@ const SURFACE_BLEND_INNER=.70
 func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array, rivers: Array) -> void:
 	features=[];buckets={};surfaces={};surface_families={};diagnostics={"active":false}
 	ground_families={};ground_clips={};source_ground_coverage={};continuous_color_templates.clear()
+	relief_underlays.clear();relief_opacities.clear()
 	ground_policy={"forest_floor_requires_sourced_forest":true,"withheld_forest_floor_cells":0,"drawn_families":{}}
 	blend_material=null;blend_material_prepared=false
 	macro_chunks.clear();macro_chunk_meshes.clear();macro_index_prepared=false
@@ -43,8 +46,14 @@ func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array
 		var source_cell: Dictionary=cells.get(HexGrid.from_key(key),{})
 		var regional=str(ground_families[key]);var drawn=MapTerrainSurfaces.draw_family(regional,source_cell)
 		ground_families[key]=drawn
+		var underlay=MapTerrainSurfaces.relief_underlay(source_cell,drawn)
+		if not underlay.is_empty():
+			relief_underlays[key]=underlay.family;relief_opacities[key]=underlay.rock_opacity
 		if drawn!=regional:ground_policy.withheld_forest_floor_cells+=1
 		ground_policy.drawn_families[drawn]=int(ground_policy.drawn_families.get(drawn,0))+1
+	ground_policy["relief_underlay_cells"]=relief_underlays.size()
+	ground_policy["relief_underlay_support"]="archived_ecoregion_4_or_8_and_existing_dem_hill_or_mountain"
+	ground_policy["mineral_opacity_is_illustration_not_measured_rock_cover"]=true
 	for h in cells:
 		var cell: Dictionary=cells[h];var p=HexGrid.to_world(h)
 		var kind=TerrainVisuals.kind_for_cell(cell);var family=MapArtBank.material_family(cell)
@@ -212,9 +221,9 @@ func surface_meshes(entries: Array, strategic: bool, limit: int=1900, continuous
 	return {"count":count,"batches":result,"macro_materials":macro_groups.size(),"continuous":continuous}
 
 func continuous_macro_meshes(view: Rect2) -> Dictionary:
-	# World-fixed chunks retain the exact same material triangles at every zoom.
-	# Selection/panning only submits intersecting cached meshes; the 74k-cell
-	# map does not walk or rebuild all ground assignments during an atlas pan.
+	# Keep both passes on the same clipped, world-fixed partition. Underlays
+	# exist only where a supported mineral cell can reveal them; ordinary
+	# plains retain their original single pass and cached mesh resources.
 	if not macro_index_prepared:
 		macro_index_prepared=true
 		var assignments=surface_families if ground_families.is_empty() else ground_families
@@ -223,22 +232,44 @@ func continuous_macro_meshes(view: Rect2) -> Dictionary:
 			if MapTerrainSurfaces.macro_id(family).is_empty():continue
 			var hex=HexGrid.from_key(key);var chunk=Vector2i(floori(float(hex.x)/MACRO_CHUNK_SIZE),floori(float(hex.y)/MACRO_CHUNK_SIZE))
 			var center=HexGrid.to_world(hex);var bounds=Rect2(center-Vector2.ONE*HexGrid.RADIUS,Vector2.ONE*HexGrid.RADIUS*2)
-			if not macro_chunks.has(chunk):macro_chunks[chunk]={"hexes":[],"bounds":bounds,"sources":{}}
-			macro_chunks[chunk].hexes.append(hex);macro_chunks[chunk].bounds=macro_chunks[chunk].bounds.merge(bounds)
-			macro_chunks[chunk].sources[MapTerrainSurfaces.macro_id(family)]=true
-	var batches: Array=[];var sources: Dictionary={};var count=0;var created=0
+			if not macro_chunks.has(chunk):macro_chunks[chunk]={"hexes":[],"underlay_hexes":[],"bounds":bounds,"sources":{}}
+			var row: Dictionary=macro_chunks[chunk]
+			row.hexes.append(hex);row.bounds=row.bounds.merge(bounds)
+			row.sources[MapTerrainSurfaces.macro_id(family)]=true
+			if needs_relief_underlay(hex):
+				row.underlay_hexes.append(hex)
+				row.sources[MapTerrainSurfaces.macro_id(underlay_family(key))]=true
+	var bases: Array=[];var batches: Array=[];var sources: Dictionary={};var count=0;var created=0;var submitted=0
 	for chunk in macro_chunks:
 		var row: Dictionary=macro_chunks[chunk]
 		if not view.intersects(row.bounds):continue
 		if not macro_chunk_meshes.has(chunk):
-			var group={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
-			for hex in row.hexes:append_continuous_ground(group,hex,ground_family(HexGrid.key(hex)))
-			var arrays=[];arrays.resize(Mesh.ARRAY_MAX)
-			arrays[Mesh.ARRAY_VERTEX]=group.vertices;arrays[Mesh.ARRAY_COLOR]=group.colors;arrays[Mesh.ARRAY_TEX_UV]=group.uvs
-			var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
-			macro_chunk_meshes[chunk]={"asset_id":row.sources.keys()[0],"mesh":mesh,"layer":"macro","continuous":true,"source_asset_ids":row.sources.keys()};created+=1
-		batches.append(macro_chunk_meshes[chunk]);sources.merge(row.sources);count+=row.hexes.size()
-	return {"count":count,"batches":batches,"macro_materials":sources.size(),"chunks_created":created,"chunks_submitted":batches.size(),"chunks_cached":macro_chunk_meshes.size()}
+			var cached: Array=[]
+			for underlay in [true,false]:
+				var selected: Array=row.underlay_hexes if underlay else row.hexes
+				if selected.is_empty():continue
+				var group={"vertices":PackedVector3Array(),"colors":PackedColorArray(),"uvs":PackedVector2Array()}
+				for hex in selected:append_continuous_ground(group,hex,underlay_family(HexGrid.key(hex)) if underlay else ground_family(HexGrid.key(hex)),underlay)
+				var arrays=[];arrays.resize(Mesh.ARRAY_MAX)
+				arrays[Mesh.ARRAY_VERTEX]=group.vertices;arrays[Mesh.ARRAY_COLOR]=group.colors;arrays[Mesh.ARRAY_TEX_UV]=group.uvs
+				var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
+				cached.append({"asset_id":row.sources.keys()[0],"mesh":mesh,"layer":"relief_underlay" if underlay else "macro","continuous":true,"source_asset_ids":row.sources.keys()})
+			macro_chunk_meshes[chunk]=cached;created+=1
+		for batch in macro_chunk_meshes[chunk]:
+			if batch.layer=="relief_underlay":bases.append(batch)
+			else:batches.append(batch)
+		sources.merge(row.sources);count+=row.hexes.size();submitted+=1
+	bases.append_array(batches)
+	return {"count":count,"batches":bases,"macro_materials":sources.size(),"chunks_created":created,"chunks_submitted":submitted,"chunks_cached":macro_chunk_meshes.size(),"underlay_batches":bases.size()-batches.size()}
+
+func needs_relief_underlay(hex: Vector2i) -> bool:
+	if relief_underlays.has(HexGrid.key(hex)):return true
+	for direction in HexGrid.DIRECTIONS:
+		if relief_underlays.has(HexGrid.key(hex+direction)):return true
+	return false
+
+func underlay_family(key: String) -> String:
+	return str(relief_underlays.get(key,ground_family(key)))
 
 func ground_material(strategic: bool) -> ShaderMaterial:
 	if not blend_material_prepared:
@@ -248,10 +279,9 @@ func ground_material(strategic: bool) -> ShaderMaterial:
 func ground_family(key: String) -> String:
 	return str(ground_families.get(key,"")) if not ground_families.is_empty() else str(surface_families.get(key,""))
 
-func append_continuous_ground(group: Dictionary, hex: Vector2i, family: String) -> void:
-	# The six source-centre triangles partition the hex exactly. Adjacent hexes
-	# sample the same three originals with the same barycentric weights, so a
-	# same-family region has constant opacity instead of overlapping apertures.
+func append_continuous_ground(group: Dictionary, hex: Vector2i, family: String, underlay: bool=false) -> void:
+	# Shared centre triangles give both passes the same three-source basis,
+	# including clipped shoreline vertices and negative world coordinates.
 	if continuous_templates.is_empty():
 		for direction in range(6):
 			var a=HexGrid.to_world(HexGrid.DIRECTIONS[direction]);var b=HexGrid.to_world(HexGrid.DIRECTIONS[(direction+1)%6])
@@ -260,27 +290,35 @@ func append_continuous_ground(group: Dictionary, hex: Vector2i, family: String) 
 			continuous_vertices.append_array(continuous_templates[-1])
 			continuous_uvs.append_array(PackedVector2Array([GroundMaterialBlend.weights(1,0),GroundMaterialBlend.weights(.5,.5),GroundMaterialBlend.weights(1.0/3.0,1.0/3.0),GroundMaterialBlend.weights(1,0),GroundMaterialBlend.weights(1.0/3.0,1.0/3.0),GroundMaterialBlend.weights(.5,0)]))
 	var layer_ids=GroundMaterialBlend.source_layers();var first=int(layer_ids[family]);var center=HexGrid.to_world(hex)
-	var nearby: Array=[]
-	for direction in HexGrid.DIRECTIONS:nearby.append(int(layer_ids.get(ground_family(HexGrid.key(hex+direction)),-1)))
+	var opacity=1.0 if underlay else float(relief_opacities.get(HexGrid.key(hex),1.0))
+	var nearby: Array=[];var strengths: Array=[]
+	for direction in HexGrid.DIRECTIONS:
+		var key=HexGrid.key(hex+direction);var neighbor=underlay_family(key) if underlay else ground_family(key)
+		nearby.append(int(layer_ids.get(neighbor,-1)))
+		strengths.append(1.0 if underlay else float(relief_opacities.get(key,1.0)) if not neighbor.is_empty() else opacity)
 	var clipped: Array=ground_clips.get(HexGrid.key(hex),[])
 	if not clipped.is_empty():
-		# These numerical vertices partition only the source land intersection.
-		# Interpolated weights retain the very same three-source basis as an
-		# unclipped neighbour; no texture is painted across a source lake/inlet.
 		for vertex in clipped:
 			var direction=int(vertex[4]);var a=int(nearby[direction]);var b=int(nearby[(direction+1)%6])
+			var weights=Vector3(float(vertex[2]),float(vertex[3]),1.0-float(vertex[2])-float(vertex[3]))
+			var alpha=clampf(weights.dot(Vector3(opacity,strengths[direction],strengths[(direction+1)%6])),0.0,1.0)
 			group.vertices.append(Vector3(float(vertex[0]),float(vertex[1]),0))
-			group.uvs.append(GroundMaterialBlend.weights(float(vertex[2]),float(vertex[3])))
-			group.colors.append(Color(first/255.0,(first if a<0 else a)/255.0,(first if b<0 else b)/255.0,1))
+			group.uvs.append(GroundMaterialBlend.weights(weights.x,weights.y))
+			group.colors.append(Color(first/255.0,(first if a<0 else a)/255.0,(first if b<0 else b)/255.0,alpha))
 		return
 	group.vertices.append_array(Transform3D(Basis.IDENTITY,Vector3(center.x,center.y,0))*continuous_vertices)
 	group.uvs.append_array(continuous_uvs)
 	for direction in range(6):
-		var a=int(nearby[direction]);var b=int(nearby[(direction+1)%6]);var signature=Vector3i(first,a,b)
+		var a=int(nearby[direction]);var b=int(nearby[(direction+1)%6])
+		var alpha_a=float(strengths[direction]);var alpha_b=float(strengths[(direction+1)%6])
+		var signature: Variant=Vector3i(first,a,b)
+		if opacity!=1.0 or alpha_a!=1.0 or alpha_b!=1.0:signature=str(signature)+":"+str(Vector3(opacity,alpha_a,alpha_b))
 		if not continuous_color_templates.has(signature):
 			var pigment=Color(first/255.0,(first if a<0 else a)/255.0,(first if b<0 else b)/255.0,1)
 			var corner_coverage=(1.0+float(a>=0)+float(b>=0))/3.0;var colors=PackedColorArray()
-			for coverage in [1.0,(1.0+float(a>=0))*.5,corner_coverage,1.0,corner_coverage,(1.0+float(b>=0))*.5]:colors.append(Color(pigment,coverage if source_ground_coverage.is_empty() else 1.0))
+			var coverages=[1.0,(1.0+float(a>=0))*.5,corner_coverage,1.0,corner_coverage,(1.0+float(b>=0))*.5]
+			var opacities=[opacity,(opacity+alpha_a)*.5,(opacity+alpha_a+alpha_b)/3.0,opacity,(opacity+alpha_a+alpha_b)/3.0,(opacity+alpha_b)*.5]
+			for i in range(6):colors.append(Color(pigment,(coverages[i] if source_ground_coverage.is_empty() else 1.0)*opacities[i]))
 			continuous_color_templates[signature]=colors
 		group.colors.append_array(continuous_color_templates[signature])
 

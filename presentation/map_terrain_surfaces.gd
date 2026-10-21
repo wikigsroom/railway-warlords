@@ -79,6 +79,24 @@ static func draw_family(regional: String, cell: Dictionary) -> String:
 	if regional=="dry_woodland_litter":return "dry_steppe"
 	return regional
 
+static func relief_underlay(cell: Dictionary, family: String) -> Dictionary:
+	# A DEM relief class is not a bare-bedrock land-cover survey. Retain the
+	# mineral source above a representative local ground pigment where the
+	# archived ecological context supports it. No tree or cover is inferred.
+	if family!="weathered_rock":return {}
+	var region_id=int(cell.get("presentation_terrain_ecoregion",-1))
+	var region: Dictionary=geography().get("ecoregions",{}).get(str(region_id),{})
+	var biome=int(region.get("biome",-1));var substrate=""
+	if biome==4:
+		substrate="subtropical_humus" if int(cell.get("lat_e6",90000000))<32000000 and int(cell.get("lon_e6",0))>70000000 else "temperate_meadow"
+	elif biome==8:
+		substrate="temperate_meadow" if region_id in [726,731,737,738] else "dry_steppe"
+	if substrate.is_empty():return {}
+	var kind=str(cell.get("natural_terrain_id",cell.get("terrain_id","")))
+	if kind not in ["hill","mountain"]:return {}
+	# These are illustration opacities, never measured exposed-rock fractions.
+	return {"family":substrate,"rock_opacity":.28 if kind=="hill" else .50,"source_ecoregion":region_id,"historical_landcover_claimed":false}
+
 static func variant_for(family: String, hex: Vector2i) -> String:
 	var pool=ids(family)
 	if pool.size()!=4:return ""

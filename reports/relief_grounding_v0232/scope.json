@@ -1,0 +1,650 @@
+{
+  "passed": true,
+  "version": "0.2.32",
+  "base_commit": "23995666a6aefaa9fff6b84aa653a0147e5f5e8c",
+  "recorded_at_utc": "2026-10-21T13:06:20.975490+00:00",
+  "unchanged_rule_and_geography_files": 158,
+  "protected_files": [
+    {
+      "file": "ai/ai_planner.gd",
+      "git_blob_sha1": "82d1e0356fba885fd8963bbeede5a98aea555420"
+    },
+    {
+      "file": "content/commander_roster.gd",
+      "git_blob_sha1": "bb5eab4cfcf7394c6e2ecc2420cf432a5d2805ae"
+    },
+    {
+      "file": "content/definitions/achievements.json",
+      "git_blob_sha1": "87fc92e20aede4839ea31c9443c6323f66389d6a"
+    },
+    {
+      "file": "content/definitions/ai_profiles.json",
+      "git_blob_sha1": "cff62271c2b4dd5751d174112b378d7414b3b74b"
+    },
+    {
+      "file": "content/definitions/buildings.json",
+      "git_blob_sha1": "74b7531162f35ff14bc1aa2ba67ba5aeb950ae87"
+    },
+    {
+      "file": "content/definitions/catalog.json",
+      "git_blob_sha1": "e39f5de5548d84839598773315e9f0cc9ae58382"
+    },
+    {
+      "file": "content/definitions/challenges.json",
+      "git_blob_sha1": "4456ee748ae3b9305954393366464ed8f2aebd72"
+    },
+    {
+      "file": "content/definitions/city_levels.json",
+      "git_blob_sha1": "df8de32ecf58ba0de80c671f8183ddbb42ba933a"
+    },
+    {
+      "file": "content/definitions/commander_deployments.json",
+      "git_blob_sha1": "f9d95e5551a5bc15cf0dedfc46965ef6f0d25155"
+    },
+    {
+      "file": "content/definitions/commander_recall_pools.json",
+      "git_blob_sha1": "33c2d72c06c0f89e8b0a7aa770fd6108c2d98dc4"
+    },
+    {
+      "file": "content/definitions/commander_service.json",
+      "git_blob_sha1": "e3f41d3cf6b004480670ce34058945d7f8eec1bd"
+    },
+    {
+      "file": "content/definitions/commander_sources.json",
+      "git_blob_sha1": "62f355d3eba2c0e364975d6ff3d5688e4dbb9514"
+    },
+    {
+      "file": "content/definitions/counter_matrix.json",
+      "git_blob_sha1": "1a492c8bebcf6a4b5c75d73b381ea5012bdecd49"
+    },
+    {
+      "file": "content/definitions/effects.json",
+      "git_blob_sha1": "885e07f9d0923f7dca478e197c7550b1a8937bb5"
+    },
+    {
+      "file": "content/definitions/elite_variants.json",
+      "git_blob_sha1": "0b0f3a39b3b58315820b0364c1df330c50fb35a9"
+    },
+    {
+      "file": "content/definitions/factions.json",
+      "git_blob_sha1": "e75201a1e44cdba606e78a178f72f059d5ea03da"
+    },
+    {
+      "file": "content/definitions/generals.json",
+      "git_blob_sha1": "4dc0e0d6742a4e104dc74be73e1cc51009bb0f76"
+    },
+    {
+      "file": "content/definitions/medals.json",
+      "git_blob_sha1": "8bd964446f7738210976cc660db128ebb14e4530"
+    },
+    {
+      "file": "content/definitions/missions.json",
+      "git_blob_sha1": "8eccfae1133932f462349af2ef2563a64058b82e"
+    },
+    {
+      "file": "content/definitions/reward_rules.json",
+      "git_blob_sha1": "f7d8250f624062901c66754329358a68995be8be"
+    },
+    {
+      "file": "content/definitions/rules.json",
+      "git_blob_sha1": "00948f23207f995a290af3a6a4aa03e749dbd652"
+    },
+    {
+      "file": "content/definitions/scenarios.json",
+      "git_blob_sha1": "28112299d2baece65852ecc5472bf07706667328"
+    },
+    {
+      "file": "content/definitions/skills.json",
+      "git_blob_sha1": "dc67646631927f8db8a148665dfb4cd893279a82"
+    },
+    {
+      "file": "content/definitions/sources.json",
+      "git_blob_sha1": "a175ead525ba4a206101d4d138561559b0b36fe4"
+    },
+    {
+      "file": "content/definitions/statuses.json",
+      "git_blob_sha1": "a32b04d35d264a6f5126cf54e1104cbba0d0d479"
+    },
+    {
+      "file": "content/definitions/technologies.json",
+      "git_blob_sha1": "6294f12368f125f9fb8a6e6ec34fd313ef4939be"
+    },
+    {
+      "file": "content/definitions/terrains.json",
+      "git_blob_sha1": "017ae785c9c3bb57e62acda4bf02a98893d5abb6"
+    },
+    {
+      "file": "content/definitions/units.json",
+      "git_blob_sha1": "abf6ebcc41dec3d54a9ba15da134b8424bb0c57f"
+    },
+    {
+      "file": "content/geography_sources.json",
+      "git_blob_sha1": "8b24aab78861614f3bee5de34571bb47b8c19800"
+    },
+    {
+      "file": "content/history/asia_order_of_battle.json",
+      "git_blob_sha1": "f3190a989782c47222fdfdff506720be7855cb0d"
+    },
+    {
+      "file": "content/history/asia_timeline.json",
+      "git_blob_sha1": "106f59229b759eac1c04ba8083814d13ccb3cb0d"
+    },
+    {
+      "file": "content/maps/asia_strategic.json",
+      "git_blob_sha1": "cc6e8e92a04b872f7476c7e97d3fb5dbd400ccef"
+    },
+    {
+      "file": "content/maps/catalog.json",
+      "git_blob_sha1": "259daba98aed421e96a2630615a0c90ee41cda4d"
+    },
+    {
+      "file": "content/maps/conquest_china.json",
+      "git_blob_sha1": "b8d47e73ec8909c551dca8ab6add554b895a7c55"
+    },
+    {
+      "file": "content/maps/hankou.json",
+      "git_blob_sha1": "98ca6c3500a3619e0443b19c2cc2e33cb90ec5ce"
+    },
+    {
+      "file": "content/maps/jingfeng.json",
+      "git_blob_sha1": "a55516b76dd529ef274a8339b85a430f3a078147"
+    },
+    {
+      "file": "content/maps/jingjin.json",
+      "git_blob_sha1": "a083d2c4af47012e4367ce9ea2bc1c499506180f"
+    },
+    {
+      "file": "content/maps/ningpu.json",
+      "git_blob_sha1": "50c4555de24c148463dbaf7de4f8b3efdee9ce3b"
+    },
+    {
+      "file": "content/scenarios/asia_1840.json",
+      "git_blob_sha1": "ff49952c1ac6dd320b53474ec885320d2abfc48b"
+    },
+    {
+      "file": "content/scenarios/asia_1860.json",
+      "git_blob_sha1": "3047d30b7223c6f163298b1a3c359be8a38e6320"
+    },
+    {
+      "file": "content/scenarios/asia_1890.json",
+      "git_blob_sha1": "1e6c7a2bfc0ac3a21674b96dd0ffc51d43b63918"
+    },
+    {
+      "file": "content/scenarios/asia_1900.json",
+      "git_blob_sha1": "d3e456db24a0b017cd522e541a989a6669cc5779"
+    },
+    {
+      "file": "content/scenarios/asia_1917.json",
+      "git_blob_sha1": "bda6ccb0833352e1207a0fcb07072fa0c9e28543"
+    },
+    {
+      "file": "content/scenarios/asia_1927.json",
+      "git_blob_sha1": "accdf8540217c236461b279c9797484ce2e3e515"
+    },
+    {
+      "file": "content/scenarios/asia_1940.json",
+      "git_blob_sha1": "d0400678b73b11bfc76c593e7a3ebd2fbed9baa2"
+    },
+    {
+      "file": "content/scenarios/campaign_1840_01.json",
+      "git_blob_sha1": "ca573228249d4a77ce1e1cad01dc220316a7fe88"
+    },
+    {
+      "file": "content/scenarios/campaign_1840_02.json",
+      "git_blob_sha1": "780f8a43026c75745ef4586ef5c8508d45362a36"
+    },
+    {
+      "file": "content/scenarios/campaign_1840_03.json",
+      "git_blob_sha1": "312cf82e0baf4edcd7c7eb11d2b8c261c2ef9335"
+    },
+    {
+      "file": "content/scenarios/campaign_1860_01.json",
+      "git_blob_sha1": "6a5044dec14b100dbb1f92e70170677795be0fa8"
+    },
+    {
+      "file": "content/scenarios/campaign_1860_02.json",
+      "git_blob_sha1": "fc782f6c1c5f4e682e013b9c0f6c05aad112eeff"
+    },
+    {
+      "file": "content/scenarios/campaign_1860_03.json",
+      "git_blob_sha1": "026cc34404438ee7ce3a46515ae9da6024eb2e66"
+    },
+    {
+      "file": "content/scenarios/campaign_1890_01.json",
+      "git_blob_sha1": "1dd6c6743540de0494427bba7aa2807255cc8dc2"
+    },
+    {
+      "file": "content/scenarios/campaign_1890_02.json",
+      "git_blob_sha1": "2b8a0c2b798265df6ce27f9296a26b58ffc51fc7"
+    },
+    {
+      "file": "content/scenarios/campaign_1890_03.json",
+      "git_blob_sha1": "d636a202b3ae21b009cefb318de3d167256da836"
+    },
+    {
+      "file": "content/scenarios/campaign_1900_01.json",
+      "git_blob_sha1": "be5ed9d9ae84f7c2ed937410ad0cc72db2bf8d78"
+    },
+    {
+      "file": "content/scenarios/campaign_1900_02.json",
+      "git_blob_sha1": "1ed730bde278d8293a4e4a668457546d8e3abd64"
+    },
+    {
+      "file": "content/scenarios/campaign_1900_03.json",
+      "git_blob_sha1": "a69c25e52799535997cba4fad52601af6b4af013"
+    },
+    {
+      "file": "content/scenarios/campaign_1917_01.json",
+      "git_blob_sha1": "d4f671fb6a964a02b3bed8e5b844d424574b3265"
+    },
+    {
+      "file": "content/scenarios/campaign_1917_02.json",
+      "git_blob_sha1": "1c0a689f244b23015e02fd16bfa20fe2d9351b32"
+    },
+    {
+      "file": "content/scenarios/campaign_1917_03.json",
+      "git_blob_sha1": "ac3836d5c5c60b67624aaec811828c12e51e27e0"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_01.json",
+      "git_blob_sha1": "7d390039ea0390ef39bd20365320a222ed2994d1"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_02.json",
+      "git_blob_sha1": "327b41a62093f92ad59fd48b0c9e6405fc1cfe8a"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_03.json",
+      "git_blob_sha1": "b23ccd5cfd5b4b7ddb2274c649393ee6114dee59"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_04.json",
+      "git_blob_sha1": "0be3ca432f2402516bfbd943ad00d51e4727845d"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_05.json",
+      "git_blob_sha1": "57f1511a4c024f49ebf2437fee8d26f139528097"
+    },
+    {
+      "file": "content/scenarios/campaign_1920_06.json",
+      "git_blob_sha1": "289e61d47bfc4d471295d103109ee8a1e7bb4528"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_01.json",
+      "git_blob_sha1": "3205d93cc77832cf52cc0b760bf7ac1dba639bf2"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_02.json",
+      "git_blob_sha1": "9cf76917d4f26b2a61538096fc5365b76f21beb4"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_03.json",
+      "git_blob_sha1": "8c9f2d43755c4b6bbd9f187a5686548493a0bf59"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_04.json",
+      "git_blob_sha1": "ce20d7a7933b4fc16e8ee82b004bbfff25ba7e18"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_05.json",
+      "git_blob_sha1": "cff7a310c0d07f6c55ac0d482e34c6f112aea7c3"
+    },
+    {
+      "file": "content/scenarios/campaign_1922_06.json",
+      "git_blob_sha1": "975b58f067b700327354c3e8f03b87ca09a00f5e"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_01.json",
+      "git_blob_sha1": "aa72a19a874a8b6c17983f1ff2ca55c230197caa"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_02.json",
+      "git_blob_sha1": "6d2931f60cd8e6eedd3f4259414735935da2ad8d"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_03.json",
+      "git_blob_sha1": "692146dada02c037b6e6ad248b3627d0f78a1706"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_04.json",
+      "git_blob_sha1": "4abeac836a6ea3abe4f53da4427e2fa75e598bca"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_05.json",
+      "git_blob_sha1": "fec6b9478357c3de7f53951cd234b1252fa0db91"
+    },
+    {
+      "file": "content/scenarios/campaign_1924_06.json",
+      "git_blob_sha1": "580d332dacf4b088af86dc6ddc90dd47f413160b"
+    },
+    {
+      "file": "content/scenarios/campaign_1927_01.json",
+      "git_blob_sha1": "b5c45e3cfac690cefb69bdad96c6e09660e5938b"
+    },
+    {
+      "file": "content/scenarios/campaign_1927_02.json",
+      "git_blob_sha1": "8599aafd7db655c9496a8ebd1e6cd1894ab9cdfd"
+    },
+    {
+      "file": "content/scenarios/campaign_1927_03.json",
+      "git_blob_sha1": "8713b3aee738219ce0e366a65e21a0718e3d1e44"
+    },
+    {
+      "file": "content/scenarios/campaign_1940_01.json",
+      "git_blob_sha1": "36a26d83d2d9964168336d2c65cacafe7ee32139"
+    },
+    {
+      "file": "content/scenarios/campaign_1940_02.json",
+      "git_blob_sha1": "905b371b69d3e8d1222fd7862e9a78d441b43b16"
+    },
+    {
+      "file": "content/scenarios/campaign_1940_03.json",
+      "git_blob_sha1": "a5c84322d2f2b8e0e47d4f741135b07a30a9d937"
+    },
+    {
+      "file": "content/scenarios/catalog.json",
+      "git_blob_sha1": "d5a6dd9a8040f4bc1676f1397a095965423dc014"
+    },
+    {
+      "file": "content/scenarios/conq_1920.json",
+      "git_blob_sha1": "8f6ac8b9227cdab370dc087199103ee1183a4e34"
+    },
+    {
+      "file": "content/scenarios/conq_1922.json",
+      "git_blob_sha1": "0a78e0d04c700ec978c2f89352ec3a305cd207cf"
+    },
+    {
+      "file": "content/scenarios/conq_1924.json",
+      "git_blob_sha1": "8925532d9721b5167333538bf42ece4f648a00f3"
+    },
+    {
+      "file": "content/scenarios/legion_01.json",
+      "git_blob_sha1": "219ca6dbed8f209fc6786f12fc2626528a9b7da6"
+    },
+    {
+      "file": "content/scenarios/legion_02.json",
+      "git_blob_sha1": "e65585949a711bfdb0dc6cbbae0a70f753911612"
+    },
+    {
+      "file": "content/scenarios/legion_03.json",
+      "git_blob_sha1": "c9a0da3d02958477727d4e32cf2be196019cd2ba"
+    },
+    {
+      "file": "content/scenarios/legion_04.json",
+      "git_blob_sha1": "990180acd1054b2a69e98973e40b0f0c671dc829"
+    },
+    {
+      "file": "content/scenarios/legion_05.json",
+      "git_blob_sha1": "c0974524ff4a764790b5841ff095e2ccdc5d0a00"
+    },
+    {
+      "file": "content/scenarios/legion_06.json",
+      "git_blob_sha1": "7566576c032655fa1a421050ce11f3f7b675b665"
+    },
+    {
+      "file": "content/scenarios/legion_07.json",
+      "git_blob_sha1": "3fff7d0b2bd5e68e7b52d97659ceaeef94c11e0f"
+    },
+    {
+      "file": "content/scenarios/legion_08.json",
+      "git_blob_sha1": "d0f09b80fcdafb3248242ec3ba7fa86d74db8082"
+    },
+    {
+      "file": "content/scenarios/legion_09.json",
+      "git_blob_sha1": "c7de7639489521f379af8bc0b6bb9557a52a6f01"
+    },
+    {
+      "file": "content/scenarios/legion_10.json",
+      "git_blob_sha1": "e8f66ad723a0092096cece37381f7ad53987d310"
+    },
+    {
+      "file": "content/scenarios/legion_11.json",
+      "git_blob_sha1": "5247249382fc63b4123dbb38e43fc8463ac3a4a5"
+    },
+    {
+      "file": "content/scenarios/legion_12.json",
+      "git_blob_sha1": "eec6ddb28ebb0ac443d7934afd289fbec243b191"
+    },
+    {
+      "file": "domain/combat_random.gd",
+      "git_blob_sha1": "38a84225b5180512e5f080295c6767e21a1b8a0d"
+    },
+    {
+      "file": "domain/combat_rules.gd",
+      "git_blob_sha1": "5daf1d3063491386449a5c51966039e47ebc0f04"
+    },
+    {
+      "file": "domain/command_kernel.gd",
+      "git_blob_sha1": "cd0d5a8a84445cc9abd23ba135e35ec3ca58c4a3"
+    },
+    {
+      "file": "domain/diplomacy_rules.gd",
+      "git_blob_sha1": "f0e81b2387161a50d665efe724e366b585691f33"
+    },
+    {
+      "file": "domain/economy_rules.gd",
+      "git_blob_sha1": "ffc3cc4b808548d925a54d1cb87d96942a0ad222"
+    },
+    {
+      "file": "domain/effect_rules.gd",
+      "git_blob_sha1": "d27bcb86fe2cb9413616eb0c4bf1c74ceafc2c30"
+    },
+    {
+      "file": "domain/general_rules.gd",
+      "git_blob_sha1": "014ab064e17c8356c7128236a2715c4f2a67c3db"
+    },
+    {
+      "file": "domain/hex_grid.gd",
+      "git_blob_sha1": "ad5cbc9011200b3fe031d1fc0a8b284985b7274a"
+    },
+    {
+      "file": "domain/historical_rules.gd",
+      "git_blob_sha1": "32b9d8b304f27be063902a34a58d004aa15a841a"
+    },
+    {
+      "file": "domain/legion_rules.gd",
+      "git_blob_sha1": "adb9d29dd8531e1968d67e90eac1479bfd057a79"
+    },
+    {
+      "file": "domain/logistics_rules.gd",
+      "git_blob_sha1": "c6fc70fe5834c355cedd76b4356ac6ba38e2d4d1"
+    },
+    {
+      "file": "domain/movement_rules.gd",
+      "git_blob_sha1": "5a05c1448af0197855e044f1dadadd9862903dd7"
+    },
+    {
+      "file": "domain/rules_query_cache.gd",
+      "git_blob_sha1": "8bef65a421b480e2a8b5e5a87573023fedac8aef"
+    },
+    {
+      "file": "domain/state_access.gd",
+      "git_blob_sha1": "c49bf3a32639a175a219bd838f1f424a98c136af"
+    },
+    {
+      "file": "domain/state_builder.gd",
+      "git_blob_sha1": "8e5a4cf00a4d8bd896633083b737350784229594"
+    },
+    {
+      "file": "domain/turn_rules.gd",
+      "git_blob_sha1": "3f04987bffe8c0b5a517774ae5ff7f817a9924a3"
+    },
+    {
+      "file": "domain/veterancy_rules.gd",
+      "git_blob_sha1": "25b5dd700277d92500e5b3a945f93263f50c0c1f"
+    },
+    {
+      "file": "domain/victory_rules.gd",
+      "git_blob_sha1": "59a4757af2f6a8279bb68328649b38e887ffc52f"
+    },
+    {
+      "file": "domain/visibility_rules.gd",
+      "git_blob_sha1": "7a362ae24f4a01837d34197fff9e73ff7d0fd0da"
+    },
+    {
+      "file": "persistence/profile_repository.gd",
+      "git_blob_sha1": "72ca1c39be9c12156abf9906d771ccfae7a413fd"
+    },
+    {
+      "file": "persistence/save_service.gd",
+      "git_blob_sha1": "77db237d942ebba70c1baba754cd0e98f47fa79d"
+    },
+    {
+      "file": "presentation/data/asia_landcover_features.json",
+      "git_blob_sha1": "c52464c66740edab71b67372a21683280e1c28a6"
+    },
+    {
+      "file": "presentation/data/coast_geometry.json",
+      "git_blob_sha1": "35279ad404581ca051844f86c8b8fdfd7696dfe9"
+    },
+    {
+      "file": "presentation/data/coast_geometry_asia_strategic.json",
+      "git_blob_sha1": "0134a214d34376890fbdef5d5df28ed9f10feb3c"
+    },
+    {
+      "file": "presentation/data/coast_geometry_conquest_china.json",
+      "git_blob_sha1": "4b75be1f894efd884ff066dbaad2a0139a996e47"
+    },
+    {
+      "file": "presentation/data/coast_geometry_jingfeng.json",
+      "git_blob_sha1": "b6a5d1c78ba01d5ed7e018378a4fa9a6efa49114"
+    },
+    {
+      "file": "presentation/data/coast_geometry_jingjin.json",
+      "git_blob_sha1": "21d8ee2539b4c923b1c986de28e3be0f0281af98"
+    },
+    {
+      "file": "presentation/data/coast_inland_baseline.json",
+      "git_blob_sha1": "7c1ed2bf713512d97abdd8d3c86e41561b167320"
+    },
+    {
+      "file": "presentation/data/control_land_clip.json",
+      "git_blob_sha1": "958caa472f6f599b0f1f9509753c54c953eddd3b"
+    },
+    {
+      "file": "presentation/data/general_lifespans.json",
+      "git_blob_sha1": "d09013f3f97a340cf64eeab961dd849a6926c27b"
+    },
+    {
+      "file": "presentation/data/general_portraits.json",
+      "git_blob_sha1": "a7d7610c30060359d1380d71019d71216cbe029b"
+    },
+    {
+      "file": "presentation/data/ground_atlas_plan.json",
+      "git_blob_sha1": "6fbe1fd9505cc916ab7a1fee88cb0d3ee08d7937"
+    },
+    {
+      "file": "presentation/data/ground_coverage.json",
+      "git_blob_sha1": "29cb55bdf0d528b1023fb76ef99db9639439adac"
+    },
+    {
+      "file": "presentation/data/ground_coverage_asia_strategic.json",
+      "git_blob_sha1": "fa18dbf5b5c8d474d61bcd4a63e5b2dc27b17d52"
+    },
+    {
+      "file": "presentation/data/ground_coverage_conquest_china.json",
+      "git_blob_sha1": "e6916bd60f39ea03458b3f6f1e64238a2d560172"
+    },
+    {
+      "file": "presentation/data/ground_coverage_hankou.json",
+      "git_blob_sha1": "13b7c785f47d59651e9150369a1814ed3976541a"
+    },
+    {
+      "file": "presentation/data/ground_coverage_jingfeng.json",
+      "git_blob_sha1": "186fd6c50b63d31f158313e6b9b8e08180c3f815"
+    },
+    {
+      "file": "presentation/data/ground_coverage_jingjin.json",
+      "git_blob_sha1": "f37466dfd87766bec0ecd8d8d0935d6b91e9f09c"
+    },
+    {
+      "file": "presentation/data/ground_coverage_ningpu.json",
+      "git_blob_sha1": "49cc8cdd00484d863fcf4baaebb1b94b5097b963"
+    },
+    {
+      "file": "presentation/data/ground_identity_plan.json",
+      "git_blob_sha1": "033dcba7fe7832a728593f5ded5c164402fc5fec"
+    },
+    {
+      "file": "presentation/data/ground_macro_catalog.json",
+      "git_blob_sha1": "4cf203b14756f28d5059ce3875f7d6722795ca13"
+    },
+    {
+      "file": "presentation/data/ground_macro_plan.json",
+      "git_blob_sha1": "dd7e23e75e5053cd9d923d755335e1940dd6788a"
+    },
+    {
+      "file": "presentation/data/ground_material_plan_v0231.json",
+      "git_blob_sha1": "9df4f722e0e899a153c1661f51547e155c30a394"
+    },
+    {
+      "file": "presentation/data/hydrography_detail.json",
+      "git_blob_sha1": "32ec694a0bd135b9951b8597c38631f08e8f976f"
+    },
+    {
+      "file": "presentation/data/hydrography_fine.json",
+      "git_blob_sha1": "4fb6e2bf77b423cd606683955e3f53e33acc1ac8"
+    },
+    {
+      "file": "presentation/data/map_bank_plan.json",
+      "git_blob_sha1": "f038d361bc2db4f416d5c3fc55396a3efa508edb"
+    },
+    {
+      "file": "presentation/data/map_bank_visuals.json",
+      "git_blob_sha1": "e6edfa75618e74a746ba9d2bcbf890cee81e3063"
+    },
+    {
+      "file": "presentation/data/map_settlement_extension_plan.json",
+      "git_blob_sha1": "2c45b55e5f3bdad80b8cff3463708401c180548e"
+    },
+    {
+      "file": "presentation/data/map_surface_extension_plan.json",
+      "git_blob_sha1": "a7555c66244e3d2e91202457efe731a5e3c833fa"
+    },
+    {
+      "file": "presentation/data/music_catalog.json",
+      "git_blob_sha1": "9806064fd40168e66548db901376b576c0915923"
+    },
+    {
+      "file": "presentation/data/relief_visuals.json",
+      "git_blob_sha1": "dfb4fdcf374088b2940defe40f94bcdda0cac2e5"
+    },
+    {
+      "file": "presentation/data/settlements_v023.json",
+      "git_blob_sha1": "c9e5001c92a3d3b52ac0f09500429878fcace861"
+    },
+    {
+      "file": "presentation/data/surface_regions.json",
+      "git_blob_sha1": "179907538812022147e1dfda371cb0188ede8618"
+    },
+    {
+      "file": "presentation/data/terrain_surface_catalog.json",
+      "git_blob_sha1": "2e851a613bfe7cd64c18520ab962c2f63671be69"
+    },
+    {
+      "file": "presentation/data/terrain_surface_plan.json",
+      "git_blob_sha1": "3554a994ae2ec2f9f1a96dadfe7143f8635f04b2"
+    },
+    {
+      "file": "presentation/data/terrain_surface_regions.json",
+      "git_blob_sha1": "b9cf316c4e6a89d24dd9fcf6e5af0e341c25c447"
+    },
+    {
+      "file": "presentation/data/unit_actions.json",
+      "git_blob_sha1": "4ecf994a431a39448ade5302d0ce9b1df38c13c4"
+    },
+    {
+      "file": "presentation/data/water_material_plan.json",
+      "git_blob_sha1": "5313d8188ad5a82b8077651777a79e0b758dbfd8"
+    }
+  ],
+  "content_registry_only_change": "APP_VERSION 0.2.31 -> 0.2.32",
+  "asset_manifest_and_provenance_byte_identical": true,
+  "registered_rasters": 2509,
+  "new_independent_originals": 0,
+  "active_ground_material_types": 20,
+  "historical_landuse_claimed": false,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false
+}

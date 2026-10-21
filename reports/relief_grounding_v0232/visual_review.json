@@ -1,0 +1,94 @@
+{
+  "version": "0.2.32",
+  "recorded_at_utc": "2026-10-21T13:49:28.261653+00:00",
+  "runtime_source_sha256": "de7ce08159b961063cb87950e7ae4be27dcee69d4f8c6815895b158f8f7d5f4f",
+  "windows_exe_sha256": "d7d9baf0be8c0818861472d4f7ac3821183c49ff02eaad425a7c2db0a14b38cd",
+  "actually_viewed_complete_images": [
+    {
+      "path": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan.png",
+      "sha256": "4ad8ebc8ff2f0052a320aba3ba69259ef1acb6d291ece8926465b597785dda4d",
+      "metadata": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan.json",
+      "metadata_sha256": "c36731e00377297aa970d6271e71d444722e061ae1e286e29f77ac205875c7fa",
+      "viewed_complete_image": true
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0232/verified_export_01/beijing.png",
+      "sha256": "b1f14d6bfe18815d0ec0453f22f09eac3b92bff8b101e7b18a06159a0f37dfdc",
+      "metadata": "reports/screenshots/map_composition_native/v0232/verified_export_01/beijing.json",
+      "metadata_sha256": "bdddcbdfcfc7cb86cfa35654379d8927dfe0228232de3d56df5edadd0db6e626",
+      "viewed_complete_image": true
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0232/verified_export_01/coast.png",
+      "sha256": "eaf3eedcf84d9137619e9020f2aaafcba6cac5a54a2045602cb64a4d3b3081f1",
+      "metadata": "reports/screenshots/map_composition_native/v0232/verified_export_01/coast.json",
+      "metadata_sha256": "d1a9b5fb4dc76cea9efea51009ff0f099357e48c643b08919558bfadf671cced",
+      "viewed_complete_image": true
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0232/verified_export_01/village.png",
+      "sha256": "4f26bbe68216a55a326d47a4826d0645146442a2fc6308b740cc82de12819b62",
+      "metadata": "reports/screenshots/map_composition_native/v0232/verified_export_01/village.json",
+      "metadata_sha256": "07a92b4df83383e196edeb5594c743622343f6a795459ee5c200b0a2d4a96d18",
+      "viewed_complete_image": true
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_regional.png",
+      "sha256": "82ddf74ec3f982dcb0cf20798a96f967a82bf51efab2d1c67e2baead1edcb928",
+      "metadata": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_regional.json",
+      "metadata_sha256": "8e60615c4e1f60414eded17fafb4f67fb576ab35d3e892862f36b2bca4c619f3",
+      "viewed_complete_image": true
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_x30_layout.png",
+      "sha256": "08e127df52a0c2dad96a0f08a1cb8645c5b944dd5b34b8d27e8cf6e34cc727d4",
+      "metadata": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_x30_layout.json",
+      "metadata_sha256": "c81566c52005f2f008b98639fd301fed74be8522d19f17fe867f8e26285ba269",
+      "viewed_complete_image": true
+    },
+    {
+      "path": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_large_text.png",
+      "sha256": "5223234d2103f6131cb8b2216e6e1e0c1418734e27687c8a2316f7ae589b12d4",
+      "metadata": "reports/screenshots/map_composition_native/v0232/verified_export_01/wuhan_large_text.json",
+      "metadata_sha256": "d6f70134923c5719bf51c27a97d05411799f0f91e9648209161ed371c2794042",
+      "viewed_complete_image": true
+    },
+    {
+      "path": "reports/relief_grounding_v0232/shipping_01/ui_smoke.png",
+      "sha256": "59fca87f7ee37c4f606ca90e6d1a94241f00300ff4252be3a228d842394534b5",
+      "metadata": "reports/relief_grounding_v0232/shipping_01/ui_smoke.json",
+      "metadata_sha256": "29672ebd8f9e1cac8125808ee820676ba224b037d8df7f8becfa239c84402baa",
+      "viewed_complete_image": true
+    },
+    {
+      "path": "reports/relief_grounding_v0232/shipping_01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "reports/relief_grounding_v0232/shipping_01/home.json",
+      "metadata_sha256": "0706530aba0ca2c0baaff1109d419424716a551ac631271ccab3760b02f345e6",
+      "viewed_complete_image": true
+    },
+    {
+      "path": "reports/relief_grounding_v0232/shipping_01/mountains.png",
+      "sha256": "1ca8a024c2af920c7197fe04360f64ddc0f8093db01e8a00f3f0f5ccc901cab3",
+      "metadata": "reports/relief_grounding_v0232/shipping_01/mountains.json",
+      "metadata_sha256": "7731e700502f366a6f09d995202f5fd2c8c6226cb75611e785e208744f3c7b45",
+      "viewed_complete_image": true
+    }
+  ],
+  "unique_viewed_image_sha256s": 10,
+  "observed_improvements": [
+    "Representative local ground reduces broad gray slabs beneath green mountain sprites.",
+    "Full mountain-source sprites remain recognizable with softer lower edges."
+  ],
+  "remaining_issues": [
+    "Scattered mountain symbols and repeated source forms remain visible.",
+    "Wuhan has large blank frame margins and a tiny map at regional zoom.",
+    "Broad alluvial ground and angular source river bends remain visible.",
+    "Shore geometry remains visibly angular; full unit direction/action cycles remain incomplete."
+  ],
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "manual_image_compositing": false,
+  "physical_android_device_tested": false,
+  "panning_spikes_resolved": false
+}
