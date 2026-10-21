@@ -1,12 +1,12 @@
 {
-	"build_version": "0.2.28",
+	"build_version": "0.2.29",
 	"city_labels": [
 		{
 			"city_id": "shanhaiguan",
 			"font_pixels": 18,
 			"screen_rect": [
 				915.2265625,
-				437.491180419922,
+				302.704650878906,
 				90.9999975585937,
 				24.0000006103516
 			],
@@ -18,7 +18,7 @@
 			"font_pixels": 18,
 			"screen_rect": [
 				356.486694335938,
-				805.880310058594,
+				801.240539550781,
 				68.0000006103516,
 				24.0000006103516
 			],
@@ -30,11 +30,11 @@
 			"font_pixels": 16,
 			"screen_rect": [
 				809.868896484375,
-				191.177124023438,
+				213.184417724609,
 				88.0,
 				23.0000003051758
 			],
-			"shifted": true,
+			"shifted": false,
 			"text": "北营子 · 村"
 		}
 	],
@@ -62,7 +62,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 60875,
 		"placed": 1232,
-		"preparation_ms": 1746.631,
+		"preparation_ms": 2712.515,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1610,
 		"rule_cells_changed": false,
@@ -367,6 +367,332 @@
 		},
 		"zoom": 0.88
 	},
+	"map_composition": {
+		"geographic_anchors_changed": false,
+		"labels": [
+			{
+				"city_id": "shanhaiguan",
+				"font_pixels": 18,
+				"screen_rect": [
+					915.2265625,
+					302.704650878906,
+					90.9999975585937,
+					24.0000006103516
+				],
+				"shifted": true,
+				"text": "山海关 ★"
+			},
+			{
+				"city_id": "qinhuangdao",
+				"font_pixels": 18,
+				"screen_rect": [
+					356.486694335938,
+					801.240539550781,
+					68.0000006103516,
+					24.0000006103516
+				],
+				"shifted": false,
+				"text": "秦皇岛"
+			},
+			{
+				"city_id": "place_beiyingzi",
+				"font_pixels": 16,
+				"screen_rect": [
+					809.868896484375,
+					213.184417724609,
+					88.0,
+					23.0000003051758
+				],
+				"shifted": false,
+				"text": "北营子 · 村"
+			}
+		],
+		"objects": [
+			{
+				"id": "qinhuangdao",
+				"kind": "city",
+				"screen_rect": [
+					351.767028808594,
+					736.920654296875,
+					77.44,
+					56.32
+				],
+				"world_anchor": [
+					16272.0,
+					8646.3974609375
+				]
+			},
+			{
+				"id": "shanhaiguan",
+				"kind": "city",
+				"screen_rect": [
+					926.407043457031,
+					334.704345703125,
+					68.64,
+					56.1468359375
+				],
+				"world_anchor": [
+					16920.0,
+					8189.13623046875
+				]
+			},
+			{
+				"id": "place_beiyingzi",
+				"kind": "place",
+				"screen_rect": [
+					829.228881835938,
+					244.184661865234,
+					49.2800033569336,
+					36.5725796508789
+				],
+				"world_anchor": [
+					16798.5703125,
+					8074.02978515625
+				]
+			},
+			{
+				"id": "u_00001",
+				"kind": "unit",
+				"screen_rect": [
+					672.967041015625,
+					325.730743408203,
+					72.16,
+					73.0404296875
+				],
+				"world_anchor": [
+					16632.0,
+					8189.13623046875
+				]
+			},
+			{
+				"id": "u_00002",
+				"kind": "unit",
+				"screen_rect": [
+					609.607055664063,
+					289.149719238281,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16560.0,
+					8147.56689453125
+				]
+			},
+			{
+				"id": "u_00003",
+				"kind": "unit",
+				"screen_rect": [
+					609.607055664063,
+					362.311340332031,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16560.0,
+					8230.705078125
+				]
+			},
+			{
+				"id": "u_00004",
+				"kind": "unit",
+				"screen_rect": [
+					672.967041015625,
+					252.568725585938,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16632.0,
+					8105.99755859375
+				]
+			},
+			{
+				"id": "u_00005",
+				"kind": "unit",
+				"screen_rect": [
+					672.967041015625,
+					398.892333984375,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16632.0,
+					8272.2744140625
+				]
+			},
+			{
+				"id": "u_00006",
+				"kind": "unit",
+				"screen_rect": [
+					736.327026367188,
+					289.149719238281,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16704.0,
+					8147.56689453125
+				]
+			},
+			{
+				"id": "u_00007",
+				"kind": "unit",
+				"screen_rect": [
+					736.327026367188,
+					362.311340332031,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16704.0,
+					8230.705078125
+				]
+			},
+			{
+				"id": "u_00008",
+				"kind": "unit",
+				"screen_rect": [
+					546.2470703125,
+					252.568725585938,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16488.0,
+					8105.99755859375
+				]
+			},
+			{
+				"id": "u_00009",
+				"kind": "unit",
+				"screen_rect": [
+					546.2470703125,
+					325.730743408203,
+					72.16,
+					73.0404296875
+				],
+				"world_anchor": [
+					16488.0,
+					8189.13623046875
+				]
+			},
+			{
+				"id": "u_00010",
+				"kind": "unit",
+				"screen_rect": [
+					546.2470703125,
+					398.892333984375,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16488.0,
+					8272.2744140625
+				]
+			},
+			{
+				"id": "u_00011",
+				"kind": "unit",
+				"screen_rect": [
+					609.607055664063,
+					215.988128662109,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16560.0,
+					8064.4287109375
+				]
+			},
+			{
+				"id": "u_00012",
+				"kind": "unit",
+				"screen_rect": [
+					609.607055664063,
+					435.473358154297,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16560.0,
+					8313.84375
+				]
+			},
+			{
+				"id": "u_00013",
+				"kind": "unit",
+				"screen_rect": [
+					672.967041015625,
+					179.407104492188,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16632.0,
+					8022.859375
+				]
+			},
+			{
+				"id": "u_00014",
+				"kind": "unit",
+				"screen_rect": [
+					672.967041015625,
+					472.054382324219,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16632.0,
+					8355.4130859375
+				]
+			},
+			{
+				"id": "u_00023",
+				"kind": "unit",
+				"screen_rect": [
+					1053.12707519531,
+					252.568725585938,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					17064.0,
+					8105.99755859375
+				]
+			},
+			{
+				"id": "u_00024",
+				"kind": "unit",
+				"screen_rect": [
+					1053.12707519531,
+					325.730743408203,
+					72.16,
+					73.0404296875
+				],
+				"world_anchor": [
+					17064.0,
+					8189.13623046875
+				]
+			},
+			{
+				"id": "u_00031",
+				"kind": "unit",
+				"screen_rect": [
+					945.767028808594,
+					339.811157226563,
+					72.16,
+					73.04
+				],
+				"world_anchor": [
+					16920.0,
+					8189.13623046875
+				]
+			}
+		],
+		"operation_hex_radius_world": 48.0,
+		"renderer": "shared_model_and_caption_footprints_v1",
+		"source_pngs_modified": false
+	},
 	"map_detail": {
 		"cell_river_segments": 718,
 		"coast_lines": 62,
@@ -447,13 +773,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 152.318,
+		"index_ms": 149.928,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 3249.259,
+		"mesh_ms": 4658.893,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6107,
-		"placement_ms": 1100.517,
-		"preparation_ms": 4502.094,
+		"placement_ms": 2137.756,
+		"preparation_ms": 6946.576,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

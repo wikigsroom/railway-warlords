@@ -21,7 +21,7 @@ def main():
         folder.mkdir(parents=True, exist_ok=True)
         log = P / 'reports' / ('control_land_' + profile + '.log')
         started = datetime.now(timezone.utc).timestamp()
-        command = [str(exe), '--resolution', resolution, '--position', '-4000,-3000', '--', '--qa-session',
+        command = [str(exe), '--resolution', resolution, '--position', '0,0', '--', '--qa-session',
                    '--ui-scale', scale, '--control-land-test', '--control-land-output', str(folder)]
         if profile == 'x30_layout':
             command.append('--mobile-ui-test')

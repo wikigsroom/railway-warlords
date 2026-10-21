@@ -1,0 +1,84 @@
+{
+  "version": "0.2.29",
+  "mode": "development_engine",
+  "runtime_source_sha256": "434c5784d0256bde7a5ec02df6450e45a07da645ce7cfa68b4910054b488d090",
+  "recorded_at_utc": "2026-10-20T18:44:54.832690+00:00",
+  "viewed_complete_captures": [
+    {
+      "case": "wuhan",
+      "file": "reports/screenshots/map_composition_native/v0229/development_engine/wuhan.png",
+      "sha256": "f1360ba091838ba9bfbfddfe3fea9be91627a232f27ceeed2280520b8f5a901e",
+      "metadata": "reports/screenshots/map_composition_native/v0229/development_engine/wuhan.json",
+      "metadata_sha256": "ad61e51a698081e20c826ebcb4932b457b74b28cfaee79c83bb97c10ea190056",
+      "viewed_complete_original_capture": true,
+      "notes": "Viewed the complete native viewport. Hankou/Hanyang/Wuchang captions and two ferry captions remain readable and clear of the models; ships, garrisons and ground remain distinguishable. The tiny dated theatre leaves blank margins at this camera scale; the river is still angular and the floodplain is overly uniform.",
+      "formal_art_approval": false
+    },
+    {
+      "case": "beijing",
+      "file": "reports/screenshots/map_composition_native/v0229/development_engine/beijing.png",
+      "sha256": "48d14f0f1fc81bf1ddbf8417fc3de1723a4648c32ce9afb4f368bd4340b13929",
+      "metadata": "reports/screenshots/map_composition_native/v0229/development_engine/beijing.json",
+      "metadata_sha256": "895317760434b04df4a7ef340d6a23557d476d56cac8f91ddd7c8dff0e1a53e7",
+      "viewed_complete_original_capture": true,
+      "notes": "Viewed the complete native viewport of campaign_1924_05, not the rejected Shanhaiguan fixture. Beijing caption is retained beside the dense formations. Buildings and troops have smaller silhouettes; countryside detail, garrison marker density and landscape composition remain unfinished.",
+      "formal_art_approval": false
+    },
+    {
+      "case": "coast",
+      "file": "reports/screenshots/map_composition_native/v0229/development_engine/coast.png",
+      "sha256": "fe15f95813d225f0346700a36e44ca51041983e248105b6e1b59c56bad18ef59",
+      "metadata": "reports/screenshots/map_composition_native/v0229/development_engine/coast.json",
+      "metadata_sha256": "666cd686c5c4458fc8ca8d6c2fe5843fc71d588df20f734f985aee001d2c10f1",
+      "viewed_complete_original_capture": true,
+      "notes": "Viewed the complete native viewport. Shanhaiguan and Beiyingzi labels clear the smaller models, while the shoreline, railway and mountain features remain visible. Coastal corners, terrain contact and unit marker density need further work.",
+      "formal_art_approval": false
+    },
+    {
+      "case": "village",
+      "file": "reports/screenshots/map_composition_native/v0229/development_engine/village.png",
+      "sha256": "e552dc803bed571c7d7f4a42a9e5605dca1584abe8524fbd0bb7b20023e57279",
+      "metadata": "reports/screenshots/map_composition_native/v0229/development_engine/village.json",
+      "metadata_sha256": "3830075038efd138c32af8b2fb0e54fa8683f55ec6e941a0c0e3f90d2787c078",
+      "viewed_complete_original_capture": true,
+      "notes": "Viewed the complete native viewport. Dongjiakou, Chengziyu and Banchangyu labels clear their small building silhouettes; individual mountains are legible. Mountain bases still look isolated and minor rivers form angular, sometimes isolated-looking branches. Ground lacks convincing local detail.",
+      "formal_art_approval": false
+    },
+    {
+      "case": "wuhan_regional",
+      "file": "reports/screenshots/map_composition_native/v0229/development_engine/wuhan_regional.png",
+      "sha256": "0ec69ac051d1d6bada398a169098f18ac5c6cc911f54cfb94d12ea2f130d6708",
+      "metadata": "reports/screenshots/map_composition_native/v0229/development_engine/wuhan_regional.json",
+      "metadata_sha256": "2dc8d17b403fe48a61835cb84bb081362cab12e9ed94642fbc1d712a7b857eb6",
+      "viewed_complete_original_capture": true,
+      "notes": "Viewed the complete native viewport. Hankou and Wuchang remain labelled at overview scale. The small rectangular theatre sits in excessive beige space; a row of pale ground hexes remains below the map boundary. This is a recorded unresolved composition defect, not an art acceptance.",
+      "formal_art_approval": false
+    },
+    {
+      "case": "wuhan_x30_layout",
+      "file": "reports/screenshots/map_composition_native/v0229/development_engine/wuhan_x30_layout.png",
+      "sha256": "04758f8ec13fcb121c2b98fe16f5297ce3b44baac6e82aae7165389c62cb4641",
+      "metadata": "reports/screenshots/map_composition_native/v0229/development_engine/wuhan_x30_layout.json",
+      "metadata_sha256": "5b2c49fd248e65ae899ee53156b9611ba4516be3671fa52c29a5993189b0dabc",
+      "viewed_complete_original_capture": true,
+      "notes": "Viewed the complete 2400x1080 desktop native viewport. Major settlements and crossing captions remain separated under mobile layout. This is a desktop viewport at X30 proportions, not a physical Android or touch test.",
+      "formal_art_approval": false
+    },
+    {
+      "case": "wuhan_large_text",
+      "file": "reports/screenshots/map_composition_native/v0229/development_engine/wuhan_large_text.png",
+      "sha256": "786b696a388538e276d08813f7faa1822c971c3e6be18dc22a27695e88f86897",
+      "metadata": "reports/screenshots/map_composition_native/v0229/development_engine/wuhan_large_text.json",
+      "metadata_sha256": "1e2586d0db461dc1d4c57b8429cc9cd987467aea00fea23df796ce30989d1942",
+      "viewed_complete_original_capture": true,
+      "notes": "Viewed the complete 1280x720 desktop viewport at UI scale 1.5. Three city captions and ferry captions remain readable. The inspector clips lower controls within its scroll area; physical touch ergonomics and final responsive UI remain pending.",
+      "formal_art_approval": false
+    }
+  ],
+  "automated_checks": 58,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "physical_android_device_tested": false,
+  "shipping_export_review": false,
+  "manual_compositing": false
+}

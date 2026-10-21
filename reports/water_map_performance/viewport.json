@@ -1,12 +1,12 @@
 {
-	"build_version": "0.2.28",
+	"build_version": "0.2.29",
 	"city_labels": [
 		{
 			"city_id": "jiumenkou",
 			"font_pixels": 18,
 			"screen_rect": [
 				677.600402832031,
-				697.837036132813,
+				562.859924316406,
 				68.0000015258789,
 				23.9999994277954
 			],
@@ -17,8 +17,8 @@
 			"city_id": "place_banchangyu",
 			"font_pixels": 16,
 			"screen_rect": [
-				22.00048828125,
-				286.977844238281,
+				47.2005004882813,
+				268.454010009766,
 				88.0000007629395,
 				22.9999998092651
 			],
@@ -30,7 +30,7 @@
 			"font_pixels": 16,
 			"screen_rect": [
 				325.014831542969,
-				203.28662109375,
+				199.386474609375,
 				88.0000007629395,
 				22.9999998092651
 			],
@@ -62,7 +62,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 60875,
 		"placed": 1232,
-		"preparation_ms": 1835.854,
+		"preparation_ms": 2626.211,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1610,
 		"rule_cells_changed": false,
@@ -407,6 +407,318 @@
 		},
 		"zoom": 0.9
 	},
+	"map_composition": {
+		"geographic_anchors_changed": false,
+		"labels": [
+			{
+				"city_id": "jiumenkou",
+				"font_pixels": 18,
+				"screen_rect": [
+					677.600402832031,
+					562.859924316406,
+					68.0000015258789,
+					23.9999994277954
+				],
+				"shifted": true,
+				"text": "九门口"
+			},
+			{
+				"city_id": "place_banchangyu",
+				"font_pixels": 16,
+				"screen_rect": [
+					47.2005004882813,
+					268.454010009766,
+					88.0000007629395,
+					22.9999998092651
+				],
+				"shifted": true,
+				"text": "板厂峪 · 村"
+			},
+			{
+				"city_id": "place_dongjiakou",
+				"font_pixels": 16,
+				"screen_rect": [
+					325.014831542969,
+					199.386474609375,
+					88.0000007629395,
+					22.9999998092651
+				],
+				"shifted": false,
+				"text": "董家口 · 村"
+			}
+		],
+		"objects": [
+			{
+				"id": "jiumenkou",
+				"kind": "city",
+				"screen_rect": [
+					676.5,
+					594.859985351563,
+					70.2,
+					55.7771484375
+				],
+				"world_anchor": [
+					16848.0,
+					7565.59814453125
+				]
+			},
+			{
+				"id": "place_banchangyu",
+				"kind": "place",
+				"screen_rect": [
+					-11.1992797851563,
+					265.030242919922,
+					50.4000034332275,
+					29.8477832794189
+				],
+				"world_anchor": [
+					16072.8896484375,
+					7180.31005859375
+				]
+			},
+			{
+				"id": "place_dongjiakou",
+				"kind": "place",
+				"screen_rect": [
+					343.814636230469,
+					156.774047851563,
+					50.4000034332275,
+					34.6125640869141
+				],
+				"world_anchor": [
+					16467.349609375,
+					7065.31982421875
+				]
+			},
+			{
+				"id": "place_chengziyu",
+				"kind": "place",
+				"screen_rect": [
+					199.338317871094,
+					127.242340087891,
+					50.4,
+					36.9375629425049
+				],
+				"world_anchor": [
+					16306.8203125,
+					7035.08984375
+				]
+			},
+			{
+				"id": "u_00001",
+				"kind": "unit",
+				"screen_rect": [
+					935.700012207031,
+					509.212341308594,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17136.0,
+					7482.45947265625
+				]
+			},
+			{
+				"id": "u_00002",
+				"kind": "unit",
+				"screen_rect": [
+					870.900024414063,
+					471.799957275391,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17064.0,
+					7440.89013671875
+				]
+			},
+			{
+				"id": "u_00003",
+				"kind": "unit",
+				"screen_rect": [
+					870.900024414063,
+					546.624755859375,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17064.0,
+					7524.02880859375
+				]
+			},
+			{
+				"id": "u_00004",
+				"kind": "unit",
+				"screen_rect": [
+					935.700012207031,
+					434.388000488281,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17136.0,
+					7399.3212890625
+				]
+			},
+			{
+				"id": "u_00005",
+				"kind": "unit",
+				"screen_rect": [
+					935.700012207031,
+					584.037170410156,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17136.0,
+					7565.59814453125
+				]
+			},
+			{
+				"id": "u_00006",
+				"kind": "unit",
+				"screen_rect": [
+					1000.5,
+					471.799957275391,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17208.0,
+					7440.89013671875
+				]
+			},
+			{
+				"id": "u_00007",
+				"kind": "unit",
+				"screen_rect": [
+					1000.5,
+					546.624755859375,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17208.0,
+					7524.02880859375
+				]
+			},
+			{
+				"id": "u_00008",
+				"kind": "unit",
+				"screen_rect": [
+					806.099975585938,
+					434.388000488281,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					16992.0,
+					7399.3212890625
+				]
+			},
+			{
+				"id": "u_00009",
+				"kind": "unit",
+				"screen_rect": [
+					806.099975585938,
+					509.212341308594,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					16992.0,
+					7482.45947265625
+				]
+			},
+			{
+				"id": "u_00010",
+				"kind": "unit",
+				"screen_rect": [
+					806.099975585938,
+					584.037170410156,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					16992.0,
+					7565.59814453125
+				]
+			},
+			{
+				"id": "u_00011",
+				"kind": "unit",
+				"screen_rect": [
+					870.900024414063,
+					396.9755859375,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17064.0,
+					7357.751953125
+				]
+			},
+			{
+				"id": "u_00012",
+				"kind": "unit",
+				"screen_rect": [
+					870.900024414063,
+					621.449096679688,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17064.0,
+					7607.1669921875
+				]
+			},
+			{
+				"id": "u_00013",
+				"kind": "unit",
+				"screen_rect": [
+					935.700012207031,
+					359.563171386719,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17136.0,
+					7316.1826171875
+				]
+			},
+			{
+				"id": "u_00014",
+				"kind": "unit",
+				"screen_rect": [
+					935.700012207031,
+					658.861511230469,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					17136.0,
+					7648.736328125
+				]
+			},
+			{
+				"id": "u_00031",
+				"kind": "unit",
+				"screen_rect": [
+					696.300048828125,
+					598.437133789063,
+					73.8,
+					74.7
+				],
+				"world_anchor": [
+					16848.0,
+					7565.59814453125
+				]
+			}
+		],
+		"operation_hex_radius_world": 48.0,
+		"renderer": "shared_model_and_caption_footprints_v1",
+		"source_pngs_modified": false
+	},
 	"map_detail": {
 		"cell_river_segments": 1709,
 		"coast_lines": 62,
@@ -487,13 +799,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 151.335,
+		"index_ms": 238.848,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 2914.888,
+		"mesh_ms": 4391.448,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6107,
-		"placement_ms": 1169.351,
-		"preparation_ms": 4235.573,
+		"placement_ms": 1646.997,
+		"preparation_ms": 6277.292,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

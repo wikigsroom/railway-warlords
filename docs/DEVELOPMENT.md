@@ -8,6 +8,8 @@
 
 The game uses Godot 4.7.2, GDScript and Compatibility rendering. All runtime assets and compiled geography are included. Import `project.godot` in the project manager. Running the desktop project does not need Python, the image gateway, Android SDK or the original `.toolchain`.
 
+后续音乐制作使用用户指定的 `music-gen-remote-YuE2`，推理位于远端RTX 3080的原生Windows服务；控制端按技能约定保存谱面、任务与回传原曲。新配乐继续采用无台词、无歌词纯器乐；现有三首保留本地YuE2来源。见[配乐工作流](39_本地YuE2纯器乐配乐与场景衔接.md#后续制作路线2026-10-21)。Future music production uses the remote YuE2 skill; running the game remains independent of any generation service.
+
 ```powershell
 godot --headless --path . --editor --import --quit
 godot --path .
@@ -158,3 +160,24 @@ python tools/package_commander_pool.py
 `tools/install_commander_portraits.py`仅安装有逐张完整查看和SHA记录的新原图，拒绝改写既有原图；`tools/build_general_portrait_catalog.py`最终必须不带`--allow-incomplete`通过。制作时的未完成目录不能作为可发行状态。`docs/commander-production`保存终态计划、七批生产报告、逐张检查及历史资料缓存索引；原图和提示词分别在资源与便携提示词目录，不需要网关即可游玩。完整研究网页和出版物保留在原工作区的`output/commander_expansion/archival/historical-source-cache.zip`；公开源码包含来源网址、已编写事实和每个缓存成员的SHA，不重复分发整部参考出版物。缓存不代表已核实完整任期。
 
 The strict catalogue requires all four actual portraits per person before export. Installation checks individual whole-original inspection and SHA, preserving PNG bytes. Terminal plans, cohort reports, inspection decisions and institutional-source cache indexes are archived separately. Complete research publications remain in the local workspace; public source delivery includes source URLs, authored facts and cached-member hashes. Playing the clone requires no image gateway. Cached research does not establish complete service tenures or orders of battle.
+
+## 0.2.29地图构图开发验证 / Map composition development checks
+
+模型与标注共用`MapComposition`，完整建筑原图、军事编队及规则坐标仍独立保留。当前开发引擎视口与正式EXE证据由工具分别标识。
+
+Models and annotations share `MapComposition`. Development-engine captures and verified exported-binary captures have separate evidence modes; neither establishes physical-phone acceptance.
+
+```powershell
+# Inspect the working project with native Godot.
+python tools/capture_map_composition.py --development
+# After a current verified Windows export, use the exported binary:
+python tools/capture_map_composition.py
+```
+
+完整PNG和元数据在`reports/screenshots/map_composition_native/`。工具核对关键地名、文字相互重叠及文字与建筑、可见编队、交通符号的遮挡，随后仍需查看完整画面。`--expected-content-hash`可绑定本轮预期的地图与规则数据哈希；不能借布局调整改动真实地理或战斗规则。
+
+Untouched viewport PNGs and metadata are stored under `reports/screenshots/map_composition_native/`. Screen-rectangle checks supplement whole-frame inspection. The optional `--expected-content-hash` binds the expected map and rule catalogue for a specific comparison.
+
+回归依赖批处理使用同一排序的原始路径／文件字节流，分别更新每组独立SHA256，避免30次重复读取全部素材；它不缓存历史哈希、不按元数据跳过内容。先运行`python tools/verify_regression_hash_batch.py`，再封存和执行交付流程；严格门槛会核对旧算法等价证明与所有30组最终身份。
+
+Regression dependency batching reads each file once and feeds its original path and bytes into each subscribing check's independent SHA-256 state, preserving the legacy preimage exactly. Run `python tools/verify_regression_hash_batch.py` before the composition release pipeline. Its equivalence proof includes same-size, same-mtime mutations and an actual full commander closure; delivery compares all thirty identities with the final seal. This is an I/O improvement, not reduced validation.

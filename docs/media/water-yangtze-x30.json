@@ -1,16 +1,16 @@
 {
-	"build_version": "0.2.28",
+	"build_version": "0.2.29",
 	"city_labels": [
 		{
 			"city_id": "wuchang",
 			"font_pixels": 22,
 			"screen_rect": [
-				1188.96667480469,
-				756.890686035156,
+				1277.46655273438,
+				764.590637207031,
 				121.000003051758,
 				28.8000002861023
 			],
-			"shifted": false,
+			"shifted": true,
 			"text": "武昌 · 省城"
 		},
 		{
@@ -18,11 +18,11 @@
 			"font_pixels": 22,
 			"screen_rect": [
 				1055.2666015625,
-				582.299987792969,
+				448.600006103516,
 				86.0000003814697,
 				28.8000002861023
 			],
-			"shifted": false,
+			"shifted": true,
 			"text": "汉口 ★"
 		},
 		{
@@ -30,12 +30,36 @@
 			"font_pixels": 22,
 			"screen_rect": [
 				993.666687011719,
-				702.538391113281,
+				675.238403320313,
 				57.9999990463257,
 				28.8000002861023
 			],
 			"shifted": true,
 			"text": "汉阳"
+		},
+		{
+			"city_id": "crossing:ferry_hankou_wuchang",
+			"font_pixels": 18,
+			"screen_rect": [
+				1263.46655273438,
+				614.6953125,
+				46.0000007629395,
+				25.2
+			],
+			"shifted": true,
+			"text": "渡口"
+		},
+		{
+			"city_id": "crossing:ferry_hanyang_wuchang",
+			"font_pixels": 18,
+			"screen_rect": [
+				1164.06665039063,
+				786.41455078125,
+				46.0000007629395,
+				25.2
+			],
+			"shifted": true,
+			"text": "渡口"
 		}
 	],
 	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
@@ -62,7 +86,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 259,
 		"placed": 1,
-		"preparation_ms": 32.659,
+		"preparation_ms": 34.968,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 3,
 		"rule_cells_changed": false,
@@ -317,6 +341,258 @@
 		},
 		"zoom": 1.05
 	},
+	"map_composition": {
+		"geographic_anchors_changed": false,
+		"labels": [
+			{
+				"city_id": "wuchang",
+				"font_pixels": 22,
+				"screen_rect": [
+					1277.46655273438,
+					764.590637207031,
+					121.000003051758,
+					28.8000002861023
+				],
+				"shifted": true,
+				"text": "武昌 · 省城"
+			},
+			{
+				"city_id": "hankou",
+				"font_pixels": 22,
+				"screen_rect": [
+					1055.2666015625,
+					448.600006103516,
+					86.0000003814697,
+					28.8000002861023
+				],
+				"shifted": true,
+				"text": "汉口 ★"
+			},
+			{
+				"city_id": "hanyang",
+				"font_pixels": 22,
+				"screen_rect": [
+					993.666687011719,
+					675.238403320313,
+					57.9999990463257,
+					28.8000002861023
+				],
+				"shifted": true,
+				"text": "汉阳"
+			},
+			{
+				"city_id": "crossing:ferry_hankou_wuchang",
+				"font_pixels": 18,
+				"screen_rect": [
+					1263.46655273438,
+					614.6953125,
+					46.0000007629395,
+					25.2
+				],
+				"shifted": true,
+				"text": "渡口"
+			},
+			{
+				"city_id": "crossing:ferry_hanyang_wuchang",
+				"font_pixels": 18,
+				"screen_rect": [
+					1164.06665039063,
+					786.41455078125,
+					46.0000007629395,
+					25.2
+				],
+				"shifted": true,
+				"text": "渡口"
+			}
+		],
+		"objects": [
+			{
+				"id": "hankou",
+				"kind": "city",
+				"screen_rect": [
+					1053.68029785156,
+					485.399993896484,
+					89.1727111816406,
+					81.9
+				],
+				"world_anchor": [
+					648.0,
+					706.6767578125
+				]
+			},
+			{
+				"id": "wuchang",
+				"kind": "city",
+				"screen_rect": [
+					1196.96667480469,
+					656.339477539063,
+					105.0,
+					85.5512237548828
+				],
+				"world_anchor": [
+					792.0,
+					872.95361328125
+				]
+			},
+			{
+				"id": "hanyang",
+				"kind": "city",
+				"screen_rect": [
+					983.325744628906,
+					712.038330078125,
+					78.6818115234375,
+					73.5
+				],
+				"world_anchor": [
+					576.0,
+					914.522827148438
+				]
+			},
+			{
+				"id": "u_00002",
+				"kind": "unit",
+				"screen_rect": [
+					1057.31665039063,
+					751.486022949219,
+					86.1,
+					87.15
+				],
+				"world_anchor": [
+					648.0,
+					956.092041015625
+				]
+			},
+			{
+				"id": "u_00003",
+				"kind": "unit",
+				"screen_rect": [
+					376.916687011719,
+					707.83837890625,
+					86.1,
+					87.15
+				],
+				"world_anchor": [
+					0.0,
+					914.522827148438
+				]
+			},
+			{
+				"id": "u_00004",
+				"kind": "unit",
+				"screen_rect": [
+					1057.31665039063,
+					664.190673828125,
+					86.1,
+					87.15
+				],
+				"world_anchor": [
+					648.0,
+					872.95361328125
+				]
+			},
+			{
+				"id": "u_00010",
+				"kind": "unit",
+				"screen_rect": [
+					830.516662597656,
+					620.543029785156,
+					86.1,
+					87.15
+				],
+				"world_anchor": [
+					432.0,
+					831.384399414063
+				]
+			},
+			{
+				"id": "u_00011",
+				"kind": "unit",
+				"screen_rect": [
+					830.516662597656,
+					707.83837890625,
+					86.1,
+					87.15
+				],
+				"world_anchor": [
+					432.0,
+					914.522827148438
+				]
+			},
+			{
+				"id": "u_00017",
+				"kind": "unit",
+				"screen_rect": [
+					981.716674804688,
+					795.133728027344,
+					86.1,
+					87.15
+				],
+				"world_anchor": [
+					576.0,
+					997.661254882813
+				]
+			},
+			{
+				"id": "u_00018",
+				"kind": "unit",
+				"screen_rect": [
+					1132.91662597656,
+					620.543029785156,
+					86.1,
+					87.15
+				],
+				"world_anchor": [
+					720.0,
+					831.384399414063
+				]
+			},
+			{
+				"id": "u_00001",
+				"kind": "unit",
+				"screen_rect": [
+					376.916687011719,
+					445.952270507813,
+					86.1,
+					87.15
+				],
+				"world_anchor": [
+					0.0,
+					665.107482910156
+				]
+			},
+			{
+				"id": "crossing:ferry_hankou_wuchang",
+				"kind": "crossing",
+				"screen_rect": [
+					1092.2666015625,
+					534.0,
+					163.200002288818,
+					186.590700531006
+				],
+				"world_anchor": [
+					720.0,
+					789.815185546875
+				]
+			},
+			{
+				"id": "crossing:ferry_hanyang_wuchang",
+				"kind": "crossing",
+				"screen_rect": [
+					1016.66662597656,
+					708.590698242188,
+					238.800002288818,
+					55.6476768493652
+				],
+				"world_anchor": [
+					684.0,
+					893.738220214844
+				]
+			}
+		],
+		"operation_hex_radius_world": 48.0,
+		"renderer": "shared_model_and_caption_footprints_v1",
+		"source_pngs_modified": false
+	},
 	"map_detail": {
 		"cell_river_segments": 0,
 		"coast_lines": 0,
@@ -382,13 +658,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 0,
-		"index_ms": 13.187,
+		"index_ms": 10.056,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 16.656,
+		"mesh_ms": 17.4,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 0,
-		"placement_ms": 0.576,
-		"preparation_ms": 30.419,
+		"placement_ms": 0.557,
+		"preparation_ms": 28.012,
 		"rules_map_mutated": false,
 		"source": "SRTM90m_v3_five_point_samples",
 		"source_meters_per_world_unit": 26.0416666666667,

@@ -13,7 +13,7 @@ def main():
     runtime = source_digest()[0]
     exe = P / 'build/windows/RailwayWarlords.exe'
     export = next(r for r in read(P / 'reports/export_results.json') if r['target'] == 'windows')
-    require(version in ['0.2.26', '0.2.27', '0.2.28'] and export['export_verified']
+    require(version in ['0.2.26', '0.2.27', '0.2.28', '0.2.29'] and export['export_verified']
             and export['sha256'] == sha(exe) and export['runtime_source_sha256'] == runtime,
             'Current frozen Windows export required')
     proof_path = P / 'reports/coast_detail_native_capture_evidence.json'
@@ -48,7 +48,7 @@ def main():
         target = folder / (map_id + '.png')
         log = P / 'reports' / ('coast_detail_capture_' + map_id + '.log')
         started = datetime.now(timezone.utc).timestamp()
-        args = [str(exe), '--resolution', '1920x1080', '--position', '-4000,-3000', '--',
+        args = [str(exe), '--resolution', '1920x1080', '--position', '0,0', '--',
                 '--qa-session', '--scenario', scenario, '--focus-point', ','.join(map(str, focus)),
                 '--capture-zoom', zoom, '--capture', '--capture-path', str(target)]
         with log.open('w', encoding='utf-8') as stream:

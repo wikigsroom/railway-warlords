@@ -1,5 +1,6 @@
-"""Install audited local YuE2 instrumentals, preserving all generation evidence."""
+"""Restore the three historical local YuE2 scores; future production is remote."""
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import shutil
@@ -21,6 +22,12 @@ def copy_original(source,target):
     if sha(source)!=sha(target):raise ValueError('Music copy changed bytes')
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--restore-legacy-local',action='store_true',
+                        help='Explicitly restore the existing 0.2.21 local scores, never generate new music')
+    args=parser.parse_args()
+    if not args.restore_legacy_local:
+        parser.error('Future music uses music-gen-remote-YuE2. This historical installer requires --restore-legacy-local.')
     tracks={}
     for role,name in ROWS:
         job=BATCH/name

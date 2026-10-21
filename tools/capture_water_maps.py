@@ -13,7 +13,7 @@ def main():
     runtime = source_digest()[0]
     exe = P / 'build/windows/RailwayWarlords.exe'
     export = next(row for row in read(P / 'reports/export_results.json') if row['target'] == 'windows')
-    require(version in ['0.2.27', '0.2.28'] and export['export_verified'] and export['runtime_source_sha256'] == runtime
+    require(version in ['0.2.27', '0.2.28', '0.2.29'] and export['export_verified'] and export['runtime_source_sha256'] == runtime
             and export['sha256'] == sha(exe), 'Frozen current Windows executable required')
     cases = [
         ('china_overview', 'conq_1922', ['--atlas-view', '--inspect-city', 'qingdao']),
@@ -50,7 +50,7 @@ def main():
         folder.mkdir(parents=True, exist_ok=True)
         target = folder / (name + '.png')
         log = P / 'reports' / ('water_map_capture_' + name + '.log')
-        args = [str(exe), '--resolution', resolution, '--position', '-4000,-3000', '--',
+        args = [str(exe), '--resolution', resolution, '--position', '0,0', '--',
                 '--qa-session', '--scenario', scenario, *extra, '--capture', '--capture-path', str(target)]
         if mobile:
             args += ['--ui-scale', '1.2', '--mobile-ui-test']

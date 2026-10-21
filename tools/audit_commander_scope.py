@@ -16,7 +16,7 @@ ALLOWED = {
 }
 
 def main():
-    require(current_version() == '0.2.28', 'Commander audit version differs')
+    require(current_version() in {'0.2.28', '0.2.29'}, 'Commander audit version differs')
     tree = subprocess.check_output(['git', 'ls-tree', '-r', '-z', BASELINE, '--',
         'content', 'presentation/data', 'domain', 'ai', 'persistence'], cwd=P)
     records = []

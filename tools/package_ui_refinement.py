@@ -7,7 +7,7 @@ import subprocess
 import zipfile
 from build_release import P, ROOT, current_version, source_digest, android_version_code
 from package_delivery import read, sha, require, add_tree
-from regression_dependencies import identity
+from regression_dependencies import identity, identities
 from verify_git_bytes import inspect as inspect_git_bytes
 
 
@@ -16,11 +16,12 @@ def write(path, value):
 
 
 def validate(scope='dossier'):
-    require(scope in {'dossier', 'atlas_office', 'ground_atlas', 'coast_detail', 'water_map', 'commander_pool'}, 'Unknown scoped delivery')
-    commander_scope = scope == 'commander_pool'
-    water_scope = scope in {'water_map', 'commander_pool'}
-    atlas_scope = scope in {'atlas_office', 'ground_atlas', 'coast_detail', 'water_map', 'commander_pool'}
-    ground_scope = scope in {'ground_atlas', 'coast_detail', 'water_map', 'commander_pool'}
+    require(scope in {'dossier', 'atlas_office', 'ground_atlas', 'coast_detail', 'water_map', 'commander_pool', 'map_composition'}, 'Unknown scoped delivery')
+    composition_scope = scope == 'map_composition'
+    commander_scope = scope in {'commander_pool', 'map_composition'}
+    water_scope = commander_scope or scope == 'water_map'
+    atlas_scope = commander_scope or scope in {'atlas_office', 'ground_atlas', 'coast_detail', 'water_map'}
+    ground_scope = commander_scope or scope in {'ground_atlas', 'coast_detail', 'water_map'}
     expected_rasters = 2507 if commander_scope else 1327 if water_scope else 1324 if ground_scope else 1304
     expected_people = 328 if commander_scope else 33
     expected_portraits = 1315 if commander_scope else 135
@@ -29,19 +30,23 @@ def validate(scope='dossier'):
     runtime = source_digest()[0]
     exe = P / 'build/windows/RailwayWarlords.exe'
     apk = P / 'build/android/RailwayWarlords.apk'
+    # Compare all reports to the same full-byte binary identities. Re-read both
+    # artifacts at the end; do not repeatedly scan the EXE for each JSON row.
+    binary_hashes = {'windows': sha(exe), 'android': sha(apk)}
     exports = read(P / 'reports/export_results.json')
     for target, path in [('windows', exe), ('android', apk)]:
         row = next(r for r in exports if r['target'] == target)
         require(row['export_verified'] and row['runtime_source_sha256'] == runtime
-                and row['sha256'] == sha(path), 'Current verified export required: ' + target)
+                and row['sha256'] == binary_hashes[target], 'Current verified export required: ' + target)
     deps = read(P / 'reports/regression_dependency_evidence.json')
     require(deps['passed'] and deps['game_version'] == version
             and deps['runtime_source_sha256'] == runtime and len(deps['checks']) == expected_regression_groups,
             'Complete current regression seal required')
     reports = set()
     regression = []
+    current_identities = identities(row['check'] for row in deps['checks'])
     for row in deps['checks']:
-        require(row['passed'] and identity(row['check'])[0] == row['dependency_sha256_at_seal'],
+        require(row['passed'] and current_identities[row['check']][0] == row['dependency_sha256_at_seal'],
                 'Regression dependency changed: ' + row['check'])
         report = P / 'reports' / row['report']
         log = P / 'reports' / row['log']
@@ -90,11 +95,12 @@ def validate(scope='dossier'):
                            ('control_land_native_evidence.json', 2), ('map_symbol_native_evidence.json', 2),
                            ('ui_refinement_native_evidence.json', 3)]
     if commander_scope:native_specs.append(('commander_roster_native_evidence.json', 3))
+    if composition_scope:native_specs.append(('map_composition_native_evidence.json', 1))
     for name, expected in native_specs:
         path = P / 'reports' / name
         proof = read(path)
         require(proof['passed'] and proof['version'] == version and proof['runtime_source_sha256'] == runtime
-                and proof['windows_exe_sha256'] == sha(exe) and len(proof['groups']) == expected, 'Current native proof required: ' + name)
+                and proof['windows_exe_sha256'] == binary_hashes['windows'] and len(proof['groups']) == expected, 'Current native proof required: ' + name)
         reports.add(path)
         for group in proof['groups']:
             if group.get('report'):
@@ -118,7 +124,7 @@ def validate(scope='dossier'):
     for group in dossier['groups']:
         require(read(P / group['report'])['isolated_profile_restored'], 'QA profile not restored')
     apk_report = read(P / 'reports/apk_content_validation.json')
-    require(apk_report['passed'] and apk_report['artifact_sha256'] == sha(apk) and not apk_report['private_files_detected']
+    require(apk_report['passed'] and apk_report['artifact_sha256'] == binary_hashes['android'] and not apk_report['private_files_detected']
             and len(apk_report['raster_import_files_verified']) == expected_rasters
             and all(r['current_import_bytes_match'] for r in apk_report['raster_import_files_verified']), 'Current APK payload proof required')
     require(len(apk_report['instrumental_music_imports_verified']) == 3
@@ -128,7 +134,7 @@ def validate(scope='dossier'):
             and 'Verified using v3 scheme (APK Signature Scheme v3): true' in signed, 'APK signature required')
     music = read(P / 'reports/music_native_tests.json')
     require(music['passed'] and music['runtime_source_sha256'] == runtime
-            and music['windows_exe_sha256'] == sha(exe) and len(music['checks']) == 18, 'Current native music proof required')
+            and music['windows_exe_sha256'] == binary_hashes['windows'] and len(music['checks']) == 18, 'Current native music proof required')
     resources = read(P / 'reports/resource_validation.json')
     require(resources['passed'] and resources['raster_count'] == expected_rasters and resources['scenarios'] == 61, 'Source integrity required')
     repo = read(P / 'reports/repository_validation.json')
@@ -142,11 +148,11 @@ def validate(scope='dossier'):
     audit = read(P / 'reports/daily_age_text_audit.json')
     require(audit['passed'] and audit['version'] == version and audit['runtime_source_sha256'] == runtime
             and not audit['legacy_display_name_plaintext_files'], 'Current display-name audit required')
-    visual_name = {'commander_pool': 'commander_pool_native_review.json', 'water_map': 'water_map_native_review.json', 'coast_detail': 'coast_detail_native_review.json', 'ground_atlas': 'ground_atlas_native_review.json', 'atlas_office': 'atlas_office_native_review.json',
+    visual_name = {'map_composition': 'map_composition_native_review.json', 'commander_pool': 'commander_pool_native_review.json', 'water_map': 'water_map_native_review.json', 'coast_detail': 'coast_detail_native_review.json', 'ground_atlas': 'ground_atlas_native_review.json', 'atlas_office': 'atlas_office_native_review.json',
                    'dossier': 'ui_refinement_native_review.json'}[scope]
     visual = read(P / 'reports' / visual_name)
     require(visual['version'] == version and visual['runtime_source_sha256'] == runtime
-            and visual['windows_exe_sha256'] == sha(exe) and len(visual['viewed_complete_captures']) >= 8,
+            and visual['windows_exe_sha256'] == binary_hashes['windows'] and len(visual['viewed_complete_captures']) >= 8,
             'Current scoped visual inspection required')
     for row in visual['viewed_complete_captures']:
         require(sha(P / row['file']) == row['sha256'] and row['viewed_complete_original_capture'], 'Inspected native capture changed')
@@ -167,7 +173,7 @@ def validate(scope='dossier'):
                     'Actual zoomed native preview required')
             require(all(row['passed'] for row in proof['checks']), 'Office interaction/transaction checks failed')
     if ground_scope:
-        require(version == ('0.2.28' if commander_scope else '0.2.27' if water_scope else '0.2.26' if scope == 'coast_detail' else '0.2.25'), 'Scoped map specification/version mismatch')
+        require(version == ('0.2.29' if composition_scope else '0.2.28' if commander_scope else '0.2.27' if water_scope else '0.2.26' if scope == 'coast_detail' else '0.2.25'), 'Scoped map specification/version mismatch')
         catalog = read(P / 'presentation/data/ground_macro_catalog.json')
         source_review = read(P / 'reports/ground_atlas_source_review.json')
         require(catalog['world_repeat_period'] == 224 and catalog['superseded_originals'] == 40
@@ -189,7 +195,7 @@ def validate(scope='dossier'):
                 and audit['stored_superseded_originals_verified'] == 40, 'Current immutable-ground audit required')
         material = read(P / 'reports/ground_continuity_native_evidence.json')
         require(material['passed'] and material['version'] == version
-                and material['runtime_source_sha256'] == runtime and material['windows_exe_sha256'] == sha(exe)
+                and material['runtime_source_sha256'] == runtime and material['windows_exe_sha256'] == binary_hashes['windows']
                 and material['checks'] == 48 and material['production_quad_vs_hex_verified']
                 and material['fixed_texture_period_removed'], 'Current native production-material proof required')
         if scope == 'ground_atlas':
@@ -221,7 +227,7 @@ def validate(scope='dossier'):
             coast_frames = read(P / 'reports/coast_detail_native_capture_evidence.json')
             require(coast_frames['passed'] and coast_frames['version'] == version
                     and coast_frames['runtime_source_sha256'] == runtime
-                    and coast_frames['windows_exe_sha256'] == sha(exe)
+                    and coast_frames['windows_exe_sha256'] == binary_hashes['windows']
                     and coast_frames['capture_driver_sha256'] == sha(P / 'tools/capture_coast_detail.py')
                     and len(coast_frames['captures']) == 4
                     and {r['map_id'] for r in coast_frames['captures']} ==
@@ -262,7 +268,7 @@ def validate(scope='dossier'):
                     'Water/grid revision must preserve delivered geography, rules and originals')
         water_native = read(P / 'reports/water_continuity_native_evidence.json')
         require(water_native['passed'] and water_native['version'] == version
-                and water_native['runtime_source_sha256'] == runtime and water_native['windows_exe_sha256'] == sha(exe)
+                and water_native['runtime_source_sha256'] == runtime and water_native['windows_exe_sha256'] == binary_hashes['windows']
                 and water_native['fixture_driver_sha256'] == sha(P / 'tools/verify_water_continuity.py')
                 and water_native['checks'] == 22, 'Current production water GPU fixture required')
         require(sha(P / water_native['report']) == water_native['report_sha256']
@@ -273,7 +279,7 @@ def validate(scope='dossier'):
             reports.add(P / row['file'])
         frames = read(P / 'reports/water_map_native_capture_evidence.json')
         require(frames['passed'] and frames['version'] == version and frames['runtime_source_sha256'] == runtime
-                and frames['windows_exe_sha256'] == sha(exe)
+                and frames['windows_exe_sha256'] == binary_hashes['windows']
                 and frames['capture_driver_sha256'] == sha(P / 'tools/capture_water_maps.py')
                 and len(frames['captures']) == 11, 'Current full water/grid native viewports required')
         for row in frames['captures']:
@@ -287,7 +293,7 @@ def validate(scope='dossier'):
         performance = read(P / 'reports/water_map_performance_observation.json')
         require(performance['observation_recorded'] and performance['version'] == version
                 and performance['runtime_source_sha256'] == runtime
-                and performance['windows_exe_sha256'] == sha(exe), 'Current performance observation must be disclosed')
+                and performance['windows_exe_sha256'] == binary_hashes['windows'], 'Current performance observation must be disclosed')
         for row in performance['files']:
             require(sha(P / row['file']) == row['sha256'], 'Archived performance observation changed')
             reports.add(P / row['file'])
@@ -320,7 +326,7 @@ def validate(scope='dossier'):
     if ground_scope:
         summary.update(new_ground_originals=20 if scope == 'ground_atlas' else 0, stored_map_originals=1013 if water_scope else 1010, active_map_originals=970,
                        preserved_superseded_ground_originals=40, native_material_checks=48)
-    if scope in {'coast_detail', 'water_map', 'commander_pool'}:
+    if scope in {'coast_detail', 'water_map', 'commander_pool', 'map_composition'}:
         summary.update(refined_marine_maps=4, new_raster_originals=0, native_coast_checks=61,
                        independent_geography_checks=len(coast['checks']), historical_coast_survey_approval=False,
                        additional_coast_native_captures=len(coast_frames['captures']))
@@ -333,8 +339,16 @@ def validate(scope='dossier'):
                        desktop_static_frame_ms_p95=performance['frame_ms_p95'],
                        desktop_performance_target_met=performance['target_met'])
     if commander_scope:summary.update(commander_details)
-    validation_name = {'commander_pool': 'commander_pool_release_validation.json', 'water_map': 'water_map_release_validation.json', 'coast_detail': 'coast_detail_release_validation.json', 'ground_atlas': 'ground_atlas_release_validation.json', 'atlas_office': 'atlas_office_release_validation.json',
+    if composition_scope:
+        from validate_map_composition_release import validate_map_composition
+        composition_details, composition_reports = validate_map_composition(runtime)
+        summary.update(composition_details)
+        summary.update(new_portrait_originals=0, new_raster_originals=0, existing_geography_and_rules_changed=False)
+        reports.update(composition_reports)
+    validation_name = {'map_composition': 'map_composition_release_validation.json', 'commander_pool': 'commander_pool_release_validation.json', 'water_map': 'water_map_release_validation.json', 'coast_detail': 'coast_detail_release_validation.json', 'ground_atlas': 'ground_atlas_release_validation.json', 'atlas_office': 'atlas_office_release_validation.json',
                        'dossier': 'ui_refinement_release_validation.json'}[scope]
+    require(sha(exe) == binary_hashes['windows'] and sha(apk) == binary_hashes['android'],
+            'Verified binary changed during release validation')
     write(P / 'reports' / validation_name, summary)
     reports.add(P / 'reports' / validation_name)
     return summary, reports, captures, regression

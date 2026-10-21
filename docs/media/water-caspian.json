@@ -1,12 +1,12 @@
 {
-	"build_version": "0.2.28",
+	"build_version": "0.2.29",
 	"city_labels": [
 		{
 			"city_id": "istanbul",
 			"font_pixels": 18,
 			"screen_rect": [
 				104.400085449219,
-				576.60009765625,
+				571.400024414063,
 				155.999995422363,
 				23.9999994277954
 			],
@@ -18,7 +18,7 @@
 			"font_pixels": 18,
 			"screen_rect": [
 				1029.60009765625,
-				875.8984375,
+				870.698364257813,
 				119.999995422363,
 				23.9999994277954
 			],
@@ -30,7 +30,7 @@
 			"font_pixels": 18,
 			"screen_rect": [
 				705.600036621094,
-				890.135375976563,
+				875.00341796875,
 				119.999995422363,
 				23.9999994277954
 			],
@@ -42,7 +42,7 @@
 			"font_pixels": 18,
 			"screen_rect": [
 				761.400024414063,
-				501.775482177734,
+				496.575439453125,
 				137.999995422363,
 				23.9999994277954
 			],
@@ -50,11 +50,23 @@
 			"text": "第比利斯 · 省城"
 		},
 		{
+			"city_id": "jerusalem",
+			"font_pixels": 18,
+			"screen_rect": [
+				460.800048828125,
+				896.359985351563,
+				109.000003051758,
+				23.9999994277954
+			],
+			"shifted": true,
+			"text": "耶路撒冷 ★"
+		},
+		{
 			"city_id": "tabriz",
 			"font_pixels": 18,
 			"screen_rect": [
 				840.700012207031,
-				688.836853027344,
+				683.636779785156,
 				109.000003051758,
 				23.9999994277954
 			],
@@ -66,7 +78,7 @@
 			"font_pixels": 18,
 			"screen_rect": [
 				923.5,
-				576.60009765625,
+				571.400024414063,
 				73.0000030517578,
 				23.9999994277954
 			],
@@ -190,7 +202,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 5131,
 		"placed": 122,
-		"preparation_ms": 3715.761,
+		"preparation_ms": 4241.366,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 838,
 		"rule_cells_changed": false,
@@ -565,6 +577,240 @@
 		},
 		"zoom": 0.9
 	},
+	"map_composition": {
+		"geographic_anchors_changed": false,
+		"labels": [
+			{
+				"city_id": "istanbul",
+				"font_pixels": 18,
+				"screen_rect": [
+					104.400085449219,
+					571.400024414063,
+					155.999995422363,
+					23.9999994277954
+				],
+				"shifted": false,
+				"text": "君士坦丁堡 · 首都"
+			},
+			{
+				"city_id": "tehran",
+				"font_pixels": 18,
+				"screen_rect": [
+					1029.60009765625,
+					870.698364257813,
+					119.999995422363,
+					23.9999994277954
+				],
+				"shifted": false,
+				"text": "德黑兰 · 首都"
+			},
+			{
+				"city_id": "baghdad",
+				"font_pixels": 18,
+				"screen_rect": [
+					705.600036621094,
+					875.00341796875,
+					119.999995422363,
+					23.9999994277954
+				],
+				"shifted": true,
+				"text": "巴格达 · 省城"
+			},
+			{
+				"city_id": "tbilisi",
+				"font_pixels": 18,
+				"screen_rect": [
+					761.400024414063,
+					496.575439453125,
+					137.999995422363,
+					23.9999994277954
+				],
+				"shifted": false,
+				"text": "第比利斯 · 省城"
+			},
+			{
+				"city_id": "jerusalem",
+				"font_pixels": 18,
+				"screen_rect": [
+					460.800048828125,
+					896.359985351563,
+					109.000003051758,
+					23.9999994277954
+				],
+				"shifted": true,
+				"text": "耶路撒冷 ★"
+			},
+			{
+				"city_id": "tabriz",
+				"font_pixels": 18,
+				"screen_rect": [
+					840.700012207031,
+					683.636779785156,
+					109.000003051758,
+					23.9999994277954
+				],
+				"shifted": false,
+				"text": "大不里士 ★"
+			},
+			{
+				"city_id": "baku",
+				"font_pixels": 18,
+				"screen_rect": [
+					923.5,
+					571.400024414063,
+					73.0000030517578,
+					23.9999994277954
+				],
+				"shifted": false,
+				"text": "巴库 ★"
+			}
+		],
+		"objects": [
+			{
+				"id": "tashkent",
+				"kind": "city",
+				"screen_rect": [
+					1822.19995117188,
+					495.468017578125,
+					90.0,
+					67.931982421875
+				],
+				"world_anchor": [
+					2376.0,
+					2535.72241210938
+				]
+			},
+			{
+				"id": "samarkand",
+				"kind": "city",
+				"screen_rect": [
+					1698.0,
+					572.837280273438,
+					79.2,
+					65.3873291015625
+				],
+				"world_anchor": [
+					2232.0,
+					2618.86083984375
+				]
+			},
+			{
+				"id": "baku",
+				"kind": "city",
+				"screen_rect": [
+					931.920043945313,
+					507.600006103516,
+					56.1600219726563,
+					55.8
+				],
+				"world_anchor": [
+					1368.0,
+					2535.72241210938
+				]
+			},
+			{
+				"id": "tbilisi",
+				"kind": "city",
+				"screen_rect": [
+					785.400024414063,
+					424.095336914063,
+					90.0,
+					64.480078125
+				],
+				"world_anchor": [
+					1224.0,
+					2452.583984375
+				]
+			},
+			{
+				"id": "tehran",
+				"kind": "city",
+				"screen_rect": [
+					1044.59997558594,
+					794.766357421875,
+					90.0,
+					67.931982421875
+				],
+				"world_anchor": [
+					1512.0,
+					2868.27612304688
+				]
+			},
+			{
+				"id": "tabriz",
+				"kind": "city",
+				"screen_rect": [
+					855.599975585938,
+					618.036743164063,
+					79.2,
+					57.6
+				],
+				"world_anchor": [
+					1296.0,
+					2660.42993164063
+				]
+			},
+			{
+				"id": "baghdad",
+				"kind": "city",
+				"screen_rect": [
+					720.599975585938,
+					907.003295898438,
+					90.0,
+					67.931982421875
+				],
+				"world_anchor": [
+					1152.0,
+					2992.98388671875
+				]
+			},
+			{
+				"id": "istanbul",
+				"kind": "city",
+				"screen_rect": [
+					137.400024414063,
+					498.919921875,
+					90.0,
+					64.480078125
+				],
+				"world_anchor": [
+					504.0,
+					2535.72241210938
+				]
+			},
+			{
+				"id": "jerusalem",
+				"kind": "city",
+				"screen_rect": [
+					340.080017089844,
+					986.759887695313,
+					73.4400329589844,
+					63.0
+				],
+				"world_anchor": [
+					720.0,
+					3076.12231445313
+				]
+			},
+			{
+				"id": "kabul",
+				"kind": "city",
+				"screen_rect": [
+					1822.19995117188,
+					869.590942382813,
+					90.0,
+					67.931982421875
+				],
+				"world_anchor": [
+					2376.0,
+					2951.41455078125
+				]
+			}
+		],
+		"operation_hex_radius_world": 48.0,
+		"renderer": "shared_model_and_caption_footprints_v1",
+		"source_pngs_modified": false
+	},
 	"map_detail": {
 		"cell_river_segments": 13272,
 		"coast_lines": 12136,
@@ -648,13 +894,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 102,
-		"index_ms": 237.305,
+		"index_ms": 251.941,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 555.968,
+		"mesh_ms": 583.982,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 219,
-		"placement_ms": 683.315,
-		"preparation_ms": 1476.588,
+		"placement_ms": 751.661,
+		"preparation_ms": 1587.583,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_nine_point_100km",
 		"source_meters_per_world_unit": 3125.0,

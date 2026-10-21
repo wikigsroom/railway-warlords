@@ -1036,6 +1036,7 @@ func capture_frame() -> void:
 		var facts={"viewport":get_viewport_rect().size,"window":DisplayServer.window_get_size(),"ui_scale":settings.ui_scale,"mobile_layout_profile":mobile_layout(),"physical_android_device_tested":OS.has_feature("android"),"safe_insets":safe_insets(),"scenario_id":match_controller.state.get("scenario_id",""),"content_hash":content.content_hash,"build_version":ContentRegistry.APP_VERSION,"raw_godot_capture":true,"qa_save_isolated":not qa_save_path.is_empty(),"map_zoom":map_view.zoom if is_instance_valid(map_view) else 0.0,"relief":map_view.relief.diagnostics if is_instance_valid(map_view) else {},"city_labels":map_view.capture_labels() if is_instance_valid(map_view) else []}
 		if is_instance_valid(map_view):facts["map_bank"]=map_view.map_details.diagnostics
 		if is_instance_valid(map_view):facts["map_bank_visible"]=map_view.map_bank_capture_facts()
+		if is_instance_valid(map_view):facts["map_composition"]=map_view.map_composition_facts()
 		if is_instance_valid(map_view):
 			var terrain_counts={}
 			for cell in match_controller.state.map.get("cells",[]):

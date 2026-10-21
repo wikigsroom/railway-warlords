@@ -10,3 +10,7 @@
 # Exact prompt/provenance byte hashes must survive Windows checkouts.
 /docs/asset-prompts/** -text
 /docs/asset-provenance/** -text
+
+# Keep the actually recorded development runner byte for byte, including its
+# original CRLF and final blank line. Other source files retain normal checks.
+/reports/native_gameplay_v0229/visual_playtest.gd whitespace=cr-at-eol,-blank-at-eof

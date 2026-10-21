@@ -20,7 +20,7 @@ def main():
         folder = P / 'reports/screenshots/map_symbols_native' / profile
         folder.mkdir(parents=True, exist_ok=True)
         log = P / 'reports' / ('map_symbols_' + profile + '.log')
-        command = [str(exe), '--resolution', resolution, '--position', '-4000,-3000', '--',
+        command = [str(exe), '--resolution', resolution, '--position', '0,0', '--',
                    '--qa-session', '--ui-scale', scale, '--map-symbol-test', '--map-symbol-output', str(folder)]
         if profile == 'x30_layout':
             command.append('--mobile-ui-test')

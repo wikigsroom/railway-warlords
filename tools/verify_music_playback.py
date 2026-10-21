@@ -10,7 +10,7 @@ def main():
     require(export['export_verified'] and export['sha256']==sha(exe) and export['runtime_source_sha256']==runtime,'Current Windows EXE required')
     log=P/'reports/music_native.log';target=P/'reports/music_native_tests.json'
     with log.open('w',encoding='utf-8') as stream:
-        result=subprocess.run([str(exe),'--resolution','1280x720','--position','-4000,-3000','--','--qa-session','--music-test','--music-output',str(target)],cwd=P,stdout=stream,stderr=subprocess.STDOUT,timeout=120)
+        result=subprocess.run([str(exe),'--resolution','1280x720','--position','0,0','--','--qa-session','--music-test','--music-output',str(target)],cwd=P,stdout=stream,stderr=subprocess.STDOUT,timeout=120)
     text=log.read_text(encoding='utf-8',errors='replace')
     require(result.returncode==0 and 'SCRIPT ERROR:' not in text and '\nERROR:' not in text,'Native music playback failed; inspect music_native.log')
     report=read(target)

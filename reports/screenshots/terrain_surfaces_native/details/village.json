@@ -1,12 +1,12 @@
 {
-	"build_version": "0.2.28",
+	"build_version": "0.2.29",
 	"city_labels": [
 		{
 			"city_id": "place_banchangyu",
 			"font_pixels": 16,
 			"screen_rect": [
 				462.371215820313,
-				709.038757324219,
+				698.638793945313,
 				87.9999965667725,
 				23.0
 			],
@@ -18,7 +18,7 @@
 			"font_pixels": 16,
 			"screen_rect": [
 				731.391479492188,
-				542.035522460938,
+				531.635559082031,
 				87.9999965667725,
 				23.0
 			],
@@ -30,7 +30,7 @@
 			"font_pixels": 16,
 			"screen_rect": [
 				915.9990234375,
-				576.799987792969,
+				566.400024414063,
 				87.9999965667725,
 				23.0
 			],
@@ -62,7 +62,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 60875,
 		"placed": 1232,
-		"preparation_ms": 1890.607,
+		"preparation_ms": 2320.885,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1610,
 		"rule_cells_changed": false,
@@ -402,6 +402,94 @@
 		},
 		"zoom": 1.15
 	},
+	"map_composition": {
+		"geographic_anchors_changed": false,
+		"labels": [
+			{
+				"city_id": "place_banchangyu",
+				"font_pixels": 16,
+				"screen_rect": [
+					462.371215820313,
+					698.638793945313,
+					87.9999965667725,
+					23.0
+				],
+				"shifted": false,
+				"text": "板厂峪 · 村"
+			},
+			{
+				"city_id": "place_chengziyu",
+				"font_pixels": 16,
+				"screen_rect": [
+					731.391479492188,
+					531.635559082031,
+					87.9999965667725,
+					23.0
+				],
+				"shifted": false,
+				"text": "城子峪 · 村"
+			},
+			{
+				"city_id": "place_dongjiakou",
+				"font_pixels": 16,
+				"screen_rect": [
+					915.9990234375,
+					566.400024414063,
+					87.9999965667725,
+					23.0
+				],
+				"shifted": false,
+				"text": "董家口 · 村"
+			}
+		],
+		"objects": [
+			{
+				"id": "place_banchangyu",
+				"kind": "place",
+				"screen_rect": [
+					474.171051025391,
+					652.500122070313,
+					64.4000043869019,
+					38.1388341903686
+				],
+				"world_anchor": [
+					16072.8896484375,
+					7180.31005859375
+				]
+			},
+			{
+				"id": "place_dongjiakou",
+				"kind": "place",
+				"screen_rect": [
+					927.799987792969,
+					514.172729492188,
+					64.4000043869019,
+					44.227165222168
+				],
+				"world_anchor": [
+					16467.349609375,
+					7065.31982421875
+				]
+			},
+			{
+				"id": "place_chengziyu",
+				"kind": "place",
+				"screen_rect": [
+					743.191284179688,
+					476.437805175781,
+					64.4,
+					47.1979970932007
+				],
+				"world_anchor": [
+					16306.8203125,
+					7035.08984375
+				]
+			}
+		],
+		"operation_hex_radius_world": 48.0,
+		"renderer": "shared_model_and_caption_footprints_v1",
+		"source_pngs_modified": false
+	},
 	"map_detail": {
 		"cell_river_segments": 2042,
 		"coast_lines": 62,
@@ -482,13 +570,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 151.714,
+		"index_ms": 213.695,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 3249.677,
+		"mesh_ms": 3817.244,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6107,
-		"placement_ms": 1393.444,
-		"preparation_ms": 4794.834,
+		"placement_ms": 1759.285,
+		"preparation_ms": 5790.223,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

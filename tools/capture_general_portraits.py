@@ -24,7 +24,10 @@ def main():
  for profile,resolution,scale in [('windows','1920x1080','1.0'),('x30_layout','2400x1080','1.2'),('large_text','1280x720','1.5')]:
   folder=P/'reports/screenshots/general_portraits_native'/profile;folder.mkdir(parents=True,exist_ok=True)
   log=P/'reports'/('general_portraits_native_'+profile+'.log');started=datetime.now(timezone.utc).timestamp()
-  command=[str(exe),'--resolution',resolution,'--position','-4000,-3000','--','--qa-session','--ui-scale',scale,'--general-portrait-test','--general-portrait-output',str(folder)]
+  # Keep the real window on screen: an off-screen OpenGL window stopped
+  # producing frame_post_draw during the mobile-layout traversal. This is
+  # still the unchanged shipping EXE, original viewport and complete UI test.
+  command=[str(exe),'--resolution',resolution,'--position','0,0','--','--qa-session','--ui-scale',scale,'--general-portrait-test','--general-portrait-output',str(folder)]
   if profile=='x30_layout':command.append('--mobile-ui-test')
   with log.open('w',encoding='utf-8') as out:result=subprocess.run(command,cwd=P,stdout=out,stderr=subprocess.STDOUT,timeout=1500)
   diagnostic=log.read_text(encoding='utf-8',errors='replace')
@@ -38,7 +41,7 @@ def main():
    with Image.open(path) as im:require(im.size==tuple(map(int,resolution.split('x'))),'Viewport size mismatch')
    captures.append(dict(file=path.relative_to(P).as_posix(),sha256=sha(path),metadata=meta.relative_to(P).as_posix(),metadata_sha256=sha(meta)))
   require(len(captures)>=54,'Incomplete paginated general and political four-stage native traversal')
-  groups.append(dict(profile=profile,resolution=resolution,ui_scale=scale,checks=len(value['checks']),report=report.relative_to(P).as_posix(),report_sha256=sha(report),log=log.relative_to(P).as_posix(),captures=captures))
+  groups.append(dict(profile=profile,resolution=resolution,ui_scale=scale,window_position='0,0',checks=len(value['checks']),report=report.relative_to(P).as_posix(),report_sha256=sha(report),log=log.relative_to(P).as_posix(),captures=captures))
   print(json.dumps(dict(profile=profile,passed=True,checks=len(value['checks']),captures=len(captures))),flush=True)
  require(source_digest()[0]==runtime and sha(exe)==export['sha256'],'Source or binary changed during QA')
  result=dict(passed=True,version=version,runtime_source_sha256=runtime,windows_exe_sha256=export['sha256'],capture_driver_sha256=driver,groups=groups,raw_godot_captures=True,physical_android_device_tested=False,formal_art_approval=False,historical_likeness_approval=False)

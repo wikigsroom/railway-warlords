@@ -7,7 +7,7 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. Current sources are the **0.2.28 commander expansion beta**; see the [delivery receipt](reports/commander_pool_release_validation.json) for the final outcome. It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. Current sources are the **0.2.29 model-scale and shared-annotation beta**. Both builds, thirty regression groups and the retained native suites have been validated; see the [strict delivery receipt](reports/map_composition_release_validation.json) and [scope notes](docs/47_地图模型比例与统一标注布局.md). It is an offline, single-player game. **The game UI currently uses Simplified Chinese**; these READMEs are bilingual, but English game localization is not implemented yet.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
@@ -15,13 +15,19 @@ European War 6 is the main reference for visual presentation and interaction. Ca
 
 *A complete native viewport capture. PNG screenshots below have no montage, repainting or promotional overlays.*
 
+Version 0.2.29 uses five settlement display scales and a shared allocator for city, village and crossing labels, accounting for models, units and HUD. Seven shipping-Windows map views pass 58 layout checks and have each been opened in full. Geography, the 48-unit operation hexes and all 2,507 original PNGs are preserved. Mountain grounding, river banks, regional framing and complete unit action cycles still need work.
+
+![Version 0.2.29 shipping Windows application: complete Wuhan map viewport](docs/media/map-composition-wuhan-v0229.png)
+
+*An untouched complete native capture. The wide permanent inspector, angular rivers and sparse ground remain visible. Separate development candidates are excluded from this delivery.*
+
 Version 0.2.28 expands the military pool from 29 to **324 people**, retaining four separate political-only figures. **303 have a brigade-or-higher, naval or historical equivalent command, including 12 army-or-higher deputies**; 20 deputy-division officers and one army political co-commander are identified separately. Headquarters has twelve-card pagination, name, country, command-level and era filters. All 61 scenario rosters have independent dated faction lists with no uniform three- or five-person cap. Starting participants and optional free-world reserves are distinguished; eligible reserves can receive an actual appointment to an owned formation.
 
 [Full sourced commander CSV](docs/data/commanders.csv) · [Per-scenario faction counts](docs/data/scenario_commanders.csv) · [Commander expansion documentation](docs/46_师旅级将领池与战役名册.md)
 
 ![Version 0.2.28 shipping Windows application: division-command filter](docs/media/commander-japan-division-v0228.png)
 
-*Complete native viewport; historical offices and gameplay progression remain distinct.*
+*An unchanged complete 0.2.28 viewport retained under its original version; historical offices and gameplay progression remain distinct.*
 
 Four independent Sub2 age-stage originals have been generated, individually inspected and installed for each of 295 new people: 1,180 new portraits and 1,315 total for 328 people. Generation, individual full-image inspection, installation and final validation have separate records. This is not an exhaustive census of all eligible Asian commanders, complete service tenures or full orders of battle. Historical likeness and final commercial art approval remain pending. Older dated entries below retain their own version context.
 
@@ -111,6 +117,8 @@ Runtime data lives in `content/`. Original designs and older versions retain the
 
 Version 0.2.21 clips ground to source land beneath cities, roads and shore edges. Leaf/needle floors require forest evidence; all twenty families remain in the atlas, while nineteen are deployed in the tested Asia 1927 map. Three local YuE2 scores, each 180 seconds, share a theme across menus, planning and combat with 2.4-second crossfades. See [source-clipped ground](docs/38_源陆地补纹与林底选材约束.md) and [music, downloads and verification scope](docs/39_本地YuE2纯器乐配乐与场景衔接.md).
 
+Future music production follows the user's 2026-10-21 choice of **music-gen-remote-YuE2**, dispatched from native Windows to a remote RTX 3080. New scores retain the shared instrumental theme without authored dialogue or lyrics. Existing tracks keep their local-generation provenance; scores, job IDs, originals, exports and listening status are recorded separately. See the [future music workflow](docs/39_本地YuE2纯器乐配乐与场景衔接.md#后续制作路线2026-10-21).
+
 | Listen | Context | Arrangement |
 | --- | --- | --- |
 | [Embers over the Land · 3 minutes](docs/audio/01_menu_embers.mp3) | Main menu and mode selection | 72 BPM, plucked strings and chamber strings introduce the theme |
@@ -136,6 +144,12 @@ City and individual formation symbols continue to change with zoom. Regional cou
 Compact formations receive precise selection before the wider city snap radius. The old repeated terrain marks are omitted when the complete painted scenery bank is available. See [map zoom and precise selection](docs/35_地图缩放层次与精确点选.md) for behavior and verification scope.
 
 ### Native movement and combat
+
+The **0.2.29 native development-engine demo** uses the same frozen runtime source as the Windows / Android exports. It preserves the original 1924 campaign deployment, executes 16 legal moves and 9 attacks, and verifies replayed state and random draws. The full recording is 26.37 seconds at 1440×810, 30 FPS, with audio. The GIF retains the entire frame and duration at normal speed, converted to 960×540 at 12 FPS.
+
+![Full 0.2.29 native development-engine movement and combat](docs/media/native-gameplay-v0229.gif)
+
+[Full MP4 with audio](reports/native_gameplay_v0229.mp4) · [Provenance, conversion and actual viewing record](reports/native_gameplay_v0229/media_review.json). The development engine recorded this video; seven separate map views verify the shipping EXE. Five key frames were actually viewed. Complete unit animation cycles, final art quality and physical Android acceptance remain pending.
 
 The following GIFs and full MP4 retain their original **0.2.12** recording identity. They demonstrate real movement and combat commands. Current terrain and UI are shown in the current native screenshots.
 
@@ -503,7 +517,7 @@ Configure your own release keystore, alias and password through Godot private cr
 godot --headless --path . --export-release "Android" "build/android/RailwayWarlords.apk"
 ```
 
-App ID is `org.railwaywarlords.game`; version 0.2.28 uses versionCode 33. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
+App ID is `org.railwaywarlords.game`; version 0.2.29 uses versionCode 34. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
 
 ### Automation scope
 
@@ -554,13 +568,13 @@ godot --headless --path . --script tests/surface_geography_test.gd
 godot --headless --path . --script tests/terrain_surfaces_test.gd
 ```
 
-Version 0.2.28 passes 30 groups / 14,581 rule checks, including 5,036 portrait, 4,153 commander and 88 daily-calendar checks. Coverage includes 61 dated rosters, independent side counts, source links, life-date boundaries, filters, reserve appointments, the 1860 Anglo-French alliance and save rules. Whole portrait pages, progression, maps and appointments in three shipping-EXE layouts pass, with 379 specialist complete viewport captures; 21 were actually viewed in full during this review. Synthetic GPU fixtures, native frames and actually viewed frames have distinct records. See the [regression seal](reports/regression_dependency_evidence.json), [commander evidence](reports/commander_roster_native_evidence.json) and [complete-frame review](reports/commander_pool_native_review.json). Older performance records, fixtures and GIFs retain their version identities.
+Version 0.2.29 passes 30 groups / 14,581 rule checks, including 5,036 portrait, 4,153 commander and 88 daily-calendar checks. The shipping EXE repeats the existing portrait, appointment, headquarters, map, coast, water, symbol and music suites and adds seven map views / 58 composition checks, for 386 specialist complete viewport files. Seventeen files were actually opened in full during this review, representing sixteen distinct image hashes. Generated captures, complete-image inspection, formal art approval and physical-phone acceptance are distinct. See the [regression seal](reports/regression_dependency_evidence.json), [map evidence](reports/map_composition_native_evidence.json) and [actual full-frame review](reports/map_composition_native_review.json). Older GIFs, performance records and numerical fixtures retain their version identities.
 
 [Test scope](docs/05_测试与验收.md) · [Dependency/report binding](reports/regression_dependency_evidence.json) · [Current native evidence](reports/terrain_surface_native_evidence.json) · [Current dossier transaction evidence](reports/ui_refinement_native_evidence.json)
 
-Version 0.2.28 completes the scoped regression, native-application and APK revalidation; the [strict receipt](reports/commander_pool_release_validation.json) records delivery acceptance. Older measurements below retain their historical identity. Schema 2 / ruleset 11 changes rosters and starting rules, so ongoing matches from 0.2.27 or earlier require their original build. Start a new match for the new rules. Career profiles retain their independent format.
+Version 0.2.29 completes the scoped regression, native-application and APK revalidation; archive status is recorded in the [strict receipt](reports/map_composition_release_validation.json). Schema 2 / ruleset 11 and the 0.2.28 content identity are preserved, allowing ongoing 0.2.28 matches. Matches from 0.2.27 or earlier require their original build. Career profiles retain their independent format. Older measurements below retain their historical identity.
 
-The version 0.2.28 180-frame RTX 3060 static battlefield sample at 1920×1080 averages **59.96 FPS**, with 17.94ms p95 frame time, missing the average 60 FPS target. The [performance observation](reports/water_map_performance_observation.json) retains the raw sample. Window focus and occlusion are unrecorded and no matched old-build baseline exists; this cannot establish a speedup over 0.2.27 or phone performance. Controlled foreground, moving/combat and physical-phone measurements remain unresolved.
+The version 0.2.29 180-frame RTX 3060 static battlefield sample at 1920×1080 averages **59.96 FPS**, with **18.39ms** p95 frame time, missing the average 60 FPS target. The [performance observation](reports/water_map_performance_observation.json) retains the raw sample. Window focus and occlusion are unrecorded and no matched old-build baseline exists; this cannot establish a speedup or phone performance. Controlled foreground, moving/combat and physical Motorola X30 measurements remain unresolved.
 
 The repository's `.gitattributes` preserves original bytes so automatic newline conversion cannot change hashed prompts, native metadata or evidence. The [Git byte check](reports/git_byte_preservation.json) compares staged objects with working files separately from gameplay checks.
 
@@ -632,6 +646,7 @@ Engine, fonts and geographic data retain individual terms. Natural Earth, HydroR
 | Cardinal unit views; fuller actions mainly for ordinary infantry | Other unit cycles, reloads, deaths and more headings |
 | Continental Asia now clips control to source land; some local missions still use coarse nodes | Refine theaters, dated administration and deployment; reduce unit/city crowding and refine mountain-foot transitions and location-specific landforms |
 | Historical evidence separated from gameplay data | Item-level dates, labels, people, equipment, OOB and control review |
+| Located historical errors remain in Asian starts | Correct Urga's 1927/1940 control, late Ottoman/Qajar identities, the January 1940 Vichy label and dated Petrograd/Tokyo names; current starting states have not passed complete historical review |
 | Playable loop without all-mission manual balancing | Victory paths, weaker factions, economy pacing and difficulty |
 | Desktop X30-size layout checks | Physical X30 install, touch, GPU, thermals, battery and endurance |
 | Tactical selection frame-time spikes | Reduce selection, preview and submission peaks |
@@ -663,4 +678,4 @@ The [0.2.23 military UI and dossier chapter](docs/41_军事界面与将领档案
 
 The [0.2.24 atlas and diplomacy chapter](docs/42_战区沙盘与外交事务精修.md) covers shipping terrain previews, zoom and pan, date gates, counterparty selection, actual aid transactions and current delivery limits.
 
-Older chapters preserve their version context. Use these READMEs, the 0.2.28 assessment and corresponding reports for current status. The [commander chapter](docs/46_师旅级将领池与战役名册.md) documents the full registered pool, sources, filters, appointments and remaining coverage.
+Older chapters preserve their version context. Use these READMEs, the 0.2.29 assessment and corresponding reports for current status. The [commander chapter](docs/46_师旅级将领池与战役名册.md) documents the full registered pool, sources, filters, appointments and remaining coverage.

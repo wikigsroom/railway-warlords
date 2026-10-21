@@ -4,7 +4,7 @@ from build_release import P,current_version,source_digest
 from package_delivery import read,sha,require
 
 def main():
-    require(current_version()=='0.2.28','Unexpected performance observation version')
+    require(current_version() in {'0.2.28','0.2.29'},'Unexpected performance observation version')
     export=next(r for r in read(P/'reports/export_results.json') if r['target']=='windows')
     exe=P/'build/windows/RailwayWarlords.exe';runtime=source_digest()[0]
     require(export['export_verified'] and export['sha256']==sha(exe)

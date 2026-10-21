@@ -342,7 +342,7 @@ func prepare_geography() -> void:
 	detail_river_buckets=MapHydrography.spatial_index(detail_river_lines)
 	for crossing in state.map.get("crossings",[]):
 		var from=HexGrid.to_world(HexGrid.coordinate(crossing.get("from",{})));var to=HexGrid.to_world(HexGrid.coordinate(crossing.get("to",{})))
-		crossing_markers.append({"from":from,"to":to,"kind":str(crossing.get("kind","bridge")),"intact":bool(crossing.get("intact",true)),"rail_allowed":bool(crossing.get("rail_allowed",false))})
+		crossing_markers.append({"id":"crossing:"+str(crossing.get("id",crossing_markers.size())),"from":from,"to":to,"kind":str(crossing.get("kind","bridge")),"intact":bool(crossing.get("intact",true)),"rail_allowed":bool(crossing.get("rail_allowed",false))})
 	prepare_administration(false)
 	for edge in state.map.rail_edges:
 		for position in edge.path_hexes:rail_cells[HexGrid.key(HexGrid.coordinate(position))]=true
@@ -446,16 +446,40 @@ func prepare_place_sprites() -> void:
 		settlement_choices=MapArtBank.assign(candidates,450.0)
 	for node in places.nodes:
 		var rank=HistoricalPlaces.importance(node,state.date)
-		var bounds=Vector2(78,58) if rank==1 else Vector2(104,78) if rank==2 else Vector2(118,94) if rank==3 else Vector2(136,116)
+		var bounds=MapComposition.settlement_bounds(rank)
 		var footprint=Rect2(node.at+Vector2(0,-12)-bounds*.5,bounds)
 		var bank_id=str(settlement_choices.get(node.id+":",""))
 		if not bank_id.is_empty():
 			node["bank_asset_id"]=bank_id
 			var rectangle=MapArtBank.source_rect(bank_id,bounds)
 			node["bank_texture_rect"]=rectangle
-			footprint=Rect2(node.at+Vector2(0,26)+rectangle.position,rectangle.size)
+			footprint=Rect2(node.at+MapComposition.CITY_FOOT+rectangle.position,rectangle.size)
 		node["sprite_bounds"]=bounds
 		node["sprite_on_land"]=true if state.map.get("strategic_scale",false) else relief.dry_point(footprint.position) and relief.dry_point(footprint.end) and relief.dry_point(Vector2(footprint.end.x,footprint.position.y)) and relief.dry_point(Vector2(footprint.position.x,footprint.end.y)) and not relief.intersects_index(footprint,relief.boundary_buckets,0)
+
+func city_visual_record(city: Dictionary) -> Dictionary:
+	var bounds=MapComposition.settlement_bounds(HistoricalPlaces.importance(city,state.date))
+	var bank_id="";var group="scenery";var asset_id=""
+	if MapArtBank.available() and city.fort_hp>0 and city.id not in ["jiumenkou","shanhaiguan"]:
+		var role="station" if EconomyRules.building_level(city,"station")>0 and HistoricalPlaces.kind(city,state.date)=="city" else "dock" if city.get("port",false) and HistoricalPlaces.kind(city,state.date) not in ["national_capital","capital"] else ""
+		bank_id=str(settlement_choices.get(city.id+":"+role,MapArtBank.settlement_id(city,state.date,role)))
+	if not bank_id.is_empty():
+		var texture_rect=MapArtBank.source_rect(bank_id,bounds)
+		texture_rect.position+=MapComposition.CITY_FOOT
+		return {"group":"building","asset_id":bank_id,"texture_rect":texture_rect,"body":MapComposition.alpha_rect(MapArtBank.data().records.get(bank_id,{}),texture_rect),"bounds":bounds}
+	if city.id=="jiumenkou" and ResourceLoader.exists("res://assets/scenery/scenery_jiumenkou_wall.png"):asset_id="scenery_jiumenkou_wall"
+	elif city.id=="shanhaiguan" and city.fort_hp>0:asset_id="scenery_walled_city"
+	elif city.fort_hp>0 and HistoricalPlaces.kind(city,state.date) in ["capital","national_capital","county","market"]:asset_id=HistoricalPlaces.asset_id(city,state.date)
+	elif EconomyRules.building_level(city,"station")>0 and city.fort_hp>0:asset_id="scenery_station_town"
+	else:
+		group="building";asset_id="building_%s_%s"%["station" if EconomyRules.building_level(city,"station")>0 else "barracks","damaged" if city.fort_hp==0 else "intact"]
+	# Whole fallback textures keep their native aspect ratio in the same bounds.
+	var image=assets.texture(group,asset_id)
+	var dimensions=bounds
+	if image!=null:
+		var actual=image.get_size();dimensions=actual*minf(bounds.x/actual.x,bounds.y/actual.y)
+	var rectangle=Rect2(Vector2(0,-10)-dimensions*.5,dimensions)
+	return {"group":group,"asset_id":asset_id,"texture_rect":rectangle,"body":rectangle,"bounds":bounds}
 
 func prepare_administration(refresh_places: bool=true) -> void:
 	administration_key=ContentRegistry.administration_year(state.date);region_lines.clear()
@@ -781,26 +805,13 @@ func _draw() -> void:
 		if not MapSemanticZoom.detailed(zoom,city.id==selected_city_id):
 			draw_city_counter(p,city);drawn_city_counter_ids.append(city.id);continue
 		drawn_city_detail_ids.append(city.id)
-		var color=faction_color(city.owner_id)
-		var image: Texture2D
-		var bank_id=""
-		if MapArtBank.available() and city.fort_hp>0 and city.id not in ["jiumenkou","shanhaiguan"]:
-			var role="station" if EconomyRules.building_level(city,"station")>0 and HistoricalPlaces.kind(city,state.date)=="city" else "dock" if city.get("port",false) and HistoricalPlaces.kind(city,state.date) not in ["national_capital","capital"] else ""
-			bank_id=str(settlement_choices.get(city.id+":"+role,MapArtBank.settlement_id(city,state.date,role)))
-		if bank_id.is_empty():
-			if city.id=="jiumenkou" and ResourceLoader.exists("res://assets/scenery/scenery_jiumenkou_wall.png"):image=assets.texture("scenery","scenery_jiumenkou_wall")
-			elif city.id=="shanhaiguan" and city.fort_hp>0:image=assets.texture("scenery","scenery_walled_city")
-			elif city.fort_hp>0 and HistoricalPlaces.kind(city,state.date) in ["capital","national_capital","county","market"]:image=assets.texture("scenery",HistoricalPlaces.asset_id(city,state.date))
-			elif EconomyRules.building_level(city,"station")>0 and city.fort_hp>0:image=assets.texture("scenery","scenery_station_town")
-			else:image=assets.texture("building","building_%s_%s"%["station" if EconomyRules.building_level(city,"station")>0 else "barracks","damaged" if city.fort_hp==0 else "intact"])
-		if not bank_id.is_empty():
-			var bank_texture=assets.texture("building",bank_id)
-			var rectangle=MapArtBank.source_rect(bank_id,Vector2(136,116));rectangle.position+=p+Vector2(0,28)
-			if bank_texture!=null:draw_texture_rect(bank_texture,rectangle,false)
-		elif image!=null:sprite(image,p+Vector2(0,-15),Vector2(136,116))
-		command_flag(p+Vector2(-47,-42),city.owner_id,20)
+		var visual=city_visual_record(city)
+		var image=assets.texture(visual.group,visual.asset_id)
+		var rectangle:Rect2=visual.texture_rect;rectangle.position+=p
+		if image!=null:draw_texture_rect(image,rectangle,false)
+		command_flag(p+Vector2(-visual.bounds.x*.34,-visual.bounds.y*.50),city.owner_id,17)
 		if city.fort_hp>0:
-			draw_rect(Rect2(p+Vector2(-27,41),Vector2(54,4)),Color("282e27"));draw_rect(Rect2(p+Vector2(-27,41),Vector2(54.0*city.fort_hp/city.fort_max_hp,4)),Color("d2be81"))
+			draw_rect(Rect2(p+Vector2(-24,22),Vector2(48,4)),Color("282e27"));draw_rect(Rect2(p+Vector2(-24,22),Vector2(48.0*city.fort_hp/city.fort_max_hp,4)),Color("d2be81"))
 		if city.id==selected_city_id:var corners=HexGrid.corners(p,46);corners.append(corners[0]);draw_polyline(corners,Color("eedda2"),2.4,true)
 	for poi in state.map.get("reference_pois",[]):
 		var p=HexGrid.to_world(HexGrid.coordinate(poi.position))
@@ -837,6 +848,7 @@ func draw_foreground(view: Rect2) -> void:
 	draw_playback(view)
 	draw_city_labels(view)
 	if show_places:draw_place_labels(view)
+	draw_crossing_labels(view)
 	draw_set_transform(Vector2.ZERO)
 	if show_control:draw_control_legend()
 	if show_terrain:draw_terrain_legend()
@@ -963,24 +975,13 @@ func draw_units(view: Rect2, actors: Variant = null) -> void:
 		var detail=MapSemanticZoom.detailed(zoom,u.id==selected_unit_id or active_actor)
 		var opacity=playback.opacity_of(u) if playback.active else 1.0
 		if opacity<=0:continue
-		if at_city and detail:p+=Vector2(29,17)
+		if at_city and detail:p+=MapComposition.GARRISON_OFFSET
 		if not detail:
 			draw_unit_counter(p,u,color,opacity);drawn_unit_counter_ids.append(u.id);drawn_unit_count+=1;continue
 		drawn_unit_detail_ids.append(u.id)
 		# Facing is visual state only. Movement turns the miniature toward the
 		# current segment; neither the saved formation nor its legal action changes.
-		var heading=Vector2.ZERO
-		if playback.active and playback.current.kind in ["move","rail"] and playback.current.unit_id==u.id:
-			var progress=playback.progress()
-			var travel=progress if playback.reduced_motion else progress*progress*(3-2*progress)
-			var route=playback.current.path;var segment=mini(route.size()-2,int((route.size()-1)*travel))
-			heading=HexGrid.to_world(HexGrid.coordinate(route[segment+1]))-HexGrid.to_world(HexGrid.coordinate(route[segment]))
-		elif playback.active and playback.current.kind=="attack" and playback.current.attacker.id==u.id:
-			heading=HexGrid.to_world(HexGrid.coordinate(playback.current.position))-HexGrid.to_world(HexGrid.coordinate(playback.current.from))
-		elif playback.active and playback.current.kind=="attack" and playback.current.target.get("id","")==u.id:
-			heading=HexGrid.to_world(HexGrid.coordinate(playback.current.from))-HexGrid.to_world(HexGrid.coordinate(playback.current.position))
-		if heading.length_squared()<0.01 and unit_headings.has(str(u.id)):
-			heading=unit_headings[str(u.id)]
+		var heading=visual_unit_heading(u)
 		var orientation=unit_orientation(heading,str(u.get("facing","se")),u)
 		var pose=playback.pose_of(u) if playback.active else "idle"
 		var image=assets.unit_action_texture(u,orientation.asset,pose)
@@ -1015,7 +1016,7 @@ func draw_units(view: Rect2, actors: Variant = null) -> void:
 		draw_unit_family_badge(p+Vector2(0,25),family,color,opacity)
 		if image!=null:
 			draw_set_transform(screen_anchor,orientation.angle+motion.rotation,Vector2.ONE*zoom*float(motion.scale))
-			var bound=Vector2(88,80) if not at_city else Vector2(75,68)
+			var bound=MapComposition.unit_bounds(at_city)
 			var action_rect=assets.unit_action_rect(u,orientation.asset,pose,bound)
 			if action_rect.has_area():draw_texture_rect(image,action_rect,false,Color(1,1,1,opacity))
 			else:sprite(image,Vector2.ZERO+Vector2(0,-9),bound,Color(1,1,1,opacity))
@@ -1034,6 +1035,19 @@ func draw_units(view: Rect2, actors: Variant = null) -> void:
 			var city=StateAccess.find(state,"cities",str(u.get("supply_city_id")))
 			if not city.is_empty():draw_line(p,HexGrid.to_world(HexGrid.coordinate(city.position))-world_anchor,Color(.71,.88,.65,.4),1.2,true)
 	draw_set_transform(size*.5-camera*zoom,0,Vector2.ONE*zoom)
+
+func visual_unit_heading(unit: Dictionary) -> Vector2:
+	var heading=Vector2.ZERO
+	if playback.active and playback.current.kind in ["move","rail"] and playback.current.unit_id==unit.id:
+		var progress=playback.progress()
+		var travel=progress if playback.reduced_motion else progress*progress*(3-2*progress)
+		var route=playback.current.path;var segment=mini(route.size()-2,int((route.size()-1)*travel))
+		heading=HexGrid.to_world(HexGrid.coordinate(route[segment+1]))-HexGrid.to_world(HexGrid.coordinate(route[segment]))
+	elif playback.active and playback.current.kind=="attack" and playback.current.attacker.id==unit.id:
+		heading=HexGrid.to_world(HexGrid.coordinate(playback.current.position))-HexGrid.to_world(HexGrid.coordinate(playback.current.from))
+	elif playback.active and playback.current.kind=="attack" and playback.current.target.get("id","")==unit.id:
+		heading=HexGrid.to_world(HexGrid.coordinate(playback.current.from))-HexGrid.to_world(HexGrid.coordinate(playback.current.position))
+	return unit_headings.get(str(unit.id),Vector2.ZERO) if heading.length_squared()<.01 else heading
 
 func unit_orientation(heading: Vector2, fallback: String="se", unit: Dictionary={}) -> Dictionary:
 	# Prefer the independent Sub2 cardinal source views. They keep the figures
@@ -1138,6 +1152,9 @@ func sync_foreground() -> void:
 	foreground_view.playback=playback;foreground_view.visible_ids=visible_ids;foreground_view.queue_redraw()
 	foreground_view.cinema=cinema
 	foreground_view.places=places;foreground_view.place_references=place_references;foreground_view.selected_place_id=selected_place_id
+	foreground_view.settlement_choices=settlement_choices
+	foreground_view.unit_headings=unit_headings
+	foreground_view.crossing_markers=crossing_markers
 	foreground_view.show_places=show_places;foreground_view.show_control=show_control;foreground_view.show_terrain=show_terrain
 	foreground_view.hud_map_rect=hud_map_rect
 	foreground_view.territory_qa_mode=territory_qa_mode
@@ -1464,9 +1481,8 @@ func draw_crossing_markers(view: Rect2) -> void:
 			for index in range(3):
 				var at=a.lerp(b,float(index+1)/4.0)
 				draw_line(at-normal*8,at+normal*8,ink,1.4/zoom,true)
-		if zoom>=.34:
-			var caption="渡口" if crossing.kind=="ferry" else ("桥" if crossing.rail_allowed else "桥")
-			map_name(caption,midpoint+normal*18,15,Color("80643e"),.82 if intact else .45)
+		# Captions use the shared foreground placement, so a cached ferry label
+		# cannot cut through a moving formation or another city's name.
 
 func prepare_territory_field() -> void:
 	# The published administrative polygons are available for the local theatre
@@ -1894,7 +1910,7 @@ func draw_places(view: Rect2) -> void:
 			drawn_place_detail_ids.append(node.id)
 			var bounds:Vector2=node.sprite_bounds
 			if node.sprite_on_land and node.has("bank_asset_id"):
-				var rectangle: Rect2=node.bank_texture_rect;rectangle.position+=node.at+Vector2(0,26)
+				var rectangle: Rect2=node.bank_texture_rect;rectangle.position+=node.at+MapComposition.CITY_FOOT
 				draw_texture_rect(assets.texture("building",node.bank_asset_id),rectangle,false,Color(1,1,1,.96))
 			elif node.sprite_on_land:sprite(assets.texture("scenery",HistoricalPlaces.asset_id(node,state.date)),node.at+Vector2(0,-12),bounds,Color(1,1,1,.94))
 			else:draw_circle(node.at,4.0/zoom,Color("796c51"));draw_arc(node.at,7.0/zoom,0,TAU,24,Color("eee0ba"),1.0/zoom,true)
@@ -1923,13 +1939,68 @@ func label_text_width(text: String, pixels: int) -> float:
 	if not label_text_widths.has(key):label_text_widths[key]=assets.map_font.get_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,-1,pixels).x
 	return label_text_widths[key]
 
+func annotation_object_records(view: Rect2) -> Array:
+	var result: Array=[]
+	for city in playback.cities if playback.active else state.cities:
+		var point=HexGrid.to_world(HexGrid.coordinate(city.position))
+		if not view.has_point(point):continue
+		var body:Rect2
+		if MapSemanticZoom.detailed(zoom,city.id==selected_city_id):
+			var visual=city_visual_record(city)
+			body=visual.body;body.position+=point
+			body=body.expand(point+Vector2(0,26))
+			body=body.expand(point+Vector2(-visual.bounds.x*.34,-visual.bounds.y*.50-4))
+		else:
+			var radius=MapSemanticZoom.city_radius(zoom,HistoricalPlaces.importance(city,state.date))/zoom
+			body=Rect2(point-Vector2.ONE*radius,Vector2.ONE*radius*2)
+		result.append({"id":city.id,"kind":"city","position":point,"rect":body})
+	if show_places:
+		for node in place_references:
+			if not view.has_point(node.at) or not map_place_visible(node):continue
+			var body:Rect2
+			if MapSemanticZoom.detailed(zoom,node.id==selected_place_id) and node.sprite_on_land:
+				if node.has("bank_asset_id"):
+					body=MapComposition.alpha_rect(MapArtBank.data().records.get(node.bank_asset_id,{}),node.bank_texture_rect)
+					body.position+=node.at+MapComposition.CITY_FOOT
+				else:body=Rect2(node.at+Vector2(0,-12)-node.sprite_bounds*.5,node.sprite_bounds)
+			else:
+				var radius=MapSemanticZoom.city_radius(zoom,HistoricalPlaces.importance(node,state.date))/zoom
+				body=Rect2(node.at-Vector2.ONE*radius,Vector2.ONE*radius*2)
+			result.append({"id":node.id,"kind":"place","position":node.at,"rect":body})
+	var unit_records=label_unit_points
+	if playback.active:
+		unit_records=[]
+		for unit in playback.units:
+			if unit.position==null or playback.opacity_of(unit)<=0:continue
+			var point=playback.position_of(unit)+playback.motion_visual(unit,content).offset
+			if unit.owner_id!=state.player_faction_id and not VisibilityRules.hex_visible(state,state.player_faction_id,HexGrid.from_world(point)):continue
+			var in_city=not StateAccess.at(state,"cities",HexGrid.coordinate(unit.position)).is_empty() and (playback.current.kind not in ["move","rail"] or playback.current.unit_id!=unit.id)
+			unit_records.append({"id":unit.id,"position":point,"in_city":in_city,"heading":visual_unit_heading(unit)})
+	for record in unit_records:
+		if view.has_point(record.position):result.append({"id":record.id,"kind":"unit","position":record.position,"rect":unit_label_obstacle(record)})
+	if zoom>=.34:
+		for crossing in crossing_markers:
+			var midpoint=(crossing.from+crossing.to)*.5
+			if not view.has_point(midpoint):continue
+			var body=Rect2(crossing.from,Vector2.ZERO).expand(crossing.to).grow(6.0/zoom)
+			result.append({"id":crossing.id,"kind":"crossing","position":midpoint,"rect":body})
+	return result
+
+func map_composition_facts() -> Dictionary:
+	prepare_label_records()
+	var area=Rect2(camera-size/(2*zoom),size/zoom)
+	var objects: Array=[]
+	for record in annotation_object_records(area):
+		var rect:Rect2=record.rect;var screen=world_to_screen(rect.position)
+		objects.append({"id":record.id,"kind":record.kind,"world_anchor":[record.position.x,record.position.y],"screen_rect":[screen.x,screen.y,rect.size.x*zoom,rect.size.y*zoom]})
+	return {"renderer":"shared_model_and_caption_footprints_v1","operation_hex_radius_world":HexGrid.RADIUS,"geographic_anchors_changed":false,"source_pngs_modified":false,"objects":objects,"labels":capture_labels()}
+
 func place_label_layout(view: Rect2) -> Array:
 	prepare_label_records()
 	var result: Array=[];var occupied: Array=label_overlay_obstacles()
 	for label in drawn_labels:occupied.append(label.rect)
-	for record in label_unit_points:
-		var at:Vector2=record.position
-		if view.has_point(at):occupied.append(unit_label_obstacle(record))
+	var bodies: Dictionary={}
+	for record in annotation_object_records(view):occupied.append(record.rect);bodies[record.id]=record.rect
 	var screen_view=Rect2(camera-size/(2*zoom),size/zoom)
 	for node in label_place_nodes:
 		if not view.has_point(node.at) or not map_place_visible(node):continue
@@ -1937,40 +2008,59 @@ func place_label_layout(view: Rect2) -> Array:
 		var text=node.name+(" · 省城" if kind=="capital" else " · 首都" if kind=="national_capital" else " · 县" if kind=="county" else " · 村" if kind=="village" else "")
 		var font_pixels=ceili((16 if kind=="village" else 17)*label_scale);var font_size=ceili(float(font_pixels)/zoom)
 		var dimensions=Vector2((label_text_width(text,font_pixels)+10)/zoom,23*label_scale/zoom)
-		for shift in [Vector2(0,42),Vector2(0,-64/zoom),Vector2((dimensions.x+16/zoom)*.5,18/zoom),Vector2(-(dimensions.x+16/zoom)*.5,18/zoom),Vector2(0,72/zoom),Vector2(0,108/zoom)]:
-			var rect=Rect2(node.at+shift-dimensions*.5,dimensions)
-			if not screen_view.encloses(rect):continue
-			var collision=false
-			for other in occupied:
-				if rect.grow(4/zoom).intersects(other):collision=true;break
-			if collision:continue
-			result.append({"city_id":node.id,"text":text,"position":node.at,"rect":rect,"font_size":font_size,"font_pixels":font_pixels,"shifted":shift!=Vector2(0,42)});occupied.append(rect);break
+		var body:Rect2=bodies.get(node.id,Rect2(node.at-Vector2.ONE*6/zoom,Vector2.ONE*12/zoom))
+		var rect=MapComposition.label_rect(node.at,dimensions,body,occupied,screen_view,zoom)
+		if not rect.has_area():continue
+		result.append({"city_id":node.id,"text":text,"position":node.at,"rect":rect,"font_size":font_size,"font_pixels":font_pixels,"shifted":rect.get_center().distance_to(node.at)>48/zoom});occupied.append(rect)
 	return result
 
 func draw_place_labels(view: Rect2) -> void:
 	var labels=place_label_layout(view)
 	for label in labels:
 		var rect:Rect2=label.rect
-		if label.shifted:draw_line(label.position,rect.get_center(),Color(.31,.27,.18,.58),.8/zoom,true)
+		if label.shifted:draw_line(label.position,MapComposition.nearest_edge(rect,label.position),Color(.31,.27,.18,.58),.8/zoom,true)
 		draw_rect(rect,Color(.90,.94,.89,.90));draw_rect(rect,Color(.27,.38,.41,.7),false,.6/zoom)
 		draw_screen_label(label.text,rect.position+Vector2(5/zoom,17.5*label_scale/zoom),label.font_pixels,Color("233640"))
 	drawn_labels.append_array(labels)
+
+func draw_crossing_labels(view: Rect2) -> void:
+	if zoom<.34:return
+	var occupied: Array=label_overlay_obstacles()
+	for label in drawn_labels:occupied.append(label.rect)
+	var bodies:Dictionary={}
+	for record in annotation_object_records(view):occupied.append(record.rect);bodies[record.id]=record.rect
+	var viewport=Rect2(camera-size/(2*zoom),size/zoom)
+	var pixels=ceili(15.0*label_scale)
+	for crossing in crossing_markers:
+		if not bodies.has(crossing.id):continue
+		var midpoint:Vector2=(crossing.from+crossing.to)*.5
+		var text="渡口" if crossing.kind=="ferry" else "桥"
+		var dimensions=Vector2((label_text_width(text,pixels)+10)/zoom,21.0*label_scale/zoom)
+		var rect=MapComposition.label_rect(midpoint,dimensions,bodies[crossing.id],occupied,viewport,zoom)
+		if not rect.has_area():continue
+		draw_line(midpoint,MapComposition.nearest_edge(rect,midpoint),Color("786546",.55),.7/zoom,true)
+		draw_rect(rect,Color(.88,.89,.80,.90 if crossing.intact else .65))
+		draw_screen_label(text,rect.position+Vector2(5/zoom,16*label_scale/zoom),pixels,Color("4c493b"))
+		drawn_labels.append({"city_id":crossing.id,"text":text,"position":midpoint,"rect":rect,"font_size":ceili(float(pixels)/zoom),"font_pixels":pixels,"shifted":true});occupied.append(rect)
 
 func unit_label_obstacle(record: Dictionary) -> Rect2:
 	var point: Vector2=record.position
 	if not MapSemanticZoom.detailed(zoom,str(record.id)==selected_unit_id):
 		var dimensions=(MapSemanticZoom.unit_size(zoom)+Vector2.ONE*5)/zoom
 		return Rect2(point-dimensions*.5,dimensions)
-	if record.in_city:point+=Vector2(29,17)
-	return Rect2(point+Vector2(-39,-48),Vector2(82,83))
+	if record.in_city:point+=MapComposition.GARRISON_OFFSET
+	var body=Rect2(point+Vector2(-39,-48),Vector2(82,83))
+	var heading:Vector2=record.get("heading",unit_headings.get(str(record.id),Vector2.ZERO))
+	if heading.length_squared()>.01:
+		var tip=point+Vector2(0,-34 if record.in_city else -39)+heading.normalized()*32
+		body=body.expand(tip-Vector2.ONE*8).expand(tip+Vector2.ONE*8)
+	return body
 
 func city_label_layout(view: Rect2) -> Array:
 	prepare_label_records()
 	var labels: Array=[];var occupied: Array=label_overlay_obstacles()
-	for record in label_unit_points:
-		var point:Vector2=record.position
-		if not view.has_point(point):continue
-		occupied.append(unit_label_obstacle(record))
+	var bodies: Dictionary={}
+	for record in annotation_object_records(view):occupied.append(record.rect);bodies[record.id]=record.rect
 	var visible_rect=Rect2(camera-size/(2*zoom),size/zoom)
 	var font_pixels=ceili(18.0*label_scale);var font_size=ceili(float(font_pixels)/zoom)
 	for city in label_city_nodes:
@@ -1980,15 +2070,10 @@ func city_label_layout(view: Rect2) -> Array:
 		var text=city.name+(" · 首都" if role=="national_capital" else " · 省城" if role=="capital" else " ★" if city.key_city else "")
 		var width=label_text_width(text,font_pixels)/zoom
 		var dimensions=Vector2(width+14/zoom,24.0*label_scale/zoom)
-		var anchor=point+Vector2(0,54)
-		for shift in [Vector2.ZERO,Vector2(0,34/zoom),Vector2(0,-98/zoom),Vector2((width+26/zoom)*.5,0),Vector2(-(width+26/zoom)*.5,0),Vector2(0,72/zoom),Vector2(0,108/zoom)]:
-			var center=anchor+shift;var rect=Rect2(center-dimensions*.5,dimensions)
-			if not visible_rect.encloses(rect):continue
-			var collides=false
-			for other in occupied:
-				if rect.grow(3/zoom).intersects(other):collides=true;break
-			if collides:continue
-			labels.append({"city_id":city.id,"text":text,"position":point,"rect":rect,"font_size":font_size,"font_pixels":font_pixels,"shifted":shift!=Vector2.ZERO});occupied.append(rect);break
+		var body:Rect2=bodies.get(city.id,Rect2(point-Vector2.ONE*6/zoom,Vector2.ONE*12/zoom))
+		var rect=MapComposition.label_rect(point,dimensions,body,occupied,visible_rect,zoom)
+		if not rect.has_area():continue
+		labels.append({"city_id":city.id,"text":text,"position":point,"rect":rect,"font_size":font_size,"font_pixels":font_pixels,"shifted":rect.get_center().distance_to(point)>48/zoom});occupied.append(rect)
 	return labels
 
 func city_label_priority(city: Dictionary) -> int:
@@ -2005,7 +2090,7 @@ func draw_city_labels(view: Rect2) -> void:
 	drawn_labels=city_label_layout(view)
 	for label in drawn_labels:
 		var rect:Rect2=label.rect
-		if label.shifted:draw_line(label.position,rect.get_center(),Color(.31,.27,.18,.74),.8/zoom,true)
+		if label.shifted:draw_line(label.position,MapComposition.nearest_edge(rect,label.position),Color(.31,.27,.18,.74),.8/zoom,true)
 		var city=StateAccess.find(state,"cities",label.city_id)
 		var owner=faction_color(city.get("owner_id",""))
 		draw_rect(rect,Color(.10,.16,.20,.93));draw_rect(rect,Color("9baeb2"),false,.8/zoom)

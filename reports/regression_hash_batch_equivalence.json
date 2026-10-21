@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "game_version": "0.2.29",
+  "created_at_utc": "2026-10-20T19:58:08.477868+00:00",
+  "checks": [
+    {
+      "name": "branched_sorted_subsets_match_legacy_paths_bytes_and_mtime",
+      "passed": true
+    },
+    {
+      "name": "same_size_same_mtime_byte_change_is_detected_without_cached_digests",
+      "passed": true
+    },
+    {
+      "name": "empty_batch",
+      "passed": true
+    },
+    {
+      "name": "missing_dependency_rejected",
+      "passed": true
+    },
+    {
+      "name": "all_native_regression_groups_are_hashed",
+      "passed": true
+    },
+    {
+      "name": "actual_commander_closure_matches_unchanged_legacy_identity",
+      "passed": true
+    }
+  ],
+  "algorithm": "Identical sorted relative-path UTF-8 bytes plus raw file bytes; independent SHA-256 states per check.",
+  "persistent_hash_cache": false,
+  "metadata_used_instead_of_bytes": false,
+  "runtime_changes": false,
+  "elapsed_actual_seconds": 1227.086,
+  "module_sha256": "4487ad4a22ccce5448f23ba118941aaf6a515174e5d2c7deee20d5f8b12b5b1c",
+  "actual_dependency_identities": {
+    "run_tests": "45012d180429a297485c80d02b4a347e4cda39f40224ba59047d12981f9236c9",
+    "acceptance_test": "0ab96420c3d5058616575c9d2849354add795ff4758192e56f1b497a58ad5276",
+    "input_test": "ab59ea1d129429c49dfef97e51e156478934f2c4a98afbf097b94024e99d9fe6",
+    "geography_test": "a42ca3a9dfbcebb51d59dcc655c88674dfb4654bf5916aa9e9f009e3c62c81dd",
+    "progression_test": "b9135f9fae94b5779a5fee79ab9ff0640aeb8d0aa7e2b3a9f30ff15b22b15879",
+    "transaction_test": "ff5be6a96d84c94aec951878cb0f5b27c74306fd7ed88f8a2ef01e1aba29c062",
+    "strategic_history_test": "2b162b7f9104e2abab48fd11692a0a89da302dbf55c55cb8e0b845bb3256a5ad",
+    "atlas_render_test": "3f6d5c6d5517200f74f59af7708d32b80a6132d26e365329a6a460db6d2f398d",
+    "combat_presentation_test": "6e7fbbadb681496ee930a81219dabe3848589d88e6f2abaea77f806b51992730",
+    "automation_test": "59df900063cbbfe6f3f348d33d487d5125cd53752c7361095fcfe27eca4f5d31",
+    "rules_worker_test": "ba9429b2cface0d55953f94973d44ed25ce7b38d2f9186094020e4f89456992c",
+    "map_scale_test": "bc13a7868c72596066099ba03209e153b667caa509f117202e9af6279746f98a",
+    "scaled_logistics_test": "5461c36b25b3fa198d5a6abd235d1461521a8bf08e8ee524fc8d58c927681277",
+    "movement_cache_test": "957c4160665f6aa29c58482eaf7b3c8d009e14f6098a9d066c0152ba8d687364",
+    "historical_places_test": "5612bfa0eb0d97a57b87f0dce3d79f17506ab4466451b69e869d294a623ef45a",
+    "snapshot_optimization_test": "d5c0031d15383fb853ef815b81d0a85c25a6f8399a06d0e4d9e3e9e08d134bf2",
+    "asia_content_test": "b840ca86d3929683ffe9abca748feb1f14b9b1ecf455a79db5651aa3f0e73cad",
+    "map_detail_boundary_motion_test": "d5fe98de30acbd424ce6b77ed9dc24622f7cc7a9178b889000152d8fe2a3cd70",
+    "facing_memory_test": "53784f28c08b65ccac6bbb954b6012275a9e54ab6ad39efc61bf219194ad1a64",
+    "relief_surface_test": "ecb5077495eae7b247464f6cfc66474bed9c76572f5639ce2525b7cdce5457ac",
+    "map_bank_test": "b594e9cd3129c46df8a11d4936d39798ef0db99670f2f6da15e253c46f7dc963",
+    "surface_geography_test": "04fd488eb8203125e188d7f52a22a8bd43310d86d222736b8e3108f06ab0f98f",
+    "terrain_surfaces_test": "1d83c75375a6a4082249b27d2f91b2c8711ec7ffa719a763a8f5b63a44e1cae1",
+    "map_material_continuity_test": "10dc041e67346c8d58fbb7c1215d503c9e79facde8d494aea1ffbd2ec82ba8bf",
+    "river_surface_test": "cbd9c8c173c9b627a70f0b068c8946ba06f340bed03f4ab6e1b41f9fda330c33",
+    "control_land_clip_test": "91ee835a7bd28dd60ebe1b717c089379c3ee988804fb0b36b97f88025507bb74",
+    "ground_coverage_test": "eb84d2f790c9d5f611ec4ab921ce2cf558cfb4c14566a5f22073de36ce447a8b",
+    "general_portraits_test": "c647d21bee02469ea1f2437e92143404f64421a11f9dfc182d81ecd40f65177d",
+    "calendar_test": "9027c7738467b74a52e875056a71b1dab0315dc5a33463805d665d744ef203b8",
+    "commander_roster_test": "acff9dc12c711d2c2596b1cb5e2f74721650af45b4f69b2b473d4ae34670f925"
+  }
+}

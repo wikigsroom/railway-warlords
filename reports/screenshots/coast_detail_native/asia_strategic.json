@@ -1,16 +1,28 @@
 {
-	"build_version": "0.2.28",
+	"build_version": "0.2.29",
 	"city_labels": [
+		{
+			"city_id": "nanjing",
+			"font_pixels": 18,
+			"screen_rect": [
+				96.2401733398438,
+				620.419067382813,
+				102.0,
+				24.0
+			],
+			"shifted": true,
+			"text": "南京 · 首都"
+		},
 		{
 			"city_id": "tokyo",
 			"font_pixels": 18,
 			"screen_rect": [
 				1170.84020996094,
-				503.920593261719,
+				490.320709228516,
 				102.0,
 				24.0
 			],
-			"shifted": false,
+			"shifted": true,
 			"text": "东京 · 首都"
 		},
 		{
@@ -18,23 +30,35 @@
 			"font_pixels": 18,
 			"screen_rect": [
 				393.240234375,
-				354.271301269531,
+				340.67138671875,
 				102.0,
 				24.0
 			],
-			"shifted": false,
+			"shifted": true,
 			"text": "汉城 · 省城"
+		},
+		{
+			"city_id": "jinan",
+			"font_pixels": 18,
+			"screen_rect": [
+				9.8402099609375,
+				507.2373046875,
+				102.0,
+				24.0
+			],
+			"shifted": true,
+			"text": "济南 · 省城"
 		},
 		{
 			"city_id": "pyongyang",
 			"font_pixels": 18,
 			"screen_rect": [
-				393.240234375,
-				254.505157470703,
+				512.239990234375,
+				177.15234375,
 				102.0,
 				24.0
 			],
-			"shifted": false,
+			"shifted": true,
 			"text": "平壤 · 省城"
 		},
 		{
@@ -42,19 +66,31 @@
 			"font_pixels": 18,
 			"screen_rect": [
 				926.140441894531,
-				653.569641113281,
+				639.9697265625,
 				72.9999984741211,
 				24.0
 			],
-			"shifted": false,
+			"shifted": true,
 			"text": "大阪 ★"
+		},
+		{
+			"city_id": "shanghai",
+			"font_pixels": 18,
+			"screen_rect": [
+				182.640197753906,
+				670.301940917969,
+				72.9999984741211,
+				24.0
+			],
+			"shifted": true,
+			"text": "上海 ★"
 		},
 		{
 			"city_id": "dalian",
 			"font_pixels": 18,
 			"screen_rect": [
 				148.540405273438,
-				306.154113769531,
+				273.754089355469,
 				72.9999984741211,
 				24.0
 			],
@@ -66,19 +102,19 @@
 			"font_pixels": 18,
 			"screen_rect": [
 				753.340454101563,
-				653.569641113281,
+				639.9697265625,
 				72.9999984741211,
 				24.0
 			],
-			"shifted": false,
+			"shifted": true,
 			"text": "广岛 ★"
 		},
 		{
 			"city_id": "qingdao",
 			"font_pixels": 18,
 			"screen_rect": [
-				62.140380859375,
-				526.037414550781,
+				154.640563964844,
+				479.237396240234,
 				72.9999984741211,
 				24.0
 			],
@@ -90,36 +126,48 @@
 			"font_pixels": 18,
 			"screen_rect": [
 				580.540405273438,
-				553.803527832031,
-				72.9999984741211,
-				24.0
-			],
-			"shifted": false,
-			"text": "釜山 ★"
-		},
-		{
-			"city_id": "port_arthur",
-			"font_pixels": 18,
-			"screen_rect": [
-				148.540405273438,
-				276.621948242188,
+				540.20361328125,
 				72.9999984741211,
 				24.0
 			],
 			"shifted": true,
-			"text": "旅顺 ★"
+			"text": "釜山 ★"
 		},
 		{
 			"city_id": "yokohama",
 			"font_pixels": 18,
 			"screen_rect": [
 				1185.34045410156,
-				404.154174804688,
+				283.348510742188,
 				72.9999984741211,
 				24.0
 			],
-			"shifted": false,
+			"shifted": true,
 			"text": "横滨 ★"
+		},
+		{
+			"city_id": "bengbu",
+			"font_pixels": 18,
+			"screen_rect": [
+				9.8402099609375,
+				570.535827636719,
+				50.0000015258789,
+				24.0
+			],
+			"shifted": true,
+			"text": "蚌埠"
+		},
+		{
+			"city_id": "suzhou",
+			"font_pixels": 18,
+			"screen_rect": [
+				20.6401977539063,
+				626.53564453125,
+				50.0000015258789,
+				24.0
+			],
+			"shifted": true,
+			"text": "苏州"
 		}
 	],
 	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
@@ -238,7 +286,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 5131,
 		"placed": 122,
-		"preparation_ms": 3868.201,
+		"preparation_ms": 4465.46,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 838,
 		"rule_cells_changed": false,
@@ -575,6 +623,534 @@
 		},
 		"zoom": 1.2
 	},
+	"map_composition": {
+		"geographic_anchors_changed": false,
+		"labels": [
+			{
+				"city_id": "nanjing",
+				"font_pixels": 18,
+				"screen_rect": [
+					96.2401733398438,
+					620.419067382813,
+					102.0,
+					24.0
+				],
+				"shifted": true,
+				"text": "南京 · 首都"
+			},
+			{
+				"city_id": "tokyo",
+				"font_pixels": 18,
+				"screen_rect": [
+					1170.84020996094,
+					490.320709228516,
+					102.0,
+					24.0
+				],
+				"shifted": true,
+				"text": "东京 · 首都"
+			},
+			{
+				"city_id": "seoul",
+				"font_pixels": 18,
+				"screen_rect": [
+					393.240234375,
+					340.67138671875,
+					102.0,
+					24.0
+				],
+				"shifted": true,
+				"text": "汉城 · 省城"
+			},
+			{
+				"city_id": "jinan",
+				"font_pixels": 18,
+				"screen_rect": [
+					9.8402099609375,
+					507.2373046875,
+					102.0,
+					24.0
+				],
+				"shifted": true,
+				"text": "济南 · 省城"
+			},
+			{
+				"city_id": "pyongyang",
+				"font_pixels": 18,
+				"screen_rect": [
+					512.239990234375,
+					177.15234375,
+					102.0,
+					24.0
+				],
+				"shifted": true,
+				"text": "平壤 · 省城"
+			},
+			{
+				"city_id": "osaka",
+				"font_pixels": 18,
+				"screen_rect": [
+					926.140441894531,
+					639.9697265625,
+					72.9999984741211,
+					24.0
+				],
+				"shifted": true,
+				"text": "大阪 ★"
+			},
+			{
+				"city_id": "shanghai",
+				"font_pixels": 18,
+				"screen_rect": [
+					182.640197753906,
+					670.301940917969,
+					72.9999984741211,
+					24.0
+				],
+				"shifted": true,
+				"text": "上海 ★"
+			},
+			{
+				"city_id": "dalian",
+				"font_pixels": 18,
+				"screen_rect": [
+					148.540405273438,
+					273.754089355469,
+					72.9999984741211,
+					24.0
+				],
+				"shifted": true,
+				"text": "大连 ★"
+			},
+			{
+				"city_id": "hiroshima",
+				"font_pixels": 18,
+				"screen_rect": [
+					753.340454101563,
+					639.9697265625,
+					72.9999984741211,
+					24.0
+				],
+				"shifted": true,
+				"text": "广岛 ★"
+			},
+			{
+				"city_id": "qingdao",
+				"font_pixels": 18,
+				"screen_rect": [
+					154.640563964844,
+					479.237396240234,
+					72.9999984741211,
+					24.0
+				],
+				"shifted": true,
+				"text": "青岛 ★"
+			},
+			{
+				"city_id": "busan",
+				"font_pixels": 18,
+				"screen_rect": [
+					580.540405273438,
+					540.20361328125,
+					72.9999984741211,
+					24.0
+				],
+				"shifted": true,
+				"text": "釜山 ★"
+			},
+			{
+				"city_id": "yokohama",
+				"font_pixels": 18,
+				"screen_rect": [
+					1185.34045410156,
+					283.348510742188,
+					72.9999984741211,
+					24.0
+				],
+				"shifted": true,
+				"text": "横滨 ★"
+			},
+			{
+				"city_id": "bengbu",
+				"font_pixels": 18,
+				"screen_rect": [
+					9.8402099609375,
+					570.535827636719,
+					50.0000015258789,
+					24.0
+				],
+				"shifted": true,
+				"text": "蚌埠"
+			},
+			{
+				"city_id": "suzhou",
+				"font_pixels": 18,
+				"screen_rect": [
+					20.6401977539063,
+					626.53564453125,
+					50.0000015258789,
+					24.0
+				],
+				"shifted": true,
+				"text": "苏州"
+			}
+		],
+		"objects": [
+			{
+				"id": "qingdao",
+				"kind": "city",
+				"screen_rect": [
+					45.8402099609375,
+					340.870910644531,
+					105.6,
+					91.56650390625
+				],
+				"world_anchor": [
+					4824.0,
+					2785.1376953125
+				]
+			},
+			{
+				"id": "shanghai",
+				"kind": "city",
+				"screen_rect": [
+					45.8402099609375,
+					754.701843261719,
+					105.6,
+					76.8
+				],
+				"world_anchor": [
+					4824.0,
+					3117.69140625
+				]
+			},
+			{
+				"id": "nanjing",
+				"kind": "city",
+				"screen_rect": [
+					-47.7598266601563,
+					683.84619140625,
+					120.0,
+					97.77275390625
+				],
+				"world_anchor": [
+					4752.0,
+					3076.12231445313
+				]
+			},
+			{
+				"id": "suzhou",
+				"kind": "city",
+				"screen_rect": [
+					51.8402099609375,
+					659.735717773438,
+					93.6,
+					72.0
+				],
+				"world_anchor": [
+					4824.0,
+					3034.55297851563
+				]
+			},
+			{
+				"id": "hangzhou",
+				"kind": "city",
+				"screen_rect": [
+					38.6401977539063,
+					833.495239257813,
+					120.0,
+					97.77275390625
+				],
+				"world_anchor": [
+					4824.0,
+					3200.82983398438
+				]
+			},
+			{
+				"id": "ningbo",
+				"kind": "city",
+				"screen_rect": [
+					47.6841430664063,
+					937.43408203125,
+					101.9115234375,
+					93.6
+				],
+				"world_anchor": [
+					4824.0,
+					3283.96826171875
+				]
+			},
+			{
+				"id": "mukden",
+				"kind": "city",
+				"screen_rect": [
+					211.440185546875,
+					-58.1619262695313,
+					120.0,
+					91.53486328125
+				],
+				"world_anchor": [
+					4968.0,
+					2452.583984375
+				]
+			},
+			{
+				"id": "port_arthur",
+				"kind": "city",
+				"screen_rect": [
+					144.240173339844,
+					113.882202148438,
+					81.6,
+					69.13974609375
+				],
+				"world_anchor": [
+					4896.0,
+					2577.29150390625
+				]
+			},
+			{
+				"id": "dalian",
+				"kind": "city",
+				"screen_rect": [
+					132.240173339844,
+					305.754211425781,
+					105.6,
+					76.8
+				],
+				"world_anchor": [
+					4896.0,
+					2743.568359375
+				]
+			},
+			{
+				"id": "tokyo",
+				"kind": "city",
+				"screen_rect": [
+					1161.84020996094,
+					392.105560302734,
+					120.0,
+					90.2150390625
+				],
+				"world_anchor": [
+					5760.0,
+					2826.70703125
+				]
+			},
+			{
+				"id": "yokohama",
+				"kind": "city",
+				"screen_rect": [
+					1181.04028320313,
+					315.3486328125,
+					81.6,
+					67.20556640625
+				],
+				"world_anchor": [
+					5760.0,
+					2743.568359375
+				]
+			},
+			{
+				"id": "osaka",
+				"kind": "city",
+				"screen_rect": [
+					909.840209960938,
+					555.169616699219,
+					105.6,
+					76.8
+				],
+				"world_anchor": [
+					5544.0,
+					2951.41455078125
+				]
+			},
+			{
+				"id": "hiroshima",
+				"kind": "city",
+				"screen_rect": [
+					737.040222167969,
+					555.169616699219,
+					105.6,
+					76.8
+				],
+				"world_anchor": [
+					5400.0,
+					2951.41455078125
+				]
+			},
+			{
+				"id": "seoul",
+				"kind": "city",
+				"screen_rect": [
+					384.240234375,
+					245.165618896484,
+					120.0,
+					87.5056640625
+				],
+				"world_anchor": [
+					5112.0,
+					2701.99926757813
+				]
+			},
+			{
+				"id": "pyongyang",
+				"kind": "city",
+				"screen_rect": [
+					384.240234375,
+					145.399505615234,
+					120.0,
+					87.5056640625
+				],
+				"world_anchor": [
+					5112.0,
+					2618.86083984375
+				]
+			},
+			{
+				"id": "busan",
+				"kind": "city",
+				"screen_rect": [
+					576.240234375,
+					465.003509521484,
+					81.6,
+					67.2
+				],
+				"world_anchor": [
+					5256.0,
+					2868.27612304688
+				]
+			},
+			{
+				"id": "u_00011",
+				"kind": "unit",
+				"screen_rect": [
+					78.2401733398438,
+					362.83740234375,
+					98.4,
+					99.6
+				],
+				"world_anchor": [
+					4824.0,
+					2785.1376953125
+				]
+			},
+			{
+				"id": "u_00012",
+				"kind": "unit",
+				"screen_rect": [
+					-34.559814453125,
+					293.754211425781,
+					98.4,
+					99.6
+				],
+				"world_anchor": [
+					4752.0,
+					2743.568359375
+				]
+			},
+			{
+				"id": "u_00013",
+				"kind": "unit",
+				"screen_rect": [
+					78.2401733398438,
+					761.90185546875,
+					98.4,
+					99.6
+				],
+				"world_anchor": [
+					4824.0,
+					3117.69140625
+				]
+			},
+			{
+				"id": "u_00014",
+				"kind": "unit",
+				"screen_rect": [
+					-8.1597900390625,
+					712.018920898438,
+					98.4,
+					99.6
+				],
+				"world_anchor": [
+					4752.0,
+					3076.12231445313
+				]
+			},
+			{
+				"id": "u_00017",
+				"kind": "unit",
+				"screen_rect": [
+					78.2401733398438,
+					662.1357421875,
+					98.4,
+					99.6
+				],
+				"world_anchor": [
+					4824.0,
+					3034.55297851563
+				]
+			},
+			{
+				"id": "u_00018",
+				"kind": "unit",
+				"screen_rect": [
+					78.2401733398438,
+					861.66796875,
+					98.4,
+					99.6
+				],
+				"world_anchor": [
+					4824.0,
+					3200.82983398438
+				]
+			},
+			{
+				"id": "u_00019",
+				"kind": "unit",
+				"screen_rect": [
+					-34.559814453125,
+					792.585083007813,
+					98.4,
+					99.6
+				],
+				"world_anchor": [
+					4752.0,
+					3159.2607421875
+				]
+			},
+			{
+				"id": "u_00020",
+				"kind": "unit",
+				"screen_rect": [
+					78.2401733398438,
+					961.43408203125,
+					98.4,
+					99.6
+				],
+				"world_anchor": [
+					4824.0,
+					3283.96826171875
+				]
+			},
+			{
+				"id": "u_00068",
+				"kind": "unit",
+				"screen_rect": [
+					-34.559814453125,
+					393.520599365234,
+					98.4,
+					99.6
+				],
+				"world_anchor": [
+					4752.0,
+					2826.70703125
+				]
+			}
+		],
+		"operation_hex_radius_world": 48.0,
+		"renderer": "shared_model_and_caption_footprints_v1",
+		"source_pngs_modified": false
+	},
 	"map_detail": {
 		"cell_river_segments": 5686,
 		"coast_lines": 12136,
@@ -658,13 +1234,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 102,
-		"index_ms": 207.084,
+		"index_ms": 284.978,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 511.767,
+		"mesh_ms": 628.101,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 219,
-		"placement_ms": 654.959,
-		"preparation_ms": 1373.808,
+		"placement_ms": 694.587,
+		"preparation_ms": 1607.666,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_nine_point_100km",
 		"source_meters_per_world_unit": 3125.0,

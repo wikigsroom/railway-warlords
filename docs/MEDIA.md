@@ -4,12 +4,19 @@
 
 ## 截图 / Screenshots
 
+0.2.29新增武汉、北京与山村三张完整精选地图画面，来自正式EXE；七个专项地图视口已全部逐张完整查看。原图、专项报告与实际观察见[地图布局记录](../reports/map_composition_native_evidence.json)和[完整查看记录](../reports/map_composition_native_review.json)。下面保留0.2.28及更早的版本化媒体身份。
+
+Version 0.2.29 adds three full shipping-EXE map selections: Wuhan, Beijing and mountain villages. All seven specialist map views were actually viewed in full. See the [native evidence](../reports/map_composition_native_evidence.json) and [actual viewing record](../reports/map_composition_native_review.json). Older versioned media retains its original identity.
+
 当前媒体目录收录完整PNG原生画面，当前数量和版本由[媒体登记](media/manifest.json)逐张记录。0.2.28新增五张将领池精选画面：完整总部、日本师团筛选、待任命后备、任命后返回地图和桌面X30比例。全人物四阶段、分页与正式任命分别保存专项原生证据。0.2.27及更早带版本号的肖像页、档案、交战/航空图与GIF保留历史身份。文档精选画面全部按原字节复制到`docs/media`，没有裁切、拼接、补绘或叠字。截图生成数量、实际查看范围与正式美术批准分别记录；合成GPU夹具不计入实机地图媒体。
 
 Complete PNGs and their exact versions are listed individually in the media manifest. Version 0.2.28 adds five commander views: headquarters, Japanese division filtering, an eligible reserve, the map after appointment and desktop X30 proportions. Separate native evidence covers four-stage traversal, pagination and appointments. Dated portrait pages, dossiers, battle media and GIFs from 0.2.27 or earlier retain their historical identities. Full captures are copied byte for byte, without cropping, stitching, repainting or overlays. Generated captures, actually viewed frames and formal art acceptance are distinct records; synthetic GPU fixtures are separate from gameplay media.
 
 | 文件 / File | 内容 / Content |
 | --- | --- |
+| [map-composition-wuhan-v0229.png](media/map-composition-wuhan-v0229.png) | 武汉三镇模型尺度与城市／桥渡标注 / Wuhan settlement scale and city/crossing labels |
+| [map-composition-beijing-v0229.png](media/map-composition-beijing-v0229.png) | 北京密集编队与城镇标注 / Beijing formations and settlement labels |
+| [map-composition-village-v0229.png](media/map-composition-village-v0229.png) | 山村、关隘与细河地形 / Mountain villages, passes and river detail |
 | [commander-catalogue-v0228.png](media/commander-catalogue-v0228.png) | 324人总部名册与十二卡分页 / 324-person headquarters and twelve-card pagination |
 | [commander-japan-division-v0228.png](media/commander-japan-division-v0228.png) | 日本师团级军职筛选 / Japanese division command filter |
 | [commander-reserves-v0228.png](media/commander-reserves-v0228.png) | 本方编队与可任命后备 / Owned formation and eligible reserve |
@@ -62,6 +69,12 @@ Complete PNGs and their exact versions are listed individually in the media mani
 Associated JSON records viewport, version and content fingerprint. Current UI/terrain proof is `reports/terrain_surface_native_evidence.json`; symbol checks are in `reports/map_symbol_native_evidence.json`; older battle proof is `reports/native_visual_evidence.json`. The atlas is an actual in-game interface. X30-size screenshots are Windows captures with `physical_android_device_tested: false`.
 
 ## 录像与 GIF / Recording and GIFs
+
+新增 **0.2.29** [完整MP4](../reports/native_gameplay_v0229.mp4)与[完整时段GIF](media/native-gameplay-v0229.gif)。原生开发引擎使用双端导出对应的冻结运行源码，保留1924剧本原部署，完成16次合法移动、9次攻击，重放状态与随机流一致。MP4为1440×810、30 FPS、26.37秒并含声音；GIF为960×540、12 FPS、316帧、26.33秒，保持正常速度、全部画幅和完整时段，没有裁切、拼接、叠字或补帧。
+
+The new **0.2.29** [full MP4](../reports/native_gameplay_v0229.mp4) and [full-duration GIF](media/native-gameplay-v0229.gif) use the native development engine with the same frozen runtime source as the dual-platform exports. Original scenario deployment, 16 legal moves, 9 attacks and deterministic state/random replay are retained. The MP4 is 1440×810, 30 FPS and 26.37 seconds with audio; the GIF retains the entire frame and duration at normal speed, at 960×540, 12 FPS, 316 frames and 26.33 seconds.
+
+[来源与实际查看记录 / Provenance and actual viewing](../reports/native_gameplay_v0229/media_review.json)记录五张已完整查看的关键帧、输入输出SHA-256与转换命令。开发引擎录像、正式EXE七个地图视口、完整连续动作签核和物理手机验收分别记录；本段录像尚未通过后两项验收。The record distinguishes five actually viewed key frames, development-engine recording, seven shipping-EXE map views, continuous-animation art approval and physical-phone acceptance. The latter two remain pending.
 
 保留的 **0.2.12** 原生录像：[atlas_v2_native_final.mp4](../reports/atlas_v2_native_final.mp4)，1440×810、30 FPS、26.2 秒，包含声音。使用 Godot MovieWriter 录制，正式剧本部署未修改，命令重放最终状态和随机流一致；该录像不作为本轮新底纹的画面证据。
 

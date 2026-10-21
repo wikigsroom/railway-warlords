@@ -1,0 +1,142 @@
+{
+  "version": "0.2.29",
+  "runtime_source_sha256": "434c5784d0256bde7a5ec02df6450e45a07da645ce7cfa68b4910054b488d090",
+  "windows_exe_sha256": "3741afc62cc53e4bc72d26e52ce488108359c527c668950ab36ba38446872ded",
+  "reviewed_at_utc": "2026-10-20T23:44:26.401483+00:00",
+  "scope": "Actual complete unchanged shipping-EXE frames opened and inspected. Technical layout checks do not establish art, historical, touch or physical-device acceptance.",
+  "viewed_complete_captures": [
+    {
+      "file": "reports/screenshots/dossier_native/windows/dossier_hong_young.png",
+      "sha256": "03b64363615041965ade05d8bd0c9b83850d3cd6e5266bfe81f591ff3b7b2cbf",
+      "viewed_complete_original_capture": true,
+      "observation": "青年档案完整肖像、年代、职务与右侧战法可见；下方勋章需滚动。未据图确认历史肖似度。"
+    },
+    {
+      "file": "reports/screenshots/dossier_native/x30_layout/headquarters.png",
+      "sha256": "c0aa04c0b247b42076169d7fd2c1668349343676893a086d01568c4421212a71",
+      "viewed_complete_original_capture": true,
+      "observation": "324人、分页与国家军职年代筛选可见；筛选区占高明显，卡片下半需纵向滚动；仅为桌面移动比例。"
+    },
+    {
+      "file": "reports/screenshots/dossier_native/large_text/dossier_hong_middle.png",
+      "sha256": "deb2fec810f5b39478c5fa6ac6a58452f517e38abe0f02efa9648a86d461cc2b",
+      "viewed_complete_original_capture": true,
+      "observation": "1280×720、150%完整档案弹窗未见横向越界，底部勋章在视口下方，需要滚动。面貌与正式美术仍待复核。"
+    },
+    {
+      "file": "reports/screenshots/general_portraits_native/windows/assignment_asia_1940.png",
+      "sha256": "a4f1513146454582400999cde9332329f0217c79dbbd57d40b3497a732236d11",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T22:09:26.549021+00:00",
+      "observation": "三列任命卡片、年龄形态和不可任命原因可读；下排仍需滚动。此图不证明显示军职为1940当日现职，具体历史任职仍需另行复核。"
+    },
+    {
+      "file": "reports/screenshots/general_portraits_native/x30_layout/roster_late_page_26.png",
+      "sha256": "cca69e18afcdea5245ad71cc6abf2a6b357e8385ea66b8b6f02e25fcc3c5c249",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T22:09:26.553402+00:00",
+      "observation": "桌面2400×1080移动比例下324人第27页的四列晚年／生前晚期肖像可见；筛选区占高较大，卡片下部仍需滚动。档案的生涯年龄形态展示不能当作1940战场形象或X30物理验收。"
+    },
+    {
+      "file": "reports/screenshots/map_final_windows.png",
+      "sha256": "52fc2d63166537972d5c594a38180343910deca1f23100f49f52368053439005",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T22:28:31.174056+00:00",
+      "observation": "完整九门口战场中城市、编队和地名可辨；青色行动区的对比度偏强，山体仍有重复与摆件感，检查器和右侧工具栏占宽明显。未据此签核整体美术或全套兵种动作。"
+    },
+    {
+      "file": "reports/screenshots/settlement_county_details.png",
+      "sha256": "9ee4424f412945b56d226eb93717ca43a974afade57974b102469ff0a8152d9a",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T22:28:31.182846+00:00",
+      "observation": "卢龙县城图标、名称及县级资料可见，主河支流仍有生硬折线，平原空疏且细部层次不足；资料面板有大量空余空间。完整查看不等同于历史县城坐标与全部行政资料逐项复核。"
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/details/mountain.png",
+      "sha256": "af9de00a8a212236a33c0240bdf7994e0069073269b118f32c0d7992bf630e4b",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:04:41.740793+00:00",
+      "observation": "村落模型与文字分开显示；各山体仍像独立摆件，接地色与平原不一致，山脚连续坡面不足。细河轮廓偏直且线宽层次弱，检查器占宽较大。未签核植被、历史地貌或整体美术。"
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/details/coast.png",
+      "sha256": "fe15f95813d225f0346700a36e44ca51041983e248105b6e1b59c56bad18ef59",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:04:41.805643+00:00",
+      "observation": "海水完整纹理与城市、铁路可见，山海关名称保留；青色行动六角区对比偏强，海岸仍有折线锯齿，城阵密集处的图标与状态条拥挤。自动海岸检查通过不能证明美术与参考一致。"
+    },
+    {
+      "file": "reports/screenshots/terrain_surfaces_native/details/tributaries.png",
+      "sha256": "f1ffb37c3700277a0e53d97d0b6c7b6e0e05dcf91de6e3468f1aef8909c6ad48",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:04:41.846348+00:00",
+      "observation": "可见真实源支流网络和燕山地名；缩放下细河仍呈单一青色细线、转折生硬，山脉由分立资产拼出的视觉感明显。尚未形成连续坡地、林地与水岸的完整层次。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0229/verified_export/wuhan.png",
+      "sha256": "f1360ba091838ba9bfbfddfe3fea9be91627a232f27ceeed2280520b8f5a901e",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:44:26.401483+00:00",
+      "profile": "wuhan",
+      "observation": "完整查看：三城与两处渡口说明分开，建筑、编队及旗帜可辨；汉江、长江转折仍生硬，洪泛平原灰褐单调，图幅左边露出底色；右侧检查器与底栏占地过大。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0229/verified_export/beijing.png",
+      "sha256": "48d14f0f1fc81bf1ddbf8417fc3de1723a4648c32ce9afb4f368bd4340b13929",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:44:26.401483+00:00",
+      "profile": "beijing",
+      "observation": "完整查看：北京文字仍保留在密集军阵之间，铁路可辨；单位和状态标记重复密集，野外缺少细部层次，青色行动六角轮廓偏强。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0229/verified_export/coast.png",
+      "sha256": "fe15f95813d225f0346700a36e44ca51041983e248105b6e1b59c56bad18ef59",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:44:26.401483+00:00",
+      "profile": "coast",
+      "observation": "完整查看：山海关、北营子、秦皇岛及铁路、海水可辨；海岸锯齿、细河折线、孤立山体及密集军阵仍影响品质，不能据此批准整体美术。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0229/verified_export/village.png",
+      "sha256": "e552dc803bed571c7d7f4a42a9e5605dca1584abe8524fbd0bb7b20023e57279",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:44:26.401483+00:00",
+      "profile": "village",
+      "observation": "完整查看：董家口、城子峪、板厂峪建筑与名称分开；山脚像独立摆件，缺少连续坡面，细河线宽单一且折角生硬，平原植被细节不足。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0229/verified_export/wuhan_regional.png",
+      "sha256": "0ec69ac051d1d6bada398a169098f18ac5c6cc911f54cfb94d12ea2f130d6708",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:44:26.401483+00:00",
+      "profile": "wuhan_regional",
+      "observation": "完整查看：主要地名保留；小矩形战区周围大片空白，底边外九处浅色底纹残影仍可见，取景与边界表现未达到目标。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0229/verified_export/wuhan_x30_layout.png",
+      "sha256": "04758f8ec13fcb121c2b98fe16f5297ce3b44baac6e82aae7165389c62cb4641",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:44:26.401483+00:00",
+      "profile": "wuhan_x30_layout",
+      "observation": "完整查看：2400×1080桌面移动比例下地名与建筑可辨；检查器和底栏仍挤占地图。仅为桌面窗口，未做手机安装、触控或物理GPU验收。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0229/verified_export/wuhan_large_text.png",
+      "sha256": "786b696a388538e276d08813f7faa1822c971c3e6be18dc22a27695e88f86897",
+      "viewed_complete_original_capture": true,
+      "observed_at_utc": "2026-10-20T23:44:26.401483+00:00",
+      "profile": "wuhan_large_text",
+      "observation": "完整查看：1280×720、150%字号下主要地名可读；检查器下部动作依赖滚动，常驻面板压缩地图，响应式与触控验收仍未完成。"
+    }
+  ],
+  "viewed_capture_files": 17,
+  "distinct_viewed_image_sha256s": 16,
+  "all_seven_shipping_composition_views_opened_in_full": true,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "historical_geography_approval": false,
+  "physical_android_device_tested": false,
+  "pointer_or_touch_acceptance": false,
+  "source_pngs_modified": false,
+  "manual_compositing": false
+}

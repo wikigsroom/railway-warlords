@@ -31,7 +31,7 @@ def main():
  for profile,resolution,scale in [('windows','1920x1080','1.0'),('x30_layout','2400x1080','1.2'),('large_text','1280x720','1.5')]:
   folder=P/'reports/screenshots/commander_roster_native'/profile;folder.mkdir(parents=True,exist_ok=True)
   log=P/'reports'/('commander_roster_native_'+profile+'.log');started=datetime.now(timezone.utc).timestamp()
-  command=[str(exe),'--resolution',resolution,'--position','-4000,-3000','--','--qa-session','--ui-scale',scale,'--commander-roster-test','--commander-roster-output',str(folder)]
+  command=[str(exe),'--resolution',resolution,'--position','0,0','--','--qa-session','--ui-scale',scale,'--commander-roster-test','--commander-roster-output',str(folder)]
   if profile=='x30_layout':command.append('--mobile-ui-test')
   with log.open('w',encoding='utf-8') as out:result=subprocess.run(command,cwd=P,stdout=out,stderr=subprocess.STDOUT,timeout=900)
   diagnostic=log.read_text('utf-8',errors='replace');require(result.returncode==0 and 'SCRIPT ERROR:' not in diagnostic and '\nERROR:' not in diagnostic,'Native commander archive failed: '+profile)

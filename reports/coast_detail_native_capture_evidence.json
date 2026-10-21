@@ -1,9 +1,9 @@
 {
   "passed": true,
-  "version": "0.2.28",
-  "runtime_source_sha256": "4707412e073cc70cbc9c45f21b69f2b27b30317cbce40e88fc891efc1e21c2f4",
-  "windows_exe_sha256": "83f799419058ee64dd19c93af93f82fe378e8a1c99fd5bf6c3f50be0889c78a5",
-  "capture_driver_sha256": "40f14fb301bd13d48dbcbc76cdc527ca984abe2114a26f59bd86add27b67cf36",
+  "version": "0.2.29",
+  "runtime_source_sha256": "434c5784d0256bde7a5ec02df6450e45a07da645ce7cfa68b4910054b488d090",
+  "windows_exe_sha256": "3741afc62cc53e4bc72d26e52ce488108359c527c668950ab36ba38446872ded",
+  "capture_driver_sha256": "8db17f16d7979642905d7c36b937c964ea49b693efef025a6c51f0d6075aa399",
   "captures": [
     {
       "map_id": "jingjin",
@@ -18,7 +18,7 @@
       "file": "reports/screenshots/coast_detail_native/jingjin.png",
       "sha256": "8404b4d3c0dcad6888893627766241ab6c10b8610190dbb6d451a3ad7c629bcb",
       "metadata": "reports/screenshots/coast_detail_native/jingjin.json",
-      "metadata_sha256": "3bbe20486d07c521076fb1dda43042c07d3a17dc2fde5945fae9d01fc8f61680",
+      "metadata_sha256": "fbcf1489ae201611eea1304f9d5bb775e58500223c337c0d03daa2d5499c00f1",
       "log": "reports/coast_detail_capture_jingjin.log",
       "log_sha256": "121db21cf4215ec7fe3f7095b450b47a32aaf66b3c4da10ea31f91793b957445",
       "actual_coast_band_draws": 1
@@ -34,9 +34,9 @@
       "focus_point_source": "nearest_registered_coast_vertex_to_city_render_position",
       "map_sha256": "f5fc64bc3e45643fc9b325e1e574a5534cc7c6660880a1e546fc9b68a0ad5c8f",
       "file": "reports/screenshots/coast_detail_native/jingfeng.png",
-      "sha256": "aed3fffc4cd7e87d15b167e83dcc055747e1903f6091dd26955804bfc546224f",
+      "sha256": "ccda21058d93b4a29fed4007646b5867674552725625b91f52d8fd7eca3d7e28",
       "metadata": "reports/screenshots/coast_detail_native/jingfeng.json",
-      "metadata_sha256": "2bba59cdee559ad2d84c6cfb9684d74364a393846783de5de5b6dfb4f7f2813a",
+      "metadata_sha256": "934610e5eff5511927d9537993c354b2462ad310ba750bc98a4657bed8cd3ae3",
       "log": "reports/coast_detail_capture_jingfeng.log",
       "log_sha256": "fcfda424344c8bf87ae879cc8d8fc4eaaad619e0d1d6b6504ebf1e87968cb681",
       "actual_coast_band_draws": 1
@@ -52,9 +52,9 @@
       "focus_point_source": "nearest_registered_coast_vertex_to_city_render_position",
       "map_sha256": "37458183fffe2515b1e0ae5110554a527735c207e44130ce13a7d8da64a0a510",
       "file": "reports/screenshots/coast_detail_native/conquest_china.png",
-      "sha256": "c817c5a7ce3859d0722daf1c7f6d151eae0cf04274d0415d91bfc4fb1f2127a1",
+      "sha256": "adc299f256232acc56f64ecbb6f4e790ab95e4030931f5ae63d8c4dd65d26d6f",
       "metadata": "reports/screenshots/coast_detail_native/conquest_china.json",
-      "metadata_sha256": "cc2c19361960b094ee6c1f5fc51c88e34942ccc8a24aaff3b403ae493ea618ed",
+      "metadata_sha256": "8dcf6a3aaac2cfad5ef26529245c2eeddd3187a4d3ae74767dfeeb20ddb1303a",
       "log": "reports/coast_detail_capture_conquest_china.log",
       "log_sha256": "fbe0ae95b53ae99af9c766ff1210808bedd22deef3d7446604baa85297f34191",
       "actual_coast_band_draws": 1
@@ -70,9 +70,9 @@
       "focus_point_source": "nearest_registered_coast_vertex_to_city_render_position",
       "map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
       "file": "reports/screenshots/coast_detail_native/asia_strategic.png",
-      "sha256": "e540340bd42dc4ee4bd1601728b8fe1326261fa6efc357a0a4128485f68a6282",
+      "sha256": "99860f5c3287201704fc16da2d85e18fc39919a7a3d65a549d01f053136370cd",
       "metadata": "reports/screenshots/coast_detail_native/asia_strategic.json",
-      "metadata_sha256": "0e79a6749fea8b7c0b215d0c7f32730b5410d3b0b0631db019f4b5bb9f1a8fd7",
+      "metadata_sha256": "83ebda0065155ceae4b970ff128bc258527237c8d074df907afd1ef52dfe5033",
       "log": "reports/coast_detail_capture_asia_strategic.log",
       "log_sha256": "d0fe1fa0d93416182b0f1b0e16373ed1469772901f4c279743ba60d33ea8d7d1",
       "actual_coast_band_draws": 1

@@ -1,12 +1,12 @@
 {
-	"build_version": "0.2.28",
+	"build_version": "0.2.29",
 	"city_labels": [
 		{
 			"city_id": "place_lulong",
 			"font_pixels": 17,
 			"screen_rect": [
 				921.999633789063,
-				566.300415039063,
+				562.400695800781,
 				75.9999984741211,
 				22.9999998092651
 			],
@@ -38,7 +38,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 60875,
 		"placed": 1232,
-		"preparation_ms": 2692.501,
+		"preparation_ms": 2150.492,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1610,
 		"rule_cells_changed": false,
@@ -341,6 +341,42 @@
 		},
 		"zoom": 0.9
 	},
+	"map_composition": {
+		"geographic_anchors_changed": false,
+		"labels": [
+			{
+				"city_id": "place_lulong",
+				"font_pixels": 17,
+				"screen_rect": [
+					921.999633789063,
+					562.400695800781,
+					75.9999984741211,
+					22.9999998092651
+				],
+				"shifted": false,
+				"text": "卢龙 · 县"
+			}
+		],
+		"objects": [
+			{
+				"id": "place_lulong",
+				"kind": "place",
+				"screen_rect": [
+					924.900024414063,
+					520.296691894531,
+					70.2,
+					34.1032997131348
+				],
+				"world_anchor": [
+					13245.7197265625,
+					8799.3896484375
+				]
+			}
+		],
+		"operation_hex_radius_world": 48.0,
+		"renderer": "shared_model_and_caption_footprints_v1",
+		"source_pngs_modified": false
+	},
 	"map_detail": {
 		"cell_river_segments": 934,
 		"coast_lines": 62,
@@ -421,13 +457,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 191,
-		"index_ms": 278.507,
+		"index_ms": 266.069,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 5798.232,
+		"mesh_ms": 3958.16,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 6107,
-		"placement_ms": 2103.314,
-		"preparation_ms": 8180.053,
+		"placement_ms": 1349.852,
+		"preparation_ms": 5574.079,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 20.8333333333333,

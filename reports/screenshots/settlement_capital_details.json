@@ -1,12 +1,12 @@
 {
-	"build_version": "0.2.28",
+	"build_version": "0.2.29",
 	"city_labels": [
 		{
 			"city_id": "zhengzhou",
 			"font_pixels": 18,
 			"screen_rect": [
-				573.864501953125,
-				628.479370117188,
+				638.3642578125,
+				621.379516601563,
 				73.0000007629395,
 				23.9999998092651
 			],
@@ -18,12 +18,36 @@
 			"font_pixels": 17,
 			"screen_rect": [
 				913.500244140625,
-				555.799926757813,
+				558.399963378906,
 				92.9999977111816,
 				23.0000009536743
 			],
 			"shifted": false,
 			"text": "开封 · 省城"
+		},
+		{
+			"city_id": "crossing:bridge_jinghan_shijiazhuang_zhengzhou_151_26",
+			"font_pixels": 15,
+			"screen_rect": [
+				624.365112304688,
+				425.779632568359,
+				25.0000011444092,
+				21.0000007629395
+			],
+			"shifted": true,
+			"text": "桥"
+		},
+		{
+			"city_id": "crossing:bridge_jinghan_shijiazhuang_zhengzhou_151_27",
+			"font_pixels": 15,
+			"screen_rect": [
+				624.365112304688,
+				479.819763183594,
+				25.0000011444092,
+				21.0000007629395
+			],
+			"shifted": true,
+			"text": "桥"
 		}
 	],
 	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
@@ -90,7 +114,7 @@
 		"invented_waterways": 0,
 		"material_assignments": 68252,
 		"placed": 2136,
-		"preparation_ms": 4871.526,
+		"preparation_ms": 3423.105,
 		"random_stream_used": false,
 		"rejected_for_source_geography": 1481,
 		"rule_cells_changed": false,
@@ -442,6 +466,162 @@
 		},
 		"zoom": 0.65
 	},
+	"map_composition": {
+		"geographic_anchors_changed": false,
+		"labels": [
+			{
+				"city_id": "zhengzhou",
+				"font_pixels": 18,
+				"screen_rect": [
+					638.3642578125,
+					621.379516601563,
+					73.0000007629395,
+					23.9999998092651
+				],
+				"shifted": true,
+				"text": "郑州 ★"
+			},
+			{
+				"city_id": "place_kaifeng",
+				"font_pixels": 17,
+				"screen_rect": [
+					913.500244140625,
+					558.399963378906,
+					92.9999977111816,
+					23.0000009536743
+				],
+				"shifted": false,
+				"text": "开封 · 省城"
+			},
+			{
+				"city_id": "crossing:bridge_jinghan_shijiazhuang_zhengzhou_151_26",
+				"font_pixels": 15,
+				"screen_rect": [
+					624.365112304688,
+					425.779632568359,
+					25.0000011444092,
+					21.0000007629395
+				],
+				"shifted": true,
+				"text": "桥"
+			},
+			{
+				"city_id": "crossing:bridge_jinghan_shijiazhuang_zhengzhou_151_27",
+				"font_pixels": 15,
+				"screen_rect": [
+					624.365112304688,
+					479.819763183594,
+					25.0000011444092,
+					21.0000007629395
+				],
+				"shifted": true,
+				"text": "桥"
+			}
+		],
+		"objects": [
+			{
+				"id": "zhengzhou",
+				"kind": "city",
+				"screen_rect": [
+					585.014770507813,
+					544.006652832031,
+					50.7,
+					44.272998046875
+				],
+				"world_anchor": [
+					10872.0,
+					8687.966796875
+				]
+			},
+			{
+				"id": "place_kaifeng",
+				"kind": "place",
+				"screen_rect": [
+					927.5,
+					510.727783203125,
+					65.0,
+					39.6722490310669
+				],
+				"world_anchor": [
+					11409.900390625,
+					8639.6904296875
+				]
+			},
+			{
+				"id": "u_00045",
+				"kind": "unit",
+				"screen_rect": [
+					599.314758300781,
+					550.579650878906,
+					53.3,
+					53.95
+				],
+				"world_anchor": [
+					10872.0,
+					8687.966796875
+				]
+			},
+			{
+				"id": "u_00046",
+				"kind": "unit",
+				"screen_rect": [
+					538.214721679688,
+					513.159545898438,
+					53.3,
+					53.95
+				],
+				"world_anchor": [
+					10800.0,
+					8646.3974609375
+				]
+			},
+			{
+				"id": "u_00047",
+				"kind": "unit",
+				"screen_rect": [
+					538.214721679688,
+					567.19970703125,
+					53.3,
+					53.95
+				],
+				"world_anchor": [
+					10800.0,
+					8729.5361328125
+				]
+			},
+			{
+				"id": "crossing:bridge_jinghan_shijiazhuang_zhengzhou_151_26",
+				"kind": "crossing",
+				"screen_rect": [
+					604.364990234375,
+					403.260070800781,
+					11.9999999046326,
+					66.0401378631592
+				],
+				"world_anchor": [
+					10872.0,
+					8480.12109375
+				]
+			},
+			{
+				"id": "crossing:bridge_jinghan_shijiazhuang_zhengzhou_151_27",
+				"kind": "crossing",
+				"screen_rect": [
+					604.364990234375,
+					457.300201416016,
+					11.9999999046326,
+					66.0395030975342
+				],
+				"world_anchor": [
+					10872.0,
+					8563.259765625
+				]
+			}
+		],
+		"operation_hex_radius_world": 48.0,
+		"renderer": "shared_model_and_caption_footprints_v1",
+		"source_pngs_modified": false
+	},
 	"map_detail": {
 		"cell_river_segments": 7233,
 		"coast_lines": 5295,
@@ -526,13 +706,13 @@
 		"height_exaggeration_display_only": 6.0,
 		"historical_vegetation_claimed": false,
 		"independent_relief_originals_used": 240,
-		"index_ms": 291.912,
+		"index_ms": 424.094,
 		"lighting": "continuous_source_height_normals",
-		"mesh_ms": 5428.792,
+		"mesh_ms": 3949.902,
 		"nearby_variant_exclusion_world": 270.0,
 		"placed_features": 9990,
-		"placement_ms": 4852.647,
-		"preparation_ms": 10573.35,
+		"placement_ms": 2736.417,
+		"preparation_ms": 7110.413,
 		"rules_map_mutated": false,
 		"source": "Tilezen_TerrainTiles_geotiff_five_point_samples",
 		"source_meters_per_world_unit": 112.5,

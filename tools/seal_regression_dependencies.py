@@ -3,17 +3,18 @@ import json
 from datetime import datetime, timezone
 from build_release import source_digest, current_version
 from run_validation import CHECKS, PROJECT
-from regression_dependencies import dependencies, identity
+from regression_dependencies import dependencies, identities
 from package_delivery import sha
 
 
 def main():
     tag = 'v' + current_version().replace('.', '')
     rows = []
+    current_identities = identities(CHECKS)
     for check in CHECKS:
         report = PROJECT / 'reports' / ('rule_tests.json' if check == 'run_tests' else check.removesuffix('_test') + '_tests.json')
         log = PROJECT / 'reports' / (check + '_' + tag + '.log')
-        digest, changed = identity(check)
+        digest, changed = current_identities[check]
         value = json.loads(report.read_text(encoding='utf-8'))
         diagnostic = log.read_text(encoding='utf-8', errors='replace')
         valid = min(report.stat().st_mtime, log.stat().st_mtime) >= changed

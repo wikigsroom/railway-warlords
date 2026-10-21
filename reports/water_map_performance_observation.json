@@ -1,11 +1,11 @@
 {
   "observation_recorded": true,
-  "version": "0.2.28",
-  "runtime_source_sha256": "4707412e073cc70cbc9c45f21b69f2b27b30317cbce40e88fc891efc1e21c2f4",
-  "windows_exe_sha256": "83f799419058ee64dd19c93af93f82fe378e8a1c99fd5bf6c3f50be0889c78a5",
+  "version": "0.2.29",
+  "runtime_source_sha256": "434c5784d0256bde7a5ec02df6450e45a07da645ce7cfa68b4910054b488d090",
+  "windows_exe_sha256": "3741afc62cc53e4bc72d26e52ce488108359c527c668950ab36ba38446872ded",
   "sample_frames": 180,
-  "average_fps": 59.9636819966041,
-  "frame_ms_p95": 17.937,
+  "average_fps": 59.9613648938867,
+  "frame_ms_p95": 18.385,
   "target_fps": 60,
   "target_met": false,
   "window_focus_or_occlusion_recorded": false,
@@ -14,23 +14,23 @@
   "files": [
     {
       "file": "reports/water_map_performance/desktop_benchmark.json",
-      "sha256": "99a2dee9a01f6304747259ac7085bbaabb5220e41ba44b4e440a14e67c02fd62"
+      "sha256": "2ab455ce48902241a8e0603a2c45bebe1c09e1599335a192a8774da18ec665ae"
     },
     {
       "file": "reports/water_map_performance/native.log",
-      "sha256": "76d0ebc528455f74ff89896195a54b3efe77cfe6e1b6e705523a0839499d2f87"
+      "sha256": "b77cb8206aaffbb27b7d3cef4e9086edc2c093e30ccb72395dee91594b25cfa4"
     },
     {
       "file": "reports/water_map_performance/stdout.log",
-      "sha256": "39229aa1e11024f6923c428ef99affdfe5116b309bb68c8d3b8b3857fd9e3af0"
+      "sha256": "3bb15f82091281add3438f5d9f786a73fad8f56fa2096a3d2dbd94b6382b6ee7"
     },
     {
       "file": "reports/water_map_performance/viewport.png",
-      "sha256": "405c15d06fd7785222e98c0cd3b4df11caf79fde6ef10445a717a0734067bbde"
+      "sha256": "e7e6277cc52a7267588f4a2781ab02208a9126dd7a5e9e4f9337271113e9304d"
     },
     {
       "file": "reports/water_map_performance/viewport.json",
-      "sha256": "b98d77949d94c36bc0bc03673580b673ab5497977eb7c822e8225a4b1c18ee29"
+      "sha256": "ca29f52debb5e2d888e7ddb7b3fe469ae94fd8d9c09f0cb81755833868d147a3"
     }
   ],
   "limitation": "One static RTX 3060 desktop sample from verify_exports. Not a controlled comparative benchmark, sustained battle test or physical phone measurement. Retained report paths serve current shared release gates; this is not a new water-art revision."
