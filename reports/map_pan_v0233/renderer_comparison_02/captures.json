@@ -1,0 +1,56 @@
+[
+	{
+		"baseline": true,
+		"camera": "(16848.0, 7000.0)",
+		"image": "res://reports/map_pan_v0233/renderer_comparison_02/mountains_baseline.png",
+		"name": "mountains",
+		"raw_native_viewport": true,
+		"state_unchanged": true,
+		"zoom": 1.05
+	},
+	{
+		"baseline": false,
+		"camera": "(16848.0, 7000.0)",
+		"image": "res://reports/map_pan_v0233/renderer_comparison_02/mountains_optimized.png",
+		"name": "mountains",
+		"raw_native_viewport": true,
+		"state_unchanged": true,
+		"zoom": 1.05
+	},
+	{
+		"baseline": true,
+		"camera": "(684.0, 733.3434)",
+		"image": "res://reports/map_pan_v0233/renderer_comparison_02/wuhan_baseline.png",
+		"name": "wuhan",
+		"raw_native_viewport": true,
+		"state_unchanged": true,
+		"zoom": 1.05
+	},
+	{
+		"baseline": false,
+		"camera": "(684.0, 733.3434)",
+		"image": "res://reports/map_pan_v0233/renderer_comparison_02/wuhan_optimized.png",
+		"name": "wuhan",
+		"raw_native_viewport": true,
+		"state_unchanged": true,
+		"zoom": 1.05
+	},
+	{
+		"baseline": true,
+		"camera": "(14950.0, 7300.0)",
+		"image": "res://reports/map_pan_v0233/renderer_comparison_02/beijing_baseline.png",
+		"name": "beijing",
+		"raw_native_viewport": true,
+		"state_unchanged": true,
+		"zoom": 0.62
+	},
+	{
+		"baseline": false,
+		"camera": "(14950.0, 7300.0)",
+		"image": "res://reports/map_pan_v0233/renderer_comparison_02/beijing_optimized.png",
+		"name": "beijing",
+		"raw_native_viewport": true,
+		"state_unchanged": true,
+		"zoom": 0.62
+	}
+]

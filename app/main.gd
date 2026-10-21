@@ -942,6 +942,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		elif event.keycode==KEY_F and is_instance_valid(map_view) and not is_instance_valid(overlay):map_view.show_supply=not map_view.show_supply;map_view.queue_redraw()
 		elif event.keycode==KEY_M and is_instance_valid(map_view) and not is_instance_valid(overlay):show_strategic_map()
 
+func _exit_tree() -> void:
+	if assets!=null:assets.finish_map_prefetch()
+
 func _notification(what: int) -> void:
 	if what==NOTIFICATION_APPLICATION_PAUSED and is_instance_valid(match_controller) and not match_controller.state.is_empty():
 		background_was_paused=match_controller.paused;match_controller.paused=true

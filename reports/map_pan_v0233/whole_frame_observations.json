@@ -1,0 +1,68 @@
+{
+  "recorded_at_utc": "2026-10-21T20:40:17.640470+00:00",
+  "method": "Ten entire native images opened with view_image; no crops, painting or composites.",
+  "formal_art_approval": false,
+  "physical_android_device_tested": false,
+  "frames": [
+    {
+      "file": "reports/map_pan_v0233/shipping_01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "whole_frame_actually_viewed": true,
+      "observation": "主菜单所有主要入口和底部按钮可见；蓝灰矩形控件较机械，与概念图的整体美术仍有距离。"
+    },
+    {
+      "file": "reports/map_pan_v0233/shipping_01/ui_smoke.png",
+      "sha256": "59fca87f7ee37c4f606ca90e6d1a94241f00300ff4252be3a228d842394534b5",
+      "whole_frame_actually_viewed": true,
+      "observation": "选中单位、行动范围、底部操作与九门口文字可辨；山体重复，大片平原细节仍稀疏。"
+    },
+    {
+      "file": "reports/map_pan_v0233/shipping_01/mountains.png",
+      "sha256": "1ca8a024c2af920c7197fe04360f64ddc0f8093db01e8a00f3f0f5ccc901cab3",
+      "whole_frame_actually_viewed": true,
+      "observation": "山体原图、地面过渡和村名均显示；孤立山体缩景重复，中央平地仍显空旷。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0233/verified_export_01/wuhan.png",
+      "sha256": "4ad8ebc8ff2f0052a320aba3ba69259ef1acb6d291ece8926465b597785dda4d",
+      "whole_frame_actually_viewed": true,
+      "observation": "汉口、汉阳、武昌及渡口文字可辨；左右外框留白、大片相似底纹和折线河道明显。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0233/verified_export_01/beijing.png",
+      "sha256": "b1f14d6bfe18815d0ec0453f22f09eac3b92bff8b101e7b18a06159a0f37dfdc",
+      "whole_frame_actually_viewed": true,
+      "observation": "此图确实显示北京城区标签和南苑、长辛店；兵力聚集和铁路可辨，平地变化与城市规模表达不足。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0233/verified_export_01/coast.png",
+      "sha256": "eaf3eedcf84d9137619e9020f2aaafcba6cac5a54a2045602cb64a4d3b3081f1",
+      "whole_frame_actually_viewed": true,
+      "observation": "山海关、秦皇岛和渤海均可辨；水面连续，海岸仍有角状轮廓，内陆底纹变化不足。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0233/verified_export_01/village.png",
+      "sha256": "4f26bbe68216a55a326d47a4826d0645146442a2fc6308b740cc82de12819b62",
+      "whole_frame_actually_viewed": true,
+      "observation": "董家口、城子峪、板厂峪的模型与文字分开显示；山体重复和大片稀疏地面仍明显。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0233/verified_export_01/wuhan_regional.png",
+      "sha256": "82ddf74ec3f982dcb0cf20798a96f967a82bf51efab2d1c67e2baead1edcb928",
+      "whole_frame_actually_viewed": true,
+      "observation": "缩远后战区矩形过小且大面积外框留白，属于未解决的构图问题，不能因布局检查通过视为美术合格。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0233/verified_export_01/wuhan_x30_layout.png",
+      "sha256": "08e127df52a0c2dad96a0f08a1cb8645c5b944dd5b34b8d27e8cf6e34cc727d4",
+      "whole_frame_actually_viewed": true,
+      "observation": "Windows上的2400×1080比例界面和城市文字可辨；左右留白扩大，此图不证明手机触控与性能。"
+    },
+    {
+      "file": "reports/screenshots/map_composition_native/v0233/verified_export_01/wuhan_large_text.png",
+      "sha256": "5223234d2103f6131cb8b2216e6e1e0c1418734e27687c8a2316f7ae589b12d4",
+      "whole_frame_actually_viewed": true,
+      "observation": "1280×720大字布局主要按钮与城名可辨；底部帮助文字显示省略号，地理与构图缺口继续存在。"
+    }
+  ]
+}

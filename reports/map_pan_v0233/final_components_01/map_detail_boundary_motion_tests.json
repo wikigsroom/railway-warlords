@@ -1,0 +1,178 @@
+{
+	"checks": [
+		{
+			"name": "content_loads",
+			"passed": true
+		},
+		{
+			"name": "strategic_layer_builds_relief_mesh",
+			"passed": true
+		},
+		{
+			"name": "strategic_layer_places_source_terrain_features",
+			"passed": true
+		},
+		{
+			"name": "strategic_layer_shows_only_dated_sourced_landcover_landmarks",
+			"passed": true
+		},
+		{
+			"name": "continental_scale_does_not_invent_surveyed_contours",
+			"passed": true
+		},
+		{
+			"name": "strategic_relief_uses_attributed_numeric_elevation_and_physical_slopes",
+			"passed": true
+		},
+		{
+			"name": "strategic_layer_keeps_real_hydrography_and_coastline_vectors",
+			"passed": true
+		},
+		{
+			"name": "source_open_rivers_are_not_closed_by_false_chords",
+			"passed": true
+		},
+		{
+			"name": "strategic_layer_loads_sourced_minor_tributaries",
+			"passed": true
+		},
+		{
+			"name": "strategic_control_field_covers_real_land_cells",
+			"passed": true
+		},
+		{
+			"name": "strategic_control_field_keeps_multi_faction_boundaries",
+			"passed": true
+		},
+		{
+			"name": "strategic_control_field_is_translucent",
+			"passed": true
+		},
+		{
+			"name": "relief_preparation_does_not_mutate_authoritative_asia_state",
+			"passed": true
+		},
+		{
+			"name": "free_world_fits_full_asia_bounds",
+			"passed": true
+		},
+		{
+			"name": "strategic_campaign_has_local_camera_theatre",
+			"passed": true
+		},
+		{
+			"name": "campaign_theatre_is_smaller_than_continental_asia",
+			"passed": true
+		},
+		{
+			"name": "campaign_camera_clamps_to_local_theatre_maximum",
+			"passed": true
+		},
+		{
+			"name": "campaign_camera_clamps_to_local_theatre_minimum",
+			"passed": true
+		},
+		{
+			"name": "free_world_boundary_remains_continental",
+			"passed": true
+		},
+		{
+			"name": "tactical_campaign_uses_its_authored_local_extent",
+			"passed": true
+		},
+		{
+			"name": "tactical_map_draws_sourced_bridge_and_ferry_markers",
+			"passed": true
+		},
+		{
+			"name": "movement_profiles_follow_unit_family",
+			"passed": true
+		},
+		{
+			"name": "movement_profiles_have_distinct_visual_cadence",
+			"passed": true
+		}
+	],
+	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
+	"failures": [],
+	"game_version": "0.2.33",
+	"landcover_feature_count": 8,
+	"passed": true,
+	"relief": {
+		"continuous_lighting": {
+			"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+			"gpu_texture_available": false,
+			"interpolation_stencil": [
+				4,
+				4
+			],
+			"lookup_bytes": 53724,
+			"lookup_dimensions": [
+				111,
+				121
+			],
+			"maximum_contributing_samples": 16,
+			"method": "source_cell_cubic_bspline_lighting",
+			"new_dem_samples": 0,
+			"raster_art_generated": false,
+			"rules_map_mutated": false,
+			"source_images_modified": false,
+			"source_samples": 3587
+		},
+		"contour_segments": 0,
+		"crest_axis_from_source_neighbours": true,
+		"eligible_features": 290,
+		"families": {
+			"foothill_ew": 116,
+			"foothill_ns": 66,
+			"peak_ew": 1,
+			"peak_ns": 1,
+			"ridge_ew": 28,
+			"ridge_ns": 7
+		},
+		"generated_continental_contours": false,
+		"geographic_gradient_in_meters": true,
+		"height_exaggeration_display_only": 6.0,
+		"historical_vegetation_claimed": false,
+		"independent_relief_originals_used": 102,
+		"index_ms": 776.131,
+		"lighting": "continuous_source_height_normals",
+		"mesh_ms": 1997.533,
+		"nearby_variant_exclusion_world": 270.0,
+		"placed_features": 219,
+		"placement_ms": 2618.558,
+		"preparation_ms": 5392.22,
+		"rules_map_mutated": false,
+		"source": "Tilezen_TerrainTiles_geotiff_nine_point_100km",
+		"source_meters_per_world_unit": 3125.0,
+		"strategic_category_relief": false,
+		"triangles": 5493
+	},
+	"scope": "Strategic terrain detail, sourced dated landcover landmarks, translucent current-owner field, campaign camera theatre boundaries and unit-family movement profiles.",
+	"territory_field": {
+		"border_segments": 467,
+		"cells_assigned": 2681,
+		"cells_skipped": 1063,
+		"clip": {
+			"city_zones": 81,
+			"clipped_city_zones": 61.0,
+			"eligible_field_cells": 3744.0,
+			"empty_field_cells": 14.0,
+			"enabled": true,
+			"historical_military_frontiers_claimed": false,
+			"inland_water_preserves_source_islands": true,
+			"land_clipped": true,
+			"partial_field_cells": 629.0,
+			"source": "existing_render_land_exteriors_minus_holes",
+			"source_land_holes": 1.0,
+			"source_land_polygons": 12105.0,
+			"source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+		},
+		"enabled": true,
+		"land_clipped": true,
+		"minimap_reuses_same_meshes": true,
+		"owners": 16,
+		"presentation_only": true,
+		"source": "current_owned_real_city_nodes_voronoi"
+	}
+}

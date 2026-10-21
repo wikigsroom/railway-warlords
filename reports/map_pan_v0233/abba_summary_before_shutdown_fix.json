@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "version": "0.2.33",
+  "runtime_source_sha256": "1559a5880e83a834c5b84f65f7b33bd8508328c8d6f1dfe62f214ad6bf1c29aa",
+  "comparison": "Fresh-process copied 0.2.32 static-atlas and fine-mesh methods versus current methods; same development engine and source state. Not a comparison between two shipping binaries.",
+  "gpu": "NVIDIA RTX 3060",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "vsync": false,
+  "fps_uncapped": true,
+  "other_application_gpu_cpu_load_controlled": false,
+  "physical_android_device_tested": false,
+  "stages": [
+    {
+      "name": "perf_01_legacy",
+      "legacy_methods": true,
+      "frames": 180,
+      "focused_frames": 180,
+      "p95_ms": 134.265,
+      "max_ms": 179.357,
+      "mean_ms": 14.07295,
+      "static_draw_mean_ms": 85.2699090909091,
+      "static_draw_max_ms": 96.846,
+      "synchronous_misses_during_pan": 16,
+      "backdrop_rebuilds": 11,
+      "report": "reports/map_pan_v0233/perf_01_legacy/profile.json"
+    },
+    {
+      "name": "perf_02_optimized",
+      "legacy_methods": false,
+      "frames": 180,
+      "focused_frames": 180,
+      "p95_ms": 27.381,
+      "max_ms": 48.084,
+      "mean_ms": 4.211788888888889,
+      "static_draw_mean_ms": 19.47490909090909,
+      "static_draw_max_ms": 35.039,
+      "synchronous_misses_during_pan": 1,
+      "backdrop_rebuilds": 11,
+      "report": "reports/map_pan_v0233/perf_02_optimized/profile.json"
+    },
+    {
+      "name": "perf_03_optimized",
+      "legacy_methods": false,
+      "frames": 180,
+      "focused_frames": 180,
+      "p95_ms": 26.484,
+      "max_ms": 44.423,
+      "mean_ms": 4.372994444444444,
+      "static_draw_mean_ms": 18.66827272727273,
+      "static_draw_max_ms": 32.458,
+      "synchronous_misses_during_pan": 1,
+      "backdrop_rebuilds": 11,
+      "report": "reports/map_pan_v0233/perf_03_optimized/profile.json"
+    },
+    {
+      "name": "perf_04_legacy",
+      "legacy_methods": true,
+      "frames": 180,
+      "focused_frames": 180,
+      "p95_ms": 100.87,
+      "max_ms": 136.982,
+      "mean_ms": 10.296416666666666,
+      "static_draw_mean_ms": 62.403454545454544,
+      "static_draw_max_ms": 72.334,
+      "synchronous_misses_during_pan": 16,
+      "backdrop_rebuilds": 11,
+      "report": "reports/map_pan_v0233/perf_04_legacy/profile.json"
+    }
+  ]
+}

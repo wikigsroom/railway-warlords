@@ -1,0 +1,47 @@
+{
+	"checks": [
+		{
+			"name": "bucket_geometry_colors_and_uvs_equal_previous_full_mesh_false",
+			"passed": true
+		},
+		{
+			"name": "cross_bucket_source_texture_blend_order_is_unchanged_false",
+			"passed": true
+		},
+		{
+			"name": "camera_rebuild_reuses_the_same_gpu_resources_false",
+			"passed": true
+		},
+		{
+			"name": "bucket_geometry_colors_and_uvs_equal_previous_full_mesh_true",
+			"passed": true
+		},
+		{
+			"name": "cross_bucket_source_texture_blend_order_is_unchanged_true",
+			"passed": true
+		},
+		{
+			"name": "camera_rebuild_reuses_the_same_gpu_resources_true",
+			"passed": true
+		},
+		{
+			"name": "cache_never_changes_geographic_cells_or_material_assignments",
+			"passed": true
+		},
+		{
+			"name": "cache_memory_bound_is_enforced_for_a_large_view",
+			"passed": true
+		},
+		{
+			"name": "oversized_view_preserves_its_cached_working_set_instead_of_thrashing_all_chunks",
+			"passed": true
+		},
+		{
+			"name": "loading_another_map_clears_all_old_detail_chunks",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"passed": true,
+	"physical_android_device_tested": false
+}

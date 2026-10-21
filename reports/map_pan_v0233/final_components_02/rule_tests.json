@@ -1,0 +1,482 @@
+{
+	"checks": [
+		"content_registry_21_tables_33_scenarios",
+		"combat_rifle_rifle_actual_{ \"damage\": 33, \"counter\": 14, \"suppression\": 10, \"fort_damage\": 0, \"garrison_damage\": 0, &\"damage_min\": 27, &\"damage_max\": 39, &\"counter_min\": 12, &\"counter_max\": 18, &\"fort_damage_min\": 0, &\"fort_damage_max\": 0 }",
+		"combat_machine_gun_rifle_actual_{ \"damage\": 39, \"counter\": 12, \"suppression\": 30, \"fort_damage\": 0, \"garrison_damage\": 0, &\"damage_min\": 32, &\"damage_max\": 46, &\"counter_min\": 10, &\"counter_max\": 15, &\"fort_damage_min\": 0, &\"fort_damage_max\": 0 }",
+		"combat_cavalry_machine_gun_actual_{ \"damage\": 23, \"counter\": 19, \"suppression\": 10, \"fort_damage\": 0, \"garrison_damage\": 0, &\"damage_min\": 19, &\"damage_max\": 27, &\"counter_min\": 16, &\"counter_max\": 22, &\"fort_damage_min\": 0, &\"fort_damage_max\": 0 }",
+		"combat_cavalry_field_artillery_actual_{ \"damage\": 46, \"counter\": 0, \"suppression\": 10, \"fort_damage\": 0, \"garrison_damage\": 0, &\"damage_min\": 38, &\"damage_max\": 54, &\"counter_min\": 0, &\"counter_max\": 0, &\"fort_damage_min\": 0, &\"fort_damage_max\": 0 }",
+		"combat_field_artillery_rifle_actual_{ \"damage\": 46, \"counter\": 0, \"suppression\": 20, \"fort_damage\": 0, \"garrison_damage\": 0, &\"damage_min\": 38, &\"damage_max\": 54, &\"counter_min\": 0, &\"counter_max\": 0, &\"fort_damage_min\": 0, &\"fort_damage_max\": 0 }",
+		"dual_hp_fort_63_garrison9_no_counter",
+		"fort_no_overflow_100_collateral15",
+		"half_health_damage26",
+		"low_supply_damage28",
+		"forest_cover_damage29",
+		"three_stack_damage55",
+		"preview_is_read_only",
+		"attack_atomic_clone_post_hit_counter",
+		"attack_ammo_and_terminal_ap",
+		"stale_command_rejected",
+		"fog_or_range_attack_rejected",
+		"segmented_movement_cost2",
+		"enter_enemy_zoc_stops_movement",
+		"recruit_two_stack_cost_and_population",
+		"recruit_next_own_phase_deploys_adjacent",
+		"unready_cancel_75percent_full_population",
+		"construction_completes_after_own_phase",
+		"capture_stability_reserve_station_damage",
+		"reinforce_25hp_population3_terminal",
+		"second_none_phase_attrition8",
+		"insufficient_food_no_partial_payment_reserve_used",
+		"rail_atomic_dual_capacity_reservation",
+		"rail_shortfall_rejects_without_partial_change",
+		"engineer_adjacent_work_accepted",
+		"engineer_one_phase_restores_track",
+		"cannot_borrow_rail_then_declare_same_phase",
+		"phase_not_round",
+		"all_factions_complete_advances_date",
+		"eliminated_final_faction_still_advances_round_and_date",
+		"skipping_eliminated_factions_advances_date_without_reviving_coup_source",
+		"atomic_save_verified_write",
+		"save_load_hash_round_trip",
+		"corrupt_save_recovers_previous_backup",
+		"reward_ledger_idempotent",
+		"technology_upgrade_validation",
+		"scenario_deployment_campaign_1920_01",
+		"scenario_deployment_campaign_1920_02",
+		"scenario_deployment_campaign_1920_03",
+		"scenario_deployment_campaign_1920_04",
+		"scenario_deployment_campaign_1920_05",
+		"scenario_deployment_campaign_1920_06",
+		"scenario_deployment_campaign_1922_01",
+		"scenario_deployment_campaign_1922_02",
+		"scenario_deployment_campaign_1922_03",
+		"scenario_deployment_campaign_1922_04",
+		"scenario_deployment_campaign_1922_05",
+		"scenario_deployment_campaign_1922_06",
+		"scenario_deployment_campaign_1924_01",
+		"scenario_deployment_campaign_1924_02",
+		"scenario_deployment_campaign_1924_03",
+		"scenario_deployment_campaign_1924_04",
+		"scenario_deployment_campaign_1924_05",
+		"scenario_deployment_campaign_1924_06",
+		"scenario_deployment_conq_1920",
+		"scenario_deployment_conq_1922",
+		"scenario_deployment_conq_1924",
+		"scenario_deployment_legion_01",
+		"scenario_deployment_legion_02",
+		"scenario_deployment_legion_03",
+		"scenario_deployment_legion_04",
+		"scenario_deployment_legion_05",
+		"scenario_deployment_legion_06",
+		"scenario_deployment_legion_07",
+		"scenario_deployment_legion_08",
+		"scenario_deployment_legion_09",
+		"scenario_deployment_legion_10",
+		"scenario_deployment_legion_11",
+		"scenario_deployment_legion_12",
+		"scenario_deployment_asia_1840",
+		"scenario_deployment_asia_1860",
+		"scenario_deployment_asia_1890",
+		"scenario_deployment_asia_1900",
+		"scenario_deployment_asia_1917",
+		"scenario_deployment_asia_1927",
+		"scenario_deployment_asia_1940",
+		"scenario_deployment_campaign_1840_01",
+		"scenario_deployment_campaign_1840_02",
+		"scenario_deployment_campaign_1840_03",
+		"scenario_deployment_campaign_1860_01",
+		"scenario_deployment_campaign_1860_02",
+		"scenario_deployment_campaign_1860_03",
+		"scenario_deployment_campaign_1890_01",
+		"scenario_deployment_campaign_1890_02",
+		"scenario_deployment_campaign_1890_03",
+		"scenario_deployment_campaign_1900_01",
+		"scenario_deployment_campaign_1900_02",
+		"scenario_deployment_campaign_1900_03",
+		"scenario_deployment_campaign_1917_01",
+		"scenario_deployment_campaign_1917_02",
+		"scenario_deployment_campaign_1917_03",
+		"scenario_deployment_campaign_1927_01",
+		"scenario_deployment_campaign_1927_02",
+		"scenario_deployment_campaign_1927_03",
+		"scenario_deployment_campaign_1940_01",
+		"scenario_deployment_campaign_1940_02",
+		"scenario_deployment_campaign_1940_03"
+	],
+	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
+	"engine": "4.7.2-stable (official)",
+	"failed": 0,
+	"failures": [],
+	"passed": 102,
+	"scenarios": [
+		{
+			"cities": 3,
+			"id": "campaign_1920_01",
+			"load_ms": 269,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1920_02",
+			"load_ms": 266,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1920_03",
+			"load_ms": 81,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1920_04",
+			"load_ms": 597,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1920_05",
+			"load_ms": 294,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1920_06",
+			"load_ms": 439,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1922_01",
+			"load_ms": 228,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1922_02",
+			"load_ms": 511,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1922_03",
+			"load_ms": 782,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1922_04",
+			"load_ms": 417,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1922_05",
+			"load_ms": 414,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1922_06",
+			"load_ms": 438,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1924_01",
+			"load_ms": 356,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1924_02",
+			"load_ms": 447,
+			"units": 31
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1924_03",
+			"load_ms": 566,
+			"units": 31
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1924_04",
+			"load_ms": 360,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1924_05",
+			"load_ms": 323,
+			"units": 30
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1924_06",
+			"load_ms": 363,
+			"units": 30
+		},
+		{
+			"cities": 40,
+			"id": "conq_1920",
+			"load_ms": 823,
+			"units": 80
+		},
+		{
+			"cities": 42,
+			"id": "conq_1922",
+			"load_ms": 928,
+			"units": 84
+		},
+		{
+			"cities": 43,
+			"id": "conq_1924",
+			"load_ms": 1009,
+			"units": 87
+		},
+		{
+			"cities": 3,
+			"id": "legion_01",
+			"load_ms": 342,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "legion_02",
+			"load_ms": 862,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "legion_03",
+			"load_ms": 586,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "legion_04",
+			"load_ms": 588,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "legion_05",
+			"load_ms": 36,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "legion_06",
+			"load_ms": 460,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "legion_07",
+			"load_ms": 37,
+			"units": 18
+		},
+		{
+			"cities": 2,
+			"id": "legion_08",
+			"load_ms": 35,
+			"units": 18
+		},
+		{
+			"cities": 3,
+			"id": "legion_09",
+			"load_ms": 445,
+			"units": 18
+		},
+		{
+			"cities": 3,
+			"id": "legion_10",
+			"load_ms": 451,
+			"units": 18
+		},
+		{
+			"cities": 3,
+			"id": "legion_11",
+			"load_ms": 254,
+			"units": 18
+		},
+		{
+			"cities": 3,
+			"id": "legion_12",
+			"load_ms": 215,
+			"units": 18
+		},
+		{
+			"cities": 81,
+			"id": "asia_1840",
+			"load_ms": 331,
+			"units": 153
+		},
+		{
+			"cities": 81,
+			"id": "asia_1860",
+			"load_ms": 365,
+			"units": 153
+		},
+		{
+			"cities": 81,
+			"id": "asia_1890",
+			"load_ms": 343,
+			"units": 153
+		},
+		{
+			"cities": 81,
+			"id": "asia_1900",
+			"load_ms": 354,
+			"units": 153
+		},
+		{
+			"cities": 81,
+			"id": "asia_1917",
+			"load_ms": 350,
+			"units": 153
+		},
+		{
+			"cities": 81,
+			"id": "asia_1927",
+			"load_ms": 573,
+			"units": 153
+		},
+		{
+			"cities": 81,
+			"id": "asia_1940",
+			"load_ms": 328,
+			"units": 153
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1840_01",
+			"load_ms": 29,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1840_02",
+			"load_ms": 24,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1840_03",
+			"load_ms": 29,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1860_01",
+			"load_ms": 24,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1860_02",
+			"load_ms": 38,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1860_03",
+			"load_ms": 23,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1890_01",
+			"load_ms": 25,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1890_02",
+			"load_ms": 27,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1890_03",
+			"load_ms": 23,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1900_01",
+			"load_ms": 29,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1900_02",
+			"load_ms": 28,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1900_03",
+			"load_ms": 25,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1917_01",
+			"load_ms": 29,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1917_02",
+			"load_ms": 32,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1917_03",
+			"load_ms": 67,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1927_01",
+			"load_ms": 22,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1927_02",
+			"load_ms": 18,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1927_03",
+			"load_ms": 32,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1940_01",
+			"load_ms": 28,
+			"units": 17
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1940_02",
+			"load_ms": 27,
+			"units": 16
+		},
+		{
+			"cities": 3,
+			"id": "campaign_1940_03",
+			"load_ms": 27,
+			"units": 16
+		}
+	],
+	"timings": {
+		"save_load_ms": 141
+	}
+}

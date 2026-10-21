@@ -1,0 +1,125 @@
+{
+  "recorded_at_utc": "2026-10-21T20:44:53.943232+00:00",
+  "version": "0.2.33",
+  "result": "progress",
+  "goal_completed": false,
+  "whole_goal_achieved": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "runtime_source_sha256": "e4e300ee4af9eb90c857bb670ccd75646e67a9d3652e4c35d6dbba5be24aea00",
+  "content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
+  "previous_turn_result": "progress",
+  "previous_pushed_commit": "6aa0246451ab73be6a03c530ad0e36ab685f851b",
+  "previous_evidence_used": "The previous checkpoint still had panning stalls. CPU-phase profiling identified synchronous whole-image reads and repeated province/control/rail/fine-mesh work, which determined the implementation below.",
+  "changes": [
+    "Bounded prefetch of nearby whole original scenery textures, two active tasks and 128 wanted IDs; existing 384-texture cache limit retained.",
+    "Conservative source-line visibility index, original rail-curve and sleeper geometry cache, and reusable fine-detail meshes for sixteen-cell chunks.",
+    "Application exit consumes only its own bounded outstanding texture loads; no exit leak warning in final input regression."
+  ],
+  "current_targeted_checks": 731,
+  "component_groups": 16,
+  "component_checks": 625,
+  "shipping_gpu_checks": 48,
+  "shipping_map_layout_checks": 58,
+  "final_shipping_whole_images_actually_viewed": 10,
+  "fixed_view_pixel_identical_pairs": 3,
+  "new_independent_pngs": 0,
+  "registered_pngs": 2509,
+  "protected_rule_and_data_files_byte_unchanged": 158,
+  "android": {
+    "exported": true,
+    "version_code": 38,
+    "raster_payloads_verified": 2509,
+    "abi": [
+      "arm64-v8a",
+      "armeabi-v7a"
+    ],
+    "physical_device_tested": false,
+    "adb_connected_devices": 0
+  },
+  "documentation": {
+    "passed": true,
+    "scope": "documentation_media_and_source_integrity",
+    "links_checked": 949,
+    "full_native_release_gates_checked": false
+  },
+  "archive_directory": "E:\\dev\\vibe-game\\世界征服者类\\output\\releases\\railway-warlords-0.2.33",
+  "delivery_manifest": "reports/map_pan_preview_v0233.json",
+  "archive_status_recorded_separately": true,
+  "new_music_generated": false,
+  "future_music_route": "music-gen-remote-YuE2",
+  "existing_local_music_provenance_preserved": true,
+  "performance": {
+    "mode": "native_development_fresh_process_legacy_current_current_legacy",
+    "stages": [
+      {
+        "name": "perf_final_01_legacy",
+        "legacy_methods": true,
+        "frames": 180,
+        "focused_frames": 180,
+        "p95_ms": 89.073,
+        "max_ms": 220.703,
+        "mean_ms": 9.897983333333334,
+        "static_draw_mean_ms": 74.54118181818181,
+        "static_draw_max_ms": 181.518,
+        "synchronous_misses_during_pan": 16,
+        "backdrop_rebuilds": 11,
+        "report": "reports/map_pan_v0233/perf_final_01_legacy/profile.json"
+      },
+      {
+        "name": "perf_final_02_optimized",
+        "legacy_methods": false,
+        "frames": 180,
+        "focused_frames": 180,
+        "p95_ms": 29.639,
+        "max_ms": 60.419,
+        "mean_ms": 4.628894444444445,
+        "static_draw_mean_ms": 20.725727272727273,
+        "static_draw_max_ms": 42.625,
+        "synchronous_misses_during_pan": 1,
+        "backdrop_rebuilds": 11,
+        "report": "reports/map_pan_v0233/perf_final_02_optimized/profile.json"
+      },
+      {
+        "name": "perf_final_03_optimized",
+        "legacy_methods": false,
+        "frames": 180,
+        "focused_frames": 180,
+        "p95_ms": 29.964,
+        "max_ms": 48.709,
+        "mean_ms": 5.624405555555556,
+        "static_draw_mean_ms": 22.85009090909091,
+        "static_draw_max_ms": 37.195,
+        "synchronous_misses_during_pan": 1,
+        "backdrop_rebuilds": 11,
+        "report": "reports/map_pan_v0233/perf_final_03_optimized/profile.json"
+      },
+      {
+        "name": "perf_final_04_legacy",
+        "legacy_methods": true,
+        "frames": 180,
+        "focused_frames": 180,
+        "p95_ms": 92.451,
+        "max_ms": 157.941,
+        "mean_ms": 10.157644444444445,
+        "static_draw_mean_ms": 70.5319090909091,
+        "static_draw_max_ms": 96.005,
+        "synchronous_misses_during_pan": 16,
+        "backdrop_rebuilds": 11,
+        "report": "reports/map_pan_v0233/perf_final_04_legacy/profile.json"
+      }
+    ],
+    "shipping_binary_comparison": false,
+    "other_application_gpu_cpu_load_controlled": false,
+    "abrupt_jump_stalls_eliminated": false,
+    "physical_android_performance_tested": false
+  },
+  "full_thirty_group_regression_repeated": false,
+  "long_ai_matches_repeated": false,
+  "remaining_priorities": [
+    "Sourced Wuhan framing/context, more varied mountain miniatures, alluvial ground and detailed waterways.",
+    "Complete direction-specific movement, attack and hurt animation cycles for remaining unit families.",
+    "Correct Asian historical starts and finish evidence-backed commander deployments and individual ability balance.",
+    "Physical Motorola X30 acceptance and further first-load / cross-region panning profiling."
+  ]
+}

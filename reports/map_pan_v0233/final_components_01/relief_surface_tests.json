@@ -1,0 +1,101 @@
+{
+	"build_version": "0.2.33",
+	"checks": [
+		{
+			"name": "physical_slope_matches_independent_analytic_plane_in_metres",
+			"passed": true
+		},
+		{
+			"name": "height_offset_does_not_change_slope_or_invent_landforms",
+			"passed": true
+		},
+		{
+			"name": "opposite_surveyed_slopes_receive_distinct_consistent_upper_left_light",
+			"passed": true
+		},
+		{
+			"name": "flat_lowlands_remain_quiet_without_false_relief",
+			"passed": true
+		},
+		{
+			"name": "continuous_relief_colours_are_finite_and_translucent",
+			"passed": true
+		},
+		{
+			"name": "lighting_does_not_mutate_source_cell_or_rule_fields",
+			"passed": true
+		},
+		{
+			"name": "numerical_field_preserves_negative_axial_coordinates_with_two_sample_padding",
+			"passed": true
+		},
+		{
+			"name": "every_gpu_lookup_component_is_the_quantized_premultiplied_source_lighting_within_half_a_byte",
+			"passed": true
+		},
+		{
+			"name": "relief_texture_coordinates_remain_world_fixed_and_affine_in_the_source_hex_basis",
+			"passed": true
+		},
+		{
+			"name": "portable_numerical_lookup_has_transparent_unsupported_samples_and_no_invented_edge_elevation",
+			"passed": true
+		},
+		{
+			"name": "lighting_data_is_not_counted_as_new_art_or_new_geographic_measurements",
+			"passed": true
+		},
+		{
+			"name": "building_the_numerical_lighting_field_preserves_every_source_and_rule_value",
+			"passed": true
+		},
+		{
+			"name": "missing_source_support_clears_stale_field_without_extrapolation",
+			"passed": true
+		},
+		{
+			"name": "crest_orientation_follows_independent_ns_height_field",
+			"passed": true
+		},
+		{
+			"name": "crest_orientation_follows_independent_ew_height_field",
+			"passed": true
+		},
+		{
+			"name": "missing_neighbours_do_not_generate_unbounded_extrapolated_slopes",
+			"passed": true
+		},
+		{
+			"name": "four_directional_relief_sources_have_full_texture_metadata",
+			"passed": true
+		},
+		{
+			"name": "whole_source_aspect_and_alpha_foot_anchor_are_preserved_without_cropping",
+			"passed": true
+		},
+		{
+			"name": "all_four_relief_source_textures_are_available_to_runtime",
+			"passed": true
+		},
+		{
+			"name": "continental_category_bands_never_become_false_surveyed_contours",
+			"passed": true
+		},
+		{
+			"name": "continental_relief_preserves_all_source_cells",
+			"passed": true
+		},
+		{
+			"name": "eligible_terrain_uses_directional_relief_sources",
+			"passed": true
+		},
+		{
+			"name": "spatial_relief_queries_equal_brute_force_with_identical_depth_order",
+			"passed": true
+		}
+	],
+	"failed": 0,
+	"failures": [],
+	"passed": true,
+	"scope": "Physical-slope lighting, source-derived symbolic crest direction, full immutable texture anchoring; not full historical geography or commercial art approval."
+}

@@ -26,6 +26,9 @@ var continuous_color_templates: Dictionary={}
 var macro_chunks: Dictionary={}
 var macro_chunk_meshes: Dictionary={}
 var macro_index_prepared=false
+var fine_chunk_meshes: Dictionary={}
+var fine_chunk_order: Array=[]
+const FINE_CHUNK_CACHE_LIMIT=96
 const MACRO_CHUNK_SIZE=16
 const SURFACE_BLEND_RADIUS=64.0
 const SURFACE_BLEND_INNER=.70
@@ -37,6 +40,7 @@ func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array
 	ground_policy={"forest_floor_requires_sourced_forest":true,"withheld_forest_floor_cells":0,"drawn_families":{}}
 	blend_material=null;blend_material_prepared=false
 	macro_chunks.clear();macro_chunk_meshes.clear();macro_index_prepared=false
+	fine_chunk_meshes.clear();fine_chunk_order.clear()
 	if not MapArtBank.available():return
 	var started=Time.get_ticks_usec();var candidates: Array=[];var materials: Array=[]
 	source_ground_coverage=MapGroundCoverage.for_map(map)
@@ -219,6 +223,36 @@ func surface_meshes(entries: Array, strategic: bool, limit: int=1900, continuous
 			var mesh=ArrayMesh.new();mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
 			result.append({"asset_id":id,"mesh":mesh,"layer":"macro" if layer_index==0 else "detail","continuous":continuous and layer_index==0})
 	return {"count":count,"batches":result,"macro_materials":macro_groups.size(),"continuous":continuous}
+
+func cached_fine_surface_meshes(keys: Array, buckets: Dictionary, strategic: bool) -> Dictionary:
+	# Whole 16x16 source buckets retain the existing per-cell vertices, UVs and
+	# alpha. Submit asset IDs in the same global order as surface_meshes; the
+	# backdrop's conservative margin keeps offscreen bucket edges invisible.
+	var by_asset: Dictionary={};var count=0;var created=0;var wanted: Dictionary={}
+	for bucket in keys:wanted[Vector3i(bucket.x,bucket.y,1 if strategic else 0)]=true
+	for bucket in keys:
+		var key=Vector3i(bucket.x,bucket.y,1 if strategic else 0)
+		var row: Dictionary
+		if fine_chunk_meshes.has(key):row=fine_chunk_meshes[key]
+		else:
+			var entries: Array=buckets.get(bucket,[])
+			row=surface_meshes(entries,strategic,entries.size(),true,true,false);created+=1
+			if fine_chunk_meshes.size()>=FINE_CHUNK_CACHE_LIMIT:
+				for candidate in fine_chunk_order:
+					if not wanted.has(candidate):
+						fine_chunk_order.erase(candidate);fine_chunk_meshes.erase(candidate);break
+			# An unusually large view retains its already cached working set;
+			# overflow meshes live with this draw rather than cycling the LRU.
+			if fine_chunk_meshes.size()<FINE_CHUNK_CACHE_LIMIT:fine_chunk_meshes[key]=row
+		if fine_chunk_meshes.has(key):fine_chunk_order.erase(key);fine_chunk_order.append(key)
+		count+=int(row.count)
+		for batch in row.batches:
+			if not by_asset.has(batch.asset_id):by_asset[batch.asset_id]=[]
+			by_asset[batch.asset_id].append(batch)
+		while fine_chunk_order.size()>FINE_CHUNK_CACHE_LIMIT:fine_chunk_meshes.erase(fine_chunk_order.pop_front())
+	var result: Array=[];var ids=by_asset.keys();ids.sort()
+	for id in ids:result.append_array(by_asset[id])
+	return {"batches":result,"count":count,"created_chunks":created,"cached_chunks":fine_chunk_meshes.size(),"count_includes_conservative_offscreen_bucket_margin":true}
 
 func continuous_macro_meshes(view: Rect2) -> Dictionary:
 	# Keep both passes on the same clipped, world-fixed partition. Underlays

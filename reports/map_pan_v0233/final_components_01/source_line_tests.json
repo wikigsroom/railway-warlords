@@ -1,0 +1,71 @@
+{
+	"checks": [
+		{
+			"name": "all_kept_runs_retain_exact_original_order_and_vertices_[P: (-680.0, -240.0), S: (500.0, 410.0)]",
+			"passed": true
+		},
+		{
+			"name": "independent_visible_segment_oracle_has_no_missing_crossing_[P: (-680.0, -240.0), S: (500.0, 410.0)]",
+			"passed": true
+		},
+		{
+			"name": "all_kept_runs_retain_exact_original_order_and_vertices_[P: (50.0, -180.0), S: (600.0, 300.0)]",
+			"passed": true
+		},
+		{
+			"name": "independent_visible_segment_oracle_has_no_missing_crossing_[P: (50.0, -180.0), S: (600.0, 300.0)]",
+			"passed": true
+		},
+		{
+			"name": "all_kept_runs_retain_exact_original_order_and_vertices_[P: (-12.0, -12.0), S: (24.0, 24.0)]",
+			"passed": true
+		},
+		{
+			"name": "independent_visible_segment_oracle_has_no_missing_crossing_[P: (-12.0, -12.0), S: (24.0, 24.0)]",
+			"passed": true
+		},
+		{
+			"name": "all_kept_runs_retain_exact_original_order_and_vertices_[P: (20000.0, 20000.0), S: (100.0, 100.0)]",
+			"passed": true
+		},
+		{
+			"name": "independent_visible_segment_oracle_has_no_missing_crossing_[P: (20000.0, 20000.0), S: (100.0, 100.0)]",
+			"passed": true
+		},
+		{
+			"name": "long_crossing_with_both_endpoints_outside_remains_visible",
+			"passed": true
+		},
+		{
+			"name": "distant_provinces_submit_no_line_vertices",
+			"passed": true
+		},
+		{
+			"name": "adjacent_chunks_coalesce_into_the_whole_source_line_without_duplicate_join_vertices",
+			"passed": true
+		},
+		{
+			"name": "culling_never_rewrites_source_geography",
+			"passed": true
+		},
+		{
+			"name": "map_change_and_degenerate_lines_clear_previous_map_cache",
+			"passed": true
+		},
+		{
+			"name": "rail_cache_retains_the_previous_curve_and_sleeper_phase_vertices",
+			"passed": true
+		},
+		{
+			"name": "rail_damage_and_color_updates_reuse_the_source_geometry",
+			"passed": true
+		},
+		{
+			"name": "a_changed_source_path_never_reuses_stale_rail_geometry",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"passed": true,
+	"physical_android_device_tested": false
+}

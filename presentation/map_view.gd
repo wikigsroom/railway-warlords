@@ -2,6 +2,7 @@ class_name MapView
 extends Control
 
 const TerrainVisuals = preload("res://presentation/terrain_visuals.gd")
+const SourceLineIndex = preload("res://presentation/source_line_index.gd")
 
 signal hex_selected(hex: Vector2i)
 signal place_selected(place_id: String)
@@ -82,6 +83,9 @@ var historical_landcover_patch_cells=0
 var terrain_feature_sprite_draw_count=0
 var grounded_scenery_draw_count=0
 var region_lines: Array=[]
+var region_line_index=SourceLineIndex.new()
+var rail_geometry_cache: Dictionary={}
+var map_prefetch_signature=""
 var world_bounds=Rect2()
 var camera_bounds=Rect2()
 var camera_bounds_source="full_map"
@@ -298,6 +302,7 @@ func presentation_source_map_id() -> String:
 func prepare_geography() -> void:
 	geography_key=geography_signature();land_shapes.clear();coast_lines.clear();river_lines.clear();detail_river_lines.clear();crossing_markers.clear();rail_cells.clear()
 	presentation_cells.clear();terrain_visual_buckets.clear();ground_washes.clear();historical_landcover_features.clear();historical_landcover_patch_cells=0
+	rail_geometry_cache.clear();map_prefetch_signature=""
 	load_historical_landcover_features()
 	territory_field_meshes.clear();territory_field_cells.clear();territory_field_borders.clear();territory_field_diagnostics={};territory_field_signature=""
 	world_bounds=Rect2(HexGrid.to_world(HexGrid.coordinate(state.map.cells[0].position)),Vector2.ONE)
@@ -491,6 +496,7 @@ func prepare_administration(refresh_places: bool=true) -> void:
 	else:
 		for region in state.map.get("admin_layers",{}).get(administration_key,[]):
 			for line in region.lines:region_lines.append(points_array(line))
+	region_line_index.build(region_lines)
 	if refresh_places and not places.map_key.is_empty():places.prepare(state.map,state.date);prepare_place_sprites()
 
 func points_array(coordinates: Array) -> PackedVector2Array:
@@ -737,6 +743,9 @@ func _gui_input(event: InputEvent) -> void:
 func _process(delta: float) -> void:
 	if static_only or static_units_only or static_foreground_only:return
 	if territory_qa_mode:return
+	if assets!=null:
+		assets.poll_map_prefetch()
+		prefetch_map_scenery()
 	if sync_backdrop():queue_redraw()
 	if sync_unit_layer():queue_redraw()
 	pulse+=delta
@@ -1261,6 +1270,7 @@ func sync_backdrop() -> bool:
 	backdrop_view.map_extent=map_extent;backdrop_view.relief=relief;backdrop_view.world_bounds=world_bounds
 	backdrop_view.continuous_relief_enabled=continuous_relief_enabled
 	backdrop_view.map_details=map_details
+	backdrop_view.region_line_index=region_line_index;backdrop_view.rail_geometry_cache=rail_geometry_cache
 	backdrop_view.settlement_choices=settlement_choices
 	backdrop_view.presentation_cells=presentation_cells;backdrop_view.terrain_visual_buckets=terrain_visual_buckets;backdrop_view.ground_washes=ground_washes
 	backdrop_view.surface_region_diagnostics=surface_region_diagnostics
@@ -1305,19 +1315,22 @@ func draw_static_atlas(view: Rect2) -> void:
 					else:draw_texture_rect(image,rectangle,false,Color(1.0,1.0,.98,minf(feature_alpha,1.0)))
 				else:sprite(image,feature.position,feature.bounds,Color(1.0,1.0,.98,minf(feature_alpha,1.0)))
 	if show_control and not state.map.get("strategic_scale",false):draw_control_zones(view,true)
-	for points in region_lines:
+	for points in region_line_index.visible(view.grow(8/zoom)):
 		if points.size()>1:draw_polyline(points,Color(.95,.96,.84,.38),1.6/zoom,true);draw_polyline(points,Color(.22,.31,.30,.42 if zoom<.52 else .22),.7/zoom,true)
 	if show_rail and not territory_qa_mode:
 		for edge in state.map.rail_edges:
 			if state.date<edge.active_from:continue
-			var points=PackedVector2Array()
-			for position in edge.path_hexes:points.append(HexGrid.to_world(HexGrid.coordinate(position)))
-			if points.size()<2:continue
-			points=rounded_track(points)
+			var geometry=cached_rail_geometry(edge)
+			var points: PackedVector2Array=geometry.points
+			var rail_view=view.grow(maxf(24,8/zoom))
+			var runs: Array=geometry.index.visible(rail_view)
+			if runs.is_empty():continue
 			var color=Color("a65438") if edge.damage!="intact" else (Color("242823") if MovementRules.rail_available(state,edge) else Color("898574"))
-			draw_polyline(points,Color(.93,.86,.67,.83),maxf(7,2.4/zoom),true);draw_polyline(points,color,maxf(4.2,1.1/zoom),true)
+			for run in runs:
+				draw_polyline(run,Color(.93,.86,.67,.83),maxf(7,2.4/zoom),true);draw_polyline(run,color,maxf(4.2,1.1/zoom),true)
 			for i in range(points.size()-1):
 				if zoom<.32:break
+				if not rail_view.intersects(geometry.segment_bounds[i]):continue
 				var delta=points[i+1]-points[i];var perpendicular=delta.normalized().orthogonal()*3.8
 				for step in range(int(delta.length()/9)):
 					var p=points[i]+delta.normalized()*step*9;draw_line(p-perpendicular,p+perpendicular,color,1.3,true)
@@ -1626,8 +1639,11 @@ func draw_cell_surface_variants(view: Rect2) -> void:
 		material=ground
 		var fine_details=zoom>=(.20 if strategic else .28)
 		if ground==null and not fine_details:return
-		var entries=visible_terrain_entries(view) if fine_details else []
-		var batches=map_details.surface_meshes(entries,strategic,12000,ground!=null,true,ground==null)
+		var batches: Dictionary
+		if ground!=null:
+			batches=map_details.cached_fine_surface_meshes(visible_terrain_bucket_keys(view) if fine_details else [],terrain_visual_buckets,strategic)
+		else:
+			batches=map_details.surface_meshes(visible_terrain_entries(view),strategic,12000,false,true,true)
 		# Canvas drawing keeps mesh RIDs. Keep the owning resources alive for
 		# the entire cached draw, including textures evicted from the asset LRU.
 		ground_material_batches=[]
@@ -1791,6 +1807,15 @@ func draw_terrain_transitions(_view: Rect2) -> void:
 	# silhouettes. The optional operation grid is drawn separately.
 	terrain_transition_draw_count=0
 
+func visible_terrain_bucket_keys(view: Rect2) -> Array:
+	var result: Array=[];var bounds=visible_hex_bounds(view)
+	var low: Vector2i=bounds[0];var high: Vector2i=bounds[1]
+	for x in range(floori(float(low.x)/16.0)-1,floori(float(high.x)/16.0)+2):
+		for y in range(floori(float(low.y)/16.0)-1,floori(float(high.y)/16.0)+2):
+			var key=Vector2i(x,y)
+			if terrain_visual_buckets.has(key):result.append(key)
+	return result
+
 func visible_terrain_entries(view: Rect2) -> Array:
 	var bounds=visible_hex_bounds(view);var low:Vector2i=bounds[0];var high:Vector2i=bounds[1]
 	var bucket_low=Vector2i(floori(float(low.x)/16.0)-1,floori(float(low.y)/16.0)-1)
@@ -1805,6 +1830,39 @@ func visible_terrain_entries(view: Rect2) -> Array:
 func draw_terrain_fabric(_view: Rect2) -> void:
 	# Hand-painted source relief replaces repeated synthetic ridge hatching.
 	pass
+
+func cached_rail_geometry(edge: Dictionary) -> Dictionary:
+	# Damage, dates and access colors remain live. Only immutable source-path
+	# geometry is cached; a changed path gets a distinct key in the same map.
+	var key=str(edge.get("id",""))+":"+str(hash(edge.path_hexes))
+	if not rail_geometry_cache.has(key):
+		var points=PackedVector2Array()
+		for position in edge.path_hexes:points.append(HexGrid.to_world(HexGrid.coordinate(position)))
+		points=rounded_track(points) if points.size()>1 else points
+		var index=SourceLineIndex.new();index.build([points])
+		var bounds: Array=[]
+		for i in range(points.size()-1):bounds.append(Rect2(points[i],Vector2.ZERO).expand(points[i+1]).grow(.001))
+		rail_geometry_cache[key]={"points":points,"index":index,"segment_bounds":bounds}
+	return rail_geometry_cache[key]
+
+func prefetch_map_scenery() -> void:
+	if state.is_empty() or not show_terrain or zoom<.10 or size.x<1 or size.y<1:
+		assets.request_map_prefetch([]);map_prefetch_signature="";return
+	var key=geography_key+str(Vector2i(floori(camera.x/128),floori(camera.y/128)))+":"+str(snappedf(zoom,.02))
+	if key==map_prefetch_signature:return
+	map_prefetch_signature=key
+	# Prioritize the current view, then its immediate surroundings. A bounded
+	# queue reads whole imported originals; drawing never substitutes a proxy.
+	var view=Rect2(camera-(size+Vector2.ONE*384)/(2*zoom),(size+Vector2.ONE*384)/zoom).grow(810)
+	var scenery=relief.visible_features(view)+map_details.visible_features(view,zoom)
+	scenery.sort_custom(func(a,b):return a.position.distance_squared_to(camera)<b.position.distance_squared_to(camera))
+	var ids: Array=[];var seen: Dictionary={}
+	for feature in scenery:
+		var id=str(feature.asset_id)
+		if seen.has(id):continue
+		seen[id]=true;ids.append(id)
+		if ids.size()>=128:break
+	assets.request_map_prefetch(ids)
 
 func rounded_track(points: PackedVector2Array) -> PackedVector2Array:
 	var rounded=PackedVector2Array([points[0]])
@@ -1850,7 +1908,9 @@ func draw_control_zones(view: Rect2, foreground: bool=false) -> void:
 		# These are city influence areas clipped to surveyed period provinces; they
 		# do not claim to be surveyed historical county or military frontiers.
 		if not foreground:continue
-		for border in zone.borders:
+		if not zone.has("border_index"):
+			zone["border_index"]=SourceLineIndex.new();zone.border_index.build(zone.borders)
+		for border in zone.border_index.visible(view.grow(8/zoom)):
 			if border.size()>1:
 				draw_polyline(border,Color(.15,.24,.29,.38),2.8/zoom,true)
 				var edge_color=color.lightened(.20);edge_color.a=.78

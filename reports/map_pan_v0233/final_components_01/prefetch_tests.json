@@ -1,0 +1,81 @@
+{
+	"actual_originals_requested": 8,
+	"checks": [
+		{
+			"name": "actual_registered_originals_available",
+			"passed": true
+		},
+		{
+			"name": "duplicate_requests_coalesce",
+			"passed": true
+		},
+		{
+			"name": "background_concurrency_is_bounded",
+			"passed": true
+		},
+		{
+			"name": "all_own_requests_are_consumed_without_a_second_submission",
+			"passed": true
+		},
+		{
+			"name": "only_existing_originals_are_requested_once",
+			"passed": true
+		},
+		{
+			"name": "prefetch_returns_the_exact_imported_original_scenery_bank_pine_sparse_001",
+			"passed": true
+		},
+		{
+			"name": "prefetch_returns_the_exact_imported_original_scenery_bank_pine_sparse_002",
+			"passed": true
+		},
+		{
+			"name": "prefetch_returns_the_exact_imported_original_scenery_bank_pine_sparse_003",
+			"passed": true
+		},
+		{
+			"name": "prefetch_returns_the_exact_imported_original_scenery_bank_pine_sparse_004",
+			"passed": true
+		},
+		{
+			"name": "prefetch_returns_the_exact_imported_original_scenery_bank_pine_sparse_005",
+			"passed": true
+		},
+		{
+			"name": "prefetch_returns_the_exact_imported_original_scenery_bank_pine_sparse_006",
+			"passed": true
+		},
+		{
+			"name": "prepared_originals_need_no_synchronous_load_when_drawn",
+			"passed": true
+		},
+		{
+			"name": "missing_original_keeps_the_existing_null_fallback_contract",
+			"passed": true
+		},
+		{
+			"name": "a_repeated_camera_region_does_not_reload_cached_originals",
+			"passed": true
+		},
+		{
+			"name": "camera_change_drains_existing_workers_without_leaving_unobserved_jobs",
+			"passed": true
+		},
+		{
+			"name": "obsolete_prefetch_results_do_not_fill_the_next_map_cache",
+			"passed": true
+		},
+		{
+			"name": "prefetch_does_not_raise_the_existing_map_memory_entry_limit",
+			"passed": true
+		},
+		{
+			"name": "map_prefetch_never_reads_or_evicts_portraits",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"passed": true,
+	"peak_concurrent_requests": 2,
+	"physical_android_device_tested": false
+}

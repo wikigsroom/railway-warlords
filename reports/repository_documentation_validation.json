@@ -1,10 +1,10 @@
 {
   "passed": true,
-  "version": "0.2.32",
-  "public_documents": 37,
-  "local_links_checked": 923,
+  "version": "0.2.33",
+  "public_documents": 38,
+  "local_links_checked": 949,
   "verified_images_and_prompts": 2509,
-  "native_screenshots": 94,
+  "native_screenshots": 99,
   "gifs": [
     {
       "file": "docs/media/movement.gif",
@@ -37,15 +37,15 @@
       ]
     }
   ],
-  "candidate_files": 10236,
-  "candidate_bytes": 6609969760,
-  "text_files_scanned_for_credentials": 6699,
+  "candidate_files": 10442,
+  "candidate_bytes": 6671129510,
+  "text_files_scanned_for_credentials": 6880,
   "scenario_counts": {
     "campaign": 39,
     "conquest": 10,
     "legion": 12
   },
-  "runtime_source_sha256": "de7ce08159b961063cb87950e7ae4be27dcee69d4f8c6815895b158f8f7d5f4f",
+  "runtime_source_sha256": "e4e300ee4af9eb90c857bb670ccd75646e67a9d3652e4c35d6dbba5be24aea00",
   "runtime_unchanged": null,
   "scope": "documentation_media_and_source_integrity",
   "full_native_release_gates_checked": false,

@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "pairs": [
+    {
+      "name": "mountains",
+      "width": 1920,
+      "height": 1080,
+      "max_channel_delta": 0,
+      "changed_pixels_gt_2": 0,
+      "changed_pixels_any": 0,
+      "baseline": "reports/map_pan_v0233/renderer_comparison_02/mountains_baseline.png",
+      "optimized": "reports/map_pan_v0233/renderer_comparison_02/mountains_optimized.png",
+      "baseline_sha256": "1ca8a024c2af920c7197fe04360f64ddc0f8093db01e8a00f3f0f5ccc901cab3",
+      "optimized_sha256": "1ca8a024c2af920c7197fe04360f64ddc0f8093db01e8a00f3f0f5ccc901cab3"
+    },
+    {
+      "name": "wuhan",
+      "width": 1920,
+      "height": 1080,
+      "max_channel_delta": 0,
+      "changed_pixels_gt_2": 0,
+      "changed_pixels_any": 0,
+      "baseline": "reports/map_pan_v0233/renderer_comparison_02/wuhan_baseline.png",
+      "optimized": "reports/map_pan_v0233/renderer_comparison_02/wuhan_optimized.png",
+      "baseline_sha256": "e64520c5fb0c715acf4dc4efd6d9e1d9b85fbbe53ad473c916ce2181ab8bd736",
+      "optimized_sha256": "e64520c5fb0c715acf4dc4efd6d9e1d9b85fbbe53ad473c916ce2181ab8bd736"
+    },
+    {
+      "name": "beijing",
+      "width": 1920,
+      "height": 1080,
+      "max_channel_delta": 0,
+      "changed_pixels_gt_2": 0,
+      "changed_pixels_any": 0,
+      "baseline": "reports/map_pan_v0233/renderer_comparison_02/beijing_baseline.png",
+      "optimized": "reports/map_pan_v0233/renderer_comparison_02/beijing_optimized.png",
+      "baseline_sha256": "060abe65c1a9b85795912b283f58254076327ea822b1b139c7279eb90ff790d9",
+      "optimized_sha256": "060abe65c1a9b85795912b283f58254076327ea822b1b139c7279eb90ff790d9"
+    }
+  ],
+  "scope": "Whole raw native viewport comparison of copied 0.2.32 draw methods and optimized draw methods in the same running app; no image processing outputs.",
+  "manual_image_compositing": false,
+  "physical_android_device_tested": false,
+  "capture_label_correction": {
+    "beijing": "京奉战区0.62倍缩放镜头；不是北京城区验收。Driver label is historical and does not indicate Beijing city."
+  },
+  "actually_viewed_complete_images": [
+    "reports/map_pan_v0233/renderer_comparison_02/mountains_optimized.png",
+    "reports/map_pan_v0233/renderer_comparison_02/wuhan_optimized.png",
+    "reports/map_pan_v0233/renderer_comparison_02/beijing_optimized.png"
+  ],
+  "baseline_counterparts_pixel_and_png_byte_identical": true
+}

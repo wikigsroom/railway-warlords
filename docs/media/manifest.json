@@ -1,5 +1,5 @@
 {
-  "version": "0.2.32",
+  "version": "0.2.33",
   "screenshots": [
     {
       "file": "docs/media/menu.png",
@@ -891,6 +891,51 @@
       "native_source": "reports/screenshots/map_composition_native/v0232/verified_export_01/coast.png",
       "sha256": "eaf3eedcf84d9137619e9020f2aaafcba6cac5a54a2045602cb64a4d3b3081f1",
       "metadata": "docs/media/map-relief-coast-v0232.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/menu-v0233.png",
+      "version": "0.2.33",
+      "native_source": "reports/map_pan_v0233/shipping_01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "docs/media/menu-v0233.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-pan-mountains-v0233.png",
+      "version": "0.2.33",
+      "native_source": "reports/map_pan_v0233/shipping_01/mountains.png",
+      "sha256": "1ca8a024c2af920c7197fe04360f64ddc0f8093db01e8a00f3f0f5ccc901cab3",
+      "metadata": "docs/media/map-pan-mountains-v0233.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-pan-wuhan-v0233.png",
+      "version": "0.2.33",
+      "native_source": "reports/screenshots/map_composition_native/v0233/verified_export_01/wuhan.png",
+      "sha256": "4ad8ebc8ff2f0052a320aba3ba69259ef1acb6d291ece8926465b597785dda4d",
+      "metadata": "docs/media/map-pan-wuhan-v0233.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-pan-beijing-v0233.png",
+      "version": "0.2.33",
+      "native_source": "reports/screenshots/map_composition_native/v0233/verified_export_01/beijing.png",
+      "sha256": "b1f14d6bfe18815d0ec0453f22f09eac3b92bff8b101e7b18a06159a0f37dfdc",
+      "metadata": "docs/media/map-pan-beijing-v0233.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/map-pan-coast-v0233.png",
+      "version": "0.2.33",
+      "native_source": "reports/screenshots/map_composition_native/v0233/verified_export_01/coast.png",
+      "sha256": "eaf3eedcf84d9137619e9020f2aaafcba6cac5a54a2045602cb64a4d3b3081f1",
+      "metadata": "docs/media/map-pan-coast-v0233.json",
       "byte_identical_to_native_capture": true,
       "physical_android_device_tested": false
     }

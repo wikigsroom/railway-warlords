@@ -1,0 +1,26 @@
+[
+  [
+    "func draw_static_atlas(view: Rect2) -> void:\n",
+    "func draw_static_atlas(view: Rect2) -> void:\n\tvar cpu_start=Time.get_ticks_usec();var cpu_texture=0;var cpu_misses=0\n"
+  ],
+  [
+    "\t\t\tvar image=assets.texture(\"scenery\",feature.asset_id)\n",
+    "\t\t\tvar cpu_texture_start=Time.get_ticks_usec()\n\t\t\tif not assets.textures.has(\"scenery/\"+feature.asset_id):cpu_misses+=1\n\t\t\tvar image=assets.texture(\"scenery\",feature.asset_id)\n\t\t\tcpu_texture+=Time.get_ticks_usec()-cpu_texture_start\n"
+  ],
+  [
+    "\tif show_control and not state.map.get(\"strategic_scale\",false):draw_control_zones(view,true)\n",
+    "\tvar cpu_scenery_end=Time.get_ticks_usec()\n\tif show_control and not state.map.get(\"strategic_scale\",false):draw_control_zones(view,true)\n"
+  ],
+  [
+    "\tif show_rail and not territory_qa_mode:\n",
+    "\tvar cpu_region_end=Time.get_ticks_usec()\n\tif show_rail and not territory_qa_mode:\n"
+  ],
+  [
+    "\t# Known terrain and intelligence-grid outlines are cached; commands remain dynamic.\n",
+    "\tvar cpu_rail_end=Time.get_ticks_usec()\n\t# Known terrain and intelligence-grid outlines are cached; commands remain dynamic.\n"
+  ],
+  [
+    "func draw_territory_qa_atlas(view: Rect2) -> void:\n",
+    "\tprint(\"CPU_PHASE \",JSON.stringify({\"scenery_and_landscape_ms\":(cpu_scenery_end-cpu_start)/1000.0,\"texture_request_ms\":cpu_texture/1000.0,\"texture_misses\":cpu_misses,\"control_region_ms\":(cpu_region_end-cpu_scenery_end)/1000.0,\"rail_ms\":(cpu_rail_end-cpu_region_end)/1000.0,\"grid_ms\":(Time.get_ticks_usec()-cpu_rail_end)/1000.0}))\n\nfunc draw_territory_qa_atlas(view: Rect2) -> void:\n"
+  ]
+]

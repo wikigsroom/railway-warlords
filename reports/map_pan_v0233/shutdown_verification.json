@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "component_checks": 625,
+  "input_checks": 11,
+  "async_texture_checks": 21,
+  "exit_warning_absent": true,
+  "log": "reports/map_pan_v0233/final_components_02/input_test.log",
+  "log_sha256": "ecb13262fef149204d2a580cd2631cfc3a6a4f92422de3cf3adb0c31a488339c",
+  "scope": "Actual app SceneTree shutdown plus external ResourceLoader task-handle checks; no claims about physical Android lifecycle."
+}

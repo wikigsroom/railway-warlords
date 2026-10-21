@@ -8,6 +8,13 @@ var unit_actions: Dictionary={}
 var general_portraits=GeneralPortraits.new()
 var map_texture_order: Array[String]=[]
 const MAP_TEXTURE_CACHE_LIMIT=384
+const MAP_PREFETCH_CONCURRENCY=2
+var map_prefetch_queue: Array[String]=[]
+var map_prefetch_inflight: Dictionary={}
+var map_prefetch_targets: Dictionary={}
+var map_prefetch_requested=0
+var map_prefetch_completed=0
+var synchronous_map_misses=0
 var portrait_texture_order: Array[String]=[]
 const PORTRAIT_TEXTURE_CACHE_LIMIT=48
 
@@ -34,17 +41,70 @@ func texture(category: String, id: String) -> Texture2D:
 	var key=category+"/"+id
 	if not textures.has(key):
 		var path="res://assets/%s/%s.png"%[category,id]
-		textures[key]=load(path) if ResourceLoader.exists(path) else null
+		if map_prefetch_inflight.has(key):
+			# An abrupt jump can outrun prefetch. Resolve the original resource
+			# here instead of hiding it or issuing a duplicate load request.
+			if ResourceLoader.load_threaded_get_status(path)!=ResourceLoader.THREAD_LOAD_LOADED:synchronous_map_misses+=1
+			textures[key]=ResourceLoader.load_threaded_get(path)
+			map_prefetch_inflight.erase(key)
+		else:
+			if is_map_texture(id):synchronous_map_misses+=1
+			textures[key]=load(path) if ResourceLoader.exists(path) else null
 	var requested: Texture2D=textures[key]
 	if category=="portrait":
 		portrait_texture_order.erase(key);portrait_texture_order.append(key)
 		while portrait_texture_order.size()>PORTRAIT_TEXTURE_CACHE_LIMIT:
 			textures.erase(portrait_texture_order.pop_front())
-	if id.contains("_bank_") or id.begins_with("tile_surface_") or id.begins_with("tile_ground_macro_") or id.begins_with("tile_ground_identity_"):
-		map_texture_order.erase(key);map_texture_order.append(key)
-		while map_texture_order.size()>MAP_TEXTURE_CACHE_LIMIT:
-			textures.erase(map_texture_order.pop_front())
+	if is_map_texture(id):touch_map_texture(key)
 	return requested
+
+func is_map_texture(id: String) -> bool:
+	return id.contains("_bank_") or id.begins_with("tile_surface_") or id.begins_with("tile_ground_macro_") or id.begins_with("tile_ground_identity_")
+
+func touch_map_texture(key: String) -> void:
+	map_texture_order.erase(key);map_texture_order.append(key)
+	while map_texture_order.size()>MAP_TEXTURE_CACHE_LIMIT:
+		# Keep nearby originals while evicting an older, distant map first.
+		# The hard bound still applies when every cached item is nearby.
+		var victim=map_texture_order[0]
+		for candidate in map_texture_order:
+			if not map_prefetch_targets.has(candidate):victim=candidate;break
+		map_texture_order.erase(victim);textures.erase(victim)
+
+func request_map_prefetch(ids: Array) -> void:
+	map_prefetch_queue.clear();map_prefetch_targets.clear()
+	for id in ids.slice(0,128):
+		var key="scenery/"+str(id)
+		map_prefetch_targets[key]=true
+		if not textures.has(key) and not map_prefetch_inflight.has(key) and not key in map_prefetch_queue:map_prefetch_queue.append(key)
+
+func poll_map_prefetch() -> void:
+	# Only completed requests are retrieved in this per-frame poll. A maximum
+	# of two workers and 128 wanted IDs bound memory and background activity.
+	for key in map_prefetch_inflight.keys():
+		var path: String=map_prefetch_inflight[key]
+		var status=ResourceLoader.load_threaded_get_status(path)
+		if status==ResourceLoader.THREAD_LOAD_IN_PROGRESS:continue
+		var original=ResourceLoader.load_threaded_get(path) if status!=ResourceLoader.THREAD_LOAD_INVALID_RESOURCE else null
+		map_prefetch_inflight.erase(key)
+		if map_prefetch_targets.has(key):
+			textures[key]=original;touch_map_texture(key);map_prefetch_completed+=1
+	while map_prefetch_inflight.size()<MAP_PREFETCH_CONCURRENCY and not map_prefetch_queue.is_empty():
+		var key=map_prefetch_queue.pop_front()
+		if textures.has(key):continue
+		var path="res://assets/"+key+".png"
+		if not ResourceLoader.exists(path):textures[key]=null;continue
+		if ResourceLoader.load_threaded_request(path,"Texture2D",false)==OK:
+			map_prefetch_inflight[key]=path;map_prefetch_requested+=1
+
+func finish_map_prefetch() -> void:
+	# SceneTree shutdown can arrive between request and next-frame polling.
+	# Always consume our own bounded requests before releasing the library.
+	map_prefetch_queue.clear();map_prefetch_targets.clear()
+	for key in map_prefetch_inflight.keys():
+		var path: String=map_prefetch_inflight[key]
+		if ResourceLoader.load_threaded_get_status(path)!=ResourceLoader.THREAD_LOAD_INVALID_RESOURCE:ResourceLoader.load_threaded_get(path)
+		map_prefetch_inflight.erase(key)
 
 func unit_texture(u: Dictionary, direction: String="") -> Texture2D:
 	var unit_id=str(u.elite_id if u.elite_id!=null else u.def_id)
