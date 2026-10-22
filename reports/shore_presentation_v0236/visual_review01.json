@@ -1,0 +1,86 @@
+{
+  "recorded_at_utc": "2026-10-22T11:38:22.328494+00:00",
+  "controller_sha256": "34fc609df430e793875b246b26143ac29ecc87d727fbef88a30041d23d731054",
+  "development_only": true,
+  "shipping_binary_rebuilt": false,
+  "formal_art_approval": false,
+  "physical_android_device_tested": false,
+  "overall_EW6_quality_goal_complete": false,
+  "final_whole_views": 4,
+  "baseline_whole_views": 4,
+  "images": [
+    {
+      "file": "reports/shore_presentation_v0236/baseline/shanhaiguan01/viewport.png",
+      "sha256": "b34f650d63d186f469194ce2b3f2b65decc51b039fd8ad5f4c94904773c39c65",
+      "metadata_sha256": "206b00abacd27ee4ceef29251f8bdd2d0882dd27ac52c1c1a681784c816cc8fc",
+      "phase": "baseline",
+      "whole_frame_actually_viewed": true,
+      "cropped_or_composited": false,
+      "observation": "已完整查看同相机基线，用于和本轮最终开发画面对照。"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan06/viewport.png",
+      "sha256": "75768b82daf4715059fc102e725d81ef4a9b8e47ee4931e68e7d4c519d0e0cc0",
+      "metadata_sha256": "3f73eaba03546f414d8ce0cd4eddf9284b9bd953768f8e36f8bbbcea1ee4f7c3",
+      "phase": "revised",
+      "whole_frame_actually_viewed": true,
+      "cropped_or_composited": false,
+      "observation": "岸缘过渡较轻，水线与战场布局保持；来源台阶、岸边色块楔形和重复山体仍可见。"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/tianjin01/viewport.png",
+      "sha256": "e7a733d218609b740dfb2103c4e1608651f06f0e5e1f287c1dfcc64bd4cfb592",
+      "metadata_sha256": "d97c4280701c558ab8cdad0b7380bbf6315596c376314db2257e96c2c87c90a4",
+      "phase": "baseline",
+      "whole_frame_actually_viewed": true,
+      "cropped_or_composited": false,
+      "observation": "已完整查看同相机基线，用于和本轮最终开发画面对照。"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin06/viewport.png",
+      "sha256": "6a7f7d97ba46c9ab2b43932610d1b8ceaa7f4ba6c6fe88b13a1a341598065c4f",
+      "metadata_sha256": "a95dcc66ff7b373f311e8a86b3947a743b27113a4ea019b5acece77174fe6c80",
+      "phase": "revised",
+      "whole_frame_actually_viewed": true,
+      "cropped_or_composited": false,
+      "observation": "较淡岸边与水面衔接保持；大面积相似地表、南侧泛白材质和上部控制色折角仍需处理。"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/qingdao01/viewport.png",
+      "sha256": "12b9db909453eb43a5fbafb5ece19108ff05d4d4ef318a98f8f0046e147f270f",
+      "metadata_sha256": "2031d9ec89eeaa06da1547eceda8c9b2c4359239db736369107cdf7e9a106ec3",
+      "phase": "baseline",
+      "whole_frame_actually_viewed": true,
+      "cropped_or_composited": false,
+      "observation": "已完整查看同相机基线，用于和本轮最终开发画面对照。"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao06/viewport.png",
+      "sha256": "65fac528818fe5dfc2f9dfd04d64e86c93dd246fbc2e7930e70708a21cc69a63",
+      "metadata_sha256": "db5760b231662fa1e1d9b9bc5dc511bd97a60ac1149368b445be70eca027dfa8",
+      "phase": "revised",
+      "whole_frame_actually_viewed": true,
+      "cropped_or_composited": false,
+      "observation": "半岛、港湾和小岛有较克制的水侧淡洗；海岸折点、空旷地面与重复地貌仍明显。"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/osaka01/viewport.png",
+      "sha256": "5ebcc37d1de68603ff72372e25017134bd03ab541865bc9572a0022492802f10",
+      "metadata_sha256": "acc74c36d7829b3d953bc016b09dfb11b29cc80f5512fc1ce5931d0fcdf306d2",
+      "phase": "baseline",
+      "whole_frame_actually_viewed": true,
+      "cropped_or_composited": false,
+      "observation": "已完整查看同相机基线，用于和本轮最终开发画面对照。"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka06/viewport.png",
+      "sha256": "9ebdeb22b963a7823db9d84a1f19ca1102333cd6e531f8157cd72e581f610f5a",
+      "metadata_sha256": "03e522ae66e35045e30ed4def026c116178a53754ffb108e5d81308b14dd23b9",
+      "phase": "revised",
+      "whole_frame_actually_viewed": true,
+      "cropped_or_composited": false,
+      "observation": "相较被否决的osaka05，大范围碎岛光晕明显减轻；政治六边块、大面积相似地表及远景细节仍未达标。"
+    }
+  ],
+  "rejected_broad_halo_view": "revised/osaka05/viewport.png"
+}

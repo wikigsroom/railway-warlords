@@ -1,0 +1,300 @@
+{
+	"build_version": "0.2.35",
+	"checks": [
+		{
+			"name": "current_native_content_and_independent_land_fixture_load",
+			"passed": true
+		},
+		{
+			"name": "actual_source_map_hash:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "precompiled_source_mesh_loads_without_ear_clipping:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "actual_native_mesh_keeps_every_source_vertex:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "actual_native_mesh_keeps_source_triangle_indices:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "native_float_mesh_area_preserves_land_and_water_holes:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "whole_ground_texture_phase_is_world_anchored:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "same_map_reuses_prepared_mesh:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "thousands_of_source_shores_share_one_display_batch:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "map_view_uses_source_land_clipped_administrative_lines:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "shipping_city_influence_uses_source_land_clipped_meshes:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "direct_and_cached_land_match_independent_GEOS_at_cells_and_shores:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "source_coast_and_hole_squares_never_use_uniform_land_cache:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "repeated_exact_interior_queries_reuse_constant_land_classification:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "coast_preparation_keeps_all_rules_and_source_fields_immutable:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "actual_source_map_hash:jingjin",
+			"passed": true
+		},
+		{
+			"name": "precompiled_source_mesh_loads_without_ear_clipping:jingjin",
+			"passed": true
+		},
+		{
+			"name": "actual_native_mesh_keeps_every_source_vertex:jingjin",
+			"passed": true
+		},
+		{
+			"name": "actual_native_mesh_keeps_source_triangle_indices:jingjin",
+			"passed": true
+		},
+		{
+			"name": "native_float_mesh_area_preserves_land_and_water_holes:jingjin",
+			"passed": true
+		},
+		{
+			"name": "whole_ground_texture_phase_is_world_anchored:jingjin",
+			"passed": true
+		},
+		{
+			"name": "same_map_reuses_prepared_mesh:jingjin",
+			"passed": true
+		},
+		{
+			"name": "thousands_of_source_shores_share_one_display_batch:jingjin",
+			"passed": true
+		},
+		{
+			"name": "map_view_uses_source_land_clipped_administrative_lines:jingjin",
+			"passed": true
+		},
+		{
+			"name": "shipping_city_influence_uses_source_land_clipped_meshes:jingjin",
+			"passed": true
+		},
+		{
+			"name": "direct_and_cached_land_match_independent_GEOS_at_cells_and_shores:jingjin",
+			"passed": true
+		},
+		{
+			"name": "source_coast_and_hole_squares_never_use_uniform_land_cache:jingjin",
+			"passed": true
+		},
+		{
+			"name": "repeated_exact_interior_queries_reuse_constant_land_classification:jingjin",
+			"passed": true
+		},
+		{
+			"name": "coast_preparation_keeps_all_rules_and_source_fields_immutable:jingjin",
+			"passed": true
+		},
+		{
+			"name": "actual_source_map_hash:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "precompiled_source_mesh_loads_without_ear_clipping:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "actual_native_mesh_keeps_every_source_vertex:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "actual_native_mesh_keeps_source_triangle_indices:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "native_float_mesh_area_preserves_land_and_water_holes:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "whole_ground_texture_phase_is_world_anchored:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "same_map_reuses_prepared_mesh:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "thousands_of_source_shores_share_one_display_batch:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "map_view_uses_source_land_clipped_administrative_lines:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "shipping_city_influence_uses_source_land_clipped_meshes:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "direct_and_cached_land_match_independent_GEOS_at_cells_and_shores:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "source_coast_and_hole_squares_never_use_uniform_land_cache:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "repeated_exact_interior_queries_reuse_constant_land_classification:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "coast_preparation_keeps_all_rules_and_source_fields_immutable:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "actual_source_map_hash:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "precompiled_source_mesh_loads_without_ear_clipping:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "actual_native_mesh_keeps_every_source_vertex:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "actual_native_mesh_keeps_source_triangle_indices:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "native_float_mesh_area_preserves_land_and_water_holes:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "whole_ground_texture_phase_is_world_anchored:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "same_map_reuses_prepared_mesh:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "thousands_of_source_shores_share_one_display_batch:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "map_view_uses_source_land_clipped_administrative_lines:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "direct_and_cached_land_match_independent_GEOS_at_cells_and_shores:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "source_coast_and_hole_squares_never_use_uniform_land_cache:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "repeated_exact_interior_queries_reuse_constant_land_classification:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "coast_preparation_keeps_all_rules_and_source_fields_immutable:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "cache_retains_only_the_most_recent_map",
+			"passed": true
+		},
+		{
+			"name": "inland_map_keeps_existing_water_geometry:hankou",
+			"passed": true
+		},
+		{
+			"name": "inland_map_keeps_existing_water_geometry:ningpu",
+			"passed": true
+		},
+		{
+			"name": "invalid_source_triangle_is_rejected_before_gpu_upload",
+			"passed": true
+		},
+		{
+			"name": "unrelated_fixture_cannot_borrow_a_production_coast_mesh",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failures": [],
+	"formal_art_approval": false,
+	"historical_coast_survey_approval": false,
+	"maps": [
+		{
+			"band_triangles": 99192,
+			"exact_land_query_probes": 69283,
+			"land_triangles": 12369,
+			"map_id": "jingfeng",
+			"native_area_error": 9.57388120889664,
+			"preparation_ms": 11133.234,
+			"source_coast_vertices": 12461.0,
+			"source_polygons": 62.0,
+			"uniform_query_hits": 113020
+		},
+		{
+			"band_triangles": 8192,
+			"exact_land_query_probes": 28245,
+			"land_triangles": 1092,
+			"map_id": "jingjin",
+			"native_area_error": 2.01006203889847,
+			"preparation_ms": 3130.548,
+			"source_coast_vertices": 1025.0,
+			"source_polygons": 1.0,
+			"uniform_query_hits": 45422
+		},
+		{
+			"band_triangles": 376976,
+			"exact_land_query_probes": 78755,
+			"land_triangles": 36850,
+			"map_id": "conquest_china",
+			"native_area_error": 1.79137033224106,
+			"preparation_ms": 22781.753,
+			"source_coast_vertices": 52417.0,
+			"source_polygons": 5269.0,
+			"uniform_query_hits": 128104
+		},
+		{
+			"band_triangles": 858496,
+			"exact_land_query_probes": 11631,
+			"land_triangles": 81193,
+			"map_id": "asia_strategic",
+			"native_area_error": 0.378439754247665,
+			"preparation_ms": 58172.653,
+			"source_coast_vertices": 119448.0,
+			"source_polygons": 12105.0,
+			"uniform_query_hits": 7802
+		}
+	],
+	"passed": true
+}

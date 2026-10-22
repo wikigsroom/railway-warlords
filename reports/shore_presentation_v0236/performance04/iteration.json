@@ -1,0 +1,23 @@
+{
+  "recorded_at_utc": "2026-10-22T11:12:57.078052+00:00",
+  "native_rules_passed": true,
+  "native_checks": 51,
+  "independent_audit": "shore_side_audit04.json",
+  "independent_checks": 24,
+  "whole_view_cases_completed": [
+    "shanhaiguan04",
+    "tianjin04",
+    "qingdao04",
+    "osaka04"
+  ],
+  "asia_band_preparation_ms": 30638.497,
+  "reason_to_revise": "Skip expensive triangle queries for unmatched source boundaries; keep a narrow neutral cartographic band for ambiguous fragments.",
+  "accepted_for_release": false,
+  "production_files": {
+    "presentation/map_coast_band.gd": "85a171dab42f17d92e31723dd7674cc6861364a1104b04828617b9f882f2704d",
+    "presentation/map_view.gd": "b3b993ba06e3291c1908b54097a52c572ae781acde5f8c356052702708cb9abf",
+    "tests/shore_presentation_test.gd": "98fd8b7f999e0ef9b52910cf2f2affeef8b5fa396c263c235b4a612f3b4a6355",
+    "tools/verify_shore_presentation.py": "25ff9733c4c8a29e3a274467811d743ba9f20074004eada5a90d5e1b5af9dc8a",
+    "tools/audit_shore_sides.py": "56e08dac0ed79e84f64477d12be02a6d727425167a3ae702fca403f332a3c1ce"
+  }
+}

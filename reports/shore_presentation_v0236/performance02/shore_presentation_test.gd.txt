@@ -1,0 +1,102 @@
+extends SceneTree
+
+var checks: Array=[]
+var failures: Array=[]
+var output=""
+
+func _init() -> void:
+	var args=OS.get_cmdline_user_args()
+	for i in range(args.size()-1):
+		if args[i]=="--report-output":output=args[i+1]
+	run.call_deferred()
+
+func verify(value: bool, name: String) -> void:
+	checks.append({"name":name,"passed":value})
+	if not value:failures.append(name);push_error(name)
+
+func pairs(points: PackedVector2Array) -> Array:
+	var result: Array=[]
+	for point in points:result.append([point.x,point.y])
+	return result
+
+func finish(maps: Array, content_hash: String="") -> void:
+	var result={"passed":failures.is_empty(),"checks":checks,"failures":failures,"maps":maps,
+		"build_version":ContentRegistry.APP_VERSION,"native_content_hash":content_hash,"development_only":true,
+		"formal_art_approval":false,"physical_android_device_tested":false,"shore_type_or_depth_claimed":false}
+	var file=FileAccess.open(output,FileAccess.WRITE);file.store_string(JSON.stringify(result,"\t"));file.close()
+	print("SHORE_PRESENTATION_TEST passed=",failures.is_empty()," checks=",checks.size())
+	quit(0 if failures.is_empty() else 1)
+
+func fixture(points: PackedVector2Array, query: Callable, name: String) -> void:
+	var source=points.duplicate();var band=MapCoastBand.build([points],query)
+	verify(band.mesh!=null and band.source_land_classified_lines==1,name+":source_land_resolves_sides")
+	if band.mesh==null:return
+	var arrays=band.mesh.surface_get_arrays(0);var vertices: PackedVector3Array=arrays[Mesh.ARRAY_VERTEX]
+	var count=points.size()-1 if points[0]==points[-1] else points.size()
+	var proper=true;var centers=true
+	for index in range(count):
+		var center: Vector3=vertices[index*6+2]
+		centers=centers and Vector2(center.x,center.y)==points[index]
+		var land: Vector3=vertices[index*6];var water: Vector3=vertices[index*6+5]
+		proper=proper and bool(query.call(Vector2(land.x,land.y))) and not bool(query.call(Vector2(water.x,water.y)))
+	verify(proper,name+":wide_wash_is_on_actual_water_side")
+	verify(centers and points==source,name+":waterline_and_input_remain_exact")
+	if count<points.size():
+		var seam=true
+		for k in range(6):seam=seam and vertices[k]==vertices[count*6+k]
+		verify(seam,name+":closed_ring_seam_is_exact")
+
+func run() -> void:
+	if output.is_empty():push_error("A new output path is required");quit(1);return
+	fixture(PackedVector2Array([Vector2(0,-40),Vector2.ZERO,Vector2(0,40)]),func(p):return p.x<0,"vertical_east_water")
+	fixture(PackedVector2Array([Vector2(0,40),Vector2.ZERO,Vector2(0,-40)]),func(p):return p.x<0,"reversed_vertical_east_water")
+	fixture(PackedVector2Array([Vector2(-40,0),Vector2.ZERO,Vector2(40,0)]),func(p):return p.y<0,"horizontal_south_water")
+	fixture(PackedVector2Array([Vector2(-90,-40),Vector2(-90,0),Vector2(-90,40)]),func(p):return p.x< -90,"negative_world_coordinates")
+	var square=PackedVector2Array([Vector2.ZERO,Vector2(40,0),Vector2(40,40),Vector2(0,40),Vector2.ZERO])
+	fixture(square,func(p):return p.x>0 and p.x<40 and p.y>0 and p.y<40,"island")
+	fixture(square,func(p):return not (p.x>0 and p.x<40 and p.y>0 and p.y<40),"lake_hole")
+	var neutral=MapCoastBand.build([PackedVector2Array([Vector2.ZERO,Vector2(0,40)])])
+	verify(neutral.neutral_fallback_lines==1 and neutral.source_land_classified_lines==0,"missing_land_query_uses_narrow_neutral_fallback")
+	var empty=MapCoastBand.build([PackedVector2Array(),PackedVector2Array([Vector2.ZERO]),PackedVector2Array([Vector2.ZERO,Vector2.ZERO])])
+	verify(empty.mesh==null and empty.source_lines==0,"empty_and_degenerate_sources_create_no_shore")
+	if not failures.is_empty():finish([]);return
+	var content=ContentRegistry.new();verify(content.load_all(),"normal_native_content_loads")
+	var maps: Array=[]
+	for id in ["jingfeng","jingjin","conquest_china","asia_strategic","hankou","ningpu"]:
+		var map: Dictionary=content.maps[id];var before=ContentRegistry.fingerprint(map)
+		var shapes: Array=[];var lines: Array=[]
+		for shape in map.render_land:
+			shapes.append({"exterior":PackedVector2Array(shape.exterior.map(func(p):return Vector2(p[0],p[1]))),"holes":shape.holes.map(func(h):return PackedVector2Array(h.map(func(p):return Vector2(p[0],p[1]))))})
+		for source in map.render_coast:lines.append(PackedVector2Array(source.map(func(p):return Vector2(p[0],p[1]))))
+		var relief=AtlasRelief.new();relief.prepare_land_queries(shapes)
+		var marine=MapCoastGeometry.for_map(map)
+		if not marine.is_empty():relief.land_mesh_queries=MapCoastGeometry.land_queries(marine)
+		var band=MapCoastBand.build(lines,relief.source_dry_point)
+		var source_fingerprint=ContentRegistry.fingerprint(map.render_coast);var probes: Array=[]
+		var centers=true;var finite=true;var offset=0;var actual_vertices=0
+		var mesh_vertices=PackedVector3Array()
+		if band.mesh!=null:mesh_vertices=band.mesh.surface_get_arrays(0)[Mesh.ARRAY_VERTEX]
+		for line_index in range(lines.size()):
+			var points=PackedVector2Array()
+			for point in lines[line_index]:
+				if points.is_empty() or points[-1].distance_squared_to(point)>.00000001:points.append(point)
+			if points.size()<2:continue
+			var closed=points[0].distance_squared_to(points[-1])<.00000001
+			if closed:points.remove_at(points.size()-1)
+			if points.size()<2:continue
+			var classification=MapCoastBand.classify(points,closed,relief.source_dry_point)
+			probes.append({"line_index":line_index,"side":classification.side,"reason":classification.reason,"probes":classification.probes})
+			var stride=6 if classification.side!=0 else 5;var rows=points.size()+1 if closed else points.size()
+			for row in range(rows):
+				var at: Vector3=mesh_vertices[offset+row*stride+2]
+				centers=centers and Vector2(at.x,at.y)==points[row%points.size()]
+				for k in range(stride):finite=finite and mesh_vertices[offset+row*stride+k].is_finite()
+			actual_vertices+=rows;offset+=rows*stride
+		verify(centers and offset==mesh_vertices.size(),id+":every_native_waterline_vertex_remains_exact")
+		verify(finite and band.batched_draws==(1 if not lines.is_empty() else 0),id+":finite_single_batch")
+		verify(ContentRegistry.fingerprint(map)==before and ContentRegistry.fingerprint(map.render_coast)==source_fingerprint,id+":source_and_rules_immutable")
+		var record=band.duplicate();record.erase("mesh")
+		record["map_id"]=id;record["native_source_vertices_checked"]=actual_vertices;record["line_classification_probes"]=probes
+		record["map_sha256"]=FileAccess.get_sha256("res://content/maps/"+id+".json")
+		maps.append(record)
+	finish(maps,content.content_hash)

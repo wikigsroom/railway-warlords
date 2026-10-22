@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-10-22T11:59:15.664583+00:00",
+  "controller_sha256": "34fc609df430e793875b246b26143ac29ecc87d727fbef88a30041d23d731054",
+  "development_only": true,
+  "shipping_binary_rebuilt": false,
+  "formal_art_approval": false,
+  "physical_android_device_tested": false,
+  "overall_EW6_quality_goal_complete": false,
+  "passed": true,
+  "scope": "Shore display development and evidence; packages remain 0.2.35/code40.",
+  "native_checks": 57,
+  "independent_report_checks": 24,
+  "independent_checks_are_not_gameplay_coverage": true,
+  "exact_centerline_vertices_checked": 185351,
+  "source_classified_lines": 16317,
+  "neutral_source_fragments": 1177,
+  "protected_unchanged_files": 7936,
+  "unchanged_png_files": 2521,
+  "changed_production_files": [
+    "presentation/map_coast_band.gd",
+    "presentation/map_view.gd"
+  ],
+  "visual_review_sha256": "81ecd0ef089a0998871b36f8efb5533751be553d257d49eeb9f27acc77c28428",
+  "final_whole_views": 4,
+  "native_content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+  "new_raster_assets": false,
+  "new_music": false,
+  "full_thirty_group_regression_repeated": false,
+  "remaining": [
+    "来源海岸台阶与岸边色块楔形",
+    "地表及山体重复",
+    "政治块与地图细节",
+    "全兵种完整动作",
+    "历史起局与将领具体部署",
+    "物理X30验收"
+  ]
+}

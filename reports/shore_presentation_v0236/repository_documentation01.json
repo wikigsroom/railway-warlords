@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "version": "0.2.35",
+  "public_documents": 44,
+  "local_links_checked": 1120,
+  "verified_images_and_prompts": 2521,
+  "native_screenshots": 115,
+  "gifs": [
+    {
+      "file": "docs/media/movement.gif",
+      "frames": 84,
+      "unique_frames": 84,
+      "duration_ms": 7000,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "docs/media/combat.gif",
+      "frames": 96,
+      "unique_frames": 96,
+      "duration_ms": 8000,
+      "size": [
+        960,
+        540
+      ]
+    },
+    {
+      "file": "docs/media/native-gameplay-v0229.gif",
+      "frames": 316,
+      "unique_frames": 311,
+      "duration_ms": 26330,
+      "size": [
+        960,
+        540
+      ]
+    }
+  ],
+  "candidate_files": 11108,
+  "candidate_bytes": 7502455415,
+  "text_files_scanned_for_credentials": 7312,
+  "scenario_counts": {
+    "campaign": 39,
+    "conquest": 10,
+    "legion": 12
+  },
+  "runtime_source_sha256": "9749d0904913b1a9759ffdcc9cfd254731aec03898ddcb773c12ed30d9d0a41a",
+  "runtime_unchanged": null,
+  "scope": "documentation_media_and_source_integrity",
+  "full_native_release_gates_checked": false,
+  "physical_android_device_tested": false,
+  "errors": []
+}

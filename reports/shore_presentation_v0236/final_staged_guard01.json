@@ -1,0 +1,916 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-22T12:02:38.499737+00:00",
+  "controller_sha256": "4727714a7c8daa26a4e29f2a7b470a9a6c9c0c529b6d3eed7987cb62b904dbe6",
+  "baseline_commit": "6cf1f09ca75e9508ec5ad44274dab6de2187d802",
+  "scope": "Changed staged bytes, public links, five complete native proof dependency lists and the full original-byte audit.",
+  "changed_staged_files_checked": 146,
+  "public_documents": 44,
+  "local_links_checked": 1123,
+  "native_source_proofs": [
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules06/command.json",
+      "sha256": "9b54eefccd07adc98c5a299c7d0a94243ccbef1a8f0b052966c528cb726e28f7"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka06/command.json",
+      "sha256": "00db3af48c9c6e736b1e7ed57cda6e971f5dfcca3842f39cb0dc172fe782b486"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan06/command.json",
+      "sha256": "3da17ce96d1b3f7547202b86e3b681d53a036b17fa7777ce450d42ad3d61ff5e"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin06/command.json",
+      "sha256": "0245318eb06fd0b37286700cff0cae27615e68912c3ffa897d3effc2d467f27d"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao06/command.json",
+      "sha256": "c5065f3d2e4a51acaaa2bcb331e06f72db80bc4bfba8ab45faf28138454d48fa"
+    }
+  ],
+  "protected_scope_sha256": "f9c74a02d8083f30c324f3beb45c6da5679e1f4bd205376632b197e627d66656",
+  "development_only": true,
+  "shipping_binary_rebuilt": false,
+  "formal_art_approval": false,
+  "physical_android_device_tested": false,
+  "failures": [],
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 10094,
+      "blob": "b32cd385cba4b93d2b416104332400f5ddda5ec6",
+      "sha256": "89fe9eb9de888b7a816aedb19a4e3ae101e10934b0c72f3cd85bc15cfdf7eddc"
+    },
+    {
+      "file": "README.en.md",
+      "bytes": 70925,
+      "blob": "6d71e170157f7dabfdf18b6706d1184ded902aaf",
+      "sha256": "2c015a8a10bd2f380748274ac1cb31df53a68c8c73a04ca413e4047b8bfff9b4"
+    },
+    {
+      "file": "README.md",
+      "bytes": 63001,
+      "blob": "dafc6b8e1fe0dc1d6aea611a06eef1610fe60584",
+      "sha256": "0a3c9f9918bec0cab456e0cd70d3ee12ffc3f5af7f60f208f34be8093a62f0f4"
+    },
+    {
+      "file": "docs/00_程序文档索引.md",
+      "bytes": 12736,
+      "blob": "fff9c760e3d7ae945a6065b6b71d3574eca6225b",
+      "sha256": "cf318c5e3ac368ad41058d8d1d97eea97e0010026f4a4599f8ccc96edcd0170a"
+    },
+    {
+      "file": "docs/23_当前完成度评估.md",
+      "bytes": 14386,
+      "blob": "a88d1f6f3c27b02489801e58db60bafa2b9a0c98",
+      "sha256": "faf3efdba2a799e421b4d13799633d48bf292570b5d9fcdc9effddf4d92197dd"
+    },
+    {
+      "file": "docs/57_源岸线方向与柔和海岸过渡.md",
+      "bytes": 8491,
+      "blob": "ef67b60d7be578b77cad097726a2d9aececed303",
+      "sha256": "7762b5842643408e9a59a670ccf52e43c38d7a8c5e1465ec0c7c57855c3205fe"
+    },
+    {
+      "file": "presentation/map_coast_band.gd",
+      "bytes": 9479,
+      "blob": "dc4eacb9ef269cb9f10186438ca32130b83a4cf9",
+      "sha256": "e86a7ef64fc804a48eb44e6aeb7c251da7d2f553111366094141c406e738b32e"
+    },
+    {
+      "file": "presentation/map_view.gd",
+      "bytes": 144286,
+      "blob": "095c465e00f413571b585d3d8b0e2914fd15351b",
+      "sha256": "074512cf6cbfd7f3ec01c27f47eb032ba17fe3ecabde5c1d6f90ddc30388442e"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/osaka01/command.json",
+      "bytes": 26379,
+      "blob": "f126e406e65835501d468e4fb77a47b78af24cb8",
+      "sha256": "70a155dd231a964d6118be76c1fe85846763939a1c08dc71138417b64f8f9af5"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/osaka01/result.json",
+      "bytes": 584,
+      "blob": "a5babffd47c5d2b84b021e8d2746b8daa457887f",
+      "sha256": "d5a71e32340edfa9f19e68008ce3902a7a3b78bfdeb231148e30b16b286158ef"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/osaka01/viewport.json",
+      "bytes": 60410,
+      "blob": "8cda998d422ffd1581a59bed651bdeb822620512",
+      "sha256": "acc74c36d7829b3d953bc016b09dfb11b29cc80f5512fc1ce5931d0fcdf306d2"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/osaka01/viewport.png",
+      "bytes": 2717202,
+      "blob": "26d03a4eb1f30ec7f755193e276cd27f60694a83",
+      "sha256": "5ebcc37d1de68603ff72372e25017134bd03ab541865bc9572a0022492802f10"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/qingdao01/command.json",
+      "bytes": 26387,
+      "blob": "ca13357f52fb7ec04a12266a36e3b1c9ed22772e",
+      "sha256": "b55e27180486a7a0e3043bf247767f7e871e8c315482a34cb07677896e897966"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/qingdao01/result.json",
+      "bytes": 586,
+      "blob": "b703665c0c5bffbfc7a47b3560f4754ef07f9162",
+      "sha256": "4a4b60e934b92c99250ce97f2cd9b867c11fd96a6c2624ac8266fba4edbf20ae"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/qingdao01/viewport.json",
+      "bytes": 34853,
+      "blob": "96c6fe6394794638228099d78e3bf23e87d4d9db",
+      "sha256": "2031d9ec89eeaa06da1547eceda8c9b2c4359239db736369107cdf7e9a106ec3"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/qingdao01/viewport.png",
+      "bytes": 2443532,
+      "blob": "a6bf6cf92ea4c02fbfba7f6b24971b75e4cb62e9",
+      "sha256": "12b9db909453eb43a5fbafb5ece19108ff05d4d4ef318a98f8f0046e147f270f"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/shanhaiguan01/command.json",
+      "bytes": 26404,
+      "blob": "cee983212cb3bc5874cd6fbbe2d354e72bb06a2d",
+      "sha256": "873c0950088bb31fce04ec166004f1a9118276d6ca444aff98b61b97a65f356c"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/shanhaiguan01/result.json",
+      "bytes": 591,
+      "blob": "160f5822659e2d6355a22544044cef244d2624d7",
+      "sha256": "edcaa372da0d7c4d02137e74ae95e9eb15b9a5f73207a11035cb11061d14a418"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/shanhaiguan01/viewport.json",
+      "bytes": 27216,
+      "blob": "c1715ce412b4b973819fabe943fa4a9c54a1a6eb",
+      "sha256": "206b00abacd27ee4ceef29251f8bdd2d0882dd27ac52c1c1a681784c816cc8fc"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/shanhaiguan01/viewport.png",
+      "bytes": 2535519,
+      "blob": "5b3778c5d6c29aec84f59347b8672e9ba21bbb04",
+      "sha256": "b34f650d63d186f469194ce2b3f2b65decc51b039fd8ad5f4c94904773c39c65"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/tianjin01/command.json",
+      "bytes": 26394,
+      "blob": "eec515aaf854bdfcbeb223176b974c23ba920da0",
+      "sha256": "e75c78eb3c081b00da8dadf11fb47f7f91df976a46a338378cf862bd37838071"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/tianjin01/result.json",
+      "bytes": 586,
+      "blob": "57d3466ad523689e6eb7e8d3d886ae10813252cd",
+      "sha256": "6ded86c3ad99943f6f00691df6503fe918eede7942adecd45ea67fda58295f48"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/tianjin01/viewport.json",
+      "bytes": 19410,
+      "blob": "b43f79f8134937c4b4349263f4f8f2e5bec5c336",
+      "sha256": "d97c4280701c558ab8cdad0b7380bbf6315596c376314db2257e96c2c87c90a4"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/baseline/tianjin01/viewport.png",
+      "bytes": 2347423,
+      "blob": "fd37b66aca54d8a0b397d028b8a5b9bd0fda42e1",
+      "sha256": "e7a733d218609b740dfb2103c4e1608651f06f0e5e1f287c1dfcc64bd4cfb592"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/boundary03/audit_shore_sides.py.txt",
+      "bytes": 8511,
+      "blob": "da05c2041c0b69808b4afdee88b9fbb523ab6553",
+      "sha256": "6dec796547631b61902ebe5afe28fad0584f79467d94bd15d7efd2e939e50335"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/boundary03/iteration.json",
+      "bytes": 1107,
+      "blob": "b5f92883dc7806fb51e54903185838f13646ad21",
+      "sha256": "2af4b064357683cb5d800fb55e6e054701ed22374863cd47602c867f534e5da1"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/boundary03/map_coast_band.gd.txt",
+      "bytes": 8064,
+      "blob": "4871df8825773436506e309fc44b07a677097cb4",
+      "sha256": "c37f71db74bbbbabe95ffe88bebc6af4587ef32329ece71c2499d17d523211c2"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/boundary03/map_view.gd.txt",
+      "bytes": 144339,
+      "blob": "9b51ece47e92cd9087714467a37e3e188606c8b4",
+      "sha256": "6adb01f9c08d4c6ae14765d6d678bb7ee3f437cdaf2a215761f687f435ad196e"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/boundary03/native_parse_failure.txt",
+      "bytes": 1309,
+      "blob": "c583f5431fb07cf031aacb852259642efd49455e",
+      "sha256": "75fb6518388078e6b550c219716fcc01e2286e978e4fcf220aa2fd2aaa16ede0"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/boundary03/shore_presentation_test.gd.txt",
+      "bytes": 8284,
+      "blob": "68bd4f65b8c4246ea50c91cba2bcfd7e49521b76",
+      "sha256": "daff273a5324655fddd996e0cdc52a04ff0da76725851528cb549bd1035c5c8f"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/development_summary01.json",
+      "bytes": 1420,
+      "blob": "e36427baaab27975acd14ac5a9c383d31a5d4d2d",
+      "sha256": "545964953cc79559f6ec9094637821a3e2f1b777f147beaa339b304f5f5efb7f"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/official_reference_review01.json",
+      "bytes": 1642,
+      "blob": "751a66ef1b3da64c4e564ab10b3639de7c63a13c",
+      "sha256": "cc2d960a4377ebd0b03f84bf7744ab1f3fe62fb1c72e54e001c7d79d2bc2c9f5"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance02/map_coast_band.gd.txt",
+      "bytes": 5717,
+      "blob": "e41a9d2209d77688efeb7a5d2f4b1c8d4f20badf",
+      "sha256": "31ac73d2b7f4d7fe35c8a61f58f8f50ceee23a750b54c050eb33e945aaed7a07"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance02/map_view.gd.txt",
+      "bytes": 144266,
+      "blob": "a912c9fbebab3c3c366dc4cbd4c6a721667dcaba",
+      "sha256": "05d860b03775a6f2b8910ebd825f5829bf53d151eb5fe8cff603250d97ef6756"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance02/shore_presentation_test.gd.txt",
+      "bytes": 6490,
+      "blob": "7b4a6f0107a0b57cbfd28f7fca6c3c8067b4b40d",
+      "sha256": "d9ddbe78326aa430c026823e699d08877b54292a6992f06924504cdc2adebc47"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance02/timeout.json",
+      "bytes": 1067,
+      "blob": "15a45bf9ccf053d8febe09c49c69032f3e2f7352",
+      "sha256": "0afbd50e11617577908c05e561e03d5396ba8118487f79a9095976eed819ff2f"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance02/verify_shore_presentation.py.txt",
+      "bytes": 5107,
+      "blob": "bed63ec31c3632623e695eed271a23bb325ace0a",
+      "sha256": "25ff9733c4c8a29e3a274467811d743ba9f20074004eada5a90d5e1b5af9dc8a"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance04/audit_shore_sides.py.txt",
+      "bytes": 8599,
+      "blob": "de4c36396607554e42553bee477fd6f84aeb508e",
+      "sha256": "56e08dac0ed79e84f64477d12be02a6d727425167a3ae702fca403f332a3c1ce"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance04/iteration.json",
+      "bytes": 1106,
+      "blob": "221a11a74a66d7afc17a6d6ae9b5ffac2bc736d5",
+      "sha256": "5e7d6488b6b4bb2144804bff35b6a9a19f1577c339bcd20b08e988dccb4037de"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance04/map_coast_band.gd.txt",
+      "bytes": 8180,
+      "blob": "553eede6d89aab466f5060e55caea973e828bc92",
+      "sha256": "85a171dab42f17d92e31723dd7674cc6861364a1104b04828617b9f882f2704d"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance04/map_view.gd.txt",
+      "bytes": 144340,
+      "blob": "13b12a548cb9836784d4291ed17e4a4685da9fa6",
+      "sha256": "b3b993ba06e3291c1908b54097a52c572ae781acde5f8c356052702708cb9abf"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance04/shore_presentation_test.gd.txt",
+      "bytes": 8354,
+      "blob": "46a1a538714827627241a5eba8c9f2229f124867",
+      "sha256": "98fd8b7f999e0ef9b52910cf2f2affeef8b5fa396c263c235b4a612f3b4a6355"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/performance04/verify_shore_presentation.py.txt",
+      "bytes": 5107,
+      "blob": "bed63ec31c3632623e695eed271a23bb325ace0a",
+      "sha256": "25ff9733c4c8a29e3a274467811d743ba9f20074004eada5a90d5e1b5af9dc8a"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/protected_scope06.json",
+      "bytes": 2783541,
+      "blob": "63076b4e8ea5444d2455493507deb495b9879b03",
+      "sha256": "f9c74a02d8083f30c324f3beb45c6da5679e1f4bd205376632b197e627d66656"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/rejected01/map_coast_band.gd.txt",
+      "bytes": 5432,
+      "blob": "c9529f1dbf32afd677902afb10113ee3fd5e7743",
+      "sha256": "02822767ce10b8c20dcdc0430c7afbb9630cf882418619e72adf3af9afe50480"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/rejected01/map_view.gd.txt",
+      "bytes": 144266,
+      "blob": "a912c9fbebab3c3c366dc4cbd4c6a721667dcaba",
+      "sha256": "05d860b03775a6f2b8910ebd825f5829bf53d151eb5fe8cff603250d97ef6756"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/rejected01/native_failure.txt",
+      "bytes": 2175,
+      "blob": "e4faa1345372f6711179a141c107bb6ff16050c2",
+      "sha256": "f4c9343dbb83a202aa373372aed78809bb1f7c05cd96b42d071655298fa2bd3c"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/rejected01/rejection.json",
+      "bytes": 1074,
+      "blob": "09d099e34ea2abac7b5de97cbd94c7bc3faf4b0d",
+      "sha256": "4471126e62b6131ba0ae0737686537a4c239f6c80423aec752e0ea2e8c59a1e0"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/rejected01/shore_presentation_test.gd.txt",
+      "bytes": 6361,
+      "blob": "eb9f78a53cc946fee9d23a378b6d406799079fa4",
+      "sha256": "0b4a96fd8e6a28be12bc8cde95442f54ca4e28822ec5100fd9a151ee52aff093"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/repository_documentation01.json",
+      "bytes": 1260,
+      "blob": "40fb5f66cb2ae058e342773beda9bc7127ff56da",
+      "sha256": "7bf7ab639e12416840bc137d813a2b421d1309d11e63b711d76a25d2345792b8"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/coast_rules04/command.json",
+      "bytes": 26317,
+      "blob": "55c1635b51a2f88af31d20403b1c4a4e9ad70ee3",
+      "sha256": "5d247bc9793f9af9728e6d07db9177e31e046ca693a69af1c4124c4b0954e542"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/coast_rules04/result.json",
+      "bytes": 503,
+      "blob": "2238d1ad97ee47596022cb3d705edb9784f8dbaf",
+      "sha256": "564982338fbf67f604810c806db1be230bffddf46b1850830b2773ea54305483"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/coast_rules04/validation.json",
+      "bytes": 7700,
+      "blob": "f0bcd687d1cf219c6b4906543b13ec7d63a0a2b2",
+      "sha256": "216f30577ded41d804cb0abe367af348dfe5a01bd3534e69cb7acc460bfa234e"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/coast_rules05/command.json",
+      "bytes": 26317,
+      "blob": "4e3b73d992324facc363898e73ddf9cd8aa32450",
+      "sha256": "545507c808e3307e50db47283676210681c981f97b1b03dde6ac876b1cc5c314"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/coast_rules05/result.json",
+      "bytes": 503,
+      "blob": "b557a19d80353057f2840d7b0a61092fc6ebe868",
+      "sha256": "838f80be53468b6ce338f5ebce3090bdbc993a2d32d40d16bbb435d9f55384a0"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/coast_rules05/validation.json",
+      "bytes": 7699,
+      "blob": "ff574727c6bc4efe942f09ca76a31b7c03ac86a8",
+      "sha256": "a0caf8e91d3a0427c599270e6da9a7690bf9577cc943c39d44786e0e9f8b8e87"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka03/command.json",
+      "bytes": 26376,
+      "blob": "71a0c9f4159063fc6c337c8a6f0f058533b1c4a1",
+      "sha256": "b2826f666ae3284aedde5f19c62d7d0bf04950f3740417026e2dab96bee666cf"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka03/viewport.json",
+      "bytes": 445,
+      "blob": "64f6161c51b3a5fdef3bf59067ac7ea48d2b590c",
+      "sha256": "89ef0d1918b0f33f70ece5888cc0ac635741850c1150cf22bdb8386b24963bd9"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka03/viewport.png",
+      "bytes": 10595,
+      "blob": "2c5139537cc27cd171c10b7da6fc950df388ec76",
+      "sha256": "961c0d9dac6af31b45229fece3f914e2778b4761c7b24835b9a7960ba4f073a1"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka04/command.json",
+      "bytes": 26376,
+      "blob": "fa65294d65df759ab06aa6c47b9c4fed24f0b0ec",
+      "sha256": "c91bbe51749cfc2657fc06a8b81efa4f7e06ce1939fe3b4f0d45e3ef2cd78b1e"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka04/result.json",
+      "bytes": 584,
+      "blob": "10fa2bec873c5813c2bd10857bd8a203b85402e9",
+      "sha256": "ba582760022e0ae2b4b1020b604ed74f814f0684a4c1104d561bb879bac51880"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka04/viewport.json",
+      "bytes": 60944,
+      "blob": "50668f2f6ad6667ecdbc3f26bae00d8abea81a39",
+      "sha256": "82a58c158ef3187ea45d99856fed7f94c66ddaca90881de219bc4f8f4488fd85"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka04/viewport.png",
+      "bytes": 2732244,
+      "blob": "305d2571fcca84a4b1f34428b34ada89bef67ad0",
+      "sha256": "8b09256f27110e3fd7eaea3cfe5d02b8cc634a63ba3c54eabc02f48027221804"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka05/command.json",
+      "bytes": 26376,
+      "blob": "03258a1bc67520878d408f3e7128b04809633728",
+      "sha256": "1aab806987ea35b7fd7ee6adfba1afc360cced3ad68f4851db28ea3d66e0e181"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka05/result.json",
+      "bytes": 583,
+      "blob": "08a047fd85e14aad8bb9bca220ae1c21a7086971",
+      "sha256": "159cc2fdd1c48e4dcdf6545fd1863621a886e20efe23e21ec0093e37c8cf5f40"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka05/viewport.json",
+      "bytes": 60940,
+      "blob": "90d647fe0143a5b904e4281e3d3e23544e219f3a",
+      "sha256": "523f92e0d8b8cc34e0869cac13a9b6f11a0c7e565e9188e73e8edbfeb9e5cc97"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka05/viewport.png",
+      "bytes": 2732234,
+      "blob": "98a9450624a3b6b6ea51a2bbcbe887793a64380e",
+      "sha256": "7bb6f02a00c7211ff9f1b5f033ffa27023cb0dbe722ebca635535f96397e37a6"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka06/command.json",
+      "bytes": 26376,
+      "blob": "978ae7c73ee88a42c8dc8e790aa66f59c750e8b6",
+      "sha256": "00db3af48c9c6e736b1e7ed57cda6e971f5dfcca3842f39cb0dc172fe782b486"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka06/result.json",
+      "bytes": 583,
+      "blob": "c2d419db315681b1eb4b2f16629f54129936a112",
+      "sha256": "460fcb30f5942e5dd92d33304c77dcf3c4a04085a02e3656c6ea595d0719a797"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka06/viewport.json",
+      "bytes": 61126,
+      "blob": "022efe2c134cf508be114e6d1ce43656f6b752aa",
+      "sha256": "03e522ae66e35045e30ed4def026c116178a53754ffb108e5d81308b14dd23b9"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/osaka06/viewport.png",
+      "bytes": 2688924,
+      "blob": "82d046b33d10c824d58ec84cdb2044fcec7b77ca",
+      "sha256": "9ebdeb22b963a7823db9d84a1f19ca1102333cd6e531f8157cd72e581f610f5a"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao04/command.json",
+      "bytes": 26384,
+      "blob": "d4b76bf0b573255032fbe80b6286998711198859",
+      "sha256": "7ff6fd93331be57e067f09c147ea5765b150cfaec400aec90ff2d2cf0a7e1e36"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao04/result.json",
+      "bytes": 585,
+      "blob": "9da6b770958ea1e62e0fd0798f038701d413eb02",
+      "sha256": "b49b847420c1f617f1e6a9fdc1d8cf26dd2655420c9334b70a472999e2a3d056"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao04/viewport.json",
+      "bytes": 35378,
+      "blob": "ba51c28ec111f77cc4ea0ace114933cb2a5407a8",
+      "sha256": "0d88a7f5b032666806a4618de1939e3fcf7c618874c267eb235c6cb190356ba2"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao04/viewport.png",
+      "bytes": 2456303,
+      "blob": "af659176d40192905468c4f8ded6240808968e6a",
+      "sha256": "8f7053c9e4ab571c791e378f42fd88764cffb49adf9de9fbc5e30a8a787a1019"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao05/command.json",
+      "bytes": 26384,
+      "blob": "9bddf6c92a8f68b60bc74ffb714af4c7013b053f",
+      "sha256": "b1fd6a10598e9011b12f52bbaf718f505a8311d1de40c634f950e2f1a78d751a"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao05/result.json",
+      "bytes": 586,
+      "blob": "2e9b24bd8b6feb8fbab7e0956f42dcd4345daad2",
+      "sha256": "dc5385a164b33f5f335d58c5c6c4e674387f982c61311a02c061dd71026d6c1f"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao05/viewport.json",
+      "bytes": 35381,
+      "blob": "af83a78d9ff650159fab623f3331855bba2c3262",
+      "sha256": "dfbad671e1afe463789e247fc6180044ee056d16b18e0652ad377fef5a8d8af2"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao05/viewport.png",
+      "bytes": 2456303,
+      "blob": "af659176d40192905468c4f8ded6240808968e6a",
+      "sha256": "8f7053c9e4ab571c791e378f42fd88764cffb49adf9de9fbc5e30a8a787a1019"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao06/command.json",
+      "bytes": 26384,
+      "blob": "49d819b00e9fffe10c8cc488fcab4e665abc1d45",
+      "sha256": "c5065f3d2e4a51acaaa2bcb331e06f72db80bc4bfba8ab45faf28138454d48fa"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao06/result.json",
+      "bytes": 584,
+      "blob": "0fe1b29df508f7978f44b0a3a246cf434f1ee496",
+      "sha256": "8155642abf2196bfaf086f9cc8065fff306ba69c2809d7905f12f189fb524aa9"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao06/viewport.json",
+      "bytes": 35563,
+      "blob": "ef05cf22be4f05f66eae695963041fdc4613ded0",
+      "sha256": "db5760b231662fa1e1d9b9bc5dc511bd97a60ac1149368b445be70eca027dfa8"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/qingdao06/viewport.png",
+      "bytes": 2443251,
+      "blob": "f2f15d236212e725b7e81e4d635727dfbe2fa99c",
+      "sha256": "65fac528818fe5dfc2f9dfd04d64e86c93dd246fbc2e7930e70708a21cc69a63"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan01/command.json",
+      "bytes": 26401,
+      "blob": "7c581f3377d61d328a565525b8fd7f422bf55c5a",
+      "sha256": "2f0dd5f31d6e5122cdffdabb5c2954f72ef5735b62e61bbd7eac0b9eb28c9cd8"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan01/result.json",
+      "bytes": 588,
+      "blob": "a652651187021a8f1ec0606a33db6892b7be593c",
+      "sha256": "6c442c5743ef6e855595eabad23632861f5d5cc0c7b098cd812cf5790dda49b2"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan01/viewport.json",
+      "bytes": 27654,
+      "blob": "034bb87ac7199eccf397646114d38d3199bf1176",
+      "sha256": "a00d360ec73c78f20346449e950fcd3149c4835b626b3255e61de89f7f012fed"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan01/viewport.png",
+      "bytes": 2542690,
+      "blob": "efbbc5898ba68339874be8634566b09e6baeb32f",
+      "sha256": "fdaa8d361e31a5b19b3f7a0563dfbd58390bcc91d11e516b37eea8e76df1d953"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan02/command.json",
+      "bytes": 26401,
+      "blob": "c9cecf84f652f00de9821de7243343fa80bf3ea5",
+      "sha256": "3a0b36093e8df09ff7e51ab6bf288b9c61430ad164fa2a82dbb4abfbdddd45e8"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan02/result.json",
+      "bytes": 589,
+      "blob": "280489556f03694d34e59ebefc151502a42a2cbf",
+      "sha256": "a0ced0a485d62ee86971d964f1a70f3a9162caafdcd5dac7a7cfefb714899af5"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan02/viewport.json",
+      "bytes": 27644,
+      "blob": "71837dd15a8bda5e296392f536ea313f9b02569f",
+      "sha256": "d24f278628c772712587dc8c1329de7188a61bb5b61f5f6b5d77fc67e201f9af"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan02/viewport.png",
+      "bytes": 2537013,
+      "blob": "741adfe98d63d4159f71c7ed6d19d604a5744199",
+      "sha256": "3084b38fc0b04a17c63571c79cbe9c1e6a615491723c07f2c557674524696f93"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan04/command.json",
+      "bytes": 26401,
+      "blob": "5bc02d84994667bcfda821bb3d947d64362bcdb9",
+      "sha256": "01979b2f80cdbd1e18d03c2b346d12a3086eb5b689ef1a222594ccf136f99a5c"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan04/result.json",
+      "bytes": 589,
+      "blob": "a4e9423b36a01bdaf379bc9d345f26072f5244c9",
+      "sha256": "25a6d8251f3ff74d0783670d6956cd1427fb540119196a2a85eba8bc3428242e"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan04/viewport.json",
+      "bytes": 27736,
+      "blob": "2369f864799803ea401610b3a6d2af15923ba4c3",
+      "sha256": "1bb11f7c0fb7a4450a48611d804cba9310651a2c05c4a98b30753034395ab42b"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan04/viewport.png",
+      "bytes": 2537013,
+      "blob": "741adfe98d63d4159f71c7ed6d19d604a5744199",
+      "sha256": "3084b38fc0b04a17c63571c79cbe9c1e6a615491723c07f2c557674524696f93"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan05/command.json",
+      "bytes": 26401,
+      "blob": "962473b5cae7bb542feaf3ff3b9953e820a1b601",
+      "sha256": "4eed7da9e813c47c4720b99be53ca3015d7a489f123a1ae07624985e94f0226a"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan05/result.json",
+      "bytes": 589,
+      "blob": "fcd03b6191444cea137b3d7cb937f230f7eccf8b",
+      "sha256": "761d328b40ad8657c9114426cf76357d0197a47fd5651e32f612466025150eaa"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan05/viewport.json",
+      "bytes": 27736,
+      "blob": "3c9b70b1a81b6a4b825af1070ff8f84bad8f9b62",
+      "sha256": "1e326a34046870449f8ad2352934320bfb01198e03d3adc3bd6857531bb9b155"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan05/viewport.png",
+      "bytes": 2537013,
+      "blob": "741adfe98d63d4159f71c7ed6d19d604a5744199",
+      "sha256": "3084b38fc0b04a17c63571c79cbe9c1e6a615491723c07f2c557674524696f93"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan06/command.json",
+      "bytes": 26401,
+      "blob": "7ab988c0c2d840334a7ff078db972b77d5c2a017",
+      "sha256": "3da17ce96d1b3f7547202b86e3b681d53a036b17fa7777ce450d42ad3d61ff5e"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan06/result.json",
+      "bytes": 587,
+      "blob": "8e2df01980af4d58b4a5127bf852f335be45fc6f",
+      "sha256": "3ea32a120b9635843b56d247ee8e6a049fb10e079acab010918f94560016d5c7"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan06/viewport.json",
+      "bytes": 27919,
+      "blob": "23905eb19cd67655335db7467880329e648017eb",
+      "sha256": "3f73eaba03546f414d8ce0cd4eddf9284b9bd953768f8e36f8bbbcea1ee4f7c3"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shanhaiguan06/viewport.png",
+      "bytes": 2533424,
+      "blob": "58e2d6f588049b58f0a2566e692825d4956f757a",
+      "sha256": "75768b82daf4715059fc102e725d81ef4a9b8e47ee4931e68e7d4c519d0e0cc0"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules01/command.json",
+      "bytes": 26325,
+      "blob": "1ec01a13b4eaa9269ab43e154ec17c6a0c3daa9f",
+      "sha256": "03814bf1eb71a278044702b7251a665d4f1f490527f6454f453e47cff1b70637"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules02/command.json",
+      "bytes": 26325,
+      "blob": "c2cfcfd7b31b130e41fcfae3a883f77b42bebaba",
+      "sha256": "6f8ae252df18f0684ebae074af96c6df61ba6852c1a7c1856fab8fd610b1b4c4"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules03/command.json",
+      "bytes": 26325,
+      "blob": "e2efdb57d16bc697ea89f73f9da5745d5d5e998c",
+      "sha256": "0df580b25d43265a168a3612d4bff113ba447df88f1a83dbf1502a80034a81a4"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules03/result.json",
+      "bytes": 503,
+      "blob": "46ff5362991ea055190ef089fd97f0f54487dbff",
+      "sha256": "ad5270316890faf726331b5faad75225784f918d45c61ec4945f4834a049deaa"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules03/validation.json",
+      "bytes": 4635948,
+      "blob": "2436a6bee14568e70345aa5ee03b3b3d12eef7de",
+      "sha256": "b41cc431465d511b903780d421b858c09b22650a38131eac34b26e9a02998da9"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules04/command.json",
+      "bytes": 26325,
+      "blob": "f58335a1f2dd51962e73f37e5cfcdc99b32b56a1",
+      "sha256": "ea2b15e50a3231db036aceb2ff5e8bb5b3971b78dc398c2a9e1d4d4a7f145de8"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules04/result.json",
+      "bytes": 503,
+      "blob": "4e7388f393ff4a9b510f9faf39c6ffe0e1360e5c",
+      "sha256": "b7370089af1e2a37a8cddf809047a16b3935ff3548792936dba5dd9dcf52eafa"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules04/validation.json",
+      "bytes": 3681604,
+      "blob": "1c396fd164e28dd752208148ac4ae6314ab8c6d2",
+      "sha256": "ccdc8572c23c0ef3c881d3991a11747e6702f6469d084d2984c2a4a92b21c613"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules05/command.json",
+      "bytes": 26325,
+      "blob": "4346383136a31033f8d7d447664a5315edc98105",
+      "sha256": "6673dd7fc9853f5fab2bae62ae9d1b18028d0470acbd4ba03ad99a981106174d"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules05/result.json",
+      "bytes": 502,
+      "blob": "2997365d41647361e7402a36ad033ff7e0dd08cb",
+      "sha256": "41274a8d577bbcd6631c44a8df003d22756e6becf855f0c631234ca4673cd817"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules05/validation.json",
+      "bytes": 2659285,
+      "blob": "63a285838a2288496f54584b19718b2b4186e9c0",
+      "sha256": "ffecbfa31edfcc64b30c7563ff0e0987e1ae575cd2f9d239ce4092e955eae0af"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules06/command.json",
+      "bytes": 26325,
+      "blob": "033d54fd876c4161f30ef26955ca5736a34e4018",
+      "sha256": "9b54eefccd07adc98c5a299c7d0a94243ccbef1a8f0b052966c528cb726e28f7"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules06/result.json",
+      "bytes": 502,
+      "blob": "48eab06abe3d031fd1bdefca37962454421b8012",
+      "sha256": "80e0df46fe551ea2dc2cf906a48e5d9380367d9a2807d619f142ec8298c1c4ab"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/shore_rules06/validation.json",
+      "bytes": 2660906,
+      "blob": "72d4f16f7c196c7806e595829a8f4e38c22f2fb3",
+      "sha256": "7c25a945292b91ede2f2aff9e0890e651cfef507d53647b5faf4009840baca71"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin04/command.json",
+      "bytes": 26391,
+      "blob": "20fe031e15d9e2613086a4b952d6e9c985fac519",
+      "sha256": "dabc43b7ead53f446aa492303bea853a2891a676fe8474a45150f6fc1801baea"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin04/result.json",
+      "bytes": 585,
+      "blob": "21d57295e077a09d4775b104a1a4cdfe4d25fefc",
+      "sha256": "c7a0da6696747b41ddd6fa65d091055c4af3458de61e44f538b18e2d4e792c09"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin04/viewport.json",
+      "bytes": 19926,
+      "blob": "efac4385641974a5270ec08b26244e396b9956a1",
+      "sha256": "d81818b435cc31a928cbaff6b529e2de7a77153421c849bd44e17c730ccce51c"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin04/viewport.png",
+      "bytes": 2349690,
+      "blob": "3a03507d6c44ebf3bd101e48a852c93235f8c34a",
+      "sha256": "d5b1f4540435005ad5da7d3216e27dcbab41574e1ad6776f3897b0763e115c33"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin05/command.json",
+      "bytes": 26391,
+      "blob": "66267106c1a74f224de2b21496988328193efd25",
+      "sha256": "08b7a6e28673ce6e47ae1a5a22dc5f6dd7d315403a9754766f6c0c9f697cb861"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin05/result.json",
+      "bytes": 584,
+      "blob": "d091122a94f5e3f86aacdbf091560f3883eb02f5",
+      "sha256": "80120448c4d8b91007779fca6cf6a6fecaaaa0795481540ef0fdb0a920afb1da"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin05/viewport.json",
+      "bytes": 19926,
+      "blob": "97e882768561f990c552358c89c21241339d0317",
+      "sha256": "694bb78bc466841cd3ace56c3478a4a1a56494c46643919befc9e6212c4de08f"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin05/viewport.png",
+      "bytes": 2349690,
+      "blob": "3a03507d6c44ebf3bd101e48a852c93235f8c34a",
+      "sha256": "d5b1f4540435005ad5da7d3216e27dcbab41574e1ad6776f3897b0763e115c33"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin06/command.json",
+      "bytes": 26391,
+      "blob": "c0c1dad3a71b048fc83db31d1445d1f09af3f80b",
+      "sha256": "0245318eb06fd0b37286700cff0cae27615e68912c3ffa897d3effc2d467f27d"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin06/result.json",
+      "bytes": 585,
+      "blob": "b48f9b82caf8eefe87439b74fb918543d81fe387",
+      "sha256": "170d7fb085d1bcb83740584de4139fa59421f9206e910ea189dd1d8ea835af43"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin06/viewport.json",
+      "bytes": 20107,
+      "blob": "be7b2a21d06ea196209000e327015cfa6a4ca545",
+      "sha256": "a95dcc66ff7b373f311e8a86b3947a743b27113a4ea019b5acece77174fe6c80"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/revised/tianjin06/viewport.png",
+      "bytes": 2346698,
+      "blob": "e54570d0b63034d20a9f41bcc35c866c316c07be",
+      "sha256": "6a7f7d97ba46c9ab2b43932610d1b8ceaa7f4ba6c6fe88b13a1a341598065c4f"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/scope05_cancelled.json",
+      "bytes": 397,
+      "blob": "8cd8fd807afb935706d45fd17dcdd208dea44bdb",
+      "sha256": "ce954b18e6445030f47e7a5b1b3d78c3f59c4f2417f750eb36dfd419d42bcac3"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/shore_side_audit04.json",
+      "bytes": 6197176,
+      "blob": "1ea521c39341952db1d6b57fd31754f95c8c6200",
+      "sha256": "2941654506ef6e3db41db8e57856f476681bf6dd3010fcc21f2edc4075c87a6a"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/shore_side_audit05.json",
+      "bytes": 6197174,
+      "blob": "62ba7412b8bf7cf5f9ed56a121f0785f1382a5b1",
+      "sha256": "c450a77e3c2c31c2bdc526314774bb1a05a9602df8d2f2ca3a519186329bc25a"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/shore_side_audit06.json",
+      "bytes": 6197174,
+      "blob": "8ed22a54519e586360b68f1989094ad53db36bd5",
+      "sha256": "2d561c44ec0f92a3737dee2545c5f3e9e83631df81272204a7b4848d24933b12"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/visual05/map_coast_band.gd.txt",
+      "bytes": 8520,
+      "blob": "f7695665e0884951f39bb532e8fc9fd18d80eeb9",
+      "sha256": "fc04b5f26ef1e419c64b5614e62c6079d71d22f87c974603e0141311fde2e17a"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/visual05/map_view.gd.txt",
+      "bytes": 144286,
+      "blob": "095c465e00f413571b585d3d8b0e2914fd15351b",
+      "sha256": "074512cf6cbfd7f3ec01c27f47eb032ba17fe3ecabde5c1d6f90ddc30388442e"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/visual05/rejection.json",
+      "bytes": 496,
+      "blob": "f82505da80119cebd0a144c2872af90b1ddf30c4",
+      "sha256": "1f44f2e5066f6e9b4a594fde52c0387093b510fd7f9c8ca52f238d24e78e816c"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/visual05/shore_presentation_test.gd.txt",
+      "bytes": 8393,
+      "blob": "17f6e36fb6224d964a54076f443e2d316c43ea03",
+      "sha256": "9ab7be11b772f8fecf805a57330bea508f68a13c8e07237246693bc86257047b"
+    },
+    {
+      "file": "reports/shore_presentation_v0236/visual_review01.json",
+      "bytes": 4554,
+      "blob": "793ca74a42f86a3aec3e15275ff2360533c25186",
+      "sha256": "81ecd0ef089a0998871b36f8efb5533751be553d257d49eeb9f27acc77c28428"
+    },
+    {
+      "file": "tests/coast_geometry_test.gd",
+      "bytes": 6748,
+      "blob": "5e0af6f08695169eddd7cf2791deb9f281ace801",
+      "sha256": "675a08531f5da38f65d7b265d55958a18cd5e6869ace15a6561e3fac871e6483"
+    },
+    {
+      "file": "tests/shore_presentation_test.gd",
+      "bytes": 9028,
+      "blob": "ecc872be28355b10502668f646b18213edfcbe90",
+      "sha256": "88d561d34f09d5f98f8904186888af96c570669924f5337cb7ac75b0a1e1bdb5"
+    },
+    {
+      "file": "tools/audit_shore_scope.py",
+      "bytes": 4029,
+      "blob": "aa5b077b5bfa37db12871b9bc29a2fdd306fd69f",
+      "sha256": "36452cfaa0a1378a5243914add1124b81204adb633eb221fa1eb732ab0c9d91b"
+    },
+    {
+      "file": "tools/audit_shore_sides.py",
+      "bytes": 8599,
+      "blob": "de4c36396607554e42553bee477fd6f84aeb508e",
+      "sha256": "56e08dac0ed79e84f64477d12be02a6d727425167a3ae702fca403f332a3c1ce"
+    },
+    {
+      "file": "tools/record_shore_development.py",
+      "bytes": 5994,
+      "blob": "0e38b49e9c143d76905065592e4efb948991c0c3",
+      "sha256": "34fc609df430e793875b246b26143ac29ecc87d727fbef88a30041d23d731054"
+    },
+    {
+      "file": "tools/verify_repository.py",
+      "bytes": 12198,
+      "blob": "da5ae08d02c03f7cb1ffe69aa4c69dfa74155a7a",
+      "sha256": "4d7818786a2806f347b7dadbe2315c5b11cb521e0ee40112fe3780c7534cbd51"
+    },
+    {
+      "file": "tools/verify_shore_presentation.py",
+      "bytes": 5107,
+      "blob": "bed63ec31c3632623e695eed271a23bb325ace0a",
+      "sha256": "25ff9733c4c8a29e3a274467811d743ba9f20074004eada5a90d5e1b5af9dc8a"
+    },
+    {
+      "file": "tools/verify_staged_shore_development.py",
+      "bytes": 6499,
+      "blob": "24a4cab9ce991257f084a8a54f41e1346d6af83e",
+      "sha256": "4727714a7c8daa26a4e29f2a7b470a9a6c9c0c529b6d3eed7987cb62b904dbe6"
+    }
+  ]
+}

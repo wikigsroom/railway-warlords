@@ -341,7 +341,7 @@ func prepare_geography() -> void:
 	surface_diagnostics["marine_geometry"]=MapCoastGeometry.diagnostics(marine)
 	if not surface_diagnostics.errors.is_empty():push_error("Surveyed atlas surface failed: "+state.map.id+" "+str(surface_diagnostics.errors))
 	for line in state.map.render_coast:coast_lines.append(points_array(line))
-	var coast_band=MapCoastBand.build(coast_lines)
+	var coast_band=MapCoastBand.build(coast_lines,Callable(),MapCoastBand.boundary_index(land_shapes) if not territory_qa_mode else {})
 	coast_band_mesh=coast_band.mesh;coast_band_diagnostics=coast_band.duplicate();coast_band_diagnostics.erase("mesh")
 	surface_diagnostics["coast_band"]=coast_band_diagnostics
 	var hydro=MapHydrography.build(state.map,presentation_source_map_id())

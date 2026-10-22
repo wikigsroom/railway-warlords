@@ -71,5 +71,8 @@ func run() -> void:
 	var fixture={"id":"unrelated_fixture","physical_detail_source":"gshhg_marine_2_3_7"}
 	verify(MapCoastGeometry.for_map(fixture,"jingfeng").is_empty(),"unrelated_fixture_cannot_borrow_a_production_coast_mesh")
 	var report={"passed":failures.is_empty(),"checks":checks,"failures":failures,"build_version":ContentRegistry.APP_VERSION,"content_hash":content.content_hash,"maps":evidence,"formal_art_approval":false,"historical_coast_survey_approval":false}
-	var file=FileAccess.open("res://reports/coast_geometry_tests.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
+	var output="res://reports/coast_geometry_tests.json";var args=OS.get_cmdline_user_args()
+	for i in range(args.size()-1):
+		if args[i]=="--report-output":output=args[i+1]
+	var file=FileAccess.open(output,FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("COAST_GEOMETRY_TEST ",JSON.stringify({"passed":report.passed,"checks":checks.size(),"failures":failures,"maps":evidence}));quit(0 if report.passed else 1)

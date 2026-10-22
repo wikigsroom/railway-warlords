@@ -1,0 +1,23 @@
+{
+  "recorded_at_utc": "2026-10-22T10:42:57.411214+00:00",
+  "candidate_rejected": true,
+  "reason": "Six directional fixtures exposed a normal-sign mismatch. Full-map probing was also too slow; owned process is being stopped after these definitive failures.",
+  "native_process_id": 36444,
+  "known_failing_fixture_count": 6,
+  "full_map_test_completed": false,
+  "formal_art_approval": false,
+  "files": {
+    "presentation/map_coast_band.gd": {
+      "file": "reports/shore_presentation_v0236/rejected01/map_coast_band.gd.txt",
+      "sha256": "02822767ce10b8c20dcdc0430c7afbb9630cf882418619e72adf3af9afe50480"
+    },
+    "presentation/map_view.gd": {
+      "file": "reports/shore_presentation_v0236/rejected01/map_view.gd.txt",
+      "sha256": "05d860b03775a6f2b8910ebd825f5829bf53d151eb5fe8cff603250d97ef6756"
+    },
+    "tests/shore_presentation_test.gd": {
+      "file": "reports/shore_presentation_v0236/rejected01/shore_presentation_test.gd.txt",
+      "sha256": "0b4a96fd8e6a28be12bc8cde95442f54ca4e28822ec5100fd9a151ee52aff093"
+    }
+  }
+}

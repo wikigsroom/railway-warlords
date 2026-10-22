@@ -1,0 +1,18 @@
+{
+  "recorded_at_utc": "2026-10-22T11:03:38.787642+00:00",
+  "native_rules": "revised/shore_rules03/validation.json",
+  "native_checks": 51,
+  "native_rules_passed": true,
+  "asia_band_preparation_ms": 48689.052,
+  "whole_view_case": "revised/osaka03",
+  "whole_view_rejected": true,
+  "whole_view_reason": "MapView referred to undeclared land_rings instead of existing land_shapes. Native log records parse error.",
+  "reason_to_revise": "Exact closed-ring matching misses thousands of simplified island ring notches. Use exact source boundary edge orientations rather than slow per-island triangle queries.",
+  "production_files": {
+    "presentation/map_coast_band.gd": "c37f71db74bbbbabe95ffe88bebc6af4587ef32329ece71c2499d17d523211c2",
+    "presentation/map_view.gd": "6adb01f9c08d4c6ae14765d6d678bb7ee3f437cdaf2a215761f687f435ad196e",
+    "tests/shore_presentation_test.gd": "daff273a5324655fddd996e0cdc52a04ff0da76725851528cb549bd1035c5c8f",
+    "tools/audit_shore_sides.py": "6dec796547631b61902ebe5afe28fad0584f79467d94bd15d7efd2e939e50335"
+  },
+  "accepted_for_release": false
+}

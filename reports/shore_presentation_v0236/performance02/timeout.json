@@ -1,0 +1,18 @@
+{
+  "recorded_at_utc": "2026-10-22T10:53:38.074987+00:00",
+  "case": "revised/shore_rules02",
+  "native_pid": 39024,
+  "controller_session": 83569,
+  "result": "controller_timeout_after_360_seconds",
+  "process_stopped_by_own_controller": true,
+  "completed_full_map_checks": false,
+  "validation_report_written": false,
+  "known_visual_direction_fixture_errors_in_log": false,
+  "production_files": {
+    "presentation/map_coast_band.gd": "31ac73d2b7f4d7fe35c8a61f58f8f50ceee23a750b54c050eb33e945aaed7a07",
+    "presentation/map_view.gd": "05d860b03775a6f2b8910ebd825f5829bf53d151eb5fe8cff603250d97ef6756",
+    "tests/shore_presentation_test.gd": "d9ddbe78326aa430c026823e699d08877b54292a6992f06924504cdc2adebc47",
+    "tools/verify_shore_presentation.py": "25ff9733c4c8a29e3a274467811d743ba9f20074004eada5a90d5e1b5af9dc8a"
+  },
+  "reason_to_revise": "Avoid per-island expensive source-triangle point queries on continental maps. Resolve exactly matching closed source polygon boundaries from stable winding, with land queries only as fallback."
+}
