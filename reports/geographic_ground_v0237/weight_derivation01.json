@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_data_sha256": "50a866840af44c12cd80f5f9cff8099c816f7295a1ac907e0d95757355bd53cd",
+  "classification_source_json_sha256": "50cffaf17594e91233d7171a4e22cf47039de9c211221f37be50d88ca1934954",
+  "controller_sha256": "fe260b5c829a70d2aa3804d2e151353eac1ba6cc976bcf71e3d1de1cd14f9a3b",
+  "weights_dimensions": [
+    801,
+    451
+  ],
+  "layers": 20,
+  "gpu_lookup_bytes": 7225020,
+  "weights_payload_sha256": "976f2e681f6cb76ab3efd79005aff13162ca9f54ca47ba58202df8e012bedb14",
+  "maximum_quantized_sum_error": 0.007843137254901933,
+  "source_classification_payload_unchanged": true,
+  "actual_historical_ecotone_width_claimed": false,
+  "new_raster_art": false,
+  "source_images_modified": false
+}

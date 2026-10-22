@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "status": "controller_stopped_redundant_historical_media_reread; not counted as a passing run",
+  "started_at_utc": "2026-10-22T17:57:20+00:00",
+  "stopped_at_utc": "2026-10-22T18:26:39.290963+00:00",
+  "process_id": 39076,
+  "controller_sha256": "5ce31316a13ce0899a55a342ca5cef29b26fe673798f5e0eed6d79b9ac982ecf",
+  "completion_report_produced": false,
+  "reason": "No original artwork or legacy GIF changed. This broad run repeated already-sealed input checks; a separate scoped documentation/media verifier will explicitly bind existing full copy seal, prior full documentation validation, current asset metadata/Git state, and fresh changed files."
+}

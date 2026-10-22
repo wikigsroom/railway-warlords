@@ -1,0 +1,76 @@
+{
+	"checks": [
+		{
+			"name": "actual_content_loads",
+			"passed": true
+		},
+		{
+			"name": "compatibility_gpu_has_original_materials_and_numeric_weight_array",
+			"passed": true
+		},
+		{
+			"name": "geographic_material_pixels_do_not_depend_on_land_mesh_triangles_or_rule_hex_partition",
+			"passed": true
+		},
+		{
+			"name": "camera_pan_preserves_world_material_coordinates_and_boundary_phase",
+			"passed": true
+		},
+		{
+			"name": "passing_fixture_actually_uses_the_new_material_shader_branch",
+			"passed": true
+		}
+	],
+	"driver": "NVIDIA GeForce RTX 3060",
+	"enabled_disabled_difference": {
+		"maximum_channel_delta": 147.999998778105,
+		"mean_channel_delta": 127.691731152786,
+		"pixels": 6848
+	},
+	"failures": [],
+	"field": {
+		"active": true,
+		"data_sha256": "50a866840af44c12cd80f5f9cff8099c816f7295a1ac907e0d95757355bd53cd",
+		"dimensions": [
+			1601,
+			901
+		],
+		"gpu_texture_available": true,
+		"gpu_weights_available": true,
+		"historical_landuse_survey": false,
+		"nodes": 1442501,
+		"numeric_lookup_gpu_bytes": 1442501,
+		"operation_hex_radius": 48.0,
+		"payload_sha256": "db215928f89f6141c5163da2b2b20eb41a82d881531c3dec1d3be3cdfdf1f421",
+		"rule_cells_changed": false,
+		"source_id": "resolve_ecoregions_2017_and_archived_map_dem",
+		"source_land_topology_reused": true,
+		"source_pngs_modified": false,
+		"source_year": 2017,
+		"step_degrees": 0.1,
+		"transition_sigma_degrees": 0.25,
+		"transition_width_is_illustrative": true,
+		"trees_or_water_added": false,
+		"weight_dimensions": [
+			801,
+			451
+		],
+		"weight_layers": 20,
+		"weight_lookup_gpu_bytes": 7225020,
+		"weights_payload_sha256": "976f2e681f6cb76ab3efd79005aff13162ca9f54ca47ba58202df8e012bedb14"
+	},
+	"fixture_is_gameplay_screenshot": false,
+	"formal_art_approval": false,
+	"pan_difference": {
+		"maximum_channel_delta": 0.0,
+		"mean_channel_delta": 0.0,
+		"pixels": 6848
+	},
+	"partition_difference": {
+		"maximum_channel_delta": 1.00000753998756,
+		"mean_channel_delta": 0.028037388164933,
+		"pixels": 6848
+	},
+	"passed": true,
+	"physical_android_device_tested": false
+}

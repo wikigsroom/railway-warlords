@@ -1,0 +1,92 @@
+"""Capture complete ordinary native viewports, without raster manipulation."""
+from datetime import datetime, timezone
+from pathlib import Path
+import argparse
+import hashlib
+import json
+import math
+import subprocess
+import time
+
+P = Path(__file__).resolve().parents[1]
+ENGINE = P.parents[1] / '.toolchain/godot/Godot_v4.7.2-stable_win64.exe'
+R = P / 'reports/geographic_ground_v0237'
+CASES = {'osaka': (135.3,34.9,1.2), 'himalaya': (85.5,29.2,.72),
+         'manchuria': (121.3,42.1,.92), 'asia': (101,34,.17)}
+
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('case', choices=[*CASES,'shanhaiguan','rules','gpu','continuity','control','benchmark'])
+    parser.add_argument('--attempt', default='01')
+    args = parser.parse_args()
+    out = R / (args.case+args.attempt)
+    out.mkdir(parents=True, exist_ok=False)
+    command = [str(ENGINE),'--path',str(P),'--log-file',str(out/'native.log')]
+    if args.case == 'rules':
+        command += ['--headless','--script','res://tests/geographic_ground_test.gd','--',
+                    '--report-output',str(out/'validation.json')]
+    elif args.case == 'gpu':
+        command += ['--resolution','384x256','--script','res://tests/geographic_ground_gpu_test.gd','--','--output',str(out)]
+    else:
+        command += ['--resolution','1920x1080','--position','0,0','--','--qa-session','--ui-scale','1.0']
+        if args.case == 'continuity':
+            command += ['--ground-continuity-test','--ground-continuity-output',str(out)]
+        elif args.case == 'control':
+            command += ['--control-land-test','--control-land-output',str(out)]
+        elif args.case == 'benchmark':
+            command += ['--scenario','asia_1927','--benchmark','--benchmark-output',str(out/'validation.json')]
+        elif args.case == 'shanhaiguan':
+            command += ['--scenario','campaign_1924_03','--focus-point','16920,8189.13623046875',
+                        '--capture-zoom','.88','--capture','--capture-path',str(out/'viewport.png')]
+        else:
+            lon,lat,zoom = CASES[args.case]
+            data = json.loads((P/'content/maps/asia_strategic.json').read_bytes())
+            x=(lon-data['geographic_bounds'][0])/data['longitude_step_deg']*72
+            y=(data['geographic_bounds'][3]-lat)/data['latitude_step_deg']*math.sqrt(3)*48
+            command += ['--scenario','asia_1927','--focus-point',f'{x},{y}','--capture-zoom',str(zoom),
+                        '--capture','--capture-path',str(out/'viewport.png')]
+    files=[P/'project.godot']
+    for folder in ['app','content','domain','ai','presentation','persistence','audio','tests']:
+        files += [p for p in (P/folder).rglob('*') if p.is_file() and p.suffix in ['.gd','.json','.tscn','.gdshader']]
+    identity={p.relative_to(P).as_posix():sha(p) for p in sorted(files)}
+    proof=dict(command=command,controller_sha256=sha(Path(__file__)),engine_sha256=sha(ENGINE),
+               source_commit_at_start=subprocess.check_output(['git','rev-parse','HEAD'],cwd=P,text=True).strip(),
+               working_code_and_data_sha256=identity,production_presentation_overrides=False,
+               source_pngs_modified=False,shipping_exe=False,physical_android_device_tested=False)
+    (out/'identity.json').write_text(json.dumps(proof,indent=2)+'\n',encoding='utf-8')
+    started=time.monotonic()
+    with (out/'stdout.log').open('w',encoding='utf-8') as stream:
+        child=subprocess.Popen(command,cwd=P,stdout=stream,stderr=subprocess.STDOUT)
+        print('OWNED_NATIVE_PID',child.pid,flush=True)
+        try:
+            code=child.wait(timeout=540)
+        except subprocess.TimeoutExpired:
+            child.kill();child.wait(timeout=15);raise
+    log=(out/'native.log').read_text(encoding='utf-8',errors='replace')
+    assert code==0 and not any(m in log for m in ['SCRIPT ERROR:','SHADER ERROR:','\nERROR:']),log[-1800:]
+    assert all(sha(P/name)==expected for name,expected in identity.items()), 'Source changed during capture'
+    if args.case in ['rules','gpu','continuity','control']:
+        assert json.loads((out/'validation.json').read_bytes())['passed']
+    elif args.case != 'benchmark':
+        metadata=json.loads((out/'viewport.json').read_bytes())
+        assert metadata['raw_godot_capture'] and metadata['qa_save_isolated']
+        if args.case in CASES:
+            field=metadata['map_bank_visible']['terrain_surface_extension']['continuous_ground']['geographic_material_field']
+            assert field['active'] and field['gpu_texture_available'] and field['shader_active'],field
+    result=dict(passed=True,completed_at_utc=datetime.now(timezone.utc).isoformat(),
+                native_exit_code=code,native_process_id=child.pid,elapsed_seconds=round(time.monotonic()-started,2),
+                source_unchanged_during_run=True,shipping_exe=False,physical_android_device_tested=False,
+                formal_art_approval=False)
+    for name in ['viewport.png','viewport.json','validation.json']:
+        if (out/name).exists():result[name+'_sha256']=sha(out/name)
+    (out/'result.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+    print(json.dumps(result),flush=True)
+
+
+if __name__=='__main__':
+    main()

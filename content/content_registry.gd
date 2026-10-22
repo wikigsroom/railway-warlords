@@ -2,7 +2,7 @@ class_name ContentRegistry
 extends RefCounted
 
 const RUNTIME_RULESET_VERSION=11
-const APP_VERSION="0.2.36"
+const APP_VERSION="0.2.37"
 
 var tables: Dictionary = {}
 var indexes: Dictionary = {}

@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-22T16:32:27.335020+00:00",
+  "scope": "Nine whole source-engine viewports actually opened with view_image; the first attempt is retained as a rejected visual iteration. Final exported-EXE images have a separate viewing record.",
+  "images": [
+    {
+      "file": "reports/geographic_ground_v0237/himalaya01/viewport.png",
+      "sha256": "4fe4fd76e54c21ff2c31b6e4dc813e327b0cedfd5bcb73335527ecf0822a45ea",
+      "metadata_sha256": "71d729f316dc74789ac627fc6f6a241f5a826270c1aebf8ad981a71585ed6861",
+      "build_version": "0.2.36",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "shipping_exe": false,
+      "observation": "第一轮分类混合存在明显阶梯斑块，未接受为最终视觉结果。"
+    },
+    {
+      "file": "reports/geographic_ground_v0237/himalaya02/viewport.png",
+      "sha256": "e6a8ea07b4564e85d183bb823d8080b4f36b91ef01cbc6431b5c11f4253ce235",
+      "metadata_sha256": "bb8b1d8da6e640d69fe2fdc5c8cfa28aded82145d3c3980758b4e2641a4c01f8",
+      "build_version": "0.2.36",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "shipping_exe": false,
+      "observation": "连续权重改善阶梯交界；连续山势和缩小山体可见，仍有重复图符。"
+    },
+    {
+      "file": "reports/geographic_ground_v0237/osaka01/viewport.png",
+      "sha256": "d368ca30ce3ab8d595bec090c4773e72073ded10a8db6ed27534d86a42f5cf29",
+      "metadata_sha256": "2c10a8e177633c6c75f2751e222ef9e629219e4b87729a05a7452ef4bdb51de8",
+      "build_version": "0.2.37",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "shipping_exe": false,
+      "observation": "本州浅绿底材和连续高程可见；交通符号、来源岸线台阶仍需处理。"
+    },
+    {
+      "file": "reports/geographic_ground_v0237/manchuria01/viewport.png",
+      "sha256": "e90d31381f1de5df4c19f0182932ac32b7e31bae06eddcbae01cd2899778cbc5",
+      "metadata_sha256": "e93cc2760d5dfb2cd211842eb66d92de08bbb31d1e88c6e694451f226493c905",
+      "build_version": "0.2.37",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "shipping_exe": false,
+      "observation": "林群比例缩小，材质交界更柔和；重复松林与拥挤编队仍明显。"
+    },
+    {
+      "file": "reports/geographic_ground_v0237/asia01/viewport.png",
+      "sha256": "bc448e1048c3620eb059049af2c1bb6061784cab4d2e44bd7eafb8736df541d2",
+      "metadata_sha256": "ae7524569c6ab4a21fa69889bab73ce4130a2ddb708a7834771a4817edde5356",
+      "build_version": "0.2.37",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "shipping_exe": false,
+      "observation": "完整亚洲视口已查看；远景标注、单位密度和矩形画布留白仍未成熟。"
+    },
+    {
+      "file": "reports/geographic_ground_v0237/shanhaiguan01/viewport.png",
+      "sha256": "c5e6c5de0eb479b58e6bd55f21104543c4682836431dac063628e33194056ed0",
+      "metadata_sha256": "330cdcd7f3766323118295284425a3ab34a6e123289148ee204157353c9757d8",
+      "build_version": "0.2.37",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "shipping_exe": false,
+      "observation": "地方战役完整视口已查看；操作蜂窝与铁路可辨，仍有空地、重复山体及岸线台阶。"
+    },
+    {
+      "file": "reports/geographic_ground_v0237/control01/baku_control.png",
+      "sha256": "218c1a95d519d9c103e26c0b388f7b9254d092340abb1f4e88b01460c9c5c133",
+      "metadata_sha256": "97d50b3b23f69b95515eb80e513901499fc8007d76582f81a5967d4aa1848363",
+      "build_version": "0.2.37",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "shipping_exe": false,
+      "observation": "高加索与里海整幅视口已查看；自然起伏可见，残余蜂窝控制边界和干旱区大色块仍明显。"
+    },
+    {
+      "file": "reports/geographic_ground_v0237/control01/tianjin_natural.png",
+      "sha256": "c7738b94d73daf1c5a74e07682ff221831abcb0c4189738592179c19239f2aee",
+      "metadata_sha256": "d2e4f4dcdc1582f19e420ecbf27dee53a6c4e50f7ee04901c2fc15ec82440bf0",
+      "build_version": "0.2.37",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "shipping_exe": false,
+      "observation": "控制关闭的完整东亚视口；底材可辨，标注和军阵严重拥挤。"
+    },
+    {
+      "file": "reports/geographic_ground_v0237/control01/tianjin_control.png",
+      "sha256": "506218fda151066a6a3dfb9b45570464503fb18166ad6b13e675f53abab56da1",
+      "metadata_sha256": "55d231872156d7b03e7da27f585d0d66a87377418d0d78f3695190770e45ed7a",
+      "build_version": "0.2.37",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "shipping_exe": false,
+      "observation": "控制开启的完整东亚视口；控制色下仍可辨自然底材和山势，水面颜色保持。"
+    }
+  ],
+  "new_raster_art": 0,
+  "new_music": 0,
+  "formal_art_approval": false,
+  "physical_android_device_tested": false
+}

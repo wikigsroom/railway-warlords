@@ -5,6 +5,7 @@ extends RefCounted
 var mesh: ArrayMesh
 var shade_field=ReliefShadeField.new()
 var geographic_field=GeographicReliefField.new()
+var ground_field=GeographicGroundField.new()
 var contours: Array=[]
 var contour_lines=MapContourLines.new()
 var features: Array=[]
@@ -103,7 +104,9 @@ func build(map: Dictionary, land_shapes: Array, river_lines: Array, minor_river_
 		var scale=.94+float(seed%9)/100.0
 		var axis=crest_axis(cell)
 		var dimensions=(Vector2(176,120) if axis=="ew" else Vector2(116,146)) if ridge else (Vector2(144,94) if axis=="ew" else Vector2(96,116))
-		if strategic_scale:dimensions*=.88
+		# Continuous DEM ridges carry continental relief. Miniatures are quiet
+		# accents within a rule hex, rather than competing city-sized stickers.
+		if strategic_scale:dimensions*=.60
 		if terrain=="peak":dimensions*=1.10
 		dimensions*=scale
 		var asset_id=("scenery_ridge_spine_" if ridge else "scenery_foothill_")+axis

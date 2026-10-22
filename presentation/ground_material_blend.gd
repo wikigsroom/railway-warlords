@@ -26,6 +26,14 @@ uniform vec2 geographic_dimensions = vec2(1.0);
 uniform vec2 geographic_world_origin = vec2(0.0);
 uniform vec2 geographic_world_extent = vec2(1.0);
 uniform vec4 geographic_bounds = vec4(20.0, -10.0, 180.0, 80.0);
+uniform bool geographic_ground_enabled = false;
+uniform sampler2D geographic_ground_regions : repeat_disable, filter_nearest;
+uniform vec2 geographic_ground_dimensions = vec2(1.0);
+uniform sampler2DArray geographic_ground_weights : repeat_disable, filter_linear;
+uniform vec2 geographic_weight_dimensions = vec2(1.0);
+uniform float geographic_rock_layer = 0.0;
+uniform float geographic_scree_layer = 0.0;
+varying float geographic_ground_mode;
 varying float geographic_mode;
 varying vec2 geographic_fraction;
 varying float relief_mode;
@@ -43,6 +51,7 @@ varying float water_mode;
 varying vec2 water_uv;
 varying vec4 water_tint;
 void vertex() {
+    geographic_ground_mode = UV.y >= 8191.5 && UV.y <= 8192.5 ? 1.0 : 0.0;
     geographic_mode = UV.y >= 4095.5 && UV.y <= 4096.5 ? 1.0 : 0.0;
     geographic_fraction = (VERTEX - geographic_world_origin) / geographic_world_extent;
     water_mode = UV.x >= 3072.0 && UV.x <= 8192.0 ? 1.0 : 0.0;
@@ -143,12 +152,13 @@ vec3 ground_sample(vec2 uv, float layer, vec2 dx, vec2 dy) {
 // Three translated whole-source samples share a world-anchored triangular
 // lattice. Their smooth weights remove a fixed wallpaper period; no texture
 // is painted, rotated, cut into an atlas or saved as a derived raster.
-vec3 ground_pigment(vec2 uv, float layer) {
+vec3 ground_pigment_grad(vec2 uv, float layer, vec2 dx, vec2 dy) {
     // Material brush scales differ; keep every family anchored to the same
     // world origin while sampling its entire immutable source.
-    uv *= ground_repeat_period / max(ground_source_periods[int(round(layer))], 1.0);
-    vec2 dx = dFdx(uv);
-    vec2 dy = dFdy(uv);
+    float scale = ground_repeat_period / max(ground_source_periods[int(round(layer))], 1.0);
+    uv *= scale;
+    dx *= scale;
+    dy *= scale;
     if (!ground_stochastic) {
         return ground_sample(uv, layer, dx, dy);
     }
@@ -167,6 +177,9 @@ vec3 ground_pigment(vec2 uv, float layer) {
     return ground_sample(uv + ground_offset(a, layer), layer, dx, dy) * weights.x
         + ground_sample(uv + ground_offset(b, layer), layer, dx, dy) * weights.y
         + ground_sample(uv + ground_offset(c, layer), layer, dx, dy) * weights.z;
+}
+vec3 ground_pigment(vec2 uv, float layer) {
+    return ground_pigment_grad(uv,layer,dFdx(uv),dFdy(uv));
 }
 // Four bilinear fetches evaluate the sixteen positive cubic B-spline weights.
 // World/axial UVs are affine across the entire source mesh: its triangle edges
@@ -220,9 +233,69 @@ vec4 geographic_lighting() {
     pigment = mix(pigment, vec3(0.74, 0.75, 0.66), upland * 0.22);
     return vec4(pigment, min(0.015 + rugged * 0.44 + upland * 0.10, 0.55));
 }
+// Four categorical samples gate source coverage. Separate scalar family
+// weights interpolate pigment, never family IDs. These smooth geographical
+// transitions are independent of rule hexes, camera position and faction.
+vec4 geographic_ground() {
+    vec2 p = clamp(geographic_fraction, vec2(0.0), vec2(1.0)) * (geographic_ground_dimensions - vec2(1.0));
+    vec2 base = floor(p);
+    vec2 f = fract(p);
+    f = f*f*(vec2(3.0)-2.0*f);
+    vec2 uv = (base + vec2(0.5)) / geographic_ground_dimensions;
+    vec2 texel = vec2(1.0) / geographic_ground_dimensions;
+    vec4 ids = floor(vec4(texture(geographic_ground_regions, uv).r,
+        texture(geographic_ground_regions, uv+vec2(texel.x,0.0)).r,
+        texture(geographic_ground_regions, uv+vec2(0.0,texel.y)).r,
+        texture(geographic_ground_regions, uv+texel).r)*255.0+vec4(0.5));
+    vec4 weights = vec4((1.0-f.x)*(1.0-f.y), f.x*(1.0-f.y), (1.0-f.x)*f.y, f.x*f.y);
+    vec2 world_uv = (geographic_world_origin + geographic_fraction*geographic_world_extent)/ground_repeat_period;
+    // Evaluate derivatives before per-pixel family branches. Their mip choice
+    // remains defined where neighbouring pixels use a different source family.
+    vec2 dx = dFdx(world_uv);
+    vec2 dy = dFdy(world_uv);
+    weights *= step(vec4(0.5), ids);
+    float coverage = dot(weights, vec4(1.0));
+    if (coverage < 0.0001) return vec4(0.0);
+    vec3 pigment = vec3(0.0);
+    float weight_sum = 0.0;
+    vec2 wuv = (geographic_fraction*(geographic_weight_dimensions-vec2(1.0))+vec2(0.5))/geographic_weight_dimensions;
+    // These are scalar mixing weights, never interpolated categorical IDs.
+    // Most pixels evaluate one or two complete art sources; derivatives were
+    // evaluated above, outside all family-dependent branches.
+    for (int layer=0; layer<20; layer++) {
+        float strength = texture(geographic_ground_weights,vec3(wuv,float(layer))).r;
+        if (strength > 0.001) {
+            pigment += ground_pigment_grad(world_uv,float(layer),dx,dy)*strength;
+            weight_sum += strength;
+        }
+    }
+    if (weight_sum < 0.0001) return vec4(0.0);
+    pigment /= weight_sum;
+    // A low-strength rock illustration follows measured local slope rather
+    // than assigning an opaque mineral texture to an entire 100 km rule cell.
+    if (geographic_relief_enabled) {
+        vec2 htexel = vec2(1.0)/geographic_dimensions;
+        vec2 huv = (geographic_fraction*(geographic_dimensions-vec2(1.0))+vec2(0.5))*htexel;
+        float latitude = mix(geographic_bounds.w,geographic_bounds.y,geographic_fraction.y);
+        vec2 degrees = (geographic_bounds.zw-geographic_bounds.xy)/(geographic_dimensions-vec2(1.0));
+        vec2 metres = degrees*111320.0*vec2(max(cos(radians(latitude)),0.15),1.0);
+        float slope = length(geographic_slope(huv,htexel,metres,1.0));
+        float rock = smoothstep(0.045,0.22,slope)*0.24;
+        float alpine = smoothstep(4100.0,5200.0,geographic_height(huv));
+        if (rock > 0.001) {
+            vec3 mineral = ground_pigment_grad(world_uv,alpine > 0.6 ? geographic_scree_layer : geographic_rock_layer,dx,dy);
+            pigment = mix(pigment,mineral,rock);
+        }
+    }
+    // This is the opaque natural substrate; territorial tint remains its
+    // own later translucent pass. Unknown source areas retain the old base.
+    return vec4(pigment,coverage);
+}
 void fragment() {
     if (water_mode > 0.5) {
         COLOR = vec4(water_pigment(TEXTURE, water_uv) * water_tint.rgb, water_tint.a);
+    } else if (geographic_ground_mode > 0.5 && geographic_ground_enabled) {
+        COLOR = geographic_ground();
     } else if (geographic_mode > 0.5 && geographic_relief_enabled) {
         COLOR = geographic_lighting();
     } else if (relief_mode > 0.5 && relief_enabled) {

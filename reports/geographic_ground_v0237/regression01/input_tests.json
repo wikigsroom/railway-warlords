@@ -1,0 +1,50 @@
+{
+	"checks": [
+		{
+			"name": "mouse_click_maps_to_real_hex",
+			"passed": true
+		},
+		{
+			"name": "mouse_drag_pans_without_accidental_selection",
+			"passed": true
+		},
+		{
+			"name": "touch_tap_selects_once_without_mouse_emulation",
+			"passed": true
+		},
+		{
+			"name": "single_finger_drag_pans_without_selecting",
+			"passed": true
+		},
+		{
+			"name": "touch_drag_at_map_boundary_stays_clamped_without_selection",
+			"passed": true
+		},
+		{
+			"name": "two_finger_pinch_changes_zoom",
+			"passed": true
+		},
+		{
+			"name": "touch_release_clears_pointer_state",
+			"passed": true
+		},
+		{
+			"name": "production_panel_pauses_ai_and_keeps_snapshot_stable",
+			"passed": true
+		},
+		{
+			"name": "closing_modal_resumes_game",
+			"passed": true
+		},
+		{
+			"name": "pause_remains_active_when_switching_to_save_panel",
+			"passed": true
+		},
+		{
+			"name": "landscape_layout_1280x720_map_preserved",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"physical_android_device_tested": false
+}

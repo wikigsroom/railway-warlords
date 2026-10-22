@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "exit_code": 0,
+  "command": [
+    "E:\\dev\\vibe-game\\\u4e16\u754c\u5f81\u670d\u8005\u7c7b\\.toolchain\\godot\\Godot_v4.7.2-stable_win64_console.exe",
+    "--headless",
+    "--path",
+    "E:\\dev\\vibe-game\\\u4e16\u754c\u5f81\u670d\u8005\u7c7b\\game\\railway_warlords_review_0237",
+    "--script",
+    "tests/historical_places_test.gd"
+  ],
+  "elapsed_seconds": 233.82,
+  "observed_at_utc": "2026-10-22T17:18:09.332206+00:00",
+  "original_failure_preserved": "reports/geographic_ground_v0237/regression_failure01/failure.json",
+  "sealed_runtime_modified": false,
+  "log_sha256": "6538fd515d542b1294312e53073416be0437f71cca49d8fab38d2e3629a43037"
+}

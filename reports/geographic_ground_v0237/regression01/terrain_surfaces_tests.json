@@ -1,0 +1,652 @@
+{
+	"actual_types": 20,
+	"adjacent_pairs": 75000,
+	"build_version": "0.2.37",
+	"checks": [
+		{
+			"name": "content_loads",
+			"passed": true
+		},
+		{
+			"name": "twenty_types_eighty_originals_installed",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:temperate_meadow",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_temperate_meadow_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_temperate_meadow_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_temperate_meadow_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_temperate_meadow_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:temperate_meadow",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:dry_steppe",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dry_steppe_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dry_steppe_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dry_steppe_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dry_steppe_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:dry_steppe",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:desert_steppe",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_desert_steppe_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_desert_steppe_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_desert_steppe_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_desert_steppe_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:desert_steppe",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:dune_sand",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dune_sand_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dune_sand_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dune_sand_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dune_sand_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:dune_sand",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:gravel_gobi",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_gravel_gobi_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_gravel_gobi_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_gravel_gobi_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_gravel_gobi_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:gravel_gobi",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:saline_meadow",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_saline_meadow_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_saline_meadow_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_saline_meadow_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_saline_meadow_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:saline_meadow",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:alpine_meadow",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_meadow_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_meadow_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_meadow_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_meadow_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:alpine_meadow",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:alpine_steppe",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_steppe_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_steppe_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_steppe_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_steppe_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:alpine_steppe",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:tundra_moss",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_tundra_moss_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_tundra_moss_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_tundra_moss_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_tundra_moss_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:tundra_moss",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:boreal_litter",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_boreal_litter_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_boreal_litter_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_boreal_litter_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_boreal_litter_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:boreal_litter",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:temperate_litter",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_temperate_litter_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_temperate_litter_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_temperate_litter_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_temperate_litter_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:temperate_litter",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:conifer_litter",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_conifer_litter_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_conifer_litter_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_conifer_litter_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_conifer_litter_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:conifer_litter",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:subtropical_humus",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_subtropical_humus_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_subtropical_humus_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_subtropical_humus_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_subtropical_humus_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:subtropical_humus",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:tropical_moist_humus",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_tropical_moist_humus_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_tropical_moist_humus_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_tropical_moist_humus_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_tropical_moist_humus_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:tropical_moist_humus",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:dry_woodland_litter",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dry_woodland_litter_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dry_woodland_litter_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dry_woodland_litter_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_dry_woodland_litter_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:dry_woodland_litter",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:savanna_red_soil",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_savanna_red_soil_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_savanna_red_soil_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_savanna_red_soil_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_savanna_red_soil_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:savanna_red_soil",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:flood_meadow",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_flood_meadow_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_flood_meadow_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_flood_meadow_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_flood_meadow_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:flood_meadow",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:alluvial_loam",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alluvial_loam_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alluvial_loam_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alluvial_loam_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alluvial_loam_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:alluvial_loam",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:weathered_rock",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_weathered_rock_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_weathered_rock_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_weathered_rock_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_weathered_rock_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:weathered_rock",
+			"passed": true
+		},
+		{
+			"name": "four_independent_originals:alpine_scree",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_scree_01",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_scree_02",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_scree_03",
+			"passed": true
+		},
+		{
+			"name": "immutable_engine_original:tile_surface_alpine_scree_04",
+			"passed": true
+		},
+		{
+			"name": "all_four_sources_used_stably:alpine_scree",
+			"passed": true
+		},
+		{
+			"name": "no_duplicate_original_bytes_counted",
+			"passed": true
+		},
+		{
+			"name": "no_same_original_on_any_of_six_adjacent_cells_across_negative_and_positive_coordinates",
+			"passed": true
+		},
+		{
+			"name": "ecoregions_do_not_claim_historical_forests_or_water",
+			"passed": true
+		},
+		{
+			"name": "authoritative_map_unchanged:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "presentation_scope_only:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "every_applied_material_is_sourced_and_independent_of_occupying_faction:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "authoritative_map_unchanged:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "presentation_scope_only:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "every_applied_material_is_sourced_and_independent_of_occupying_faction:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "authoritative_map_unchanged:hankou",
+			"passed": true
+		},
+		{
+			"name": "presentation_scope_only:hankou",
+			"passed": true
+		},
+		{
+			"name": "every_applied_material_is_sourced_and_independent_of_occupying_faction:hankou",
+			"passed": true
+		},
+		{
+			"name": "authoritative_map_unchanged:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "presentation_scope_only:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "every_applied_material_is_sourced_and_independent_of_occupying_faction:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "authoritative_map_unchanged:jingjin",
+			"passed": true
+		},
+		{
+			"name": "presentation_scope_only:jingjin",
+			"passed": true
+		},
+		{
+			"name": "every_applied_material_is_sourced_and_independent_of_occupying_faction:jingjin",
+			"passed": true
+		},
+		{
+			"name": "authoritative_map_unchanged:ningpu",
+			"passed": true
+		},
+		{
+			"name": "presentation_scope_only:ningpu",
+			"passed": true
+		},
+		{
+			"name": "every_applied_material_is_sourced_and_independent_of_occupying_faction:ningpu",
+			"passed": true
+		},
+		{
+			"name": "all_twenty_types_exist_on_actual_maps",
+			"passed": true
+		},
+		{
+			"name": "potential_forest_does_not_paint_plain_as_fallen_leaves:temperate_litter",
+			"passed": true
+		},
+		{
+			"name": "dated_visual_forest_can_retain_regional_ground:temperate_litter",
+			"passed": true
+		},
+		{
+			"name": "potential_forest_does_not_paint_plain_as_fallen_leaves:conifer_litter",
+			"passed": true
+		},
+		{
+			"name": "dated_visual_forest_can_retain_regional_ground:conifer_litter",
+			"passed": true
+		},
+		{
+			"name": "potential_forest_does_not_paint_plain_as_fallen_leaves:boreal_litter",
+			"passed": true
+		},
+		{
+			"name": "dated_visual_forest_can_retain_regional_ground:boreal_litter",
+			"passed": true
+		},
+		{
+			"name": "potential_forest_does_not_paint_plain_as_fallen_leaves:dry_woodland_litter",
+			"passed": true
+		},
+		{
+			"name": "dated_visual_forest_can_retain_regional_ground:dry_woodland_litter",
+			"passed": true
+		},
+		{
+			"name": "feature_precedence:sea",
+			"passed": true
+		},
+		{
+			"name": "feature_precedence:river",
+			"passed": true
+		},
+		{
+			"name": "feature_precedence:road",
+			"passed": true
+		},
+		{
+			"name": "feature_precedence:city",
+			"passed": true
+		},
+		{
+			"name": "feature_precedence:port",
+			"passed": true
+		},
+		{
+			"name": "feature_precedence:ford",
+			"passed": true
+		},
+		{
+			"name": "visible_material_grain_and_continuous_feathered_coverage",
+			"passed": true
+		},
+		{
+			"name": "political_wash_stays_separate_and_translucent",
+			"passed": true
+		}
+	],
+	"failed": 0,
+	"failures": [],
+	"formal_art_approval": false,
+	"passed": true,
+	"repeated_adjacent_sources": 0
+}

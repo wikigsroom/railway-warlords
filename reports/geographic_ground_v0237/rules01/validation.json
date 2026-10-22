@@ -1,0 +1,104 @@
+{
+	"checks": [
+		{
+			"name": "actual_playable_content_loads",
+			"passed": true
+		},
+		{
+			"name": "runtime_normalized_map_loads_geographic_material_field",
+			"passed": true
+		},
+		{
+			"name": "native_probes_are_bound_to_the_all_node_primary_polygon_audit",
+			"passed": true
+		},
+		{
+			"name": "categorical_ids_use_exact_numeric_r8_without_art_mipmaps",
+			"passed": true
+		},
+		{
+			"name": "native_source_ids_match_audited_primary_polygon_probes_including_unknown_water",
+			"passed": true
+		},
+		{
+			"name": "all_twenty_family_weight_layers_have_declared_dimensions",
+			"passed": true
+		},
+		{
+			"name": "mixing_weights_are_linear_numeric_channels_not_recoloured_art",
+			"passed": true
+		},
+		{
+			"name": "quantized_weight_sums_remain_bounded_and_are_renormalized_by_renderer",
+			"passed": true
+		},
+		{
+			"name": "material_pass_reuses_all_source_islands_coasts_and_existing_lake_holes_exactly",
+			"passed": true
+		},
+		{
+			"name": "geographic_material_pass_has_its_own_exact_mesh_mode",
+			"passed": true
+		},
+		{
+			"name": "local_map_projection_retains_existing_materials",
+			"passed": true
+		},
+		{
+			"name": "misregistered_projection_is_rejected",
+			"passed": true
+		},
+		{
+			"name": "all_movement_terrain_elevations_cities_rivers_ownership_and_gameplay_random_state_stay_unchanged",
+			"passed": true
+		},
+		{
+			"name": "operation_hex_size_is_preserved",
+			"passed": true
+		},
+		{
+			"name": "representative_ground_does_not_claim_historical_landcover",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failures": [],
+	"field": {
+		"active": true,
+		"data_sha256": "50a866840af44c12cd80f5f9cff8099c816f7295a1ac907e0d95757355bd53cd",
+		"dimensions": [
+			1601,
+			901
+		],
+		"gpu_texture_available": false,
+		"gpu_weights_available": false,
+		"historical_landuse_survey": false,
+		"nodes": 1442501,
+		"numeric_lookup_gpu_bytes": 1442501,
+		"operation_hex_radius": 48.0,
+		"payload_sha256": "db215928f89f6141c5163da2b2b20eb41a82d881531c3dec1d3be3cdfdf1f421",
+		"rule_cells_changed": false,
+		"source_id": "resolve_ecoregions_2017_and_archived_map_dem",
+		"source_land_topology_reused": true,
+		"source_pngs_modified": false,
+		"source_year": 2017,
+		"step_degrees": 0.1,
+		"transition_sigma_degrees": 0.25,
+		"transition_width_is_illustrative": true,
+		"trees_or_water_added": false,
+		"weight_dimensions": [
+			801,
+			451
+		],
+		"weight_layers": 20,
+		"weight_lookup_gpu_bytes": 7225020,
+		"weights_payload_sha256": "976f2e681f6cb76ab3efd79005aff13162ca9f54ca47ba58202df8e012bedb14"
+	},
+	"formal_art_approval": false,
+	"maximum_quantized_weight_sum_error": 0.00392161356285214,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"primary_source_probes": 6650,
+	"shipping_exe": false,
+	"source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+}

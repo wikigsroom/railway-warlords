@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "version": "0.2.37",
+  "android_version_code": 42,
+  "channel": "development_review",
+  "official_release": false,
+  "created_at_utc": "2026-10-22T17:55:29.592432+00:00",
+  "controller_sha256": "45858bacb2be33b6620c29f262f7b1205395c53159a86714c51a637b119328d1",
+  "output_path": "E:\\dev\\vibe-game\\世界征服者类\\output\\development\\railway-warlords-0.2.37-preview01",
+  "runtime_source_merkle_sha256": "28c03d7e66796e8917c902a18b2d7551ef22541f2a315b8c7b8ad0d34621eb3f",
+  "runtime_identity_method": "SHA256 of canonical sorted runtime file-name/SHA256 map; complete copy SHA256 plus current code/data and changed-file checks",
+  "content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+  "export_receipt_sha256": "4acd79fdd55f96b739e08dac9e2e5fcaba5f10047e472baa8c08b3e6d5384709",
+  "regression_receipt_sha256": "a007d3b7017e123b8c875c46bd900ae94bbdefbc1ca1df061f0a927d11e62720",
+  "visual_review_sha256": "ab7437b412fce88c6613df962062ed4277fb7ef8e11322cc7a14980f7eeb5d82",
+  "apk_receipt_sha256": "5a9cc03bca994e565d115cba92d9e45114fff03589e1d3046e37745db53338b6",
+  "scope_receipt_sha256": "2d3441a4200c5716efe05fd64ee2ba38a912a8727a6a2cb2df81c3a5700a0e4e",
+  "first_regression_failure_preserved_sha256": "dcc0e03dc48fb4ece6611367e38af7dca085173721bfac1b83af3f1447fb9b32",
+  "isolated_regression_retry_sha256": "d8900730e8b22d8f0afad0c6e5e1b4358760837dd60bcfec73648b9e2a703951",
+  "headless_texture_error_root_cause": "Undetermined; first failure preserved, unchanged-source isolated and resumed-run checks passed",
+  "full_regression_groups": 30,
+  "full_regression_checks": 14585,
+  "exported_whole_viewports_individually_viewed": 21,
+  "exported_complete_source_gpu_checks": 48,
+  "static_desktop_observation_limit": "180 static frames on RTX 3060 while headless regression was active; not a controlled before/after performance test or Android result",
+  "development_component_checks": {
+    "rules": 15,
+    "gpu": 5,
+    "continuity": 48,
+    "control": 37
+  },
+  "development_component_identity": "First decoding/GPU fixtures started on 0.2.36 development source; exact input identities are preserved separately from final EXE acceptance",
+  "geographic_ground_data_sha256": "50a866840af44c12cd80f5f9cff8099c816f7295a1ac907e0d95757355bd53cd",
+  "original_gis_classifications_independently_checked": 1442501,
+  "artifacts": [
+    {
+      "target": "windows",
+      "file": "RailwayWarlords-0.2.37-preview-windows-x64.exe",
+      "bytes": 901672512,
+      "sha256": "c7ba63986e1307e64debf27c26b0431caf65931ae8e4025d873d90fa17f7d28d"
+    },
+    {
+      "target": "android",
+      "file": "RailwayWarlords-0.2.37-preview-android.apk",
+      "bytes": 691242318,
+      "sha256": "b017b5ddd168e4072a2cc44e9aeeb86bcc1319a0338dd4d2287727847086702c"
+    }
+  ],
+  "evidence": {
+    "file": "geographic-ground-verification.zip",
+    "bytes": 100511506,
+    "sha256": "bdd3451e6b9cd629a775946067019d6ba13403001e448fcb2605e414b7e72a02"
+  },
+  "new_raster_art": 0,
+  "new_music_tracks": 0,
+  "existing_raster_png_count": 2521,
+  "future_music_route": "music-gen-remote-YuE2 / remote native Windows RTX 3080 / instrumental",
+  "previous_release_preserved": "output/releases/railway-warlords-0.2.35",
+  "previous_preview_preserved": "output/development/railway-warlords-0.2.36-preview01",
+  "formal_art_approval": false,
+  "physical_android_device_tested": false,
+  "remaining": [
+    "residual hex boundaries in ground-detail and control passes",
+    "repeated terrain symbols and sparse ground details",
+    "crowded labels and formations",
+    "complete unit actions",
+    "historical timeline corrections",
+    "physical Motorola X30 acceptance"
+  ],
+  "committed_source_identity_record": "SOURCE_RECEIPT.json added after source commit/push; runtime Merkle already fixed"
+}

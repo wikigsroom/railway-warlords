@@ -1,0 +1,62 @@
+class_name GeographicGroundField
+extends RefCounted
+
+# Categorical scientific reference data. The GPU samples complete immutable
+# Sub2 originals; no derived artwork, atlas, crop or recoloured PNG is saved.
+const PATH="res://presentation/data/asia_ground_regions.json"
+const DATA_SHA256="50cffaf17594e91233d7171a4e22cf47039de9c211221f37be50d88ca1934954"
+const UV_MARKER=8192.0
+var mesh: ArrayMesh
+var image: Image
+var texture: ImageTexture
+var dimensions=Vector2i.ZERO
+var diagnostics: Dictionary={"active":false}
+
+func build(map: Dictionary, source_land: ArrayMesh) -> void:
+	mesh=null;image=null;texture=null;dimensions=Vector2i.ZERO;diagnostics={"active":false}
+	if str(map.get("id",""))!="asia_strategic" or source_land==null or not FileAccess.file_exists(PATH):return
+	if map.get("projection","")!="equirectangular_lonlat_hex_axial" or FileAccess.get_sha256(PATH)!=DATA_SHA256:return
+	var data=JSON.parse_string(FileAccess.get_file_as_string(PATH))
+	if not data is Dictionary or data.get("format",0)!=1 or data.get("map_id","")!="asia_strategic":return
+	for i in range(4):
+		if not is_equal_approx(float(data.geographic_bounds[i]),float(map.geographic_bounds[i])):return
+	var families=GroundMaterialBlend.source_layers().keys()
+	if families!=data.family_names:return
+	dimensions=Vector2i(data.dimensions[0],data.dimensions[1])
+	if dimensions!=Vector2i(1601,901) or not is_equal_approx(float(data.step_degrees),.1):return
+	var bytes=Marshalls.base64_to_raw(data.data_base64).decompress(int(data.uncompressed_bytes),FileAccess.COMPRESSION_GZIP)
+	if bytes.size()!=dimensions.x*dimensions.y:return
+	var context=HashingContext.new();context.start(HashingContext.HASH_SHA256);context.update(bytes)
+	if context.finish().hex_encode()!=data.payload_sha256:
+		push_error("Geographic material lookup checksum mismatch");return
+	for value in bytes:
+		if value>families.size():push_error("Invalid geographic material family");return
+	image=Image.create_from_data(dimensions.x,dimensions.y,false,Image.FORMAT_R8,bytes)
+	if DisplayServer.get_name()!="headless":texture=ImageTexture.create_from_image(image)
+	mesh=ArrayMesh.new()
+	for surface in range(source_land.get_surface_count()):
+		var arrays=source_land.surface_get_arrays(surface)
+		var points: PackedVector3Array=arrays[Mesh.ARRAY_VERTEX]
+		var uvs=PackedVector2Array();uvs.resize(points.size());uvs.fill(Vector2(0,UV_MARKER))
+		var colors=PackedColorArray();colors.resize(points.size());colors.fill(Color.WHITE)
+		arrays[Mesh.ARRAY_TEX_UV]=uvs;arrays[Mesh.ARRAY_COLOR]=colors
+		mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
+	diagnostics={"active":true,"data_sha256":FileAccess.get_sha256(PATH),"payload_sha256":data.payload_sha256,
+		"dimensions":[dimensions.x,dimensions.y],"step_degrees":data.step_degrees,"nodes":dimensions.x*dimensions.y,
+		"source_year":2017,"source_id":data.source_id,"source_land_topology_reused":true,
+		"historical_landuse_survey":false,"trees_or_water_added":false,"rule_cells_changed":false,
+		"numeric_lookup_gpu_bytes":bytes.size(),"source_pngs_modified":false,"operation_hex_radius":HexGrid.RADIUS}
+
+func bind_to(material: ShaderMaterial) -> void:
+	if material==null:return
+	material.set_shader_parameter("geographic_ground_enabled",texture!=null and mesh!=null)
+	if texture==null:return
+	material.set_shader_parameter("geographic_ground_regions",texture)
+	material.set_shader_parameter("geographic_ground_dimensions",Vector2(dimensions))
+	material.set_shader_parameter("geographic_rock_layer",GroundMaterialBlend.source_layers().get("weathered_rock",0))
+	material.set_shader_parameter("geographic_scree_layer",GroundMaterialBlend.source_layers().get("alpine_scree",0))
+
+func facts() -> Dictionary:
+	var result=diagnostics.duplicate(true)
+	result["gpu_texture_available"]=texture!=null
+	return result

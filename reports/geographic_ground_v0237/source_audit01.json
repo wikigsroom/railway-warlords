@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-22T15:51:18.303177+00:00",
+  "controller_sha256": "e482cca70e6893fbe96ab54f8949e3adad29aabe7913496e31889ea34389b610",
+  "source_data_sha256": "50cffaf17594e91233d7171a4e22cf47039de9c211221f37be50d88ca1934954",
+  "source_files_sha256": {
+    ".shp": "d564235263d7a2f118cbb4fcb6e7593ef5f8c2f3600604d46047aa2712a83574",
+    ".shx": "140342bc19d04a6f1ee11d1099a6c115f8c076f1396c6f2a5a55182471ff4c42",
+    ".dbf": "036987c540eef2dfd6e8a0678f3b85193649b3f63f545463dfcb2fed4f973ab5",
+    ".prj": "db2f4b2a30c81a88981162acd3ff4629b86350834194efed1a6650446ccaecf4"
+  },
+  "nodes_audited": 1442501,
+  "wrong_ecological_ids": 0,
+  "wrong_material_families": 0,
+  "boundary_ties": 2,
+  "compiler_wkb_cache_used": false,
+  "raw_source_polygon_reader_used": true,
+  "classifier_function_shared_with_existing_registry": true,
+  "native_probes": 6650,
+  "probes_sha256": "9e98ff9ac613c4724bfa3b4d1f0a75b976679586349200121276a3a8f8fd855e",
+  "historical_forest_floor_withheld": true,
+  "no_unreferenced_polygon_gap_fill": true,
+  "historical_landuse_survey": false,
+  "art_approval": false,
+  "elapsed_seconds": 403.58
+}

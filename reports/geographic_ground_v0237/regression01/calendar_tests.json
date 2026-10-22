@@ -1,0 +1,362 @@
+{
+	"build_version": "0.2.37",
+	"checks": [
+		{
+			"name": "native_content_loaded",
+			"passed": true
+		},
+		{
+			"name": "one_complete_round_is_one_day",
+			"passed": true
+		},
+		{
+			"name": "registered_conquest_default_matches_daily_calendar",
+			"passed": true
+		},
+		{
+			"name": "registered_campaign_default_matches_daily_calendar",
+			"passed": true
+		},
+		{
+			"name": "definition_calendar_matches_daily_rule:conq_1920",
+			"passed": true
+		},
+		{
+			"name": "definition_calendar_matches_daily_rule:conq_1922",
+			"passed": true
+		},
+		{
+			"name": "definition_calendar_matches_daily_rule:conq_1924",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1920_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1920_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1920_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1920_04",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1920_05",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1920_06",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1922_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1922_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1922_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1922_04",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1922_05",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1922_06",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1924_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1924_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1924_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1924_04",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1924_05",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1924_06",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:conq_1920",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:conq_1922",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:conq_1924",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_04",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_05",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_06",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_07",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_08",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_09",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_10",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_11",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:legion_12",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:asia_1840",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:asia_1860",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:asia_1890",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:asia_1900",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:asia_1917",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:asia_1927",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:asia_1940",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1840_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1840_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1840_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1860_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1860_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1860_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1890_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1890_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1890_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1900_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1900_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1900_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1917_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1917_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1917_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1927_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1927_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1927_03",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1940_01",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1940_02",
+			"passed": true
+		},
+		{
+			"name": "daily_calendar_is_authored:campaign_1940_03",
+			"passed": true
+		},
+		{
+			"name": "one_faction_phase_does_not_consume_a_whole_day",
+			"passed": true
+		},
+		{
+			"name": "all_factions_complete_exactly_one_calendar_day",
+			"passed": true
+		},
+		{
+			"name": "gregorian_boundary:1840-01-31",
+			"passed": true
+		},
+		{
+			"name": "gregorian_boundary:1860-12-31",
+			"passed": true
+		},
+		{
+			"name": "gregorian_boundary:1900-02-28",
+			"passed": true
+		},
+		{
+			"name": "gregorian_boundary:1920-02-28",
+			"passed": true
+		},
+		{
+			"name": "gregorian_boundary:1920-02-29",
+			"passed": true
+		},
+		{
+			"name": "gregorian_boundary:2000-02-28",
+			"passed": true
+		},
+		{
+			"name": "skipping_eliminated_factions_does_not_add_extra_days",
+			"passed": true
+		},
+		{
+			"name": "three_day_weather_forecast_crosses_leap_day",
+			"passed": true
+		},
+		{
+			"name": "old_round_hint_cannot_fire_a_dated_event_early",
+			"passed": true
+		},
+		{
+			"name": "historical_date_can_fire_before_an_obsolete_round_hint",
+			"passed": true
+		},
+		{
+			"name": "overdue_dated_event_is_evaluated_on_next_round_start",
+			"passed": true
+		},
+		{
+			"name": "undated_training_triggers_keep_their_round_semantics",
+			"passed": true
+		},
+		{
+			"name": "runtime_does_not_fire_before_the_historical_date",
+			"passed": true
+		},
+		{
+			"name": "daily_wrap_fires_the_dated_event",
+			"passed": true
+		},
+		{
+			"name": "already_fired_event_is_not_processed_twice",
+			"passed": true
+		},
+		{
+			"name": "daily_date_and_trigger_state_saved:",
+			"passed": true
+		},
+		{
+			"name": "saved_calendar_and_fired_events_restore_without_skipping_days",
+			"passed": true
+		},
+		{
+			"name": "loaded_match_continues_the_next_day",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"daily_scenarios": 61,
+	"days_per_round": 1,
+	"failures": [],
+	"passed": true
+}

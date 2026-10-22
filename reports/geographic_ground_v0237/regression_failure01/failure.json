@@ -1,0 +1,50 @@
+{
+  "passed": false,
+  "status": "22 assertions passed; engine dummy texture initialization error after report output; full regression stopped",
+  "observed_at_utc": "2026-10-22T17:14:01.173931+00:00",
+  "runtime_source_merkle_sha256": "28c03d7e66796e8917c902a18b2d7551ef22541f2a315b8c7b8ad0d34621eb3f",
+  "files": [
+    {
+      "source": "reports/historical_places_test_v0237.log",
+      "archive": "historical_places_test_v0237.log",
+      "sha256": "f549170c0709323ccdc2309f8b18543c75912cf3c7f5f410f30bd62438ab7d97"
+    },
+    {
+      "source": "reports/historical_places_tests.json",
+      "archive": "historical_places_tests.json",
+      "sha256": "d5c8a23313a89e0a3a9aa1b587f5898933ebe5629761d230d3e6bf67c44f6f46"
+    },
+    {
+      "source": "tests/historical_places_test.gd",
+      "archive": "historical_places_test.gd.txt",
+      "sha256": "2e79354ada9215bd2675a1c8c38ed4ad834b51e4b3ea7c17dabc8f3b4c87db96"
+    },
+    {
+      "source": "presentation/asset_library.gd",
+      "archive": "asset_library.gd.txt",
+      "sha256": "ffe4f9db7ecc1be158624e236055e46dcd2b48f1bc1974808b85ff3de6389d02"
+    },
+    {
+      "source": "tools/run_validation.py",
+      "archive": "run_validation.py",
+      "sha256": "694adb2cda1d4407040f0e5e2886cdf048acca4f87f0e0c4da1971cabaddf206"
+    }
+  ],
+  "later_retry_does_not_erase_this_failure": true,
+  "archive_name_correction": {
+    "reason": "Keep archived class_name scripts outside the Godot script discovery namespace; original source bytes and the first index are preserved",
+    "moves": [
+      {
+        "old": "historical_places_test.gd",
+        "new": "historical_places_test.gd.txt",
+        "sha256": "2e79354ada9215bd2675a1c8c38ed4ad834b51e4b3ea7c17dabc8f3b4c87db96"
+      },
+      {
+        "old": "asset_library.gd",
+        "new": "asset_library.gd.txt",
+        "sha256": "ffe4f9db7ecc1be158624e236055e46dcd2b48f1bc1974808b85ff3de6389d02"
+      }
+    ],
+    "initial_index": "failure_initial.json"
+  }
+}

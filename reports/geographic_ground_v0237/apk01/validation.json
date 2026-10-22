@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "version": "0.2.37",
+  "android_version_code": 42,
+  "completed_at_utc": "2026-10-22T17:08:30.403452+00:00",
+  "controller_sha256": "d2dc849c7f08c98bb9eeea8838902dddd82d367d30153fb5aa00e0d780011a25",
+  "native_controller_sha256": "f2eb37c2f3b859b94ea4e879c5792e26593cd05f0cb661e39d2c4ce0dde6b33a",
+  "command": [
+    "C:\\Python313\\python.exe",
+    "E:\\dev\\vibe-game\\\u4e16\u754c\u5f81\u670d\u8005\u7c7b\\game\\railway_warlords_review_0237\\tools\\verify_exports.py",
+    "--android-only"
+  ],
+  "native_exit_code": 0,
+  "native_process_id": 24136,
+  "elapsed_seconds": 605.1,
+  "export_receipt_sha256": "4acd79fdd55f96b739e08dac9e2e5fcaba5f10047e472baa8c08b3e6d5384709",
+  "artifact_sha256": "b017b5ddd168e4072a2cc44e9aeeb86bcc1319a0338dd4d2287727847086702c",
+  "runtime_source_merkle_sha256": "28c03d7e66796e8917c902a18b2d7551ef22541f2a315b8c7b8ad0d34621eb3f",
+  "payload_source_and_notice_files": 147,
+  "whole_original_texture_imports": 2521,
+  "existing_music_imports": 3,
+  "signature_v2_and_v3_verified": true,
+  "android_abis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "minimum_api": 24,
+  "target_api": 36,
+  "requested_permissions": 0,
+  "file_sha256": {
+    "apk_content_validation.json": "cde4701c8555cb3176fbb7b96aa0ce5ad4a05895f61f75201c4a9cef8ccc7b65",
+    "apk_signature.log": "4138aca1ed2fb40f0b56309a500bc5f26b49b4187ed21a3accaa549f6fefd4eb",
+    "apk_badging.log": "7086ed9562f1c4d8260c8c3b991aa67a454f151f5bc04585f796beb25497aae3",
+    "apk_permissions.log": "436dddb155419992e5ba72cb5ad1355af535afe381eae3bc1fc49603445d87dd",
+    "android_devices.log": "9de358663219c919aa87a6d917d17c72b36cc1314b74e42bfe13057eaf5a82e3"
+  },
+  "physical_android_device_tested": false,
+  "virtualization_used": false,
+  "formal_art_approval": false
+}

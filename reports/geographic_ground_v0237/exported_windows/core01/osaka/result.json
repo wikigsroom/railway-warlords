@@ -1,0 +1,77 @@
+{
+  "id": "osaka",
+  "passed": true,
+  "process_id": 24068,
+  "exit_code": 0,
+  "elapsed_seconds": 66.18,
+  "log_sha256": "13051559e9b00807612bafb27d8d50d36b12f01528f239b74b498882cc31b4aa",
+  "resolution": "1920x1080",
+  "geographic_field": {
+    "active": true,
+    "clipped_to_source_land_and_existing_water_holes": true,
+    "data_sha256": "4f6b4ba758715300e1793b22a28b2d41f1849f8bd618efbf518e5cfc680d7e3d",
+    "depends_on_three_land_hexes": false,
+    "dimensions": [
+      3201,
+      1801
+    ],
+    "exact_summit_heights_claimed": false,
+    "gpu_encoding": "RG8_signed_metres_biased_by_32768_before_linear_interpolation",
+    "gpu_lookup_bytes": 11530002,
+    "gpu_texture_available": true,
+    "historical_landcover_claimed": false,
+    "land_topology_reused": true,
+    "land_triangles": 81193,
+    "land_vertices": 105401,
+    "nodata_samples": 0,
+    "node_samples": 5765001,
+    "payload_sha256": "6c4afb7f385fac3e6ec63caa9f9170ab3d717d2631eb5bcdd7f42c075b32d333",
+    "preparation_ms": 1142.381,
+    "raster_art_generated": false,
+    "rules_map_mutated": false,
+    "shader_active": true,
+    "source_id": "Tilezen_TerrainTiles_geotiff",
+    "source_projected_pixel_size_m": [
+      4891.96981025128,
+      4891.96981025129
+    ],
+    "source_rounding_error_m": 0.5,
+    "source_zoom": 4.0,
+    "step_degrees": 0.05
+  },
+  "geographic_material_field": {
+    "active": true,
+    "data_sha256": "50a866840af44c12cd80f5f9cff8099c816f7295a1ac907e0d95757355bd53cd",
+    "dimensions": [
+      1601,
+      901
+    ],
+    "gpu_texture_available": true,
+    "gpu_weights_available": true,
+    "historical_landuse_survey": false,
+    "nodes": 1442501,
+    "numeric_lookup_gpu_bytes": 1442501,
+    "operation_hex_radius": 48.0,
+    "payload_sha256": "db215928f89f6141c5163da2b2b20eb41a82d881531c3dec1d3be3cdfdf1f421",
+    "rule_cells_changed": false,
+    "shader_active": true,
+    "source_id": "resolve_ecoregions_2017_and_archived_map_dem",
+    "source_land_topology_reused": true,
+    "source_pngs_modified": false,
+    "source_year": 2017,
+    "step_degrees": 0.1,
+    "transition_sigma_degrees": 0.25,
+    "transition_width_is_illustrative": true,
+    "trees_or_water_added": false,
+    "weight_dimensions": [
+      801,
+      451
+    ],
+    "weight_layers": 20,
+    "weight_lookup_gpu_bytes": 7225020,
+    "weights_payload_sha256": "976f2e681f6cb76ab3efd79005aff13162ca9f54ca47ba58202df8e012bedb14"
+  },
+  "viewport_sha256": "d368ca30ce3ab8d595bec090c4773e72073ded10a8db6ed27534d86a42f5cf29",
+  "metadata_sha256": "cbfce945b40b436ca62c0df4b5f97799ecee54aee8027f892b73cbc802512c25",
+  "mobile_layout_profile": false
+}

@@ -1,0 +1,162 @@
+"""Check new preview docs/media; retain explicitly identified immutable proofs.
+
+No original PNG or legacy GIF is reread here. The complete copy seal, unchanged
+Git state/metadata and previous successful full documentation audit are required.
+New viewports, prompts, changed text and current non-art runtime inputs are fresh.
+"""
+from datetime import datetime, timezone
+from functools import lru_cache
+from pathlib import Path
+import hashlib
+import json
+import re
+import subprocess
+
+from verify_repository import PUBLIC_DOCS
+
+P = Path(__file__).resolve().parents[1]
+R = P / 'reports/geographic_ground_v0237'
+BASE = '1ce5f399ae7f8d5f6176c8b6f2ce6138bef4b93b'
+
+
+@lru_cache(maxsize=None)
+def sha(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def read(path):
+    return json.loads(Path(path).read_bytes())
+
+
+def paths_from_git(*args):
+    return {name.decode('utf-8') for name in subprocess.check_output(
+        ['git', args[0], '-z', *args[1:]], cwd=P).split(b'\0') if name}
+
+
+def main():
+    output = R / 'documentation_preview01.json'
+    if output.exists():
+        raise FileExistsError(output)
+    old_path = P / 'reports/geographic_relief_v0236/documentation_preview01.json'
+    old = read(old_path)
+    prior = read(P.parents[1] / 'output/development/railway-warlords-0.2.36-preview01/SOURCE_RECEIPT.json')
+    assert old['passed'] and old['version'] == '0.2.36'
+    assert prior['source_commit'] == BASE
+    assert sha(old_path) == prior['validation_receipts']['documentation_preview01.json']['sha256']
+    seal_path = R / 'preview_stage01.json'
+    seal = read(seal_path)
+    export = read(R / 'preview_export01.json')
+    package = read(R / 'package01.json')
+    scope = read(R / 'final_scope01.json')
+    assert seal['passed'] and export['passed'] and package['passed'] and scope['passed']
+    assert export['stage_copy_receipt_sha256'] == sha(seal_path)
+    assert package['scope_receipt_sha256'] == sha(R / 'final_scope01.json')
+    assert package['export_receipt_sha256'] == sha(R / 'preview_export01.json')
+    created = datetime.fromisoformat(seal['created_at_utc']).timestamp()
+    changed = paths_from_git('diff', '--name-only', BASE)
+    candidates = paths_from_git('ls-files', '--cached', '--others', '--exclude-standard')
+    protected = ('assets/', 'docs/asset-provenance/', 'docs/asset-prompts/', 'docs/media/')
+    assert not any(name.startswith(protected) for name in changed)
+    assert not paths_from_git('ls-files', '--others', '--exclude-standard', '--', *protected)
+    links = 0
+    for name in PUBLIC_DOCS:
+        file = P / name
+        for link in re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', file.read_text(encoding='utf-8')):
+            if link.startswith(('https:', 'http:', 'mailto:')):
+                continue
+            target_name, _, anchor = link.strip('<>').partition('#')
+            target = (file.parent / target_name).resolve() if target_name else file
+            assert target.exists(), (name, link)
+            if target.is_file():
+                assert target.relative_to(P).as_posix() in candidates, (name, link)
+            if anchor and target.suffix == '.md':
+                assert f'id="{anchor}"' in target.read_text(encoding='utf-8'), (name, link)
+            links += 1
+    originals = read(P / 'assets/manifest.json')['assets']
+    provenance = read(P / 'docs/asset-provenance/index.json')['assets']
+    indexed = {row['id']: row for row in originals}
+    assert len(indexed) == len(provenance) == 2521
+    prompts = 0
+    for row in provenance:
+        original = indexed[row['id']]
+        engine_name = original['engine_path'].removeprefix('res://')
+        assert seal['file_sha256'][engine_name] == original['source_sha256'] == row['image_sha256']
+        assert export['runtime_file_sha256'][engine_name] == row['image_sha256']
+        assert (P / engine_name).stat().st_mtime <= created
+        assert (P / row['image']).stat().st_mtime <= created
+        assert row['image'] not in changed
+        assert sha(P / row['prompt']) == row['prompt_sha256']
+        prompts += 1
+    media_path = P / 'docs/media/manifest.json'
+    old_media = subprocess.check_output(['git', 'show', BASE + ':docs/media/manifest.json'], cwd=P)
+    assert hashlib.sha256(old_media).hexdigest() == sha(media_path)
+    media = read(media_path)
+    legacy_inputs = set()
+    for row in media['screenshots']:
+        legacy_inputs.update([row['file'], row['native_source']])
+        if row.get('metadata'):
+            legacy_inputs.add(row['metadata'])
+    for row in media['animations']:
+        legacy_inputs.update([row['file'], row['source']])
+    for name in legacy_inputs:
+        assert name not in changed and (P / name).stat().st_mtime <= created, name
+    viewed = read(R / 'visual_review01.json')
+    assert viewed['passed'] and len(viewed['exported_application_images']) == 21
+    for row in viewed['exported_application_images']:
+        file = P / row['file']
+        assert row['actually_viewed'] and sha(file) == row['sha256']
+        metadata = read(file.with_suffix('.json'))
+        assert metadata['build_version'] == '0.2.37' and metadata['raw_godot_capture']
+        assert not row['formal_art_approval'] and not row['physical_android_device_tested']
+    fresh_runtime = 0
+    retained_art_inputs = 0
+    for name, expected in export['runtime_file_sha256'].items():
+        file = P / name
+        if name.startswith('assets/'):
+            assert file.stat().st_mtime <= created and name not in changed
+            assert seal['file_sha256'][name] == expected
+            retained_art_inputs += 1
+        else:
+            assert sha(file) == expected, name
+            fresh_runtime += 1
+    patterns = [re.compile(r'-----BEGIN (?:OPENSSH |RSA |EC )?PRIVATE KEY-----'),
+                re.compile(r'\b(?:sk-proj-|sk-ant-|gh[pousr]_|github_pat_)[A-Za-z0-9_-]{18,}'),
+                re.compile(r'''(?i)(?:api_key|apiKey|token|password|secret)\s*[:=]\s*["'][^"'\n]{16,}["']''')]
+    additions = {name for name in candidates if name.startswith('tools/verify_ground_preview_docs')}
+    scanned = 0
+    for name in changed | additions:
+        file = P / name
+        assert file.stat().st_size < 100 * 1024 * 1024, name
+        assert not any(part in {'.godot', 'build', '__pycache__', '.toolchain', 'signing'} for part in file.relative_to(P).parts)
+        if file.suffix.lower() in {'.py', '.gd', '.json', '.txt', '.cfg', '.md', '.toml', '.yml', '.yaml', '.tscn', '.import', '.csv'}:
+            text = file.read_text(encoding='utf-8', errors='replace')
+            assert not any(pattern.search(text) for pattern in patterns), name
+            scanned += 1
+    stopped = R / 'documentation_full_attempt01/stopped.json'
+    assert read(stopped)['passed'] is False
+    result = dict(passed=True, version='0.2.37', completed_at_utc=datetime.now(timezone.utc).isoformat(),
+                  controller_sha256=sha(Path(__file__)),
+                  scope='New documentation links, fresh prompts/new media/non-art runtime; explicitly reused sealed original and legacy-media proofs',
+                  public_documents=len(PUBLIC_DOCS), local_links_checked=links,
+                  original_images_reused_from_complete_copy_sha256=2521,
+                  original_image_bytes_freshly_rehashed_by_this_controller=0,
+                  prompt_files_freshly_hashed=prompts,
+                  prior_full_documentation_receipt_sha256=sha(old_path), prior_source_commit=BASE,
+                  copy_seal_sha256=sha(seal_path), scope_receipt_sha256=sha(R / 'final_scope01.json'),
+                  legacy_media_manifest_freshly_hashed=True, legacy_media_inputs_retained=len(legacy_inputs),
+                  legacy_png_and_gif_playback_checks='Retained from prior successful full audit; unchanged Git state and pre-seal metadata required; not re-decoded',
+                  new_whole_native_viewports_freshly_hashed=21,
+                  current_non_art_runtime_inputs_freshly_hashed=fresh_runtime,
+                  retained_sealed_art_inputs=retained_art_inputs,
+                  runtime_source_merkle_sha256=export['runtime_source_merkle_sha256'],
+                  changed_text_files_scanned_for_credentials=scanned,
+                  stopped_redundant_attempt_sha256=sha(stopped),
+                  full_native_release_gates_checked=False,
+                  formal_art_approval=False, physical_android_device_tested=False)
+    with output.open('x', encoding='utf-8') as stream:
+        json.dump(result, stream, indent=2); stream.write('\n')
+    print(json.dumps(result), flush=True)
+
+
+if __name__ == '__main__':
+    main()

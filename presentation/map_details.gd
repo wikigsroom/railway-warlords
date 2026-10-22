@@ -90,7 +90,7 @@ func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array
 			var pine=source_kind.contains("pine") if not source_kind.is_empty() else seed%3!=0
 			family=("pine" if pine else "deciduous")+("_sparse" if sparse else "_dense")
 			if int(profile.boundary_edges)>=4 and source_kind.is_empty():family="forest_edge"
-			bounds=Vector2(104,94) if sparse else Vector2(122,112);min_zoom=.28
+			bounds=Vector2(80,72) if sparse else Vector2(94,86);min_zoom=.28
 		elif kind=="wetland":family="wetland_reeds";bounds=Vector2(82,58)
 		else:
 			if seed%11!=0:continue

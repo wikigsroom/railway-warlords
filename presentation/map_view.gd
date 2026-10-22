@@ -362,6 +362,7 @@ func prepare_geography() -> void:
 	else:
 		relief.build(state.map,land_shapes,river_lines,detail_river_lines.map(func(row):return row.points))
 		relief.geographic_field.build(state.map,land_surface)
+		relief.ground_field.build(state.map,land_surface)
 		map_details.build(state.map,presentation_cells,relief,coast_lines,river_lines+detail_river_lines.map(func(row):return row.points))
 	places.prepare(state.map,state.date)
 	prepare_place_sprites()
@@ -690,7 +691,9 @@ func terrain_surface_capture_facts(view: Rect2) -> Dictionary:
 
 func continuous_ground_facts() -> Dictionary:
 	var renderer=backdrop_view if is_instance_valid(backdrop_view) and not static_only else self
-	return {"active":renderer.material!=null,"source_layers":GroundMaterialBlend.source_layers().size(),"whole_original_dimensions":[1254,1254],"macro_coverage":"nonoverlapping_hex_partition_with_three_source_blending","source_sampling":"world_anchored_three_translations_with_explicit_mip_gradients","sampling_world_units":MapTerrainSurfaces.macro_data().get("world_repeat_period",0),"sampling_world_units_by_layer":GroundMaterialBlend.source_periods(),"source_layer_indices":GroundMaterialBlend.source_layers(),"fixed_wallpaper_period":false,"grounded_scenery_draws":renderer.grounded_scenery_draw_count,"source_ground_coverage":MapGroundCoverage.diagnostics(map_details.source_ground_coverage),"ground_material_policy":map_details.ground_policy,"source_images_modified":false,"city_influence_fill_draws":renderer.city_control_fill_draw_count,"field_fill_batches":renderer.territory_field_fill_draw_count}
+	var field_facts=relief.ground_field.facts()
+	field_facts["shader_active"]=renderer.material!=null and renderer.material.get_shader_parameter("geographic_ground_enabled")==true
+	return {"geographic_material_field":field_facts,"active":renderer.material!=null,"source_layers":GroundMaterialBlend.source_layers().size(),"whole_original_dimensions":[1254,1254],"macro_coverage":"nonoverlapping_hex_partition_with_three_source_blending","source_sampling":"world_anchored_three_translations_with_explicit_mip_gradients","sampling_world_units":MapTerrainSurfaces.macro_data().get("world_repeat_period",0),"sampling_world_units_by_layer":GroundMaterialBlend.source_periods(),"source_layer_indices":GroundMaterialBlend.source_layers(),"fixed_wallpaper_period":false,"grounded_scenery_draws":renderer.grounded_scenery_draw_count,"source_ground_coverage":MapGroundCoverage.diagnostics(map_details.source_ground_coverage),"ground_material_policy":map_details.ground_policy,"source_images_modified":false,"city_influence_fill_draws":renderer.city_control_fill_draw_count,"field_fill_batches":renderer.territory_field_fill_draw_count}
 
 func place_at_screen(screen: Vector2) -> String:
 	if not show_places or not selected_unit_id.is_empty():return ""
@@ -1686,6 +1689,8 @@ func draw_cell_surface_variants(view: Rect2) -> void:
 		var ground=map_details.ground_material(strategic) if MapArtBank.available() else null
 		relief.shade_field.bind_to(ground,continuous_relief_enabled)
 		relief.geographic_field.bind_to(ground,continuous_relief_enabled);material=ground
+		relief.ground_field.bind_to(ground)
+		if ground!=null and relief.ground_field.texture!=null:draw_mesh(relief.ground_field.mesh,null)
 		return
 	if MapArtBank.available():
 		var ground=map_details.ground_material(strategic)
@@ -1707,13 +1712,19 @@ func draw_cell_surface_variants(view: Rect2) -> void:
 			var chunks=map_details.continuous_macro_meshes(view);macro_count=chunks.count
 			ground_material_batches.append_array(chunks.batches)
 		ground_material_batches.append_array(batches.batches)
+		relief.ground_field.bind_to(ground)
+		var geographic_ground_drawn=false
 		for batch in ground_material_batches:
+			if batch.layer=="detail" and not geographic_ground_drawn:
+				if relief.ground_field.texture!=null and ground!=null:draw_mesh(relief.ground_field.mesh,null)
+				geographic_ground_drawn=true
 			if batch.get("continuous",false):draw_mesh(batch.mesh,null)
 			else:
 				var source_texture=assets.texture("tile",batch.asset_id)
 				if source_texture!=null:
 					batch["texture"]=source_texture
 					draw_mesh(batch.mesh,source_texture)
+		if not geographic_ground_drawn and relief.ground_field.texture!=null and ground!=null:draw_mesh(relief.ground_field.mesh,null)
 		terrain_surface_variant_draw_count=maxi(batches.count,macro_count)
 		return
 	var texture=assets.texture("tile","tile_plain_02")
