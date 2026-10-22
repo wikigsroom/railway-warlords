@@ -361,6 +361,7 @@ func prepare_geography() -> void:
 		map_details=MapDetails.new()
 	else:
 		relief.build(state.map,land_shapes,river_lines,detail_river_lines.map(func(row):return row.points))
+		relief.geographic_field.build(state.map,land_surface)
 		map_details.build(state.map,presentation_cells,relief,coast_lines,river_lines+detail_river_lines.map(func(row):return row.points))
 	places.prepare(state.map,state.date)
 	prepare_place_sprites()
@@ -646,6 +647,8 @@ func map_bank_capture_facts() -> Dictionary:
 	var subtype_facts=terrain_surface_capture_facts(view)
 	var lighting=relief.shade_field.facts()
 	lighting["shader_active"]=water_renderer.material!=null and bool(water_renderer.material.get_shader_parameter("relief_enabled"))
+	lighting["geographic_field"]=relief.geographic_field.facts()
+	lighting.geographic_field["shader_active"]=water_renderer.material!=null and bool(water_renderer.material.get_shader_parameter("geographic_relief_enabled"))
 	subtype_facts["relief_lighting"]=lighting
 	return {"active":true,"catalog_additional_sources":MapArtBank.data().records.size(),"catalog_map_assets":MapArtBank.data().total_map_assets,"terrain_surface_extension":subtype_facts,"map_symbols":map_symbol_capture_facts(),"current_total_map_assets":int(MapArtBank.data().total_map_assets)+int(subtype_facts.independent_originals)+int(subtype_facts.macro_originals)+MapWaterMaterials.IDS.size(),"camera":[camera.x,camera.y],"zoom":zoom,"scenery_instances_intersecting_view":scenery.size(),"distinct_scenery_originals_intersecting_view":uses.size(),"source_use_counts":uses,"families":families,"same_source_pairs_under_250_world_units":nearby_pairs,"nearest_repeated_source_distance_world":nearest if is_finite(nearest) else null,"settlement_sources":buildings,"surface_material_families_in_view":materials,"distinct_surface_originals_in_view":material_ids.size(),"surface_geography":surface_region_diagnostics,"hydrography":hydro_facts,"source_images_modified":false,"measurement_scope":"Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score."}
 
@@ -1500,7 +1503,10 @@ func draw_landscape(view: Rect2) -> void:
 	if show_control:draw_territory_field(view)
 	if show_terrain:draw_cell_terrain_tiles(view)
 	if show_control:draw_control_zones(view)
-	if show_terrain and relief.mesh!=null:draw_mesh(relief.mesh,null)
+	if show_terrain:
+		if continuous_relief_enabled and relief.geographic_field.texture!=null and relief.geographic_field.mesh!=null and material!=null:
+			draw_mesh(relief.geographic_field.mesh,null)
+		elif relief.mesh!=null:draw_mesh(relief.mesh,null)
 	if show_terrain and zoom>.12:
 		for contour_batch in relief.contour_lines.batches(view,zoom):draw_mesh(contour_batch.mesh,null)
 	if show_terrain:
@@ -1573,12 +1579,17 @@ func prepare_territory_field() -> void:
 		var radius=maxf(3.0,float(city.get("control_radius_hex",4)))
 		sources.append({"hex":position,"world":HexGrid.to_world(position),"owner":owner,"radius":radius,"id":str(city.get("id",""))})
 	if sources.is_empty():return
-	var meshes: Dictionary={};var assigned=0;var skipped=0
+	var coastal=MapCoastalControl.for_map(state.map)
+	var field_pieces: Dictionary=clipped.field_clips.duplicate(false)
+	field_pieces.merge(coastal.get("field_clips",{}))
+	var meshes: Dictionary={};var assigned=0;var skipped=0;var coastal_assigned=0
 	for cell in state.map.cells:
-		if not cell.get("render_land_covered",false):continue
 		var terrain=str(cell.get("natural_terrain_id",cell.get("terrain_id","")))
-		if terrain=="sea":continue
 		var hex=HexGrid.coordinate(cell.position);var nearest={};var nearest_score=INF
+		var ordinary=cell.get("render_land_covered",false) and terrain!="sea"
+		# A sea-centred operation hex can contain real coastline or a small
+		# island. Colour only its archived land intersection, leaving rules sea.
+		if not ordinary and not coastal.get("field_clips",{}).has(HexGrid.key(hex)):continue
 		for source in sources:
 			var distance=float(HexGrid.distance(hex,source.hex))
 			# Capital and provincial centres project farther than a village, while
@@ -1590,9 +1601,10 @@ func prepare_territory_field() -> void:
 			if score<nearest_score or (is_equal_approx(score,nearest_score) and source.id<str(nearest.get("id",""))):
 				nearest_score=score;nearest=source
 		if nearest.is_empty():skipped+=1;continue
-		var piece: Dictionary=clipped.field_clips.get(HexGrid.key(hex),{})
+		var piece: Dictionary=field_pieces.get(HexGrid.key(hex),{})
 		if not piece.is_empty() and MapControlLandClip.vertices(piece).is_empty():continue
 		var owner=str(nearest.owner);territory_field_cells[hex]=owner;assigned+=1
+		if not ordinary:coastal_assigned+=1
 		if not meshes.has(owner):meshes[owner]={"vertices":PackedVector3Array(),"cells":0}
 		var vertices: PackedVector3Array=meshes[owner].vertices
 		if piece.is_empty():
@@ -1616,13 +1628,15 @@ func prepare_territory_field() -> void:
 			var other_hex=hex+HexGrid.DIRECTIONS[direction_index];var other_owner=str(territory_field_cells.get(other_hex,""))
 			if other_owner.is_empty() or other_owner==owner:continue
 			var pair=[[0,1],[5,0],[4,5]][direction_index]
-			var piece: Dictionary=clipped.field_clips.get(HexGrid.key(hex),{})
+			var piece: Dictionary=field_pieces.get(HexGrid.key(hex),{})
 			if piece.is_empty():
 				territory_field_borders.append({"a":corners[pair[0]],"b":corners[pair[1]],"owner":owner,"other":other_owner})
 			else:
 				for segment in piece.edges[direction_index]:
 					territory_field_borders.append({"a":Vector2(segment[0][0],segment[0][1]),"b":Vector2(segment[1][0],segment[1][1]),"owner":owner,"other":other_owner})
 	territory_field_diagnostics={"enabled":true,"cells_assigned":assigned,"cells_skipped":skipped,"owners":territory_field_meshes.size(),"border_segments":territory_field_borders.size(),"presentation_only":true,"source":"current_owned_real_city_nodes_voronoi","land_clipped":true,"clip":MapControlLandClip.diagnostics(clipped),"minimap_reuses_same_meshes":true}
+	territory_field_diagnostics["coastal_supplement"]=MapCoastalControl.facts(coastal)
+	territory_field_diagnostics["coastal_cells_assigned"]=coastal_assigned
 
 func draw_territory_field(view: Rect2) -> void:
 	if territory_field_meshes.is_empty():return
@@ -1670,11 +1684,13 @@ func draw_cell_surface_variants(view: Rect2) -> void:
 		# Far overview still draws the relief mesh. Bind its numerical sampler
 		# even when the detailed ground-material batches are omitted.
 		var ground=map_details.ground_material(strategic) if MapArtBank.available() else null
-		relief.shade_field.bind_to(ground,continuous_relief_enabled);material=ground
+		relief.shade_field.bind_to(ground,continuous_relief_enabled)
+		relief.geographic_field.bind_to(ground,continuous_relief_enabled);material=ground
 		return
 	if MapArtBank.available():
 		var ground=map_details.ground_material(strategic)
 		relief.shade_field.bind_to(ground,continuous_relief_enabled)
+		relief.geographic_field.bind_to(ground,continuous_relief_enabled)
 		material=ground
 		var fine_details=zoom>=(.20 if strategic else .28)
 		if ground==null and not fine_details:return

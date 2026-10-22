@@ -4,6 +4,7 @@ extends RefCounted
 # Presentation-only relief, derived from the immutable surveyed map. No rules data is edited.
 var mesh: ArrayMesh
 var shade_field=ReliefShadeField.new()
+var geographic_field=GeographicReliefField.new()
 var contours: Array=[]
 var contour_lines=MapContourLines.new()
 var features: Array=[]

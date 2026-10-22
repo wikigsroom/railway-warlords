@@ -1,0 +1,292 @@
+{
+  "passed": true,
+  "version": "0.2.36",
+  "channel": "development_review",
+  "completed_at_utc": "2026-10-22T14:50:53.614503+00:00",
+  "controller_sha256": "4b48e33959d1eef6261e8eca381d3da3cdf37aa824ecf2320e6d253574cbcdf2",
+  "engine_sha256": "c8f0a6bc45a19b33541501e57f6f7cd972ab18453743266339d495cbbe846643",
+  "stage_copy_receipt_sha256": "515c44f414ad14f5ea90255d49f37b7330a107bea561351c6425851fe75cc591",
+  "export_receipt_sha256": "8aaa2a53a0f3cb810991768b0102cbcc02386832d87593d0212ee3d5179c3ee1",
+  "runtime_source_merkle_sha256": "66662cb7dd470edc344733ee01563fc6f6d45aded3eee984cd53d450e74b6be9",
+  "source_identity_method": "Complete copy SHA256 seal, fresh non-art and later-touched-file SHA256; immutable-art copy seal retained",
+  "freshly_checked_nonretained_files": 696,
+  "code_or_scene_files_in_seal": 173,
+  "content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+  "groups": 30,
+  "checks": 14585,
+  "reports": [
+    {
+      "id": "run_tests",
+      "passed": true,
+      "checks": 102,
+      "report": "rule_tests.json",
+      "report_sha256": "bf3e94b822eb4ecb831008bd16028bdfe013842fe0345aec179132ff6a4876e0",
+      "log": "run_tests_v0236.log",
+      "log_sha256": "d29f0b0bc26402b0fbbad4424f42124d77ede66c359883d3eb7173785408219f"
+    },
+    {
+      "id": "acceptance_test",
+      "passed": true,
+      "checks": 74,
+      "report": "acceptance_tests.json",
+      "report_sha256": "3f3dac0b913f1e188e772806e37ccb46aba8fc13d59ea637284e9b8b84ec6031",
+      "log": "acceptance_test_v0236.log",
+      "log_sha256": "b403d43a2a5b0fd54612d077df5029bbdf719e6bd58801113767a54830fa6cdf"
+    },
+    {
+      "id": "input_test",
+      "passed": true,
+      "checks": 11,
+      "report": "input_tests.json",
+      "report_sha256": "17a28801d943ddc7023f7bd3f9c303394d76f53340c1862828eee5353393a4a6",
+      "log": "input_test_v0236.log",
+      "log_sha256": "9e06b7cb1c3e527a5cecdca2aa5f4d638381ff3ad914e306fcde82c391fe822a"
+    },
+    {
+      "id": "geography_test",
+      "passed": true,
+      "checks": 95,
+      "report": "geography_tests.json",
+      "report_sha256": "b18c06f6ca7db65de6881872bfcd53b9a11bc8fa7f297aafb03bde7a11e4826a",
+      "log": "geography_test_v0236.log",
+      "log_sha256": "8eb0adc459a71e3d361c24bef99d2cca3c528434319c799730263c16f20e88e4"
+    },
+    {
+      "id": "progression_test",
+      "passed": true,
+      "checks": 243,
+      "report": "progression_tests.json",
+      "report_sha256": "ba139c709921ec25ac3515f7fdef0991674d0499bb46bc1b0c944fe30b3f4975",
+      "log": "progression_test_v0236.log",
+      "log_sha256": "67734ecd9c8ac01810f00134624999c112316a12702279162544f265e5026d08"
+    },
+    {
+      "id": "transaction_test",
+      "passed": true,
+      "checks": 13,
+      "report": "transaction_tests.json",
+      "report_sha256": "68377fbb108099074733af35ecf3180ae207fb5ac35ef6db9ca8b70b4348232b",
+      "log": "transaction_test_v0236.log",
+      "log_sha256": "23f50a284ecd4dea1b8ac0f5f4ed57400fbe434659b57b8a1e04cbae2f6aaa9e"
+    },
+    {
+      "id": "strategic_history_test",
+      "passed": true,
+      "checks": 46,
+      "report": "strategic_history_tests.json",
+      "report_sha256": "b565767e317c88fcd693631b33a70eb9415b4f7a4d91baa2edeec81130e840d8",
+      "log": "strategic_history_test_v0236.log",
+      "log_sha256": "1a6eb79aa694357a19094381724105bedbe5f09278b14d7973e652eae242d5a8"
+    },
+    {
+      "id": "atlas_render_test",
+      "passed": true,
+      "checks": 66,
+      "report": "atlas_render_tests.json",
+      "report_sha256": "d3a3989b834f45a86c4c92edcfebe5f9357eb2f404f72b839760e48b72dc812f",
+      "log": "atlas_render_test_v0236.log",
+      "log_sha256": "9c01458970322bc7d62fd79b6999d7601227a937adc5812e9a258fc7493491a7"
+    },
+    {
+      "id": "combat_presentation_test",
+      "passed": true,
+      "checks": 56,
+      "report": "combat_presentation_tests.json",
+      "report_sha256": "52cf1c0fb03f90c53b3e082639c0f016c1201e9c91651582546a9af73315ffe4",
+      "log": "combat_presentation_test_v0236.log",
+      "log_sha256": "e0055fac0812adc348620afac75e92347c5f922c7dfb836ffa587e533f85c201"
+    },
+    {
+      "id": "automation_test",
+      "passed": true,
+      "checks": 8,
+      "report": "automation_tests.json",
+      "report_sha256": "c94e998c5eaeb919b8350acfde3c94988ad83691988142942b822cf2f20aa135",
+      "log": "automation_test_v0236.log",
+      "log_sha256": "52d05dd79fa8c91dd8992acee109c87c53955754d233c36cbe109c40389a2051"
+    },
+    {
+      "id": "rules_worker_test",
+      "passed": true,
+      "checks": 360,
+      "report": "rules_worker_tests.json",
+      "report_sha256": "64751a6b22d7fe5003be41a3dc91ad7fc0de4432457ace883eab80a1c62670ae",
+      "log": "rules_worker_test_v0236.log",
+      "log_sha256": "534d8ecdde3c5d6645b8c613a1f807824bdf8c83b886dd9344d76566c1acb56e"
+    },
+    {
+      "id": "map_scale_test",
+      "passed": true,
+      "checks": 64,
+      "report": "map_scale_tests.json",
+      "report_sha256": "ce953e79ac32e62d0e1a9c23a66263a66e39ece4b0f5757d5cdc4c2461443bd6",
+      "log": "map_scale_test_v0236.log",
+      "log_sha256": "b51e66f68adda6ee0cd968dfce5b4c0a7b0ef70abfed1605f2e66379c807ccad"
+    },
+    {
+      "id": "scaled_logistics_test",
+      "passed": true,
+      "checks": 27,
+      "report": "scaled_logistics_tests.json",
+      "report_sha256": "6ef3322077d7b3595de066e259b46a5ee36957776dc4ca9f18b6a38de5b2c1c7",
+      "log": "scaled_logistics_test_v0236.log",
+      "log_sha256": "d265393a1e4b504c1ea0d1cce57a9aaba2f595e8d4ef3b5b6396397651b1413d"
+    },
+    {
+      "id": "movement_cache_test",
+      "passed": true,
+      "checks": 13,
+      "report": "movement_cache_tests.json",
+      "report_sha256": "3ff3e3c6a8e02ef8029cfe0ac0b37f33c042cd3645f0e0d50fcb63fdb5f13452",
+      "log": "movement_cache_test_v0236.log",
+      "log_sha256": "487e556c83144cb722792724eb49fa5bbcb3f69209b50e9c49d2d40ec5c54a9b"
+    },
+    {
+      "id": "historical_places_test",
+      "passed": true,
+      "checks": 22,
+      "report": "historical_places_tests.json",
+      "report_sha256": "828b67acf08a52e8a5527143fb6f0aadfacb3c6f691dd18e51b7c046354a7aaa",
+      "log": "historical_places_test_v0236.log",
+      "log_sha256": "6538fd515d542b1294312e53073416be0437f71cca49d8fab38d2e3629a43037"
+    },
+    {
+      "id": "snapshot_optimization_test",
+      "passed": true,
+      "checks": 2023,
+      "report": "snapshot_optimization_tests.json",
+      "report_sha256": "69bc77eaf187cdfa064d8918b400d62729144dc9d991fc18bd31bc6ce89b00a0",
+      "log": "snapshot_optimization_test_v0236.log",
+      "log_sha256": "b221118ea2c7e3a2be65eae3d8bc0f7ae9ab592a7d426900ba7d86d02942f5a4"
+    },
+    {
+      "id": "asia_content_test",
+      "passed": true,
+      "checks": 1614,
+      "report": "asia_content_tests.json",
+      "report_sha256": "7bc4e38619c710294e76238b023cc9dc5992b471cc6f009a9770ac062d8b6d1b",
+      "log": "asia_content_test_v0236.log",
+      "log_sha256": "d36e95f1fbeb01d97ebc0edc5565eb908b1dd3e647cfaa073bf6a3bcaac21997"
+    },
+    {
+      "id": "map_detail_boundary_motion_test",
+      "passed": true,
+      "checks": 23,
+      "report": "map_detail_boundary_motion_tests.json",
+      "report_sha256": "1c8011c448453c25653727893a820384b1be7ccd8ab443bd240d16f8918d921f",
+      "log": "map_detail_boundary_motion_test_v0236.log",
+      "log_sha256": "89f1866afa6cafe3029cea4efaea1212be388ff829641e34fc116f2d29f66bce"
+    },
+    {
+      "id": "facing_memory_test",
+      "passed": true,
+      "checks": 15,
+      "report": "facing_memory_tests.json",
+      "report_sha256": "fab987ff5c8e96d6d7a3aa661c25f3dc36e5f27aebf9a7801901c1a719dd658e",
+      "log": "facing_memory_test_v0236.log",
+      "log_sha256": "24ebcfca739154676d1f112c1c2fe05c9d55b94637231bf8f2b8cf65a798f610"
+    },
+    {
+      "id": "relief_surface_test",
+      "passed": true,
+      "checks": 25,
+      "report": "relief_surface_tests.json",
+      "report_sha256": "cfd2e29959402ed165b5d789d5539221774363470b2e21eea1c0144343e284ca",
+      "log": "relief_surface_test_v0236.log",
+      "log_sha256": "6ab548c33dbffd8d8b3407454c196f5e9b4985c0ec8a463c2cf99eeff0bed0e7"
+    },
+    {
+      "id": "map_bank_test",
+      "passed": true,
+      "checks": 31,
+      "report": "map_bank_tests.json",
+      "report_sha256": "7b6ef7d6f2dce6e3724fe1cd802ea5b0ebfe520a5ecb04d6d188a5e9c74e03f7",
+      "log": "map_bank_test_v0236.log",
+      "log_sha256": "b0d9a75c8dacb29129da5ee61dc774c59a9c9dc80b7912d3711fd134844bff6f"
+    },
+    {
+      "id": "surface_geography_test",
+      "passed": true,
+      "checks": 39,
+      "report": "surface_geography_tests.json",
+      "report_sha256": "f8fae083f47a0f1474b734c44628f6a74d10c9e6e5a2fb0bed68dd5d83df4d49",
+      "log": "surface_geography_test_v0236.log",
+      "log_sha256": "2dbccb959f679098301526f1ccb0e159b89234470e83a9453a50f99f3ba1bede"
+    },
+    {
+      "id": "terrain_surfaces_test",
+      "passed": true,
+      "checks": 160,
+      "report": "terrain_surfaces_tests.json",
+      "report_sha256": "b302a12d9a419c6b658884b3cbb67eadcadbd57efd42a40928c87d531a70c7e6",
+      "log": "terrain_surfaces_test_v0236.log",
+      "log_sha256": "85771cd280bd2d8d6787e353483492e3487db89cabf1cce8e4732eafcb63099b"
+    },
+    {
+      "id": "map_material_continuity_test",
+      "passed": true,
+      "checks": 39,
+      "report": "map_material_continuity_tests.json",
+      "report_sha256": "d750b11f20dcbcdb8be796bbef8f46bd862e8ab5bf11a752b65aee7b521af5ae",
+      "log": "map_material_continuity_test_v0236.log",
+      "log_sha256": "8455ddfadf9928b49c5472c8795c52af964989380fb4ac480fecee1ef4e4065e"
+    },
+    {
+      "id": "river_surface_test",
+      "passed": true,
+      "checks": 48,
+      "report": "river_surface_tests.json",
+      "report_sha256": "d1950577a5cdba582556f350ccb231bb0a98dcb8481c9caa4c38eb3d7aa5b670",
+      "log": "river_surface_test_v0236.log",
+      "log_sha256": "ad20b868752272035b55f8df39e641455a4bdb692b63b99640ca4db42d6087ad"
+    },
+    {
+      "id": "control_land_clip_test",
+      "passed": true,
+      "checks": 46,
+      "report": "control_land_clip_tests.json",
+      "report_sha256": "8564d35d6e4733a2a8e222068d3ba01b26c67b74f864342515701bb5f537af59",
+      "log": "control_land_clip_test_v0236.log",
+      "log_sha256": "ab88a222b6613c24884e1c94f50930c27cff4812086c472bae2a2424fa10f704"
+    },
+    {
+      "id": "ground_coverage_test",
+      "passed": true,
+      "checks": 45,
+      "report": "ground_coverage_tests.json",
+      "report_sha256": "ec616a05d7e0410f7a2c8d19df90f55394e0eedb90c5a92642d76d64481bf438",
+      "log": "ground_coverage_test_v0236.log",
+      "log_sha256": "c018e39574d8b256af89e7953a763dd378a6543f8145fdbcfee680f7d4e54752"
+    },
+    {
+      "id": "general_portraits_test",
+      "passed": true,
+      "checks": 5036,
+      "report": "general_portraits_tests.json",
+      "report_sha256": "6fba6c0b4f3cc8c5bc7932d26cb384bdd2f768ba7ea4bd8c3166c5d2b2e41192",
+      "log": "general_portraits_test_v0236.log",
+      "log_sha256": "983d921c43d6e9ee3a0c8665e2f230ebad33f99828cdd411ba2926ae22ed0b1f"
+    },
+    {
+      "id": "calendar_test",
+      "passed": true,
+      "checks": 88,
+      "report": "calendar_tests.json",
+      "report_sha256": "c8af3f9e2ccab4237e517d50661ab80755a9463629dc7c91bd97b5bd1681dbd0",
+      "log": "calendar_test_v0236.log",
+      "log_sha256": "dfaa9cd06e8ea5883f39f95212f81fa61fb1388007a30044fdb0654a92402281"
+    },
+    {
+      "id": "commander_roster_test",
+      "passed": true,
+      "checks": 4153,
+      "report": "commander_roster_tests.json",
+      "report_sha256": "9740303fad9e7f49bfb1b7987e9c232881d3e5e9f62699f12405874333bc1d69",
+      "log": "commander_roster_test_v0236.log",
+      "log_sha256": "827546405b89947a881cd627538bc449f6657d0923de764035a5f058bfae7dad"
+    }
+  ],
+  "previous_release_reports_replaced": false,
+  "formal_art_approval": false,
+  "physical_android_device_tested": false
+}

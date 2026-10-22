@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "version": "0.2.36",
+  "android_version_code": 41,
+  "channel": "development_review",
+  "official_release": false,
+  "created_at_utc": "2026-10-22T15:06:31.979942+00:00",
+  "controller_sha256": "dc18e385a66b1198ae715785f28b0451d77852ed48e3675d112312c4059a07bf",
+  "output_path": "E:\\dev\\vibe-game\\世界征服者类\\output\\development\\railway-warlords-0.2.36-preview01",
+  "runtime_source_merkle_sha256": "66662cb7dd470edc344733ee01563fc6f6d45aded3eee984cd53d450e74b6be9",
+  "runtime_identity_method": "SHA256 of canonical sorted runtime file-name/SHA256 map; complete copy SHA256 plus current code/data and changed-file checks",
+  "content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+  "export_receipt_sha256": "8aaa2a53a0f3cb810991768b0102cbcc02386832d87593d0212ee3d5179c3ee1",
+  "regression_receipt_sha256": "c399476920cebec21754820c04581bb764179d78f4cfbcf941cff9b7953fbe22",
+  "visual_review_sha256": "9a8aba67bc2e8619fe67caa78a8d7926538c99e5381e208b4b4ad3aae9cd436a",
+  "apk_receipt_sha256": "e2b23e680b6930f6b07b5449ce4c7b765b9717dc3a6aebf5d0703a60c1ed0847",
+  "full_regression_groups": 30,
+  "full_regression_checks": 14585,
+  "exported_whole_viewports_individually_viewed": 20,
+  "artifacts": [
+    {
+      "target": "windows",
+      "file": "RailwayWarlords-0.2.36-preview-windows-x64.exe",
+      "bytes": 901250216,
+      "sha256": "a10557cf448fc1dfbb5c5ad1c55ae7843a23f64916f347b1b991456c4cfa719b"
+    },
+    {
+      "target": "android",
+      "file": "RailwayWarlords-0.2.36-preview-android.apk",
+      "bytes": 690930736,
+      "sha256": "6ed9162ab0260dab8d20bc792428cd2eabf061d9728b1e7aef3451ecb82cce0c"
+    }
+  ],
+  "evidence": {
+    "file": "geographic-relief-verification.zip",
+    "bytes": 147939048,
+    "sha256": "1b797684024b737de302a28faa0b61f060f1e2f62cf9eee7ebda7e3714609217"
+  },
+  "new_raster_art": 0,
+  "new_music_tracks": 0,
+  "existing_raster_png_count": 2521,
+  "future_music_route": "music-gen-remote-YuE2 / remote native Windows RTX 3080 / instrumental",
+  "previous_release_preserved": "output/releases/railway-warlords-0.2.35",
+  "formal_art_approval": false,
+  "physical_android_device_tested": false,
+  "remaining": [
+    "coarse material boundaries",
+    "repeated terrain symbols",
+    "complete unit actions",
+    "historical timeline corrections",
+    "physical Motorola X30 acceptance"
+  ],
+  "committed_source_identity_record": "SOURCE_RECEIPT.json added after source commit/push; runtime Merkle already fixed"
+}

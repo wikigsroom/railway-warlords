@@ -52,12 +52,18 @@ func build(map: Dictionary, cells: Dictionary, relief: AtlasRelief, coast: Array
 		ground_families[key]=drawn
 		var underlay=MapTerrainSurfaces.relief_underlay(source_cell,drawn)
 		if not underlay.is_empty():
+			# The continental DEM now supplies the actual continuous ridges.
+			# A 100 km category must not also paint a broad bare-rock block.
+			# These lower opacities are illustration, never measured rock cover.
+			if map.get("strategic_scale",false) and relief.geographic_field.mesh!=null:
+				underlay.rock_opacity=minf(float(underlay.rock_opacity),.12 if source_cell.get("natural_terrain_id","")=="hill" else .22)
 			relief_underlays[key]=underlay.family;relief_opacities[key]=underlay.rock_opacity
 		if drawn!=regional:ground_policy.withheld_forest_floor_cells+=1
 		ground_policy.drawn_families[drawn]=int(ground_policy.drawn_families.get(drawn,0))+1
 	ground_policy["relief_underlay_cells"]=relief_underlays.size()
 	ground_policy["relief_underlay_support"]="archived_ecoregion_4_or_8_and_existing_dem_hill_or_mountain"
 	ground_policy["mineral_opacity_is_illustration_not_measured_rock_cover"]=true
+	ground_policy["continental_relief_uses_finer_source_normals"]=relief.geographic_field.mesh!=null
 	for h in cells:
 		var cell: Dictionary=cells[h];var p=HexGrid.to_world(h)
 		var kind=TerrainVisuals.kind_for_cell(cell);var family=MapArtBank.material_family(cell)

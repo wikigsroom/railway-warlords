@@ -1,0 +1,226 @@
+{
+  "passed": true,
+  "version": "0.2.36",
+  "channel": "development_review",
+  "created_at_utc": "2026-10-22T15:00:10.277472+00:00",
+  "acceptance_scope": "Model actually viewed each of the twenty listed whole exported-EXE PNGs using view_image; successful evidence review is not commercial art approval",
+  "exported_application_images": [
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/core01/menu/viewport.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "整幅菜单、标题与模式入口可见；按钮材质及层次仍需进一步精修。"
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/core01/osaka/viewport.png",
+      "sha256": "a601c7028917a18cceaa068f33b997f430de91b0f656bc3e814105cfc5d14109",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "本州中部连续山势与沿海控制覆盖可见；大色块、稀疏地貌和过大的交通符号仍明显。"
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/core01/himalaya/viewport.png",
+      "sha256": "260b359d337816178b776c686ffa8f74140b1aa379482ce764444d20eb2c66ab",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "喜马拉雅与青藏山缘连续起伏明显，低地相对平缓；重复的独立山体和粗材质块界仍可见。"
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/core01/manchuria/viewport.png",
+      "sha256": "c737821ca6cab69451c090e59127f3483710794050837b439fb96c8c01ff46de",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "来源林区及连续地表可见；过大的林群、重复山体、材质边界和编队拥挤仍需修复。"
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/core01/asia/viewport.png",
+      "sha256": "09cbb0db8c0379d492c44d2efc9ab7fa811a46bd02772ca17ebe081e1f7edf2f",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "完整亚洲视口与连续山势可见；远景标注、符号密度及矩形画布留白仍不成熟。"
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/core01/shanhaiguan/viewport.png",
+      "sha256": "75768b82daf4715059fc102e725d81ef4a9b8e47ee4931e68e7d4c519d0e0cc0",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "海岸过渡、村落、铁路和操作蜂窝可见；来源岸线台阶、空地与重复山体仍明显。"
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/core01/tianjin/viewport.png",
+      "sha256": "6a7f7d97ba46c9ab2b43932610d1b8ceaa7f4ba6c6fe88b13a1a341598065c4f",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "天津近岸的完整源视口，水纹与岸缘可见；地表变化不足，局部岸边楔形和粗河线仍需继续调整。"
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/core01/osaka_x30_dimensions/viewport.png",
+      "sha256": "5bac758d980441b861fb38342315dc792dff002470dac973e1c9f506705040d0",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "2400×1080桌面移动布局完整，命令入口可见；未进行物理手机安装、触控或性能测量。"
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/core01/ui_smoke/viewport.png",
+      "sha256": "3f3f2d6ed84ba2c2647986b6056e55cc980caa5f787576d4bc2dbe24dba38c14",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "实际EXE完成征募、建设、外交和暂停页面冒烟，最终战场完整显示；不等同于完整人工游玩。"
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/tianjin_natural.png",
+      "sha256": "6e4489930f1188671ec82859f25da45415d652c3cbd141072aa557ca1e8940fb",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": false
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/tianjin_control.png",
+      "sha256": "c4ade920812c13516fda03c598376ec10b3724f08d8e28f7acfedc11e83f8df0",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": true
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/osaka_natural.png",
+      "sha256": "9c94ba6e1c309e5f681aa228abdf15633d6d24c4ed65a7c78a59cb534c80f3ac",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": false
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/osaka_control.png",
+      "sha256": "928530051e602c87a4189157bd67b7907c45e7408e56b165127534bc01e70cb4",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": true
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/baku_natural.png",
+      "sha256": "5b78161cf3c01baf25c8ff2f810ab705fc51c0c86eef685bc5232aa18774f7d3",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": false
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/baku_control.png",
+      "sha256": "eb7e544808d45ffabad6ddac5adfacc2e9c83df89a15fbff182ab82e758c6879",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": true
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/singapore_natural.png",
+      "sha256": "dadb9ad37bda427455a20d94010b0244d6528df8aa98163cb184f9db1184f8d7",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": false
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/singapore_control.png",
+      "sha256": "08ec0eaf75e752976aefb05c72cc3aa0fecb6dd38b1ba1d5cd6f4ae9357d87dd",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": true
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/overview_natural.png",
+      "sha256": "efdc07b41f5d4ae863646abb655afe20b7acb96b14b5985898c5db77ba2eb931",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": false
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/control01/control/overview_control.png",
+      "sha256": "9a555fd8df98e616b6e7ceb13b89936b9f5bed84514378ed0e78d347eb98a4f6",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "已逐张查看整幅控制开关画面：地表仍可见，海面保持原水色。粗材质边界、局部标注拥挤及空地仍保留。",
+      "control_enabled": true
+    },
+    {
+      "file": "reports/geographic_relief_v0236/exported_windows/benchmark01/asia_idle/viewport.png",
+      "sha256": "ff1dd715bbecd7d1dc47b3c51453664a5d01e15da507127fd97c394ca9cebb10",
+      "actually_viewed": true,
+      "whole_native_viewport": true,
+      "observation": "桌面静止战场观察的完整实际视口，连续地形可见；地表块界和重复山体仍明显。观察不能代表平移、交战或Android性能。"
+    }
+  ],
+  "exported_application_image_count": 20,
+  "final_source_to_export_png_comparisons": [
+    {
+      "case": "osaka",
+      "source_png_sha256": "a601c7028917a18cceaa068f33b997f430de91b0f656bc3e814105cfc5d14109",
+      "exported_png_sha256": "a601c7028917a18cceaa068f33b997f430de91b0f656bc3e814105cfc5d14109",
+      "whole_png_bytes_identical": true
+    },
+    {
+      "case": "himalaya",
+      "source_png_sha256": "260b359d337816178b776c686ffa8f74140b1aa379482ce764444d20eb2c66ab",
+      "exported_png_sha256": "260b359d337816178b776c686ffa8f74140b1aa379482ce764444d20eb2c66ab",
+      "whole_png_bytes_identical": true
+    },
+    {
+      "case": "manchuria",
+      "source_png_sha256": "c737821ca6cab69451c090e59127f3483710794050837b439fb96c8c01ff46de",
+      "exported_png_sha256": "c737821ca6cab69451c090e59127f3483710794050837b439fb96c8c01ff46de",
+      "whole_png_bytes_identical": true
+    },
+    {
+      "case": "asia",
+      "source_png_sha256": "09cbb0db8c0379d492c44d2efc9ab7fa811a46bd02772ca17ebe081e1f7edf2f",
+      "exported_png_sha256": "09cbb0db8c0379d492c44d2efc9ab7fa811a46bd02772ca17ebe081e1f7edf2f",
+      "whole_png_bytes_identical": true
+    }
+  ],
+  "source_comparison_views_reopened_this_segment": [
+    "baseline/osaka01/viewport.png",
+    "baseline/himalaya01/viewport.png",
+    "revised/osaka05/viewport.png",
+    "revised/himalaya05/viewport.png"
+  ],
+  "core_receipt_sha256": "350c1cc8c32a5a8c64f455f77a7344a1dbc0675b6988712407a375420ba1bc2e",
+  "control_receipt_sha256": "bc4e9bb4173a50086ad8b5dfec19b5f4c6e7c12588493afe5442e7c961d8b702",
+  "benchmark_receipt_sha256": "fdf3487e1a162300ed8c985c0c011181133d5f9a92d826380e307513ab0c9af2",
+  "source_control05_pixel_captures_claimed_viewed_by_this_record": false,
+  "main_water_view_samples": 1767,
+  "maximum_water_channel_delta": 0,
+  "hidden_minimap_pixel_tests_skipped": 5,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "physical_android_device_tested": false,
+  "new_raster_art": 0,
+  "new_music_tracks": 0,
+  "failed_attempts_preserved": [
+    {
+      "attempt": "revised/osaka01",
+      "acceptance": "invalid: field inactive despite an old success exit/result; not counted as valid visual acceptance"
+    },
+    {
+      "attempt": "revised/control02",
+      "acceptance": "failed four old hidden-minimap checks; preserved original diagnostics"
+    },
+    {
+      "attempt": "revised/osaka03",
+      "acceptance": "failed global-class registration/parse; preserved original diagnostics"
+    }
+  ],
+  "remaining": [
+    "coarse and repetitive ground material boundaries",
+    "repeated and oversized landform symbols",
+    "regional empty land and crowded continental labels",
+    "complete unit action keyframes",
+    "historical date/polity fixes",
+    "physical Motorola X30 testing"
+  ]
+}

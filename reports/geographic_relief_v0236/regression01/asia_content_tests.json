@@ -1,0 +1,6466 @@
+{
+	"checks": [
+		{
+			"id": "content_loads_with_asia_catalog",
+			"passed": true
+		},
+		{
+			"id": "asia_source_registry_complete",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_timeline_record",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_free_world_scenario",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_anchor_date_matches_scenario",
+			"passed": true
+		},
+		{
+			"id": "first_opium_war_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "first_opium_war_source_resolves_nam_first_china_war",
+			"passed": true
+		},
+		{
+			"id": "first_opium_war_source_resolves_state_china_milestone",
+			"passed": true
+		},
+		{
+			"id": "central_asia_great_game_1840_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "central_asia_great_game_1840_source_resolves_iranica_1917",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_timeline_record",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_free_world_scenario",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_anchor_date_matches_scenario",
+			"passed": true
+		},
+		{
+			"id": "second_opium_war_1860_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "second_opium_war_1860_source_resolves_nam_second_china_war",
+			"passed": true
+		},
+		{
+			"id": "second_opium_war_1860_source_resolves_state_china_milestone",
+			"passed": true
+		},
+		{
+			"id": "taiping_late_war_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "taiping_late_war_source_resolves_columbia_taiping",
+			"passed": true
+		},
+		{
+			"id": "sino_french_southern_vietnam_1860_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "sino_french_southern_vietnam_1860_source_resolves_loc_vietnam_study",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_timeline_record",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_free_world_scenario",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_anchor_date_matches_scenario",
+			"passed": true
+		},
+		{
+			"id": "sino_japanese_1894_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "sino_japanese_1894_source_resolves_ndl_russo_japanese",
+			"passed": true
+		},
+		{
+			"id": "boxer_precursor_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "boxer_precursor_source_resolves_nam_boxer",
+			"passed": true
+		},
+		{
+			"id": "burma_upper_annexation_aftermath_1890_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "burma_upper_annexation_aftermath_1890_source_resolves_nam_burma_timeline",
+			"passed": true
+		},
+		{
+			"id": "french_tonkin_protectorate_1890_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "french_tonkin_protectorate_1890_source_resolves_loc_vietnam_study",
+			"passed": true
+		},
+		{
+			"id": "french_tonkin_protectorate_1890_source_resolves_loc_tonkin_campaign",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_timeline_record",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_free_world_scenario",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_anchor_date_matches_scenario",
+			"passed": true
+		},
+		{
+			"id": "boxer_rebellion_1900_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "boxer_rebellion_1900_source_resolves_nam_boxer",
+			"passed": true
+		},
+		{
+			"id": "russian_manchuria_occupation_1900_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "russian_manchuria_occupation_1900_source_resolves_nam_boxer",
+			"passed": true
+		},
+		{
+			"id": "russian_manchuria_occupation_1900_source_resolves_ndl_russo_japanese",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_timeline_record",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_free_world_scenario",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_anchor_date_matches_scenario",
+			"passed": true
+		},
+		{
+			"id": "constitutional_protection_1917_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "constitutional_protection_1917_source_resolves_uh_northern_expedition",
+			"passed": true
+		},
+		{
+			"id": "russian_revolution_1917_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "russian_revolution_1917_source_resolves_ushmm_russian_1917",
+			"passed": true
+		},
+		{
+			"id": "russian_revolution_1917_source_resolves_uk_na_russian_1917",
+			"passed": true
+		},
+		{
+			"id": "persia_1917_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "persia_1917_source_resolves_iranica_1917",
+			"passed": true
+		},
+		{
+			"id": "persia_1917_source_resolves_qdl_persia_1917",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_timeline_record",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_free_world_scenario",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_anchor_date_matches_scenario",
+			"passed": true
+		},
+		{
+			"id": "northern_expedition_1927_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "northern_expedition_1927_source_resolves_uh_northern_expedition",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_timeline_record",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_free_world_scenario",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_anchor_date_matches_scenario",
+			"passed": true
+		},
+		{
+			"id": "second_sino_japanese_war_1940_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "second_sino_japanese_war_1940_source_resolves_nww2_china",
+			"passed": true
+		},
+		{
+			"id": "indochina_1940_scope_at_most_three_provinces",
+			"passed": true
+		},
+		{
+			"id": "indochina_1940_source_resolves_nww2_asia",
+			"passed": true
+		},
+		{
+			"id": "asia_map_loaded",
+			"passed": true
+		},
+		{
+			"id": "asia_map_cell_capacity",
+			"passed": true
+		},
+		{
+			"id": "asia_real_city_nodes",
+			"passed": true
+		},
+		{
+			"id": "asia_realistic_geographic_bounds",
+			"passed": true
+		},
+		{
+			"id": "asia_physical_geometry_present",
+			"passed": true
+		},
+		{
+			"id": "asia_cells_are_playable_theater",
+			"passed": true
+		},
+		{
+			"id": "unique_city_beijing",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_beijing",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_beijing",
+			"passed": true
+		},
+		{
+			"id": "unique_city_tianjin",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_tianjin",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_tianjin",
+			"passed": true
+		},
+		{
+			"id": "unique_city_baoding",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_baoding",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_baoding",
+			"passed": true
+		},
+		{
+			"id": "unique_city_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "unique_city_jinan",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_jinan",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_jinan",
+			"passed": true
+		},
+		{
+			"id": "unique_city_qingdao",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_qingdao",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_qingdao",
+			"passed": true
+		},
+		{
+			"id": "unique_city_shanghai",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_shanghai",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_shanghai",
+			"passed": true
+		},
+		{
+			"id": "unique_city_nanjing",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_nanjing",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_nanjing",
+			"passed": true
+		},
+		{
+			"id": "unique_city_suzhou",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_suzhou",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_suzhou",
+			"passed": true
+		},
+		{
+			"id": "unique_city_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "unique_city_ningbo",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_ningbo",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_ningbo",
+			"passed": true
+		},
+		{
+			"id": "unique_city_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "unique_city_bengbu",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_bengbu",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_bengbu",
+			"passed": true
+		},
+		{
+			"id": "unique_city_hankou",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_hankou",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_hankou",
+			"passed": true
+		},
+		{
+			"id": "unique_city_wuchang",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_wuchang",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_wuchang",
+			"passed": true
+		},
+		{
+			"id": "unique_city_yichang",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_yichang",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_yichang",
+			"passed": true
+		},
+		{
+			"id": "unique_city_changsha",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_changsha",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_changsha",
+			"passed": true
+		},
+		{
+			"id": "unique_city_nanchang",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_nanchang",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_nanchang",
+			"passed": true
+		},
+		{
+			"id": "unique_city_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "unique_city_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "unique_city_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "unique_city_macau",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_macau",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_macau",
+			"passed": true
+		},
+		{
+			"id": "unique_city_shantou",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_shantou",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_shantou",
+			"passed": true
+		},
+		{
+			"id": "unique_city_nanning",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_nanning",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_nanning",
+			"passed": true
+		},
+		{
+			"id": "unique_city_guilin",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_guilin",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_guilin",
+			"passed": true
+		},
+		{
+			"id": "unique_city_kunming",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_kunming",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_kunming",
+			"passed": true
+		},
+		{
+			"id": "unique_city_guiyang",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_guiyang",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_guiyang",
+			"passed": true
+		},
+		{
+			"id": "unique_city_chongqing",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_chongqing",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_chongqing",
+			"passed": true
+		},
+		{
+			"id": "unique_city_chengdu",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_chengdu",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_chengdu",
+			"passed": true
+		},
+		{
+			"id": "unique_city_xian",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_xian",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_xian",
+			"passed": true
+		},
+		{
+			"id": "unique_city_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "unique_city_xining",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_xining",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_xining",
+			"passed": true
+		},
+		{
+			"id": "unique_city_urumqi",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_urumqi",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_urumqi",
+			"passed": true
+		},
+		{
+			"id": "unique_city_kashgar",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_kashgar",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_kashgar",
+			"passed": true
+		},
+		{
+			"id": "unique_city_lhasa",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_lhasa",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_lhasa",
+			"passed": true
+		},
+		{
+			"id": "unique_city_mukden",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_mukden",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_mukden",
+			"passed": true
+		},
+		{
+			"id": "unique_city_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "unique_city_dalian",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_dalian",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_dalian",
+			"passed": true
+		},
+		{
+			"id": "unique_city_changchun",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_changchun",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_changchun",
+			"passed": true
+		},
+		{
+			"id": "unique_city_harbin",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_harbin",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_harbin",
+			"passed": true
+		},
+		{
+			"id": "unique_city_taipei",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_taipei",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_taipei",
+			"passed": true
+		},
+		{
+			"id": "unique_city_haiphong",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_haiphong",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_haiphong",
+			"passed": true
+		},
+		{
+			"id": "unique_city_tokyo",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_tokyo",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_tokyo",
+			"passed": true
+		},
+		{
+			"id": "unique_city_yokohama",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_yokohama",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_yokohama",
+			"passed": true
+		},
+		{
+			"id": "unique_city_osaka",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_osaka",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_osaka",
+			"passed": true
+		},
+		{
+			"id": "unique_city_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "unique_city_sapporo",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_sapporo",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_sapporo",
+			"passed": true
+		},
+		{
+			"id": "unique_city_seoul",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_seoul",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_seoul",
+			"passed": true
+		},
+		{
+			"id": "unique_city_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "unique_city_busan",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_busan",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_busan",
+			"passed": true
+		},
+		{
+			"id": "unique_city_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "unique_city_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "unique_city_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "unique_city_petrograd",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_petrograd",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_petrograd",
+			"passed": true
+		},
+		{
+			"id": "unique_city_moscow",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_moscow",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_moscow",
+			"passed": true
+		},
+		{
+			"id": "unique_city_tashkent",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_tashkent",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_tashkent",
+			"passed": true
+		},
+		{
+			"id": "unique_city_samarkand",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_samarkand",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_samarkand",
+			"passed": true
+		},
+		{
+			"id": "unique_city_baku",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_baku",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_baku",
+			"passed": true
+		},
+		{
+			"id": "unique_city_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "unique_city_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "unique_city_tehran",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_tehran",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_tehran",
+			"passed": true
+		},
+		{
+			"id": "unique_city_tabriz",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_tabriz",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_tabriz",
+			"passed": true
+		},
+		{
+			"id": "unique_city_baghdad",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_baghdad",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_baghdad",
+			"passed": true
+		},
+		{
+			"id": "unique_city_istanbul",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_istanbul",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_istanbul",
+			"passed": true
+		},
+		{
+			"id": "unique_city_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "unique_city_kabul",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_kabul",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_kabul",
+			"passed": true
+		},
+		{
+			"id": "unique_city_delhi",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_delhi",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_delhi",
+			"passed": true
+		},
+		{
+			"id": "unique_city_lahore",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_lahore",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_lahore",
+			"passed": true
+		},
+		{
+			"id": "unique_city_bombay",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_bombay",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_bombay",
+			"passed": true
+		},
+		{
+			"id": "unique_city_calcutta",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_calcutta",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_calcutta",
+			"passed": true
+		},
+		{
+			"id": "unique_city_madras",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_madras",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_madras",
+			"passed": true
+		},
+		{
+			"id": "unique_city_rangoon",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_rangoon",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_rangoon",
+			"passed": true
+		},
+		{
+			"id": "unique_city_mandalay",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_mandalay",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_mandalay",
+			"passed": true
+		},
+		{
+			"id": "unique_city_bangkok",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_bangkok",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_bangkok",
+			"passed": true
+		},
+		{
+			"id": "unique_city_hanoi",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_hanoi",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_hanoi",
+			"passed": true
+		},
+		{
+			"id": "unique_city_saigon",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_saigon",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_saigon",
+			"passed": true
+		},
+		{
+			"id": "unique_city_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "unique_city_singapore",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_singapore",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_singapore",
+			"passed": true
+		},
+		{
+			"id": "unique_city_manila",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_manila",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_manila",
+			"passed": true
+		},
+		{
+			"id": "unique_city_batavia",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_batavia",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_batavia",
+			"passed": true
+		},
+		{
+			"id": "unique_city_surabaya",
+			"passed": true
+		},
+		{
+			"id": "city_coordinate_in_asia_surabaya",
+			"passed": true
+		},
+		{
+			"id": "city_has_seven_timeline_owners_surabaya",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_historical_control_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_historical_control_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_historical_control_shanghai",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_historical_control_ningbo",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_historical_control_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_historical_control_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_historical_control_mandalay",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_historical_control_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_historical_control_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_historical_control_saigon",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_historical_control_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_historical_control_mandalay",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_historical_control_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_historical_control_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_historical_control_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_historical_control_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_historical_control_hanoi",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_historical_control_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_historical_control_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_historical_control_qingdao",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_historical_control_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_historical_control_dalian",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_historical_control_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_historical_control_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_historical_control_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_historical_control_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_historical_control_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_historical_control_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_historical_control_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_historical_control_qingdao",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_historical_control_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_historical_control_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_historical_control_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_historical_control_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_historical_control_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_historical_control_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_historical_control_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_historical_control_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_historical_control_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_historical_control_macau",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_qing_green_standard_coastal_1840",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_qing_green_standard_coastal_1840",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_qing_green_standard_coastal_1840_nam_first_china_war",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_qing_green_standard_coastal_1840_state_china_milestone",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_british_expeditionary_force_1840",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_british_expeditionary_force_1840",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_british_expeditionary_force_1840_nam_first_china_war",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_royal_marines_first_china_war",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_royal_marines_first_china_war",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_royal_marines_first_china_war_nam_first_china_war",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_xiang_army_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_xiang_army_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_xiang_army_1860_columbia_taiping",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_taiping_heavenly_kingdom_field_army",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_taiping_heavenly_kingdom_field_army",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_taiping_heavenly_kingdom_field_army_columbia_taiping",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_anglo_french_expedition_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_anglo_french_expedition_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_anglo_french_expedition_1860_nam_first_china_war",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_beiyang_fleet_1890",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_beiyang_fleet_1890",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_beiyang_fleet_1890_ndl_russo_japanese",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_imperial_japanese_army_5th_division_1894",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_imperial_japanese_army_5th_division_1894",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_imperial_japanese_army_5th_division_1894_ndl_russo_japanese",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_japanese_5th_division_boxer_1900",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_japanese_5th_division_boxer_1900",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_japanese_5th_division_boxer_1900_nam_boxer",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_british_indian_contingent_boxer_1900",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_british_indian_contingent_boxer_1900",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_british_indian_contingent_boxer_1900_nam_boxer",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_russian_far_east_force_1900",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_russian_far_east_force_1900",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_russian_far_east_force_1900_nam_boxer",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_russian_far_east_force_1900_ndl_russo_japanese",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_eight_nation_relief_force_1900",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_eight_nation_relief_force_1900",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_eight_nation_relief_force_1900_nam_boxer",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_護法軍_southwest_1917",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_護法軍_southwest_1917",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_護法軍_southwest_1917_uh_northern_expedition",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_beiyang_army_1917",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_beiyang_army_1917",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_beiyang_army_1917_uh_northern_expedition",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_russian_red_guard_1917",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_russian_red_guard_1917",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_russian_red_guard_1917_ushmm_russian_1917",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_russian_red_guard_1917_uk_na_russian_1917",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_nra_first_army_1927",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_nra_first_army_1927",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_nra_first_army_1927_uh_northern_expedition",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_nra_fourth_army_1927",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_nra_fourth_army_1927",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_nra_fourth_army_1927_uh_northern_expedition",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_fengtian_army_1927",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_fengtian_army_1927",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_fengtian_army_1927_uh_northern_expedition",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_shanxi_army_1927",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_shanxi_army_1927",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_shanxi_army_1927_uh_northern_expedition",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_nra_18th_group_army_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_nra_18th_group_army_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_nra_18th_group_army_1940_nww2_china",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_nra_9th_theater_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_nra_9th_theater_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_nra_9th_theater_1940_nww2_china",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_japanese_11th_army_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_japanese_11th_army_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_japanese_11th_army_1940_nww2_china",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_japanese_china_expeditionary_force_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_japanese_china_expeditionary_force_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_japanese_china_expeditionary_force_1940_nww2_china",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_japanese_china_expeditionary_force_1940_nww2_asia",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_japanese_kwantung_army_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_japanese_kwantung_army_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_japanese_kwantung_army_1940_nww2_asia",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_british_indian_army_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_british_indian_army_1940",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_british_indian_army_1940_nww2_asia",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_sikh_khalsa_army_1840s",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_sikh_khalsa_army_1840s",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_sikh_khalsa_army_1840s_nam_second_sikh_war",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_burmese_royal_army_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_burmese_royal_army_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_burmese_royal_army_1860_nam_burma_timeline",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_british_lower_burma_field_force_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_british_lower_burma_field_force_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_british_lower_burma_field_force_1860_nam_burma_timeline",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_french_cochinchina_expedition_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_french_cochinchina_expedition_1860",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_french_cochinchina_expedition_1860_loc_vietnam_study",
+			"passed": true
+		},
+		{
+			"id": "formation_has_source_french_tonkin_force_1890",
+			"passed": true
+		},
+		{
+			"id": "formation_range_order_french_tonkin_force_1890",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_french_tonkin_force_1890_loc_tonkin_campaign",
+			"passed": true
+		},
+		{
+			"id": "formation_source_resolves_french_tonkin_force_1890_loc_vietnam_study",
+			"passed": true
+		},
+		{
+			"id": "asia_order_of_battle_has_named_formations",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_has_two_playable_factions",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_period_equipment_roster_present",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_no_anachronistic_equipment_militia",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_no_anachronistic_equipment_rifle",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_no_anachronistic_equipment_cavalry",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_no_anachronistic_equipment_engineer",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_no_anachronistic_equipment_field_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_no_anachronistic_equipment_coastal_gunship",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_no_anachronistic_equipment_transport_ship",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_state_builds",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_free_world_runtime_flag",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_qing",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_british_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_british_india",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_russian_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_qajar_persia",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_afghanistan",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_ottoman",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_japan",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_korea",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_siam",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_netherlands",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_spain",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_french_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_nguyen_dynasty",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_burmese_kingdom",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_sikh_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_runtime_faction_period_roster_portugal",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_beijing",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_tianjin",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_baoding",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_jinan",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_qingdao",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_shanghai",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_nanjing",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_suzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_ningbo",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_bengbu",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_hankou",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_wuchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_yichang",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_changsha",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_nanchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_shantou",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_nanning",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_guilin",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_kunming",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_guiyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_chongqing",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_chengdu",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_xian",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_xining",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_urumqi",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_kashgar",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_lhasa",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_mukden",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_dalian",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_changchun",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_harbin",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_haiphong",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_tokyo",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_yokohama",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_osaka",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_sapporo",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_busan",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_petrograd",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_moscow",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_tashkent",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_samarkand",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_baku",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_tehran",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_tabriz",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_baghdad",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_istanbul",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_kabul",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_delhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_bombay",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_calcutta",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_madras",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_mandalay",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_bangkok",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_hanoi",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_saigon",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_singapore",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_batavia",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_city_owner_in_runtime_roster_surabaya",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_owner_in_runtime_roster_lin_zexu",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_activity_window_lin_zexu",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_owner_in_runtime_roster_cn_88d58c26",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_activity_window_cn_88d58c26",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_owner_in_runtime_roster_guan_tianpei",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_activity_window_guan_tianpei",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_owner_in_runtime_roster_ge_yunfei",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_activity_window_ge_yunfei",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_owner_in_runtime_roster_gordon_bremer",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_general_activity_window_gordon_bremer",
+			"passed": true
+		},
+		{
+			"id": "asia_1840_historical_general_loaded_lin_zexu",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_has_two_playable_factions",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_period_equipment_roster_present",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_no_anachronistic_equipment_militia",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_no_anachronistic_equipment_rifle",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_no_anachronistic_equipment_cavalry",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_no_anachronistic_equipment_engineer",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_no_anachronistic_equipment_field_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_no_anachronistic_equipment_coastal_gunship",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_no_anachronistic_equipment_transport_ship",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_no_anachronistic_equipment_river_gunboat",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_state_builds",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_free_world_runtime_flag",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_qing",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_taiping",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_british_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_french_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_russian_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_japan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_korea",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_qajar_persia",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_ottoman",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_afghanistan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_siam",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_british_india",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_netherlands",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_spain",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_nguyen_dynasty",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_burmese_kingdom",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_runtime_faction_period_roster_portugal",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_beijing",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_tianjin",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_baoding",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_jinan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_qingdao",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_shanghai",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_nanjing",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_suzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_ningbo",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_bengbu",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_hankou",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_wuchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_yichang",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_changsha",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_nanchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_shantou",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_nanning",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_guilin",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_kunming",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_guiyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_chongqing",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_chengdu",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_xian",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_xining",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_urumqi",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_kashgar",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_lhasa",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_mukden",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_dalian",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_changchun",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_harbin",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_haiphong",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_tokyo",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_yokohama",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_osaka",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_sapporo",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_busan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_petrograd",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_moscow",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_tashkent",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_samarkand",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_baku",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_tehran",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_tabriz",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_baghdad",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_istanbul",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_kabul",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_delhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_bombay",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_calcutta",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_madras",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_mandalay",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_bangkok",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_hanoi",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_saigon",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_singapore",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_batavia",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_city_owner_in_runtime_roster_surabaya",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_hong_xiuquan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_hong_xiuquan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_zeng_guofan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_zeng_guofan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_cn_80e167977ffc",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_cn_80e167977ffc",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_cn_5f6d73899e9f",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_cn_5f6d73899e9f",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_cn_67685cb3658c",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_cn_67685cb3658c",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_cn_66fe56fd8343",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_cn_66fe56fd8343",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_cn_964873896210",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_cn_964873896210",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_cn_674e79c06210",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_cn_674e79c06210",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_sengge_rinchen",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_sengge_rinchen",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_hugh_gough",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_hugh_gough",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_william_parker",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_william_parker",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_hope_grant",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_hope_grant",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_cousin_montauban",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_cousin_montauban",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_owner_in_runtime_roster_robert_napier",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_general_activity_window_robert_napier",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_historical_general_loaded_hong_xiuquan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_historical_general_loaded_zeng_guofan",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_historical_general_loaded_sengge_rinchen",
+			"passed": true
+		},
+		{
+			"id": "asia_1860_unregistered_or_future_legacy_command_not_spawned_li_hongzhang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_has_two_playable_factions",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_period_equipment_roster_present",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_no_anachronistic_equipment_militia",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_no_anachronistic_equipment_rifle",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_no_anachronistic_equipment_cavalry",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_no_anachronistic_equipment_engineer",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_no_anachronistic_equipment_field_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_no_anachronistic_equipment_coastal_gunship",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_no_anachronistic_equipment_transport_ship",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_no_anachronistic_equipment_river_gunboat",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_no_anachronistic_equipment_machine_gun",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_state_builds",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_free_world_runtime_flag",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_qing",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_japan",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_russian_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_british_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_british_india",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_french_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_french_indochina",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_ottoman",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_qajar_persia",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_siam",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_korea",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_netherlands",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_spain",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_afghanistan",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_runtime_faction_period_roster_portugal",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_beijing",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_tianjin",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_baoding",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_jinan",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_qingdao",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_shanghai",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_nanjing",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_suzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_ningbo",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_bengbu",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_hankou",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_wuchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_yichang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_changsha",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_nanchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_shantou",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_nanning",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_guilin",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_kunming",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_guiyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_chongqing",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_chengdu",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_xian",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_xining",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_urumqi",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_kashgar",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_lhasa",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_mukden",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_dalian",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_changchun",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_harbin",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_haiphong",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_tokyo",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_yokohama",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_osaka",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_sapporo",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_busan",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_petrograd",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_moscow",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_tashkent",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_samarkand",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_baku",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_tehran",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_tabriz",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_baghdad",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_istanbul",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_kabul",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_delhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_bombay",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_calcutta",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_madras",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_mandalay",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_bangkok",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_hanoi",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_saigon",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_singapore",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_batavia",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_city_owner_in_runtime_roster_surabaya",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_li_hongzhang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_li_hongzhang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_jp_ndl_116",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_jp_ndl_116",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_jp_ndl_120",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_jp_ndl_120",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_jp_ndl_131",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_jp_ndl_131",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_jp_ndl_196",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_jp_ndl_196",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_jp_ndl_6126",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_jp_ndl_6126",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_jp_ndl_63",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_jp_ndl_63",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_jp_ndl_86",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_jp_ndl_86",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_cn_51af5b506750",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_cn_51af5b506750",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_cn_521894ed4f20",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_cn_521894ed4f20",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_cn_5f6d73899e9f",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_cn_5f6d73899e9f",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_cn_67685cb3658c",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_cn_67685cb3658c",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_cn_5b8b5e86",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_cn_5b8b5e86",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_cn_66fe56fd8343",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_cn_66fe56fd8343",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_cn_5218952668e0",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_cn_5218952668e0",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_cn_674e58eb535165af",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_cn_674e58eb535165af",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_ding_ruchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_ding_ruchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_liu_buchan",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_liu_buchan",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_owner_in_runtime_roster_robert_napier",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_general_activity_window_robert_napier",
+			"passed": true
+		},
+		{
+			"id": "asia_1890_historical_general_loaded_li_hongzhang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_has_two_playable_factions",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_period_equipment_roster_present",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_militia",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_rifle",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_cavalry",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_engineer",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_field_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_coastal_gunship",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_transport_ship",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_river_gunboat",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_machine_gun",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_heavy_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_no_anachronistic_equipment_armored_train",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_state_builds",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_free_world_runtime_flag",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_qing",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_boxers",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_eight_nation",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_japan",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_british_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_british_india",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_french_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_russian_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_germany",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_usa",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_italy",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_netherlands",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_spain",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_portugal",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_korea",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_ottoman",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_afghanistan",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_qajar_persia",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_runtime_faction_period_roster_siam",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_beijing",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_tianjin",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_baoding",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_jinan",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_qingdao",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_shanghai",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_nanjing",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_suzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_ningbo",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_bengbu",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_hankou",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_wuchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_yichang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_changsha",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_nanchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_shantou",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_nanning",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_guilin",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_kunming",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_guiyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_chongqing",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_chengdu",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_xian",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_xining",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_urumqi",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_kashgar",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_lhasa",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_mukden",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_dalian",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_changchun",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_harbin",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_haiphong",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_tokyo",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_yokohama",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_osaka",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_sapporo",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_busan",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_petrograd",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_moscow",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_tashkent",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_samarkand",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_baku",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_tehran",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_tabriz",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_baghdad",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_istanbul",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_kabul",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_delhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_bombay",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_calcutta",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_madras",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_mandalay",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_bangkok",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_hanoi",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_saigon",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_singapore",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_batavia",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_city_owner_in_runtime_roster_surabaya",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_116",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_116",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_120",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_120",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_131",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_131",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_15",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_15",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_160",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_160",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_161",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_161",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_164",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_164",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_186",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_186",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_196",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_196",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_213",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_213",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_39",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_39",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_52",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_52",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_58",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_58",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_63",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_63",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_70",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_70",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_jp_ndl_86",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_jp_ndl_86",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_cn_51af5b506750",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_cn_51af5b506750",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_cn_83637984",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_cn_83637984",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_cn_5b8b5e86",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_cn_5b8b5e86",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_cn_88814e1651ef",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_cn_88814e1651ef",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_cn_8463798f7965",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_cn_8463798f7965",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_luo_rongguang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_luo_rongguang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_owner_in_runtime_roster_alfred_gaselee",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_general_activity_window_alfred_gaselee",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_historical_general_loaded_cn_83637984",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_historical_general_loaded_luo_rongguang",
+			"passed": true
+		},
+		{
+			"id": "asia_1900_unregistered_or_future_legacy_command_not_spawned_li_hongzhang",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_has_two_playable_factions",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_period_equipment_roster_present",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_militia",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_rifle",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_cavalry",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_engineer",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_field_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_coastal_gunship",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_transport_ship",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_river_gunboat",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_machine_gun",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_heavy_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_armored_train",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_assault",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_no_anachronistic_equipment_armored_car",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_state_builds",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_free_world_runtime_flag",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_beiyang_gov",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_guangzhou_government",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_russian_provisional",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_bolsheviks",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_russian_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_japan",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_british_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_british_india",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_ottoman",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_qajar_persia",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_afghanistan",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_mongolia",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_tibet",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_netherlands",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_french_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_korea",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_siam",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_spain",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_usa",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_runtime_faction_period_roster_portugal",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_beijing",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_tianjin",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_baoding",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_jinan",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_qingdao",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_shanghai",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_nanjing",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_suzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_ningbo",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_bengbu",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_hankou",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_wuchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_yichang",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_changsha",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_nanchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_shantou",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_nanning",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_guilin",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_kunming",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_guiyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_chongqing",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_chengdu",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_xian",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_xining",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_urumqi",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_kashgar",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_lhasa",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_mukden",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_dalian",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_changchun",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_harbin",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_haiphong",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_tokyo",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_yokohama",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_osaka",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_sapporo",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_busan",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_petrograd",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_moscow",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_tashkent",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_samarkand",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_baku",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_tehran",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_tabriz",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_baghdad",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_istanbul",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_kabul",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_delhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_bombay",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_calcutta",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_madras",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_mandalay",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_bangkok",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_hanoi",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_saigon",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_singapore",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_batavia",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_city_owner_in_runtime_roster_surabaya",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_feng_yuxiang",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_feng_yuxiang",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_sun_yat_sen",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_sun_yat_sen",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_duan_qirui",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_duan_qirui",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_alexei_kaledin",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_alexei_kaledin",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_108",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_108",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_116",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_116",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_137",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_137",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_140",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_140",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_141",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_141",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_164",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_164",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_186",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_186",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_196",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_196",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_213",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_213",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_44",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_44",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_50",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_50",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_55",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_55",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_58",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_58",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_62",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_62",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_70",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_70",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_jp_ndl_87",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_jp_ndl_87",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_cn_51af56fd748b",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_cn_51af56fd748b",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_cao_kun",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_cao_kun",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_zhang_xun",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_zhang_xun",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_owner_in_runtime_roster_alfred_gaselee",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_general_activity_window_alfred_gaselee",
+			"passed": true
+		},
+		{
+			"id": "asia_1917_historical_general_loaded_sun_yat_sen",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_has_two_playable_factions",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_period_equipment_roster_present",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_militia",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_rifle",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_cavalry",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_engineer",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_field_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_coastal_gunship",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_transport_ship",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_river_gunboat",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_machine_gun",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_heavy_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_armored_train",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_assault",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_no_anachronistic_equipment_armored_car",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_state_builds",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_free_world_runtime_flag",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_kmt",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_ccp",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_fengtian",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_zhili",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_shanxi",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_guominjun",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_sichuan",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_yunnan",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_japan",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_soviet",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_british_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_french_indochina",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_korea",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_afghanistan",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_british_india",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_french_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_netherlands",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_ottoman",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_qajar_persia",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_siam",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_spain",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_usa",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_runtime_faction_period_roster_portugal",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_beijing",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_tianjin",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_baoding",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_jinan",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_qingdao",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_shanghai",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_nanjing",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_suzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_ningbo",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_bengbu",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_hankou",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_wuchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_yichang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_changsha",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_nanchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_shantou",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_nanning",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_guilin",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_kunming",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_guiyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_chongqing",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_chengdu",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_xian",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_xining",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_urumqi",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_kashgar",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_lhasa",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_mukden",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_dalian",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_changchun",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_harbin",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_haiphong",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_tokyo",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_yokohama",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_osaka",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_sapporo",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_busan",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_petrograd",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_moscow",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_tashkent",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_samarkand",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_baku",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_tehran",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_tabriz",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_baghdad",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_istanbul",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_kabul",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_delhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_bombay",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_calcutta",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_madras",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_mandalay",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_bangkok",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_hanoi",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_saigon",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_singapore",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_batavia",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_city_owner_in_runtime_roster_surabaya",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_wu_peifu",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_wu_peifu",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_zhang_zuolin",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_zhang_zuolin",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_zhang_xueliang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_zhang_xueliang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_feng_yuxiang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_feng_yuxiang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_sun_chuanfang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_sun_chuanfang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_yan_xishan",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_yan_xishan",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_tang_jiyao",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_tang_jiyao",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_chiang_kai_shek",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_chiang_kai_shek",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_li_zongren",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_li_zongren",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_bai_chongxi",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_bai_chongxi",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_116",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_116",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_126",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_126",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_140",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_140",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_141",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_141",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_213",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_213",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_239",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_239",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_275",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_275",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_41",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_41",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_44",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_44",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_593",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_593",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_jp_ndl_87",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_jp_ndl_87",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_cao_kun",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_cao_kun",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_zhang_zongchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_zhang_zongchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_zhang_fakui",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_zhang_fakui",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_tang_shengzhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_tang_shengzhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_owner_in_runtime_roster_he_yingqin",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_general_activity_window_he_yingqin",
+			"passed": true
+		},
+		{
+			"id": "asia_1927_historical_general_loaded_chiang_kai_shek",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_has_two_playable_factions",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_period_equipment_roster_present",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_militia",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_rifle",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_cavalry",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_engineer",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_field_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_coastal_gunship",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_transport_ship",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_river_gunboat",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_machine_gun",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_heavy_artillery",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_armored_train",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_assault",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_no_anachronistic_equipment_armored_car",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_state_builds",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_free_world_runtime_flag",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_kmt",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_ccp",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_japan",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_japanese_occupied",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_soviet",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_british_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_british_india",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_vichy_france",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_thailand",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_netherlands",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_usa",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_portugal",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_tibet",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_mongolia",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_afghanistan",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_french_empire",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_ottoman",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_runtime_faction_period_roster_qajar_persia",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_beijing",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_tianjin",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_baoding",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_shijiazhuang",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_jinan",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_qingdao",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_shanghai",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_nanjing",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_suzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_hangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_ningbo",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_xuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_bengbu",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_hankou",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_wuchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_yichang",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_changsha",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_nanchang",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_fuzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_guangzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_hong_kong",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_macau",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_shantou",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_nanning",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_guilin",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_kunming",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_guiyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_chongqing",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_chengdu",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_xian",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_lanzhou",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_xining",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_urumqi",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_kashgar",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_lhasa",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_mukden",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_port_arthur",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_dalian",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_changchun",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_harbin",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_taipei",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_haiphong",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_tokyo",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_yokohama",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_osaka",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_hiroshima",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_sapporo",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_seoul",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_pyongyang",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_busan",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_vladivostok",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_khabarovsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_irkutsk",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_petrograd",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_moscow",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_tashkent",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_samarkand",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_baku",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_tbilisi",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_ulaanbaatar",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_tehran",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_tabriz",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_baghdad",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_istanbul",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_jerusalem",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_kabul",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_delhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_lahore",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_bombay",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_calcutta",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_madras",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_rangoon",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_mandalay",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_bangkok",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_hanoi",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_saigon",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_phnom_penh",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_singapore",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_manila",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_batavia",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_city_owner_in_runtime_roster_surabaya",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_chiang_kai_shek",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_chiang_kai_shek",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_li_zongren",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_li_zongren",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_peng_dehuai",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_peng_dehuai",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_5f2081ea5fe0",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_5f2081ea5fe0",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_52116e055fe0",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_52116e055fe0",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_jp_ndl_218",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_jp_ndl_218",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_jp_ndl_227",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_jp_ndl_227",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_jp_ndl_239",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_jp_ndl_239",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_jp_ndl_275",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_jp_ndl_275",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_jp_ndl_344",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_jp_ndl_344",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_jp_ndl_349",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_jp_ndl_349",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_jp_ndl_355",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_jp_ndl_355",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_jp_ndl_41",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_jp_ndl_41",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_jp_ndl_593",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_jp_ndl_593",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_67315fb7",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_67315fb7",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_52184f2f627f",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_52184f2f627f",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_8d3a9f99",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_8d3a9f99",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_5f905411524d",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_5f905411524d",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_96486bc5",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_96486bc5",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_8042836381fb",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_8042836381fb",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_96488d53",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_96488d53",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_5f204e919038",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_5f204e919038",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_5f205b97900a",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_5f205b97900a",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_7c9f88d5",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_7c9f88d5",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_7f5770b38f89",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_7f5770b38f89",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_546858eb7b2c",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_546858eb7b2c",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_738b5b8f5764",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_738b5b8f5764",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_53f6525182f1",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_53f6525182f1",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_cn_53f6633a",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_cn_53f6633a",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_zhang_fakui",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_zhang_fakui",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_tang_shengzhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_tang_shengzhi",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_owner_in_runtime_roster_he_yingqin",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_general_activity_window_he_yingqin",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_historical_general_loaded_chiang_kai_shek",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_historical_general_loaded_cn_5f2081ea5fe0",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_historical_general_loaded_jp_ndl_344",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_unregistered_or_future_legacy_command_not_spawned_tojo_hideki",
+			"passed": true
+		},
+		{
+			"id": "asia_1940_unregistered_or_future_legacy_command_not_spawned_yamashita_tomoyuki",
+			"passed": true
+		},
+		{
+			"id": "campaign_1840_01_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1840_01_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1840_01_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1840_02_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1840_02_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1840_02_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1840_03_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1840_03_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1840_03_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1860_01_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1860_01_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1860_01_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1860_02_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1860_02_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1860_02_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1860_03_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1860_03_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1860_03_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1890_01_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1890_01_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1890_01_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1890_02_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1890_02_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1890_02_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1890_03_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1890_03_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1890_03_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1900_01_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1900_01_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1900_01_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1900_02_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1900_02_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1900_02_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1900_03_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1900_03_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1900_03_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1917_01_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1917_01_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1917_01_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1917_02_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1917_02_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1917_02_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1917_03_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1917_03_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1917_03_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1927_01_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1927_01_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1927_01_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1927_02_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1927_02_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1927_02_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1927_03_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1927_03_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1927_03_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_01_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_01_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_01_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_02_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_02_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_02_mission_builds",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_02_destroy_formation_source_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_02_destroy_objective_has_named_targets",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_02_destroy_objective_resolves_after_target_elimination",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_03_mission_scope_at_most_three",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_03_mission_map_resolves",
+			"passed": true
+		},
+		{
+			"id": "campaign_1940_03_mission_builds",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failed": 0,
+	"failures": [],
+	"formations": 30,
+	"passed": 1614,
+	"timeline_count": 7
+}

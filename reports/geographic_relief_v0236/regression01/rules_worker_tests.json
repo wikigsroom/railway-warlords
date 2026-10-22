@@ -1,0 +1,1453 @@
+{
+	"checks": [
+		{
+			"name": "content_loads",
+			"passed": true
+		},
+		{
+			"name": "presentation_index_is_private_to_current_thread",
+			"passed": true
+		},
+		{
+			"name": "presentation_index_preserves_first_seen_order_and_deduplicates",
+			"passed": true
+		},
+		{
+			"name": "published_presentation_index_is_immutable",
+			"passed": true
+		},
+		{
+			"name": "unchanged_immutable_sight_reuses_exact_index",
+			"passed": true
+		},
+		{
+			"name": "same_size_new_immutable_sight_has_exact_new_membership",
+			"passed": true
+		},
+		{
+			"name": "replacing_cache_does_not_mutate_published_previous_index",
+			"passed": true
+		},
+		{
+			"name": "different_immutable_sight_does_not_reuse_stale_index",
+			"passed": true
+		},
+		{
+			"name": "visible_and_explored_cache_slots_are_independent",
+			"passed": true
+		},
+		{
+			"name": "mutable_input_edit_rebuilds_without_stale_membership",
+			"passed": true
+		},
+		{
+			"name": "mutable_input_reorder_preserves_new_order",
+			"passed": true
+		},
+		{
+			"name": "mutable_input_is_never_retained_in_immutable_cache",
+			"passed": true
+		},
+		{
+			"name": "mutable_builds_do_not_displace_other_immutable_slot",
+			"passed": true
+		},
+		{
+			"name": "all_controllers_share_one_serialized_worker",
+			"passed": true
+		},
+		{
+			"name": "main_thread_has_stable_private_query_cache",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:00:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:00:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:00:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:00:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:00:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:00:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:00:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:00:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:01:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:01:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:01:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:01:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:01:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:01:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:01:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:01:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:02:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:02:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:02:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:02:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:02:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:02:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:02:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:02:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:03:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:03:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:03:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:03:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:03:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:03:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:03:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:03:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:04:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:04:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:04:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:04:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:04:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:04:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:04:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:04:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:05:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:05:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:05:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:05:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:05:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:05:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:05:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:05:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:06:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:06:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:06:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:06:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:06:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:06:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:06:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:06:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:07:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:07:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:07:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:07:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:07:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:07:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:07:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:07:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:08:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:08:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:08:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:08:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:08:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:08:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:08:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:08:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:09:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:09:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:09:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:09:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:09:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:09:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:09:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:09:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:10:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:10:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:10:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:10:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:10:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:10:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:10:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:10:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:11:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:11:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:11:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:11:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:11:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:11:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:11:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:11:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:12:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:12:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:12:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:12:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:12:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:12:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:12:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:12:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:13:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:13:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:13:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:13:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:13:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:13:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:13:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:13:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:14:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:14:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:14:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:14:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:14:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:14:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:14:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:14:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:15:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:15:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:15:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:15:legal",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:15:same_decision",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:15:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:15:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "production_campaign:15:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_created:balanced",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:00:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:00:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:00:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:00:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:00:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:00:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:00:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:00:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:01:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:01:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:01:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:01:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:01:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:01:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:01:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:01:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:02:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:02:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:02:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:02:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:02:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:02:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:02:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:02:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:03:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:03:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:03:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:03:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:03:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:03:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:03:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:03:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:04:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:04:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:04:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:04:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:04:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:04:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:04:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:04:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:05:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:05:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:05:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:05:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:05:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:05:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:05:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:05:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:06:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:06:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:06:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:06:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:06:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:06:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:06:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:06:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:07:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:07:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:07:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:07:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:07:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:07:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:07:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_balanced:07:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_created:concentrated",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:00:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:00:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:00:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:00:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:00:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:00:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:00:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:00:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:01:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:01:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:01:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:01:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:01:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:01:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:01:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:01:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:02:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:02:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:02:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:02:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:02:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:02:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:02:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:02:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:03:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:03:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:03:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:03:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:03:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:03:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:03:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:03:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:04:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:04:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:04:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:04:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:04:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:04:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:04:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:04:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:05:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:05:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:05:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:05:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:05:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:05:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:05:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:05:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:06:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:06:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:06:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:06:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:06:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:06:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:06:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:06:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:07:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:07:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:07:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:07:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:07:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:07:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:07:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_concentrated:07:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_created:single_faction",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:00:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:00:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:00:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:00:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:00:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:00:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:00:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:00:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:01:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:01:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:01:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:01:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:01:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:01:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:01:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:01:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:02:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:02:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:02:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:02:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:02:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:02:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:02:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:02:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:03:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:03:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:03:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:03:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:03:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:03:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:03:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:03:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:04:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:04:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:04:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:04:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:04:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:04:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:04:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:04:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:05:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:05:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:05:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:05:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:05:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:05:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:05:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:05:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:06:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:06:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:06:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:06:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:06:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:06:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:06:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:06:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:07:off_main_thread",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:07:concurrent_renderer_queries",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:07:input_snapshot_and_rng_unchanged",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:07:legal",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:07:same_decision",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:07:same_ordered_events",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:07:same_complete_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "capacity_single_faction:07:same_prepared_presentation_and_actor_order",
+			"passed": true
+		},
+		{
+			"name": "controller_starts",
+			"passed": true
+		},
+		{
+			"name": "interactive_command_queued",
+			"passed": true
+		},
+		{
+			"name": "queued_command_does_not_commit_inline",
+			"passed": true
+		},
+		{
+			"name": "double_click_cannot_queue_duplicate_command",
+			"passed": true
+		},
+		{
+			"name": "paused_job_finishes_computing",
+			"passed": true
+		},
+		{
+			"name": "pause_holds_complete_result_without_mutating_state_or_rng",
+			"passed": true
+		},
+		{
+			"name": "resume_commits_pending_result",
+			"passed": true
+		},
+		{
+			"name": "resume_commits_exact_result_once_on_main_thread",
+			"passed": true
+		},
+		{
+			"name": "load_invalidates_uncommitted_command_and_preserves_save_snapshot",
+			"passed": true
+		},
+		{
+			"name": "automatic_planning_started_in_worker",
+			"passed": true
+		},
+		{
+			"name": "stop_discards_uncommitted_plan_without_changing_rng",
+			"passed": true
+		},
+		{
+			"name": "abandon_has_no_late_commit_or_ghost_planner",
+			"passed": true
+		},
+		{
+			"name": "remaining_controller_keeps_worker_alive",
+			"passed": true
+		},
+		{
+			"name": "shared_worker_still_executes_after_one_controller_exits",
+			"passed": true
+		},
+		{
+			"name": "same_slot_writes_and_load_are_serialized_and_verified",
+			"passed": true
+		},
+		{
+			"name": "slot_listing_runs_in_serialized_io_queue",
+			"passed": true
+		},
+		{
+			"name": "queued_load_reads_latest_completed_save_with_exact_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "background_save_and_load_do_not_mutate_inputs",
+			"passed": true
+		},
+		{
+			"name": "worker_loaded_geometry_is_frozen_before_publication",
+			"passed": true
+		},
+		{
+			"name": "prepared_load_swaps_exact_worker_result",
+			"passed": true
+		},
+		{
+			"name": "last_controller_joins_worker_and_releases_query_context",
+			"passed": true
+		},
+		{
+			"name": "worker_shutdown_releases_its_presentation_index_context",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failed": 0,
+	"failures": [],
+	"game_version": "0.2.36",
+	"longest_worker_ms": 560.344,
+	"main_thread_heartbeats": 374,
+	"passed": 360,
+	"scope": "Native serialized thread, immutable input snapshots, concurrent renderer queries, exact commands/events/full-state/RNG equality, pause/resume/cancel/load/lifetime. Does not certify physical Android frame time.",
+	"trace_commands": 40
+}

@@ -1,0 +1,199 @@
+{
+	"build_version": "0.2.36",
+	"checks": [
+		{
+			"name": "content_loads_with_land_clipped_ownership",
+			"passed": true
+		},
+		{
+			"name": "clip_vectors_are_bound_to_the_actual_source_map_bytes",
+			"passed": true
+		},
+		{
+			"name": "all_source_islands_and_the_existing_lake_hole_are_retained",
+			"passed": true
+		},
+		{
+			"name": "all_81_city_influences_are_clipped_including_61_previous_water_overlaps",
+			"passed": true
+		},
+		{
+			"name": "every_eligible_field_hex_has_full_partial_or_empty_source_geometry",
+			"passed": true
+		},
+		{
+			"name": "both_partial_shores_and_fully_off_land_candidate_hexes_are_handled",
+			"passed": true
+		},
+		{
+			"name": "unsupported_geography_does_not_receive_an_unclipped_fallback",
+			"passed": true
+		},
+		{
+			"name": "actual_city_mesh_resources_are_reused_across_ownership_and_timeline_changes",
+			"passed": true
+		},
+		{
+			"name": "all_source_water_witnesses_are_outside_actual_city_mesh_triangles",
+			"passed": true
+		},
+		{
+			"name": "source_lake_water_remains_unpainted_and_actual_lake_islands_remain_land",
+			"passed": true
+		},
+		{
+			"name": "actual_lake_water_mesh_excludes_separately_sourced_lake_islands",
+			"passed": true
+		},
+		{
+			"name": "actual_lake_mesh_is_cached_with_the_shared_water_uv_period",
+			"passed": true
+		},
+		{
+			"name": "actual_lake_water_mesh_uses_the_same_world_uv_phase_as_rivers_and_seas",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_field_is_used_for_timeline:asia_1840",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_city_influences_are_used_for_timeline:asia_1840",
+			"passed": true
+		},
+		{
+			"name": "current_timeline_owners_are_preserved:asia_1840",
+			"passed": true
+		},
+		{
+			"name": "display_preparation_preserves_rules_geography_economy_random_and_owner_state:asia_1840",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_field_is_used_for_timeline:asia_1860",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_city_influences_are_used_for_timeline:asia_1860",
+			"passed": true
+		},
+		{
+			"name": "current_timeline_owners_are_preserved:asia_1860",
+			"passed": true
+		},
+		{
+			"name": "display_preparation_preserves_rules_geography_economy_random_and_owner_state:asia_1860",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_field_is_used_for_timeline:asia_1890",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_city_influences_are_used_for_timeline:asia_1890",
+			"passed": true
+		},
+		{
+			"name": "current_timeline_owners_are_preserved:asia_1890",
+			"passed": true
+		},
+		{
+			"name": "display_preparation_preserves_rules_geography_economy_random_and_owner_state:asia_1890",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_field_is_used_for_timeline:asia_1900",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_city_influences_are_used_for_timeline:asia_1900",
+			"passed": true
+		},
+		{
+			"name": "current_timeline_owners_are_preserved:asia_1900",
+			"passed": true
+		},
+		{
+			"name": "display_preparation_preserves_rules_geography_economy_random_and_owner_state:asia_1900",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_field_is_used_for_timeline:asia_1917",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_city_influences_are_used_for_timeline:asia_1917",
+			"passed": true
+		},
+		{
+			"name": "current_timeline_owners_are_preserved:asia_1917",
+			"passed": true
+		},
+		{
+			"name": "display_preparation_preserves_rules_geography_economy_random_and_owner_state:asia_1917",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_field_is_used_for_timeline:asia_1927",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_city_influences_are_used_for_timeline:asia_1927",
+			"passed": true
+		},
+		{
+			"name": "current_timeline_owners_are_preserved:asia_1927",
+			"passed": true
+		},
+		{
+			"name": "display_preparation_preserves_rules_geography_economy_random_and_owner_state:asia_1927",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_field_is_used_for_timeline:asia_1940",
+			"passed": true
+		},
+		{
+			"name": "source_clipped_city_influences_are_used_for_timeline:asia_1940",
+			"passed": true
+		},
+		{
+			"name": "current_timeline_owners_are_preserved:asia_1940",
+			"passed": true
+		},
+		{
+			"name": "display_preparation_preserves_rules_geography_economy_random_and_owner_state:asia_1940",
+			"passed": true
+		},
+		{
+			"name": "source_water_witnesses_are_outside_the_actual_combined_field_meshes",
+			"passed": true
+		},
+		{
+			"name": "changed_city_owner_rebuilds_field_colors_from_the_new_state",
+			"passed": true
+		},
+		{
+			"name": "changed_city_owner_preserves_the_actual_clipped_city_meshes",
+			"passed": true
+		},
+		{
+			"name": "all_timeline_and_owner_checks_leave_the_published_source_map_immutable",
+			"passed": true
+		},
+		{
+			"name": "base_hex_size_and_translucent_ownership_opacities_are_preserved",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failed": 0,
+	"failures": [],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"presentation_data_sha256": "578ff405de7d3e5d27428526b786e601224327343d169e7aa20909a3a7af14d2",
+	"source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
+	"source_maps_modified": false,
+	"timelines_checked": 7,
+	"water_witnesses_checked": 160
+}

@@ -1,0 +1,202 @@
+{
+	"build_version": "0.2.36",
+	"checks": [
+		{
+			"name": "content_loads_with_continuous_water_renderer",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_arrays_retained:jingjin",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_confluences_and_endpoints_retained:jingjin",
+			"passed": true
+		},
+		{
+			"name": "primary_display_is_original_or_within_existing_60m_bound:jingjin",
+			"passed": true
+		},
+		{
+			"name": "river_preparation_leaves_rules_crossings_and_history_immutable:jingjin",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_arrays_retained:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_confluences_and_endpoints_retained:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "primary_display_is_original_or_within_existing_60m_bound:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "river_preparation_leaves_rules_crossings_and_history_immutable:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_arrays_retained:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_confluences_and_endpoints_retained:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "primary_display_is_original_or_within_existing_60m_bound:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "river_preparation_leaves_rules_crossings_and_history_immutable:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_arrays_retained:hankou",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_confluences_and_endpoints_retained:hankou",
+			"passed": true
+		},
+		{
+			"name": "primary_display_is_original_or_within_existing_60m_bound:hankou",
+			"passed": true
+		},
+		{
+			"name": "river_preparation_leaves_rules_crossings_and_history_immutable:hankou",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_arrays_retained:ningpu",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_confluences_and_endpoints_retained:ningpu",
+			"passed": true
+		},
+		{
+			"name": "primary_display_is_original_or_within_existing_60m_bound:ningpu",
+			"passed": true
+		},
+		{
+			"name": "river_preparation_leaves_rules_crossings_and_history_immutable:ningpu",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_arrays_retained:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "all_primary_source_confluences_and_endpoints_retained:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "primary_display_is_original_or_within_existing_60m_bound:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "river_preparation_leaves_rules_crossings_and_history_immutable:asia_strategic",
+			"passed": true
+		},
+		{
+			"name": "all_31_yangtze_replacement_reaches_receive_bounded_display_geometry",
+			"passed": true
+		},
+		{
+			"name": "real_same_order_upstream_downstream_joins_share_exact_drawn_cross_sections",
+			"passed": true
+		},
+		{
+			"name": "nearby_source_endpoints_are_never_snapped_or_given_fabricated_connections",
+			"passed": true
+		},
+		{
+			"name": "coincident_endpoints_without_source_topology_cannot_acquire_a_guessed_join",
+			"passed": true
+		},
+		{
+			"name": "resampling_identical_river_cannot_change_symbolic_width",
+			"passed": true
+		},
+		{
+			"name": "empty_and_single_point_sources_do_not_create_water",
+			"passed": true
+		},
+		{
+			"name": "invalid_widths_cannot_generate_geometry",
+			"passed": true
+		},
+		{
+			"name": "ribbon_preserves_source_with_negative_positions_or_duplicate_joins:0",
+			"passed": true
+		},
+		{
+			"name": "acute_join_has_finite_geometry_and_bounded_symbolic_banks:0",
+			"passed": true
+		},
+		{
+			"name": "actual_mesh_world_uvs_keep_shared_phase_at_negative_coordinates:0",
+			"passed": true
+		},
+		{
+			"name": "ribbon_contains_soft_outer_edge_and_readable_water_core:0",
+			"passed": true
+		},
+		{
+			"name": "unchanged_selection_reuses_real_mesh_resource:0",
+			"passed": true
+		},
+		{
+			"name": "width_change_invalidates_only_presentation_geometry:0",
+			"passed": true
+		},
+		{
+			"name": "ribbon_preserves_source_with_negative_positions_or_duplicate_joins:1",
+			"passed": true
+		},
+		{
+			"name": "acute_join_has_finite_geometry_and_bounded_symbolic_banks:1",
+			"passed": true
+		},
+		{
+			"name": "actual_mesh_world_uvs_keep_shared_phase_at_negative_coordinates:1",
+			"passed": true
+		},
+		{
+			"name": "ribbon_contains_soft_outer_edge_and_readable_water_core:1",
+			"passed": true
+		},
+		{
+			"name": "unchanged_selection_reuses_real_mesh_resource:1",
+			"passed": true
+		},
+		{
+			"name": "width_change_invalidates_only_presentation_geometry:1",
+			"passed": true
+		},
+		{
+			"name": "source_direction_cannot_flip_world_light_or_bank_shading",
+			"passed": true
+		},
+		{
+			"name": "actual_bank_and_water_indices_are_separate_for_confluence_passes",
+			"passed": true
+		},
+		{
+			"name": "legacy_per_hex_water_stamps_cannot_cover_continuous_water",
+			"passed": true
+		},
+		{
+			"name": "main_cached_ground_and_unit_views_all_use_imported_mipmaps",
+			"passed": true
+		}
+	],
+	"failed": 0,
+	"failures": [],
+	"passed": true,
+	"replacement_reaches_checked": 31,
+	"scope": "Actual source geometry, bounded display mains, mesh joins, world UV phase, cache lifetime and authoritative-state isolation; not measured riverbanks or historical-channel certification."
+}

@@ -1,0 +1,60 @@
+{
+	"build_version": "0.2.35",
+	"camera": [
+		3852.0,
+		2930.6298828125
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"control_enabled": true,
+	"control_land_clip": {
+		"city_zones": 81,
+		"clipped_city_zones": 61.0,
+		"eligible_field_cells": 3744.0,
+		"empty_field_cells": 14.0,
+		"enabled": true,
+		"historical_military_frontiers_claimed": false,
+		"inland_water_preserves_source_islands": true,
+		"land_clipped": true,
+		"partial_field_cells": 629.0,
+		"source": "existing_render_land_exteriors_minus_holes",
+		"source_land_holes": 1.0,
+		"source_land_polygons": 12105.0,
+		"source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+	},
+	"mobile_layout_profile": false,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"raw_godot_capture": true,
+	"scenario_id": "asia_1840",
+	"surface": "source_land_control_overview_control",
+	"territory_field": {
+		"border_segments": 467,
+		"cells_assigned": 2681,
+		"cells_skipped": 1063,
+		"clip": {
+			"city_zones": 81,
+			"clipped_city_zones": 61.0,
+			"eligible_field_cells": 3744.0,
+			"empty_field_cells": 14.0,
+			"enabled": true,
+			"historical_military_frontiers_claimed": false,
+			"inland_water_preserves_source_islands": true,
+			"land_clipped": true,
+			"partial_field_cells": 629.0,
+			"source": "existing_render_land_exteriors_minus_holes",
+			"source_land_holes": 1.0,
+			"source_land_polygons": 12105.0,
+			"source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+		},
+		"enabled": true,
+		"land_clipped": true,
+		"minimap_reuses_same_meshes": true,
+		"owners": 16,
+		"presentation_only": true,
+		"source": "current_owned_real_city_nodes_voronoi"
+	},
+	"ui_scale": 1.0,
+	"viewport": "(1920.0, 1080.0)",
+	"window": "(1920, 1080)",
+	"zoom": 0.163162265578665
+}

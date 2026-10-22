@@ -1,0 +1,312 @@
+class_name GroundMaterialBlend
+extends RefCounted
+
+# One runtime texture-array layer per immutable, complete source. No atlas,
+# resized image, cropped source or generated raster is written to disk.
+static var source_array: Texture2DArray
+static var attempted=false
+static var layers: Dictionary={}
+const WEIGHT_MARKER=1024.0
+const CODE="""
+shader_type canvas_item;
+render_mode unshaded;
+uniform sampler2DArray ground_sources : source_color, repeat_enable, filter_linear_mipmap;
+uniform float ground_alpha = 0.94;
+uniform float ground_repeat_period = 224.0;
+uniform float ground_source_periods[20];
+uniform bool ground_stochastic = true;
+uniform bool ground_seam_feather = true;
+uniform bool water_stochastic = true;
+uniform bool relief_enabled = false;
+uniform sampler2D relief_shades : repeat_disable, filter_linear;
+uniform vec2 relief_dimensions = vec2(1.0);
+uniform bool geographic_relief_enabled = false;
+uniform sampler2D geographic_heights : repeat_disable, filter_linear;
+uniform vec2 geographic_dimensions = vec2(1.0);
+uniform vec2 geographic_world_origin = vec2(0.0);
+uniform vec2 geographic_world_extent = vec2(1.0);
+uniform vec4 geographic_bounds = vec4(20.0, -10.0, 180.0, 80.0);
+varying float geographic_mode;
+varying vec2 geographic_fraction;
+varying float relief_mode;
+varying vec2 relief_uv;
+varying float ground_mode;
+varying vec3 ground_layers;
+varying vec3 ground_weights;
+varying vec2 ground_uv;
+varying float ground_coverage;
+varying float contour_mode;
+varying vec2 contour_distance;
+varying float scenery_mode;
+varying vec2 scenery_foot;
+varying float water_mode;
+varying vec2 water_uv;
+varying vec4 water_tint;
+void vertex() {
+    geographic_mode = UV.y >= 4095.5 && UV.y <= 4096.5 ? 1.0 : 0.0;
+    geographic_fraction = (VERTEX - geographic_world_origin) / geographic_world_extent;
+    water_mode = UV.x >= 3072.0 && UV.x <= 8192.0 ? 1.0 : 0.0;
+    // Source UVs carry a mode tag only. Derive the continuous coordinates from
+    // uncompressed world vertices: a large UV tag can quantize small wave
+    // increments in the native mesh buffer, especially at overview scale.
+    water_uv = VERTEX / 256.0;
+    water_tint = COLOR;
+    relief_mode = UV.y >= 512.0 && UV.y <= 513.0 ? 1.0 : 0.0;
+    relief_uv = vec2(UV.x, UV.y - 512.0);
+    ground_mode = UV.y < -1023.0 ? 1.0 : 0.0;
+    contour_mode = UV.y >= 1023.5 && UV.y <= 1025.5 ? 1.0 : 0.0;
+    contour_distance = vec2(UV.x, UV.y - 1024.0);
+    scenery_mode = UV.y >= 2048.0 && UV.y <= 2049.0 ? 1.0 : 0.0;
+    if (scenery_mode > 0.5) {
+        scenery_foot = COLOR.rg;
+        COLOR = vec4(1.0, 1.0, 0.98, COLOR.a);
+        UV.y -= 2048.0;
+    }
+    if (ground_mode > 0.5) {
+        ground_layers = floor(COLOR.rgb * 255.0 + vec3(0.5));
+        ground_weights = vec3(UV.x, -UV.y - 1024.0, 1.0 - UV.x + UV.y + 1024.0);
+        ground_uv = VERTEX / ground_repeat_period;
+        ground_coverage = COLOR.a;
+    }
+}
+// Mirror folds join the full source at the same edge texels; three smoothly
+// weighted world-space translations conceal a repeated rectangular motif.
+// Explicit derivatives select the imported mip chain without seam blur/noise.
+vec3 water_sample(sampler2D water_texture, vec2 uv, vec2 dx, vec2 dy) {
+    vec2 parity = mod(floor(uv), vec2(2.0));
+    vec2 folded = mix(fract(uv), vec2(1.0) - fract(uv), parity);
+    vec2 direction = vec2(1.0) - 2.0 * parity;
+    return textureGrad(water_texture, folded, dx * direction, dy * direction).rgb;
+}
+vec3 water_pigment(sampler2D water_texture, vec2 uv) {
+    vec2 dx = dFdx(uv);
+    vec2 dy = dFdy(uv);
+    if (!water_stochastic) return textureGrad(water_texture, uv, dx, dy).rgb;
+    vec2 lattice = vec2(uv.x - uv.y * 0.57735027, uv.y * 1.15470054) * 0.65;
+    vec2 cell = floor(lattice);
+    vec2 f = fract(lattice);
+    float upper = step(1.0, f.x + f.y);
+    vec2 a = cell + vec2(upper);
+    vec2 b = cell + vec2(1.0, 0.0);
+    vec2 c = cell + vec2(0.0, 1.0);
+    vec3 weights = mix(vec3(1.0 - f.x - f.y, f.x, f.y),
+        vec3(f.x + f.y - 1.0, 1.0 - f.y, 1.0 - f.x), upper);
+    weights = clamp(weights, vec3(0.0), vec3(1.0));
+    weights = weights * weights * (vec3(3.0) - 2.0 * weights);
+    weights /= max(dot(weights, vec3(1.0)), 0.0001);
+    vec2 oa = fract(sin(vec2(dot(a, vec2(127.1,311.7)),dot(a, vec2(269.5,183.3)))) * 43758.5453);
+    vec2 ob = fract(sin(vec2(dot(b, vec2(127.1,311.7)),dot(b, vec2(269.5,183.3)))) * 43758.5453);
+    vec2 oc = fract(sin(vec2(dot(c, vec2(127.1,311.7)),dot(c, vec2(269.5,183.3)))) * 43758.5453);
+    vec3 pigment = water_sample(water_texture, uv + oa, dx, dy) * weights.x
+        + water_sample(water_texture, uv + ob, dx, dy) * weights.y
+        + water_sample(water_texture, uv + oc, dx, dy) * weights.z;
+    // An entire source becomes only a few pixels on continental views. Its
+    // authored broad lighting would turn into repeated bright dots there.
+    // Fade to the source's full-footprint mip average while waves become
+    // unreadable; tactical zoom retains the complete translated originals.
+    float pixels_per_source = 1.0 / max(max(length(dx), length(dy)), 0.00001);
+    float detail = smoothstep(24.0, 80.0, pixels_per_source);
+    vec3 distant = textureLod(water_texture, vec2(0.5), 16.0).rgb;
+    return mix(distant, pigment, detail);
+}
+vec2 ground_offset(vec2 vertex, float layer) {
+    vec2 key = vec2(dot(vertex, vec2(127.1, 311.7)), dot(vertex, vec2(269.5, 183.3)));
+    return fract(sin(key + vec2(layer * 19.19)) * 43758.5453);
+}
+// A generated "seamless" source can still have unlike opposite edge texels.
+// Near a repeat boundary, crossfade to a half-period translation of the same
+// complete source. Both sides then meet at its interior instead of exposing
+// the source border. UV direction, original pixels and geographic masks stay
+// unchanged. Interior fragments use one fetch; only edge bands need more.
+vec3 ground_sample(vec2 uv, float layer, vec2 dx, vec2 dy) {
+    if (!ground_seam_feather) {
+        return textureGrad(ground_sources, vec3(uv, layer), dx, dy).rgb;
+    }
+    vec2 phase = fract(uv);
+    vec2 shifted = fract(uv + vec2(0.5));
+    vec2 keep = smoothstep(vec2(0.0), vec2(0.075), min(phase, vec2(1.0) - phase));
+    vec3 pigment = textureGrad(ground_sources, vec3(phase, layer), dx, dy).rgb;
+    if (keep.x < 1.0) {
+        vec3 across = textureGrad(ground_sources, vec3(shifted.x, phase.y, layer), dx, dy).rgb;
+        pigment = mix(across, pigment, keep.x);
+    }
+    if (keep.y < 1.0) {
+        vec3 across = textureGrad(ground_sources, vec3(phase.x, shifted.y, layer), dx, dy).rgb;
+        if (keep.x < 1.0) {
+            vec3 corner = textureGrad(ground_sources, vec3(shifted, layer), dx, dy).rgb;
+            across = mix(corner, across, keep.x);
+        }
+        pigment = mix(across, pigment, keep.y);
+    }
+    return pigment;
+}
+// Three translated whole-source samples share a world-anchored triangular
+// lattice. Their smooth weights remove a fixed wallpaper period; no texture
+// is painted, rotated, cut into an atlas or saved as a derived raster.
+vec3 ground_pigment(vec2 uv, float layer) {
+    // Material brush scales differ; keep every family anchored to the same
+    // world origin while sampling its entire immutable source.
+    uv *= ground_repeat_period / max(ground_source_periods[int(round(layer))], 1.0);
+    vec2 dx = dFdx(uv);
+    vec2 dy = dFdy(uv);
+    if (!ground_stochastic) {
+        return ground_sample(uv, layer, dx, dy);
+    }
+    vec2 lattice = vec2(uv.x - uv.y * 0.57735027, uv.y * 1.15470054) * 0.35;
+    vec2 cell = floor(lattice);
+    vec2 f = fract(lattice);
+    float upper = step(1.0, f.x + f.y);
+    vec2 a = cell + vec2(upper);
+    vec2 b = cell + vec2(1.0, 0.0);
+    vec2 c = cell + vec2(0.0, 1.0);
+    vec3 weights = mix(vec3(1.0 - f.x - f.y, f.x, f.y),
+        vec3(f.x + f.y - 1.0, 1.0 - f.y, 1.0 - f.x), upper);
+    weights = clamp(weights, vec3(0.0), vec3(1.0));
+    weights = weights * weights * (vec3(3.0) - 2.0 * weights);
+    weights /= max(dot(weights, vec3(1.0)), 0.0001);
+    return ground_sample(uv + ground_offset(a, layer), layer, dx, dy) * weights.x
+        + ground_sample(uv + ground_offset(b, layer), layer, dx, dy) * weights.y
+        + ground_sample(uv + ground_offset(c, layer), layer, dx, dy) * weights.z;
+}
+// Four bilinear fetches evaluate the sixteen positive cubic B-spline weights.
+// World/axial UVs are affine across the entire source mesh: its triangle edges
+// cannot introduce a different lighting function or camera-dependent phase.
+vec4 continuous_relief(vec2 uv) {
+    vec2 p = uv * relief_dimensions - vec2(0.5);
+    vec2 base = floor(p);
+    vec2 f = fract(p);
+    vec2 w0 = pow(vec2(1.0) - f, vec2(3.0)) / 6.0;
+    vec2 w1 = (3.0 * f*f*f - 6.0 * f*f + vec2(4.0)) / 6.0;
+    vec2 w2 = (-3.0 * f*f*f + 3.0 * f*f + 3.0 * f + vec2(1.0)) / 6.0;
+    vec2 w3 = f*f*f / 6.0;
+    vec2 g0 = w0 + w1;
+    vec2 g1 = w2 + w3;
+    vec2 a = (base - vec2(1.0) + w1/g0 + vec2(0.5)) / relief_dimensions;
+    vec2 b = (base + vec2(1.0) + w3/g1 + vec2(0.5)) / relief_dimensions;
+    return texture(relief_shades, a) * g0.x * g0.y
+        + texture(relief_shades, vec2(b.x, a.y)) * g1.x * g0.y
+        + texture(relief_shades, vec2(a.x, b.y)) * g0.x * g1.y
+        + texture(relief_shades, b) * g1.x * g1.y;
+}
+// Signed metres were biased in numerical runtime memory before upload. Thus
+// hardware bilinear filtering remains correct across sea level and byte carries.
+float geographic_height(vec2 uv) {
+    vec2 h = texture(geographic_heights, uv).rg;
+    return max(dot(h, vec2(65280.0, 255.0)) - 32768.0, 0.0);
+}
+vec2 geographic_slope(vec2 uv, vec2 texel, vec2 metres, float span) {
+    float west = geographic_height(uv - vec2(texel.x * span, 0.0));
+    float east = geographic_height(uv + vec2(texel.x * span, 0.0));
+    float north = geographic_height(uv - vec2(0.0, texel.y * span));
+    float south = geographic_height(uv + vec2(0.0, texel.y * span));
+    return vec2(east - west, south - north) / (2.0 * span * metres);
+}
+vec4 geographic_lighting() {
+    vec2 texel = vec2(1.0) / geographic_dimensions;
+    vec2 uv = (geographic_fraction * (geographic_dimensions - vec2(1.0)) + vec2(0.5)) * texel;
+    float latitude = mix(geographic_bounds.w, geographic_bounds.y, geographic_fraction.y);
+    vec2 degrees = (geographic_bounds.zw - geographic_bounds.xy) / (geographic_dimensions - vec2(1.0));
+    vec2 metres = degrees * 111320.0 * vec2(max(cos(radians(latitude)), 0.15), 1.0);
+    vec2 fine = geographic_slope(uv, texel, metres, 1.0);
+    vec2 broad = geographic_slope(uv, texel, metres, 4.0);
+    vec3 light = normalize(vec3(-0.55, -0.68, 0.62));
+    vec3 normal_fine = normalize(vec3(-fine * 6.0, 1.0));
+    vec3 normal_broad = normalize(vec3(-broad * 6.0, 1.0));
+    float illumination = mix(dot(normal_fine, light), dot(normal_broad, light), 0.24);
+    float tone = clamp(0.5 + (illumination - light.z) * 1.9, 0.0, 1.0);
+    float rugged = smoothstep(0.004, 0.12, mix(length(fine), length(broad), 0.24));
+    float upland = smoothstep(1200.0, 4500.0, geographic_height(uv));
+    vec3 pigment = mix(vec3(0.20, 0.29, 0.24), vec3(0.90, 0.89, 0.68), tone);
+    pigment = mix(pigment, vec3(0.74, 0.75, 0.66), upland * 0.22);
+    return vec4(pigment, min(0.015 + rugged * 0.44 + upland * 0.10, 0.55));
+}
+void fragment() {
+    if (water_mode > 0.5) {
+        COLOR = vec4(water_pigment(TEXTURE, water_uv) * water_tint.rgb, water_tint.a);
+    } else if (geographic_mode > 0.5 && geographic_relief_enabled) {
+        COLOR = geographic_lighting();
+    } else if (relief_mode > 0.5 && relief_enabled) {
+        vec4 shade = continuous_relief(relief_uv);
+        COLOR = vec4(shade.rgb / max(shade.a, 0.0001), shade.a);
+    } else if (ground_mode > 0.5) {
+        vec3 weights = clamp(ground_weights, vec3(0.0), vec3(1.0));
+        weights = weights * weights * (vec3(3.0) - 2.0 * weights);
+        weights /= max(dot(weights, vec3(1.0)), 0.0001);
+        vec3 pigment = ground_pigment(ground_uv, ground_layers.x);
+        if (ground_layers.x != ground_layers.y || ground_layers.x != ground_layers.z) {
+            pigment = pigment * weights.x
+                + ground_pigment(ground_uv, ground_layers.y) * weights.y
+                + ground_pigment(ground_uv, ground_layers.z) * weights.z;
+        }
+        COLOR = vec4(pigment, ground_alpha * ground_coverage);
+    } else if (contour_mode > 0.5) {
+        // Analytic box coverage retains a thin, antialiased 0.65-pixel ink
+        // stroke while thousands of source segments share a few mesh draws.
+        vec2 pixel = max(fwidth(contour_distance), vec2(0.00001));
+        float core = 0.65 / 2.65;
+        float cross_coverage = clamp((core - contour_distance.x) / pixel.x + 0.5, 0.0, 1.0)
+            - clamp((-core - contour_distance.x) / pixel.x + 0.5, 0.0, 1.0);
+        float end_coverage = clamp((1.0 - contour_distance.y) / pixel.y + 0.5, 0.0, 1.0)
+            - clamp(-contour_distance.y / pixel.y + 0.5, 0.0, 1.0);
+        COLOR.a *= cross_coverage * end_coverage;
+    } else if (scenery_mode > 0.5) {
+        COLOR.a *= 1.0 - smoothstep(scenery_foot.x, scenery_foot.y, UV.y);
+    }
+}
+"""
+
+static func source_layers() -> Dictionary:
+	if layers.is_empty():
+		var families=MapTerrainSurfaces.macro_data().get("records",{}).keys();families.sort()
+		for index in range(families.size()):layers[families[index]]=index
+	return layers
+
+static func source_periods() -> PackedFloat32Array:
+	var periods=PackedFloat32Array();periods.resize(source_layers().size())
+	for family in source_layers():periods[source_layers()[family]]=MapTerrainSurfaces.macro_period(family)
+	return periods
+
+static func material(strategic: bool) -> ShaderMaterial:
+	if DisplayServer.get_name()=="headless":return null
+	if not attempted:
+		attempted=true
+		var images: Array[Image]=[]
+		for family in source_layers():
+			var id=MapTerrainSurfaces.macro_id(family)
+			var texture=ResourceLoader.load("res://assets/tile/"+id+".png","Texture2D",ResourceLoader.CACHE_MODE_IGNORE) as Texture2D
+			if texture==null:return null
+			var image=texture.get_image()
+			if image==null:return null
+			if image.is_compressed() and image.decompress()!=OK:return null
+			image.convert(Image.FORMAT_RGBA8)
+			if not image.has_mipmaps():image.generate_mipmaps()
+			images.append(image)
+		var array=Texture2DArray.new()
+		if array.create_from_images(images)!=OK:return null
+		source_array=array
+	if source_array==null:return null
+	var shader=Shader.new();shader.code=CODE
+	var result=ShaderMaterial.new();result.shader=shader
+	result.set_shader_parameter("ground_sources",source_array)
+	result.set_shader_parameter("ground_repeat_period",float(MapTerrainSurfaces.macro_data().get("world_repeat_period",224)))
+	result.set_shader_parameter("ground_source_periods",source_periods())
+	result.set_shader_parameter("ground_alpha",MapTerrainSurfaces.alpha_for("temperate_meadow",strategic))
+	return result
+
+static func weights(a: float, b: float) -> Vector2:
+	return Vector2(a,-WEIGHT_MARKER-b)
+
+static func draw_grounded_feature(canvas: CanvasItem, source: Texture2D, rect: Rect2, id: String, alpha: float) -> bool:
+	var row: Dictionary=MapArtBank.data().get("records",{}).get(id,{})
+	if row.is_empty():return false
+	# Only the lower 24% of the measured opaque silhouette blends into its
+	# existing ground. Source UVs still cover the entire original, with all
+	# transparent margins; placement and the reserved full footprint are intact.
+	var occupied=row.alpha_bounds;var height=float(row.dimensions[1])
+	var end=float(occupied[3])/height
+	var start=end-float(occupied[3]-occupied[1])/height*.24
+	var tint=Color(start,end,1.0,alpha)
+	var points=PackedVector2Array([rect.position,rect.position+Vector2(rect.size.x,0),rect.end,rect.position+Vector2(0,rect.size.y)])
+	var uv=PackedVector2Array([Vector2(0,2048),Vector2(1,2048),Vector2(1,2049),Vector2(0,2049)])
+	canvas.draw_polygon(points,PackedColorArray([tint,tint,tint,tint]),uv,source)
+	return true

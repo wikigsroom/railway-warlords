@@ -1,0 +1,70 @@
+{
+	"build_version": "0.2.36",
+	"checks": [
+		{
+			"name": "published_content_loaded",
+			"passed": true
+		},
+		{
+			"name": "legal_northbound_published_unit_found",
+			"passed": true
+		},
+		{
+			"name": "legal_north_move_records_rear_view_heading",
+			"passed": true
+		},
+		{
+			"name": "presentation_commit_keeps_complete_rules_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "movement_event_has_left_250_entry_battle_log",
+			"passed": true
+		},
+		{
+			"name": "independent_visual_ledger_written_atomically",
+			"passed": true
+		},
+		{
+			"name": "save_load_keeps_exact_rules_payload",
+			"passed": true
+		},
+		{
+			"name": "heading_survives_save_after_log_truncation",
+			"passed": true
+		},
+		{
+			"name": "native_map_hydrates_persistent_heading",
+			"passed": true
+		},
+		{
+			"name": "legacy_save_without_visual_metadata_still_supported",
+			"passed": true
+		},
+		{
+			"name": "legacy_load_clears_previous_visual_metadata",
+			"passed": true
+		},
+		{
+			"name": "second_atomic_save_preserves_backup",
+			"passed": true
+		},
+		{
+			"name": "tampered_visual_checksum_recovers_verified_backup",
+			"passed": true
+		},
+		{
+			"name": "another_match_cannot_inherit_stale_unit_ids",
+			"passed": true
+		},
+		{
+			"name": "undo_move_restores_exact_pre_move_heading",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failed": 0,
+	"failures": [],
+	"passed": true,
+	"scope": "Published legal move plus explicit isolated 300-entry log-aging/corruption fixtures; no gameplay/RNG changes."
+}

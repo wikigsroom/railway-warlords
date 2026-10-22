@@ -1,0 +1,6522 @@
+{
+	"build_version": "0.2.35",
+	"city_labels": [
+		{
+			"city_id": "bangkok",
+			"font_pixels": 18,
+			"screen_rect": [
+				978.119995117188,
+				748.330261230469,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "曼谷 · 首都"
+		},
+		{
+			"city_id": "beijing",
+			"font_pixels": 18,
+			"screen_rect": [
+				958.519958496094,
+				403.659576416016,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "北京 · 首都"
+		},
+		{
+			"city_id": "istanbul",
+			"font_pixels": 18,
+			"screen_rect": [
+				312.840026855469,
+				482.592834472656,
+				155.999995727539,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "君士坦丁堡 · 首都"
+		},
+		{
+			"city_id": "moscow",
+			"font_pixels": 18,
+			"screen_rect": [
+				392.039978027344,
+				320.057159423828,
+				119.999995117188,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "莫斯科 · 首都"
+		},
+		{
+			"city_id": "nanjing",
+			"font_pixels": 18,
+			"screen_rect": [
+				1141.0,
+				612.460815429688,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "南京 · 首都"
+		},
+		{
+			"city_id": "petrograd",
+			"font_pixels": 18,
+			"screen_rect": [
+				321.840026855469,
+				270.589782714844,
+				138.000000610352,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "彼得格勒 · 首都"
+		},
+		{
+			"city_id": "tehran",
+			"font_pixels": 18,
+			"screen_rect": [
+				574.200012207031,
+				515.126953125,
+				119.999995117188,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "德黑兰 · 首都"
+		},
+		{
+			"city_id": "tokyo",
+			"font_pixels": 18,
+			"screen_rect": [
+				1296.35998535156,
+				508.060211181641,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "东京 · 首都"
+		},
+		{
+			"city_id": "kabul",
+			"font_pixels": 18,
+			"screen_rect": [
+				721.080017089844,
+				529.260498046875,
+				119.999995117188,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "喀布尔 · 首都"
+		},
+		{
+			"city_id": "baghdad",
+			"font_pixels": 18,
+			"screen_rect": [
+				441.0,
+				560.327270507813,
+				119.999995117188,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "巴格达 · 省城"
+		},
+		{
+			"city_id": "calcutta",
+			"font_pixels": 18,
+			"screen_rect": [
+				799.200012207031,
+				625.395568847656,
+				138.000000610352,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "加尔各答 · 省城"
+		},
+		{
+			"city_id": "chengdu",
+			"font_pixels": 18,
+			"screen_rect": [
+				860.600036621094,
+				502.594360351563,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "成都 · 省城"
+		},
+		{
+			"city_id": "delhi",
+			"font_pixels": 18,
+			"screen_rect": [
+				656.280029296875,
+				592.861389160156,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "德里 · 省城"
+		},
+		{
+			"city_id": "guangzhou",
+			"font_pixels": 18,
+			"screen_rect": [
+				1092.0400390625,
+				711.3955078125,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "广州 · 省城"
+		},
+		{
+			"city_id": "kunming",
+			"font_pixels": 18,
+			"screen_rect": [
+				848.359985351563,
+				690.195190429688,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "昆明 · 省城"
+		},
+		{
+			"city_id": "mukden",
+			"font_pixels": 18,
+			"screen_rect": [
+				1205.71997070313,
+				354.459289550781,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "奉天 · 省城"
+		},
+		{
+			"city_id": "seoul",
+			"font_pixels": 18,
+			"screen_rect": [
+				1202.20007324219,
+				548.85986328125,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "汉城 · 省城"
+		},
+		{
+			"city_id": "changsha",
+			"font_pixels": 18,
+			"screen_rect": [
+				1120.0400390625,
+				682.861389160156,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "长沙 · 省城"
+		},
+		{
+			"city_id": "fuzhou",
+			"font_pixels": 18,
+			"screen_rect": [
+				955.0,
+				711.12841796875,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "福州 · 省城"
+		},
+		{
+			"city_id": "guilin",
+			"font_pixels": 18,
+			"screen_rect": [
+				881.559997558594,
+				531.128479003906,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "桂林 · 省城"
+		},
+		{
+			"city_id": "hangzhou",
+			"font_pixels": 18,
+			"screen_rect": [
+				1209.23999023438,
+				453.661071777344,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "杭州 · 省城"
+		},
+		{
+			"city_id": "hanoi",
+			"font_pixels": 18,
+			"screen_rect": [
+				844.840026855469,
+				760.595825195313,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "河内 · 省城"
+		},
+		{
+			"city_id": "irkutsk",
+			"font_pixels": 18,
+			"screen_rect": [
+				912.599975585938,
+				348.32421875,
+				155.999995727539,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "伊尔库茨克 · 省城"
+		},
+		{
+			"city_id": "lanzhou",
+			"font_pixels": 18,
+			"screen_rect": [
+				804.599975585938,
+				390.060211181641,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "兰州 · 省城"
+		},
+		{
+			"city_id": "lhasa",
+			"font_pixels": 18,
+			"screen_rect": [
+				722.440002441406,
+				675.794616699219,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "拉萨 · 省城"
+		},
+		{
+			"city_id": "nanchang",
+			"font_pixels": 18,
+			"screen_rect": [
+				1116.52001953125,
+				654.861389160156,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "南昌 · 省城"
+		},
+		{
+			"city_id": "nanning",
+			"font_pixels": 18,
+			"screen_rect": [
+				1111.32006835938,
+				774.462280273438,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "南宁 · 省城"
+		},
+		{
+			"city_id": "phnom_penh",
+			"font_pixels": 18,
+			"screen_rect": [
+				951.840026855469,
+				807.664001464844,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "金边 · 省城"
+		},
+		{
+			"city_id": "pyongyang",
+			"font_pixels": 18,
+			"screen_rect": [
+				1202.20007324219,
+				410.726379394531,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "平壤 · 省城"
+		},
+		{
+			"city_id": "sapporo",
+			"font_pixels": 18,
+			"screen_rect": [
+				1324.60009765625,
+				368.325744628906,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "札幌 · 省城"
+		},
+		{
+			"city_id": "tashkent",
+			"font_pixels": 18,
+			"screen_rect": [
+				649.079956054688,
+				434.592864990234,
+				119.999995117188,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "塔什干 · 省城"
+		},
+		{
+			"city_id": "tbilisi",
+			"font_pixels": 18,
+			"screen_rect": [
+				444.239990234375,
+				420.459320068359,
+				138.000000610352,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "第比利斯 · 省城"
+		},
+		{
+			"city_id": "ulaanbaatar",
+			"font_pixels": 18,
+			"screen_rect": [
+				885.080017089844,
+				442.858367919922,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "库伦 · 省城"
+		},
+		{
+			"city_id": "urumqi",
+			"font_pixels": 18,
+			"screen_rect": [
+				697.960021972656,
+				340.325744628906,
+				102.0,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "迪化 · 省城"
+		},
+		{
+			"city_id": "harbin",
+			"font_pixels": 18,
+			"screen_rect": [
+				1071.19995117188,
+				402.058715820313,
+				91.0000018310547,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "哈尔滨 ★"
+		},
+		{
+			"city_id": "osaka",
+			"font_pixels": 18,
+			"screen_rect": [
+				1275.63989257813,
+				591.260498046875,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "大阪 ★"
+		},
+		{
+			"city_id": "changchun",
+			"font_pixels": 18,
+			"screen_rect": [
+				1189.9599609375,
+				485.258972167969,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "长春 ★"
+		},
+		{
+			"city_id": "dalian",
+			"font_pixels": 18,
+			"screen_rect": [
+				1036.47998046875,
+				431.926635742188,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "大连 ★"
+		},
+		{
+			"city_id": "hiroshima",
+			"font_pixels": 18,
+			"screen_rect": [
+				1279.15991210938,
+				619.260498046875,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "广岛 ★"
+		},
+		{
+			"city_id": "hong_kong",
+			"font_pixels": 18,
+			"screen_rect": [
+				1039.78002929688,
+				680.462341308594,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "香港 ★"
+		},
+		{
+			"city_id": "jerusalem",
+			"font_pixels": 18,
+			"screen_rect": [
+				373.059997558594,
+				526.460815429688,
+				108.999996948242,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "耶路撒冷 ★"
+		},
+		{
+			"city_id": "khabarovsk",
+			"font_pixels": 18,
+			"screen_rect": [
+				1275.63989257813,
+				311.791564941406,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "伯力 ★"
+		},
+		{
+			"city_id": "lahore",
+			"font_pixels": 18,
+			"screen_rect": [
+				598.799926757813,
+				640.460815429688,
+				91.0000018310547,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "拉合尔 ★"
+		},
+		{
+			"city_id": "mandalay",
+			"font_pixels": 18,
+			"screen_rect": [
+				810.400024414063,
+				732.595825195313,
+				91.0000018310547,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "曼德勒 ★"
+		},
+		{
+			"city_id": "tabriz",
+			"font_pixels": 18,
+			"screen_rect": [
+				537.47998046875,
+				479.793090820313,
+				108.999996948242,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "大不里士 ★"
+		},
+		{
+			"city_id": "bombay",
+			"font_pixels": 18,
+			"screen_rect": [
+				709.299987792969,
+				729.9296875,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "孟买 ★"
+		},
+		{
+			"city_id": "manila",
+			"font_pixels": 18,
+			"screen_rect": [
+				1137.23999023438,
+				741.263488769531,
+				91.0000018310547,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "马尼拉 ★"
+		},
+		{
+			"city_id": "baku",
+			"font_pixels": 18,
+			"screen_rect": [
+				593.719970703125,
+				548.592834472656,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "巴库 ★"
+		},
+		{
+			"city_id": "batavia",
+			"font_pixels": 18,
+			"screen_rect": [
+				960.580017089844,
+				998.466796875,
+				108.999996948242,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "巴达维亚 ★"
+		},
+		{
+			"city_id": "haiphong",
+			"font_pixels": 18,
+			"screen_rect": [
+				1086.83996582031,
+				802.729370117188,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "海防 ★"
+		},
+		{
+			"city_id": "madras",
+			"font_pixels": 18,
+			"screen_rect": [
+				673.760009765625,
+				762.463745117188,
+				108.999996948242,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "马德拉斯 ★"
+		},
+		{
+			"city_id": "rangoon",
+			"font_pixels": 18,
+			"screen_rect": [
+				800.400024414063,
+				802.996398925781,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "仰光 ★"
+		},
+		{
+			"city_id": "saigon",
+			"font_pixels": 18,
+			"screen_rect": [
+				1043.07995605469,
+				838.597412109375,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "西贡 ★"
+		},
+		{
+			"city_id": "singapore",
+			"font_pixels": 18,
+			"screen_rect": [
+				945.100036621094,
+				899.531982421875,
+				91.0000018310547,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "新加坡 ★"
+		},
+		{
+			"city_id": "surabaya",
+			"font_pixels": 18,
+			"screen_rect": [
+				1027.53991699219,
+				950.466796875,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": false,
+			"text": "泗水 ★"
+		},
+		{
+			"city_id": "vladivostok",
+			"font_pixels": 18,
+			"screen_rect": [
+				1104.16003417969,
+				368.325744628906,
+				91.0000018310547,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "海参崴 ★"
+		},
+		{
+			"city_id": "yokohama",
+			"font_pixels": 18,
+			"screen_rect": [
+				1312.35998535156,
+				555.926635742188,
+				73.0000015258789,
+				23.9999995422363
+			],
+			"shifted": true,
+			"text": "横滨 ★"
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"control_borders": {
+		"coast_outlines_drawn": 0,
+		"different_owner_pairs": 0,
+		"duplicate_pair_strokes": 0,
+		"enabled": false,
+		"same_owner_pairs_suppressed": 0,
+		"unassigned_pairs_suppressed": 0
+	},
+	"control_land_clip": {
+		"city_zones": 81,
+		"clipped_city_zones": 61.0,
+		"eligible_field_cells": 3744.0,
+		"empty_field_cells": 14.0,
+		"enabled": true,
+		"historical_military_frontiers_claimed": false,
+		"inland_water_preserves_source_islands": true,
+		"land_clipped": true,
+		"partial_field_cells": 629.0,
+		"source": "existing_render_land_exteriors_minus_holes",
+		"source_land_holes": 1.0,
+		"source_land_polygons": 12105.0,
+		"source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+	},
+	"historical_places": {
+		"additional_markers": 0,
+		"control_overlay_visible": true,
+		"control_zones": 81,
+		"historic_military_border_claimed": false,
+		"ownership": {
+			"baghdad": "ottoman",
+			"baku": "soviet",
+			"bangkok": "siam",
+			"baoding": "kmt",
+			"batavia": "netherlands",
+			"beijing": "fengtian",
+			"bengbu": "kmt",
+			"bombay": "british_india",
+			"busan": "japan",
+			"calcutta": "british_india",
+			"changchun": "fengtian",
+			"changsha": "kmt",
+			"chengdu": "sichuan",
+			"chongqing": "sichuan",
+			"dalian": "fengtian",
+			"delhi": "british_india",
+			"fuzhou": "kmt",
+			"guangzhou": "kmt",
+			"guilin": "kmt",
+			"guiyang": "yunnan",
+			"haiphong": "french_indochina",
+			"hangzhou": "kmt",
+			"hankou": "kmt",
+			"hanoi": "french_indochina",
+			"harbin": "fengtian",
+			"hiroshima": "japan",
+			"hong_kong": "british_empire",
+			"irkutsk": "soviet",
+			"istanbul": "ottoman",
+			"jerusalem": "ottoman",
+			"jinan": "kmt",
+			"kabul": "afghanistan",
+			"kashgar": "kmt",
+			"khabarovsk": "soviet",
+			"kunming": "yunnan",
+			"lahore": "british_india",
+			"lanzhou": "guominjun",
+			"lhasa": "kmt",
+			"macau": "portugal",
+			"madras": "british_india",
+			"mandalay": "british_india",
+			"manila": "usa",
+			"moscow": "soviet",
+			"mukden": "fengtian",
+			"nanchang": "kmt",
+			"nanjing": "kmt",
+			"nanning": "kmt",
+			"ningbo": "kmt",
+			"osaka": "japan",
+			"petrograd": "soviet",
+			"phnom_penh": "french_indochina",
+			"port_arthur": "fengtian",
+			"pyongyang": "japan",
+			"qingdao": "fengtian",
+			"rangoon": "british_india",
+			"saigon": "french_indochina",
+			"samarkand": "soviet",
+			"sapporo": "japan",
+			"seoul": "japan",
+			"shanghai": "kmt",
+			"shantou": "kmt",
+			"shijiazhuang": "kmt",
+			"singapore": "british_empire",
+			"surabaya": "netherlands",
+			"suzhou": "kmt",
+			"tabriz": "qajar_persia",
+			"taipei": "japan",
+			"tashkent": "soviet",
+			"tbilisi": "soviet",
+			"tehran": "qajar_persia",
+			"tianjin": "fengtian",
+			"tokyo": "japan",
+			"ulaanbaatar": "kmt",
+			"urumqi": "kmt",
+			"vladivostok": "soviet",
+			"wuchang": "kmt",
+			"xian": "guominjun",
+			"xining": "kmt",
+			"xuzhou": "kmt",
+			"yichang": "kmt",
+			"yokohama": "japan"
+		},
+		"place_overlay_visible": true,
+		"presentation_data_sha256": "a99f5dfeb0443f2129a4477dcca6db1df3dae5dd78a75bc83bcbaeaef5159737",
+		"selected_id": "",
+		"selected_kind": "",
+		"total_nodes": 81
+	},
+	"map_bank": {
+		"active": true,
+		"full_source_rectangles_reserved": true,
+		"invented_waterways": 0,
+		"material_assignments": 5124,
+		"placed": 122,
+		"preparation_ms": 8074.462,
+		"random_stream_used": false,
+		"rejected_for_source_geography": 838,
+		"rule_cells_changed": false,
+		"source_cells": 7668,
+		"source_images_modified": false,
+		"unique_originals": 53
+	},
+	"map_bank_visible": {
+		"active": true,
+		"camera": [
+			3852.0,
+			2944.0
+		],
+		"catalog_additional_sources": 804,
+		"catalog_map_assets": 878.0,
+		"current_total_map_assets": 981,
+		"distinct_scenery_originals_intersecting_view": 102,
+		"distinct_surface_originals_in_view": 87,
+		"families": {
+			"foothill_ew": 116,
+			"foothill_ns": 66,
+			"peak_ew": 1,
+			"peak_ns": 1,
+			"ridge_ew": 28,
+			"ridge_ns": 7
+		},
+		"hydrography": {
+			"actual_coast_band_draws": 1,
+			"coast_band": {
+				"batched_draws": 1,
+				"beach_or_depth_measurement_claimed": false,
+				"exact_source_boundary_classified_lines": 10959,
+				"half_width_world": 2.8,
+				"land_side_probes": 0,
+				"light_direction": [
+					-0.600000023841858,
+					-0.800000011920929
+				],
+				"maximum_classified_landward_offset_world": 2.43,
+				"maximum_classified_seaward_offset_world": 5.4,
+				"maximum_neutral_offset_world": 3.78,
+				"miter_limit": 1.35,
+				"neutral_fallback_lines": 1177,
+				"nominal_landward_width_world": 1.8,
+				"nominal_seaward_width_world": 4.0,
+				"preparation_ms": 1150.691,
+				"small_closed_source_lines": 10874,
+				"source_boundary_index_edges": 105401,
+				"source_centrelines_modified": false,
+				"source_land_classified_lines": 10959,
+				"source_lines": 12136,
+				"source_points": 107370,
+				"style": "source_sided_cartographic_water_transition",
+				"triangles": 1063710
+			},
+			"display_corner_rounding_max_deviation_metres": 0.0,
+			"fine_source_id": "",
+			"fine_source_sha256": "",
+			"flat_lowland_model_branches_excluded": true,
+			"historical_channel_survey": false,
+			"major_presentation_replacements": 0,
+			"marine_geometry": {
+				"active": true,
+				"cache_scope": "one_map",
+				"coast_vertices": 119448,
+				"existing_inland_water_preserved": true,
+				"historical_survey_claimed": false,
+				"land_polygons": 12105,
+				"land_triangles": 81193,
+				"new_l2_reservoirs_imported": false,
+				"pretriangulated": true,
+				"source": "gshhg_2_3_7_L1"
+			},
+			"operation_grid": {
+				"axial_guide_lines": 0,
+				"drawn_hexes": 0,
+				"hex_radius_world": 48.0,
+				"minimum_zoom": 0.2,
+				"overview_guide_replacement": false
+			},
+			"river_surface": {
+				"detail_banks_drawn_before_water": true,
+				"drawn_antialiased_headwaters": 0,
+				"drawn_gradient_ribbons": 258,
+				"drawn_textured_ribbons": 258,
+				"drawn_watercourses": 258,
+				"headwater_style": "muted_waterbed_soft_margin_without_axial_highlight",
+				"measured_banks_claimed": false,
+				"primary_width_from_vertex_count": false,
+				"renderer": "source_centerline_gradient_ribbon",
+				"water_texture_id": "tile_water_river_v0227",
+				"world_texture_period": 256.0
+			},
+			"rule_geometry_modified": false,
+			"source_endpoints_preserved": true,
+			"source_fine_reaches": 0,
+			"source_linked_endpoint_frames": 0,
+			"source_map_id": "asia_strategic",
+			"visible_detail_segments": 0,
+			"visible_existing_detail_reaches": 0,
+			"visible_fine_reaches": 0,
+			"visible_fine_stream_orders": {},
+			"water_materials": {
+				"bound_inland_resource": "res://assets/tile/tile_water_inland_v0227.png",
+				"bound_river_resource": "res://assets/tile/tile_water_river_v0227.png",
+				"bound_sea_resource": "res://assets/tile/tile_water_sea_v0227.png",
+				"fixed_wallpaper_period": false,
+				"geographic_water_extent_changed": false,
+				"historical_water_color_claimed": false,
+				"independent_originals": 3,
+				"inland_texture_id": "tile_water_inland_v0227",
+				"legacy_per_cell_water_stamps": false,
+				"mipmapped_minification_active": true,
+				"river_texture_id": "tile_water_river_v0227",
+				"sea_texture_id": "tile_water_sea_v0227",
+				"source_images_modified": false,
+				"source_sampling": "world_anchored_mirrored_three_translations_with_explicit_mip_gradients_and_distance_filter",
+				"world_texture_period": 256.0
+			},
+			"width_is_symbolic": true
+		},
+		"map_symbols": {
+			"background_legacy_terrain_symbols": 0,
+			"background_painted_scenery": 219,
+			"city_counter_ids": [
+				"beijing",
+				"tianjin",
+				"baoding",
+				"shijiazhuang",
+				"jinan",
+				"qingdao",
+				"shanghai",
+				"nanjing",
+				"suzhou",
+				"hangzhou",
+				"ningbo",
+				"xuzhou",
+				"bengbu",
+				"hankou",
+				"wuchang",
+				"yichang",
+				"changsha",
+				"nanchang",
+				"fuzhou",
+				"guangzhou",
+				"hong_kong",
+				"macau",
+				"shantou",
+				"nanning",
+				"guilin",
+				"kunming",
+				"guiyang",
+				"chongqing",
+				"chengdu",
+				"xian",
+				"lanzhou",
+				"xining",
+				"urumqi",
+				"kashgar",
+				"lhasa",
+				"mukden",
+				"port_arthur",
+				"dalian",
+				"changchun",
+				"harbin",
+				"taipei",
+				"haiphong",
+				"tokyo",
+				"yokohama",
+				"osaka",
+				"hiroshima",
+				"sapporo",
+				"seoul",
+				"pyongyang",
+				"busan",
+				"vladivostok",
+				"khabarovsk",
+				"irkutsk",
+				"petrograd",
+				"moscow",
+				"tashkent",
+				"samarkand",
+				"baku",
+				"tbilisi",
+				"ulaanbaatar",
+				"tehran",
+				"tabriz",
+				"baghdad",
+				"istanbul",
+				"jerusalem",
+				"kabul",
+				"delhi",
+				"lahore",
+				"bombay",
+				"calcutta",
+				"madras",
+				"rangoon",
+				"mandalay",
+				"bangkok",
+				"hanoi",
+				"saigon",
+				"phnom_penh",
+				"singapore",
+				"manila",
+				"batavia",
+				"surabaya"
+			],
+			"city_detail_ids": [],
+			"detail_threshold": 0.56,
+			"place_counter_ids": [],
+			"place_detail_ids": [],
+			"regional_threshold": 0.2,
+			"rule_positions_changed": false,
+			"scope": "Actual draw IDs in the unit layers, filtered to anchors in this viewport; HUD occlusion is not subtracted.",
+			"source_units_removed": false,
+			"unit_counter_ids": [
+				"u_00111",
+				"u_00110",
+				"u_00058",
+				"u_00059",
+				"u_00002",
+				"u_00004",
+				"u_00001",
+				"u_00060",
+				"u_00003",
+				"u_00006",
+				"u_00005",
+				"u_00008",
+				"u_00007",
+				"u_00010",
+				"u_00012",
+				"u_00056",
+				"u_00057",
+				"u_00011",
+				"u_00009",
+				"u_00068",
+				"u_00055",
+				"u_00022",
+				"u_00021",
+				"u_00023",
+				"u_00017",
+				"u_00015",
+				"u_00014",
+				"u_00027",
+				"u_00026",
+				"u_00016",
+				"u_00013",
+				"u_00019",
+				"u_00025",
+				"u_00018",
+				"u_00024",
+				"u_00028",
+				"u_00062",
+				"u_00030",
+				"u_00061",
+				"u_00032",
+				"u_00020",
+				"u_00029",
+				"u_00031",
+				"u_00048",
+				"u_00074",
+				"u_00073",
+				"u_00047",
+				"u_00034",
+				"u_00044",
+				"u_00033",
+				"u_00043",
+				"u_00040",
+				"u_00039",
+				"u_00036",
+				"u_00038",
+				"u_00042",
+				"u_00035",
+				"u_00041",
+				"u_00037",
+				"u_00141",
+				"u_00140"
+			],
+			"unit_counter_screen_size": [
+				8.0,
+				5.76000022888184
+			],
+			"unit_detail_ids": [],
+			"units_aggregated": false,
+			"zoom_band": "overview"
+		},
+		"measurement_scope": "Actual source-ID selections intersecting the world viewport; HUD occlusion is not subtracted. Count is not an artistic-quality or historical-coverage score.",
+		"nearest_repeated_source_distance_world": 309.082702636719,
+		"same_source_pairs_under_250_world_units": 0,
+		"scenery_instances_intersecting_view": 219,
+		"settlement_sources": {},
+		"source_images_modified": false,
+		"source_use_counts": {
+			"scenery_bank_foothill_ew_002": 3,
+			"scenery_bank_foothill_ew_004": 1,
+			"scenery_bank_foothill_ew_005": 3,
+			"scenery_bank_foothill_ew_006": 5,
+			"scenery_bank_foothill_ew_007": 4,
+			"scenery_bank_foothill_ew_008": 3,
+			"scenery_bank_foothill_ew_009": 5,
+			"scenery_bank_foothill_ew_010": 5,
+			"scenery_bank_foothill_ew_011": 2,
+			"scenery_bank_foothill_ew_012": 4,
+			"scenery_bank_foothill_ew_013": 1,
+			"scenery_bank_foothill_ew_014": 1,
+			"scenery_bank_foothill_ew_015": 1,
+			"scenery_bank_foothill_ew_016": 7,
+			"scenery_bank_foothill_ew_018": 2,
+			"scenery_bank_foothill_ew_020": 4,
+			"scenery_bank_foothill_ew_021": 4,
+			"scenery_bank_foothill_ew_022": 1,
+			"scenery_bank_foothill_ew_023": 3,
+			"scenery_bank_foothill_ew_024": 3,
+			"scenery_bank_foothill_ew_025": 2,
+			"scenery_bank_foothill_ew_026": 4,
+			"scenery_bank_foothill_ew_027": 6,
+			"scenery_bank_foothill_ew_028": 2,
+			"scenery_bank_foothill_ew_029": 1,
+			"scenery_bank_foothill_ew_030": 3,
+			"scenery_bank_foothill_ew_033": 1,
+			"scenery_bank_foothill_ew_035": 3,
+			"scenery_bank_foothill_ew_036": 3,
+			"scenery_bank_foothill_ew_037": 2,
+			"scenery_bank_foothill_ew_038": 2,
+			"scenery_bank_foothill_ew_039": 4,
+			"scenery_bank_foothill_ew_040": 3,
+			"scenery_bank_foothill_ew_041": 2,
+			"scenery_bank_foothill_ew_042": 3,
+			"scenery_bank_foothill_ew_043": 3,
+			"scenery_bank_foothill_ew_044": 4,
+			"scenery_bank_foothill_ew_045": 2,
+			"scenery_bank_foothill_ew_046": 2,
+			"scenery_bank_foothill_ew_047": 1,
+			"scenery_bank_foothill_ew_048": 1,
+			"scenery_bank_foothill_ns_001": 2,
+			"scenery_bank_foothill_ns_002": 1,
+			"scenery_bank_foothill_ns_005": 3,
+			"scenery_bank_foothill_ns_008": 3,
+			"scenery_bank_foothill_ns_009": 1,
+			"scenery_bank_foothill_ns_011": 2,
+			"scenery_bank_foothill_ns_013": 1,
+			"scenery_bank_foothill_ns_014": 4,
+			"scenery_bank_foothill_ns_015": 1,
+			"scenery_bank_foothill_ns_016": 3,
+			"scenery_bank_foothill_ns_021": 1,
+			"scenery_bank_foothill_ns_022": 2,
+			"scenery_bank_foothill_ns_026": 1,
+			"scenery_bank_foothill_ns_027": 3,
+			"scenery_bank_foothill_ns_028": 3,
+			"scenery_bank_foothill_ns_029": 5,
+			"scenery_bank_foothill_ns_030": 2,
+			"scenery_bank_foothill_ns_031": 2,
+			"scenery_bank_foothill_ns_032": 2,
+			"scenery_bank_foothill_ns_033": 3,
+			"scenery_bank_foothill_ns_034": 1,
+			"scenery_bank_foothill_ns_036": 1,
+			"scenery_bank_foothill_ns_039": 1,
+			"scenery_bank_foothill_ns_040": 2,
+			"scenery_bank_foothill_ns_041": 2,
+			"scenery_bank_foothill_ns_043": 2,
+			"scenery_bank_foothill_ns_044": 2,
+			"scenery_bank_foothill_ns_045": 2,
+			"scenery_bank_foothill_ns_046": 2,
+			"scenery_bank_foothill_ns_047": 5,
+			"scenery_bank_foothill_ns_048": 1,
+			"scenery_bank_peak_ew_016": 1,
+			"scenery_bank_peak_ns_013": 1,
+			"scenery_bank_ridge_ew_002": 1,
+			"scenery_bank_ridge_ew_003": 3,
+			"scenery_bank_ridge_ew_004": 1,
+			"scenery_bank_ridge_ew_005": 2,
+			"scenery_bank_ridge_ew_006": 1,
+			"scenery_bank_ridge_ew_008": 1,
+			"scenery_bank_ridge_ew_012": 1,
+			"scenery_bank_ridge_ew_014": 1,
+			"scenery_bank_ridge_ew_017": 1,
+			"scenery_bank_ridge_ew_019": 1,
+			"scenery_bank_ridge_ew_023": 2,
+			"scenery_bank_ridge_ew_025": 1,
+			"scenery_bank_ridge_ew_028": 1,
+			"scenery_bank_ridge_ew_031": 1,
+			"scenery_bank_ridge_ew_033": 1,
+			"scenery_bank_ridge_ew_034": 2,
+			"scenery_bank_ridge_ew_035": 1,
+			"scenery_bank_ridge_ew_037": 2,
+			"scenery_bank_ridge_ew_039": 1,
+			"scenery_bank_ridge_ew_041": 1,
+			"scenery_bank_ridge_ew_048": 2,
+			"scenery_bank_ridge_ns_005": 1,
+			"scenery_bank_ridge_ns_008": 1,
+			"scenery_bank_ridge_ns_016": 1,
+			"scenery_bank_ridge_ns_026": 1,
+			"scenery_bank_ridge_ns_027": 1,
+			"scenery_bank_ridge_ns_030": 1,
+			"scenery_bank_ridge_ns_041": 1
+		},
+		"surface_geography": {
+			"families": {
+				"alluvial_soil": 20,
+				"arid_gravel": 293,
+				"dry_grass": 146,
+				"sandy_ground": 47,
+				"wetland_ground": 5
+			},
+			"historical_landuse_survey": false,
+			"material_assignments": 511,
+			"rule_maps_modified": false,
+			"source_id": "resolve_ecoregions_2017",
+			"source_scope": "biogeographic_ground_material_reference",
+			"source_year": 2017.0,
+			"terrain_subtypes": {
+				"active": true,
+				"assignments": 3391,
+				"historical_landuse_survey": false,
+				"independent_originals": 80,
+				"registered_types": 20,
+				"rule_maps_modified": false,
+				"source_scope": "regional_ground_reference_plus_archived_dem",
+				"source_year": 2017,
+				"types": {
+					"alluvial_loam": 16,
+					"alpine_meadow": 3,
+					"alpine_scree": 33,
+					"alpine_steppe": 9,
+					"boreal_litter": 530,
+					"conifer_litter": 3,
+					"desert_steppe": 59,
+					"dry_steppe": 132,
+					"dry_woodland_litter": 40,
+					"dune_sand": 47,
+					"flood_meadow": 13,
+					"gravel_gobi": 278,
+					"saline_meadow": 5,
+					"savanna_red_soil": 159,
+					"subtropical_humus": 4,
+					"temperate_litter": 166,
+					"temperate_meadow": 23,
+					"tropical_moist_humus": 88,
+					"tundra_moss": 225,
+					"weathered_rock": 1558
+				},
+				"water_or_forest_added": false
+			},
+			"water_or_forest_added": false
+		},
+		"surface_material_families_in_view": {
+			"alluvial_loam": 13,
+			"alpine_meadow": 3,
+			"alpine_scree": 30,
+			"alpine_steppe": 9,
+			"boreal_litter": 6,
+			"conifer_litter": 3,
+			"desert_steppe": 56,
+			"dry_steppe": 151,
+			"dune_sand": 45,
+			"flood_meadow": 12,
+			"gravel_gobi": 228,
+			"meadow": 4,
+			"rocky_ground": 6,
+			"saline_meadow": 2,
+			"savanna_red_soil": 125,
+			"sea_water": 2507,
+			"subtropical_humus": 4,
+			"temperate_litter": 15,
+			"temperate_meadow": 631,
+			"tropical_moist_humus": 49,
+			"tundra_moss": 107,
+			"weathered_rock": 1118
+		},
+		"terrain_surface_extension": {
+			"active": true,
+			"blend_inner_ratio": 0.7,
+			"checked_adjacent_pairs": 6746,
+			"continuous_ground": {
+				"active": true,
+				"city_influence_fill_draws": 0,
+				"field_fill_batches": 17,
+				"fixed_wallpaper_period": false,
+				"ground_material_policy": {
+					"drawn_families": {
+						"alluvial_loam": 39,
+						"alpine_meadow": 4,
+						"alpine_scree": 34,
+						"alpine_steppe": 10,
+						"boreal_litter": 6,
+						"conifer_litter": 3,
+						"desert_steppe": 64,
+						"dry_steppe": 256,
+						"dune_sand": 48,
+						"flood_meadow": 22,
+						"gravel_gobi": 349,
+						"saline_meadow": 7,
+						"savanna_red_soil": 172,
+						"subtropical_humus": 11,
+						"temperate_litter": 16,
+						"temperate_meadow": 960,
+						"tropical_moist_humus": 478,
+						"tundra_moss": 436,
+						"weathered_rock": 1683
+					},
+					"forest_floor_requires_sourced_forest": true,
+					"mineral_opacity_is_illustration_not_measured_rock_cover": true,
+					"relief_underlay_cells": 229,
+					"relief_underlay_support": "archived_ecoregion_4_or_8_and_existing_dem_hill_or_mountain",
+					"withheld_forest_floor_cells": 1012
+				},
+				"grounded_scenery_draws": 219,
+				"macro_coverage": "nonoverlapping_hex_partition_with_three_source_blending",
+				"sampling_world_units": 224.0,
+				"sampling_world_units_by_layer": [
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					224.0,
+					384.0,
+					224.0,
+					384.0,
+					224.0,
+					224.0,
+					224.0
+				],
+				"source_ground_coverage": {
+					"active": true,
+					"cache_scope": "one_map_catalogue",
+					"covered_cells": 4598,
+					"historical_landuse_claimed": false,
+					"new_rasters": 0,
+					"partial_cells": 1501,
+					"rule_cells_modified": false,
+					"source_land_clipped": true,
+					"supplemental_underlays": 1221,
+					"unclassified_cells": 56
+				},
+				"source_images_modified": false,
+				"source_layer_indices": {
+					"alluvial_loam": 0,
+					"alpine_meadow": 1,
+					"alpine_scree": 2,
+					"alpine_steppe": 3,
+					"boreal_litter": 4,
+					"conifer_litter": 5,
+					"desert_steppe": 6,
+					"dry_steppe": 7,
+					"dry_woodland_litter": 8,
+					"dune_sand": 9,
+					"flood_meadow": 10,
+					"gravel_gobi": 11,
+					"saline_meadow": 12,
+					"savanna_red_soil": 13,
+					"subtropical_humus": 14,
+					"temperate_litter": 15,
+					"temperate_meadow": 16,
+					"tropical_moist_humus": 17,
+					"tundra_moss": 18,
+					"weathered_rock": 19
+				},
+				"source_layers": 20,
+				"source_sampling": "world_anchored_three_translations_with_explicit_mip_gradients",
+				"whole_original_dimensions": [
+					1254,
+					1254
+				]
+			},
+			"fine_detail_alpha": 0.08,
+			"ground_alpha": 0.91,
+			"independent_originals": 80,
+			"macro_identity_revision": "quiet_ground_hierarchy_v0235_r001",
+			"macro_originals": 20,
+			"macro_repeat_world_units": 224.0,
+			"registered_types": 20,
+			"relief_lighting": {
+				"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+				"geographic_field": {
+					"active": true,
+					"clipped_to_source_land_and_existing_water_holes": true,
+					"data_sha256": "4f6b4ba758715300e1793b22a28b2d41f1849f8bd618efbf518e5cfc680d7e3d",
+					"depends_on_three_land_hexes": false,
+					"dimensions": [
+						3201,
+						1801
+					],
+					"exact_summit_heights_claimed": false,
+					"gpu_encoding": "RG8_signed_metres_biased_by_32768_before_linear_interpolation",
+					"gpu_lookup_bytes": 11530002,
+					"gpu_texture_available": true,
+					"historical_landcover_claimed": false,
+					"land_topology_reused": true,
+					"land_triangles": 81193,
+					"land_vertices": 105401,
+					"nodata_samples": 0,
+					"node_samples": 5765001,
+					"payload_sha256": "6c4afb7f385fac3e6ec63caa9f9170ab3d717d2631eb5bcdd7f42c075b32d333",
+					"preparation_ms": 885.141,
+					"raster_art_generated": false,
+					"rules_map_mutated": false,
+					"shader_active": true,
+					"source_id": "Tilezen_TerrainTiles_geotiff",
+					"source_projected_pixel_size_m": [
+						4891.96981025128,
+						4891.96981025129
+					],
+					"source_rounding_error_m": 0.5,
+					"source_zoom": 4.0,
+					"step_degrees": 0.05
+				},
+				"gpu_texture_available": true,
+				"interpolation_stencil": [
+					4,
+					4
+				],
+				"lookup_bytes": 53724,
+				"lookup_dimensions": [
+					111,
+					121
+				],
+				"maximum_contributing_samples": 16,
+				"method": "source_cell_cubic_bspline_lighting",
+				"new_dem_samples": 0,
+				"raster_art_generated": false,
+				"rules_map_mutated": false,
+				"shader_active": true,
+				"source_images_modified": false,
+				"source_samples": 3587
+			},
+			"rule_geometry_changed": false,
+			"same_original_on_adjacent_cells": 0,
+			"source_use_counts": {
+				"tile_surface_alluvial_loam_01": 2,
+				"tile_surface_alluvial_loam_02": 3,
+				"tile_surface_alluvial_loam_03": 5,
+				"tile_surface_alluvial_loam_04": 3,
+				"tile_surface_alpine_meadow_02": 2,
+				"tile_surface_alpine_meadow_03": 1,
+				"tile_surface_alpine_scree_01": 6,
+				"tile_surface_alpine_scree_02": 7,
+				"tile_surface_alpine_scree_03": 13,
+				"tile_surface_alpine_scree_04": 4,
+				"tile_surface_alpine_steppe_01": 2,
+				"tile_surface_alpine_steppe_02": 2,
+				"tile_surface_alpine_steppe_03": 4,
+				"tile_surface_alpine_steppe_04": 1,
+				"tile_surface_boreal_litter_02": 2,
+				"tile_surface_boreal_litter_03": 2,
+				"tile_surface_boreal_litter_04": 2,
+				"tile_surface_conifer_litter_02": 1,
+				"tile_surface_conifer_litter_04": 2,
+				"tile_surface_desert_steppe_01": 8,
+				"tile_surface_desert_steppe_02": 20,
+				"tile_surface_desert_steppe_03": 15,
+				"tile_surface_desert_steppe_04": 13,
+				"tile_surface_dry_steppe_01": 31,
+				"tile_surface_dry_steppe_02": 46,
+				"tile_surface_dry_steppe_03": 49,
+				"tile_surface_dry_steppe_04": 25,
+				"tile_surface_dune_sand_01": 10,
+				"tile_surface_dune_sand_02": 14,
+				"tile_surface_dune_sand_03": 16,
+				"tile_surface_dune_sand_04": 5,
+				"tile_surface_flood_meadow_01": 1,
+				"tile_surface_flood_meadow_02": 5,
+				"tile_surface_flood_meadow_03": 4,
+				"tile_surface_flood_meadow_04": 2,
+				"tile_surface_gravel_gobi_01": 39,
+				"tile_surface_gravel_gobi_02": 81,
+				"tile_surface_gravel_gobi_03": 77,
+				"tile_surface_gravel_gobi_04": 31,
+				"tile_surface_saline_meadow_03": 2,
+				"tile_surface_savanna_red_soil_01": 18,
+				"tile_surface_savanna_red_soil_02": 39,
+				"tile_surface_savanna_red_soil_03": 41,
+				"tile_surface_savanna_red_soil_04": 27,
+				"tile_surface_subtropical_humus_02": 2,
+				"tile_surface_subtropical_humus_03": 2,
+				"tile_surface_temperate_litter_01": 4,
+				"tile_surface_temperate_litter_02": 6,
+				"tile_surface_temperate_litter_03": 4,
+				"tile_surface_temperate_litter_04": 1,
+				"tile_surface_temperate_meadow_01": 111,
+				"tile_surface_temperate_meadow_02": 213,
+				"tile_surface_temperate_meadow_03": 204,
+				"tile_surface_temperate_meadow_04": 103,
+				"tile_surface_tropical_moist_humus_01": 11,
+				"tile_surface_tropical_moist_humus_02": 17,
+				"tile_surface_tropical_moist_humus_03": 16,
+				"tile_surface_tropical_moist_humus_04": 5,
+				"tile_surface_tundra_moss_01": 22,
+				"tile_surface_tundra_moss_02": 33,
+				"tile_surface_tundra_moss_03": 34,
+				"tile_surface_tundra_moss_04": 18,
+				"tile_surface_weathered_rock_01": 162,
+				"tile_surface_weathered_rock_02": 388,
+				"tile_surface_weathered_rock_03": 371,
+				"tile_surface_weathered_rock_04": 197
+			},
+			"stored_superseded_macro_originals": 46.0,
+			"visible_macro_sources": [
+				"tile_ground_quiet_v0225_weathered_rock",
+				"tile_ground_hierarchy_v0235_temperate_meadow",
+				"tile_ground_quiet_v0225_dry_steppe",
+				"tile_ground_quiet_v0225_gravel_gobi",
+				"tile_ground_quiet_v0225_savanna_red_soil",
+				"tile_ground_hierarchy_v0235_flood_meadow",
+				"tile_ground_quiet_v0225_dune_sand",
+				"tile_ground_quiet_v0225_tropical_moist_humus",
+				"tile_ground_quiet_v0225_tundra_moss",
+				"tile_ground_quiet_v0225_desert_steppe",
+				"tile_ground_quiet_v0225_saline_meadow",
+				"tile_ground_quiet_v0225_alpine_scree",
+				"tile_ground_quiet_v0225_alpine_steppe",
+				"tile_ground_hierarchy_v0235_alluvial_loam",
+				"tile_ground_quiet_v0225_boreal_litter",
+				"tile_ground_quiet_v0225_alpine_meadow",
+				"tile_ground_hierarchy_v0235_subtropical_humus",
+				"tile_ground_quiet_v0225_temperate_litter",
+				"tile_ground_quiet_v0225_conifer_litter"
+			],
+			"visible_types": {
+				"alluvial_loam": 13,
+				"alpine_meadow": 3,
+				"alpine_scree": 30,
+				"alpine_steppe": 9,
+				"boreal_litter": 6,
+				"conifer_litter": 3,
+				"desert_steppe": 56,
+				"dry_steppe": 151,
+				"dune_sand": 45,
+				"flood_meadow": 12,
+				"gravel_gobi": 228,
+				"saline_meadow": 2,
+				"savanna_red_soil": 125,
+				"subtropical_humus": 4,
+				"temperate_litter": 15,
+				"temperate_meadow": 631,
+				"tropical_moist_humus": 49,
+				"tundra_moss": 107,
+				"weathered_rock": 1118
+			}
+		},
+		"zoom": 0.17
+	},
+	"map_composition": {
+		"geographic_anchors_changed": false,
+		"labels": [
+			{
+				"city_id": "bangkok",
+				"font_pixels": 18,
+				"screen_rect": [
+					978.119995117188,
+					748.330261230469,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "曼谷 · 首都"
+			},
+			{
+				"city_id": "beijing",
+				"font_pixels": 18,
+				"screen_rect": [
+					958.519958496094,
+					403.659576416016,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "北京 · 首都"
+			},
+			{
+				"city_id": "istanbul",
+				"font_pixels": 18,
+				"screen_rect": [
+					312.840026855469,
+					482.592834472656,
+					155.999995727539,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "君士坦丁堡 · 首都"
+			},
+			{
+				"city_id": "moscow",
+				"font_pixels": 18,
+				"screen_rect": [
+					392.039978027344,
+					320.057159423828,
+					119.999995117188,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "莫斯科 · 首都"
+			},
+			{
+				"city_id": "nanjing",
+				"font_pixels": 18,
+				"screen_rect": [
+					1141.0,
+					612.460815429688,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "南京 · 首都"
+			},
+			{
+				"city_id": "petrograd",
+				"font_pixels": 18,
+				"screen_rect": [
+					321.840026855469,
+					270.589782714844,
+					138.000000610352,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "彼得格勒 · 首都"
+			},
+			{
+				"city_id": "tehran",
+				"font_pixels": 18,
+				"screen_rect": [
+					574.200012207031,
+					515.126953125,
+					119.999995117188,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "德黑兰 · 首都"
+			},
+			{
+				"city_id": "tokyo",
+				"font_pixels": 18,
+				"screen_rect": [
+					1296.35998535156,
+					508.060211181641,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "东京 · 首都"
+			},
+			{
+				"city_id": "kabul",
+				"font_pixels": 18,
+				"screen_rect": [
+					721.080017089844,
+					529.260498046875,
+					119.999995117188,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "喀布尔 · 首都"
+			},
+			{
+				"city_id": "baghdad",
+				"font_pixels": 18,
+				"screen_rect": [
+					441.0,
+					560.327270507813,
+					119.999995117188,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "巴格达 · 省城"
+			},
+			{
+				"city_id": "calcutta",
+				"font_pixels": 18,
+				"screen_rect": [
+					799.200012207031,
+					625.395568847656,
+					138.000000610352,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "加尔各答 · 省城"
+			},
+			{
+				"city_id": "chengdu",
+				"font_pixels": 18,
+				"screen_rect": [
+					860.600036621094,
+					502.594360351563,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "成都 · 省城"
+			},
+			{
+				"city_id": "delhi",
+				"font_pixels": 18,
+				"screen_rect": [
+					656.280029296875,
+					592.861389160156,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "德里 · 省城"
+			},
+			{
+				"city_id": "guangzhou",
+				"font_pixels": 18,
+				"screen_rect": [
+					1092.0400390625,
+					711.3955078125,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "广州 · 省城"
+			},
+			{
+				"city_id": "kunming",
+				"font_pixels": 18,
+				"screen_rect": [
+					848.359985351563,
+					690.195190429688,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "昆明 · 省城"
+			},
+			{
+				"city_id": "mukden",
+				"font_pixels": 18,
+				"screen_rect": [
+					1205.71997070313,
+					354.459289550781,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "奉天 · 省城"
+			},
+			{
+				"city_id": "seoul",
+				"font_pixels": 18,
+				"screen_rect": [
+					1202.20007324219,
+					548.85986328125,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "汉城 · 省城"
+			},
+			{
+				"city_id": "changsha",
+				"font_pixels": 18,
+				"screen_rect": [
+					1120.0400390625,
+					682.861389160156,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "长沙 · 省城"
+			},
+			{
+				"city_id": "fuzhou",
+				"font_pixels": 18,
+				"screen_rect": [
+					955.0,
+					711.12841796875,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "福州 · 省城"
+			},
+			{
+				"city_id": "guilin",
+				"font_pixels": 18,
+				"screen_rect": [
+					881.559997558594,
+					531.128479003906,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "桂林 · 省城"
+			},
+			{
+				"city_id": "hangzhou",
+				"font_pixels": 18,
+				"screen_rect": [
+					1209.23999023438,
+					453.661071777344,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "杭州 · 省城"
+			},
+			{
+				"city_id": "hanoi",
+				"font_pixels": 18,
+				"screen_rect": [
+					844.840026855469,
+					760.595825195313,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "河内 · 省城"
+			},
+			{
+				"city_id": "irkutsk",
+				"font_pixels": 18,
+				"screen_rect": [
+					912.599975585938,
+					348.32421875,
+					155.999995727539,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "伊尔库茨克 · 省城"
+			},
+			{
+				"city_id": "lanzhou",
+				"font_pixels": 18,
+				"screen_rect": [
+					804.599975585938,
+					390.060211181641,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "兰州 · 省城"
+			},
+			{
+				"city_id": "lhasa",
+				"font_pixels": 18,
+				"screen_rect": [
+					722.440002441406,
+					675.794616699219,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "拉萨 · 省城"
+			},
+			{
+				"city_id": "nanchang",
+				"font_pixels": 18,
+				"screen_rect": [
+					1116.52001953125,
+					654.861389160156,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "南昌 · 省城"
+			},
+			{
+				"city_id": "nanning",
+				"font_pixels": 18,
+				"screen_rect": [
+					1111.32006835938,
+					774.462280273438,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "南宁 · 省城"
+			},
+			{
+				"city_id": "phnom_penh",
+				"font_pixels": 18,
+				"screen_rect": [
+					951.840026855469,
+					807.664001464844,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "金边 · 省城"
+			},
+			{
+				"city_id": "pyongyang",
+				"font_pixels": 18,
+				"screen_rect": [
+					1202.20007324219,
+					410.726379394531,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "平壤 · 省城"
+			},
+			{
+				"city_id": "sapporo",
+				"font_pixels": 18,
+				"screen_rect": [
+					1324.60009765625,
+					368.325744628906,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "札幌 · 省城"
+			},
+			{
+				"city_id": "tashkent",
+				"font_pixels": 18,
+				"screen_rect": [
+					649.079956054688,
+					434.592864990234,
+					119.999995117188,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "塔什干 · 省城"
+			},
+			{
+				"city_id": "tbilisi",
+				"font_pixels": 18,
+				"screen_rect": [
+					444.239990234375,
+					420.459320068359,
+					138.000000610352,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "第比利斯 · 省城"
+			},
+			{
+				"city_id": "ulaanbaatar",
+				"font_pixels": 18,
+				"screen_rect": [
+					885.080017089844,
+					442.858367919922,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "库伦 · 省城"
+			},
+			{
+				"city_id": "urumqi",
+				"font_pixels": 18,
+				"screen_rect": [
+					697.960021972656,
+					340.325744628906,
+					102.0,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "迪化 · 省城"
+			},
+			{
+				"city_id": "harbin",
+				"font_pixels": 18,
+				"screen_rect": [
+					1071.19995117188,
+					402.058715820313,
+					91.0000018310547,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "哈尔滨 ★"
+			},
+			{
+				"city_id": "osaka",
+				"font_pixels": 18,
+				"screen_rect": [
+					1275.63989257813,
+					591.260498046875,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "大阪 ★"
+			},
+			{
+				"city_id": "changchun",
+				"font_pixels": 18,
+				"screen_rect": [
+					1189.9599609375,
+					485.258972167969,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "长春 ★"
+			},
+			{
+				"city_id": "dalian",
+				"font_pixels": 18,
+				"screen_rect": [
+					1036.47998046875,
+					431.926635742188,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "大连 ★"
+			},
+			{
+				"city_id": "hiroshima",
+				"font_pixels": 18,
+				"screen_rect": [
+					1279.15991210938,
+					619.260498046875,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "广岛 ★"
+			},
+			{
+				"city_id": "hong_kong",
+				"font_pixels": 18,
+				"screen_rect": [
+					1039.78002929688,
+					680.462341308594,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "香港 ★"
+			},
+			{
+				"city_id": "jerusalem",
+				"font_pixels": 18,
+				"screen_rect": [
+					373.059997558594,
+					526.460815429688,
+					108.999996948242,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "耶路撒冷 ★"
+			},
+			{
+				"city_id": "khabarovsk",
+				"font_pixels": 18,
+				"screen_rect": [
+					1275.63989257813,
+					311.791564941406,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "伯力 ★"
+			},
+			{
+				"city_id": "lahore",
+				"font_pixels": 18,
+				"screen_rect": [
+					598.799926757813,
+					640.460815429688,
+					91.0000018310547,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "拉合尔 ★"
+			},
+			{
+				"city_id": "mandalay",
+				"font_pixels": 18,
+				"screen_rect": [
+					810.400024414063,
+					732.595825195313,
+					91.0000018310547,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "曼德勒 ★"
+			},
+			{
+				"city_id": "tabriz",
+				"font_pixels": 18,
+				"screen_rect": [
+					537.47998046875,
+					479.793090820313,
+					108.999996948242,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "大不里士 ★"
+			},
+			{
+				"city_id": "bombay",
+				"font_pixels": 18,
+				"screen_rect": [
+					709.299987792969,
+					729.9296875,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "孟买 ★"
+			},
+			{
+				"city_id": "manila",
+				"font_pixels": 18,
+				"screen_rect": [
+					1137.23999023438,
+					741.263488769531,
+					91.0000018310547,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "马尼拉 ★"
+			},
+			{
+				"city_id": "baku",
+				"font_pixels": 18,
+				"screen_rect": [
+					593.719970703125,
+					548.592834472656,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "巴库 ★"
+			},
+			{
+				"city_id": "batavia",
+				"font_pixels": 18,
+				"screen_rect": [
+					960.580017089844,
+					998.466796875,
+					108.999996948242,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "巴达维亚 ★"
+			},
+			{
+				"city_id": "haiphong",
+				"font_pixels": 18,
+				"screen_rect": [
+					1086.83996582031,
+					802.729370117188,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "海防 ★"
+			},
+			{
+				"city_id": "madras",
+				"font_pixels": 18,
+				"screen_rect": [
+					673.760009765625,
+					762.463745117188,
+					108.999996948242,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "马德拉斯 ★"
+			},
+			{
+				"city_id": "rangoon",
+				"font_pixels": 18,
+				"screen_rect": [
+					800.400024414063,
+					802.996398925781,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "仰光 ★"
+			},
+			{
+				"city_id": "saigon",
+				"font_pixels": 18,
+				"screen_rect": [
+					1043.07995605469,
+					838.597412109375,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "西贡 ★"
+			},
+			{
+				"city_id": "singapore",
+				"font_pixels": 18,
+				"screen_rect": [
+					945.100036621094,
+					899.531982421875,
+					91.0000018310547,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "新加坡 ★"
+			},
+			{
+				"city_id": "surabaya",
+				"font_pixels": 18,
+				"screen_rect": [
+					1027.53991699219,
+					950.466796875,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": false,
+				"text": "泗水 ★"
+			},
+			{
+				"city_id": "vladivostok",
+				"font_pixels": 18,
+				"screen_rect": [
+					1104.16003417969,
+					368.325744628906,
+					91.0000018310547,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "海参崴 ★"
+			},
+			{
+				"city_id": "yokohama",
+				"font_pixels": 18,
+				"screen_rect": [
+					1312.35998535156,
+					555.926635742188,
+					73.0000015258789,
+					23.9999995422363
+				],
+				"shifted": true,
+				"text": "横滨 ★"
+			}
+		],
+		"objects": [
+			{
+				"id": "beijing",
+				"kind": "city",
+				"screen_rect": [
+					1084.52001953125,
+					473.659576416016,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4608.0,
+					2577.29150390625
+				]
+			},
+			{
+				"id": "tianjin",
+				"kind": "city",
+				"screen_rect": [
+					1096.76000976563,
+					480.726348876953,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4680.0,
+					2618.86083984375
+				]
+			},
+			{
+				"id": "baoding",
+				"kind": "city",
+				"screen_rect": [
+					1084.52001953125,
+					487.793090820313,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4608.0,
+					2660.42993164063
+				]
+			},
+			{
+				"id": "shijiazhuang",
+				"kind": "city",
+				"screen_rect": [
+					1072.28002929688,
+					494.859893798828,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4536.0,
+					2701.99926757813
+				]
+			},
+			{
+				"id": "jinan",
+				"kind": "city",
+				"screen_rect": [
+					1096.76000976563,
+					508.993438720703,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4680.0,
+					2785.1376953125
+				]
+			},
+			{
+				"id": "qingdao",
+				"kind": "city",
+				"screen_rect": [
+					1121.23999023438,
+					508.993438720703,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4824.0,
+					2785.1376953125
+				]
+			},
+			{
+				"id": "shanghai",
+				"kind": "city",
+				"screen_rect": [
+					1121.23999023438,
+					565.527587890625,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4824.0,
+					3117.69140625
+				]
+			},
+			{
+				"id": "nanjing",
+				"kind": "city",
+				"screen_rect": [
+					1109.0,
+					558.460815429688,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4752.0,
+					3076.12231445313
+				]
+			},
+			{
+				"id": "suzhou",
+				"kind": "city",
+				"screen_rect": [
+					1121.23999023438,
+					551.39404296875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4824.0,
+					3034.55297851563
+				]
+			},
+			{
+				"id": "hangzhou",
+				"kind": "city",
+				"screen_rect": [
+					1121.23999023438,
+					579.661071777344,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4824.0,
+					3200.82983398438
+				]
+			},
+			{
+				"id": "ningbo",
+				"kind": "city",
+				"screen_rect": [
+					1121.23999023438,
+					593.794616699219,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4824.0,
+					3283.96826171875
+				]
+			},
+			{
+				"id": "xuzhou",
+				"kind": "city",
+				"screen_rect": [
+					1096.76000976563,
+					537.260498046875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4680.0,
+					2951.41455078125
+				]
+			},
+			{
+				"id": "bengbu",
+				"kind": "city",
+				"screen_rect": [
+					1096.76000976563,
+					551.39404296875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4680.0,
+					3034.55297851563
+				]
+			},
+			{
+				"id": "hankou",
+				"kind": "city",
+				"screen_rect": [
+					1072.28002929688,
+					579.661071777344,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4536.0,
+					3200.82983398438
+				]
+			},
+			{
+				"id": "wuchang",
+				"kind": "city",
+				"screen_rect": [
+					1072.28002929688,
+					565.527587890625,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4536.0,
+					3117.69140625
+				]
+			},
+			{
+				"id": "yichang",
+				"kind": "city",
+				"screen_rect": [
+					1047.80004882813,
+					579.661071777344,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4392.0,
+					3200.82983398438
+				]
+			},
+			{
+				"id": "changsha",
+				"kind": "city",
+				"screen_rect": [
+					1060.0400390625,
+					600.861389160156,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4464.0,
+					3325.53759765625
+				]
+			},
+			{
+				"id": "nanchang",
+				"kind": "city",
+				"screen_rect": [
+					1084.52001953125,
+					600.861389160156,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4608.0,
+					3325.53759765625
+				]
+			},
+			{
+				"id": "fuzhou",
+				"kind": "city",
+				"screen_rect": [
+					1109.0,
+					629.128479003906,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4752.0,
+					3491.814453125
+				]
+			},
+			{
+				"id": "guangzhou",
+				"kind": "city",
+				"screen_rect": [
+					1060.0400390625,
+					657.395568847656,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4464.0,
+					3658.09130859375
+				]
+			},
+			{
+				"id": "hong_kong",
+				"kind": "city",
+				"screen_rect": [
+					1072.28002929688,
+					664.462341308594,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4536.0,
+					3699.66064453125
+				]
+			},
+			{
+				"id": "macau",
+				"kind": "city",
+				"screen_rect": [
+					1060.0400390625,
+					643.262023925781,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4464.0,
+					3574.95288085938
+				]
+			},
+			{
+				"id": "shantou",
+				"kind": "city",
+				"screen_rect": [
+					1084.52001953125,
+					643.262023925781,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4608.0,
+					3574.95288085938
+				]
+			},
+			{
+				"id": "nanning",
+				"kind": "city",
+				"screen_rect": [
+					1023.32000732422,
+					664.462341308594,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4248.0,
+					3699.66064453125
+				]
+			},
+			{
+				"id": "guilin",
+				"kind": "city",
+				"screen_rect": [
+					1035.56005859375,
+					629.128479003906,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4320.0,
+					3491.814453125
+				]
+			},
+			{
+				"id": "kunming",
+				"kind": "city",
+				"screen_rect": [
+					974.360046386719,
+					636.195190429688,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					3960.0,
+					3533.38354492188
+				]
+			},
+			{
+				"id": "guiyang",
+				"kind": "city",
+				"screen_rect": [
+					1011.08001708984,
+					614.994934082031,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4176.0,
+					3408.67602539063
+				]
+			},
+			{
+				"id": "chongqing",
+				"kind": "city",
+				"screen_rect": [
+					1011.08001708984,
+					586.727905273438,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4176.0,
+					3242.39916992188
+				]
+			},
+			{
+				"id": "chengdu",
+				"kind": "city",
+				"screen_rect": [
+					986.600036621094,
+					572.594360351563,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4032.0,
+					3159.2607421875
+				]
+			},
+			{
+				"id": "xian",
+				"kind": "city",
+				"screen_rect": [
+					1023.32000732422,
+					537.260498046875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4248.0,
+					2951.41455078125
+				]
+			},
+			{
+				"id": "lanzhou",
+				"kind": "city",
+				"screen_rect": [
+					986.600036621094,
+					516.060241699219,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4032.0,
+					2826.70703125
+				]
+			},
+			{
+				"id": "xining",
+				"kind": "city",
+				"screen_rect": [
+					974.360046386719,
+					508.993438720703,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					3960.0,
+					2785.1376953125
+				]
+			},
+			{
+				"id": "urumqi",
+				"kind": "city",
+				"screen_rect": [
+					851.960021972656,
+					438.325744628906,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					3240.0,
+					2369.44555664063
+				]
+			},
+			{
+				"id": "kashgar",
+				"kind": "city",
+				"screen_rect": [
+					754.0400390625,
+					480.726348876953,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					2664.0,
+					2618.86083984375
+				]
+			},
+			{
+				"id": "lhasa",
+				"kind": "city",
+				"screen_rect": [
+					876.440002441406,
+					593.794616699219,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					3384.0,
+					3283.96826171875
+				]
+			},
+			{
+				"id": "mukden",
+				"kind": "city",
+				"screen_rect": [
+					1145.71997070313,
+					452.459289550781,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4968.0,
+					2452.583984375
+				]
+			},
+			{
+				"id": "port_arthur",
+				"kind": "city",
+				"screen_rect": [
+					1133.47998046875,
+					473.659576416016,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4896.0,
+					2577.29150390625
+				]
+			},
+			{
+				"id": "dalian",
+				"kind": "city",
+				"screen_rect": [
+					1133.47998046875,
+					501.926635742188,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4896.0,
+					2743.568359375
+				]
+			},
+			{
+				"id": "changchun",
+				"kind": "city",
+				"screen_rect": [
+					1157.9599609375,
+					431.258972167969,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5040.0,
+					2327.87622070313
+				]
+			},
+			{
+				"id": "harbin",
+				"kind": "city",
+				"screen_rect": [
+					1170.20007324219,
+					410.058715820313,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5112.0,
+					2203.16870117188
+				]
+			},
+			{
+				"id": "taipei",
+				"kind": "city",
+				"screen_rect": [
+					1109.0,
+					614.994934082031,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4752.0,
+					3408.67602539063
+				]
+			},
+			{
+				"id": "haiphong",
+				"kind": "city",
+				"screen_rect": [
+					998.840026855469,
+					692.729370117188,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4104.0,
+					3865.9375
+				]
+			},
+			{
+				"id": "tokyo",
+				"kind": "city",
+				"screen_rect": [
+					1280.35998535156,
+					516.060241699219,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5760.0,
+					2826.70703125
+				]
+			},
+			{
+				"id": "yokohama",
+				"kind": "city",
+				"screen_rect": [
+					1280.35998535156,
+					501.926635742188,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5760.0,
+					2743.568359375
+				]
+			},
+			{
+				"id": "osaka",
+				"kind": "city",
+				"screen_rect": [
+					1243.64001464844,
+					537.260498046875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5544.0,
+					2951.41455078125
+				]
+			},
+			{
+				"id": "hiroshima",
+				"kind": "city",
+				"screen_rect": [
+					1219.16003417969,
+					537.260498046875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5400.0,
+					2951.41455078125
+				]
+			},
+			{
+				"id": "sapporo",
+				"kind": "city",
+				"screen_rect": [
+					1292.60009765625,
+					438.325744628906,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5832.0,
+					2369.44555664063
+				]
+			},
+			{
+				"id": "seoul",
+				"kind": "city",
+				"screen_rect": [
+					1170.20007324219,
+					494.859893798828,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5112.0,
+					2701.99926757813
+				]
+			},
+			{
+				"id": "pyongyang",
+				"kind": "city",
+				"screen_rect": [
+					1170.20007324219,
+					480.726348876953,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5112.0,
+					2618.86083984375
+				]
+			},
+			{
+				"id": "busan",
+				"kind": "city",
+				"screen_rect": [
+					1194.68005371094,
+					523.126953125,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5256.0,
+					2868.27612304688
+				]
+			},
+			{
+				"id": "vladivostok",
+				"kind": "city",
+				"screen_rect": [
+					1219.16003417969,
+					438.325744628906,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5400.0,
+					2369.44555664063
+				]
+			},
+			{
+				"id": "khabarovsk",
+				"kind": "city",
+				"screen_rect": [
+					1243.64001464844,
+					381.791595458984,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					5544.0,
+					2036.89172363281
+				]
+			},
+			{
+				"id": "irkutsk",
+				"kind": "city",
+				"screen_rect": [
+					986.600036621094,
+					332.32421875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4032.0,
+					1745.9072265625
+				]
+			},
+			{
+				"id": "petrograd",
+				"kind": "city",
+				"screen_rect": [
+					386.840026855469,
+					254.589782714844,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					504.0,
+					1288.64575195313
+				]
+			},
+			{
+				"id": "moscow",
+				"kind": "city",
+				"screen_rect": [
+					448.040008544922,
+					304.057159423828,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					864.0,
+					1579.63037109375
+				]
+			},
+			{
+				"id": "tashkent",
+				"kind": "city",
+				"screen_rect": [
+					705.080017089844,
+					466.592834472656,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					2376.0,
+					2535.72241210938
+				]
+			},
+			{
+				"id": "samarkand",
+				"kind": "city",
+				"screen_rect": [
+					680.599975585938,
+					480.726348876953,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					2232.0,
+					2618.86083984375
+				]
+			},
+			{
+				"id": "baku",
+				"kind": "city",
+				"screen_rect": [
+					533.719970703125,
+					466.592834472656,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					1368.0,
+					2535.72241210938
+				]
+			},
+			{
+				"id": "tbilisi",
+				"kind": "city",
+				"screen_rect": [
+					509.240020751953,
+					452.459289550781,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					1224.0,
+					2452.583984375
+				]
+			},
+			{
+				"id": "ulaanbaatar",
+				"kind": "city",
+				"screen_rect": [
+					1011.08001708984,
+					388.8583984375,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4176.0,
+					2078.4609375
+				]
+			},
+			{
+				"id": "tehran",
+				"kind": "city",
+				"screen_rect": [
+					558.200012207031,
+					523.126953125,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					1512.0,
+					2868.27612304688
+				]
+			},
+			{
+				"id": "tabriz",
+				"kind": "city",
+				"screen_rect": [
+					521.47998046875,
+					487.793090820313,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					1296.0,
+					2660.42993164063
+				]
+			},
+			{
+				"id": "baghdad",
+				"kind": "city",
+				"screen_rect": [
+					497.0,
+					544.327270507813,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					1152.0,
+					2992.98388671875
+				]
+			},
+			{
+				"id": "istanbul",
+				"kind": "city",
+				"screen_rect": [
+					386.840026855469,
+					466.592834472656,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					504.0,
+					2535.72241210938
+				]
+			},
+			{
+				"id": "jerusalem",
+				"kind": "city",
+				"screen_rect": [
+					423.559997558594,
+					558.460815429688,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					720.0,
+					3076.12231445313
+				]
+			},
+			{
+				"id": "kabul",
+				"kind": "city",
+				"screen_rect": [
+					705.080017089844,
+					537.260498046875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					2376.0,
+					2951.41455078125
+				]
+			},
+			{
+				"id": "delhi",
+				"kind": "city",
+				"screen_rect": [
+					766.280029296875,
+					600.861389160156,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					2736.0,
+					3325.53759765625
+				]
+			},
+			{
+				"id": "lahore",
+				"kind": "city",
+				"screen_rect": [
+					741.800048828125,
+					558.460815429688,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					2592.0,
+					3076.12231445313
+				]
+			},
+			{
+				"id": "bombay",
+				"kind": "city",
+				"screen_rect": [
+					741.800048828125,
+					713.9296875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					2592.0,
+					3990.64501953125
+				]
+			},
+			{
+				"id": "calcutta",
+				"kind": "city",
+				"screen_rect": [
+					864.200012207031,
+					657.395568847656,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					3312.0,
+					3658.09130859375
+				]
+			},
+			{
+				"id": "madras",
+				"kind": "city",
+				"screen_rect": [
+					790.760009765625,
+					770.463806152344,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					2880.0,
+					4323.19873046875
+				]
+			},
+			{
+				"id": "rangoon",
+				"kind": "city",
+				"screen_rect": [
+					925.400024414063,
+					720.996459960938,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					3672.0,
+					4032.21435546875
+				]
+			},
+			{
+				"id": "mandalay",
+				"kind": "city",
+				"screen_rect": [
+					925.400024414063,
+					678.595825195313,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					3672.0,
+					3782.79907226563
+				]
+			},
+			{
+				"id": "bangkok",
+				"kind": "city",
+				"screen_rect": [
+					962.119995117188,
+					756.330322265625,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					3888.0,
+					4240.060546875
+				]
+			},
+			{
+				"id": "hanoi",
+				"kind": "city",
+				"screen_rect": [
+					998.840026855469,
+					678.595825195313,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4104.0,
+					3782.79907226563
+				]
+			},
+			{
+				"id": "saigon",
+				"kind": "city",
+				"screen_rect": [
+					1011.08001708984,
+					784.597412109375,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4176.0,
+					4406.33740234375
+				]
+			},
+			{
+				"id": "phnom_penh",
+				"kind": "city",
+				"screen_rect": [
+					998.840026855469,
+					791.6640625,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4104.0,
+					4447.90625
+				]
+			},
+			{
+				"id": "singapore",
+				"kind": "city",
+				"screen_rect": [
+					986.600036621094,
+					883.532104492188,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4032.0,
+					4988.30615234375
+				]
+			},
+			{
+				"id": "manila",
+				"kind": "city",
+				"screen_rect": [
+					1121.23999023438,
+					749.263549804688,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4824.0,
+					4198.4912109375
+				]
+			},
+			{
+				"id": "batavia",
+				"kind": "city",
+				"screen_rect": [
+					1011.08001708984,
+					982.466796875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4176.0,
+					5570.275390625
+				]
+			},
+			{
+				"id": "surabaya",
+				"kind": "city",
+				"screen_rect": [
+					1060.0400390625,
+					982.466796875,
+					7.99999984741211,
+					7.99999984741211
+				],
+				"world_anchor": [
+					4464.0,
+					5570.275390625
+				]
+			},
+			{
+				"id": "u_00001",
+				"kind": "unit",
+				"screen_rect": [
+					1082.02001953125,
+					472.279571533203,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4608.0,
+					2577.29150390625
+				]
+			},
+			{
+				"id": "u_00002",
+				"kind": "unit",
+				"screen_rect": [
+					1069.78002929688,
+					465.212829589844,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4536.0,
+					2535.72241210938
+				]
+			},
+			{
+				"id": "u_00003",
+				"kind": "unit",
+				"screen_rect": [
+					1094.26000976563,
+					479.346343994141,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4680.0,
+					2618.86083984375
+				]
+			},
+			{
+				"id": "u_00004",
+				"kind": "unit",
+				"screen_rect": [
+					1094.26000976563,
+					465.212829589844,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4680.0,
+					2535.72241210938
+				]
+			},
+			{
+				"id": "u_00005",
+				"kind": "unit",
+				"screen_rect": [
+					1082.02001953125,
+					486.4130859375,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4608.0,
+					2660.42993164063
+				]
+			},
+			{
+				"id": "u_00006",
+				"kind": "unit",
+				"screen_rect": [
+					1069.78002929688,
+					479.346343994141,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4536.0,
+					2618.86083984375
+				]
+			},
+			{
+				"id": "u_00007",
+				"kind": "unit",
+				"screen_rect": [
+					1069.78002929688,
+					493.479888916016,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4536.0,
+					2701.99926757813
+				]
+			},
+			{
+				"id": "u_00008",
+				"kind": "unit",
+				"screen_rect": [
+					1057.5400390625,
+					486.4130859375,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4464.0,
+					2660.42993164063
+				]
+			},
+			{
+				"id": "u_00009",
+				"kind": "unit",
+				"screen_rect": [
+					1094.26000976563,
+					507.613433837891,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4680.0,
+					2785.1376953125
+				]
+			},
+			{
+				"id": "u_00010",
+				"kind": "unit",
+				"screen_rect": [
+					1082.02001953125,
+					500.546630859375,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4608.0,
+					2743.568359375
+				]
+			},
+			{
+				"id": "u_00011",
+				"kind": "unit",
+				"screen_rect": [
+					1118.73999023438,
+					507.613433837891,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4824.0,
+					2785.1376953125
+				]
+			},
+			{
+				"id": "u_00012",
+				"kind": "unit",
+				"screen_rect": [
+					1106.5,
+					500.546630859375,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4752.0,
+					2743.568359375
+				]
+			},
+			{
+				"id": "u_00013",
+				"kind": "unit",
+				"screen_rect": [
+					1118.73999023438,
+					564.147583007813,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4824.0,
+					3117.69140625
+				]
+			},
+			{
+				"id": "u_00014",
+				"kind": "unit",
+				"screen_rect": [
+					1106.5,
+					557.080810546875,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4752.0,
+					3076.12231445313
+				]
+			},
+			{
+				"id": "u_00015",
+				"kind": "unit",
+				"screen_rect": [
+					1094.26000976563,
+					550.014038085938,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4680.0,
+					3034.55297851563
+				]
+			},
+			{
+				"id": "u_00016",
+				"kind": "unit",
+				"screen_rect": [
+					1094.26000976563,
+					564.147583007813,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4680.0,
+					3117.69140625
+				]
+			},
+			{
+				"id": "u_00017",
+				"kind": "unit",
+				"screen_rect": [
+					1118.73999023438,
+					550.014038085938,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4824.0,
+					3034.55297851563
+				]
+			},
+			{
+				"id": "u_00018",
+				"kind": "unit",
+				"screen_rect": [
+					1118.73999023438,
+					578.281066894531,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4824.0,
+					3200.82983398438
+				]
+			},
+			{
+				"id": "u_00019",
+				"kind": "unit",
+				"screen_rect": [
+					1106.5,
+					571.21435546875,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4752.0,
+					3159.2607421875
+				]
+			},
+			{
+				"id": "u_00020",
+				"kind": "unit",
+				"screen_rect": [
+					1118.73999023438,
+					592.414611816406,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4824.0,
+					3283.96826171875
+				]
+			},
+			{
+				"id": "u_00021",
+				"kind": "unit",
+				"screen_rect": [
+					1094.26000976563,
+					535.880493164063,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4680.0,
+					2951.41455078125
+				]
+			},
+			{
+				"id": "u_00022",
+				"kind": "unit",
+				"screen_rect": [
+					1082.02001953125,
+					528.813720703125,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4608.0,
+					2909.84545898438
+				]
+			},
+			{
+				"id": "u_00023",
+				"kind": "unit",
+				"screen_rect": [
+					1082.02001953125,
+					542.947265625,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4608.0,
+					2992.98388671875
+				]
+			},
+			{
+				"id": "u_00024",
+				"kind": "unit",
+				"screen_rect": [
+					1069.78002929688,
+					578.281066894531,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4536.0,
+					3200.82983398438
+				]
+			},
+			{
+				"id": "u_00025",
+				"kind": "unit",
+				"screen_rect": [
+					1057.5400390625,
+					571.21435546875,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4464.0,
+					3159.2607421875
+				]
+			},
+			{
+				"id": "u_00026",
+				"kind": "unit",
+				"screen_rect": [
+					1069.78002929688,
+					564.147583007813,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4536.0,
+					3117.69140625
+				]
+			},
+			{
+				"id": "u_00027",
+				"kind": "unit",
+				"screen_rect": [
+					1057.5400390625,
+					557.080810546875,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4464.0,
+					3076.12231445313
+				]
+			},
+			{
+				"id": "u_00028",
+				"kind": "unit",
+				"screen_rect": [
+					1045.30004882813,
+					578.281066894531,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4392.0,
+					3200.82983398438
+				]
+			},
+			{
+				"id": "u_00029",
+				"kind": "unit",
+				"screen_rect": [
+					1057.5400390625,
+					599.481384277344,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4464.0,
+					3325.53759765625
+				]
+			},
+			{
+				"id": "u_00030",
+				"kind": "unit",
+				"screen_rect": [
+					1045.30004882813,
+					592.414611816406,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4392.0,
+					3283.96826171875
+				]
+			},
+			{
+				"id": "u_00031",
+				"kind": "unit",
+				"screen_rect": [
+					1082.02001953125,
+					599.481384277344,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4608.0,
+					3325.53759765625
+				]
+			},
+			{
+				"id": "u_00032",
+				"kind": "unit",
+				"screen_rect": [
+					1069.78002929688,
+					592.414611816406,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4536.0,
+					3283.96826171875
+				]
+			},
+			{
+				"id": "u_00033",
+				"kind": "unit",
+				"screen_rect": [
+					1106.5,
+					627.748474121094,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4752.0,
+					3491.814453125
+				]
+			},
+			{
+				"id": "u_00034",
+				"kind": "unit",
+				"screen_rect": [
+					1094.26000976563,
+					620.681701660156,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4680.0,
+					3450.2451171875
+				]
+			},
+			{
+				"id": "u_00035",
+				"kind": "unit",
+				"screen_rect": [
+					1057.5400390625,
+					656.015563964844,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4464.0,
+					3658.09130859375
+				]
+			},
+			{
+				"id": "u_00036",
+				"kind": "unit",
+				"screen_rect": [
+					1045.30004882813,
+					648.94873046875,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4392.0,
+					3616.52197265625
+				]
+			},
+			{
+				"id": "u_00037",
+				"kind": "unit",
+				"screen_rect": [
+					1069.78002929688,
+					663.082336425781,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4536.0,
+					3699.66064453125
+				]
+			},
+			{
+				"id": "u_00038",
+				"kind": "unit",
+				"screen_rect": [
+					1069.78002929688,
+					648.94873046875,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4536.0,
+					3616.52197265625
+				]
+			},
+			{
+				"id": "u_00039",
+				"kind": "unit",
+				"screen_rect": [
+					1057.5400390625,
+					641.882019042969,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4464.0,
+					3574.95288085938
+				]
+			},
+			{
+				"id": "u_00040",
+				"kind": "unit",
+				"screen_rect": [
+					1082.02001953125,
+					641.882019042969,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4608.0,
+					3574.95288085938
+				]
+			},
+			{
+				"id": "u_00041",
+				"kind": "unit",
+				"screen_rect": [
+					1020.82000732422,
+					663.082336425781,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4248.0,
+					3699.66064453125
+				]
+			},
+			{
+				"id": "u_00042",
+				"kind": "unit",
+				"screen_rect": [
+					1008.58001708984,
+					656.015563964844,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4176.0,
+					3658.09130859375
+				]
+			},
+			{
+				"id": "u_00043",
+				"kind": "unit",
+				"screen_rect": [
+					1033.05993652344,
+					627.748474121094,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4320.0,
+					3491.814453125
+				]
+			},
+			{
+				"id": "u_00044",
+				"kind": "unit",
+				"screen_rect": [
+					1020.82000732422,
+					620.681701660156,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4248.0,
+					3450.2451171875
+				]
+			},
+			{
+				"id": "u_00047",
+				"kind": "unit",
+				"screen_rect": [
+					1008.58001708984,
+					613.614929199219,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4176.0,
+					3408.67602539063
+				]
+			},
+			{
+				"id": "u_00048",
+				"kind": "unit",
+				"screen_rect": [
+					996.339965820313,
+					606.548156738281,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4104.0,
+					3367.10668945313
+				]
+			},
+			{
+				"id": "u_00055",
+				"kind": "unit",
+				"screen_rect": [
+					984.099975585938,
+					514.680236816406,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4032.0,
+					2826.70703125
+				]
+			},
+			{
+				"id": "u_00056",
+				"kind": "unit",
+				"screen_rect": [
+					984.099975585938,
+					500.546630859375,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4032.0,
+					2743.568359375
+				]
+			},
+			{
+				"id": "u_00057",
+				"kind": "unit",
+				"screen_rect": [
+					971.859985351563,
+					507.613433837891,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					3960.0,
+					2785.1376953125
+				]
+			},
+			{
+				"id": "u_00058",
+				"kind": "unit",
+				"screen_rect": [
+					849.4599609375,
+					436.945739746094,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					3240.0,
+					2369.44555664063
+				]
+			},
+			{
+				"id": "u_00059",
+				"kind": "unit",
+				"screen_rect": [
+					837.219970703125,
+					444.012512207031,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					3168.0,
+					2411.0146484375
+				]
+			},
+			{
+				"id": "u_00060",
+				"kind": "unit",
+				"screen_rect": [
+					751.539978027344,
+					479.346343994141,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					2664.0,
+					2618.86083984375
+				]
+			},
+			{
+				"id": "u_00061",
+				"kind": "unit",
+				"screen_rect": [
+					873.940002441406,
+					592.414611816406,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					3384.0,
+					3283.96826171875
+				]
+			},
+			{
+				"id": "u_00062",
+				"kind": "unit",
+				"screen_rect": [
+					861.700012207031,
+					585.347900390625,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					3312.0,
+					3242.39916992188
+				]
+			},
+			{
+				"id": "u_00068",
+				"kind": "unit",
+				"screen_rect": [
+					1106.5,
+					514.680236816406,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4752.0,
+					2826.70703125
+				]
+			},
+			{
+				"id": "u_00073",
+				"kind": "unit",
+				"screen_rect": [
+					1106.5,
+					613.614929199219,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4752.0,
+					3408.67602539063
+				]
+			},
+			{
+				"id": "u_00074",
+				"kind": "unit",
+				"screen_rect": [
+					1094.26000976563,
+					606.548156738281,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4680.0,
+					3367.10668945313
+				]
+			},
+			{
+				"id": "u_00110",
+				"kind": "unit",
+				"screen_rect": [
+					1008.58001708984,
+					387.478332519531,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4176.0,
+					2078.4609375
+				]
+			},
+			{
+				"id": "u_00111",
+				"kind": "unit",
+				"screen_rect": [
+					996.339965820313,
+					380.411590576172,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4104.0,
+					2036.89172363281
+				]
+			},
+			{
+				"id": "u_00140",
+				"kind": "unit",
+				"screen_rect": [
+					996.339965820313,
+					677.2158203125,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4104.0,
+					3782.79907226563
+				]
+			},
+			{
+				"id": "u_00141",
+				"kind": "unit",
+				"screen_rect": [
+					984.099975585938,
+					670.149047851563,
+					13.0000000762939,
+					10.7599998855591
+				],
+				"world_anchor": [
+					4032.0,
+					3741.22973632813
+				]
+			}
+		],
+		"operation_hex_radius_world": 48.0,
+		"renderer": "shared_model_and_caption_footprints_v1",
+		"source_pngs_modified": false
+	},
+	"map_detail": {
+		"cell_river_segments": 0,
+		"coast_lines": 12136,
+		"control_layer_visible": true,
+		"crossing_markers": 0,
+		"detail_hydrography_lines": 694,
+		"historical_landcover_features": 9,
+		"historical_landcover_patch_cells": 0,
+		"presentation_terrain_counts": {
+			"city": 81,
+			"forest": 154,
+			"hill": 1032,
+			"mountain": 443,
+			"peak": 33,
+			"plain": 1757,
+			"river": 154,
+			"road": 90,
+			"sea": 3924
+		},
+		"rail_edges": 22,
+		"river_lines": 258,
+		"tactical_zone_opacity": 0.26,
+		"terrain_cell_counts": {
+			"city": 81,
+			"hill": 1115,
+			"mountain": 456,
+			"peak": 33,
+			"plain": 1815,
+			"river": 154,
+			"road": 90,
+			"sea": 3924
+		},
+		"terrain_depth_draw_count": 0,
+		"terrain_feature_sprite_draw_count": 0,
+		"terrain_layer_visible": true,
+		"terrain_micro_symbol_draw_count": 0,
+		"terrain_surface_variant_draw_count": 4598,
+		"terrain_symbol_draw_count": 0,
+		"terrain_tile_draw_count": 0,
+		"territory_field_opacity": 0.21
+	},
+	"map_zoom": 0.17,
+	"mobile_layout_profile": false,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"raw_godot_capture": true,
+	"relief": {
+		"continuous_lighting": {
+			"data_texture_format": "RGBA8_premultiplied_numerical_lighting",
+			"gpu_texture_available": true,
+			"interpolation_stencil": [
+				4,
+				4
+			],
+			"lookup_bytes": 53724,
+			"lookup_dimensions": [
+				111,
+				121
+			],
+			"maximum_contributing_samples": 16,
+			"method": "source_cell_cubic_bspline_lighting",
+			"new_dem_samples": 0,
+			"raster_art_generated": false,
+			"rules_map_mutated": false,
+			"source_images_modified": false,
+			"source_samples": 3587
+		},
+		"contour_segments": 0,
+		"crest_axis_from_source_neighbours": true,
+		"eligible_features": 290,
+		"families": {
+			"foothill_ew": 116,
+			"foothill_ns": 66,
+			"peak_ew": 1,
+			"peak_ns": 1,
+			"ridge_ew": 28,
+			"ridge_ns": 7
+		},
+		"generated_continental_contours": false,
+		"geographic_gradient_in_meters": true,
+		"height_exaggeration_display_only": 6.0,
+		"historical_vegetation_claimed": false,
+		"independent_relief_originals_used": 102,
+		"index_ms": 357.564,
+		"lighting": "continuous_source_height_normals",
+		"mesh_ms": 938.015,
+		"nearby_variant_exclusion_world": 270.0,
+		"placed_features": 219,
+		"placement_ms": 1545.697,
+		"preparation_ms": 2841.272,
+		"rules_map_mutated": false,
+		"source": "Tilezen_TerrainTiles_geotiff_nine_point_100km",
+		"source_meters_per_world_unit": 3125.0,
+		"strategic_category_relief": false,
+		"triangles": 5493
+	},
+	"safe_insets": "(0.0, 0.0, 0.0, 0.0)",
+	"scenario_id": "asia_1927",
+	"territory_field": {
+		"border_segments": 623,
+		"cells_assigned": 2681,
+		"cells_skipped": 1063,
+		"clip": {
+			"city_zones": 81,
+			"clipped_city_zones": 61.0,
+			"eligible_field_cells": 3744.0,
+			"empty_field_cells": 14.0,
+			"enabled": true,
+			"historical_military_frontiers_claimed": false,
+			"inland_water_preserves_source_islands": true,
+			"land_clipped": true,
+			"partial_field_cells": 629.0,
+			"source": "existing_render_land_exteriors_minus_holes",
+			"source_land_holes": 1.0,
+			"source_land_polygons": 12105.0,
+			"source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+		},
+		"enabled": true,
+		"land_clipped": true,
+		"minimap_reuses_same_meshes": true,
+		"owners": 17,
+		"presentation_only": true,
+		"source": "current_owned_real_city_nodes_voronoi"
+	},
+	"ui_scale": 1.0,
+	"unit_facing": {
+		"compact_idle_chevrons": true,
+		"directional_source_families": 3,
+		"directional_source_views": 12,
+		"records": [
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00001"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00002"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00003"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00004"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00005"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00006"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00007"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00008"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00009"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00010"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00011"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00012"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00013"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00014"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00015"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00016"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00017"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00018"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00019"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00020"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00021"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00022"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00023"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00024"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00025"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00026"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00027"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00028"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00029"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00030"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00031"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00032"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00033"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00034"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00035"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00036"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00037"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00038"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00039"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00040"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00041"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00042"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00043"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00044"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00045"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00046"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00047"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00048"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00049"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00050"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00051"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00052"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00053"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00054"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00055"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00056"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00057"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00058"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00059"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00060"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00061"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00062"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00063"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00064"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00065"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00066"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00067"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00068"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00069"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00070"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00071"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00072"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00073"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00074"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00075"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00076"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00077"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00078"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00079"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00080"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00081"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00082"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00083"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00084"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00085"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00086"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00087"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00088"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00089"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00090"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00091"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00092"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00093"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00094"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00095"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00096"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00097"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00098"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00099"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00100"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00101"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00102"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00103"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00104"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "militia",
+				"unit_id": "u_00105"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00106"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00107"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00108"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00109"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00110"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00111"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00112"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00113"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00114"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00115"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00116"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00117"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00118"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00119"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00120"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00121"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00122"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00123"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00124"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00125"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00126"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00127"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00128"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00129"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00130"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00131"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00132"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00133"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00134"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00135"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00136"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00137"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00138"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00139"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00140"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00141"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00142"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00143"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00144"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00145"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00146"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00147"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00148"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00149"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00150"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00151"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "rifle",
+				"unit_id": "u_00152"
+			},
+			{
+				"available_cardinals": [
+					"n",
+					"e",
+					"s",
+					"w"
+				],
+				"heading": [
+					1.0,
+					0.0
+				],
+				"source_unit": "field_artillery",
+				"unit_id": "u_00153"
+			}
+		]
+	},
+	"viewport": "(1920.0, 1080.0)",
+	"window": "(1920, 1080)"
+}

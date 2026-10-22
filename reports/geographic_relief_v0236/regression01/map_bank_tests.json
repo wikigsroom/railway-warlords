@@ -1,0 +1,134 @@
+{
+	"build_version": "0.2.36",
+	"checks": [
+		{
+			"name": "complete_map_bank_metadata_available",
+			"passed": true
+		},
+		{
+			"name": "74_baseline_plus_804_independent_sources_exceed_tenfold_map_count",
+			"passed": true
+		},
+		{
+			"name": "runtime_counts_are_176_materials_480_scenery_148_settlements",
+			"passed": true
+		},
+		{
+			"name": "every_additional_runtime_record_has_a_unique_original_png_hash",
+			"passed": true
+		},
+		{
+			"name": "all_804_whole_source_resources_and_foot_metadata_exist",
+			"passed": true
+		},
+		{
+			"name": "every_original_is_addressable_through_a_runtime_family",
+			"passed": true
+		},
+		{
+			"name": "settlement_extension_expands_actual_campaign_village_silhouettes",
+			"passed": true
+		},
+		{
+			"name": "assignment_is_independent_of_iteration_and_viewport_order",
+			"passed": true
+		},
+		{
+			"name": "assignment_does_not_mutate_source_candidate_records",
+			"passed": true
+		},
+		{
+			"name": "no_same_silhouette_within_235_world_units_in_independent_dense_patch",
+			"passed": true
+		},
+		{
+			"name": "dense_patch_uses_at_least_30_distinct_original_silhouettes",
+			"passed": true
+		},
+		{
+			"name": "all_original_aspects_and_alpha_feet_are_preserved_without_cropping_or_mirroring",
+			"passed": true
+		},
+		{
+			"name": "materials_follow_real_feature_precedence_and_never_cover_roads_with_woodland",
+			"passed": true
+		},
+		{
+			"name": "occupation_never_replaces_a_source_city_architecture",
+			"passed": true
+		},
+		{
+			"name": "explicit_regional_bindings_do_not_invent_unreviewed_local_reconstructions",
+			"passed": true
+		},
+		{
+			"name": "flat_floodplain_banks_only_use_the_six_visually_reviewed_low_grass_originals",
+			"passed": true
+		},
+		{
+			"name": "waterline_alone_never_invents_a_rocky_coast_or_rock_hummocks_on_flat_land",
+			"passed": true
+		},
+		{
+			"name": "marsh_cells_exclude_the_six_inspected_prominent_rock_mound_outputs",
+			"passed": true
+		},
+		{
+			"name": "local_silhouette_exclusion_respects_the_actual_geography_eligible_source_pool",
+			"passed": true
+		},
+		{
+			"name": "feathered_ground_materials_are_batched_by_whole_source_texture",
+			"passed": true
+		},
+		{
+			"name": "broad_visible_material_interiors_have_zero_alpha_outer_edges_without_opaque_hex_slabs",
+			"passed": true
+		},
+		{
+			"name": "source_geography_not_random_identity_selects_the_ground_material",
+			"passed": true
+		},
+		{
+			"name": "sourced_sand_material_never_replaces_a_real_river_feature",
+			"passed": true
+		},
+		{
+			"name": "game_content_loads_with_expanded_bank",
+			"passed": true
+		},
+		{
+			"name": "full_map_bank_preparation_preserves_rules_geography_and_combat_random_stream",
+			"passed": true
+		},
+		{
+			"name": "expanded_material_families_are_installed_on_the_actual_campaign_map",
+			"passed": true
+		},
+		{
+			"name": "real_campaign_relief_uses_many_independent_hill_and_ridge_sources",
+			"passed": true
+		},
+		{
+			"name": "detail_spatial_culling_matches_independent_whole_footprint_filter_and_depth_order",
+			"passed": true
+		},
+		{
+			"name": "shore_and_riverbank_symbols_keep_actual_source_vector_anchors",
+			"passed": true
+		},
+		{
+			"name": "actual_campaign_bank_and_coast_symbols_do_not_add_rock_landforms_to_sourced_flat_cells",
+			"passed": true
+		},
+		{
+			"name": "detail_expansion_does_not_invent_waterways_or_change_terrain_rules",
+			"passed": true
+		}
+	],
+	"failed": 0,
+	"failures": [],
+	"helper_fixture_only": false,
+	"passed": true,
+	"scope": "Independent original catalog, source-gated presentation, deterministic local diversity, whole-source anchoring and actual campaign integration; formal art approval and physical Android test remain separate."
+}

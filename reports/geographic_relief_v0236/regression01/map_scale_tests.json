@@ -1,0 +1,289 @@
+{
+	"baseline_version": "0.2.2",
+	"checks": [
+		{
+			"name": "production_resources_loaded",
+			"passed": true
+		},
+		{
+			"name": "jingjin_interaction_hex_radius_unchanged",
+			"passed": true
+		},
+		{
+			"name": "jingjin_physical_distance_per_hex_divided_by_five",
+			"passed": true
+		},
+		{
+			"name": "jingjin_real_geographic_extent_and_projection_preserved",
+			"passed": true
+		},
+		{
+			"name": "jingjin_real_grid_area_increased_about_twenty_fivefold",
+			"passed": true
+		},
+		{
+			"name": "jingjin_no_overlapping_or_duplicate_interaction_cells",
+			"passed": true
+		},
+		{
+			"name": "jingjin_historical_cities_and_period_administration_kept_at_source_coordinates",
+			"passed": true
+		},
+		{
+			"name": "jingjin_city_geographic_render_positions_fivefold_on_both_axes",
+			"passed": true
+		},
+		{
+			"name": "jingjin_no_unsampled_operable_land",
+			"passed": true
+		},
+		{
+			"name": "jingjin_regenerated_rail_routes_follow_adjacent_actual_cells",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_interaction_hex_radius_unchanged",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_physical_distance_per_hex_divided_by_five",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_real_geographic_extent_and_projection_preserved",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_real_grid_area_increased_about_twenty_fivefold",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_no_overlapping_or_duplicate_interaction_cells",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_historical_cities_and_period_administration_kept_at_source_coordinates",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_city_geographic_render_positions_fivefold_on_both_axes",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_no_unsampled_operable_land",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_regenerated_rail_routes_follow_adjacent_actual_cells",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_interaction_hex_radius_unchanged",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_physical_distance_per_hex_divided_by_five",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_real_geographic_extent_and_projection_preserved",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_real_grid_area_increased_about_twenty_fivefold",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_no_overlapping_or_duplicate_interaction_cells",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_historical_cities_and_period_administration_kept_at_source_coordinates",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_city_geographic_render_positions_fivefold_on_both_axes",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_no_unsampled_operable_land",
+			"passed": true
+		},
+		{
+			"name": "conquest_china_regenerated_rail_routes_follow_adjacent_actual_cells",
+			"passed": true
+		},
+		{
+			"name": "local_legion_maps_receive_the_same_fivefold_geographic_refinement",
+			"passed": true
+		},
+		{
+			"name": "screen_hex_spacing_unchanged_at_the_same_camera_zoom",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_immutable_geography_shared_between_matches",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_complete_large_map_save_roundtrip",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_save_keeps_reproducible_map_reference_instead_of_repeating_geometry",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_load_restores_all_immutable_interaction_cells",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_terrain_delta_rail_damage_and_units_survive_reload",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_save_and_runtime_changes_do_not_mutate_other_matches_or_geography",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_atomic_backup_created",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_interrupted_write_recovers_complete_large_map_backup",
+			"passed": true
+		},
+		{
+			"name": "conq_1920_different_geography_reference_rejected",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_immutable_geography_shared_between_matches",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_complete_large_map_save_roundtrip",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_save_keeps_reproducible_map_reference_instead_of_repeating_geometry",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_load_restores_all_immutable_interaction_cells",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_terrain_delta_rail_damage_and_units_survive_reload",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_save_and_runtime_changes_do_not_mutate_other_matches_or_geography",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_atomic_backup_created",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_interrupted_write_recovers_complete_large_map_backup",
+			"passed": true
+		},
+		{
+			"name": "conq_1922_different_geography_reference_rejected",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_immutable_geography_shared_between_matches",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_complete_large_map_save_roundtrip",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_save_keeps_reproducible_map_reference_instead_of_repeating_geometry",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_load_restores_all_immutable_interaction_cells",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_terrain_delta_rail_damage_and_units_survive_reload",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_save_and_runtime_changes_do_not_mutate_other_matches_or_geography",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_atomic_backup_created",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_interrupted_write_recovers_complete_large_map_backup",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_different_geography_reference_rejected",
+			"passed": true
+		},
+		{
+			"name": "fine_grid_retains_dated_qingdao_historical_activation",
+			"passed": true
+		},
+		{
+			"name": "historical_cell_activation_survives_compact_save",
+			"passed": true
+		},
+		{
+			"name": "unknown_imported_map_keeps_self_contained_save_payload",
+			"passed": true
+		},
+		{
+			"name": "complete_74762_cell_full_visibility_workload_saved",
+			"passed": true
+		},
+		{
+			"name": "full_visibility_roundtrip_preserves_every_cell_and_full_state",
+			"passed": true
+		},
+		{
+			"name": "full_visibility_arrays_are_reconstructed_without_repeating_74762_ids",
+			"passed": true
+		},
+		{
+			"name": "full_visibility_save_never_crops_or_discards_interaction_cells",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failures": [],
+	"game_version": "0.2.36",
+	"measurements": [
+		{
+			"cells": 74762,
+			"read_ms": 44.345,
+			"save_bytes": 140553,
+			"scenario_id": "conq_1920",
+			"write_ms": 105.559
+		},
+		{
+			"cells": 74762,
+			"read_ms": 83.038,
+			"save_bytes": 149003,
+			"scenario_id": "conq_1922",
+			"write_ms": 133.536
+		},
+		{
+			"cells": 74762,
+			"read_ms": 29.066,
+			"save_bytes": 157448,
+			"scenario_id": "conq_1924",
+			"write_ms": 60.409
+		}
+	],
+	"passed": true,
+	"physical_android_device_tested": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": "himalaya",
+  "passed": true,
+  "process_id": 19624,
+  "exit_code": 0,
+  "elapsed_seconds": 35.95,
+  "log_sha256": "a65bc7803f620b3a9380dceddca79a08a0a7a2cf853718b6cbb40904e448b35c",
+  "resolution": "1920x1080",
+  "geographic_field": {
+    "active": true,
+    "clipped_to_source_land_and_existing_water_holes": true,
+    "data_sha256": "4f6b4ba758715300e1793b22a28b2d41f1849f8bd618efbf518e5cfc680d7e3d",
+    "depends_on_three_land_hexes": false,
+    "dimensions": [
+      3201,
+      1801
+    ],
+    "exact_summit_heights_claimed": false,
+    "gpu_encoding": "RG8_signed_metres_biased_by_32768_before_linear_interpolation",
+    "gpu_lookup_bytes": 11530002,
+    "gpu_texture_available": true,
+    "historical_landcover_claimed": false,
+    "land_topology_reused": true,
+    "land_triangles": 81193,
+    "land_vertices": 105401,
+    "nodata_samples": 0,
+    "node_samples": 5765001,
+    "payload_sha256": "6c4afb7f385fac3e6ec63caa9f9170ab3d717d2631eb5bcdd7f42c075b32d333",
+    "preparation_ms": 671.499,
+    "raster_art_generated": false,
+    "rules_map_mutated": false,
+    "shader_active": true,
+    "source_id": "Tilezen_TerrainTiles_geotiff",
+    "source_projected_pixel_size_m": [
+      4891.96981025128,
+      4891.96981025129
+    ],
+    "source_rounding_error_m": 0.5,
+    "source_zoom": 4.0,
+    "step_degrees": 0.05
+  },
+  "viewport_sha256": "260b359d337816178b776c686ffa8f74140b1aa379482ce764444d20eb2c66ab",
+  "metadata_sha256": "0246f3c66a67d9db3a9461fee0c3df88d5d40eae1146da036258861beb77f2d4",
+  "mobile_layout_profile": false
+}

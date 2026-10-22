@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "version": "0.2.36",
+  "android_version_code": 41,
+  "created_at_utc": "2026-10-22T14:42:10.510745+00:00",
+  "artifact_sha256": "6ed9162ab0260dab8d20bc792428cd2eabf061d9728b1e7aef3451ecb82cce0c",
+  "export_receipt_sha256": "8aaa2a53a0f3cb810991768b0102cbcc02386832d87593d0212ee3d5179c3ee1",
+  "source_or_notice_files": 146,
+  "raster_imports": 2521,
+  "instrumental_music_imports": 3,
+  "abis": [
+    "arm64-v8a",
+    "armeabi-v7a"
+  ],
+  "signature_v2": true,
+  "signature_v3": true,
+  "requested_permissions": 0,
+  "min_sdk": 24,
+  "target_sdk": 36,
+  "export_logs_contain_no_private_signing_password": true,
+  "physical_android_device_tested": false,
+  "connected_physical_device_observed": false,
+  "validation_scope": "Native SDK signature/manifest/ABI inspection and byte checks of all registered imported textures, music and source data; no emulator or physical-device performance test",
+  "files": {
+    "android_devices.log": "9de358663219c919aa87a6d917d17c72b36cc1314b74e42bfe13057eaf5a82e3",
+    "apk_badging.log": "52f8ad220b4780e4c86e3fa122c0a10c3b4792c8b9cca82761a9547a5d53b5ec",
+    "apk_content_validation.json": "801d25fe2bf01ef93976cfb3ff78e5b9669be881446ca8bffd9258415276c50f",
+    "apk_permissions.log": "436dddb155419992e5ba72cb5ad1355af535afe381eae3bc1fc49603445d87dd",
+    "apk_signature.log": "4138aca1ed2fb40f0b56309a500bc5f26b49b4187ed21a3accaa549f6fefd4eb"
+  }
+}

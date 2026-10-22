@@ -1,0 +1,67 @@
+"""Independently check every new native control fragment against real land."""
+from pathlib import Path
+import json
+import hashlib
+import sys
+from datetime import datetime,timezone
+P=Path(__file__).resolve().parents[1];ROOT=P.parents[1]
+sys.path.insert(0,str(ROOT/'.toolchain/python-libs'))
+import shapely
+import numpy as np
+from shapely.geometry import Polygon,LineString
+from shapely.strtree import STRtree
+from shapely.ops import unary_union
+
+
+def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def main():
+    output=P/'reports/geographic_relief_v0236/coastal_control_independent01.json'
+    if output.exists():raise FileExistsError('Immutable independent audit')
+    p=P/'presentation/data/coastal_control_asia.json';d=json.loads(p.read_bytes())
+    m=json.loads((P/'content/maps/asia_strategic.json').read_bytes())
+    shapes=[Polygon(np.asarray(s['exterior'],dtype=np.float32),[np.asarray(h,dtype=np.float32) for h in s['holes']]) for s in m['render_land']]
+    land=unary_union(shapes);tree=STRtree(shapes)
+    cells={f"{c['position']['q']},{c['position']['r']}":c for c in m['cells']}
+    triangles=0;max_area_error=0.;max_excess=0.;max_edge_excess=0.;proven=0
+    # Source is natively float32; allow only its sub-pixel rounding fringe.
+    tolerance=.002
+    for key,r in d['field_clips'].items():
+        c=cells[key]
+        assert not(c.get('render_land_covered',False) and c.get('natural_terrain_id',c['terrain_id'])!='sea')
+        q=c['position']['q'];rr=c['position']['r']
+        center=np.array([72*q,np.sqrt(3)*48*(rr+q*.5)])
+        ang=np.arange(6)*np.pi/3
+        hexagon=Polygon(center+47.4*np.column_stack([np.cos(ang),np.sin(ang)]))
+        local=unary_union([shapes[i] for i in tree.query(hexagon.buffer(.01))])
+        vertices=np.asarray(r['triangles'],dtype=np.float32).astype(np.float64)
+        tris=shapely.polygons(vertices.reshape(-1,3,2))
+        actual=shapely.union_all(tris)
+        expected=hexagon.intersection(local)
+        # Exact source-rounding comparison; topology is checked separately.
+        error=float(actual.symmetric_difference(expected).area)
+        excess=float(actual.difference(local.buffer(tolerance)).area)
+        allowance=max(.02,expected.length*tolerance)
+        assert error<=allowance,(key,error,allowance)
+        assert excess<1e-6,(key,excess)
+        assert all(t.area>0 for t in tris)
+        assert actual.difference(hexagon.buffer(tolerance)).area<1e-6
+        for direction in r['edges']:
+            for seg in direction:
+                edge=LineString(np.asarray(seg,dtype=np.float32))
+                out=float(edge.difference(local.buffer(tolerance)).length)
+                assert out<1e-7,(key,out)
+                max_edge_excess=max(max_edge_excess,out)
+        triangles+=len(tris);max_area_error=max(max_area_error,error);max_excess=max(max_excess,excess);proven+=1
+    result=dict(passed=True,created_at_utc=datetime.now(timezone.utc).isoformat(),auditor_sha256=sha(__file__),
+                source_sha256=sha(p),source_map_sha256=sha(P/'content/maps/asia_strategic.json'),
+                supplemental_cells_checked=proven,native_float32_triangles_checked=triangles,
+                maximum_symmetric_difference_area_world=max_area_error,
+                native_rounding_fringe_world=tolerance,maximum_excess_beyond_source_fringe_world=max_excess,
+                maximum_edge_length_beyond_source_fringe_world=max_edge_excess,
+                source_rule_sea_unchanged=True,scope='All supplemental fill and border coordinates against native source land, including existing holes; no historical frontier claim')
+    output.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8');print(json.dumps(result),flush=True)
+
+
+if __name__=='__main__':main()

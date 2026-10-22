@@ -1,0 +1,99 @@
+{
+	"build_version": "0.2.36",
+	"checks": [
+		{
+			"name": "67_sourced_additional_places_load_from_shipping_resource",
+			"passed": true
+		},
+		{
+			"name": "source_attribution_is_available",
+			"passed": true
+		},
+		{
+			"name": "jingfeng_preserves_authored_cities_and_adds_32_geographic_nodes",
+			"passed": true
+		},
+		{
+			"name": "tianjin_province_rank_is_bounded_to_verified_period",
+			"passed": true
+		},
+		{
+			"name": "modern_municipal_status_is_not_projected_back_to_1924",
+			"passed": true
+		},
+		{
+			"name": "hefei_and_zhengzhou_are_not_modern_province_capitals",
+			"passed": true
+		},
+		{
+			"name": "jingzhao_membership_and_pre_1928_chadao_administration",
+			"passed": true
+		},
+		{
+			"name": "native_mouse_hit_opens_the_correct_village_inspector",
+			"passed": true
+		},
+		{
+			"name": "native_touch_tap_opens_place_once_without_duplicate_mouse_event",
+			"passed": true
+		},
+		{
+			"name": "place_inspection_never_changes_city_economy_visibility_or_saved_rules",
+			"passed": true
+		},
+		{
+			"name": "dragging_across_a_village_pans_without_opening_its_details",
+			"passed": true
+		},
+		{
+			"name": "selected_unit_keeps_hex_order_input_over_place_icons",
+			"passed": true
+		},
+		{
+			"name": "hidden_place_overlay_has_no_invisible_click_targets",
+			"passed": true
+		},
+		{
+			"name": "overview_hides_minor_places_while_selected_place_stays_visible",
+			"passed": true
+		},
+		{
+			"name": "province_capitals_remain_legible_in_full_country_view",
+			"passed": true
+		},
+		{
+			"name": "place_cannot_appear_before_its_archived_period",
+			"passed": true
+		},
+		{
+			"name": "place_activation_date_is_inclusive",
+			"passed": true
+		},
+		{
+			"name": "place_end_date_is_exclusive",
+			"passed": true
+		},
+		{
+			"name": "selection_cannot_expose_a_future_place",
+			"passed": true
+		},
+		{
+			"name": "capture_recolors_control_areas_without_rebuilding_or_changing_geography",
+			"passed": true
+		},
+		{
+			"name": "village_control_uses_its_actual_neighboring_game_city",
+			"passed": true
+		},
+		{
+			"name": "switching_to_a_different_coastline_rebuilds_place_footprints_after_the_new_land_index",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failed": 0,
+	"failures": [],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"presentation_data_sha256": "a99f5dfeb0443f2129a4477dcca6db1df3dae5dd78a75bc83bcbaeaef5159737"
+}

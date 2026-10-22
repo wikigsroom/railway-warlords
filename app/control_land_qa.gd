@@ -86,17 +86,23 @@ func compare(natural: Image, controlled: Image, blocked: Array, id: String, sour
 	check(land_changed>=3,"land_ownership_wash_still_changes_actual_pixels:"+id)
 	check(view.backdrop_view.city_control_fill_draw_count==0 and view.backdrop_view.territory_field_fill_draw_count>0,"shipping_continental_renderer_uses_one_control_coverage_layer:"+id)
 	var minimap_count=0;var minimap_maximum=0.0;var mini=view.minimap
+	var minimap_visible=mini.is_visible_in_tree()
 	var factor=minf((mini.size.x-16)/mini.extent.x,(mini.size.y-16)/mini.extent.y)
 	var mini_clear=mini.get_global_rect().grow(-9);var mini_used: Dictionary={}
 	for witness in source.water_witnesses:
+		if not minimap_visible:break
 		if float(witness.source_land_clearance)*factor<3:continue
 		var pixel=Vector2i(mini.global_position+Vector2(8,8)+Vector2(witness.point[0],witness.point[1])*factor)
 		if mini_used.has(pixel) or not mini_clear.has_point(Vector2(pixel)):continue
 		mini_used[pixel]=true;minimap_count+=1;minimap_maximum=maxf(minimap_maximum,delta(natural,controlled,pixel))
-	check(minimap_count>=12,"minimap_source_water_is_sampled:"+id)
-	check(minimap_maximum<=2.0,"minimap_control_toggle_does_not_recolor_source_water:"+id)
+	if minimap_visible:
+		check(minimap_count>=12,"minimap_source_water_is_sampled:"+id)
+		check(minimap_maximum<=2.0,"minimap_control_toggle_does_not_recolor_source_water:"+id)
+	else:
+		check(not mini.is_visible_in_tree(),"production_hud_keeps_inset_minimap_hidden:"+id)
 	cases.append({"id":id,"water_pixels":count,"water_max_channel_delta":maximum,"land_changed_samples":land_changed,
 		"minimap_water_pixels":minimap_count,"minimap_water_max_channel_delta":minimap_maximum,"water_samples":records,
+		"minimap_visible_in_capture":minimap_visible,"minimap_pixel_check_status":"measured" if minimap_visible else "skipped_hidden_by_production_hud",
 		"city_influence_fill_draws":view.backdrop_view.city_control_fill_draw_count,"field_fill_batches":view.backdrop_view.territory_field_fill_draw_count,
 		"continuous_ground_shader_active":view.backdrop_view.material!=null,
 		"rendered_label_leaders":label_leaders.map(func(segment):return [[segment[0].x,segment[0].y],[segment[1].x,segment[1].y]])})

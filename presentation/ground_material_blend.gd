@@ -20,6 +20,14 @@ uniform bool water_stochastic = true;
 uniform bool relief_enabled = false;
 uniform sampler2D relief_shades : repeat_disable, filter_linear;
 uniform vec2 relief_dimensions = vec2(1.0);
+uniform bool geographic_relief_enabled = false;
+uniform sampler2D geographic_heights : repeat_disable, filter_linear;
+uniform vec2 geographic_dimensions = vec2(1.0);
+uniform vec2 geographic_world_origin = vec2(0.0);
+uniform vec2 geographic_world_extent = vec2(1.0);
+uniform vec4 geographic_bounds = vec4(20.0, -10.0, 180.0, 80.0);
+varying float geographic_mode;
+varying vec2 geographic_fraction;
 varying float relief_mode;
 varying vec2 relief_uv;
 varying float ground_mode;
@@ -35,6 +43,8 @@ varying float water_mode;
 varying vec2 water_uv;
 varying vec4 water_tint;
 void vertex() {
+    geographic_mode = UV.y >= 4095.5 && UV.y <= 4096.5 ? 1.0 : 0.0;
+    geographic_fraction = (VERTEX - geographic_world_origin) / geographic_world_extent;
     water_mode = UV.x >= 3072.0 && UV.x <= 8192.0 ? 1.0 : 0.0;
     // Source UVs carry a mode tag only. Derive the continuous coordinates from
     // uncompressed world vertices: a large UV tag can quantize small wave
@@ -178,9 +188,43 @@ vec4 continuous_relief(vec2 uv) {
         + texture(relief_shades, vec2(a.x, b.y)) * g0.x * g1.y
         + texture(relief_shades, b) * g1.x * g1.y;
 }
+// Signed metres were biased in numerical runtime memory before upload. Thus
+// hardware bilinear filtering remains correct across sea level and byte carries.
+float geographic_height(vec2 uv) {
+    vec2 h = texture(geographic_heights, uv).rg;
+    return max((h.r * 255.0 - 128.0) * 256.0 + h.g * 255.0, 0.0);
+}
+vec2 geographic_slope(vec2 uv, vec2 texel, vec2 metres, float span) {
+    float west = geographic_height(uv - vec2(texel.x * span, 0.0));
+    float east = geographic_height(uv + vec2(texel.x * span, 0.0));
+    float north = geographic_height(uv - vec2(0.0, texel.y * span));
+    float south = geographic_height(uv + vec2(0.0, texel.y * span));
+    return vec2(east - west, south - north) / (2.0 * span * metres);
+}
+vec4 geographic_lighting() {
+    vec2 texel = vec2(1.0) / geographic_dimensions;
+    vec2 uv = (geographic_fraction * (geographic_dimensions - vec2(1.0)) + vec2(0.5)) * texel;
+    float latitude = mix(geographic_bounds.w, geographic_bounds.y, geographic_fraction.y);
+    vec2 degrees = (geographic_bounds.zw - geographic_bounds.xy) / (geographic_dimensions - vec2(1.0));
+    vec2 metres = degrees * 111320.0 * vec2(max(cos(radians(latitude)), 0.15), 1.0);
+    vec2 fine = geographic_slope(uv, texel, metres, 1.0);
+    vec2 broad = geographic_slope(uv, texel, metres, 4.0);
+    vec3 light = normalize(vec3(-0.55, -0.68, 0.62));
+    vec3 normal_fine = normalize(vec3(-fine * 6.0, 1.0));
+    vec3 normal_broad = normalize(vec3(-broad * 6.0, 1.0));
+    float illumination = mix(dot(normal_fine, light), dot(normal_broad, light), 0.24);
+    float tone = clamp(0.5 + (illumination - light.z) * 1.9, 0.0, 1.0);
+    float rugged = smoothstep(0.004, 0.12, mix(length(fine), length(broad), 0.24));
+    float upland = smoothstep(1200.0, 4500.0, geographic_height(uv));
+    vec3 pigment = mix(vec3(0.20, 0.29, 0.24), vec3(0.90, 0.89, 0.68), tone);
+    pigment = mix(pigment, vec3(0.74, 0.75, 0.66), upland * 0.22);
+    return vec4(pigment, min(0.015 + rugged * 0.44 + upland * 0.10, 0.55));
+}
 void fragment() {
     if (water_mode > 0.5) {
         COLOR = vec4(water_pigment(TEXTURE, water_uv) * water_tint.rgb, water_tint.a);
+    } else if (geographic_mode > 0.5 && geographic_relief_enabled) {
+        COLOR = geographic_lighting();
     } else if (relief_mode > 0.5 && relief_enabled) {
         vec4 shade = continuous_relief(relief_uv);
         COLOR = vec4(shade.rgb / max(shade.a, 0.0001), shade.a);

@@ -1,0 +1,185 @@
+{
+	"checks": [
+		{
+			"name": "current_large_geography_loaded",
+			"passed": true
+		},
+		{
+			"name": "archive_has_exactly_two_port_anchor_reads",
+			"passed": true
+		},
+		{
+			"name": "reference_only_adapts_two_explicit_port_anchors",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_intact_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_intact_naval_components_match_declared_bank_anchor_reference",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_intact_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_blocked_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_blocked_naval_components_match_declared_bank_anchor_reference",
+			"passed": true
+		},
+		{
+			"name": "conq_1924_blocked_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_intact_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_intact_naval_components_match_declared_bank_anchor_reference",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_intact_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_blocked_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_blocked_naval_components_match_declared_bank_anchor_reference",
+			"passed": true
+		},
+		{
+			"name": "campaign_1924_02_blocked_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "legion_07_intact_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "legion_07_intact_naval_components_match_declared_bank_anchor_reference",
+			"passed": true
+		},
+		{
+			"name": "legion_07_intact_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "legion_07_blocked_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "legion_07_blocked_naval_components_match_declared_bank_anchor_reference",
+			"passed": true
+		},
+		{
+			"name": "legion_07_blocked_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "legion_08_intact_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "legion_08_intact_naval_components_match_declared_bank_anchor_reference",
+			"passed": true
+		},
+		{
+			"name": "legion_08_intact_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		},
+		{
+			"name": "legion_08_blocked_every_supply_distance_matches_archived_dijkstra",
+			"passed": true
+		},
+		{
+			"name": "legion_08_blocked_naval_components_match_declared_bank_anchor_reference",
+			"passed": true
+		},
+		{
+			"name": "legion_08_blocked_food_ammo_attrition_cargo_and_events_identical",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failures": [],
+	"game_version": "0.2.36",
+	"measurements": [
+		{
+			"archived_search_ms": 10879.851,
+			"cells": 74762,
+			"current_search_ms": 1036.105,
+			"mode": "intact",
+			"reachable_cells": 4103,
+			"scenario": "conq_1924"
+		},
+		{
+			"archived_search_ms": 9482.997,
+			"cells": 74762,
+			"current_search_ms": 981.117,
+			"mode": "blocked",
+			"reachable_cells": 4103,
+			"scenario": "conq_1924"
+		},
+		{
+			"archived_search_ms": 6265.413,
+			"cells": 65726,
+			"current_search_ms": 841.009,
+			"mode": "intact",
+			"reachable_cells": 3162,
+			"scenario": "campaign_1924_02"
+		},
+		{
+			"archived_search_ms": 4141.629,
+			"cells": 65726,
+			"current_search_ms": 718.597,
+			"mode": "blocked",
+			"reachable_cells": 2670,
+			"scenario": "campaign_1924_02"
+		},
+		{
+			"archived_search_ms": 43.951,
+			"cells": 8836,
+			"current_search_ms": 35.52,
+			"mode": "intact",
+			"reachable_cells": 144,
+			"scenario": "legion_07"
+		},
+		{
+			"archived_search_ms": 9.755,
+			"cells": 8836,
+			"current_search_ms": 8.42,
+			"mode": "blocked",
+			"reachable_cells": 57,
+			"scenario": "legion_07"
+		},
+		{
+			"archived_search_ms": 25.575,
+			"cells": 9588,
+			"current_search_ms": 16.303,
+			"mode": "intact",
+			"reachable_cells": 95,
+			"scenario": "legion_08"
+		},
+		{
+			"archived_search_ms": 0.262,
+			"cells": 9588,
+			"current_search_ms": 0.149,
+			"mode": "blocked",
+			"reachable_cells": 1,
+			"scenario": "legion_08"
+		}
+	],
+	"original_reference_unchanged": true,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"reference_version": "0.2.2_Dijkstra_with_two_explicit_port_anchor_adaptations"
+}
