@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-22T19:16:38.375287+00:00",
+  "compiler_sha256": "080a949edb45f3a274479d0ced30b398b60607233fffb3f980971122d64389e9",
+  "helper_sha256": "2ba4a86ea20e899f7b9bccc8c0c9a08066b28b519ae52bff1417254804556a24",
+  "source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
+  "source_map_unchanged": true,
+  "previous_vector_sha256": {
+    "control_land_clip.json": "578ff405de7d3e5d27428526b786e601224327343d169e7aa20909a3a7af14d2",
+    "coastal_control_asia.json": "67ec87cf32fd4136b5a7216f0d3a2cb7925c38d2e2410f9b0d2e22aef4d9e197"
+  },
+  "current_vector_sha256": {
+    "control_land_clip.json": "0dfff6bdffacba473d50223ac8dbf1207f0457b03bf510e50c2fa0508bd9ff3b",
+    "coastal_control_asia.json": "4c2ed2b82bddf1d8393b9deb7a074a6d4f59356d0d91d89468ec7d2517976803"
+  },
+  "field_radius_before": 47.4,
+  "field_radius_after": 48.0,
+  "operation_hex_radius": 48,
+  "full_field_cells": 3097,
+  "partial_field_cells": 633,
+  "empty_field_cells": 14,
+  "coastal_cells": 924,
+  "coastal_triangles": 49368,
+  "city_zones_unchanged": true,
+  "source_pngs_modified": false,
+  "rule_or_city_ownership_changes": false,
+  "historical_frontier_claimed": false,
+  "formal_art_approval": false
+}

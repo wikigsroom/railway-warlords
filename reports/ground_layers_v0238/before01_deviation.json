@@ -1,0 +1,10 @@
+{
+  "run": "before01",
+  "intended_himalaya_camera_valid": false,
+  "actual_first_group_zoom": 0.65,
+  "cause": "start_game deferred focus_player ran after the diagnostic harness chose its first camera",
+  "ordinary_runtime_bug_claimed": false,
+  "raw_captures_preserved": true,
+  "himalaya_comparison_accepted": false,
+  "followup": "Drain initial deferred focus and verify requested camera and zoom for every capture in before02. The original passed result only checked rules state and raw-capture success."
+}

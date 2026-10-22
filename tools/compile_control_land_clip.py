@@ -20,7 +20,7 @@ from shapely.ops import unary_union
 SOURCE = P / 'content/maps/asia_strategic.json'
 TARGET = P / 'presentation/data/control_land_clip.json'
 RADIUS = 48.0
-FIELD_RADIUS = 47.4
+FIELD_RADIUS = RADIUS
 INFLUENCE_FACTOR = 1.38
 
 

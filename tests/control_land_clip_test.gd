@@ -19,10 +19,12 @@ func run() -> void:
 	var content=ContentRegistry.new();verify(content.load_all(),"content_loads_with_land_clipped_ownership")
 	var map: Dictionary=content.maps.asia_strategic;var map_before=ContentRegistry.fingerprint(map)
 	var row=MapControlLandClip.for_map(map)
+	var coast=MapCoastalControl.for_map(map)
 	verify(not row.is_empty() and row.map_sha256==FileAccess.get_sha256("res://content/maps/asia_strategic.json"),"clip_vectors_are_bound_to_the_actual_source_map_bytes")
 	verify(row.source_land_polygons==map.render_land.size() and row.source_land_holes==1,"all_source_islands_and_the_existing_lake_hole_are_retained")
 	verify(row.city_zones.size()==map.cities.size() and row.clipped_city_zones==61,"all_81_city_influences_are_clipped_including_61_previous_water_overlaps")
 	verify(row.full_field_cells+row.partial_field_cells+row.empty_field_cells==row.eligible_field_cells,"every_eligible_field_hex_has_full_partial_or_empty_source_geometry")
+	verify(float(row.field_radius)==HexGrid.RADIUS,"political_fill_reaches_shared_sides_without_interior_gutters")
 	verify(row.partial_field_cells>0 and row.empty_field_cells>0,"both_partial_shores_and_fully_off_land_candidate_hexes_are_handled")
 	verify(MapControlLandClip.for_map({"id":"unsupported_map"}).is_empty(),"unsupported_geography_does_not_receive_an_unclipped_fallback")
 	var zones=MapControlLandClip.city_zones(row);var again=MapControlLandClip.city_zones(row)
@@ -78,6 +80,19 @@ func run() -> void:
 		verify(view.places.owners.size()==state.cities.size() and state.cities.all(func(city):return view.places.owners.get(city.id,"")==city.owner_id),"current_timeline_owners_are_preserved:"+id)
 		verify(ContentRegistry.fingerprint(state)==before,"display_preparation_preserves_rules_geography_economy_random_and_owner_state:"+id)
 		if id=="asia_1840":
+			var seam_witnesses=0;var seams_covered=true
+			for hex in view.territory_field_cells:
+				if seam_witnesses>=12:break
+				var other=hex+HexGrid.DIRECTIONS[0]
+				if not view.territory_field_cells.has(other) or view.territory_field_cells[hex]!=view.territory_field_cells[other]:continue
+				if row.field_clips.has(HexGrid.key(hex)) or row.field_clips.has(HexGrid.key(other)):continue
+				if coast.field_clips.has(HexGrid.key(hex)) or coast.field_clips.has(HexGrid.key(other)):continue
+				var center=(HexGrid.to_world(hex)+HexGrid.to_world(other))*.5
+				var vertices: PackedVector3Array=view.territory_field_meshes[view.territory_field_cells[hex]].surface_get_arrays(0)[Mesh.ARRAY_VERTEX]
+				for offset in [Vector2.ZERO,Vector2(.15,0),Vector2(-.15,0)]:
+					seams_covered=seams_covered and contains(vertices,center+offset)
+				seam_witnesses+=1
+			verify(seam_witnesses==12 and seams_covered,"actual_same_owner_meshes_cover_all_36_shared_side_witnesses")
 			for witness in row.water_witnesses:
 				var at=Vector2(witness.point[0],witness.point[1])
 				for owner in view.territory_field_meshes:
@@ -95,5 +110,7 @@ func run() -> void:
 	var report={"passed":failures.is_empty(),"failed":failures.size(),"checks":checks,"failures":failures,"build_version":ContentRegistry.APP_VERSION,
 		"content_hash":content.content_hash,"source_map_sha256":row.map_sha256,"presentation_data_sha256":FileAccess.get_sha256(MapControlLandClip.PATH),
 		"timelines_checked":7,"water_witnesses_checked":witnesses,"source_maps_modified":false,"physical_android_device_tested":false}
-	var file=FileAccess.open("res://reports/control_land_clip_tests.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
+	var args=OS.get_cmdline_user_args();var index=args.find("--report-output")
+	var output=args[index+1] if index>=0 and index+1<args.size() else "res://reports/control_land_clip_tests.json"
+	var file=FileAccess.open(output,FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("CONTROL_LAND_CLIP_TEST ",JSON.stringify({"passed":report.passed,"checks":checks.size(),"failures":failures}));quit(0 if failures.is_empty() else 1)

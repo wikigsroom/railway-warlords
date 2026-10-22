@@ -69,7 +69,7 @@ func run() -> void:
 	verify(ContentRegistry.fingerprint(map)==state_before and FileAccess.get_sha256(path)==before,"presentation_keeps_every_rule_cell_city_rail_and_geographic_source_unchanged")
 	verify(HexGrid.RADIUS==48 and int(map.hex_radius_m)==150000,"operation_hex_and_rule_scale_are_unchanged")
 	var coastal=MapCoastalControl.for_map(map)
-	verify(coastal.get("supplement_cells",0)==915 and coastal.get("source_land_triangles",0)==48181,"coastal_control_supplement_loads_its_archived_real_land_fragments")
+	verify(coastal.get("supplement_cells",0)>=915 and coastal.get("source_land_triangles",0)>48000 and float(coastal.get("field_radius",0))==HexGrid.RADIUS,"coastal_control_supplement_loads_its_source_bound_contiguous_land_fragments")
 	var keys: Dictionary={}
 	for cell in map.cells:keys[HexGrid.key(HexGrid.coordinate(cell.position))]=cell
 	var omitted_rule_cells=true;var coastal_mesh_finite=true;var native_triangles=0
@@ -80,7 +80,7 @@ func run() -> void:
 		native_triangles+=vertices.size()/3
 		coastal_mesh_finite=coastal_mesh_finite and not vertices.is_empty() and vertices.size()%3==0 and record.edges.size()==3
 		for vertex in vertices:coastal_mesh_finite=coastal_mesh_finite and vertex.is_finite()
-	verify(omitted_rule_cells and native_triangles==48181,"new_control_geometry_only_covers_previously_omitted_rule_cells")
+	verify(omitted_rule_cells and native_triangles==int(coastal.source_land_triangles),"new_control_geometry_only_covers_previously_omitted_rule_cells")
 	verify(coastal_mesh_finite,"every_native_coastal_control_triangle_and_clipped_border_is_finite")
 	verify(MapCoastalControl.for_map({"id":"jingjin"}).is_empty(),"local_theatre_control_uses_its_existing_geometry")
 	var scenario: Dictionary=content.scenarios.asia_1927

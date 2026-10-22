@@ -1,0 +1,90 @@
+{
+  "review_completed": true,
+  "scope_checks_passed": true,
+  "created_at_utc": "2026-10-22T19:44:28.560200+00:00",
+  "controller_sha256": "ea6b1845d4bed7ba4fbf49b8bc78ca092b34504ea7b198e02d9fe7220b79039a",
+  "base_commit": "0926a6fbc55fa9734b7688481f89a07a02966db2",
+  "version": "0.2.38",
+  "protected_changes": [
+    "content/content_registry.gd",
+    "presentation/data/coastal_control_asia.json",
+    "presentation/data/control_land_clip.json"
+  ],
+  "fresh_changed_runtime_sha256": {
+    "content/content_registry.gd": "92fb5ddbe600f792b6ceef3cffad02e8ae8c477fe677c2b7088953e7b644ab9e",
+    "export_presets.cfg": "4de9485bfefacdc7a11a677dc614d09afccfa7edf6a8cbb663498a969c0d11e1",
+    "presentation/data/coastal_control_asia.json": "4c2ed2b82bddf1d8393b9deb7a074a6d4f59356d0d91d89468ec7d2517976803",
+    "presentation/data/control_land_clip.json": "0dfff6bdffacba473d50223ac8dbf1207f0457b03bf510e50c2fa0508bd9ff3b",
+    "presentation/map_coastal_control.gd": "591e3ea681e606e8a2bb4076d0726c22a2b5038a5eceff914a5f45f3c0e14266",
+    "presentation/map_control_land_clip.gd": "72fed72b62f29b8fce961e41891c9a0d906375bff141291e3e11dcd821d7afac",
+    "presentation/map_view.gd": "263ba60bc6475097a94c3d09a0de1db6386c5f7b6dae04fea46b39123fde007c",
+    "project.godot": "6d66a47f05d0c1f6a8740b98bfc1dabea7dfca6d7254bf53d17c4ebc349e8c27"
+  },
+  "native_check_counts": {
+    "control_rules": 48,
+    "relief_coastal": 23,
+    "normal_window_control": 37,
+    "camera_state": 9
+  },
+  "native_input_identity_reused_from_completed_captures": true,
+  "original_art_check": "Unchanged tracked/untracked asset set against base Git revision; no new raw-PNG byte audit or new original-art approval claimed.",
+  "city_influence_and_inland_water_values_unchanged": true,
+  "water_samples": 1767,
+  "water_max_channel_delta": 0,
+  "minimap_pixel_checks": "5 skipped because the production HUD hides the minimap",
+  "actually_viewed_normal_source_viewports": [
+    {
+      "file": "reports/ground_layers_v0238/after01/himalaya_control.png",
+      "sha256": "87f440335b757732a1673838d67c1ee0e5c2b1fa23b6bd1ee20569615194e2fc",
+      "actually_viewed": true,
+      "ordinary_source_renderer": true,
+      "shipping_exe": false
+    },
+    {
+      "file": "reports/ground_layers_v0238/after01/himalaya_natural.png",
+      "sha256": "575b78c9d05f18e26d99f5491c49861e77357372b06196f0bf5b4b9bc62ab592",
+      "actually_viewed": true,
+      "ordinary_source_renderer": true,
+      "shipping_exe": false
+    },
+    {
+      "file": "reports/ground_layers_v0238/after01/tianjin_control.png",
+      "sha256": "425cce6a1b64132108c1a6111b67456156f6c47f77cc6232a1e9ef43b818471a",
+      "actually_viewed": true,
+      "ordinary_source_renderer": true,
+      "shipping_exe": false
+    },
+    {
+      "file": "reports/ground_layers_v0238/after01/tianjin_natural.png",
+      "sha256": "0da585998bf0d85643ca563edb918a08e380ec39144f6ae3f5220f5ef9056314",
+      "actually_viewed": true,
+      "ordinary_source_renderer": true,
+      "shipping_exe": false
+    }
+  ],
+  "visual_target_met": false,
+  "independent_geographic_audit_sha256": "52e22b4117e21c10eb67956928456624aefe5a5f91cdfa05dccf01cc22587bfd",
+  "native_precision_collapsed_triangle_count": 2,
+  "invalid_first_camera_preserved": true,
+  "new_windows_export": false,
+  "new_android_export": false,
+  "android_code_prepared_only": 43,
+  "new_full_regression": false,
+  "latest_delivered_preview": "0.2.37",
+  "new_raster_art": 0,
+  "new_music_tracks": 0,
+  "future_music_route": "music-gen-remote-YuE2 / remote native Windows RTX 3080 / instrumental",
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "remaining": [
+    "jagged city-influence borders",
+    "repeated landform silhouettes",
+    "sparse or uniform lowlands",
+    "crowded labels and units",
+    "historical administrative captions",
+    "complete unit actions",
+    "overall EW6 art and UI quality",
+    "0.2.38 dual-platform preview export",
+    "physical Motorola X30 acceptance"
+  ]
+}

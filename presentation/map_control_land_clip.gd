@@ -18,7 +18,7 @@ static func for_map(map: Dictionary) -> Dictionary:
 	var row: Dictionary=data().get("maps",{}).get(id,{})
 	if row.is_empty():return {}
 	if not validated.has(id):
-		validated[id]=FileAccess.get_sha256("res://content/maps/"+id+".json")==row.get("map_sha256","") and float(row.get("hex_radius",0))==HexGrid.RADIUS
+		validated[id]=FileAccess.get_sha256("res://content/maps/"+id+".json")==row.get("map_sha256","") and float(row.get("hex_radius",0))==HexGrid.RADIUS and float(row.get("field_radius",0))==HexGrid.RADIUS
 		if not validated[id]:push_error("Source land clipping data is stale: "+id)
 	return row if validated[id] else {}
 

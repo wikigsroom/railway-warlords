@@ -75,6 +75,7 @@ var water_source_texture: Texture2D
 var sea_source_texture: Texture2D
 var inland_source_texture: Texture2D
 var operation_grid_drawn_hexes=0
+var operation_grid_drawn_edges=0
 var detail_river_lines: Array=[]
 var detail_river_buckets: Dictionary={}
 var crossing_markers: Array=[]
@@ -644,7 +645,7 @@ func map_bank_capture_facts() -> Dictionary:
 	hydro_facts.water_materials["bound_sea_resource"]=water_renderer.sea_source_texture.resource_path if water_renderer.sea_source_texture!=null else ""
 	hydro_facts.water_materials["bound_river_resource"]=water_renderer.water_source_texture.resource_path if water_renderer.water_source_texture!=null else ""
 	hydro_facts.water_materials["bound_inland_resource"]=water_renderer.inland_source_texture.resource_path if water_renderer.inland_source_texture!=null else ""
-	hydro_facts["operation_grid"]={"hex_radius_world":HexGrid.RADIUS,"drawn_hexes":water_renderer.operation_grid_drawn_hexes,"axial_guide_lines":0,"overview_guide_replacement":false,"minimum_zoom":.20}
+	hydro_facts["operation_grid"]={"hex_radius_world":HexGrid.RADIUS,"drawn_hexes":water_renderer.operation_grid_drawn_hexes,"drawn_edges":water_renderer.operation_grid_drawn_edges,"shared_edges_drawn_once":true,"axial_guide_lines":0,"overview_guide_replacement":false,"minimum_zoom":.20}
 	var subtype_facts=terrain_surface_capture_facts(view)
 	var lighting=relief.shade_field.facts()
 	lighting["shader_active"]=water_renderer.material!=null and bool(water_renderer.material.get_shader_parameter("relief_enabled"))
@@ -1332,6 +1333,7 @@ func draw_static_atlas(view: Rect2) -> void:
 	terrain_scenery_draw_count=0
 	grounded_scenery_draw_count=0
 	operation_grid_drawn_hexes=0
+	operation_grid_drawn_edges=0
 	if territory_qa_mode:
 		draw_territory_qa_atlas(view)
 		return
@@ -1387,17 +1389,25 @@ func draw_static_atlas(view: Rect2) -> void:
 	# zoom keeps the same 48px hex; visit only axial coordinates in this viewport.
 	if zoom>=.20:
 		var bounds=visible_hex_bounds(view);var low=bounds[0];var high=bounds[1]
+		var drawn_grid_cells: Dictionary={}
 		for q in range(low.x,high.x+1):
 			for r in range(low.y,high.y+1):
 				var cell=presentation_cells.get(Vector2i(q,r),{})
 				if cell.is_empty() or (not show_grid and not visible_ids.has(cell.id)):continue
 				var p=HexGrid.to_world(Vector2i(q,r))
 				if not view.has_point(p):continue
-				var outline=HexGrid.corners(p,48);outline.append(outline[0])
-				# Keep the operational hex visible without letting the lattice overpower
-				# surveyed coastlines, terrain objects and semi-transparent control fields.
-				draw_polyline(outline,Color(.94,.97,.94,.16 if show_grid else .065),.55/zoom,true)
-				operation_grid_drawn_hexes+=1
+				drawn_grid_cells[Vector2i(q,r)]=p
+		# One shared side receives one stroke. The former six-side outlines
+		# drew interior sides twice, compounding the supposedly quiet alpha.
+		var side_corners=[[0,1],[5,0],[4,5],[3,4],[2,3],[1,2]]
+		for hex in drawn_grid_cells:
+			var corners=HexGrid.corners(drawn_grid_cells[hex],HexGrid.RADIUS)
+			for direction in range(6):
+				if direction>=3 and drawn_grid_cells.has(hex+HexGrid.DIRECTIONS[direction]):continue
+				var side: Array=side_corners[direction]
+				draw_line(corners[side[0]],corners[side[1]],Color(.94,.97,.94,.16 if show_grid else .065),.55/zoom,true)
+				operation_grid_drawn_edges+=1
+		operation_grid_drawn_hexes=drawn_grid_cells.size()
 
 func draw_territory_qa_atlas(view: Rect2) -> void:
 	# Keep the evidence image geographic without asking CanvasItem to upload the
@@ -1626,7 +1636,7 @@ func prepare_territory_field() -> void:
 	# Only visit three axial directions.  That yields one clean political edge
 	# per shared cell boundary and keeps the static command stream bounded.
 	for hex in territory_field_cells:
-		var owner=str(territory_field_cells[hex]);var center=HexGrid.to_world(hex);var corners=HexGrid.corners(center,47.4)
+		var owner=str(territory_field_cells[hex]);var center=HexGrid.to_world(hex);var corners=HexGrid.corners(center,float(clipped.field_radius))
 		for direction_index in range(3):
 			var other_hex=hex+HexGrid.DIRECTIONS[direction_index];var other_owner=str(territory_field_cells.get(other_hex,""))
 			if other_owner.is_empty() or other_owner==owner:continue

@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "completed_at_utc": "2026-10-22T19:26:39.148289+00:00",
+  "auditor_sha256": "9796b8ea0b10e6026f11a25a050694052312d94627f52d5ae348ff9a3f36047b",
+  "input_sha256": {
+    "content/maps/asia_strategic.json": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
+    "presentation/data/control_land_clip.json": "0dfff6bdffacba473d50223ac8dbf1207f0457b03bf510e50c2fa0508bd9ff3b",
+    "presentation/data/coastal_control_asia.json": "4c2ed2b82bddf1d8393b9deb7a074a6d4f59356d0d91d89468ec7d2517976803"
+  },
+  "records_checked": {
+    "ordinary_partial_or_empty": 647,
+    "coastal": 924
+  },
+  "native_triangles_checked": 87456,
+  "maximum_symmetric_difference_area_world": 0.028163030193298782,
+  "native_rounding_fringe_world": 0.002,
+  "maximum_area_beyond_source_fringe_world": 0.0,
+  "source_data_changed_during_audit": false,
+  "native_collapsed_triangles": [
+    {
+      "category": "ordinary_partial_or_empty",
+      "cell": "69,18",
+      "triangle": 193,
+      "source_area": 0.0001183544370122469,
+      "source_altitude_world": 0.0002460317272393692,
+      "native_area": 0.0
+    },
+    {
+      "category": "ordinary_partial_or_empty",
+      "cell": "70,17",
+      "triangle": 137,
+      "source_area": 2.3285615518091185e-07,
+      "source_altitude_world": 0.00023665483719918166,
+      "native_area": 0.0
+    }
+  ],
+  "native_nonzero_triangles": 87454,
+  "native_collapsed_primitives_paint_pixels": false,
+  "field_radius": 48,
+  "operation_hex_radius": 48,
+  "historical_frontiers_claimed": false,
+  "scope": "Every stored ordinary and coastal boundary triangle/edge versus raw source land at native precision. Interior seam coverage is separately checked in actual native runtime meshes.",
+  "formal_art_approval": false,
+  "physical_android_device_tested": false
+}

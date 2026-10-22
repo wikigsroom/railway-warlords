@@ -1,0 +1,49 @@
+{
+  "passed": false,
+  "auditor_sha256": "8c74b81bf3e10fe3b2d5d27779febd4024892ee43cd079b3c03328e7a7f94dea",
+  "input_sha256": {
+    "content/maps/asia_strategic.json": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
+    "presentation/data/control_land_clip.json": "0dfff6bdffacba473d50223ac8dbf1207f0457b03bf510e50c2fa0508bd9ff3b",
+    "presentation/data/coastal_control_asia.json": "4c2ed2b82bddf1d8393b9deb7a074a6d4f59356d0d91d89468ec7d2517976803"
+  },
+  "key": "69,18",
+  "category": "ordinary_partial_or_empty",
+  "records_before_failure": {
+    "ordinary_partial_or_empty": 493,
+    "coastal": 0
+  },
+  "native_collapsed_triangles": [
+    {
+      "index": 193,
+      "source": [
+        [
+          4992.7233,
+          4326.3218
+        ],
+        [
+          4993.420055987403,
+          4325.658424811693
+        ],
+        [
+          4993.419929418111,
+          4325.658205587247
+        ]
+      ],
+      "native": [
+        [
+          4992.72314453125,
+          4326.32177734375
+        ],
+        [
+          4993.419921875,
+          4325.658203125
+        ],
+        [
+          4993.419921875,
+          4325.658203125
+        ]
+      ],
+      "source_area": 0.0001183544370122469
+    }
+  ]
+}

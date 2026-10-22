@@ -1,0 +1,127 @@
+{
+	"ablation_captures": 4,
+	"build_version": "0.2.37",
+	"captures": [
+		{
+			"camera": [
+				4608.0,
+				2703.5068359375
+			],
+			"control_visible": true,
+			"file": "himalaya_control.png",
+			"ordinary_renderer": true,
+			"raw_godot_capture": true,
+			"renderer_overrides": [],
+			"sha256": "1c5f957692ca2236894082d8cb2d3c214cd845b2777a4518efdf4db1e905eedd",
+			"zoom": 0.65
+		},
+		{
+			"camera": [
+				4608.0,
+				2703.5068359375
+			],
+			"control_visible": false,
+			"file": "himalaya_natural.png",
+			"ordinary_renderer": true,
+			"raw_godot_capture": true,
+			"renderer_overrides": [],
+			"sha256": "76a9b949637d743c6e0483a82b9770b8f8adb35e1b7cd105cf1134d1aba714f0",
+			"zoom": 0.65
+		},
+		{
+			"camera": [
+				4608.0,
+				2703.5068359375
+			],
+			"control_visible": false,
+			"file": "himalaya_no_cell_details.png",
+			"ordinary_renderer": false,
+			"raw_godot_capture": true,
+			"renderer_overrides": [
+				"fine_surface_assignments_withheld"
+			],
+			"sha256": "4003b95d7a9dd9c2a2db83ed191d1d890deae2bb6a7eb4541d8ea20aa1f9be5f",
+			"zoom": 0.65
+		},
+		{
+			"camera": [
+				4608.0,
+				2703.5068359375
+			],
+			"control_visible": false,
+			"file": "himalaya_no_details_or_washes.png",
+			"ordinary_renderer": false,
+			"raw_godot_capture": true,
+			"renderer_overrides": [
+				"fine_surface_assignments_withheld",
+				"cell_wash_buckets_withheld"
+			],
+			"sha256": "c89c608cebc006177eb014c4be136268e06d9d52ed8345f7ffe684b63413cfa3",
+			"zoom": 0.65
+		},
+		{
+			"camera": [
+				4665.60009765625,
+				2660.0244140625
+			],
+			"control_visible": true,
+			"file": "tianjin_control.png",
+			"ordinary_renderer": true,
+			"raw_godot_capture": true,
+			"renderer_overrides": [],
+			"sha256": "be991cd98fd3464eaae2a0f8a697a48ce33ff74cde91dd8e6aba5cbfc2ebfd78",
+			"zoom": 0.66
+		},
+		{
+			"camera": [
+				4665.60009765625,
+				2660.0244140625
+			],
+			"control_visible": false,
+			"file": "tianjin_natural.png",
+			"ordinary_renderer": true,
+			"raw_godot_capture": true,
+			"renderer_overrides": [],
+			"sha256": "4b85dfaf86d0b66106fa771bbd596397cc1a430268f009bce59db9ad1adacd78",
+			"zoom": 0.66
+		},
+		{
+			"camera": [
+				4665.60009765625,
+				2660.0244140625
+			],
+			"control_visible": false,
+			"file": "tianjin_no_cell_details.png",
+			"ordinary_renderer": false,
+			"raw_godot_capture": true,
+			"renderer_overrides": [
+				"fine_surface_assignments_withheld"
+			],
+			"sha256": "d18538a5d0752a8d9db4690c5d5400c9262d03c01744097c440a1acbb870f663",
+			"zoom": 0.66
+		},
+		{
+			"camera": [
+				4665.60009765625,
+				2660.0244140625
+			],
+			"control_visible": false,
+			"file": "tianjin_no_details_or_washes.png",
+			"ordinary_renderer": false,
+			"raw_godot_capture": true,
+			"renderer_overrides": [
+				"fine_surface_assignments_withheld",
+				"cell_wash_buckets_withheld"
+			],
+			"sha256": "5c139c003780837b7c86c1c78057443635be083eba49acd847e94a0731725a52",
+			"zoom": 0.66
+		}
+	],
+	"formal_art_approval": false,
+	"ordinary_renderer_captures": 4,
+	"passed": true,
+	"physical_android_device_tested": false,
+	"qa_save_isolated": true,
+	"rules_state_unchanged": true,
+	"shipping_exe": false
+}

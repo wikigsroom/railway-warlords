@@ -1,0 +1,177 @@
+{
+	"build_version": "0.2.38",
+	"checks": [
+		{
+			"name": "full_playable_content_loads",
+			"passed": true
+		},
+		{
+			"name": "source_land_can_receive_detail_without_adjacent_land_rule_hexes",
+			"passed": true
+		},
+		{
+			"name": "declared_full_asia_node_grid_is_loaded",
+			"passed": true
+		},
+		{
+			"name": "numeric_heights_use_linear_rg8_without_art_mip_or_srgb_conversion",
+			"passed": true
+		},
+		{
+			"name": "independent_original_geotiff_probes_survive_decompression_signed_bias_and_native_decode",
+			"passed": true
+		},
+		{
+			"name": "east_west_and_north_south_source_nodes_align_at_native_float32_texel_centres",
+			"passed": true
+		},
+		{
+			"name": "northwest_endpoint_is_first_texel_centre",
+			"passed": true
+		},
+		{
+			"name": "southeast_endpoint_is_last_texel_centre",
+			"passed": true
+		},
+		{
+			"name": "all_native_land_vertices_indices_islands_and_existing_water_holes_are_reused_exactly",
+			"passed": true
+		},
+		{
+			"name": "height_mode_uses_a_distinct_exact_mesh_tag",
+			"passed": true
+		},
+		{
+			"name": "honshu_alps_osaka_and_shikoku_receive_the_same_sourced_land_coverage",
+			"passed": true
+		},
+		{
+			"name": "biased_channel_filtering_preserves_real_sea_level_and_byte_carry_transitions",
+			"passed": true
+		},
+		{
+			"name": "unsupported_local_projection_retains_its_existing_surveyed_relief",
+			"passed": true
+		},
+		{
+			"name": "unsupported_projection_does_not_display_misregistered_heights",
+			"passed": true
+		},
+		{
+			"name": "presentation_keeps_every_rule_cell_city_rail_and_geographic_source_unchanged",
+			"passed": true
+		},
+		{
+			"name": "operation_hex_and_rule_scale_are_unchanged",
+			"passed": true
+		},
+		{
+			"name": "coastal_control_supplement_loads_its_source_bound_contiguous_land_fragments",
+			"passed": true
+		},
+		{
+			"name": "new_control_geometry_only_covers_previously_omitted_rule_cells",
+			"passed": true
+		},
+		{
+			"name": "every_native_coastal_control_triangle_and_clipped_border_is_finite",
+			"passed": true
+		},
+		{
+			"name": "local_theatre_control_uses_its_existing_geometry",
+			"passed": true
+		},
+		{
+			"name": "ordinary_playable_map_assigns_control_to_source_coastal_fragments",
+			"passed": true
+		},
+		{
+			"name": "japanese_coastal_land_fragments_no_longer_leave_large_uncoloured_rule_hexes",
+			"passed": true
+		},
+		{
+			"name": "coastal_ownership_display_does_not_change_any_playable_state_or_random_stream",
+			"passed": true
+		}
+	],
+	"coastal_control": {
+		"border_segments": 728,
+		"cells_assigned": 3249,
+		"cells_skipped": 1419,
+		"clip": {
+			"city_zones": 81,
+			"clipped_city_zones": 61.0,
+			"eligible_field_cells": 3744.0,
+			"empty_field_cells": 14.0,
+			"enabled": true,
+			"historical_military_frontiers_claimed": false,
+			"inland_water_preserves_source_islands": true,
+			"land_clipped": true,
+			"partial_field_cells": 633.0,
+			"source": "existing_render_land_exteriors_minus_holes",
+			"source_land_holes": 1.0,
+			"source_land_polygons": 12105.0,
+			"source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+		},
+		"coastal_cells_assigned": 568,
+		"coastal_supplement": {
+			"active": true,
+			"data_sha256": "4c2ed2b82bddf1d8393b9deb7a074a6d4f59356d0d91d89468ec7d2517976803",
+			"field_radius": 48.0,
+			"historical_military_frontiers_claimed": false,
+			"map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
+			"rules_changed": false,
+			"source": "existing_render_land_exteriors_minus_holes",
+			"source_cells": 924.0,
+			"source_land_triangles": 49368.0
+		},
+		"enabled": true,
+		"land_clipped": true,
+		"minimap_reuses_same_meshes": true,
+		"owners": 17,
+		"presentation_only": true,
+		"source": "current_owned_real_city_nodes_voronoi"
+	},
+	"coastal_japan_fragments_with_control": 20,
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failed": 0,
+	"failures": [],
+	"field": {
+		"active": true,
+		"clipped_to_source_land_and_existing_water_holes": true,
+		"data_sha256": "4f6b4ba758715300e1793b22a28b2d41f1849f8bd618efbf518e5cfc680d7e3d",
+		"depends_on_three_land_hexes": false,
+		"dimensions": [
+			3201,
+			1801
+		],
+		"exact_summit_heights_claimed": false,
+		"gpu_encoding": "RG8_signed_metres_biased_by_32768_before_linear_interpolation",
+		"gpu_lookup_bytes": 11530002,
+		"gpu_texture_available": false,
+		"historical_landcover_claimed": false,
+		"land_topology_reused": true,
+		"land_triangles": 81193,
+		"land_vertices": 105401,
+		"nodata_samples": 0,
+		"node_samples": 5765001,
+		"payload_sha256": "6c4afb7f385fac3e6ec63caa9f9170ab3d717d2631eb5bcdd7f42c075b32d333",
+		"preparation_ms": 1925.561,
+		"raster_art_generated": false,
+		"rules_map_mutated": false,
+		"source_id": "Tilezen_TerrainTiles_geotiff",
+		"source_projected_pixel_size_m": [
+			4891.96981025128,
+			4891.96981025129
+		],
+		"source_rounding_error_m": 0.5,
+		"source_zoom": 4.0,
+		"step_degrees": 0.05
+	},
+	"independent_probes": 8253,
+	"maximum_native_decode_error_m": 0.0,
+	"maximum_node_coordinate_error": 0.000272957520792261,
+	"passed": true,
+	"scope": "Native runtime-normalized numerical source decoding, coordinate alignment, clipped topology and unchanged gameplay state; not physical Android or art approval.",
+	"source_map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b"
+}
