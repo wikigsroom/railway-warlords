@@ -1,7 +1,7 @@
 {
-  "version": "0.2.31",
-  "count": 2509,
-  "image_bytes": 4661314591,
+  "version": "0.2.35-development",
+  "count": 2513,
+  "image_bytes": 4668675385,
   "assets": [
     {
       "id": "background_battle_field",
@@ -35126,6 +35126,62 @@
       "model": "gpt-image-2.5",
       "quality": "high",
       "original_workspace_source": "output/imagegen/warlord/ground_material_v0231/originals/tile_ground_painted_v0231_temperate_meadow/r001/source.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_alluvial_loam",
+      "category": "tile",
+      "image": "assets/tile/tile_ground_hierarchy_v0235_alluvial_loam.png",
+      "image_sha256": "4400943c212ded35be26f11afacc1104b7cbfdf53736a1b00afcd23d92d02537",
+      "prompt": "docs/asset-prompts/tile_ground_hierarchy_v0235_alluvial_loam.txt",
+      "prompt_sha256": "0908c0c904113768b1832bc0c256a800fb2147589ef10f67eb8fc1eaf4796a26",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/ground_hierarchy_v0235/study01/alluvial_loam.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_flood_meadow",
+      "category": "tile",
+      "image": "assets/tile/tile_ground_hierarchy_v0235_flood_meadow.png",
+      "image_sha256": "af082248ac01f6aa9b2777d3c9c9afba4488d970cb47d01cc7b4406949c0d136",
+      "prompt": "docs/asset-prompts/tile_ground_hierarchy_v0235_flood_meadow.txt",
+      "prompt_sha256": "10d1bc3d96788e770e225f93fdd2b9b409741a943176ae339ec26c5fcb1f2970",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/ground_hierarchy_v0235/study01/flood_meadow.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_subtropical_humus",
+      "category": "tile",
+      "image": "assets/tile/tile_ground_hierarchy_v0235_subtropical_humus.png",
+      "image_sha256": "b7adc0858a613c20118f6933f6e9e6eeb66f551d5ae7f5a78e46dfd35b640519",
+      "prompt": "docs/asset-prompts/tile_ground_hierarchy_v0235_subtropical_humus.txt",
+      "prompt_sha256": "09fe9e4ab362ae38176340fe0687e79bb63adc18b83601bdc8da63bbec29ad3c",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/ground_hierarchy_v0235/study01/subtropical_humus.png",
+      "image_modified": false,
+      "formal_art_approval": false
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_temperate_meadow",
+      "category": "tile",
+      "image": "assets/tile/tile_ground_hierarchy_v0235_temperate_meadow.png",
+      "image_sha256": "e17939b87c459664872ba0d0cf372a379220973b440f4d37d2a5be0f4e7b7f6a",
+      "prompt": "docs/asset-prompts/tile_ground_hierarchy_v0235_temperate_meadow.txt",
+      "prompt_sha256": "3a046edf6161150d9d5651a4004d698fec628d4f9fc07c9af3b70eb5341f409d",
+      "source_kind": "sub2_image_gen",
+      "model": "gpt-image-2.5",
+      "quality": "high",
+      "original_workspace_source": "output/imagegen/warlord/ground_hierarchy_v0235/study01/temperate_meadow.png",
       "image_modified": false,
       "formal_art_approval": false
     }

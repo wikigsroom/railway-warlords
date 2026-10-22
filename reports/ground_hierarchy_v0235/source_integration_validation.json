@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "assets/manifest.json:count",
+      "passed": true
+    },
+    {
+      "name": "assets/manifest.json:2509_old_records_unchanged",
+      "passed": true
+    },
+    {
+      "name": "assets/manifest.json:old_order_preserved",
+      "passed": true
+    },
+    {
+      "name": "docs/asset-provenance/index.json:count",
+      "passed": true
+    },
+    {
+      "name": "docs/asset-provenance/index.json:2509_old_records_unchanged",
+      "passed": true
+    },
+    {
+      "name": "docs/asset-provenance/index.json:old_order_preserved",
+      "passed": true
+    },
+    {
+      "name": "docs/asset-provenance/index.json:actual_numeric_image_bytes",
+      "passed": true
+    },
+    {
+      "name": "tile_ground_hierarchy_v0235_alluvial_loam.png.import:import_budget",
+      "passed": true
+    },
+    {
+      "name": "tile_ground_hierarchy_v0235_alluvial_loam.png.import:engine_cache_exists",
+      "passed": true
+    },
+    {
+      "name": "tile_ground_hierarchy_v0235_flood_meadow.png.import:import_budget",
+      "passed": true
+    },
+    {
+      "name": "tile_ground_hierarchy_v0235_flood_meadow.png.import:engine_cache_exists",
+      "passed": true
+    },
+    {
+      "name": "tile_ground_hierarchy_v0235_subtropical_humus.png.import:import_budget",
+      "passed": true
+    },
+    {
+      "name": "tile_ground_hierarchy_v0235_subtropical_humus.png.import:engine_cache_exists",
+      "passed": true
+    },
+    {
+      "name": "tile_ground_hierarchy_v0235_temperate_meadow.png.import:import_budget",
+      "passed": true
+    },
+    {
+      "name": "tile_ground_hierarchy_v0235_temperate_meadow.png.import:engine_cache_exists",
+      "passed": true
+    },
+    {
+      "name": "four_fresh_unique_uids",
+      "passed": true
+    },
+    {
+      "name": "rules_and_geographic_assignments_unchanged_against_published_reference",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:wuhan:presentation/ground_material_blend.gd",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:wuhan:presentation/data/ground_macro_catalog.json",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:wuhan:presentation/data/ground_material_plan_v0235.json",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:wuhan:app/ground_continuity_qa.gd",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:wuhan:tests/ground_source_edges_gpu_test.gd",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:nanjing:presentation/ground_material_blend.gd",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:nanjing:presentation/data/ground_macro_catalog.json",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:nanjing:presentation/data/ground_material_plan_v0235.json",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:nanjing:app/ground_continuity_qa.gd",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:nanjing:tests/ground_source_edges_gpu_test.gd",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:coast:presentation/ground_material_blend.gd",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:coast:presentation/data/ground_macro_catalog.json",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:coast:presentation/data/ground_material_plan_v0235.json",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:coast:app/ground_continuity_qa.gd",
+      "passed": true
+    },
+    {
+      "name": "scoped_native_dependency:coast:tests/ground_source_edges_gpu_test.gd",
+      "passed": true
+    },
+    {
+      "name": "honest_development_scope",
+      "passed": true
+    }
+  ],
+  "scope": "Development source, normal-import metadata and byte-preserving inventory; not a new release gate.",
+  "formal_art_approval": false,
+  "physical_android_device_tested": false,
+  "ew6_parity_claimed": false
+}

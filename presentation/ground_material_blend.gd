@@ -15,6 +15,7 @@ uniform float ground_alpha = 0.94;
 uniform float ground_repeat_period = 224.0;
 uniform float ground_source_periods[20];
 uniform bool ground_stochastic = true;
+uniform bool ground_seam_feather = true;
 uniform bool water_stochastic = true;
 uniform bool relief_enabled = false;
 uniform sampler2D relief_shades : repeat_disable, filter_linear;
@@ -102,17 +103,44 @@ vec2 ground_offset(vec2 vertex, float layer) {
     vec2 key = vec2(dot(vertex, vec2(127.1, 311.7)), dot(vertex, vec2(269.5, 183.3)));
     return fract(sin(key + vec2(layer * 19.19)) * 43758.5453);
 }
+// A generated "seamless" source can still have unlike opposite edge texels.
+// Near a repeat boundary, crossfade to a half-period translation of the same
+// complete source. Both sides then meet at its interior instead of exposing
+// the source border. UV direction, original pixels and geographic masks stay
+// unchanged. Interior fragments use one fetch; only edge bands need more.
+vec3 ground_sample(vec2 uv, float layer, vec2 dx, vec2 dy) {
+    if (!ground_seam_feather) {
+        return textureGrad(ground_sources, vec3(uv, layer), dx, dy).rgb;
+    }
+    vec2 phase = fract(uv);
+    vec2 shifted = fract(uv + vec2(0.5));
+    vec2 keep = smoothstep(vec2(0.0), vec2(0.075), min(phase, vec2(1.0) - phase));
+    vec3 pigment = textureGrad(ground_sources, vec3(phase, layer), dx, dy).rgb;
+    if (keep.x < 1.0) {
+        vec3 across = textureGrad(ground_sources, vec3(shifted.x, phase.y, layer), dx, dy).rgb;
+        pigment = mix(across, pigment, keep.x);
+    }
+    if (keep.y < 1.0) {
+        vec3 across = textureGrad(ground_sources, vec3(phase.x, shifted.y, layer), dx, dy).rgb;
+        if (keep.x < 1.0) {
+            vec3 corner = textureGrad(ground_sources, vec3(shifted, layer), dx, dy).rgb;
+            across = mix(corner, across, keep.x);
+        }
+        pigment = mix(across, pigment, keep.y);
+    }
+    return pigment;
+}
 // Three translated whole-source samples share a world-anchored triangular
 // lattice. Their smooth weights remove a fixed wallpaper period; no texture
 // is painted, rotated, cut into an atlas or saved as a derived raster.
 vec3 ground_pigment(vec2 uv, float layer) {
     // Material brush scales differ; keep every family anchored to the same
     // world origin while sampling its entire immutable source.
-    uv *= ground_repeat_period / max(ground_source_periods[int(layer)], 1.0);
+    uv *= ground_repeat_period / max(ground_source_periods[int(round(layer))], 1.0);
     vec2 dx = dFdx(uv);
     vec2 dy = dFdy(uv);
     if (!ground_stochastic) {
-        return textureGrad(ground_sources, vec3(uv, layer), dx, dy).rgb;
+        return ground_sample(uv, layer, dx, dy);
     }
     vec2 lattice = vec2(uv.x - uv.y * 0.57735027, uv.y * 1.15470054) * 0.35;
     vec2 cell = floor(lattice);
@@ -126,9 +154,9 @@ vec3 ground_pigment(vec2 uv, float layer) {
     weights = clamp(weights, vec3(0.0), vec3(1.0));
     weights = weights * weights * (vec3(3.0) - 2.0 * weights);
     weights /= max(dot(weights, vec3(1.0)), 0.0001);
-    return textureGrad(ground_sources, vec3(uv + ground_offset(a, layer), layer), dx, dy).rgb * weights.x
-        + textureGrad(ground_sources, vec3(uv + ground_offset(b, layer), layer), dx, dy).rgb * weights.y
-        + textureGrad(ground_sources, vec3(uv + ground_offset(c, layer), layer), dx, dy).rgb * weights.z;
+    return ground_sample(uv + ground_offset(a, layer), layer, dx, dy) * weights.x
+        + ground_sample(uv + ground_offset(b, layer), layer, dx, dy) * weights.y
+        + ground_sample(uv + ground_offset(c, layer), layer, dx, dy) * weights.z;
 }
 // Four bilinear fetches evaluate the sixteen positive cubic B-spline weights.
 // World/axial UVs are affine across the entire source mesh: its triangle edges

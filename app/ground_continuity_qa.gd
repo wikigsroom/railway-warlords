@@ -84,6 +84,7 @@ func execute() -> void:
 	check(fixture.material!=null,"shipping_compatibility_shader_and_complete_source_array_are_available")
 	if fixture.material!=null:
 		fixture.material.set_shader_parameter("ground_stochastic",false)
+		fixture.material.set_shader_parameter("ground_seam_feather",false)
 		check(GroundMaterialBlend.source_array.get_layers()==20,"all_twenty_complete_originals_are_available_as_independent_runtime_layers")
 		for family in GroundMaterialBlend.source_layers():
 			var id=MapTerrainSurfaces.macro_id(family)
@@ -101,6 +102,7 @@ func execute() -> void:
 			measured["sampling_mode"]="direct_calibration"
 			check(measured.maximum_channel_delta<=2 and measured.pixels>=500,"hex_seams_match_independent_continuous_source_render:"+family)
 		fixture.material.set_shader_parameter("ground_stochastic",true)
+		fixture.material.set_shader_parameter("ground_seam_feather",true)
 		for family in ["temperate_meadow","weathered_rock","alluvial_loam"]:
 			fixture.reference_layer=GroundMaterialBlend.source_layers()[family];var reference=await frame()
 			fixture.reference_layer=-1;fixture.batches=patch([family]).batches;var actual=await frame()

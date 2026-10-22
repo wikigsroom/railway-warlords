@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "stage": "development_source_installed_import_and_shipping_validation_pending",
+  "target_revision": "0.2.35-development",
+  "current_published_version": "0.2.34",
+  "created_at_utc": "2026-10-22T02:34:48.611260+00:00",
+  "installed_new_originals": 4,
+  "active_macro_originals": 20,
+  "stored_superseded_originals": 46,
+  "total_registered_rasters": 2513,
+  "source_images_modified": false,
+  "manual_compositing": false,
+  "geography_assignments_changed": false,
+  "geography_sha256": "0d1309c30e3aa59bf7b6c44f3e1c69e304b8ddc9cf1a86daaee0b697364488cc",
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "new_shipping_artifact_created": false,
+  "assets": [
+    {
+      "id": "tile_ground_hierarchy_v0235_temperate_meadow",
+      "family": "temperate_meadow",
+      "source_sha256": "e17939b87c459664872ba0d0cf372a379220973b440f4d37d2a5be0f4e7b7f6a",
+      "prompt_sha256": "3a046edf6161150d9d5651a4004d698fec628d4f9fc07c9af3b70eb5341f409d",
+      "superseded_id": "tile_ground_painted_v0231_temperate_meadow"
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_alluvial_loam",
+      "family": "alluvial_loam",
+      "source_sha256": "4400943c212ded35be26f11afacc1104b7cbfdf53736a1b00afcd23d92d02537",
+      "prompt_sha256": "0908c0c904113768b1832bc0c256a800fb2147589ef10f67eb8fc1eaf4796a26",
+      "superseded_id": "tile_ground_quiet_v0225_alluvial_loam"
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_flood_meadow",
+      "family": "flood_meadow",
+      "source_sha256": "af082248ac01f6aa9b2777d3c9c9afba4488d970cb47d01cc7b4406949c0d136",
+      "prompt_sha256": "10d1bc3d96788e770e225f93fdd2b9b409741a943176ae339ec26c5fcb1f2970",
+      "superseded_id": "tile_ground_quiet_v0225_flood_meadow"
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_subtropical_humus",
+      "family": "subtropical_humus",
+      "source_sha256": "b7adc0858a613c20118f6933f6e9e6eeb66f551d5ae7f5a78e46dfd35b640519",
+      "prompt_sha256": "09fe9e4ab362ae38176340fe0687e79bb63adc18b83601bdc8da63bbec29ad3c",
+      "superseded_id": "tile_ground_painted_v0231_subtropical_humus"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Native Windows development engine; source revision ahead of published 0.2.34. Not a shipping EXE or physical Android test.",
+  "command": [
+    "E:\\dev\\vibe-game\\世界征服者类\\.toolchain\\godot\\Godot_v4.7.2-stable_win64.exe",
+    "--path",
+    "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords",
+    "--resolution",
+    "1920x1080",
+    "--position",
+    "0,0",
+    "--log-file",
+    "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_hierarchy_v0235\\coast\\native.log",
+    "--",
+    "--qa-session",
+    "--scenario",
+    "campaign_1924_03",
+    "--ui-scale",
+    "1.0",
+    "--focus-city",
+    "shanhaiguan",
+    "--capture-zoom",
+    ".88",
+    "--capture",
+    "--capture-path",
+    "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\ground_hierarchy_v0235\\coast\\viewport.png"
+  ],
+  "scoped_dependency_sha256": {
+    "presentation/ground_material_blend.gd": "bc05b66a7083da072ff2d2ed4eebf1cff24e7bff38d0aece7a92084d83d7e6a0",
+    "presentation/data/ground_macro_catalog.json": "29d9135f9379d147404b55335d6b3f390f63ce55a7975f844b7df23e1dd55347",
+    "presentation/data/ground_material_plan_v0235.json": "a298ca34074955d15dffb0965b8d5340da481233269e8fc7e1dcc7267910f028",
+    "app/ground_continuity_qa.gd": "e9ac586b2ff89eadfb60cbbf1e966cd0dc17c81f6012bb734d687178a70d074a",
+    "tests/ground_source_edges_gpu_test.gd": "7bd4705164d113d5003e84e292f30ed2e44f2ffedd14bd5efe33e66e811bf328"
+  },
+  "reference_published_commit": "5fdd2de0348650307aec304d3175d334f62da610"
+}

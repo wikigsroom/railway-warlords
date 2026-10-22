@@ -1,4 +1,5 @@
 """Independently verify immutable source/prompt/import identity of twenty grounds."""
+import argparse
 import json
 from pathlib import Path
 from PIL import Image, ImageStat, ImageFilter
@@ -7,6 +8,9 @@ from package_delivery import read, require, sha
 
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--output',type=Path,default=P/'reports/ground_macro_asset_audit.json')
+    args=parser.parse_args()
     catalog=read(P/'presentation/data/ground_macro_catalog.json')
     plan_path=P/catalog.get('source_plan_file','presentation/data/ground_macro_plan.json')
     require(plan_path.resolve().is_relative_to(P.resolve()),'Plan must remain inside the project')
@@ -41,10 +45,12 @@ def main():
                 'Previous immutable original differs: '+asset_id)
 
     report=dict(passed=True,version=current_version(),sources=20,source_route=plan['source_route'],source_images_modified=False,
+        material_identity_revision=catalog.get('material_identity_revision',''),
         art_score=False,geography_assignments_changed=False,formal_art_approval=False,
         source_plan_file=plan_path.relative_to(P).as_posix(),stored_superseded_originals_verified=len(superseded),
         measurement_scope='Analysis-only 128px luminance; no derived image written. Frequency is not an artistic-quality score.',assets=rows)
-    (P/'reports/ground_macro_asset_audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    args.output.parent.mkdir(parents=True,exist_ok=True)
+    args.output.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(dict(passed=True,sources=20,unique_hashes=len(hashes))),flush=True)
 
 

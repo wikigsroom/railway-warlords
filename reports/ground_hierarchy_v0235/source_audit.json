@@ -1,0 +1,176 @@
+{
+  "passed": true,
+  "version": "0.2.34",
+  "sources": 20,
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "source_images_modified": false,
+  "material_identity_revision": "quiet_ground_hierarchy_v0235_r001",
+  "art_score": false,
+  "geography_assignments_changed": false,
+  "formal_art_approval": false,
+  "source_plan_file": "presentation/data/ground_material_plan_v0235.json",
+  "stored_superseded_originals_verified": 46,
+  "measurement_scope": "Analysis-only 128px luminance; no derived image written. Frequency is not an artistic-quality score.",
+  "assets": [
+    {
+      "id": "tile_ground_hierarchy_v0235_temperate_meadow",
+      "family": "temperate_meadow",
+      "source_sha256": "e17939b87c459664872ba0d0cf372a379220973b440f4d37d2a5be0f4e7b7f6a",
+      "prompt_sha256": "3a046edf6161150d9d5651a4004d698fec628d4f9fc07c9af3b70eb5341f409d",
+      "import_sha256": "2f90ecf0c7fea266d5a83a27874717060157d3ea870d9e99ce18ca2fdc663878",
+      "high_frequency_luma_mean_128": 0.8743
+    },
+    {
+      "id": "tile_ground_quiet_v0225_dry_steppe",
+      "family": "dry_steppe",
+      "source_sha256": "932934ad279688d3e5690b6f4ff76c3f086724a203dc79e44e37c5a6c9f314f6",
+      "prompt_sha256": "e47a43a85cafda2b0ca5b0d36c6ac726d8ac8a7a8e3f75a778a1da2c335efc03",
+      "import_sha256": "e92bb954b286ca30d9afe6633cf4591b53043f7cdf82eef52bd2e7b095d3561e",
+      "high_frequency_luma_mean_128": 4.4612
+    },
+    {
+      "id": "tile_ground_quiet_v0225_desert_steppe",
+      "family": "desert_steppe",
+      "source_sha256": "ed3bdac548ea154923607d597bcff704e584abc2508857a85473de0041303bd5",
+      "prompt_sha256": "eb3954f88842fafbb0923d9ab0a1f73521eca17cacc27a6215633ff1ecb02dbd",
+      "import_sha256": "85c3169ea8a00243aafe8f97d74e3f581f8bfe0bc922accb3e78d2b4d34ca981",
+      "high_frequency_luma_mean_128": 3.4066
+    },
+    {
+      "id": "tile_ground_quiet_v0225_dune_sand",
+      "family": "dune_sand",
+      "source_sha256": "7486fb53759944474b1d3c7227fe6313d9eb655247e652cfbc90b47603d51365",
+      "prompt_sha256": "2469da0490cc0f56f6f3c8d004746b07261e1cde5916ba49c5c87288f2acb65b",
+      "import_sha256": "ba160d9d0c72e8d3fceb9baa93885d65b99de74b31bf482ed0dcf9745b9e2f4d",
+      "high_frequency_luma_mean_128": 4.5209
+    },
+    {
+      "id": "tile_ground_quiet_v0225_gravel_gobi",
+      "family": "gravel_gobi",
+      "source_sha256": "367b02a2cfde6c9522a71fadbb6509b4f3a83724b4046f0d3654416981c7f782",
+      "prompt_sha256": "a65c703a3a8a840fb10a4d3e26da90583eb02439a9030fad0a9725600686b591",
+      "import_sha256": "955efbef3e995718b28cc946385a5e69334f02801a92c07ac6ab8e1748912364",
+      "high_frequency_luma_mean_128": 5.1222
+    },
+    {
+      "id": "tile_ground_quiet_v0225_saline_meadow",
+      "family": "saline_meadow",
+      "source_sha256": "4f3fee77a40548ad61ad018f836071fd0b3c256074f96bfa1e487cd8970cf839",
+      "prompt_sha256": "7cef8ca5ab554d0301744e2ba36f046eebaaf216f5b5cb7f107c15a97393b2c8",
+      "import_sha256": "bbdd66d8a4e232669fa1adbe766a5bbd7f354c773b4fe21e5c4d9de8edcdc856",
+      "high_frequency_luma_mean_128": 4.5638
+    },
+    {
+      "id": "tile_ground_quiet_v0225_alpine_meadow",
+      "family": "alpine_meadow",
+      "source_sha256": "58d2e1b342c7d3f917be623c4ea7c023230db981a88f61942d18cb31dbdec19d",
+      "prompt_sha256": "fa9e87ef617de017f0007fb98cd4d187ff8e23bd021e8d8dd37cdeb3778740bf",
+      "import_sha256": "5254e86cf79c46f61cef9c2ccff85c82631539229c4cdaa185846b03b0ac559d",
+      "high_frequency_luma_mean_128": 3.7606
+    },
+    {
+      "id": "tile_ground_quiet_v0225_alpine_steppe",
+      "family": "alpine_steppe",
+      "source_sha256": "3c19df945638ae33063349d4babb64b9edc88bca8fb8bfac2b46a4f99dc80ed7",
+      "prompt_sha256": "99e13b449928b26e8cb0be817287a287704846fa6659e0bf42d524e494be45c9",
+      "import_sha256": "0ef7cd51525a2f6a1f90935859ed8abba8ffeee5a941455a00c0c813dc074d63",
+      "high_frequency_luma_mean_128": 4.8345
+    },
+    {
+      "id": "tile_ground_quiet_v0225_tundra_moss",
+      "family": "tundra_moss",
+      "source_sha256": "553d0d5394e4c98a227cbc8c070262decc8451f94aad03940949342cd214ae93",
+      "prompt_sha256": "3cf8faa6e9ed8a3dd8700c87276482ced0af8a5b92a3cf64131e46f25d932d8e",
+      "import_sha256": "797a933735e87451d5dfbac41ea6544ddec1f6ae8bc5901481df44f273d78288",
+      "high_frequency_luma_mean_128": 5.388
+    },
+    {
+      "id": "tile_ground_quiet_v0225_boreal_litter",
+      "family": "boreal_litter",
+      "source_sha256": "4d8fdd0c0957b81c89851e6bb3065960b47414868181a0799fe3900c2298e4d9",
+      "prompt_sha256": "4446b043fd1b5502b5c37dffe6e7e7f77c349a6b172bc424956643dec74c363a",
+      "import_sha256": "d727039a2514089f2a6a7e7e91ee0d1cdbc77bdd8f17fbfb999c09b50604960e",
+      "high_frequency_luma_mean_128": 4.0934
+    },
+    {
+      "id": "tile_ground_quiet_v0225_temperate_litter",
+      "family": "temperate_litter",
+      "source_sha256": "ef5e9e3653e4abeee4c767392733fe520a0562987985d43c3aaf67312a2431bc",
+      "prompt_sha256": "f381874c29b95f2a12430a2b0776cf1f189cb9343ae147e98027e39bdb1547f6",
+      "import_sha256": "e7f597df88e23f5617ee782851d1a5987581ee6364923eafd7c9368cd899be56",
+      "high_frequency_luma_mean_128": 5.0034
+    },
+    {
+      "id": "tile_ground_quiet_v0225_conifer_litter",
+      "family": "conifer_litter",
+      "source_sha256": "21ed500e9579c2f5f4787199ee039bf5578d1d0740a3182c6cdccc3819e85337",
+      "prompt_sha256": "0d67abee71442d5f521d98ca9cff3cc4ee0d1b2e098af34400d5213515d8bae8",
+      "import_sha256": "f014e026284d45167877ec662588e026daeb33ad76905faf5fb9668cd3ed96c7",
+      "high_frequency_luma_mean_128": 4.4249
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_subtropical_humus",
+      "family": "subtropical_humus",
+      "source_sha256": "b7adc0858a613c20118f6933f6e9e6eeb66f551d5ae7f5a78e46dfd35b640519",
+      "prompt_sha256": "09fe9e4ab362ae38176340fe0687e79bb63adc18b83601bdc8da63bbec29ad3c",
+      "import_sha256": "2f1a9c8f9099be6bde109765b5888f8c98e3890899b08df3021fd8885fe37a39",
+      "high_frequency_luma_mean_128": 1.3438
+    },
+    {
+      "id": "tile_ground_quiet_v0225_tropical_moist_humus",
+      "family": "tropical_moist_humus",
+      "source_sha256": "dbdbff14c38d9b7ebb1b75a8722051862151a173de81243d139b5eaeccb01a3c",
+      "prompt_sha256": "6f57250a863eae56e3d2459ef9ae2e7595c2cbb6dfd413f68d19f34f165fd224",
+      "import_sha256": "bd4a04bdddaffdba62fac12e28f31ec635a1239888871c826dfce86e7a7e2830",
+      "high_frequency_luma_mean_128": 4.3459
+    },
+    {
+      "id": "tile_ground_quiet_v0225_dry_woodland_litter",
+      "family": "dry_woodland_litter",
+      "source_sha256": "f53d244078cb2f8dbcb5039ee638f0888c81344d1f8faf8ffff369f3306aaaad",
+      "prompt_sha256": "32d47de44d649503a2307ea0243aa2063ab2013ca5ba44b18ac549126051c67a",
+      "import_sha256": "f1f1a9282e850ede5bbc309c4d95204a32274898dab7c1624cc0e967eb61be17",
+      "high_frequency_luma_mean_128": 6.2739
+    },
+    {
+      "id": "tile_ground_quiet_v0225_savanna_red_soil",
+      "family": "savanna_red_soil",
+      "source_sha256": "de46a0fd863898df98533b569f37fdaa8dd16a4016ac3a4a747555a3e88259e6",
+      "prompt_sha256": "864ae220ec1c8c509ce6f952204475b484a3ec88c190e0331f0dd312bc090c85",
+      "import_sha256": "c3ec59438f6e54b791292544f22f90cb17389b82f3e806822140c29b082678d8",
+      "high_frequency_luma_mean_128": 4.2696
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_flood_meadow",
+      "family": "flood_meadow",
+      "source_sha256": "af082248ac01f6aa9b2777d3c9c9afba4488d970cb47d01cc7b4406949c0d136",
+      "prompt_sha256": "10d1bc3d96788e770e225f93fdd2b9b409741a943176ae339ec26c5fcb1f2970",
+      "import_sha256": "b3706f3cfee94462e61cf81850979f5875a7ccb4086d537f6a1a42b46e1d84f7",
+      "high_frequency_luma_mean_128": 1.4824
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_alluvial_loam",
+      "family": "alluvial_loam",
+      "source_sha256": "4400943c212ded35be26f11afacc1104b7cbfdf53736a1b00afcd23d92d02537",
+      "prompt_sha256": "0908c0c904113768b1832bc0c256a800fb2147589ef10f67eb8fc1eaf4796a26",
+      "import_sha256": "79bd9421f8a77301c3976c5e3c1cae55f4a2aad79904077ec19132956a85ccf9",
+      "high_frequency_luma_mean_128": 1.6679
+    },
+    {
+      "id": "tile_ground_quiet_v0225_weathered_rock",
+      "family": "weathered_rock",
+      "source_sha256": "d966be2197b4ea14efe8e04aa4dfdcb5c107d90fa56cc77a0d2c66ef1b91339c",
+      "prompt_sha256": "cf53eb98ed0bdacdbc28c7db4b0fb9c3e850db28cebcd1a26db09a3cfeb416ed",
+      "import_sha256": "71c490a0b8a5023aa4c75a1195cce9053ac4cfc13153d4f5cc4daf166bc5ee7d",
+      "high_frequency_luma_mean_128": 5.2595
+    },
+    {
+      "id": "tile_ground_quiet_v0225_alpine_scree",
+      "family": "alpine_scree",
+      "source_sha256": "43db94130c983d70d6ef7636a339dd32340e47f92568e9fa82ef9c50e1a32316",
+      "prompt_sha256": "ef909582eda12b1eed80d39d97bf0042231f14d08bae87d5dda8e42ef8574009",
+      "import_sha256": "9d4a17b1b85538d9cb7616fd161fb73ec9c97ea039975167546699be293766d5",
+      "high_frequency_luma_mean_128": 7.0427
+    }
+  ]
+}

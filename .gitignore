@@ -229,3 +229,10 @@ Thumbs.db
 !/reports/settlement_compilation.json
 !/reports/repository_documentation_validation.json
 !reports/regression_dependency_evidence_v0229.json
+
+# Unpublished ground-material development: originals are in assets; these are
+# actual native review fixtures and receipts, separate from 0.2.34 exports.
+!/reports/ground_hierarchy_v0235/
+!/reports/ground_hierarchy_v0235/**
+/reports/ground_hierarchy_v0235/**/*.log
+/reports/ground_hierarchy_v0235/**/__pycache__/

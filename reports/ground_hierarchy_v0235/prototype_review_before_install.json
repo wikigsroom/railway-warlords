@@ -1,0 +1,52 @@
+{
+  "scope": "Native visual study of four directly generated originals, prior to integration.",
+  "created_at_utc": "2026-10-22T02:23:50.363780+00:00",
+  "passed_native_rendering_samples": 3,
+  "source_originals_actually_viewed": 4,
+  "raw_complete_viewport_captures": [
+    {
+      "folder": "native_candidate_02",
+      "image": "native_candidate_02/candidate_wuhan.png",
+      "sha256": "168c54b538fcd587c48c5ec0e6a4f0d4c87d1c72d7f249c6d021da9db427d048",
+      "whole_native_image_actually_viewed": true,
+      "engine_version": "0.2.34",
+      "shipping_exe": false,
+      "uninstalled_materials": 4
+    },
+    {
+      "folder": "native_candidate_03",
+      "image": "native_candidate_03/candidate_ningpu_city.png",
+      "sha256": "d324604fe3f61435cd5e07c70b77e37a05d0e8876f9b95aae0d1ae49c8c82ae1",
+      "whole_native_image_actually_viewed": true,
+      "engine_version": "0.2.34",
+      "shipping_exe": false,
+      "uninstalled_materials": 4
+    },
+    {
+      "folder": "native_candidate_04",
+      "image": "native_candidate_04/candidate_coast.png",
+      "sha256": "6b1518aa9a483649614abb78c5e6793677c65b59915e7c00dd6451f7b7362d3e",
+      "whole_native_image_actually_viewed": true,
+      "engine_version": "0.2.34",
+      "shipping_exe": false,
+      "uninstalled_materials": 4
+    }
+  ],
+  "original_pngs_changed": false,
+  "source_runtime_changed": false,
+  "manual_image_compositing": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "physical_android_device_tested": false,
+  "first_attempt": {
+    "folder": "native_candidate_01",
+    "result": "240-second controller timeout; no viewport produced. Process no longer exists. Failure retained."
+  },
+  "observations": [
+    "Ground has fewer high-frequency flecks; unit silhouettes and mountain miniatures are easier to separate from it.",
+    "Wuhan remains gray/yellow under its current materials and control layers; city footprints and small-water geometry remain sparse.",
+    "Nanjing still has coarse long contour strokes and little urban district detail.",
+    "The coastal viewport exposes stair-shaped shore segments and faint rectangular/polygon patches in the ground. Replacing textures alone does not resolve those render/data defects."
+  ],
+  "decision": "Four originals are retained as candidates for integration with geographically gated coverage. Broader terrain, city and coastline work remains required."
+}

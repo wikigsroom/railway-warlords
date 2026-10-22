@@ -1,0 +1,84 @@
+{
+  "stage": "source_integrated_native_development_reviewed_not_shipped",
+  "passed_native_samples": 3,
+  "raw_complete_viewports_actually_viewed": 3,
+  "captures": [
+    {
+      "case": "wuhan",
+      "raw_complete_viewport": "reports/ground_hierarchy_v0235/wuhan/viewport.png",
+      "sha256": "cb1f390858aef6421b59dbd02c55030bcefb99b3b98fcb8d044b62d35c0fb0c2",
+      "metadata_sha256": "839920ba99ce6323cafa290975f31453fe458fa24c46d0e244155ac4a8e90f0e",
+      "whole_image_actually_viewed": true,
+      "source_scope": "Native Windows development engine, application version 0.2.34 plus unpublished material revision quiet_ground_hierarchy_v0235_r001.",
+      "shipping_exe": false,
+      "observations": "Calmer ground; three city/river-bank anchors remain visible. Urban footprints and water geometry are still sparse; broad control boundaries are a gameplay abstraction.",
+      "scoped_dependency_sha256": {
+        "presentation/ground_material_blend.gd": "bc05b66a7083da072ff2d2ed4eebf1cff24e7bff38d0aece7a92084d83d7e6a0",
+        "presentation/data/ground_macro_catalog.json": "29d9135f9379d147404b55335d6b3f390f63ce55a7975f844b7df23e1dd55347",
+        "presentation/data/ground_material_plan_v0235.json": "a298ca34074955d15dffb0965b8d5340da481233269e8fc7e1dcc7267910f028",
+        "app/ground_continuity_qa.gd": "e9ac586b2ff89eadfb60cbbf1e966cd0dc17c81f6012bb734d687178a70d074a",
+        "tests/ground_source_edges_gpu_test.gd": "7bd4705164d113d5003e84e292f30ed2e44f2ffedd14bd5efe33e66e811bf328"
+      }
+    },
+    {
+      "case": "nanjing",
+      "raw_complete_viewport": "reports/ground_hierarchy_v0235/nanjing/viewport.png",
+      "sha256": "c1abd369f457b2712cf117aba994c6b654035f2a2a9aef1797e786b2dfa83498",
+      "metadata_sha256": "bf450de7c3559e23e5fabb6b79129a6c6afdf5be2e875968f527e1462c00ea78",
+      "whole_image_actually_viewed": true,
+      "source_scope": "Native Windows development engine, application version 0.2.34 plus unpublished material revision quiet_ground_hierarchy_v0235_r001.",
+      "shipping_exe": false,
+      "observations": "Army and hill silhouettes separate from the quiet green base. Large empty urban surroundings, recurring brush structure and long angular contours remain visible.",
+      "scoped_dependency_sha256": {
+        "presentation/ground_material_blend.gd": "bc05b66a7083da072ff2d2ed4eebf1cff24e7bff38d0aece7a92084d83d7e6a0",
+        "presentation/data/ground_macro_catalog.json": "29d9135f9379d147404b55335d6b3f390f63ce55a7975f844b7df23e1dd55347",
+        "presentation/data/ground_material_plan_v0235.json": "a298ca34074955d15dffb0965b8d5340da481233269e8fc7e1dcc7267910f028",
+        "app/ground_continuity_qa.gd": "e9ac586b2ff89eadfb60cbbf1e966cd0dc17c81f6012bb734d687178a70d074a",
+        "tests/ground_source_edges_gpu_test.gd": "7bd4705164d113d5003e84e292f30ed2e44f2ffedd14bd5efe33e66e811bf328"
+      }
+    },
+    {
+      "case": "coast",
+      "raw_complete_viewport": "reports/ground_hierarchy_v0235/coast/viewport.png",
+      "sha256": "a20702524bc6cb7aff658bbd7f90ad113af68f8ed2f387d41c230aa42fd7a8ca",
+      "metadata_sha256": "a27e680633d049b32f0f371e50fc5473e1e76da02a3b6d7e9a1572c16fbda74d",
+      "whole_image_actually_viewed": true,
+      "source_scope": "Native Windows development engine, application version 0.2.34 plus unpublished material revision quiet_ground_hierarchy_v0235_r001.",
+      "shipping_exe": false,
+      "observations": "Miniatures and translucent control remain readable. Stair-shaped shore geometry and polygonal ground patches remain; this material change does not certify a coastline fix.",
+      "scoped_dependency_sha256": {
+        "presentation/ground_material_blend.gd": "bc05b66a7083da072ff2d2ed4eebf1cff24e7bff38d0aece7a92084d83d7e6a0",
+        "presentation/data/ground_macro_catalog.json": "29d9135f9379d147404b55335d6b3f390f63ce55a7975f844b7df23e1dd55347",
+        "presentation/data/ground_material_plan_v0235.json": "a298ca34074955d15dffb0965b8d5340da481233269e8fc7e1dcc7267910f028",
+        "app/ground_continuity_qa.gd": "e9ac586b2ff89eadfb60cbbf1e966cd0dc17c81f6012bb734d687178a70d074a",
+        "tests/ground_source_edges_gpu_test.gd": "7bd4705164d113d5003e84e292f30ed2e44f2ffedd14bd5efe33e66e811bf328"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "case": "edges02",
+      "checks": 23,
+      "validation_file": "reports/ground_hierarchy_v0235/edges02/validation.json",
+      "sha256": "655dfba53b5244acc96408911669eff7051e18b1124fb3dfbace388a686a8e99"
+    },
+    {
+      "case": "continuity",
+      "checks": 48,
+      "validation_file": "reports/ground_hierarchy_v0235/continuity/validation.json",
+      "sha256": "053414ba7029b180eccfa253fed5912de9530df5e1e9b5e6d9efe973745607d3"
+    }
+  ],
+  "source_audit": "reports/ground_hierarchy_v0235/source_audit.json",
+  "published_reference_commit": "5fdd2de0348650307aec304d3175d334f62da610",
+  "original_pngs_modified": false,
+  "manual_image_compositing": false,
+  "source_uv_mirrored": false,
+  "geographic_assignments_changed": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "physical_android_device_tested": false,
+  "new_shipping_artifact_created": false,
+  "first_edge_diagnostic": "edges/ retains the failed per-axis-30%-reduction criterion. edges02/ adds independently rendered interior-grain controls while retaining aggregate minimum 30% reduction. See chapter 53.",
+  "music": "No new music generated or installed; future production uses remote RTX 3080 YuE2."
+}

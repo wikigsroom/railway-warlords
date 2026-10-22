@@ -1,14 +1,14 @@
 {
   "format": 1,
-  "version": "0.2.31",
+  "version": "0.2.35-development",
   "independent_originals": 20,
-  "source_plan_file": "presentation/data/ground_material_plan_v0231.json",
-  "source_plan_sha256": "91d95e5ab1247428345be24a5cb08cddc86a5d2ca6fab809bad63fa4804889d3",
+  "source_plan_file": "presentation/data/ground_material_plan_v0235.json",
+  "source_plan_sha256": "a298ca34074955d15dffb0965b8d5340da481233269e8fc7e1dcc7267910f028",
   "world_repeat_period": 224,
   "records": {
     "temperate_meadow": {
-      "asset_id": "tile_ground_painted_v0231_temperate_meadow",
-      "source_sha256": "1f56e626d4c2efa28480f9d0a122152901efa99a65bca8559706bdf92537ea4d",
+      "asset_id": "tile_ground_hierarchy_v0235_temperate_meadow",
+      "source_sha256": "e17939b87c459664872ba0d0cf372a379220973b440f4d37d2a5be0f4e7b7f6a",
       "actual_dimensions": [
         1254,
         1254
@@ -104,8 +104,8 @@
       ]
     },
     "subtropical_humus": {
-      "asset_id": "tile_ground_painted_v0231_subtropical_humus",
-      "source_sha256": "ac9e003b6e58b03e1509115045c5a922fc5873d0ce52b6761447b34275b959d0",
+      "asset_id": "tile_ground_hierarchy_v0235_subtropical_humus",
+      "source_sha256": "b7adc0858a613c20118f6933f6e9e6eeb66f551d5ae7f5a78e46dfd35b640519",
       "actual_dimensions": [
         1254,
         1254
@@ -137,16 +137,16 @@
       ]
     },
     "flood_meadow": {
-      "asset_id": "tile_ground_quiet_v0225_flood_meadow",
-      "source_sha256": "e93de985909aec5c0709d26268b9deaedff915b06692b045cce953352bde8b2a",
+      "asset_id": "tile_ground_hierarchy_v0235_flood_meadow",
+      "source_sha256": "af082248ac01f6aa9b2777d3c9c9afba4488d970cb47d01cc7b4406949c0d136",
       "actual_dimensions": [
         1254,
         1254
       ]
     },
     "alluvial_loam": {
-      "asset_id": "tile_ground_quiet_v0225_alluvial_loam",
-      "source_sha256": "9d45692998f61f86e2f5664abf8d9aa730ed308cf03865ba2550a018eeb6ff54",
+      "asset_id": "tile_ground_hierarchy_v0235_alluvial_loam",
+      "source_sha256": "4400943c212ded35be26f11afacc1104b7cbfdf53736a1b00afcd23d92d02537",
       "actual_dimensions": [
         1254,
         1254
@@ -170,7 +170,7 @@
     }
   },
   "source_images_modified": false,
-  "superseded_originals": 42,
+  "superseded_originals": 46,
   "superseded_asset_ids": [
     "tile_ground_identity_alluvial_loam",
     "tile_ground_identity_alpine_meadow",
@@ -212,9 +212,13 @@
     "tile_ground_macro_tropical_moist_humus",
     "tile_ground_macro_tundra_moss",
     "tile_ground_macro_weathered_rock",
+    "tile_ground_painted_v0231_subtropical_humus",
+    "tile_ground_painted_v0231_temperate_meadow",
+    "tile_ground_quiet_v0225_alluvial_loam",
+    "tile_ground_quiet_v0225_flood_meadow",
     "tile_ground_quiet_v0225_subtropical_humus",
     "tile_ground_quiet_v0225_temperate_meadow"
   ],
   "original_pngs_retained": true,
-  "material_identity_revision": "painted_lowland_v0231_r001"
+  "material_identity_revision": "quiet_ground_hierarchy_v0235_r001"
 }
