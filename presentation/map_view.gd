@@ -464,11 +464,33 @@ func prepare_place_sprites() -> void:
 		node["sprite_bounds"]=bounds
 		node["sprite_on_land"]=true if state.map.get("strategic_scale",false) else relief.dry_point(footprint.position) and relief.dry_point(footprint.end) and relief.dry_point(Vector2(footprint.end.x,footprint.position.y)) and relief.dry_point(Vector2(footprint.position.x,footprint.end.y)) and not relief.intersects_index(footprint,relief.boundary_buckets,0)
 
+func separate_harbor(city: Dictionary) -> bool:
+	return city.has("harbor_position") and HarborRules.land_hex(city)!=HexGrid.coordinate(city.position)
+
+func harbor_visual_record(city: Dictionary) -> Dictionary:
+	var id=str(settlement_choices.get(city.id+":dock",""))
+	var rectangle=Rect2(Vector2(-40,-48),Vector2(80,68))
+	if not id.is_empty():
+		rectangle=MapArtBank.source_rect(id,Vector2(80,68));rectangle.position+=MapComposition.CITY_FOOT
+		return {"asset_id":id,"texture_rect":rectangle,"body":MapComposition.alpha_rect(MapArtBank.data().records.get(id,{}),rectangle)}
+	return {"asset_id":"building_port_intact","texture_rect":rectangle,"body":rectangle}
+
+func draw_harbors(view: Rect2) -> void:
+	if zoom<.24:return
+	for city in state.cities:
+		if not separate_harbor(city):continue
+		var at=HexGrid.to_world(HarborRules.land_hex(city))
+		if not view.has_point(at):continue
+		var visual=harbor_visual_record(city);var image=assets.texture("building",visual.asset_id)
+		var rectangle:Rect2=visual.texture_rect;rectangle.position+=at
+		if image!=null:draw_texture_rect(image,rectangle,false)
+		command_flag(at+Vector2(-26,-32),city.owner_id,12)
+
 func city_visual_record(city: Dictionary) -> Dictionary:
 	var bounds=MapComposition.settlement_bounds(HistoricalPlaces.importance(city,state.date))
 	var bank_id="";var group="scenery";var asset_id=""
 	if MapArtBank.available() and city.fort_hp>0 and city.id not in ["jiumenkou","shanhaiguan"]:
-		var role="station" if EconomyRules.building_level(city,"station")>0 and HistoricalPlaces.kind(city,state.date)=="city" else "dock" if city.get("port",false) and HistoricalPlaces.kind(city,state.date) not in ["national_capital","capital"] else ""
+		var role="station" if EconomyRules.building_level(city,"station")>0 and HistoricalPlaces.kind(city,state.date)=="city" else "dock" if city.get("port",false) and not separate_harbor(city) and HistoricalPlaces.kind(city,state.date) not in ["national_capital","capital"] else ""
 		bank_id=str(settlement_choices.get(city.id+":"+role,MapArtBank.settlement_id(city,state.date,role)))
 	if not bank_id.is_empty():
 		var texture_rect=MapArtBank.source_rect(bank_id,bounds)
@@ -586,7 +608,7 @@ func map_bank_capture_facts() -> Dictionary:
 			if not id.is_empty():buildings[node.id]=id
 	for city in state.cities:
 		if city.fort_hp<=0 or city.id in ["jiumenkou","shanhaiguan"] or not view.has_point(HexGrid.to_world(HexGrid.coordinate(city.position))):continue
-		var role="station" if EconomyRules.building_level(city,"station")>0 and HistoricalPlaces.kind(city,state.date)=="city" else "dock" if city.get("port",false) and HistoricalPlaces.kind(city,state.date) not in ["national_capital","capital"] else ""
+		var role="station" if EconomyRules.building_level(city,"station")>0 and HistoricalPlaces.kind(city,state.date)=="city" else "dock" if city.get("port",false) and not separate_harbor(city) and HistoricalPlaces.kind(city,state.date) not in ["national_capital","capital"] else ""
 		var id=str(settlement_choices.get(city.id+":"+role,""))
 		if not id.is_empty():buildings[city.id]=id
 	var materials: Dictionary={};var material_ids: Dictionary={}
@@ -683,6 +705,9 @@ func select_screen(screen: Vector2) -> void:
 		for city in state.cities+state.map.get("reference_pois",[]):
 			var h=HexGrid.coordinate(city.position);var distance=world_to_screen(HexGrid.to_world(h)).distance_to(screen)
 			if distance<best:best=distance;city_hex=h
+			if separate_harbor(city):
+				var harbor_distance=world_to_screen(HexGrid.to_world(HarborRules.land_hex(city))).distance_to(screen)
+				if harbor_distance<best:best=harbor_distance;city_hex=h
 		if city_hex!=null:hex_selected.emit(city_hex);return
 	var place_id=place_at_screen(screen)
 	if not place_id.is_empty():place_selected.emit(place_id)
@@ -821,6 +846,7 @@ func _draw() -> void:
 		for h in command_preview.path:route.append(HexGrid.to_world(h))
 		if route.size()>1:draw_polyline(route,Color("ecdfb3"),5/zoom,true);draw_polyline(route,Color("3c8794"),2/zoom,true)
 	draw_places(view)
+	draw_harbors(view)
 	drawn_city_counter_ids=[];drawn_city_detail_ids=[]
 	for city in playback.cities if playback.active else state.cities:
 		var p=HexGrid.to_world(HexGrid.coordinate(city.position))
@@ -871,6 +897,7 @@ func draw_foreground(view: Rect2) -> void:
 	draw_playback(view)
 	draw_city_labels(view)
 	if show_places:draw_place_labels(view)
+	draw_harbor_labels(view)
 	draw_crossing_labels(view)
 	draw_set_transform(Vector2.ZERO)
 	if show_control:draw_control_legend()
@@ -2019,6 +2046,14 @@ func annotation_object_records(view: Rect2) -> Array:
 			var radius=MapSemanticZoom.city_radius(zoom,HistoricalPlaces.importance(city,state.date))/zoom
 			body=Rect2(point-Vector2.ONE*radius,Vector2.ONE*radius*2)
 		result.append({"id":city.id,"kind":"city","position":point,"rect":body})
+	if zoom>=.24:
+		for city in state.cities:
+			if not separate_harbor(city):continue
+			var at=HexGrid.to_world(HarborRules.land_hex(city))
+			if not view.has_point(at):continue
+			var body:Rect2=harbor_visual_record(city).body;body.position+=at
+			body=body.expand(at+Vector2(-26,-36))
+			result.append({"id":"harbor:"+city.id,"kind":"harbor","position":at,"rect":body})
 	if show_places:
 		for node in place_references:
 			if not view.has_point(node.at) or not map_place_visible(node):continue
@@ -2087,6 +2122,23 @@ func draw_place_labels(view: Rect2) -> void:
 		draw_rect(rect,Color(.90,.94,.89,.90));draw_rect(rect,Color(.27,.38,.41,.7),false,.6/zoom)
 		draw_screen_label(label.text,rect.position+Vector2(5/zoom,17.5*label_scale/zoom),label.font_pixels,Color("233640"))
 	drawn_labels.append_array(labels)
+
+func draw_harbor_labels(view: Rect2) -> void:
+	if zoom<.34:return
+	var occupied: Array=label_overlay_obstacles();var bodies:Dictionary={}
+	for label in drawn_labels:occupied.append(label.rect)
+	for record in annotation_object_records(view):occupied.append(record.rect);bodies[record.id]=record.rect
+	var viewport=Rect2(camera-size/(2*zoom),size/zoom);var pixels=ceili(15.0*label_scale)
+	for city in state.cities:
+		var id="harbor:"+city.id
+		if not bodies.has(id):continue
+		var at=HexGrid.to_world(HarborRules.land_hex(city));var text=city.name+"江岸"
+		var dimensions=Vector2((label_text_width(text,pixels)+10)/zoom,21.0*label_scale/zoom)
+		var rect=MapComposition.label_rect(at,dimensions,bodies[id],occupied,viewport,zoom)
+		if not rect.has_area():continue
+		draw_line(at,MapComposition.nearest_edge(rect,at),Color("786546",.55),.7/zoom,true)
+		draw_rect(rect,Color(.88,.91,.84,.90));draw_screen_label(text,rect.position+Vector2(5/zoom,16*label_scale/zoom),pixels,Color("304d54"))
+		drawn_labels.append({"city_id":id,"text":text,"position":at,"rect":rect,"font_size":ceili(float(pixels)/zoom),"font_pixels":pixels,"shifted":true});occupied.append(rect)
 
 func draw_crossing_labels(view: Rect2) -> void:
 	if zoom<.34:return

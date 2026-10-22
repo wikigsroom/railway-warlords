@@ -200,6 +200,7 @@ def compile_map(data, regions, tree, original):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--check', action='store_true')
+    parser.add_argument('--maps', nargs='+', help='Rebuild selected maps; require identical archived material assignments for every retained map.')
     args = parser.parse_args()
     started = time.monotonic()
     original_path = P/'presentation/data/terrain_surface_regions.json'
@@ -225,9 +226,25 @@ def main():
             json.dump(dict(sources=expected,classifier_sha256=classifier_sha,regions=regions,wkb=[value.hex() for value in shapely.to_wkb(tree.geometries)]),stream,separators=(',',':'))
     maps = {}
     summaries = {}
+    retained = json.loads(TARGET.read_text(encoding='utf-8')) if args.maps else {}
+    if args.maps:
+        previous_path=ROOT/'output/local-map-refinement-v0234/prior_catalogues/terrain_surface_regions.json'
+        previous=json.loads(previous_path.read_text(encoding='utf-8'))
+        for mid, entry in retained['maps'].items():
+            if mid in args.maps:continue
+            if previous['maps'][mid]!=original['maps'][mid]:
+                raise ValueError('Retained material assignments changed: '+mid)
+            map_path=P/entry['file']
+            if sha(map_path)!=entry['data_sha256'] or sha(P/'content/maps'/(mid+'.json'))!=entry['map_sha256']:
+                raise ValueError('Retained geography or coverage changed: '+mid)
+            row=json.loads(map_path.read_text(encoding='utf-8'))
+            maps[mid]=entry
+            summaries[mid]={k:v for k,v in row.items() if k not in ['families','supplements','clips']}
     for path in sorted((P/'content/maps').glob('*.json')):
         data = json.loads(path.read_text(encoding='utf-8'))
         if not data.get('cells') or not data.get('render_land'):
+            continue
+        if args.maps and data['id'] not in args.maps:
             continue
         before = sha(path)
         row = compile_map(data, regions, tree, original['maps'])

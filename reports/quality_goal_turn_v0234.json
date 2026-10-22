@@ -1,0 +1,59 @@
+{
+  "version": "0.2.34",
+  "created_at_utc": "2026-10-22T01:33:50.928589+00:00",
+  "stage": "local_map_scale_and_separate_banks_evidence_verified",
+  "runtime_source_sha256": "525065c3f4d2756a387dbbca12e02f5d6a24917028e3e919109b13fc1afebafa",
+  "content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+  "completed_checks": {
+    "regression_groups": 30,
+    "regression_checks": 14585,
+    "local_rules": 86,
+    "source_and_scope": 122,
+    "settlement_geometry": 207,
+    "native_hud_input": 773,
+    "shipping_map_layout": 106,
+    "shipping_gpu": 48
+  },
+  "shipping_viewports_generated": 16,
+  "shipping_viewports_actually_viewed": 16,
+  "final_source_hud_images_generated": 30,
+  "final_source_hud_images_actually_viewed": 4,
+  "scope": "Local map scale, separate river banks, coastal control clipping and current source-bound native evidence. Archive and Git publication have separate terminal receipts.",
+  "maps": {
+    "hankou": {
+      "cells": 8836,
+      "geographic_hex_radius_m": 250
+    },
+    "ningpu": {
+      "cells": 9588,
+      "geographic_hex_radius_m": 250
+    },
+    "operation_hex_radius_world": 48
+  },
+  "unchanged_registered_rasters": 2509,
+  "new_raster_originals": 0,
+  "new_music_generated": false,
+  "future_music_route": "music-gen-remote-YuE2_RTX3080_instrumental",
+  "old_music_provenance_preserved": true,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "whole_goal_achieved": false,
+  "physical_android_device_tested": false,
+  "full_ai_combat_balance_claimed": false,
+  "historical_city_or_wharf_survey_precision_claimed": false,
+  "old_in_progress_map_saves_automatically_migrated": false,
+  "open_items": [
+    "Large-text Wuhan overview capital caption partly obscured by the scale legend.",
+    "Repeated plain/alluvial ground, angular symbolic river banks and simplified city footprints.",
+    "Complete move/attack/hurt actions across every unit family remain unfinished.",
+    "All Asian historical starting states, full division-level deployment and individual ability balance remain unfinished.",
+    "Physical Motorola X30 installation, touch, GPU, thermals and battery acceptance remain pending."
+  ],
+  "evidence": {
+    "regression": "reports/regression_dependency_evidence.json",
+    "shipping_maps": "reports/screenshots/local_map_refinement/v0234/verified_export_01/validation.json",
+    "shipping_gpu": "reports/local_map_refinement/shipping_01/validation.json",
+    "actual_visual_review": "reports/local_map_refinement/visual_review.json",
+    "documentation": "reports/repository_documentation_validation.json"
+  }
+}

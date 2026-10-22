@@ -1,6 +1,6 @@
 {
 	"art_approval": false,
-	"build_version": "0.2.32",
+	"build_version": "0.2.34",
 	"checks": [
 		{
 			"name": "six_source_maps_have_independent_numerical_catalogues",
@@ -71,34 +71,6 @@
 			"passed": true
 		},
 		{
-			"name": "ground_is_bound_to_current_immutable_map:hankou",
-			"passed": true
-		},
-		{
-			"name": "unsupported_ecology_is_only_bounded_neighbour_pigment_interpolation:hankou",
-			"passed": true
-		},
-		{
-			"name": "functional_cells_receive_independent_ground_without_reclassification:hankou",
-			"passed": true
-		},
-		{
-			"name": "all_source_clipped_vertices_reach_runtime_mesh:hankou",
-			"passed": true
-		},
-		{
-			"name": "source_shore_partition_has_constant_opacity:hankou",
-			"passed": true
-		},
-		{
-			"name": "runtime_ground_area_matches_compiled_source_partition:hankou",
-			"passed": true
-		},
-		{
-			"name": "rules_coasts_rivers_cities_and_dem_are_unchanged:hankou",
-			"passed": true
-		},
-		{
 			"name": "ground_is_bound_to_current_immutable_map:jingfeng",
 			"passed": true
 		},
@@ -155,6 +127,34 @@
 			"passed": true
 		},
 		{
+			"name": "ground_is_bound_to_current_immutable_map:hankou",
+			"passed": true
+		},
+		{
+			"name": "unsupported_ecology_is_only_bounded_neighbour_pigment_interpolation:hankou",
+			"passed": true
+		},
+		{
+			"name": "functional_cells_receive_independent_ground_without_reclassification:hankou",
+			"passed": true
+		},
+		{
+			"name": "all_source_clipped_vertices_reach_runtime_mesh:hankou",
+			"passed": true
+		},
+		{
+			"name": "source_shore_partition_has_constant_opacity:hankou",
+			"passed": true
+		},
+		{
+			"name": "runtime_ground_area_matches_compiled_source_partition:hankou",
+			"passed": true
+		},
+		{
+			"name": "rules_coasts_rivers_cities_and_dem_are_unchanged:hankou",
+			"passed": true
+		},
+		{
 			"name": "ground_is_bound_to_current_immutable_map:ningpu",
 			"passed": true
 		},
@@ -202,14 +202,6 @@
 			"unclassified_cells": 473.0
 		},
 		{
-			"covered_cells": 380.0,
-			"functional_underlays": 43,
-			"map": "hankou",
-			"partial_cells": 82,
-			"pigment_interpolations": 0,
-			"unclassified_cells": 0.0
-		},
-		{
 			"covered_cells": 47126.0,
 			"functional_underlays": 737,
 			"map": "jingfeng",
@@ -226,10 +218,18 @@
 			"unclassified_cells": 58.0
 		},
 		{
-			"covered_cells": 399.0,
-			"functional_underlays": 33,
+			"covered_cells": 8649.0,
+			"functional_underlays": 200,
+			"map": "hankou",
+			"partial_cells": 322,
+			"pigment_interpolations": 0,
+			"unclassified_cells": 0.0
+		},
+		{
+			"covered_cells": 9486.0,
+			"functional_underlays": 156,
 			"map": "ningpu",
-			"partial_cells": 66,
+			"partial_cells": 336,
 			"pigment_interpolations": 0,
 			"unclassified_cells": 0.0
 		}

@@ -2,6 +2,11 @@
 
 [中文 README](../README.md#screenshots) · [English README](../README.en.md#screenshots) · [完整机器可读记录 / Manifest](media/manifest.json)
 
+0.2.34新增8张正式Windows完整精选视口：[菜单](media/menu-v0234.png)、[汉口](media/local-wuhan-v0234.png)、[武汉三镇](media/local-wuhan-three-towns-v0234.png)、[南京](media/local-nanjing-v0234.png)、[宁浦江岸](media/local-ningpu-river-v0234.png)、[宁浦总览](media/local-ningpu-regional-v0234.png)、[山海关](media/local-coast-v0234.png)与[桌面X30尺寸](media/local-wuhan-x30-layout-v0234.png)。13个地图视口加菜单/冒烟/山地共16张最终程序画面已逐张完整查看，见[记录](../reports/local_map_refinement/visual_review.json)。精选图按原始字节复制，未裁切、拼接、补绘或叠字。旧GIF与旧图片保持真实版本；未批准整体美术，也无物理手机验收。
+
+Version 0.2.34 adds eight verbatim whole shipping-Windows selections. All sixteen final map/menu/UI-smoke/mountain viewports were individually opened in full. Older GIFs and stills retain their actual versions. Overall art approval and physical-phone acceptance remain pending.
+
+
 0.2.33新增五张正式Windows整幅截图：[菜单](media/menu-v0233.png)、[山地](media/map-pan-mountains-v0233.png)、[武汉](media/map-pan-wuhan-v0233.png)、[北京](media/map-pan-beijing-v0233.png)和[山海关](media/map-pan-coast-v0233.png)。10张最终画面已完整查看，见[查看记录](../reports/map_pan_v0233/visual_review.json)。图片按原字节复制；旧GIF身份不变。
 
 0.2.32新增五张正式Windows整幅画面：[菜单](media/menu-v0232.png)、[山地](media/map-relief-mountains-v0232.png)、[武汉](media/map-relief-wuhan-v0232.png)、[北京](media/map-relief-beijing-v0232.png)和[山海关](media/map-relief-coast-v0232.png)。七地图及菜单/冒烟/山地共10张最终画面已完整查看，见[实际查看记录](../reports/relief_grounding_v0232/visual_review.json)。原字节复制，旧GIF身份不变。

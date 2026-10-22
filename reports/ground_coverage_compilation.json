@@ -1,12 +1,12 @@
 {
   "passed": true,
-  "data_sha256": "8a4c86d78e88c5d7061287a21655afb63f22b893877fd4aa122573668df329d6",
-  "source_geography_sha256": "9d6ff8a87352f590092299e4324b4da68821ea9a6337edfced3e9d47d0f11f37",
+  "data_sha256": "cce07e56732ac2f85e4d8f4fde1bc7032b0d1cf52dfca4804691352bc237e063",
+  "source_geography_sha256": "0d1309c30e3aa59bf7b6c44f3e1c69e304b8ddc9cf1a86daaee0b697364488cc",
   "source_maps_modified": false,
   "source_rasters_modified": false,
   "numerical_vectors_only": true,
-  "created_at_utc": "2026-10-19T08:37:01.100718+00:00",
-  "elapsed_seconds": 106.89,
+  "created_at_utc": "2026-10-21T22:00:23.436075+00:00",
+  "elapsed_seconds": 14.78,
   "maps": {
     "asia_strategic": {
       "map_sha256": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
@@ -74,25 +74,6 @@
       "functional_rules_unchanged": true,
       "ecological_references_are_not_historical_landuse": true
     },
-    "hankou": {
-      "map_sha256": "b6ca1e209cf9e238f4fd6db168474ab94f76c4bddb9218b5e75fe9d695e87745",
-      "hex_radius": 48.0,
-      "counts": {
-        "subtropical_humus": 301,
-        "alluvial_loam": 79
-      },
-      "land_intersecting_cells": 380,
-      "covered_cells": 380,
-      "unclassified_cells": 0,
-      "partial_cells": 82,
-      "ground_area": 2032166.8972000063,
-      "source_land_polygons": 1,
-      "source_land_holes": 0,
-      "clipped_to_source_land": true,
-      "source_geometry_modified": false,
-      "functional_rules_unchanged": true,
-      "ecological_references_are_not_historical_landuse": true
-    },
     "jingfeng": {
       "map_sha256": "f5fc64bc3e45643fc9b325e1e574a5534cc7c6660880a1e546fc9b68a0ad5c8f",
       "hex_radius": 48.0,
@@ -138,20 +119,39 @@
       "functional_rules_unchanged": true,
       "ecological_references_are_not_historical_landuse": true
     },
-    "ningpu": {
-      "map_sha256": "d6986cf2485acc272521e5cf13984ca0552e74009f74fc03274eb6163165a116",
+    "hankou": {
+      "map_sha256": "f3d49dc495a0eb48a9013b878bbd07892126f84c329d81600147d3a627aea927",
       "hex_radius": 48.0,
       "counts": {
-        "temperate_litter": 220,
-        "weathered_rock": 13,
-        "subtropical_humus": 101,
-        "alluvial_loam": 65
+        "subtropical_humus": 8210,
+        "alluvial_loam": 439
       },
-      "land_intersecting_cells": 399,
-      "covered_cells": 399,
+      "land_intersecting_cells": 8649,
+      "covered_cells": 8649,
       "unclassified_cells": 0,
-      "partial_cells": 66,
-      "ground_area": 2222956.273400008,
+      "partial_cells": 322,
+      "ground_area": 50804172.429998696,
+      "source_land_polygons": 1,
+      "source_land_holes": 0,
+      "clipped_to_source_land": true,
+      "source_geometry_modified": false,
+      "functional_rules_unchanged": true,
+      "ecological_references_are_not_historical_landuse": true
+    },
+    "ningpu": {
+      "map_sha256": "abf2ba75da45d2cce5597f7c1e297eb67dd168c1ffd947220a019cc57e35e3dc",
+      "hex_radius": 48.0,
+      "counts": {
+        "temperate_litter": 6506,
+        "weathered_rock": 78,
+        "subtropical_humus": 2572,
+        "alluvial_loam": 330
+      },
+      "land_intersecting_cells": 9486,
+      "covered_cells": 9486,
+      "unclassified_cells": 0,
+      "partial_cells": 336,
+      "ground_area": 55573906.83499859,
       "source_land_polygons": 1,
       "source_land_holes": 0,
       "clipped_to_source_land": true,

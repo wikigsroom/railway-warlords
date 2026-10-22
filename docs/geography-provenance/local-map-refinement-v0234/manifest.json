@@ -1,0 +1,41 @@
+{
+  "version": "0.2.34",
+  "purpose": "Portable verbatim provider responses, original local-map baseline, channel provenance and DEM quality review. Modern physical reference, not a 1924 terrain or harbor survey.",
+  "files": [
+    {
+      "file": "baseline.json",
+      "bytes": 206450,
+      "sha256": "058d4df0f1b34b102d4515ad171c418c9bb1fc23ed68ffcda449c9a385b5afba"
+    },
+    {
+      "file": "river_source.json",
+      "bytes": 723,
+      "sha256": "4b63080f09833defa221b4fb00ad09f97b6aab8881bccc782ef84f384fd8b608"
+    },
+    {
+      "file": "negative_sample_review.json",
+      "bytes": 3773,
+      "sha256": "6a5c753b152e193deb7f9e96e82ca7a031bfe1bd4517cd732451a2340306ab2c"
+    },
+    {
+      "file": "srtm30m_negative_crosscheck.json",
+      "bytes": 7303,
+      "sha256": "3eb6f14280b91ad56c7f50b0275d5739ad7395ec6047e07707766188f4812379"
+    },
+    {
+      "file": "srtm30m_negative_crosscheck.source.json",
+      "bytes": 1474,
+      "sha256": "63760e1595be02b14078f4aa07a8f856bbc87d8a81684ccd8a3f06f9181b82fc"
+    },
+    {
+      "file": "srtm_original_responses.zip",
+      "bytes": 3041940,
+      "sha256": "bafd9ec4800566369c42ddbfd86679eb68d593a5667ca5707068ccf6a4da6a04"
+    },
+    {
+      "file": "coastal_control_before.zip",
+      "bytes": 3630286,
+      "sha256": "482d4d815f1986ff88d3d8f697fe8c448b1a1a9de20274890ddac9f838f32eab"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": "0.2.34",
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "issues": [
+    {
+      "id": "wuhan_large_text_scale_legend_caption",
+      "source": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/objectives.png",
+      "observed": "The Wuchang capital caption can sit partly beneath the map scale legend.",
+      "status": "open",
+      "impact": "Map caption readability at the large-text overview; core bank objective remains readable.",
+      "original_observation_source": "reports/battle_hud_native_v0230/local_scale_v0234_01/1280x720_150_mouse/objectives.png",
+      "confirmed_in_final_source": true
+    },
+    {
+      "id": "local_ground_repetition",
+      "observed": "Lowland close views still repeat grass/alluvial texture and lack measured period-specific city footprints.",
+      "status": "open"
+    },
+    {
+      "id": "local_river_symbol_bends",
+      "observed": "HydroRIVERS centreline bends remain angular at tactical zoom and are symbolic widths rather than historical bank surveys.",
+      "status": "open"
+    }
+  ],
+  "geography_must_not_be_invented_to_resolve_visuals": true
+}

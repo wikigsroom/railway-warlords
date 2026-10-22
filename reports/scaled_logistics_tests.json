@@ -5,11 +5,19 @@
 			"passed": true
 		},
 		{
+			"name": "archive_has_exactly_two_port_anchor_reads",
+			"passed": true
+		},
+		{
+			"name": "reference_only_adapts_two_explicit_port_anchors",
+			"passed": true
+		},
+		{
 			"name": "conq_1924_intact_every_supply_distance_matches_archived_dijkstra",
 			"passed": true
 		},
 		{
-			"name": "conq_1924_intact_naval_port_components_match_archived_rules",
+			"name": "conq_1924_intact_naval_components_match_declared_bank_anchor_reference",
 			"passed": true
 		},
 		{
@@ -21,7 +29,7 @@
 			"passed": true
 		},
 		{
-			"name": "conq_1924_blocked_naval_port_components_match_archived_rules",
+			"name": "conq_1924_blocked_naval_components_match_declared_bank_anchor_reference",
 			"passed": true
 		},
 		{
@@ -33,7 +41,7 @@
 			"passed": true
 		},
 		{
-			"name": "campaign_1924_02_intact_naval_port_components_match_archived_rules",
+			"name": "campaign_1924_02_intact_naval_components_match_declared_bank_anchor_reference",
 			"passed": true
 		},
 		{
@@ -45,7 +53,7 @@
 			"passed": true
 		},
 		{
-			"name": "campaign_1924_02_blocked_naval_port_components_match_archived_rules",
+			"name": "campaign_1924_02_blocked_naval_components_match_declared_bank_anchor_reference",
 			"passed": true
 		},
 		{
@@ -57,7 +65,7 @@
 			"passed": true
 		},
 		{
-			"name": "legion_07_intact_naval_port_components_match_archived_rules",
+			"name": "legion_07_intact_naval_components_match_declared_bank_anchor_reference",
 			"passed": true
 		},
 		{
@@ -69,7 +77,7 @@
 			"passed": true
 		},
 		{
-			"name": "legion_07_blocked_naval_port_components_match_archived_rules",
+			"name": "legion_07_blocked_naval_components_match_declared_bank_anchor_reference",
 			"passed": true
 		},
 		{
@@ -81,7 +89,7 @@
 			"passed": true
 		},
 		{
-			"name": "legion_08_intact_naval_port_components_match_archived_rules",
+			"name": "legion_08_intact_naval_components_match_declared_bank_anchor_reference",
 			"passed": true
 		},
 		{
@@ -93,7 +101,7 @@
 			"passed": true
 		},
 		{
-			"name": "legion_08_blocked_naval_port_components_match_archived_rules",
+			"name": "legion_08_blocked_naval_components_match_declared_bank_anchor_reference",
 			"passed": true
 		},
 		{
@@ -101,76 +109,77 @@
 			"passed": true
 		}
 	],
-	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
 	"failures": [],
-	"game_version": "0.2.29",
+	"game_version": "0.2.34",
 	"measurements": [
 		{
-			"archived_search_ms": 8010.011,
+			"archived_search_ms": 5460.079,
 			"cells": 74762,
-			"current_search_ms": 743.343,
+			"current_search_ms": 697.597,
 			"mode": "intact",
 			"reachable_cells": 4103,
 			"scenario": "conq_1924"
 		},
 		{
-			"archived_search_ms": 7388.447,
+			"archived_search_ms": 5833.084,
 			"cells": 74762,
-			"current_search_ms": 890.141,
+			"current_search_ms": 531.561,
 			"mode": "blocked",
 			"reachable_cells": 4103,
 			"scenario": "conq_1924"
 		},
 		{
-			"archived_search_ms": 6585.392,
+			"archived_search_ms": 3153.768,
 			"cells": 65726,
-			"current_search_ms": 553.357,
+			"current_search_ms": 401.938,
 			"mode": "intact",
 			"reachable_cells": 3162,
 			"scenario": "campaign_1924_02"
 		},
 		{
-			"archived_search_ms": 3008.579,
+			"archived_search_ms": 2058.826,
 			"cells": 65726,
-			"current_search_ms": 431.975,
+			"current_search_ms": 372.179,
 			"mode": "blocked",
 			"reachable_cells": 2670,
 			"scenario": "campaign_1924_02"
 		},
 		{
-			"archived_search_ms": 12.033,
-			"cells": 400,
-			"current_search_ms": 12.877,
+			"archived_search_ms": 19.232,
+			"cells": 8836,
+			"current_search_ms": 21.222,
 			"mode": "intact",
-			"reachable_cells": 47,
+			"reachable_cells": 144,
 			"scenario": "legion_07"
 		},
 		{
-			"archived_search_ms": 0.314,
-			"cells": 400,
-			"current_search_ms": 0.192,
+			"archived_search_ms": 5.997,
+			"cells": 8836,
+			"current_search_ms": 6.05,
 			"mode": "blocked",
-			"reachable_cells": 1,
+			"reachable_cells": 57,
 			"scenario": "legion_07"
 		},
 		{
-			"archived_search_ms": 12.143,
-			"cells": 440,
-			"current_search_ms": 12.313,
+			"archived_search_ms": 12.085,
+			"cells": 9588,
+			"current_search_ms": 11.359,
 			"mode": "intact",
-			"reachable_cells": 63,
+			"reachable_cells": 95,
 			"scenario": "legion_08"
 		},
 		{
-			"archived_search_ms": 3.955,
-			"cells": 440,
-			"current_search_ms": 9.887,
+			"archived_search_ms": 0.169,
+			"cells": 9588,
+			"current_search_ms": 0.099,
 			"mode": "blocked",
-			"reachable_cells": 20,
+			"reachable_cells": 1,
 			"scenario": "legion_08"
 		}
 	],
+	"original_reference_unchanged": true,
 	"passed": true,
 	"physical_android_device_tested": false,
-	"reference_version": "0.2.2"
+	"reference_version": "0.2.2_Dijkstra_with_two_explicit_port_anchor_adaptations"
 }

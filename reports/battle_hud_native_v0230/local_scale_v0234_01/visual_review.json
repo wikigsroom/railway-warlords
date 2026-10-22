@@ -1,0 +1,64 @@
+{
+  "reviewed_at_utc": "2026-10-21T23:09:20.282034+00:00",
+  "runtime_source_sha256": "f981c8e62a190573c6c6e959b9bc6de31bdfd7f13d72f09d767eb2596d7e9220",
+  "actually_viewed_complete_images": [
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_01/1920x1080_100_mouse/objectives.png",
+      "sha256": "21ac7d4b88f5167c3339b3e74553f35799f78bdbc44daec64998218ad10a5b9e",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_01/1920x1080_100_mouse/ningpu_objective.png",
+      "sha256": "a979cc372d040ee57dcc24746939c7e181c861838b735cc40ed7806acc9c91f5",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_01/1920x1080_100_mouse/ningpu_bank_selection.png",
+      "sha256": "28b7486e000ab51a3bc44cef20287fa09b964f5bd60eabd539b72871037ec072",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_01/2400x1080_120_touch/objectives.png",
+      "sha256": "563a3740309fa1bae9ea88a86b522650db587853f3642e86b81d180c58afcf93",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_01/2400x1080_120_touch/ningpu_objective.png",
+      "sha256": "83fbae2a72e37fb702fa5200461a1293ee0619b789ac862bb2d7dd49b78b53fc",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_01/2400x1080_120_touch/ningpu_bank_selection.png",
+      "sha256": "11c7b10a3d3983cbb7028a7ad36418c30520ad89ba52ce40857a5c46bf931c78",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_01/1280x720_150_mouse/objectives.png",
+      "sha256": "6ccb9a983034aba5b8f0d7267ef0af33ec3d4d389d1a36b798fd30c1a5200e31",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_01/1280x720_150_mouse/ningpu_objective.png",
+      "sha256": "9cff983795ba98da87f3c53a8f8c488633ded226cd0749f04fbee62ebf050e04",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_01/1280x720_150_mouse/ningpu_bank_selection.png",
+      "sha256": "1cf4db1155f96072da8b6dc710b90a8e7989ab85d484aaa208511df371915321",
+      "whole_original_viewed": true
+    }
+  ],
+  "generated_captures": 30,
+  "actually_viewed_files": 9,
+  "mode": "development_engine_viewport_input_before_diagnostic_source_fix",
+  "findings": [
+    "All three layouts show the Hanyang/Nanjing bank objective names.",
+    "Bank selection shows the owning Nanjing city and its actual recruitment/building controls.",
+    "Large-text Wuhan has the Wuchang city caption partly obscured by the scale legend; this remains a visual layout defect.",
+    "River angularity, repetitive ground and simplified settlement art remain visible."
+  ],
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "final_runtime_identity": false
+}

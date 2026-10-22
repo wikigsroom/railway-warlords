@@ -1,0 +1,196 @@
+{
+  "passed": true,
+  "scope": "All thirty actual dependency closures equal the independently completed original 0.2.34 seal; actual dependency bytes are rehashed by the archive gate.",
+  "runtime_source_sha256": "525065c3f4d2756a387dbbca12e02f5d6a24917028e3e919109b13fc1afebafa",
+  "checks": [
+    {
+      "check": "run_tests",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2704,
+      "paths_sha256": "14a57f5f53a48330b226a57605332ef336e873e2f9d3e7adcd409ae726e3fce6"
+    },
+    {
+      "check": "acceptance_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2704,
+      "paths_sha256": "6a7ca866a9dcc86045faaab7b3f93f29c0957e4a861e20f4c7b516b303367a83"
+    },
+    {
+      "check": "input_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2768,
+      "paths_sha256": "4f69706d28e6cbc194ad56640beacd17cddd30ca795737f0f371e74ba377484c"
+    },
+    {
+      "check": "geography_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2702,
+      "paths_sha256": "33f02f629faec2a27763132d62ccdd10213ee68572352a6527ceba7012679731"
+    },
+    {
+      "check": "progression_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2704,
+      "paths_sha256": "11fabae389c1ab6e707b33ae6cf1c0da2c977f11cfd821337c72855b44616ff4"
+    },
+    {
+      "check": "transaction_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2703,
+      "paths_sha256": "3d9633e35d22af8cac9800921adf5c33609d1112e86ec5e20e2f5f2574ab3d16"
+    },
+    {
+      "check": "strategic_history_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2701,
+      "paths_sha256": "8b510dc246bc5644a0f52a790c3815fc03a3dab8613c5986fbdd1142ca250d20"
+    },
+    {
+      "check": "atlas_render_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2768,
+      "paths_sha256": "5a439f4767bbae4e23ea5b43f81cee9efed61f6a8c9a5e167009b0fa6ecaff96"
+    },
+    {
+      "check": "combat_presentation_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2734,
+      "paths_sha256": "dc22edac5c807cdd05089140feb046b9b2e65b19e4cd50b8c2b493459ae0af10"
+    },
+    {
+      "check": "automation_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2712,
+      "paths_sha256": "e23523d613e901a714f792b5349dbd3376aa8e2e5096e0ab7ce7eb835303d74d"
+    },
+    {
+      "check": "rules_worker_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2713,
+      "paths_sha256": "29acdfef73ef29fbddc949359c6639cad7f07e2f009139240e6d9ba31e1e74df"
+    },
+    {
+      "check": "map_scale_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2704,
+      "paths_sha256": "1a515f31a049e55db882a1de8991afff9b127dc87d71a25e252ee3242413674a"
+    },
+    {
+      "check": "scaled_logistics_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2702,
+      "paths_sha256": "27e6cf6929cf90993ea02bc89454ce6a59b1f845a559e3913d7cbbae1ce1496f"
+    },
+    {
+      "check": "movement_cache_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2701,
+      "paths_sha256": "de2e8d16db5afb02973658e2d00761d8052415c62cae5f0b5cdef57e802aaea6"
+    },
+    {
+      "check": "historical_places_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2768,
+      "paths_sha256": "bbc2b70f05bc2347daea76e8f256b333633235643e4ca6c4bbe3805d85e8cfd6"
+    },
+    {
+      "check": "snapshot_optimization_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2708,
+      "paths_sha256": "ec67fb9b9ced17026d4b7b50a514562f5c1fea57a175bb01661fadd4fcf6b889"
+    },
+    {
+      "check": "asia_content_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2701,
+      "paths_sha256": "c6b9dfcfa90adeeb1e209433d90f7c51ccaf089b148d7f2defbfce844631ccdf"
+    },
+    {
+      "check": "map_detail_boundary_motion_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2729,
+      "paths_sha256": "e9d0b88d8792c4c076bc49178956398ddb2dbe70354c07ee6db19f9d22a826d9"
+    },
+    {
+      "check": "facing_memory_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2734,
+      "paths_sha256": "d74a6610ec6d4f6ba56fb2da08bde67124e859ed2fd0765cf7ada0152de39081"
+    },
+    {
+      "check": "relief_surface_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2729,
+      "paths_sha256": "05413bd13086afa78a5126598b8e244315c8d6d793aecb6378744dbe0efe6589"
+    },
+    {
+      "check": "map_bank_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2729,
+      "paths_sha256": "5d43b4a15cd75d9736c0317a782e90e5f7790f21a3990dd2071e3848478fac3d"
+    },
+    {
+      "check": "surface_geography_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2729,
+      "paths_sha256": "f42bc1ee58a710b0d306858f49513e4fadc37e5195cacdf519139114ca7b29ee"
+    },
+    {
+      "check": "terrain_surfaces_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2729,
+      "paths_sha256": "47b1aa3d4db9bec4afa5e951c7eaa6d45a27673a39532aa479198fdb1c2debe5"
+    },
+    {
+      "check": "map_material_continuity_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2729,
+      "paths_sha256": "224ec14ec9d5da8ec396553a7813bbbe667639dc61984fa03c319fee94e11481"
+    },
+    {
+      "check": "river_surface_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2729,
+      "paths_sha256": "f18bc53ad046b45c9daf1369dd3c26796d87853f1b03ac511abbe7f427059507"
+    },
+    {
+      "check": "control_land_clip_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2729,
+      "paths_sha256": "546c919765d31a8b7d4d73f13705b26d93d8e67f7d331c86c8180b5f6199e4e0"
+    },
+    {
+      "check": "ground_coverage_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2729,
+      "paths_sha256": "e06a22c1ffa46014c3ac942257bcd9193801d1f419412f0b9765ec43e99205ae"
+    },
+    {
+      "check": "general_portraits_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2685,
+      "paths_sha256": "f6b02ac4bea903fe9d56568928a84ca478f000dd3b920b8cc0862e91ae6d5f12"
+    },
+    {
+      "check": "calendar_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2701,
+      "paths_sha256": "6d94e31e14fc45919021eb7e3f9747eec354bf693e0feee872931be94b4fc3c2"
+    },
+    {
+      "check": "commander_roster_test",
+      "same_legacy_dependency_paths": true,
+      "dependency_count": 2701,
+      "paths_sha256": "f5a5594acf07a4eb0109038b8edddc91c601851333aeb00c4cbbf010e48543f0"
+    }
+  ],
+  "elapsed_seconds": 389.9741309000019,
+  "original_tool_sha256": "4487ad4a22ccce5448f23ba118941aaf6a515174e5d2c7deee20d5f8b12b5b1c",
+  "current_tool_sha256": "5245571daeeedd80e7130e6e580d6943efb7f1c5fa59126fdb3e7d9c2acd8828",
+  "excluded_directories_unchanged": [
+    ".godot",
+    "build"
+  ],
+  "duplicate_class_precedence_preserved": true,
+  "actual_byte_hash_and_dependency_resolution_functions_unchanged": true
+}

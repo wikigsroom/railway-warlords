@@ -141,7 +141,7 @@ static func create(content: ContentRegistry, scenario_id: String, player_id: Str
 			for i in range(player_count):player_deployment.append({"def_id":definitions[i%definitions.size()],"stack":1,"elite_id":null})
 		for formation in player_deployment:
 			var deployed={}
-			if content.definition("units",formation.def_id).movement_profile in ["river","water","sea"]:deployed=deploy_water(s,target.position,player_id,formation.def_id,content,10,int(formation.stack),formation.elite_id)
+			if content.definition("units",formation.def_id).movement_profile in ["river","water","sea"]:deployed=deploy_water(s,HarborRules.water_position(target),player_id,formation.def_id,content,10,int(formation.stack),formation.elite_id)
 			else:deployed=deploy(s,HexGrid.position(friend_hex),player_id,formation.def_id,content,4,int(formation.stack),formation.elite_id)
 			if recipe.mode=="legion" and deployed.is_empty():return {}
 		var other_sides:Array=recipe.get("starting_formations_by_faction",{}).keys() if recipe.has("starting_formations_by_faction") else [s.turn_order[1]]
@@ -223,25 +223,27 @@ static func create(content: ContentRegistry, scenario_id: String, player_id: Str
 				target.owner_id=player_id
 				clear_hostile_garrison(s,target,enemy_hex,content)
 				# River training uses actual navigable water cells and controlled harbors on the two banks.
-				for i in range(2):deploy_water(s,target.position,s.turn_order[1],"river_gunboat",content,8)
+				var target_shore=HarborRules.land_hex(target)
+				for i in range(2):deploy_water(s,HarborRules.water_position(target),s.turn_order[1],"river_gunboat",content,8)
 				if focus=="navy":
 					var boats=s.units.filter(func(v):return v.owner_id==player_id and v.def_id=="river_gunboat")
 					if not boats.is_empty():
 						var boat=boats[0];StateAccess.remove_by_id(s,"units",boat.id)
-						var far=s.map.cells.filter(func(c):return c.terrain_id=="river" and HexGrid.distance(HexGrid.coordinate(c.position),HexGrid.coordinate(target.position))>=6 and HexGrid.distance(HexGrid.coordinate(c.position),HexGrid.coordinate(target.position))<=8 and StateAccess.at(s,"units",HexGrid.coordinate(c.position)).is_empty())
+						var far=s.map.cells.filter(func(c):return c.terrain_id=="river" and c.region_id!="restricted" and HexGrid.distance(HexGrid.coordinate(c.position),target_shore)>=6 and HexGrid.distance(HexGrid.coordinate(c.position),target_shore)<=8 and StateAccess.at(s,"units",HexGrid.coordinate(c.position)).is_empty())
 						if not far.is_empty():boat.position=far[0].position.duplicate()
 						s.units.append(boat);StateAccess.invalidate_occupancy()
-						s.objectives=[{"id":"river_escort","type":"escort","target_ids":[boat.id],"destination":target.position.duplicate(),"required":1,"progress":0,"protected":true}]
+						s.objectives=[{"id":"river_escort","type":"escort","target_ids":[boat.id],"destination":HexGrid.position(target_shore),"destination_city_id":target.id,"required":1,"progress":0,"protected":true}]
 				else:
 					var transports=s.units.filter(func(v):return v.owner_id==player_id and v.def_id=="transport_ship")
 					var infantry=s.units.filter(func(v):return v.owner_id==player_id and content.definition("units",v.def_id).can_occupy)
 					if not transports.is_empty() and not infantry.is_empty() and not base_city.is_empty():
 						var ship=transports[0];var passenger=infantry[0]
-						var waters=s.map.cells.filter(func(c):return c.terrain_id=="river" and HexGrid.distance(HexGrid.coordinate(c.position),HexGrid.coordinate(base_city.position))<=5 and HexGrid.distance(HexGrid.coordinate(c.position),HexGrid.coordinate(target.position))>=4 and StateAccess.at(s,"units",HexGrid.coordinate(c.position)).is_empty())
-						waters.sort_custom(func(a,b):return HexGrid.distance(HexGrid.coordinate(a.position),HexGrid.coordinate(base_city.position))<HexGrid.distance(HexGrid.coordinate(b.position),HexGrid.coordinate(base_city.position)))
+						var base_shore=HarborRules.land_hex(base_city)
+						var waters=s.map.cells.filter(func(c):return c.terrain_id=="river" and c.region_id!="restricted" and HexGrid.distance(HexGrid.coordinate(c.position),base_shore)<=5 and HexGrid.distance(HexGrid.coordinate(c.position),target_shore)>=4 and StateAccess.at(s,"units",HexGrid.coordinate(c.position)).is_empty())
+						waters.sort_custom(func(a,b):return HexGrid.distance(HexGrid.coordinate(a.position),base_shore)<HexGrid.distance(HexGrid.coordinate(b.position),base_shore))
 						if not waters.is_empty():ship.position=waters[0].position.duplicate()
 						passenger.cargo_parent_id=ship.id;passenger.position=null;passenger.cargo_actions_ready=true
-						s.objectives=[{"id":"river_landing","type":"disembark","target_ids":[passenger.id],"destination":target.position.duplicate(),"required":1,"progress":0,"protected":true}]
+						s.objectives=[{"id":"river_landing","type":"disembark","target_ids":[passenger.id],"destination":HexGrid.position(target_shore),"destination_city_id":target.id,"required":1,"progress":0,"protected":true}]
 				StateAccess.invalidate_occupancy()
 	var deployment_recipe=content.scenarios.get(str(recipe.get("scenario_reference","conq_1924")),{}) if recipe.mode=="legion" else recipe
 	var commander_index=CommanderRoster.deployment_index(content,deployment_recipe) if not deployment_recipe.is_empty() else {}

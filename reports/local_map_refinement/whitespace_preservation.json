@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-22T01:01:00.126837+00:00",
+  "plain_full_staged_check_exit_code": 1,
+  "plain_full_staged_check_only_diagnostic": "tests/fixtures/logistics_reference_v0234_ports.gd:116: new blank line at EOF.",
+  "explanation": "The new independent port adapter preserves the old reference source including its existing EOF bytes. Native scaled-logistics checks already assert exactly two anchor substitutions. Git copy detection recognizes this file as a 95% copy; the unchanged EOF is not an introduced line in that copy diff.",
+  "copy_aware_fixture_check_exit_code": 0,
+  "copy_detection_summary": "copy tests/fixtures/{logistics_reference_v022.gd => logistics_reference_v0234_ports.gd} (95%)",
+  "whitespace_options_unchanged": [
+    "blank-at-eol",
+    "blank-at-eof",
+    "space-before-tab",
+    "cr-at-eol"
+  ],
+  "checks_disabled": false,
+  "fixture_modified_to_silence_warning": false,
+  "original_sha256": "166cac5d3bdd9afef08e2f97c868dae051d52c4fa1005eefdf1437efcdc916a0",
+  "adapter_sha256": "cff142f4226b5df954060f945674124d18166303717963acb845daa78275811b",
+  "original_eof_bytes_preserved": true,
+  "preexisting_untracked_v0230_directory_staged": false
+}

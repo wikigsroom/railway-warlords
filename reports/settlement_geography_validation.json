@@ -1,0 +1,970 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "current_presentation_matches_compilation",
+      "passed": true
+    },
+    {
+      "name": "official_point_dump_has_not_changed",
+      "passed": true
+    },
+    {
+      "name": "unique_67_place_records",
+      "passed": true
+    },
+    {
+      "name": "67_new_places_have_documented_rank_counts",
+      "passed": true
+    },
+    {
+      "name": "place_funing_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_funing_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_changli_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_changli_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_lulong_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_lulong_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_qianan_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_qianan_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_zunhua_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_zunhua_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_fengrun_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_fengrun_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_yutian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_yutian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_leting_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_leting_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_baodi_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_baodi_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_jixian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_jixian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_jinghai_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_jinghai_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_qingxian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_qingxian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_cangxian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_cangxian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_xianghe_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_xianghe_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_tongxian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_tongxian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_shunyi_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_shunyi_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_miyun_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_miyun_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_huairou_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_huairou_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_changping_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_changping_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_fangshan_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_fangshan_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_liangxiang_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_liangxiang_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_pinggu_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_pinggu_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_sanhe_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_sanhe_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_yongqing_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_yongqing_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_sui_zhong_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_sui_zhong_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_xingcheng_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_xingcheng_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_liaoyang_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_liaoyang_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_haicheng_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_haicheng_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_xinmin_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_xinmin_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_zhengding_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_zhengding_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_dingxian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_dingxian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_hejian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_hejian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_pingyao_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_pingyao_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_datong_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_datong_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_linfen_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_linfen_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_jining_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_jining_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_taian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_taian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_weixian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_weixian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_linyi_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_linyi_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_anyang_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_anyang_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_hefei_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_hefei_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_yangzhou_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_yangzhou_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_changshu_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_changshu_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_jiaxing_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_jiaxing_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_shaoxing_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_shaoxing_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_huangpi_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_huangpi_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_xiaogan_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_xiaogan_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_qishui_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_qishui_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_suzhou_anhui_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_suzhou_anhui_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_huaiyuan_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_huaiyuan_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_chuxian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_chuxian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_hexian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_hexian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_jiangpu_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_jiangpu_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_liuhe_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_liuhe_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_zhaoqing_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_zhaoqing_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_qujing_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_qujing_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_beiyingzi_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_beiyingzi_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_cuandixia_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_cuandixia_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_lingshui_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_lingshui_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_sanjiadian_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_sanjiadian_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_liuliqu_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_liuliqu_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_chadao_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_chadao_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_banchangyu_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_banchangyu_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_dongjiakou_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_dongjiakou_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_chengziyu_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_chengziyu_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_anqing_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_anqing_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "place_kaifeng_primary_historical_rank_source",
+      "passed": true
+    },
+    {
+      "name": "place_kaifeng_real_populated_point_or_explicit_coarse_village",
+      "passed": true
+    },
+    {
+      "name": "1914_jingzhao_membership_and_no_1928_province_anachronism",
+      "passed": true
+    },
+    {
+      "name": "period_county_names_are_preserved",
+      "passed": true
+    },
+    {
+      "name": "historical_province_capitals_do_not_use_modern_seats",
+      "passed": true
+    },
+    {
+      "name": "unverified_old_seat_coordinates_are_explicitly_omitted",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_settlement_input_lineage_recorded",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_current_coastal_control_geometry_identity",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_marker_world_points_match_real_projection_without_label_jitter",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_same_origin_as_existing_historical_cities",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_1920_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_1920_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_1920_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_1922_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_1922_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_1922_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_1924_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_1924_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "conquest_china_1924_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "hankou_settlement_input_lineage_recorded",
+      "passed": true
+    },
+    {
+      "name": "hankou_current_local_control_geometry_identity",
+      "passed": true
+    },
+    {
+      "name": "hankou_marker_world_points_match_real_projection_without_label_jitter",
+      "passed": true
+    },
+    {
+      "name": "hankou_same_origin_as_existing_historical_cities",
+      "passed": true
+    },
+    {
+      "name": "hankou_1920_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "hankou_1920_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "hankou_1920_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "hankou_1922_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "hankou_1922_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "hankou_1922_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "hankou_1924_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "hankou_1924_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "hankou_1924_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_settlement_input_lineage_recorded",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_current_coastal_control_geometry_identity",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_marker_world_points_match_real_projection_without_label_jitter",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_same_origin_as_existing_historical_cities",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_1920_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_1920_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_1920_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_1922_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_1922_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_1922_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_1924_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_1924_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "jingfeng_1924_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "jingjin_settlement_input_lineage_recorded",
+      "passed": true
+    },
+    {
+      "name": "jingjin_current_coastal_control_geometry_identity",
+      "passed": true
+    },
+    {
+      "name": "jingjin_marker_world_points_match_real_projection_without_label_jitter",
+      "passed": true
+    },
+    {
+      "name": "jingjin_same_origin_as_existing_historical_cities",
+      "passed": true
+    },
+    {
+      "name": "jingjin_1920_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "jingjin_1920_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "jingjin_1920_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "jingjin_1922_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "jingjin_1922_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "jingjin_1922_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "jingjin_1924_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "jingjin_1924_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "jingjin_1924_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "ningpu_settlement_input_lineage_recorded",
+      "passed": true
+    },
+    {
+      "name": "ningpu_current_local_control_geometry_identity",
+      "passed": true
+    },
+    {
+      "name": "ningpu_marker_world_points_match_real_projection_without_label_jitter",
+      "passed": true
+    },
+    {
+      "name": "ningpu_same_origin_as_existing_historical_cities",
+      "passed": true
+    },
+    {
+      "name": "ningpu_1920_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "ningpu_1920_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "ningpu_1920_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "ningpu_1922_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "ningpu_1922_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "ningpu_1922_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    },
+    {
+      "name": "ningpu_1924_all_control_triangles_stay_inside_real_province_and_land",
+      "passed": true
+    },
+    {
+      "name": "ningpu_1924_triangle_fill_preserves_zone_area",
+      "passed": true
+    },
+    {
+      "name": "ningpu_1924_control_zones_cover_source_provinces_without_circular_islands",
+      "passed": true
+    }
+  ],
+  "failed": [],
+  "maps": [
+    {
+      "map": "conquest_china",
+      "additional_markers": 67,
+      "years": {
+        "1920": {
+          "zones": 55,
+          "triangles": 25342,
+          "outside_source": 0,
+          "max_relative_fill_error": 1.3894319337283792e-06
+        },
+        "1922": {
+          "zones": 55,
+          "triangles": 25342,
+          "outside_source": 0,
+          "max_relative_fill_error": 1.3894319337283792e-06
+        },
+        "1924": {
+          "zones": 55,
+          "triangles": 25342,
+          "outside_source": 0,
+          "max_relative_fill_error": 1.3894319337283792e-06
+        }
+      },
+      "current_map_sha256": "37458183fffe2515b1e0ae5110554a527735c207e44130ce13a7d8da64a0a510",
+      "control_geometry_source": "coast_geometry"
+    },
+    {
+      "map": "hankou",
+      "additional_markers": 0,
+      "years": {
+        "1920": {
+          "zones": 3,
+          "triangles": 7,
+          "outside_source": 0,
+          "max_relative_fill_error": 3.057426044917239e-08
+        },
+        "1922": {
+          "zones": 3,
+          "triangles": 7,
+          "outside_source": 0,
+          "max_relative_fill_error": 3.057426044917239e-08
+        },
+        "1924": {
+          "zones": 3,
+          "triangles": 7,
+          "outside_source": 0,
+          "max_relative_fill_error": 3.057426044917239e-08
+        }
+      },
+      "current_map_sha256": "f3d49dc495a0eb48a9013b878bbd07892126f84c329d81600147d3a627aea927",
+      "control_geometry_source": "settlements_v023"
+    },
+    {
+      "map": "jingfeng",
+      "additional_markers": 32,
+      "years": {
+        "1920": {
+          "zones": 15,
+          "triangles": 7027,
+          "outside_source": 0,
+          "max_relative_fill_error": 5.554744365617728e-07
+        },
+        "1922": {
+          "zones": 15,
+          "triangles": 7027,
+          "outside_source": 0,
+          "max_relative_fill_error": 5.554744365617728e-07
+        },
+        "1924": {
+          "zones": 15,
+          "triangles": 7027,
+          "outside_source": 0,
+          "max_relative_fill_error": 5.554744365617728e-07
+        }
+      },
+      "current_map_sha256": "f5fc64bc3e45643fc9b325e1e574a5534cc7c6660880a1e546fc9b68a0ad5c8f",
+      "control_geometry_source": "coast_geometry"
+    },
+    {
+      "map": "jingjin",
+      "additional_markers": 23,
+      "years": {
+        "1920": {
+          "zones": 11,
+          "triangles": 622,
+          "outside_source": 0,
+          "max_relative_fill_error": 5.359959209204394e-08
+        },
+        "1922": {
+          "zones": 11,
+          "triangles": 622,
+          "outside_source": 0,
+          "max_relative_fill_error": 5.359959209204394e-08
+        },
+        "1924": {
+          "zones": 11,
+          "triangles": 622,
+          "outside_source": 0,
+          "max_relative_fill_error": 5.359959209204394e-08
+        }
+      },
+      "current_map_sha256": "7a18d0e7d579c50bae1d1f3162d0e78df55e71adbaa26acf1763bb2dc6b51434",
+      "control_geometry_source": "coast_geometry"
+    },
+    {
+      "map": "ningpu",
+      "additional_markers": 1,
+      "years": {
+        "1920": {
+          "zones": 2,
+          "triangles": 5,
+          "outside_source": 0,
+          "max_relative_fill_error": 2.200687963527256e-08
+        },
+        "1922": {
+          "zones": 2,
+          "triangles": 5,
+          "outside_source": 0,
+          "max_relative_fill_error": 2.200687963527256e-08
+        },
+        "1924": {
+          "zones": 2,
+          "triangles": 5,
+          "outside_source": 0,
+          "max_relative_fill_error": 2.200687963527256e-08
+        }
+      },
+      "current_map_sha256": "abf2ba75da45d2cce5597f7c1e297eb67dd168c1ffd947220a019cc57e35e3dc",
+      "control_geometry_source": "settlements_v023"
+    }
+  ],
+  "presentation_data_sha256": "a99f5dfeb0443f2129a4477dcca6db1df3dae5dd78a75bc83bcbaeaef5159737",
+  "gazetteer_sha256": "10b1e064ddce0f2fcc46f1e81faf941ed17d7eb438ac91f62b7259cc236111a6",
+  "raster_editing": false,
+  "historic_county_or_military_boundaries_claimed": false
+}

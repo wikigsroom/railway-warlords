@@ -34,7 +34,7 @@ def main():
     scenarios=read(P/'content/scenarios/catalog.json')['scenarios']
     for n,m in maps.items():
         cells={c['id'] for c in m['cells']};positions={(c['position']['q'],c['position']['r']) for c in m['cells']}
-        limit=98304 if m.get('scale_revision')=='geographic_linear_5x_v023' else (9000 if n=='asia_strategic' else 4096)
+        limit=98304 if m.get('scale_revision')=='geographic_linear_5x_v023' else (12000 if m.get('scale_revision')=='local_geographic_linear_5x_v0234' and n in ['hankou','ningpu'] else (9000 if n=='asia_strategic' else 4096))
         if len(cells)!=len(m['cells']) or len(m['cells'])>limit:errors.append('map_count:'+n)
         for cell in m['cells']:
             if cell['terrain_id'] not in terrain_ids:errors.append('terrain_fk:'+n)

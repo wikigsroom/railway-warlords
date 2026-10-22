@@ -34,10 +34,10 @@ static func recruit(state: Dictionary, city: Dictionary, command: Dictionary, co
 	events.append({"type":"RecruitQueued","city_id":city.id,"def_id":command.def_id})
 
 static func deployment_hex(state: Dictionary, city: Dictionary, queued: Dictionary, content: ContentRegistry) -> Variant:
-	var origin=HexGrid.coordinate(city.position)
+	var d=content.definition("units",queued.target_def_id)
+	var origin=HarborRules.land_hex(city) if d.movement_profile in ["river","water","sea"] else HexGrid.coordinate(city.position)
 	var positions: Array=[HexGrid.coordinate(queued.deploy_hex),origin]
 	for dir in HexGrid.DIRECTIONS:positions.append(origin+dir)
-	var d=content.definition("units",queued.target_def_id)
 	for h in positions:
 		if HexGrid.distance(origin,h)>1:continue
 		var cell=StateAccess.cell(state,h)

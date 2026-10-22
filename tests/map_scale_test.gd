@@ -39,7 +39,7 @@ func run() -> void:
 				var hex=HexGrid.coordinate(edge.path_hexes[i]);rail_ok=rail_ok and coordinates.has(HexGrid.key(hex))
 				if i>0:rail_ok=rail_ok and HexGrid.distance(hex,HexGrid.coordinate(edge.path_hexes[i-1]))==1
 		verify(rail_ok,old.id+"_regenerated_rail_routes_follow_adjacent_actual_cells")
-	verify(content.maps.hankou.hex_radius_m==1250 and content.maps.ningpu.hex_radius_m==1250,"local_legion_maps_keep_their_existing_scale")
+	verify(content.maps.hankou.hex_radius_m==250 and content.maps.ningpu.hex_radius_m==250,"local_legion_maps_receive_the_same_fivefold_geographic_refinement")
 	var step=HexGrid.to_world(Vector2i(1,0)).length()
 	verify(absf(step-sqrt(3.0)*48)<.001,"screen_hex_spacing_unchanged_at_the_same_camera_zoom")
 	for scenario in ["conq_1920","conq_1922","conq_1924"]:

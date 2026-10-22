@@ -1,0 +1,39 @@
+{
+  "reviewed_at_utc": "2026-10-22T00:39:08.967190+00:00",
+  "runtime_source_sha256": "525065c3f4d2756a387dbbca12e02f5d6a24917028e3e919109b13fc1afebafa",
+  "actually_viewed_complete_images": [
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/objectives.png",
+      "sha256": "21ac7d4b88f5167c3339b3e74553f35799f78bdbc44daec64998218ad10a5b9e",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/ningpu_objective.png",
+      "sha256": "a979cc372d040ee57dcc24746939c7e181c861838b735cc40ed7806acc9c91f5",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/ningpu_bank_selection.png",
+      "sha256": "28b7486e000ab51a3bc44cef20287fa09b964f5bd60eabd539b72871037ec072",
+      "whole_original_viewed": true
+    },
+    {
+      "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/objectives.png",
+      "sha256": "6ccb9a983034aba5b8f0d7267ef0af33ec3d4d389d1a36b798fd30c1a5200e31",
+      "whole_original_viewed": true
+    }
+  ],
+  "generated_captures": 30,
+  "actually_viewed_files": 4,
+  "mode": "final_source_development_engine_viewport_input",
+  "findings": [
+    "Actual Hanyang and Nanjing bank objective captions are readable.",
+    "Selecting the bank resolves to the inland Nanjing city and displays recruitment/building commands.",
+    "Source-diagnostic fix changes no pixels in these three views; final files were individually opened in full.",
+    "The previous three-layout review retains its own source identity and known large-text scale-legend overlap.",
+    "The final-source 1280x720 large-text objectives overview was opened in full: the Wuchang provincial-capital caption is partly obscured by the scale legend. This is an open visual defect."
+  ],
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false
+}

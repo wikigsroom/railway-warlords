@@ -1,6 +1,14 @@
 {
-	"build_version": "0.2.32",
+	"build_version": "0.2.34",
 	"checks": [
+		{
+			"name": "new_dem_provider_is_not_inferred_from_old_land_boundary_source",
+			"passed": true
+		},
+		{
+			"name": "mixed_explicit_elevation_sources_are_reported_in_stable_order",
+			"passed": true
+		},
 		{
 			"name": "physical_slope_matches_independent_analytic_plane_in_metres",
 			"passed": true

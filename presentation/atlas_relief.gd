@@ -58,7 +58,7 @@ func build(map: Dictionary, land_shapes: Array, river_lines: Array, minor_river_
 	var indexed=Time.get_ticks_usec()
 	var vertices=PackedVector3Array();var colors=PackedColorArray();var uvs=PackedVector2Array();var seen: Dictionary={};var shades: Dictionary={}
 	for cell in map.cells:
-		if not sampled_land(cell) or (surveyed_grid and not cell.get("render_land_covered",false)):continue
+		if cell.has("elevation_quality") or not sampled_land(cell) or (surveyed_grid and not cell.get("render_land_covered",false)):continue
 		# Surveyed cell coverage and the clipped presentation coastline have
 		# different extents. Check the actual drawn polygon before adding relief.
 		if strategic_scale:
@@ -145,7 +145,7 @@ func build(map: Dictionary, land_shapes: Array, river_lines: Array, minor_river_
 		feature_buckets[bucket].append(index)
 		var local_rect: Rect2=feature.texture_rect
 		maximum_feature_overhang=maxf(maximum_feature_overhang,maxf(local_rect.position.abs().x,maxf(local_rect.position.abs().y,maxf(local_rect.end.abs().x,local_rect.end.abs().y))))
-	diagnostics={"source":(str(map.physical_relief_source) if geographic_gradient else "Natural_Earth_named_relief_corridors_category_shading" if strategic_scale else ("Tilezen_TerrainTiles_geotiff_five_point_samples" if surveyed_grid else "SRTM90m_v3_five_point_samples")),"triangles":vertices.size()/3,"contour_segments":contours.size(),"eligible_features":candidates.size(),"placed_features":features.size(),"preparation_ms":(Time.get_ticks_usec()-started)/1000.0,"index_ms":(indexed-started)/1000.0,"mesh_ms":(shaded-indexed)/1000.0,"placement_ms":(Time.get_ticks_usec()-shaded)/1000.0,"historical_vegetation_claimed":false,"strategic_category_relief":strategic_scale and not geographic_gradient,"geographic_gradient_in_meters":geographic_gradient,"rules_map_mutated":false,"lighting":"continuous_source_height_normals","height_exaggeration_display_only":HEIGHT_EXAGGERATION,"source_meters_per_world_unit":meters_per_world_unit,"crest_axis_from_source_neighbours":true,"generated_continental_contours":false}
+	diagnostics={"source":(str(map.physical_relief_source) if geographic_gradient else "Natural_Earth_named_relief_corridors_category_shading" if strategic_scale else cell_elevation_source(map,surveyed_grid)),"triangles":vertices.size()/3,"contour_segments":contours.size(),"eligible_features":candidates.size(),"placed_features":features.size(),"preparation_ms":(Time.get_ticks_usec()-started)/1000.0,"index_ms":(indexed-started)/1000.0,"mesh_ms":(shaded-indexed)/1000.0,"placement_ms":(Time.get_ticks_usec()-shaded)/1000.0,"historical_vegetation_claimed":false,"strategic_category_relief":strategic_scale and not geographic_gradient,"geographic_gradient_in_meters":geographic_gradient,"rules_map_mutated":false,"lighting":"continuous_source_height_normals","height_exaggeration_display_only":HEIGHT_EXAGGERATION,"source_meters_per_world_unit":meters_per_world_unit,"crest_axis_from_source_neighbours":true,"generated_continental_contours":false}
 	var variants: Dictionary={};var family_counts: Dictionary={}
 	for feature in features:
 		variants[feature.asset_id]=true
@@ -344,3 +344,15 @@ func intersects_paths(rect: Rect2, paths: Array, margin: float) -> bool:
 			for j in range(4):
 				if Geometry2D.segment_intersects_segment(line[i],line[i+1],corners[j],corners[(j+1)%4])!=null:return true
 	return false
+
+# Land/coast provenance is independent of the elevation provider. Read the
+# actual per-cell source tags after a local map has received new DEM samples.
+static func cell_elevation_source(map: Dictionary, surveyed_grid: bool) -> String:
+	var sources: Dictionary={}
+	for cell in map.get("cells",[]):
+		var source=str(cell.get("terrain_source",""))
+		if not source.is_empty():sources[source]=true
+	var names=sources.keys();names.sort()
+	if names.size()==1:return str(names[0])
+	if names.size()>1:return "mixed_declared_cell_sources: "+", ".join(names)
+	return "Tilezen_TerrainTiles_geotiff_five_point_samples" if surveyed_grid else "SRTM90m_v3_five_point_samples"

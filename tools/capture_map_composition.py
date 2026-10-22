@@ -7,6 +7,7 @@ import argparse
 from datetime import datetime, timezone
 import hashlib
 import json
+import math
 from pathlib import Path
 import subprocess
 
@@ -28,6 +29,7 @@ def main():
     parser.add_argument('--development', action='store_true')
     parser.add_argument('--expected-content-hash')
     parser.add_argument('--evidence-root', help='New evidence directory, preserving earlier attempts.')
+    parser.add_argument('--local-refinement', action='store_true', help='Detailed and regional views of the finer Hankou/Ningpu boards, plus the existing regional-map controls.')
     args=parser.parse_args()
     version=current_version()
     driver_sha=sha(__file__)
@@ -55,6 +57,30 @@ def main():
         ('wuhan_x30_layout','legion_07','2400x1080','1.2',['--focus-city','hankou','--capture-zoom','1.05','--mobile-ui-test'],{'hankou','hanyang','wuchang'}),
         ('wuhan_large_text','legion_07','1280x720','1.5',['--focus-city','hankou','--capture-zoom','1.05'],{'hankou','hanyang','wuchang'}),
     ]
+    if args.local_refinement:
+        def centre(mid):
+            data=json.loads((P/'content/maps'/(mid+'.json')).read_text(encoding='utf-8'))
+            points=[(72*c['position']['q'],math.sqrt(3)*48*(c['position']['r']+c['position']['q']*.5)) for c in data['cities']]
+            return ','.join(str((min(p[i] for p in points)+max(p[i] for p in points))*.5) for i in [0,1])
+        ningpu=json.loads((P/'content/maps/ningpu.json').read_text(encoding='utf-8'))
+        banks=[c['harbor_position'] for c in ningpu['cities']]
+        river_focus=','.join(str(sum(72*p['q'] if i==0 else math.sqrt(3)*48*(p['r']+p['q']*.5) for p in banks)/len(banks)) for i in [0,1])
+        # A close view now covers one city. Separate regional views must show
+        # every town/bank; retaining a three-town demand at 1.05 zoom would
+        # contradict the requested fivefold physical scale and fixed hex size.
+        jobs=[
+            ('wuhan','legion_07','1920x1080','1.0',['--focus-city','hankou','--capture-zoom','1.05'],{'hankou','harbor:hankou'}),
+            ('wuchang','legion_07','1920x1080','1.0',['--focus-city','wuchang','--capture-zoom','1.05'],{'wuchang'}),
+            ('hanyang','legion_07','1920x1080','1.0',['--focus-city','hanyang','--capture-zoom','1.05'],{'hanyang','harbor:hanyang'}),
+            ('wuhan_three_towns','legion_07','1920x1080','1.0',['--focus-point',centre('hankou'),'--capture-zoom','.56'],{'hankou','hanyang','wuchang'}),
+            ('wuhan_regional','legion_07','1920x1080','1.0',['--focus-point',centre('hankou'),'--capture-zoom','.32'],{'hankou','wuchang'}),
+            ('ningpu_city','legion_08','1920x1080','1.0',['--focus-city','nanjing','--capture-zoom','1.05'],{'nanjing'}),
+            ('ningpu_river','legion_08','1920x1080','1.0',['--focus-point',river_focus,'--capture-zoom','.8'],{'pukou','harbor:nanjing'}),
+            ('ningpu_regional','legion_08','1920x1080','1.0',['--focus-point',centre('ningpu'),'--capture-zoom','.56'],{'pukou','nanjing'}),
+            ('wuhan_x30_layout','legion_07','2400x1080','1.2',['--focus-city','hankou','--capture-zoom','1.05','--mobile-ui-test'],{'hankou'}),
+            ('wuhan_large_text','legion_07','1280x720','1.5',['--focus-city','hankou','--capture-zoom','1.05'],{'hankou'}),
+            *jobs[1:4],
+        ]
     captures=[];failures=[];checks=[]
     def check(ok, name):
         checks.append(dict(name=name,passed=bool(ok)))

@@ -114,7 +114,7 @@
 			"passed": true
 		},
 		{
-			"name": "local_legion_maps_keep_their_existing_scale",
+			"name": "local_legion_maps_receive_the_same_fivefold_geographic_refinement",
 			"passed": true
 		},
 		{
@@ -258,30 +258,30 @@
 			"passed": true
 		}
 	],
-	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
 	"failures": [],
-	"game_version": "0.2.29",
+	"game_version": "0.2.34",
 	"measurements": [
 		{
 			"cells": 74762,
-			"read_ms": 45.063,
+			"read_ms": 49.455,
 			"save_bytes": 140554,
 			"scenario_id": "conq_1920",
-			"write_ms": 94.881
+			"write_ms": 104.147
 		},
 		{
 			"cells": 74762,
-			"read_ms": 60.042,
-			"save_bytes": 149004,
+			"read_ms": 161.029,
+			"save_bytes": 149003,
 			"scenario_id": "conq_1922",
-			"write_ms": 113.045
+			"write_ms": 209.781
 		},
 		{
 			"cells": 74762,
-			"read_ms": 158.18,
+			"read_ms": 77.943,
 			"save_bytes": 157449,
 			"scenario_id": "conq_1924",
-			"write_ms": 213.993
+			"write_ms": 137.888
 		}
 	],
 	"passed": true,

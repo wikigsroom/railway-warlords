@@ -91,7 +91,7 @@ func run() -> void:
 	var mission_text=""
 	for child in app.mission_card.get_children():
 		if child is Label:mission_text+=child.text
-	verify(mission_text.contains("汉阳") and mission_text.contains("一格内"),"escort_objective_names_actual_destination_and_rule_radius")
+	verify(mission_text.contains("汉阳江岸") and mission_text.contains("一格内"),"escort_objective_names_actual_bank_destination_and_rule_radius")
 	verify(not app.inspector_shell.visible and not app.mission_shell.visible and not app.layer_shell.visible,"default_drawers_are_collapsed")
 	verify(not app.map_view.minimap.visible and not app.map_view.show_legends,"no_permanent_minimap_or_legend_plates")
 	var map_fraction=app.map_view.map_hud_area().get_area()/viewport.get_area()
@@ -122,14 +122,14 @@ func run() -> void:
 	await click(find_button(app.orders,"征募部队"));verify(is_instance_valid(app.overlay),"city_recruitment_pointer_opens_actual_dialog")
 	app.close_overlay();await settle()
 	verify(ContentRegistry.fingerprint(app.match_controller.state)==initial,"all_drawers_and_layers_preserve_state_and_random_stream")
-	# Retain every safe land assignment, while rejecting old rectangles wholly
-	# outside the Wuhan source frame. The original map bytes remain untouched.
+	# The independently reviewed 250 m Wuhan board has 8,007 safe fine-material
+	# anchors. Keep the whole-footprint land restriction after the refinement.
 	var outside=[]
 	for key in app.map_view.map_details.surfaces:
 		if app.map_view.map_details.surface_families.get(key,"")=="sea_water":continue
 		if not app.map_view.relief.dry_point(HexGrid.to_world(HexGrid.from_key(key))):outside.append(key)
 	verify(outside.is_empty(),"no_land_material_assigned_outside_source_land")
-	verify(app.map_view.map_details.surfaces.size()==250,"wuhan_250_safe_material_assignments_retained")
+	verify(app.map_view.map_details.surfaces.size()==8007,"refined_wuhan_8007_safe_material_assignments_retained")
 	# Exercise a legal movement by selecting the unit/target on the actual map,
 	# then clicking the native confirmation control. State is independently replayed.
 	var state=app.match_controller.state;var original=state.duplicate(true)
@@ -161,6 +161,28 @@ func run() -> void:
 				verify(replay.get("valid",false) and ContentRegistry.fingerprint(replay.state)==ContentRegistry.fingerprint(app.match_controller.state),"pointer_command_replays_to_identical_state_and_rng")
 			app.map_view.playback.skip();await settle(12)
 			verify_controls(app.screen,"after_move");await capture("after_move")
+	# A separate dock must select its owning inland city through real pointer
+	# dispatch, while naming the bank correctly in the actual mission drawer.
+	app.start_game("legion_08","zhili");app.close_overlay();await settle(16)
+	var ningpu_hud=app.battle_hud;var ningpu_initial=ContentRegistry.fingerprint(app.match_controller.state)
+	var landing_text=""
+	for child in app.mission_card.get_children():
+		if child is Label:landing_text+=child.text
+	verify(landing_text.contains("南京江岸") and not landing_text.contains("目标格"),"landing_objective_uses_source_city_bank_name")
+	await click(ningpu_hud.objective_button);verify_controls(app.screen,"landing_objective")
+	await capture("ningpu_objective");await click(ningpu_hud.objective_button)
+	var nanjing=StateAccess.find(app.match_controller.state,"cities","nanjing")
+	app.selected_unit_id="";app.selected_city_id="";app.order_mode="";app.pending={};app.refresh_battle();await settle()
+	app.map_view.zoom=1.05;app.map_view.focus_world(HexGrid.to_world(HarborRules.land_hex(nanjing)));await settle(16)
+	await click_at(app.map_view.world_to_screen(HexGrid.to_world(HarborRules.land_hex(nanjing))))
+	verify(app.selected_city_id=="nanjing","bank_marker_pointer_selects_its_inland_city")
+	var recruit=find_button(app.orders,"征募部队")
+	verify(recruit!=null,"selected_bank_exposes_owning_city_orders")
+	await capture("ningpu_bank_selection")
+	if recruit!=null:
+		await click(recruit);verify(is_instance_valid(app.overlay),"bank_city_recruitment_pointer_opens_actual_dialog")
+		app.close_overlay();await settle()
+	verify(ContentRegistry.fingerprint(app.match_controller.state)==ningpu_initial,"bank_selection_and_dialog_preserve_state_and_random_stream")
 	var report={"passed":failures.is_empty(),"checks":checks,"failures":failures,"build_version":ContentRegistry.APP_VERSION,"tag":tag,"viewport":[viewport.size.x,viewport.size.y],"ui_scale":app.settings.ui_scale,"input_kind":"viewport_screen_touch" if touch else "viewport_mouse_button","input_events":input_events,"command_signal_emission_used":false,"camera_label_area_fraction":map_fraction,"area_is_not_visible_map_pixel_measurement":true,"header":array_rect(app.header_shell.get_global_rect()),"footer":array_rect(app.footer_shell.get_global_rect()),"captures":captures,"committed_commands":committed,"outside_source_land_materials":outside,"development_engine":true,"physical_android_device_tested":false,"formal_art_approval":false,"ew6_parity_claimed":false,"source_pngs_modified":false}
 	var file=FileAccess.open(directory+"/validation.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("BATTLE_HUD_NATIVE ",tag," ",checks.size()," checks / ",failures.size()," failures")

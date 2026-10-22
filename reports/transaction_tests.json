@@ -14,14 +14,14 @@
 		"loaded_geometry_frozen_without_changing_payload",
 		"transaction_copy_has_identical_serialized_payload"
 	],
-	"content_hash": "d9932b5aa389f0a482bf3def34201b14209071584bb4e06dc5f2c255dd010ef6",
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
 	"failed": 0,
 	"failures": [],
-	"full_duplicate_ms_median": 400.632,
-	"full_duplicate_ms_p95": 508.849,
+	"full_duplicate_ms_median": 368.504,
+	"full_duplicate_ms_p95": 560.275,
 	"measurement": "Native Godot real conquest state copy; not whole AI phase or Android performance.",
 	"passed": 13,
 	"samples": 30,
-	"transaction_copy_ms_median": 1.86,
-	"transaction_copy_ms_p95": 2.485
+	"transaction_copy_ms_median": 1.855,
+	"transaction_copy_ms_p95": 3.956
 }

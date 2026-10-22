@@ -129,8 +129,8 @@ func preview(state: Dictionary, command: Dictionary) -> Dictionary:
 			if ship.is_empty() or ship.def_id!="transport_ship" or ship.owner_id!=owner or ship.position==null:return fail("请选择本方运输船")
 			if ship.ap_left<=0 or not ship.attack_ready:return fail("运输船本阶段已执行终结行动")
 			if MovementRules.domain_of(u,content)!="land" or u.def_id=="armored_train" or u.ap_left<=0 or not u.attack_ready:return fail("部队无法装载")
-			var home=StateAccess.nearest_city(state,HexGrid.coordinate(u.position),owner)
-			if home.is_empty() or not home.port or HexGrid.distance(HexGrid.coordinate(home.position),HexGrid.coordinate(u.position))>1 or HexGrid.distance(HexGrid.coordinate(u.position),HexGrid.coordinate(ship.position))>1:return fail("装船须在本方港口的相邻陆水格")
+			var home=HarborRules.controlled_port(state,HexGrid.coordinate(u.position),owner)
+			if home.is_empty() or HexGrid.distance(HexGrid.coordinate(u.position),HexGrid.coordinate(ship.position))>1:return fail("装船须在本方港口的相邻陆水格")
 			var cargo=0
 			for passenger in state.units:
 				if passenger.cargo_parent_id==ship.id:cargo+=passenger.stack
@@ -139,10 +139,10 @@ func preview(state: Dictionary, command: Dictionary) -> Dictionary:
 			if u.cargo_parent_id==null or not u.get("cargo_actions_ready",true) or not valid_hex(command.get("target_hex")):return fail("请选择尚可卸载的部队与登陆格")
 			if state.objectives.any(func(o):return o.type=="disembark" and o.target_ids.has(u.id)) and not u.get("cargo_sailed",false):return fail("跨江演习须先驾驶运输船航行，再卸载")
 			var ship=StateAccess.find(state,"units",u.cargo_parent_id);var hex=HexGrid.coordinate(command.target_hex);var cell=StateAccess.cell(state,hex)
-			if ship.is_empty() or ship.position==null or cell.is_empty() or HexGrid.distance(hex,HexGrid.coordinate(ship.position))!=1 or not VisibilityRules.hex_visible(state,owner,hex):return fail("登陆格须为可见相邻陆地")
+			if ship.is_empty() or ship.position==null or cell.is_empty() or cell.region_id=="restricted" or HexGrid.distance(hex,HexGrid.coordinate(ship.position))!=1 or not VisibilityRules.hex_visible(state,owner,hex):return fail("登陆格须为可见相邻陆地")
 			if content.definition("terrains",cell.terrain_id).get("cost_foot",0)==0 or not StateAccess.at(state,"units",hex).is_empty():return fail("登陆格无法停驻")
-			var port=StateAccess.nearest_city(state,hex,owner)
-			return {"valid":true} if port.get("port",false) and HexGrid.distance(hex,HexGrid.coordinate(port.position))<=1 else fail("须在本方港口卸载")
+			var port=HarborRules.controlled_port(state,hex,owner)
+			return {"valid":true} if not port.is_empty() else fail("须在本方港口卸载")
 		"AssignGeneral":
 			var g=StateAccess.find(state,"generals",str(command.get("general_id","")))
 			if g.is_empty() or g.owner_id!=owner or g.injured_this_match or g.get("withdrawn_this_match",false) or g.assigned_unit_id!=null or g.unassign_cooldown>0 or not f.general_whitelist.has(g.id):return fail("将领本局无法任命")

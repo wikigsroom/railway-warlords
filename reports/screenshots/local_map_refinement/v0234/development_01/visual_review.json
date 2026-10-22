@@ -1,0 +1,86 @@
+{
+  "version": "0.2.34",
+  "reviewed_at_utc": "2026-10-21T22:30:22.030855+00:00",
+  "capture_mode": "development_engine",
+  "runtime_source_sha256": "0714cf67dbf6d142984c14762722d526e38a984994a51b56e5136330e5296454",
+  "validation_sha256": "0dde7365a2af6a621a6ca5293cfd104aeb4118da1041f685e3879b9e6decd29b",
+  "review_method": "All 13 original complete native Godot viewport PNGs opened with view_image; no raster crops, compositing, redraws or labels added.",
+  "views": [
+    {
+      "name": "wuhan",
+      "sha256": "36eb29ff4e1ac2148b6e9bb98d139df19ffaa40c0087209ef117c24e7072a965",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "wuchang",
+      "sha256": "67034207283439f88a6169ec406f27501fe756c03d5de487c637d0f98880f435",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "hanyang",
+      "sha256": "9bde3ce452f1c91c8cf0409b87e90e5f6459473aec6acf97d507bb9e85e3a143",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "wuhan_three_towns",
+      "sha256": "d67e18d1ace1f68ad0ebe41e4900cf847b67041f977eb656cb39e79f1c97944d",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "wuhan_regional",
+      "sha256": "97f5d35bb3baeb253bf0a8c6d0524a53d0ec26d1e8aa6618a3431f2742d3d6dd",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "ningpu_city",
+      "sha256": "815860eb3b270f7105db4b84501dbd2528fdfcb59c6ea3e6d70efaa322ecdd85",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "ningpu_river",
+      "sha256": "03badf29cf267afa0bb283be2bd9eb9c7d56d3ff5edca42288f187c4bfbab826",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "ningpu_regional",
+      "sha256": "91c1339dd6e2eda60fb8ebf3211db750c342d29a7d44d6bb52e66ce6c270c23d",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "wuhan_x30_layout",
+      "sha256": "2770a4bfc0426143ae766ca8b9b18215b8cf34f6fe500a3a61a8158d0288f0d0",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "wuhan_large_text",
+      "sha256": "c5a8ca8c74e0d1def6648a67ab1ccfac495a5963cbeab3274203f869f2fdbd59",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "beijing",
+      "sha256": "b1f14d6bfe18815d0ec0453f22f09eac3b92bff8b101e7b18a06159a0f37dfdc",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "coast",
+      "sha256": "eaf3eedcf84d9137619e9020f2aaafcba6cac5a54a2045602cb64a4d3b3081f1",
+      "whole_original_viewed": true
+    },
+    {
+      "name": "village",
+      "sha256": "4f26bbe68216a55a326d47a4826d0645146442a2fc6308b740cc82de12819b62",
+      "whole_original_viewed": true
+    }
+  ],
+  "findings": [
+    "Fivefold local scale now separates city centres and bank functions; wide three-town and cross-river views require zooming out.",
+    "Required local node captions remain visible at their tested LOD, with no detected caption overlaps or caption-object occlusions.",
+    "Plain texture repetition, simplified buildings and river symbols remain below the complete EW6 art target.",
+    "Coastal influence gaps discovered by independent geometry checks will be rebuilt and revalidated separately.",
+    "Bank objective captions in these pre-fix views still fell back to coordinates; final native HUD input checks will use city-bank names."
+  ],
+  "shipping_evidence": false,
+  "physical_x30_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false
+}

@@ -1,0 +1,32 @@
+{
+  "version": "0.2.34",
+  "created_at_utc": "2026-10-21T23:42:58.622758+00:00",
+  "phase": "scoped_preview_archived",
+  "frozen_runtime_source_sha256": "525065c3f4d2756a387dbbca12e02f5d6a24917028e3e919109b13fc1afebafa",
+  "native_content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+  "checks": {
+    "regression_groups": 30,
+    "regression_checks": 14585,
+    "local_rules": 86,
+    "source_and_scope": 122,
+    "settlement_geometry": 207,
+    "native_hud_input": 773,
+    "shipping_map_layout": 106,
+    "shipping_gpu": 48
+  },
+  "remaining": [
+    "Git byte verification and source publication have separate terminal receipts."
+  ],
+  "new_music_generated": false,
+  "future_music_route": "music-gen-remote-YuE2_RTX3080_instrumental",
+  "physical_android_device_tested": false,
+  "ew6_parity_claimed": false,
+  "whole_goal_achieved": false,
+  "updated_at_utc": "2026-10-22T01:57:45.104729+00:00",
+  "dual_exports_verified": true,
+  "regression_dependency_seal_passed": true,
+  "apk_payload_verified": true,
+  "preview_archive_verified": true,
+  "preview_manifest": "reports/local_map_preview_v0234.json",
+  "git_byte_validation_report": "reports/git_byte_preservation.json"
+}

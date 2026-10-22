@@ -206,3 +206,26 @@ Thumbs.db
 /reports/map_pan_v0233/**/__pycache__/
 !/reports/quality_goal_turn_v0233.json
 !/reports/map_pan_preview_v0233.json
+
+# Local-map refinement: source provenance, native views and current checks.
+!/reports/local_map_refinement/
+!/reports/local_map_refinement/**
+/reports/local_map_refinement/**/*.log
+/reports/local_map_refinement/**/__pycache__/
+!/reports/screenshots/local_map_refinement/
+!/reports/screenshots/local_map_refinement/**
+/reports/screenshots/local_map_refinement/**/*.log
+!/reports/battle_hud_native_v0230/
+/reports/battle_hud_native_v0230/*
+!/reports/battle_hud_native_v0230/local_scale_v0234_01/
+!/reports/battle_hud_native_v0230/local_scale_v0234_01/**
+/reports/battle_hud_native_v0230/**/*.log
+!/reports/local_map_preview_v0234.json
+!/reports/quality_goal_turn_v0234.json
+!/reports/battle_hud_native_v0230/local_scale_v0234_02/
+!/reports/battle_hud_native_v0230/local_scale_v0234_02/**
+/reports/battle_hud_native_v0230/**/*.log
+!/reports/settlement_geography_validation.json
+!/reports/settlement_compilation.json
+!/reports/repository_documentation_validation.json
+!reports/regression_dependency_evidence_v0229.json

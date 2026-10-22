@@ -13,7 +13,12 @@ static func symbolic_width(order: int, strategic: bool, fallback: float=1.7) -> 
 	return width*(.82 if strategic else 1.0)
 
 static func primary_width(row: Dictionary, strategic: bool) -> float:
-	return symbolic_width(int(row.get("stream_order",0)),strategic,6.8*(.82 if strategic else 1.0))
+	var width=symbolic_width(int(row.get("stream_order",0)),strategic,6.8*(.82 if strategic else 1.0))
+	# Preserve the local main river's established physical symbol when its grid
+	# is refined. A fivefold board must not turn the Yangtze into a thin creek.
+	if not strategic and int(row.get("source_reach_id",0))>0:
+		width*=clampf(1250.0/float(row.get("hex_radius_m",1250.0)),1.0,5.0)
+	return width
 
 static func source(name: String) -> Dictionary:
 	if not catalogs.has(name):
@@ -57,7 +62,7 @@ static func main_row(points: PackedVector2Array, order: int, radius_m: float, so
 	for point in points:bounds=bounds.expand(point)
 	# Replacement mains receive the same bounded fillet as tributaries.
 	var display=rounded_source_corners(points,120.0*48.0/maxf(1,radius_m)) if source_reach_id>0 else points
-	return {"points":points,"display_points":display,"bounds":bounds,"stream_order":order,"source_reach_id":source_reach_id,"next_down":next_down,"width_symbolic":true}
+	return {"points":points,"display_points":display,"bounds":bounds,"stream_order":order,"source_reach_id":source_reach_id,"next_down":next_down,"width_symbolic":true,"hex_radius_m":radius_m}
 
 static func join_primary_rows(rows: Array) -> int:
 	var nodes: Dictionary={};var joined=0

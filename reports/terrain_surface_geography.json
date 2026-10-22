@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "created_at_utc": "2026-10-16T05:55:34.444875+00:00",
+  "created_at_utc": "2026-10-21T22:00:07.214635+00:00",
   "terrain_type_count": 20,
   "types_in_actual_maps": 20,
   "assignments_by_map": {
@@ -41,8 +41,8 @@
       "saline_meadow": 212
     },
     "hankou": {
-      "subtropical_humus": 317,
-      "alluvial_loam": 38
+      "subtropical_humus": 8026,
+      "alluvial_loam": 241
     },
     "jingfeng": {
       "temperate_litter": 27050,
@@ -60,16 +60,16 @@
       "saline_meadow": 539
     },
     "ningpu": {
-      "temperate_litter": 229,
-      "weathered_rock": 14,
-      "subtropical_humus": 129,
-      "alluvial_loam": 34
+      "temperate_litter": 6328,
+      "weathered_rock": 73,
+      "subtropical_humus": 2473,
+      "alluvial_loam": 172
     }
   },
   "totals_by_type": {
-    "weathered_rock": 52573,
+    "weathered_rock": 52632,
     "boreal_litter": 530,
-    "temperate_litter": 52836,
+    "temperate_litter": 58935,
     "gravel_gobi": 278,
     "savanna_red_soil": 159,
     "tropical_moist_humus": 4920,
@@ -82,10 +82,10 @@
     "desert_steppe": 3405,
     "temperate_meadow": 23,
     "dry_woodland_litter": 40,
-    "alluvial_loam": 703,
+    "alluvial_loam": 1044,
     "alpine_steppe": 1267,
     "alpine_meadow": 91,
-    "subtropical_humus": 4005,
+    "subtropical_humus": 14058,
     "conifer_litter": 209
   },
   "source_files_sha256": {
@@ -94,17 +94,17 @@
     ".dbf": "036987c540eef2dfd6e8a0678f3b85193649b3f63f545463dfcb2fed4f973ab5",
     ".prj": "db2f4b2a30c81a88981162acd3ff4629b86350834194efed1a6650446ccaecf4"
   },
-  "output_sha256": "9d6ff8a87352f590092299e4324b4da68821ea9a6337edfced3e9d47d0f11f37",
+  "output_sha256": "0d1309c30e3aa59bf7b6c44f3e1c69e304b8ddc9cf1a86daaee0b697364488cc",
   "rule_map_hashes": {
-    "asia_strategic.json": "268ab58f6d5bd40c8e88d151449bab27170ac5b5c61ceaa310d84b26334de0ae",
-    "conquest_china.json": "a68ad6428ad42709ae80aab0f9caed5a48762ddc30347f07b374082188cdcc57",
-    "hankou.json": "b6ca1e209cf9e238f4fd6db168474ab94f76c4bddb9218b5e75fe9d695e87745",
-    "jingfeng.json": "d9d442a9c5966fe87f59a2cc37502989abc7282059e7de4c179cf70ed0031cf9",
-    "jingjin.json": "334faba922f4bf9869f5600ea9a0c73c6e8ce8783b2eac5c091d8880dbc813ae",
-    "ningpu.json": "d6986cf2485acc272521e5cf13984ca0552e74009f74fc03274eb6163165a116"
+    "asia_strategic.json": "e188fa6978ed1e9c1e68a9abe814bca1bafdee279aca376a207f0dc219b2952b",
+    "conquest_china.json": "37458183fffe2515b1e0ae5110554a527735c207e44130ce13a7d8da64a0a510",
+    "hankou.json": "f3d49dc495a0eb48a9013b878bbd07892126f84c329d81600147d3a627aea927",
+    "jingfeng.json": "f5fc64bc3e45643fc9b325e1e574a5534cc7c6660880a1e546fc9b68a0ad5c8f",
+    "jingjin.json": "7a18d0e7d579c50bae1d1f3162d0e78df55e71adbaa26acf1763bb2dc6b51434",
+    "ningpu.json": "abf2ba75da45d2cce5597f7c1e297eb67dd168c1ffd947220a019cc57e35e3dc"
   },
   "original_maps_modified": false,
   "random_geography": false,
   "historical_landuse_survey_claimed": false,
-  "elapsed_seconds": 142.25
+  "elapsed_seconds": 171.52
 }

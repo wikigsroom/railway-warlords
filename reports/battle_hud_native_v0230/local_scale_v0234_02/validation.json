@@ -1,0 +1,205 @@
+{
+  "passed": true,
+  "build_version": "0.2.34",
+  "runtime_source_sha256": "525065c3f4d2756a387dbbca12e02f5d6a24917028e3e919109b13fc1afebafa",
+  "test_driver_sha256": "b970a069fcb213af99f597b9f9a0f37f97dd84d3879d726065dd3a61f2404ce3",
+  "controller_sha256": "8d4be3c84aee2948ad171e7d033581664234a1f021128c3508bd8bdb4e90e416",
+  "source_unchanged_during_tests": true,
+  "created_at_utc": "2026-10-21T23:24:09.464617+00:00",
+  "cases": [
+    {
+      "tag": "1920x1080_100_mouse",
+      "passed": true,
+      "checks": 261,
+      "report": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/validation.json",
+      "report_sha256": "ef62856cd60b3a3ae6d71b51f52d2fa9a80904c0aa5d860cf551476bc9c3c1d7",
+      "camera_label_area_fraction": 0.786342592592593,
+      "input_events": 114,
+      "input_kind": "viewport_mouse_button",
+      "images": [
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/battlefield.png",
+          "sha256": "1f7023fa3d13d70192076df5e7903da8f1bd8e0602a7afa3676b16703adb47d7",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/details.png",
+          "sha256": "b9ee0d375112d22a26d250b801765aec112900f3bf085f4a7e101fdcb6e2a0a8",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/details_scrolled.png",
+          "sha256": "a8379a66260c7de14806d967fc7e93907d5bc1731070c2578e889f0bdbcb84c2",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/objectives.png",
+          "sha256": "21ac7d4b88f5167c3339b3e74553f35799f78bdbc44daec64998218ad10a5b9e",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/layers.png",
+          "sha256": "1ba8cc6f255485ffa30062b12b09eb66c6f962612f0bebe199130403c331cc62",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/additional_orders.png",
+          "sha256": "d23f4286f8a3cfaf83780e830bfde6ba69180228c04368515ce4e60537f8a5db",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/move_confirmation.png",
+          "sha256": "aa656e64a95ba12a8f4deb6a72dfc05cd9646d6658106695ca4bf04bf52e2055",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/after_move.png",
+          "sha256": "8064401652192993ada3b363b3ed33b65fe1c9439b70a403622d9dc6c0a843e2",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/ningpu_objective.png",
+          "sha256": "a979cc372d040ee57dcc24746939c7e181c861838b735cc40ed7806acc9c91f5",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1920x1080_100_mouse/ningpu_bank_selection.png",
+          "sha256": "28b7486e000ab51a3bc44cef20287fa09b964f5bd60eabd539b72871037ec072",
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "tag": "2400x1080_120_touch",
+      "passed": true,
+      "checks": 259,
+      "report": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/validation.json",
+      "report_sha256": "db6bce66e18f1c8d0add76ecea9a3b446159391631a4a60293b16d247b9f478b",
+      "camera_label_area_fraction": 0.722856481481482,
+      "input_events": 86,
+      "input_kind": "viewport_screen_touch",
+      "images": [
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/battlefield.png",
+          "sha256": "9eac2254844248d3f4a01dfeed5e39d3798ab8ae614266da5e54f67425e7d782",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/details.png",
+          "sha256": "9641a2b6a452a099a212ecb6457321ecc13c15c2eaca4c9837189388957043cd",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/details_scrolled.png",
+          "sha256": "2322134c587dd104081ee22a57856f5080085b677ade12f45c96eb46cf3dcb76",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/objectives.png",
+          "sha256": "563a3740309fa1bae9ea88a86b522650db587853f3642e86b81d180c58afcf93",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/layers.png",
+          "sha256": "2eafc642efbc69cd277abe72839fec9ae5957c35cca81223c3f7770b4f8f9a15",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/additional_orders.png",
+          "sha256": "2a874d901fb9e40b9489b91e509dc2d5a4ca3ec4520e4084c1b9eef6fdab528f",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/move_confirmation.png",
+          "sha256": "e09f2739525136692055b0ec2019c2d3a82aad7896913a2a28de8e976ba9e7fe",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/after_move.png",
+          "sha256": "5cc24285b7364dbe717cf2ad8f00ce2ce3e57de4f0f20fef05da6bbbe48c81ec",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/ningpu_objective.png",
+          "sha256": "83fbae2a72e37fb702fa5200461a1293ee0619b789ac862bb2d7dd49b78b53fc",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/2400x1080_120_touch/ningpu_bank_selection.png",
+          "sha256": "11c7b10a3d3983cbb7028a7ad36418c30520ad89ba52ce40857a5c46bf931c78",
+          "fresh": true
+        }
+      ]
+    },
+    {
+      "tag": "1280x720_150_mouse",
+      "passed": true,
+      "checks": 253,
+      "report": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/validation.json",
+      "report_sha256": "699f4b796ea5381e9d4f55001e5cfae81018ccb2aa172483bc557ee7706bbed5",
+      "camera_label_area_fraction": 0.611236979166667,
+      "input_events": 114,
+      "input_kind": "viewport_mouse_button",
+      "images": [
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/battlefield.png",
+          "sha256": "a4bd57c9275bfdb38457c267c3aebe3a49eb725acd33bcd450c3aaa0076942b2",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/details.png",
+          "sha256": "d7396922497d9c3038ec2a318c5ea5c60dc4ed7a1de24a65b26a90debcfe9674",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/details_scrolled.png",
+          "sha256": "da08b70e814f9f9e2ad499f4ebaedea428c3e1b257736e5b3c98dc07fbefdaea",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/objectives.png",
+          "sha256": "6ccb9a983034aba5b8f0d7267ef0af33ec3d4d389d1a36b798fd30c1a5200e31",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/layers.png",
+          "sha256": "b44d588904390b432ccd99d2b4da5b7f80ee69eba8f36410168180a5c55c9343",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/additional_orders.png",
+          "sha256": "be626caca206a81afdeffafa11bd3e40501e282ab169bb201712b1c3de7fd1bd",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/move_confirmation.png",
+          "sha256": "fd121d34986e62a8874019d57b745be2bbb3aad3a089798cedbd2a6f49745faf",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/after_move.png",
+          "sha256": "516ceab7ff5d1d3246aa7f670ad895317740e155649af76af3aa53881b48ed60",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/ningpu_objective.png",
+          "sha256": "9cff983795ba98da87f3c53a8f8c488633ded226cd0749f04fbee62ebf050e04",
+          "fresh": true
+        },
+        {
+          "path": "reports/battle_hud_native_v0230/local_scale_v0234_02/1280x720_150_mouse/ningpu_bank_selection.png",
+          "sha256": "1cf4db1155f96072da8b6dc710b90a8e7989ab85d484aaa208511df371915321",
+          "fresh": true
+        }
+      ]
+    }
+  ],
+  "checks": 773,
+  "failures": [],
+  "mode": "development_engine_viewport_input",
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "manual_compositing": false,
+  "original_rasters_changed": false
+}

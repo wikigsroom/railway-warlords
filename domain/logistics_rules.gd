@@ -39,7 +39,7 @@ static func naval_supply_reach(state: Dictionary, owner: String, content: Conten
 	var seeds={};var coverage={}
 	for city in ports:
 		for dir in HexGrid.DIRECTIONS:
-			var h=HexGrid.coordinate(city.position)+dir;var cell=StateAccess.cell(state,h)
+			var h=HarborRules.land_hex(city)+dir;var cell=StateAccess.cell(state,h)
 			if not cell.is_empty() and (content.definition("terrains",cell.terrain_id).water or cell.get("water_under_bridge",false)):
 				var key=HexGrid.key(h);seeds[key]=city.id;coverage[key]=true
 	var visited={};var probe={"owner_id":owner,"def_id":"river_gunboat"}
@@ -81,7 +81,7 @@ static func distribute(state: Dictionary, owner: String, content: ContentRegistr
 		if pos!=null and (MovementRules.domain_of(u,content)!="land" or u.cargo_parent_id!=null):
 			connected=naval_coverage.has(HexGrid.key(HexGrid.coordinate(pos)))
 			for city in state.cities:
-				if city.owner_id==owner and city.port and not city.blockaded and EconomyRules.building_level(city,"port")>0 and HexGrid.distance(HexGrid.coordinate(city.position),HexGrid.coordinate(pos))<=2:connected=true
+				if city.owner_id==owner and city.port and not city.blockaded and EconomyRules.building_level(city,"port")>0 and HexGrid.distance(HarborRules.land_hex(city),HexGrid.coordinate(pos))<=2:connected=true
 		var d=EffectRules.scaled_definition(u,content)
 		var reduction=EffectRules.technology(state,owner,"food_upkeep_reduction",u,content)+EffectRules.general_bonus(state,u,"food_upkeep_reduction",content)
 		var food=int(EffectRules.reduced_cost({"food":int(d.upkeep.food)*u.stack},reduction).food)

@@ -102,7 +102,8 @@ def output(path,data): path.write_text(json.dumps(data,ensure_ascii=False,separa
 
 def compile_map(map_id, bounds, radius, *, output_path=None, max_cells=4096,
                 land_source='ne_50m_land', elevation_samples=None,
-                elevation_source='SRTM90m_v3'):
+                elevation_source='SRTM90m_v3', primary_river_geometries=None,
+                port_snap_max_m=None):
     xmin,ymin,xmax,ymax=bounds
     crs=CRS.from_proj4(f'+proj=laea +lat_0={(ymin+ymax)/2} +lon_0={(xmin+xmax)/2} +datum=WGS84 +units=m')
     forward=Transformer.from_crs('EPSG:4326',crs,always_xy=True)
@@ -121,6 +122,8 @@ def compile_map(map_id, bounds, radius, *, output_path=None, max_cells=4096,
         if geo.intersects(region) and (record.get('scalerank',10)<=4 or any(k in name.lower() for k in ['yangtze','huang','hai','luan','han','huai','pearl'])):
             river_geos.append(transform(forward.transform,geo.intersection(region))); river_names.append(name)
     rivers=unary_union(river_geos) if river_geos else LineString()
+    if primary_river_geometries is not None:
+        rivers=transform(forward.transform,unary_union(primary_river_geometries))
     projected=transform(forward.transform,box(*bounds)); minx,miny,maxx,maxy=projected.bounds
     origin_x=minx; origin_y=maxy
     cols=math.ceil((maxx-minx)/(1.5*radius))+1
@@ -181,6 +184,8 @@ def compile_map(map_id, bounds, radius, *, output_path=None, max_cells=4096,
         is_port=cid in ['tianjin','qinhuangdao','shanghai','qingdao','nanjing','pukou','hankou','wuchang','hanyang','guangzhou','fuzhou','yichang','jiujiang']
         if is_port:
             shore=[c for c in candidates if any(grid.get((c[0][0]+d[0],c[0][1]+d[1]),{}).get('terrain_id') in ['river','sea'] for d in DIRECTIONS)]
+            if port_snap_max_m is not None:
+                shore=[c for c in shore if math.dist(forward.transform(c[1],c[2]),(x,y))<=port_snap_max_m]
             if shore:candidates=shore
         candidates.sort(key=lambda c:(forward.transform(c[1],c[2])[0]-x)**2+(forward.transform(c[1],c[2])[1]-y)**2)
         key=next(c[0] for c in candidates if c[0] not in taken)
@@ -317,6 +322,16 @@ def compile_map(map_id, bounds, radius, *, output_path=None, max_cells=4096,
     return {'id':map_id,'cells':len(cells),'cities':len(cities),'rail_segments':len(edges),'bounds':bounds,'hex_radius_m':radius}
 
 if __name__=='__main__':
+    # This archived bootstrap predates the Asia board, reviewed coast vectors
+    # and local 250 m grids. Imports remain reusable, but running it against
+    # the current project would silently replace them with the five old maps.
+    catalog_path=PROJECT/'content/maps/catalog.json'
+    existing=json.loads(catalog_path.read_text(encoding='utf-8')).get('maps',[]) if catalog_path.exists() else []
+    refined=any((PROJECT/'content/maps'/f'{mid}.json').exists() and
+        json.loads((PROJECT/'content/maps'/f'{mid}.json').read_text(encoding='utf-8')).get('hex_radius_m')==250
+        for mid in ['hankou','ningpu'])
+    if 'asia_strategic' in existing or refined:
+        raise SystemExit('Archived five-map bootstrap refused: it would overwrite reviewed geography. Use the source-specific rebuild instructions in docs/52_局部战区五倍比例与独立江岸.md; imports of compile_map remain supported.')
     import enlarge_maps
     enlarge_maps.compile_final()
     specs=[('hankou',(114.10,30.40,114.46,30.76),1250),('ningpu',(118.58,31.90,118.98,32.26),1250)]

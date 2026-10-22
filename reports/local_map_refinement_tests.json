@@ -1,0 +1,421 @@
+{
+	"candidate_only": false,
+	"candidate_root": "",
+	"checks": [
+		{
+			"name": "production_definitions_and_scenarios_loaded",
+			"passed": true
+		},
+		{
+			"name": "hankou:physical_grid_refined_with_unchanged_interaction_hex",
+			"passed": true
+		},
+		{
+			"name": "hankou:complete_local_board_retained",
+			"passed": true
+		},
+		{
+			"name": "hankou:city_no_longer_displaced_kilometres_to_water",
+			"passed": true
+		},
+		{
+			"name": "hankou:approach_is_operable_actual_bank_land",
+			"passed": true
+		},
+		{
+			"name": "hankou:separate_water_approach_is_navigable_adjacent_source_water",
+			"passed": true
+		},
+		{
+			"name": "wuchang:city_no_longer_displaced_kilometres_to_water",
+			"passed": true
+		},
+		{
+			"name": "wuchang:approach_is_operable_actual_bank_land",
+			"passed": true
+		},
+		{
+			"name": "wuchang:separate_water_approach_is_navigable_adjacent_source_water",
+			"passed": true
+		},
+		{
+			"name": "hanyang:city_no_longer_displaced_kilometres_to_water",
+			"passed": true
+		},
+		{
+			"name": "hanyang:approach_is_operable_actual_bank_land",
+			"passed": true
+		},
+		{
+			"name": "hanyang:separate_water_approach_is_navigable_adjacent_source_water",
+			"passed": true
+		},
+		{
+			"name": "hankou:no_invented_cross_river_rail_bridge",
+			"passed": true
+		},
+		{
+			"name": "ningpu:physical_grid_refined_with_unchanged_interaction_hex",
+			"passed": true
+		},
+		{
+			"name": "ningpu:complete_local_board_retained",
+			"passed": true
+		},
+		{
+			"name": "pukou:city_no_longer_displaced_kilometres_to_water",
+			"passed": true
+		},
+		{
+			"name": "pukou:approach_is_operable_actual_bank_land",
+			"passed": true
+		},
+		{
+			"name": "pukou:separate_water_approach_is_navigable_adjacent_source_water",
+			"passed": true
+		},
+		{
+			"name": "nanjing:city_no_longer_displaced_kilometres_to_water",
+			"passed": true
+		},
+		{
+			"name": "nanjing:approach_is_operable_actual_bank_land",
+			"passed": true
+		},
+		{
+			"name": "nanjing:separate_water_approach_is_navigable_adjacent_source_water",
+			"passed": true
+		},
+		{
+			"name": "ningpu:no_invented_cross_river_rail_bridge",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:full_default_training_army_deploys",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:every_initial_unit_on_valid_distinct_domain_cell",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:water_objective_uses_shore_instead_of_inland_city_centre",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:naval_production_uses_real_shore_approach",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:controlled_harbor_supplies_its_water_approach",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:infantry_production_remains_at_city_centre",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:separate_bank_actual_embark_command_accepted",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:separate_bank_loading_commits_cargo_and_both_action_budgets",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:separate_bank_same_phase_unloading_is_rejected",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:separate_bank_next_own_phase_preserves_fixture",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:separate_bank_blockaded_port_cannot_unload",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:separate_bank_opponent_port_cannot_unload",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:separate_bank_next_phase_actual_disembark_accepted",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:separate_bank_unloading_returns_infantry_to_real_bank_with_no_free_move",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:real_commands_complete_water_objective",
+			"passed": true
+		},
+		{
+			"name": "legion_07:zhili:no_illegal_route_or_landing_commands",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:full_default_training_army_deploys",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:every_initial_unit_on_valid_distinct_domain_cell",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:water_objective_uses_shore_instead_of_inland_city_centre",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:naval_production_uses_real_shore_approach",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:controlled_harbor_supplies_its_water_approach",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:infantry_production_remains_at_city_centre",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:separate_bank_actual_embark_command_accepted",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:separate_bank_loading_commits_cargo_and_both_action_budgets",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:separate_bank_same_phase_unloading_is_rejected",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:separate_bank_next_own_phase_preserves_fixture",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:separate_bank_blockaded_port_cannot_unload",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:separate_bank_opponent_port_cannot_unload",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:separate_bank_next_phase_actual_disembark_accepted",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:separate_bank_unloading_returns_infantry_to_real_bank_with_no_free_move",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:real_commands_complete_water_objective",
+			"passed": true
+		},
+		{
+			"name": "legion_07:fengtian:no_illegal_route_or_landing_commands",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:full_default_training_army_deploys",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:every_initial_unit_on_valid_distinct_domain_cell",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:water_objective_uses_shore_instead_of_inland_city_centre",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:naval_production_uses_real_shore_approach",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:controlled_harbor_supplies_its_water_approach",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:infantry_production_remains_at_city_centre",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:separate_bank_actual_embark_command_accepted",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:separate_bank_loading_commits_cargo_and_both_action_budgets",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:separate_bank_same_phase_unloading_is_rejected",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:separate_bank_next_own_phase_preserves_fixture",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:separate_bank_blockaded_port_cannot_unload",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:separate_bank_opponent_port_cannot_unload",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:separate_bank_next_phase_actual_disembark_accepted",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:separate_bank_unloading_returns_infantry_to_real_bank_with_no_free_move",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:real_commands_complete_water_objective",
+			"passed": true
+		},
+		{
+			"name": "legion_08:zhili:no_illegal_route_or_landing_commands",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:full_default_training_army_deploys",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:every_initial_unit_on_valid_distinct_domain_cell",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:water_objective_uses_shore_instead_of_inland_city_centre",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:naval_production_uses_real_shore_approach",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:controlled_harbor_supplies_its_water_approach",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:infantry_production_remains_at_city_centre",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:separate_bank_actual_embark_command_accepted",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:separate_bank_loading_commits_cargo_and_both_action_budgets",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:separate_bank_same_phase_unloading_is_rejected",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:separate_bank_next_own_phase_preserves_fixture",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:separate_bank_blockaded_port_cannot_unload",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:separate_bank_opponent_port_cannot_unload",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:separate_bank_next_phase_actual_disembark_accepted",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:separate_bank_unloading_returns_infantry_to_real_bank_with_no_free_move",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:real_commands_complete_water_objective",
+			"passed": true
+		},
+		{
+			"name": "legion_08:fengtian:no_illegal_route_or_landing_commands",
+			"passed": true
+		}
+	],
+	"content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+	"failures": [],
+	"full_ai_combat_balance_claimed": false,
+	"journeys": [
+		{
+			"actions": [
+				"Move",
+				"Move",
+				"Move"
+			],
+			"ai_combat_balance_claimed": false,
+			"errors": [],
+			"navigation_cost": 15,
+			"other_troops_removed_for_navigation_fixture": true,
+			"round": 3,
+			"scenario": "legion_07",
+			"side": "zhili",
+			"status": "won"
+		},
+		{
+			"actions": [
+				"Move",
+				"Move",
+				"Move"
+			],
+			"ai_combat_balance_claimed": false,
+			"errors": [],
+			"navigation_cost": 15,
+			"other_troops_removed_for_navigation_fixture": true,
+			"round": 3,
+			"scenario": "legion_07",
+			"side": "fengtian",
+			"status": "won"
+		},
+		{
+			"actions": [
+				"Move",
+				"Disembark"
+			],
+			"ai_combat_balance_claimed": false,
+			"errors": [],
+			"navigation_cost": 5,
+			"other_troops_removed_for_navigation_fixture": true,
+			"round": 1,
+			"scenario": "legion_08",
+			"side": "zhili",
+			"status": "won"
+		},
+		{
+			"actions": [
+				"Move",
+				"Disembark"
+			],
+			"ai_combat_balance_claimed": false,
+			"errors": [],
+			"navigation_cost": 5,
+			"other_troops_removed_for_navigation_fixture": true,
+			"round": 1,
+			"scenario": "legion_08",
+			"side": "fengtian",
+			"status": "won"
+		}
+	],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"runtime_map_sha256": {
+		"hankou": "f3d49dc495a0eb48a9013b878bbd07892126f84c329d81600147d3a627aea927",
+		"ningpu": "abf2ba75da45d2cce5597f7c1e297eb67dd168c1ffd947220a019cc57e35e3dc"
+	},
+	"test_driver_sha256": "3d19b60ca0545ce273f4b46bc8a2c394989d74426f011ca4672c0b826215f77d",
+	"version": "0.2.34"
+}

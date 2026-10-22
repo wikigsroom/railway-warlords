@@ -106,7 +106,7 @@ func run() -> void:
 	# Real map river training must have water-adjacent controlled ports and protected cargo.
 	for id in ["legion_07","legion_08"]:
 		s=StateBuilder.create(content,id,"zhili",{})
-		verify(s.cities.all(func(c):return not c.port or HexGrid.DIRECTIONS.any(func(dir):return StateAccess.cell(s,HexGrid.coordinate(c.position)+dir).get("terrain_id","") in ["river","sea"])),"real_port_water_neighbors_"+id)
+		verify(s.cities.all(func(c):return not c.port or (HexGrid.distance(HarborRules.land_hex(c),HexGrid.coordinate(HarborRules.water_position(c)))==1 and StateAccess.cell(s,HexGrid.coordinate(HarborRules.water_position(c))).get("terrain_id","") in ["river","sea"])),"real_port_water_neighbors_"+id)
 		if id=="legion_08":
 			verify(s.units.any(func(v):return v.cargo_parent_id!=null) and HexGrid.distance(HexGrid.coordinate(s.cities[0].position),HexGrid.coordinate(s.cities[1].position))>=2,"opposite_bank_ports_and_loaded_transport")
 			var passenger=s.units.filter(func(v):return v.cargo_parent_id!=null)[0];var transport=StateAccess.find(s,"units",passenger.cargo_parent_id)

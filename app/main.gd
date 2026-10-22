@@ -369,10 +369,13 @@ func refresh_battle(slice_work: bool = false) -> void:
 		var target=StateAccess.find(s,"cities",str(objective.target_ids[0])) if not objective.target_ids.is_empty() else {}
 		var target_name=target.get("name","")
 		if objective.type in ["escort","disembark"] and objective.has("destination"):
-			var destination=StateAccess.at(s,"cities",HexGrid.coordinate(objective.destination))
+			var destination=StateAccess.find(s,"cities",str(objective.get("destination_city_id","")))
+			if destination.is_empty():destination=StateAccess.at(s,"cities",HexGrid.coordinate(objective.destination))
+			var destination_name=destination.get("name","目标格 %d,%d"%[objective.destination.q,objective.destination.r])
+			if not destination.is_empty() and HarborRules.land_hex(destination)!=HexGrid.coordinate(destination.position) and HarborRules.land_hex(destination)==HexGrid.coordinate(objective.destination):destination_name+="江岸"
 			var protected_unit=StateAccess.find(s,"units",str(objective.target_ids[0])) if not objective.target_ids.is_empty() else {}
 			var unit_name=content.definition("units",protected_unit.get("def_id","")).get("name","保护编队")
-			target_name=unit_name+" → "+destination.get("name","目标格 %d,%d"%[objective.destination.q,objective.destination.r])+"（一格内）"
+			target_name=unit_name+" → "+destination_name+"（一格内）"
 		if objective.type=="destroy":target_name="目标编队"
 		if objective.type=="capture_commander" and not objective.target_ids.is_empty():target_name=content.definition("generals",str(objective.target_ids[0])).get("name",str(objective.target_ids[0]))
 		var verb={"capture":"占领","hold":"守住","escort":"抵达","survive":"保全主力","repair":"修复铁路","disembark":"抵达卸载","destroy":"消灭","capture_commander":"俘获或击溃","metric":"战术训练"}.get(objective.type,objective.type)
@@ -501,6 +504,7 @@ func terrain_details(hex: Vector2i) -> void:
 	if natural!=kind:label(inspector,"自然地貌："+str(content.definition("terrains",natural).get("name",natural)),18)
 	if appearance!=kind and visual.has("presentation_terrain_id"):label(inspector,"附近有史料记载的林地 / 湿地",18,UI_MUTED)
 	if cell.get("elevation_m")!=null:label(inspector,"采样高程约 %d 米"%roundi(float(cell.elevation_m)),19)
+	if cell.has("elevation_quality"):label(inspector,"高程采样待复核",17)
 	if cell.get("relief_sample_m")!=null:label(inspector,"格内采样起伏约 %d 米"%roundi(float(cell.relief_sample_m)),18,UI_MUTED)
 	ui_rule(inspector)
 	for movement in [["步兵","cost_foot"],["骑兵","cost_cavalry"],["车辆","cost_motor"],["舰船","cost_water"]]:

@@ -19,6 +19,8 @@ func plane(slope: Vector2) -> AtlasRelief:
 	return relief
 
 func run() -> void:
+	verify(AtlasRelief.cell_elevation_source({"cells":[{"terrain_source":"SRTM90m_v3_five_point_samples"}]},true)=="SRTM90m_v3_five_point_samples","new_dem_provider_is_not_inferred_from_old_land_boundary_source")
+	verify(AtlasRelief.cell_elevation_source({"cells":[{"terrain_source":"provider_b"},{"terrain_source":"provider_a"}]},false)=="mixed_declared_cell_sources: provider_a, provider_b","mixed_explicit_elevation_sources_are_reported_in_stable_order")
 	var slope=Vector2(.08,-.045);var relief=plane(slope);var center: Dictionary=relief.cells["0,0"]
 	var before=ContentRegistry.fingerprint(relief.cells)
 	verify(relief.height_gradient(center).distance_to(slope)<.00001,"physical_slope_matches_independent_analytic_plane_in_metres")

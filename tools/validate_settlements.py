@@ -15,6 +15,7 @@ def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def main():
     path=P/'presentation/data/settlements_v023.json';data=json.loads(path.read_text(encoding='utf-8'))
     compilation=json.loads((P/'reports/settlement_compilation.json').read_text(encoding='utf-8'))
+    coast=json.loads((P/'presentation/data/coast_geometry.json').read_text(encoding='utf-8'))
     checks=[];details=[]
     def verify(ok,name):checks.append({'name':name,'passed':bool(ok)})
     points={};wanted={p['location']['geonames_id'] for p in data['places'] if p['location']['geonames_id'] is not None}
@@ -37,7 +38,21 @@ def main():
     verify(set(p['id'] for p in compilation['omitted_unresolved'])=={'luoyang','xiangyang','xianning','wuhu'},'unverified_old_seat_coordinates_are_explicitly_omitted')
     for key,entry in data['maps'].items():
         map_path=P/'content/maps'/f'{key}.json';m=json.loads(map_path.read_text(encoding='utf-8'))
-        verify(sha(map_path)==entry['map_sha256']==compilation['immutable_gameplay_maps'][key],key+'_authoritative_gameplay_map_unchanged')
+        # Follow the same geometry selection as HistoricalPlaces. The original
+        # settlement catalog retains its pre-coast input lineage; coastal maps
+        # render the later land-clipped mesh, whose current map/data/catalog
+        # identities must all match. Test those actual triangles independently.
+        marine_entry=coast.get('maps',{}).get(key,{}) if m.get('physical_detail_source')==coast.get('source_id') else {}
+        marine={}
+        verify(entry['map_sha256']==compilation['immutable_gameplay_maps'][key],key+'_settlement_input_lineage_recorded')
+        if marine_entry:
+            marine_path=P/marine_entry['file']
+            marine=json.loads(marine_path.read_text(encoding='utf-8'))
+            verify(sha(map_path)==marine_entry['map_sha256']==marine['map_sha256']
+                   and sha(marine_path)==marine_entry['data_sha256']
+                   and marine['settlement_source_sha256']==sha(path),key+'_current_coastal_control_geometry_identity')
+        else:
+            verify(sha(map_path)==entry['map_sha256'],key+'_current_local_control_geometry_identity')
         land=unary_union([Polygon(s['exterior'],s['holes']).buffer(0) for s in m['render_land']]).intersection(Polygon(m['render_extent']))
         projection=Transformer.from_crs('EPSG:4326',m['projection'],always_xy=True)
         origin=transform(projection.transform,box(*m['geographic_bounds'])).bounds
@@ -47,7 +62,8 @@ def main():
         verify(all(Point(n['world']).distance(Point(xy(n['longitude'],n['latitude'])))<.015 for n in entry['markers']),key+'_marker_world_points_match_real_projection_without_label_jitter')
         verify(all(Point(c['render_position']).distance(Point(xy(c['lon_e6']/1e6,c['lat_e6']/1e6)))<.08 for c in m['cities']),key+'_same_origin_as_existing_historical_cities')
         counts={}
-        for year,zones in entry['control_zones_by_year'].items():
+        zones_by_year=marine.get('control_zones_by_year',entry['control_zones_by_year'])
+        for year,zones in zones_by_year.items():
             regions={r['name']:transform(xy,r['geometry']).intersection(land) for r in ADMIN_LAYERS[year]}
             grouped={};triangle_count=0;leaks=0;area_error=0
             for zone in zones:
@@ -57,7 +73,8 @@ def main():
                 tolerance=expected.buffer(.002)
                 leaks+=sum(not tolerance.covers(t) for t in triangles)
                 grouped.setdefault(zone['province'],[]).extend(triangles)
-                area_error=max(area_error,abs(sum(t.area for t in triangles)-zone['area_px2'])/max(1,zone['area_px2']))
+                recorded_area=zone['area'] if marine else zone['area_px2']
+                area_error=max(area_error,abs(sum(t.area for t in triangles)-recorded_area)/max(1,recorded_area))
             verify(leaks==0,key+'_'+year+'_all_control_triangles_stay_inside_real_province_and_land')
             verify(area_error<.00002,key+'_'+year+'_triangle_fill_preserves_zone_area')
             coverage=[]
@@ -67,7 +84,8 @@ def main():
                 coverage.append(error)
             verify(all(error<.00002 for error in coverage),key+'_'+year+'_control_zones_cover_source_provinces_without_circular_islands')
             counts[year]={'zones':len(zones),'triangles':triangle_count,'outside_source':leaks,'max_relative_fill_error':max(coverage,default=0)}
-        details.append({'map':key,'additional_markers':len(entry['markers']),'years':counts})
+        details.append({'map':key,'additional_markers':len(entry['markers']),'years':counts,
+                        'current_map_sha256':sha(map_path),'control_geometry_source':'coast_geometry' if marine else 'settlements_v023'})
     report={'passed':all(c['passed'] for c in checks),'checks':checks,'failed':[c['name'] for c in checks if not c['passed']],'maps':details,'presentation_data_sha256':sha(path),'gazetteer_sha256':sha(gazetteer),'raster_editing':False,'historic_county_or_military_boundaries_claimed':False}
     (P/'reports/settlement_geography_validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps({'checks':len(checks),'passed':report['passed'],'failed':report['failed']},ensure_ascii=False),flush=True)

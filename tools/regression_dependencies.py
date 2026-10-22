@@ -1,6 +1,7 @@
 """Conservative source dependencies for native headless regression freshness."""
 from pathlib import Path
 import hashlib
+import os
 import re
 from functools import lru_cache
 
@@ -9,13 +10,29 @@ P = Path(__file__).resolve().parents[1]
 
 @lru_cache(maxsize=1)
 def script_classes():
-    scripts = list(P.rglob('*.gd'))
-    scripts = [p for p in scripts if not any(part in {'.godot', 'build'} for part in p.relative_to(P).parts)]
+    # Skip the same excluded trees before entering large import/export caches.
+    # Path.match retains this platform's original glob case semantics.
+    scripts = []
+    for root, folders, files in os.walk(P):
+        folders[:] = [name for name in folders if name not in {'.godot', 'build'}]
+        scripts.extend(Path(root) / name for name in files if Path(name).match('*.gd'))
     classes = {}
+    duplicate = False
     for path in scripts:
         match = re.search(r'^class_name\s+(\w+)', path.read_text(encoding='utf-8'), re.M)
         if match:
+            duplicate = duplicate or match.group(1) in classes
             classes[match.group(1)] = path
+    if duplicate:
+        # Preserve legacy traversal precedence if archived scripts redeclare a
+        # class; ordinary projects with unique class names need no cache scan.
+        classes = {}
+        for path in P.rglob('*.gd'):
+            if any(part in {'.godot', 'build'} for part in path.relative_to(P).parts):
+                continue
+            match = re.search(r'^class_name\s+(\w+)', path.read_text(encoding='utf-8'), re.M)
+            if match:
+                classes[match.group(1)] = path
     return classes
 
 

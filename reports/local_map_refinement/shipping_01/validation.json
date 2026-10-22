@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "version": "0.2.34",
+  "mode": "verified_shipping_exe",
+  "runtime_source_sha256": "525065c3f4d2756a387dbbca12e02f5d6a24917028e3e919109b13fc1afebafa",
+  "windows_exe_sha256": "1ec2765dcc87e50fb2b72eaf8f42531b281da2e1aa880dfab3489fbda7ef1d80",
+  "shipping_binary_unchanged": true,
+  "capture_driver_sha256": "c21a615cbf05b4a50b9621a87e9f19210c227b3752b8454632f75285d236ed77",
+  "commands": [
+    {
+      "name": "gpu",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\local_map_refinement\\shipping_01\\gpu.log",
+        "--",
+        "--qa-session",
+        "--ground-continuity-test",
+        "--ground-continuity-output",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\local_map_refinement\\shipping_01\\gpu"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "ui_smoke",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\local_map_refinement\\shipping_01\\ui_smoke.log",
+        "--",
+        "--qa-session",
+        "--scenario",
+        "campaign_1924_02",
+        "--ui-test",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\local_map_refinement\\shipping_01\\ui_smoke.png"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "home",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\local_map_refinement\\shipping_01\\home.log",
+        "--",
+        "--qa-session",
+        "--capture",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\local_map_refinement\\shipping_01\\home.png"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "mountains",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\local_map_refinement\\shipping_01\\mountains.log",
+        "--",
+        "--qa-session",
+        "--scenario",
+        "campaign_1924_03",
+        "--focus-point",
+        "16848,7000",
+        "--capture-zoom",
+        "1.05",
+        "--capture",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\local_map_refinement\\shipping_01\\mountains.png"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "captures": [
+    {
+      "path": "reports/local_map_refinement/shipping_01/ui_smoke.png",
+      "sha256": "4cf8214e09cdb9271860cc3c45115c321ab7b1ae81bfb045b43a156787372f3e",
+      "metadata": "reports/local_map_refinement/shipping_01/ui_smoke.json",
+      "metadata_sha256": "a732a74598e8da13970d309d456ee5d21c18c431b7b7b27f295a4a11e8c5549c"
+    },
+    {
+      "path": "reports/local_map_refinement/shipping_01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "reports/local_map_refinement/shipping_01/home.json",
+      "metadata_sha256": "5cafdaa2be011ca9868669b4fc14e62d899bac267ba06f87ec37845b92844aae"
+    },
+    {
+      "path": "reports/local_map_refinement/shipping_01/mountains.png",
+      "sha256": "5899073b61791a50d20e7ca17474595b595418f2575872694a847e4cf30e3ee6",
+      "metadata": "reports/local_map_refinement/shipping_01/mountains.json",
+      "metadata_sha256": "2043094df6119b787e01531ab1514c86b545aa3a596d70fb081df652e46c92ea"
+    }
+  ],
+  "gpu_report": "reports/local_map_refinement/shipping_01/gpu/validation.json",
+  "gpu_report_sha256": "509dcf3dfc52abe3946fa3ee38b5e5a88b92d3be4899361840fa5623ab71b3d3",
+  "gpu_checks": 48,
+  "ui_smoke_passed": true,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "manual_image_compositing": false
+}
