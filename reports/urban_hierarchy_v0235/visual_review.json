@@ -1,0 +1,128 @@
+{
+  "created_at_utc": "2026-10-22T06:16:18.725636+00:00",
+  "version": "0.2.35",
+  "mode": "verified_shipping_exe",
+  "runtime_source_sha256": "e3e9f0defc159cf3f5f9ece2d5628f7e199e1eb5a7b355093cfc63d42bc77224",
+  "windows_exe_sha256": "b27672d564b36842172d96912796f0c8766ca731b10eb343ad5e519b850b9fb9",
+  "actually_viewed_complete_images": [
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/wuhan.png",
+      "sha256": "cfc39357e6bc1aa363b579ba498c7e891cad75f81658c948e891a7f3343d4cea",
+      "metadata_sha256": "dcad037fdd0f9531643a79a550d432f22b1f10e042bf99d36c317d2481764fd4",
+      "whole_image_actually_opened": true,
+      "observation": "Dense city roof mass and separate river-bank port remain readable; wide flat land and angular banks still need work."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/wuchang.png",
+      "sha256": "2f90e7add9db15fbd81c4c2989fd9f9b8e67ad693ac17b50dee6fe7e880ff147",
+      "metadata_sha256": "476b967bb339ea0829231075416febdc3b54af2d39bed48ef9037025981f4144",
+      "whole_image_actually_opened": true,
+      "observation": "Province-seat mass remains within the original model bounds. Its caption is clear; the surrounding urban fabric remains sparse."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/hanyang.png",
+      "sha256": "c9603c4bb20593faca55ed2e30ce917dfe855190cd8114833d58e586dcf226ff",
+      "metadata_sha256": "afb45ca1cbce3482b3dba00813705ff45237e7964b93335e3fee0bc95cd760d5",
+      "whole_image_actually_opened": true,
+      "observation": "The county symbol retains its registered historical rank. Ferry, port and nearby formations remain distinguishable."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/wuhan_three_towns.png",
+      "sha256": "89cff6a63f3b2f21bc2fa5e52701548fe9f8d23eaf58dff6ebb0b81d4d65c602",
+      "metadata_sha256": "1e602916f32381a95212e9aad3bbad2896176c81eb86f6164ec1d1a7ce1aae89",
+      "whole_image_actually_opened": true,
+      "observation": "All three towns and separate bank symbols are legible. The straight influence border remains a gameplay abstraction. Existing port models still repeat."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/wuhan_regional.png",
+      "sha256": "f650c748e9827f740f741798fd225d697095ddd4a05ed087a630de757c849a1b",
+      "metadata_sha256": "113d359df20f8de3854742d6835dd8698b7afa1c622b27bb7fdabc88227eced6",
+      "whole_image_actually_opened": true,
+      "observation": "Cities switch to small strategic counters and major captions remain readable; the large empty ground and angular rivers remain visible."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/ningpu_city.png",
+      "sha256": "e2a5b0e0d260e33a80b0bd0c88e90cdb0f9dcd479ecf4b647b0dfb7c5e8e6f25",
+      "metadata_sha256": "f2761cf557a62979688fe58a5d045a1e50b829f656981c2f12b68a6bab80aa5b",
+      "whole_image_actually_opened": true,
+      "observation": "New roof/street mass reads beside the existing formations. The label clears both city and troops; ground density is still limited."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/ningpu_river.png",
+      "sha256": "bd9cc980e790cef68529ed3c7853bda4292c228b04778ce3c11926327e86ff4f",
+      "metadata_sha256": "575559c55674ccaef3264877104fc52edef89e1ceb24f7b266ad67554abf24af",
+      "whole_image_actually_opened": true,
+      "observation": "Opposite bank and ferry captions remain clear. Repeated dock art and simplified river edges remain open issues."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/ningpu_regional.png",
+      "sha256": "027b1fd34292fd0466400b3b97d3ae4cc76c0c1c0cfd62e9217b16963431d845",
+      "metadata_sha256": "59b0480aad42072da73e42b367b5866b52d11340fe97885d431b54237c7de87e",
+      "whole_image_actually_opened": true,
+      "observation": "Both banks and inland Nanjing are visible together. Urban and terrain massing still falls short of the reference target."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/wuhan_x30_layout.png",
+      "sha256": "02ad21e02dcace6afbf094bdd2ee5b989db72588862a7841b8511a956a972cc9",
+      "metadata_sha256": "d23c1e4c8b53b1aade23407e15998f053b164d09cfb46d900c9388e61dc10373",
+      "whole_image_actually_opened": true,
+      "observation": "The whole desktop 2400x1080 touch-layout viewport has clear city/port captions and commands. This is not a physical X30 test."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/wuhan_large_text.png",
+      "sha256": "7341e30f1986327b2831d07bdc8492b150d5203f9f7e5e50d1f5c296c134f1f0",
+      "metadata_sha256": "7d1e1c7d45184febc0bcd2cbd5676d67f54d3032475c392845954d81652965fc",
+      "whole_image_actually_opened": true,
+      "observation": "The whole 1280x720 large-text viewport retains the city and bank captions. The bottom instruction uses its existing truncation behavior."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/beijing.png",
+      "sha256": "966547b9f6679cb6cf48dfe7eeec763083c187e8b3b07807bb3f1d6a0d710e74",
+      "metadata_sha256": "c4b348c668b860735b7fd7fa86cc98f61604d5ce3ca9e7b79993dc836dde7cba",
+      "whole_image_actually_opened": true,
+      "observation": "The northern urban mass remains visible beside the formations and the capital caption. Streets and adjacent rural detail remain schematic."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/coast.png",
+      "sha256": "14dadbe3bbc6dcbac2512c70fb5d35d72dd6110506a2d4cbb22e148fd5e7e318",
+      "metadata_sha256": "89e23341e3ac1eb418e2e34d4aeedccd0065b9a3e2bd3c588aa895f4070bf1d1",
+      "whole_image_actually_opened": true,
+      "observation": "The surplus coastal political outline and friendly internal outline are absent. Coast stair steps, angular tributaries and polygonal ground/tint boundaries remain."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/composition_shipping01/village.png",
+      "sha256": "c2fc4c341ed4378752c39086752cbe7550adbbd7dad3c15cacbe207012293034",
+      "metadata_sha256": "bbca94d4b88051152915f219f06876362f490a0da4070af916a7d381d666f41f",
+      "whole_image_actually_opened": true,
+      "observation": "The three village captions remain clear among the relief symbols. Thin tributaries remain highly schematic and the ground still lacks local detail."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/shipping01/ui_smoke.png",
+      "sha256": "26946f0ad5aa6e8ac18adcb52895276d9c6568e264a13d022e8a1b489dc2735a",
+      "metadata_sha256": "bc76fc2ba6fc8120b80d64791e7219d6a6fc0bcd7217f2d12866ab5a6c053ffe",
+      "whole_image_actually_opened": true,
+      "observation": "The actual exported command interface and selection overlays remain readable; dense unit/overlay presentation still needs artistic refinement."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/shipping01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata_sha256": "e9a1c7de3b0e7493910d3c4ac3dc18e1f6e6c64948d80cb778b0584c2fb5da19",
+      "whole_image_actually_opened": true,
+      "observation": "The actual menu remains readable over the existing generated background; the background is illustrative rather than a surveyed game map."
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/shipping01/mountains.png",
+      "sha256": "f72b920f1051917b799c187dbfb28f86134db161a6259a05f2ff175478fe6513",
+      "metadata_sha256": "0234dd9857138ef1dc3d3ad39fd3de5fcb1911e3f97f61346d9c7bf54a51b66f",
+      "whole_image_actually_opened": true,
+      "observation": "Whole relief sprites and grounding remain visible. Repeated ground treatment and angular tributaries remain open; this is not final art approval."
+    }
+  ],
+  "formal_art_approval": false,
+  "physical_android_device_tested": false,
+  "ew6_parity_claimed": false,
+  "whole_goal_achieved": false,
+  "original_rasters_modified": false,
+  "manual_image_compositing": false,
+  "scope": "Sixteen complete exported-Windows viewports individually opened. HUD input captures are separately validated; this does not claim every other generated screenshot was manually viewed."
+}

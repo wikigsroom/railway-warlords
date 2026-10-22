@@ -4,8 +4,8 @@
   "base_additional_count": 666,
   "settlement_extension_count": 74,
   "surface_extension_count": 56,
-  "additional_count": 796,
-  "total_map_assets": 870,
+  "additional_count": 804,
+  "total_map_assets": 878,
   "original_images_modified": false,
   "full_texture_draw": true,
   "families": {
@@ -810,10 +810,14 @@
       "building_bank_capital_north_china_004",
       "building_bank_capital_north_china_005",
       "building_bank_capital_north_china_006",
-      "building_bank_capital_north_china_007"
+      "building_bank_capital_north_china_007",
+      "building_bank_urban_capital_north_china_001",
+      "building_bank_urban_capital_north_china_002"
     ],
     "capital_south_china": [
-      "building_bank_capital_south_china_001"
+      "building_bank_capital_south_china_001",
+      "building_bank_urban_capital_south_china_001",
+      "building_bank_urban_capital_south_china_002"
     ],
     "capital_japan": [
       "building_bank_capital_japan_001"
@@ -936,6 +940,14 @@
       "tile_bank_alluvial_soil_014",
       "tile_bank_alluvial_soil_015",
       "tile_bank_alluvial_soil_016"
+    ],
+    "city_north_china": [
+      "building_bank_urban_city_north_china_001",
+      "building_bank_urban_city_north_china_002"
+    ],
+    "city_south_china": [
+      "building_bank_urban_city_south_china_001",
+      "building_bank_urban_city_south_china_002"
     ]
   },
   "records": {
@@ -20042,6 +20054,217 @@
         1536,
         1024
       ]
+    },
+    "building_bank_urban_city_north_china_001": {
+      "category": "building",
+      "family": "city_north_china",
+      "variant": 1,
+      "axis": "",
+      "region": "north_china",
+      "role": "city",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        88,
+        68
+      ],
+      "alpha_bounds": [
+        98,
+        132,
+        1471,
+        896
+      ],
+      "source_sha256": "77f0877806a467cda7227ca97c4ea1b9df109f2c1a097289b01b9640ed64fc5b",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "building_bank_urban_city_south_china_001": {
+      "category": "building",
+      "family": "city_south_china",
+      "variant": 1,
+      "axis": "",
+      "region": "south_china",
+      "role": "city",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        88,
+        68
+      ],
+      "alpha_bounds": [
+        65,
+        80,
+        1478,
+        894
+      ],
+      "source_sha256": "9a0adf54405eca258f679b7a8beca561b88d8e0b95a512b989936a59e77b6391",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "building_bank_urban_city_north_china_002": {
+      "category": "building",
+      "family": "city_north_china",
+      "variant": 2,
+      "axis": "",
+      "region": "north_china",
+      "role": "city",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        88,
+        68
+      ],
+      "alpha_bounds": [
+        81,
+        155,
+        1485,
+        886
+      ],
+      "source_sha256": "b926c6bd769f5cf8d15ba096c002339ace0f27dbe2be4ad9b21ec96524733b03",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "building_bank_urban_city_south_china_002": {
+      "category": "building",
+      "family": "city_south_china",
+      "variant": 2,
+      "axis": "",
+      "region": "south_china",
+      "role": "city",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        88,
+        68
+      ],
+      "alpha_bounds": [
+        80,
+        100,
+        1494,
+        914
+      ],
+      "source_sha256": "20f4ab5ab4756c508138b2a87b433e6b4ee021c5114ce2a578d2cc94b8f08393",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "building_bank_urban_capital_north_china_001": {
+      "category": "building",
+      "family": "capital_north_china",
+      "variant": 8,
+      "axis": "",
+      "region": "north_china",
+      "role": "capital",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        100,
+        78
+      ],
+      "alpha_bounds": [
+        114,
+        42,
+        1447,
+        976
+      ],
+      "source_sha256": "f0c4a0c28a3358c365507793f20ce1bef834e0aafc1c81beb8f4f03afb477745",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "building_bank_urban_capital_north_china_002": {
+      "category": "building",
+      "family": "capital_north_china",
+      "variant": 9,
+      "axis": "",
+      "region": "north_china",
+      "role": "capital",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        100,
+        78
+      ],
+      "alpha_bounds": [
+        82,
+        101,
+        1506,
+        903
+      ],
+      "source_sha256": "76534e62453394a5614e9fa0a4774e72113f4b4b69489ba3241f0d7f0208cf1c",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "building_bank_urban_capital_south_china_001": {
+      "category": "building",
+      "family": "capital_south_china",
+      "variant": 2,
+      "axis": "",
+      "region": "south_china",
+      "role": "capital",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        100,
+        78
+      ],
+      "alpha_bounds": [
+        140,
+        146,
+        1399,
+        896
+      ],
+      "source_sha256": "1bf320eda6f0894b1f84cf1bd1036e0b7ac461bf1e6ce52c431a55074ecedd77",
+      "dimensions": [
+        1536,
+        1024
+      ]
+    },
+    "building_bank_urban_capital_south_china_002": {
+      "category": "building",
+      "family": "capital_south_china",
+      "variant": 3,
+      "axis": "",
+      "region": "south_china",
+      "role": "capital",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        100,
+        78
+      ],
+      "alpha_bounds": [
+        164,
+        123,
+        1384,
+        867
+      ],
+      "source_sha256": "3ea233da44d16bcda7acf7380c076c8fc3afcb72769e4636f9ead887cbd83b83",
+      "dimensions": [
+        1536,
+        1024
+      ]
     }
+  },
+  "urban_extension_count": 8,
+  "urban_active_families": {
+    "city_north_china": [
+      "building_bank_urban_city_north_china_001",
+      "building_bank_urban_city_north_china_002"
+    ],
+    "city_south_china": [
+      "building_bank_urban_city_south_china_001",
+      "building_bank_urban_city_south_china_002"
+    ],
+    "capital_north_china": [
+      "building_bank_urban_capital_north_china_001",
+      "building_bank_urban_capital_north_china_002"
+    ],
+    "capital_south_china": [
+      "building_bank_urban_capital_south_china_001",
+      "building_bank_urban_capital_south_china_002"
+    ]
   }
 }

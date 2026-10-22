@@ -444,13 +444,20 @@ func prepare_place_sprites() -> void:
 	settlement_choices={}
 	if MapArtBank.available():
 		var candidates: Array=[]
+		var urban_candidates: Array=[]
 		for node in places.nodes:
 			# Source locations and actual roles select the family. Precomputing the
 			# station/dock alternatives keeps future construction stable as well.
 			for role in ["","station","dock"]:
 				var family=MapArtBank.settlement_family(node,state.date,role)
-				if not family.is_empty():candidates.append({"key":node.id+":"+role,"family":family,"position":node.at})
+				if family.is_empty():continue
+				var item={"key":node.id+":"+role,"family":family,"position":node.at}
+				if MapArtBank.data().get("urban_active_families",{}).has(family):urban_candidates.append(item)
+				else:candidates.append(item)
 		settlement_choices=MapArtBank.assign(candidates,450.0)
+		# Nearby city centres remain distinct across the larger local-theatre
+		# view, while minor-settlement and facility choices keep their old scope.
+		settlement_choices.merge(MapArtBank.assign(urban_candidates,1600.0))
 	for node in places.nodes:
 		var rank=HistoricalPlaces.importance(node,state.date)
 		var bounds=MapComposition.settlement_bounds(rank)
@@ -491,6 +498,9 @@ func city_visual_record(city: Dictionary) -> Dictionary:
 	var bank_id="";var group="scenery";var asset_id=""
 	if MapArtBank.available() and city.fort_hp>0 and city.id not in ["jiumenkou","shanhaiguan"]:
 		var role="station" if EconomyRules.building_level(city,"station")>0 and HistoricalPlaces.kind(city,state.date)=="city" else "dock" if city.get("port",false) and not separate_harbor(city) and HistoricalPlaces.kind(city,state.date) not in ["national_capital","capital"] else ""
+		# Stations/ports remain real facilities in the rules and harbour layer;
+		# the primary city symbol should still communicate its urban rank.
+		if MapArtBank.settlement_family(city,state.date).begins_with("city_"):role=""
 		bank_id=str(settlement_choices.get(city.id+":"+role,MapArtBank.settlement_id(city,state.date,role)))
 	if not bank_id.is_empty():
 		var texture_rect=MapArtBank.source_rect(bank_id,bounds)
@@ -608,9 +618,11 @@ func map_bank_capture_facts() -> Dictionary:
 			if not id.is_empty():buildings[node.id]=id
 	for city in state.cities:
 		if city.fort_hp<=0 or city.id in ["jiumenkou","shanhaiguan"] or not view.has_point(HexGrid.to_world(HexGrid.coordinate(city.position))):continue
-		var role="station" if EconomyRules.building_level(city,"station")>0 and HistoricalPlaces.kind(city,state.date)=="city" else "dock" if city.get("port",false) and not separate_harbor(city) and HistoricalPlaces.kind(city,state.date) not in ["national_capital","capital"] else ""
-		var id=str(settlement_choices.get(city.id+":"+role,""))
-		if not id.is_empty():buildings[city.id]=id
+		if not MapSemanticZoom.detailed(zoom,city.id==selected_city_id):continue
+		# Report the actual whole source selected by the drawing path. Duplicated
+		# station/dock heuristics would report a facility after the city was drawn.
+		var visual=city_visual_record(city)
+		if visual.group=="building" and MapArtBank.data().records.has(visual.asset_id):buildings[city.id]=visual.asset_id
 	var materials: Dictionary={};var material_ids: Dictionary={}
 	for entry in visible_terrain_entries(view):
 		var key=HexGrid.key(entry.hex);var family=str(map_details.surface_families.get(key,""))

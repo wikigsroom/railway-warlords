@@ -517,6 +517,11 @@
       "sha_matches": true
     },
     {
+      "file": "presentation/data/control_border_graph.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
       "file": "presentation/data/control_land_clip.json",
       "included": true,
       "sha_matches": true
@@ -592,6 +597,11 @@
       "sha_matches": true
     },
     {
+      "file": "presentation/data/ground_material_plan_v0235.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
       "file": "presentation/data/hydrography_detail.json",
       "included": true,
       "sha_matches": true
@@ -618,6 +628,11 @@
     },
     {
       "file": "presentation/data/map_surface_extension_plan.json",
+      "included": true,
+      "sha_matches": true
+    },
+    {
+      "file": "presentation/data/map_urban_extension_plan.json",
       "included": true,
       "sha_matches": true
     },
@@ -714,7 +729,7 @@
     "lib/armeabi-v7a/libgodot_android.so"
   ],
   "private_files_detected": [],
-  "artifact_sha256": "c96f27832bad1b8a513d22d42a283429a8c2c3d4c2d4863a6f059119b305de7a",
+  "artifact_sha256": "7149eed0a3b79d1ea730c52ad8d6128b1c06a43c1620d2ebd70ffb46b9f31c72",
   "raster_manifest_byte_verified": true,
   "raster_import_files_verified": [
     {
@@ -20786,6 +20801,102 @@
       "source_sha256": "1f56e626d4c2efa28480f9d0a122152901efa99a65bca8559706bdf92537ea4d",
       "embedded_imports": [
         ".godot/imported/tile_ground_painted_v0231_temperate_meadow.png-555088142608ddf3009f29cf37c1c009.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_alluvial_loam",
+      "source_sha256": "4400943c212ded35be26f11afacc1104b7cbfdf53736a1b00afcd23d92d02537",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_hierarchy_v0235_alluvial_loam.png-77cb92cb0dc28259a1858a08b570053c.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_flood_meadow",
+      "source_sha256": "af082248ac01f6aa9b2777d3c9c9afba4488d970cb47d01cc7b4406949c0d136",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_hierarchy_v0235_flood_meadow.png-3dc1a6b898377cf829b6e359e77449fd.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_subtropical_humus",
+      "source_sha256": "b7adc0858a613c20118f6933f6e9e6eeb66f551d5ae7f5a78e46dfd35b640519",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_hierarchy_v0235_subtropical_humus.png-25bd58f9a960f3fd900253bf7e741eba.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_temperate_meadow",
+      "source_sha256": "e17939b87c459664872ba0d0cf372a379220973b440f4d37d2a5be0f4e7b7f6a",
+      "embedded_imports": [
+        ".godot/imported/tile_ground_hierarchy_v0235_temperate_meadow.png-b3cb0cf9a9e555d9858bf9af18d91016.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "building_bank_urban_city_north_china_001",
+      "source_sha256": "77f0877806a467cda7227ca97c4ea1b9df109f2c1a097289b01b9640ed64fc5b",
+      "embedded_imports": [
+        ".godot/imported/building_bank_urban_city_north_china_001.png-7b81631682d87dd92cbe1bbbf2fbf87e.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "building_bank_urban_city_south_china_001",
+      "source_sha256": "9a0adf54405eca258f679b7a8beca561b88d8e0b95a512b989936a59e77b6391",
+      "embedded_imports": [
+        ".godot/imported/building_bank_urban_city_south_china_001.png-f4244204a2cf39e1f93f98945df2daeb.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "building_bank_urban_city_north_china_002",
+      "source_sha256": "b926c6bd769f5cf8d15ba096c002339ace0f27dbe2be4ad9b21ec96524733b03",
+      "embedded_imports": [
+        ".godot/imported/building_bank_urban_city_north_china_002.png-647fd063c77428192a65d7ee696db9ca.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "building_bank_urban_city_south_china_002",
+      "source_sha256": "20f4ab5ab4756c508138b2a87b433e6b4ee021c5114ce2a578d2cc94b8f08393",
+      "embedded_imports": [
+        ".godot/imported/building_bank_urban_city_south_china_002.png-e28ce816fd264979a025020f58933ae9.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "building_bank_urban_capital_north_china_001",
+      "source_sha256": "f0c4a0c28a3358c365507793f20ce1bef834e0aafc1c81beb8f4f03afb477745",
+      "embedded_imports": [
+        ".godot/imported/building_bank_urban_capital_north_china_001.png-d504789fb2c917f91ce31e7a2f33d69a.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "building_bank_urban_capital_north_china_002",
+      "source_sha256": "76534e62453394a5614e9fa0a4774e72113f4b4b69489ba3241f0d7f0208cf1c",
+      "embedded_imports": [
+        ".godot/imported/building_bank_urban_capital_north_china_002.png-cdf5c0e3679a900237147d0aada12494.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "building_bank_urban_capital_south_china_001",
+      "source_sha256": "1bf320eda6f0894b1f84cf1bd1036e0b7ac461bf1e6ce52c431a55074ecedd77",
+      "embedded_imports": [
+        ".godot/imported/building_bank_urban_capital_south_china_001.png-da3dfd8ecbc28ef55b9221a591a09587.ctex"
+      ],
+      "current_import_bytes_match": true
+    },
+    {
+      "id": "building_bank_urban_capital_south_china_002",
+      "source_sha256": "3ea233da44d16bcda7acf7380c076c8fc3afcb72769e4636f9ead887cbd83b83",
+      "embedded_imports": [
+        ".godot/imported/building_bank_urban_capital_south_china_002.png-78290ff718bbcea0c2e6e9d4be6470e1.ctex"
       ],
       "current_import_bytes_match": true
     }

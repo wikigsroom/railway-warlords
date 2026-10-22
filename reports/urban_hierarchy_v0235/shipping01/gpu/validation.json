@@ -1,0 +1,390 @@
+{
+	"build_version": "0.2.35",
+	"checks": [
+		{
+			"name": "shipping_compatibility_shader_and_complete_source_array_are_available",
+			"passed": true
+		},
+		{
+			"name": "all_twenty_complete_originals_are_available_as_independent_runtime_layers",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:alluvial_loam",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:alluvial_loam",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:alpine_meadow",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:alpine_meadow",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:alpine_scree",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:alpine_scree",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:alpine_steppe",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:alpine_steppe",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:boreal_litter",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:boreal_litter",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:conifer_litter",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:conifer_litter",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:desert_steppe",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:desert_steppe",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:dry_steppe",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:dry_steppe",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:dry_woodland_litter",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:dry_woodland_litter",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:dune_sand",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:dune_sand",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:flood_meadow",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:flood_meadow",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:gravel_gobi",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:gravel_gobi",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:saline_meadow",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:saline_meadow",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:savanna_red_soil",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:savanna_red_soil",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:subtropical_humus",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:subtropical_humus",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:temperate_litter",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:temperate_litter",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:temperate_meadow",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:temperate_meadow",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:tropical_moist_humus",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:tropical_moist_humus",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:tundra_moss",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:tundra_moss",
+			"passed": true
+		},
+		{
+			"name": "runtime_layer_preserves_whole_original_pixels_and_mips:weathered_rock",
+			"passed": true
+		},
+		{
+			"name": "hex_seams_match_independent_continuous_source_render:weathered_rock",
+			"passed": true
+		},
+		{
+			"name": "production_whole_source_sampling_has_no_hex_partition_seams:temperate_meadow",
+			"passed": true
+		},
+		{
+			"name": "production_whole_source_sampling_has_no_hex_partition_seams:weathered_rock",
+			"passed": true
+		},
+		{
+			"name": "production_whole_source_sampling_has_no_hex_partition_seams:alluvial_loam",
+			"passed": true
+		},
+		{
+			"name": "three_material_boundary_pixels_are_independent_of_draw_order",
+			"passed": true
+		},
+		{
+			"name": "camera_pan_keeps_material_boundaries_and_source_phase_fixed_in_world_space",
+			"passed": true
+		},
+		{
+			"name": "production_source_does_not_repeat_at_one_texture_period",
+			"passed": true
+		}
+	],
+	"ew6_parity_claimed": false,
+	"failures": [],
+	"fixture_size": [
+		384,
+		256
+	],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"renderer": "gl_compatibility",
+	"rendering_device": "NVIDIA GeForce RTX 3060",
+	"samples": [
+		{
+			"family": "alluvial_loam",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00103519662566807,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "alpine_meadow",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00414078650267228,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "alpine_scree",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00621117975400842,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "alpine_steppe",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00517598312834035,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "boreal_litter",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00310558987700421,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "conifer_litter",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00207039325133614,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "desert_steppe",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00724637637967649,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "dry_steppe",
+			"maximum_channel_delta": 0.0,
+			"mean_channel_delta": 0.0,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "dry_woodland_litter",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00724637637967649,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "dune_sand",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00103519662566807,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "flood_meadow",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00207039325133614,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "gravel_gobi",
+			"maximum_channel_delta": 0.0,
+			"mean_channel_delta": 0.0,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "saline_meadow",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00103519662566807,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "savanna_red_soil",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00310558987700421,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "subtropical_humus",
+			"maximum_channel_delta": 0.0,
+			"mean_channel_delta": 0.0,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "temperate_litter",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00310558987700421,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "temperate_meadow",
+			"maximum_channel_delta": 0.0,
+			"mean_channel_delta": 0.0,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "tropical_moist_humus",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00207039325133614,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "tundra_moss",
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00724637637967649,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"family": "weathered_rock",
+			"maximum_channel_delta": 1.00000753998756,
+			"mean_channel_delta": 0.0103519819908261,
+			"pixels": 966,
+			"sampling_mode": "direct_calibration"
+		},
+		{
+			"maximum_channel_delta": 0.0,
+			"mean_channel_delta": 0.0,
+			"pixels": 966,
+			"production_family": "temperate_meadow"
+		},
+		{
+			"maximum_channel_delta": 0.999999940395355,
+			"mean_channel_delta": 0.00414078650267228,
+			"pixels": 966,
+			"production_family": "weathered_rock"
+		},
+		{
+			"maximum_channel_delta": 0.0,
+			"mean_channel_delta": 0.0,
+			"pixels": 966,
+			"production_family": "alluvial_loam"
+		},
+		{
+			"draw_order": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 966
+			}
+		},
+		{
+			"world_phase": {
+				"maximum_channel_delta": 0.0,
+				"mean_channel_delta": 0.0,
+				"pixels": 966
+			}
+		},
+		{
+			"fixed_period_removed": {
+				"maximum_channel_delta": 19.9999988079071,
+				"mean_channel_delta": 2.86956549477503,
+				"pixels": 966
+			}
+		}
+	],
+	"scope": "Native direct-sampling calibration against the whole source; production sampling on one quad versus hex partitions; draw-order independence, world-phase invariance and fixed-period suppression. Synthetic material fixtures, not historical-map screenshots or artistic acceptance.",
+	"source_images_modified": false
+}

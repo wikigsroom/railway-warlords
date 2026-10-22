@@ -2,6 +2,10 @@
 
 [中文 README](../README.md#screenshots) · [English README](../README.en.md#screenshots) · [完整机器可读记录 / Manifest](media/manifest.json)
 
+0.2.35新增8张正式Windows完整精选视口：[菜单](media/menu-v0235.png)、[汉口](media/urban-wuhan-v0235.png)、[武汉三镇](media/urban-three-towns-v0235.png)、[南京](media/urban-nanjing-v0235.png)、[宁浦江岸](media/urban-ningpu-river-v0235.png)、[宁浦总览](media/urban-ningpu-regional-v0235.png)、[山海关](media/urban-coast-v0235.png)与[桌面X30尺寸](media/urban-x30-layout-v0235.png)。13个地图视口加菜单/界面冒烟/山地共16张最终程序画面已逐张完整查看，见[查看记录](../reports/urban_hierarchy_v0235/visual_review.json)。按原始字节复制，无裁切、拼接、补绘或叠字；全部旧GIF保持真实版本，尚未获整体美术或手机验收。
+
+Version 0.2.35 adds eight verbatim whole shipping-Windows selections. Sixteen final-application images were individually opened. Older stills and GIFs keep their real versions. Physical-phone testing and final art approval remain pending.
+
 0.2.34新增8张正式Windows完整精选视口：[菜单](media/menu-v0234.png)、[汉口](media/local-wuhan-v0234.png)、[武汉三镇](media/local-wuhan-three-towns-v0234.png)、[南京](media/local-nanjing-v0234.png)、[宁浦江岸](media/local-ningpu-river-v0234.png)、[宁浦总览](media/local-ningpu-regional-v0234.png)、[山海关](media/local-coast-v0234.png)与[桌面X30尺寸](media/local-wuhan-x30-layout-v0234.png)。13个地图视口加菜单/冒烟/山地共16张最终程序画面已逐张完整查看，见[记录](../reports/local_map_refinement/visual_review.json)。精选图按原始字节复制，未裁切、拼接、补绘或叠字。旧GIF与旧图片保持真实版本；未批准整体美术，也无物理手机验收。
 
 Version 0.2.34 adds eight verbatim whole shipping-Windows selections. All sixteen final map/menu/UI-smoke/mountain viewports were individually opened in full. Older GIFs and stills retain their actual versions. Overall art approval and physical-phone acceptance remain pending.

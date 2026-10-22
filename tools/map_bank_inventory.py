@@ -1,16 +1,17 @@
-"""Single expected inventory for the three explicit, immutable source catalogs."""
+"""Expected inventory for the explicit, immutable map source catalogs."""
 import json
 from pathlib import Path
 
 P = Path(__file__).resolve().parents[1]
 BASELINE_COUNT = 74
-ADDITIONAL_COUNT = 796
+ADDITIONAL_COUNT = 804
 MAP_COUNT = BASELINE_COUNT + ADDITIONAL_COUNT
-CATEGORY_COUNTS = {'tile': 176, 'scenery': 480, 'building': 140}
+CATEGORY_COUNTS = {'tile': 176, 'scenery': 480, 'building': 148}
 CATALOGS = [
     ('map_bank_plan.json', 'map_bank_generation.json', 666),
     ('map_settlement_extension_plan.json', 'map_settlement_extension_generation.json', 74),
     ('map_surface_extension_plan.json', 'map_surface_extension_generation.json', 56),
+    ('map_urban_extension_plan.json', 'map_urban_extension_generation.json', 8),
 ]
 
 

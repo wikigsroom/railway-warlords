@@ -17,6 +17,8 @@ static func available() -> bool:
 static func ids(family: String) -> Array:
 	var surfaces=MapTerrainSurfaces.ids(family)
 	if not surfaces.is_empty():return surfaces
+	var urban: Array=data().get("urban_active_families",{}).get(family,[])
+	if not urban.is_empty():return urban
 	return data().get("families",{}).get(family,[])
 
 static func pick(family: String, identity: String) -> String:
@@ -102,8 +104,12 @@ static func settlement_family(node: Dictionary, date: String, role_override: Str
 	var region=region_for(node)
 	if region.is_empty():return ""
 	var role=role_override if not role_override.is_empty() else HistoricalPlaces.kind(node,date)
-	role={"national_capital":"capital","city":"county","port":"market"}.get(role,role)
-	if role not in ["village","market","county","capital","station","dock"]:return ""
+	role={"national_capital":"capital","port":"market"}.get(role,role)
+	# A city uses its own dense urban symbol where an explicit regional family
+	# exists. Other regions retain their existing sourced generic visual until
+	# an appropriate city family has actually been produced and reviewed.
+	if role=="city" and ids("city_"+region).is_empty():role="county"
+	if role not in ["village","market","county","city","capital","station","dock"]:return ""
 	var family=role+"_"+region
 	# A dock or station uses the nearest appropriate generic regional visual
 	# only if a source family was deliberately authored for that region.

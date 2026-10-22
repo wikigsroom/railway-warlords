@@ -7,17 +7,26 @@
 
 Move armies by rail. Sustain them through cities. Use artillery to breach defenses, infantry and cavalry to take objectives, and engineers to reopen supply routes. Food, ammunition, morale and diplomacy determine whether an offensive can continue.
 
-The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The latest published version is the **0.2.34 local-map scale and river-bank beta**; see [chapter 52](docs/52_局部战区五倍比例与独立江岸.md). Hankou and Nanjing-Pukou use a 250m geographic hex radius: the same real distance spans five times more world pixels while operation hexes remain 48 units. Inland city centres and river-bank ports have separate anchors. Current export and acceptance reports determine delivery status. Overall art parity, complete unit actions and physical X30 acceptance remain unfinished. It is an offline, single-player game. The game UI uses Simplified Chinese; these READMEs are bilingual, but English game localization is not implemented.
+The game centers on China's warlord period and extends to **Asian starting points from 1840 to 1940**. Built with **Godot 4.7.2 / GDScript**, it targets **Windows x86_64 and Android ARM64 / ARMv7**. The current playable beta is **0.2.35 urban and map visual integration**; see [chapter 55](docs/55_城市建筑群层级与地图整合.md). Hankou and Nanjing-Pukou retain their 250m geographic hex radius and 48-unit operation hexes, with separate inland-city and river-bank anchors. Overall art parity, complete unit actions and physical X30 acceptance remain unfinished. It is an offline single-player game. The UI uses Simplified Chinese; the READMEs are bilingual, but English game localization is not implemented.
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
-**In development:** the working tree now contains four additional immutable ground originals and revised repeat-edge sampling beyond published 0.2.34, with 2,513 registered PNGs; see [chapter 53](docs/53_地表绘制层次修订.md). Political outlines on coastlines and friendly internal subdivisions are also fixed; see the [whole development viewports in chapter 54](docs/54_控制区共边与海岸描边修复.md). The application version has not yet been advanced, and no new Windows/Android packages contain these changes. The following 0.2.34 shipping captures, 2,509-texture payload and acceptance reports retain their original published-source identity.
+**This update:** eight northern/southern city and province-seat originals, four grounds and revised repeat-edge sampling now ship in both packages. Political strokes use only valid shared edges between differently owned influence areas. Hanyang retains its county registration; stations and ports keep their rules and source anchors. There are 2,521 registered PNGs. [Chapter 53](docs/53_地表绘制层次修订.md) and [chapter 54](docs/54_控制区共边与海岸描边修复.md) retain their original development scope; shipping evidence is in [chapter 55](docs/55_城市建筑群层级与地图整合.md). Future instrumental music uses remote YuE2 on the RTX 3080.
 
-![Native main menu, shipping Windows 0.2.34](docs/media/menu-v0234.png)
+![Native main menu, shipping Windows 0.2.35](docs/media/menu-v0235.png)
 
-*A complete current exported-application viewport. PNG screenshots have no montage, repainting or promotional overlays; older media retain their actual source versions.*
+*A whole 0.2.35 exported-application viewport. PNG screenshots have no montage, repainting or promotional overlays; older media retain their actual source versions.*
 
-Version 0.2.34 exports Windows and signed Android/code39 from the same source identity. Hankou and Nanjing-Pukou now contain 8,836 and 9,588 cells, with separate inland-city and river-bank anchors. Coastal control coverage is rebuilt against the actual land mesh. All 30 regression groups / 14,585 checks pass, alongside 773 native HUD input, 86 local-rule, 207 settlement/control geometry, 122 source/scope, 106 shipping map-layout and 48 GPU checks. All 13 map viewports plus the menu, UI smoke and mountain views were opened individually in full: [scope](docs/52_局部战区五倍比例与独立江岸.md), [actual viewing record](reports/local_map_refinement/visual_review.json). APK signatures, both ABIs, 2,509 texture payloads and three existing music imports are verified. Physical X30 acceptance remains pending.
+Windows and signed Android/code40 share the same source identity. All 30 regression groups / 14,585 checks pass, alongside 773 native HUD input, 64 urban integration, 106 shipping map-layout, 48 shipping GPU and 23 source-edge GPU checks. Sixteen whole final-application images were individually viewed. APK signatures, both ABIs, 2,521 texture payloads and three existing music imports were verified. See the [actual viewing record](reports/urban_hierarchy_v0235/visual_review.json) and [preserved history, rules and originals](reports/urban_hierarchy_v0235/scope.json). This does not establish final art quality or physical X30 acceptance.
+
+![Shipping Windows 0.2.35: Hankou urban mass and separate river-bank port](docs/media/urban-wuhan-v0235.png)
+
+![Shipping Windows 0.2.35: Nanjing urban mass beside the existing formations](docs/media/urban-nanjing-v0235.png)
+
+Other whole viewports: [three towns](docs/media/urban-three-towns-v0235.png), [river banks](docs/media/urban-ningpu-river-v0235.png), [regional view](docs/media/urban-ningpu-regional-v0235.png), [coast](docs/media/urban-coast-v0235.png) and [desktop X30 dimensions](docs/media/urban-x30-layout-v0235.png). Denser urban models are now present; uniform ground, angular river banks, repeated docks and extensive empty land remain open. The 0.2.34 content identity is preserved. Older versions retain their documented save restrictions and evidence below.
+
+
+Historical 0.2.34 delivery exports Windows and signed Android/code39 from the same source identity. Hankou and Nanjing-Pukou now contain 8,836 and 9,588 cells, with separate inland-city and river-bank anchors. Coastal control coverage is rebuilt against the actual land mesh. All 30 regression groups / 14,585 checks pass, alongside 773 native HUD input, 86 local-rule, 207 settlement/control geometry, 122 source/scope, 106 shipping map-layout and 48 GPU checks. All 13 map viewports plus the menu, UI smoke and mountain views were opened individually in full: [scope](docs/52_局部战区五倍比例与独立江岸.md), [actual viewing record](reports/local_map_refinement/visual_review.json). APK signatures, both ABIs, 2,509 texture payloads and three existing music imports are verified. Physical X30 acceptance remains pending.
 
 ![0.2.34 shipping Windows: Hankou city centre and separate river bank](docs/media/local-wuhan-v0234.png)
 
@@ -127,10 +136,10 @@ Counts come from current runtime data, excluding unimplemented plans and duplica
 | Factions and generals | **47 faction definitions and 324 military people**, plus four political-only figures; availability follows dated scenario rosters |
 | Progression | **28 technologies, 9 passive skills, 9 active skills and 24 achievements** |
 | Facilities | **12 types** covering recruitment, transport, supply, medicine, defense, communications and trade |
-| Raster art | **2,509 PNGs**; **1,015 stored map assets, 973 currently available**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
-| Regional terrain | **20 types × (1 new continuous ground + 4 detail originals) = 100 active originals**; 40 superseded macrogrounds retained, interactive atlas |
+| Raster art | **2,521 PNGs**; **1,027 stored map originals, 973 in automatic selection pools**; 64 cardinal-direction unit views and 16 ordinary-infantry action images |
+| Regional terrain | **20 types × (1 continuous ground + 4 detail originals) = 100 active originals**; 46 superseded grounds and 8 retired province-seat models retain their original bytes |
 | Audio and fonts | 14 procedural effects, 3 local YuE2 scores (180 seconds each), 3 retained fallback loops and 2 Chinese fonts with OFL notices |
-| Current scoped verification | **30 regression groups / 14,585 checks; 773 native HUD input, 86 local-rule, 207 settlement/control geometry and 122 source/scope checks**; final exports and shipping captures are recorded separately |
+| Current scoped verification | **30 regression groups / 14,585 checks; 773 native HUD input, 64 urban, 106 shipping map-layout, 48 shipping GPU and 23 source-edge GPU checks**; exports and viewed frames are recorded separately |
 | Character portraits | **328 people × 4 stages + 3 extra dates = 1,315 independent originals**; dated selection and stage previews; all 1,180 new source images individually viewed in full |
 | Calendar | **One day per complete round**; all factions finish their phases before the Gregorian date advances |
 | Platforms | Windows run natively; APK checked for signatures, architectures, permissions and resources; physical X30 acceptance pending |
@@ -314,7 +323,7 @@ Select a counterparty in the left roster to inspect treaties, proposal scores an
 | Android | Install your exported `build/android/RailwayWarlords.apk` | Landscape, ARM64 / ARMv7, Android 7.0 / API 24 minimum; validated package targets SDK 36 |
 | Godot editor | Import root `project.godot`, wait for import, press **F5** | Godot 4.7.2, Compatibility renderer |
 
-Git includes complete source and runtime assets. Binaries, caches and private signing material are excluded. Original PNGs occupy about 2.13 GiB; allow time for clone/import and several GB of free disk space. Local delivery packages remain separate.
+Git includes complete source and runtime assets. Binaries, caches and private signing material are excluded. Original PNGs alone occupy about 4.37GiB; Git objects, imports, both builds and local delivery archives need additional space. Allow time for the first clone and import.
 
 ### First battle
 
@@ -550,7 +559,7 @@ Configure your own release keystore, alias and password through Godot private cr
 godot --headless --path . --export-release "Android" "build/android/RailwayWarlords.apk"
 ```
 
-App ID is `org.railwaywarlords.game`; version 0.2.34 uses versionCode 39. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
+App ID is `org.railwaywarlords.game`; version 0.2.35 uses versionCode 40. Updating an installed app requires the same signature; a differently signed build cannot replace the original. Tracked release-credential fields are empty.
 
 ### Automation scope
 
@@ -660,11 +669,11 @@ Tactical selection still has frame-time spikes; averages do not establish stable
 <a id="assets"></a>
 ## Artwork, media and licensing
 
-All 2,509 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route, including forty-two retained superseded macrogrounds, the 1,180 independent portraits added in 0.2.28 and two lowland replacement originals in 0.2.31. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing or mirrored variants were not used to inflate independent source counts.
+All 2,521 registered PNGs came through the designated **sub2-image-gen / gpt-image-2.5** route. This includes forty-six retained superseded macrogrounds, eight retired province-seat models, the 1,180 independent portraits added in 0.2.28 and the twelve ground/urban originals added after 0.2.34. Engine copies retain generated bytes; Godot handles compression, mipmaps and display size. Cropping, repainting, composites, manual resizing and mirrored variants are not counted as independent originals.
 
 - [Runtime manifest](assets/manifest.json): original workspace sources, models, dimensions and hashes.
 - [Portable provenance](docs/asset-provenance/index.json): repository-relative images/prompts and SHA-256.
-- [Prompt directory](docs/asset-prompts/): 2,509 prompts; gateway configuration and credentials are excluded.
+- [Prompt directory](docs/asset-prompts/): 2,521 prompts; gateway configuration and credentials are excluded.
 
 Two legacy portrait prompts have readable alias transcriptions using Li Desheng. Their exact original UTF-8 bytes are preserved reversibly with the original SHA256; source images and workspace production originals remain immutable.
 - [Media guide](docs/MEDIA.md): native screenshots, recording, GIF conversion and evidence scope.
@@ -715,4 +724,4 @@ The [0.2.23 military UI and dossier chapter](docs/41_军事界面与将领档案
 
 The [0.2.24 atlas and diplomacy chapter](docs/42_战区沙盘与外交事务精修.md) covers shipping terrain previews, zoom and pan, date gates, counterparty selection, actual aid transactions and current delivery limits.
 
-Older chapters preserve their version context. Use these READMEs, the [0.2.34 local-map and bank scope](docs/52_局部战区五倍比例与独立江岸.md), completion assessment and matching reports for current status. Commander registration and remaining coverage are documented in the [roster chapter](docs/46_师旅级将领池与战役名册.md).
+Older chapters preserve their version context. Use these READMEs, the [0.2.35 urban and map scope](docs/55_城市建筑群层级与地图整合.md), completion assessment and matching reports for current status. Commander registration and remaining coverage are documented in the [roster chapter](docs/46_师旅级将领池与战役名册.md).

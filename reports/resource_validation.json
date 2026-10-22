@@ -13,14 +13,14 @@
   "definition_tables": 25,
   "maps": 6,
   "scenarios": 61,
-  "raster_count": 2509,
+  "raster_count": 2521,
   "audio_count": 17,
   "font_count": 2,
   "review_states": {
     "generated_pending_visual_review": 1156,
     "source_reviewed_runtime_pending": 128,
     "generated_scoped_source_review_complete": 23,
-    "generated_source_reviewed_runtime_trial": 22,
+    "generated_source_reviewed_runtime_trial": 34,
     "whole_source_viewed_runtime_review_pending": 1180
   },
   "manual_image_composition": false,
@@ -30132,6 +30132,150 @@
       "source_available": true,
       "source_matches": true,
       "alpha_zero_percent": 0,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_alluvial_loam",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "4400943c212ded35be26f11afacc1104b7cbfdf53736a1b00afcd23d92d02537",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_flood_meadow",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "af082248ac01f6aa9b2777d3c9c9afba4488d970cb47d01cc7b4406949c0d136",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_subtropical_humus",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "b7adc0858a613c20118f6933f6e9e6eeb66f551d5ae7f5a78e46dfd35b640519",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "tile_ground_hierarchy_v0235_temperate_meadow",
+      "size": [
+        1254,
+        1254
+      ],
+      "sha256": "e17939b87c459664872ba0d0cf372a379220973b440f4d37d2a5be0f4e7b7f6a",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 0,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "building_bank_urban_city_north_china_001",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "77f0877806a467cda7227ca97c4ea1b9df109f2c1a097289b01b9640ed64fc5b",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 59.3,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "building_bank_urban_city_south_china_001",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "9a0adf54405eca258f679b7a8beca561b88d8e0b95a512b989936a59e77b6391",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.47,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "building_bank_urban_city_north_china_002",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "b926c6bd769f5cf8d15ba096c002339ace0f27dbe2be4ad9b21ec96524733b03",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 58.1,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "building_bank_urban_city_south_china_002",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "20f4ab5ab4756c508138b2a87b433e6b4ee021c5114ce2a578d2cc94b8f08393",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 58.1,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "building_bank_urban_capital_north_china_001",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "f0c4a0c28a3358c365507793f20ce1bef834e0aafc1c81beb8f4f03afb477745",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 47.23,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "building_bank_urban_capital_north_china_002",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "76534e62453394a5614e9fa0a4774e72113f4b4b69489ba3241f0d7f0208cf1c",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 52.29,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "building_bank_urban_capital_south_china_001",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "1bf320eda6f0894b1f84cf1bd1036e0b7ac461bf1e6ce52c431a55074ecedd77",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 58.14,
+      "review_state": "generated_source_reviewed_runtime_trial"
+    },
+    {
+      "id": "building_bank_urban_capital_south_china_002",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "3ea233da44d16bcda7acf7380c076c8fc3afcb72769e4636f9ead887cbd83b83",
+      "source_available": true,
+      "source_matches": true,
+      "alpha_zero_percent": 58.08,
       "review_state": "generated_source_reviewed_runtime_trial"
     }
   ],

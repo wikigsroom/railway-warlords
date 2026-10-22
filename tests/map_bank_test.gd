@@ -28,19 +28,19 @@ func run() -> void:
 	if not MapArtBank.available():write_report(helper_only);return
 	var bank=MapArtBank.data()
 	if not helper_only:
-		verify(bank.records.size()==796 and bank.additional_count==796 and bank.baseline_count==74 and bank.total_map_assets==870,"74_baseline_plus_796_independent_sources_exceed_tenfold_map_count")
+		verify(bank.records.size()==804 and bank.additional_count==804 and bank.baseline_count==74 and bank.total_map_assets==878,"74_baseline_plus_804_independent_sources_exceed_tenfold_map_count")
 		var counts={"tile":0,"scenery":0,"building":0};var sources: Dictionary={};var resources=true;var metadata=true
 		for id in bank.records:
 			var row=bank.records[id];counts[row.category]+=1;sources[row.source_sha256]=true
 			resources=resources and ResourceLoader.exists("res://assets/%s/%s.png"%[row.category,id])
 			metadata=metadata and row.dimensions.size()==2 and row.alpha_bounds.size()==4 and row.alpha_bounds[2]>row.alpha_bounds[0] and row.alpha_bounds[3]>row.alpha_bounds[1]
-		verify(counts=={"tile":176,"scenery":480,"building":140},"runtime_counts_are_176_materials_480_scenery_140_settlements")
-		verify(sources.size()==796,"every_additional_runtime_record_has_a_unique_original_png_hash")
-		verify(resources and metadata,"all_796_whole_source_resources_and_foot_metadata_exist")
+		verify(counts=={"tile":176,"scenery":480,"building":148},"runtime_counts_are_176_materials_480_scenery_148_settlements")
+		verify(sources.size()==804,"every_additional_runtime_record_has_a_unique_original_png_hash")
+		verify(resources and metadata,"all_804_whole_source_resources_and_foot_metadata_exist")
 		var catalog_ids: Dictionary={}
 		for family in bank.families:
 			for id in bank.families[family]:catalog_ids[id]=true
-		verify(catalog_ids.size()==796 and bank.records.keys().all(func(id):return catalog_ids.has(id)),"every_original_is_addressable_through_a_runtime_family")
+		verify(catalog_ids.size()==804 and bank.records.keys().all(func(id):return catalog_ids.has(id)),"every_original_is_addressable_through_a_runtime_family")
 		verify(bank.families.village_north_china.size()==26 and bank.families.village_south_china.size()==10,"settlement_extension_expands_actual_campaign_village_silhouettes")
 	var items: Array=[]
 	for q in range(-8,9):
@@ -117,5 +117,9 @@ func run() -> void:
 
 func write_report(helper_only: bool) -> void:
 	var report={"passed":failures.is_empty(),"failed":failures.size(),"checks":checks,"failures":failures,"build_version":ContentRegistry.APP_VERSION,"helper_fixture_only":helper_only,"scope":"Independent original catalog, source-gated presentation, deterministic local diversity, whole-source anchoring and actual campaign integration; formal art approval and physical Android test remain separate."}
-	var file=FileAccess.open("res://reports/map_bank"+("_helper" if helper_only else "")+"_tests.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
+	var output="res://reports/map_bank"+("_helper" if helper_only else "")+"_tests.json"
+	var args=OS.get_cmdline_user_args()
+	for i in range(args.size()-1):
+		if args[i]=="--report-output":output=args[i+1]
+	var file=FileAccess.open(output,FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("MAP_BANK_TEST ",JSON.stringify(report));quit(0 if failures.is_empty() else 1)

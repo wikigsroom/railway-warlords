@@ -1,0 +1,163 @@
+{
+  "format": 1,
+  "purpose": "Dedicated Chinese urban city families and denser provincial-seat symbols; original geography and historic city ranks remain authoritative.",
+  "source_route": "sub2-image-gen/gpt-image-2.5/high",
+  "parent_commit": "d4ddc11f2c629fedfd3d96e59c8229455058b24a",
+  "additional_independent_sources": 8,
+  "source_images_modified": false,
+  "manual_compositing": false,
+  "assets": [
+    {
+      "id": "building_bank_urban_city_north_china_001",
+      "category": "building",
+      "family": "city_north_china",
+      "variant": 1,
+      "region": "north_china",
+      "role": "city",
+      "axis": "",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        88,
+        68
+      ],
+      "runtime_import_max_dimension": 384,
+      "source_revision": "r001",
+      "source_file": "output/imagegen/warlord/urban_hierarchy_v0235/pilot01/city_north_china/source.png",
+      "prompt_file": "output/imagegen/warlord/urban_hierarchy_v0235/pilot01/city_north_china/prompt.txt",
+      "prompt": "Create ONE original isolated city miniature asset for a historical hex strategy game. This is a single complete directly generated sprite, not a sheet, collage, panel, screenshot or landscape. Premium restrained hand-painted 2.5D miniature realism, matching a muted olive-green strategic map with blue-green water. Elevated fixed orthographic camera 50 degrees above ground, north at the top, upper-left daylight, clear cool lower-right wall shadows. Coherent large gray-slate tiled roof planes, warm pale-gray brick walls, substantial architectural volume. Design the silhouette and roof groups to remain legible when the entire urban cluster is displayed only 90-110 pixels wide. Use crisp readable shapes and deliberate value separation, no photographic micro-noise or blurry miniature effect. Compact connected urban mass filling 78 percent of the canvas width, generous transparent margin all around. Broadest urban silhouette at the lower middle, complete building edges visible. Fully zero-alpha transparent exterior including corners; a short soft contact shadow only beneath the buildings. Do not paint a ground island, grass halo, paved square pedestal or rectangular base. No people, soldiers, military flag, coats of arms, text, UI, labels, hexagons, writing, frames, watermark, modern automobile, power pole, skyscraper or modern infrastructure. No detached objects or extra samples. This is an unnamed representative pre-1940 architectural SYMBOL, not a purported surveyed plan of a named city. Avoid palaces, pagodas, monuments, religious icons and invented famous landmarks. No rivers, coastlines, boats, fields or rail tracks: geographic geometry and facilities are separate game layers. Do not reproduce any existing commercial game artwork.\nRegional architecture: traditional north Chinese gray-brick courtyard street blocks. Depict an URBAN CITY, clearly denser and larger than a county courtyard: 18-24 tightly grouped low houses and shops arranged in three irregular connected roof masses, two narrow readable alleys, a few enclosed small courts. Broad long muted charcoal-gray ridgelines, varied roof heights, mostly one or two stories. A low front gateway to one internal lane, without a surrounding city wall or grand tower. Roof groups should create an asymmetrical compact silhouette with three deep shadow cuts and a restrained light wall edge toward the front. Very little vegetation. Keep the large roof planes and readable front wall rhythm; do not substitute two grand symmetrical courtyards or a single temple compound.\n"
+    },
+    {
+      "id": "building_bank_urban_city_south_china_001",
+      "category": "building",
+      "family": "city_south_china",
+      "variant": 1,
+      "region": "south_china",
+      "role": "city",
+      "axis": "",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        88,
+        68
+      ],
+      "runtime_import_max_dimension": 384,
+      "source_revision": "r001",
+      "source_file": "output/imagegen/warlord/urban_hierarchy_v0235/pilot01/city_south_china/source.png",
+      "prompt_file": "output/imagegen/warlord/urban_hierarchy_v0235/pilot01/city_south_china/prompt.txt",
+      "prompt": "Create ONE original isolated city miniature asset for a historical hex strategy game. This is a single complete directly generated sprite, not a sheet, collage, panel, screenshot or landscape. Premium restrained hand-painted 2.5D miniature realism, matching a muted olive-green strategic map with blue-green water. Elevated fixed orthographic camera 50 degrees above ground, north at the top, upper-left daylight, clear cool lower-right wall shadows. Coherent large gray-slate tiled roof planes, warm pale-gray brick walls, substantial architectural volume. Design the silhouette and roof groups to remain legible when the entire urban cluster is displayed only 90-110 pixels wide. Use crisp readable shapes and deliberate value separation, no photographic micro-noise or blurry miniature effect. Compact connected urban mass filling 78 percent of the canvas width, generous transparent margin all around. Broadest urban silhouette at the lower middle, complete building edges visible. Fully zero-alpha transparent exterior including corners; a short soft contact shadow only beneath the buildings. Do not paint a ground island, grass halo, paved square pedestal or rectangular base. No people, soldiers, military flag, coats of arms, text, UI, labels, hexagons, writing, frames, watermark, modern automobile, power pole, skyscraper or modern infrastructure. No detached objects or extra samples. This is an unnamed representative pre-1940 architectural SYMBOL, not a purported surveyed plan of a named city. Avoid palaces, pagodas, monuments, religious icons and invented famous landmarks. No rivers, coastlines, boats, fields or rail tracks: geographic geometry and facilities are separate game layers. Do not reproduce any existing commercial game artwork.\nRegional architecture: traditional Yangtze-region Chinese urban vernacular, closely spaced cool blue-gray tiled roofs, pale limewashed masonry and low timber shopfronts. Depict an URBAN CITY, clearly denser than a county courtyard: 22-28 low urban houses and shops compactly grouped into three interlocking irregular street blocks, two deep narrow lane cuts, small inner courtyards and restrained modest fire walls. Most buildings one or two stories, a few taller ridges at the back. No wide plazas, city walls or grand gates. Asymmetrical coherent urban mass, a stepped roof skyline, broad readable roof shapes, dark cool alleys, sunlit pale front wall strips. At miniature scale it must read as a dense Chinese city rather than a few detached farmhouses. No banyan mass, tropical palms, port, western tower or other invented local landmark.\n"
+    },
+    {
+      "id": "building_bank_urban_city_north_china_002",
+      "category": "building",
+      "family": "city_north_china",
+      "variant": 2,
+      "region": "north_china",
+      "role": "city",
+      "axis": "",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        88,
+        68
+      ],
+      "runtime_import_max_dimension": 384,
+      "source_revision": "r001",
+      "source_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_city_north_china_002/source.png",
+      "prompt_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_city_north_china_002/prompt.txt",
+      "prompt": "Create ONE original isolated city miniature asset for a historical hex strategy game. This is a single complete directly generated sprite, not a sheet, collage, panel, screenshot or landscape. Premium restrained hand-painted 2.5D miniature realism, matching a muted olive-green strategic map with blue-green water. Elevated fixed orthographic camera 50 degrees above ground, north at the top, upper-left daylight, clear cool lower-right wall shadows. Coherent large gray-slate tiled roof planes, warm pale-gray brick walls, substantial architectural volume. Design the silhouette and roof groups to remain legible when the entire urban cluster is displayed only 90-110 pixels wide. Use crisp readable shapes and deliberate value separation, no photographic micro-noise or blurry miniature effect. Compact connected urban mass filling 78 percent of the canvas width, generous transparent margin all around. Broadest urban silhouette at the lower middle, complete building edges visible. Fully zero-alpha transparent exterior including corners; a short soft contact shadow only beneath the buildings. Do not paint a ground island, grass halo, paved square pedestal or rectangular base. No people, soldiers, military flag, coats of arms, text, UI, labels, hexagons, writing, frames, watermark, modern automobile, power pole, skyscraper or modern infrastructure. No detached objects or extra samples. This is an unnamed representative pre-1940 architectural SYMBOL, not a purported surveyed plan of a named city. Avoid palaces, pagodas, monuments, religious icons and invented famous landmarks. No rivers, coastlines, boats, fields or rail tracks: geographic geometry and facilities are separate game layers. Do not reproduce any existing commercial game artwork.\nTraditional north Chinese urban vernacular, gray-brick walls and cool dark gray tiled roofs. One dense city street-block symbol of 18-24 low houses and shopfronts. A narrow diagonal street through three unequal clustered roof blocks, an open notch at the lower left, a taller modest two-story rear building at the right. One small plain gate into a back court, NO city wall. Different roof ridges, coherent broad light planes and clearly separated dark lane cuts. No palace, temple or landmark. It must read as an urban street cluster rather than a few detached country courtyards.\n"
+    },
+    {
+      "id": "building_bank_urban_city_south_china_002",
+      "category": "building",
+      "family": "city_south_china",
+      "variant": 2,
+      "region": "south_china",
+      "role": "city",
+      "axis": "",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        88,
+        68
+      ],
+      "runtime_import_max_dimension": 384,
+      "source_revision": "r001",
+      "source_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_city_south_china_002/source.png",
+      "prompt_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_city_south_china_002/prompt.txt",
+      "prompt": "Create ONE original isolated city miniature asset for a historical hex strategy game. This is a single complete directly generated sprite, not a sheet, collage, panel, screenshot or landscape. Premium restrained hand-painted 2.5D miniature realism, matching a muted olive-green strategic map with blue-green water. Elevated fixed orthographic camera 50 degrees above ground, north at the top, upper-left daylight, clear cool lower-right wall shadows. Coherent large gray-slate tiled roof planes, warm pale-gray brick walls, substantial architectural volume. Design the silhouette and roof groups to remain legible when the entire urban cluster is displayed only 90-110 pixels wide. Use crisp readable shapes and deliberate value separation, no photographic micro-noise or blurry miniature effect. Compact connected urban mass filling 78 percent of the canvas width, generous transparent margin all around. Broadest urban silhouette at the lower middle, complete building edges visible. Fully zero-alpha transparent exterior including corners; a short soft contact shadow only beneath the buildings. Do not paint a ground island, grass halo, paved square pedestal or rectangular base. No people, soldiers, military flag, coats of arms, text, UI, labels, hexagons, writing, frames, watermark, modern automobile, power pole, skyscraper or modern infrastructure. No detached objects or extra samples. This is an unnamed representative pre-1940 architectural SYMBOL, not a purported surveyed plan of a named city. Avoid palaces, pagodas, monuments, religious icons and invented famous landmarks. No rivers, coastlines, boats, fields or rail tracks: geographic geometry and facilities are separate game layers. Do not reproduce any existing commercial game artwork.\nTraditional Yangtze-region urban vernacular, pale plaster walls and cool blue-gray tiled roofs with a few simple high fire walls. One dense city symbol of 22-28 low houses and shops. Three interlocking roof masses around a narrow diagonal alley, denser left rear group and low projecting shopfront row on the right front. Two modest tiny courts, no broad square. Mostly one or two stories. Coherent stepped roof silhouette, cool dark alley shade and pale front-wall rhythm, distinctly different from a symmetric palace compound. No city wall, palace or religious landmark.\n"
+    },
+    {
+      "id": "building_bank_urban_capital_north_china_001",
+      "category": "building",
+      "family": "capital_north_china",
+      "variant": 8,
+      "region": "north_china",
+      "role": "capital",
+      "axis": "",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        100,
+        78
+      ],
+      "runtime_import_max_dimension": 384,
+      "source_revision": "r001",
+      "source_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_capital_north_china_001/source.png",
+      "prompt_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_capital_north_china_001/prompt.txt",
+      "prompt": "Create ONE original isolated city miniature asset for a historical hex strategy game. This is a single complete directly generated sprite, not a sheet, collage, panel, screenshot or landscape. Premium restrained hand-painted 2.5D miniature realism, matching a muted olive-green strategic map with blue-green water. Elevated fixed orthographic camera 50 degrees above ground, north at the top, upper-left daylight, clear cool lower-right wall shadows. Coherent large gray-slate tiled roof planes, warm pale-gray brick walls, substantial architectural volume. Design the silhouette and roof groups to remain legible when the entire urban cluster is displayed only 90-110 pixels wide. Use crisp readable shapes and deliberate value separation, no photographic micro-noise or blurry miniature effect. Compact connected urban mass filling 78 percent of the canvas width, generous transparent margin all around. Broadest urban silhouette at the lower middle, complete building edges visible. Fully zero-alpha transparent exterior including corners; a short soft contact shadow only beneath the buildings. Do not paint a ground island, grass halo, paved square pedestal or rectangular base. No people, soldiers, military flag, coats of arms, text, UI, labels, hexagons, writing, frames, watermark, modern automobile, power pole, skyscraper or modern infrastructure. No detached objects or extra samples. This is an unnamed representative pre-1940 architectural SYMBOL, not a purported surveyed plan of a named city. Avoid palaces, pagodas, monuments, religious icons and invented famous landmarks. No rivers, coastlines, boats, fields or rail tracks: geographic geometry and facilities are separate game layers. Do not reproduce any existing commercial game artwork.\nTraditional north Chinese provincial seat symbol, BEFORE 1940, using ordinary gray-brick and slate-tile urban vernacular. One connected compact city mass: 28-34 low houses and shop roofs in four discernible roof groups, two modest civic courtyard buildings within the urban fabric, a narrow principal street and smaller dark side lanes. The civic courts are restrained, not an imperial palace or temple. Varied one- and two-story roofs; a plain civic compound doorway, NO surrounding city wall or tower. Strong readable stepped skyline, cohesive broad gray roof planes, bright pale-gray wall faces on the lower left and deep cool lane cuts. Larger and more organized than an ordinary town without invented monuments. The principal street bends toward the front left; highest roof group at back right.\n"
+    },
+    {
+      "id": "building_bank_urban_capital_north_china_002",
+      "category": "building",
+      "family": "capital_north_china",
+      "variant": 9,
+      "region": "north_china",
+      "role": "capital",
+      "axis": "",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        100,
+        78
+      ],
+      "runtime_import_max_dimension": 384,
+      "source_revision": "r001",
+      "source_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_capital_north_china_002/source.png",
+      "prompt_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_capital_north_china_002/prompt.txt",
+      "prompt": "Create ONE original isolated city miniature asset for a historical hex strategy game. This is a single complete directly generated sprite, not a sheet, collage, panel, screenshot or landscape. Premium restrained hand-painted 2.5D miniature realism, matching a muted olive-green strategic map with blue-green water. Elevated fixed orthographic camera 50 degrees above ground, north at the top, upper-left daylight, clear cool lower-right wall shadows. Coherent large gray-slate tiled roof planes, warm pale-gray brick walls, substantial architectural volume. Design the silhouette and roof groups to remain legible when the entire urban cluster is displayed only 90-110 pixels wide. Use crisp readable shapes and deliberate value separation, no photographic micro-noise or blurry miniature effect. Compact connected urban mass filling 78 percent of the canvas width, generous transparent margin all around. Broadest urban silhouette at the lower middle, complete building edges visible. Fully zero-alpha transparent exterior including corners; a short soft contact shadow only beneath the buildings. Do not paint a ground island, grass halo, paved square pedestal or rectangular base. No people, soldiers, military flag, coats of arms, text, UI, labels, hexagons, writing, frames, watermark, modern automobile, power pole, skyscraper or modern infrastructure. No detached objects or extra samples. This is an unnamed representative pre-1940 architectural SYMBOL, not a purported surveyed plan of a named city. Avoid palaces, pagodas, monuments, religious icons and invented famous landmarks. No rivers, coastlines, boats, fields or rail tracks: geographic geometry and facilities are separate game layers. Do not reproduce any existing commercial game artwork.\nTraditional north Chinese provincial seat symbol, BEFORE 1940, using ordinary gray-brick and slate-tile urban vernacular. One connected compact city mass: 28-34 low houses and shop roofs in four discernible roof groups, two modest civic courtyard buildings within the urban fabric, a narrow principal street and smaller dark side lanes. The civic courts are restrained, not an imperial palace or temple. Varied one- and two-story roofs; a plain civic compound doorway, NO surrounding city wall or tower. Strong readable stepped skyline, cohesive broad gray roof planes, bright pale-gray wall faces on the lower left and deep cool lane cuts. Larger and more organized than an ordinary town without invented monuments. The principal street enters from front right and angles toward back left; highest roof group at back left. Make the overall roof mass asymmetrical and low, with a deep lane notch at the right edge.\n"
+    },
+    {
+      "id": "building_bank_urban_capital_south_china_001",
+      "category": "building",
+      "family": "capital_south_china",
+      "variant": 2,
+      "region": "south_china",
+      "role": "capital",
+      "axis": "",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        100,
+        78
+      ],
+      "runtime_import_max_dimension": 384,
+      "source_revision": "r001",
+      "source_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_capital_south_china_001/source.png",
+      "prompt_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_capital_south_china_001/prompt.txt",
+      "prompt": "Create ONE original isolated city miniature asset for a historical hex strategy game. This is a single complete directly generated sprite, not a sheet, collage, panel, screenshot or landscape. Premium restrained hand-painted 2.5D miniature realism, matching a muted olive-green strategic map with blue-green water. Elevated fixed orthographic camera 50 degrees above ground, north at the top, upper-left daylight, clear cool lower-right wall shadows. Coherent large gray-slate tiled roof planes, warm pale-gray brick walls, substantial architectural volume. Design the silhouette and roof groups to remain legible when the entire urban cluster is displayed only 90-110 pixels wide. Use crisp readable shapes and deliberate value separation, no photographic micro-noise or blurry miniature effect. Compact connected urban mass filling 78 percent of the canvas width, generous transparent margin all around. Broadest urban silhouette at the lower middle, complete building edges visible. Fully zero-alpha transparent exterior including corners; a short soft contact shadow only beneath the buildings. Do not paint a ground island, grass halo, paved square pedestal or rectangular base. No people, soldiers, military flag, coats of arms, text, UI, labels, hexagons, writing, frames, watermark, modern automobile, power pole, skyscraper or modern infrastructure. No detached objects or extra samples. This is an unnamed representative pre-1940 architectural SYMBOL, not a purported surveyed plan of a named city. Avoid palaces, pagodas, monuments, religious icons and invented famous landmarks. No rivers, coastlines, boats, fields or rail tracks: geographic geometry and facilities are separate game layers. Do not reproduce any existing commercial game artwork.\nTraditional Yangtze-region provincial capital symbol, BEFORE 1940, pale limewashed brick walls and cool slate-blue tiled roofs. One connected dense city mass of 30-36 low houses and shops in four irregular but organized urban blocks. Two larger yet modest civic courtyard roofs integrated into the rear blocks, narrow streets cut deep through the urban mass, a few small private courts, humble two-story shopfront row at the front. NO city wall, palace, religious building, western clock tower or named landmark. Keep the silhouette compact, the four large roof masses legible, walls sunlit and alleys deeply shaded. A provincial city rather than two isolated ceremonial courtyards. The principal street bends toward the front left; highest roof group at back right.\n"
+    },
+    {
+      "id": "building_bank_urban_capital_south_china_002",
+      "category": "building",
+      "family": "capital_south_china",
+      "variant": 3,
+      "region": "south_china",
+      "role": "capital",
+      "axis": "",
+      "gate": "real_sourced_settlement_only",
+      "visible_bounds": [
+        100,
+        78
+      ],
+      "runtime_import_max_dimension": 384,
+      "source_revision": "r001",
+      "source_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_capital_south_china_002/source.png",
+      "prompt_file": "output/imagegen/warlord/urban_hierarchy_v0235/production01/building_bank_urban_capital_south_china_002/prompt.txt",
+      "prompt": "Create ONE original isolated city miniature asset for a historical hex strategy game. This is a single complete directly generated sprite, not a sheet, collage, panel, screenshot or landscape. Premium restrained hand-painted 2.5D miniature realism, matching a muted olive-green strategic map with blue-green water. Elevated fixed orthographic camera 50 degrees above ground, north at the top, upper-left daylight, clear cool lower-right wall shadows. Coherent large gray-slate tiled roof planes, warm pale-gray brick walls, substantial architectural volume. Design the silhouette and roof groups to remain legible when the entire urban cluster is displayed only 90-110 pixels wide. Use crisp readable shapes and deliberate value separation, no photographic micro-noise or blurry miniature effect. Compact connected urban mass filling 78 percent of the canvas width, generous transparent margin all around. Broadest urban silhouette at the lower middle, complete building edges visible. Fully zero-alpha transparent exterior including corners; a short soft contact shadow only beneath the buildings. Do not paint a ground island, grass halo, paved square pedestal or rectangular base. No people, soldiers, military flag, coats of arms, text, UI, labels, hexagons, writing, frames, watermark, modern automobile, power pole, skyscraper or modern infrastructure. No detached objects or extra samples. This is an unnamed representative pre-1940 architectural SYMBOL, not a purported surveyed plan of a named city. Avoid palaces, pagodas, monuments, religious icons and invented famous landmarks. No rivers, coastlines, boats, fields or rail tracks: geographic geometry and facilities are separate game layers. Do not reproduce any existing commercial game artwork.\nTraditional Yangtze-region provincial capital symbol, BEFORE 1940, pale limewashed brick walls and cool slate-blue tiled roofs. One connected dense city mass of 30-36 low houses and shops in four irregular but organized urban blocks. Two larger yet modest civic courtyard roofs integrated into the rear blocks, narrow streets cut deep through the urban mass, a few small private courts, humble two-story shopfront row at the front. NO city wall, palace, religious building, western clock tower or named landmark. Keep the silhouette compact, the four large roof masses legible, walls sunlit and alleys deeply shaded. A provincial city rather than two isolated ceremonial courtyards. The principal street enters from front right and angles toward back left; highest roof group at back left. Make the overall roof mass asymmetrical and low, with a deep lane notch at the right edge.\n"
+    }
+  ]
+}

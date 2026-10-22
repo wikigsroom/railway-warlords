@@ -4,6 +4,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 import hashlib
 import json
+import argparse
 from PIL import Image
 from map_bank_inventory import ADDITIONAL_COUNT, CATEGORY_COUNTS, planned_rows, production_rows
 
@@ -17,6 +18,9 @@ def read(path):return json.loads(path.read_text(encoding='utf-8'))
 
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--output',type=Path,default=P/'reports/map_bank_asset_audit.json')
+    args=parser.parse_args()
     checks=[]
     def check(name,passed,**extra):checks.append(dict(name=name,passed=bool(passed),**extra))
     baseline=read(P/'reports/map_bank_baseline.json');production=read(P/'reports/map_bank_generation.json')
@@ -26,7 +30,7 @@ def main():
     visuals=read(P/'presentation/data/map_bank_visuals.json');bank=[r for r in installed if '_bank_' in r['id']]
     check('source_production_complete',production['passed'] and not production['running'] and production['completed']==666 and not production['failures'])
     check('settlement_extension_complete',extension_production['passed'] and not extension_production['running'] and extension_production['completed']==74 and not extension_production['failures'])
-    check('all_three_original_production_catalogs_complete',all_complete)
+    check('all_four_original_production_catalogs_complete',all_complete)
     check('immutable_74_item_baseline',baseline['count']==74 and len(baseline['assets'])==74)
     check('all_plan_ids_installed',{r['id'] for r in bank}=={r['id'] for r in plan}==set(visuals['records']))
     check('at_least_ten_times_baseline_map_assets',sum(r['category'] in ['tile','scenery','building'] for r in installed)>=baseline['count']*10)
@@ -56,7 +60,8 @@ def main():
                 all_runtime_rasters=len(installed),source_route='sub2-image-gen/gpt-image-2.5/high',
                 source_pngs_modified=False,exterior_corner_alpha_ceiling_8bit=1,formal_art_approval=False,physical_android_device_tested=False,
                 checks=checks,failures=[r['name'] for r in checks if not r['passed']])
-    (P/'reports/map_bank_asset_audit.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    args.output.parent.mkdir(parents=True,exist_ok=True)
+    args.output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({key:result[key] for key in ['passed','baseline','additional_independent_sources','total_map_assets','all_runtime_rasters','failures']},ensure_ascii=False))
     raise SystemExit(0 if result['passed'] else 1)
 

@@ -1,0 +1,1146 @@
+{
+	"area_is_not_visible_map_pixel_measurement": true,
+	"build_version": "0.2.35",
+	"camera_label_area_fraction": 0.722856481481482,
+	"captures": [
+		{
+			"name": "battlefield",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/battlefield.png",
+			"raw_native_viewport": true,
+			"sha256": "46f5fd37af2160d81abe39dd5ca0170b6077d625a09007632819ef08901ea66d"
+		},
+		{
+			"name": "details",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/details.png",
+			"raw_native_viewport": true,
+			"sha256": "59dbc64eeb84385f588246193dcf3a6b3e767e0903f62d3b4dbe4d7fe8bd95d6"
+		},
+		{
+			"name": "details_scrolled",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/details_scrolled.png",
+			"raw_native_viewport": true,
+			"sha256": "dfb4614272f83d37e529e0649606761987a32a38059b61499cef9775c13437fb"
+		},
+		{
+			"name": "objectives",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/objectives.png",
+			"raw_native_viewport": true,
+			"sha256": "5e3c78375f00d1b88a1a587ab666906720138d2506dd32d6228c12260d32aaeb"
+		},
+		{
+			"name": "layers",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/layers.png",
+			"raw_native_viewport": true,
+			"sha256": "9b005000ef608c68db39aa9e9fd74158d8f2df3b9802bdc8ee89e80af06a250a"
+		},
+		{
+			"name": "additional_orders",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/additional_orders.png",
+			"raw_native_viewport": true,
+			"sha256": "99af8835d2c35d897379b933bedd52b8c76d6469d97b3a6e49e069968e817550"
+		},
+		{
+			"name": "move_confirmation",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/move_confirmation.png",
+			"raw_native_viewport": true,
+			"sha256": "9b59891f32b5bd1f45381a46fd401a5206e2490b54cc5ce166368d07a26b73d2"
+		},
+		{
+			"name": "after_move",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/after_move.png",
+			"raw_native_viewport": true,
+			"sha256": "54dcddd52efa893be842c96fda9cee32d5a23b5065bbdec3666072e3b9563945"
+		},
+		{
+			"name": "ningpu_objective",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/ningpu_objective.png",
+			"raw_native_viewport": true,
+			"sha256": "c0b536bed69dd070e5c22bef8bb3190324d7222bf8705ccdb7a272a4073e1254"
+		},
+		{
+			"name": "ningpu_bank_selection",
+			"path": "res://reports/battle_hud_native_v0230/map_visual_v0235_01/2400x1080_120_touch/ningpu_bank_selection.png",
+			"raw_native_viewport": true,
+			"sha256": "a8e4dfa142ef7019bd54d89942f756e509a09b841703d3a21c5c561e45c6ccd2"
+		}
+	],
+	"checks": [
+		{
+			"name": "escort_objective_names_actual_bank_destination_and_rule_radius",
+			"passed": true
+		},
+		{
+			"name": "default_drawers_are_collapsed",
+			"passed": true
+		},
+		{
+			"name": "no_permanent_minimap_or_legend_plates",
+			"passed": true
+		},
+		{
+			"name": "camera_and_label_area_meets_viewport_and_text_size_target",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:移动",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:移动",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:攻击",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:攻击",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:战法",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:战法",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:整补",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:整补",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:待命部队",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:待命部队",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:设置",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:设置",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:战报",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:战报",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:全图",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:全图",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:图层",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:图层",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:军令",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:军令",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "default:visible_button_in_view:",
+			"passed": true
+		},
+		{
+			"name": "default:minimum_44px_target:",
+			"passed": true
+		},
+		{
+			"name": "selection_pointer_opens_real_inspector",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:关闭",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:关闭",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:步军强攻  ·  2指挥",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:步军强攻  ·  2指挥",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:铁路投送  ·  运力 0",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:铁路投送  ·  运力 0",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:移动",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:移动",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:攻击",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:攻击",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:战法",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:战法",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:整补",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:整补",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:待命部队",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:待命部队",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:设置",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:设置",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:战报",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:战报",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:全图",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:全图",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:图层",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:图层",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:军令",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:军令",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "details:visible_button_in_view:",
+			"passed": true
+		},
+		{
+			"name": "details:minimum_44px_target:",
+			"passed": true
+		},
+		{
+			"name": "actual_scroll_gesture_reaches_last_unit_order",
+			"passed": true
+		},
+		{
+			"name": "scroll_gesture_does_not_activate_an_underlying_order",
+			"passed": true
+		},
+		{
+			"name": "close_pointer_dismisses_inspector",
+			"passed": true
+		},
+		{
+			"name": "objective_pointer_opens_live_objectives",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:关闭",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:关闭",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:⋯",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:⋯",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:移动",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:移动",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:攻击",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:攻击",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:战法",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:战法",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:整补",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:整补",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:待命部队",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:待命部队",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:设置",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:设置",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:战报",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:战报",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:全图",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:全图",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:图层",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:图层",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:军令",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:军令",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "objectives:visible_button_in_view:",
+			"passed": true
+		},
+		{
+			"name": "objectives:minimum_44px_target:",
+			"passed": true
+		},
+		{
+			"name": "layers_pointer_switches_exclusive_drawer",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_changes:show_control",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_restores:show_control",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_changes:show_terrain",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_restores:show_terrain",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_changes:show_places",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_restores:show_places",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_changes:show_rail",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_restores:show_rail",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_changes:show_supply",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_restores:show_supply",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_changes:show_grid",
+			"passed": true
+		},
+		{
+			"name": "layer_pointer_restores:show_grid",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:开 · 势力覆盖",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:开 · 势力覆盖",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:开 · 自然地形",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:开 · 自然地形",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:开 · 地方地名",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:开 · 地方地名",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:开 · 铁路线",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:开 · 铁路线",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:关 · 补给线",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:关 · 补给线",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:关 · 操作蜂窝",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:关 · 操作蜂窝",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:地形图鉴与地块规则",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:地形图鉴与地块规则",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:移动",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:移动",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:攻击",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:攻击",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:战法",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:战法",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:整补",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:整补",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:待命部队",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:待命部队",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:设置",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:设置",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:战报",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:战报",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:全图",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:全图",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:图层",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:图层",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:军令",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:军令",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "layers:visible_button_in_view:",
+			"passed": true
+		},
+		{
+			"name": "layers:minimum_44px_target:",
+			"passed": true
+		},
+		{
+			"name": "additional_orders_pointer_opens_menu",
+			"passed": true
+		},
+		{
+			"name": "automatic_and_undo_commands_remain_available",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:移动",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:移动",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:攻击",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:攻击",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:战法",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:战法",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:整补",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:整补",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:待命部队",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:待命部队",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:设置",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:设置",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:战报",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:战报",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:全图",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:全图",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:图层",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:图层",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:军令",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:军令",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:自动作战",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:自动作战",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:撤销移动",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:撤销移动",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:侦看地块与地名",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:侦看地块与地名",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:visible_button_in_view:外交与援助",
+			"passed": true
+		},
+		{
+			"name": "additional_orders:minimum_44px_target:外交与援助",
+			"passed": true
+		},
+		{
+			"name": "owned_city_exposes_contextual_recruitment_and_construction",
+			"passed": true
+		},
+		{
+			"name": "city_recruitment_pointer_opens_actual_dialog",
+			"passed": true
+		},
+		{
+			"name": "all_drawers_and_layers_preserve_state_and_random_stream",
+			"passed": true
+		},
+		{
+			"name": "no_land_material_assigned_outside_source_land",
+			"passed": true
+		},
+		{
+			"name": "refined_wuhan_8007_safe_material_assignments_retained",
+			"passed": true
+		},
+		{
+			"name": "published_wuhan_deployment_has_legal_move",
+			"passed": true
+		},
+		{
+			"name": "map_pointer_selects_unit",
+			"passed": true
+		},
+		{
+			"name": "move_pointer_sets_order_mode",
+			"passed": true
+		},
+		{
+			"name": "map_pointer_creates_movement_preview",
+			"passed": true
+		},
+		{
+			"name": "legal_move_confirmation_enabled",
+			"passed": true
+		},
+		{
+			"name": "confirmation_pointer_commits_exactly_one_command",
+			"passed": true
+		},
+		{
+			"name": "pointer_command_replays_to_identical_state_and_rng",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:移动",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:移动",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:攻击",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:攻击",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:战法",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:战法",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:整补",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:整补",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:待命部队",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:待命部队",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:设置",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:设置",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:战报",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:战报",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:全图",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:全图",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:图层",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:图层",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:军令",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:军令",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "after_move:visible_button_in_view:",
+			"passed": true
+		},
+		{
+			"name": "after_move:minimum_44px_target:",
+			"passed": true
+		},
+		{
+			"name": "landing_objective_uses_source_city_bank_name",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:关闭",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:关闭",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:⋯",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:⋯",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:移动",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:移动",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:攻击",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:攻击",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:战法",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:战法",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:整补",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:整补",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:待命部队",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:待命部队",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:结束回合  →",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:设置",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:设置",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:战报",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:战报",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:全图",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:全图",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:图层",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:图层",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:军令",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:军令",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:作战目标  0/1  ›",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:visible_button_in_view:",
+			"passed": true
+		},
+		{
+			"name": "landing_objective:minimum_44px_target:",
+			"passed": true
+		},
+		{
+			"name": "bank_marker_pointer_selects_its_inland_city",
+			"passed": true
+		},
+		{
+			"name": "selected_bank_exposes_owning_city_orders",
+			"passed": true
+		},
+		{
+			"name": "bank_city_recruitment_pointer_opens_actual_dialog",
+			"passed": true
+		},
+		{
+			"name": "bank_selection_and_dialog_preserve_state_and_random_stream",
+			"passed": true
+		}
+	],
+	"command_signal_emission_used": false,
+	"committed_commands": [
+		{
+			"actor_id": "zhili",
+			"expected_version": 0,
+			"target_hex": {
+				"q": 44,
+				"r": 33
+			},
+			"type": "Move",
+			"unit_id": "u_00002"
+		}
+	],
+	"development_engine": true,
+	"ew6_parity_claimed": false,
+	"failures": [],
+	"footer": [
+		1810.0,
+		917.0,
+		558.0,
+		151.0
+	],
+	"formal_art_approval": false,
+	"header": [
+		52.0,
+		12.0,
+		824.0,
+		74.4000015258789
+	],
+	"input_events": 86,
+	"input_kind": "viewport_screen_touch",
+	"outside_source_land_materials": [],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"source_pngs_modified": false,
+	"tag": "2400x1080_120_touch",
+	"ui_scale": 1.2,
+	"viewport": [
+		2400.0,
+		1080.0
+	]
+}

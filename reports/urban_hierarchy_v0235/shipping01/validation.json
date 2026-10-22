@@ -1,0 +1,124 @@
+{
+  "passed": true,
+  "version": "0.2.35",
+  "mode": "verified_shipping_exe",
+  "runtime_source_sha256": "e3e9f0defc159cf3f5f9ece2d5628f7e199e1eb5a7b355093cfc63d42bc77224",
+  "windows_exe_sha256": "b27672d564b36842172d96912796f0c8766ca731b10eb343ad5e519b850b9fb9",
+  "shipping_binary_unchanged": true,
+  "capture_driver_sha256": "2764cdb9b62a3fa0d84c9e02fcb8c4206d33cdeacb498a4e1e3bcb3e6ce16635",
+  "completed_at_utc": "2026-10-22T06:09:29.362220+00:00",
+  "commands": [
+    {
+      "name": "gpu",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\urban_hierarchy_v0235\\shipping01\\gpu.log",
+        "--",
+        "--qa-session",
+        "--ground-continuity-test",
+        "--ground-continuity-output",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\urban_hierarchy_v0235\\shipping01\\gpu"
+      ],
+      "exit_code": 0,
+      "owned_native_pid": 16452
+    },
+    {
+      "name": "ui_smoke",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\urban_hierarchy_v0235\\shipping01\\ui_smoke.log",
+        "--",
+        "--qa-session",
+        "--scenario",
+        "campaign_1924_02",
+        "--ui-test",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\urban_hierarchy_v0235\\shipping01\\ui_smoke.png"
+      ],
+      "exit_code": 0,
+      "owned_native_pid": 36920
+    },
+    {
+      "name": "home",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\urban_hierarchy_v0235\\shipping01\\home.log",
+        "--",
+        "--qa-session",
+        "--capture",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\urban_hierarchy_v0235\\shipping01\\home.png"
+      ],
+      "exit_code": 0,
+      "owned_native_pid": 26592
+    },
+    {
+      "name": "mountains",
+      "command": [
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\build\\windows\\RailwayWarlords.exe",
+        "--resolution",
+        "1920x1080",
+        "--position",
+        "0,0",
+        "--log-file",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\urban_hierarchy_v0235\\shipping01\\mountains.log",
+        "--",
+        "--qa-session",
+        "--scenario",
+        "campaign_1924_03",
+        "--focus-point",
+        "16848,7000",
+        "--capture-zoom",
+        "1.05",
+        "--capture",
+        "--capture-path",
+        "E:\\dev\\vibe-game\\世界征服者类\\game\\railway_warlords\\reports\\urban_hierarchy_v0235\\shipping01\\mountains.png"
+      ],
+      "exit_code": 0,
+      "owned_native_pid": 38352
+    }
+  ],
+  "captures": [
+    {
+      "path": "reports/urban_hierarchy_v0235/shipping01/ui_smoke.png",
+      "sha256": "26946f0ad5aa6e8ac18adcb52895276d9c6568e264a13d022e8a1b489dc2735a",
+      "metadata": "reports/urban_hierarchy_v0235/shipping01/ui_smoke.json",
+      "metadata_sha256": "bc76fc2ba6fc8120b80d64791e7219d6a6fc0bcd7217f2d12866ab5a6c053ffe"
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/shipping01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "reports/urban_hierarchy_v0235/shipping01/home.json",
+      "metadata_sha256": "e9a1c7de3b0e7493910d3c4ac3dc18e1f6e6c64948d80cb778b0584c2fb5da19"
+    },
+    {
+      "path": "reports/urban_hierarchy_v0235/shipping01/mountains.png",
+      "sha256": "f72b920f1051917b799c187dbfb28f86134db161a6259a05f2ff175478fe6513",
+      "metadata": "reports/urban_hierarchy_v0235/shipping01/mountains.json",
+      "metadata_sha256": "0234dd9857138ef1dc3d3ad39fd3de5fcb1911e3f97f61346d9c7bf54a51b66f"
+    }
+  ],
+  "gpu_report": "reports/urban_hierarchy_v0235/shipping01/gpu/validation.json",
+  "gpu_report_sha256": "a29af3e473b09830a3f129d284a767c68a16f049056fdf5a7b4d11f5fd7eb336",
+  "gpu_checks": 48,
+  "ui_smoke_passed": true,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "manual_image_compositing": false
+}

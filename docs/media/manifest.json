@@ -1,5 +1,5 @@
 {
-  "version": "0.2.34",
+  "version": "0.2.35",
   "screenshots": [
     {
       "file": "docs/media/menu.png",
@@ -1010,6 +1010,78 @@
       "metadata": "docs/media/local-wuhan-x30-layout-v0234.json",
       "byte_identical_to_native_capture": true,
       "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/menu-v0235.png",
+      "version": "0.2.35",
+      "native_source": "reports/urban_hierarchy_v0235/shipping01/home.png",
+      "sha256": "b30060272c12fd3894117f801766a6c39ef33cc6e02034d99a1bfbac1fed9b1a",
+      "metadata": "docs/media/menu-v0235.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/urban-wuhan-v0235.png",
+      "version": "0.2.35",
+      "native_source": "reports/urban_hierarchy_v0235/composition_shipping01/wuhan.png",
+      "sha256": "cfc39357e6bc1aa363b579ba498c7e891cad75f81658c948e891a7f3343d4cea",
+      "metadata": "docs/media/urban-wuhan-v0235.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/urban-three-towns-v0235.png",
+      "version": "0.2.35",
+      "native_source": "reports/urban_hierarchy_v0235/composition_shipping01/wuhan_three_towns.png",
+      "sha256": "89cff6a63f3b2f21bc2fa5e52701548fe9f8d23eaf58dff6ebb0b81d4d65c602",
+      "metadata": "docs/media/urban-three-towns-v0235.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/urban-nanjing-v0235.png",
+      "version": "0.2.35",
+      "native_source": "reports/urban_hierarchy_v0235/composition_shipping01/ningpu_city.png",
+      "sha256": "e2a5b0e0d260e33a80b0bd0c88e90cdb0f9dcd479ecf4b647b0dfb7c5e8e6f25",
+      "metadata": "docs/media/urban-nanjing-v0235.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/urban-ningpu-river-v0235.png",
+      "version": "0.2.35",
+      "native_source": "reports/urban_hierarchy_v0235/composition_shipping01/ningpu_river.png",
+      "sha256": "bd9cc980e790cef68529ed3c7853bda4292c228b04778ce3c11926327e86ff4f",
+      "metadata": "docs/media/urban-ningpu-river-v0235.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/urban-ningpu-regional-v0235.png",
+      "version": "0.2.35",
+      "native_source": "reports/urban_hierarchy_v0235/composition_shipping01/ningpu_regional.png",
+      "sha256": "027b1fd34292fd0466400b3b97d3ae4cc76c0c1c0cfd62e9217b16963431d845",
+      "metadata": "docs/media/urban-ningpu-regional-v0235.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/urban-coast-v0235.png",
+      "version": "0.2.35",
+      "native_source": "reports/urban_hierarchy_v0235/composition_shipping01/coast.png",
+      "sha256": "14dadbe3bbc6dcbac2512c70fb5d35d72dd6110506a2d4cbb22e148fd5e7e318",
+      "metadata": "docs/media/urban-coast-v0235.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
+    },
+    {
+      "file": "docs/media/urban-x30-layout-v0235.png",
+      "version": "0.2.35",
+      "native_source": "reports/urban_hierarchy_v0235/composition_shipping01/wuhan_x30_layout.png",
+      "sha256": "02ad21e02dcace6afbf094bdd2ee5b989db72588862a7841b8511a956a972cc9",
+      "metadata": "docs/media/urban-x30-layout-v0235.json",
+      "byte_identical_to_native_capture": true,
+      "physical_android_device_tested": false
     }
   ],
   "animations": [
@@ -1088,7 +1160,7 @@
   "current_map_symbol_native_evidence": "reports/map_symbol_native_evidence.json",
   "current_general_native_evidence": "reports/general_portrait_native_evidence.json",
   "current_water_native_evidence": "reports/water_map_native_capture_evidence.json",
-  "notice": "Whole native shipping viewports copied verbatim; older stills and GIFs retain their real versions. Desktop X30 dimensions are not physical phone acceptance.",
+  "notice": "Whole shipping viewports copied verbatim after individual viewing. Earlier stills and GIFs retain their actual versions. Desktop X30 layout is not physical-phone acceptance.",
   "current_commander_native_evidence": "reports/commander_roster_native_evidence.json",
   "current_map_composition_evidence": "reports/screenshots/map_composition_native/v0231/verified_export_01/validation.json",
   "current_development_video": {
@@ -1121,5 +1193,6 @@
   "current_battle_hud_visual_review": "reports/battle_hud_visual_review_v0230.json",
   "current_map_material_visual_review": "reports/ground_material_v0231/visual_review.json",
   "current_map_material_evidence": "reports/ground_material_v0231/shipping_01/gpu/validation.json",
-  "current_local_map_evidence": "reports/screenshots/local_map_refinement/v0234/verified_export_01/validation.json"
+  "current_local_map_evidence": "reports/screenshots/local_map_refinement/v0234/verified_export_01/validation.json",
+  "current_map_visual_evidence": "reports/urban_hierarchy_v0235/composition_shipping01/validation.json"
 }

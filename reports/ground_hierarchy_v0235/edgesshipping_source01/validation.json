@@ -1,0 +1,269 @@
+{
+	"build_version": "0.2.35",
+	"checks": [
+		{
+			"name": "native_gpu_required",
+			"passed": true
+		},
+		{
+			"name": "production_material_available",
+			"passed": true
+		},
+		{
+			"name": "normal_import_384_mips:temperate_meadow",
+			"passed": true
+		},
+		{
+			"name": "repeat_edge_matches_interior_grain_and_reduces_join:temperate_meadow:x",
+			"passed": true
+		},
+		{
+			"name": "repeat_edge_matches_interior_grain_and_reduces_join:temperate_meadow:y",
+			"passed": true
+		},
+		{
+			"name": "before_viewport_saved:temperate_meadow",
+			"passed": true
+		},
+		{
+			"name": "after_viewport_saved:temperate_meadow",
+			"passed": true
+		},
+		{
+			"name": "normal_import_384_mips:alluvial_loam",
+			"passed": true
+		},
+		{
+			"name": "repeat_edge_matches_interior_grain_and_reduces_join:alluvial_loam:x",
+			"passed": true
+		},
+		{
+			"name": "repeat_edge_matches_interior_grain_and_reduces_join:alluvial_loam:y",
+			"passed": true
+		},
+		{
+			"name": "before_viewport_saved:alluvial_loam",
+			"passed": true
+		},
+		{
+			"name": "after_viewport_saved:alluvial_loam",
+			"passed": true
+		},
+		{
+			"name": "normal_import_384_mips:flood_meadow",
+			"passed": true
+		},
+		{
+			"name": "repeat_edge_matches_interior_grain_and_reduces_join:flood_meadow:x",
+			"passed": true
+		},
+		{
+			"name": "repeat_edge_matches_interior_grain_and_reduces_join:flood_meadow:y",
+			"passed": true
+		},
+		{
+			"name": "before_viewport_saved:flood_meadow",
+			"passed": true
+		},
+		{
+			"name": "after_viewport_saved:flood_meadow",
+			"passed": true
+		},
+		{
+			"name": "normal_import_384_mips:subtropical_humus",
+			"passed": true
+		},
+		{
+			"name": "repeat_edge_matches_interior_grain_and_reduces_join:subtropical_humus:x",
+			"passed": true
+		},
+		{
+			"name": "repeat_edge_matches_interior_grain_and_reduces_join:subtropical_humus:y",
+			"passed": true
+		},
+		{
+			"name": "before_viewport_saved:subtropical_humus",
+			"passed": true
+		},
+		{
+			"name": "after_viewport_saved:subtropical_humus",
+			"passed": true
+		},
+		{
+			"name": "combined_repeat_edge_gradient_reduced_at_least_30_percent",
+			"passed": true
+		}
+	],
+	"development_material_revision": "quiet_ground_hierarchy_v0235_r001",
+	"ew6_parity_claimed": false,
+	"formal_art_approval": false,
+	"measurements": [
+		{
+			"after": {
+				"maximum_channel_delta": 13.999999165535,
+				"mean_channel_delta": 2.83976352444742,
+				"pixels": 337
+			},
+			"axis": "x",
+			"before": {
+				"maximum_channel_delta": 20.0000064074993,
+				"mean_channel_delta": 5.69733163059996,
+				"pixels": 337
+			},
+			"family": "temperate_meadow",
+			"independent_interior": {
+				"maximum_channel_delta": 13.999999165535,
+				"mean_channel_delta": 2.87537169562603,
+				"pixels": 337
+			},
+			"source_sha256": "e17939b87c459664872ba0d0cf372a379220973b440f4d37d2a5be0f4e7b7f6a"
+		},
+		{
+			"after": {
+				"maximum_channel_delta": 15.0000067055225,
+				"mean_channel_delta": 3.43440950878205,
+				"pixels": 465
+			},
+			"axis": "y",
+			"before": {
+				"maximum_channel_delta": 15.0000067055225,
+				"mean_channel_delta": 5.01290456133504,
+				"pixels": 465
+			},
+			"family": "temperate_meadow",
+			"independent_interior": {
+				"maximum_channel_delta": 15.0000067055225,
+				"mean_channel_delta": 3.44516224534281,
+				"pixels": 465
+			},
+			"source_sha256": "e17939b87c459664872ba0d0cf372a379220973b440f4d37d2a5be0f4e7b7f6a"
+		},
+		{
+			"after": {
+				"maximum_channel_delta": 6.99999958276749,
+				"mean_channel_delta": 1.57270020299566,
+				"pixels": 337
+			},
+			"axis": "x",
+			"before": {
+				"maximum_channel_delta": 6.99999958276749,
+				"mean_channel_delta": 2.32640935688415,
+				"pixels": 337
+			},
+			"family": "alluvial_loam",
+			"independent_interior": {
+				"maximum_channel_delta": 6.99999958276749,
+				"mean_channel_delta": 1.58753699736355,
+				"pixels": 337
+			},
+			"source_sha256": "4400943c212ded35be26f11afacc1104b7cbfdf53736a1b00afcd23d92d02537"
+		},
+		{
+			"after": {
+				"maximum_channel_delta": 8.9999994635582,
+				"mean_channel_delta": 2.44516114457961,
+				"pixels": 465
+			},
+			"axis": "y",
+			"before": {
+				"maximum_channel_delta": 9.99999940395355,
+				"mean_channel_delta": 3.31612883460137,
+				"pixels": 465
+			},
+			"family": "alluvial_loam",
+			"independent_interior": {
+				"maximum_channel_delta": 7.99999952316284,
+				"mean_channel_delta": 2.51182780727263,
+				"pixels": 465
+			},
+			"source_sha256": "4400943c212ded35be26f11afacc1104b7cbfdf53736a1b00afcd23d92d02537"
+		},
+		{
+			"after": {
+				"maximum_channel_delta": 9.00000706315041,
+				"mean_channel_delta": 1.57566801288361,
+				"pixels": 337
+			},
+			"axis": "x",
+			"before": {
+				"maximum_channel_delta": 8.9999994635582,
+				"mean_channel_delta": 3.25222661083105,
+				"pixels": 337
+			},
+			"family": "flood_meadow",
+			"independent_interior": {
+				"maximum_channel_delta": 9.00000706315041,
+				"mean_channel_delta": 1.57863537175719,
+				"pixels": 337
+			},
+			"source_sha256": "af082248ac01f6aa9b2777d3c9c9afba4488d970cb47d01cc7b4406949c0d136"
+		},
+		{
+			"after": {
+				"maximum_channel_delta": 7.99999952316284,
+				"mean_channel_delta": 2.22795821293708,
+				"pixels": 465
+			},
+			"axis": "y",
+			"before": {
+				"maximum_channel_delta": 9.00000706315041,
+				"mean_channel_delta": 2.96129156793317,
+				"pixels": 465
+			},
+			"family": "flood_meadow",
+			"independent_interior": {
+				"maximum_channel_delta": 7.99999952316284,
+				"mean_channel_delta": 2.30967858914406,
+				"pixels": 465
+			},
+			"source_sha256": "af082248ac01f6aa9b2777d3c9c9afba4488d970cb47d01cc7b4406949c0d136"
+		},
+		{
+			"after": {
+				"maximum_channel_delta": 13.999999165535,
+				"mean_channel_delta": 2.86646867187511,
+				"pixels": 337
+			},
+			"axis": "x",
+			"before": {
+				"maximum_channel_delta": 20.9999987483025,
+				"mean_channel_delta": 5.32937653694379,
+				"pixels": 337
+			},
+			"family": "subtropical_humus",
+			"independent_interior": {
+				"maximum_channel_delta": 13.999999165535,
+				"mean_channel_delta": 2.96735887357672,
+				"pixels": 337
+			},
+			"source_sha256": "b7adc0858a613c20118f6933f6e9e6eeb66f551d5ae7f5a78e46dfd35b640519"
+		},
+		{
+			"after": {
+				"maximum_channel_delta": 15.9999990463257,
+				"mean_channel_delta": 3.24731163440212,
+				"pixels": 465
+			},
+			"axis": "y",
+			"before": {
+				"maximum_channel_delta": 15.9999990463257,
+				"mean_channel_delta": 4.35483845010881,
+				"pixels": 465
+			},
+			"family": "subtropical_humus",
+			"independent_interior": {
+				"maximum_channel_delta": 15.9999990463257,
+				"mean_channel_delta": 3.26666647195816,
+				"pixels": 465
+			},
+			"source_sha256": "b7adc0858a613c20118f6933f6e9e6eeb66f551d5ae7f5a78e46dfd35b640519"
+		}
+	],
+	"passed": true,
+	"physical_android_device_tested": false,
+	"renderer": "gl_compatibility",
+	"rendering_device": "NVIDIA GeForce RTX 3060",
+	"scope": "Native Windows development-engine source-edge fixture; stochastic translations disabled to isolate opposite-edge joins. Both enabled and bypassed modes use the same imported complete originals. Not a shipping executable or gameplay acceptance.",
+	"source_images_modified": false,
+	"source_uv_mirrored": false
+}

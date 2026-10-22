@@ -95,6 +95,8 @@ def write_report(complete, failures, started, running, waiting=False):
 
 
 def install(originals, extension):
+    if (P/'presentation/data/map_urban_extension_plan.json').exists():
+        raise RuntimeError('Urban extension is installed; preserve its reviewed originals and active family bindings. Do not rebuild the earlier catalog over this revision.')
     from map_bank_inventory import planned_rows, production_rows, ADDITIONAL_COUNT, MAP_COUNT
     production_rows(require_complete=True)
     measured = [base.measure(row) for row in planned_rows()]
