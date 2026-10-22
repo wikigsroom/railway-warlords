@@ -1020,6 +1020,7 @@ func capture_frame() -> void:
 		if is_instance_valid(map_view):facts["map_bank"]=map_view.map_details.diagnostics
 		if is_instance_valid(map_view):facts["map_bank_visible"]=map_view.map_bank_capture_facts()
 		if is_instance_valid(map_view):facts["map_composition"]=map_view.map_composition_facts()
+		if is_instance_valid(map_view):facts["control_borders"]=map_view.places.control_borders.facts()
 		if is_instance_valid(map_view):
 			var terrain_counts={}
 			for cell in match_controller.state.map.get("cells",[]):

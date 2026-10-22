@@ -1,0 +1,98 @@
+{
+  "scope": "Native Windows development source after 0d78d69, application label remains 0.2.34; not a shipping export.",
+  "recorded_at_utc": "2026-10-22T04:32:22.072472+00:00",
+  "passed": true,
+  "actual_complete_images_opened": [
+    {
+      "case": "coast",
+      "path": "reports/control_borders_v0235/coast02/viewport.png",
+      "sha256": "e20e4650cb0d0373bb2e68147f96b1e0aec0353397305af04a4327a69ff6f99c",
+      "metadata_path": "reports/control_borders_v0235/coast02/viewport.json",
+      "metadata_sha256": "f2a356161df60dd67f3ff365cb18f3f7b046107f261260f83ad7ce4ef65a9c9d",
+      "whole_viewport_opened": true,
+      "observations": [
+        "Removed the political coastal stroke and friendly internal V-shaped outline.",
+        "Source-derived coast steps, terrain patches and repeated brush structure remain."
+      ],
+      "control_borders": {
+        "coast_and_frame_excluded": true,
+        "coast_outlines_drawn": 0,
+        "different_owner_pairs": 0,
+        "duplicate_pair_strokes": 0,
+        "enabled": true,
+        "historical_military_frontiers_claimed": false,
+        "same_owner_pairs_suppressed": 1,
+        "source_edge_pairs": 27,
+        "source_geometry_modified": false,
+        "source_map_id": "jingfeng",
+        "source_period": "1924",
+        "unassigned_pairs_suppressed": 26
+      }
+    },
+    {
+      "case": "wuhan",
+      "path": "reports/control_borders_v0235/wuhan02/viewport.png",
+      "sha256": "eadea85885b12103adaeedc2c7fe26e369455d2981aec965ce08ac5eff66a5cc",
+      "metadata_path": "reports/control_borders_v0235/wuhan02/viewport.json",
+      "metadata_sha256": "03d0272d55798238686cb329a17a769f99afa2f2160ad7a08bbf939b57753fc6",
+      "whole_viewport_opened": true,
+      "observations": [
+        "Friendly Hankou/Hanyang subdivisions have no political stroke; both hostile common edges remain.",
+        "Long influence-area edges, angular rivers and sparse city models remain."
+      ],
+      "control_borders": {
+        "coast_and_frame_excluded": true,
+        "coast_outlines_drawn": 0,
+        "different_owner_pairs": 2,
+        "duplicate_pair_strokes": 0,
+        "enabled": true,
+        "historical_military_frontiers_claimed": false,
+        "same_owner_pairs_suppressed": 1,
+        "source_edge_pairs": 3,
+        "source_geometry_modified": false,
+        "source_map_id": "hankou",
+        "source_period": "1924",
+        "unassigned_pairs_suppressed": 0
+      }
+    },
+    {
+      "case": "nanjing",
+      "path": "reports/control_borders_v0235/nanjing02/viewport.png",
+      "sha256": "685fc2929b350d350e7eb822cd4987a128714d395b34f004c75621368971e9ff",
+      "metadata_path": "reports/control_borders_v0235/nanjing02/viewport.json",
+      "metadata_sha256": "aaf0a4cc2a190dba2b2d84f4192d826efb349228e505cabea9aa222da6444df4",
+      "whole_viewport_opened": true,
+      "observations": [
+        "Army and terrain models remain visible without friendly polygon outlines.",
+        "Sparse urban detail, open ground and repeated terrain structure remain."
+      ],
+      "control_borders": {
+        "coast_and_frame_excluded": true,
+        "coast_outlines_drawn": 0,
+        "different_owner_pairs": 0,
+        "duplicate_pair_strokes": 0,
+        "enabled": true,
+        "historical_military_frontiers_claimed": false,
+        "same_owner_pairs_suppressed": 1,
+        "source_edge_pairs": 1,
+        "source_geometry_modified": false,
+        "source_map_id": "ningpu",
+        "source_period": "1924",
+        "unassigned_pairs_suppressed": 0
+      }
+    }
+  ],
+  "geometry_checks": 86,
+  "runtime_interaction_checks": 130,
+  "source_geometry_modified": false,
+  "control_fill_changed": false,
+  "new_raster_originals": 0,
+  "new_music_generated": false,
+  "future_music_route": "music-gen-remote-YuE2_RTX3080_instrumental",
+  "shipping_exe": false,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_parity_claimed": false,
+  "overall_goal_complete": false,
+  "initial_geometry_audit_failure_preserved": true
+}

@@ -11,7 +11,7 @@ The game centers on China's warlord period and extends to **Asian starting point
 
 European War 6 is the main reference for visual presentation and interaction. Campaign, conquest and legion structures also draw on the World Conqueror series. The project uses its own code, generated artwork and attributed geography. Its current production quality has not reached the reference games' commercial standard.
 
-**In development:** the working tree now contains four additional immutable ground originals and revised repeat-edge sampling beyond published 0.2.34, with 2,513 registered PNGs; see [chapter 53](docs/53_地表绘制层次修订.md). The application version has not yet been advanced, and no new Windows/Android packages contain these changes. The following 0.2.34 shipping captures, 2,509-texture payload and acceptance reports retain their original published-source identity.
+**In development:** the working tree now contains four additional immutable ground originals and revised repeat-edge sampling beyond published 0.2.34, with 2,513 registered PNGs; see [chapter 53](docs/53_地表绘制层次修订.md). Political outlines on coastlines and friendly internal subdivisions are also fixed; see the [whole development viewports in chapter 54](docs/54_控制区共边与海岸描边修复.md). The application version has not yet been advanced, and no new Windows/Android packages contain these changes. The following 0.2.34 shipping captures, 2,509-texture payload and acceptance reports retain their original published-source identity.
 
 ![Native main menu, shipping Windows 0.2.34](docs/media/menu-v0234.png)
 

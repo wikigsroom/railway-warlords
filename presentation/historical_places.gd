@@ -11,6 +11,7 @@ var owners: Dictionary={}
 var owner_signature=""
 var map_key=""
 var control_clip_diagnostics: Dictionary={}
+var control_borders = preload("res://presentation/map_control_borders.gd").new()
 
 static func data() -> Dictionary:
 	if catalog.is_empty():
@@ -73,6 +74,7 @@ func prepare(map: Dictionary, date: String="1924-01-01") -> void:
 		var clipped=MapControlLandClip.for_map(map)
 		zones=MapControlLandClip.city_zones(clipped)
 		control_clip_diagnostics=MapControlLandClip.diagnostics(clipped)
+	control_borders.prepare(map_key, year)
 
 func add_node(record: Dictionary) -> void:
 	var node=record.duplicate(true);node["at"]=Vector2(node.world[0],node.world[1])

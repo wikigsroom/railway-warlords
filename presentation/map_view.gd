@@ -1927,21 +1927,20 @@ func draw_control_zones(view: Rect2, foreground: bool=false) -> void:
 		if owner.is_empty() or not view.intersects(zone.bounds):continue
 		var color=faction_color(owner);color.a=.10 if foreground else TERRITORY_OPACITY
 		# The backdrop owns the single translucent fill pass. The foreground pass
-		# only inks the surveyed influence edge; drawing the mesh twice made the
+		# only inks derived control edges; drawing the mesh twice made the
 		# nominal alpha look opaque on dense city clusters.
 		if not foreground:
 			draw_mesh(zone.mesh,null,Transform2D.IDENTITY,color);city_control_fill_draw_count+=1
-		# Borders remain readable at tactical zoom as well as the country overview.
-		# These are city influence areas clipped to surveyed period provinces; they
-		# do not claim to be surveyed historical county or military frontiers.
-		if not foreground:continue
-		if not zone.has("border_index"):
-			zone["border_index"]=SourceLineIndex.new();zone.border_index.build(zone.borders)
-		for border in zone.border_index.visible(view.grow(8/zoom)):
-			if border.size()>1:
-				draw_polyline(border,Color(.15,.24,.29,.38),2.8/zoom,true)
-				var edge_color=color.lightened(.20);edge_color.a=.78
-				draw_polyline(border,edge_color,1.5/zoom,true)
+	if not foreground:return
+	# A political edge needs two adjacent influence areas with different current
+	# owners. Whole polygon exteriors also stroke the coast, the map frame and
+	# friendly city subdivisions; those are not political fronts. Coast and
+	# historical administration retain their separate, source-derived layers.
+	for border in places.control_borders.visible(places.owners, view.grow(8/zoom)):
+		var ink=faction_color(border.owner_a).lerp(faction_color(border.owner_b),.5).lightened(.12)
+		ink.a=.76
+		draw_polyline(border.points,Color(.12,.20,.23,.50),2.1/zoom,true)
+		draw_polyline(border.points,ink,.95/zoom,true)
 
 func control_legend_ids() -> Array:
 	var represented={}

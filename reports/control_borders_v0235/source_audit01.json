@@ -1,0 +1,419 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "name": "jingfeng:zone_source_hash",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:map_source_hash",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:1920:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:1920:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:1920:no_duplicated_pair_or_overdrawn_line",
+      "passed": false
+    },
+    {
+      "name": "jingfeng:1920:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:1922:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:1922:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:1922:no_duplicated_pair_or_overdrawn_line",
+      "passed": false
+    },
+    {
+      "name": "jingfeng:1922:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:1924:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:1924:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:1924:no_duplicated_pair_or_overdrawn_line",
+      "passed": false
+    },
+    {
+      "name": "jingfeng:1924:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "jingjin:zone_source_hash",
+      "passed": true
+    },
+    {
+      "name": "jingjin:map_source_hash",
+      "passed": true
+    },
+    {
+      "name": "jingjin:1920:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "jingjin:1920:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "jingjin:1920:no_duplicated_pair_or_overdrawn_line",
+      "passed": false
+    },
+    {
+      "name": "jingjin:1920:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "jingjin:1922:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "jingjin:1922:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "jingjin:1922:no_duplicated_pair_or_overdrawn_line",
+      "passed": false
+    },
+    {
+      "name": "jingjin:1922:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "jingjin:1924:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "jingjin:1924:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "jingjin:1924:no_duplicated_pair_or_overdrawn_line",
+      "passed": false
+    },
+    {
+      "name": "jingjin:1924:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:zone_source_hash",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:map_source_hash",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:1920:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:1920:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:1920:no_duplicated_pair_or_overdrawn_line",
+      "passed": false
+    },
+    {
+      "name": "conquest_china:1920:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:1922:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:1922:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:1922:no_duplicated_pair_or_overdrawn_line",
+      "passed": false
+    },
+    {
+      "name": "conquest_china:1922:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:1924:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:1924:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:1924:no_duplicated_pair_or_overdrawn_line",
+      "passed": false
+    },
+    {
+      "name": "conquest_china:1924:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "hankou:zone_source_hash",
+      "passed": true
+    },
+    {
+      "name": "hankou:map_source_hash",
+      "passed": true
+    },
+    {
+      "name": "hankou:1920:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "hankou:1920:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "hankou:1920:no_duplicated_pair_or_overdrawn_line",
+      "passed": true
+    },
+    {
+      "name": "hankou:1920:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "hankou:1922:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "hankou:1922:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "hankou:1922:no_duplicated_pair_or_overdrawn_line",
+      "passed": true
+    },
+    {
+      "name": "hankou:1922:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "hankou:1924:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "hankou:1924:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "hankou:1924:no_duplicated_pair_or_overdrawn_line",
+      "passed": true
+    },
+    {
+      "name": "hankou:1924:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "ningpu:zone_source_hash",
+      "passed": true
+    },
+    {
+      "name": "ningpu:map_source_hash",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1920:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1920:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1920:no_duplicated_pair_or_overdrawn_line",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1920:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1922:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1922:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1922:no_duplicated_pair_or_overdrawn_line",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1922:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1924:entire_strokes_supported_by_both_real_source_boundaries",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1924:natural_coast_and_map_frame_have_no_political_stroke",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1924:no_duplicated_pair_or_overdrawn_line",
+      "passed": true
+    },
+    {
+      "name": "ningpu:1924:stored_geometry_metrics_match_lines",
+      "passed": true
+    },
+    {
+      "name": "rules_geography_media_and_economy_sources_unchanged_from_0d78d69",
+      "passed": true
+    }
+  ],
+  "maps_and_periods": [
+    {
+      "map_id": "jingfeng",
+      "year": "1920",
+      "pairs": 27,
+      "shared_length_world": 59823.680315915444,
+      "original_whole_outline_length_world": 280172.2703224664,
+      "minimum_coast_or_frame_clearance_world": 0.001999534171833743
+    },
+    {
+      "map_id": "jingfeng",
+      "year": "1922",
+      "pairs": 27,
+      "shared_length_world": 59823.680315915444,
+      "original_whole_outline_length_world": 280172.2703224664,
+      "minimum_coast_or_frame_clearance_world": 0.001999534171833743
+    },
+    {
+      "map_id": "jingfeng",
+      "year": "1924",
+      "pairs": 27,
+      "shared_length_world": 59823.680315915444,
+      "original_whole_outline_length_world": 280172.2703224664,
+      "minimum_coast_or_frame_clearance_world": 0.001999534171833743
+    },
+    {
+      "map_id": "jingjin",
+      "year": "1920",
+      "pairs": 23,
+      "shared_length_world": 50935.9135271523,
+      "original_whole_outline_length_world": 152282.52158637138,
+      "minimum_coast_or_frame_clearance_world": 0.001999651901197997
+    },
+    {
+      "map_id": "jingjin",
+      "year": "1922",
+      "pairs": 23,
+      "shared_length_world": 50935.9135271523,
+      "original_whole_outline_length_world": 152282.52158637138,
+      "minimum_coast_or_frame_clearance_world": 0.001999651901197997
+    },
+    {
+      "map_id": "jingjin",
+      "year": "1924",
+      "pairs": 23,
+      "shared_length_world": 50935.9135271523,
+      "original_whole_outline_length_world": 152282.52158637138,
+      "minimum_coast_or_frame_clearance_world": 0.001999651901197997
+    },
+    {
+      "map_id": "conquest_china",
+      "year": "1920",
+      "pairs": 128,
+      "shared_length_world": 237061.76359840593,
+      "original_whole_outline_length_world": 746246.5875279068,
+      "minimum_coast_or_frame_clearance_world": 0.0019995960625765062
+    },
+    {
+      "map_id": "conquest_china",
+      "year": "1922",
+      "pairs": 128,
+      "shared_length_world": 237061.76359840593,
+      "original_whole_outline_length_world": 746246.5875279068,
+      "minimum_coast_or_frame_clearance_world": 0.0019995960625765062
+    },
+    {
+      "map_id": "conquest_china",
+      "year": "1924",
+      "pairs": 128,
+      "shared_length_world": 237061.76359840593,
+      "original_whole_outline_length_world": 746246.5875279068,
+      "minimum_coast_or_frame_clearance_world": 0.0019995960625765062
+    },
+    {
+      "map_id": "hankou",
+      "year": "1920",
+      "pairs": 3,
+      "shared_length_world": 11334.298372231246,
+      "original_whole_outline_length_world": 51254.18074197388,
+      "minimum_coast_or_frame_clearance_world": 0.0019997780340010366
+    },
+    {
+      "map_id": "hankou",
+      "year": "1922",
+      "pairs": 3,
+      "shared_length_world": 11334.298372231246,
+      "original_whole_outline_length_world": 51254.18074197388,
+      "minimum_coast_or_frame_clearance_world": 0.0019997780340010366
+    },
+    {
+      "map_id": "hankou",
+      "year": "1924",
+      "pairs": 3,
+      "shared_length_world": 11334.298372231246,
+      "original_whole_outline_length_world": 51254.18074197388,
+      "minimum_coast_or_frame_clearance_world": 0.0019997780340010366
+    },
+    {
+      "map_id": "ningpu",
+      "year": "1920",
+      "pairs": 1,
+      "shared_length_world": 8889.505490858033,
+      "original_whole_outline_length_world": 47583.07054391599,
+      "minimum_coast_or_frame_clearance_world": 0.002
+    },
+    {
+      "map_id": "ningpu",
+      "year": "1922",
+      "pairs": 1,
+      "shared_length_world": 8889.505490858033,
+      "original_whole_outline_length_world": 47583.07054391599,
+      "minimum_coast_or_frame_clearance_world": 0.002
+    },
+    {
+      "map_id": "ningpu",
+      "year": "1924",
+      "pairs": 1,
+      "shared_length_world": 8889.505490858033,
+      "original_whole_outline_length_world": 47583.07054391599,
+      "minimum_coast_or_frame_clearance_world": 0.002
+    }
+  ],
+  "graph_sha256": "8d98b47bb1894d9760b2a114d7d04cb617ac0d829530ae2999de319ed7274272",
+  "code_sha256": "b12c6fbecd9a6824d900baf608f5199ca8a497b86b204fc02577bf849b352a63",
+  "compared_source_commit": "0d78d6910239eab49733c78f1b9882155a7915ed",
+  "source_changes": [],
+  "source_geometry_modified": false,
+  "historical_military_frontiers_claimed": false,
+  "shipping_exe": false,
+  "physical_android_device_tested": false
+}

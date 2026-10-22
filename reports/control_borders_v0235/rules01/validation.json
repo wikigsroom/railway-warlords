@@ -1,0 +1,529 @@
+{
+	"checks": [
+		{
+			"name": "production_content_loads",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:jingfeng:1920",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:jingfeng:1920",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:jingfeng:1920",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:jingfeng:1920",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:jingfeng:1920",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:jingfeng:1920",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:jingfeng:1920",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:jingfeng:1920",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:jingfeng:1922",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:jingfeng:1922",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:jingfeng:1922",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:jingfeng:1922",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:jingfeng:1922",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:jingfeng:1922",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:jingfeng:1922",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:jingfeng:1922",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:jingfeng:1924",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:jingfeng:1924",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:jingfeng:1924",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:jingfeng:1924",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:jingfeng:1924",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:jingfeng:1924",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:jingfeng:1924",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:jingfeng:1924",
+			"passed": true
+		},
+		{
+			"name": "border_preparation_does_not_mutate_map_or_fill_geometry:jingfeng",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:jingjin:1920",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:jingjin:1920",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:jingjin:1920",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:jingjin:1920",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:jingjin:1920",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:jingjin:1920",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:jingjin:1920",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:jingjin:1920",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:jingjin:1922",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:jingjin:1922",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:jingjin:1922",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:jingjin:1922",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:jingjin:1922",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:jingjin:1922",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:jingjin:1922",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:jingjin:1922",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:jingjin:1924",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:jingjin:1924",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:jingjin:1924",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:jingjin:1924",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:jingjin:1924",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:jingjin:1924",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:jingjin:1924",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:jingjin:1924",
+			"passed": true
+		},
+		{
+			"name": "border_preparation_does_not_mutate_map_or_fill_geometry:jingjin",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:conquest_china:1920",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:conquest_china:1920",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:conquest_china:1920",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:conquest_china:1920",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:conquest_china:1920",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:conquest_china:1920",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:conquest_china:1920",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:conquest_china:1920",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:conquest_china:1922",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:conquest_china:1922",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:conquest_china:1922",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:conquest_china:1922",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:conquest_china:1922",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:conquest_china:1922",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:conquest_china:1922",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:conquest_china:1922",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:conquest_china:1924",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:conquest_china:1924",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:conquest_china:1924",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:conquest_china:1924",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:conquest_china:1924",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:conquest_china:1924",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:conquest_china:1924",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:conquest_china:1924",
+			"passed": true
+		},
+		{
+			"name": "border_preparation_does_not_mutate_map_or_fill_geometry:conquest_china",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:hankou:1920",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:hankou:1920",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:hankou:1920",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:hankou:1920",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:hankou:1920",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:hankou:1920",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:hankou:1920",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:hankou:1920",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:hankou:1922",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:hankou:1922",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:hankou:1922",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:hankou:1922",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:hankou:1922",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:hankou:1922",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:hankou:1922",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:hankou:1922",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:hankou:1924",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:hankou:1924",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:hankou:1924",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:hankou:1924",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:hankou:1924",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:hankou:1924",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:hankou:1924",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:hankou:1924",
+			"passed": true
+		},
+		{
+			"name": "border_preparation_does_not_mutate_map_or_fill_geometry:hankou",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:ningpu:1920",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:ningpu:1920",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:ningpu:1920",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:ningpu:1920",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:ningpu:1920",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:ningpu:1920",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:ningpu:1920",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:ningpu:1920",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:ningpu:1922",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:ningpu:1922",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:ningpu:1922",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:ningpu:1922",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:ningpu:1922",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:ningpu:1922",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:ningpu:1922",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:ningpu:1922",
+			"passed": true
+		},
+		{
+			"name": "source_bound_graph_loads:ningpu:1924",
+			"passed": true
+		},
+		{
+			"name": "friendly_internal_subdivisions_have_no_political_strokes:ningpu:1924",
+			"passed": true
+		},
+		{
+			"name": "all_friendly_pairs_are_suppressed:ningpu:1924",
+			"passed": true
+		},
+		{
+			"name": "capture_creates_only_hostile_common_edges:ningpu:1924",
+			"passed": true
+		},
+		{
+			"name": "offscreen_boundary_segments_are_culled:ningpu:1924",
+			"passed": true
+		},
+		{
+			"name": "owner_change_back_removes_stale_hostile_edges:ningpu:1924",
+			"passed": true
+		},
+		{
+			"name": "unknown_owners_do_not_invent_political_edges:ningpu:1924",
+			"passed": true
+		},
+		{
+			"name": "unassigned_map_has_no_strokes:ningpu:1924",
+			"passed": true
+		},
+		{
+			"name": "border_preparation_does_not_mutate_map_or_fill_geometry:ningpu",
+			"passed": true
+		},
+		{
+			"name": "unsupported_geography_has_no_fabricated_fallback",
+			"passed": true
+		},
+		{
+			"name": "missing_historical_period_is_not_silently_relabelled",
+			"passed": true
+		},
+		{
+			"name": "stale_geometry_binding_is_rejected",
+			"passed": true
+		},
+		{
+			"name": "operation_hex_and_translucent_control_fill_are_preserved",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"graph_sha256": "8d98b47bb1894d9760b2a114d7d04cb617ac0d829530ae2999de319ed7274272",
+	"passed": true,
+	"physical_android_device_tested": false,
+	"shipping_exe": false
+}
