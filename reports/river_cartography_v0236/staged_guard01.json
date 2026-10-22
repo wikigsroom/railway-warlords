@@ -1,0 +1,527 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-22T10:16:22.970931+00:00",
+  "controller_sha256": "52b69402fa574eeb3c7382b5d1096e5b0b798946063c0988feb8c6bff2c4afde",
+  "baseline_commit": "bb157c31d2b897c92b99d952253e867f77db7081",
+  "scope": "Every changed staged file compared with raw working bytes; all public links checked. Unchanged originals already audited separately.",
+  "changed_staged_files_checked": 85,
+  "public_documents": 43,
+  "local_links_checked": 1105,
+  "source_geometry_proof_matches_current_renderers": true,
+  "development_only": true,
+  "shipping_binary_rebuilt": false,
+  "physical_android_device_tested": false,
+  "failures": [],
+  "files": [
+    {
+      "file": ".gitignore",
+      "bytes": 9921,
+      "blob": "210ec5ec9be04b28201b7ff77d57c80d0f7841d1",
+      "sha256": "164476dc734e295d1b8030a4d3bfdd23cbb3338d90aedad9ce1d9c4c5dcd64b4"
+    },
+    {
+      "file": "README.en.md",
+      "bytes": 70819,
+      "blob": "ad12ea2bf12190776a8198911c799d0aabd6babd",
+      "sha256": "77e1ad2bbb2f230eb585ad46c2525d0bbe9f56ccd9f4e0ccca6b4817ab28537b"
+    },
+    {
+      "file": "README.md",
+      "bytes": 62891,
+      "blob": "6b5a47ff62984150fda25e07d87d06bd7129679e",
+      "sha256": "03345eadb28da2f4f532f974586547d0065aee145feea979bcb55ff61531536e"
+    },
+    {
+      "file": "docs/00_程序文档索引.md",
+      "bytes": 12510,
+      "blob": "f7193f64e56451573fae117a10cfe243c7161c6e",
+      "sha256": "ec4cd6196eab6f0fe5ba3e1c30a9b8d15a1fe31da30ca9ac8fac731acbbb9da8"
+    },
+    {
+      "file": "docs/23_当前完成度评估.md",
+      "bytes": 13793,
+      "blob": "84fb99a980e781286c53075dcda1948dbc893f86",
+      "sha256": "263f157734709c6ad675c1ef338accc76329bde8d46caf2dcc9b59a2b628def4"
+    },
+    {
+      "file": "docs/56_细水系圆角与水床显示.md",
+      "bytes": 9675,
+      "blob": "9ad7f4990940125656c8b698192415d0bd9c5a39",
+      "sha256": "501e40e95e5e84b39fc8b0c485a7bbe4d8d88295d1451a57582915cf71520379"
+    },
+    {
+      "file": "presentation/map_hydrography.gd",
+      "bytes": 10466,
+      "blob": "95f3599834b7a71063542c206ba8b843a4b1e255",
+      "sha256": "f562796e53ff94b44cd710efbc271371b75c8d9ee8ea0171c87d13939de0c25d"
+    },
+    {
+      "file": "presentation/map_river_surface.gd",
+      "bytes": 6334,
+      "blob": "a11d8e85a074d8422f98ee2697da52a7835c3d3e",
+      "sha256": "e0289632d568538425e726ef9ecdaac75a1f5c7697685cf34614f8426c5216ce"
+    },
+    {
+      "file": "presentation/map_view.gd",
+      "bytes": 144201,
+      "blob": "5a4128f7595f9593ab89a56b6fd6b96bdf6108ec",
+      "sha256": "d7949a811cd88db1c4b4c798a192200bc634eabd66efd943511b581d75444c76"
+    },
+    {
+      "file": "reports/river_cartography_v0236/baseline/geometry01/command.json",
+      "bytes": 26310,
+      "blob": "36e67464cf56b7a8c81784d6f4289032450548cb",
+      "sha256": "1c0e73643e69a99170160396cf409f66f8c61db6dbcd73c6af2b1df6e3da9c73"
+    },
+    {
+      "file": "reports/river_cartography_v0236/baseline/geometry01/geometry.json",
+      "bytes": 30711607,
+      "blob": "fb299981c1354f2308a0d4583b681edc26a93843",
+      "sha256": "8bf09f0fd2260b4efd988ace8ab528a05ab99ccdffbebef6a3802bed5a5d3965"
+    },
+    {
+      "file": "reports/river_cartography_v0236/baseline/geometry01/result.json",
+      "bytes": 492,
+      "blob": "0eccd104431773dd8e9f232ed7d074d427253e0d",
+      "sha256": "e494802d257c462474b596ce78962442190f6e77a53d9921827104a94717b75a"
+    },
+    {
+      "file": "reports/river_cartography_v0236/contact_graph01.json",
+      "bytes": 4372,
+      "blob": "098d559ad956c4eea8a92beb34c610ff0cd0e560",
+      "sha256": "e0d4069ad26d72f2298ef8f598f7715fe459027a033a9ba681571503f520ba74"
+    },
+    {
+      "file": "reports/river_cartography_v0236/development_summary01.json",
+      "bytes": 3567,
+      "blob": "1824d8a079b9083ebb10e72541470e31c1b91048",
+      "sha256": "20ca68fe488dd3c19440bb9d5aac080531786918960126167b8300423f6c7926"
+    },
+    {
+      "file": "reports/river_cartography_v0236/geometry_audit01.json",
+      "bytes": 26330346,
+      "blob": "f96c20029b7c9e03cec00a36c4984f8b1ce92dfb",
+      "sha256": "5e25f6d0781a165ecaa96515a28f197667c416f4e503c2caa1411394ea737f79"
+    },
+    {
+      "file": "reports/river_cartography_v0236/geometry_audit02.json",
+      "bytes": 24928791,
+      "blob": "1e31cd51dc9dc0dba0b81423ca29df2519d0c526",
+      "sha256": "7996024bfdf62e0f86b9cddc5896e03aba45b4e1679fe93127e710874c2f228c"
+    },
+    {
+      "file": "reports/river_cartography_v0236/geometry_audit03.json",
+      "bytes": 25222389,
+      "blob": "6ca815d63219820990ed8d0909168c9648601fa3",
+      "sha256": "cb6003c41a79011fd773054987bcf69641202452df6fff9ff389960a91b6fd98"
+    },
+    {
+      "file": "reports/river_cartography_v0236/protected_scope01.json",
+      "bytes": 2783430,
+      "blob": "3ab60953530a2ca4bde9c96fad14b43d03a29026",
+      "sha256": "344866eb1041cbc7cfd1fedf0f6bb580a378b89c33389f1b70cd5f143cf0a483"
+    },
+    {
+      "file": "reports/river_cartography_v0236/repository_documentation01.json",
+      "bytes": 1260,
+      "blob": "bc34ecf565b534cd259f2bf2d6233372b8cfc6dc",
+      "sha256": "4002253a61561a29ad7a46f71605b4dd63de0692e4c3d0ec5059125f81dda9ca"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/coast01/command.json",
+      "bytes": 26799,
+      "blob": "1594f632d1e8f0a1f9d816b8a0afb8fa2aa9db06",
+      "sha256": "5eb0f535c95c694578c00108069b59f148f084893e934830571cda4be9a6feb5"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/coast01/result.json",
+      "bytes": 576,
+      "blob": "c3a0baaf7c7279b1b4240e7700a13aab4a98b838",
+      "sha256": "b0bb41b32392bd2c80d3397362c675a93365b6978a51c263d9536107d9f226c3"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/coast01/viewport.json",
+      "bytes": 27213,
+      "blob": "ecce82e4f7cb96ff27cf5b37ce2aeffc19cadcd1",
+      "sha256": "9bbb389b87eaadd046a460dd3331efaa99c708d8eb29d3fff143f1e55d1b884e"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/coast01/viewport.png",
+      "bytes": 2535519,
+      "blob": "5b3778c5d6c29aec84f59347b8672e9ba21bbb04",
+      "sha256": "b34f650d63d186f469194ce2b3f2b65decc51b039fd8ad5f4c94904773c39c65"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry01/command.json",
+      "bytes": 26341,
+      "blob": "122a39e479cda5764dcfa2805864a28c039944e6",
+      "sha256": "ae3e061f0fa5f4f7749571a954e0f2b37443464bfbb1c97007bedbab6799762a"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry01/geometry.json",
+      "bytes": 44598255,
+      "blob": "8e2567fdc10515a7203eb6e6f05abd82fa1a7331",
+      "sha256": "c93301677d498db8ccc6d5bdb549b69ff98ec5e1e16fd859aa13626fe2334c9b"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry01/result.json",
+      "bytes": 489,
+      "blob": "41d85ddc677f3b8e8750b7f36a4ed3495a314316",
+      "sha256": "a0b1c59834bfa733ba9e8c267d1d3719eba8c7c8e2284dce2dba7869bb846ef1"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry02/command.json",
+      "bytes": 26341,
+      "blob": "f40d1f725fb4a963b471fc3ddfc20c778bb285a5",
+      "sha256": "c7ccc60f960479fa74613775b0fb36c72483e603cfa9879f26fac31d60bcd3e6"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry02/geometry.json",
+      "bytes": 46951031,
+      "blob": "7d1d1182e45ce09f4cc4d6022e4729a13042a410",
+      "sha256": "20fdaf333f68a0918497c16dee354a6b19b55353c65c7b86efabcab4d2c84bc9"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry02/result.json",
+      "bytes": 490,
+      "blob": "2158cff60fb841814b3a229bc606cb60ec5b1032",
+      "sha256": "a1e1381f2d9299bb0318bb09c5d480273312e74d04920a8fb38881f60dfca2cb"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry03/command.json",
+      "bytes": 26667,
+      "blob": "3bb922f61b0a9774052ea6369d0aff853d298c66",
+      "sha256": "2b69d9b5524bbe6693a5e10aeae8f8297eeb1904d5b4bb00326452121e0c91e2"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry03/geometry.json",
+      "bytes": 46950662,
+      "blob": "be4da3430d30da4e46fbb5827e4d329601b22c8e",
+      "sha256": "e1ec1bede8440d7c357374fa19a10225dee0189312a60c063a16013f53cc54ee"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry03/result.json",
+      "bytes": 490,
+      "blob": "cdccaac00065063297210d6312a9b151e39bc978",
+      "sha256": "f8fe5a0cf820c8db3ac6f021d7a506eb675124ebb9f9b1e4516cea44c4dbdcc0"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/material_rules01/command.json",
+      "bytes": 26649,
+      "blob": "a09363c894d59ba745afa47d8a3d31a38f7e1a5d",
+      "sha256": "f27fc47418419112248e5ad4a3a7f54136cc589692fd864cc48f747133763bf6"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/material_rules01/result.json",
+      "bytes": 497,
+      "blob": "304a7fd46b1ef3f37f48958c0520700ea271f41c",
+      "sha256": "16aaec5590925b5a1d7642e62ac3c3dd9af3f66cfdeafe3a07b3f80e08e86d7f"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/material_rules01/validation.json",
+      "bytes": 3803,
+      "blob": "c2c10bcef6fb8b53fe1a39723494cd545436be50",
+      "sha256": "201b648382952e90fe7b72d363570c5f5d165b3b4cb105006e04d03d75b708ba"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains01/command.json",
+      "bytes": 26482,
+      "blob": "38a9b16813f23b299fd560002af7c2b15586a1b5",
+      "sha256": "b328b3e1695f4db95af9a2f4ef7e62dbe77b330635dece3b9ebea5919a27055b"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains01/result.json",
+      "bytes": 580,
+      "blob": "90c4d80be3f401160deb50afa5f5ba7236de1897",
+      "sha256": "66d6d0d01b62cca6b6af660234ddf78f3c3fe1449e2c8e11290e5ed038be0bdf"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains01/viewport.json",
+      "bytes": 24901,
+      "blob": "869eed818bb451c0dd48a5234fb611f225ffc552",
+      "sha256": "79f8bb8b823bff00f136105ff905615b0f18dde818d07f6b308f1a61c23bcfdf"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains01/viewport.png",
+      "bytes": 2877414,
+      "blob": "d3619c93a17fc831edaf3298576c6fbca071d43d",
+      "sha256": "6889a9f0f1363924ad223c07daf33d91fe00018b2ab216f79ce36b44007fca5a"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains02/command.json",
+      "bytes": 26808,
+      "blob": "1ec7ad7c0a4a84c6b081e43cc1af9b2277090ee2",
+      "sha256": "cac5360597ae929d40024b69244b2753e630f882d2a9f6eac58e26ae862d8126"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains02/result.json",
+      "bytes": 579,
+      "blob": "0110299ef0447436707da52a2a7488260c0c3399",
+      "sha256": "0b2381359695ab66bfe1891c9e362ca4b16dc06f0fe08e578b3780aa4ce0af03"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains02/viewport.json",
+      "bytes": 24904,
+      "blob": "c0f8ce053dbd04eafc4e2de1601b129587268104",
+      "sha256": "690d02e843322a8e275b8fc62ec4727aa53daf578ce9cbf06a1c31a654f77044"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains02/viewport.png",
+      "bytes": 2866166,
+      "blob": "67367ad25c0908b114052272e419ff5a241792ad",
+      "sha256": "48f2a11d14bfedc123d4affeaf6137a6d790099ebf72deb3508f216bec2835dd"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains03/command.json",
+      "bytes": 26808,
+      "blob": "34b36bfe43dabce318931637214c95e4164ffd90",
+      "sha256": "036901ff3865da38aa766d722b74c615957530cb34f5236f38c73e738edc259b"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains03/result.json",
+      "bytes": 580,
+      "blob": "feef625ce234823c14b69c62e9fe2a468502176f",
+      "sha256": "0e093444a6b716163587432632c4acc3ddec2a1ec79671b13d2ded0f9ad201b3"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains03/viewport.json",
+      "bytes": 24904,
+      "blob": "04daf51f397bb588f31e012198ce0921af743ffc",
+      "sha256": "ad02c9ba9bf3e4a73feed38662a1bf027c2ce2dd056edafb95ceacef38ad163f"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/mountains03/viewport.png",
+      "bytes": 2866328,
+      "blob": "7e24078eff3fa1f1995bbc4ed13645fadfb367d0",
+      "sha256": "1aa6406cffc4b88d75890814d8db3e20dd53dda3cabd882ae90464f1a208176c"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/perf_desktop01/command.json",
+      "bytes": 26348,
+      "blob": "8174024b74b10832324c354c233987a86f70a9e9",
+      "sha256": "8ec0c75e80b7ce72a46431aa548c3e61d2f17d6126b4f447b1e10e3f5acb9b27"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/perf_desktop01/pan.json",
+      "bytes": 5791,
+      "blob": "8efd1b22818c5fbcf87339ced3a67cdb126c936b",
+      "sha256": "251e698fc87676bdb3384c73d90aba2b3796fac0b3441197b6eb892b9cedcda0"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/perf_desktop01/result.json",
+      "bytes": 665,
+      "blob": "bd4048405e8e19c69edb5e1519eb44a3114e6c9c",
+      "sha256": "32a27ea9b9565dc42d48275c9f893548ecc5c7e304a8cc3c8c27462f7f3c1fa6"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/perf_touch_dimensions01/command.json",
+      "bytes": 26422,
+      "blob": "9694790cf5dc68da02afde6fe2c06b328db2b32c",
+      "sha256": "bc4c2fb89f6a1ddb8fca723309b87e7d370734998a020b496d0db60284cab016"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/perf_touch_dimensions01/pan.json",
+      "bytes": 5795,
+      "blob": "33b8cfee0c3fbf377db16015f96263e4d271b2bd",
+      "sha256": "857766837091bba30fda26987fb43b0de3908d6979738b00fb1aa125fe63b752"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/perf_touch_dimensions01/result.json",
+      "bytes": 673,
+      "blob": "be4ac0e69f79c90d417fd5291c9cf1130ce1a547",
+      "sha256": "99d4901356361a55f372f97a0ae95587533aa076a30d8ce0135021ade328370f"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/river_rules01/command.json",
+      "bytes": 26633,
+      "blob": "517e23e9e7bc493f155e31e4576fc0cc8387334d",
+      "sha256": "c58f807e4346b3a17eade184832ec75514851414bb7048d15aeae289e4ac9f92"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/river_rules01/result.json",
+      "bytes": 495,
+      "blob": "52f1ed72eb587463c370cb7fc7407c75e947924a",
+      "sha256": "e3ea6579f167fd8e8bcd45b64ce67f41f41146744f5275d5bcce86f2d203fdb1"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/river_rules01/validation.json",
+      "bytes": 5228,
+      "blob": "9cd7dd172567c5e88408c53ca41f3d3be5fc5ac2",
+      "sha256": "8b1f0a8b80a7d68eb88633e0a465323cb385f045de725f1eb66826f3a98c1730"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/surface_rules01/command.json",
+      "bytes": 26641,
+      "blob": "ba617adb7da11470c16c95fc7323428aaaa39364",
+      "sha256": "66149ab5aeb9bf45a7ef60c3efb5e7f912ea3fe969122c8afd1f1d46e2de2ab0"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/surface_rules01/result.json",
+      "bytes": 496,
+      "blob": "574ec565c846ea037f99591543be761a9463b9aa",
+      "sha256": "323e4134145729a433bf6d84441b327a99401f37bce7658f7b04173a91df8117"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/surface_rules01/validation.json",
+      "bytes": 4304,
+      "blob": "081b12229d6a03cb6e9fb2dd5f4e0c51e51ae716",
+      "sha256": "7fc666f4b4f18a635f59867dac90cb220d7044a04b4471cb1875e48c71d83847"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/village01/command.json",
+      "bytes": 26810,
+      "blob": "db690976a648c3eb6a24b379b9f02a7215227aee",
+      "sha256": "ddb89fc6802191ef81a6a6e5d590b3337c3c09e63a025c706081fbb800e093aa"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/village01/result.json",
+      "bytes": 578,
+      "blob": "8aeb9e79abdcfaeef48984dec7afc26765268fdf",
+      "sha256": "d4dcbc710e52d492046829ce3ff946c4cd9c1056379534a3709612d39671ba37"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/village01/viewport.json",
+      "bytes": 24628,
+      "blob": "1eb13e9063d734dc1a3976cf3f11520f6d0be5a3",
+      "sha256": "2cf9525d620d7ad1d4412b9a40dd7515016afc94f75dacbd7edc128373056485"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/village01/viewport.png",
+      "bytes": 2812453,
+      "blob": "e4e8aafe7812b442f70aab61c057492d4f9d9050",
+      "sha256": "793fb5b9fe335fe65d7d6aa7a1741f631ede00cb61865fac8030901d17c6048a"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/yangtze01/command.json",
+      "bytes": 26793,
+      "blob": "baec5f42c3eae967652f4ea357ed9f2271692199",
+      "sha256": "518eed28e2f4ad7cc88539517a6eca32bc06c569d2d27a774896393f39f29cd4"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/yangtze01/result.json",
+      "bytes": 578,
+      "blob": "3ccb3d062918b4f365847b67413b625c86e2a747",
+      "sha256": "8a519e58d77820854c64abddd51b9c6db522c69ce0fe5c6f2d45cec27546ab46"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/yangtze01/viewport.json",
+      "bytes": 19289,
+      "blob": "ce7afe825078bb796c8f8427bf170835d0d453a5",
+      "sha256": "669d866e96eb367906c6cbd2c139c52e8c9d1a6492373065e8d3f3a13bff723b"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/yangtze01/viewport.png",
+      "bytes": 2218933,
+      "blob": "f15f6533ad5e88ad79b5a19351192d07ef5cddfc",
+      "sha256": "e2a5b0e0d260e33a80b0bd0c88e90cdb0f9dcd479ecf4b647b0dfb7c5e8e6f25"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/yangtze02/command.json",
+      "bytes": 26804,
+      "blob": "c87378089e14d9f4c785552d5013ed3799351cfb",
+      "sha256": "311a06a9cb8a7cef3097d4a9c40be8425f41d0db6351e644348f5a0fcfe26af6"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/yangtze02/result.json",
+      "bytes": 578,
+      "blob": "192b2f0d68c026bfc26b78571076f6b53930042c",
+      "sha256": "77f49dd5b56c6be22d96232213f83b56e31cf1e0d6890f97b8f3da38313a0fbd"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/yangtze02/viewport.json",
+      "bytes": 19461,
+      "blob": "a5f91e8275d73e677df4cd1ec9064a32ae874754",
+      "sha256": "5359f42c1bd75be0235ee5f17efad3c9572eda72a06163516c7e05d425f673a5"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/yangtze02/viewport.png",
+      "bytes": 1927998,
+      "blob": "3b3dd1a71b43292b5bdb65c6aac4f531e78869ec",
+      "sha256": "8237b366368706e0cbc5c5134851ec31eda5acb4410969f77fa9ae89e93d5bd0"
+    },
+    {
+      "file": "reports/river_cartography_v0236/visual_review01.json",
+      "bytes": 2697,
+      "blob": "9e1678b148813360073d254ff0696989735507d4",
+      "sha256": "cc462a6f2c60230ca3befb69a782d5cf313f7d600d82a1dc25c3c2378a36b9aa"
+    },
+    {
+      "file": "tests/map_material_continuity_test.gd",
+      "bytes": 8087,
+      "blob": "6feeeceb661642bebab097b774717a4dd5f49f05",
+      "sha256": "0faf90ad46604841fea563b20b945ba9e4eb306bf273b6e9efcff49c2a7cf220"
+    },
+    {
+      "file": "tests/river_corner_geometry_test.gd",
+      "bytes": 5109,
+      "blob": "a3c5d75b29e2650027be124ba0b5440958a669ee",
+      "sha256": "74a0ca0edf9ddb3592cbcdf81ff7cfff7221618acdb23e5eacd621a9fe8d6952"
+    },
+    {
+      "file": "tests/river_pan_native_test.gd",
+      "bytes": 3507,
+      "blob": "f1e287f9994647c884fbeaccea7ae0304d5f9b6a",
+      "sha256": "ebd9ff4fac4de31857e474ebaf894d05b2d0a4014bb1eeb2807a3d416a8e7529"
+    },
+    {
+      "file": "tests/river_surface_test.gd",
+      "bytes": 9836,
+      "blob": "b70700c8f7b37c302dc65197f53ff8e0535855ef",
+      "sha256": "706d8a6dd89343225f4695a8c7ae151f5991d509a0485c5d5598261b0ec7b386"
+    },
+    {
+      "file": "tests/surface_geography_test.gd",
+      "bytes": 7670,
+      "blob": "48d7c877f0995bcc08808c261ad520b66742c9f3",
+      "sha256": "ab67723a2deab25f0961a0fd892ab2e0a1ca9422524d017e004c2cc82e1cdd2b"
+    },
+    {
+      "file": "tools/audit_river_contact_graph.py",
+      "bytes": 4777,
+      "blob": "3df286b40ef48aaea3ec6f333726667b95cd1939",
+      "sha256": "9f4d52adc37bfaaadd040649d508972ae7069da3e222ff210858be1dce2ba094"
+    },
+    {
+      "file": "tools/audit_river_corner_geometry.py",
+      "bytes": 7069,
+      "blob": "33fd40f1953deac6168261ad5d4737f62efaeea5",
+      "sha256": "6c100f61afb2bb665a453a9e7004ec217fac2bca0716d388a3444a9bf46bcd4d"
+    },
+    {
+      "file": "tools/audit_river_scope.py",
+      "bytes": 4343,
+      "blob": "16ce74ecf503cb4710f49027ea1d536ba062514a",
+      "sha256": "356c1fab9e7ec41167406a2e705913bc10becb8c15d50637818014b61fa3a18f"
+    },
+    {
+      "file": "tools/measure_river_pan.py",
+      "bytes": 3785,
+      "blob": "b3e5e264f1819d153e8f417f27615a0d7781fcb0",
+      "sha256": "e81e3db915f3d5c1458117bf69f710d8336874af5e21930c9af3c051e306818e"
+    },
+    {
+      "file": "tools/record_river_development.py",
+      "bytes": 6163,
+      "blob": "46b718751faefdd02dc5658762aea2a733d1dcae",
+      "sha256": "185bb018ae04f666d30bd7da33fe9e096c0341bf00ba066c8a184a8e1d7e42f3"
+    },
+    {
+      "file": "tools/verify_repository.py",
+      "bytes": 12132,
+      "blob": "c4cd1f98477e1f67f1b3be6af03caf177d4463a8",
+      "sha256": "ffeb148dff3669a126e4f1de22acddf5bb5eccb0780ce74e88a22a83406b49c9"
+    },
+    {
+      "file": "tools/verify_river_cartography.py",
+      "bytes": 5485,
+      "blob": "1f0a980cf20bcc348105a81cdea9a70b6233f871",
+      "sha256": "b4b6d775ba8fbf39e38e6de9a99dc6138ebb2305e53434b26a73cee3f403c34e"
+    },
+    {
+      "file": "tools/verify_staged_river_development.py",
+      "bytes": 5127,
+      "blob": "ab731c31b8dbabd463cc03cee2003b14c5cc841a",
+      "sha256": "52b69402fa574eeb3c7382b5d1096e5b0b798946063c0988feb8c6bff2c4afde"
+    }
+  ]
+}

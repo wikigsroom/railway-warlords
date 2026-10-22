@@ -61,7 +61,7 @@ func run() -> void:
 	var indexed=MapHydrography.spatial_index([headwater,long_reach])
 	verify(MapHydrography.visible_rows([headwater,long_reach],indexed,Rect2(0,0,1400,1400),1.05,false).size()==2 and MapHydrography.visible_rows([headwater,long_reach],indexed,Rect2(4000,4000,200,200),1.05,false).is_empty(),"water_spatial_index_draws_each_source_once_and_culls_distant_chunks")
 	var source_join=PackedVector2Array([Vector2(0,0),Vector2(0,60),Vector2(60,60),Vector2(60,120)])
-	var original_join=source_join.duplicate();var rounded=MapHydrography.rounded_source_corners(source_join,5.76)
+	var original_join=source_join.duplicate();var rounded=MapHydrography.rounded_source_corners(source_join,2.88)
 	var bounded=true
 	for point in rounded:
 		var distance=INF
@@ -73,5 +73,8 @@ func run() -> void:
 	var hankou=MapHydrography.build(content.maps.hankou,"hankou")
 	verify(hankou.diagnostics.major_presentation_replacements>0 and hankou.major_orders.all(func(order):return order>=6),"small_yangtze_map_uses_source_main_order_instead_of_line_length_as_width")
 	var report={"passed":failures.is_empty(),"failed":failures.size(),"checks":checks,"failures":failures,"build_version":ContentRegistry.APP_VERSION,"scope":"Source identity, preserved precision limits, actual map region application and authoritative state isolation; full raw-vector geometry audited separately."}
-	var file=FileAccess.open("res://reports/surface_geography_tests.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
+	var output="res://reports/surface_geography_tests.json";var args=OS.get_cmdline_user_args()
+	for i in range(args.size()-1):
+		if args[i]=="--report-output":output=args[i+1]
+	var file=FileAccess.open(output,FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("SURFACE_GEOGRAPHY_TEST ",JSON.stringify(report));quit(0 if failures.is_empty() else 1)

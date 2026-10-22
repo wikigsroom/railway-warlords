@@ -81,12 +81,14 @@ static func paint(canvas: CanvasItem, row: Dictionary, width: float, opacity: fl
 		# give the source line depth without inventing banks or a new centreline.
 		# Separate passes keep downstream water above every tributary's halo.
 		if layer in [0,1]:
-			canvas.draw_polyline(points,Color("858b6e",opacity*.13),width+4.2,true)
-			canvas.draw_polyline(points,Color("6c816a",opacity*.24),width+2.3,true)
+			canvas.draw_polyline(points,Color("78896a",opacity*.035),width+8.4,true)
+			canvas.draw_polyline(points,Color("74876b",opacity*.085),width+4.6,true)
+			canvas.draw_polyline(points,Color("546e60",opacity*.16),width+1.8,true)
 		if layer in [0,2]:
-			canvas.draw_polyline(points,Color("3f625f",opacity*.44),width+.6,true)
-			canvas.draw_polyline(points,Color("57847f",opacity*.93),width,true)
-			canvas.draw_polyline(points,Color("a4beb0",opacity*.34),maxf(.5,width*.30),true)
+			canvas.draw_polyline(points,Color("3f625d",opacity*.55),width+.4,true)
+			# A bright axial stripe makes a narrow source river resemble a raised
+			# wire. Keep its muted water core and soft outer margin instead.
+			canvas.draw_polyline(points,Color("668f82",opacity*.80),width,true)
 		return true
 	var geometry=prepared(row,width)
 	if geometry.is_empty():return false

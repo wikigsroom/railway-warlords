@@ -635,7 +635,7 @@ func map_bank_capture_facts() -> Dictionary:
 	hydro_facts["actual_coast_band_draws"]=backdrop_view.coast_band_draw_count if backdrop_view!=null else coast_band_draw_count
 	var water_renderer=backdrop_view if is_instance_valid(backdrop_view) and not static_only else self
 	hydro_facts["river_surface"]={"renderer":"source_centerline_gradient_ribbon","water_texture_id":MapRiverSurface.TEXTURE_ID,"world_texture_period":MapRiverSurface.TEXTURE_PERIOD,"drawn_watercourses":water_renderer.river_surface_draw_count,"drawn_gradient_ribbons":water_renderer.river_surface_draw_count-water_renderer.river_ink_draw_count,"drawn_antialiased_headwaters":water_renderer.river_ink_draw_count,"drawn_textured_ribbons":water_renderer.river_texture_draw_count,"primary_width_from_vertex_count":false,"measured_banks_claimed":false}
-	hydro_facts.river_surface["headwater_style"]="muted_waterbed_with_translucent_riparian_halo"
+	hydro_facts.river_surface["headwater_style"]="muted_waterbed_soft_margin_without_axial_highlight"
 	hydro_facts.river_surface["detail_banks_drawn_before_water"]=true
 	hydro_facts["water_materials"]=MapWaterMaterials.facts()
 	hydro_facts.water_materials["mipmapped_minification_active"]=water_renderer.texture_filter==CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS

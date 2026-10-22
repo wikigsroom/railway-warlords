@@ -1,0 +1,153 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-10-22T09:54:37.051635+00:00",
+  "controller_sha256": "9f4d52adc37bfaaadd040649d508972ae7069da3e222ff210858be1dce2ba094",
+  "baseline_sha256": "8bf09f0fd2260b4efd988ace8ab528a05ab99ccdffbebef6a3802bed5a5d3965",
+  "revised_sha256": "e1ec1bede8440d7c357374fa19a10225dee0189312a60c063a16013f53cc54ee",
+  "native_content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+  "development_only": true,
+  "predicate": "GEOS exact segment intersection; native float32 source and native display coordinates",
+  "scope": "Within HydroRIVERS only. No assumption that mixed Natural Earth lines form an identical graph.",
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "maps": [
+    {
+      "map_id": "asia_strategic",
+      "hydrorivers_reaches": 0,
+      "applicable": false
+    },
+    {
+      "map_id": "conquest_china",
+      "applicable": true,
+      "hydrorivers_reaches": 20728,
+      "source_contact_pairs": 19153,
+      "previous_contact_pairs": 19153,
+      "revised_contact_pairs": 19153,
+      "added_vs_source": [],
+      "missing_vs_source": [],
+      "added_vs_previous": [],
+      "removed_vs_previous": [],
+      "new_self_intersections": [],
+      "existing_source_non_simple": 0
+    },
+    {
+      "map_id": "hankou",
+      "applicable": true,
+      "hydrorivers_reaches": 15,
+      "source_contact_pairs": 15,
+      "previous_contact_pairs": 15,
+      "revised_contact_pairs": 15,
+      "added_vs_source": [],
+      "missing_vs_source": [],
+      "added_vs_previous": [],
+      "removed_vs_previous": [],
+      "new_self_intersections": [],
+      "existing_source_non_simple": 0
+    },
+    {
+      "map_id": "jingfeng",
+      "applicable": true,
+      "hydrorivers_reaches": 2921,
+      "source_contact_pairs": 3625,
+      "previous_contact_pairs": 3625,
+      "revised_contact_pairs": 3625,
+      "added_vs_source": [],
+      "missing_vs_source": [],
+      "added_vs_previous": [],
+      "removed_vs_previous": [],
+      "new_self_intersections": [],
+      "existing_source_non_simple": 0
+    },
+    {
+      "map_id": "jingjin",
+      "applicable": true,
+      "hydrorivers_reaches": 756,
+      "source_contact_pairs": 839,
+      "previous_contact_pairs": 839,
+      "revised_contact_pairs": 839,
+      "added_vs_source": [],
+      "missing_vs_source": [],
+      "added_vs_previous": [],
+      "removed_vs_previous": [],
+      "new_self_intersections": [],
+      "existing_source_non_simple": 0
+    },
+    {
+      "map_id": "ningpu",
+      "applicable": true,
+      "hydrorivers_reaches": 16,
+      "source_contact_pairs": 15,
+      "previous_contact_pairs": 15,
+      "revised_contact_pairs": 15,
+      "added_vs_source": [],
+      "missing_vs_source": [],
+      "added_vs_previous": [],
+      "removed_vs_previous": [],
+      "new_self_intersections": [],
+      "existing_source_non_simple": 0
+    }
+  ],
+  "checks": [
+    {
+      "name": "conquest_china:no_new_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:no_lost_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "conquest_china:no_new_self_intersections",
+      "passed": true
+    },
+    {
+      "name": "hankou:no_new_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "hankou:no_lost_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "hankou:no_new_self_intersections",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:no_new_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:no_lost_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "jingfeng:no_new_self_intersections",
+      "passed": true
+    },
+    {
+      "name": "jingjin:no_new_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "jingjin:no_lost_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "jingjin:no_new_self_intersections",
+      "passed": true
+    },
+    {
+      "name": "ningpu:no_new_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "ningpu:no_lost_source_contacts",
+      "passed": true
+    },
+    {
+      "name": "ningpu:no_new_self_intersections",
+      "passed": true
+    }
+  ],
+  "failures": []
+}

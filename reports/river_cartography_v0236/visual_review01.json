@@ -1,0 +1,50 @@
+{
+  "recorded_at_utc": "2026-10-22T10:07:49.339157+00:00",
+  "controller_sha256": "185bb018ae04f666d30bd7da33fe9e096c0341bf00ba066c8a184a8e1d7e42f3",
+  "review_method": "All four complete native PNG viewports individually opened using view_image; observations are manual, not inferred from test counts.",
+  "whole_final_frames_viewed": 4,
+  "raster_postprocessing": false,
+  "development_only": true,
+  "shipping_exe": false,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_quality_goal_complete": false,
+  "records": [
+    {
+      "case": "mountains03",
+      "file": "reports/river_cartography_v0236/revised/mountains03/viewport.png",
+      "sha256": "1aa6406cffc4b88d75890814d8db3e20dd53dda3cabd882ae90464f1a208176c",
+      "metadata_sha256": "ad02c9ba9bf3e4a73feed38662a1bf027c2ce2dd056edafb95ceacef38ad163f",
+      "whole_viewport_opened": true,
+      "source_identity_current": true,
+      "observation": "Rounded tributary bends and muted center lines; gridded source pattern, repeated mountains and uniform lowland remain conspicuous."
+    },
+    {
+      "case": "village01",
+      "file": "reports/river_cartography_v0236/revised/village01/viewport.png",
+      "sha256": "793fb5b9fe335fe65d7d6aa7a1741f631ede00cb61865fac8030901d17c6048a",
+      "metadata_sha256": "2cf9525d620d7ad1d4412b9a40dd7515016afc94f75dacbd7edc128373056485",
+      "whole_viewport_opened": true,
+      "source_identity_current": true,
+      "observation": "Whole sourced village view checked; softer streams remain schematic and large ground areas have similar texture."
+    },
+    {
+      "case": "coast01",
+      "file": "reports/river_cartography_v0236/revised/coast01/viewport.png",
+      "sha256": "b34f650d63d186f469194ce2b3f2b65decc51b039fd8ad5f4c94904773c39c65",
+      "metadata_sha256": "9bbb389b87eaadd046a460dd3331efaa99c708d8eb29d3fff143f1e55d1b884e",
+      "whole_viewport_opened": true,
+      "source_identity_current": true,
+      "observation": "Fine streams use the revised profile. Stepped coast, broad polygon color boundaries and repeated units remain visible."
+    },
+    {
+      "case": "yangtze02",
+      "file": "reports/river_cartography_v0236/revised/yangtze02/viewport.png",
+      "sha256": "8237b366368706e0cbc5c5134851ec31eda5acb4410969f77fa9ae89e93d5bd0",
+      "metadata_sha256": "5359f42c1bd75be0235ee5f17efad3c9572eda72a06163516c7e05d425f673a5",
+      "whole_viewport_opened": true,
+      "source_identity_current": true,
+      "observation": "Wide main-river gradients and water texture remain continuous. Port/ferry labels persist; repeated ports and empty ground remain unfinished."
+    }
+  ]
+}

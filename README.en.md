@@ -13,6 +13,8 @@ European War 6 is the main reference for visual presentation and interaction. Ca
 
 **This update:** eight northern/southern city and province-seat originals, four grounds and revised repeat-edge sampling now ship in both packages. Political strokes use only valid shared edges between differently owned influence areas. Hanyang retains its county registration; stations and ports keep their rules and source anchors. There are 2,521 registered PNGs. [Chapter 53](docs/53_地表绘制层次修订.md) and [chapter 54](docs/54_控制区共边与海岸描边修复.md) retain their original development scope; shipping evidence is in [chapter 55](docs/55_城市建筑群层级与地图整合.md). Future instrumental music uses remote YuE2 on the RTX 3080.
 
+**Source development, not yet packaged:** subsequent work rounds river display corners and softens headwater colors, reducing sharp bends and bright center stripes. All 25,522 source lines across six maps were checked, preserving 23,647 HydroRIVERS contact pairs. [Chapter 56](docs/56_细水系圆角与水床显示.md) contains four whole development views and evidence. The working source includes these changes; the 0.2.35 packages and shipping screenshots below retain their original release identity. Repeated ground, stepped coasts and complete unit actions remain unfinished.
+
 ![Native main menu, shipping Windows 0.2.35](docs/media/menu-v0235.png)
 
 *A whole 0.2.35 exported-application viewport. PNG screenshots have no montage, repainting or promotional overlays; older media retain their actual source versions.*

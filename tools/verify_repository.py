@@ -39,6 +39,7 @@ PUBLIC_DOCS = ['README.md', 'README.en.md', 'LICENSE-NOTICE.md',
                'docs/53_地表绘制层次修订.md',
                'docs/54_控制区共边与海岸描边修复.md',
                'docs/55_城市建筑群层级与地图整合.md',
+               'docs/56_细水系圆角与水床显示.md',
                'docs/SOUND_DESIGN.md', 'SOUND_DESIGN.md',
                'docs/25_欧陆战争6地图资源差距评估.md',
                'docs/00_程序文档索引.md', 'docs/04_美术来源与审核.md',
@@ -58,7 +59,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--documentation-only', action='store_true',
                         help='Validate docs/media/source integrity without claiming the full native release gates.')
+    parser.add_argument('--report-output', type=Path,
+                        help='Write to a new report path, preserving previous release evidence.')
     args = parser.parse_args()
+    if args.report_output and args.report_output.exists():
+        raise FileExistsError(args.report_output)
     raw = subprocess.check_output(['git', 'ls-files', '--cached', '--others',
                                    '--exclude-standard', '-z'], cwd=P)
     files = {P / name.decode('utf-8') for name in raw.split(b'\0') if name}
@@ -191,7 +196,9 @@ def main():
               'scope': 'documentation_media_and_source_integrity' if args.documentation_only else 'full_repository_and_native_proofs',
               'full_native_release_gates_checked': not args.documentation_only,
               'physical_android_device_tested': False, 'errors': errors}
-    (P / ('reports/repository_documentation_validation.json' if args.documentation_only else 'reports/repository_validation.json')).write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    output = args.report_output or P / ('reports/repository_documentation_validation.json' if args.documentation_only else 'reports/repository_validation.json')
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     print(json.dumps(result, ensure_ascii=True))
     raise SystemExit(0 if result['passed'] else 1)
 

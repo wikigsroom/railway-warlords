@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "recorded_at_utc": "2026-10-22T10:14:20.152287+00:00",
+  "controller_sha256": "185bb018ae04f666d30bd7da33fe9e096c0341bf00ba066c8a184a8e1d7e42f3",
+  "development_only": true,
+  "runtime_version_constant": "0.2.35",
+  "evidence_iteration": "v0236",
+  "current_shipping_packages": "Unchanged 0.2.35 / Android code40; this development source is not in them.",
+  "native_content_hash": "1f7e449dc80b289ab5274fda5636519d1e3a320062d04f95374669302b754256",
+  "actual_reaches": 25522,
+  "revised_display_reaches": 19805,
+  "maximum_sampled_symmetric_distance_m": 59.68563563484532,
+  "preserved_hydrorivers_contacts": 23647,
+  "protected_unchanged_files": 7935,
+  "unchanged_png_files": 2521,
+  "native_geometry_checks": 12,
+  "existing_river_geography_material_checks": 126,
+  "independent_contact_graph_checks": 15,
+  "independent_repeated_per_reach_checks": 103246,
+  "full_30_group_regression_rerun": false,
+  "shipping_binary_rebuilt": false,
+  "physical_android_device_tested": false,
+  "formal_art_approval": false,
+  "ew6_quality_goal_complete": false,
+  "new_raster_assets": false,
+  "new_music": false,
+  "future_music_route": "music-gen-remote-YuE2 / native Windows to remote RTX 3080; instrumental.",
+  "remaining": [
+    "Stepped coasts",
+    "Repeated ground and mountain originals in the full scene",
+    "Source-grid straight river segments",
+    "Panning frame-time spikes",
+    "Complete unit action families",
+    "Known historical starting-state issues",
+    "Physical Motorola X30 acceptance"
+  ],
+  "evidence": [
+    {
+      "file": "reports/river_cartography_v0236/geometry_audit03.json",
+      "sha256": "cb6003c41a79011fd773054987bcf69641202452df6fff9ff389960a91b6fd98"
+    },
+    {
+      "file": "reports/river_cartography_v0236/contact_graph01.json",
+      "sha256": "e0d4069ad26d72f2298ef8f598f7715fe459027a033a9ba681571503f520ba74"
+    },
+    {
+      "file": "reports/river_cartography_v0236/protected_scope01.json",
+      "sha256": "344866eb1041cbc7cfd1fedf0f6bb580a378b89c33389f1b70cd5f143cf0a483"
+    },
+    {
+      "file": "reports/river_cartography_v0236/repository_documentation01.json",
+      "sha256": "4002253a61561a29ad7a46f71605b4dd63de0692e4c3d0ec5059125f81dda9ca"
+    },
+    {
+      "file": "reports/river_cartography_v0236/visual_review01.json",
+      "sha256": "cc462a6f2c60230ca3befb69a782d5cf313f7d600d82a1dc25c3c2378a36b9aa"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/geometry03/result.json",
+      "sha256": "f8fe5a0cf820c8db3ac6f021d7a506eb675124ebb9f9b1e4516cea44c4dbdcc0"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/river_rules01/result.json",
+      "sha256": "e3ea6579f167fd8e8bcd45b64ce67f41f41146744f5275d5bcce86f2d203fdb1"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/surface_rules01/result.json",
+      "sha256": "323e4134145729a433bf6d84441b327a99401f37bce7658f7b04173a91df8117"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/material_rules01/result.json",
+      "sha256": "16aaec5590925b5a1d7642e62ac3c3dd9af3f66cfdeafe3a07b3f80e08e86d7f"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/perf_desktop01/result.json",
+      "sha256": "32a27ea9b9565dc42d48275c9f893548ecc5c7e304a8cc3c8c27462f7f3c1fa6"
+    },
+    {
+      "file": "reports/river_cartography_v0236/revised/perf_touch_dimensions01/result.json",
+      "sha256": "99d4901356361a55f372f97a0ae95587533aa076a30d8ce0135021ade328370f"
+    }
+  ]
+}

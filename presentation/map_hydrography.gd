@@ -32,21 +32,37 @@ static func points_array(raw: Array) -> PackedVector2Array:
 	for point in raw:result.append(Vector2(float(point[0]),float(point[1])))
 	return result
 
-static func rounded_source_corners(points: PackedVector2Array, maximum_cut: float) -> PackedVector2Array:
-	# A quadratic fillet stays in the convex hull of the original join. With
-	# cuts <=2*D its displacement from the two source segments is <=D. No new
-	# junction, endpoint, branch or random meander can be introduced.
-	if points.size()<3:return points
+static func rounded_source_corners(points: PackedVector2Array, maximum_deviation: float) -> PackedVector2Array:
+	# For a turn theta and equal cuts c, the quadratic's midpoint is at most
+	# c*sin(theta/2)/2 from the original corner. This bounds BOTH directions:
+	# curve to source and the removed source corner to curve. A fixed cut of
+	# 2*D wastes most of the permitted displacement on gentle DEM stair steps.
+	# Adjacent cuts use less than half an edge, so curves cannot overlap along
+	# that edge. Source endpoints and the archived topology stay exact.
+	if points.size()<3 or maximum_deviation<=0.0:return points
 	var result=PackedVector2Array([points[0]])
 	for index in range(1,points.size()-1):
 		var before=points[index-1];var center=points[index];var after=points[index+1]
-		var cut=minf(maximum_cut,minf(before.distance_to(center),after.distance_to(center))*.30)
-		if cut<.01 or (center-before).normalized().dot((after-center).normalized())>.995:
+		var incoming=center-before;var outgoing=after-center
+		var length_before=incoming.length();var length_after=outgoing.length()
+		if minf(length_before,length_after)<.01:
 			result.append(center);continue
+		var cosine=clampf(incoming.normalized().dot(outgoing.normalized()),-1.0,1.0)
+		if cosine>.995:
+			result.append(center);continue
+		var half_sine=sqrt(maxf(0.0,(1.0-cosine)*.5))
+		# Keep one percent for float32 map coordinates and curve tessellation;
+		# the independent source-space check still enforces the full 60m cap.
+		var cut=minf(1.98*maximum_deviation/maxf(.0001,half_sine),minf(length_before,length_after)*.45)
 		var entry=center+(before-center).normalized()*cut
 		var exit=center+(after-center).normalized()*cut;result.append(entry)
-		for step in range(1,5):
-			var t=float(step)/4.0
+		# Smaller angular steps remove the residual four-chord kink at normal
+		# detail zoom without introducing random offsets or guessed meanders.
+		# An even count includes the exact midpoint: omitting it would let the
+		# centre chord cut slightly farther from the source corner than D.
+		var steps=clampi(ceili(rad_to_deg(acos(cosine))/12.0)*2,4,30)
+		for step in range(1,steps+1):
+			var t=float(step)/float(steps)
 			result.append(entry*(1-t)*(1-t)+center*2*(1-t)*t+exit*t*t)
 	result.append(points[points.size()-1]);return result
 
@@ -54,14 +70,14 @@ static func detail_row(raw: Dictionary, source_id: String, radius_m: float) -> D
 	var bounds: Array=raw.get("bounds",[])
 	if bounds.size()!=4 or raw.get("points",[]).size()<2:return {}
 	var points=points_array(raw.points)
-	var display=rounded_source_corners(points,120.0*48.0/maxf(1.0,radius_m)) if raw.has("source_reach_id") else points
+	var display=rounded_source_corners(points,60.0*48.0/maxf(1.0,radius_m)) if raw.has("source_reach_id") else points
 	return {"points":points,"display_points":display,"bounds":Rect2(Vector2(bounds[0],bounds[1]),Vector2(bounds[2]-bounds[0],bounds[3]-bounds[1])),"rank":int(raw.get("source_rank",10)),"source_name":str(raw.get("source_name","")),"source_id":source_id,"source_reach_id":int(raw.get("source_reach_id",0)),"stream_order":int(raw.get("stream_order",0)),"min_zoom":float(raw.get("min_zoom",.38)),"width_symbolic":true}
 
 static func main_row(points: PackedVector2Array, order: int, radius_m: float, source_reach_id: int=0, next_down: int=0) -> Dictionary:
 	var bounds=Rect2(points[0],Vector2.ZERO) if not points.is_empty() else Rect2()
 	for point in points:bounds=bounds.expand(point)
 	# Replacement mains receive the same bounded fillet as tributaries.
-	var display=rounded_source_corners(points,120.0*48.0/maxf(1,radius_m)) if source_reach_id>0 else points
+	var display=rounded_source_corners(points,60.0*48.0/maxf(1,radius_m)) if source_reach_id>0 else points
 	return {"points":points,"display_points":display,"bounds":bounds,"stream_order":order,"source_reach_id":source_reach_id,"next_down":next_down,"width_symbolic":true,"hex_radius_m":radius_m}
 
 static func join_primary_rows(rows: Array) -> int:

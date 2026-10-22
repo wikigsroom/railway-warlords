@@ -1,0 +1,165 @@
+{
+	"build_version": "0.2.35",
+	"checks": [
+		{
+			"name": "existing_twenty_types_eighty_details_retained",
+			"passed": true
+		},
+		{
+			"name": "one_continuous_ground_for_each_type",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:temperate_meadow",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:dry_steppe",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:desert_steppe",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:dune_sand",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:gravel_gobi",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:saline_meadow",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:alpine_meadow",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:alpine_steppe",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:tundra_moss",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:boreal_litter",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:temperate_litter",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:conifer_litter",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:subtropical_humus",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:tropical_moist_humus",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:dry_woodland_litter",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:savanna_red_soil",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:flood_meadow",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:alluvial_loam",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:weathered_rock",
+			"passed": true
+		},
+		{
+			"name": "immutable_continuous_original:alpine_scree",
+			"passed": true
+		},
+		{
+			"name": "twenty_distinct_new_original_hashes",
+			"passed": true
+		},
+		{
+			"name": "adjacent_hexes_share_one_continuous_material_batch",
+			"passed": true
+		},
+		{
+			"name": "source_blend_weights_form_a_partition_for_positive_and_negative_hexes",
+			"passed": true
+		},
+		{
+			"name": "fine_sources_remain_visible_without_overpowering_macro_ground",
+			"passed": true
+		},
+		{
+			"name": "all_continuous_ground_draws_before_fine_originals",
+			"passed": true
+		},
+		{
+			"name": "continuous_mesh_area_equals_exact_hex_partition_without_overlapping_apertures",
+			"passed": true
+		},
+		{
+			"name": "continuous_ground_stays_inside_the_reserved_source_land_footprint",
+			"passed": true
+		},
+		{
+			"name": "overview_retains_continuous_geographic_materials_without_fine_cell_overlays",
+			"passed": true
+		},
+		{
+			"name": "interior_regions_have_constant_opacity_including_material_boundaries",
+			"passed": true
+		},
+		{
+			"name": "source_cell_centres_keep_their_registered_material_identity",
+			"passed": true
+		},
+		{
+			"name": "repeated_view_preparation_preserves_world_anchored_vertices_weights_and_source_ids",
+			"passed": true
+		},
+		{
+			"name": "continental_cache_covers_every_registered_cell_and_retains_both_source_types",
+			"passed": true
+		},
+		{
+			"name": "panning_and_selection_reuse_identical_ground_mesh_resources",
+			"passed": true
+		},
+		{
+			"name": "offscreen_chunk_bounds_cull_ground_without_rebuilding_it",
+			"passed": true
+		},
+		{
+			"name": "wide_map_submission_preserves_visible_source_cells_without_drawing_the_entire_map",
+			"passed": true
+		},
+		{
+			"name": "river_order_has_strict_width_hierarchy",
+			"passed": true
+		},
+		{
+			"name": "water_presentation_preserves_source_endpoints_and_original_geometry",
+			"passed": true
+		}
+	],
+	"failures": [],
+	"formal_art_approval": false,
+	"macro_vertices_checked": 180,
+	"passed": true
+}

@@ -99,5 +99,8 @@ func run() -> void:
 	var fingerprint=source.duplicate();var rounded=MapHydrography.rounded_source_corners(source,2.4)
 	verify(source==fingerprint and rounded[0]==source[0] and rounded[-1]==source[-1],"water_presentation_preserves_source_endpoints_and_original_geometry")
 	var report={"passed":failures.is_empty(),"checks":checks,"failures":failures,"build_version":ContentRegistry.APP_VERSION,"macro_vertices_checked":vertices_checked,"formal_art_approval":false}
-	var file=FileAccess.open("res://reports/map_material_continuity_tests.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
+	var output="res://reports/map_material_continuity_tests.json";var args=OS.get_cmdline_user_args()
+	for i in range(args.size()-1):
+		if args[i]=="--report-output":output=args[i+1]
+	var file=FileAccess.open(output,FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("MAP_MATERIAL_CONTINUITY_TEST ",JSON.stringify({"passed":failures.is_empty(),"checks":checks.size(),"failures":failures}));quit(0 if failures.is_empty() else 1)

@@ -114,5 +114,8 @@ func run() -> void:
 	verify(map_view.texture_filter==CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS and map_view.backdrop_view.texture_filter==CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS and map_view.unit_view.texture_filter==CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS,"main_cached_ground_and_unit_views_all_use_imported_mipmaps")
 	map_view.free()
 	var report={"passed":failures.is_empty(),"failed":failures.size(),"checks":checks,"failures":failures,"build_version":ContentRegistry.APP_VERSION,"replacement_reaches_checked":replacement_checks,"scope":"Actual source geometry, bounded display mains, mesh joins, world UV phase, cache lifetime and authoritative-state isolation; not measured riverbanks or historical-channel certification."}
-	var file=FileAccess.open("res://reports/river_surface_tests.json",FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
+	var output="res://reports/river_surface_tests.json";var args=OS.get_cmdline_user_args()
+	for i in range(args.size()-1):
+		if args[i]=="--report-output":output=args[i+1]
+	var file=FileAccess.open(output,FileAccess.WRITE);file.store_string(JSON.stringify(report,"\t"));file.close()
 	print("RIVER_SURFACE_TEST ",JSON.stringify({"passed":failures.is_empty(),"checks":checks.size(),"failures":failures}));quit(0 if failures.is_empty() else 1)
